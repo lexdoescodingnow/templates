@@ -18,26 +18,51 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Your original styles remain unchanged */
-.twig-templates {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+/* Message Area */
+.msg-area {
   position: relative;
+  width: 100%;
+  margin-top: 16px;
 }
 
-.facetime {
+.msg-box {
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, rgba(30,63,32,0.9), rgba(75,127,82,0.9));
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  background-color: rgba(30,63,32,0.5);
+  color: #8B9E77;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid rgba(139,158,119,0.3);
+  font-size: 14px;
+  min-height: 60px;
   position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(139,158,119,0.5);
-  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-/* Keep all other styles exactly as you had them */
+/* Decorative elements for message box */
+.deco {
+  position: absolute;
+  color: rgba(139,158,119,0.2);
+  font-size: 14px;
+}
+
+.deco-tl {
+  left: 5px;
+  top: 5px;
+}
+
+.deco-br {
+  right: 5px;
+  bottom: 5px;
+}
+
+/* Placeholder text styling */
+.msg-box::before {
+  content: "Enter your message here...";
+  color: #8B9E77;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.8;
+}
