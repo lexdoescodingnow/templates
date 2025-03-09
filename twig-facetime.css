@@ -41,6 +41,47 @@
   text-align: center;
 }
 
+/* Message Box & Input Field */
+.msg-area {
+  position: relative;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.msg-box {
+  width: 100%;
+  background-color: rgba(30,63,32,0.5);
+  color: #8B9E77;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid rgba(139,158,119,0.3);
+  font-size: 14px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Input field */
+.msg-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #8B9E77;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  outline: none;
+}
+
+/* Ensure placeholder is visible */
+.msg-input::placeholder {
+  color: rgba(139,158,119,0.7);
+  font-style: italic;
+}
+
 /* Decorative elements for message box */
 .deco {
   position: absolute;
