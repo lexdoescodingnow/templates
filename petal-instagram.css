@@ -1,0 +1,269 @@
+<div class="petal-container">
+  <div class="petal-header">
+    <div class="petal-logo-container">
+      <div class="petal-logo">petal</div>
+      <div class="petal-logo-underline"></div>
+    </div>
+    <div class="petal-icons">
+      <i class="bi bi-flower1 petal-icon"></i>
+      <i class="bi bi-flower3 petal-icon"></i>
+    </div>
+  </div>
+  
+  <div class="petal-profile">
+    <div class="petal-profile-header">
+      <img class="petal-avatar" src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=150&h=150" alt="User Avatar" />
+      <div class="petal-user-info">
+        <div class="petal-username">@naturelover</div>
+        <div class="petal-stats">
+          <div class="petal-stat">
+            <div class="petal-stat-number">42</div>
+            <div class="petal-stat-label">posts</div>
+          </div>
+          <div class="petal-stat">
+            <div class="petal-stat-number">1.2k</div>
+            <div class="petal-stat-label">followers</div>
+          </div>
+          <div class="petal-stat">
+            <div class="petal-stat-number">425</div>
+            <div class="petal-stat-label">following</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="petal-bio">Plant enthusiast sharing botanical wonders and forest adventures</div>
+    <div class="petal-hashtag">#plantsofpetal</div>
+  </div>
+  
+  <div class="petal-gallery">
+    <div class="petal-grid">
+      <div class="petal-post">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=300&h=300" alt="Nature post" />
+      </div>
+      <div class="petal-post">
+        <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=300&h=300" alt="Nature post" />
+      </div>
+      <div class="petal-post">
+        <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=300&h=300" alt="Nature post" />
+      </div>
+      <div class="petal-post">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&h=300" alt="Nature post" />
+      </div>
+      <div class="petal-post">
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=300&h=300" alt="Nature post" />
+      </div>
+      <div class="petal-post">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=300&h=300" alt="Nature post" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="petal-footer">
+    <div class="petal-actions">
+      <div class="petal-action">
+        <i class="bi bi-heart petal-action-icon"></i>
+      </div>
+      <div class="petal-action">
+        <i class="bi bi-chat petal-action-icon"></i>
+      </div>
+      <div class="petal-action">
+        <i class="bi bi-share petal-action-icon"></i>
+      </div>
+      <div class="petal-action">
+        <i class="bi bi-bookmark petal-action-icon"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style type="text/css">
+  /* Base styles */
+  .petal-container {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Header styles */
+  .petal-header {
+    background: linear-gradient(to right, rgba(76, 211, 165, 0.3), rgba(94, 198, 120, 0.4));
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(42, 76, 47, 0.4);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .petal-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .petal-logo {
+    color: #4cd3a5;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .petal-logo-underline {
+    width: 60px;
+    height: 2px;
+    background-color: #4cd3a5;
+    margin: 4px auto;
+  }
+  
+  .petal-icons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .petal-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #4cd3a5;
+    font-size: 20px;
+  }
+  
+  /* Profile styles */
+  .petal-profile {
+    background: linear-gradient(to bottom, rgba(20, 46, 26, 0.95), rgba(10, 28, 15, 0.98));
+    padding: 16px;
+    color: #f0f7f0;
+    border-bottom: 1px solid rgba(76, 211, 165, 0.1);
+  }
+  
+  .petal-profile-header {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .petal-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #4cd3a5;
+    object-fit: cover;
+  }
+  
+  .petal-user-info {
+    flex: 1;
+  }
+  
+  .petal-username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0f7f0;
+    margin-bottom: 4px;
+  }
+  
+  .petal-stats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .petal-stat {
+    text-align: center;
+  }
+  
+  .petal-stat-number {
+    font-weight: bold;
+    color: #5ec678;
+  }
+  
+  .petal-stat-label {
+    font-size: 12px;
+    color: #87a687;
+  }
+  
+  .petal-bio {
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  .petal-hashtag {
+    color: #4cd3a5;
+    font-weight: 500;
+  }
+  
+  /* Gallery styles */
+  .petal-gallery {
+    background: linear-gradient(to bottom, rgba(20, 46, 26, 0.9), rgba(10, 28, 15, 1));
+    padding: 16px;
+    border-top: 1px solid rgba(76, 211, 165, 0.1);
+  }
+  
+  .petal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  
+  .petal-post {
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(42, 76, 47, 0.7);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .petal-post:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(76, 211, 165, 0.2);
+  }
+  
+  .petal-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Footer styles */
+  .petal-footer {
+    background: rgba(10, 28, 15, 1);
+    padding: 12px 16px;
+    border-top: 1px solid rgba(76, 211, 165, 0.1);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  
+  .petal-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .petal-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(94, 198, 120, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .petal-action:hover {
+    background: rgba(94, 198, 120, 0.2);
+  }
+  
+  .petal-action-icon {
+    color: #4cd3a5;
+    font-size: 18px;
+  }
+</style>
