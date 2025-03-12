@@ -1,0 +1,22 @@
+[dohtml]
+<div class="discord-chat">
+  <div class="chat-header">
+    TO@ME group chat
+  </div>
+  <div class="chat-messages">
+
+    <div class="message">
+      <div class="avatar">
+        <img src="AVATAR_URL">
+      </div>
+      <div class="content">
+        <div class="username">username <span class="role">role</span><span class="timestamp">time</span></div>
+        <div class="text">message here</div>
+      </div>
+    </div>
+
+    <!-- More messages here -->
+
+  </div>
+</div>
+[/dohtml]
