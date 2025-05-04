@@ -1,0 +1,117 @@
+/* bingsoo-dreams.css */
+:root {
+  --font-color: #333;
+  --bg-color: #fff;
+  --message-bg: #f8f8f8;
+  --border-color: rgba(0,0,0,0.1);
+  --mgrgb1: 149,112,255;
+  --mgrgb2: 255,112,181;
+  --mgrgb3: 83,166,251;
+}
+
+@keyframes flow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bingsoo {
+  max-width: 540px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.bingsoo__bar {
+  height: 6px;
+  background: linear-gradient(90deg,
+    rgba(var(--mgrgb1),0.9),
+    rgba(var(--mgrgb2),0.9),
+    rgba(var(--mgrgb3),0.9));
+  background-size: 300% 100%;
+  animation: flow 8s ease infinite;
+}
+
+.bingsoo__content {
+  padding: 24px 32px;
+}
+
+.bingsoo__header h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.bingsoo__message {
+  background-color: var(--message-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bingsoo__image {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bingsoo__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bingsoo__text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--font-color);
+}
+
+.bingsoo__tag {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg,
+    rgba(var(--mgrgb1),1),
+    rgba(var(--mgrgb2),1),
+    rgba(var(--mgrgb3),1));
+  background-size: 300% 100%;
+  animation: flow 6s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.forum-code-bold { font-weight: bold; }
+.forum-code-italics { font-style: italic; color: rgb(var(--mgrgb2)); }
+.forum-code-underline {
+  text-decoration: underline;
+  text-decoration-color: rgb(var(--mgrgb3));
+}
+.forum-gradient-text {
+  background: linear-gradient(90deg,
+    rgb(var(--mgrgb1)),
+    rgb(var(--mgrgb2)),
+    rgb(var(--mgrgb3)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300% 100%;
+  animation: flow 6s ease infinite;
+  font-size: 1.1em;
+}
+
+/* dark-mode overrides */
+[data-theme="dark"] .bingsoo {
+  --font-color: #f1f1f1;
+  --bg-color:   #222;
+  --message-bg: #333;
+  --border-color: rgba(255,255,255,0.1);
+}
