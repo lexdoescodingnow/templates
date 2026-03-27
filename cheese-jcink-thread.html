@@ -1,0 +1,396 @@
+[dohtml]
+<style>
+
+/* ╔══════════════════════════════════════════════════════════╗
+   ║   FROMAGE  —  a jcink thread template for blue hour     ║
+   ║   cheese • 치즈 • idol & bodyguard                      ║
+   ╚══════════════════════════════════════════════════════════╝ */
+
+/* ── DARK MODE (default) ──────────────────────────────────── */
+.frm {
+  --bg:        #141210;
+  --card:      #1a1714;
+  --panel:     #100f0d;
+  --text:      #cbbfa5;
+  --faint:     #231f18;
+  --line:      #2e2920;
+  --gold:      #c9a34a;
+  --gold-dim:  rgba(201,163,74,0.12);
+  --gold-mid:  rgba(201,163,74,0.35);
+  --sub:       #7a7060;
+  --tag-bg:    #1f1c15;
+  --serif:     Georgia, 'Times New Roman', serif;
+  --mono:      'Courier New', Courier, monospace;
+}
+
+/* ── LIGHT MODE ───────────────────────────────────────────── */
+html[color-mode="light"] .frm {
+  --bg:        #f6eedb;
+  --card:      #fffdf5;
+  --panel:     #ede3c8;
+  --text:      #3b3222;
+  --faint:     #ede5cf;
+  --line:      #ddd1af;
+  --gold:      #a86e10;
+  --gold-dim:  rgba(168,110,16,0.10);
+  --gold-mid:  rgba(168,110,16,0.30);
+  --sub:       #7a6a4a;
+  --tag-bg:    #f0e8d4;
+}
+
+/* ── RESET & WRAPPER ──────────────────────────────────────── */
+.frm, .frm * { box-sizing: border-box; margin: 0; padding: 0; }
+
+.frm {
+  width: 480px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-family: var(--serif);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── CORNER BRACKETS ──────────────────────────────────────── */
+.frm-corner {
+  position: absolute;
+  width: 14px; height: 14px;
+  z-index: 10; pointer-events: none;
+}
+.frm-corner-tl { top: 5px; left: 5px;
+  border-top: 1px solid var(--gold); border-left: 1px solid var(--gold); }
+.frm-corner-tr { top: 5px; right: 5px;
+  border-top: 1px solid var(--gold); border-right: 1px solid var(--gold); }
+.frm-corner-bl { bottom: 5px; left: 5px;
+  border-bottom: 1px solid var(--gold); border-left: 1px solid var(--gold); }
+.frm-corner-br { bottom: 5px; right: 5px;
+  border-bottom: 1px solid var(--gold); border-right: 1px solid var(--gold); }
+
+/* ── CHEESE-HOLE BACKGROUND ───────────────────────────────── */
+.frm-holes {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none; z-index: 0; overflow: hidden;
+}
+.frm-hole {
+  position: absolute; border-radius: 50%;
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-mid);
+}
+
+/* ── TOP BAND (classification strip) ─────────────────────── */
+.frm-band {
+  position: relative; z-index: 1;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--mgrgb1)) 0%,
+    rgb(var(--mgrgb2)) 50%,
+    rgb(var(--mgrgb3)) 100%
+  );
+}
+
+/* ── HEADER ───────────────────────────────────────────────── */
+.frm-head {
+  position: relative; z-index: 1;
+  background: var(--card);
+  padding: 15px 22px 11px;
+  border-bottom: 1px solid var(--line);
+}
+.frm-head-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.frm-eyebrow {
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.65;
+}
+.frm-kr {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  opacity: 0.45;
+}
+.frm-name {
+  font-family: var(--serif);
+  font-size: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.frm-rule {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.frm-rule-line { height: 1px; background: var(--line); flex: 1; }
+.frm-dot {
+  width: 4px; height: 4px; border-radius: 50%;
+  background: var(--gold); opacity: 0.5;
+}
+.frm-hole-sm {
+  width: 8px; height: 8px; border-radius: 50%;
+  border: 1px solid var(--gold);
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+/* ── BODY ─────────────────────────────────────────────────── */
+.frm-body {
+  display: flex;
+  position: relative; z-index: 1;
+}
+
+/* ── GIF PANEL ────────────────────────────────────────────── */
+.frm-gif-col {
+  width: 138px;
+  flex-shrink: 0;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+}
+.frm-gif {
+  width: 138px;
+  height: 215px;
+  background-image: var(--frm-gif);
+  background-size: cover;
+  background-position: center top;
+  flex-shrink: 0;
+}
+.frm-gif-label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 4px;
+  border-top: 1px solid var(--line);
+}
+.frm-gif-label span {
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.7;
+}
+.frm-gif-dot {
+  width: 3px; height: 3px; border-radius: 50%;
+  background: var(--gold); opacity: 0.4;
+}
+
+/* ── TEXT PANEL ───────────────────────────────────────────── */
+.frm-text-col {
+  flex: 1;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.frm-accent {
+  position: absolute;
+  left: 0; top: 14px; bottom: 14px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--mgrgb1), 0.9),
+    rgba(var(--mgrgb2), 0.5),
+    rgba(var(--mgrgb3), 0.15)
+  );
+}
+.frm-post {
+  padding: 16px 18px 16px 16px;
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--text);
+  text-align: justify;
+  font-family: var(--serif);
+}
+
+/* ── B / I / U — GROUP COLOR OVERRIDES ──────────────────── */
+.frm-post b { color: rgb(var(--mgrgb1)); font-weight: bold; }
+.frm-post i { color: rgb(var(--mgrgb2)); font-style: italic; }
+.frm-post u {
+  color: rgb(var(--mgrgb3));
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--mgrgb3), 0.4);
+}
+
+/* ── FOOTER ───────────────────────────────────────────────── */
+.frm-foot {
+  position: relative; z-index: 1;
+  background: var(--tag-bg);
+  border-top: 1px solid var(--line);
+  padding: 9px 16px 9px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.frm-foot-icon {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background-image: var(--icon);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--gold-mid);
+  flex-shrink: 0;
+}
+.frm-foot-mid { flex: 1; overflow: hidden; }
+.frm-foot-tags {
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--sub);
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.frm-foot-link a {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+}
+.frm-foot-link a:hover { text-decoration: underline; }
+.frm-foot-stamp {
+  font-family: var(--mono);
+  font-size: 8px;
+  color: var(--gold);
+  opacity: 0.3;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+/* ── BOTTOM BAND ─────────────────────────────────────────── */
+.frm-band-bot {
+  position: relative; z-index: 1;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--mgrgb3)) 0%,
+    rgb(var(--mgrgb2)) 50%,
+    rgb(var(--mgrgb1)) 100%
+  );
+  opacity: 0.6;
+}
+
+</style>
+
+<!-- ╔═══════════════════════════════════════════════════════════╗
+     ║              ✦  EDIT ONLY THIS SECTION  ✦               ║
+     ╠═══════════════════════════════════════════════════════════╣
+     ║  1. Replace YOUR GIF URL HERE with your gif link         ║
+     ║  2. Scroll down — all other edits are marked with EDIT   ║
+     ╚═══════════════════════════════════════════════════════════╝ -->
+
+<div class="frm" style="--frm-gif: url(YOUR GIF URL HERE);">
+
+<!-- ╔═══════════════════════════════════════════════════════════╗
+     ║                ✦  STOP EDITING HERE  ✦                  ║
+     ╚═══════════════════════════════════════════════════════════╝ -->
+
+  <!-- corner brackets -->
+  <div class="frm-corner frm-corner-tl"></div>
+  <div class="frm-corner frm-corner-tr"></div>
+  <div class="frm-corner frm-corner-bl"></div>
+  <div class="frm-corner frm-corner-br"></div>
+
+  <!-- cheese-hole decorations -->
+  <div class="frm-holes">
+    <div class="frm-hole" style="width:72px;height:72px;top:-26px;right:44px;"></div>
+    <div class="frm-hole" style="width:38px;height:38px;top:62px;right:-14px;"></div>
+    <div class="frm-hole" style="width:88px;height:88px;bottom:-36px;left:18px;"></div>
+    <div class="frm-hole" style="width:24px;height:24px;bottom:72px;right:66px;"></div>
+    <div class="frm-hole" style="width:52px;height:52px;top:120px;left:-20px;"></div>
+    <div class="frm-hole" style="width:18px;height:18px;top:36px;left:155px;"></div>
+    <div class="frm-hole" style="width:30px;height:30px;bottom:28px;right:140px;"></div>
+  </div>
+
+  <!-- top group-color band -->
+  <div class="frm-band"></div>
+
+  <!-- ─── HEADER ─────────────────────────────────────────── -->
+  <div class="frm-head">
+    <div class="frm-head-top">
+      <div class="frm-eyebrow">경호원 • dossier</div><!-- classification label, leave as-is or edit -->
+      <div class="frm-kr">치즈</div>
+    </div>
+
+    <!-- EDIT: replace CHARACTER NAME with your character's name -->
+    <div class="frm-name">CHARACTER NAME</div>
+
+    <div class="frm-rule">
+      <div class="frm-rule-line"></div>
+      <div class="frm-hole-sm"></div>
+      <div class="frm-dot"></div>
+      <div class="frm-hole-sm"></div>
+      <div class="frm-dot"></div>
+      <div class="frm-hole-sm"></div>
+      <div class="frm-rule-line"></div>
+    </div>
+  </div>
+
+  <!-- ─── BODY ───────────────────────────────────────────── -->
+  <div class="frm-body">
+
+    <!-- gif panel — gif is set via the style attribute at the top -->
+    <div class="frm-gif-col">
+      <div class="frm-gif"></div>
+      <div class="frm-gif-label">
+        <div class="frm-gif-dot"></div>
+        <span>고다 • gouda</span><!-- decorative label, edit or leave -->
+        <div class="frm-gif-dot"></div>
+      </div>
+    </div>
+
+    <!-- text panel -->
+    <div class="frm-text-col">
+      <div class="frm-accent"></div>
+      <div class="frm-post">
+
+<!-- EDIT: replace everything between these comments with your post text.
+     use <b>bold</b> for group color 1, <i>italic</i> for color 2, <u>underline</u> for color 3 -->
+
+        Post text goes here. Replace this paragraph with your character's post content. You can use <b>bold text</b> to pull in your first group color, <i>italic text</i> for your second group color, and <u>underlined text</u> for your third. Write as much or as little as you need — the template will grow to fit your content.
+
+<!-- END POST TEXT -->
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────── -->
+  <div class="frm-foot">
+
+    <!-- member icon auto-fills from var(--icon), no edit needed -->
+    <div class="frm-foot-icon"></div>
+
+    <div class="frm-foot-mid">
+      <!-- EDIT: replace with your tags / subtext -->
+      <div class="frm-foot-tags">TAGS • SUBTEXT • HERE</div>
+      <!-- EDIT: replace href with your thread url, and the link text -->
+      <div class="frm-foot-link"><a href="[url]">[text]</a></div>
+    </div>
+
+    <div class="frm-foot-stamp">치즈</div>
+
+  </div>
+
+  <!-- bottom group-color band -->
+  <div class="frm-band-bot"></div>
+
+</div>
+[/dohtml]
