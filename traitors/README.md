@@ -4,16 +4,23 @@ These are hosted JCink thread templates inspired by The Traitors.
 
 ## Hosted stylesheets
 
-Use both of these in each `[dohtml]` snippet. The first file handles the main layout. The second file is a fresh override that forces the angular generic header and visible member-group gradients.
+For the generic, round table, and murder snippets, use both of these in each `[dohtml]` snippet. The first file handles the main layout. The second file is a fresh override that forces the angular generic header and visible member-group gradients.
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g4">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-v4.css?v=20260424g4">
 ```
 
+For the testimonial snippet, use its standalone stylesheet:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-testimonial.css?v=20260424t1">
+```
+
 ## Snippets
 
 - `generic-post-snippet.html` is for arrivals, tasks, conversations, and normal posting.
+- `testimonial-snippet.html` is for confessionals and spoken-word testimonials.
 - `round-table-vote-snippet.html` is for round table votes.
 - `traitor-murder-snippet.html` is for traitor murders.
 
@@ -24,7 +31,7 @@ Each snippet keeps these fields at the top:
 ```html
 [url]  = character GIF URL
 [name] = character name
-[text] = location, vote target, victim, clue, or thread note
+[text] = location, vote target, victim, clue, episode beat, or thread note
 ```
 
 ## Group colors
@@ -56,4 +63,5 @@ Dark mode is handled with:
 
 ```css
 html[color-mode='dark'] .bh-traitors
+html[color-mode='dark'] .bh-traitors-confessional
 ```
