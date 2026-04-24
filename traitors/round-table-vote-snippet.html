@@ -1,0 +1,34 @@
+[dohtml]
+<!-- EDITABLE FIELDS:
+     [url]  = character GIF URL
+     [name] = voter name
+     [text] = vote target / accusation / round note
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css">
+
+<div class="bh-traitors bh-traitors-vote" style='--gif:url("[url]");'>
+  <div class="shell">
+    <div class="header">
+      <div class="statement">
+        <div class="kicker">round table testimony</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+      <div class="gif"></div>
+    </div>
+    <div class="vote-card">
+      <div class="seal">X</div>
+      <div>
+        <div class="vote-label">my vote is cast for</div>
+        <div class="vote-name">[text]</div>
+      </div>
+    </div>
+    <div class="post">
+      Put your round table post here. This space is for suspicions, accusations, defense, panic, betrayal, and the terrible little pause before a name is spoken out loud.
+      <br><br>
+      Use <b>bold</b>, <i>italic</i>, <u>underline</u>, and <a href="#">links</a> for member-group accent styling.
+    </div>
+    <div class="tag">one name, one slate, one sentence</div>
+  </div>
+</div>
+[/dohtml]
