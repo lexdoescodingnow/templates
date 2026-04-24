@@ -4,11 +4,11 @@ These are hosted JCink thread templates inspired by The Traitors.
 
 ## Hosted stylesheets
 
-Use both of these in each `[dohtml]` snippet. The second file loads after the main template CSS and forces the visible member-group gradients for bold, italic, underline, and links.
+Use both of these in each `[dohtml]` snippet. The first file handles the main layout. The second file is a fresh override that forces the angular generic header and visible member-group gradients.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g3">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-gradient.css?v=20260424g3">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-v4.css?v=20260424g4">
 ```
 
 ## Snippets
@@ -29,7 +29,7 @@ Each snippet keeps these fields at the top:
 
 ## Group colors
 
-The stylesheet uses Blue Hour's dynamic member group variables:
+The stylesheets use Blue Hour's dynamic member group variables:
 
 ```css
 --mgrgb1
@@ -48,7 +48,7 @@ That means the template should match the current poster's member group automatic
 
 ## Generic header
 
-The generic posting template uses an angular, dossier-like header treatment instead of the old semi-circle wave motif.
+The generic posting template now uses a `.dagger` header. The override file also restyles older `.waves` markup, but the newest snippet no longer uses that class.
 
 ## Dark mode
 
