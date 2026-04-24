@@ -6,6 +6,42 @@
   --group-gradient-reverse: linear-gradient(90deg, rgb(var(--mgrgb3, 225, 225, 225)) 0%, rgb(var(--mgrgb2, 180, 180, 180)) 52%, rgb(var(--mgrgb1, 95, 95, 95)) 100%);
 }
 
+.bh-traitors-post .waves {
+  position: relative !important;
+  overflow: hidden !important;
+  height: 102px !important;
+  background:
+    linear-gradient(118deg, transparent 0 13%, rgba(0,0,0,.34) 13.2% 24%, transparent 24.2%),
+    linear-gradient(64deg, transparent 0 57%, rgba(255,255,255,.12) 57.2% 57.8%, transparent 58%),
+    linear-gradient(145deg, rgba(var(--mgrgb1, 95, 95, 95), .92), rgba(var(--mgrgb2, 180, 180, 180), .68) 52%, rgba(var(--mgrgb3, 225, 225, 225), .52)),
+    linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.5)) !important;
+  border-bottom: 1px solid rgba(var(--mgrgb2, 180, 180, 180), .62) !important;
+}
+
+.bh-traitors-post .waves:before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 18px 30px !important;
+  border-top: 1px solid rgba(255,255,255,.22) !important;
+  border-bottom: 1px solid rgba(0,0,0,.34) !important;
+  transform: skewX(-24deg) !important;
+  opacity: .72 !important;
+}
+
+.bh-traitors-post .waves:after {
+  content: "" !important;
+  position: absolute !important;
+  right: 34px !important;
+  top: -18px !important;
+  width: 118px !important;
+  height: 150px !important;
+  background:
+    linear-gradient(90deg, transparent 46%, rgba(255,255,255,.38) 47% 49%, transparent 50%),
+    linear-gradient(0deg, transparent 44%, rgba(0,0,0,.42) 45% 47%, transparent 48%) !important;
+  transform: rotate(42deg) !important;
+  opacity: .48 !important;
+}
+
 .bh-traitors b,
 .bh-traitors strong {
   background: var(--group-gradient) !important;
