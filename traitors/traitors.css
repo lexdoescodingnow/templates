@@ -1,0 +1,320 @@
+/* Blue Hour / The Traitors hosted thread templates. Group colors stay dynamic through --mgrgb vars. */
+
+.bh-traitors {
+  --accent: var(--mgrgb2, 180, 180, 180);
+  --accent2: var(--mgrgb1, 95, 95, 95);
+  --accent3: var(--mgrgb3, 225, 225, 225);
+  --membericon: var(--icon, none);
+  --gif: none;
+  --bg: 246, 241, 232;
+  --panel: 255, 250, 241;
+  --ink: 34, 28, 25;
+  --soft: 108, 96, 89;
+  --line: 35, 25, 25;
+  width: min(620px, calc(100% - 24px));
+  margin: 28px auto;
+  color: rgb(var(--ink));
+  font: 500 13px/1.85 Arial, sans-serif;
+}
+
+html[color-mode='dark'] .bh-traitors {
+  --bg: 25, 25, 25;
+  --panel: 18, 18, 18;
+  --ink: 238, 238, 238;
+  --soft: 180, 180, 180;
+  --line: 255, 255, 255;
+}
+
+.bh-traitors * { box-sizing: border-box; }
+
+.bh-traitors b,
+.bh-traitors strong,
+.bh-traitors i,
+.bh-traitors em,
+.bh-traitors u,
+.bh-traitors a { color: rgb(var(--accent)); }
+
+.bh-traitors u {
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--accent), .85);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.bh-traitors .kicker {
+  color: rgb(var(--accent));
+  text-transform: uppercase;
+  font: 800 9px/1 Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.bh-traitors .name {
+  color: rgb(var(--ink));
+  font: 400 30px/1.05 Georgia, serif;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.bh-traitors .sub { color: rgb(var(--soft)); font: italic 12px/1.5 Georgia, serif; }
+
+.bh-traitors .tag {
+  color: rgb(var(--soft));
+  text-transform: uppercase;
+  font: 800 9px/1 Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.bh-traitors-post .shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px 14px 0 0;
+  border: 1px solid rgba(var(--accent), .72);
+  background: rgb(var(--panel));
+  box-shadow: 0 22px 42px rgba(0,0,0,.25);
+}
+
+.bh-traitors-post .waves {
+  height: 102px;
+  background:
+    radial-gradient(130px 80px at 18% -18%, rgba(var(--accent), .52) 0 62%, transparent 63%),
+    radial-gradient(210px 105px at 52% -28%, rgba(var(--accent2), .56) 0 60%, transparent 61%),
+    radial-gradient(190px 100px at 92% -14%, rgba(var(--accent3), .46) 0 58%, transparent 59%),
+    linear-gradient(110deg, rgba(var(--accent2), .88), rgba(var(--accent), .64), rgba(var(--accent3), .58));
+}
+
+.bh-traitors-post .intro {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 0 26px 24px;
+  margin-top: -38px;
+}
+
+.bh-traitors-post .gif {
+  width: 132px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 8px;
+  background: radial-gradient(circle, rgba(var(--accent), .36), rgba(var(--accent2), .18));
+  border: 1px solid rgba(var(--line), .12);
+}
+
+.bh-traitors-post .gif span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid rgb(var(--panel));
+  background-image: var(--gif), var(--membericon);
+  background-size: cover;
+  background-position: center;
+  filter: contrast(1.08) saturate(.95);
+}
+
+.bh-traitors-post .title { padding-top: 38px; }
+.bh-traitors-post .name { margin-top: 8px; }
+.bh-traitors-post .sub { margin-top: 8px; }
+
+.bh-traitors-post .post {
+  margin: 0 26px 26px;
+  padding: 26px;
+  border-top: 1px solid rgba(var(--accent), .55);
+  border-bottom: 1px solid rgba(var(--accent), .35);
+  background: radial-gradient(circle at 8% 8%, rgba(var(--accent), .12), transparent 25%), rgb(var(--bg));
+  text-align: justify;
+}
+
+.bh-traitors-post .post:first-letter {
+  float: left;
+  padding: 9px 8px 0 0;
+  color: rgb(var(--accent));
+  font: 48px/.78 Georgia, serif;
+}
+
+.bh-traitors-post .tag { padding: 0 26px 24px; text-align: right; }
+
+.bh-traitors-vote { width: min(610px, calc(100% - 24px)); }
+
+.bh-traitors-vote .shell {
+  padding: 24px;
+  border: 1px solid rgba(var(--accent), .82);
+  background: linear-gradient(135deg, rgba(var(--accent2), .22), transparent 28%), linear-gradient(315deg, rgba(var(--accent3), .18), transparent 30%), rgb(var(--panel));
+  box-shadow: 0 22px 42px rgba(0,0,0,.25);
+}
+
+.bh-traitors-vote .header {
+  display: grid;
+  grid-template-columns: 1fr 138px;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.bh-traitors-vote .statement,
+.bh-traitors-vote .vote-card,
+.bh-traitors-vote .post {
+  border: 1px solid rgba(var(--line), .14);
+  background: rgb(var(--bg));
+}
+
+.bh-traitors-vote .statement {
+  position: relative;
+  min-height: 168px;
+  padding: 22px;
+  overflow: hidden;
+}
+
+.bh-traitors-vote .statement:after {
+  content: "X";
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
+  color: rgba(var(--accent), .34);
+  font: 80px/.8 Georgia, serif;
+}
+
+.bh-traitors-vote .gif {
+  min-height: 168px;
+  border: 1px solid rgba(var(--accent), .65);
+  background-image: var(--gif), var(--membericon);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(.12) contrast(1.1);
+}
+
+.bh-traitors-vote .name { margin-top: 12px; font-size: 31px; }
+.bh-traitors-vote .sub { margin-top: 9px; }
+
+.bh-traitors-vote .vote-card {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 18px;
+}
+
+.bh-traitors-vote .seal {
+  width: 78px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: rgb(var(--accent));
+  border: 1px solid rgba(var(--accent), .72);
+  background: radial-gradient(circle, rgba(var(--accent), .24), transparent 68%);
+  font: 38px/.8 Georgia, serif;
+}
+
+.bh-traitors-vote .vote-label {
+  color: rgb(var(--soft));
+  text-transform: uppercase;
+  font: 800 9px/1 Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.bh-traitors-vote .vote-name {
+  margin-top: 7px;
+  color: rgb(var(--accent));
+  font: 400 27px/1 Georgia, serif;
+}
+
+.bh-traitors-vote .post { margin-top: 18px; padding: 24px; text-align: justify; }
+.bh-traitors-vote .tag { margin-top: 16px; text-align: center; }
+
+.bh-traitors-murder .shell {
+  overflow: hidden;
+  border: 1px solid rgba(var(--accent), .85);
+  background: rgb(var(--panel));
+  box-shadow: 0 22px 42px rgba(0,0,0,.28);
+}
+
+.bh-traitors-murder .banner {
+  min-height: 295px;
+  padding: 22px;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(var(--accent), .75);
+  background: linear-gradient(0deg, rgba(0,0,0,.72), rgba(0,0,0,.08) 58%), var(--gif), var(--membericon);
+  background-size: cover;
+  background-position: center;
+}
+
+.bh-traitors-murder .nameplate {
+  width: 100%;
+  padding: 16px 18px;
+  background: rgba(0,0,0,.56);
+  border: 1px solid rgba(var(--accent), .72);
+}
+
+.bh-traitors-murder .name { margin-top: 8px; color: #fff; font-size: 32px; }
+.bh-traitors-murder .sub { margin-top: 8px; color: rgba(255,255,255,.78); }
+
+.bh-traitors-murder .order {
+  margin: 22px 24px 0;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 16px;
+  align-items: center;
+  border: 1px solid rgba(var(--accent), .65);
+  background: radial-gradient(circle at 16% 50%, rgba(var(--accent), .22), transparent 32%), rgb(var(--bg));
+}
+
+.bh-traitors-murder .mark {
+  width: 56px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: rgb(var(--accent));
+  border: 1px solid rgba(var(--accent), .75);
+  font: 30px/.8 Georgia, serif;
+}
+
+.bh-traitors-murder .order span {
+  display: block;
+  color: rgb(var(--soft));
+  text-transform: uppercase;
+  font: 800 9px/1 Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.bh-traitors-murder .order strong {
+  display: block;
+  margin-top: 6px;
+  color: rgb(var(--accent));
+  font: 400 25px/1 Georgia, serif;
+}
+
+.bh-traitors-murder .post {
+  position: relative;
+  margin: 20px 24px 24px;
+  padding: 26px;
+  border: 1px solid rgba(var(--line), .13);
+  background: rgb(var(--bg));
+  text-align: justify;
+}
+
+.bh-traitors-murder .post:before,
+.bh-traitors-murder .post:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(var(--accent), .28);
+}
+
+.bh-traitors-murder .post:before { left: 14px; top: 14px; }
+.bh-traitors-murder .post:after { right: 18px; bottom: 18px; }
+.bh-traitors-murder .tag { padding: 0 24px 24px; text-align: right; }
+
+@media (max-width: 560px) {
+  .bh-traitors { width: calc(100% - 18px); font-size: 12px; }
+  .bh-traitors-post .intro,
+  .bh-traitors-vote .header { grid-template-columns: 1fr; }
+  .bh-traitors-post .gif { margin: 0 auto; }
+  .bh-traitors-post .title { padding-top: 0; text-align: center; }
+  .bh-traitors-vote .gif { min-height: 220px; }
+}
