@@ -1,0 +1,52 @@
+/* Strong gradient overrides for JCink/Blue Hour.
+   Load after traitors.css so site-level b/i/u/a color rules cannot flatten it. */
+
+.bh-traitors {
+  --group-gradient: linear-gradient(90deg, rgb(var(--mgrgb1, 95, 95, 95)) 0%, rgb(var(--mgrgb2, 180, 180, 180)) 52%, rgb(var(--mgrgb3, 225, 225, 225)) 100%);
+  --group-gradient-reverse: linear-gradient(90deg, rgb(var(--mgrgb3, 225, 225, 225)) 0%, rgb(var(--mgrgb2, 180, 180, 180)) 52%, rgb(var(--mgrgb1, 95, 95, 95)) 100%);
+}
+
+.bh-traitors b,
+.bh-traitors strong {
+  background: var(--group-gradient) !important;
+  background-image: var(--group-gradient) !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+}
+
+.bh-traitors i,
+.bh-traitors em {
+  background: var(--group-gradient-reverse) !important;
+  background-image: var(--group-gradient-reverse) !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+}
+
+.bh-traitors u,
+.bh-traitors a,
+.bh-traitors a:link,
+.bh-traitors a:visited,
+.bh-traitors a:hover,
+.bh-traitors a:active {
+  background-image: var(--group-gradient), var(--group-gradient) !important;
+  background-size: 100% 2px, 100% 100% !important;
+  background-position: 0 calc(100% - 1px), 0 0 !important;
+  background-repeat: no-repeat, no-repeat !important;
+  -webkit-background-clip: border-box, text !important;
+  background-clip: border-box, text !important;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  text-decoration: none !important;
+  padding-bottom: 2px;
+  text-shadow: none !important;
+}
