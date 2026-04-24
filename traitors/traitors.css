@@ -4,6 +4,8 @@
   --accent: var(--mgrgb2, 180, 180, 180);
   --accent2: var(--mgrgb1, 95, 95, 95);
   --accent3: var(--mgrgb3, 225, 225, 225);
+  --group-gradient: linear-gradient(90deg, rgb(var(--accent2)), rgb(var(--accent)), rgb(var(--accent3)));
+  --group-gradient-reverse: linear-gradient(90deg, rgb(var(--accent3)), rgb(var(--accent)), rgb(var(--accent2)));
   --membericon: var(--icon, none);
   --gif: none;
   --bg: 246, 241, 232;
@@ -28,17 +30,39 @@ html[color-mode='dark'] .bh-traitors {
 .bh-traitors * { box-sizing: border-box; }
 
 .bh-traitors b,
-.bh-traitors strong,
-.bh-traitors i,
-.bh-traitors em,
-.bh-traitors u,
-.bh-traitors a { color: rgb(var(--accent)); }
+.bh-traitors strong {
+  background-image: var(--group-gradient);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgb(var(--accent));
+  -webkit-text-fill-color: transparent;
+}
 
-.bh-traitors u {
-  text-decoration: underline;
-  text-decoration-color: rgba(var(--accent), .85);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+.bh-traitors i,
+.bh-traitors em {
+  background-image: var(--group-gradient-reverse);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgb(var(--accent));
+  -webkit-text-fill-color: transparent;
+}
+
+.bh-traitors u,
+.bh-traitors a {
+  background-image: var(--group-gradient), var(--group-gradient);
+  background-size: 100% 2px, 100% 100%;
+  background-position: 0 100%, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  -webkit-background-clip: border-box, text;
+  background-clip: border-box, text;
+  color: rgb(var(--accent));
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  padding-bottom: 2px;
 }
 
 .bh-traitors .kicker {
