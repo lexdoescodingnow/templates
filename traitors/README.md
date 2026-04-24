@@ -7,8 +7,8 @@ These are hosted JCink thread templates inspired by The Traitors.
 Use both of these in each `[dohtml]` snippet. The second file loads after the main template CSS and forces the visible member-group gradients for bold, italic, underline, and links.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g2">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-gradient.css?v=20260424g2">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g3">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-gradient.css?v=20260424g3">
 ```
 
 ## Snippets
@@ -45,6 +45,10 @@ That means the template should match the current poster's member group automatic
 - `<i>` / `[I]` uses the member-group gradient backward.
 - `<u>` / `[U]` uses gradient text plus a gradient underline.
 - Links use gradient text plus a gradient underline.
+
+## Generic header
+
+The generic posting template uses an angular, dossier-like header treatment instead of the old semi-circle wave motif.
 
 ## Dark mode
 
