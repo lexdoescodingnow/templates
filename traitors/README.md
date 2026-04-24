@@ -2,12 +2,13 @@
 
 These are hosted JCink thread templates inspired by The Traitors.
 
-## Hosted stylesheet
+## Hosted stylesheets
 
-Use this in each `[dohtml]` snippet:
+Use both of these in each `[dohtml]` snippet. The second file loads after the main template CSS and forces the visible member-group gradients for bold, italic, underline, and links.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g2">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-gradient.css?v=20260424g2">
 ```
 
 ## Snippets
@@ -31,12 +32,19 @@ Each snippet keeps these fields at the top:
 The stylesheet uses Blue Hour's dynamic member group variables:
 
 ```css
---accent: var(--mgrgb2, 180, 180, 180);
---accent2: var(--mgrgb1, 95, 95, 95);
---accent3: var(--mgrgb3, 225, 225, 225);
+--mgrgb1
+--mgrgb2
+--mgrgb3
 ```
 
-That means the template should match the current poster's member group automatically. The grey numbers are only neutral fallbacks for previews where the forum does not provide group variables.
+That means the template should match the current poster's member group automatically. The grey numbers in the CSS are only neutral fallbacks for previews where the forum does not provide group variables.
+
+## Formatting gradients
+
+- `<b>` / `[B]` uses the member-group gradient forward.
+- `<i>` / `[I]` uses the member-group gradient backward.
+- `<u>` / `[U]` uses gradient text plus a gradient underline.
+- Links use gradient text plus a gradient underline.
 
 ## Dark mode
 
