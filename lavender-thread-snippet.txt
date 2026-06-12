@@ -1,24 +1,21 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=3">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=4">
 
 <!--
 QUICK EDITS:
 - Keep the member group class on the first div, e.g. capricornus.
-- Replace each [url] below with a GIF/image URL.
+- Replace the main [url] at the top with the large GIF/image URL.
 - Replace [name] with the character name.
 - Replace [text] with the post content.
-- The three smaller GIF blocks are optional. Delete any .lavender-accent block, or delete the whole .lavender-side block, and the large GIF will still fill the space.
-- If you delete the GIFs but accidentally leave an empty .lavender-side block behind, v3 will collapse it.
+- The three smaller GIF blocks are optional. Delete any .lavender-accent block, leave its src as [url], or set src="" and it will not show.
+- Delete the whole .lavender-side block for a large-GIF-only layout.
 - Add is-round to whichever small GIF should become the circular icon panel.
 - If your board strips link tags, replace the link above with:
-  <style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=3');</style>
+  <style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=4');</style>
 -->
 
 <div class="lavender-thread capricornus" style="
 --main-gif: url('[url]');
---small-gif-one: url('[url]');
---small-gif-two: url('[url]');
---small-gif-three: url('[url]');
 ">
 
   <span class="lavender-name">[name]</span>
@@ -31,9 +28,9 @@ QUICK EDITS:
     <div class="lavender-main-gif"></div>
 
     <div class="lavender-side">
-      <div class="lavender-accent is-round" style="--accent-gif: var(--small-gif-one);"></div>
-      <div class="lavender-accent" style="--accent-gif: var(--small-gif-two);"></div>
-      <div class="lavender-accent" style="--accent-gif: var(--small-gif-three);"></div>
+      <div class="lavender-accent is-round"><img src="[url]" alt="" onerror="this.parentNode.remove();"></div>
+      <div class="lavender-accent"><img src="[url]" alt="" onerror="this.parentNode.remove();"></div>
+      <div class="lavender-accent"><img src="[url]" alt="" onerror="this.parentNode.remove();"></div>
     </div>
   </div>
 
