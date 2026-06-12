@@ -1,0 +1,50 @@
+[dohtml]
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=1">
+
+<!--
+QUICK EDITS:
+- Keep the member group class on the first div, e.g. capricornus.
+- Replace each [url] with a GIF/image URL.
+- Replace [name] with the character name.
+- Replace [text] with the post content.
+- If your board strips link tags, replace the link above with:
+  <style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=1');</style>
+-->
+
+<div class="lavender-thread capricornus" style="
+--main-gif: url('[url]');
+--icon-gif: url('[url]');
+--gif-one: url('[url]');
+--gif-two: url('[url]');
+">
+
+  <span class="lavender-name">[name]</span>
+
+  <div class="lavender-post-text">
+    [text]
+  </div>
+
+  <div class="lavender-gallery">
+    <div class="lavender-main-gif"></div>
+
+    <div class="lavender-side">
+      <div class="lavender-icon-wrap">
+        <div class="lavender-icon"></div>
+      </div>
+
+      <div class="lavender-mini-row">
+        <div class="lavender-mini-gif one"></div>
+        <div class="lavender-mini-gif two"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lavender-label">pressed lavender notes</div>
+
+  <div class="lavender-footer">
+    <span class="lavender-sprig">[text]</span>
+    <span>[name]</span>
+  </div>
+
+</div>
+[/dohtml]
