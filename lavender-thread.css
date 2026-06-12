@@ -116,6 +116,7 @@ html[color-mode="dark"] .lavender-thread {
 
 .lavender-main-gif {
   flex: 1 1 360px;
+  width: 100%;
   min-width: 0;
   min-height: 270px;
   background-image: var(--main-gif);
@@ -123,20 +124,29 @@ html[color-mode="dark"] .lavender-thread {
 }
 
 .lavender-side {
-  flex: .8 1 210px;
-  min-width: 180px;
+  flex: 0 1 auto;
+  min-width: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
   gap: 10px;
   align-content: stretch;
 }
 
-.lavender-side:empty,
+.lavender-side:has(.lavender-accent, .lavender-icon-wrap, .lavender-mini-gif) {
+  flex: .8 1 210px;
+  min-width: 180px;
+}
+
+.lavender-side:empty {
+  display: none;
+}
+
 .lavender-side:not(:has(.lavender-accent, .lavender-icon-wrap, .lavender-mini-gif)) {
   display: none;
 }
 
 .lavender-accent {
+  min-width: 86px;
   min-height: 124px;
   background-image: var(--accent-gif);
 }
@@ -190,12 +200,16 @@ html[color-mode="dark"] .lavender-thread {
   gap: 10px;
 }
 
-.lavender-mini-row:empty,
+.lavender-mini-row:empty {
+  display: none;
+}
+
 .lavender-mini-row:not(:has(.lavender-mini-gif)) {
   display: none;
 }
 
 .lavender-mini-gif {
+  min-width: 86px;
   min-height: 124px;
 }
 
@@ -331,7 +345,7 @@ html[color-mode="dark"] .lavender-thread {
     min-height: 230px;
   }
 
-  .lavender-side {
+  .lavender-side:has(.lavender-accent, .lavender-icon-wrap, .lavender-mini-gif) {
     min-width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
