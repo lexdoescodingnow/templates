@@ -1,0 +1,294 @@
+/* lavender-thread.css */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800;900&family=Nunito+Sans:ital,wght@0,500;0,700;0,900;1,700;1,800&display=swap');
+
+.lavender-thread,
+.lavender-thread * {
+  box-sizing: border-box;
+}
+
+.lavender-thread {
+  --fallback-one: 166, 126, 194;
+  --fallback-two: 217, 186, 235;
+  --group-one: var(--mgrgb, var(--mgrgb1, var(--fallback-one)));
+  --group-two: var(--mgrgb2, var(--fallback-two));
+  --font-body: 'Nunito Sans', Arial, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  --bg: #17151b;
+  --panel: #211c27;
+  --panel2: #2d2435;
+  --text: #f2edf6;
+  --soft: #cfc3da;
+  --line: rgba(var(--group-two), .38);
+  --shadow: rgba(7, 5, 10, .55);
+
+  width: min(620px, 96%);
+  margin: 30px auto;
+  padding: 22px;
+  background:
+    radial-gradient(circle at 12% 4%, rgba(var(--group-two), .22), transparent 28%),
+    radial-gradient(circle at 90% 14%, rgba(141, 167, 137, .18), transparent 26%),
+    linear-gradient(145deg, var(--bg), #121014 75%);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.78;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 18px 45px var(--shadow);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+html[color-mode="light"] .lavender-thread {
+  --bg: #fbf7ff;
+  --panel: #ffffff;
+  --panel2: #f1e9f7;
+  --text: #28212f;
+  --soft: #675a70;
+  --line: rgba(var(--group-one), .34);
+  --shadow: rgba(92, 70, 118, .18);
+}
+
+html[color-mode="dark"] .lavender-thread {
+  --bg: #17151b;
+  --panel: #211c27;
+  --panel2: #2d2435;
+  --text: #f2edf6;
+  --soft: #cfc3da;
+  --line: rgba(var(--group-two), .38);
+  --shadow: rgba(7, 5, 10, .55);
+}
+
+.lavender-thread:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 118px;
+  background:
+    linear-gradient(130deg, rgba(var(--group-one), .75), rgba(var(--group-two), .48)),
+    radial-gradient(circle at 30% 0%, rgba(255,255,255,.22), transparent 32%);
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 82% 48%, 65% 74%, 43% 42%, 24% 68%, 0 40%);
+  opacity: .8;
+}
+
+.lavender-name {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: 18px auto 20px;
+  text-align: center;
+  color: rgb(var(--group-two));
+  background: linear-gradient(105deg, rgb(var(--group-two)), #fff 48%, rgb(var(--group-one)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-shadow: 0 2px 14px rgba(0,0,0,.35);
+}
+
+.lavender-gallery {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.35fr .8fr;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.lavender-main-gif,
+.lavender-mini-gif,
+.lavender-icon {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(var(--group-two), .65);
+}
+
+.lavender-main-gif {
+  min-height: 270px;
+  background-image: var(--main-gif);
+  box-shadow: 0 0 0 6px rgba(var(--group-one), .12);
+}
+
+.lavender-side {
+  display: grid;
+  gap: 14px;
+}
+
+.lavender-icon-wrap {
+  min-height: 132px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle, rgba(var(--group-two), .28), transparent 58%),
+    linear-gradient(145deg, var(--panel), var(--panel2));
+  border: 1px solid var(--line);
+}
+
+.lavender-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-image: var(--icon-gif);
+  box-shadow: 0 0 0 10px rgba(var(--group-one), .16);
+}
+
+.lavender-mini-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.lavender-mini-gif {
+  min-height: 124px;
+}
+
+.lavender-mini-gif.one { background-image: var(--gif-one); }
+.lavender-mini-gif.two { background-image: var(--gif-two); }
+
+.lavender-label {
+  position: relative;
+  z-index: 2;
+  margin: 22px 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--soft);
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.lavender-label:before,
+.lavender-label:after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, rgba(var(--group-one), .48), rgba(var(--group-two), .64), transparent);
+}
+
+.lavender-post-text {
+  position: relative;
+  z-index: 2;
+  padding: 28px;
+  background:
+    linear-gradient(180deg, rgba(var(--group-two), .08), transparent 38%),
+    var(--panel);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-family: var(--font-body);
+  text-align: justify;
+}
+
+.lavender-post-text p {
+  margin: 0 0 16px;
+}
+
+.lavender-post-text p:last-child {
+  margin-bottom: 0;
+}
+
+.lavender-post-text b,
+.lavender-post-text strong {
+  color: rgb(var(--group-two));
+  background: linear-gradient(105deg, rgb(var(--group-one)), rgb(var(--group-two)) 52%, rgb(var(--group-one)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.lavender-post-text i,
+.lavender-post-text em {
+  color: rgb(var(--group-one));
+  background: linear-gradient(105deg, rgb(var(--group-two)), rgb(var(--group-one)) 54%, rgb(var(--group-two)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.lavender-post-text u {
+  text-decoration: none;
+  color: rgb(var(--group-two));
+  background-image:
+    linear-gradient(105deg, rgb(var(--group-one)), rgb(var(--group-two)) 48%, rgb(var(--group-one))),
+    linear-gradient(90deg, rgba(var(--group-one), .18), rgba(var(--group-two), .38), rgba(var(--group-one), .18));
+  background-size: 100% 100%, 100% .58em;
+  background-position: 0 0, 0 88%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  font-weight: 900;
+  padding: 0 3px 1px;
+}
+
+.lavender-post-text a {
+  color: rgb(var(--group-two));
+  background: linear-gradient(105deg, rgb(var(--group-one)), rgb(var(--group-two)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(var(--group-two), .6);
+}
+
+.lavender-footer {
+  position: relative;
+  z-index: 2;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--soft);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.lavender-sprig {
+  color: rgb(var(--group-two));
+}
+
+@media (max-width: 560px) {
+  .lavender-thread {
+    padding: 16px;
+  }
+
+  .lavender-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .lavender-main-gif {
+    min-height: 230px;
+  }
+
+  .lavender-post-text {
+    padding: 22px;
+    text-align: left;
+  }
+
+  .lavender-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
