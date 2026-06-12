@@ -1,5 +1,5 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=2">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=3">
 
 <!--
 QUICK EDITS:
@@ -8,9 +8,10 @@ QUICK EDITS:
 - Replace [name] with the character name.
 - Replace [text] with the post content.
 - The three smaller GIF blocks are optional. Delete any .lavender-accent block, or delete the whole .lavender-side block, and the large GIF will still fill the space.
+- If you delete the GIFs but accidentally leave an empty .lavender-side block behind, v3 will collapse it.
 - Add is-round to whichever small GIF should become the circular icon panel.
 - If your board strips link tags, replace the link above with:
-  <style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=2');</style>
+  <style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lavender-thread.css?v=3');</style>
 -->
 
 <div class="lavender-thread capricornus" style="
