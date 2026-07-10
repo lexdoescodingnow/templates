@@ -1,0 +1,109 @@
+[dohtml]
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/petal/petal.css">
+<div class="petal-template petal-dark" style="--petal-group:#00C853; --petal-leaf:#B2FF59; --petal-sky:#6BCBFF; --petal-sunset:#FF8D6A;">
+  <main class="petal-app">
+    <header class="petal-appbar">
+      <div class="petal-logo">
+        <span class="petal-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span>Petal</span>
+      </div>
+
+      <div class="petal-search">Leaf Ent. verified</div>
+
+      <nav class="petal-nav" aria-label="Petal navigation">
+        <span title="home">HM</span>
+        <span title="reels">RL</span>
+        <span title="direct messages">DM</span>
+        <span title="liked">HT</span>
+      </nav>
+    </header>
+
+    <section class="petal-stories" aria-label="Petal stories">
+      <div class="petal-story">
+        <img src="https://i.pinimg.com/736x/f9/7e/15/f97e1535c0448874a7c94ce7fa169d41.jpg" alt="Jinseok story">
+        <span>jinseok</span>
+      </div>
+      <div class="petal-story">
+        <img src="https://i.pinimg.com/originals/4c/6c/60/4c6c60aba93095bafa3d8997bcf35c52.jpg" alt="studio story">
+        <span>studio</span>
+      </div>
+      <div class="petal-story">
+        <img src="https://i.pinimg.com/originals/d1/72/f5/d172f5b3684602f66fb69e624848d2fe.jpg" alt="Los Angeles story">
+        <span>la live</span>
+      </div>
+      <div class="petal-story">
+        <img src="https://i.pinimg.com/originals/46/c1/1d/46c11ddf6d31d33ca9ceb8935a855f5b.jpg" alt="fan story">
+        <span>fans</span>
+      </div>
+    </section>
+
+    <section class="petal-profile">
+      <div class="petal-head">
+        <div class="petal-avatar-shell">
+          <img class="petal-avatar" src="https://i.pinimg.com/736x/f9/7e/15/f97e1535c0448874a7c94ce7fa169d41.jpg" alt="Choi Jinseok avatar">
+        </div>
+
+        <div class="petal-meta">
+          <div class="petal-name-row">
+            <h2 class="petal-name">choi jinseok</h2>
+            <span class="petal-verified">Leaf verified</span>
+          </div>
+          <span class="petal-handle">@choijinseok</span>
+          <p class="petal-blurb"><b>Leaf Entertainment</b> idol profile broadcasting from <i>Los Angeles</i>. Fan traffic is <u>currently trending</u>.</p>
+
+          <div class="petal-profile-actions">
+            <span class="petal-action-main">following</span>
+            <span>message</span>
+            <span>fanboard</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="petal-stats">
+        <span><b>136</b><em>posts</em></span>
+        <span><b>4.03m</b><em>followers</em></span>
+        <span><b>117</b><em>following</em></span>
+      </div>
+    </section>
+
+    <section class="petal-feed">
+      <div class="petal-feed-head">
+        <h3>latest from LA</h3>
+        <div class="petal-tabs">
+          <span class="petal-tab-active">grid</span>
+          <span>reels</span>
+          <span>tagged</span>
+        </div>
+      </div>
+
+      <div class="petal-grid">
+        <span class="petal-tile" data-label="22.4k likes"><img src="https://i.pinimg.com/474x/5e/f2/a7/5ef2a772e678ee72860d23e0592e035c.jpg" alt="Jinseok gallery image 1"></span>
+        <span class="petal-tile" data-label="studio mirror"><img src="https://i.pinimg.com/originals/4c/6c/60/4c6c60aba93095bafa3d8997bcf35c52.jpg" alt="Jinseok gallery image 2"></span>
+        <span class="petal-tile" data-label="fan favorite"><img src="https://i.pinimg.com/originals/a4/51/96/a4519660bde9c12e8c33fc4f7fe25852.jpg" alt="Jinseok gallery image 3"></span>
+        <span class="petal-tile" data-label="night drop"><img src="https://i.pinimg.com/originals/a3/d2/08/a3d208ed765b531e042c199300fdbf71.jpg" alt="Jinseok gallery image 4"></span>
+        <span class="petal-tile" data-label="saved reel"><img src="https://i.pinimg.com/originals/5e/2e/19/5e2e19c75935d200d71b03a476345a6d.jpg" alt="Jinseok gallery image 5"></span>
+        <span class="petal-tile" data-label="LA weather"><img src="https://i.pinimg.com/originals/d1/72/f5/d172f5b3684602f66fb69e624848d2fe.jpg" alt="Jinseok gallery image 6"></span>
+      </div>
+    </section>
+  </main>
+
+  <aside class="petal-feature">
+    <div class="petal-feature-top">
+      <span>Leaf Entertainment</span>
+      <span>LA</span>
+    </div>
+    <img src="https://i.pinimg.com/originals/46/c1/1d/46c11ddf6d31d33ca9ceb8935a855f5b.jpg" alt="Jinseok featured image">
+    <div class="petal-feature-info">
+      <span class="petal-feature-kicker">spotlight reel</span>
+      <h3>choi jinseok</h3>
+      <p>@choijinseok is live on Petal with Leaf Entertainment.</p>
+      <div class="petal-feature-actions">
+        <span>like</span>
+        <span>save</span>
+        <span>share</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+[/dohtml]
