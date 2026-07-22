@@ -1,0 +1,27 @@
+BANANA DISPLAY — JCINK IMPLEMENTATION
+
+[dohtml]
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-display.css">
+
+<div style="width:min(100%,450px);margin:24px auto;padding:34px 28px;background:#fff8df;border:1px solid rgba(183,127,25,.34);box-sizing:border-box;text-align:center;">
+  <div class="banana-display banana-display--signature" style="color:#b77f19;font-size:clamp(54px,12vw,82px);line-height:.86;letter-spacing:.015em;">BANANA</div>
+  <div style="margin-top:16px;color:#756122;font:700 10px/1.2 Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;">DOM · TAEIN</div>
+</div>
+[/dohtml]
+
+
+DROP-IN FOR AN EXISTING BANANA TEMPLATE
+
+1. Keep the stylesheet link directly below [dohtml].
+2. Add one of the following classes to the existing title or character-name element:
+
+banana-display
+banana-display banana-display--swash
+banana-display banana-display--ligatures
+banana-display banana-display--signature
+
+Example:
+
+<h1 class="banana-title banana-display banana-display--signature">BANANA</h1>
+
+The signature class enables both Stylistic Set 01 and the custom discretionary ligatures.
