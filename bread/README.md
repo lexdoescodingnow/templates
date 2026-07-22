@@ -45,3 +45,7 @@ All five copy-ready versions are stored in `bread-buds-snippets.txt`.
 All Bread components use `--mgrgb1`, `--mgrgb2`, `--mgrgb3`, and `--icon`. Bold and underline use the forward member-group gradient; italics use the reverse gradient.
 
 The placeholder GIFs remain as fallback background layers. Replacing `[url]` and `[url2]` supplies the character images; leaving one unchanged allows the fallback behind it to remain visible.
+
+## Compatibility correction
+
+The first draft used external JavaScript to construct the cards. That approach was removed because JCink previews do not reliably execute post-level scripts. The current snippets use only HTML and hosted CSS. Old snippets containing `<script src="...bread-thread.js">`, `<script src="...bread-comms.js">`, or `<script src="...bread-buds.js">` must be replaced with the current versions.
