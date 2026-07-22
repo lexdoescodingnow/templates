@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Banana Display";
+  src:
+    url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/assets/BananaDisplay-Prototype01.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/assets/BananaDisplay-Prototype01.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.banana-display,
+.banana-display--swash,
+.banana-display--ligatures,
+.banana-display--signature {
+  font-family: "Banana Display", "Times New Roman", Georgia, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-synthesis: none;
+  font-kerning: normal;
+  text-rendering: geometricPrecision;
+}
+
+.banana-display {
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.banana-display--swash {
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "kern" 1, "liga" 1, "ss01" 1;
+}
+
+.banana-display--ligatures {
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
+  font-feature-settings: "kern" 1, "liga" 1, "dlig" 1;
+}
+
+.banana-display--signature {
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
+  font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "ss01" 1;
+}
+
+/*
+  Existing Banana template integration
+  ------------------------------------
+  Add .banana-display, .banana-display--swash,
+  .banana-display--ligatures, or .banana-display--signature
+  to the relevant title/name element.
+
+  Direct selector example:
+
+  .banana-template .banana-title {
+    font-family: "Banana Display", "Times New Roman", Georgia, serif;
+    font-synthesis: none;
+    font-kerning: normal;
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "ss01" 1;
+  }
+*/
