@@ -190,22 +190,11 @@ html[color-mode="dark"] .bh-bncomms-shell {
   color: #fff;
   background: linear-gradient(135deg, rgb(var(--g1)), rgb(var(--g2)) 56%, rgb(var(--g3)));
   border: 1px solid rgba(var(--g2), .58);
-  border-radius: 18px 6px 18px 18px;
+  border-radius: 18px;
   box-shadow: 0 8px 19px rgba(var(--g2), .18);
   font-size: 11px;
   line-height: 1.55;
   text-align: left;
-}
-
-.bh-bncomms-bubble::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -5px;
-  width: 12px;
-  height: 14px;
-  background: rgb(var(--g3));
-  clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
 .bh-bncomms-bubble b,
