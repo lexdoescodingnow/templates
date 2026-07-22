@@ -1,0 +1,30 @@
+[dohtml]
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms.css">
+<div class="bh-bncomms">
+<div class="bh-bncomms-shell">
+
+<div class="bh-bncomms-header">
+<div class="bh-bncomms-avatar">
+<img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character GIF">
+</div>
+
+<div class="bh-bncomms-identity">
+<h1 class="bh-bncomms-title">BANANA</h1>
+<span class="bh-bncomms-name">[name]</span>
+</div>
+
+<a class="bh-bncomms-open" href="[url]" target="_blank" rel="noopener">↗</a>
+</div>
+
+<div class="bh-bncomms-chat">
+<div class="bh-bncomms-row">
+<div class="bh-bncomms-bubble">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
+<span class="bh-bncomms-time">[time]</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+[/dohtml]
