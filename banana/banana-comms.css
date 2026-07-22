@@ -184,8 +184,10 @@ html[color-mode="dark"] .bh-bncomms-shell {
 
 .bh-bncomms-bubble {
   position: relative;
+  isolation: isolate;
   max-width: 88%;
   padding: 11px 13px 10px;
+  overflow: hidden;
   overflow-wrap: anywhere;
   color: #fff;
   background: linear-gradient(135deg, rgb(var(--g1)), rgb(var(--g2)) 56%, rgb(var(--g3)));
@@ -195,6 +197,16 @@ html[color-mode="dark"] .bh-bncomms-shell {
   font-size: 11px;
   line-height: 1.55;
   text-align: left;
+}
+
+.bh-bncomms .bh-bncomms-bubble::before,
+.bh-bncomms .bh-bncomms-bubble::after {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: none !important;
+  clip-path: none !important;
 }
 
 .bh-bncomms-bubble b,
