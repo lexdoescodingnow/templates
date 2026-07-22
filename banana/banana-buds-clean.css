@@ -1,0 +1,22 @@
+@import url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@7154d050520420fe7bc70208fe59824e715920cf/banana/banana-buds.css");
+
+.bh-bnbud-foot {
+  display: none !important;
+}
+
+.bh-bnbud-shoot .bh-bnbud-shell {
+  grid-template-areas:
+    "top media"
+    "copy media";
+}
+
+@media (max-width: 470px) {
+  .bh-bnbud-shoot .bh-bnbud-media {
+    grid-row: 1 / span 2;
+  }
+
+  .bh-bnbud-shoot .bh-bnbud-top,
+  .bh-bnbud-shoot .bh-bnbud-copy {
+    grid-column: 2;
+  }
+}
