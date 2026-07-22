@@ -1,0 +1,122 @@
+@import url("./bread-thread.css");
+@import url("./bread-thread-variants.css");
+@import url("./bread-comms.css");
+@import url("./bread-buds.css");
+
+.bh-bread.bh-bread-card {
+  display: flex;
+  width: min(100%, 510px);
+  margin: 28px auto;
+  flex-direction: column;
+}
+
+.bh-bread.bh-bread-card > .bh-bread-head { order: 1; }
+.bh-bread.bh-bread-card > .bh-bread-media { order: 2; }
+.bh-bread.bh-bread-card > .bh-bread-body { order: 3; }
+.bh-bread.bh-bread-card > .bh-bread-foot { order: 4; }
+
+.bh-bread.bh-bread-card--split {
+  display: grid;
+  width: min(100%, 560px);
+}
+
+.bh-bread.bh-bread-card--split > * {
+  order: initial;
+}
+
+.bh-bread-photo {
+  background-color: rgba(var(--br-g2), .07);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bh-bread-photo--one {
+  background-image: var(--br-img1, url("https://64.media.tumblr.com/4b9f6869cdd371235ba9a12091b546c4/28f1d1e1daf62e6a-a4/s400x600/52382865280e2e0fee3086648869f23a49833f37.gifv")), url("https://64.media.tumblr.com/4b9f6869cdd371235ba9a12091b546c4/28f1d1e1daf62e6a-a4/s400x600/52382865280e2e0fee3086648869f23a49833f37.gifv");
+  background-position: center 30%;
+}
+
+.bh-bread-photo--two {
+  background-image: var(--br-img2, url("https://64.media.tumblr.com/dbc34ae8aad7f3815c607cb8ac934edd/3c4ae6bd64c3cd79-6f/s540x810/375361ee5b6813fdfd2e42b2bd3c3394c2c75624.gifv")), url("https://64.media.tumblr.com/dbc34ae8aad7f3815c607cb8ac934edd/3c4ae6bd64c3cd79-6f/s540x810/375361ee5b6813fdfd2e42b2bd3c3394c2c75624.gifv");
+  background-position: center 42%;
+}
+
+.bh-bread-card--single .bh-bread-photo--one {
+  background-position: center 34%;
+}
+
+.bh-bread-card--split .bh-bread-photo--one {
+  background-position: center 28%;
+}
+
+.bh-bread-card--split .bh-bread-photo--two {
+  background-position: center 38%;
+}
+
+.bh-bread-comms.bh-bread-comms-card {
+  width: min(100%, 390px);
+  margin: 24px auto;
+}
+
+.bh-bread-comms-avatar-core {
+  background-image: var(--bc-avatar, var(--icon, linear-gradient(135deg, rgba(var(--bc-g1), .82), rgba(var(--bc-g3), .82)))), var(--icon, linear-gradient(135deg, rgba(var(--bc-g1), .82), rgba(var(--bc-g3), .82)));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bh-bread-bud.bh-bread-bud-card {
+  width: min(100%, 440px);
+  margin: 18px auto;
+}
+
+.bh-bread-bud.bh-bread-bud-card--portrait {
+  width: min(100%, 360px);
+}
+
+.bh-bread-bud.bh-bread-bud-card--minimal {
+  width: min(100%, 380px);
+}
+
+.bh-bread-bud.bh-bread-bud-card--strip {
+  width: min(100%, 460px);
+}
+
+.bh-bread-bud-photo {
+  background-color: var(--bd-raised);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bh-bread-bud-photo--one {
+  background-image: var(--bd-img1, url("https://64.media.tumblr.com/4b9f6869cdd371235ba9a12091b546c4/28f1d1e1daf62e6a-a4/s400x600/52382865280e2e0fee3086648869f23a49833f37.gifv")), url("https://64.media.tumblr.com/4b9f6869cdd371235ba9a12091b546c4/28f1d1e1daf62e6a-a4/s400x600/52382865280e2e0fee3086648869f23a49833f37.gifv");
+  background-position: center 34%;
+}
+
+.bh-bread-bud-photo--two {
+  background-image: var(--bd-img2, url("https://64.media.tumblr.com/dbc34ae8aad7f3815c607cb8ac934edd/3c4ae6bd64c3cd79-6f/s540x810/375361ee5b6813fdfd2e42b2bd3c3394c2c75624.gifv")), url("https://64.media.tumblr.com/dbc34ae8aad7f3815c607cb8ac934edd/3c4ae6bd64c3cd79-6f/s540x810/375361ee5b6813fdfd2e42b2bd3c3394c2c75624.gifv");
+  background-position: center 42%;
+}
+
+.bh-bread-bud-card--portrait .bh-bread-bud-photo--one {
+  background-position: center 25%;
+}
+
+.bh-bread-bud-card--strip .bh-bread-bud-photo--one {
+  background-position: center 38%;
+}
+
+@media (max-width: 600px) {
+  .bh-bread.bh-bread-card,
+  .bh-bread.bh-bread-card--split {
+    width: calc(100% - 16px);
+  }
+}
+
+@media (max-width: 500px) {
+  .bh-bread-bud.bh-bread-bud-card,
+  .bh-bread-bud.bh-bread-bud-card--portrait,
+  .bh-bread-bud.bh-bread-bud-card--minimal,
+  .bh-bread-bud.bh-bread-bud-card--strip {
+    width: calc(100% - 12px);
+  }
+}
