@@ -30,10 +30,6 @@ html[data-theme="dark"] .bh-bread-comms {
   box-sizing: border-box;
 }
 
-.bh-bread-comms-text {
-  display: none !important;
-}
-
 .bh-bread-comms-card {
   position: relative;
   width: min(100%, 390px);
@@ -158,14 +154,8 @@ html[data-theme="dark"] .bh-bread-comms {
   scrollbar-width: thin;
 }
 
-.bh-bread-comms-chat::-webkit-scrollbar {
-  width: 5px;
-}
-
-.bh-bread-comms-chat::-webkit-scrollbar-track {
-  background: transparent;
-}
-
+.bh-bread-comms-chat::-webkit-scrollbar { width: 5px; }
+.bh-bread-comms-chat::-webkit-scrollbar-track { background: transparent; }
 .bh-bread-comms-chat::-webkit-scrollbar-thumb {
   border-radius: 99px;
   background: linear-gradient(180deg, rgb(var(--bc-g1)), rgb(var(--bc-g2)), rgb(var(--bc-g3)));
@@ -199,13 +189,8 @@ html[data-theme="dark"] .bh-bread-comms {
   width: 100%;
 }
 
-.bh-bread-comms-row.is-sent {
-  align-items: flex-end;
-}
-
-.bh-bread-comms-row.is-received {
-  align-items: flex-start;
-}
+.bh-bread-comms-row.is-sent { align-items: flex-end; }
+.bh-bread-comms-row.is-received { align-items: flex-start; }
 
 .bh-bread-comms-bubble {
   position: relative;
@@ -232,9 +217,7 @@ html[data-theme="dark"] .bh-bread-comms {
   box-shadow: 0 8px 18px rgba(55, 36, 24, .06);
 }
 
-.bh-bread-comms-bubble p {
-  margin: 0;
-}
+.bh-bread-comms-bubble p { margin: 0; }
 
 .bh-bread-comms-bubble b,
 .bh-bread-comms-bubble strong {
@@ -348,41 +331,12 @@ html[data-theme="dark"] .bh-bread-comms {
   left: 10px;
   width: 15px;
   height: 2px;
-  border-radius: 99px;
   background: #fff;
 }
 
 @media (max-width: 430px) {
-  .bh-bread-comms {
-    margin: 18px auto;
-  }
-
-  .bh-bread-comms-card {
-    width: calc(100% - 14px);
-    border-radius: 21px;
-  }
-
-  .bh-bread-comms-head {
-    padding-inline: 15px;
-  }
-
-  .bh-bread-comms-avatar {
-    width: 46px;
-    height: 46px;
-    flex-basis: 46px;
-  }
-
-  .bh-bread-comms-brand {
-    font-size: 16px;
-  }
-
-  .bh-bread-comms-chat {
-    max-height: 330px;
-    padding-inline: 14px;
-  }
-
-  .bh-bread-comms-bubble {
-    max-width: 87%;
-    font-size: 11.5px;
-  }
+  .bh-bread-comms-card { width: calc(100% - 14px); }
+  .bh-bread-comms-head { padding-inline: 14px; }
+  .bh-bread-comms-chat { max-height: 330px; padding-inline: 13px; }
+  .bh-bread-comms-bubble { max-width: 87%; font-size: 11.5px; }
 }
