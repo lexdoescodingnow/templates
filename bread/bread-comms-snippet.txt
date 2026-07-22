@@ -1,8 +1,40 @@
+SENT
+
 [dohtml]
-<div class="bh-bread-comms" data-avatar="[url]" data-name="[name]" data-time="[time]" data-side="sent">
-  <div class="bh-bread-comms-text">
-    <p>[text]</p>
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread-comms bh-bread-comms-card" style="--bc-avatar:url('[url]');">
+  <div class="bh-bread-comms-head">
+    <div class="bh-bread-comms-avatar"><div class="bh-bread-comms-avatar-core"></div></div>
+    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">[name]</div><div class="bh-bread-comms-status">active on breadline</div></div>
+    <div class="bh-bread-comms-brand">bread</div>
   </div>
+  <div class="bh-bread-comms-chat">
+    <div class="bh-bread-comms-date">[time]</div>
+    <div class="bh-bread-comms-stream">
+      <div class="bh-bread-comms-row is-sent"><div class="bh-bread-comms-bubble">[text]</div><div class="bh-bread-comms-meta">[time] · delivered</div></div>
+    </div>
+  </div>
+  <div class="bh-bread-comms-compose"><div class="bh-bread-comms-input">type something warm...</div><div class="bh-bread-comms-send"></div></div>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-comms.js"></script>
+[/dohtml]
+
+
+RECEIVED
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread-comms bh-bread-comms-card" style="--bc-avatar:url('[url]');">
+  <div class="bh-bread-comms-head">
+    <div class="bh-bread-comms-avatar"><div class="bh-bread-comms-avatar-core"></div></div>
+    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">[name]</div><div class="bh-bread-comms-status">active on breadline</div></div>
+    <div class="bh-bread-comms-brand">bread</div>
+  </div>
+  <div class="bh-bread-comms-chat">
+    <div class="bh-bread-comms-date">[time]</div>
+    <div class="bh-bread-comms-stream">
+      <div class="bh-bread-comms-row is-received"><div class="bh-bread-comms-bubble">[text]</div><div class="bh-bread-comms-meta">[time]</div></div>
+    </div>
+  </div>
+  <div class="bh-bread-comms-compose"><div class="bh-bread-comms-input">type something warm...</div><div class="bh-bread-comms-send"></div></div>
+</div>
 [/dohtml]
