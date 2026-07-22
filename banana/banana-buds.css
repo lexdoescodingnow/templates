@@ -1,0 +1,499 @@
+@font-face {
+  font-family: "Banana Display";
+  src: url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/assets/BananaDisplay-Prototype01.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.bh-bnbud,
+.bh-bnbud * {
+  box-sizing: border-box;
+}
+
+.bh-bnbud {
+  --g1: var(--mgrgb1, 37, 131, 226);
+  --g2: var(--mgrgb2, 111, 186, 255);
+  --g3: var(--mgrgb3, 210, 232, 255);
+  --banana1: 241, 207, 114;
+  --banana2: 210, 164, 73;
+  --page: 255, 253, 248;
+  --panel: 255, 254, 251;
+  --soft: 248, 244, 235;
+  --ink: 48, 38, 29;
+  --muted: 125, 105, 87;
+  --line: 220, 211, 198;
+  position: relative;
+  width: min(100%, 470px);
+  margin: 18px auto;
+  color: rgb(var(--ink));
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  isolation: isolate;
+}
+
+html[color-mode="dark"] .bh-bnbud {
+  --page: 20, 23, 29;
+  --panel: 26, 31, 39;
+  --soft: 23, 27, 34;
+  --ink: 243, 245, 249;
+  --muted: 190, 199, 213;
+  --line: 57, 65, 78;
+}
+
+.bh-bnbud-shell {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(var(--g1), .032), transparent 36%),
+    linear-gradient(325deg, rgba(var(--banana1), .06), transparent 44%),
+    rgb(var(--page));
+  border: 1px solid rgba(var(--line), .82);
+  box-shadow:
+    0 15px 34px rgba(18, 20, 24, .09),
+    inset 0 0 0 3px rgba(255, 255, 255, .22);
+}
+
+html[color-mode="dark"] .bh-bnbud-shell {
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, .28),
+    inset 0 0 0 3px rgba(255, 255, 255, .018);
+}
+
+.bh-bnbud-shell::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -44px;
+  right: -38px;
+  width: 118px;
+  height: 118px;
+  border: 18px solid rgba(var(--banana1), .075);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.bh-bnbud-top,
+.bh-bnbud-head,
+.bh-bnbud-copy,
+.bh-bnbud-foot,
+.bh-bnbud-media,
+.bh-bnbud-duo,
+.bh-bnbud-body {
+  position: relative;
+  z-index: 1;
+}
+
+.bh-bnbud-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bh-bnbud-mark {
+  display: inline-block;
+  margin: 0;
+  color: transparent;
+  background-image: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)) 48%, rgb(var(--g3)) 82%, rgb(var(--banana1)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Banana Display", "Times New Roman", Georgia, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-synthesis: none;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
+  font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "ss01" 1;
+  letter-spacing: .01em;
+  line-height: .8;
+}
+
+.bh-bnbud-name {
+  display: block;
+  margin-top: 4px;
+  overflow: hidden;
+  color: rgb(var(--muted));
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1.45px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.bh-bnbud-limit {
+  color: rgb(var(--muted));
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 1.15px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.bh-bnbud-open {
+  display: grid;
+  place-items: center;
+  flex: 0 0 27px;
+  width: 27px;
+  height: 27px;
+  color: rgb(var(--g2));
+  background: rgba(var(--panel), .82);
+  border: 1px solid rgba(var(--line), .78);
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.bh-bnbud-open:hover {
+  color: rgb(var(--panel));
+  background: rgb(var(--g2));
+  border-color: rgb(var(--g2));
+  transform: translateY(-2px);
+}
+
+.bh-bnbud-media,
+.bh-bnbud-avatar,
+.bh-bnbud-duo span {
+  overflow: hidden;
+  background: rgb(var(--soft));
+  border: 1px solid rgba(var(--line), .8);
+  box-shadow: 0 7px 16px rgba(18, 20, 24, .06);
+}
+
+.bh-bnbud-media img,
+.bh-bnbud-avatar img,
+.bh-bnbud-duo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.94) contrast(1.02);
+}
+
+.bh-bnbud-copy {
+  color: rgb(var(--ink));
+  font-size: 11px;
+  line-height: 1.62;
+}
+
+.bh-bnbud-copy p {
+  margin: 0;
+}
+
+.bh-bnbud-copy b,
+.bh-bnbud-copy strong,
+.bh-bnbud-copy i,
+.bh-bnbud-copy em,
+.bh-bnbud-copy u {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.bh-bnbud-copy b,
+.bh-bnbud-copy strong {
+  background-image: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+}
+
+.bh-bnbud-copy i,
+.bh-bnbud-copy em {
+  background-image: linear-gradient(90deg, rgb(var(--g3)), rgb(var(--g2)), rgb(var(--g1)));
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.bh-bnbud-copy u {
+  background-image: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  text-decoration-line: underline;
+  text-decoration-color: rgba(var(--g2), .64);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.bh-bnbud-copy a {
+  color: transparent;
+  background-image: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid rgba(var(--g2), .35);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.bh-bnbud-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: rgb(var(--muted));
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 1.1px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.bh-bnbud-foot i {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: rgb(var(--banana2));
+  border-radius: 50%;
+}
+
+.bh-bnbud-peel {
+  width: min(100%, 460px);
+}
+
+.bh-bnbud-peel .bh-bnbud-shell {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 12px;
+  padding: 11px;
+  border-radius: 44px 21px 21px 44px;
+}
+
+.bh-bnbud-peel .bh-bnbud-media {
+  min-height: 154px;
+  border-radius: 35px 13px 13px 35px;
+}
+
+.bh-bnbud-peel .bh-bnbud-body {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.bh-bnbud-peel .bh-bnbud-top {
+  padding: 4px 3px 8px;
+}
+
+.bh-bnbud-peel .bh-bnbud-copy {
+  flex: 1;
+  padding: 11px 13px 12px;
+  background: rgba(var(--panel), .84);
+  border: 1px solid rgba(var(--line), .72);
+  border-radius: 13px;
+}
+
+.bh-bnbud-peel .bh-bnbud-foot {
+  padding: 9px 4px 2px;
+}
+
+.bh-bnbud-pocket {
+  width: min(100%, 385px);
+}
+
+.bh-bnbud-pocket .bh-bnbud-shell {
+  padding: 13px 14px 14px;
+  border-radius: 28px 28px 54px 28px;
+}
+
+.bh-bnbud-pocket .bh-bnbud-head {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr) 27px;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 11px;
+}
+
+.bh-bnbud-pocket .bh-bnbud-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 17px 30px 17px 30px;
+}
+
+.bh-bnbud-pocket .bh-bnbud-avatar img {
+  border-radius: 15px 28px 15px 28px;
+}
+
+.bh-bnbud-pocket .bh-bnbud-copy {
+  padding: 14px 16px 15px;
+  background: rgba(var(--panel), .88);
+  border: 1px solid rgba(var(--line), .74);
+  border-radius: 15px 15px 34px 15px;
+}
+
+.bh-bnbud-pocket .bh-bnbud-foot {
+  padding: 10px 3px 0;
+}
+
+.bh-bnbud-shoot {
+  width: min(100%, 440px);
+}
+
+.bh-bnbud-shoot .bh-bnbud-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 92px;
+  grid-template-areas:
+    "top media"
+    "copy media"
+    "foot media";
+  gap: 0 12px;
+  padding: 12px;
+  border-radius: 22px 52px 52px 22px;
+}
+
+.bh-bnbud-shoot .bh-bnbud-top {
+  grid-area: top;
+  padding: 3px 2px 9px;
+}
+
+.bh-bnbud-shoot .bh-bnbud-copy {
+  grid-area: copy;
+  padding: 12px 14px;
+  background: rgba(var(--panel), .86);
+  border: 1px solid rgba(var(--line), .72);
+  border-radius: 14px;
+}
+
+.bh-bnbud-shoot .bh-bnbud-foot {
+  grid-area: foot;
+  padding: 9px 3px 2px;
+}
+
+.bh-bnbud-shoot .bh-bnbud-media {
+  grid-area: media;
+  min-height: 176px;
+  border-radius: 14px 42px 42px 14px;
+}
+
+.bh-bnbud-twin {
+  width: min(100%, 410px);
+}
+
+.bh-bnbud-twin .bh-bnbud-shell {
+  padding: 13px 15px 14px;
+  border-radius: 38px;
+}
+
+.bh-bnbud-twin .bh-bnbud-top {
+  padding: 2px 3px 10px;
+}
+
+.bh-bnbud-twin .bh-bnbud-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.bh-bnbud-twin .bh-bnbud-duo span {
+  height: 84px;
+}
+
+.bh-bnbud-twin .bh-bnbud-duo span:first-child {
+  border-radius: 28px 12px 12px 28px;
+}
+
+.bh-bnbud-twin .bh-bnbud-duo span:last-child {
+  border-radius: 12px 28px 28px 12px;
+}
+
+.bh-bnbud-twin .bh-bnbud-copy {
+  padding: 13px 15px 14px;
+  background: rgba(var(--panel), .88);
+  border: 1px solid rgba(var(--line), .74);
+  border-radius: 16px;
+}
+
+.bh-bnbud-twin .bh-bnbud-foot {
+  padding: 10px 3px 0;
+}
+
+.bh-bnbud-note {
+  width: min(100%, 360px);
+}
+
+.bh-bnbud-note .bh-bnbud-shell {
+  padding: 12px 14px 13px;
+  border-radius: 18px 18px 38px 18px;
+}
+
+.bh-bnbud-note .bh-bnbud-head {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) 27px;
+  gap: 9px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.bh-bnbud-note .bh-bnbud-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.bh-bnbud-note .bh-bnbud-mark {
+  font-size: 28px;
+}
+
+.bh-bnbud-note .bh-bnbud-copy {
+  padding: 12px 14px;
+  background: rgba(var(--panel), .88);
+  border: 1px solid rgba(var(--line), .72);
+  border-radius: 13px 13px 28px 13px;
+}
+
+.bh-bnbud-note .bh-bnbud-foot {
+  padding: 9px 2px 0;
+}
+
+@media (max-width: 470px) {
+  .bh-bnbud {
+    width: min(100%, 100%);
+  }
+
+  .bh-bnbud-peel .bh-bnbud-shell,
+  .bh-bnbud-shoot .bh-bnbud-shell {
+    grid-template-columns: 70px minmax(0, 1fr);
+    grid-template-areas: none;
+    border-radius: 34px 18px 18px 34px;
+  }
+
+  .bh-bnbud-peel .bh-bnbud-media,
+  .bh-bnbud-shoot .bh-bnbud-media {
+    grid-area: auto;
+    min-height: 150px;
+    border-radius: 28px 12px 12px 28px;
+  }
+
+  .bh-bnbud-shoot .bh-bnbud-top,
+  .bh-bnbud-shoot .bh-bnbud-copy,
+  .bh-bnbud-shoot .bh-bnbud-foot {
+    grid-area: auto;
+  }
+
+  .bh-bnbud-shoot .bh-bnbud-shell {
+    display: grid;
+  }
+
+  .bh-bnbud-shoot .bh-bnbud-media {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+
+  .bh-bnbud-shoot .bh-bnbud-top,
+  .bh-bnbud-shoot .bh-bnbud-copy,
+  .bh-bnbud-shoot .bh-bnbud-foot {
+    grid-column: 2;
+  }
+
+  .bh-bnbud-mark {
+    font-size: 29px;
+  }
+
+  .bh-bnbud-copy {
+    font-size: 10.5px;
+  }
+}
