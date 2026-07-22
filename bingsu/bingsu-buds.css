@@ -1,0 +1,535 @@
+@font-face {
+	font-family: "Bingsu Script";
+	src:
+		url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/assets/fonts/BingsuScript-Regular.woff2") format("woff2"),
+		url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/assets/fonts/BingsuScript-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+.bh-bud,
+.bh-bud * {
+	box-sizing: border-box;
+}
+
+.bh-bud {
+	--g1: var(--mgrgb1, 106, 139, 206);
+	--g2: var(--mgrgb2, 34, 147, 214);
+	--g3: var(--mgrgb3, 222, 132, 177);
+	--page: 241, 247, 255;
+	--panel: 255, 255, 255;
+	--panel2: 231, 240, 253;
+	--ink: 34, 44, 63;
+	--muted: 108, 121, 146;
+	--line: 188, 204, 230;
+	position: relative;
+	width: min(100%, 490px);
+	margin: 20px auto;
+	color: rgb(var(--ink));
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	isolation: isolate;
+}
+
+html[color-mode="dark"] .bh-bud {
+	--page: 17, 23, 34;
+	--panel: 24, 31, 45;
+	--panel2: 32, 44, 63;
+	--ink: 238, 243, 255;
+	--muted: 168, 181, 205;
+	--line: 63, 80, 109;
+}
+
+.bh-bud-shell {
+	position: relative;
+	overflow: hidden;
+	background:
+		linear-gradient(145deg, rgba(var(--g1), .13), transparent 34%),
+		linear-gradient(325deg, rgba(var(--g3), .11), transparent 38%),
+		rgb(var(--page));
+	border: 1px solid rgba(var(--g2), .4);
+	box-shadow:
+		0 18px 42px rgba(20, 37, 72, .14),
+		inset 0 0 0 5px rgba(255, 255, 255, .3);
+}
+
+html[color-mode="dark"] .bh-bud-shell {
+	box-shadow:
+		0 18px 46px rgba(0, 0, 0, .38),
+		inset 0 0 0 5px rgba(255, 255, 255, .025);
+}
+
+.bh-bud-shell::before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	top: -48px;
+	left: -7%;
+	width: 114%;
+	height: 132px;
+	background:
+		radial-gradient(circle at 15% 45%, rgba(var(--g1), .5) 0 6px, transparent 7px),
+		radial-gradient(circle at 79% 40%, rgba(var(--g2), .42) 0 8px, transparent 9px),
+		radial-gradient(circle at 70% 68%, rgba(var(--g3), .36) 0 5px, transparent 6px),
+		linear-gradient(105deg, rgba(var(--g1), .48), rgba(var(--g2), .4), rgba(var(--g3), .36));
+	clip-path: polygon(0 0, 100% 0, 100% 43%, 88% 61%, 74% 44%, 61% 66%, 47% 46%, 34% 65%, 20% 44%, 8% 61%, 0 48%);
+	opacity: .52;
+}
+
+.bh-bud-shell::after {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	right: -34px;
+	bottom: -35px;
+	width: 120px;
+	height: 120px;
+	border: 19px solid rgba(var(--g2), .08);
+	border-radius: 50%;
+}
+
+.bh-bud-top,
+.bh-bud-head,
+.bh-bud-copy,
+.bh-bud-foot,
+.bh-bud-media,
+.bh-bud-duo {
+	position: relative;
+	z-index: 1;
+}
+
+.bh-bud-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 13px 17px 8px;
+}
+
+.bh-bud-mark {
+	color: rgb(var(--g2));
+	font-family: "Bingsu Script", "Brush Script MT", "Segoe Script", cursive;
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.bh-bud-limit {
+	color: rgb(var(--muted));
+	font-size: 7px;
+	font-weight: 900;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+}
+
+.bh-bud-head {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.bh-bud-name {
+	min-width: 0;
+	margin: 0;
+	color: rgb(var(--g2));
+	font-family: "Bingsu Script", "Brush Script MT", "Segoe Script", cursive;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	font-synthesis: none;
+	font-variant-ligatures: common-ligatures discretionary-ligatures;
+	font-feature-settings: "liga" 1, "dlig" 1, "salt" 1, "ss01" 1;
+	line-height: .9;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 1px 2px 0 rgba(var(--g1), .14);
+}
+
+.bh-bud-sub {
+	display: block;
+	margin-top: 5px;
+	color: rgb(var(--muted));
+	font-size: 8px;
+	font-weight: 900;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+}
+
+.bh-bud-avatar {
+	position: relative;
+	flex: 0 0 auto;
+	overflow: hidden;
+	background:
+		linear-gradient(rgb(var(--panel)), rgb(var(--panel))) padding-box,
+		conic-gradient(rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)), rgb(var(--g1))) border-box;
+	border: 2px solid transparent;
+	box-shadow: 0 8px 18px rgba(20, 37, 70, .13);
+}
+
+.bh-bud-avatar img,
+.bh-bud-media img,
+.bh-bud-duo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: saturate(.92) contrast(1.03);
+}
+
+.bh-bud-copy {
+	color: rgb(var(--ink));
+	font-size: 12px;
+	line-height: 1.65;
+}
+
+.bh-bud-copy p {
+	margin: 0;
+}
+
+.bh-bud-copy b,
+.bh-bud-copy strong {
+	color: rgb(var(--g1));
+	font-weight: 900;
+}
+
+.bh-bud-copy i,
+.bh-bud-copy em {
+	color: rgb(var(--g2));
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+}
+
+.bh-bud-copy u {
+	color: rgb(var(--g3));
+	text-decoration-color: rgba(var(--g3), .9);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+.bh-bud-foot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	color: rgb(var(--muted));
+	font-size: 7px;
+	font-weight: 900;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+}
+
+.bh-bud-flavours {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.bh-bud-flavours span {
+	font-family: "Bingsu Script", "Brush Script MT", "Segoe Script", cursive;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: lowercase;
+}
+
+.bh-bud-flavours span:nth-of-type(1) {
+	color: rgb(var(--g1));
+}
+
+.bh-bud-flavours span:nth-of-type(2) {
+	color: rgb(var(--g2));
+}
+
+.bh-bud-flavours span:nth-of-type(3) {
+	color: rgb(var(--g3));
+}
+
+.bh-bud-flavours i {
+	width: 3px;
+	height: 3px;
+	background: rgb(var(--g2));
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px rgba(var(--g2), .1);
+}
+
+.bh-bud-open {
+	display: grid;
+	place-items: center;
+	flex: 0 0 29px;
+	width: 29px;
+	height: 29px;
+	color: rgb(var(--g2));
+	background: rgba(var(--panel), .8);
+	border: 1px solid rgba(var(--g2), .34);
+	border-radius: 50%;
+	font-size: 12px;
+	font-weight: 900;
+	text-decoration: none;
+	transition: .25s ease;
+}
+
+.bh-bud-open:hover {
+	color: rgb(var(--panel));
+	background: rgb(var(--g2));
+	transform: translateY(-2px) rotate(7deg);
+}
+
+.bh-bud-snowcap {
+	width: min(100%, 470px);
+}
+
+.bh-bud-snowcap .bh-bud-shell {
+	padding: 0 18px 16px;
+	border-radius: 28px 28px 62px 28px;
+}
+
+.bh-bud-snowcap .bh-bud-head {
+	padding: 10px 2px 13px;
+}
+
+.bh-bud-snowcap .bh-bud-avatar {
+	width: 72px;
+	height: 72px;
+	border-radius: 18px 38px 18px 38px;
+}
+
+.bh-bud-snowcap .bh-bud-avatar img {
+	border-radius: 14px 34px 14px 34px;
+}
+
+.bh-bud-snowcap .bh-bud-copy {
+	padding: 17px 20px 18px;
+	background: rgba(var(--panel), .9);
+	border: 1px solid rgba(var(--line), .78);
+	border-radius: 17px 17px 38px 17px;
+	box-shadow: 0 11px 24px rgba(20, 37, 70, .08);
+}
+
+.bh-bud-snowcap .bh-bud-foot {
+	padding: 13px 4px 0;
+}
+
+.bh-bud-sprig {
+	width: min(100%, 430px);
+}
+
+.bh-bud-sprig .bh-bud-shell {
+	display: grid;
+	grid-template-columns: 92px minmax(0, 1fr);
+	grid-template-areas:
+		"media top"
+		"media head"
+		"media copy"
+		"media foot";
+	gap: 0;
+	padding: 12px;
+	border-radius: 54px 25px 25px 54px;
+}
+
+.bh-bud-sprig .bh-bud-media {
+	grid-area: media;
+	min-height: 210px;
+	overflow: hidden;
+	border: 1px solid rgba(var(--line), .8);
+	border-radius: 43px 15px 15px 43px;
+}
+
+.bh-bud-sprig .bh-bud-top {
+	grid-area: top;
+	padding: 7px 12px 4px 16px;
+}
+
+.bh-bud-sprig .bh-bud-head {
+	grid-area: head;
+	padding: 6px 16px 8px;
+}
+
+.bh-bud-sprig .bh-bud-name {
+	font-size: 32px;
+}
+
+.bh-bud-sprig .bh-bud-copy {
+	grid-area: copy;
+	padding: 11px 16px 12px;
+}
+
+.bh-bud-sprig .bh-bud-foot {
+	grid-area: foot;
+	padding: 7px 12px 6px 16px;
+}
+
+.bh-bud-sprig .bh-bud-flavours span {
+	font-size: 14px;
+}
+
+.bh-bud-dewdrop {
+	width: min(100%, 420px);
+}
+
+.bh-bud-dewdrop .bh-bud-shell {
+	padding: 16px 22px 19px;
+	border-radius: 72px;
+}
+
+.bh-bud-dewdrop .bh-bud-top {
+	padding: 0 6px 7px;
+}
+
+.bh-bud-dewdrop .bh-bud-head {
+	justify-content: center;
+	padding: 5px 0 12px;
+	text-align: center;
+}
+
+.bh-bud-dewdrop .bh-bud-avatar {
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+}
+
+.bh-bud-dewdrop .bh-bud-avatar img {
+	border-radius: 50%;
+}
+
+.bh-bud-dewdrop .bh-bud-copy {
+	padding: 18px 24px;
+	background: rgba(var(--panel), .9);
+	border: 1px solid rgba(var(--line), .78);
+	border-radius: 44px;
+	box-shadow: 0 11px 24px rgba(20, 37, 70, .08);
+	text-align: center;
+}
+
+.bh-bud-dewdrop .bh-bud-foot {
+	justify-content: center;
+	padding-top: 12px;
+}
+
+.bh-bud-duet {
+	width: min(100%, 470px);
+}
+
+.bh-bud-duet .bh-bud-shell {
+	padding: 0 18px 17px;
+	border-radius: 26px 26px 66px 66px;
+}
+
+.bh-bud-duet .bh-bud-head {
+	justify-content: center;
+	padding: 7px 0 10px;
+	text-align: center;
+}
+
+.bh-bud-duet .bh-bud-duo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	margin-bottom: 10px;
+}
+
+.bh-bud-duet .bh-bud-duo img {
+	height: 92px;
+	border: 1px solid rgba(var(--line), .8);
+}
+
+.bh-bud-duet .bh-bud-duo img:first-child {
+	border-radius: 14px 38px 14px 38px;
+}
+
+.bh-bud-duet .bh-bud-duo img:last-child {
+	border-radius: 38px 14px 38px 14px;
+}
+
+.bh-bud-duet .bh-bud-copy {
+	padding: 16px 19px 17px;
+	background: rgba(var(--panel), .9);
+	border: 1px solid rgba(var(--line), .78);
+	border-radius: 15px 15px 38px 38px;
+}
+
+.bh-bud-duet .bh-bud-foot {
+	padding: 12px 3px 0;
+}
+
+.bh-bud-note {
+	width: min(100%, 400px);
+}
+
+.bh-bud-note .bh-bud-shell {
+	padding: 0 20px 18px;
+	border-radius: 24px 52px 24px 52px;
+}
+
+.bh-bud-note .bh-bud-head {
+	padding: 9px 2px 11px;
+}
+
+.bh-bud-note .bh-bud-name {
+	font-size: 34px;
+}
+
+.bh-bud-note .bh-bud-copy {
+	padding: 20px 21px 22px;
+	background:
+		linear-gradient(180deg, rgba(var(--panel), .96), rgba(var(--panel), .84)),
+		rgb(var(--panel));
+	border: 1px solid rgba(var(--line), .8);
+	border-radius: 16px 38px 16px 38px;
+	box-shadow: 0 11px 24px rgba(20, 37, 70, .08);
+}
+
+.bh-bud-note .bh-bud-copy::before {
+	content: "quick volley";
+	display: block;
+	margin-bottom: 11px;
+	padding-bottom: 8px;
+	color: rgb(var(--muted));
+	border-bottom: 1px solid rgba(var(--line), .7);
+	font-size: 7px;
+	font-weight: 900;
+	letter-spacing: 1.5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.bh-bud-note .bh-bud-foot {
+	padding: 12px 3px 0;
+}
+
+@media (max-width: 500px) {
+	.bh-bud {
+		width: min(100%, 420px);
+	}
+
+	.bh-bud-name {
+		font-size: 31px;
+	}
+
+	.bh-bud-sprig .bh-bud-shell {
+		grid-template-columns: 76px minmax(0, 1fr);
+		border-radius: 44px 22px 22px 44px;
+	}
+
+	.bh-bud-sprig .bh-bud-media {
+		min-height: 220px;
+		border-radius: 35px 13px 13px 35px;
+	}
+
+	.bh-bud-sprig .bh-bud-copy {
+		padding-right: 12px;
+		padding-left: 14px;
+	}
+
+	.bh-bud-dewdrop .bh-bud-shell {
+		border-radius: 48px;
+	}
+
+	.bh-bud-duet .bh-bud-duo img {
+		height: 82px;
+	}
+}
