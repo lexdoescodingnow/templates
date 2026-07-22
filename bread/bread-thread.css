@@ -163,22 +163,6 @@ html[data-theme="dark"] .bh-bread {
   background: rgba(var(--br-g2), .07);
 }
 
-.bh-bread-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(.91) contrast(1.04);
-}
-
-.bh-bread-photo:first-child img {
-  object-position: center 30%;
-}
-
-.bh-bread-photo:last-child img {
-  object-position: center 42%;
-}
-
 .bh-bread-photo:last-child::after {
   content: "";
   position: absolute;
