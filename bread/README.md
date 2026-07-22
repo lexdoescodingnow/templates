@@ -22,13 +22,15 @@ All five complete copy-ready versions are stored in `bread-thread-snippet.txt`.
 
 ## Breadline Comms
 
-Breadline is the matching quick-message component. It supports an animated avatar or the member icon, sent and received message alignment, a time stamp, a fixed-height scrolling conversation area, and the same member-gradient formatting as the thread set.
+Breadline is the matching quick-message component. It supports an animated avatar or the member icon, sent and received message alignment, an editable time stamp, a genuinely scrollable conversation area, and the same member-gradient formatting as the thread set.
 
 The sent and received copy-ready versions are stored in `bread-comms-snippet.txt`. Additional messages can be added by copying a complete `.bh-bread-comms-row` block and choosing either `is-sent` or `is-received`.
 
+The template does not display fake online, delivery, compose, or send controls. These were removed because a JCink post cannot provide those functions.
+
 ## Bread Buds
 
-Buds are compact quick-reply templates designed to encourage replies of 100 words or fewer. The CSS-only edition keeps the limit visible in the footer without hiding, truncating, or programmatically changing the reply.
+Buds are compact quick-reply templates designed to encourage replies of 100 words or fewer. The target is presented as a simple header reminder; the templates do not claim to count, restrict, truncate, or assess the reply.
 
 The set contains five layouts:
 
