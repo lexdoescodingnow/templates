@@ -1,0 +1,562 @@
+@font-face {
+	font-family: "Bingsu Script";
+	src:
+		url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/assets/fonts/BingsuScript-Regular.woff2") format("woff2"),
+		url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/assets/fonts/BingsuScript-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+.bh-bingsu-comms,
+.bh-bingsu-comms * {
+	box-sizing: border-box;
+}
+
+.bh-bingsu-comms {
+	--g1: var(--mgrgb1, 106, 139, 206);
+	--g2: var(--mgrgb2, 34, 147, 214);
+	--g3: var(--mgrgb3, 222, 132, 177);
+	--page: 240, 247, 255;
+	--shell: 255, 255, 255;
+	--panel: 249, 252, 255;
+	--bubble: 231, 240, 253;
+	--ink: 34, 44, 63;
+	--muted: 111, 124, 149;
+	--line: 188, 204, 230;
+	position: relative;
+	width: min(100%, 448px);
+	margin: 24px auto;
+	padding: 13px;
+	overflow: hidden;
+	color: rgb(var(--ink));
+	background:
+		linear-gradient(145deg, rgba(var(--g1), .25), transparent 35%),
+		linear-gradient(325deg, rgba(var(--g3), .18), transparent 38%),
+		rgb(var(--page));
+	border: 1px solid rgba(var(--g2), .42);
+	border-radius: 42px;
+	box-shadow:
+		0 25px 62px rgba(20, 37, 72, .18),
+		inset 0 0 0 5px rgba(255, 255, 255, .35);
+	font-family: Arial, Helvetica, sans-serif;
+	isolation: isolate;
+}
+
+.bh-bingsu-comms::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: -57px;
+	left: -9%;
+	width: 118%;
+	height: 210px;
+	background:
+		radial-gradient(circle at 13% 42%, rgba(var(--g1), .52) 0 8px, transparent 9px),
+		radial-gradient(circle at 82% 34%, rgba(var(--g2), .42) 0 11px, transparent 12px),
+		radial-gradient(circle at 74% 65%, rgba(var(--g3), .38) 0 7px, transparent 8px),
+		linear-gradient(108deg, rgba(var(--g1), .52), rgba(var(--g2), .45), rgba(var(--g3), .42));
+	clip-path: polygon(0 0, 100% 0, 100% 52%, 89% 66%, 78% 51%, 65% 70%, 51% 53%, 38% 72%, 24% 50%, 11% 67%, 0 54%);
+	opacity: .58;
+}
+
+.bh-bingsu-comms::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	right: -54px;
+	bottom: -58px;
+	width: 185px;
+	height: 185px;
+	border: 26px solid rgba(var(--g2), .09);
+	border-radius: 50%;
+	box-shadow:
+		-325px -485px 0 -63px rgba(var(--g1), .14),
+		-355px -212px 0 -72px rgba(var(--g3), .13),
+		-154px -145px 0 -67px rgba(var(--g2), .1);
+}
+
+html[color-mode="dark"] .bh-bingsu-comms {
+	--page: 17, 23, 34;
+	--shell: 23, 30, 44;
+	--panel: 26, 34, 49;
+	--bubble: 34, 46, 65;
+	--ink: 238, 243, 255;
+	--muted: 168, 181, 205;
+	--line: 63, 80, 109;
+	background:
+		linear-gradient(145deg, rgba(var(--g1), .2), transparent 35%),
+		linear-gradient(325deg, rgba(var(--g3), .15), transparent 38%),
+		rgb(var(--page));
+	border-color: rgba(var(--g2), .54);
+	box-shadow:
+		0 25px 65px rgba(0, 0, 0, .43),
+		inset 0 0 0 5px rgba(255, 255, 255, .025);
+}
+
+.bh-bingsu-comms-shell {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	background: rgba(var(--shell), .92);
+	border: 1px solid rgba(var(--line), .78);
+	border-radius: 32px;
+	box-shadow: 0 15px 36px rgba(22, 39, 72, .1);
+	backdrop-filter: blur(8px);
+}
+
+.bh-bingsu-comms-topline {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 11px 18px 7px;
+	color: rgb(var(--muted));
+	font-size: 8px;
+	font-weight: 900;
+	letter-spacing: 1.7px;
+	text-transform: uppercase;
+}
+
+.bh-bingsu-comms-topline span:first-child {
+	font-family: "Bingsu Script", "Brush Script MT", "Segoe Script", cursive;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	font-synthesis: none;
+	letter-spacing: .02em;
+	line-height: 1;
+	text-transform: lowercase;
+	color: rgb(var(--g2));
+}
+
+.bh-bingsu-comms-signal {
+	display: flex;
+	align-items: flex-end;
+	gap: 2px;
+	height: 12px;
+}
+
+.bh-bingsu-comms-signal i {
+	display: block;
+	width: 3px;
+	background: rgb(var(--g2));
+	border-radius: 999px;
+}
+
+.bh-bingsu-comms-signal i:nth-child(1) {
+	height: 4px;
+}
+
+.bh-bingsu-comms-signal i:nth-child(2) {
+	height: 7px;
+}
+
+.bh-bingsu-comms-signal i:nth-child(3) {
+	height: 10px;
+}
+
+.bh-bingsu-comms-header {
+	display: grid;
+	grid-template-columns: 66px minmax(0, 1fr) auto;
+	gap: 13px;
+	align-items: center;
+	padding: 13px 18px 17px;
+	border-bottom: 1px solid rgba(var(--line), .72);
+	background:
+		linear-gradient(135deg, rgba(var(--g1), .09), rgba(var(--g3), .07)),
+		rgba(var(--panel), .76);
+}
+
+.bh-bingsu-comms-avatar {
+	position: relative;
+	width: 66px;
+	height: 66px;
+	padding: 4px;
+	border-radius: 50%;
+	background:
+		linear-gradient(rgb(var(--shell)), rgb(var(--shell))) padding-box,
+		conic-gradient(rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)), rgb(var(--g1))) border-box;
+	border: 2px solid transparent;
+	box-shadow: 0 8px 18px rgba(20, 37, 70, .13);
+}
+
+.bh-bingsu-comms-avatar::after {
+	content: "";
+	position: absolute;
+	right: 1px;
+	bottom: 3px;
+	width: 13px;
+	height: 13px;
+	background: rgb(var(--g2));
+	border: 3px solid rgb(var(--shell));
+	border-radius: 50%;
+}
+
+.bh-bingsu-comms-avatar img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	filter: saturate(.9) contrast(1.03);
+}
+
+.bh-bingsu-comms-person {
+	min-width: 0;
+}
+
+.bh-bingsu-comms-name {
+	margin: 0;
+	color: rgb(var(--g2));
+	font-family: "Bingsu Script", "Brush Script MT", "Segoe Script", cursive;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 400;
+	font-synthesis: none;
+	font-variant-ligatures: common-ligatures discretionary-ligatures;
+	font-feature-settings: "liga" 1, "dlig" 1, "salt" 1, "ss01" 1;
+	letter-spacing: .01em;
+	line-height: .88;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 1px 2px 0 rgba(var(--g1), .14);
+}
+
+.bh-bingsu-comms-status {
+	display: block;
+	margin-top: 6px;
+	color: rgb(var(--muted));
+	font-size: 9px;
+	font-weight: 800;
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.bh-bingsu-comms-open {
+	display: grid;
+	place-items: center;
+	width: 35px;
+	height: 35px;
+	color: rgb(var(--g2));
+	background: rgba(var(--shell), .82);
+	border: 1px solid rgba(var(--g2), .34);
+	border-radius: 50%;
+	font-size: 14px;
+	font-weight: 900;
+	text-decoration: none;
+	transition: .25s ease;
+}
+
+.bh-bingsu-comms-open:hover {
+	color: rgb(var(--shell));
+	background: rgb(var(--g2));
+	transform: translateY(-2px) rotate(6deg);
+}
+
+.bh-bingsu-comms-date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 9px;
+	padding: 14px 20px 5px;
+	color: rgb(var(--muted));
+	font-size: 8px;
+	font-weight: 900;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+}
+
+.bh-bingsu-comms-date::before,
+.bh-bingsu-comms-date::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(var(--line), .9));
+}
+
+.bh-bingsu-comms-date::after {
+	background: linear-gradient(90deg, rgba(var(--line), .9), transparent);
+}
+
+.bh-bingsu-comms-chat {
+	position: relative;
+	max-height: 455px;
+	padding: 18px 18px 24px;
+	overflow-y: auto;
+	background:
+		radial-gradient(circle at 14% 15%, rgba(var(--g1), .08) 0 5px, transparent 6px),
+		radial-gradient(circle at 88% 39%, rgba(var(--g3), .08) 0 6px, transparent 7px),
+		linear-gradient(180deg, rgba(var(--panel), .96), rgba(var(--panel), .76));
+	scrollbar-width: thin;
+	scrollbar-color: rgb(var(--g2)) rgba(var(--line), .28);
+}
+
+.bh-bingsu-comms-chat::-webkit-scrollbar {
+	width: 7px;
+}
+
+.bh-bingsu-comms-chat::-webkit-scrollbar-track {
+	background: rgba(var(--line), .26);
+	border-radius: 999px;
+}
+
+.bh-bingsu-comms-chat::-webkit-scrollbar-thumb {
+	background: linear-gradient(rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+	border: 2px solid rgba(var(--panel), .9);
+	border-radius: 999px;
+}
+
+.bh-bingsu-comms-row {
+	display: flex;
+	margin: 0 0 10px;
+}
+
+.bh-bingsu-comms-row:last-child {
+	margin-bottom: 0;
+}
+
+.bh-bingsu-comms-row-in {
+	justify-content: flex-start;
+}
+
+.bh-bingsu-comms-row-out {
+	justify-content: flex-end;
+}
+
+.bh-bingsu-comms-bubble {
+	position: relative;
+	max-width: 78%;
+	padding: 11px 14px 10px;
+	font-size: 12px;
+	line-height: 1.55;
+	text-align: left;
+	word-wrap: break-word;
+}
+
+.bh-bingsu-comms-row-in .bh-bingsu-comms-bubble {
+	color: rgb(var(--ink));
+	background: rgb(var(--bubble));
+	border: 1px solid rgba(var(--line), .72);
+	border-radius: 8px 18px 18px 18px;
+	box-shadow: 0 7px 15px rgba(24, 41, 73, .07);
+}
+
+.bh-bingsu-comms-row-out .bh-bingsu-comms-bubble {
+	color: #fff;
+	background:
+		linear-gradient(135deg, rgba(var(--g1), .96), rgba(var(--g2), .96) 58%, rgba(var(--g3), .9));
+	border: 1px solid rgba(var(--g2), .62);
+	border-radius: 18px 8px 18px 18px;
+	box-shadow: 0 8px 18px rgba(var(--g2), .18);
+}
+
+.bh-bingsu-comms-bubble b,
+.bh-bingsu-comms-bubble strong {
+	color: rgb(var(--g1));
+	font-weight: 900;
+}
+
+.bh-bingsu-comms-bubble i,
+.bh-bingsu-comms-bubble em {
+	color: rgb(var(--g2));
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+}
+
+.bh-bingsu-comms-bubble u {
+	color: rgb(var(--g3));
+	text-decoration-color: rgba(var(--g3), .95);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+.bh-bingsu-comms-row-out .bh-bingsu-comms-bubble b,
+.bh-bingsu-comms-row-out .bh-bingsu-comms-bubble strong,
+.bh-bingsu-comms-row-out .bh-bingsu-comms-bubble i,
+.bh-bingsu-comms-row-out .bh-bingsu-comms-bubble em,
+.bh-bingsu-comms-row-out .bh-bingsu-comms-bubble u {
+	color: #fff;
+	text-decoration-color: rgba(255, 255, 255, .82);
+}
+
+.bh-bingsu-comms-time {
+	display: block;
+	margin-top: 5px;
+	color: rgb(var(--muted));
+	font-size: 7px;
+	font-weight: 900;
+	letter-spacing: .8px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.bh-bingsu-comms-row-out .bh-bingsu-comms-time {
+	color: rgba(255, 255, 255, .72);
+}
+
+.bh-bingsu-comms-media {
+	max-width: 72%;
+	padding: 6px;
+	overflow: hidden;
+	background: rgba(var(--shell), .88);
+	border: 1px solid rgba(var(--line), .8);
+	border-radius: 20px 8px 20px 20px;
+	box-shadow: 0 9px 20px rgba(20, 37, 70, .11);
+}
+
+.bh-bingsu-comms-media img {
+	display: block;
+	width: 100%;
+	max-height: 220px;
+	border-radius: 15px 5px 15px 15px;
+	object-fit: cover;
+}
+
+.bh-bingsu-comms-typing {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	width: fit-content;
+	margin-top: 12px;
+	padding: 9px 12px;
+	background: rgba(var(--bubble), .78);
+	border: 1px solid rgba(var(--line), .65);
+	border-radius: 8px 18px 18px 18px;
+}
+
+.bh-bingsu-comms-typing span {
+	width: 5px;
+	height: 5px;
+	background: rgb(var(--g2));
+	border-radius: 50%;
+	animation: bh-bingsu-comms-dot 1.15s infinite ease-in-out;
+}
+
+.bh-bingsu-comms-typing span:nth-child(2) {
+	animation-delay: .15s;
+}
+
+.bh-bingsu-comms-typing span:nth-child(3) {
+	animation-delay: .3s;
+}
+
+@keyframes bh-bingsu-comms-dot {
+	0%, 60%, 100% {
+		transform: translateY(0);
+		opacity: .45;
+	}
+	30% {
+		transform: translateY(-4px);
+		opacity: 1;
+	}
+}
+
+.bh-bingsu-comms-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 12px 18px 15px;
+	border-top: 1px solid rgba(var(--line), .72);
+	background: rgba(var(--panel), .82);
+}
+
+.bh-bingsu-comms-flavours {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	min-width: 0;
+}
+
+.bh-bingsu-comms-flavours span {
+	font-family: "Bingsu Script", "Brush Script MT", "Segoe Script", cursive;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	font-synthesis: none;
+	line-height: 1;
+}
+
+.bh-bingsu-comms-flavours span:nth-child(1) {
+	color: rgb(var(--g1));
+}
+
+.bh-bingsu-comms-flavours span:nth-child(2) {
+	color: rgb(var(--g2));
+}
+
+.bh-bingsu-comms-flavours span:nth-child(3) {
+	color: rgb(var(--g3));
+}
+
+.bh-bingsu-comms-flavours i {
+	width: 4px;
+	height: 4px;
+	background: rgb(var(--g2));
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px rgba(var(--g2), .1);
+}
+
+.bh-bingsu-comms-stamp {
+	display: grid;
+	place-items: center;
+	flex: 0 0 34px;
+	width: 34px;
+	height: 34px;
+	color: rgb(var(--shell));
+	background: linear-gradient(135deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+	border-radius: 11px 11px 17px 17px;
+	box-shadow: 0 0 0 4px rgba(var(--g2), .09);
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 13px;
+}
+
+@media (max-width: 500px) {
+	.bh-bingsu-comms {
+		padding: 9px;
+		border-radius: 32px;
+	}
+
+	.bh-bingsu-comms-shell {
+		border-radius: 25px;
+	}
+
+	.bh-bingsu-comms-header {
+		grid-template-columns: 56px minmax(0, 1fr) auto;
+		padding-right: 14px;
+		padding-left: 14px;
+	}
+
+	.bh-bingsu-comms-avatar {
+		width: 56px;
+		height: 56px;
+	}
+
+	.bh-bingsu-comms-name {
+		font-size: 31px;
+	}
+
+	.bh-bingsu-comms-chat {
+		max-height: 420px;
+		padding-right: 14px;
+		padding-left: 14px;
+	}
+
+	.bh-bingsu-comms-bubble {
+		max-width: 86%;
+	}
+
+	.bh-bingsu-comms-footer {
+		padding-right: 14px;
+		padding-left: 14px;
+	}
+
+	.bh-bingsu-comms-flavours span {
+		font-size: 16px;
+	}
+}
