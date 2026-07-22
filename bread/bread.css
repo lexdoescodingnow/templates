@@ -105,6 +105,17 @@
   background-position: center 38%;
 }
 
+@media (min-width: 601px) {
+  .bh-bread.bh-bread-card--single {
+    width: min(100%, 480px);
+  }
+
+  .bh-bread.bh-bread-card--rounded,
+  .bh-bread.bh-bread-card--scroll {
+    width: min(100%, 500px);
+  }
+}
+
 @media (max-width: 600px) {
   .bh-bread.bh-bread-card,
   .bh-bread.bh-bread-card--split {
