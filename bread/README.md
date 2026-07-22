@@ -1,6 +1,12 @@
 # Bread templates
 
-The Bread set is hosted as small JCink components. Each post contains only its editable fields and one script include; the layouts, responsive rules, light and dark mode styling, member-group gradients, placeholder content, and rendering logic live in this folder.
+The Bread set is delivered as forum-safe JCink `[dohtml]` markup with its visual styling hosted in GitHub. The posts do not rely on JavaScript. Each snippet imports one master stylesheet, then contains the ordinary HTML required for the layout, so it can render in the post editor, preview screen, and finished topic.
+
+```html
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+```
+
+The master stylesheet loads the thread, Comms, Bud, responsive, light-mode, dark-mode, member-gradient, icon, and placeholder-image rules.
 
 ## Thread variants
 
@@ -12,83 +18,17 @@ The thread set contains five layouts:
 - `scroll` — a shorter media area with a fixed-height, member-coloured scrollbar.
 - `split` — an editorial side-by-side layout that returns to a stacked card on smaller screens.
 
-### Standard
-
-```html
-[dohtml]
-<div class="bh-bread" data-variant="standard" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
-</div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
-[/dohtml]
-```
-
-### Single GIF
-
-```html
-[dohtml]
-<div class="bh-bread" data-variant="single" data-gif-one="[url]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
-</div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
-[/dohtml]
-```
-
-### Rounded
-
-```html
-[dohtml]
-<div class="bh-bread" data-variant="rounded" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
-</div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
-[/dohtml]
-```
-
-### Scroll
-
-```html
-[dohtml]
-<div class="bh-bread" data-variant="scroll" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
-</div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
-[/dohtml]
-```
-
-### Split
-
-```html
-[dohtml]
-<div class="bh-bread" data-variant="split" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
-</div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
-[/dohtml]
-```
-
-Omitting `data-variant` uses `standard`. The loader can safely appear more than once on a topic page and inserts each hosted stylesheet only once.
+All five complete copy-ready versions are stored in `bread-thread-snippet.txt`.
 
 ## Breadline Comms
 
-Breadline is the matching quick-message component. It supports an animated avatar or icon, multiple text bubbles, sent and received alignment, an optional status, a time stamp, a fixed-height scrolling conversation area, and the same member-gradient formatting as the thread set.
+Breadline is the matching quick-message component. It supports an animated avatar or the member icon, sent and received message alignment, a time stamp, a fixed-height scrolling conversation area, and the same member-gradient formatting as the thread set.
 
-```html
-[dohtml]
-<div class="bh-bread-comms" data-avatar="[url]" data-name="[name]" data-time="[time]" data-side="sent">
-  <div class="bh-bread-comms-text">
-    <p>[text]</p>
-  </div>
-</div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-comms.js"></script>
-[/dohtml]
-```
-
-Use one `<p>` for each separate message bubble. Change `data-side="sent"` to `data-side="received"` to reverse the alignment. Individual paragraphs may also use `data-side="received"` or `data-side="sent"` for mixed conversations. The optional `data-status` attribute replaces the default active-status line.
+The sent and received copy-ready versions are stored in `bread-comms-snippet.txt`. Additional messages can be added by copying a complete `.bh-bread-comms-row` block and choosing either `is-sent` or `is-received`.
 
 ## Bread Buds
 
-Buds are compact quick-reply templates designed for scenes of 100 words or fewer. The component counts the rendered text automatically, displays the current total beside a 100-word growth meter, and marks replies over the limit as `overgrown` without cutting off their content.
+Buds are compact quick-reply templates designed to encourage replies of 100 words or fewer. The CSS-only edition keeps the limit visible in the footer without hiding, truncating, or programmatically changing the reply.
 
 The set contains five layouts:
 
@@ -98,15 +38,10 @@ The set contains five layouts:
 - `minimal` — an icon-led text-only card with no GIF field.
 - `strip` — a narrow cinematic GIF strip above the reply.
 
-```html
-[dohtml]
-<div class="bh-bread-bud" data-variant="standard" data-gif-one="[url]" data-name="[name]">
-  <div class="bh-bread-bud-text">[text]</div>
-</div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-buds.js"></script>
-[/dohtml]
-```
+All five copy-ready versions are stored in `bread-buds-snippets.txt`.
 
-Change `data-variant` to `portrait`, `duo`, `minimal`, or `strip`. The `duo` layout also uses `data-gif-two="[url2]"`; the `minimal` layout does not require a GIF field. All five copy-ready versions are stored in `bread-buds-snippets.txt`.
+## Blue Hour integration
 
-All Bread components use `--mgrgb1`, `--mgrgb2`, `--mgrgb3`, and `--icon` from Blue Hour. Bold and underline use the forward member-group gradient; italics use the reverse gradient.
+All Bread components use `--mgrgb1`, `--mgrgb2`, `--mgrgb3`, and `--icon`. Bold and underline use the forward member-group gradient; italics use the reverse gradient.
+
+The placeholder GIFs remain as fallback background layers. Replacing `[url]` and `[url2]` supplies the character images; leaving one unchanged allows the fallback behind it to remain visible.
