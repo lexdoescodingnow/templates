@@ -1,48 +1,97 @@
 STANDARD
 
 [dohtml]
-<div class="bh-bread" data-variant="standard" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread bh-bread-card" style="--br-img1:url('[url]');--br-img2:url('[url2]');">
+  <div class="bh-bread-body">[text]</div>
+  <div class="bh-bread-head">
+    <div class="bh-bread-heading"><div class="bh-bread-kicker">collective bake · no. 024</div><div class="bh-bread-title bread-display">bread</div><div class="bh-bread-subtitle">proofed slowly · made to be shared</div></div>
+    <div class="bh-bread-icon"></div>
+  </div>
+  <div class="bh-bread-media">
+    <div class="bh-bread-photo bh-bread-photo--one"></div>
+    <div class="bh-bread-photo bh-bread-photo--two"></div>
+    <div class="bh-bread-stamp"><strong>fresh daily</strong><span>warm · familiar · yours</span></div>
+  </div>
+  <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
 [/dohtml]
 
 
 SINGLE GIF
 
 [dohtml]
-<div class="bh-bread" data-variant="single" data-gif-one="[url]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread bh-bread-card bh-bread-card--single" style="--br-img1:url('[url]');">
+  <div class="bh-bread-body">[text]</div>
+  <div class="bh-bread-head">
+    <div class="bh-bread-heading"><div class="bh-bread-kicker">collective bake · no. 024</div><div class="bh-bread-title bread-display">bread</div><div class="bh-bread-subtitle">proofed slowly · made to be shared</div></div>
+    <div class="bh-bread-icon"></div>
+  </div>
+  <div class="bh-bread-media">
+    <div class="bh-bread-photo bh-bread-photo--one"></div>
+    <div class="bh-bread-stamp"><strong>fresh daily</strong><span>warm · familiar · yours</span></div>
+  </div>
+  <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
 [/dohtml]
 
 
 ROUNDED
 
 [dohtml]
-<div class="bh-bread" data-variant="rounded" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread bh-bread-card bh-bread-card--rounded" style="--br-img1:url('[url]');--br-img2:url('[url2]');">
+  <div class="bh-bread-body">[text]</div>
+  <div class="bh-bread-head">
+    <div class="bh-bread-heading"><div class="bh-bread-kicker">collective bake · no. 024</div><div class="bh-bread-title bread-display">bread</div><div class="bh-bread-subtitle">proofed slowly · made to be shared</div></div>
+    <div class="bh-bread-icon"></div>
+  </div>
+  <div class="bh-bread-media">
+    <div class="bh-bread-photo bh-bread-photo--one"></div>
+    <div class="bh-bread-photo bh-bread-photo--two"></div>
+    <div class="bh-bread-stamp"><strong>softly made</strong><span>warm · familiar · yours</span></div>
+  </div>
+  <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
 [/dohtml]
 
 
 SCROLL
 
 [dohtml]
-<div class="bh-bread" data-variant="scroll" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread bh-bread-card bh-bread-card--scroll" style="--br-img1:url('[url]');--br-img2:url('[url2]');">
+  <div class="bh-bread-body">[text]</div>
+  <div class="bh-bread-head">
+    <div class="bh-bread-heading"><div class="bh-bread-kicker">collective bake · no. 024</div><div class="bh-bread-title bread-display">bread</div><div class="bh-bread-subtitle">proofed slowly · made to be shared</div></div>
+    <div class="bh-bread-icon"></div>
+  </div>
+  <div class="bh-bread-media">
+    <div class="bh-bread-photo bh-bread-photo--one"></div>
+    <div class="bh-bread-photo bh-bread-photo--two"></div>
+    <div class="bh-bread-stamp"><strong>keep reading</strong><span>warm · familiar · yours</span></div>
+  </div>
+  <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
 [/dohtml]
 
 
 SPLIT
 
 [dohtml]
-<div class="bh-bread" data-variant="split" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
-  <div class="bh-bread-text">[text]</div>
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread bh-bread-card bh-bread-card--split" style="--br-img1:url('[url]');--br-img2:url('[url2]');">
+  <div class="bh-bread-body">[text]</div>
+  <div class="bh-bread-head">
+    <div class="bh-bread-heading"><div class="bh-bread-kicker">collective bake · no. 024</div><div class="bh-bread-title bread-display">bread</div><div class="bh-bread-subtitle">proofed slowly · made to be shared</div></div>
+    <div class="bh-bread-icon"></div>
+  </div>
+  <div class="bh-bread-media">
+    <div class="bh-bread-photo bh-bread-photo--one"></div>
+    <div class="bh-bread-photo bh-bread-photo--two"></div>
+    <div class="bh-bread-stamp"><strong>fresh daily</strong><span>warm · familiar · yours</span></div>
+  </div>
+  <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
 [/dohtml]
