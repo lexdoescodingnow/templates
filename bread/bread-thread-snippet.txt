@@ -1,5 +1,47 @@
+STANDARD
+
 [dohtml]
-<div class="bh-bread" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
+<div class="bh-bread" data-variant="standard" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
+  <div class="bh-bread-text">[text]</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
+[/dohtml]
+
+
+SINGLE GIF
+
+[dohtml]
+<div class="bh-bread" data-variant="single" data-gif-one="[url]" data-name="[name]">
+  <div class="bh-bread-text">[text]</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
+[/dohtml]
+
+
+ROUNDED
+
+[dohtml]
+<div class="bh-bread" data-variant="rounded" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
+  <div class="bh-bread-text">[text]</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
+[/dohtml]
+
+
+SCROLL
+
+[dohtml]
+<div class="bh-bread" data-variant="scroll" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
+  <div class="bh-bread-text">[text]</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
+[/dohtml]
+
+
+SPLIT
+
+[dohtml]
+<div class="bh-bread" data-variant="split" data-gif-one="[url]" data-gif-two="[url2]" data-name="[name]">
   <div class="bh-bread-text">[text]</div>
 </div>
 <script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-thread.js"></script>
