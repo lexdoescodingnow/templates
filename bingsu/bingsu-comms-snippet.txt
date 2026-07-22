@@ -1,0 +1,75 @@
+[dohtml]
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bingsu/bingsu-comms.css">
+<div class="bh-bingsu-comms">
+<div class="bh-bingsu-comms-shell">
+
+<div class="bh-bingsu-comms-topline">
+<span>bingsu</span>
+<div class="bh-bingsu-comms-signal"><i></i><i></i><i></i></div>
+</div>
+
+<div class="bh-bingsu-comms-header">
+<div class="bh-bingsu-comms-avatar">
+<img src="[gif]" alt="Character GIF">
+</div>
+
+<div class="bh-bingsu-comms-person">
+<h1 class="bh-bingsu-comms-name">[name]</h1>
+<span class="bh-bingsu-comms-status">[status]</span>
+</div>
+
+<a class="bh-bingsu-comms-open" href="[url]" target="_blank" rel="noopener">↗</a>
+</div>
+
+<div class="bh-bingsu-comms-date">[time]</div>
+
+<div class="bh-bingsu-comms-chat">
+<div class="bh-bingsu-comms-row bh-bingsu-comms-row-in">
+<div class="bh-bingsu-comms-bubble">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<span class="bh-bingsu-comms-time">11:42 pm</span>
+</div>
+</div>
+
+<div class="bh-bingsu-comms-row bh-bingsu-comms-row-in">
+<div class="bh-bingsu-comms-bubble">
+[text]
+<span class="bh-bingsu-comms-time">11:43 pm</span>
+</div>
+</div>
+
+<div class="bh-bingsu-comms-row bh-bingsu-comms-row-out">
+<div class="bh-bingsu-comms-bubble">
+Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
+<span class="bh-bingsu-comms-time">11:45 pm · read</span>
+</div>
+</div>
+
+<div class="bh-bingsu-comms-row bh-bingsu-comms-row-out">
+<div class="bh-bingsu-comms-media">
+<img src="[gif2]" alt="Message GIF">
+</div>
+</div>
+
+<div class="bh-bingsu-comms-row bh-bingsu-comms-row-in">
+<div class="bh-bingsu-comms-bubble">
+Integer mollis, nisl id condimentum tincidunt, lectus sapien consequat erat.
+<span class="bh-bingsu-comms-time">11:47 pm</span>
+</div>
+</div>
+
+<div class="bh-bingsu-comms-typing">
+<span></span><span></span><span></span>
+</div>
+</div>
+
+<div class="bh-bingsu-comms-footer">
+<div class="bh-bingsu-comms-flavours">
+<span>snow</span><i></i><span>syrup</span><i></i><span>sweetness</span>
+</div>
+<div class="bh-bingsu-comms-stamp">빙</div>
+</div>
+
+</div>
+</div>
+[/dohtml]
