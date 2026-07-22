@@ -1,0 +1,60 @@
+BREAD BUDS — JCINK SNIPPETS
+
+STANDARD
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread-bud bh-bread-bud-card" style="--bd-img1:url('[url]');">
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">keep it moving</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
+  <div class="bh-bread-bud-foot"><div class="bh-bread-bud-state">in bud</div><div class="bh-bread-bud-meter"><span style="width:100%"></span></div><div class="bh-bread-bud-count"><strong>≤100</strong> words</div></div>
+</div>
+[/dohtml]
+
+
+PORTRAIT
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--portrait" style="--bd-img1:url('[url]');">
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">keep it moving</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
+  <div class="bh-bread-bud-foot"><div class="bh-bread-bud-state">in bud</div><div class="bh-bread-bud-meter"><span style="width:100%"></span></div><div class="bh-bread-bud-count"><strong>≤100</strong> words</div></div>
+</div>
+[/dohtml]
+
+
+DUO
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--duo" style="--bd-img1:url('[url]');--bd-img2:url('[url2]');">
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-photo bh-bread-bud-photo--two"></div><div class="bh-bread-bud-chip">quick volley</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
+  <div class="bh-bread-bud-foot"><div class="bh-bread-bud-state">in bud</div><div class="bh-bread-bud-meter"><span style="width:100%"></span></div><div class="bh-bread-bud-count"><strong>≤100</strong> words</div></div>
+</div>
+[/dohtml]
+
+
+MINIMAL
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--minimal">
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
+  <div class="bh-bread-bud-foot"><div class="bh-bread-bud-state">in bud</div><div class="bh-bread-bud-meter"><span style="width:100%"></span></div><div class="bh-bread-bud-count"><strong>≤100</strong> words</div></div>
+</div>
+[/dohtml]
+
+
+STRIP
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
+<div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--strip" style="--bd-img1:url('[url]');">
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">small scene · quick turn</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
+  <div class="bh-bread-bud-foot"><div class="bh-bread-bud-state">in bud</div><div class="bh-bread-bud-meter"><span style="width:100%"></span></div><div class="bh-bread-bud-count"><strong>≤100</strong> words</div></div>
+</div>
+[/dohtml]
