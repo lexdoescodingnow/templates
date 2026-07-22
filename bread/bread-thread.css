@@ -30,10 +30,6 @@ html[data-theme="dark"] .bh-bread {
   box-sizing: border-box;
 }
 
-.bh-bread-text {
-  display: none !important;
-}
-
 .bh-bread-card {
   position: relative;
   width: min(100%, 510px);
