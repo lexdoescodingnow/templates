@@ -86,4 +86,27 @@ Breadline is the matching quick-message component. It supports an animated avata
 
 Use one `<p>` for each separate message bubble. Change `data-side="sent"` to `data-side="received"` to reverse the alignment. Individual paragraphs may also use `data-side="received"` or `data-side="sent"` for mixed conversations. The optional `data-status` attribute replaces the default active-status line.
 
+## Bread Buds
+
+Buds are compact quick-reply templates designed for scenes of 100 words or fewer. The component counts the rendered text automatically, displays the current total beside a 100-word growth meter, and marks replies over the limit as `overgrown` without cutting off their content.
+
+The set contains five layouts:
+
+- `standard` — a balanced horizontal card with one GIF.
+- `portrait` — a narrower card with a taller portrait GIF.
+- `duo` — two small GIFs above the reply.
+- `minimal` — an icon-led text-only card with no GIF field.
+- `strip` — a narrow cinematic GIF strip above the reply.
+
+```html
+[dohtml]
+<div class="bh-bread-bud" data-variant="standard" data-gif-one="[url]" data-name="[name]">
+  <div class="bh-bread-bud-text">[text]</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-buds.js"></script>
+[/dohtml]
+```
+
+Change `data-variant` to `portrait`, `duo`, `minimal`, or `strip`. The `duo` layout also uses `data-gif-two="[url2]"`; the `minimal` layout does not require a GIF field. All five copy-ready versions are stored in `bread-buds-snippets.txt`.
+
 All Bread components use `--mgrgb1`, `--mgrgb2`, `--mgrgb3`, and `--icon` from Blue Hour. Bold and underline use the forward member-group gradient; italics use the reverse gradient.
