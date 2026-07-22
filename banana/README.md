@@ -1,18 +1,16 @@
 # Banana Display
 
-Banana Display is the custom high-contrast serif used for the Banana template family. This folder contains the JCink-ready font integration layer, OpenType utility classes, an editable `[dohtml]` example, licence information, and validation notes for Prototype 0.1.
+Banana Display is the custom high-contrast serif used for the Banana template family. This folder contains the live JCink-ready font integration layer, OpenType utility classes, an editable `[dohtml]` example, licence information, and validation notes for Prototype 0.1.
 
-## Hosted files
+## Hosted web font
 
-The stylesheet is designed to load these font assets from the repository after the branch is merged:
+The live stylesheet loads:
 
 ```text
 banana/assets/BananaDisplay-Prototype01.woff2
-banana/assets/BananaDisplay-Prototype01.ttf
-banana/assets/BananaDisplay-Prototype01.otf
 ```
 
-The WOFF2 file is the primary browser asset. TTF and OTF are desktop/archive formats.
+WOFF2 is the production browser format used by the Banana templates. The desktop TTF and OTF builds remain available in the project font kit but are not required by JCink.
 
 ## JCink setup
 
@@ -51,7 +49,7 @@ For direct use inside an existing selector:
 
 ## Cache-safe URLs
 
-During active development, `@main` always serves the current merged version. For a finished production template, replace `@main` with a specific commit SHA so later font revisions cannot unexpectedly change an older template.
+During active development, `@main` serves the current merged version. For a finished production template, replace `@main` with a specific commit SHA so later font revisions cannot unexpectedly change an older template.
 
 ## Prototype status
 
