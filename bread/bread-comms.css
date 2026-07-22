@@ -56,8 +56,8 @@ html[data-theme="dark"] .bh-bread-comms {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-height: 82px;
-  padding: 18px 18px 14px;
+  min-height: 76px;
+  padding: 16px 18px 14px;
   border-bottom: 1px solid var(--bc-line);
   background:
     radial-gradient(circle at 12px 12px, rgba(var(--bc-g2), .075) 0 1px, transparent 1.2px) 0 0 / 24px 24px,
@@ -101,28 +101,6 @@ html[data-theme="dark"] .bh-bread-comms {
   white-space: nowrap;
 }
 
-.bh-bread-comms-status {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 5px;
-  color: var(--bc-muted);
-  font-size: 6.5px;
-  font-weight: 800;
-  letter-spacing: 1.3px;
-  text-transform: uppercase;
-}
-
-.bh-bread-comms-status::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  flex: 0 0 6px;
-  border-radius: 50%;
-  background: rgb(var(--bc-g2));
-  box-shadow: 0 0 0 3px rgba(var(--bc-g2), .12);
-}
-
 .bh-bread-comms-brand {
   flex: 0 0 auto;
   padding-right: 2px;
@@ -143,7 +121,7 @@ html[data-theme="dark"] .bh-bread-comms {
 .bh-bread-comms-chat {
   position: relative;
   max-height: 365px;
-  padding: 18px 17px 16px;
+  padding: 18px 17px 19px;
   overflow-x: hidden;
   overflow-y: auto;
   background:
@@ -193,7 +171,6 @@ html[data-theme="dark"] .bh-bread-comms {
 .bh-bread-comms-row.is-received { align-items: flex-start; }
 
 .bh-bread-comms-bubble {
-  position: relative;
   max-width: 82%;
   padding: 11px 13px;
   color: var(--bc-ink);
@@ -256,82 +233,6 @@ html[data-theme="dark"] .bh-bread-comms {
   font-weight: 800;
   letter-spacing: 1.15px;
   text-transform: uppercase;
-}
-
-.bh-bread-comms-compose {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 12px 14px 14px;
-  border-top: 1px solid var(--bc-line);
-  background: var(--bc-raised);
-}
-
-.bh-bread-comms-input {
-  position: relative;
-  min-width: 0;
-  height: 36px;
-  flex: 1 1 auto;
-  padding: 0 36px 0 13px;
-  overflow: hidden;
-  color: var(--bc-muted);
-  background: var(--bc-card);
-  border: 1px solid var(--bc-line);
-  border-radius: 99px;
-  font-size: 7px;
-  font-weight: 750;
-  line-height: 34px;
-  letter-spacing: 1px;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.bh-bread-comms-input::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  width: 17px;
-  height: 12px;
-  background:
-    linear-gradient(110deg, transparent 0 38%, rgb(var(--bc-g1)) 39% 48%, transparent 49%) 0 0 / 6px 100%,
-    linear-gradient(110deg, transparent 0 38%, rgb(var(--bc-g2)) 39% 48%, transparent 49%) 6px 0 / 6px 100%,
-    linear-gradient(110deg, transparent 0 38%, rgb(var(--bc-g3)) 39% 48%, transparent 49%) 12px 0 / 6px 100%;
-  background-repeat: no-repeat;
-}
-
-.bh-bread-comms-send {
-  position: relative;
-  width: 36px;
-  height: 36px;
-  flex: 0 0 36px;
-  border: 0;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgb(var(--bc-g1)), rgb(var(--bc-g2)), rgb(var(--bc-g3)));
-  box-shadow: 0 7px 17px rgba(var(--bc-g2), .22);
-}
-
-.bh-bread-comms-send::before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 12px;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: rotate(45deg);
-}
-
-.bh-bread-comms-send::after {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 10px;
-  width: 15px;
-  height: 2px;
-  background: #fff;
 }
 
 @media (max-width: 430px) {
