@@ -1,0 +1,36 @@
+SWEET POTATO COMMS
+
+SENT
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@91be1a3dedcf6d87303388c9c5c4d0ee44360a43/sweet-potato/sweet-potato-comms.css');</style>
+<div class="spc1 spc1-card spc1-card--sent" style="--spc-avatar:url('[url]');">
+  <div class="spc1-name">[name]</div>
+  <div class="spc1-bubble">[text]</div>
+  <div class="spc1-time">[time] · sent</div>
+  <div class="spc1-avatar"></div>
+  <div class="spc1-brand"><div class="spc1-kicker">sweet potato · comms</div><div class="spc1-logo">rootline</div></div>
+  <div class="spc1-status">rooted nearby</div>
+  <div class="spc1-icon"></div>
+  <div class="spc1-date">warm dispatch · [time]</div>
+  <div class="spc1-footer"><span>grown for the collective</span><div class="spc1-chips"><i></i><i></i><i></i></div></div>
+</div>
+[/dohtml]
+
+
+RECEIVED
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@91be1a3dedcf6d87303388c9c5c4d0ee44360a43/sweet-potato/sweet-potato-comms.css');</style>
+<div class="spc1 spc1-card spc1-card--received" style="--spc-avatar:url('[url]');">
+  <div class="spc1-name">[name]</div>
+  <div class="spc1-bubble">[text]</div>
+  <div class="spc1-time">[time] · received</div>
+  <div class="spc1-avatar"></div>
+  <div class="spc1-brand"><div class="spc1-kicker">sweet potato · comms</div><div class="spc1-logo">rootline</div></div>
+  <div class="spc1-status">rooted nearby</div>
+  <div class="spc1-icon"></div>
+  <div class="spc1-date">warm dispatch · [time]</div>
+  <div class="spc1-footer"><span>grown for the collective</span><div class="spc1-chips"><i></i><i></i><i></i></div></div>
+</div>
+[/dohtml]
