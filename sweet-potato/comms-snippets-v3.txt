@@ -1,0 +1,30 @@
+SWEET POTATO COMMS V3
+
+SENT
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@8ecbf52b35aa0f8a7462054f70bf61df29cc0e38/sweet-potato/sweet-potato-comms-v3.css');</style>
+<div class="spc3 spc3-card spc3-card--sent" style="--spc-avatar:url('[url]');">
+  <div class="spc3-message"><div class="spc3-bubble">[text]</div><div class="spc3-meta">[time] · sent</div></div>
+  <div class="spc3-name">[name]</div>
+  <div class="spc3-avatar"></div>
+  <div class="spc3-brand"><span>sweet potato · comms</span><strong>rootline</strong></div>
+  <div class="spc3-icon"></div>
+  <div class="spc3-footer"><span>warm dispatch</span><div class="spc3-chips"><i></i><i></i><i></i></div></div>
+</div>
+[/dohtml]
+
+
+RECEIVED
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@8ecbf52b35aa0f8a7462054f70bf61df29cc0e38/sweet-potato/sweet-potato-comms-v3.css');</style>
+<div class="spc3 spc3-card spc3-card--received" style="--spc-avatar:url('[url]');">
+  <div class="spc3-message"><div class="spc3-bubble">[text]</div><div class="spc3-meta">[time] · received</div></div>
+  <div class="spc3-name">[name]</div>
+  <div class="spc3-avatar"></div>
+  <div class="spc3-brand"><span>sweet potato · comms</span><strong>rootline</strong></div>
+  <div class="spc3-icon"></div>
+  <div class="spc3-footer"><span>warm dispatch</span><div class="spc3-chips"><i></i><i></i><i></i></div></div>
+</div>
+[/dohtml]
