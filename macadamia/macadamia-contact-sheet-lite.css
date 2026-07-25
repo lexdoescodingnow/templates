@@ -1,0 +1,42 @@
+.bh-macadamia--gallery .bh-macadamia__visual {
+  min-height: 310px;
+}
+
+.bh-macadamia--gallery .bh-macadamia__gallery {
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, .85fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+.bh-macadamia--gallery .bh-macadamia__gif--one {
+  grid-row: auto;
+  border-radius: 7px 3px 3px 21px;
+  background-position: center 34%;
+}
+
+.bh-macadamia--gallery .bh-macadamia__gif--two {
+  border-radius: 3px 21px 21px 3px;
+  background-position: center;
+}
+
+.bh-macadamia--gallery .bh-macadamia__gif--three,
+.bh-macadamia--gallery .bh-macadamia__icon {
+  display: none !important;
+}
+
+.bh-macadamia--gallery .bh-macadamia__label {
+  left: 24px;
+  right: auto;
+  bottom: 22px;
+}
+
+@media (max-width: 590px) {
+  .bh-macadamia--gallery .bh-macadamia__visual {
+    min-height: 265px;
+  }
+
+  .bh-macadamia--gallery .bh-macadamia__gallery {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, .75fr);
+    gap: 8px;
+  }
+}
