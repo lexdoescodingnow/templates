@@ -1,32 +1,34 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-comms.css">
-<div class="bh-mac-comms" style="--mac-avatar:url('https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv');">
-<div class="bh-mac-comms__contact">
-<a class="bh-mac-comms__avatar" href="[url]"></a>
-<div class="bh-mac-comms__identity">
-<a class="bh-mac-comms__name" href="[url]">[name]</a>
-<span class="bh-mac-comms__status">[text]</span>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-comms-rebuilt.css">
+<div class="macacomm" style="--mac-avatar:url('https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv');">
+<div class="macacomm-head">
+<a class="macacomm-avatar" href="[url]"></a>
+<div class="macacomm-id">
+<a class="macacomm-name" href="[url]">[name]</a>
+<span class="macacomm-status">[text]</span>
 </div>
-<div class="bh-mac-comms__signal"><span></span><span></span><span></span></div>
+<span class="macacomm-brand">macadamia</span>
 </div>
-<div class="bh-mac-comms__messages">
-<div class="bh-mac-comms__row">
-<div class="bh-mac-comms__bubble">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-<div class="bh-mac-comms__meta"><span>11:42 pm</span><span>read</span></div>
+<div class="macacomm-body">
+<div class="macacomm-note">sent from mobile</div>
+<div class="macacomm-stack">
+<div class="macacomm-msg">
+<div class="macacomm-msgtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<span class="macacomm-meta">11:42 pm</span>
 </div>
-<div class="bh-mac-comms__row">
-<div class="bh-mac-comms__bubble">Praesent accumsan justo vitae nisl vulputate. [b]Sed consequat elit varius[/b].</div>
-<div class="bh-mac-comms__meta"><span>11:44 pm</span><span>read</span></div>
+<div class="macacomm-msg">
+<div class="macacomm-msgtext">Praesent accumsan justo vitae nisl vulputate. [b]Sed consequat elit varius[/b].</div>
+<span class="macacomm-meta">11:44 pm</span>
 </div>
-<div class="bh-mac-comms__row">
-<div class="bh-mac-comms__bubble">[i]Integer feugiat nibh[/i] non facilisis mauris pretium non.</div>
-<div class="bh-mac-comms__meta"><span>11:46 pm</span><span>read</span></div>
+<div class="macacomm-msg">
+<div class="macacomm-msgtext">[i]Integer feugiat nibh[/i] non facilisis mauris pretium non.</div>
+<span class="macacomm-meta">11:46 pm</span>
 </div>
-<div class="bh-mac-comms__row">
-<div class="bh-mac-comms__bubble">[u]Donec finibus mi vitae nibh vulputate[/u], in sodales justo feugiat.</div>
-<div class="bh-mac-comms__meta"><span>11:47 pm</span><span>read</span></div>
+<div class="macacomm-msg">
+<div class="macacomm-msgtext">[u]Donec finibus mi vitae nibh vulputate[/u], in sodales justo feugiat.</div>
+<span class="macacomm-meta">11:47 pm</span>
 </div>
 </div>
-<div class="bh-mac-comms__end">macadamia</div>
+</div>
 </div>
 [/dohtml]
