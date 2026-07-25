@@ -1,0 +1,94 @@
+@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@7e72fcb5335469f150220cb9e61d1053101ea6ef/sake/sake-comms.css');
+
+.bh-sake-comms__messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 9px;
+  width: 100%;
+}
+
+.bh-sake-comms__messages > p {
+  position: relative;
+  width: fit-content;
+  max-width: 82%;
+  margin: 0 !important;
+  padding: 11px 13px;
+  color: var(--sc-ink);
+  background:
+    linear-gradient(135deg, rgba(var(--sc-one), 0.15), rgba(var(--sc-two), 0.09), rgba(var(--sc-three), 0.15)),
+    var(--sc-card);
+  border: 1px solid rgba(var(--sc-two), 0.28);
+  border-radius: 18px 18px 5px 18px;
+  box-shadow: 0 8px 20px rgba(var(--sc-two), 0.09);
+  font-size: 12px;
+  line-height: 1.56;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.bh-sake-comms__messages > p::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  bottom: 3px;
+  width: 9px;
+  height: 9px;
+  background:
+    linear-gradient(135deg, rgba(var(--sc-two), 0.09), rgba(var(--sc-three), 0.15)),
+    var(--sc-card);
+  border-right: 1px solid rgba(var(--sc-two), 0.28);
+  border-bottom: 1px solid rgba(var(--sc-two), 0.28);
+  transform: rotate(-12deg) skew(18deg);
+}
+
+.bh-sake-comms__messages > p b,
+.bh-sake-comms__messages > p strong {
+  color: rgb(var(--sc-two));
+  background: linear-gradient(90deg, rgb(var(--sc-one)), rgb(var(--sc-two)), rgb(var(--sc-three)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.bh-sake-comms__messages > p i,
+.bh-sake-comms__messages > p em {
+  color: rgb(var(--sc-two));
+  background: linear-gradient(270deg, rgb(var(--sc-one)), rgb(var(--sc-two)), rgb(var(--sc-three)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.bh-sake-comms__messages > p u {
+  color: rgb(var(--sc-two));
+  background: linear-gradient(90deg, rgb(var(--sc-one)), rgb(var(--sc-two)), rgb(var(--sc-three)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(var(--sc-two), 0.68);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  font-weight: 650;
+}
+
+.bh-sake-comms__sent-meta {
+  margin: 6px 4px 0 auto;
+  color: var(--sc-muted);
+  font-size: 5.8px;
+  font-weight: 800;
+  letter-spacing: 1.05px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+@media (max-width: 430px) {
+  .bh-sake-comms__messages > p {
+    max-width: 87%;
+    font-size: 11.5px;
+  }
+}
