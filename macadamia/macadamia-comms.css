@@ -1,259 +1,243 @@
-.bh-mac-comms {
-  --g1: var(--mgrgb1, var(--mrgb1, 168, 130, 96));
-  --g2: var(--mgrgb2, var(--mrgb2, 206, 169, 124));
-  --g3: var(--mgrgb3, var(--mrgb3, 232, 205, 165));
-  --mac-bg: 22, 19, 17;
-  --mac-panel: 31, 27, 24;
-  --mac-card: 39, 34, 30;
-  --mac-text: 242, 235, 225;
-  --mac-muted: 168, 154, 140;
-  --mac-bubble-shade: 13, 11, 10;
-  --mac-format-mix: white;
-  --group-gradient: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
-  --group-gradient-reverse: linear-gradient(270deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
-  --format-gradient: linear-gradient(
-    90deg,
-    color-mix(in srgb, rgb(var(--g1)) 68%, var(--mac-format-mix)),
-    color-mix(in srgb, rgb(var(--g2)) 68%, var(--mac-format-mix)),
-    color-mix(in srgb, rgb(var(--g3)) 68%, var(--mac-format-mix))
-  );
-  --format-gradient-reverse: linear-gradient(
-    270deg,
-    color-mix(in srgb, rgb(var(--g1)) 68%, var(--mac-format-mix)),
-    color-mix(in srgb, rgb(var(--g2)) 68%, var(--mac-format-mix)),
-    color-mix(in srgb, rgb(var(--g3)) 68%, var(--mac-format-mix))
-  );
-  width: calc(100% - 22px);
-  max-width: 382px;
+.macachat {
+  --mc1: var(--mgrgb1, var(--mrgb1, 138, 102, 82));
+  --mc2: var(--mgrgb2, var(--mrgb2, 185, 146, 107));
+  --mc3: var(--mgrgb3, var(--mrgb3, 226, 201, 160));
+  --mc-bg: 22, 20, 19;
+  --mc-paper: 31, 28, 26;
+  --mc-card: 39, 35, 32;
+  --mc-text: 241, 235, 226;
+  --mc-muted: 165, 153, 142;
+  --mc-line: 255, 255, 255;
+  --mc-forward: linear-gradient(90deg, rgb(var(--mc1)), rgb(var(--mc2)), rgb(var(--mc3)));
+  --mc-reverse: linear-gradient(270deg, rgb(var(--mc1)), rgb(var(--mc2)), rgb(var(--mc3)));
+  width: calc(100% - 24px);
+  max-width: 410px;
   margin: 28px auto;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  border: 1px solid rgba(var(--g2), .38);
-  border-radius: 25px;
-  background:
-    radial-gradient(circle at 92% 13%, rgba(var(--g3), .12), transparent 25%),
-    linear-gradient(155deg, rgb(var(--mac-bg)), rgb(var(--mac-panel)));
-  box-shadow: 0 23px 55px rgba(0, 0, 0, .36), inset 0 0 0 1px rgba(var(--g1), .06);
-  color: rgb(var(--mac-text));
+  border: 1px solid rgba(var(--mc2), .42);
+  border-radius: 28px 7px 28px 7px;
+  background: rgb(var(--mc-bg));
+  box-shadow: 0 24px 58px rgba(0, 0, 0, .35);
+  color: rgb(var(--mc-text));
   font-family: Arial, Helvetica, sans-serif;
   isolation: isolate;
 }
 
-.bh-mac-comms *,
-.bh-mac-comms *::before,
-.bh-mac-comms *::after {
+.macachat *,
+.macachat *::before,
+.macachat *::after {
   box-sizing: border-box;
 }
 
-.bh-mac-comms::before {
+.macachat::before {
   content: "";
-  height: 4px;
+  width: 5px;
   position: absolute;
-  inset: 0 0 auto;
-  z-index: 5;
-  background: var(--group-gradient);
+  inset: 0 auto 0 0;
+  z-index: 4;
+  background: linear-gradient(180deg, rgb(var(--mc1)), rgb(var(--mc2)), rgb(var(--mc3)));
 }
 
-.bh-mac-comms::after {
+.macachat__top {
+  min-height: 126px;
+  padding: 15px 17px 15px 20px;
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 17px;
+  align-items: stretch;
+  position: relative;
+  border-bottom: 1px solid rgba(var(--mc-line), .09);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(var(--mc3), .16), transparent 28%),
+    linear-gradient(135deg, rgba(var(--mc1), .12), transparent 48%),
+    rgb(var(--mc-paper));
+}
+
+.macachat__photo {
+  min-height: 96px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(var(--mc3), .34);
+  border-radius: 18px 4px 18px 4px;
+  background-image: var(--mac-photo);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .22);
+}
+
+.macachat__photo::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
   pointer-events: none;
-  opacity: .42;
-  background: radial-gradient(circle, rgba(var(--g2), .1) 0 1px, transparent 1.4px) 0 0 / 12px 12px;
-  mask-image: linear-gradient(180deg, transparent 0 18%, black 48%, black 100%);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0 18%, black 48%, black 100%);
+  background: linear-gradient(155deg, rgba(var(--mc1), .18), transparent 48%, rgba(var(--mc3), .12));
+  mix-blend-mode: soft-light;
 }
 
-.bh-mac-comms__contact {
-  min-height: 78px;
-  padding: 17px 18px 14px;
-  display: grid;
-  grid-template-columns: 50px minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 12px;
-  position: relative;
-  border-bottom: 1px solid rgba(var(--g2), .18);
-  background: linear-gradient(90deg, rgba(var(--g1), .08), transparent 48%, rgba(var(--g3), .07));
-}
-
-.bh-mac-comms__avatar {
-  width: 50px;
-  height: 50px;
-  display: block;
-  position: relative;
-  border: 3px solid rgb(var(--mac-panel));
-  border-radius: 50%;
-  background-image: var(--mac-avatar);
-  background-position: center;
-  background-size: cover;
-  box-shadow:
-    0 0 0 2px rgb(var(--g2)),
-    0 0 0 4px rgba(var(--g3), .24),
-    0 9px 20px rgba(0, 0, 0, .24);
-}
-
-.bh-mac-comms__avatar::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  right: -1px;
-  bottom: 1px;
-  border: 2px solid rgb(var(--mac-panel));
-  border-radius: 50%;
-  background: rgb(var(--g3));
-}
-
-.bh-mac-comms__identity {
+.macachat__identity {
   min-width: 0;
+  padding: 7px 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
-.bh-mac-comms__name {
+.macachat__eyebrow {
+  margin-bottom: 9px;
+  color: rgb(var(--mc-muted));
+  font-size: 6px;
+  font-weight: 900;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.macachat__name {
+  width: fit-content;
+  max-width: 100%;
   display: block;
   overflow: hidden;
-  color: rgb(var(--mac-text)) !important;
+  color: transparent !important;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -.2px;
+  line-height: .98;
+  letter-spacing: -1px;
   text-decoration: none !important;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background: var(--mc-forward);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-.bh-mac-comms__status {
-  display: block;
-  margin-top: 5px;
-  color: rgb(var(--mac-muted));
-  font-size: 6px;
-  font-weight: 800;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.bh-mac-comms__signal {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.bh-mac-comms__signal span {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: rgb(var(--g1));
-  box-shadow: 0 0 9px rgba(var(--g1), .42);
-}
-
-.bh-mac-comms__signal span:nth-child(2) {
-  background: rgb(var(--g2));
-  box-shadow: 0 0 9px rgba(var(--g2), .42);
-}
-
-.bh-mac-comms__signal span:nth-child(3) {
-  background: rgb(var(--g3));
-  box-shadow: 0 0 9px rgba(var(--g3), .42);
-}
-
-.bh-mac-comms__messages {
-  padding: 21px 19px 17px;
-}
-
-.bh-mac-comms__row {
-  margin: 0 0 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.bh-mac-comms__row:last-child {
-  margin-bottom: 0;
-}
-
-.bh-mac-comms__bubble {
-  width: max-content;
-  max-width: 84%;
-  padding: 10px 13px 9px;
-  position: relative;
-  border: 1px solid transparent;
-  border-radius: 18px 18px 5px 18px;
-  background:
-    linear-gradient(rgba(var(--mac-bubble-shade), .48), rgba(var(--mac-bubble-shade), .48)) padding-box,
-    linear-gradient(135deg, rgb(var(--g1)), rgb(var(--g2)) 55%, rgb(var(--g3))) border-box;
-  box-shadow:
-    0 8px 19px rgba(0, 0, 0, .17),
-    inset 0 0 18px rgba(var(--g2), .1);
-  color: rgb(var(--mac-text));
+.macachat__status {
+  margin-top: 11px;
+  color: rgb(var(--mc-muted));
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 10px;
-  font-weight: 400;
-  line-height: 1.52;
-  letter-spacing: 0;
-  text-align: left;
+  font-style: italic;
+  line-height: 1.35;
 }
 
-.bh-mac-comms__bubble::after {
+.macachat__identity::after {
   content: "";
-  width: 11px;
-  height: 13px;
-  position: absolute;
-  right: -5px;
-  bottom: -1px;
-  z-index: -1;
-  border-radius: 0 0 8px 0;
-  background: linear-gradient(145deg, rgb(var(--g2)), rgb(var(--g3)));
-  clip-path: polygon(0 0, 100% 100%, 0 76%);
+  width: 68px;
+  height: 3px;
+  margin-top: 13px;
+  border-radius: 99px;
+  background: var(--mc-forward);
 }
 
-.bh-mac-comms__meta {
-  margin: 5px 4px 0;
+.macachat__conversation {
+  padding: 20px 18px 16px 23px;
+  position: relative;
+  background:
+    radial-gradient(circle, rgba(var(--mc2), .075) 0 1px, transparent 1.4px) 0 0 / 12px 12px,
+    rgb(var(--mc-bg));
+}
+
+.macachat__to {
+  margin: 0 0 18px;
+  padding: 0 2px 10px;
   display: flex;
   align-items: center;
   gap: 7px;
-  color: rgb(var(--mac-muted));
-  font-size: 5px;
-  font-weight: 700;
-  letter-spacing: .85px;
+  border-bottom: 1px solid rgba(var(--mc-line), .08);
+  color: rgb(var(--mc-muted));
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: 1.25px;
   text-transform: uppercase;
 }
 
-.bh-mac-comms__meta span:last-child {
-  color: rgb(var(--g3));
+.macachat__to strong {
+  color: rgb(var(--mc-text));
+  font-size: 7px;
+  letter-spacing: 1.4px;
 }
 
-.bh-mac-comms__meta span:last-child::before {
-  content: "✓✓ ";
+.macachat__to span {
+  margin-left: auto;
+  color: rgb(var(--mc3));
 }
 
-.bh-mac-comms__bubble b,
-.bh-mac-comms__bubble strong {
+.macachat__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.macachat__message {
+  width: fit-content;
+  max-width: 88%;
+  margin-left: auto;
+  padding: 10px 12px 8px 14px;
+  position: relative;
+  border: 1px solid rgba(var(--mc2), .24);
+  border-right: 3px solid rgb(var(--mc2));
+  border-radius: 14px 3px 14px 14px;
+  background: rgba(var(--mc-card), .92);
+  box-shadow: 0 7px 17px rgba(0, 0, 0, .14);
+  color: rgb(var(--mc-text));
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.macachat__message:nth-child(3n + 2) {
+  border-right-color: rgb(var(--mc1));
+}
+
+.macachat__message:nth-child(3n) {
+  border-right-color: rgb(var(--mc3));
+}
+
+.macachat__message time {
+  margin-top: 6px;
+  display: block;
+  color: rgb(var(--mc-muted));
+  font-size: 5px;
+  font-weight: 800;
+  letter-spacing: .8px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.macachat__message time::after {
+  content: " · read";
+  color: rgb(var(--mc3));
+}
+
+.macachat__message b,
+.macachat__message strong {
   color: transparent !important;
   font-weight: 900 !important;
-  background: var(--format-gradient) !important;
+  background: var(--mc-forward) !important;
   background-clip: text !important;
   -webkit-background-clip: text !important;
 }
 
-.bh-mac-comms__bubble i,
-.bh-mac-comms__bubble em {
+.macachat__message i,
+.macachat__message em {
   color: transparent !important;
   font-family: Georgia, "Times New Roman", serif !important;
   font-style: italic !important;
   font-weight: 700 !important;
-  background: var(--format-gradient-reverse) !important;
+  background: var(--mc-reverse) !important;
   background-clip: text !important;
   -webkit-background-clip: text !important;
 }
 
-.bh-mac-comms__bubble u {
+.macachat__message u {
   padding-bottom: 2px;
   color: transparent !important;
   font-weight: 800 !important;
   text-decoration: none !important;
-  background-image: var(--format-gradient), var(--format-gradient) !important;
+  background-image: var(--mc-forward), var(--mc-forward) !important;
   background-position: 0 100%, 0 0 !important;
   background-size: 100% 1px, 100% 100% !important;
   background-repeat: no-repeat !important;
@@ -261,93 +245,76 @@
   -webkit-background-clip: padding-box, text !important;
 }
 
-.bh-mac-comms__end {
-  padding: 0 19px 17px;
+.macachat__foot {
+  padding: 12px 17px 14px 22px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 8px;
-  color: rgb(var(--mac-muted));
+  justify-content: space-between;
+  gap: 18px;
+  border-top: 1px solid rgba(var(--mc-line), .08);
+  background: rgb(var(--mc-paper));
+  color: rgb(var(--mc-muted));
   font-size: 5px;
-  font-weight: 800;
-  letter-spacing: 1.1px;
+  font-weight: 900;
+  letter-spacing: 1.25px;
   text-transform: uppercase;
 }
 
-.bh-mac-comms__end::before {
-  content: "";
-  width: 42px;
-  height: 1px;
-  background: var(--group-gradient);
+.macachat__foot span:first-child {
+  color: rgb(var(--mc3));
 }
 
-html[color-mode="light"] .bh-mac-comms,
-body.lightmode .bh-mac-comms,
-body.light .bh-mac-comms,
-.lightmode .bh-mac-comms,
-[data-theme="light"] .bh-mac-comms {
-  --mac-bg: 248, 243, 235;
-  --mac-panel: 238, 229, 216;
-  --mac-card: 255, 252, 247;
-  --mac-text: 43, 35, 29;
-  --mac-muted: 111, 96, 83;
-  --mac-bubble-shade: 255, 255, 255;
-  --mac-format-mix: black;
-  box-shadow: 0 21px 48px rgba(69, 48, 32, .16), inset 0 0 0 1px rgba(var(--g1), .08);
+.macachat__foot span:last-child {
+  text-align: right;
 }
 
-html[color-mode="light"] .bh-mac-comms__avatar,
-body.lightmode .bh-mac-comms__avatar,
-body.light .bh-mac-comms__avatar,
-.lightmode .bh-mac-comms__avatar,
-[data-theme="light"] .bh-mac-comms__avatar {
-  border-color: rgb(var(--mac-card));
+html[color-mode="light"] .macachat,
+body.lightmode .macachat,
+body.light .macachat,
+.lightmode .macachat,
+[data-theme="light"] .macachat {
+  --mc-bg: 244, 238, 229;
+  --mc-paper: 235, 226, 213;
+  --mc-card: 255, 252, 247;
+  --mc-text: 43, 35, 29;
+  --mc-muted: 108, 94, 82;
+  --mc-line: 54, 42, 33;
+  box-shadow: 0 22px 50px rgba(71, 49, 33, .16);
 }
 
-html[color-mode="light"] .bh-mac-comms__avatar::after,
-body.lightmode .bh-mac-comms__avatar::after,
-body.light .bh-mac-comms__avatar::after,
-.lightmode .bh-mac-comms__avatar::after,
-[data-theme="light"] .bh-mac-comms__avatar::after {
-  border-color: rgb(var(--mac-card));
+html[color-mode="light"] .macachat__message,
+body.lightmode .macachat__message,
+body.light .macachat__message,
+.lightmode .macachat__message,
+[data-theme="light"] .macachat__message {
+  box-shadow: 0 7px 16px rgba(71, 49, 33, .09);
 }
 
-html[color-mode="light"] .bh-mac-comms__bubble,
-body.lightmode .bh-mac-comms__bubble,
-body.light .bh-mac-comms__bubble,
-.lightmode .bh-mac-comms__bubble,
-[data-theme="light"] .bh-mac-comms__bubble {
-  background:
-    linear-gradient(rgba(var(--mac-bubble-shade), .78), rgba(var(--mac-bubble-shade), .78)) padding-box,
-    linear-gradient(135deg, rgb(var(--g1)), rgb(var(--g2)) 55%, rgb(var(--g3))) border-box;
-  box-shadow: 0 8px 18px rgba(70, 49, 33, .1), inset 0 0 16px rgba(var(--g2), .08);
-}
-
-@media (max-width: 430px) {
-  .bh-mac-comms {
+@media (max-width: 450px) {
+  .macachat {
     width: calc(100% - 14px);
-    border-radius: 22px;
+    border-radius: 24px 6px 24px 6px;
   }
 
-  .bh-mac-comms__contact {
-    grid-template-columns: 46px minmax(0, 1fr) auto;
-    padding: 16px 15px 13px;
+  .macachat__top {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 14px;
+    padding: 14px 14px 14px 18px;
   }
 
-  .bh-mac-comms__avatar {
-    width: 46px;
-    height: 46px;
+  .macachat__photo {
+    min-height: 88px;
   }
 
-  .bh-mac-comms__messages {
-    padding: 18px 15px 15px;
+  .macachat__name {
+    font-size: 21px;
   }
 
-  .bh-mac-comms__bubble {
-    max-width: 88%;
+  .macachat__conversation {
+    padding: 18px 14px 15px 19px;
   }
 
-  .bh-mac-comms__end {
-    padding-right: 15px;
+  .macachat__message {
+    max-width: 92%;
   }
 }
