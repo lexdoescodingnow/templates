@@ -1,0 +1,490 @@
+.bh-macthread,
+.bh-macthread * {
+  box-sizing: border-box;
+}
+
+.bh-macthread {
+  --g1: var(--mgrgb1, 138, 102, 82);
+  --g2: var(--mgrgb2, 185, 146, 107);
+  --g3: var(--mgrgb3, 226, 201, 160);
+  --page: 21, 18, 17;
+  --panel: 29, 25, 23;
+  --card: 38, 33, 29;
+  --ink: 242, 235, 226;
+  --muted: 177, 163, 149;
+  --line: 84, 70, 59;
+  --forward: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  --reverse: linear-gradient(270deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  width: min(100%, 690px);
+  margin: 28px auto;
+  color: rgb(var(--ink));
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+html[color-mode="light"] .bh-macthread,
+body.lightmode .bh-macthread,
+body.light .bh-macthread,
+.lightmode .bh-macthread,
+[data-theme="light"] .bh-macthread {
+  --page: 246, 240, 231;
+  --panel: 255, 252, 247;
+  --card: 239, 231, 219;
+  --ink: 43, 35, 29;
+  --muted: 112, 97, 84;
+  --line: 205, 191, 174;
+}
+
+.bh-macthread-shell {
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  background:
+    radial-gradient(circle at 88% 13%, rgba(var(--g3), .12), transparent 26%),
+    linear-gradient(145deg, rgba(var(--g1), .10), transparent 38%),
+    rgb(var(--page));
+  border: 1px solid rgba(var(--g2), .42);
+  border-radius: 29px 8px 29px 8px;
+  box-shadow: 0 24px 56px rgba(0, 0, 0, .34), inset 0 0 0 1px rgba(var(--g1), .06);
+  isolation: isolate;
+}
+
+html[color-mode="light"] .bh-macthread-shell,
+body.lightmode .bh-macthread-shell,
+body.light .bh-macthread-shell,
+.lightmode .bh-macthread-shell,
+[data-theme="light"] .bh-macthread-shell {
+  box-shadow: 0 22px 50px rgba(71, 49, 33, .15), inset 0 0 0 1px rgba(var(--g1), .07);
+}
+
+.bh-macthread-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .45;
+  background: radial-gradient(circle, rgba(var(--g2), .09) 0 1px, transparent 1.4px) 0 0 / 12px 12px;
+  -webkit-mask-image: linear-gradient(90deg, transparent 10%, black 55%, black 100%);
+  mask-image: linear-gradient(90deg, transparent 10%, black 55%, black 100%);
+}
+
+.bh-macthread-head {
+  position: relative;
+  z-index: 2;
+  padding: 17px 20px 18px;
+  border-bottom: 1px solid rgba(var(--line), .64);
+}
+
+.bh-macthread-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 13px;
+  color: rgb(var(--muted));
+  font: italic 400 10px/1.25 Georgia, "Times New Roman", serif;
+}
+
+.bh-macthread-kicker::after {
+  content: "";
+  width: 58px;
+  height: 1px;
+  background: var(--forward);
+  opacity: .75;
+}
+
+.bh-macthread-kicker a {
+  color: rgb(var(--g2)) !important;
+  text-decoration: none !important;
+}
+
+.bh-macthread-title {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  color: transparent !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(33px, 6vw, 49px);
+  font-weight: 700;
+  line-height: .95;
+  letter-spacing: -2px;
+  text-transform: lowercase;
+  background: var(--forward);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bh-macthread-title::after {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 4px;
+  margin-top: 14px;
+  border-radius: 999px;
+  background: var(--forward);
+}
+
+.bh-macthread-names {
+  margin-top: 14px;
+  color: rgb(var(--ink));
+  font: italic 600 12px/1.4 Georgia, "Times New Roman", serif;
+}
+
+.bh-macthread-note {
+  margin-top: 7px;
+  color: rgb(var(--muted));
+  font: italic 400 9px/1.35 Georgia, "Times New Roman", serif;
+}
+
+.bh-macthread-main {
+  position: relative;
+  z-index: 2;
+  display: grid !important;
+  grid-template-columns: 228px minmax(0, 1fr);
+  gap: 20px;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.bh-macthread-media,
+.bh-macthread-contact-one,
+.bh-macthread-contact-two {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  background: rgb(var(--card));
+  border: 1px solid rgba(var(--g2), .34);
+  box-shadow: 0 11px 25px rgba(0, 0, 0, .2);
+}
+
+.bh-macthread-media {
+  min-height: 430px;
+  border-radius: 19px 4px 19px 4px;
+}
+
+.bh-macthread-media img,
+.bh-macthread-contact img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bh-macthread-media::after,
+.bh-macthread-contact-one::after,
+.bh-macthread-contact-two::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(155deg, rgba(var(--g1), .15), transparent 48%, rgba(var(--g3), .10));
+  mix-blend-mode: soft-light;
+}
+
+.bh-macthread-copy {
+  min-width: 0;
+  align-self: center;
+  color: rgb(var(--ink));
+  font-size: 12px;
+  line-height: 1.88;
+  letter-spacing: .08px;
+  text-align: justify;
+}
+
+.bh-macthread-copy b,
+.bh-macthread-copy strong {
+  color: transparent !important;
+  font-weight: 900 !important;
+  background: var(--forward) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.bh-macthread-copy i,
+.bh-macthread-copy em {
+  color: transparent !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  background: var(--reverse) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.bh-macthread-copy u {
+  padding-bottom: 2px;
+  color: transparent !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  background-image: var(--forward), var(--forward) !important;
+  background-position: 0 100%, 0 0 !important;
+  background-size: 100% 1px, 100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-clip: padding-box, text !important;
+  -webkit-background-clip: padding-box, text !important;
+}
+
+.bh-macthread-foot {
+  position: relative;
+  z-index: 2;
+  display: grid !important;
+  grid-template-columns: auto minmax(34px, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 20px 15px;
+  border-top: 1px solid rgba(var(--line), .62);
+  color: rgb(var(--muted));
+  background: rgba(var(--panel), .66);
+  font: italic 400 9px/1 Georgia, "Times New Roman", serif;
+}
+
+.bh-macthread-foot::before {
+  content: "";
+  grid-column: 2;
+  grid-row: 1;
+  height: 1px;
+  background: var(--forward);
+  opacity: .58;
+}
+
+.bh-macthread-foot span:first-child {
+  grid-column: 1;
+  grid-row: 1;
+  color: rgb(var(--g2));
+}
+
+.bh-macthread-foot span:last-child {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: right;
+}
+
+.bh-macthread--soft {
+  max-width: 625px;
+}
+
+.bh-macthread--soft .bh-macthread-shell {
+  padding: 17px;
+  border-radius: 46px;
+}
+
+.bh-macthread--soft .bh-macthread-head {
+  padding: 19px 27px 17px;
+  text-align: center;
+}
+
+.bh-macthread--soft .bh-macthread-kicker {
+  justify-content: center;
+}
+
+.bh-macthread--soft .bh-macthread-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bh-macthread--soft .bh-macthread-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bh-macthread--soft .bh-macthread-main {
+  grid-template-columns: 1fr;
+  padding: 22px 20px 25px;
+}
+
+.bh-macthread--soft .bh-macthread-media {
+  min-height: 285px;
+  max-height: 285px;
+  border-radius: 31px;
+}
+
+.bh-macthread--soft .bh-macthread-media img {
+  object-position: center 32%;
+}
+
+.bh-macthread--soft .bh-macthread-copy {
+  margin: 0 8px;
+  padding: 24px 27px 27px;
+  border: 1px solid rgba(var(--g2), .2);
+  border-radius: 28px;
+  background: rgba(var(--panel), .5);
+}
+
+.bh-macthread--soft .bh-macthread-foot {
+  margin: 0 6px 4px;
+  border-radius: 0 0 35px 35px;
+}
+
+.bh-macthread--scroll {
+  max-width: 700px;
+}
+
+.bh-macthread--scroll .bh-macthread-main {
+  grid-template-columns: 215px minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.bh-macthread--scroll .bh-macthread-media {
+  min-height: 385px;
+}
+
+.bh-macthread--scroll .bh-macthread-copy {
+  height: 300px;
+  align-self: center;
+  overflow-y: auto;
+  padding-right: 14px;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--g2)) rgba(var(--line), .22);
+}
+
+.bh-macthread--scroll .bh-macthread-copy::-webkit-scrollbar {
+  width: 6px;
+}
+
+.bh-macthread--scroll .bh-macthread-copy::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgba(var(--line), .22);
+}
+
+.bh-macthread--scroll .bh-macthread-copy::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+}
+
+.bh-macthread--single {
+  max-width: 540px;
+}
+
+.bh-macthread--single .bh-macthread-shell {
+  padding: 0;
+  border-radius: 7px;
+}
+
+.bh-macthread--single .bh-macthread-head {
+  padding: 24px 29px 19px;
+}
+
+.bh-macthread--single .bh-macthread-main {
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 0;
+}
+
+.bh-macthread--single .bh-macthread-media {
+  min-height: 280px;
+  max-height: 280px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.bh-macthread--single .bh-macthread-media img {
+  object-position: center 30%;
+}
+
+.bh-macthread--single .bh-macthread-copy {
+  padding: 28px 31px 36px;
+  text-align: left;
+}
+
+.bh-macthread--single .bh-macthread-foot {
+  margin: 0;
+}
+
+.bh-macthread--contact {
+  max-width: 675px;
+}
+
+.bh-macthread--contact .bh-macthread-shell {
+  border-radius: 12px 38px 12px 38px;
+}
+
+.bh-macthread--contact .bh-macthread-head {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.bh-macthread--contact .bh-macthread-main {
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 22px 21px 25px;
+}
+
+.bh-macthread-contact {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, .85fr);
+  gap: 10px;
+  height: 315px;
+  min-width: 0;
+}
+
+.bh-macthread-contact-one,
+.bh-macthread-contact-two {
+  min-height: 0;
+}
+
+.bh-macthread-contact-one {
+  border-radius: 8px 3px 3px 24px;
+}
+
+.bh-macthread-contact-two {
+  border-radius: 3px 24px 24px 3px;
+}
+
+.bh-macthread--contact .bh-macthread-copy {
+  margin-top: 0;
+  padding: 29px 29px 12px;
+  border-left: 1px solid rgba(var(--g2), .2);
+  border-right: 1px solid rgba(var(--g2), .2);
+  border-bottom: 1px solid rgba(var(--g2), .2);
+  background: rgba(var(--panel), .45);
+}
+
+@media (max-width: 620px) {
+  .bh-macthread {
+    width: calc(100% - 14px);
+  }
+
+  .bh-macthread-shell {
+    padding: 11px;
+  }
+
+  .bh-macthread-head {
+    padding: 18px 16px 16px;
+  }
+
+  .bh-macthread-title {
+    font-size: 37px;
+  }
+
+  .bh-macthread-main,
+  .bh-macthread--scroll .bh-macthread-main {
+    grid-template-columns: 1fr;
+    padding: 17px 15px 21px;
+  }
+
+  .bh-macthread-media,
+  .bh-macthread--scroll .bh-macthread-media {
+    min-height: 275px;
+    max-height: 275px;
+  }
+
+  .bh-macthread--scroll .bh-macthread-copy {
+    height: 220px;
+  }
+
+  .bh-macthread--soft .bh-macthread-copy {
+    padding: 21px 22px 24px;
+  }
+
+  .bh-macthread-contact {
+    height: 270px;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, .75fr);
+    gap: 8px;
+  }
+
+  .bh-macthread--contact .bh-macthread-copy {
+    padding: 25px 22px 10px;
+  }
+}
