@@ -1,9 +1,10 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-thread.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-variants.css">
 <div class="bh-macadamia" style="--mac-gif:url('https://64.media.tumblr.com/9d353811be377c55b2c1a86b210a1116/ea9a82aec932e109-e6/s540x810/6124b8a9a018713575f5be0b4a534011d72a4408.gifv');--mac-icon:url('https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv');">
 <div class="bh-macadamia__title">[text]</div>
 <div class="bh-macadamia__names">[name] · [name] · [name]</div>
 <div class="bh-macadamia__note">[text]</div>
+<div class="bh-macadamia__heading"><a href="[url]">[text]</a><strong>macadamia</strong></div>
 <div class="bh-macadamia__copy">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. [b]Praesent accumsan justo vitae nisl vulputate[/b], sed consequat elit varius. [i]Integer feugiat nibh non facilisis mauris pretium non[/i]. [u]Donec finibus mi vitae nibh vulputate[/u], in sodales justo feugiat.
 
@@ -21,7 +22,6 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 <div class="bh-macadamia__label"><span>macadamia</span><span>collective</span></div>
 <div class="bh-macadamia__count">01 / 03</div>
 </div>
-<div class="bh-macadamia__heading"><span>kernel archive</span><strong>macadamia</strong></div>
 <div class="bh-macadamia__foot"><span>collective edition</span><span>shell · bloom · kernel</span></div>
 </div>
 [/dohtml]
