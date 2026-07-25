@@ -1,32 +1,52 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@9b1cfadb00c6b8dbfd66f2c3102277d504a2dd7f/macadamia/macadamia-comms.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-comms-v2.css?v=20260725-1">
+<div class="bh-maccomms">
+<div class="bh-maccomms-shell">
 
-<div class="macachat" style="--mac-photo:url('https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv');">
+<div class="bh-maccomms-header">
+<a class="bh-maccomms-avatar" href="[url]" target="_blank" rel="noopener">
+<img src="https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv" alt="Character GIF">
+</a>
 
-<div class="macachat__top">
-<a class="macachat__photo" href="[url]"></a>
-<div class="macachat__identity">
-<span class="macachat__eyebrow">macadamia · private line</span>
-<a class="macachat__name" href="[url]">[name]</a>
-<span class="macachat__status">[text]</span>
+<div class="bh-maccomms-identity">
+<span class="bh-maccomms-kicker">macadamia · private line</span>
+<a class="bh-maccomms-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<span class="bh-maccomms-status">[text]</span>
+<i class="bh-maccomms-line"></i>
+</div>
+
+<a class="bh-maccomms-open" href="[url]" target="_blank" rel="noopener">↗</a>
+</div>
+
+<div class="bh-maccomms-recipient">to <strong>[name]</strong><span>[text]</span></div>
+
+<div class="bh-maccomms-chat">
+<div class="bh-maccomms-message">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<span class="bh-maccomms-time">11:42 pm</span>
+</div>
+
+<div class="bh-maccomms-message">
+Praesent accumsan justo vitae nisl vulputate. [b]Sed consequat elit varius[/b].
+<span class="bh-maccomms-time">11:44 pm</span>
+</div>
+
+<div class="bh-maccomms-message">
+[i]Integer feugiat nibh[/i] non facilisis mauris pretium non.
+<span class="bh-maccomms-time">11:46 pm</span>
+</div>
+
+<div class="bh-maccomms-message">
+[u]Donec finibus mi vitae nibh vulputate[/u], in sodales justo feugiat.
+<span class="bh-maccomms-time">11:47 pm</span>
 </div>
 </div>
 
-<div class="macachat__conversation">
-<div class="macachat__to">to <strong>[name]</strong><span>[text]</span></div>
-
-<div class="macachat__stack">
-<div class="macachat__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<time>11:42 pm</time></div>
-<div class="macachat__message">Praesent accumsan justo vitae nisl vulputate. [b]Sed consequat elit varius[/b].<time>11:44 pm</time></div>
-<div class="macachat__message">[i]Integer feugiat nibh[/i] non facilisis mauris pretium non.<time>11:46 pm</time></div>
-<div class="macachat__message">[u]Donec finibus mi vitae nibh vulputate[/u], in sodales justo feugiat.<time>11:47 pm</time></div>
-</div>
-</div>
-
-<div class="macachat__foot">
+<div class="bh-maccomms-footer">
 <span>macadamia, quietly</span>
 <span>private line</span>
 </div>
 
+</div>
 </div>
 [/dohtml]
