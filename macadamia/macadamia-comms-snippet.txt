@@ -1,6 +1,10 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-comms.css?v=2">
+<style>
+@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-comms.css?v=3');
+</style>
+
 <div class="macachat" style="--mac-photo:url('https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv');">
+
 <div class="macachat__top">
 <a class="macachat__photo" href="[url]"></a>
 <div class="macachat__identity">
@@ -9,8 +13,10 @@
 <span class="macachat__status">[text]</span>
 </div>
 </div>
+
 <div class="macachat__conversation">
 <div class="macachat__to">to <strong>[name]</strong><span>[text]</span></div>
+
 <div class="macachat__stack">
 <div class="macachat__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<time>11:42 pm</time></div>
 <div class="macachat__message">Praesent accumsan justo vitae nisl vulputate. [b]Sed consequat elit varius[/b].<time>11:44 pm</time></div>
@@ -18,6 +24,11 @@
 <div class="macachat__message">[u]Donec finibus mi vitae nibh vulputate[/u], in sodales justo feugiat.<time>11:47 pm</time></div>
 </div>
 </div>
-<div class="macachat__foot"><span>macadamia message</span><span>shell · signal · reply</span></div>
+
+<div class="macachat__foot">
+<span>macadamia message</span>
+<span>shell · signal · reply</span>
+</div>
+
 </div>
 [/dohtml]
