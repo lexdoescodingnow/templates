@@ -1,0 +1,389 @@
+.bh-macbud,
+.bh-macbud * {
+  box-sizing: border-box;
+}
+
+.bh-macbud {
+  --g1: var(--mgrgb1, 138, 102, 82);
+  --g2: var(--mgrgb2, 185, 146, 107);
+  --g3: var(--mgrgb3, 226, 201, 160);
+  --page: 246, 240, 231;
+  --panel: 255, 252, 247;
+  --card: 239, 231, 219;
+  --ink: 43, 35, 29;
+  --muted: 112, 97, 84;
+  --line: 205, 191, 174;
+  --forward: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  --reverse: linear-gradient(270deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  width: min(100%, 450px);
+  margin: 23px auto;
+  color: rgb(var(--ink));
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+html[color-mode="dark"] .bh-macbud {
+  --page: 21, 19, 18;
+  --panel: 31, 28, 26;
+  --card: 40, 36, 33;
+  --ink: 242, 236, 227;
+  --muted: 172, 160, 148;
+  --line: 67, 59, 53;
+}
+
+.bh-macbud-shell {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(var(--g1), .09), transparent 40%),
+    linear-gradient(325deg, rgba(var(--g3), .08), transparent 42%),
+    rgb(var(--page));
+  border: 1px solid rgba(var(--g2), .44);
+  box-shadow: 0 18px 42px rgba(48, 34, 24, .14);
+}
+
+html[color-mode="dark"] .bh-macbud-shell {
+  box-shadow: 0 20px 46px rgba(0, 0, 0, .34);
+}
+
+.bh-macbud-head {
+  min-width: 0;
+}
+
+.bh-macbud-name {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  color: transparent;
+  font: 700 22px/.98 Georgia, "Times New Roman", serif;
+  letter-spacing: -.8px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--forward);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bh-macbud-meta,
+.bh-macbud-limit,
+.bh-macbud-tag {
+  display: block;
+  color: rgb(var(--muted));
+  font: italic 400 9px/1.3 Georgia, "Times New Roman", serif;
+}
+
+.bh-macbud-meta {
+  margin-top: 6px;
+}
+
+.bh-macbud-limit {
+  color: rgb(var(--g2));
+}
+
+.bh-macbud-copy {
+  color: rgb(var(--ink));
+  font-size: 10px;
+  line-height: 1.62;
+}
+
+.bh-macbud-copy p {
+  margin: 0;
+}
+
+.bh-macbud-copy b,
+.bh-macbud-copy strong {
+  color: transparent;
+  font-weight: 900;
+  background: var(--forward);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bh-macbud-copy i,
+.bh-macbud-copy em {
+  color: transparent;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  background: var(--reverse);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bh-macbud-copy u {
+  color: transparent;
+  font-weight: 800;
+  text-decoration: none;
+  background-image: var(--forward), var(--forward);
+  background-position: 0 100%, 0 0;
+  background-size: 100% 1px, 100% 100%;
+  background-repeat: no-repeat;
+  background-clip: padding-box, text;
+  -webkit-background-clip: padding-box, text;
+}
+
+.bh-macbud-photo,
+.bh-macbud-photo img,
+.bh-macbud-duo img {
+  display: block;
+}
+
+.bh-macbud-photo {
+  overflow: hidden;
+}
+
+.bh-macbud-photo img,
+.bh-macbud-duo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.88) contrast(1.03);
+}
+
+.bh-macbud-foot {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: rgb(var(--muted));
+  font: italic 400 8px/1 Georgia, "Times New Roman", serif;
+}
+
+.bh-macbud-foot::before {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--forward);
+  opacity: .55;
+}
+
+.bh-macbud-open {
+  color: rgb(var(--g2));
+  text-decoration: none;
+}
+
+.bh-macbud-sprout .bh-macbud-shell {
+  display: grid;
+  grid-template-columns: 126px minmax(0, 1fr);
+  grid-template-areas:
+    "photo head"
+    "photo copy"
+    "photo foot";
+  grid-template-rows: auto 1fr auto;
+  min-height: 190px;
+  border-radius: 25px 7px 25px 7px;
+}
+
+.bh-macbud-sprout .bh-macbud-photo {
+  grid-area: photo;
+  min-height: 190px;
+  border-right: 4px solid rgb(var(--g2));
+}
+
+.bh-macbud-sprout .bh-macbud-photo img {
+  object-position: center 28%;
+}
+
+.bh-macbud-sprout .bh-macbud-head {
+  grid-area: head;
+  padding: 20px 22px 10px;
+  border-bottom: 1px solid rgba(var(--line), .62);
+}
+
+.bh-macbud-sprout .bh-macbud-copy {
+  grid-area: copy;
+  padding: 15px 22px 14px;
+}
+
+.bh-macbud-sprout .bh-macbud-foot {
+  grid-area: foot;
+  padding: 0 22px 15px;
+}
+
+.bh-macbud-stem {
+  max-width: 380px;
+}
+
+.bh-macbud-stem .bh-macbud-shell {
+  padding: 23px 25px 20px 32px;
+  border: 0;
+  border-radius: 4px 24px 4px 24px;
+}
+
+.bh-macbud-stem .bh-macbud-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+}
+
+.bh-macbud-stem .bh-macbud-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.bh-macbud-stem .bh-macbud-copy {
+  padding: 15px 0 16px;
+  border-top: 1px solid rgba(var(--line), .62);
+  border-bottom: 1px solid rgba(var(--line), .62);
+}
+
+.bh-macbud-stem .bh-macbud-foot {
+  padding-top: 14px;
+}
+
+.bh-macbud-pocket {
+  max-width: 390px;
+}
+
+.bh-macbud-pocket .bh-macbud-shell {
+  padding: 24px 27px 21px;
+  border-radius: 38px;
+}
+
+.bh-macbud-pocket .bh-macbud-head {
+  min-height: 73px;
+  padding-right: 82px;
+}
+
+.bh-macbud-pocket .bh-macbud-photo {
+  position: absolute;
+  top: 20px;
+  right: 21px;
+  width: 68px;
+  height: 68px;
+  border: 5px solid rgb(var(--page));
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgb(var(--g2)), 0 8px 18px rgba(35, 26, 20, .2);
+}
+
+.bh-macbud-pocket .bh-macbud-photo img {
+  border-radius: 50%;
+}
+
+.bh-macbud-pocket .bh-macbud-copy {
+  margin-top: 14px;
+  padding: 17px 18px;
+  background: rgb(var(--card));
+  border: 1px solid rgba(var(--line), .72);
+  border-radius: 21px;
+}
+
+.bh-macbud-pocket .bh-macbud-foot {
+  padding: 14px 4px 0;
+}
+
+.bh-macbud-pressed .bh-macbud-shell {
+  display: grid;
+  grid-template-areas:
+    "photo"
+    "head"
+    "copy"
+    "foot";
+  border-radius: 7px;
+}
+
+.bh-macbud-pressed .bh-macbud-photo {
+  grid-area: photo;
+  height: 145px;
+  border-bottom: 4px solid rgb(var(--g2));
+}
+
+.bh-macbud-pressed .bh-macbud-photo img {
+  object-position: center 32%;
+}
+
+.bh-macbud-pressed .bh-macbud-head {
+  grid-area: head;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 17px;
+  padding: 18px 24px 10px;
+}
+
+.bh-macbud-pressed .bh-macbud-copy {
+  grid-area: copy;
+  padding: 15px 24px 18px;
+}
+
+.bh-macbud-pressed .bh-macbud-foot {
+  grid-area: foot;
+  padding: 0 24px 17px;
+}
+
+.bh-macbud-pair {
+  max-width: 430px;
+}
+
+.bh-macbud-pair .bh-macbud-shell {
+  padding: 17px;
+  border-radius: 20px 5px 20px 5px;
+}
+
+.bh-macbud-pair .bh-macbud-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 17px;
+  padding: 0 7px 12px;
+}
+
+.bh-macbud-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  height: 104px;
+  margin-bottom: 15px;
+}
+
+.bh-macbud-duo img {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(var(--g2), .36);
+}
+
+.bh-macbud-duo img:first-child {
+  border-radius: 14px 3px 3px 14px;
+}
+
+.bh-macbud-duo img:last-child {
+  border-radius: 3px 14px 14px 3px;
+}
+
+.bh-macbud-pair .bh-macbud-copy {
+  padding: 15px 18px 17px;
+  background: rgb(var(--card));
+  border: 1px solid rgba(var(--line), .7);
+  border-radius: 16px 4px 16px 16px;
+}
+
+.bh-macbud-pair .bh-macbud-foot {
+  padding: 14px 6px 1px;
+}
+
+@media (max-width: 480px) {
+  .bh-macbud {
+    width: calc(100% - 14px);
+  }
+
+  .bh-macbud-sprout .bh-macbud-shell {
+    grid-template-columns: 104px minmax(0, 1fr);
+  }
+
+  .bh-macbud-sprout .bh-macbud-head,
+  .bh-macbud-sprout .bh-macbud-copy {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .bh-macbud-sprout .bh-macbud-foot {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
