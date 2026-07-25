@@ -1,0 +1,300 @@
+.bh-maccomms,
+.bh-maccomms * {
+  box-sizing: border-box;
+}
+
+.bh-maccomms {
+  --g1: var(--mgrgb1, 138, 102, 82);
+  --g2: var(--mgrgb2, 185, 146, 107);
+  --g3: var(--mgrgb3, 226, 201, 160);
+  --page: 246, 240, 231;
+  --panel: 255, 252, 247;
+  --card: 239, 231, 219;
+  --ink: 43, 35, 29;
+  --muted: 112, 97, 84;
+  --line: 205, 191, 174;
+  --forward: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  --reverse: linear-gradient(270deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  position: relative;
+  width: min(100%, 410px);
+  margin: 26px auto;
+  padding: 12px;
+  overflow: hidden;
+  color: rgb(var(--ink));
+  background:
+    linear-gradient(145deg, rgba(var(--g1), .14), transparent 38%),
+    linear-gradient(325deg, rgba(var(--g3), .12), transparent 40%),
+    rgb(var(--page));
+  border: 1px solid rgba(var(--g2), .48);
+  border-radius: 30px 9px 30px 9px;
+  box-shadow: 0 23px 52px rgba(54, 39, 27, .17);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+html[color-mode="dark"] .bh-maccomms {
+  --page: 21, 19, 18;
+  --panel: 31, 28, 26;
+  --card: 40, 36, 33;
+  --ink: 242, 236, 227;
+  --muted: 172, 160, 148;
+  --line: 67, 59, 53;
+  box-shadow: 0 25px 58px rgba(0, 0, 0, .38);
+}
+
+.bh-maccomms-shell {
+  position: relative;
+  overflow: hidden;
+  background: rgb(var(--panel));
+  border: 1px solid rgba(var(--line), .82);
+  border-radius: 23px 5px 23px 5px;
+}
+
+.bh-maccomms-shell::before {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(180deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+}
+
+.bh-maccomms-header {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) 31px;
+  gap: 15px;
+  align-items: center;
+  min-height: 119px;
+  padding: 15px 16px 15px 21px;
+  background:
+    radial-gradient(circle at 90% 14%, rgba(var(--g3), .16), transparent 28%),
+    linear-gradient(135deg, rgba(var(--g1), .11), transparent 50%),
+    rgb(var(--panel));
+  border-bottom: 1px solid rgba(var(--line), .72);
+}
+
+.bh-maccomms-avatar {
+  display: block;
+  width: 88px;
+  height: 96px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--g2), .42);
+  border-radius: 18px 4px 18px 4px;
+  box-shadow: 0 9px 21px rgba(31, 24, 19, .18);
+}
+
+.bh-maccomms-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(.88) contrast(1.03);
+}
+
+.bh-maccomms-identity {
+  min-width: 0;
+}
+
+.bh-maccomms-kicker {
+  display: block;
+  margin-bottom: 8px;
+  color: rgb(var(--muted));
+  font: italic 400 10px/1.25 Georgia, "Times New Roman", serif;
+}
+
+.bh-maccomms-name {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  color: transparent;
+  font: 700 25px/.98 Georgia, "Times New Roman", serif;
+  letter-spacing: -1px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--forward);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bh-maccomms-status {
+  display: block;
+  margin-top: 9px;
+  color: rgb(var(--muted));
+  font: italic 400 10px/1.35 Georgia, "Times New Roman", serif;
+}
+
+.bh-maccomms-line {
+  display: block;
+  width: 68px;
+  height: 3px;
+  margin-top: 12px;
+  border-radius: 99px;
+  background: var(--forward);
+}
+
+.bh-maccomms-open {
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  color: rgb(var(--g2));
+  border: 1px solid rgba(var(--g2), .42);
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bh-maccomms-recipient {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 14px 18px 10px 23px;
+  color: rgb(var(--muted));
+  border-bottom: 1px solid rgba(var(--line), .58);
+  font: italic 400 9px/1.2 Georgia, "Times New Roman", serif;
+}
+
+.bh-maccomms-recipient strong {
+  color: rgb(var(--ink));
+  font: 700 10px/1.2 Georgia, "Times New Roman", serif;
+}
+
+.bh-maccomms-recipient span {
+  margin-left: auto;
+  color: rgb(var(--g2));
+}
+
+.bh-maccomms-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 18px 17px 19px 23px;
+  background:
+    radial-gradient(circle, rgba(var(--g2), .075) 0 1px, transparent 1.4px) 0 0 / 12px 12px,
+    rgb(var(--page));
+}
+
+.bh-maccomms-message {
+  width: fit-content;
+  max-width: 88%;
+  padding: 10px 12px 8px 14px;
+  color: rgb(var(--ink));
+  background: rgb(var(--card));
+  border: 1px solid rgba(var(--line), .72);
+  border-right: 3px solid rgb(var(--g2));
+  border-radius: 14px 3px 14px 14px;
+  box-shadow: 0 7px 16px rgba(41, 30, 22, .1);
+  font-size: 10px;
+  line-height: 1.52;
+}
+
+.bh-maccomms-message:nth-child(3n + 2) {
+  border-right-color: rgb(var(--g1));
+}
+
+.bh-maccomms-message:nth-child(3n) {
+  border-right-color: rgb(var(--g3));
+}
+
+.bh-maccomms-time {
+  display: block;
+  margin-top: 6px;
+  color: rgb(var(--muted));
+  font: italic 400 7px/1 Georgia, "Times New Roman", serif;
+  text-align: right;
+}
+
+.bh-maccomms-time::after {
+  content: " · read";
+  color: rgb(var(--g2));
+}
+
+.bh-maccomms-message b,
+.bh-maccomms-message strong {
+  color: transparent;
+  font-weight: 900;
+  background: var(--forward);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bh-maccomms-message i,
+.bh-maccomms-message em {
+  color: transparent;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  background: var(--reverse);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bh-maccomms-message u {
+  color: transparent;
+  font-weight: 800;
+  text-decoration: none;
+  background-image: var(--forward), var(--forward);
+  background-position: 0 100%, 0 0;
+  background-size: 100% 1px, 100% 100%;
+  background-repeat: no-repeat;
+  background-clip: padding-box, text;
+  -webkit-background-clip: padding-box, text;
+}
+
+.bh-maccomms-footer {
+  display: grid;
+  grid-template-columns: auto minmax(30px, 1fr) auto;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 16px 14px 21px;
+  color: rgb(var(--muted));
+  background: rgb(var(--panel));
+  border-top: 1px solid rgba(var(--line), .64);
+  font: italic 400 9px/1 Georgia, "Times New Roman", serif;
+}
+
+.bh-maccomms-footer::before {
+  content: "";
+  grid-column: 2;
+  grid-row: 1;
+  height: 1px;
+  background: var(--forward);
+  opacity: .58;
+}
+
+.bh-maccomms-footer span:first-child {
+  grid-column: 1;
+  grid-row: 1;
+  color: rgb(var(--g2));
+}
+
+.bh-maccomms-footer span:last-child {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+@media (max-width: 450px) {
+  .bh-maccomms {
+    width: calc(100% - 14px);
+  }
+
+  .bh-maccomms-header {
+    grid-template-columns: 78px minmax(0, 1fr) 28px;
+    gap: 12px;
+    padding-right: 13px;
+  }
+
+  .bh-maccomms-avatar {
+    width: 78px;
+    height: 88px;
+  }
+
+  .bh-maccomms-name {
+    font-size: 21px;
+  }
+}
