@@ -1,0 +1,28 @@
+SAKE THREAD
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake.css?v=20260725');</style>
+<div class="bh-sake-pour">
+
+<a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>[name]</span></a>
+
+<div class="bh-sake-pour__text">
+[text]
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum, sapien vitae fringilla viverra, neque ligula tincidunt risus, sed consequat arcu erat at justo.</p>
+</div>
+
+<div class="bh-sake-pour__gifs">
+<div class="bh-sake-pour__gif"><img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s400x600/e24d5427540bb2a9ad44af10efff7c7a8a43464e.gifv" alt=""></div>
+<div class="bh-sake-pour__gif"><img src="https://64.media.tumblr.com/1b73af8a8ab10c9387bb9b7e26438906/b5fe69bc666e12d9-7d/s400x600/af7a23e876aae74d30d035bf6c52fccebae2329a.gifv" alt=""></div>
+</div>
+
+<div class="bh-sake-pour__label">
+<div class="bh-sake-pour__label-copy"><span class="bh-sake-pour__eyebrow">米 ・ 水 ・ 麹</span><div class="bh-sake-pour__title">first pour</div><span class="bh-sake-pour__subtitle">SAKE COLLECTION</span></div>
+<div class="bh-sake-pour__seal"><span>酒</span></div>
+</div>
+
+<div class="bh-sake-pour__neck"><span></span><span></span><span></span></div>
+<div class="bh-sake-pour__base"><span>清酒</span><i></i><span>一献</span></div>
+
+</div>
+[/dohtml]
