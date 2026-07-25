@@ -1,0 +1,133 @@
+.macachat__eyebrow {
+  margin-bottom: 8px;
+  color: rgb(var(--mc-muted));
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .05px;
+  text-transform: none;
+}
+
+.macachat__to {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: .05px;
+  text-transform: none;
+}
+
+.macachat__to strong {
+  font-family: inherit;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.macachat__to span {
+  font-family: inherit;
+  font-size: 8px;
+  font-style: italic;
+  letter-spacing: 0;
+}
+
+.macachat__message time {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 7px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.bh-macadamia__heading {
+  align-items: baseline;
+}
+
+.bh-macadamia__heading span,
+.bh-macadamia__heading a {
+  color: rgb(var(--mac-muted));
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .05px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.bh-macadamia__heading a:hover {
+  color: rgb(var(--g2));
+  letter-spacing: .05px;
+}
+
+.bh-macadamia__heading strong {
+  color: transparent !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .05px;
+  text-transform: none;
+  background: var(--group-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bh-macadamia__note {
+  color: rgb(var(--g3));
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: .05px;
+  text-transform: none;
+}
+
+.bh-macadamia__label {
+  gap: 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: .05px;
+  text-transform: none;
+}
+
+.bh-macadamia__label span:first-child {
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  text-transform: lowercase;
+}
+
+.bh-macadamia__count {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 8px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: .05px;
+}
+
+.bh-macadamia__foot {
+  color: rgb(var(--mac-muted));
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .05px;
+  text-transform: none;
+}
+
+.bh-macadamia__foot span:last-child {
+  color: rgb(var(--g3));
+}
