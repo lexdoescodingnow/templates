@@ -1,0 +1,96 @@
+@import url("https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@208b92bff638084f3c7b60c32ccaeec68316cb35/sweet-potato/sweet-potato-buds.css");
+
+.spb1-note-v2 {
+  display: grid;
+  width: min(100%, 410px);
+  min-height: 258px;
+  grid-template-columns: 104px minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "avatar head"
+    "avatar copy"
+    "foot foot";
+  border-radius: 20px 7px 20px 7px;
+}
+
+.spb1-note-v2-avatar {
+  grid-area: avatar;
+  min-height: 214px;
+  border-right: 1px solid var(--spb-line);
+  background-position: center 24%;
+}
+
+.spb1-note-v2-head {
+  grid-area: head;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-width: 0;
+  padding: 27px 23px 14px;
+}
+
+.spb1-note-v2-copy {
+  grid-area: copy;
+  min-height: 142px;
+  padding: 15px 24px 29px 32px;
+}
+
+.spb1-note-v2-copy::before {
+  top: 17px;
+  bottom: 29px;
+  left: 17px;
+}
+
+.spb1-note-v2-foot {
+  grid-area: foot;
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px 18px 14px;
+  background: var(--spb-paper2);
+  border-top: 1px solid var(--spb-line);
+}
+
+.spb1-note-v2-foot .spb1-limit,
+.spb1-note-v2-foot .spb1-name {
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.spb1-note-v2-foot .spb1-name {
+  max-width: 48%;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .spb1-note-v2 {
+    width: calc(100% - 18px);
+    grid-template-columns: 88px minmax(0, 1fr);
+  }
+
+  .spb1-note-v2-avatar {
+    min-height: 210px;
+  }
+
+  .spb1-note-v2-head {
+    gap: 12px;
+    padding: 24px 18px 12px;
+  }
+
+  .spb1-note-v2-copy {
+    min-height: 138px;
+    padding: 14px 18px 27px 28px;
+  }
+
+  .spb1-note-v2-copy::before {
+    left: 14px;
+  }
+
+  .spb1-note-v2-foot {
+    gap: 12px;
+    padding-inline: 15px;
+  }
+}
