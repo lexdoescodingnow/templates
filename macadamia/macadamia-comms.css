@@ -1,0 +1,414 @@
+.bh-mac-comms {
+  --g1: var(--mgrgb1, var(--mrgb1, 168, 130, 96));
+  --g2: var(--mgrgb2, var(--mrgb2, 206, 169, 124));
+  --g3: var(--mgrgb3, var(--mrgb3, 232, 205, 165));
+  --mac-bg: 22, 19, 17;
+  --mac-panel: 31, 27, 24;
+  --mac-bubble: 43, 37, 33;
+  --mac-text: 243, 236, 226;
+  --mac-muted: 180, 166, 151;
+  --mac-kernel: 235, 216, 181;
+  --mac-line: 255, 255, 255;
+  --group-gradient: linear-gradient(90deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  --group-gradient-reverse: linear-gradient(270deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+  width: calc(100% - 24px);
+  max-width: 390px;
+  margin: 28px auto;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid rgba(var(--g2), .52);
+  border-radius: 36px 12px 36px 12px;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(var(--g3), .12), transparent 27%),
+    linear-gradient(155deg, rgb(var(--mac-bg)), rgb(var(--mac-panel)));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .38), inset 0 0 0 1px rgba(var(--g1), .08);
+  color: rgb(var(--mac-text));
+  font-family: Arial, Helvetica, sans-serif;
+  isolation: isolate;
+}
+
+.bh-mac-comms *,
+.bh-mac-comms *::before,
+.bh-mac-comms *::after {
+  box-sizing: border-box;
+}
+
+.bh-mac-comms::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .55;
+  background: radial-gradient(circle, rgba(var(--g2), .11) 0 1px, transparent 1.5px) 0 0 / 11px 11px;
+  mask-image: linear-gradient(180deg, transparent 0 24%, black 52%, black 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0 24%, black 52%, black 100%);
+}
+
+.bh-mac-comms__header {
+  min-height: 112px;
+  padding: 23px 24px 20px;
+  display: grid;
+  grid-template-columns: 66px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgb(var(--g1)), rgb(var(--g2)) 56%, rgb(var(--g3)));
+  color: white;
+}
+
+.bh-mac-comms__header::before,
+.bh-mac-comms__header::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .22);
+  pointer-events: none;
+}
+
+.bh-mac-comms__header::before {
+  width: 132px;
+  height: 132px;
+  right: -55px;
+  top: -64px;
+  box-shadow: 0 0 0 17px rgba(255, 255, 255, .06), 0 0 0 38px rgba(255, 255, 255, .035);
+}
+
+.bh-mac-comms__header::after {
+  width: 56px;
+  height: 56px;
+  left: 5px;
+  bottom: -34px;
+}
+
+.bh-mac-comms__avatar {
+  width: 66px;
+  height: 66px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  border: 5px solid rgba(var(--mac-bg), .88);
+  border-radius: 50%;
+  background-image: var(--mac-avatar);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .58), 0 10px 24px rgba(0, 0, 0, .28);
+}
+
+.bh-mac-comms__avatar::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -1px;
+  bottom: 2px;
+  border: 3px solid rgb(var(--mac-bg));
+  border-radius: 50%;
+  background: rgb(var(--g3));
+}
+
+.bh-mac-comms__identity {
+  min-width: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.bh-mac-comms__name {
+  display: block;
+  overflow: hidden;
+  color: white !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -.8px;
+  text-decoration: none !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bh-mac-comms__status {
+  display: block;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, .8);
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.bh-mac-comms__mark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, .36);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .13);
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  backdrop-filter: blur(6px);
+}
+
+.bh-mac-comms__subhead {
+  padding: 12px 20px 11px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid rgba(var(--g2), .22);
+  background: linear-gradient(90deg, rgba(var(--g1), .08), transparent 50%, rgba(var(--g3), .08));
+  color: rgb(var(--mac-muted));
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.bh-mac-comms__subhead a {
+  color: rgb(var(--g3)) !important;
+  text-decoration: none !important;
+}
+
+.bh-mac-comms__chat {
+  max-height: 410px;
+  padding: 20px 17px 22px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--g2)) rgba(var(--mac-bubble), .65);
+}
+
+.bh-mac-comms__chat::-webkit-scrollbar {
+  width: 6px;
+}
+
+.bh-mac-comms__chat::-webkit-scrollbar-track {
+  border-radius: 99px;
+  background: rgba(var(--mac-bubble), .62);
+}
+
+.bh-mac-comms__chat::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background: linear-gradient(180deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3)));
+}
+
+.bh-mac-comms__date {
+  width: max-content;
+  max-width: 80%;
+  margin: 0 auto 19px;
+  padding: 6px 11px;
+  border: 1px solid rgba(var(--g2), .22);
+  border-radius: 99px;
+  background: rgba(var(--mac-bubble), .58);
+  color: rgb(var(--mac-muted));
+  font-size: 6px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bh-mac-comms__row {
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bh-mac-comms__row--in {
+  align-items: flex-start;
+}
+
+.bh-mac-comms__row--out {
+  align-items: flex-end;
+}
+
+.bh-mac-comms__bubble {
+  max-width: 82%;
+  padding: 11px 14px;
+  position: relative;
+  border-radius: 19px;
+  color: rgb(var(--mac-text));
+  font-size: 11px;
+  line-height: 1.55;
+  letter-spacing: .05px;
+}
+
+.bh-mac-comms__row--in .bh-mac-comms__bubble {
+  border: 1px solid rgba(var(--g2), .16);
+  border-bottom-left-radius: 5px;
+  background: rgba(var(--mac-bubble), .92);
+  box-shadow: inset 3px 0 0 rgba(var(--g2), .7), 0 8px 18px rgba(0, 0, 0, .12);
+}
+
+.bh-mac-comms__row--out .bh-mac-comms__bubble {
+  border: 1px solid transparent;
+  border-bottom-right-radius: 5px;
+  background:
+    linear-gradient(145deg, rgba(var(--g1), .27), rgba(var(--g2), .21), rgba(var(--g3), .16)) padding-box,
+    linear-gradient(135deg, rgb(var(--g1)), rgb(var(--g2)), rgb(var(--g3))) border-box;
+  box-shadow: 0 9px 21px rgba(0, 0, 0, .16);
+}
+
+.bh-mac-comms__time {
+  margin: 5px 4px 0;
+  color: rgb(var(--mac-muted));
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.bh-mac-comms__row--out .bh-mac-comms__time::after {
+  content: "  ✓✓";
+  color: rgb(var(--g3));
+}
+
+.bh-mac-comms__bubble b,
+.bh-mac-comms__bubble strong {
+  color: transparent !important;
+  font-weight: 900 !important;
+  background: var(--group-gradient) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.bh-mac-comms__bubble i,
+.bh-mac-comms__bubble em {
+  color: transparent !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  background: var(--group-gradient-reverse) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.bh-mac-comms__bubble u {
+  padding-bottom: 2px;
+  color: transparent !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  background-image: var(--group-gradient), var(--group-gradient) !important;
+  background-position: 0 100%, 0 0 !important;
+  background-size: 100% 1px, 100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-clip: padding-box, text !important;
+  -webkit-background-clip: padding-box, text !important;
+}
+
+.bh-mac-comms__typing {
+  width: 58px;
+  height: 32px;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid rgba(var(--g2), .18);
+  border-radius: 17px 17px 17px 5px;
+  background: rgba(var(--mac-bubble), .92);
+}
+
+.bh-mac-comms__typing span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(var(--g2));
+  opacity: .45;
+}
+
+.bh-mac-comms__typing span:nth-child(2) {
+  opacity: .7;
+}
+
+.bh-mac-comms__typing span:nth-child(3) {
+  opacity: 1;
+}
+
+.bh-mac-comms__footer {
+  padding: 13px 18px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid rgba(var(--g2), .23);
+  background: linear-gradient(90deg, rgba(var(--g1), .08), transparent 38%, rgba(var(--g3), .08));
+  color: rgb(var(--mac-muted));
+  font-size: 6px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.bh-mac-comms__footer strong {
+  color: transparent !important;
+  font-size: 7px;
+  letter-spacing: 1.8px;
+  background: var(--group-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+html[color-mode="light"] .bh-mac-comms,
+body.lightmode .bh-mac-comms,
+body.light .bh-mac-comms,
+.lightmode .bh-mac-comms,
+[data-theme="light"] .bh-mac-comms {
+  --mac-bg: 247, 241, 232;
+  --mac-panel: 237, 227, 214;
+  --mac-bubble: 255, 251, 245;
+  --mac-text: 42, 34, 29;
+  --mac-muted: 112, 96, 83;
+  --mac-kernel: 229, 204, 165;
+  --mac-line: 42, 34, 29;
+  box-shadow: 0 23px 55px rgba(69, 48, 32, .17), inset 0 0 0 1px rgba(var(--g1), .08);
+}
+
+html[color-mode="light"] .bh-mac-comms__avatar,
+body.lightmode .bh-mac-comms__avatar,
+body.light .bh-mac-comms__avatar,
+.lightmode .bh-mac-comms__avatar,
+[data-theme="light"] .bh-mac-comms__avatar {
+  border-color: rgba(255, 251, 245, .95);
+}
+
+html[color-mode="light"] .bh-mac-comms__avatar::after,
+body.lightmode .bh-mac-comms__avatar::after,
+body.light .bh-mac-comms__avatar::after,
+.lightmode .bh-mac-comms__avatar::after,
+[data-theme="light"] .bh-mac-comms__avatar::after {
+  border-color: rgb(var(--mac-bubble));
+}
+
+@media (max-width: 440px) {
+  .bh-mac-comms {
+    width: calc(100% - 14px);
+    border-radius: 28px 9px 28px 9px;
+  }
+
+  .bh-mac-comms__header {
+    grid-template-columns: 58px minmax(0, 1fr) auto;
+    padding: 20px 18px 18px;
+  }
+
+  .bh-mac-comms__avatar {
+    width: 58px;
+    height: 58px;
+  }
+
+  .bh-mac-comms__name {
+    font-size: 20px;
+  }
+
+  .bh-mac-comms__chat {
+    max-height: 380px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
