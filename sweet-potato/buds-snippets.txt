@@ -3,7 +3,7 @@ SWEET POTATO BUDS V2
 STANDARD
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css');</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css">
 <div class="spb1 spb1-card spb1-standard" style="--spb-img1:url('[url]');">
   <div class="spb1-copy spb1-standard-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
   <div class="spb1-name spb1-standard-name">[name]</div>
@@ -13,11 +13,10 @@ STANDARD
 </div>
 [/dohtml]
 
-
 PORTRAIT
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css');</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css">
 <div class="spb1 spb1-card spb1-portrait" style="--spb-img1:url('[url]');">
   <div class="spb1-copy spb1-portrait-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
   <div class="spb1-name spb1-portrait-name">[name]</div>
@@ -27,11 +26,10 @@ PORTRAIT
 </div>
 [/dohtml]
 
-
 DUO VOLLEY
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css');</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css">
 <div class="spb1 spb1-card spb1-duo" style="--spb-img1:url('[url]');--spb-img2:url('[url2]');">
   <div class="spb1-copy spb1-duo-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
   <div class="spb1-name spb1-duo-name">[name]</div>
@@ -41,11 +39,10 @@ DUO VOLLEY
 </div>
 [/dohtml]
 
-
 BUD NOTE
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css');</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css">
 <div class="spb1 spb1-card spb1-note-v2" style="--spb-img1:url('[url]');">
   <div class="spb1-copy spb1-note-v2-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
   <div class="spb1-note-v2-foot"><span class="spb1-limit">100 words or fewer</span><span class="spb1-name">[name]</span></div>
@@ -54,11 +51,10 @@ BUD NOTE
 </div>
 [/dohtml]
 
-
 CINEMATIC STRIP
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css');</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@b7190f540fa40c7c89e0166bb0da360663234d99/sweet-potato/sweet-potato-buds-v2.css">
 <div class="spb1 spb1-card spb1-strip" style="--spb-img1:url('[url]');">
   <div class="spb1-copy spb1-strip-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
   <div class="spb1-name spb1-strip-name">[name]</div>
