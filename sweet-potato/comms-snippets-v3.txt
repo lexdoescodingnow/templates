@@ -3,7 +3,7 @@ SWEET POTATO COMMS V3
 SENT
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@8ecbf52b35aa0f8a7462054f70bf61df29cc0e38/sweet-potato/sweet-potato-comms-v3.css');</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@8ecbf52b35aa0f8a7462054f70bf61df29cc0e38/sweet-potato/sweet-potato-comms-v3.css">
 <div class="spc3 spc3-card spc3-card--sent" style="--spc-avatar:url('[url]');">
   <div class="spc3-message"><div class="spc3-bubble">[text]</div><div class="spc3-meta">[time] · sent</div></div>
   <div class="spc3-name">[name]</div>
@@ -14,11 +14,10 @@ SENT
 </div>
 [/dohtml]
 
-
 RECEIVED
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@8ecbf52b35aa0f8a7462054f70bf61df29cc0e38/sweet-potato/sweet-potato-comms-v3.css');</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@8ecbf52b35aa0f8a7462054f70bf61df29cc0e38/sweet-potato/sweet-potato-comms-v3.css">
 <div class="spc3 spc3-card spc3-card--received" style="--spc-avatar:url('[url]');">
   <div class="spc3-message"><div class="spc3-bubble">[text]</div><div class="spc3-meta">[time] · received</div></div>
   <div class="spc3-name">[name]</div>
