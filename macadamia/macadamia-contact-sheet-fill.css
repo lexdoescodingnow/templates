@@ -1,0 +1,53 @@
+.bh-macadamia--gallery .bh-macadamia__visual {
+  min-height: 292px;
+  padding: 10px;
+}
+
+.bh-macadamia--gallery .bh-macadamia__gallery {
+  width: 100%;
+  min-height: 272px;
+  display: flex !important;
+  align-items: stretch !important;
+  gap: 10px;
+  grid-template-columns: none !important;
+  grid-template-rows: none !important;
+}
+
+.bh-macadamia--gallery .bh-macadamia__gallery .bh-macadamia__gif {
+  min-width: 0;
+  min-height: 272px !important;
+  height: auto !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+}
+
+.bh-macadamia--gallery .bh-macadamia__gif--one {
+  flex: 1 1 64%;
+  border-radius: 7px 3px 3px 21px;
+  background-position: center 34%;
+}
+
+.bh-macadamia--gallery .bh-macadamia__gif--two {
+  flex: 0 1 36%;
+  border-radius: 3px 21px 21px 3px;
+  background-position: center;
+}
+
+@media (max-width: 590px) {
+  .bh-macadamia--gallery .bh-macadamia__visual {
+    min-height: 252px;
+  }
+
+  .bh-macadamia--gallery .bh-macadamia__gallery,
+  .bh-macadamia--gallery .bh-macadamia__gallery .bh-macadamia__gif {
+    min-height: 232px !important;
+  }
+
+  .bh-macadamia--gallery .bh-macadamia__gif--one {
+    flex-basis: 62%;
+  }
+
+  .bh-macadamia--gallery .bh-macadamia__gif--two {
+    flex-basis: 38%;
+  }
+}
