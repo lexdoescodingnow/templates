@@ -1,60 +1,42 @@
 @import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@ab028b0cbcb6e059f0dcdfaaec0b630750db0b78/sake/sake-buds.css');
 
-.bh-sake-bud--side {
-  display: grid;
-  grid-template-columns: 112px minmax(0, 1fr);
-  grid-template-areas:
-    'head head'
-    'media body'
-    'tag tag';
+.bh-sake-bud--window {
+  width: min(100%, 405px);
 }
 
-.bh-sake-bud--side > * {
-  order: initial;
+.bh-sake-bud--window .bh-sake-bud__media {
+  min-height: 190px;
+  margin: 12px 14px 0;
+  overflow: hidden;
+  border: 1px solid rgba(var(--sb-two), 0.24);
+  border-radius: 18px 64px 18px 18px;
+  box-shadow: 0 12px 26px rgba(45, 31, 37, 0.14);
 }
 
-.bh-sake-bud--side .bh-sake-bud__head {
-  grid-area: head;
+.bh-sake-bud--window .bh-sake-bud__image {
+  background-position: center 28%;
 }
 
-.bh-sake-bud--side .bh-sake-bud__media {
-  grid-area: media;
-  position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  z-index: 1;
-  width: auto;
-  min-height: 150px;
-  border-right: 1px solid var(--sb-line);
-  border-bottom: 0;
+.bh-sake-bud--window .bh-sake-bud__media::after {
+  height: 48%;
+  background: linear-gradient(transparent, rgba(24, 14, 20, 0.62));
 }
 
-.bh-sake-bud--side .bh-sake-bud__body {
-  grid-area: body;
-  min-height: 150px;
-  padding-left: 29px;
+.bh-sake-bud--window .bh-sake-bud__chip {
+  right: 13px;
+  bottom: 11px;
 }
 
-.bh-sake-bud--side .bh-sake-bud__body::before {
-  left: 14px;
-}
-
-.bh-sake-bud--side .bh-sake-bud__tag {
-  grid-area: tag;
+.bh-sake-bud--window .bh-sake-bud__body {
+  min-height: 105px;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 @media (max-width: 430px) {
-  .bh-sake-bud--side {
-    grid-template-columns: 92px minmax(0, 1fr);
-  }
-
-  .bh-sake-bud--side .bh-sake-bud__body {
-    padding-left: 25px;
-  }
-
-  .bh-sake-bud--side .bh-sake-bud__body::before {
-    left: 12px;
+  .bh-sake-bud--window .bh-sake-bud__media {
+    min-height: 165px;
+    margin-inline: 10px;
+    border-radius: 15px 48px 15px 15px;
   }
 }
