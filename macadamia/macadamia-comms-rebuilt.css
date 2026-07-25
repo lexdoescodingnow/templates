@@ -1,0 +1,294 @@
+.macacomm {
+  --mc1: var(--mgrgb1, 150, 104, 82);
+  --mc2: var(--mgrgb2, 198, 158, 116);
+  --mc3: var(--mgrgb3, 232, 208, 170);
+  --mc-bg: 20, 18, 17;
+  --mc-card: 29, 26, 24;
+  --mc-cream: 238, 224, 199;
+  --mc-text: 247, 242, 235;
+  --mc-muted: 172, 160, 148;
+  width: calc(100% - 24px);
+  max-width: 410px;
+  margin: 30px auto;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid rgba(var(--mc2), .55);
+  border-radius: 30px 10px 30px 10px;
+  background:
+    radial-gradient(circle at 90% 15%, rgba(var(--mc3), .11), transparent 26%),
+    linear-gradient(155deg, rgb(var(--mc-bg)), rgb(var(--mc-card)));
+  box-shadow: 0 26px 62px rgba(0, 0, 0, .38), inset 0 0 0 1px rgba(var(--mc1), .08);
+  color: rgb(var(--mc-text));
+  font-family: Arial, Helvetica, sans-serif;
+  isolation: isolate;
+}
+
+.macacomm *,
+.macacomm *::before,
+.macacomm *::after {
+  box-sizing: border-box;
+}
+
+.macacomm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .45;
+  background: radial-gradient(circle, rgba(var(--mc2), .11) 0 1px, transparent 1.4px) 0 0 / 12px 12px;
+  mask-image: linear-gradient(180deg, transparent 0 34%, black 66%, black 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0 34%, black 66%, black 100%);
+}
+
+.macacomm-head {
+  min-height: 94px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, .16);
+  background: linear-gradient(135deg, rgb(var(--mc1)), rgb(var(--mc2)) 54%, rgb(var(--mc3)));
+  color: #fff;
+}
+
+.macacomm-head::after {
+  content: "";
+  width: 116px;
+  height: 116px;
+  position: absolute;
+  top: -61px;
+  right: -49px;
+  border: 1px solid rgba(255, 255, 255, .24);
+  border-radius: 50%;
+  box-shadow: 0 0 0 15px rgba(255, 255, 255, .055), 0 0 0 34px rgba(255, 255, 255, .03);
+}
+
+.macacomm-avatar {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  border: 4px solid rgba(var(--mc-bg), .88);
+  border-radius: 50%;
+  background-image: var(--mac-avatar);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .55), 0 9px 21px rgba(0, 0, 0, .25);
+}
+
+.macacomm-avatar::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  right: -1px;
+  bottom: 1px;
+  border: 2px solid rgb(var(--mc-bg));
+  border-radius: 50%;
+  background: rgb(var(--mc3));
+}
+
+.macacomm-id {
+  min-width: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.macacomm-name {
+  display: block;
+  overflow: hidden;
+  color: #fff !important;
+  font: 700 15px/1.15 Georgia, "Times New Roman", serif;
+  letter-spacing: -.15px;
+  text-decoration: none !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.macacomm-status {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, .78);
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.macacomm-brand {
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  color: rgba(255, 255, 255, .9);
+  font: italic 700 14px/1 Georgia, "Times New Roman", serif;
+}
+
+.macacomm-body {
+  padding: 22px 18px 20px;
+}
+
+.macacomm-note {
+  margin: 0 0 18px;
+  color: rgb(var(--mc-muted));
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 1.35px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.macacomm-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.macacomm-msg {
+  width: auto;
+  max-width: 86%;
+  margin: 0;
+  display: block !important;
+  position: relative;
+  border: 1px solid rgba(var(--mc3), .32) !important;
+  border-radius: 18px 18px 5px 18px !important;
+  background:
+    linear-gradient(145deg, rgba(var(--mc1), .92), rgba(var(--mc2), .82) 58%, rgba(var(--mc3), .72)) !important;
+  box-shadow: 0 9px 20px rgba(0, 0, 0, .18), inset 0 1px 0 rgba(255, 255, 255, .14) !important;
+  color: #fff !important;
+}
+
+.macacomm-msg::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  background: rgb(var(--mc3));
+  clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+
+.macacomm-msgtext {
+  padding: 10px 13px 9px;
+  display: block !important;
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.macacomm-meta {
+  padding: 0 10px 7px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  color: rgba(255, 255, 255, .72);
+  font-size: 5px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.macacomm-meta::after {
+  content: "  ✓✓";
+  color: #fff;
+}
+
+.macacomm-msgtext b,
+.macacomm-msgtext strong {
+  color: transparent !important;
+  font-weight: 900 !important;
+  background: linear-gradient(90deg, #fff, rgb(var(--mc3)), #fff) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.macacomm-msgtext i,
+.macacomm-msgtext em {
+  color: transparent !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  background: linear-gradient(270deg, #fff, rgb(var(--mc3)), #fff) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.macacomm-msgtext u {
+  padding-bottom: 2px;
+  color: transparent !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  background-image:
+    linear-gradient(90deg, #fff, rgb(var(--mc3)), #fff),
+    linear-gradient(90deg, #fff, rgb(var(--mc3)), #fff) !important;
+  background-position: 0 100%, 0 0 !important;
+  background-size: 100% 1px, 100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-clip: padding-box, text !important;
+  -webkit-background-clip: padding-box, text !important;
+}
+
+.macacomm-shell {
+  width: 30px;
+  height: 30px;
+  margin: 19px 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(var(--mc2), .32);
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 35%, rgb(var(--mc-cream)) 0 31%, rgb(var(--mc3)) 32% 46%, rgba(var(--mc1), .88) 47% 100%);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .16);
+  color: transparent;
+}
+
+html[color-mode="light"] .macacomm,
+body.lightmode .macacomm,
+body.light .macacomm,
+.lightmode .macacomm,
+[data-theme="light"] .macacomm {
+  --mc-bg: 247, 241, 232;
+  --mc-card: 238, 229, 216;
+  --mc-text: 42, 34, 29;
+  --mc-muted: 105, 91, 78;
+  box-shadow: 0 24px 55px rgba(68, 47, 31, .17), inset 0 0 0 1px rgba(var(--mc1), .08);
+}
+
+html[color-mode="light"] .macacomm-avatar,
+body.lightmode .macacomm-avatar,
+body.light .macacomm-avatar,
+.lightmode .macacomm-avatar,
+[data-theme="light"] .macacomm-avatar {
+  border-color: rgba(255, 251, 245, .95);
+}
+
+@media (max-width: 450px) {
+  .macacomm {
+    width: calc(100% - 14px);
+    border-radius: 25px 8px 25px 8px;
+  }
+
+  .macacomm-head {
+    padding: 14px 15px;
+  }
+
+  .macacomm-body {
+    padding: 19px 14px 17px;
+  }
+
+  .macacomm-msg {
+    max-width: 90%;
+  }
+}
