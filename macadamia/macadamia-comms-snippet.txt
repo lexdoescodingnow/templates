@@ -1,32 +1,23 @@
 [dohtml]
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-comms.css">
-<div class="bh-mac-comms" style="--mac-avatar:url('https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv');">
-<div class="bh-mac-comms__contact">
-<a class="bh-mac-comms__avatar" href="[url]"></a>
-<div class="bh-mac-comms__identity">
-<a class="bh-mac-comms__name" href="[url]">[name]</a>
-<span class="bh-mac-comms__status">[text]</span>
-</div>
-<div class="bh-mac-comms__signal"><span></span><span></span><span></span></div>
-</div>
-<div class="bh-mac-comms__messages">
-<div class="bh-mac-comms__row">
-<div class="bh-mac-comms__bubble">Lorem ipsum dolor sit amet?</div>
-<div class="bh-mac-comms__meta"><span>21:14</span><span>delivered</span></div>
-</div>
-<div class="bh-mac-comms__row">
-<div class="bh-mac-comms__bubble">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
-<div class="bh-mac-comms__meta"><span>21:15</span><span>delivered</span></div>
-</div>
-<div class="bh-mac-comms__row">
-<div class="bh-mac-comms__bubble">[b]Praesent accumsan[/b] justo vitae nisl vulputate. [i]Integer feugiat nibh[/i] non facilisis mauris pretium non.</div>
-<div class="bh-mac-comms__meta"><span>21:17</span><span>read</span></div>
-</div>
-<div class="bh-mac-comms__row">
-<div class="bh-mac-comms__bubble">[u]Donec finibus mi vitae nibh vulputate[/u] ♡</div>
-<div class="bh-mac-comms__meta"><span>21:18</span><span>read</span></div>
+<div class="macachat" style="--mac-photo:url('https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv');">
+<div class="macachat__top">
+<a class="macachat__photo" href="[url]"></a>
+<div class="macachat__identity">
+<span class="macachat__eyebrow">macadamia · private line</span>
+<a class="macachat__name" href="[url]">[name]</a>
+<span class="macachat__status">[text]</span>
 </div>
 </div>
-<div class="bh-mac-comms__end">macadamia · quick message</div>
+<div class="macachat__conversation">
+<div class="macachat__to">to <strong>[name]</strong><span>[text]</span></div>
+<div class="macachat__stack">
+<div class="macachat__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<time>11:42 pm</time></div>
+<div class="macachat__message">Praesent accumsan justo vitae nisl vulputate. [b]Sed consequat elit varius[/b].<time>11:44 pm</time></div>
+<div class="macachat__message">[i]Integer feugiat nibh[/i] non facilisis mauris pretium non.<time>11:46 pm</time></div>
+<div class="macachat__message">[u]Donec finibus mi vitae nibh vulputate[/u], in sodales justo feugiat.<time>11:47 pm</time></div>
+</div>
+</div>
+<div class="macachat__foot"><span>macadamia message</span><span>shell · signal · reply</span></div>
 </div>
 [/dohtml]
