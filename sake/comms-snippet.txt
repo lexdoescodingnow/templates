@@ -1,0 +1,53 @@
+SAKE COMMS · MESSAGE BOTTLE
+
+[dohtml]
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-comms.css?v=20260725');</style>
+<div class="bh-sake-comms" style="--sc-icon:url('[url]');">
+<div class="bh-sake-comms__shell">
+
+<div class="bh-sake-comms__head">
+<div class="bh-sake-comms__avatar"><div class="bh-sake-comms__avatar-core"></div></div>
+<div class="bh-sake-comms__contact">
+<span class="bh-sake-comms__kicker">一献 · message bottle</span>
+<span class="bh-sake-comms__name">[name]</span>
+<span class="bh-sake-comms__status">online · small pour</span>
+</div>
+<div class="bh-sake-comms__seal">酒</div>
+</div>
+
+<div class="bh-sake-comms__neck"><i></i><i></i><i></i></div>
+
+<div class="bh-sake-comms__chat">
+<div class="bh-sake-comms__date">[date]</div>
+<div class="bh-sake-comms__stream">
+
+<div class="bh-sake-comms__row is-received">
+<div class="bh-sake-comms__bubble">[incoming]</div>
+<span class="bh-sake-comms__meta">10:41</span>
+</div>
+
+<div class="bh-sake-comms__row is-sent">
+<div class="bh-sake-comms__bubble">[text]</div>
+<span class="bh-sake-comms__meta">[time] · delivered</span>
+</div>
+
+<div class="bh-sake-comms__notice">一献 · shared between two</div>
+
+<div class="bh-sake-comms__row is-received">
+<div class="bh-sake-comms__bubble">[reply]</div>
+<span class="bh-sake-comms__meta">10:44</span>
+</div>
+
+<div class="bh-sake-comms__row is-sent">
+<div class="bh-sake-comms__bubble">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Integer fermentum</b> vitae fringilla viverra, <i>neque ligula</i> tincidunt risus, sed <u>consequat arcu</u> erat at justo.</div>
+<span class="bh-sake-comms__meta">10:45 · read</span>
+</div>
+
+</div>
+</div>
+
+<div class="bh-sake-comms__footer"><span>清酒</span><i></i><span>message archive</span></div>
+
+</div>
+</div>
+[/dohtml]
