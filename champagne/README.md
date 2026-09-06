@@ -2,7 +2,7 @@
 
 The completed Champagne collection contains **five threads, five comms and five buds**. All share fine gold line work, neutral writing surfaces, inherited member colours, Cormorant Garamond and Manrope typography, and the two supplied Tumblr GIFs.
 
-Open [champagne-preview.html](champagne-preview.html) in a browser to choose a category and design, compare light/dark modes, try sample group colours and a narrow width, then copy or download the selected snippet.
+Open [champagne-collection-preview.html](champagne-collection-preview.html) to see **all fifteen designs immediately**. Jump to Threads, Comms or Buds, switch light/dark modes or sample group colours, and open the code beneath any design. The gallery is rendered directly in HTML; design visibility, appearance controls and code downloads do not depend on JavaScript or nested frames. The earlier [champagne-preview.html](champagne-preview.html) filename contains the same updated gallery for compatibility.
 
 ## Designs
 
@@ -74,4 +74,4 @@ Cuvée, Perlage and Mignon keep their original snippet and stylesheet URLs. The 
 
 The current collection uses the two GIF URLs supplied by Lex: [portrait one](https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv) and [portrait two](https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv). Typography uses Cormorant Garamond and Manrope through Google Fonts, with system fallbacks; decorative line work is embedded in CSS.
 
-Checks cover all fifteen snippets, paragraph parsing, placeholder placement, GIF URLs, stylesheet imports, and the preview’s copy/download content. Browser visual verification and live JCink posting were not performed in this session.
+Checks cover all fifteen snippets, paragraph parsing, placeholder placement, GIF URLs, stylesheet imports, and all fifteen initially visible gallery cards and their exact copy/download content. Browser visual verification and live JCink posting were not performed in this session.
