@@ -41,6 +41,12 @@ Images and GIFs can appear inside a message:
 
 The clock, receipt label and message bar are visual parts of a forum template. They do not send messages or report live device status. The message area grows with the text and has no fixed-height scroll region.
 
+## Buds
+
+Five miniature thread templates encourage replies of 100 words or fewer: **Sprout**, **Leaflet**, **Tendril**, **Twinleaf** and **Pressing**. Each uses plain `<p>` paragraphs, editable fields at the top, a character GIF (two in Twinleaf), member-group accents and neutral light/dark surfaces.
+
+See [banana-buds.md](banana-buds.md) for the individual snippets and [banana-buds-snippets.txt](banana-buds-snippets.txt) for the full set. They load [banana-buds-keepsake.css](banana-buds-keepsake.css). The [downloadable preview](banana-buds-preview.html) displays all five with selectable colours and light/dark mode.
+
 ## Colours and formatting
 
 The template wrappers inherit Blue Hour's RGB variables `--mgrgb1`, `--mgrgb2` and `--mgrgb3`; no per-post group name or colour entry is needed.
@@ -50,7 +56,7 @@ The template wrappers inherit Blue Hour's RGB variables `--mgrgb1`, `--mgrgb2` a
 
 The same member colours also affect the visible template surfaces. Neutral light/dark ink and surfaces preserve the reading area. Golden/olive fallbacks apply only when the forum does not supply member-group variables.
 
-Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` settings take precedence. Without a forum mode, both stylesheets follow the system preference.
+Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` settings take precedence. Without a forum mode, the stylesheets follow the system preference.
 
 ## Hosted files
 
@@ -59,6 +65,7 @@ The short snippets load these current stylesheets directly:
 ```text
 https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-keepsake-v2.css
 https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-keepsake-v3.css
+https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css
 ```
 
 Use the updated snippets for the new appearance immediately. Previous Keepsake CSS addresses import the current versions after caches refresh. jsDelivr caches branch URLs; see [its caching documentation](https://github.com/jsdelivr/jsdelivr#caching).

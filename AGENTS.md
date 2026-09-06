@@ -11,3 +11,4 @@ These are the user's defaults for new templates and requested revisions in this 
 - Keep related templates recognisably part of their themed set through typography and small motifs. Use the theme as an accent alongside member colours.
 - Include `[url]`, `[name]` and `[text]` placeholders, supplied placeholder GIFs and lorem ipsum where appropriate. Do not put comments, hidden tips, instruction blocks or editing notes inside template HTML or CSS. Documentation belongs outside the template.
 - Scope styles to each template's wrapper. Preserve older supported message markup during compatible updates. Use a fresh stylesheet filename for immediate use of changed snippets when cached CSS would prevent new behaviour; maintain older entry points where useful.
+- Buds are miniature thread templates intended to encourage replies of 100 words or fewer. Keep their layouts compact, with ordinary paragraph markup and short placeholder replies.

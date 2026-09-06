@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Banana Buds — five miniature thread templates</title>
+<style>.banana-bud {
+  --bd-paper:#fbfbfd;
+  --bd-ink:#333440;
+  --bd-muted:#727480;
+  --bd-line:#dedfe7;
+  --bd-frame:#ffffff;
+  --bd-f1:155,112,68;
+  --bd-f2:148,159,95;
+  --bd-f3:201,166,93;
+  --bd-c1:rgb(var(--mgrgb1,var(--bd-f1)));
+  --bd-c2:rgb(var(--mgrgb2,var(--bd-f2)));
+  --bd-c3:rgb(var(--mgrgb3,var(--bd-f3)));
+  --bd-forward:linear-gradient(110deg,var(--bd-c1),var(--bd-c2),var(--bd-c3));
+  --bd-reverse:linear-gradient(110deg,var(--bd-c3),var(--bd-c2),var(--bd-c1));
+  box-sizing:border-box;
+  position:relative;
+  isolation:isolate;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 60px;
+  grid-template-areas:"meta photo" "copy copy" "mark mark";
+  gap:17px 16px;
+  width:350px;
+  max-width:100%;
+  margin:22px auto;
+  padding:22px;
+  border:1px solid var(--bd-line);
+  border-radius:28px 28px 8px 28px;
+  background:radial-gradient(ellipse at 0 0,rgba(var(--mgrgb1,var(--bd-f1)),.13),transparent 65%),radial-gradient(ellipse at 100% 0,rgba(var(--mgrgb3,var(--bd-f3)),.12),transparent 55%),var(--bd-paper);
+  color:var(--bd-ink);
+  font:14px/1.8 Georgia,'Times New Roman',serif;
+  text-align:left;
+  color-scheme:light;
+  box-shadow:0 2px 0 rgba(var(--mgrgb2,var(--bd-f2)),.3),0 8px 24px #00000009;
+}
+.banana-bud *, .banana-bud *::before, .banana-bud *::after {box-sizing:border-box;}
+.banana-bud > div {position:relative;z-index:1;min-width:0;}
+.banana-bud::after {
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:5px;
+  right:8px;
+  width:60px;
+  height:105px;
+  background:var(--bd-forward);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%20140%22%3E%3Cpath%20d%3D%22M38%20132C6%20101%200%2043%2031%207c43%2021%2064%2080%207%20125Z%22%20fill%3D%22black%22%20fill-opacity%3D%22.2%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M37%20138Q51%2065%2031%207M40%20119%2017%2096M43%20104%2011%2074M44%2087%2010%2055M43%2068%2016%2036M41%2049%2023%2023M40%20119l23-19M43%20104l27-24M44%2087l26-23M43%2068l21-21M41%2049l15-15%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%20140%22%3E%3Cpath%20d%3D%22M38%20132C6%20101%200%2043%2031%207c43%2021%2064%2080%207%20125Z%22%20fill%3D%22black%22%20fill-opacity%3D%22.2%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M37%20138Q51%2065%2031%207M40%20119%2017%2096M43%20104%2011%2074M44%2087%2010%2055M43%2068%2016%2036M41%2049%2023%2023M40%20119l23-19M43%20104l27-24M44%2087l26-23M43%2068l21-21M41%2049l15-15%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/contain no-repeat;
+  transform:rotate(28deg);
+  opacity:.25;
+  pointer-events:none;
+}
+.banana-bud .bb-meta {
+  grid-area:meta;
+  display:flex;
+  flex-wrap:wrap;
+  align-content:center;
+  align-items:baseline;
+  gap:3px 9px;
+  overflow-wrap:anywhere;
+}
+.banana-bud .bb-meta a {
+  color:var(--bd-c1);
+  background:none;
+  border:0;
+  font:600 10px/1.7 Arial,Helvetica,sans-serif;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+.banana-bud .bb-meta a:hover {text-decoration:underline;text-underline-offset:3px;}
+.banana-bud a:focus-visible {outline:2px solid var(--bd-c2);outline-offset:4px;}
+.banana-bud .bb-meta span {display:block;flex-basis:100%;color:var(--bd-muted);font:italic 12px/1.65 Georgia,'Times New Roman',serif;}
+.banana-bud .bb-photo {grid-area:photo;align-self:center;}
+.banana-bud .bb-photo img {
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:60px;
+  margin:0;
+  padding:0;
+  border:4px solid var(--bd-frame);
+  border-radius:50% 50% 12px 50%;
+  background:var(--bd-frame);
+  object-fit:cover;
+  object-position:50% 40%;
+  box-shadow:0 0 0 1px var(--bd-c2),0 3px 9px rgba(var(--mgrgb3,var(--bd-f3)),.2);
+}
+.banana-bud .bb-copy {
+  grid-area:copy;
+  color:var(--bd-ink);
+  font:14px/1.8 Georgia,'Times New Roman',serif;
+  text-align:left;
+  overflow-wrap:anywhere;
+}
+.banana-bud .bb-copy p {margin:0 0 .85em;padding:0;color:inherit;font:inherit;text-align:inherit;}
+.banana-bud .bb-copy p:last-child {margin-bottom:0;}
+.banana-bud .bb-copy :is(b,strong,i,em,u) {color:var(--bd-c1);}
+.banana-bud .bb-copy :is(b,strong) {font-weight:700;}
+.banana-bud .bb-copy :is(i,em) {font-style:italic;}
+.banana-bud .bb-copy u {text-decoration:underline;text-decoration-color:var(--bd-c2);text-decoration-thickness:1px;text-underline-offset:3px;}
+.banana-bud .bb-copy a {color:var(--bd-c2);text-decoration:underline;text-underline-offset:3px;}
+.banana-bud .bb-copy img {display:block;max-width:100%;height:auto;margin:8px 0;border-radius:4px;}
+.banana-bud .bb-mark {
+  grid-area:mark;
+  display:flex;
+  align-items:baseline;
+  justify-content:center;
+  gap:8px;
+  padding-top:11px;
+  border-top:1px solid var(--bd-line);
+  color:var(--bd-c1);
+  font:24px/1 Georgia,'Times New Roman',serif;
+  letter-spacing:-.055em;
+}
+.banana-bud .bb-mark span {color:var(--bd-muted);font:9px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.13em;text-transform:uppercase;}
+.banana-bud .bb-mark::after {
+  content:"";
+  align-self:center;
+  width:16px;
+  height:23px;
+  margin-left:2px;
+  background:var(--bd-forward);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%20140%22%3E%3Cpath%20d%3D%22M38%20132C6%20101%200%2043%2031%207c43%2021%2064%2080%207%20125Z%22%20fill%3D%22black%22%20fill-opacity%3D%22.2%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M37%20138Q51%2065%2031%207M40%20119%2017%2096M43%20104%2011%2074M44%2087%2010%2055M43%2068%2016%2036M41%2049%2023%2023M40%20119l23-19M43%20104l27-24M44%2087l26-23M43%2068l21-21M41%2049l15-15%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%20140%22%3E%3Cpath%20d%3D%22M38%20132C6%20101%200%2043%2031%207c43%2021%2064%2080%207%20125Z%22%20fill%3D%22black%22%20fill-opacity%3D%22.2%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M37%20138Q51%2065%2031%207M40%20119%2017%2096M43%20104%2011%2074M44%2087%2010%2055M43%2068%2016%2036M41%2049%2023%2023M40%20119l23-19M43%20104l27-24M44%2087l26-23M43%2068l21-21M41%2049l15-15%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/contain no-repeat;
+  transform:rotate(30deg);
+}
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+  .banana-bud .bb-copy :is(b,strong,i,em,u) {
+    background-image:var(--bd-forward);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+    box-decoration-break:clone;
+    -webkit-box-decoration-break:clone;
+  }
+  .banana-bud .bb-copy :is(i,em) {background-image:var(--bd-reverse);}
+}
+.banana-bud.bb-leaflet {
+  width:300px;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-areas:"photo" "meta" "copy" "mark";
+  gap:13px;
+  padding:24px;
+  border-radius:3px 22px 3px 3px;
+  background:linear-gradient(155deg,rgba(var(--mgrgb1,var(--bd-f1)),.09),transparent 48%),var(--bd-paper);
+  box-shadow:4px 4px 0 rgba(var(--mgrgb3,var(--bd-f3)),.14);
+}
+.banana-bud.bb-leaflet::before {
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  width:22px;
+  height:22px;
+  border-radius:0 20px 0 3px;
+  background:linear-gradient(45deg,rgba(var(--mgrgb2,var(--bd-f2)),.35) 49%,transparent 51%);
+}
+.banana-bud.bb-leaflet::after {top:18px;right:auto;left:14px;width:50px;height:88px;transform:rotate(-35deg);}
+.banana-bud.bb-leaflet .bb-photo {justify-self:center;width:96px;transform:rotate(-5deg);}
+.banana-bud.bb-leaflet .bb-photo img {height:72px;border-radius:2px;border-width:5px;border-bottom-width:12px;}
+.banana-bud.bb-leaflet .bb-photo::after {
+  content:"";
+  position:absolute;
+  width:36px;
+  height:12px;
+  left:calc(50% - 18px);
+  top:-6px;
+  background:rgba(var(--mgrgb2,var(--bd-f2)),.38);
+  transform:rotate(9deg);
+}
+.banana-bud.bb-leaflet .bb-meta {justify-content:center;text-align:center;}
+.banana-bud.bb-leaflet .bb-copy {padding-top:9px;border-top:1px solid var(--bd-line);}
+.banana-bud.bb-leaflet .bb-mark {border-top:0;padding-top:3px;}
+.banana-bud.bb-tendril {
+  width:410px;
+  grid-template-columns:minmax(44px,21%) minmax(0,1fr);
+  grid-template-areas:"photo meta" "photo copy" "mark mark";
+  gap:12px 19px;
+  padding:21px;
+  border-radius:55px 8px 8px 8px;
+  background:linear-gradient(90deg,rgba(var(--mgrgb1,var(--bd-f1)),.13),transparent 45%),var(--bd-paper);
+  border-left:3px solid var(--bd-c1);
+}
+.banana-bud.bb-tendril::after {top:auto;bottom:8px;right:15px;width:36px;height:62px;transform:rotate(48deg);}
+.banana-bud.bb-tendril .bb-photo {align-self:stretch;min-height:140px;}
+.banana-bud.bb-tendril .bb-photo img {position:absolute;inset:0;height:100%;border-radius:44px 44px 3px 3px;}
+.banana-bud.bb-tendril .bb-meta {align-content:start;}
+.banana-bud.bb-tendril .bb-mark {justify-content:flex-start;margin-top:3px;}
+.banana-bud.bb-twinleaf {
+  width:365px;
+  grid-template-columns:minmax(0,1fr) 100px;
+  gap:14px 12px;
+  border-radius:8px 44px 8px 30px;
+  background:radial-gradient(ellipse at 100% 0,rgba(var(--mgrgb3,var(--bd-f3)),.18),transparent 60%),var(--bd-paper);
+}
+.banana-bud.bb-twinleaf::after {top:7px;right:auto;left:12px;width:40px;height:68px;transform:rotate(-38deg);opacity:.16;}
+.banana-bud.bb-twinleaf .bb-photo {display:flex;align-items:start;height:76px;padding:3px 2px 0;}
+.banana-bud.bb-twinleaf .bb-photo img {flex:0 0 55px;width:55px;max-width:55px;height:65px;border-width:3px;border-bottom-width:8px;border-radius:28px 28px 2px 2px;transform:rotate(-9deg);}
+.banana-bud.bb-twinleaf .bb-photo img + img {margin:8px 0 0 -12px;transform:rotate(9deg);box-shadow:0 0 0 1px var(--bd-c3),0 3px 9px rgba(var(--mgrgb1,var(--bd-f1)),.2);}
+.banana-bud.bb-twinleaf .bb-photo img:only-child {margin:auto;transform:rotate(-5deg);}
+.banana-bud.bb-twinleaf .bb-copy {border-left:2px solid var(--bd-c2);padding-left:13px;}
+.banana-bud.bb-pressing {
+  width:330px;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-areas:"photo" "meta" "copy" "mark";
+  gap:14px;
+  padding:0;
+  border-radius:4px 24px 4px 4px;
+  background:var(--bd-paper);
+}
+.banana-bud.bb-pressing::after {top:auto;bottom:8px;right:14px;width:38px;height:66px;transform:rotate(30deg);}
+.banana-bud.bb-pressing .bb-photo {border-radius:3px 23px 0 0;overflow:hidden;padding-bottom:3px;background:var(--bd-forward);}
+.banana-bud.bb-pressing .bb-photo img {height:82px;border:0;border-radius:0;box-shadow:none;object-position:50% 32%;}
+.banana-bud.bb-pressing .bb-photo::after {content:"";position:absolute;inset:0 0 3px;background:var(--bd-forward);opacity:.16;pointer-events:none;}
+.banana-bud.bb-pressing .bb-meta {margin:2px 22px 0;}
+.banana-bud.bb-pressing .bb-copy {margin:0 22px;}
+.banana-bud.bb-pressing .bb-mark {justify-content:flex-start;margin:0 22px 17px;}
+html[color-mode="dark"] .banana-bud {
+  --bd-paper:#202128;
+  --bd-ink:#e8e9f0;
+  --bd-muted:#afb1c0;
+  --bd-line:#414450;
+  --bd-frame:#2c2e38;
+  --bd-f1:233,196,111;
+  --bd-f2:185,197,131;
+  --bd-f3:230,174,102;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark) {
+  html:not([color-mode]) .banana-bud {
+    --bd-paper:#202128;
+    --bd-ink:#e8e9f0;
+    --bd-muted:#afb1c0;
+    --bd-line:#414450;
+    --bd-frame:#2c2e38;
+    --bd-f1:233,196,111;
+    --bd-f2:185,197,131;
+    --bd-f3:230,174,102;
+    color-scheme:dark;
+  }
+}
+
+:root {color-scheme:light;--page:#efeff4;--ink:#333440;--subtle:#656773;--panel:#ffffff;--rule:#d6d7e0;}
+html[color-mode="dark"] {color-scheme:dark;--page:#15161c;--ink:#e8e9f0;--subtle:#a7aab9;--panel:#202128;--rule:#383b48;}
+body {--mgrgb1:143,90,153;--mgrgb2:78,122,166;--mgrgb3:41,133,145;margin:0;background:var(--page);color:var(--ink);font:14px/1.65 Arial,Helvetica,sans-serif;}
+body[data-palette="sea"] {--mgrgb1:54,122,161;--mgrgb2:48,142,138;--mgrgb3:110,130,175;}
+body[data-palette="forest"] {--mgrgb1:69,126,101;--mgrgb2:119,136,74;--mgrgb3:141,99,83;}
+html[color-mode="dark"] body[data-palette="mauve"] {--mgrgb1:190,144,201;--mgrgb2:135,171,216;--mgrgb3:109,196,196;}
+html[color-mode="dark"] body[data-palette="sea"] {--mgrgb1:117,174,212;--mgrgb2:103,197,187;--mgrgb3:170,175,222;}
+html[color-mode="dark"] body[data-palette="forest"] {--mgrgb1:127,181,148;--mgrgb2:174,186,127;--mgrgb3:208,157,126;}
+body > header, body > main, body > footer {width:min(1240px,calc(100% - 40px));margin:0 auto;}
+body > header {padding:42px 0 26px;border-bottom:1px solid var(--rule);}
+.preview-kicker {margin:0;color:var(--subtle);font-size:10px;letter-spacing:.19em;text-transform:uppercase;}
+h1 {margin:5px 0 9px;font:52px/1.12 Georgia,serif;letter-spacing:-.045em;}
+.preview-intro {max-width:610px;margin:0 0 20px;color:var(--subtle);}
+.preview-controls {display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+.preview-controls label {display:flex;gap:8px;align-items:center;font-size:12px;}
+.preview-controls select {padding:8px 12px;border:1px solid var(--rule);border-radius:7px;color:var(--ink);background:var(--panel);font:inherit;}
+body > main {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 26px;padding:28px 0 34px;align-items:start;}
+.preview-item {min-width:0;}
+.preview-item h2 {margin:0;font:21px/1.4 Georgia,serif;}
+.preview-item h2 > span {margin-right:8px;color:var(--subtle);font:10px/1 Arial,sans-serif;letter-spacing:.1em;}
+.preview-description {margin:4px 0 0;min-height:38px;color:var(--subtle);font-size:12px;}
+.preview-item details {border-top:1px solid var(--rule);padding-top:10px;font-size:12px;}
+.preview-item summary {cursor:pointer;}
+.preview-item textarea {box-sizing:border-box;display:block;width:100%;height:260px;resize:vertical;margin:10px 0 0;padding:12px;border:1px solid var(--rule);border-radius:5px;color:var(--ink);background:var(--panel);font:11px/1.6 monospace;}
+body > footer {padding:0 0 35px;color:var(--subtle);font-size:12px;}
+@media (max-width:980px) {body > main {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:620px) {body > main {grid-template-columns:minmax(0,1fr);}body > header,body > main,body > footer {width:calc(100% - 28px);}h1 {font-size:44px;}.preview-description {min-height:0;}}
+</style>
+</head>
+<body data-palette="mauve">
+<header>
+<p class="preview-kicker">The Banana collection</p>
+<h1>Small replies. New growth.</h1>
+<p class="preview-intro">Five buds for a quick exchange of story: a line of dialogue, a reaction, a moment. Aim for 100 words or fewer. Each sample below is 36 words.</p>
+<div class="preview-controls">
+<label>Appearance <select id="preview-mode"><option value="light">Light</option><option value="dark">Dark</option></select></label>
+<label>Sample group <select id="preview-palette"><option value="mauve">Mauve &amp; teal</option><option value="sea">Sea glass</option><option value="forest">Forest</option></select></label>
+</div>
+</header>
+<main><section class="preview-item">
+<h2><span>01</span> Sprout</h2>
+<p class="preview-description">A rounded card with one small leaf-shaped portrait.</p>
+<div class="banana-bud bb-sprout">
+<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-photo">
+<img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
+</div>
+<div class="bb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="bb-mark">Banana <span>bud</span></div>
+</div>
+<details><summary>Copy Sprout code</summary><textarea aria-label="Sprout forum code" spellcheck="false">[dohtml]
+&lt;div class=&quot;banana-bud bb-sprout&quot;&gt;
+&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;bb-photo&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+</section><section class="preview-item">
+<h2><span>02</span> Leaflet</h2>
+<p class="preview-description">A folded notecard with a taped miniature GIF.</p>
+<div class="banana-bud bb-leaflet">
+<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-photo">
+<img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
+</div>
+<div class="bb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="bb-mark">Banana <span>bud</span></div>
+</div>
+<details><summary>Copy Leaflet code</summary><textarea aria-label="Leaflet forum code" spellcheck="false">[dohtml]
+&lt;div class=&quot;banana-bud bb-leaflet&quot;&gt;
+&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;bb-photo&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+</section><section class="preview-item">
+<h2><span>03</span> Tendril</h2>
+<p class="preview-description">An arched side portrait beside a short passage.</p>
+<div class="banana-bud bb-tendril">
+<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-photo">
+<img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
+</div>
+<div class="bb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="bb-mark">Banana <span>bud</span></div>
+</div>
+<details><summary>Copy Tendril code</summary><textarea aria-label="Tendril forum code" spellcheck="false">[dohtml]
+&lt;div class=&quot;banana-bud bb-tendril&quot;&gt;
+&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;bb-photo&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+</section><section class="preview-item">
+<h2><span>04</span> Twinleaf</h2>
+<p class="preview-description">Two overlapping GIF portraits and a slim coloured rule.</p>
+<div class="banana-bud bb-twinleaf">
+<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-photo">
+<img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
+<img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
+</div>
+<div class="bb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="bb-mark">Banana <span>bud</span></div>
+</div>
+<details><summary>Copy Twinleaf code</summary><textarea aria-label="Twinleaf forum code" spellcheck="false">[dohtml]
+&lt;div class=&quot;banana-bud bb-twinleaf&quot;&gt;
+&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;bb-photo&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+</section><section class="preview-item">
+<h2><span>05</span> Pressing</h2>
+<p class="preview-description">A cropped film still above a compact story card.</p>
+<div class="banana-bud bb-pressing">
+<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-photo">
+<img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
+</div>
+<div class="bb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="bb-mark">Banana <span>bud</span></div>
+</div>
+<details><summary>Copy Pressing code</summary><textarea aria-label="Pressing forum code" spellcheck="false">[dohtml]
+&lt;div class=&quot;banana-bud bb-pressing&quot;&gt;
+&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;bb-photo&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+</section></main>
+<footer>These controls preview inherited forum colours. The forum snippets use your member-group palette automatically. Open a code panel to copy its complete [dohtml] block. Start each paragraph with &lt;p&gt;.</footer>
+<script>
+document.getElementById('preview-mode').addEventListener('change', function () {document.documentElement.setAttribute('color-mode', this.value);});
+document.getElementById('preview-palette').addEventListener('change', function () {document.body.dataset.palette = this.value;});
+document.querySelectorAll('.preview-item textarea').forEach(function (field) {field.addEventListener('focus', function () {this.select();});});
+</script>
+</body>
+</html>
