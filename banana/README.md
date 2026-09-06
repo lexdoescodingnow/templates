@@ -37,25 +37,27 @@ The extraction was checked against the original HTML and CSS: only the root clas
 
 [banana-comms-snippet.txt](banana-comms-snippet.txt) is the current companion to Banana Keepsake. It uses a compact 360px message card, a character GIF in an arched frame, warm yellow message bubbles, the same gold serif Banana title, and matching botanical artwork.
 
-Copy the complete snippet into a JCink post. It uses `<div class="banana-comms-keepsake">` and loads [banana-comms-keepsake.css](banana-comms-keepsake.css) through the stylesheet link at the bottom. The comms stylesheet is independent of the thread stylesheet.
+Copy the complete snippet into a JCink post. It uses `<div class="banana-comms-keepsake">` and loads [banana-comms-keepsake-v2.css](banana-comms-keepsake-v2.css) through the stylesheet link at the bottom. The comms stylesheet is independent of the thread stylesheet.
 
-The editable name, profile URL, status line, GIF URL and timestamp are first. Replace the lorem ipsum inside each `bc-message` block with one text message. Duplicate or remove an entire block to change the number of messages. The timestamp and Delivered label are editable display text, not live messaging indicators.
+The editable name, profile URL, status line, GIF URL and timestamp are first. Start each text message with a plain `<p>` inside `bc-messages`. Like the forum example, closing `</p>` tags are optional here: the next `<p>` starts another bubble. Explicit `<p>message</p>` also works. Use `<br>` for a line break within one bubble. Replace or add message lines directly. The timestamp and Delivered label are editable display text, not live messaging indicators.
 
-For a received message, add the `bc-received` class to the message block:
+For a received message, add the `bc-received` class to its paragraph:
 
 ```html
-<div class="bc-message bc-received">Lorem ipsum dolor sit amet.</div>
+<p class="bc-received">Lorem ipsum dolor sit amet.</p>
 ```
 
 An image or GIF can also go inside a message:
 
 ```html
-<div class="bc-message"><img src="[url]" alt="Character attachment"></div>
+<p><img src="[url]" alt="Character attachment"></p>
 ```
 
 Bold, italic and underlined text uses the same inherited Blue Hour group colours as the thread template. Light/dark colours use the same forum switch and system fallback. Text grows with the messages; there is no fixed-height message area. The comms selectors are scoped to their own wrapper so both templates can appear together.
 
-The copy-paste snippet has no comments, hidden instructions, inline stylesheet or JavaScript. Its hosted CSS and markup received static checks; live forum rendering has not been tested.
+Existing `<div class="bc-message">` messages remain supported, including paragraphs inside one legacy bubble. Only direct paragraph children of `bc-messages` become new bubbles. The earlier `banana-comms-keepsake.css` address imports the current version after its cache refreshes; the updated snippet links directly to v2 so it can be used immediately.
+
+The copy-paste snippet has no comments, hidden instructions, inline stylesheet or JavaScript. Its hosted CSS and markup received static checks; shorthand paragraphs were parsed and checked as sibling messages. Live forum rendering has not been tested.
 
 ## Banana Display
 
