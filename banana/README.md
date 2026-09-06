@@ -2,6 +2,12 @@
 
 The current Banana set uses member-group colours throughout the design, with neutral light/dark surfaces and small Banana motifs. Project-wide authoring defaults are recorded in [AGENTS.md](../AGENTS.md).
 
+## Complete collection
+
+The Banana set now has **five threads, five comms and five buds**. The original thread and phone are named **Keepsake**, with **Cameo**, **Ribbon**, **Canopy** and **Postcard** variations added to each. See [banana-collection.md](banana-collection.md) for all fifteen individual snippets and the [downloadable collection preview](banana-collection-preview.html).
+
+The complete thread set is in [banana-thread-snippets.txt](banana-thread-snippets.txt); the complete comms set is in [banana-comms-snippets.txt](banana-comms-snippets.txt). The singular snippet files below remain the originals. New posts still need just one stylesheet link, included in each snippet.
+
 ## Thread template
 
 Copy [banana-keepsake-snippet.txt](banana-keepsake-snippet.txt) into a JCink post. [banana-compact-thread-snippets.txt](banana-compact-thread-snippets.txt) contains the same snippet. Both include their own `[dohtml]` wrapper and load [banana-keepsake-v2.css](banana-keepsake-v2.css).
@@ -66,6 +72,8 @@ The short snippets load these current stylesheets directly:
 https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-keepsake-v2.css
 https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-keepsake-v3.css
 https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css
+https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-thread-variations.css
+https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-variations.css
 ```
 
 Use the updated snippets for the new appearance immediately. Previous Keepsake CSS addresses import the current versions after caches refresh. jsDelivr caches branch URLs; see [its caching documentation](https://github.com/jsdelivr/jsdelivr#caching).

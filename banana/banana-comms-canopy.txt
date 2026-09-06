@@ -1,0 +1,19 @@
+[dohtml]
+<div class="banana-comms-keepsake bc-canopy">
+<div class="bc-contact">
+<a class="bc-name" href="[url]">[name]</a>
+<div class="bc-status">[text]</div>
+<img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
+</div>
+<div class="bc-time"><span>[time]</span></div>
+<div class="bc-messages">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
+<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</div>
+<div class="bc-receipt">Received</div>
+<div class="bc-brand">Banana</div>
+<div class="bc-compose" aria-hidden="true"></div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-variations.css">
+[/dohtml]
