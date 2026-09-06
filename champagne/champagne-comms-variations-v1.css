@@ -1,0 +1,76 @@
+@import url('./champagne-companions-v1.css');
+
+.champagne-comms.cc-flute {width:318px;padding:22px 17px 30px;border-radius:43px;}
+.champagne-comms.cc-flute::before {border-radius:36px;}
+.champagne-comms.cc-flute .cc-hardware {margin-bottom:18px;}
+.champagne-comms.cc-flute .cc-brand {font-size:28px;padding:0 32px;margin-bottom:16px;}
+.champagne-comms.cc-flute .cc-brand::before {width:19px;height:24px;left:9px;}
+.champagne-comms.cc-flute .cc-contact {grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;justify-items:center;gap:0;padding:20px 15px 19px;border-radius:25px 25px 5px 5px;border:1px solid var(--cp-line);text-align:center;}
+.champagne-comms.cc-flute .cc-contact .cc-avatar {grid-column:1;grid-row:1;width:62px;max-width:62px;height:85px;border-radius:40px;margin-bottom:13px;}
+.champagne-comms.cc-flute .cc-contact .cc-name {grid-column:1;grid-row:2;text-align:center;}
+.champagne-comms.cc-flute .cc-contact .cc-status {grid-column:1;grid-row:3;text-align:center;}
+.champagne-comms.cc-flute .cc-time {margin-top:17px;margin-bottom:15px;}
+.champagne-comms.cc-flute .cc-messages {margin:0 5px;font-size:12px;gap:9px;}
+.champagne-comms.cc-flute .cc-messages p {padding:10px 12px;max-width:96%;border-radius:16px 16px 16px 3px;}
+.champagne-comms.cc-flute .cc-receipt {margin:10px 7px 18px;}
+.champagne-comms.cc-flute .cc-compose {height:34px;margin:0 5px 8px;}
+.champagne-comms.cc-flute .cc-compose::before {top:8px;}
+.champagne-comms.cc-flute .cc-compose::after {top:3px;}
+
+.champagne-comms.cc-tchin {width:350px;padding:20px 18px 36px;border-radius:17px;border:2px solid var(--cp-c2);background:var(--cp-paper);box-shadow:0 0 0 3px var(--cp-panel),0 0 0 4px var(--cp-line),0 15px 30px #00000012;}
+.champagne-comms.cc-tchin::before {inset:5px;border-radius:11px;opacity:.35;}
+.champagne-comms.cc-tchin::after {width:16px;height:16px;left:calc(50% - 8px);bottom:12px;background:none;border:1px solid var(--cp-c2);border-radius:50%;opacity:.7;}
+.champagne-comms.cc-tchin .cc-hardware {height:13px;margin:0 6px 13px;}
+.champagne-comms.cc-tchin .cc-hardware::before {left:4px;top:5px;width:44px;height:3px;border-radius:0;}
+.champagne-comms.cc-tchin .cc-hardware::after {width:34px;height:10px;}
+.champagne-comms.cc-tchin .cc-brand {font-size:23px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px;padding:0 25px;}
+.champagne-comms.cc-tchin .cc-brand::before {width:18px;height:22px;left:2px;top:0;}
+.champagne-comms.cc-tchin .cc-contact {grid-template-columns:49px minmax(0,1fr);column-gap:12px;padding:13px 11px;border:1px solid var(--cp-line);border-radius:4px;background:linear-gradient(100deg,rgba(var(--mgrgb1,var(--cp-f1)),.12),rgba(var(--mgrgb3,var(--cp-f3)),.07));}
+.champagne-comms.cc-tchin .cc-contact .cc-avatar {width:49px;max-width:49px;height:49px;border-radius:6px;box-shadow:none;}
+.champagne-comms.cc-tchin .cc-contact .cc-name {font-size:12px;}
+.champagne-comms.cc-tchin .cc-time {margin:17px 4px 15px;font-size:9px;}
+.champagne-comms.cc-tchin .cc-messages {margin:0 3px;font-size:12px;gap:9px;}
+.champagne-comms.cc-tchin .cc-messages p {width:100%;max-width:100%;border-radius:3px;padding:11px 12px;border:1px solid var(--cp-line);border-left:3px solid var(--cp-c1);background:var(--cp-panel);}
+.champagne-comms.cc-tchin .cc-messages p:nth-child(2n) {border-left-color:var(--cp-c3);}
+.champagne-comms.cc-tchin .cc-messages p:last-child::after {display:none;}
+.champagne-comms.cc-tchin .cc-receipt {margin:10px 5px 15px;}
+.champagne-comms.cc-tchin .cc-compose {height:32px;margin:0 3px 5px;border-radius:4px;}
+.champagne-comms.cc-tchin .cc-compose::before {top:7px;}
+.champagne-comms.cc-tchin .cc-compose::after {top:2px;}
+
+.champagne-comms.cc-capsule {width:366px;border-radius:53px;padding:25px 21px 31px;background:radial-gradient(ellipse at 50% 20%,rgba(var(--mgrgb2,var(--cp-f2)),.11),transparent 55%),var(--cp-paper);}
+.champagne-comms.cc-capsule::before {border-radius:46px;}
+.champagne-comms.cc-capsule .cc-hardware {margin-bottom:19px;}
+.champagne-comms.cc-capsule .cc-brand {font-size:30px;margin-bottom:16px;}
+.champagne-comms.cc-capsule .cc-contact {grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;justify-items:center;gap:0;padding:17px 12px 19px;border:0;border-radius:48px;background:linear-gradient(150deg,rgba(var(--mgrgb1,var(--cp-f1)),.15),rgba(var(--mgrgb3,var(--cp-f3)),.1));text-align:center;}
+.champagne-comms.cc-capsule .cc-contact .cc-avatar {grid-column:1;grid-row:1;width:82px;max-width:82px;height:82px;margin:0 0 13px;padding:4px;border-radius:50%;box-shadow:0 0 0 5px rgba(var(--mgrgb2,var(--cp-f2)),.12);}
+.champagne-comms.cc-capsule .cc-contact .cc-name {grid-column:1;grid-row:2;text-align:center;}
+.champagne-comms.cc-capsule .cc-contact .cc-status {grid-column:1;grid-row:3;text-align:center;}
+.champagne-comms.cc-capsule .cc-time {margin-top:18px;}
+.champagne-comms.cc-capsule .cc-messages {align-items:flex-end;margin:0 3px;}
+.champagne-comms.cc-capsule .cc-messages p {border-radius:19px 19px 4px 19px;}
+.champagne-comms.cc-capsule .cc-messages p:last-child::after {left:auto;right:11px;}
+.champagne-comms.cc-capsule .cc-receipt {text-align:right;margin-right:6px;}
+.champagne-comms.cc-capsule .cc-compose {margin-left:3px;margin-right:3px;border-radius:30px;}
+
+.champagne-comms.cc-veillee {width:386px;border-radius:26px;padding:21px 18px 29px;border-top:4px solid var(--cp-c1);background:linear-gradient(180deg,rgba(var(--mgrgb3,var(--cp-f3)),.1),transparent 60%),var(--cp-paper);}
+.champagne-comms.cc-veillee::before {border-radius:20px;border-color:var(--cp-c2);}
+.champagne-comms.cc-veillee .cc-hardware {margin-bottom:16px;}
+.champagne-comms.cc-veillee .cc-brand {font-size:30px;text-align:left;padding:0 37px 0 8px;margin-bottom:18px;}
+.champagne-comms.cc-veillee .cc-brand::before {left:auto;right:7px;}
+.champagne-comms.cc-veillee .cc-contact {grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;gap:0;padding:0 0 15px;margin:0 1px;border-top:0;border-radius:5px 5px 0 0;background:none;}
+.champagne-comms.cc-veillee .cc-contact .cc-avatar {grid-column:1;grid-row:1;width:100%;max-width:100%;height:137px;object-fit:cover;border-radius:5px;padding:3px;margin:0 0 13px;box-shadow:none;}
+.champagne-comms.cc-veillee .cc-contact .cc-name {grid-column:1;grid-row:2;padding:0 7px;font-size:13px;}
+.champagne-comms.cc-veillee .cc-contact .cc-status {grid-column:1;grid-row:3;padding:0 7px;}
+.champagne-comms.cc-veillee .cc-time {margin-top:17px;margin-bottom:17px;}
+.champagne-comms.cc-veillee .cc-messages {margin:0 6px;gap:12px;}
+.champagne-comms.cc-veillee .cc-messages p {max-width:96%;border-radius:5px 15px 15px 5px;border-left:3px solid var(--cp-c2);}
+.champagne-comms.cc-veillee .cc-messages p:last-child::after {display:none;}
+.champagne-comms.cc-veillee .cc-compose {border-radius:8px;margin-left:6px;margin-right:6px;}
+
+@container (max-width:280px) {
+  .champagne-comms.cc-capsule .cc-brand {font-size:27px;padding-right:26px;}
+  .champagne-comms.cc-capsule .cc-contact .cc-avatar {width:70px;max-width:70px;height:70px;}
+  .champagne-comms.cc-veillee .cc-contact .cc-avatar {height:115px;}
+  .champagne-comms.cc-veillee .cc-brand {font-size:27px;}
+}

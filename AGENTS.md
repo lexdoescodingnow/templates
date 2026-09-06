@@ -13,3 +13,5 @@ These are the user's defaults for new templates and requested revisions in this 
 - Scope styles to each template's wrapper. Preserve older supported message markup during compatible updates. Use a fresh stylesheet filename for immediate use of changed snippets when cached CSS would prevent new behaviour; maintain older entry points where useful.
 - Buds are miniature thread templates intended to encourage replies of 100 words or fewer. Keep their layouts compact, with ordinary paragraph markup and short placeholder replies.
 - The Banana collection has five thread, five comms and five Bud choices. Preserve this five-of-each structure when extending or revising the collection, unless the user requests otherwise.
+- The Champagne collection has five thread, five comms and five bud choices. Preserve this five-of-each structure when extending or revising it, unless the user requests otherwise. Give new variants distinct names that suit the theme.
+

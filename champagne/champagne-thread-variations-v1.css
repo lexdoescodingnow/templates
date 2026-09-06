@@ -1,0 +1,82 @@
+@import url('./champagne-cuvee-v1.css');
+
+.champagne-cuvee.ch-millesime {padding-top:38px;border-radius:2px;background:linear-gradient(90deg,rgba(var(--mgrgb1,var(--ch-f1)),.07),transparent 25%,transparent 75%,rgba(var(--mgrgb3,var(--ch-f3)),.07)),var(--ch-paper);}
+.champagne-cuvee.ch-millesime::before {inset:10px;border-radius:0;border-color:var(--ch-c1);}
+.champagne-cuvee.ch-millesime::after {inset:17px;border-radius:0;border-color:var(--ch-gold);border-top-width:3px;border-bottom-width:3px;}
+.champagne-cuvee.ch-millesime .ch-crest {width:43px;height:33px;margin-bottom:13px;}
+.champagne-cuvee.ch-millesime .ch-title {font-weight:500;font-size:clamp(28px,9.2cqi,49px);letter-spacing:.015em;}
+.champagne-cuvee.ch-millesime .ch-subtitle {margin-top:15px;margin-bottom:25px;letter-spacing:.23em;}
+.champagne-cuvee.ch-millesime .ch-gifs {width:78%;gap:5%;margin-bottom:23px;padding:12px 0;border-top:1px solid var(--ch-line);border-bottom:1px solid var(--ch-line);}
+.champagne-cuvee.ch-millesime .ch-gifs img {width:47.5%;max-width:47.5%;aspect-ratio:5/4;border-radius:2px;padding:4px;outline-offset:3px;}
+.champagne-cuvee.ch-millesime .ch-gifs img:only-child {flex:0 1 82%;width:82%;max-width:82%;aspect-ratio:16/9;}
+.champagne-cuvee.ch-millesime .ch-gifs::before,.champagne-cuvee.ch-millesime .ch-gifs::after {width:32px;height:170px;top:0;opacity:.2;}
+.champagne-cuvee.ch-millesime .ch-names {width:75%;margin-bottom:26px;gap:9px;}
+.champagne-cuvee.ch-millesime .ch-copy {margin:0 12%;padding-top:24px;border-top:0;}
+.champagne-cuvee.ch-millesime .ch-copy::before {width:34px;left:calc(50% - 17px);top:-4px;height:1px;}
+.champagne-cuvee.ch-millesime .ch-finish {width:72px;height:49px;margin-top:19px;}
+
+.champagne-cuvee.ch-rosee {padding-top:36px;border-radius:150px 150px 8px 8px / 37px 37px 8px 8px;background:radial-gradient(ellipse at 50% 15%,rgba(var(--mgrgb2,var(--ch-f2)),.12),transparent 55%),var(--ch-paper);}
+.champagne-cuvee.ch-rosee::before {inset:10px;border-radius:140px 140px 5px 5px / 31px 31px 5px 5px;border-color:var(--ch-c2);}
+.champagne-cuvee.ch-rosee::after {inset:16px;border-radius:130px 130px 3px 3px / 27px 27px 3px 3px;border-color:var(--ch-gold);}
+.champagne-cuvee.ch-rosee .ch-crest {width:44px;height:35px;margin-bottom:6px;}
+.champagne-cuvee.ch-rosee .ch-title {font-size:clamp(31px,11.8cqi,63px);letter-spacing:-.04em;text-transform:none;font-style:italic;}
+.champagne-cuvee.ch-rosee .ch-subtitle {margin-bottom:31px;font-size:9px;letter-spacing:.18em;}
+.champagne-cuvee.ch-rosee .ch-gifs {width:72%;gap:9%;padding:6px 0 0;margin-bottom:22px;}
+.champagne-cuvee.ch-rosee .ch-gifs img {aspect-ratio:3/4;border-radius:50%;padding:5px;outline-offset:5px;box-shadow:0 9px 20px rgba(var(--mgrgb2,var(--ch-f2)),.1);}
+.champagne-cuvee.ch-rosee .ch-gifs img + img {margin-top:27px;}
+.champagne-cuvee.ch-rosee .ch-gifs img:only-child {flex:0 1 63%;max-width:63%;width:63%;aspect-ratio:1/1;border-radius:50%;margin-top:0;}
+.champagne-cuvee.ch-rosee .ch-gifs::before {left:-17%;top:24px;}
+.champagne-cuvee.ch-rosee .ch-gifs::after {right:-17%;top:57px;}
+.champagne-cuvee.ch-rosee .ch-names {width:74%;margin-bottom:27px;}
+.champagne-cuvee.ch-rosee .ch-names span {font-style:italic;font-size:35px;}
+.champagne-cuvee.ch-rosee .ch-copy {margin:0 11%;border-top-style:dotted;}
+.champagne-cuvee.ch-rosee .ch-copy::before {width:9px;height:9px;border-radius:50%;left:calc(50% - 4.5px);top:-5px;border:2px solid var(--ch-paper);}
+.champagne-cuvee.ch-rosee .ch-finish {width:75px;height:51px;}
+
+.champagne-cuvee.ch-eclat {padding-top:40px;border-radius:2px;border-top:5px solid var(--ch-c1);border-bottom:5px solid var(--ch-c3);background:linear-gradient(135deg,rgba(var(--mgrgb1,var(--ch-f1)),.11),transparent 35%),linear-gradient(315deg,rgba(var(--mgrgb3,var(--ch-f3)),.08),transparent 45%),var(--ch-paper);}
+.champagne-cuvee.ch-eclat::before {inset:13px;border:0;border-left:1px solid var(--ch-c1);border-right:1px solid var(--ch-c3);border-radius:0;opacity:.45;}
+.champagne-cuvee.ch-eclat::after {inset:20px;border-radius:0;border-color:var(--ch-line);border-top:0;border-bottom:0;}
+.champagne-cuvee.ch-eclat .ch-crest {align-self:flex-start;width:37px;height:29px;margin:0 10% 16px;}
+.champagne-cuvee.ch-eclat .ch-title {margin:0 10%;text-align:left;font-size:clamp(26px,9.3cqi,49px);font-weight:500;letter-spacing:-.025em;}
+.champagne-cuvee.ch-eclat .ch-subtitle {align-self:flex-start;max-width:77%;margin:12px 10% 30px;padding:0;text-align:left;letter-spacing:.18em;}
+.champagne-cuvee.ch-eclat .ch-subtitle::before,.champagne-cuvee.ch-eclat .ch-subtitle::after {display:none;}
+.champagne-cuvee.ch-eclat .ch-gifs {width:79%;gap:5%;padding:0;margin-bottom:27px;}
+.champagne-cuvee.ch-eclat .ch-gifs img {width:47.5%;max-width:47.5%;aspect-ratio:1/1;border-radius:2px 34px 2px 2px;padding:0;outline-offset:5px;}
+.champagne-cuvee.ch-eclat .ch-gifs img + img {border-radius:2px 2px 2px 34px;}
+.champagne-cuvee.ch-eclat .ch-gifs img:only-child {flex:0 1 100%;max-width:100%;width:100%;aspect-ratio:16/9;border-radius:2px 34px 2px 2px;}
+.champagne-cuvee.ch-eclat .ch-gifs::before {left:auto;right:-16px;top:-18px;width:42px;height:42px;border-top:1px solid var(--ch-c3);border-right:1px solid var(--ch-c3);background:none;mask:none;-webkit-mask:none;opacity:.8;}
+.champagne-cuvee.ch-eclat .ch-gifs::after {right:auto;left:-16px;top:auto;bottom:-17px;width:42px;height:42px;border-bottom:1px solid var(--ch-c1);border-left:1px solid var(--ch-c1);background:none;mask:none;-webkit-mask:none;transform:none;opacity:.8;}
+.champagne-cuvee.ch-eclat .ch-names {width:79%;margin-bottom:27px;}
+.champagne-cuvee.ch-eclat .ch-names a {font-size:9px;letter-spacing:.2em;}
+.champagne-cuvee.ch-eclat .ch-copy {margin:0 10%;padding-top:27px;}
+.champagne-cuvee.ch-eclat .ch-copy::before {left:0;width:60px;}
+.champagne-cuvee.ch-eclat .ch-finish {align-self:flex-end;width:62px;height:43px;margin:23px 10% 0;}
+
+.champagne-cuvee.ch-reserve {padding:38px 0 26px;border-radius:3px;background:radial-gradient(ellipse at 100% 0,rgba(var(--mgrgb3,var(--ch-f3)),.07),transparent 45%),var(--ch-paper);}
+.champagne-cuvee.ch-reserve::before {inset:11px;border-radius:0;border-color:var(--ch-c2);opacity:.42;}
+.champagne-cuvee.ch-reserve::after {inset:17px;border-radius:0;border-top:0;border-bottom:0;opacity:.2;}
+.champagne-cuvee.ch-reserve .ch-crest {order:0;align-self:flex-start;width:32px;height:25px;margin:0 11% 16px;}
+.champagne-cuvee.ch-reserve .ch-title {order:1;margin:0 11%;font-size:clamp(31px,11.4cqi,61px);font-weight:400;text-transform:none;letter-spacing:-.025em;text-align:left;}
+.champagne-cuvee.ch-reserve .ch-subtitle {order:2;align-self:flex-start;max-width:78%;margin:13px 11% 28px;padding:0;font-size:9px;letter-spacing:.15em;text-align:left;}
+.champagne-cuvee.ch-reserve .ch-subtitle::before,.champagne-cuvee.ch-reserve .ch-subtitle::after {display:none;}
+.champagne-cuvee.ch-reserve .ch-copy {order:3;margin:0 11%;padding:26px 0 28px;border-top:1px solid var(--ch-line);border-bottom:1px solid var(--ch-line);}
+.champagne-cuvee.ch-reserve .ch-copy::before {left:0;width:33px;}
+.champagne-cuvee.ch-reserve .ch-gifs {order:4;width:auto;max-width:78%;gap:15px;padding:0;margin:26px auto 17px;}
+.champagne-cuvee.ch-reserve .ch-gifs img {flex:0 1 auto;width:72px;max-width:72px;height:72px;aspect-ratio:1/1;padding:3px;border-radius:50%;outline-offset:3px;}
+.champagne-cuvee.ch-reserve .ch-gifs img:only-child {flex:0 1 auto;width:80px;max-width:80px;height:80px;aspect-ratio:1/1;border-radius:50%;}
+.champagne-cuvee.ch-reserve .ch-gifs::before,.champagne-cuvee.ch-reserve .ch-gifs::after {display:none;}
+.champagne-cuvee.ch-reserve .ch-names {order:5;width:77%;margin:0 auto 7px;gap:10px;}
+.champagne-cuvee.ch-reserve .ch-names a {font-size:9px;letter-spacing:.1em;}
+.champagne-cuvee.ch-reserve .ch-names span {font-size:25px;}
+.champagne-cuvee.ch-reserve .ch-finish {order:6;width:50px;height:34px;margin:12px auto 0;}
+
+@container (max-width:380px) {
+  .champagne-cuvee.ch-millesime .ch-copy {margin:0 10%;}
+  .champagne-cuvee.ch-millesime .ch-subtitle {letter-spacing:.14em;}
+  .champagne-cuvee.ch-rosee .ch-gifs img {padding:3px;outline-offset:4px;}
+  .champagne-cuvee.ch-rosee .ch-gifs img + img {margin-top:20px;}
+  .champagne-cuvee.ch-rosee .ch-gifs::before,.champagne-cuvee.ch-rosee .ch-gifs::after {width:28px;height:160px;}
+  .champagne-cuvee.ch-eclat .ch-subtitle {font-size:8px;letter-spacing:.1em;}
+  .champagne-cuvee.ch-eclat .ch-names a {letter-spacing:.08em;}
+  .champagne-cuvee.ch-reserve .ch-gifs img {width:62px;max-width:62px;height:62px;}
+}
