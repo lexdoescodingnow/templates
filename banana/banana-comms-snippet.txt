@@ -5,14 +5,15 @@
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
-<div class="bc-time">Today · [time]</div>
+<div class="bc-time"><span>[time]</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
 <p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
 </div>
-<div class="bc-receipt">Delivered</div>
+<div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
+<div class="bc-compose" aria-hidden="true"></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-keepsake-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-keepsake-v3.css">
 [/dohtml]

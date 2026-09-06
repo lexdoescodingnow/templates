@@ -1,63 +1,69 @@
 # Banana templates
 
-## Current thread template: Banana Keepsake
+The current Banana set uses member-group colours throughout the design, with neutral light/dark surfaces and small Banana motifs. Project-wide authoring defaults are recorded in [AGENTS.md](../AGENTS.md).
 
-The current thread design uses butter-yellow paper, olive leaves, gold lettering, two staggered character GIFs, and a small banana illustration. It preserves the Banana design created in this conversation.
+## Thread template
 
-Copy the complete contents of [banana-keepsake-snippet.txt](banana-keepsake-snippet.txt) into a JCink post. The snippet includes its own `[dohtml]` wrapper. [banana-compact-thread-snippets.txt](banana-compact-thread-snippets.txt) contains the same current snippet.
+Copy [banana-keepsake-snippet.txt](banana-keepsake-snippet.txt) into a JCink post. [banana-compact-thread-snippets.txt](banana-compact-thread-snippets.txt) contains the same snippet. Both include their own `[dohtml]` wrapper and load [banana-keepsake-v2.css](banana-keepsake-v2.css).
 
-The shared styling lives in [banana-keepsake.css](banana-keepsake.css). Each post loads it with:
+The thread layout retains its serif heading, staggered GIF portraits and botanical details. Member-group colours now supply the title gradient, header glow, leaf colours, GIF outlines and decorative rules. The writing sits on a neutral surface. A small banana illustration preserves the theme without turning the whole template yellow.
 
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-keepsake.css">
-```
+Edit the names, profile URLs, subtitle, GIF URLs and writing in the HTML at the top. Remove the second image for the centered single-GIF layout.
 
-The stylesheet link stays at the bottom of the snippet so the editable names, profile links, subtitle, GIF URLs, and writing appear first. The wrapper is `<div class="banana-keepsake">`. Keep the link inside the `[dohtml]` block.
+## Phone comms template
 
-The snippet is 1,817 bytes, compared with 9,334 bytes for the original self-contained version, using the same placeholder writing and GIFs.
+Copy [banana-comms-snippet.txt](banana-comms-snippet.txt) into a JCink post. It loads [banana-comms-keepsake-v3.css](banana-comms-keepsake-v3.css).
 
-### Per-post editing
+The 360px comms template now resembles a phone message screen, with a device frame, top clock and status indicators, camera cutout, contact header, character GIF, incoming message bubbles, visual message bar and home indicator. The header, borders, avatar frame, message bubbles and message-bar accent use the member-group palette. Banana appears as a small serif wordmark and fruit motif.
 
-- Change the two `[name]` and `[url]` values in the first line of content.
-- Change `[text]` to the subtitle and replace the paragraphs inside `bn-copy` with your writing.
-- Replace either image `src` with a character GIF URL. Remove the second image element for a centered single-GIF layout.
-- Use `<b>`, `<i>`, and `<u>` within the HTML for the group-colour formatting.
-
-Blue Hour's inherited `--mgrgb1`, `--mgrgb2`, and `--mgrgb3` variables supply the formatting colours automatically. The `html[color-mode="dark"]` switch supplies the dark palette; explicit light mode retains the light palette. If the forum does not set `color-mode`, the stylesheet follows the system preference.
-
-The shared stylesheet contains all layout and decorative code, including the embedded botanical artwork. The post snippet contains no CSS block, JavaScript, comments, or hidden editing instructions. The `banana-keepsake` wrapper keeps the new design separate from older Banana classes on the same page.
-
-### Shared updates
-
-Editing `banana-keepsake.css` on `main` updates the styling for posts using the link after caches refresh. jsDelivr documents a 12-hour cache for branch URLs; see [jsDelivr caching](https://github.com/jsdelivr/jsdelivr#caching). The short HTML remains in each individual forum post, so character names and writing stay independent.
-
-The extraction was checked against the original HTML and CSS: only the root class was renamed and the CSS was moved outside the post. It has not been tested inside the live forum.
-
-## Companion comms template
-
-[banana-comms-snippet.txt](banana-comms-snippet.txt) is the current companion to Banana Keepsake. It uses a compact 360px message card, a character GIF in an arched frame, warm yellow message bubbles, the same gold serif Banana title, and matching botanical artwork.
-
-Copy the complete snippet into a JCink post. It uses `<div class="banana-comms-keepsake">` and loads [banana-comms-keepsake-v2.css](banana-comms-keepsake-v2.css) through the stylesheet link at the bottom. The comms stylesheet is independent of the thread stylesheet.
-
-The editable name, profile URL, status line, GIF URL and timestamp are first. Start each text message with a plain `<p>` inside `bc-messages`. Like the forum example, closing `</p>` tags are optional here: the next `<p>` starts another bubble. Explicit `<p>message</p>` also works. Use `<br>` for a line break within one bubble. Replace or add message lines directly. The timestamp and Delivered label are editable display text, not live messaging indicators.
-
-For a received message, add the `bc-received` class to its paragraph:
+The first fields are the contact name, profile URL, status line, GIF and time. Start each message with a plain `<p>` inside `bc-messages`:
 
 ```html
-<p class="bc-received">Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.
+<p>Consectetur adipiscing elit.
 ```
 
-An image or GIF can also go inside a message:
+Closing `</p>` tags are optional in this message container. Explicit `<p>message</p>` also works. Use `<br>` for a new line within one bubble.
+
+Messages align left by default, as received texts. For an outgoing message, use:
+
+```html
+<p class="bc-sent">Lorem ipsum dolor sit amet.</p>
+```
+
+The `bc-received` class also remains supported. Older `<div class="bc-message">` messages still work, including paragraphs inside one legacy message. Only direct paragraph children of `bc-messages` become separate bubbles.
+
+Images and GIFs can appear inside a message:
 
 ```html
 <p><img src="[url]" alt="Character attachment"></p>
 ```
 
-Bold, italic and underlined text uses the same inherited Blue Hour group colours as the thread template. Light/dark colours use the same forum switch and system fallback. Text grows with the messages; there is no fixed-height message area. The comms selectors are scoped to their own wrapper so both templates can appear together.
+The clock, receipt label and message bar are visual parts of a forum template. They do not send messages or report live device status. The message area grows with the text and has no fixed-height scroll region.
 
-Existing `<div class="bc-message">` messages remain supported, including paragraphs inside one legacy bubble. Only direct paragraph children of `bc-messages` become new bubbles. The earlier `banana-comms-keepsake.css` address imports the current version after its cache refreshes; the updated snippet links directly to v2 so it can be used immediately.
+## Colours and formatting
 
-The copy-paste snippet has no comments, hidden instructions, inline stylesheet or JavaScript. Its hosted CSS and markup received static checks; shorthand paragraphs were parsed and checked as sibling messages. Live forum rendering has not been tested.
+The template wrappers inherit Blue Hour's RGB variables `--mgrgb1`, `--mgrgb2` and `--mgrgb3`; no per-post group name or colour entry is needed.
+
+- Bold (`b`, `strong`) and underline (`u`) use group 1 → group 2 → group 3.
+- Italics (`i`, `em`) use group 3 → group 2 → group 1.
+
+The same member colours also affect the visible template surfaces. Neutral light/dark ink and surfaces preserve the reading area. Golden/olive fallbacks apply only when the forum does not supply member-group variables.
+
+Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` settings take precedence. Without a forum mode, both stylesheets follow the system preference.
+
+## Hosted files
+
+The short snippets load these current stylesheets directly:
+
+```text
+https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-keepsake-v2.css
+https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-keepsake-v3.css
+```
+
+Use the updated snippets for the new appearance immediately. Previous Keepsake CSS addresses import the current versions after caches refresh. jsDelivr caches branch URLs; see [its caching documentation](https://github.com/jsdelivr/jsdelivr#caching).
+
+Template code contains no comments or hidden editing instructions. All CSS is scoped to the relevant wrapper. Markup, shorthand message parsing, embedded SVGs and hosted stylesheets are checked; live forum rendering is not part of these checks.
 
 ## Banana Display
 
@@ -121,3 +127,4 @@ The next drawing pass is expected to refine G, J, K, Q, R, S, and Z and further 
 ## Licence
 
 Banana Display is a modified font structurally based on GFS Didot by the Greek Font Society and is distributed under the SIL Open Font License 1.1. The reserved name `GFS Didot` is not used for this derivative. See `OFL.txt`.
+
