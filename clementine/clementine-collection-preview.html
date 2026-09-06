@@ -386,11 +386,24 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 @media(max-width:1000px) {.grid-comms,.grid-buds{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:720px) {.collection-grid{grid-template-columns:minmax(0,1fr);}.collection-head{padding:26px 17px 15px;}.collection-head h1{font-size:43px;}.collection-main{padding:0 17px 30px;}.entry-heading{min-height:0;margin-bottom:20px;}.collection-toolbar{align-items:flex-start;}.collection-grid{gap:25px;}}
 @media(max-width:380px) {.collection-head,.collection-main{padding-left:12px;padding-right:12px;}.collection-toolbar button,.collection-toolbar select{padding:7px 8px;font-size:10px;}}
+
+.design-index {display:grid;gap:10px;margin-top:21px;padding:18px 0 3px;border-top:1px solid #ccc2b5;scroll-margin-top:20px;}
+.design-index-row {display:flex;flex-wrap:wrap;align-items:baseline;gap:7px 13px;font-size:12px;}
+.design-index-row strong {min-width:59px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;}
+.design-index a,.entry-navigation a {color:#65533e;text-decoration:underline;text-underline-offset:3px;}
+.design-index a:hover,.entry-navigation a:hover {color:#9f421e;}
+.design-index a:focus-visible,.entry-navigation a:focus-visible {outline:2px solid #9f421e;outline-offset:4px;}
+.entry-navigation {display:flex;justify-content:space-between;gap:10px;margin:0 0 16px;padding:8px 0;border-top:1px solid #ccc2b5;font-size:10px;}
+.collection-entry {scroll-margin-top:24px;}
+.collection-entry:target {outline:1px solid #b39b7b;outline-offset:9px;}
+html[color-mode="dark"] .design-index,html[color-mode="dark"] .entry-navigation {border-color:#494239;}
+html[color-mode="dark"] .design-index a,html[color-mode="dark"] .entry-navigation a {color:#ccbba4;}
+html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-navigation a:hover {color:#eda070;}
 </style>
 </head>
 <body>
 <header class="collection-head">
-<p class="collection-kicker">The Clementine Collection</p>
+<p class="collection-kicker">Complete collection · 15 designs</p>
 <h1>A little sweetness.</h1>
 <p class="collection-description">Five threads. Five comms. Five buds. Fifteen ways to keep the story growing.</p>
 <div class="collection-toolbar">
@@ -406,10 +419,12 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 <label>Colours <select id="palette"><option value="clementine">Clementine</option><option value="berry">Berry / lilac / blue</option><option value="grove">Teal / fern / olive</option></select></label>
 </div>
 </div>
+<nav class="design-index" id="design-index" aria-label="Choose a design"><div class="design-index-row"><strong>Threads</strong><a class="design-jump" href="#preview-threads-zest">Zest</a><a class="design-jump" href="#preview-threads-satsuma">Satsuma</a><a class="design-jump" href="#preview-threads-orangerie">Orangerie</a><a class="design-jump" href="#preview-threads-marmalade">Marmalade</a><a class="design-jump" href="#preview-threads-sunroom">Sunroom</a></div><div class="design-index-row"><strong>Comms</strong><a class="design-jump" href="#preview-comms-pulp">Pulp</a><a class="design-jump" href="#preview-comms-nectar">Nectar</a><a class="design-jump" href="#preview-comms-peel">Peel</a><a class="design-jump" href="#preview-comms-fleur">Fleur</a><a class="design-jump" href="#preview-comms-presse">Pressé</a></div><div class="design-index-row"><strong>Buds</strong><a class="design-jump" href="#preview-buds-pip">Pip</a><a class="design-jump" href="#preview-buds-pith">Pith</a><a class="design-jump" href="#preview-buds-dew">Dew</a><a class="design-jump" href="#preview-buds-segment">Segment</a><a class="design-jump" href="#preview-buds-blossom">Blossom</a></div></nav>
 </header>
 <main class="collection-main">
 <section class="collection-group" data-kind="threads" aria-labelledby="heading-threads"><div class="group-heading"><h2 id="heading-threads">Threads <span>05</span></h2><p>Room for the whole story.</p></div><div class="collection-grid grid-threads">
-<article class="collection-entry" data-template="threads-zest">
+<article class="collection-entry" data-template="threads-zest" id="preview-threads-zest">
+<nav class="entry-navigation" aria-label="Browse from Zest"><a class="design-jump" href="#preview-buds-blossom" aria-label="Previous design: Blossom">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-satsuma" aria-label="Next design: Satsuma">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>01</span> Zest</h3><p>Staggered portraits and engraved citrus details.</p></div><button type="button" class="copy-button" data-source="code-threads-zest" aria-label="Copy Zest threads code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-zest">
 <div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
@@ -453,7 +468,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-threads-zest" role="status"></span>
 </article>
-<article class="collection-entry" data-template="threads-satsuma">
+<article class="collection-entry" data-template="threads-satsuma" id="preview-threads-satsuma">
+<nav class="entry-navigation" aria-label="Browse from Satsuma"><a class="design-jump" href="#preview-threads-zest" aria-label="Previous design: Zest">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-orangerie" aria-label="Next design: Orangerie">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>02</span> Satsuma</h3><p>Paired citrus-shaped frames and a centred masthead.</p></div><button type="button" class="copy-button" data-source="code-threads-satsuma" aria-label="Copy Satsuma threads code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-zest ct-satsuma">
 <div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
@@ -497,7 +513,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-threads-satsuma" role="status"></span>
 </article>
-<article class="collection-entry" data-template="threads-orangerie">
+<article class="collection-entry" data-template="threads-orangerie" id="preview-threads-orangerie">
+<nav class="entry-navigation" aria-label="Browse from Orangerie"><a class="design-jump" href="#preview-threads-satsuma" aria-label="Previous design: Satsuma">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-marmalade" aria-label="Next design: Marmalade">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>03</span> Orangerie</h3><p>Tall conservatory windows and a botanical finish.</p></div><button type="button" class="copy-button" data-source="code-threads-orangerie" aria-label="Copy Orangerie threads code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-zest ct-orangerie">
 <div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
@@ -541,7 +558,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-threads-orangerie" role="status"></span>
 </article>
-<article class="collection-entry" data-template="threads-marmalade">
+<article class="collection-entry" data-template="threads-marmalade" id="preview-threads-marmalade">
+<nav class="entry-navigation" aria-label="Browse from Marmalade"><a class="design-jump" href="#preview-threads-orangerie" aria-label="Previous design: Orangerie">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-sunroom" aria-label="Next design: Sunroom">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>04</span> Marmalade</h3><p>A horizontal portrait strip with a fine coloured spine.</p></div><button type="button" class="copy-button" data-source="code-threads-marmalade" aria-label="Copy Marmalade threads code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-zest ct-marmalade">
 <div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
@@ -585,7 +603,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-threads-marmalade" role="status"></span>
 </article>
-<article class="collection-entry" data-template="threads-sunroom">
+<article class="collection-entry" data-template="threads-sunroom" id="preview-threads-sunroom">
+<nav class="entry-navigation" aria-label="Browse from Sunroom"><a class="design-jump" href="#preview-threads-marmalade" aria-label="Previous design: Marmalade">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-pulp" aria-label="Next design: Pulp">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>05</span> Sunroom</h3><p>A wide photograph with a small circular portrait inset.</p></div><button type="button" class="copy-button" data-source="code-threads-sunroom" aria-label="Copy Sunroom threads code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-zest ct-sunroom">
 <div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
@@ -631,7 +650,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </article>
 </div></section>
 <section class="collection-group" data-kind="comms" aria-labelledby="heading-comms"><div class="group-heading"><h2 id="heading-comms">Comms <span>05</span></h2><p>Little conversations, one message at a time.</p></div><div class="collection-grid grid-comms">
-<article class="collection-entry" data-template="comms-pulp">
+<article class="collection-entry" data-template="comms-pulp" id="preview-comms-pulp">
+<nav class="entry-navigation" aria-label="Browse from Pulp"><a class="design-jump" href="#preview-threads-sunroom" aria-label="Previous design: Sunroom">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-nectar" aria-label="Next design: Nectar">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>01</span> Pulp</h3><p>A rounded phone with a centred portrait and soft message bubbles.</p></div><button type="button" class="copy-button" data-source="code-comms-pulp" aria-label="Copy Pulp comms code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-comms cc-pulp">
 <div class="cc-contact">
@@ -673,7 +693,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-comms-pulp" role="status"></span>
 </article>
-<article class="collection-entry" data-template="comms-nectar">
+<article class="collection-entry" data-template="comms-nectar" id="preview-comms-nectar">
+<nav class="entry-navigation" aria-label="Browse from Nectar"><a class="design-jump" href="#preview-comms-pulp" aria-label="Previous design: Pulp">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-peel" aria-label="Next design: Peel">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>02</span> Nectar</h3><p>A compact chat screen with a tinted contact bar.</p></div><button type="button" class="copy-button" data-source="code-comms-nectar" aria-label="Copy Nectar comms code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-comms cc-nectar">
 <div class="cc-contact">
@@ -715,7 +736,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-comms-nectar" role="status"></span>
 </article>
-<article class="collection-entry" data-template="comms-peel">
+<article class="collection-entry" data-template="comms-peel" id="preview-comms-peel">
+<nav class="entry-navigation" aria-label="Browse from Peel"><a class="design-jump" href="#preview-comms-nectar" aria-label="Previous design: Nectar">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-fleur" aria-label="Next design: Fleur">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>03</span> Peel</h3><p>A slim handset with a vertical portrait and folded message corners.</p></div><button type="button" class="copy-button" data-source="code-comms-peel" aria-label="Copy Peel comms code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-comms cc-peel">
 <div class="cc-contact">
@@ -757,7 +779,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-comms-peel" role="status"></span>
 </article>
-<article class="collection-entry" data-template="comms-fleur">
+<article class="collection-entry" data-template="comms-fleur" id="preview-comms-fleur">
+<nav class="entry-navigation" aria-label="Browse from Fleur"><a class="design-jump" href="#preview-comms-peel" aria-label="Previous design: Peel">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-presse" aria-label="Next design: Pressé">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>04</span> Fleur</h3><p>A portrait-led messenger with a wide photographic header.</p></div><button type="button" class="copy-button" data-source="code-comms-fleur" aria-label="Copy Fleur comms code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-comms cc-fleur">
 <div class="cc-contact">
@@ -799,7 +822,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-comms-fleur" role="status"></span>
 </article>
-<article class="collection-entry" data-template="comms-presse">
+<article class="collection-entry" data-template="comms-presse" id="preview-comms-presse">
+<nav class="entry-navigation" aria-label="Browse from Pressé"><a class="design-jump" href="#preview-comms-fleur" aria-label="Previous design: Fleur">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-pip" aria-label="Next design: Pip">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>05</span> Pressé</h3><p>A square messenger with crisp message panels and a citrus seal.</p></div><button type="button" class="copy-button" data-source="code-comms-presse" aria-label="Copy Pressé comms code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-comms cc-presse">
 <div class="cc-contact">
@@ -843,7 +867,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </article>
 </div></section>
 <section class="collection-group" data-kind="buds" aria-labelledby="heading-buds"><div class="group-heading"><h2 id="heading-buds">Buds <span>05</span></h2><p>Small replies, under 100 words.</p></div><div class="collection-grid grid-buds">
-<article class="collection-entry" data-template="buds-pip">
+<article class="collection-entry" data-template="buds-pip" id="preview-buds-pip">
+<nav class="entry-navigation" aria-label="Browse from Pip"><a class="design-jump" href="#preview-comms-presse" aria-label="Previous design: Pressé">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-pith" aria-label="Next design: Pith">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>01</span> Pip</h3><p>A tiny portrait beside a quick reply.</p></div><button type="button" class="copy-button" data-source="code-buds-pip" aria-label="Copy Pip buds code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-bud cb-pip">
 <div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
@@ -875,7 +900,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-buds-pip" role="status"></span>
 </article>
-<article class="collection-entry" data-template="buds-pith">
+<article class="collection-entry" data-template="buds-pith" id="preview-buds-pith">
+<nav class="entry-navigation" aria-label="Browse from Pith"><a class="design-jump" href="#preview-buds-pip" aria-label="Previous design: Pip">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-dew" aria-label="Next design: Dew">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>02</span> Pith</h3><p>A circular portrait above a small, centred note.</p></div><button type="button" class="copy-button" data-source="code-buds-pith" aria-label="Copy Pith buds code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-bud cb-pith">
 <div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
@@ -907,7 +933,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-buds-pith" role="status"></span>
 </article>
-<article class="collection-entry" data-template="buds-dew">
+<article class="collection-entry" data-template="buds-dew" id="preview-buds-dew">
+<nav class="entry-navigation" aria-label="Browse from Dew"><a class="design-jump" href="#preview-buds-pith" aria-label="Previous design: Pith">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-segment" aria-label="Next design: Segment">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>03</span> Dew</h3><p>Twin miniature portraits along the top edge.</p></div><button type="button" class="copy-button" data-source="code-buds-dew" aria-label="Copy Dew buds code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-bud cb-dew">
 <div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
@@ -941,7 +968,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-buds-dew" role="status"></span>
 </article>
-<article class="collection-entry" data-template="buds-segment">
+<article class="collection-entry" data-template="buds-segment" id="preview-buds-segment">
+<nav class="entry-navigation" aria-label="Browse from Segment"><a class="design-jump" href="#preview-buds-dew" aria-label="Previous design: Dew">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-blossom" aria-label="Next design: Blossom">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>04</span> Segment</h3><p>A little panoramic photograph over a short reply.</p></div><button type="button" class="copy-button" data-source="code-buds-segment" aria-label="Copy Segment buds code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-bud cb-segment">
 <div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
@@ -973,7 +1001,8 @@ html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code
 </textarea></details>
 <span class="copy-status" id="status-buds-segment" role="status"></span>
 </article>
-<article class="collection-entry" data-template="buds-blossom">
+<article class="collection-entry" data-template="buds-blossom" id="preview-buds-blossom">
+<nav class="entry-navigation" aria-label="Browse from Blossom"><a class="design-jump" href="#preview-buds-segment" aria-label="Previous design: Segment">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-zest" aria-label="Next design: Zest">Next →</a></nav>
 <div class="entry-heading"><div><h3><span>05</span> Blossom</h3><p>A leaf-shaped portrait and an asymmetric frame.</p></div><button type="button" class="copy-button" data-source="code-buds-blossom" aria-label="Copy Blossom buds code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-bud cb-blossom">
 <div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
@@ -1042,6 +1071,10 @@ document.querySelectorAll('.copy-button').forEach(button=>button.addEventListene
     source.focus();source.select();
     status.textContent=document.execCommand('copy')?'Copied':'Code selected';
   }
+}));
+
+document.querySelectorAll('.design-jump').forEach(link=>link.addEventListener('click',()=>{
+  document.querySelector('[data-filter="all"]').click();
 }));
 </script>
 </body>

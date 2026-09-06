@@ -2,7 +2,7 @@
 
 Five thread templates, five comms templates and five buds, inspired by the Arthur & Nate poster. The collection shares Bodoni Moda lettering, neutral paper and charcoal surfaces, engraved citrus details and inherited member colours.
 
-Open [clementine-preview.html](clementine-preview.html) in a browser to see all fifteen designs. Its category filters, light/dark buttons and sample group palettes change the preview; each design has its own exact posting snippet and copy-code button. All designs are present in the HTML, including when JavaScript is unavailable.
+Open [clementine-collection-preview.html](clementine-collection-preview.html) in a browser to see all fifteen designs. The named index links and Previous/Next links navigate all fifteen designs, including without JavaScript. Its category filters, light/dark buttons and sample group palettes change the preview; each design has its own exact posting snippet and copy-code button. All designs are present in the HTML, including when JavaScript is unavailable.
 
 ## Threads
 
@@ -60,7 +60,7 @@ Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` settings take 
 
 The original Zest snippet and stylesheet are preserved. Each posting snippet contains exactly one stylesheet link. Shared citrus drawings are embedded in CSS; Google Fonts, Tumblr GIFs and hosted stylesheets require external access. System fonts provide fallbacks. Template HTML and CSS contain no comments, hidden tips or editing instructions.
 
-The single collection preview includes the template CSS inline and the exact source for every design. It replaces the original Zest-only preview at the same path.
+The single collection preview includes the template CSS inline and the exact source for every design. The collection preview uses a fresh filename so older links to the original Zest preview cannot be mistaken for this file.
 
 ## Validation
 
