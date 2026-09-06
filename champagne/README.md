@@ -2,7 +2,7 @@
 
 The completed Champagne collection contains **five threads, five comms and five buds**. All share fine gold line work, neutral writing surfaces, inherited member colours, Cormorant Garamond and Manrope typography, and the two supplied Tumblr GIFs.
 
-Open [champagne-collection-preview.html](champagne-collection-preview.html) to see **all fifteen designs immediately**. Jump to Threads, Comms or Buds, switch light/dark modes or sample group colours, and open the code beneath any design. The gallery is rendered directly in HTML; design visibility, appearance controls and code downloads do not depend on JavaScript or nested frames. The earlier [champagne-preview.html](champagne-preview.html) filename contains the same updated gallery for compatibility.
+Open [champagne-collection-preview.html](champagne-collection-preview.html) to see **all fifteen designs immediately**. Jump to Threads, Comms or Buds, switch light/dark modes or sample group colours, and open the code beneath any design. The gallery is rendered directly in HTML; design visibility, appearance controls and code downloads do not depend on JavaScript or nested frames.
 
 ## Designs
 
