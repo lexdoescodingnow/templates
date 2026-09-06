@@ -1,0 +1,21 @@
+[dohtml]
+<div class="champagne-cuvee">
+<div class="ch-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="ch-title">Champagne</div>
+<div class="ch-subtitle">[text]</div>
+<div class="ch-gifs">
+<img src="https://media1.tenor.com/m/__TeDxQYHBwAAAAd/eric-the-boyz-eric-sohn.gif" alt="Eric Sohn" style="object-position:50% 38%;">
+<img src="https://media1.tenor.com/m/fa95LUykEocAAAAd/yg-treasure-yoshi.gif" alt="Yoshinori Kanemoto" style="object-position:50% 40%;">
+</div>
+<div class="ch-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+</div>
+<div class="ch-crest" aria-hidden="true"></div>
+<div class="ch-finish" aria-hidden="true"></div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-cuvee-v1.css">
+[/dohtml]

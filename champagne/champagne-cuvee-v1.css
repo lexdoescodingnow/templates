@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
+
+.champagne-cuvee {
+  --ch-paper:#faf8f3;
+  --ch-panel:#fffdf8;
+  --ch-ink:#403c38;
+  --ch-muted:#7a6d5e;
+  --ch-line:#d9d1c1;
+  --ch-gold:#b08b51;
+  --ch-f1:128,86,46;
+  --ch-f2:145,117,65;
+  --ch-f3:110,99,67;
+  --ch-c1:rgb(var(--mgrgb1,var(--ch-f1)));
+  --ch-c2:rgb(var(--mgrgb2,var(--ch-f2)));
+  --ch-c3:rgb(var(--mgrgb3,var(--ch-f3)));
+  --ch-forward:linear-gradient(110deg,var(--ch-c1),var(--ch-c2),var(--ch-c3));
+  --ch-reverse:linear-gradient(110deg,var(--ch-c3),var(--ch-c2),var(--ch-c1));
+  position:relative;
+  isolation:isolate;
+  box-sizing:border-box;
+  container-type:inline-size;
+  display:flex;
+  flex-direction:column;
+  width:540px;
+  max-width:100%;
+  margin:26px auto;
+  padding:31px 0 29px;
+  overflow:hidden;
+  border:1px solid var(--ch-line);
+  border-radius:3px;
+  background:radial-gradient(ellipse at 0 0,rgba(var(--mgrgb1,var(--ch-f1)),.095),transparent 50%),radial-gradient(ellipse at 100% 30%,rgba(var(--mgrgb3,var(--ch-f3)),.085),transparent 48%),var(--ch-paper);
+  color:var(--ch-ink);
+  color-scheme:light;
+  font:14px/1.95 'Manrope',Arial,sans-serif;
+  text-align:left;
+  text-shadow:none;
+  box-shadow:0 12px 38px #0000000d;
+}
+.champagne-cuvee *, .champagne-cuvee *::before, .champagne-cuvee *::after {box-sizing:border-box;}
+.champagne-cuvee::before, .champagne-cuvee::after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  pointer-events:none;
+}
+.champagne-cuvee::before {inset:10px;border:1px solid var(--ch-gold);border-radius:26px 2px 26px 2px;opacity:.68;}
+.champagne-cuvee::after {inset:15px;border:1px solid var(--ch-c2);border-radius:22px 2px 22px 2px;opacity:.27;}
+.champagne-cuvee .ch-crest {order:0;width:58px;height:43px;flex-shrink:0;margin:0 auto 10px;background:var(--ch-forward);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2060%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.25%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M40%2045V18m0%2018C22%2034%2022%2021%2030%2024c5%202%207%208%2010%2016m0-4c18-2%2018-15%2010-12-5%202-7%208-10%2016M40%2020c-11-7-4-15%200-18%204%203%2011%2011%200%2018M9%2045c13%206%2018-7%2031%200%2013-7%2018%206%2031%200M26%2051h28M33%2056h14%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2226%22%20r%3D%222%22%2F%3E%3Ccircle%20cx%3D%2262%22%20cy%3D%2226%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2060%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.25%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M40%2045V18m0%2018C22%2034%2022%2021%2030%2024c5%202%207%208%2010%2016m0-4c18-2%2018-15%2010-12-5%202-7%208-10%2016M40%2020c-11-7-4-15%200-18%204%203%2011%2011%200%2018M9%2045c13%206%2018-7%2031%200%2013-7%2018%206%2031%200M26%2051h28M33%2056h14%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2226%22%20r%3D%222%22%2F%3E%3Ccircle%20cx%3D%2262%22%20cy%3D%2226%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/contain no-repeat;}
+.champagne-cuvee .ch-title {
+  order:1;
+  margin:0 7%;
+  padding:0;
+  color:var(--ch-c1);
+  font:400 57px/1.05 'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(29px,10.7cqi,57px);
+  letter-spacing:-.045em;
+  text-align:center;
+  text-transform:uppercase;
+  overflow-wrap:anywhere;
+}
+.champagne-cuvee .ch-subtitle {order:2;position:relative;max-width:78%;margin:13px auto 30px;padding:0 12px;color:var(--ch-muted);font:500 9px/1.9 'Manrope',Arial,sans-serif;letter-spacing:.26em;text-transform:uppercase;text-align:center;overflow-wrap:anywhere;}
+.champagne-cuvee .ch-subtitle::before, .champagne-cuvee .ch-subtitle::after {content:"";position:absolute;width:22px;height:1px;background:var(--ch-gold);top:50%;opacity:.55;}
+.champagne-cuvee .ch-subtitle::before {right:100%;}
+.champagne-cuvee .ch-subtitle::after {left:100%;}
+.champagne-cuvee .ch-gifs {order:3;position:relative;display:flex;align-items:stretch;justify-content:center;gap:9%;width:75%;margin:0 auto 24px;padding:9px 0;}
+.champagne-cuvee .ch-gifs::before, .champagne-cuvee .ch-gifs::after {content:"";position:absolute;z-index:-1;top:-24px;width:50px;height:260px;background:var(--ch-forward);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2058%20420%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221%22%3E%3Ccircle%20cx%3D%2217%22%20cy%3D%2220%22%20r%3D%226%22%2F%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%2262%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%22105%22%20r%3D%2210%22%2F%3E%3Ccircle%20cx%3D%2234%22%20cy%3D%22141%22%20r%3D%225%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%22185%22%20r%3D%222%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%22218%22%20r%3D%228%22%2F%3E%3Ccircle%20cx%3D%2213%22%20cy%3D%22266%22%20r%3D%224%22%2F%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%22308%22%20r%3D%2210%22%2F%3E%3Ccircle%20cx%3D%228%22%20cy%3D%22356%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%22390%22%20r%3D%225%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22black%22%3E%3Ccircle%20cx%3D%2228%22%20cy%3D%2242%22%20r%3D%221.7%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2285%22%20r%3D%222%22%2F%3E%3Ccircle%20cx%3D%224%22%20cy%3D%22160%22%20r%3D%222.3%22%2F%3E%3Ccircle%20cx%3D%2236%22%20cy%3D%22248%22%20r%3D%221.7%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%22334%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2058%20420%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221%22%3E%3Ccircle%20cx%3D%2217%22%20cy%3D%2220%22%20r%3D%226%22%2F%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%2262%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%22105%22%20r%3D%2210%22%2F%3E%3Ccircle%20cx%3D%2234%22%20cy%3D%22141%22%20r%3D%225%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%22185%22%20r%3D%222%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%22218%22%20r%3D%228%22%2F%3E%3Ccircle%20cx%3D%2213%22%20cy%3D%22266%22%20r%3D%224%22%2F%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%22308%22%20r%3D%2210%22%2F%3E%3Ccircle%20cx%3D%228%22%20cy%3D%22356%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%22390%22%20r%3D%225%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22black%22%3E%3Ccircle%20cx%3D%2228%22%20cy%3D%2242%22%20r%3D%221.7%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2285%22%20r%3D%222%22%2F%3E%3Ccircle%20cx%3D%224%22%20cy%3D%22160%22%20r%3D%222.3%22%2F%3E%3Ccircle%20cx%3D%2236%22%20cy%3D%22248%22%20r%3D%221.7%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%22334%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/100% 100% no-repeat;opacity:.32;pointer-events:none;}
+.champagne-cuvee .ch-gifs::before {left:-16%;}
+.champagne-cuvee .ch-gifs::after {right:-16%;transform:scaleX(-1) translateY(-18px);}
+.champagne-cuvee .ch-gifs img {display:block;flex:1 1 0;min-width:0;max-width:45.5%;width:45.5%;height:auto;aspect-ratio:4/5;margin:0;padding:5px;border:1px solid var(--ch-c1);border-radius:100px 100px 4px 4px;object-fit:cover;background:var(--ch-panel);outline:1px solid rgba(var(--mgrgb1,var(--ch-f1)),.27);outline-offset:5px;box-shadow:0 10px 22px #0000000c;}
+.champagne-cuvee .ch-gifs img + img {border-color:var(--ch-c3);outline-color:rgba(var(--mgrgb3,var(--ch-f3)),.27);}
+.champagne-cuvee .ch-gifs img:only-child {flex:0 1 78%;max-width:78%;width:78%;aspect-ratio:5/4;border-radius:100px 100px 4px 4px;}
+.champagne-cuvee .ch-names {order:4;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:12px;width:76%;margin:0 auto 29px;text-align:center;}
+.champagne-cuvee .ch-names a {display:block;max-width:100%;margin:0;padding:0;border:0;background:none;color:var(--ch-c1);font:600 10px/1.9 'Manrope',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;overflow-wrap:anywhere;}
+.champagne-cuvee .ch-names a:last-child {color:var(--ch-c3);}
+.champagne-cuvee .ch-names span {color:var(--ch-gold);font:400 31px/1 'Cormorant Garamond',Georgia,serif;}
+.champagne-cuvee .ch-names a:hover {text-decoration:underline;text-underline-offset:5px;}
+.champagne-cuvee a:focus-visible {outline:2px solid var(--ch-c2);outline-offset:4px;}
+.champagne-cuvee .ch-copy {order:5;position:relative;min-width:0;margin:0 10%;padding:29px 0 12px;border-top:1px solid var(--ch-line);color:var(--ch-ink);font:14px/1.95 'Manrope',Arial,sans-serif;text-align:left;overflow-wrap:anywhere;}
+.champagne-cuvee .ch-copy::before {content:"";position:absolute;left:calc(50% - 25px);top:-2px;width:50px;height:3px;background:var(--ch-forward);}
+.champagne-cuvee .ch-copy p {margin:0 0 1.4em;padding:0;color:inherit;font:inherit;text-align:inherit;}
+.champagne-cuvee .ch-copy p:last-child {margin-bottom:0;}
+.champagne-cuvee .ch-copy :is(b,strong,i,em,u) {color:var(--ch-c1);text-shadow:none;}
+.champagne-cuvee .ch-copy :is(b,strong) {font-weight:700;}
+.champagne-cuvee .ch-copy :is(i,em) {font-style:italic;}
+.champagne-cuvee .ch-copy u {text-decoration:underline;text-decoration-color:var(--ch-c2);text-decoration-thickness:1px;text-underline-offset:4px;}
+.champagne-cuvee .ch-copy a {color:var(--ch-c2);text-decoration:underline;text-underline-offset:4px;}
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+  .champagne-cuvee .ch-title, .champagne-cuvee .ch-copy :is(b,strong,i,em,u) {background-image:var(--ch-forward);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .champagne-cuvee .ch-copy :is(i,em) {background-image:var(--ch-reverse);}
+}
+.champagne-cuvee .ch-finish {order:6;position:relative;width:90px;height:62px;margin:15px auto 0;background:var(--ch-forward);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20110%2075%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22rotate%28-12%2042%2043%29%22%3E%3Cpath%20d%3D%22M17%2020h35c-1%2012-9%2018-17.5%2018S18%2032%2017%2020Zm17.5%2018v23m-11%201h22M20%2026h29%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22rotate%2812%2070%2043%29%22%3E%3Cpath%20d%3D%22M57%2020h35c-1%2012-9%2018-17.5%2018S58%2032%2057%2020Zm17.5%2018v23m-11%201h22M60%2026h29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22m52%208%203%205m-10-1%201%204m17-6-3%204%22%2F%3E%3Ccircle%20cx%3D%2241%22%20cy%3D%225%22%20r%3D%221.6%22%2F%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%225%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20110%2075%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22rotate%28-12%2042%2043%29%22%3E%3Cpath%20d%3D%22M17%2020h35c-1%2012-9%2018-17.5%2018S18%2032%2017%2020Zm17.5%2018v23m-11%201h22M20%2026h29%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22rotate%2812%2070%2043%29%22%3E%3Cpath%20d%3D%22M57%2020h35c-1%2012-9%2018-17.5%2018S58%2032%2057%2020Zm17.5%2018v23m-11%201h22M60%2026h29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22m52%208%203%205m-10-1%201%204m17-6-3%204%22%2F%3E%3Ccircle%20cx%3D%2241%22%20cy%3D%225%22%20r%3D%221.6%22%2F%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%225%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center/contain no-repeat;}
+html[color-mode="dark"] .champagne-cuvee {
+  --ch-paper:#232220;
+  --ch-panel:#2e2b27;
+  --ch-ink:#e5e0d8;
+  --ch-muted:#c0b39e;
+  --ch-line:#4d473d;
+  --ch-gold:#ba985d;
+  --ch-f1:228,190,139;
+  --ch-f2:205,185,139;
+  --ch-f3:221,206,166;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark) {
+  html:not([color-mode]) .champagne-cuvee {
+    --ch-paper:#232220;
+    --ch-panel:#2e2b27;
+    --ch-ink:#e5e0d8;
+    --ch-muted:#c0b39e;
+    --ch-line:#4d473d;
+    --ch-gold:#ba985d;
+    --ch-f1:228,190,139;
+    --ch-f2:205,185,139;
+    --ch-f3:221,206,166;
+    color-scheme:dark;
+  }
+}
+@container (max-width:390px) {
+  .champagne-cuvee .ch-crest {width:48px;height:36px;margin-bottom:12px;}
+  .champagne-cuvee .ch-subtitle {font-size:8px;letter-spacing:.16em;margin-bottom:25px;}
+  .champagne-cuvee .ch-gifs {width:71%;gap:12%;margin-bottom:19px;}
+  .champagne-cuvee .ch-gifs img {max-width:44%;width:44%;padding:3px;outline-offset:4px;}
+  .champagne-cuvee .ch-gifs::before,.champagne-cuvee .ch-gifs::after {height:210px;width:38px;}
+  .champagne-cuvee .ch-names {width:77%;gap:8px;margin-bottom:23px;}
+  .champagne-cuvee .ch-names a {font-size:9px;letter-spacing:.07em;}
+  .champagne-cuvee .ch-copy {margin:0 10%;padding-top:24px;font-size:13px;line-height:1.95;}
+}
+@media (forced-colors:active) {
+  .champagne-cuvee .ch-title,.champagne-cuvee .ch-copy :is(b,strong,i,em,u) {background:none;color:CanvasText;-webkit-text-fill-color:CanvasText;}
+  .champagne-cuvee .ch-gifs img {border-color:CanvasText;outline-color:CanvasText;}
+}
