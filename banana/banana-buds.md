@@ -41,4 +41,4 @@ The templates follow explicit `html[color-mode="light"]` and `html[color-mode="d
 https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css
 ```
 
-The new filename gives these snippets their own stylesheet. Older Bud CSS files remain available for older posts. The new rules are scoped to `.banana-bud`.
+This stylesheet is shared by the five current Bud designs, with rules scoped to `.banana-bud`.
