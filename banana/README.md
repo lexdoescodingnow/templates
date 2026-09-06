@@ -33,6 +33,30 @@ Editing `banana-keepsake.css` on `main` updates the styling for posts using the 
 
 The extraction was checked against the original HTML and CSS: only the root class was renamed and the CSS was moved outside the post. It has not been tested inside the live forum.
 
+## Companion comms template
+
+[banana-comms-snippet.txt](banana-comms-snippet.txt) is the current companion to Banana Keepsake. It uses a compact 360px message card, a character GIF in an arched frame, warm yellow message bubbles, the same gold serif Banana title, and matching botanical artwork.
+
+Copy the complete snippet into a JCink post. It uses `<div class="banana-comms-keepsake">` and loads [banana-comms-keepsake.css](banana-comms-keepsake.css) through the stylesheet link at the bottom. The comms stylesheet is independent of the thread stylesheet.
+
+The editable name, profile URL, status line, GIF URL and timestamp are first. Replace the lorem ipsum inside each `bc-message` block with one text message. Duplicate or remove an entire block to change the number of messages. The timestamp and Delivered label are editable display text, not live messaging indicators.
+
+For a received message, add the `bc-received` class to the message block:
+
+```html
+<div class="bc-message bc-received">Lorem ipsum dolor sit amet.</div>
+```
+
+An image or GIF can also go inside a message:
+
+```html
+<div class="bc-message"><img src="[url]" alt="Character attachment"></div>
+```
+
+Bold, italic and underlined text uses the same inherited Blue Hour group colours as the thread template. Light/dark colours use the same forum switch and system fallback. Text grows with the messages; there is no fixed-height message area. The comms selectors are scoped to their own wrapper so both templates can appear together.
+
+The copy-paste snippet has no comments, hidden instructions, inline stylesheet or JavaScript. Its hosted CSS and markup received static checks; live forum rendering has not been tested.
+
 ## Banana Display
 
 Banana Display is the custom high-contrast serif used for the Banana template family. This folder contains the live JCink-ready font integration layer, OpenType utility classes, an editable `[dohtml]` example, licence information, and validation notes for Prototype 0.1.
@@ -95,4 +119,3 @@ The next drawing pass is expected to refine G, J, K, Q, R, S, and Z and further 
 ## Licence
 
 Banana Display is a modified font structurally based on GFS Didot by the Greek Font Society and is distributed under the SIL Open Font License 1.1. The reserved name `GFS Didot` is not used for this derivative. See `OFL.txt`.
-
