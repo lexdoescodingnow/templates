@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clementine · Zest</title>
+<title>Clementine · The complete collection</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
@@ -128,42 +128,290 @@ html[color-mode="dark"] .clementine-zest {
   .clementine-zest .ct-gifs img {border-color:CanvasText;}
 }
 
-html {background:#eeebe5;color:#423d37;color-scheme:light;}
-body {margin:0;font:14px/1.6 'DM Sans',Arial,sans-serif;}
-.preview-header {max-width:1040px;margin:auto;padding:32px 24px 22px;display:flex;justify-content:space-between;gap:24px;align-items:center;}
-.preview-brand {font:400 31px/1.2 'Bodoni Moda',Georgia,serif;letter-spacing:-.04em;}
-.preview-brand span {display:block;margin-top:8px;font:500 10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#71675c;}
-.preview-controls {display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
-.preview-controls button,.preview-code button,.preview-controls select {padding:8px 12px;border:1px solid #bdb4a7;background:transparent;color:inherit;border-radius:4px;font:500 12px/1.5 'DM Sans',Arial,sans-serif;cursor:pointer;}
-.preview-controls button[aria-pressed="true"] {background:#423d37;color:#fffdfa;border-color:#423d37;}
-.preview-controls select {max-width:100%;background:#eeebe5;}
-.preview-controls label {display:flex;gap:8px;align-items:center;font-size:11px;}
-.preview-stage {padding:0 20px 36px;border-top:1px solid #d8d1c7;}
-.preview-code {max-width:880px;margin:0 auto;padding:26px 24px 44px;border-top:1px solid #d8d1c7;}
-.preview-code-bar {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:15px;}
-.preview-code h1 {font:500 15px/1.4 'DM Sans',Arial,sans-serif;margin:0;}
-.preview-code textarea {box-sizing:border-box;display:block;width:100%;min-height:260px;padding:18px;border:1px solid #c9c0b5;border-radius:4px;background:#faf8f4;color:#403b37;font:12px/1.7 ui-monospace,monospace;resize:vertical;}
+
+.clementine-zest.ct-satsuma {padding-top:34px;border-radius:74px 74px 3px 3px;}
+.clementine-zest.ct-satsuma::before {border-radius:65px 65px 0 0;}
+.clementine-zest.ct-satsuma::after {border-radius:60px 60px 0 0;}
+.clementine-zest.ct-satsuma .ct-seal {position:relative;order:-1;top:auto;right:auto;align-self:center;width:40px;height:40px;margin:0 0 18px;}
+.clementine-zest.ct-satsuma .ct-names {justify-content:center;max-width:84%;}
+.clementine-zest.ct-satsuma .ct-title {text-align:center;margin-top:12px;}
+.clementine-zest.ct-satsuma .ct-subtitle {padding:0;text-align:center;margin-bottom:28px;}
+.clementine-zest.ct-satsuma .ct-subtitle::before {display:none;}
+.clementine-zest.ct-satsuma .ct-gifs {align-items:stretch;gap:6%;width:76%;padding:0 0 10px;}
+.clementine-zest.ct-satsuma .ct-gifs img {flex-basis:47%;width:47%;max-width:47%;aspect-ratio:1;margin:0;border-radius:50% 50% 4px 50%;padding:6px;}
+.clementine-zest.ct-satsuma .ct-gifs img + img {border-radius:50% 50% 50% 4px;}
+.clementine-zest.ct-satsuma .ct-gifs::before {top:10%;left:2%;width:96%;height:90%;border-radius:50%;transform:none;background:none;}
+.clementine-zest.ct-satsuma .ct-gifs::after {width:22%;right:39%;top:auto;bottom:-7px;opacity:.45;}
+.clementine-zest.ct-satsuma .ct-copy::before {left:calc(50% - 33px);}
+
+.clementine-zest.ct-orangerie {padding-top:34px;}
+.clementine-zest.ct-orangerie::before {border-radius:140px 140px 2px 2px;}
+.clementine-zest.ct-orangerie::after {border-radius:135px 135px 0 0;}
+.clementine-zest.ct-orangerie .ct-seal {position:relative;order:-1;top:auto;right:auto;align-self:center;width:60px;height:35px;margin-bottom:18px;background:var(--ct-forward);-webkit-mask-image:var(--ct-sprig);mask-image:var(--ct-sprig);transform:none;}
+.clementine-zest.ct-orangerie .ct-names {max-width:84%;justify-content:center;}
+.clementine-zest.ct-orangerie .ct-title {font-style:normal;text-align:center;letter-spacing:-.07em;}
+.clementine-zest.ct-orangerie .ct-subtitle {text-align:center;padding:0;}
+.clementine-zest.ct-orangerie .ct-subtitle::before {display:none;}
+.clementine-zest.ct-orangerie .ct-gifs {width:73%;gap:8%;padding-bottom:8px;}
+.clementine-zest.ct-orangerie .ct-gifs img {flex-basis:46%;width:46%;max-width:46%;aspect-ratio:3/4;margin:0;border-radius:100px 100px 0 0;outline:1px solid rgba(var(--mgrgb2,var(--ct-f2)),.35);outline-offset:5px;}
+.clementine-zest.ct-orangerie .ct-gifs::before {inset:15% -9% 7%;width:auto;height:auto;transform:none;border-top:0;border-bottom:0;background:repeating-linear-gradient(90deg,transparent 0 32%,rgba(var(--mgrgb2,var(--ct-f2)),.18) 32% calc(32% + 1px),transparent calc(32% + 1px) 50%);}
+.clementine-zest.ct-orangerie .ct-gifs::after {width:34%;right:-12%;top:auto;bottom:-15px;opacity:.18;}
+.clementine-zest.ct-orangerie .ct-finish {border-bottom:0;}
+
+.clementine-zest.ct-marmalade {border-left:5px solid var(--ct-c1);}
+.clementine-zest.ct-marmalade::before {inset:10px 10px 10px 7px;}
+.clementine-zest.ct-marmalade::after {display:none;}
+.clementine-zest.ct-marmalade .ct-title {font-style:normal;font-size:clamp(28px,11.5cqi,62px);letter-spacing:-.06em;}
+.clementine-zest.ct-marmalade .ct-gifs {width:82%;gap:3%;padding:11px 0;margin-bottom:28px;border-top:1px solid var(--ct-c2);border-bottom:1px solid var(--ct-c3);}
+.clementine-zest.ct-marmalade .ct-gifs img {flex-basis:48.5%;width:48.5%;max-width:48.5%;aspect-ratio:6/5;margin:0;padding:3px;border:0;box-shadow:none;}
+.clementine-zest.ct-marmalade .ct-gifs::before {inset:0 -8%;width:auto;height:auto;transform:none;border:0;background:linear-gradient(90deg,rgba(var(--mgrgb1,var(--ct-f1)),.06),rgba(var(--mgrgb3,var(--ct-f3)),.11));}
+.clementine-zest.ct-marmalade .ct-gifs::after {display:none;}
+.clementine-zest.ct-marmalade .ct-copy {padding-top:8px;border-top:0;}
+.clementine-zest.ct-marmalade .ct-copy::before {display:none;}
+.clementine-zest.ct-marmalade .ct-finish {justify-content:flex-start;}
+.clementine-zest.ct-marmalade .ct-finish::before {flex-basis:38px;height:38px;-webkit-mask-image:var(--ct-wheel);mask-image:var(--ct-wheel);}
+
+.clementine-zest.ct-sunroom {border-radius:3px 80px 3px 3px;}
+.clementine-zest.ct-sunroom::before {border-radius:0 72px 0 0;}
+.clementine-zest.ct-sunroom::after {border-radius:0 67px 0 0;}
+.clementine-zest.ct-sunroom .ct-seal {right:10%;opacity:.75;}
+.clementine-zest.ct-sunroom .ct-gifs {display:block;width:80%;padding:0 0 28px;margin-bottom:28px;}
+.clementine-zest.ct-sunroom .ct-gifs img:first-child {width:100%;max-width:100%;aspect-ratio:8/5;border-radius:3px 65px 3px 3px;padding:6px;}
+.clementine-zest.ct-sunroom .ct-gifs img + img {position:absolute;right:-4%;bottom:-5px;width:33%;max-width:33%;aspect-ratio:1;margin:0;border-radius:50%;padding:5px;border:1px solid var(--ct-c3);outline:5px solid var(--ct-paper);}
+.clementine-zest.ct-sunroom .ct-gifs::before {top:-12px;left:-12px;right:12px;bottom:43px;width:auto;height:auto;transform:none;border-radius:0 72px 0 0;background:none;}
+.clementine-zest.ct-sunroom .ct-gifs::after {right:auto;left:-13%;top:auto;bottom:0;width:35%;opacity:.16;}
+.clementine-zest.ct-sunroom .ct-copy::before {width:44px;}
+.clementine-zest.ct-sunroom .ct-finish {justify-content:flex-end;}
+.clementine-zest:is(.ct-satsuma,.ct-orangerie,.ct-marmalade) .ct-gifs img:only-child {flex-basis:100%;width:100%;max-width:100%;aspect-ratio:3/2;}
+@container (max-width:390px) {
+  .clementine-zest.ct-satsuma .ct-gifs img {padding:4px;}
+  .clementine-zest.ct-orangerie .ct-gifs {gap:10%;}
+  .clementine-zest.ct-orangerie .ct-gifs img {width:45%;max-width:45%;flex-basis:45%;outline-offset:3px;}
+  .clementine-zest.ct-sunroom .ct-gifs img:first-child {border-top-right-radius:42px;}
+  .clementine-zest.ct-sunroom .ct-gifs img + img {padding:3px;outline-width:3px;}
+}
+
+
+.clementine-comms, .clementine-bud {
+  --ct-wheel:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.4%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2246%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2242%22/%3E%3Cpath%20d%3D%22M50.28%2042.00L51.33%2012.02A38%2038%200%200%201%2071.25%2018.50L54.47%2043.37Q50%2050%2050.28%2042.00Z%22/%3E%3Cpath%20d%3D%22M54.93%2043.70L73.40%2020.06A38%2038%200%200%201%2085.71%2037.00L57.52%2047.26Q50%2050%2054.93%2043.70Z%22/%3E%3Cpath%20d%3D%22M57.69%2047.79L86.53%2039.53A38%2038%200%200%201%2086.53%2060.47L57.69%2052.21Q50%2050%2057.69%2047.79Z%22/%3E%3Cpath%20d%3D%22M57.52%2052.74L85.71%2063.00A38%2038%200%200%201%2073.40%2079.94L54.93%2056.30Q50%2050%2057.52%2052.74Z%22/%3E%3Cpath%20d%3D%22M54.47%2056.63L71.25%2081.50A38%2038%200%200%201%2051.33%2087.98L50.28%2058.00Q50%2050%2054.47%2056.63Z%22/%3E%3Cpath%20d%3D%22M49.72%2058.00L48.67%2087.98A38%2038%200%200%201%2028.75%2081.50L45.53%2056.63Q50%2050%2049.72%2058.00Z%22/%3E%3Cpath%20d%3D%22M45.07%2056.30L26.60%2079.94A38%2038%200%200%201%2014.29%2063.00L42.48%2052.74Q50%2050%2045.07%2056.30Z%22/%3E%3Cpath%20d%3D%22M42.31%2052.21L13.47%2060.47A38%2038%200%200%201%2013.47%2039.53L42.31%2047.79Q50%2050%2042.31%2052.21Z%22/%3E%3Cpath%20d%3D%22M42.48%2047.26L14.29%2037.00A38%2038%200%200%201%2026.60%2020.06L45.07%2043.70Q50%2050%2042.48%2047.26Z%22/%3E%3Cpath%20d%3D%22M45.53%2043.37L28.75%2018.50A38%2038%200%200%201%2048.67%2012.02L49.72%2042.00Q50%2050%2045.53%2043.37Z%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%222.5%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2258.96%22%20cy%3D%2222.42%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28-72%2058.96%2022.42%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2273.46%22%20cy%3D%2232.95%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28-36%2073.46%2032.95%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2279.00%22%20cy%3D%2250.00%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%280%2079.00%2050.00%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2273.46%22%20cy%3D%2267.05%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%2836%2073.46%2067.05%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2258.96%22%20cy%3D%2277.58%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%2872%2058.96%2077.58%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2241.04%22%20cy%3D%2277.58%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28108%2041.04%2077.58%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2226.54%22%20cy%3D%2267.05%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28144%2026.54%2067.05%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2221.00%22%20cy%3D%2250.00%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28180%2021.00%2050.00%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2226.54%22%20cy%3D%2232.95%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28216%2026.54%2032.95%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2241.04%22%20cy%3D%2222.42%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28252%2041.04%2022.42%29%22%20fill%3D%22black%22/%3E%3C/svg%3E");
+  --ct-sprig:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20110%2060%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M16%2049C41%2049%2061%2030%2088%2010M43%2042C36%2042%2024%2037%2022%2025%2034%2026%2043%2032%2043%2042ZM57%2031C55%2019%2061%2010%2071%207%2074%2020%2065%2028%2057%2031ZM69%2024C77%2025%2088%2022%2094%2016%2084%2011%2074%2016%2069%2024Z%22/%3E%3Cpath%20d%3D%22M63%2050C62%2043%2068%2038%2077%2038%2086%2038%2092%2043%2091%2050%2090%2058%2065%2058%2063%2050ZM75%2038l2-6m0%204c4-5%208-5%2010-3-3%203-5%204-10%203%22/%3E%3C/g%3E%3C/svg%3E");
+  --ct-paper:#faf8f4;
+  --ct-panel:#fffdfa;
+  --ct-ink:#403b37;
+  --ct-muted:#776a60;
+  --ct-line:#ddd4c9;
+  --ct-rind:#d57639;
+  --ct-f1:159,66,30;
+  --ct-f2:158,103,42;
+  --ct-f3:92,113,67;
+  --ct-c1:rgb(var(--mgrgb1,var(--ct-f1)));
+  --ct-c2:rgb(var(--mgrgb2,var(--ct-f2)));
+  --ct-c3:rgb(var(--mgrgb3,var(--ct-f3)));
+  --ct-forward:linear-gradient(110deg,var(--ct-c1),var(--ct-c2),var(--ct-c3));
+  --ct-reverse:linear-gradient(110deg,var(--ct-c3),var(--ct-c2),var(--ct-c1));
+}
+
+.clementine-comms, .clementine-bud {position:relative;isolation:isolate;container-type:inline-size;box-sizing:border-box;max-width:100%;margin:24px auto;border:1px solid var(--ct-line);background:var(--ct-paper);color:var(--ct-ink);color-scheme:light;font:400 13px/1.85 'DM Sans',Arial,sans-serif;text-align:left;text-shadow:none;overflow-wrap:anywhere;}
+.clementine-comms *, .clementine-comms *::before, .clementine-comms *::after, .clementine-bud *, .clementine-bud *::before, .clementine-bud *::after {box-sizing:border-box;}
+.clementine-comms a, .clementine-bud a {color:var(--ct-c1);text-decoration:none;background:none;text-shadow:none;}
+.clementine-comms a:hover, .clementine-bud a:hover {text-decoration:underline;text-underline-offset:4px;}
+.clementine-comms a:focus-visible, .clementine-bud a:focus-visible {outline:2px solid var(--ct-c2);outline-offset:4px;}
+.clementine-comms .cc-messages :is(b,strong,i,em,u), .clementine-bud .cb-copy :is(b,strong,i,em,u) {color:var(--ct-c1);text-shadow:none;}
+.clementine-comms .cc-messages :is(b,strong), .clementine-bud .cb-copy :is(b,strong) {font-weight:700;}
+.clementine-comms .cc-messages :is(i,em), .clementine-bud .cb-copy :is(i,em) {font-style:italic;}
+.clementine-comms .cc-messages u, .clementine-bud .cb-copy u {text-decoration:underline;text-decoration-color:var(--ct-c2);text-decoration-thickness:1px;text-underline-offset:3px;}
+.clementine-comms .cc-messages a, .clementine-bud .cb-copy a {color:var(--ct-c2);text-decoration:underline;text-underline-offset:3px;}
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+  .clementine-comms .cc-brand, .clementine-bud .cb-brand, .clementine-comms .cc-messages :is(b,strong,i,em,u), .clementine-bud .cb-copy :is(b,strong,i,em,u) {background-image:var(--ct-forward);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .clementine-comms .cc-messages :is(i,em), .clementine-bud .cb-copy :is(i,em) {background-image:var(--ct-reverse);}
+}
+.clementine-comms {display:flex;flex-direction:column;width:350px;padding:19px 0 20px;border:2px solid var(--ct-line);border-radius:32px;overflow:hidden;box-shadow:0 12px 35px #20140810;background:radial-gradient(ellipse at 100% 0,rgba(var(--mgrgb2,var(--ct-f2)),.1),transparent 45%),var(--ct-paper);}
+.clementine-comms .cc-hardware {order:-3;align-self:center;width:45px;height:4px;margin:0 0 14px;border-radius:4px;background:var(--ct-c2);opacity:.65;}
+.clementine-comms .cc-brand {order:-2;margin:0 22px 22px;padding:0;color:var(--ct-c1);font:italic 400 19px/1.2 'Bodoni Moda',Georgia,serif;letter-spacing:-.045em;}
+.clementine-comms .cc-contact {position:relative;display:grid;grid-template-columns:62px minmax(0,1fr);grid-template-rows:auto auto;align-items:center;column-gap:14px;margin:0 22px;padding:0 0 22px;border-bottom:1px solid var(--ct-line);min-width:0;}
+.clementine-comms .cc-name {grid-column:2;grid-row:1;align-self:end;display:block;min-width:0;margin:0;padding:0;border:0;color:var(--ct-c1);font:400 23px/1.35 'Bodoni Moda',Georgia,serif;letter-spacing:-.04em;overflow-wrap:anywhere;}
+.clementine-comms .cc-status {grid-column:2;grid-row:2;align-self:start;min-width:0;color:var(--ct-muted);font:500 9px/1.9 'DM Sans',Arial,sans-serif;letter-spacing:.08em;}
+.clementine-comms .cc-avatar {grid-column:1;grid-row:1 / span 2;display:block;width:62px;max-width:100%;height:62px;margin:0;padding:3px;border:1px solid var(--ct-c3);border-radius:50%;background:var(--ct-panel);object-fit:cover;}
+.clementine-comms .cc-time {margin:18px 22px;color:var(--ct-muted);font:500 9px/1.6 'DM Sans',Arial,sans-serif;letter-spacing:.12em;text-align:center;}
+.clementine-comms .cc-messages {min-width:0;margin:0 22px;padding:0;color:var(--ct-ink);font:400 13px/1.8 'DM Sans',Arial,sans-serif;text-align:left;}
+.clementine-comms .cc-messages p {position:relative;width:fit-content;max-width:94%;margin:0 0 9px auto;padding:11px 14px;border:1px solid rgba(var(--mgrgb2,var(--ct-f2)),.18);border-radius:17px 17px 4px 17px;background:linear-gradient(110deg,rgba(var(--mgrgb1,var(--ct-f1)),.075),rgba(var(--mgrgb3,var(--ct-f3)),.12)),var(--ct-panel);color:inherit;font:inherit;letter-spacing:normal;text-align:inherit;overflow-wrap:anywhere;}
+.clementine-comms .cc-messages p:last-child {margin-bottom:0;}
+.clementine-comms .cc-receipt {margin:8px 25px 0;color:var(--ct-muted);font:500 9px/1.5 'DM Sans',Arial,sans-serif;text-align:right;}
+.clementine-comms .cc-compose {position:relative;height:34px;margin:23px 22px 0;border:1px solid var(--ct-line);border-radius:22px;background:var(--ct-panel);}
+.clementine-comms .cc-compose::before {content:"";position:absolute;left:12px;top:8px;width:16px;height:16px;background:var(--ct-rind);-webkit-mask:var(--ct-wheel) center/contain no-repeat;mask:var(--ct-wheel) center/contain no-repeat;opacity:.8;}
+.clementine-comms .cc-compose::after {content:"";position:absolute;right:13px;top:11px;width:8px;height:8px;border-top:1px solid var(--ct-c2);border-right:1px solid var(--ct-c2);transform:rotate(45deg);}
+.clementine-comms.cc-pulp .cc-contact {display:flex;flex-direction:column;text-align:center;padding-bottom:20px;}
+.clementine-comms.cc-pulp .cc-avatar {order:-1;width:79px;height:79px;margin:0 0 12px;padding:4px;outline:1px solid rgba(var(--mgrgb1,var(--ct-f1)),.25);outline-offset:4px;}
+.clementine-comms.cc-pulp .cc-name, .clementine-comms.cc-pulp .cc-status {align-self:center;max-width:100%;}
+.clementine-comms.cc-pulp .cc-brand {text-align:center;margin-bottom:22px;}
+
+.clementine-comms.cc-nectar {border-radius:12px;padding-top:16px;border-top:3px solid var(--ct-c1);}
+.clementine-comms.cc-nectar .cc-hardware {display:none;}
+.clementine-comms.cc-nectar .cc-brand {margin-bottom:16px;font-size:18px;}
+.clementine-comms.cc-nectar .cc-contact {margin:0;padding:18px 22px;border-top:1px solid rgba(var(--mgrgb1,var(--ct-f1)),.2);border-bottom:1px solid rgba(var(--mgrgb3,var(--ct-f3)),.2);background:linear-gradient(115deg,rgba(var(--mgrgb1,var(--ct-f1)),.1),rgba(var(--mgrgb3,var(--ct-f3)),.13));}
+.clementine-comms.cc-nectar .cc-avatar {border-radius:12px;}
+.clementine-comms.cc-nectar .cc-name {font:600 14px/1.8 'DM Sans',Arial,sans-serif;letter-spacing:0;}
+.clementine-comms.cc-nectar .cc-messages p {border-radius:10px 10px 2px 10px;}
+.clementine-comms.cc-nectar .cc-compose {border-radius:8px;}
+
+.clementine-comms.cc-peel {width:334px;border-radius:36px 9px 36px 9px;}
+.clementine-comms.cc-peel .cc-brand {border-bottom:2px solid var(--ct-c1);padding-bottom:11px;}
+.clementine-comms.cc-peel .cc-contact {grid-template-columns:minmax(0,1fr) 65px;column-gap:15px;}
+.clementine-comms.cc-peel .cc-name, .clementine-comms.cc-peel .cc-status {grid-column:1;}
+.clementine-comms.cc-peel .cc-avatar {grid-column:2;width:65px;height:92px;border-radius:40px 40px 5px 5px;}
+.clementine-comms.cc-peel .cc-messages p {border-radius:12px 2px 18px 12px;border-right:3px solid var(--ct-c3);padding-right:13px;}
+.clementine-comms.cc-peel .cc-compose {border-radius:5px 5px 18px 5px;}
+
+.clementine-comms.cc-fleur {border-radius:28px;padding-top:17px;}
+.clementine-comms.cc-fleur .cc-brand {margin-bottom:16px;}
+.clementine-comms.cc-fleur .cc-contact {display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin:0 20px;padding-bottom:17px;}
+.clementine-comms.cc-fleur .cc-avatar {order:-1;width:100%;height:133px;margin:0 0 12px;border-radius:12px 42px 12px 12px;padding:4px;}
+.clementine-comms.cc-fleur .cc-name, .clementine-comms.cc-fleur .cc-status {align-self:auto;max-width:100%;}
+.clementine-comms.cc-fleur .cc-contact::after {content:"";position:absolute;right:7px;bottom:17px;width:26px;height:26px;background:var(--ct-rind);-webkit-mask:var(--ct-wheel) center/contain no-repeat;mask:var(--ct-wheel) center/contain no-repeat;}
+.clementine-comms.cc-fleur .cc-name, .clementine-comms.cc-fleur .cc-status {padding-right:42px;}
+.clementine-comms.cc-fleur .cc-messages p {border-radius:16px 4px 16px 16px;background:var(--ct-panel);border-color:rgba(var(--mgrgb1,var(--ct-f1)),.3);}
+
+.clementine-comms.cc-presse {width:370px;border-radius:4px;border:1px solid var(--ct-c2);padding-top:22px;}
+.clementine-comms.cc-presse .cc-hardware {display:none;}
+.clementine-comms.cc-presse .cc-brand {padding-bottom:13px;border-bottom:1px solid var(--ct-line);margin-bottom:20px;}
+.clementine-comms.cc-presse .cc-contact {grid-template-columns:52px minmax(0,1fr);padding-bottom:18px;}
+.clementine-comms.cc-presse .cc-avatar {width:52px;height:62px;border-radius:2px;}
+.clementine-comms.cc-presse .cc-time {text-align:left;margin-top:15px;margin-bottom:15px;}
+.clementine-comms.cc-presse .cc-messages p {max-width:100%;width:100%;margin-left:0;border:0;border-left:2px solid var(--ct-c3);border-radius:0;padding:9px 12px;background:linear-gradient(90deg,rgba(var(--mgrgb3,var(--ct-f3)),.095),transparent);}
+.clementine-comms.cc-presse .cc-receipt {text-align:left;margin-left:23px;}
+.clementine-comms.cc-presse .cc-compose {border-radius:2px;height:30px;}
+.clementine-comms.cc-presse .cc-compose::before {top:6px;}
+.clementine-comms.cc-presse .cc-compose::after {top:9px;}
+
+.clementine-bud {display:grid;grid-template-columns:62px minmax(0,1fr);grid-template-areas:"photo meta" "photo copy" "brand brand";gap:12px 17px;width:380px;padding:23px;border-radius:3px;}
+.clementine-bud .cb-meta {grid-area:meta;display:flex;flex-direction:column;gap:3px;min-width:0;padding:0;}
+.clementine-bud .cb-meta a {display:block;margin:0;padding:0;border:0;color:var(--ct-c1);font:400 20px/1.3 'Bodoni Moda',Georgia,serif;letter-spacing:-.04em;}
+.clementine-bud .cb-meta span {color:var(--ct-muted);font:500 9px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:.08em;}
+.clementine-bud .cb-photos {grid-area:photo;display:flex;align-items:flex-start;gap:6px;min-width:0;margin:0;padding:0;}
+.clementine-bud .cb-photos img {display:block;width:62px;max-width:100%;height:74px;margin:0;padding:3px;border:1px solid var(--ct-c3);border-radius:2px;background:var(--ct-panel);object-fit:cover;}
+.clementine-bud .cb-copy {grid-area:copy;min-width:0;margin:0;padding:0;color:var(--ct-ink);font:400 12px/1.8 'DM Sans',Arial,sans-serif;text-align:left;overflow-wrap:anywhere;}
+.clementine-bud .cb-copy p {margin:0 0 1em;padding:0;color:inherit;font:inherit;text-align:inherit;}
+.clementine-bud .cb-copy p:last-child {margin-bottom:0;}
+.clementine-bud .cb-brand {grid-area:brand;margin:3px 0 0;padding:10px 0 0;border-top:1px solid var(--ct-line);color:var(--ct-c1);font:italic 400 15px/1.4 'Bodoni Moda',Georgia,serif;letter-spacing:-.02em;}
+.clementine-bud .cb-brand span {margin-left:7px;font:500 8px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;}
+.clementine-bud .cb-mark {position:absolute;right:22px;bottom:22px;width:20px;height:20px;background:var(--ct-rind);-webkit-mask:var(--ct-wheel) center/contain no-repeat;mask:var(--ct-wheel) center/contain no-repeat;}
+.clementine-bud.cb-pip {border-top:3px solid var(--ct-c1);}
+.clementine-bud.cb-pip .cb-photos img {border-radius:30px 30px 2px 2px;}
+.clementine-bud.cb-pith {width:330px;grid-template-columns:minmax(0,1fr);grid-template-areas:"photo" "meta" "copy" "brand";gap:13px;padding:23px 26px 19px;border-radius:70px 70px 3px 3px;background:radial-gradient(ellipse at 50% 0,rgba(var(--mgrgb2,var(--ct-f2)),.095),transparent 45%),var(--ct-paper);}
+.clementine-bud.cb-pith .cb-photos {justify-content:center;}
+.clementine-bud.cb-pith .cb-photos img {width:62px;height:62px;border-radius:50%;outline:1px solid rgba(var(--mgrgb1,var(--ct-f1)),.25);outline-offset:4px;}
+.clementine-bud.cb-pith .cb-meta {text-align:center;margin-top:3px;}
+.clementine-bud.cb-pith .cb-brand {text-align:center;padding-right:0;}
+.clementine-bud.cb-pith .cb-mark {display:none;}
+.clementine-bud.cb-dew {width:370px;grid-template-columns:minmax(0,1fr) 92px;grid-template-areas:"meta photo" "copy copy" "brand brand";gap:17px 12px;border-radius:3px 30px 3px 3px;}
+.clementine-bud.cb-dew .cb-photos {gap:6px;justify-content:flex-end;}
+.clementine-bud.cb-dew .cb-photos img {width:43px;height:53px;flex:0 0 43px;padding:2px;}
+.clementine-bud.cb-dew .cb-photos img + img {margin-top:9px;border-color:var(--ct-c1);}
+.clementine-bud.cb-dew .cb-copy {padding-top:13px;border-top:1px solid rgba(var(--mgrgb2,var(--ct-f2)),.3);}
+.clementine-bud.cb-segment {width:350px;grid-template-columns:minmax(0,1fr);grid-template-areas:"meta" "photo" "copy" "brand";gap:14px;border-bottom:3px solid var(--ct-c3);}
+.clementine-bud.cb-segment .cb-meta {padding-right:30px;}
+.clementine-bud.cb-segment .cb-photos img {width:100%;height:87px;border-radius:2px 25px 2px 2px;}
+.clementine-bud.cb-segment .cb-mark {top:24px;bottom:auto;right:24px;}
+.clementine-bud.cb-blossom {width:365px;grid-template-columns:minmax(0,1fr) 66px;grid-template-areas:"meta photo" "copy copy" "brand brand";gap:14px;border-radius:4px 4px 40px 4px;}
+.clementine-bud.cb-blossom .cb-meta {align-self:center;}
+.clementine-bud.cb-blossom .cb-photos img {width:66px;height:74px;border-radius:50% 50% 4px 50%;}
+.clementine-bud.cb-blossom .cb-copy {padding-left:14px;border-left:2px solid var(--ct-c2);}
+.clementine-bud.cb-blossom .cb-mark {width:35px;right:28px;-webkit-mask-image:var(--ct-sprig);mask-image:var(--ct-sprig);}
+
+html[color-mode="dark"] .clementine-comms, html[color-mode="dark"] .clementine-bud {--ct-paper:#242321;--ct-panel:#302e2a;--ct-ink:#e6e1d9;--ct-muted:#bcb0a2;--ct-line:#514a41;--ct-rind:#d99a68;--ct-f1:237,159,112;--ct-f2:222,181,124;--ct-f3:173,193,144;color-scheme:dark;}
+@media (prefers-color-scheme:dark) {
+  html:not([color-mode]) .clementine-comms, html:not([color-mode]) .clementine-bud {--ct-paper:#242321;--ct-panel:#302e2a;--ct-ink:#e6e1d9;--ct-muted:#bcb0a2;--ct-line:#514a41;--ct-rind:#d99a68;--ct-f1:237,159,112;--ct-f2:222,181,124;--ct-f3:173,193,144;color-scheme:dark;}
+}
+@container (max-width:285px) {
+  .clementine-comms .cc-contact {margin-left:16px;margin-right:16px;column-gap:10px;}
+  .clementine-comms .cc-name {font-size:21px;}
+  .clementine-comms .cc-messages {margin-left:16px;margin-right:16px;font-size:12px;}
+  .clementine-comms .cc-messages p {max-width:100%;padding:10px 12px;}
+  .clementine-comms .cc-compose {margin-left:16px;margin-right:16px;}
+  .clementine-comms.cc-nectar .cc-contact {margin:0;padding-left:16px;padding-right:16px;}
+  .clementine-comms.cc-nectar .cc-name {font-size:13px;}
+  .clementine-comms.cc-fleur .cc-avatar {height:115px;}
+  .clementine-bud.cb-pip .cb-copy {grid-column:1 / -1;}
+  .clementine-bud.cb-pip .cb-photos {grid-row:1;}
+  .clementine-bud.cb-dew .cb-photos {gap:4px;}
+}
+@media (forced-colors:active) {
+  .clementine-comms, .clementine-bud, .clementine-comms .cc-avatar, .clementine-bud .cb-photos img {border-color:CanvasText;}
+  .clementine-comms .cc-brand, .clementine-bud .cb-brand, .clementine-comms .cc-messages :is(b,strong,i,em,u), .clementine-bud .cb-copy :is(b,strong,i,em,u) {background:none;color:CanvasText;-webkit-text-fill-color:CanvasText;}
+  .clementine-comms a, .clementine-bud a {color:LinkText;}
+  .clementine-comms .cc-messages u, .clementine-bud .cb-copy u {text-decoration-color:CanvasText;}
+}
+
+html {background:#eeeae3;color:#423d37;color-scheme:light;}
+body {margin:0;font:400 14px/1.6 'DM Sans',Arial,sans-serif;}
+button,select,textarea {font:inherit;}
+.collection-head {max-width:1180px;margin:auto;padding:40px 25px 25px;}
+.collection-kicker {font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 8px;color:#75695c;}
+.collection-head h1 {font:italic 400 53px/1.2 'Bodoni Moda',Georgia,serif;letter-spacing:-.055em;margin:0;}
+.collection-description {margin:13px 0 23px;color:#75695c;font-size:13px;}
+.collection-toolbar {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:15px;padding:18px 0 0;border-top:1px solid #ccc2b5;}
+.collection-filters,.appearance-controls {display:flex;flex-wrap:wrap;gap:7px;align-items:center;}
+.collection-toolbar button,.collection-toolbar select,.copy-button {padding:8px 11px;border:1px solid #bbb0a2;border-radius:4px;color:inherit;background:transparent;font:500 11px/1.5 'DM Sans',Arial,sans-serif;cursor:pointer;}
+.collection-toolbar button[aria-pressed="true"] {background:#423d37;color:#fffdfa;border-color:#423d37;}
+.collection-toolbar select {background:#eeeae3;max-width:100%;}
+.appearance-controls label {font-size:11px;display:flex;align-items:center;gap:7px;}
+.collection-main {max-width:1180px;margin:0 auto;padding:0 25px 45px;}
+.collection-group {padding-top:30px;}
+.collection-group[hidden] {display:none;}
+.group-heading {display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:24px;padding:0 0 14px;border-bottom:1px solid #ccc2b5;}
+.group-heading h2 {font:400 31px/1.3 'Bodoni Moda',Georgia,serif;margin:0;letter-spacing:-.04em;}
+.group-heading h2 span {font:500 10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.1em;vertical-align:middle;margin-left:8px;color:#7b6c5c;}
+.group-heading p {margin:0;color:#75695c;font-size:12px;}
+.collection-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 28px;align-items:start;}
+.grid-comms,.grid-buds {grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 22px;}
+.collection-entry {min-width:0;}
+.entry-heading {display:flex;gap:12px;align-items:flex-start;justify-content:space-between;min-height:81px;}
+.entry-heading h3 {font:400 23px/1.3 'Bodoni Moda',Georgia,serif;margin:0 0 6px;letter-spacing:-.03em;}
+.entry-heading h3 span {font:500 9px/1 'DM Sans',Arial,sans-serif;vertical-align:middle;letter-spacing:.08em;margin-right:5px;color:#8a765f;}
+.entry-heading p {font-size:11px;line-height:1.7;color:#75695c;margin:0;max-width:290px;}
+.copy-button {white-space:nowrap;flex-shrink:0;padding:6px 9px;margin-top:2px;}
+.template-stage {min-width:0;}
+.template-stage > :is(.clementine-zest,.clementine-comms,.clementine-bud) {margin-top:12px;margin-bottom:19px;}
+.code-panel {border:1px solid #cec4b8;border-radius:4px;font-size:11px;}
+.code-panel summary {padding:9px 11px;cursor:pointer;}
+.code-panel textarea {display:block;box-sizing:border-box;min-height:260px;width:100%;max-width:100%;border:0;border-top:1px solid #cec4b8;padding:14px;resize:vertical;background:#faf8f4;color:#403b37;font:11px/1.7 ui-monospace,monospace;}
+.copy-status {display:block;min-height:18px;margin:4px 0 0;font-size:10px;color:#75695c;}
+.collection-footer {text-align:center;border-top:1px solid #ccc2b5;margin-top:38px;padding-top:20px;color:#75695c;font-size:11px;}
 html[color-mode="dark"] {background:#181817;color:#e6e1d9;color-scheme:dark;}
-html[color-mode="dark"] .preview-brand span {color:#c0b5a6;}
-html[color-mode="dark"] .preview-controls button,html[color-mode="dark"] .preview-controls select,html[color-mode="dark"] .preview-code button {border-color:#665f54;}
-html[color-mode="dark"] .preview-controls button[aria-pressed="true"] {background:#e6e1d9;color:#242321;border-color:#e6e1d9;}
-html[color-mode="dark"] .preview-controls select {background:#242321;}
-html[color-mode="dark"] .preview-stage,html[color-mode="dark"] .preview-code {border-color:#3d3933;}
-html[color-mode="dark"] .preview-code textarea {background:#242321;color:#e6e1d9;border-color:#514a41;}
-@media(max-width:660px) {.preview-header{align-items:flex-start;flex-direction:column;padding:24px 16px 20px;gap:18px;}.preview-stage{padding:0 12px 24px;}.preview-controls{gap:8px;}.preview-brand{font-size:27px;}.preview-code{padding:24px 16px;}}
+html[color-mode="dark"] :is(.collection-kicker,.collection-description,.group-heading p,.group-heading h2 span,.entry-heading p,.entry-heading h3 span,.copy-status,.collection-footer) {color:#b9ac9c;}
+html[color-mode="dark"] :is(.collection-toolbar,.group-heading,.collection-footer,.code-panel,.code-panel textarea) {border-color:#494239;}
+html[color-mode="dark"] :is(.collection-toolbar button,.collection-toolbar select,.copy-button) {border-color:#6a5e50;}
+html[color-mode="dark"] .collection-toolbar button[aria-pressed="true"] {background:#e6e1d9;color:#242321;border-color:#e6e1d9;}
+html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code-panel textarea {background:#242321;color:#e6e1d9;}
+@media(max-width:1000px) {.grid-comms,.grid-buds{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:720px) {.collection-grid{grid-template-columns:minmax(0,1fr);}.collection-head{padding:26px 17px 15px;}.collection-head h1{font-size:43px;}.collection-main{padding:0 17px 30px;}.entry-heading{min-height:0;margin-bottom:20px;}.collection-toolbar{align-items:flex-start;}.collection-grid{gap:25px;}}
+@media(max-width:380px) {.collection-head,.collection-main{padding-left:12px;padding-right:12px;}.collection-toolbar button,.collection-toolbar select{padding:7px 8px;font-size:10px;}}
 </style>
 </head>
 <body>
-<header class="preview-header">
-<div class="preview-brand">Clementine<span>Zest · Thread 01</span></div>
-<div class="preview-controls">
+<header class="collection-head">
+<p class="collection-kicker">The Clementine Collection</p>
+<h1>A little sweetness.</h1>
+<p class="collection-description">Five threads. Five comms. Five buds. Fifteen ways to keep the story growing.</p>
+<div class="collection-toolbar">
+<nav class="collection-filters" aria-label="Template type">
+<button type="button" data-filter="all" aria-pressed="true">All 15</button>
+<button type="button" data-filter="threads" aria-pressed="false">Threads 5</button>
+<button type="button" data-filter="comms" aria-pressed="false">Comms 5</button>
+<button type="button" data-filter="buds" aria-pressed="false">Buds 5</button>
+</nav>
+<div class="appearance-controls">
 <button type="button" data-mode="light" aria-pressed="true">Light</button>
 <button type="button" data-mode="dark" aria-pressed="false">Dark</button>
 <label>Colours <select id="palette"><option value="clementine">Clementine</option><option value="berry">Berry / lilac / blue</option><option value="grove">Teal / fern / olive</option></select></label>
 </div>
+</div>
 </header>
-<main class="preview-stage">
-<div class="clementine-zest">
+<main class="collection-main">
+<section class="collection-group" data-kind="threads" aria-labelledby="heading-threads"><div class="group-heading"><h2 id="heading-threads">Threads <span>05</span></h2><p>Room for the whole story.</p></div><div class="collection-grid grid-threads">
+<article class="collection-entry" data-template="threads-zest">
+<div class="entry-heading"><div><h3><span>01</span> Zest</h3><p>Staggered portraits and engraved citrus details.</p></div><button type="button" class="copy-button" data-source="code-threads-zest" aria-label="Copy Zest threads code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-zest">
 <div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
 <div class="ct-title">Clementine</div>
 <div class="ct-subtitle">[text]</div>
@@ -180,11 +428,8 @@ html[color-mode="dark"] .preview-code textarea {background:#242321;color:#e6e1d9
 </div>
 <div class="ct-seal" aria-hidden="true"></div>
 <div class="ct-finish" aria-hidden="true"></div>
-</div>
-</main>
-<section class="preview-code" aria-labelledby="code-heading">
-<div class="preview-code-bar"><h1 id="code-heading">JCink code</h1><button id="copy" type="button">Copy code</button><span id="copy-status" role="status"></span></div>
-<textarea id="source" aria-label="JCink template code" readonly spellcheck="false">[dohtml]
+</div></div>
+<details class="code-panel"><summary>Zest · JCink code</summary><textarea id="code-threads-zest" aria-label="Zest threads snippet" readonly spellcheck="false">[dohtml]
 &lt;div class=&quot;clementine-zest&quot;&gt;
 &lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
 &lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
@@ -205,18 +450,571 @@ html[color-mode="dark"] .preview-code textarea {background:#242321;color:#e6e1d9
 &lt;/div&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-zest-v1.css&quot;&gt;
 [/dohtml]
-</textarea>
-</section>
+</textarea></details>
+<span class="copy-status" id="status-threads-zest" role="status"></span>
+</article>
+<article class="collection-entry" data-template="threads-satsuma">
+<div class="entry-heading"><div><h3><span>02</span> Satsuma</h3><p>Paired citrus-shaped frames and a centred masthead.</p></div><button type="button" class="copy-button" data-source="code-threads-satsuma" aria-label="Copy Satsuma threads code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-zest ct-satsuma">
+<div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="ct-title">Clementine</div>
+<div class="ct-subtitle">[text]</div>
+<div class="ct-gifs">
+<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+<div class="ct-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+</div>
+<div class="ct-seal" aria-hidden="true"></div>
+<div class="ct-finish" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Satsuma · JCink code</summary><textarea id="code-threads-satsuma" aria-label="Satsuma threads snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-zest ct-satsuma&quot;&gt;
+&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
+&lt;div class=&quot;ct-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-threads-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-threads-satsuma" role="status"></span>
+</article>
+<article class="collection-entry" data-template="threads-orangerie">
+<div class="entry-heading"><div><h3><span>03</span> Orangerie</h3><p>Tall conservatory windows and a botanical finish.</p></div><button type="button" class="copy-button" data-source="code-threads-orangerie" aria-label="Copy Orangerie threads code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-zest ct-orangerie">
+<div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="ct-title">Clementine</div>
+<div class="ct-subtitle">[text]</div>
+<div class="ct-gifs">
+<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+<div class="ct-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+</div>
+<div class="ct-seal" aria-hidden="true"></div>
+<div class="ct-finish" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Orangerie · JCink code</summary><textarea id="code-threads-orangerie" aria-label="Orangerie threads snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-zest ct-orangerie&quot;&gt;
+&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
+&lt;div class=&quot;ct-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-threads-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-threads-orangerie" role="status"></span>
+</article>
+<article class="collection-entry" data-template="threads-marmalade">
+<div class="entry-heading"><div><h3><span>04</span> Marmalade</h3><p>A horizontal portrait strip with a fine coloured spine.</p></div><button type="button" class="copy-button" data-source="code-threads-marmalade" aria-label="Copy Marmalade threads code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-zest ct-marmalade">
+<div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="ct-title">Clementine</div>
+<div class="ct-subtitle">[text]</div>
+<div class="ct-gifs">
+<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+<div class="ct-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+</div>
+<div class="ct-seal" aria-hidden="true"></div>
+<div class="ct-finish" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Marmalade · JCink code</summary><textarea id="code-threads-marmalade" aria-label="Marmalade threads snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-zest ct-marmalade&quot;&gt;
+&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
+&lt;div class=&quot;ct-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-threads-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-threads-marmalade" role="status"></span>
+</article>
+<article class="collection-entry" data-template="threads-sunroom">
+<div class="entry-heading"><div><h3><span>05</span> Sunroom</h3><p>A wide photograph with a small circular portrait inset.</p></div><button type="button" class="copy-button" data-source="code-threads-sunroom" aria-label="Copy Sunroom threads code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-zest ct-sunroom">
+<div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="ct-title">Clementine</div>
+<div class="ct-subtitle">[text]</div>
+<div class="ct-gifs">
+<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+<div class="ct-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+</div>
+<div class="ct-seal" aria-hidden="true"></div>
+<div class="ct-finish" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Sunroom · JCink code</summary><textarea id="code-threads-sunroom" aria-label="Sunroom threads snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-zest ct-sunroom&quot;&gt;
+&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
+&lt;div class=&quot;ct-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-threads-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-threads-sunroom" role="status"></span>
+</article>
+</div></section>
+<section class="collection-group" data-kind="comms" aria-labelledby="heading-comms"><div class="group-heading"><h2 id="heading-comms">Comms <span>05</span></h2><p>Little conversations, one message at a time.</p></div><div class="collection-grid grid-comms">
+<article class="collection-entry" data-template="comms-pulp">
+<div class="entry-heading"><div><h3><span>01</span> Pulp</h3><p>A rounded phone with a centred portrait and soft message bubbles.</p></div><button type="button" class="copy-button" data-source="code-comms-pulp" aria-label="Copy Pulp comms code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-comms cc-pulp">
+<div class="cc-contact">
+<a class="cc-name" href="[url]">[name]</a>
+<div class="cc-status">[text]</div>
+<img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cc-time">[time]</div>
+<div class="cc-messages">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
+<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</div>
+<div class="cc-receipt">Delivered</div>
+<div class="cc-brand">Clementine</div>
+<div class="cc-hardware" aria-hidden="true"></div>
+<div class="cc-compose" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Pulp · JCink code</summary><textarea id="code-comms-pulp" aria-label="Pulp comms snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-comms cc-pulp&quot;&gt;
+&lt;div class=&quot;cc-contact&quot;&gt;
+&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
+&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
+&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
+&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
+&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-comms-pulp" role="status"></span>
+</article>
+<article class="collection-entry" data-template="comms-nectar">
+<div class="entry-heading"><div><h3><span>02</span> Nectar</h3><p>A compact chat screen with a tinted contact bar.</p></div><button type="button" class="copy-button" data-source="code-comms-nectar" aria-label="Copy Nectar comms code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-comms cc-nectar">
+<div class="cc-contact">
+<a class="cc-name" href="[url]">[name]</a>
+<div class="cc-status">[text]</div>
+<img class="cc-avatar" src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cc-time">[time]</div>
+<div class="cc-messages">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
+<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</div>
+<div class="cc-receipt">Delivered</div>
+<div class="cc-brand">Clementine</div>
+<div class="cc-hardware" aria-hidden="true"></div>
+<div class="cc-compose" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Nectar · JCink code</summary><textarea id="code-comms-nectar" aria-label="Nectar comms snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-comms cc-nectar&quot;&gt;
+&lt;div class=&quot;cc-contact&quot;&gt;
+&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
+&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
+&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
+&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
+&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-comms-nectar" role="status"></span>
+</article>
+<article class="collection-entry" data-template="comms-peel">
+<div class="entry-heading"><div><h3><span>03</span> Peel</h3><p>A slim handset with a vertical portrait and folded message corners.</p></div><button type="button" class="copy-button" data-source="code-comms-peel" aria-label="Copy Peel comms code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-comms cc-peel">
+<div class="cc-contact">
+<a class="cc-name" href="[url]">[name]</a>
+<div class="cc-status">[text]</div>
+<img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cc-time">[time]</div>
+<div class="cc-messages">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
+<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</div>
+<div class="cc-receipt">Delivered</div>
+<div class="cc-brand">Clementine</div>
+<div class="cc-hardware" aria-hidden="true"></div>
+<div class="cc-compose" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Peel · JCink code</summary><textarea id="code-comms-peel" aria-label="Peel comms snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-comms cc-peel&quot;&gt;
+&lt;div class=&quot;cc-contact&quot;&gt;
+&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
+&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
+&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
+&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
+&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-comms-peel" role="status"></span>
+</article>
+<article class="collection-entry" data-template="comms-fleur">
+<div class="entry-heading"><div><h3><span>04</span> Fleur</h3><p>A portrait-led messenger with a wide photographic header.</p></div><button type="button" class="copy-button" data-source="code-comms-fleur" aria-label="Copy Fleur comms code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-comms cc-fleur">
+<div class="cc-contact">
+<a class="cc-name" href="[url]">[name]</a>
+<div class="cc-status">[text]</div>
+<img class="cc-avatar" src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cc-time">[time]</div>
+<div class="cc-messages">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
+<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</div>
+<div class="cc-receipt">Delivered</div>
+<div class="cc-brand">Clementine</div>
+<div class="cc-hardware" aria-hidden="true"></div>
+<div class="cc-compose" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Fleur · JCink code</summary><textarea id="code-comms-fleur" aria-label="Fleur comms snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-comms cc-fleur&quot;&gt;
+&lt;div class=&quot;cc-contact&quot;&gt;
+&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
+&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
+&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
+&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
+&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-comms-fleur" role="status"></span>
+</article>
+<article class="collection-entry" data-template="comms-presse">
+<div class="entry-heading"><div><h3><span>05</span> Pressé</h3><p>A square messenger with crisp message panels and a citrus seal.</p></div><button type="button" class="copy-button" data-source="code-comms-presse" aria-label="Copy Pressé comms code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-comms cc-presse">
+<div class="cc-contact">
+<a class="cc-name" href="[url]">[name]</a>
+<div class="cc-status">[text]</div>
+<img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cc-time">[time]</div>
+<div class="cc-messages">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
+<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</div>
+<div class="cc-receipt">Delivered</div>
+<div class="cc-brand">Clementine</div>
+<div class="cc-hardware" aria-hidden="true"></div>
+<div class="cc-compose" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Pressé · JCink code</summary><textarea id="code-comms-presse" aria-label="Pressé comms snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-comms cc-presse&quot;&gt;
+&lt;div class=&quot;cc-contact&quot;&gt;
+&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
+&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
+&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
+&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
+&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
+&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-comms-presse" role="status"></span>
+</article>
+</div></section>
+<section class="collection-group" data-kind="buds" aria-labelledby="heading-buds"><div class="group-heading"><h2 id="heading-buds">Buds <span>05</span></h2><p>Small replies, under 100 words.</p></div><div class="collection-grid grid-buds">
+<article class="collection-entry" data-template="buds-pip">
+<div class="entry-heading"><div><h3><span>01</span> Pip</h3><p>A tiny portrait beside a quick reply.</p></div><button type="button" class="copy-button" data-source="code-buds-pip" aria-label="Copy Pip buds code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-bud cb-pip">
+<div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="cb-photos">
+<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="cb-brand">Clementine <span>bud</span></div>
+<div class="cb-mark" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Pip · JCink code</summary><textarea id="code-buds-pip" aria-label="Pip buds snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-bud cb-pip&quot;&gt;
+&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-photos&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-buds-pip" role="status"></span>
+</article>
+<article class="collection-entry" data-template="buds-pith">
+<div class="entry-heading"><div><h3><span>02</span> Pith</h3><p>A circular portrait above a small, centred note.</p></div><button type="button" class="copy-button" data-source="code-buds-pith" aria-label="Copy Pith buds code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-bud cb-pith">
+<div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="cb-photos">
+<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="cb-brand">Clementine <span>bud</span></div>
+<div class="cb-mark" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Pith · JCink code</summary><textarea id="code-buds-pith" aria-label="Pith buds snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-bud cb-pith&quot;&gt;
+&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-photos&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-buds-pith" role="status"></span>
+</article>
+<article class="collection-entry" data-template="buds-dew">
+<div class="entry-heading"><div><h3><span>03</span> Dew</h3><p>Twin miniature portraits along the top edge.</p></div><button type="button" class="copy-button" data-source="code-buds-dew" aria-label="Copy Dew buds code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-bud cb-dew">
+<div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="cb-photos">
+<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="cb-brand">Clementine <span>bud</span></div>
+<div class="cb-mark" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Dew · JCink code</summary><textarea id="code-buds-dew" aria-label="Dew buds snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-bud cb-dew&quot;&gt;
+&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-photos&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-buds-dew" role="status"></span>
+</article>
+<article class="collection-entry" data-template="buds-segment">
+<div class="entry-heading"><div><h3><span>04</span> Segment</h3><p>A little panoramic photograph over a short reply.</p></div><button type="button" class="copy-button" data-source="code-buds-segment" aria-label="Copy Segment buds code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-bud cb-segment">
+<div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="cb-photos">
+<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="cb-brand">Clementine <span>bud</span></div>
+<div class="cb-mark" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Segment · JCink code</summary><textarea id="code-buds-segment" aria-label="Segment buds snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-bud cb-segment&quot;&gt;
+&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-photos&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-buds-segment" role="status"></span>
+</article>
+<article class="collection-entry" data-template="buds-blossom">
+<div class="entry-heading"><div><h3><span>05</span> Blossom</h3><p>A leaf-shaped portrait and an asymmetric frame.</p></div><button type="button" class="copy-button" data-source="code-buds-blossom" aria-label="Copy Blossom buds code">Copy code</button></div>
+<div class="template-stage"><div class="clementine-bud cb-blossom">
+<div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="cb-photos">
+<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cb-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</div>
+<div class="cb-brand">Clementine <span>bud</span></div>
+<div class="cb-mark" aria-hidden="true"></div>
+</div></div>
+<details class="code-panel"><summary>Blossom · JCink code</summary><textarea id="code-buds-blossom" aria-label="Blossom buds snippet" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;clementine-bud cb-blossom&quot;&gt;
+&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-photos&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<span class="copy-status" id="status-buds-blossom" role="status"></span>
+</article>
+</div></section>
+<footer class="collection-footer">Clementine · Thread, comms &amp; bud templates</footer>
+</main>
 <script>
-const palettes = {
-  berry: {light:['140,64,103','115,83,147','44,107,142'],dark:['221,156,191','183,157,221','119,190,220']},
-  grove: {light:['41,107,106','78,112,73','121,110,45'],dark:['113,192,184','151,194,136','210,195,120']}
-};
-const stage=document.querySelector('.preview-stage');
+const palettes={berry:{light:['140,64,103','115,83,147','44,107,142'],dark:['221,156,191','183,157,221','119,190,220']},grove:{light:['41,107,106','78,112,73','121,110,45'],dark:['113,192,184','151,194,136','210,195,120']}};
+const stage=document.querySelector('.collection-main');
 const picker=document.getElementById('palette');
-function updatePalette() {
+function applyPalette(){
   const values=palettes[picker.value]?.[document.documentElement.getAttribute('color-mode')];
-  for(let i=1;i<=3;i++) {
+  for(let i=1;i<=3;i++){
     if(values)stage.style.setProperty('--mgrgb'+i,values[i-1]);
     else stage.style.removeProperty('--mgrgb'+i);
   }
@@ -224,21 +1022,27 @@ function updatePalette() {
 document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{
   document.documentElement.setAttribute('color-mode',button.dataset.mode);
   document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
-  updatePalette();
+  applyPalette();
 }));
-picker.addEventListener('change',updatePalette);
-document.getElementById('copy').addEventListener('click',async()=>{
-  const source=document.getElementById('source');
-  const status=document.getElementById('copy-status');
-  try {
+picker.addEventListener('change',applyPalette);
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
+  document.querySelectorAll('.collection-group').forEach(group=>group.hidden=button.dataset.filter!=='all'&&group.dataset.kind!==button.dataset.filter);
+  document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+}));
+document.querySelectorAll('.copy-button').forEach(button=>button.addEventListener('click',async()=>{
+  const source=document.getElementById(button.dataset.source);
+  const entry=button.closest('.collection-entry');
+  const status=entry.querySelector('.copy-status');
+  try{
     if(!navigator.clipboard)throw new Error();
     await navigator.clipboard.writeText(source.value);
     status.textContent='Copied';
-  } catch {
+  }catch{
+    entry.querySelector('details').open=true;
     source.focus();source.select();
     status.textContent=document.execCommand('copy')?'Copied':'Code selected';
   }
-});
+}));
 </script>
 </body>
 </html>

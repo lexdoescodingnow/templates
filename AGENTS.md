@@ -14,4 +14,5 @@ These are the user's defaults for new templates and requested revisions in this 
 - Buds are miniature thread templates intended to encourage replies of 100 words or fewer. Keep their layouts compact, with ordinary paragraph markup and short placeholder replies.
 - The Banana collection has five thread, five comms and five Bud choices. Preserve this five-of-each structure when extending or revising the collection, unless the user requests otherwise.
 - The Champagne collection has five thread, five comms and five bud choices. Preserve this five-of-each structure when extending or revising it, unless the user requests otherwise. Give new variants distinct names that suit the theme.
+- The Clementine collection has five thread, five comms and five bud choices. Preserve this five-of-each structure when extending or revising it, unless the user requests otherwise. Keep the named variants and their individual posting snippets in the collection preview.
 

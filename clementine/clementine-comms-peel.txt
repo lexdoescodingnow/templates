@@ -1,0 +1,20 @@
+[dohtml]
+<div class="clementine-comms cc-peel">
+<div class="cc-contact">
+<a class="cc-name" href="[url]">[name]</a>
+<div class="cc-status">[text]</div>
+<img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
+</div>
+<div class="cc-time">[time]</div>
+<div class="cc-messages">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
+<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</div>
+<div class="cc-receipt">Delivered</div>
+<div class="cc-brand">Clementine</div>
+<div class="cc-hardware" aria-hidden="true"></div>
+<div class="cc-compose" aria-hidden="true"></div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css">
+[/dohtml]
