@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" color-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Espresso — Fifteen JCink Templates</title>
+<link rel="stylesheet" href="espresso-collection-v1.css">
+<link rel="stylesheet" href="espresso-preview.css">
+<script src="espresso-editor.js" defer></script>
+</head>
+<body>
+<header class="collection-header">
+<div class="collection-eyebrow"><a href="https://github.com/lexdoescodingnow/templates/tree/main/espresso">The flavour collection</a><span>15 designs · Vol. Espresso</span></div>
+<div class="collection-title"><h1>Espresso<span class="cover-bean" aria-hidden="true"></span></h1><p>Some flavours<br>stay with you.</p></div>
+<div class="collection-subtitle"><span>Five threads. Five comms. Five little replies.</span><a href="espresso-collection.zip" download>Download collection ↗</a></div>
+</header>
+<main>
+<aside class="design-menu" aria-label="Template collection">
+<div class="menu-heading"><span>The menu</span><span>01—15</span></div>
+<details open><summary>Threads <span>Long-form writing</span></summary><div id="menu-thread"></div></details>
+<details open><summary>Comms <span>On the other end</span></summary><div id="menu-comms"></div></details>
+<details open><summary>Buds <span>A hundred words or less</span></summary><div id="menu-bud"></div></details>
+<a class="readme-link" href="README.md">Posting &amp; formatting guide ↗</a>
+</aside>
+<section class="workbench" aria-label="Template editor and preview">
+<div class="selection-bar"><label>Design<select id="design-select"></select></label><label>Theme<select id="mode-select"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><label>Member palette<select id="palette-select"><option value="rose">Rose / dusk / sea</option><option value="juniper">Juniper / rain / lilac</option><option value="ember">Ember / rose / slate</option></select></label><label>Preview width<select id="width-select"><option value="550px">Full</option><option value="320px">320 px</option><option value="280px">280 px</option></select></label></div>
+<div class="design-intro"><h2 id="selected-name"></h2><p id="design-description"></p></div>
+<div class="editor-grid">
+<section class="preview-column" aria-label="Live template preview"><div class="preview-label"><span>Live preview</span><span id="media-note"></span></div><div class="forum-surface"><div id="preview-post"></div></div><p class="preview-caption">Sample member colours are for this preview. Your post inherits your forum’s colours.</p></section>
+<section class="fields-column" aria-label="Editable fields">
+<h3>Make it yours</h3>
+<label>Name<input id="edit-name" type="text" autocomplete="off"></label>
+<label>Profile or thread URL<input id="edit-url" type="text" inputmode="url" autocomplete="off"></label>
+<label>Title or status<input id="edit-text" type="text" autocomplete="off"></label>
+<div id="comms-fields"><label>Time<input id="edit-time" type="text" autocomplete="off"></label><label>Message direction<select id="edit-direction"><option value="received">Received</option><option value="sent">Sent</option><option value="mixed">Alternating</option></select></label></div>
+<div class="image-heading"><h4>Character GIFs</h4><button id="add-image" type="button">+ Add GIF</button></div><div id="image-fields"></div>
+<p class="field-note">Remove a GIF to reclaim its space. Add one wherever you want an image.</p><p id="url-status" role="status"></p>
+<label>Writing or messages<textarea id="edit-body" rows="12" spellcheck="false"></textarea></label>
+<div class="writing-meta"><span id="word-count"></span></div>
+<p class="field-note">Use a paragraph for each message. Plain text, &lt;p&gt; paragraphs and [b], [i], [u] formatting work here. Your edits stay when switching designs in this tab.</p>
+</section>
+</div>
+<section class="code-panel" aria-label="Copyable JCink code"><div class="code-heading"><div><h3>Your posting code</h3><p>Copy the entire block directly into JCink.</p></div><div class="code-actions"><button id="download-button" type="button">Save .txt</button><button id="copy-button" type="button">Copy code ↗</button></div></div><p id="copy-status" role="status" aria-live="polite"></p><label class="code-label" for="copy-code">Complete [dohtml] block</label><textarea id="copy-code" rows="10" readonly spellcheck="false"></textarea><a id="original-snippet" href="espresso-afterhours-thread-01.txt">Open the original snippet ↗</a></section>
+</section>
+</main>
+<footer class="collection-footer"><span>Espresso · A love that lingers.</span><span>Member colours. Neutral pages. Small rituals.</span></footer>
+<noscript>This editor needs JavaScript. All fifteen ready-to-post text files are linked from the <a href="README.md">collection guide</a>.</noscript>
+</body>
+</html>

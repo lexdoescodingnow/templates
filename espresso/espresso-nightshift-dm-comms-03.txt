@@ -1,0 +1,19 @@
+[dohtml]
+<div class="esp esp-comms esp-nightshift-dm" data-direction="received">
+<div class="esp-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>23:08</time>
+</div>
+
+<div class="esp-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Integer vel ipsum vitae.</i></p>
+<p><u>Donec consequat.</u> Sed fermentum libero et risus consectetur.</p>
+</div>
+
+<div class="esp-ornament" aria-hidden="true"><span class="esp-homebar"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-v1.css">
+[/dohtml]
