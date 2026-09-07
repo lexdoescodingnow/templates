@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toffee · Fifteen little ways to stay</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Allura&display=swap');
+
+.tf {
+ --tf-paper:#f7f6f3;--tf-panel:#fffefd;--tf-ink:#363533;--tf-muted:#76716b;--tf-line:#dedad4;--tf-caramel:#b98754;
+ --tf-f1:135,76,101;--tf-f2:131,95,68;--tf-f3:65,112,120;
+ --tf-c1:rgb(var(--mgrgb1,var(--tf-f1)));--tf-c2:rgb(var(--mgrgb2,var(--tf-f2)));--tf-c3:rgb(var(--mgrgb3,var(--tf-f3)));
+ --tf-forward:linear-gradient(115deg,var(--tf-c1),var(--tf-c2),var(--tf-c3));--tf-reverse:linear-gradient(115deg,var(--tf-c3),var(--tf-c2),var(--tf-c1));
+ --tf-sugar:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 65'%3E%3Cg fill='none' stroke='black' stroke-width='1.4' stroke-linejoin='round'%3E%3Cpath d='m32 17 29-6 17 24-30 12zM32 17l-3 10 18 30 1-10m30-12-2 11-29 11M32 17l16 30m13-36-1 10-24 5M29 27l-17-5 5 15-11 9 26 1m45-27 16-5-5 14 8 9-18 5'/%3E%3Cpath d='m17 37 15 3m-9-13 9 5m46-4 10 1M41 19l11 17m-9-18 11 17'/%3E%3C/g%3E%3C/svg%3E");
+ --tf-pull:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 110'%3E%3Cg fill='none' stroke='black' stroke-width='1.5'%3E%3Cpath d='M1 82C70-4 105-17 89 29S3 100 98 77 218-3 255 20s-17 71 23 59 52-37 70-40M1 89C79 1 118-18 99 27S9 107 107 85 224 5 260 26s-10 72 25 60 45-36 64-38'/%3E%3C/g%3E%3C/svg%3E");
+ position:relative;isolation:isolate;container-type:inline-size;box-sizing:border-box;display:flex;flex-direction:column;width:540px;max-width:100%;margin:26px auto;padding:34px 34px 24px;border:1px solid var(--tf-c1);border-radius:4px;background:var(--tf-paper);color:var(--tf-ink);font:400 14px/1.9 'DM Sans',Arial,sans-serif;text-align:left;text-shadow:none;overflow-wrap:anywhere;color-scheme:light;box-shadow:0 18px 44px #1915100c;
+}
+.tf *, .tf *::before, .tf *::after{box-sizing:border-box}
+.tf::before{content:"";position:absolute;inset:7px;z-index:-1;border:1px solid var(--tf-line);border-top-color:var(--tf-c3);pointer-events:none}
+.tf .tf-meta{order:1;position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0;margin:0 0 25px;padding:0 26px;text-align:center}
+.tf .tf-meta a{display:inline-block;max-width:100%;color:var(--tf-c1);font:600 11px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+.tf .tf-meta span{display:block;max-width:100%;color:var(--tf-c3);font:500 30px/1.1 'Cormorant Garamond',Georgia,serif;letter-spacing:-.02em}
+.tf .tf-meta a:hover{text-decoration:underline;text-underline-offset:4px}
+.tf a:focus-visible{outline:2px solid var(--tf-c2);outline-offset:4px}
+.tf .tf-gifs{order:2;position:relative;display:flex;align-items:center;gap:14px;min-width:0;margin:0 0 29px;padding:8px;background:var(--tf-forward);border-radius:4px}
+.tf .tf-gifs img{display:block;min-width:0;flex:1 1 0;width:0;max-width:100%;height:auto;aspect-ratio:1;object-fit:cover;border:4px solid var(--tf-paper);background:var(--tf-panel);border-radius:2px}
+.tf .tf-gifs img:only-child{flex:1 1 100%;width:100%;aspect-ratio:1.8}
+.tf .tf-copy{order:3;position:relative;min-width:0;margin:0;padding:24px 7px 0;border-top:1px solid var(--tf-line);color:var(--tf-ink);font:inherit;text-align:left;letter-spacing:0}
+.tf .tf-copy::before{content:"";position:absolute;left:7px;top:-2px;width:65px;height:3px;background:var(--tf-forward)}
+.tf .tf-copy p{margin:0 0 1.35em;padding:0;color:inherit;font:inherit;letter-spacing:inherit;text-align:inherit}
+.tf .tf-copy p:last-child{margin-bottom:0}
+.tf .tf-copy :is(b,strong,i,em,u){color:var(--tf-c1);text-shadow:none;background:none}
+.tf .tf-copy :is(b,strong){font-weight:700}
+.tf .tf-copy :is(i,em){font-style:italic}
+.tf .tf-copy u{text-decoration:underline;text-decoration-color:var(--tf-c2);text-underline-offset:4px;text-decoration-thickness:1px}
+.tf .tf-copy a{color:var(--tf-c3);text-decoration:underline;text-underline-offset:3px}
+.tf .tf-copy blockquote{margin:20px 0;padding:0 0 0 18px;border-left:2px solid var(--tf-c2);font:inherit;color:inherit}
+.tf .tf-copy img{max-width:100%;height:auto}
+.tf .tf-finish{order:9;position:relative;display:flex;align-items:center;justify-content:center;gap:14px;min-height:42px;margin:22px 7px 0}
+.tf .tf-finish::before,.tf .tf-finish::after{content:"";flex:1;height:1px;background:var(--tf-forward);opacity:.45}
+.tf .tf-sweet{display:block;flex:0 0 54px;height:35px;background:var(--tf-caramel);mask:var(--tf-sugar) center/contain no-repeat;-webkit-mask:var(--tf-sugar) center/contain no-repeat}
+@supports (background-clip:text) or (-webkit-background-clip:text){
+ .tf .tf-meta a,.tf .tf-meta span,.tf .tf-copy :is(b,strong,i,em,u){background-image:var(--tf-forward);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+ .tf .tf-copy :is(i,em){background-image:var(--tf-reverse)}
+}
+html[color-mode="dark"] .tf{--tf-paper:#222221;--tf-panel:#2c2c2a;--tf-ink:#e3e1de;--tf-muted:#b8b1a7;--tf-line:#484640;--tf-caramel:#cc9f6d;--tf-f1:215,150,177;--tf-f2:207,166,126;--tf-f3:132,190,195;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode]) .tf{--tf-paper:#222221;--tf-panel:#2c2c2a;--tf-ink:#e3e1de;--tf-muted:#b8b1a7;--tf-line:#484640;--tf-caramel:#cc9f6d;--tf-f1:215,150,177;--tf-f2:207,166,126;--tf-f3:132,190,195;color-scheme:dark}}
+.tf.tf-butterglass .tf-gifs{gap:9px;padding:6px;border-radius:130px 130px 5px 5px;align-items:stretch}
+.tf.tf-butterglass .tf-gifs img{aspect-ratio:.95;border-radius:120px 4px 3px 3px}
+.tf.tf-butterglass .tf-gifs img+img{border-radius:4px 120px 3px 3px}
+.tf.tf-butterglass .tf-meta span{font:400 39px/1.1 'Allura','Cormorant Garamond',cursive}
+.tf.tf-butterglass .tf-gifs::after{content:"";position:absolute;bottom:-17px;left:calc(50% - 23px);width:46px;height:35px;border:1px solid var(--tf-c2);background:var(--tf-paper);border-radius:50%}
+.tf.tf-slowmelt{border-radius:52px 4px 4px 4px}
+.tf.tf-slowmelt .tf-meta{align-items:flex-start;text-align:left;padding:0;margin-right:44px}
+.tf.tf-slowmelt .tf-gifs{display:block;background:none;padding:0 0 33px;margin-bottom:14px}
+.tf.tf-slowmelt .tf-gifs img{width:100%;aspect-ratio:1.8;border:5px solid var(--tf-paper);outline:1px solid var(--tf-c1);border-radius:35px 3px 35px 3px}
+.tf.tf-slowmelt .tf-gifs img+img{position:absolute;right:17px;bottom:0;width:34%;aspect-ratio:1;border-radius:50%;outline-color:var(--tf-c3);border-width:6px}
+.tf.tf-slowmelt .tf-meta::after{content:"";position:absolute;right:-44px;top:0;width:43px;height:37px;background:var(--tf-caramel);mask:var(--tf-sugar) center/contain no-repeat;-webkit-mask:var(--tf-sugar) center/contain no-repeat;transform:rotate(-12deg)}
+.tf.tf-velvet-pull .tf-gifs{padding:9px 13px 19px;gap:20px;background:none;align-items:flex-start}
+.tf.tf-velvet-pull .tf-gifs::before{content:"";position:absolute;inset:30% -15px -28px;z-index:-1;background:var(--tf-caramel);opacity:.45;mask:var(--tf-pull) center/100% 100% no-repeat;-webkit-mask:var(--tf-pull) center/100% 100% no-repeat}
+.tf.tf-velvet-pull .tf-gifs img{aspect-ratio:.95;outline:1px solid var(--tf-c1);transform:rotate(-3deg);box-shadow:0 9px 18px #17151216}
+.tf.tf-velvet-pull .tf-gifs img+img{margin-top:28px;transform:rotate(4deg);outline-color:var(--tf-c3)}
+.tf.tf-velvet-pull .tf-meta span{font-style:italic}
+.tf.tf-amberfold{border:1px solid var(--tf-c3);border-left:8px solid var(--tf-c1);border-radius:0}
+.tf.tf-amberfold .tf-meta{align-items:flex-start;text-align:left;padding:0 0 18px;border-bottom:4px double var(--tf-c2)}
+.tf.tf-amberfold .tf-gifs{padding:5px;gap:6px;border-radius:0}
+.tf.tf-amberfold .tf-gifs img{aspect-ratio:.63;border-radius:0;flex:1}
+.tf.tf-amberfold .tf-gifs img+img{flex:1.6;aspect-ratio:1.01}
+.tf.tf-amberfold .tf-finish{justify-content:flex-end}
+.tf.tf-amberfold .tf-finish::after{display:none}
+.tf.tf-hearthglow{border-radius:40px 40px 5px 5px;padding-top:40px}
+.tf.tf-hearthglow::before{border-radius:33px 33px 0 0}
+.tf.tf-hearthglow .tf-gifs{gap:17px;padding:0 17px;background:none}
+.tf.tf-hearthglow .tf-gifs img{aspect-ratio:.86;border-radius:50% 50% 10px 10px;outline:1px solid var(--tf-c1);border-width:7px}
+.tf.tf-hearthglow .tf-gifs img+img{border-radius:10px 10px 50% 50%;outline-color:var(--tf-c3)}
+.tf.tf-hearthglow .tf-meta span{font:400 39px/1.05 'Allura','Cormorant Garamond',cursive}
+.tf.tf-comms{width:362px;padding:48px 18px 22px;border:3px solid var(--tf-c1);border-radius:36px;background:var(--tf-paper);box-shadow:inset 0 0 0 4px var(--tf-panel),0 16px 40px #18151218}
+.tf.tf-comms::before{inset:6px;border:1px solid var(--tf-c3);border-radius:27px}
+.tf.tf-comms::after{content:"";position:absolute;top:14px;left:calc(50% - 25px);width:50px;height:5px;border-radius:9px;background:var(--tf-line)}
+.tf.tf-comms .tf-meta{order:2;gap:5px;padding:0 8px;margin:0 0 18px}
+.tf.tf-comms .tf-meta a{font-size:12px;letter-spacing:.09em}
+.tf.tf-comms .tf-meta span{font:400 22px/1.15 'Cormorant Garamond',Georgia,serif}
+.tf.tf-comms .tf-gifs{order:1;align-self:center;gap:6px;width:137px;margin:6px 0 15px;padding:4px;border-radius:45px}
+.tf.tf-comms .tf-gifs img{aspect-ratio:1;border-radius:50%;border-width:3px}
+.tf.tf-comms .tf-gifs img:only-child{aspect-ratio:1}
+.tf.tf-comms .tf-status{position:absolute;left:23px;right:23px;top:22px;display:flex;justify-content:space-between;align-items:center;color:var(--tf-c3);font:600 9px/1 'DM Sans',Arial,sans-serif;letter-spacing:.04em}
+.tf.tf-comms .tf-signals{display:flex;align-items:center;gap:5px}
+.tf.tf-comms .tf-signals::before{content:"";width:14px;height:9px;background:linear-gradient(to right,var(--tf-c3) 20%,transparent 20% 40%,var(--tf-c3) 40% 60%,transparent 60% 80%,var(--tf-c3) 80%);clip-path:polygon(0 70%,20% 70%,20% 40%,60% 40%,60% 0,100% 0,100% 100%,0 100%)}
+.tf.tf-comms .tf-signals::after{content:"";width:15px;height:8px;border:1px solid var(--tf-c3);border-radius:2px;box-shadow:2px 0 0 -1px var(--tf-c3);background:var(--tf-c3);background-clip:content-box;padding:1px}
+.tf.tf-comms .tf-copy{padding:20px 3px 0;font-size:13px;line-height:1.75;border-top:1px solid var(--tf-line)}
+.tf.tf-comms .tf-copy::before{left:calc(50% - 22px);width:44px;height:2px}
+.tf.tf-comms .tf-copy>p{position:relative;width:fit-content;max-width:94%;margin:0 0 12px auto;padding:11px 14px;border:1px solid rgba(var(--mgrgb2,var(--tf-f2)),.5);border-right:3px solid var(--tf-c3);border-radius:17px 17px 4px 17px;background:var(--tf-panel);box-shadow:0 3px 8px #19151004}
+.tf.tf-comms .tf-copy>p:first-child{border-top-color:var(--tf-c1)}
+.tf.tf-comms .tf-receipt{order:4;display:block;margin:0 6px 0 0;color:var(--tf-muted);font:400 9px/1.5 'DM Sans',Arial,sans-serif;text-align:right;letter-spacing:.08em;text-transform:uppercase}
+.tf.tf-comms .tf-device{order:8;display:flex;align-items:center;gap:10px;margin:22px 3px 0;padding:10px 13px;border:1px solid var(--tf-line);border-radius:22px;color:var(--tf-muted);font:400 11px/1 'DM Sans',Arial,sans-serif}
+.tf.tf-comms .tf-device span{flex:1}
+.tf.tf-comms .tf-device::before{content:"+";font-size:19px;color:var(--tf-c1)}
+.tf.tf-comms .tf-device::after{content:"↑";display:grid;place-content:center;width:24px;height:24px;border-radius:50%;background:var(--tf-forward);color:var(--tf-paper);font-size:16px}
+.tf.tf-comms .tf-finish{min-height:15px;margin:13px 30% 0}
+.tf.tf-comms .tf-sweet{flex-basis:29px;height:19px}
+.tf.tf-comms .tf-finish::before,.tf.tf-comms .tf-finish::after{opacity:.2}
+.tf.tf-meltmail{border-radius:14px;border-width:2px}
+.tf.tf-meltmail::before{border-radius:8px}
+.tf.tf-meltmail .tf-gifs{width:100%;gap:6px;padding:5px;border-radius:5px;margin-top:2px}
+.tf.tf-meltmail .tf-gifs img{aspect-ratio:1.5;border-radius:3px;border-width:2px}
+.tf.tf-meltmail .tf-meta{align-items:flex-start;text-align:left;padding:0 4px;margin-bottom:14px}
+.tf.tf-meltmail .tf-copy>p{border-radius:5px 16px 5px 16px}
+.tf.tf-meltmail .tf-device{border-radius:6px}
+.tf.tf-caramel-call{border-radius:52px 52px 30px 30px;padding-top:50px}
+.tf.tf-caramel-call::before{border-radius:44px 44px 23px 23px}
+.tf.tf-caramel-call .tf-gifs{width:81%;border-radius:75px 75px 14px 14px;gap:4px;padding:5px}
+.tf.tf-caramel-call .tf-gifs img{aspect-ratio:1.25;border-radius:60px 3px 3px 3px}
+.tf.tf-caramel-call .tf-gifs img+img{border-radius:3px 60px 3px 3px}
+.tf.tf-caramel-call .tf-copy{border-top:5px double var(--tf-c2);padding-top:18px}
+.tf.tf-caramel-call .tf-copy::before{display:none}
+.tf.tf-caramel-call .tf-meta span{font:400 29px/1 'Allura',cursive}
+.tf.tf-wrapper-chat{width:408px;border-radius:14px;padding-top:47px;padding-bottom:20px;border-width:2px}
+.tf.tf-wrapper-chat::before{border-radius:7px}
+.tf.tf-wrapper-chat::after{left:22px;top:16px;width:6px;height:6px;background:var(--tf-c1);box-shadow:11px 0 var(--tf-c2),22px 0 var(--tf-c3)}
+.tf.tf-wrapper-chat .tf-status{top:17px;left:auto;right:22px;gap:13px}
+.tf.tf-wrapper-chat .tf-meta{align-items:flex-start;text-align:left;margin:0 96px 16px 1px;min-height:60px;padding:0}
+.tf.tf-wrapper-chat .tf-gifs{position:absolute;right:20px;top:49px;width:86px;margin:0;gap:3px;padding:3px}
+.tf.tf-wrapper-chat .tf-copy>p{margin-left:0;margin-right:auto;border-right-width:1px;border-left:3px solid var(--tf-c1);border-radius:3px 16px 16px 16px}
+.tf.tf-wrapper-chat .tf-receipt{text-align:left;margin-left:6px}
+.tf.tf-wrapper-chat .tf-device{border-radius:6px}
+.tf.tf-warm-signal .tf-gifs{width:160px;background:none;border-radius:0;padding:0;gap:0}
+.tf.tf-warm-signal .tf-gifs img{outline:1px solid var(--tf-c1);border-width:5px;aspect-ratio:1;max-width:90px}
+.tf.tf-warm-signal .tf-gifs img+img{margin-left:-14px;margin-top:15px;outline-color:var(--tf-c3)}
+.tf.tf-warm-signal .tf-copy>p{border-radius:18px 5px 18px 18px;border-bottom:2px solid var(--tf-c2);border-right-width:1px}
+.tf.tf-warm-signal .tf-device{border-style:dashed}
+.tf.tf-bud{display:grid;grid-template-columns:68px minmax(0,1fr);column-gap:19px;width:420px;padding:23px;line-height:1.8;font-size:13px}
+.tf.tf-bud .tf-meta{grid-column:2;grid-row:1;align-items:flex-start;justify-content:center;text-align:left;padding:0;margin:0 0 13px;gap:4px;min-height:68px}
+.tf.tf-bud .tf-meta a{font-size:10px;letter-spacing:.1em}
+.tf.tf-bud .tf-meta span{font-size:25px}
+.tf.tf-bud .tf-gifs{grid-column:1;grid-row:1;display:block;align-self:start;margin:0;padding:3px;border-radius:50%;width:68px}
+.tf.tf-bud .tf-gifs img{display:block;width:100%;aspect-ratio:1;border-radius:50%;border-width:3px}
+.tf.tf-bud .tf-gifs img+img{position:absolute;width:32px;right:-9px;bottom:-7px;border-width:3px;outline:1px solid var(--tf-c3)}
+.tf.tf-bud .tf-copy{grid-row:2;grid-column:1/-1;padding:16px 2px 0}
+.tf.tf-bud .tf-copy::before{left:2px;width:40px;height:2px}
+.tf.tf-bud .tf-finish{grid-row:3;grid-column:1/-1;min-height:19px;margin:13px 0 -3px;gap:12px}
+.tf.tf-bud .tf-sweet{flex-basis:32px;height:21px}
+.tf.tf-soft-bite{grid-template-columns:1fr;border-radius:35px 35px 4px 4px}
+.tf.tf-soft-bite::before{border-radius:28px 28px 0 0}
+.tf.tf-soft-bite .tf-gifs{grid-column:1;grid-row:1;display:flex;justify-self:center;width:112px;border-radius:30px;gap:4px;margin-bottom:14px}
+.tf.tf-soft-bite .tf-gifs img{width:0;border-radius:30px 3px 3px 3px}
+.tf.tf-soft-bite .tf-gifs img+img{position:static;width:0;outline:0;border-radius:3px 30px 3px 3px}
+.tf.tf-soft-bite .tf-meta{grid-column:1;grid-row:2;align-items:center;text-align:center;min-height:0;margin-bottom:17px}
+.tf.tf-soft-bite .tf-copy{grid-row:3}
+.tf.tf-soft-bite .tf-finish{grid-row:4}
+.tf.tf-sugar-fleck{grid-template-columns:minmax(0,1fr) 68px;border-radius:3px;border-top:4px solid var(--tf-c2)}
+.tf.tf-sugar-fleck .tf-meta{grid-column:1}
+.tf.tf-sugar-fleck .tf-gifs{grid-column:2;transform:rotate(5deg);border-radius:3px}
+.tf.tf-sugar-fleck .tf-gifs img{border-radius:2px}
+.tf.tf-sugar-fleck .tf-gifs img+img{right:41px;bottom:-8px;border-radius:50%}
+.tf.tf-tiny-twist{border-left:6px solid var(--tf-c1);grid-template-columns:52px minmax(0,1fr);column-gap:16px}
+.tf.tf-tiny-twist .tf-gifs{width:52px;border-radius:4px;background:none;padding:0;display:flex;flex-direction:column;gap:6px}
+.tf.tf-tiny-twist .tf-gifs img{width:100%;border-radius:3px;outline:1px solid var(--tf-c1);flex:auto}
+.tf.tf-tiny-twist .tf-gifs img+img{position:static;width:100%;outline-color:var(--tf-c3)}
+.tf.tf-tiny-twist .tf-meta{min-height:52px}
+.tf.tf-tiny-twist .tf-copy{grid-column:2;grid-row:2;padding:11px 0 0}
+.tf.tf-tiny-twist .tf-gifs{grid-row:1/3}
+.tf.tf-tiny-twist .tf-finish{grid-column:2}
+.tf.tf-last-crumb{grid-template-columns:94px minmax(0,1fr);column-gap:14px;border-radius:4px 35px 4px 4px}
+.tf.tf-last-crumb .tf-gifs{display:flex;align-items:flex-start;width:94px;padding:0;background:none;gap:0;margin-top:4px}
+.tf.tf-last-crumb .tf-gifs img{width:55px;max-width:55px;flex:0 0 55px;outline:1px solid var(--tf-c1);border-width:4px}
+.tf.tf-last-crumb .tf-gifs img+img{position:static;width:55px;max-width:55px;flex-basis:55px;margin:16px 0 0 -17px;outline-color:var(--tf-c3);border-width:4px}
+.tf.tf-last-crumb .tf-meta span{font:400 31px/1.1 'Allura',cursive}
+@container(max-width:380px){.tf .tf-meta span{font-size:27px}.tf .tf-copy{font-size:13px}.tf.tf-bud .tf-meta span{font-size:23px}.tf.tf-comms .tf-meta span{font-size:22px}}
+@media(max-width:440px){.tf{padding:28px 23px 20px;margin:16px auto}.tf.tf-comms{padding:48px 16px 20px}.tf.tf-bud{padding:22px 18px;column-gap:14px}.tf.tf-wrapper-chat .tf-meta{margin-right:90px}}
+@media(forced-colors:active){.tf,.tf::before,.tf .tf-gifs,.tf .tf-copy>p{border-color:CanvasText}.tf .tf-meta a,.tf .tf-meta span,.tf .tf-copy :is(b,strong,i,em,u){background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}}
+.tf .tf-meta span:empty{display:none}
+.tf.tf-bud:not(:has(.tf-gifs)){grid-template-columns:1fr}
+.tf.tf-bud:not(:has(.tf-gifs)) .tf-meta,.tf.tf-bud:not(:has(.tf-gifs)) .tf-copy,.tf.tf-bud:not(:has(.tf-gifs)) .tf-finish{grid-column:1}
+.tf.tf-bud .tf-gifs img:only-child{aspect-ratio:1;max-width:100%;margin:0}
+.tf.tf-soft-bite .tf-gifs:has(img:only-child){width:62px}
+.tf.tf-wrapper-chat:not(:has(.tf-gifs)) .tf-meta{margin-right:0}
+
+</style>
+<style>
+:root{--ui-paper:#f1efeb;--ui-card:#faf9f6;--ui-ink:#36332f;--ui-muted:#70695f;--ui-line:#d6cfc5;--ui-accent:#755331;--ui-soft:#e8e1d8}
+html[color-mode="dark"]{--ui-paper:#191a19;--ui-card:#242523;--ui-ink:#e8e4dd;--ui-muted:#c0b6a8;--ui-line:#49473f;--ui-accent:#d4ad81;--ui-soft:#35332e}
+@media(prefers-color-scheme:dark){html:not([color-mode]){--ui-paper:#191a19;--ui-card:#242523;--ui-ink:#e8e4dd;--ui-muted:#c0b6a8;--ui-line:#49473f;--ui-accent:#d4ad81;--ui-soft:#35332e}}
+*{box-sizing:border-box}body{margin:0;background:var(--ui-paper);color:var(--ui-ink);font:400 13px/1.6 'DM Sans',Arial,sans-serif}button,input,select,textarea{font:inherit}button,input,select,textarea,a{outline-offset:4px}button{cursor:pointer}a{color:var(--ui-accent)}
+.collection-head{max-width:1420px;margin:auto;padding:42px 40px 25px;display:flex;align-items:flex-end;justify-content:space-between;gap:25px;border-bottom:1px solid var(--ui-line)}.eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--ui-muted)}.collection-head h1{margin:4px 0 -5px;font:400 82px/1 'Allura','Cormorant Garamond',Georgia,serif;letter-spacing:-.04em;color:var(--ui-accent)}.collection-head p{margin:9px 0 0;color:var(--ui-muted);font-size:12px}.head-note{max-width:270px;text-align:right}.head-note em{font:italic 24px/1.25 'Cormorant Garamond',Georgia,serif;color:var(--ui-accent)}
+.toolbar{max-width:1420px;margin:auto;padding:22px 40px 18px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.kind-tabs{display:flex;padding:4px;gap:4px;background:var(--ui-soft);border-radius:30px}.kind-tabs button{min-width:99px;border:0;background:none;color:var(--ui-muted);padding:8px 18px;border-radius:25px;font-size:12px}.kind-tabs button[aria-pressed="true"]{background:var(--ui-card);color:var(--ui-ink);box-shadow:0 2px 6px #0000000b}.controls{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.controls label{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--ui-muted)}.controls select{background:var(--ui-card);color:var(--ui-ink);border:1px solid var(--ui-line);border-radius:5px;padding:6px}.palettes{display:flex;gap:5px}.palette{width:24px;height:24px;padding:0;border:2px solid var(--ui-card);border-radius:50%;outline:1px solid var(--ui-line)}.palette[aria-pressed="true"]{outline:2px solid var(--ui-accent);outline-offset:2px}.swatch-input{width:26px;height:24px;padding:0;border:0;background:none}
+.variant-tabs{max-width:1340px;margin:0 auto 25px;display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.variant-tabs button{display:flex;align-items:center;gap:12px;padding:14px 15px;border:1px solid var(--ui-line);border-radius:7px;background:var(--ui-card);text-align:left;color:var(--ui-muted)}.variant-tabs button b{font:italic 19px/1 'Cormorant Garamond',Georgia,serif;opacity:.65}.variant-tabs button span{font:500 15px/1.25 'Cormorant Garamond',Georgia,serif;color:var(--ui-ink)}.variant-tabs button[aria-pressed="true"]{border-color:var(--ui-accent);box-shadow:inset 0 -3px var(--ui-accent)}
+.workspace{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,1fr);align-items:start;gap:30px;max-width:1340px;margin:auto}.editor{padding:24px;background:var(--ui-card);border:1px solid var(--ui-line);border-radius:9px}.editor h2{font:500 25px/1.2 'Cormorant Garamond',Georgia,serif;margin:0 0 5px}.editor .sub{font-size:11px;color:var(--ui-muted);margin:0 0 20px}.field{display:flex;flex-direction:column;gap:5px;margin:0 0 12px;font-size:11px;color:var(--ui-muted)}.field input,.field textarea{width:100%;min-width:0;background:var(--ui-paper);color:var(--ui-ink);border:1px solid var(--ui-line);border-radius:5px;padding:9px 10px;font-size:12px}.field textarea{resize:vertical;min-height:185px;line-height:1.65}.gif-row{display:grid;grid-template-columns:minmax(0,1fr) 72px;gap:8px}.gif-row input[type=range]{padding:0;accent-color:var(--ui-accent);height:33px}.field-row[hidden]{display:none}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}.copy-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.copy-actions button{border:1px solid var(--ui-line);background:var(--ui-paper);color:var(--ui-ink);border-radius:5px;padding:10px 13px;font-size:11px}.copy-actions button:first-child{background:var(--ui-accent);color:var(--ui-card);border-color:var(--ui-accent)}#word-count{font-size:10px;color:var(--ui-muted);margin:-3px 0 0}#word-count.over{color:#ac623a}#copy-status{min-height:17px;margin:8px 0 0;font-size:11px;color:var(--ui-accent)}
+.stage{min-width:0;padding:0 36px 28px;position:relative}.stage-bar{display:flex;justify-content:space-between;gap:20px;align-items:center;margin:0 0 13px;color:var(--ui-muted);font-size:10px;letter-spacing:.13em;text-transform:uppercase}.stage-bar a{font-size:10px;text-transform:none;letter-spacing:0}.stage-title{text-align:center;margin:0;font:italic 25px/1.4 'Cormorant Garamond',Georgia,serif;color:var(--ui-accent)}#design-description{max-width:480px;text-align:center;color:var(--ui-muted);margin:4px auto 15px;font-size:11px}#render{padding:2px 0 20px;min-width:0;transition:max-width .2s;margin:auto}#render.narrow{max-width:320px}.stage-code{max-width:650px;margin:5px auto 0;border:1px solid var(--ui-line);border-radius:6px;background:var(--ui-card)}summary{cursor:pointer;padding:13px 16px;color:var(--ui-accent)}textarea.code{display:block;width:100%;min-height:210px;border:0;border-top:1px solid var(--ui-line);padding:14px;background:var(--ui-card);color:var(--ui-ink);font:11px/1.6 monospace;resize:vertical}.gallery{max-width:1340px;margin:45px auto;padding:28px 0;border-top:1px solid var(--ui-line)}.gallery>summary{padding:0;font:500 29px/1.4 'Cormorant Garamond',Georgia,serif}.gallery>p{color:var(--ui-muted);font-size:12px}.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.gallery-grid>details{min-width:0;border:1px solid var(--ui-line);border-radius:6px;background:var(--ui-card);align-self:start}.gallery-render{padding:10px 16px}.gallery textarea{display:block;width:100%;min-height:180px;padding:12px;border:0;border-top:1px solid var(--ui-line);resize:vertical;color:var(--ui-ink);background:var(--ui-card);font:10px/1.5 monospace}.colophon{margin:25px auto 45px;max-width:1340px;padding-top:20px;border-top:1px solid var(--ui-line);display:flex;justify-content:space-between;gap:20px;color:var(--ui-muted);font-size:10px;letter-spacing:.05em}.colophon a{text-decoration:none}.gallery-grid .tf{margin-top:10px;margin-bottom:12px}
+@media(max-width:1420px){.variant-tabs,.workspace,.gallery,.colophon{margin-left:40px;margin-right:40px}}@media(max-width:1000px){.workspace{grid-template-columns:300px minmax(0,1fr);gap:16px}.stage{padding:0 0 25px}.variant-tabs button{gap:7px;padding:12px 9px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.collection-head{padding:26px 20px 20px}.head-note{display:none}.collection-head h1{font-size:65px}.toolbar{padding:19px 20px}.variant-tabs,.workspace,.gallery,.colophon{margin-left:20px;margin-right:20px}.variant-tabs{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.variant-tabs button{flex-direction:column;align-items:flex-start;padding:10px 7px;gap:5px}.variant-tabs button span{font-size:13px}.workspace{display:flex;flex-direction:column}.editor{width:100%;order:2}.stage{width:100%;order:1}.gallery-grid{grid-template-columns:1fr}.controls{gap:11px}.kind-tabs button{min-width:85px}.colophon{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="collection-head"><div><div class="eyebrow">Leaf · The Toffee Collection</div><h1>Toffee</h1><p>Five threads. Five conversations. Five little beginnings.</p></div><div class="head-note"><em>Some sweet things<br>are worth holding on to.</em><p>A collection in fifteen small moments.</p></div></header>
+<nav class="toolbar" aria-label="Collection controls"><div class="kind-tabs"><button type="button" data-kind="thread" aria-pressed="true">Threads · 05</button><button type="button" data-kind="comms" aria-pressed="false">Comms · 05</button><button type="button" data-kind="bud" aria-pressed="false">Buds · 05</button></div><div class="controls"><label>Mode<select id="mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Member colours</label><div class="palettes"><button class="palette" data-palette="0" aria-label="Rose and sage member palette" aria-pressed="true" style="background:linear-gradient(115deg,#a06b85,#a77e54,#628e92)"></button><button class="palette" data-palette="1" aria-label="Violet and blue member palette" aria-pressed="false" style="background:linear-gradient(115deg,#955b9a,#796ebc,#497fba)"></button><button class="palette" data-palette="2" aria-label="Forest member palette" aria-pressed="false" style="background:linear-gradient(115deg,#527864,#7a8867,#577f9b)"></button><button class="palette" data-palette="3" aria-label="Monochrome member palette" aria-pressed="false" style="background:linear-gradient(115deg,#5c5956,#7b7670,#666a6c)"></button></div><input type="color" id="colour-one" class="swatch-input" aria-label="Member colour one"><input type="color" id="colour-two" class="swatch-input" aria-label="Member colour two"><input type="color" id="colour-three" class="swatch-input" aria-label="Member colour three"></div></nav>
+<nav id="variant-tabs" class="variant-tabs" aria-label="Named designs"></nav>
+<main class="workspace">
+<section class="editor" aria-label="Template editor"><h2>Your little moment</h2><p class="sub">Edit the fields, then copy your complete posting code.</p><label class="field">Name · [name]<input id="name" value="[name]"></label><label class="field">Profile or thread link · [url]<input id="url" value="[url]"></label><label class="field">Subtitle · [text]<input id="subtitle" value="[text]"></label><div class="gif-row"><label class="field">GIF one<input id="gif-one" type="text"></label><label class="field">Crop<input id="crop-one" type="range" min="0" max="100" value="50"></label></div><div class="gif-row"><label class="field">GIF two<input id="gif-two" type="text"></label><label class="field">Crop<input id="crop-two" type="range" min="0" max="100" value="50"></label></div><div id="comms-fields" class="field-row" hidden><label class="field">Time<input id="time" value="09:41"></label><label class="field">Receipt<input id="receipt" value="Delivered · 09:41"></label></div><label class="field">Reply or messages<textarea id="body" spellcheck="false"></textarea></label><p id="word-count" aria-live="polite"></p><div class="copy-actions"><button type="button" id="copy">Copy JCink code</button><button type="button" id="download">Download .txt</button><button type="button" id="reset">Reset this design</button></div><p id="copy-status" role="status"></p></section>
+<section class="stage" aria-label="Live template preview"><div class="stage-bar"><span>Live preview</span><label><input type="checkbox" id="narrow"> Narrow post</label></div><h2 id="design-title" class="stage-title">Butterglass</h2><p id="design-description"></p><div id="render"></div><details class="stage-code"><summary>Posting code</summary><textarea readonly class="code" id="code" aria-label="Ready to copy JCink code"></textarea></details></section>
+</main>
+<details class="gallery"><summary>All fifteen designs &amp; original posting codes</summary><p>Every original design is available below, including when scripts are disabled.</p><div class="gallery-grid"><details><summary>01 · Butterglass · Thread</summary><div class="gallery-render">
+<div class="tf tf-thread tf-butterglass">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Butterglass posting code">[dohtml]
+&lt;div class=&quot;tf tf-thread tf-butterglass&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>02 · Slowmelt · Thread</summary><div class="gallery-render">
+<div class="tf tf-thread tf-slowmelt">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Slowmelt posting code">[dohtml]
+&lt;div class=&quot;tf tf-thread tf-slowmelt&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>03 · Velvet Pull · Thread</summary><div class="gallery-render">
+<div class="tf tf-thread tf-velvet-pull">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Velvet Pull posting code">[dohtml]
+&lt;div class=&quot;tf tf-thread tf-velvet-pull&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>04 · Amberfold · Thread</summary><div class="gallery-render">
+<div class="tf tf-thread tf-amberfold">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Amberfold posting code">[dohtml]
+&lt;div class=&quot;tf tf-thread tf-amberfold&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>05 · Hearthglow · Thread</summary><div class="gallery-render">
+<div class="tf tf-thread tf-hearthglow">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Hearthglow posting code">[dohtml]
+&lt;div class=&quot;tf tf-thread tf-hearthglow&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>01 · Sugarline · Comms</summary><div class="gallery-render">
+<div class="tf tf-comms tf-sugarline">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="tf-receipt">Delivered · 09:41</span>
+<div class="tf-status"><span>09:41</span><span class="tf-signals" aria-hidden="true"></span></div>
+
+<div class="tf-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Sugarline posting code">[dohtml]
+&lt;div class=&quot;tf tf-comms tf-sugarline&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;tf-receipt&quot;&gt;Delivered · 09:41&lt;/span&gt;
+&lt;div class=&quot;tf-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;tf-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>02 · Meltmail · Comms</summary><div class="gallery-render">
+<div class="tf tf-comms tf-meltmail">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="tf-receipt">Delivered · 09:41</span>
+<div class="tf-status"><span>09:41</span><span class="tf-signals" aria-hidden="true"></span></div>
+
+<div class="tf-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Meltmail posting code">[dohtml]
+&lt;div class=&quot;tf tf-comms tf-meltmail&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;tf-receipt&quot;&gt;Delivered · 09:41&lt;/span&gt;
+&lt;div class=&quot;tf-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;tf-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>03 · Caramel Call · Comms</summary><div class="gallery-render">
+<div class="tf tf-comms tf-caramel-call">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="tf-receipt">Delivered · 09:41</span>
+<div class="tf-status"><span>09:41</span><span class="tf-signals" aria-hidden="true"></span></div>
+
+<div class="tf-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Caramel Call posting code">[dohtml]
+&lt;div class=&quot;tf tf-comms tf-caramel-call&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;tf-receipt&quot;&gt;Delivered · 09:41&lt;/span&gt;
+&lt;div class=&quot;tf-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;tf-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>04 · Wrapper Chat · Comms</summary><div class="gallery-render">
+<div class="tf tf-comms tf-wrapper-chat">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="tf-receipt">Delivered · 09:41</span>
+<div class="tf-status"><span>09:41</span><span class="tf-signals" aria-hidden="true"></span></div>
+
+<div class="tf-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Wrapper Chat posting code">[dohtml]
+&lt;div class=&quot;tf tf-comms tf-wrapper-chat&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;tf-receipt&quot;&gt;Delivered · 09:41&lt;/span&gt;
+&lt;div class=&quot;tf-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;tf-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>05 · Warm Signal · Comms</summary><div class="gallery-render">
+<div class="tf tf-comms tf-warm-signal">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="tf-receipt">Delivered · 09:41</span>
+<div class="tf-status"><span>09:41</span><span class="tf-signals" aria-hidden="true"></span></div>
+
+<div class="tf-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Warm Signal posting code">[dohtml]
+&lt;div class=&quot;tf tf-comms tf-warm-signal&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;tf-receipt&quot;&gt;Delivered · 09:41&lt;/span&gt;
+&lt;div class=&quot;tf-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;tf-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>01 · Goldleaf · Bud</summary><div class="gallery-render">
+<div class="tf tf-bud tf-goldleaf">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Goldleaf posting code">[dohtml]
+&lt;div class=&quot;tf tf-bud tf-goldleaf&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>02 · Soft Bite · Bud</summary><div class="gallery-render">
+<div class="tf tf-bud tf-soft-bite">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Soft Bite posting code">[dohtml]
+&lt;div class=&quot;tf tf-bud tf-soft-bite&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>03 · Sugar Fleck · Bud</summary><div class="gallery-render">
+<div class="tf tf-bud tf-sugar-fleck">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Sugar Fleck posting code">[dohtml]
+&lt;div class=&quot;tf tf-bud tf-sugar-fleck&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>04 · Tiny Twist · Bud</summary><div class="gallery-render">
+<div class="tf tf-bud tf-tiny-twist">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Tiny Twist posting code">[dohtml]
+&lt;div class=&quot;tf tf-bud tf-tiny-twist&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>05 · Last Crumb · Bud</summary><div class="gallery-render">
+<div class="tf tf-bud tf-last-crumb">
+<div class="tf-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="tf-gifs">
+<img src="https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="tf-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Last Crumb posting code">[dohtml]
+&lt;div class=&quot;tf tf-bud tf-last-crumb&quot;&gt;
+&lt;div class=&quot;tf-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tf-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;tf-sweet&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details></div></details>
+<footer class="colophon"><span>Toffee · A trace of you &amp; me</span><span><a href="https://github.com/lexdoescodingnow/templates/tree/main/toffee" target="_blank" rel="noopener">Open the Toffee folder on GitHub ↗</a></span></footer>
+<script id="collection-data" type="application/json">[{"kind": "thread", "name": "Butterglass", "slug": "butterglass", "number": 1, "description": "Paired arched portraits, a fine double frame, and a handwritten title.", "filename": "toffee-butterglass-thread-01.txt", "snippet": "[dohtml]\n<div class=\"tf tf-thread tf-butterglass\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "thread", "name": "Slowmelt", "slug": "slowmelt", "number": 2, "description": "A panoramic portrait and overlapping circular keepsake.", "filename": "toffee-slowmelt-thread-02.txt", "snippet": "[dohtml]\n<div class=\"tf tf-thread tf-slowmelt\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "thread", "name": "Velvet Pull", "slug": "velvet-pull", "number": 3, "description": "Tilted portraits tied together with a delicate pulled-caramel line.", "filename": "toffee-velvet-pull-thread-03.txt", "snippet": "[dohtml]\n<div class=\"tf tf-thread tf-velvet-pull\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "thread", "name": "Amberfold", "slug": "amberfold", "number": 4, "description": "An asymmetric diptych, a folded edge, and compact editorial lettering.", "filename": "toffee-amberfold-thread-04.txt", "snippet": "[dohtml]\n<div class=\"tf tf-thread tf-amberfold\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "thread", "name": "Hearthglow", "slug": "hearthglow", "number": 5, "description": "Soft opposing arches and oval portraits in an intimate frame.", "filename": "toffee-hearthglow-thread-05.txt", "snippet": "[dohtml]\n<div class=\"tf tf-thread tf-hearthglow\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Sugarline", "slug": "sugarline", "number": 1, "description": "A classic rounded handset with twin contact portraits.", "filename": "toffee-sugarline-comms-01.txt", "snippet": "[dohtml]\n<div class=\"tf tf-comms tf-sugarline\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"tf-receipt\">Delivered · 09:41<\/span>\n<div class=\"tf-status\"><span>09:41<\/span><span class=\"tf-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"tf-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Meltmail", "slug": "meltmail", "number": 2, "description": "A crisp messenger screen with a panoramic contact header.", "filename": "toffee-meltmail-comms-02.txt", "snippet": "[dohtml]\n<div class=\"tf tf-comms tf-meltmail\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"tf-receipt\">Delivered · 09:41<\/span>\n<div class=\"tf-status\"><span>09:41<\/span><span class=\"tf-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"tf-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Caramel Call", "slug": "caramel-call", "number": 3, "description": "A curved clamshell-inspired screen with an arched portrait window.", "filename": "toffee-caramel-call-comms-03.txt", "snippet": "[dohtml]\n<div class=\"tf tf-comms tf-caramel-call\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"tf-receipt\">Delivered · 09:41<\/span>\n<div class=\"tf-status\"><span>09:41<\/span><span class=\"tf-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"tf-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Wrapper Chat", "slug": "wrapper-chat", "number": 4, "description": "A compact desktop chat window with incoming message bubbles.", "filename": "toffee-wrapper-chat-comms-04.txt", "snippet": "[dohtml]\n<div class=\"tf tf-comms tf-wrapper-chat\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"tf-receipt\">Delivered · 09:41<\/span>\n<div class=\"tf-status\"><span>09:41<\/span><span class=\"tf-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"tf-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Warm Signal", "slug": "warm-signal", "number": 5, "description": "Overlapping contact portraits and softly rounded message bubbles.", "filename": "toffee-warm-signal-comms-05.txt", "snippet": "[dohtml]\n<div class=\"tf tf-comms tf-warm-signal\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"tf-receipt\">Delivered · 09:41<\/span>\n<div class=\"tf-status\"><span>09:41<\/span><span class=\"tf-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"tf-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Goldleaf", "slug": "goldleaf", "number": 1, "description": "A small portrait medallion with a companion inset.", "filename": "toffee-goldleaf-bud-01.txt", "snippet": "[dohtml]\n<div class=\"tf tf-bud tf-goldleaf\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Soft Bite", "slug": "soft-bite", "number": 2, "description": "A miniature arched diptych above a compact reply.", "filename": "toffee-soft-bite-bud-02.txt", "snippet": "[dohtml]\n<div class=\"tf tf-bud tf-soft-bite\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Sugar Fleck", "slug": "sugar-fleck", "number": 3, "description": "A tilted square portrait and a fine member-colour rule.", "filename": "toffee-sugar-fleck-bud-03.txt", "snippet": "[dohtml]\n<div class=\"tf tf-bud tf-sugar-fleck\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Tiny Twist", "slug": "tiny-twist", "number": 4, "description": "A slim portrait strip beside your reply.", "filename": "toffee-tiny-twist-bud-04.txt", "snippet": "[dohtml]\n<div class=\"tf tf-bud tf-tiny-twist\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Last Crumb", "slug": "last-crumb", "number": 5, "description": "Paired circular keepsakes and a handwritten heading.", "filename": "toffee-last-crumb-bud-05.txt", "snippet": "[dohtml]\n<div class=\"tf tf-bud tf-last-crumb\">\n<div class=\"tf-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"tf-gifs\">\n<img src=\"https://64.media.tumblr.com/d936beee23b2349525aa3145ba10f27f/ae88727bbaded232-31/s540x810/892c34fbfbd5a1a7e610b944314c49bfdb4854bc.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/2ba252e5d33bf56024b5aaf7c4bd3877/629cc18825dc8768-ff/s540x810/c350e713da831f0e605ba6d96b8540e60246d49e.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"tf-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"tf-finish\" aria-hidden=\"true\"><span class=\"tf-sweet\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css\">\n[/dohtml]\n"}]</script>
+<script>
+const collection=JSON.parse(document.getElementById('collection-data').textContent);
+const $=id=>document.getElementById(id);
+const drafts=new Map();
+let kind='thread',index=0,palette=0;
+const ids=['name','url','subtitle','gif-one','gif-two','crop-one','crop-two','body','time','receipt'];
+const palettes=[['#965b78','#936b45','#4c7a80'],['#88508f','#7360a0','#426fa3'],['#456d56','#778151','#4b7388'],['#5d5955','#756d63','#555e63']];
+const darkPalettes=[['#d99db6','#d2ad7f','#93c2c1'],['#cb9ad4','#b4a2e0','#90bde6'],['#a0c3ac','#c5cc9b','#96c0d4'],['#d6cfca','#bdb7ae','#bec7cb']];
+const systemDark=matchMedia('(prefers-color-scheme:dark)');
+const current=()=>collection.filter(t=>t.kind===kind)[index];
+const esc=t=>String(t).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
+function safeLink(s){return /^(https?:\/\/|#|\[url\]$)/i.test(s)?s:'[url]'}
+function safeImage(s){return /^https?:\/\//i.test(s)?s:''}
+function bodyHTML(s){let h=esc(s);h=h.replace(/\[(\/?)(b|i|u)\]/gi,(_,slash,tag)=>'<'+slash+tag.toLowerCase()+'>');h=h.replace(/&lt;(\/?)(p|b|strong|i|em|u|blockquote)&gt;/gi,(_,slash,tag)=>'<'+slash+tag.toLowerCase()+'>');h=h.replace(/&lt;br\s*\/?&gt;/gi,'<br>');if(!/<p>/i.test(h))h=h.split(/\n\s*\n/).map(p=>'<p>'+p.replaceAll('\n','<br>')+'</p>').join('\n');return h;}
+function defaults(t){const d=new DOMParser().parseFromString(t.snippet.replace('[dohtml]','').replace('[/dohtml]',''),'text/html');const images=d.querySelectorAll('.tf-gifs img');return {'name':'[name]','url':'[url]','subtitle':'[text]','gif-one':images[0].getAttribute('src'),'gif-two':images[1].getAttribute('src'),'crop-one':'50','crop-two':'50','body':d.querySelector('.tf-copy').innerHTML.trim().replaceAll('<b>','[b]').replaceAll('</b>','[/b]').replaceAll('<i>','[i]').replaceAll('</i>','[/i]').replaceAll('<u>','[u]').replaceAll('</u>','[/u]'),'time':'09:41','receipt':'Delivered · 09:41'};}
+function stash(){drafts.set(current().filename,Object.fromEntries(ids.map(id=>[id,$(id).value])))}
+function makeSnippet(t,fields){let s='[dohtml]\n<div class="tf tf-'+t.kind+' tf-'+t.slug+'">\n<div class="tf-meta">\n<a href="'+esc(safeLink(fields.url))+'">'+esc(fields.name)+'</a>\n<span>'+esc(fields.subtitle)+'</span>\n</div>\n';const imgs=[safeImage(fields['gif-one'].trim()),safeImage(fields['gif-two'].trim())];if(imgs.some(Boolean)){s+='\n<div class="tf-gifs">\n';imgs.forEach((url,i)=>{if(url)s+='<img src="'+esc(url)+'" alt="'+(i?'Companion':'Character')+' portrait" style="object-position:50% '+Number(fields[i?'crop-two':'crop-one'])+'%;">\n'});s+='</div>\n'}s+='\n<div class="tf-copy">\n'+bodyHTML(fields.body)+'\n</div>\n';if(t.kind==='comms'){s+='\n<span class="tf-receipt">'+esc(fields.receipt)+'</span>\n<div class="tf-status"><span>'+esc(fields.time)+'</span><span class="tf-signals" aria-hidden="true"></span></div>\n\n<div class="tf-device" aria-hidden="true"><span>Message</span></div>\n'}s+='\n<div class="tf-finish" aria-hidden="true"><span class="tf-sweet"></span></div>\n</div>\n\n<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/toffee/toffee-collection-v1.css">\n[/dohtml]\n';return s;}
+function render(){stash();const t=current(),s=makeSnippet(t,drafts.get(t.filename));$('render').innerHTML=s.replace('[dohtml]','').replace('[/dohtml]','').split('<link')[0];$('code').value=s;const plain=bodyHTML($('body').value).replace(/<[^>]*>/g,' ').replace(/&[^;]+;/g,' ');const count=plain.trim()?plain.trim().split(/\s+/).length:0;$('word-count').textContent=kind==='bud'?count+' / 100 words · a little reply to keep things moving':count+' words';$('word-count').classList.toggle('over',kind==='bud'&&count>100);$('copy-status').textContent='';}
+function choose(){const t=current(),d=drafts.get(t.filename)||defaults(t);ids.forEach(id=>$(id).value=d[id]);$('comms-fields').hidden=kind!=='comms';$('design-title').textContent=t.name;$('design-description').textContent=t.description;const nav=$('variant-tabs');nav.innerHTML='';collection.filter(t=>t.kind===kind).forEach((t,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed',String(i===index));b.innerHTML='<b>'+String(i+1).padStart(2,'0')+'</b><span>'+t.name+'</span>';b.onclick=()=>{stash();index=i;choose()};nav.append(b)});document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.kind===kind)));render();}
+function applyColours(colours){colours.forEach((h,i)=>{const rgb=h.slice(1).match(/../g).map(v=>parseInt(v,16)).join(',');document.body.style.setProperty('--mgrgb'+(i+1),rgb);$(['colour-one','colour-two','colour-three'][i]).value=h});}
+function applyPalette(){const dark=$('mode').value==='dark'||($('mode').value==='system'&&systemDark.matches);applyColours((dark?darkPalettes:palettes)[palette]);document.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.palette)===palette)));}
+ids.forEach(id=>$(id).addEventListener('input',render));document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{stash();kind=b.dataset.kind;index=0;choose()});document.querySelectorAll('[data-palette]').forEach(b=>b.onclick=()=>{palette=Number(b.dataset.palette);applyPalette()});['colour-one','colour-two','colour-three'].forEach(id=>$(id).addEventListener('input',()=>{applyColours(['colour-one','colour-two','colour-three'].map(id=>$(id).value));document.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed','false'))}));$('mode').onchange=()=>{if($('mode').value==='system')document.documentElement.removeAttribute('color-mode');else document.documentElement.setAttribute('color-mode',$('mode').value);applyPalette()};systemDark.addEventListener('change',()=>{if($('mode').value==='system')applyPalette()});$('narrow').onchange=()=>$('render').classList.toggle('narrow',$('narrow').checked);
+$('copy').onclick=async()=>{try{await navigator.clipboard.writeText($('code').value);$('copy-status').textContent='Copied. Ready for your forum post.'}catch{document.querySelector('.stage-code').open=true;$('code').focus();$('code').select();let ok=false;try{ok=document.execCommand('copy')}catch{}$('copy-status').textContent=ok?'Copied. Ready for your forum post.':'Code selected. Press Ctrl+C or Cmd+C to copy.'}};
+$('download').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([$('code').value],{type:'text/plain;charset=utf-8'}));a.download=current().filename;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);$('copy-status').textContent='Your posting code is ready to download.'};$('reset').onclick=()=>{drafts.delete(current().filename);choose()};applyPalette();choose();
+</script>
+</body>
+</html>
