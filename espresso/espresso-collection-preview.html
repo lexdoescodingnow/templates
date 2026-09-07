@@ -4,15 +4,233 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Espresso — Fifteen JCink Templates</title>
-<link rel="stylesheet" href="espresso-collection-v1.css">
-<link rel="stylesheet" href="espresso-preview.css">
-<script src="espresso-editor.js" defer></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+.esp{--esp-bg:#f8f7f4;--esp-panel:#eeede9;--esp-ink:#353432;--esp-muted:#716f69;--esp-metal:#9a7957;--esp-a:rgb(var(--mgrgb1,130,81,94));--esp-b:rgb(var(--mgrgb2,101,103,143));--esp-c:rgb(var(--mgrgb3,59,120,123));--esp-line:rgba(var(--mgrgb2,101,103,143),.43);--esp-wash:rgba(var(--mgrgb1,130,81,94),.075);--esp-wash2:rgba(var(--mgrgb3,59,120,123),.08);--esp-grad:linear-gradient(115deg,var(--esp-a),var(--esp-b),var(--esp-c));--esp-rev:linear-gradient(115deg,var(--esp-c),var(--esp-b),var(--esp-a));position:relative;isolation:isolate;box-sizing:border-box;display:grid;min-width:0;width:100%;max-width:550px;margin:28px auto;background:var(--esp-bg);color:var(--esp-ink);font:14px/1.9 'Manrope',Arial,sans-serif;text-align:left;overflow-wrap:anywhere;color-scheme:light;}
+html[color-mode="dark"] .esp{--esp-bg:#202120;--esp-panel:#292a28;--esp-ink:#e0dfdb;--esp-muted:#afaea6;--esp-metal:#ba9974;--esp-a:rgb(var(--mgrgb1,205,153,169));--esp-b:rgb(var(--mgrgb2,166,170,212));--esp-c:rgb(var(--mgrgb3,126,188,186));--esp-line:rgba(var(--mgrgb2,166,170,212),.46);--esp-wash:rgba(var(--mgrgb1,205,153,169),.10);--esp-wash2:rgba(var(--mgrgb3,126,188,186),.11);color-scheme:dark;}
+@media(prefers-color-scheme:dark){html:not([color-mode]) .esp{--esp-bg:#202120;--esp-panel:#292a28;--esp-ink:#e0dfdb;--esp-muted:#afaea6;--esp-metal:#ba9974;--esp-a:rgb(var(--mgrgb1,205,153,169));--esp-b:rgb(var(--mgrgb2,166,170,212));--esp-c:rgb(var(--mgrgb3,126,188,186));--esp-line:rgba(var(--mgrgb2,166,170,212),.46);--esp-wash:rgba(var(--mgrgb1,205,153,169),.10);--esp-wash2:rgba(var(--mgrgb3,126,188,186),.11);color-scheme:dark;}}
+.esp *,.esp *::before,.esp *::after{box-sizing:border-box;}
+.esp>div{min-width:0;}
+.esp .esp-meta{display:flex;flex-direction:column;gap:10px;position:relative;min-width:0;}
+.esp .esp-meta>a{display:block;width:fit-content;max-width:100%;color:var(--esp-a);font:600 10px/1.6 'Manrope',Arial,sans-serif;letter-spacing:2.4px;text-transform:uppercase;text-decoration:none;}
+.esp .esp-meta>span{display:block;color:var(--esp-b);font:400 48px/1.1 'Bodoni Moda',Didot,Georgia,serif;letter-spacing:-1.7px;}
+.esp .esp-meta>time{display:block;color:var(--esp-muted);font:400 10px/1.5 'IBM Plex Mono',monospace;letter-spacing:.5px;}
+.esp .esp-media{display:flex;gap:10px;min-width:0;}
+.esp .esp-media:empty,.esp .esp-media:not(:has(img)){display:none;}
+.esp .esp-media img{display:block;flex:1 1 0;min-width:0;width:0;max-width:100%;height:180px;object-fit:cover;object-position:50% 40%;border:1px solid var(--esp-line);background:var(--esp-panel);}
+.esp .esp-copy{min-width:0;position:relative;}
+.esp .esp-copy p{font:inherit;line-height:inherit;color:inherit;text-align:inherit;margin:0 0 1.25em;}
+.esp .esp-copy p:last-child{margin-bottom:0;}
+.esp .esp-copy :is(b,strong,u){color:var(--esp-a);background-image:var(--esp-grad);}
+.esp .esp-copy :is(i,em){color:var(--esp-c);background-image:var(--esp-rev);}
+.esp .esp-copy :is(b,strong,i,em,u){background-clip:text;-webkit-background-clip:text;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+@supports((background-clip:text) or (-webkit-background-clip:text)){.esp .esp-copy :is(b,strong,i,em,u){color:transparent;-webkit-text-fill-color:transparent;}}
+.esp .esp-copy :is(b,strong){font-weight:700;}
+.esp .esp-copy :is(i,em){font-style:italic;}
+.esp .esp-copy u{text-decoration:underline;text-decoration-color:var(--esp-b);text-decoration-thickness:1px;text-underline-offset:4px;}
+.esp .esp-copy a{color:var(--esp-c);text-decoration-color:var(--esp-a);text-underline-offset:3px;}
+.esp .esp-copy blockquote{margin:1.2em 0;padding:0 0 0 18px;border-left:2px solid var(--esp-b);}
+.esp a:focus-visible{outline:2px solid var(--esp-c);outline-offset:4px;}
+.esp .esp-ornament{display:flex;align-items:center;justify-content:space-between;gap:14px;min-width:0;color:var(--esp-metal);font:400 8px/1.5 'IBM Plex Mono',monospace;letter-spacing:2px;text-transform:uppercase;}
+.esp .esp-bean{display:block;position:relative;flex:0 0 14px;width:14px;height:21px;border:1px solid currentColor;border-radius:50%;transform:rotate(32deg);}
+.esp .esp-bean::after{content:"";position:absolute;left:5px;top:1px;width:5px;height:16px;border-left:1px solid currentColor;border-radius:50%;transform:rotate(8deg);}
+.esp .esp-cup{display:block;position:relative;width:28px;height:21px;flex:0 0 28px;border:1px solid currentColor;border-radius:2px 2px 12px 12px;}
+.esp .esp-cup::before{content:"";position:absolute;right:-8px;top:2px;width:8px;height:10px;border:1px solid currentColor;border-left:0;border-radius:0 6px 6px 0;}
+.esp .esp-cup::after{content:"";position:absolute;left:-4px;right:-4px;height:4px;bottom:-6px;border-bottom:1px solid currentColor;border-radius:50%;}
+.esp .esp-gauge{display:block;position:relative;flex:0 0 72px;width:72px;height:38px;border:1px solid currentColor;border-radius:72px 72px 0 0;background:repeating-conic-gradient(from -90deg at 50% 100%,currentColor 0deg 1deg,transparent 1deg 15deg);}
+.esp .esp-gauge::before{content:"";position:absolute;inset:6px 6px 0;background:var(--esp-bg);border-radius:60px 60px 0 0;}
+.esp .esp-gauge::after{content:"";position:absolute;width:1px;height:26px;left:35px;bottom:0;background:currentColor;transform:rotate(32deg);transform-origin:bottom;}
+.esp-thread{padding:34px;gap:27px;}
+.esp-afterhours{padding:20px 24px 27px;gap:0;border:1px solid var(--esp-line);border-top:5px solid var(--esp-a);background:linear-gradient(90deg,var(--esp-wash),transparent 65%),var(--esp-bg);}
+.esp-afterhours .esp-meta{grid-row:2;padding:24px 12px 27px;border-bottom:1px solid var(--esp-c);gap:14px;}
+.esp-afterhours .esp-meta>span{font-size:58px;line-height:1.05;letter-spacing:-2px;}
+.esp-afterhours .esp-meta>a{order:1;align-self:flex-end;color:var(--esp-c);}
+.esp-afterhours .esp-media{grid-row:1;position:relative;padding-bottom:9px;border-bottom:1px solid var(--esp-a);}
+.esp-afterhours .esp-media img{height:230px;border:0;}
+.esp-afterhours .esp-media::after{content:"";position:absolute;right:13px;bottom:0;width:44px;height:18px;background:var(--esp-bg);border-inline:1px solid var(--esp-b);}
+.esp-afterhours .esp-copy{grid-row:3;padding:28px 12px;}
+.esp-afterhours .esp-ornament{grid-row:4;padding:0 12px;border-top:1px solid var(--esp-line);padding-top:19px;}
+.esp-afterhours:not(:has(.esp-media img)) .esp-meta{grid-row:auto;padding-top:13px;}
+.esp-crema-obscura{padding:35px 36px 27px 58px;border:1px solid var(--esp-a);border-right:5px solid var(--esp-c);gap:26px;background:linear-gradient(90deg,var(--esp-wash2) 0 22px,transparent 22px),var(--esp-bg);}
+.esp-crema-obscura::before{content:"espresso";position:absolute;left:8px;top:36px;writing-mode:vertical-rl;transform:rotate(180deg);font:400 9px/1 'IBM Plex Mono',monospace;letter-spacing:5px;color:var(--esp-c);}
+.esp-crema-obscura .esp-meta{border-top:1px solid var(--esp-a);border-bottom:3px double var(--esp-c);padding:18px 0 25px;text-align:right;}
+.esp-crema-obscura .esp-meta>a{align-self:flex-end;}
+.esp-crema-obscura .esp-meta>span{font-size:52px;font-style:italic;color:var(--esp-a);}
+.esp-crema-obscura .esp-copy{font-family:Georgia,serif;font-size:15px;line-height:1.95;}
+.esp-crema-obscura .esp-copy>p:first-child::first-letter{float:left;font:400 60px/.85 'Bodoni Moda',Georgia,serif;color:var(--esp-c);padding:7px 8px 0 0;}
+.esp-crema-obscura .esp-ornament{justify-content:center;gap:24px;border-top:1px solid var(--esp-line);padding-top:21px;}
+.esp-doppio-vow{padding:0;gap:0;border:1px solid var(--esp-line);border-bottom:5px solid var(--esp-b);}
+.esp-doppio-vow .esp-meta{padding:26px 32px 24px;background:linear-gradient(115deg,var(--esp-wash),var(--esp-wash2));border-bottom:1px solid var(--esp-b);text-align:center;}
+.esp-doppio-vow .esp-meta>a{align-self:center;}
+.esp-doppio-vow .esp-meta>span{font-size:49px;}
+.esp-doppio-vow .esp-media{gap:22px;padding:22px 22px 0;position:relative;}
+.esp-doppio-vow .esp-media img{height:225px;border:0;box-shadow:0 4px 0 -2px var(--esp-a);}
+.esp-doppio-vow .esp-media img:nth-child(even){box-shadow:0 4px 0 -2px var(--esp-c);}
+.esp-doppio-vow .esp-media:has(img+img)::after{content:"";position:absolute;width:1px;top:35px;bottom:13px;left:50%;background:var(--esp-grad);}
+.esp-doppio-vow .esp-copy{padding:31px 34px 27px;}
+.esp-doppio-vow .esp-ornament{margin:0 24px;padding:20px 10px 24px;border-top:1px solid var(--esp-line);}
+.esp-ninth-bar{grid-template-columns:118px minmax(0,1fr);padding:29px;gap:25px 23px;border:1px solid var(--esp-b);border-radius:9px;box-shadow:inset 0 0 0 5px var(--esp-panel),inset 0 0 0 6px var(--esp-line);}
+.esp-ninth-bar .esp-meta{grid-column:2;grid-row:1;justify-content:center;border-bottom:1px solid var(--esp-c);padding-bottom:14px;}
+.esp-ninth-bar .esp-meta>span{font-size:41px;}
+.esp-ninth-bar .esp-meta>a{font-size:9px;letter-spacing:1.5px;}
+.esp-ninth-bar .esp-media{grid-column:1;grid-row:1;flex-direction:column;padding:7px;background:var(--esp-grad);align-self:stretch;}
+.esp-ninth-bar .esp-media img{flex:1 1 auto;width:100%;height:125px;border:0;min-height:90px;}
+.esp-ninth-bar .esp-copy{grid-column:1/-1;padding:23px 10px 0;border-top:1px solid var(--esp-line);}
+.esp-ninth-bar .esp-ornament{grid-column:1/-1;border-top:1px solid var(--esp-line);padding:18px 10px 0;align-items:end;}
+.esp-ninth-bar .esp-gauge{color:var(--esp-c);}
+.esp-ninth-bar:not(:has(.esp-media img)){grid-template-columns:1fr;}
+.esp-ninth-bar:not(:has(.esp-media img)) .esp-meta{grid-column:1;}
+.esp-slow-extraction{max-width:510px;border-top:9px solid var(--esp-a);padding:26px 36px 29px;gap:24px;background:linear-gradient(90deg,transparent calc(100% - 23px),var(--esp-wash2) calc(100% - 23px)),var(--esp-bg);border-bottom:1px dashed var(--esp-c);}
+.esp-slow-extraction .esp-meta{padding-bottom:22px;border-bottom:1px dashed var(--esp-b);gap:18px;}
+.esp-slow-extraction .esp-meta>a{border:1px solid var(--esp-a);padding:5px 9px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:1px;}
+.esp-slow-extraction .esp-meta>span{font-size:44px;}
+.esp-slow-extraction .esp-copy{border-left:1px solid var(--esp-line);padding-left:20px;}
+.esp-slow-extraction .esp-ornament{padding-top:20px;border-top:1px dashed var(--esp-line);}
+.esp-slow-extraction .esp-ornament>span:first-child{color:var(--esp-c);letter-spacing:3px;}
+.esp-comms{max-width:354px;padding:45px 19px 20px;gap:21px 13px;border:3px solid var(--esp-b);border-radius:39px;font:13px/1.75 'Manrope',Arial,sans-serif;box-shadow:inset 0 0 0 3px var(--esp-panel),0 7px 0 -3px var(--esp-line);}
+.esp-comms::before{content:"";position:absolute;top:14px;left:calc(50% - 24px);width:48px;height:6px;background:var(--esp-line);border-radius:10px;}
+.esp-comms .esp-meta{gap:5px;justify-content:center;}
+.esp-comms .esp-meta>a{font:700 13px/1.5 'Manrope',sans-serif;letter-spacing:.4px;text-transform:none;}
+.esp-comms .esp-meta>span{color:var(--esp-muted);font:400 10px/1.5 'Manrope',sans-serif;letter-spacing:.2px;}
+.esp-comms .esp-meta>time{font-size:9px;}
+.esp-comms .esp-media{grid-row:1;align-self:center;}
+.esp-comms .esp-media img{height:58px;border-radius:50%;padding:3px;border-color:var(--esp-a);}
+.esp-comms .esp-copy{grid-column:1/-1;padding-top:19px;border-top:1px solid var(--esp-line);}
+.esp-comms .esp-copy>p{width:fit-content;max-width:93%;margin:0 auto 9px 0;padding:11px 14px;background:var(--esp-wash);border:1px solid var(--esp-line);border-radius:15px 15px 15px 4px;}
+.esp-comms[data-direction="sent"] .esp-copy>p{margin-left:auto;margin-right:0;background:var(--esp-wash2);border-radius:15px 15px 4px 15px;}
+.esp-comms[data-direction="mixed"] .esp-copy>p:nth-child(even){margin-left:auto;margin-right:0;background:var(--esp-wash2);border-radius:15px 15px 4px 15px;}
+.esp-comms .esp-ornament{grid-column:1/-1;}
+.esp-comms .esp-compose{display:flex;width:100%;height:34px;align-items:center;gap:12px;border:1px solid var(--esp-line);border-radius:20px;padding:0 12px;color:var(--esp-muted);font:400 9px/1 'Manrope',Arial,sans-serif;letter-spacing:.4px;text-transform:none;}
+.esp-comms .esp-compose::before{content:"+";color:var(--esp-a);font:400 20px/1 'Manrope',sans-serif;}
+.esp-comms .esp-compose::after{content:"↑";margin-left:auto;display:grid;place-items:center;width:21px;height:21px;border:1px solid var(--esp-c);border-radius:50%;color:var(--esp-c);font-size:16px;}
+.esp-steamline{grid-template-columns:62px minmax(0,1fr);border-color:transparent;background:linear-gradient(var(--esp-bg),var(--esp-bg)) padding-box,var(--esp-grad) border-box;}
+.esp-steamline::before{width:68px;height:17px;left:calc(50% - 34px);top:12px;background:var(--esp-panel);border:1px solid var(--esp-line);}
+.esp-steamline .esp-meta{grid-column:2;grid-row:1;}
+.esp-steamline .esp-media{grid-column:1;flex-direction:column;}
+.esp-steamline .esp-media img{flex:none;width:100%;height:62px;}
+.esp-steamline .esp-copy>p{box-shadow:inset 3px 0 var(--esp-a);border:0;padding-left:16px;}
+.esp-steamline .esp-ornament{position:relative;padding-top:10px;}
+.esp-steamline .esp-ornament::before{content:"";position:absolute;width:14px;height:18px;left:calc(50% - 7px);top:-13px;border-left:1px solid var(--esp-metal);border-right:1px solid var(--esp-metal);border-radius:50%;transform:skew(-15deg);opacity:.55;}
+.esp-dialtone-roast{max-width:328px;grid-template-columns:minmax(0,1fr) 58px;border:3px solid var(--esp-a);border-radius:28px 28px 45px 45px;background:var(--esp-panel);padding:45px 19px 19px;gap:17px 12px;}
+.esp-dialtone-roast .esp-meta{grid-column:1;grid-row:1;padding-left:10px;border-left:2px solid var(--esp-c);}
+.esp-dialtone-roast .esp-media{grid-column:2;flex-direction:column;}
+.esp-dialtone-roast .esp-media img{width:100%;height:56px;border-radius:8px;flex:none;}
+.esp-dialtone-roast .esp-copy{background:var(--esp-bg);border:1px solid var(--esp-b);padding:15px 12px;border-radius:10px;box-shadow:inset 0 0 0 3px var(--esp-panel);}
+.esp-dialtone-roast .esp-copy>p{background:var(--esp-wash2);border:0;border-radius:4px 10px 10px 4px;font-size:12px;}
+.esp-dialtone-roast .esp-ornament{display:grid;gap:17px;}
+.esp-dialtone-roast .esp-ornament::before{content:"";display:block;height:9px;border-block:1px solid var(--esp-line);background:linear-gradient(90deg,var(--esp-a),var(--esp-panel) 15% 85%,var(--esp-c));border-radius:4px;}
+.esp-dialtone-roast .esp-keypad{height:56px;display:block;background:radial-gradient(ellipse 21px 6px at center,var(--esp-line) 0 96%,transparent 100%) center/33.333% 18px;}
+.esp-nightshift-dm{max-width:355px;padding:37px 16px 21px;gap:15px;border-radius:38px;background:linear-gradient(150deg,var(--esp-wash),transparent 45%,var(--esp-wash2)),var(--esp-bg);}
+.esp-nightshift-dm .esp-meta{padding:10px 9px 8px;align-items:center;text-align:center;gap:9px;}
+.esp-nightshift-dm .esp-meta>time{font:400 68px/1 'Bodoni Moda',Georgia,serif;letter-spacing:-4px;color:var(--esp-c);order:-1;}
+.esp-nightshift-dm .esp-meta>a{font-size:11px;color:var(--esp-a);}
+.esp-nightshift-dm .esp-media{grid-row:auto;padding:0 65px;}
+.esp-nightshift-dm .esp-media img{height:74px;}
+.esp-nightshift-dm .esp-copy{border:0;padding:0;}
+.esp-nightshift-dm .esp-copy>p{width:100%;max-width:100%;background:var(--esp-bg);border-left:3px solid var(--esp-a);border-radius:12px;padding:14px 16px;}
+.esp-nightshift-dm .esp-copy>p::before{content:"message";display:block;font:500 8px/1.2 'IBM Plex Mono',monospace;letter-spacing:2px;color:var(--esp-c);text-transform:uppercase;margin-bottom:8px;}
+.esp-nightshift-dm .esp-ornament{justify-content:center;padding-top:10px;}
+.esp-nightshift-dm .esp-homebar{display:block;width:90px;height:4px;border-radius:4px;background:var(--esp-grad);}
+.esp-portafilter-ping{max-width:380px;grid-template-columns:68px minmax(0,1fr);padding:34px 18px 21px;border-width:2px;border-radius:13px 13px 23px 23px;box-shadow:inset 0 0 0 4px var(--esp-panel),0 5px 0 -2px var(--esp-line);}
+.esp-portafilter-ping::before{width:65px;height:3px;top:15px;left:calc(50% - 32px);background:repeating-linear-gradient(90deg,var(--esp-b) 0 3px,transparent 3px 6px);}
+.esp-portafilter-ping .esp-meta{grid-column:2;grid-row:1;}
+.esp-portafilter-ping .esp-media{grid-column:1;flex-direction:column;}
+.esp-portafilter-ping .esp-media img{height:66px;width:100%;flex:none;border-radius:4px;padding:2px;}
+.esp-portafilter-ping .esp-copy{border:1px solid var(--esp-line);border-radius:5px;padding:14px 11px;background:var(--esp-panel);}
+.esp-portafilter-ping .esp-copy>p{border:0;border-radius:2px;background:var(--esp-bg);box-shadow:2px 2px var(--esp-line);}
+.esp-portafilter-ping .esp-ornament{display:flex;gap:11px;}
+.esp-portafilter-ping .esp-qwerty{display:block;width:100%;height:35px;background:linear-gradient(90deg,var(--esp-line) 0 76%,transparent 76%) center/10% 100%;border-block:6px double var(--esp-bg);border-radius:3px;opacity:.7;}
+.esp-portafilter-ping .esp-control{display:block;flex:0 0 30px;width:30px;height:30px;border:5px double var(--esp-c);border-radius:50%;}
+.esp-last-call{grid-template-columns:1fr;padding:36px 15px 19px;border-radius:33px;border-width:2px;gap:0;border-top:6px solid var(--esp-a);}
+.esp-last-call .esp-meta{grid-row:2;padding:19px 11px 21px;border-bottom:1px solid var(--esp-c);}
+.esp-last-call .esp-meta>a{font:500 28px/1.25 'Bodoni Moda',Georgia,serif;letter-spacing:-.5px;}
+.esp-last-call .esp-meta>time{position:absolute;right:11px;top:0;transform:translateY(-50%);padding:5px 8px;border:1px solid var(--esp-c);background:var(--esp-bg);border-radius:12px;color:var(--esp-c);}
+.esp-last-call .esp-media{grid-row:1;gap:3px;}
+.esp-last-call .esp-media img{height:143px;border:0;padding:0;border-radius:15px 15px 0 0;}
+.esp-last-call .esp-copy{grid-row:3;border:0;padding:21px 5px;}
+.esp-last-call .esp-copy>p{border:0;border-bottom:1px solid var(--esp-line);border-radius:0 13px 13px 13px;background:var(--esp-wash2);}
+.esp-last-call .esp-ornament{grid-row:4;}
+.esp-last-call:not(:has(.esp-media img)) .esp-meta>time{position:static;transform:none;width:fit-content;padding:3px 7px;}
+.esp-comms:is(.esp-steamline,.esp-dialtone-roast,.esp-portafilter-ping):not(:has(.esp-media img)){grid-template-columns:1fr;}
+.esp-comms:is(.esp-steamline,.esp-dialtone-roast,.esp-portafilter-ping):not(:has(.esp-media img)) .esp-meta{grid-column:1;}
+.esp-bud{max-width:415px;padding:24px;gap:17px;font:13px/1.85 'Manrope',Arial,sans-serif;}
+.esp-bud .esp-meta{gap:6px;}
+.esp-bud .esp-meta>a{font-size:9px;letter-spacing:1.5px;}
+.esp-bud .esp-meta>span{font-size:28px;line-height:1.2;letter-spacing:-.6px;}
+.esp-bud .esp-media img{height:58px;}
+.esp-bud .esp-copy p{margin-bottom:.9em;}
+.esp-bud .esp-ornament{font-size:7px;letter-spacing:1.5px;}
+.esp-demitasse{grid-template-columns:64px minmax(0,1fr);gap:15px 17px;padding:25px;border-radius:7px 7px 33px 33px;border:1px solid var(--esp-a);border-bottom:4px solid var(--esp-c);}
+.esp-demitasse .esp-meta{grid-column:2;grid-row:1;justify-content:center;}
+.esp-demitasse .esp-media{grid-column:1;grid-row:1;flex-direction:column;align-self:center;}
+.esp-demitasse .esp-media img{width:64px;height:64px;flex:none;padding:4px;border-radius:50%;border-color:var(--esp-c);}
+.esp-demitasse .esp-copy{grid-column:1/-1;border-top:1px solid var(--esp-line);padding-top:16px;}
+.esp-demitasse .esp-ornament{grid-column:1/-1;justify-content:center;gap:20px;padding-bottom:4px;}
+.esp-demitasse .esp-cup{width:20px;height:15px;flex-basis:20px;}
+.esp-demitasse:not(:has(.esp-media img)){grid-template-columns:1fr;}
+.esp-demitasse:not(:has(.esp-media img)) .esp-meta{grid-column:1;}
+.esp-ristretto{max-width:370px;border-top:4px solid var(--esp-a);border-bottom:1px solid var(--esp-c);padding:20px 26px 21px;background:linear-gradient(90deg,var(--esp-wash2) 0 6px,transparent 6px),var(--esp-bg);gap:14px;}
+.esp-ristretto .esp-meta{flex-direction:row;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px dotted var(--esp-line);padding-bottom:12px;}
+.esp-ristretto .esp-meta>a{max-width:43%;}
+.esp-ristretto .esp-meta>span{font:400 12px/1.5 'IBM Plex Mono',monospace;letter-spacing:0;text-align:right;max-width:57%;}
+.esp-ristretto .esp-ornament{justify-content:flex-end;}
+.esp-ristretto .esp-bean{width:10px;height:15px;flex-basis:10px;}
+.esp-ristretto .esp-bean::after{left:3px;top:0;height:12px;}
+.esp-crema-kiss{grid-template-columns:minmax(0,1fr) 81px;padding:22px 22px 21px;gap:13px 18px;border:1px solid var(--esp-b);border-left:6px solid var(--esp-a);}
+.esp-crema-kiss .esp-meta{grid-column:1;grid-row:1;}
+.esp-crema-kiss .esp-copy{grid-column:1;grid-row:2;}
+.esp-crema-kiss .esp-media{grid-column:2;grid-row:1/3;flex-direction:column;align-self:stretch;border-left:1px solid var(--esp-c);padding-left:7px;}
+.esp-crema-kiss .esp-media img{flex:1 1 auto;min-height:84px;width:100%;height:110px;border:0;}
+.esp-crema-kiss .esp-ornament{grid-column:1/-1;border-top:1px solid var(--esp-line);padding-top:14px;}
+.esp-crema-kiss:not(:has(.esp-media img)){grid-template-columns:1fr;}
+.esp-beanmark{max-width:385px;border:0;border-block:1px solid var(--esp-b);padding:24px 28px 23px;gap:14px;background:radial-gradient(circle at 100% 0,var(--esp-wash) 0 45px,transparent 46px),var(--esp-bg);}
+.esp-beanmark .esp-meta{padding-right:20px;}
+.esp-beanmark .esp-meta>span{font-style:italic;font-size:32px;color:var(--esp-c);}
+.esp-beanmark .esp-copy{border-left:2px solid var(--esp-a);padding-left:16px;}
+.esp-beanmark .esp-ornament{justify-content:flex-end;gap:12px;}
+.esp-one-more-sip{max-width:405px;padding:20px 23px 22px;border:1px solid var(--esp-line);border-radius:0;gap:14px;background:linear-gradient(0deg,var(--esp-wash2) 0 12px,transparent 12px),var(--esp-bg);}
+.esp-one-more-sip .esp-meta{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:16px;align-items:center;padding-bottom:14px;border-bottom:3px double var(--esp-b);}
+.esp-one-more-sip .esp-meta>span{font-size:25px;text-align:right;}
+.esp-one-more-sip .esp-ornament{justify-content:space-between;border-top:1px dashed var(--esp-line);padding-top:12px;}
+.esp-one-more-sip .esp-ornament>span:last-child{display:block;width:45px;height:12px;background:repeating-linear-gradient(90deg,var(--esp-c) 0 1px,transparent 1px 3px,var(--esp-a) 3px 5px,transparent 5px 7px);opacity:.65;}
+@media(max-width:560px){.esp-thread{max-width:100%;}.esp .esp-meta>span{overflow-wrap:anywhere;}.esp-afterhours{padding-inline:15px;}.esp-afterhours .esp-meta>span{font-size:46px;}.esp-afterhours .esp-media img{height:195px;}.esp-crema-obscura{padding:24px 23px 23px 44px;}.esp-crema-obscura .esp-meta>span{font-size:40px;}.esp-doppio-vow .esp-meta{padding:23px;}.esp-doppio-vow .esp-copy{padding:26px;}.esp-doppio-vow .esp-media{gap:13px;padding:16px 16px 0;}.esp-doppio-vow .esp-media img{height:175px;}.esp-ninth-bar{padding:23px;grid-template-columns:92px minmax(0,1fr);gap:20px 17px;}.esp-ninth-bar .esp-meta>span{font-size:34px;}.esp-ninth-bar .esp-copy{padding-inline:0;}.esp-slow-extraction{padding:24px;}.esp-slow-extraction .esp-meta>span{font-size:37px;}.esp-crema-kiss{padding:20px 17px;grid-template-columns:minmax(0,1fr) 65px;gap:13px;}}
+@media(max-width:360px){.esp-thread{font-size:13px;}.esp-ninth-bar{grid-template-columns:75px minmax(0,1fr);padding:20px;gap:16px 12px;}.esp-ninth-bar .esp-meta>span{font-size:29px;}.esp-bud{padding:20px;}.esp-crema-kiss{grid-template-columns:minmax(0,1fr) 56px;padding:18px;}.esp .esp-ornament{letter-spacing:1px;}.esp-ristretto .esp-meta,.esp-one-more-sip .esp-meta{display:flex;flex-direction:column;align-items:flex-start;gap:7px;}.esp-ristretto .esp-meta>a,.esp-ristretto .esp-meta>span{max-width:100%;text-align:left;}}
+@media(forced-colors:active){.esp .esp-copy :is(b,strong,i,em,u){background:none;color:LinkText;-webkit-text-fill-color:LinkText;}.esp{border-color:CanvasText;}}
+
+</style>
+<style>
+:root{--ui-bg:#181a19;--ui-panel:#222422;--ui-raised:#2a2d29;--ui-ink:#e5e4db;--ui-muted:#a8aaa1;--ui-line:#41443e;--ui-accent:#c6ab85;--ui-field:#1b1e1b;color-scheme:dark;}
+html[color-mode="light"]{--ui-bg:#f0f0e9;--ui-panel:#fafaf4;--ui-raised:#e7e8de;--ui-ink:#30372e;--ui-muted:#6f7669;--ui-line:#d4d7c9;--ui-accent:#79613e;--ui-field:#fffef9;color-scheme:light;}
+@media(prefers-color-scheme:light){html:not([color-mode]){--ui-bg:#f0f0e9;--ui-panel:#fafaf4;--ui-raised:#e7e8de;--ui-ink:#30372e;--ui-muted:#6f7669;--ui-line:#d4d7c9;--ui-accent:#79613e;--ui-field:#fffef9;color-scheme:light;}}
+body{margin:0;background:var(--ui-bg);color:var(--ui-ink);font:13px/1.6 'Manrope',Arial,sans-serif;}
+body>header,body>main,body>footer{box-sizing:border-box;}body>main *{box-sizing:border-box;}
+a{color:var(--ui-accent);text-underline-offset:4px;}button,input,select,textarea{font:inherit;}button,select{cursor:pointer;}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--ui-accent);outline-offset:3px;}
+.collection-header{max-width:1580px;margin:auto;padding:28px 46px 0;}
+.collection-eyebrow,.collection-subtitle{display:flex;justify-content:space-between;gap:20px;color:var(--ui-muted);font:10px/1.5 'IBM Plex Mono',monospace;letter-spacing:1.5px;}
+.collection-eyebrow{padding-bottom:21px;border-bottom:1px solid var(--ui-line);text-transform:uppercase;}.collection-eyebrow a{text-decoration:none;}
+.collection-title{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:26px 0 20px;}.collection-title h1{font:400 clamp(64px,8.5vw,126px)/1 'Bodoni Moda',Georgia,serif;letter-spacing:-7px;margin:0;color:var(--ui-accent);display:flex;align-items:center;gap:25px;}.collection-title p{font:400 12px/2 'IBM Plex Mono',monospace;letter-spacing:4px;text-transform:uppercase;margin:0 5px 0 0;color:var(--ui-muted);}
+.cover-bean{position:relative;display:block;width:27px;height:40px;border:1px solid currentColor;border-radius:50%;transform:rotate(30deg);margin-top:20px;}.cover-bean::after{content:"";position:absolute;left:10px;top:2px;width:8px;height:33px;border-left:1px solid currentColor;border-radius:50%;}
+.collection-subtitle{padding:0 0 25px;border-bottom:3px double var(--ui-line);letter-spacing:.4px;}.collection-subtitle a{text-decoration:none;}
+main{display:grid;grid-template-columns:233px minmax(0,1fr);gap:36px;max-width:1580px;margin:auto;padding:33px 46px 50px;align-items:start;}
+.design-menu{position:sticky;top:20px;}.menu-heading{display:flex;justify-content:space-between;text-transform:uppercase;font:10px/1.5 'IBM Plex Mono',monospace;letter-spacing:2px;padding:0 0 18px;color:var(--ui-accent);}.design-menu details{border-top:1px solid var(--ui-line);padding:14px 0 12px;}.design-menu summary{font:500 21px/1.4 'Bodoni Moda',Georgia,serif;cursor:pointer;list-style:none;}.design-menu summary span{display:block;font:9px/1.5 'Manrope',sans-serif;letter-spacing:.2px;color:var(--ui-muted);margin:3px 0 12px;}.design-menu button{display:grid;grid-template-columns:20px minmax(0,1fr) auto;align-items:center;gap:9px;width:100%;padding:10px 7px;background:none;border:1px solid transparent;border-radius:2px;color:var(--ui-ink);text-align:left;font-size:11px;}.design-menu button>span:first-child{font:9px 'IBM Plex Mono',monospace;color:var(--ui-muted);}.design-menu button small{font:8px 'IBM Plex Mono',monospace;color:var(--ui-muted);}.design-menu button:hover{background:var(--ui-raised);}.design-menu button[aria-pressed="true"]{border-color:var(--ui-accent);background:var(--ui-raised);color:var(--ui-accent);}.readme-link{display:block;border-top:1px solid var(--ui-line);padding-top:18px;margin-top:8px;font-size:10px;text-decoration:none;}
+.workbench{min-width:0;}.selection-bar{display:flex;flex-wrap:wrap;gap:12px;border-bottom:1px solid var(--ui-line);padding-bottom:22px;}.selection-bar label{flex:1 1 110px;font-size:9px;letter-spacing:.7px;text-transform:uppercase;color:var(--ui-muted);}.selection-bar label:first-child{flex:1.7 1 185px;}.selection-bar select{width:100%;margin-top:6px;padding:9px 8px;border:1px solid var(--ui-line);background:var(--ui-panel);color:var(--ui-ink);border-radius:3px;font-size:11px;}
+.design-intro{padding:24px 0 23px;}.design-intro h2{font:400 30px/1.25 'Bodoni Moda',Georgia,serif;margin:0 0 9px;color:var(--ui-accent);}.design-intro p{font-size:11px;line-height:1.7;margin:0;color:var(--ui-muted);max-width:640px;}
+.editor-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(230px,1fr);gap:24px;align-items:start;}.preview-column{min-width:0;}.preview-label{display:flex;justify-content:space-between;font:9px/1.5 'IBM Plex Mono',monospace;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:12px;color:var(--ui-muted);}.forum-surface{padding:18px 20px 23px;background:var(--ui-raised);border:1px solid var(--ui-line);border-radius:4px;min-height:330px;}#preview-post{max-width:550px;margin:auto;}#preview-post .esp{margin:0 auto;}.preview-caption{font-size:10px;color:var(--ui-muted);line-height:1.6;margin:12px 2px;}
+.fields-column{min-width:0;background:var(--ui-panel);border:1px solid var(--ui-line);padding:20px;border-radius:4px;}.fields-column h3,.code-panel h3{font:400 22px/1.3 'Bodoni Moda',Georgia,serif;margin:0 0 18px;color:var(--ui-accent);}.fields-column label{display:block;font-size:10px;color:var(--ui-muted);margin-bottom:13px;}.fields-column input,.fields-column textarea,.fields-column select{display:block;width:100%;min-width:0;background:var(--ui-field);border:1px solid var(--ui-line);border-radius:3px;color:var(--ui-ink);padding:9px 10px;margin-top:5px;font-size:11px;}.fields-column textarea{font:11px/1.7 'IBM Plex Mono',monospace;resize:vertical;min-height:170px;}#comms-fields{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;}#comms-fields[hidden]{display:none;}.image-heading{display:flex;gap:10px;align-items:center;justify-content:space-between;border-top:1px solid var(--ui-line);padding-top:15px;margin-top:18px;}.image-heading h4{font:500 11px/1.5 'Manrope',sans-serif;margin:0;}.image-heading button,.image-field button{color:var(--ui-accent);background:none;border:0;padding:4px 0;font-size:10px;}.image-field{display:flex;gap:8px;align-items:end;margin-top:9px;}.image-field label{flex:1;min-width:0;margin:0;}.image-field button{flex:0 0 auto;margin-bottom:7px;font-size:9px;}.field-note{font-size:10px;line-height:1.7;color:var(--ui-muted);margin:10px 0 17px;}.writing-meta{font:9px/1.6 'IBM Plex Mono',monospace;color:var(--ui-accent);margin-top:-6px;}#url-status{font-size:10px;color:var(--ui-accent);}
+.code-panel{margin-top:28px;border-top:1px solid var(--ui-line);padding-top:23px;}.code-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;}.code-heading h3{margin:0 0 5px;}.code-heading p{font-size:10px;color:var(--ui-muted);margin:0;}.code-actions{display:flex;gap:8px;}.code-actions button{padding:10px 13px;border:1px solid var(--ui-line);border-radius:3px;background:var(--ui-panel);color:var(--ui-ink);font-size:10px;}.code-actions #copy-button{background:var(--ui-accent);border-color:var(--ui-accent);color:var(--ui-bg);font-weight:700;}.code-label{display:block;margin:17px 0 7px;font:9px/1.5 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:1px;color:var(--ui-muted);}#copy-code{display:block;width:100%;resize:vertical;padding:16px;background:var(--ui-field);color:var(--ui-ink);border:1px solid var(--ui-line);border-radius:3px;font:11px/1.7 'IBM Plex Mono',monospace;}#copy-status{font-size:11px;color:var(--ui-accent);margin:10px 0;}#original-snippet{display:inline-block;font-size:10px;margin-top:10px;}
+.collection-footer{max-width:1488px;margin:0 auto;display:flex;justify-content:space-between;gap:20px;padding:25px 0 35px;border-top:1px solid var(--ui-line);font:9px/1.6 'IBM Plex Mono',monospace;letter-spacing:1px;color:var(--ui-muted);}
+@media(min-width:1700px){.editor-grid{grid-template-columns:minmax(0,1.8fr) minmax(240px,1fr);}}
+@media(max-width:1200px){main{grid-template-columns:190px minmax(0,1fr);gap:26px;padding-inline:30px;}.collection-header{padding-inline:30px;}.editor-grid{grid-template-columns:minmax(0,1fr);}.fields-column{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;}.fields-column h3,.fields-column .image-heading,.fields-column #image-fields,.fields-column .field-note,.fields-column #url-status,.fields-column .writing-meta,.fields-column>label:has(textarea){grid-column:1/-1;}.fields-column #comms-fields{grid-column:1/-1;}.fields-column .image-heading{margin-top:8px;}.forum-surface{padding:24px;}.collection-footer{margin-inline:30px;}}
+@media(max-width:760px){.collection-header{padding:22px 20px 0;}.collection-title h1{font-size:78px;letter-spacing:-5px;gap:17px;}.collection-title p{font-size:9px;letter-spacing:2px;}.cover-bean{width:18px;height:28px;}.cover-bean::after{left:6px;height:22px;}.collection-eyebrow{font-size:8px;letter-spacing:.7px;}.collection-subtitle{font-size:9px;gap:15px;}main{display:block;padding:23px 20px 35px;}.design-menu{position:static;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:28px;}.menu-heading,.readme-link{grid-column:1/-1;}.menu-heading{padding-bottom:0;}.design-menu button{grid-template-columns:17px minmax(0,1fr);font-size:10px;gap:5px;padding:8px 5px;}.design-menu button small{display:none;}.design-menu summary{font-size:20px;}.design-menu summary span{font-size:8px;}.readme-link{margin-top:0;padding-top:10px;}.forum-surface{padding:20px;}.collection-footer{margin-inline:20px;}.selection-bar{gap:10px;}.selection-bar label{flex-basis:calc(50% - 10px);}.selection-bar label:first-child{flex-basis:calc(50% - 10px);}.design-intro h2{font-size:27px;}}
+@media(max-width:450px){.collection-title{align-items:end;}.collection-title h1{font-size:61px;letter-spacing:-4px;gap:11px;}.collection-title p{font-size:7px;letter-spacing:1px;margin-bottom:5px;}.cover-bean{display:none;}.collection-subtitle,.collection-footer{flex-direction:column;gap:8px;}.collection-eyebrow span{max-width:90px;text-align:right;}.design-menu{gap:9px;}.design-menu summary span{min-height:25px;}.fields-column{display:block;padding:17px;}.forum-surface{padding:12px 8px;}.code-heading{align-items:start;}.code-actions{flex-direction:column;}.code-actions button{padding:7px 10px;white-space:nowrap;}.code-heading p{max-width:170px;}.selection-bar label:first-child{flex-basis:100%;}}
+
+</style>
 </head>
 <body>
 <header class="collection-header">
 <div class="collection-eyebrow"><a href="https://github.com/lexdoescodingnow/templates/tree/main/espresso">The flavour collection</a><span>15 designs · Vol. Espresso</span></div>
 <div class="collection-title"><h1>Espresso<span class="cover-bean" aria-hidden="true"></span></h1><p>Some flavours<br>stay with you.</p></div>
-<div class="collection-subtitle"><span>Five threads. Five comms. Five little replies.</span><a href="espresso-collection.zip" download>Download collection ↗</a></div>
+<div class="collection-subtitle"><span>Five threads. Five comms. Five little replies.</span><a href="https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/espresso/espresso-collection.zip" download>Download collection ↗</a></div>
 </header>
 <main>
 <aside class="design-menu" aria-label="Template collection">
@@ -20,7 +238,7 @@
 <details open><summary>Threads <span>Long-form writing</span></summary><div id="menu-thread"></div></details>
 <details open><summary>Comms <span>On the other end</span></summary><div id="menu-comms"></div></details>
 <details open><summary>Buds <span>A hundred words or less</span></summary><div id="menu-bud"></div></details>
-<a class="readme-link" href="README.md">Posting &amp; formatting guide ↗</a>
+<a class="readme-link" href="https://github.com/lexdoescodingnow/templates/blob/main/espresso/README.md">Posting &amp; formatting guide ↗</a>
 </aside>
 <section class="workbench" aria-label="Template editor and preview">
 <div class="selection-bar"><label>Design<select id="design-select"></select></label><label>Theme<select id="mode-select"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><label>Member palette<select id="palette-select"><option value="rose">Rose / dusk / sea</option><option value="juniper">Juniper / rain / lilac</option><option value="ember">Ember / rose / slate</option></select></label><label>Preview width<select id="width-select"><option value="550px">Full</option><option value="320px">320 px</option><option value="280px">280 px</option></select></label></div>
@@ -40,10 +258,155 @@
 <p class="field-note">Use a paragraph for each message. Plain text, &lt;p&gt; paragraphs and [b], [i], [u] formatting work here. Your edits stay when switching designs in this tab.</p>
 </section>
 </div>
-<section class="code-panel" aria-label="Copyable JCink code"><div class="code-heading"><div><h3>Your posting code</h3><p>Copy the entire block directly into JCink.</p></div><div class="code-actions"><button id="download-button" type="button">Save .txt</button><button id="copy-button" type="button">Copy code ↗</button></div></div><p id="copy-status" role="status" aria-live="polite"></p><label class="code-label" for="copy-code">Complete [dohtml] block</label><textarea id="copy-code" rows="10" readonly spellcheck="false"></textarea><a id="original-snippet" href="espresso-afterhours-thread-01.txt">Open the original snippet ↗</a></section>
+<section class="code-panel" aria-label="Copyable JCink code"><div class="code-heading"><div><h3>Your posting code</h3><p>Copy the entire block directly into JCink.</p></div><div class="code-actions"><button id="download-button" type="button">Save .txt</button><button id="copy-button" type="button">Copy code ↗</button></div></div><p id="copy-status" role="status" aria-live="polite"></p><label class="code-label" for="copy-code">Complete [dohtml] block</label><textarea id="copy-code" rows="10" readonly spellcheck="false"></textarea><a id="original-snippet" href="https://github.com/lexdoescodingnow/templates/blob/main/espresso/espresso-afterhours-thread-01.txt">Open the original snippet ↗</a></section>
 </section>
 </main>
 <footer class="collection-footer"><span>Espresso · A love that lingers.</span><span>Member colours. Neutral pages. Small rituals.</span></footer>
-<noscript>This editor needs JavaScript. All fifteen ready-to-post text files are linked from the <a href="README.md">collection guide</a>.</noscript>
+<noscript>This editor needs JavaScript. All fifteen ready-to-post text files are linked from the <a href="https://github.com/lexdoescodingnow/templates/blob/main/espresso/README.md">collection guide</a>.</noscript>
+<script>
+const ESPRESSO_CSS = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-v1.css';
+const ESPRESSO_GIFS = [
+  'https://64.media.tumblr.com/eef9387aa15a193f58a6d4c3c9b2e3b4/4d0f68c67008821a-b7/s540x810/05a3fa51d18add7e86bfd22ecc170c3d26dd514b.gifv',
+  'https://64.media.tumblr.com/32f19ce5b6bd5578e8d1197e81d46152/487924940000d932-8e/s540x810/3a37ef8214bdbb89067a27e4b0c6793c487c21f2.gifv'
+];
+const ESPRESSO_COPY = {
+  thread: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae tellus sit amet turpis finibus dignissim. <b>Aliquam erat volutpat.</b> Donec sed orci sed sapien consequat facilisis. Aenean a ligula eu nibh consequat lacinia.</p>\n<p>Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Integer vel ipsum vitae.</i> Sed fermentum libero et risus consectetur, vel malesuada velit pellentesque. Curabitur dignissim dapibus lorem, eget pretium justo volutpat et.</p>\n<p>Fusce ullamcorper, libero id molestie volutpat, sapien metus aliquet velit, eu scelerisque lacus dolor sed nibh. <u>Morbi tempus neque sed.</u> Praesent sit amet nibh non lectus vestibulum tincidunt. Nam nec nibh at lacus luctus elementum.</p>',
+  comms: '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>\n<p>Aliquam erat volutpat. <i>Integer vel ipsum vitae.</i></p>\n<p><u>Donec consequat.</u> Sed fermentum libero et risus consectetur.</p>',
+  bud: '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean a ligula eu nibh consequat lacinia. <i>Aliquam erat volutpat.</i> Sed fermentum libero et risus consectetur. <u>Donec consequat.</u> Praesent sit amet nibh non lectus vestibulum tincidunt.</p>'
+};
+const ESPRESSO_DESIGNS = [
+  {name:'Afterhours',slug:'afterhours',type:'thread',number:'01',gifs:1,description:'A cinematic café poster: one wide character still, sweeping serif title and a fine metal colophon.',ornament:'<span>espresso</span><span class="esp-bean"></span><span>after hours</span>'},
+  {name:'Crema Obscura',slug:'crema-obscura',type:'thread',number:'02',gifs:0,description:'An image-free café menu with a vertical wordmark, italic title and a generous literary page.',ornament:'<span>house blend</span><span class="esp-bean"></span><span>slowly savoured</span>'},
+  {name:'Doppio Vow',slug:'doppio-vow',type:'thread',number:'03',gifs:2,description:'Two character stills in a twin-shot frame, a centred title and a long, uncluttered writing area.',ornament:'<span>double shot</span><span class="esp-cup"></span><span>one promise</span>'},
+  {name:'Ninth Bar',slug:'ninth-bar',type:'thread',number:'04',gifs:1,description:'A precision espresso-machine panel with one inset portrait and a small pressure gauge.',ornament:'<span>espresso<br>under pressure</span><span class="esp-gauge"></span><span>09 bar</span>'},
+  {name:'Slow Extraction',slug:'slow-extraction',type:'thread',number:'05',gifs:0,description:'An image-free barista order sheet with a stamped name, ruled writing and perforated details.',ornament:'<span>01 / espresso</span><span class="esp-bean"></span><span>take your time</span>'},
+  {name:'Steamline',slug:'steamline',type:'comms',number:'01',gifs:1,description:'A modern phone with a single round contact portrait, member-coloured bubbles and a tiny steam detail.',ornament:'<span class="esp-compose">Message</span>'},
+  {name:'Dialtone Roast',slug:'dialtone-roast',type:'comms',number:'02',gifs:1,description:'A nostalgic flip phone with a framed conversation screen, metal hinge and tactile keypad.',ornament:'<span class="esp-keypad"></span>'},
+  {name:'Nightshift DM',slug:'nightshift-dm',type:'comms',number:'03',gifs:0,description:'An image-free lock screen with a large café clock and incoming message notifications.',ornament:'<span class="esp-homebar"></span>'},
+  {name:'Portafilter Ping',slug:'portafilter-ping',type:'comms',number:'04',gifs:1,description:'A compact keyboard handset with a square contact image, LCD-style conversation and trackball.',ornament:'<span class="esp-qwerty"></span><span class="esp-control"></span>'},
+  {name:'Last Call',slug:'last-call',type:'comms',number:'05',gifs:1,description:'A portrait-led messenger with a wide contact cover, clock chip and simple received or sent bubbles.',ornament:'<span class="esp-compose">Message</span>'},
+  {name:'Demitasse',slug:'demitasse',type:'bud',number:'01',gifs:1,description:'A small cup-shaped reply with one round portrait and a delicate saucer mark.',ornament:'<span>espresso</span><span class="esp-cup"></span><span>a little closer</span>'},
+  {name:'Ristretto',slug:'ristretto',type:'bud',number:'02',gifs:0,description:'A concentrated, image-free reply with a compact monospaced heading and a single bean.',ornament:'<span>short &amp; strong</span><span class="esp-bean"></span>'},
+  {name:'Crema Kiss',slug:'crema-kiss',type:'bud',number:'03',gifs:1,description:'A short reply beside a narrow character still, framed with a member-coloured edge.',ornament:'<span>espresso</span><span>soft finish</span>'},
+  {name:'Beanmark',slug:'beanmark',type:'bud',number:'04',gifs:0,description:'An open, image-free note with an italic heading, a tinted corner and a small coffee-bean signature.',ornament:'<span>leave a trace</span><span class="esp-bean"></span>'},
+  {name:'One More Sip',slug:'one-more-sip',type:'bud',number:'05',gifs:0,description:'A tiny café receipt with split metadata, a perforated sign-off and a graphic till mark.',ornament:'<span>one more sip</span><span></span>'}
+];
+const espEscape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const espDefault = design => ({name:'[name]',url:'[url]',text:'[text]',time:'23:08',direction:'received',body:ESPRESSO_COPY[design.type],images:ESPRESSO_GIFS.slice(0,design.gifs)});
+const espFilename = design => `espresso-${design.slug}-${design.type}-${design.number}.txt`;
+function espMarkup(design, state) {
+  const direction = design.type === 'comms' ? ` data-direction="${espEscape(state.direction)}"` : '';
+  const meta = `<div class="esp-meta">\n<a href="${espEscape(state.url)}">${espEscape(state.name)}</a>\n<span>${espEscape(state.text)}</span>${design.type === 'comms' ? `\n<time>${espEscape(state.time)}</time>` : ''}\n</div>`;
+  const images = state.images.filter(value => value.trim()).map((url, index) => `<img src="${espEscape(url.trim())}" alt="${index ? 'Companion portrait' : 'Character portrait'}" style="object-position:50% 40%;">`).join('\n');
+  return `<div class="esp esp-${design.type} esp-${design.slug}"${direction}>\n${meta}${images ? `\n\n<div class="esp-media">\n${images}\n</div>` : ''}\n\n<div class="esp-copy">\n${state.body}\n</div>\n\n<div class="esp-ornament" aria-hidden="true">${design.ornament}</div>\n</div>`;
+}
+function espSnippet(design, state) {return `[dohtml]\n${espMarkup(design,state)}\n\n<link rel="stylesheet" href="${ESPRESSO_CSS}">\n[/dohtml]\n`;}
+if (typeof module !== 'undefined') module.exports = {ESPRESSO_DESIGNS,ESPRESSO_COPY,ESPRESSO_CSS,espDefault,espFilename,espMarkup,espSnippet};
+if (typeof document !== 'undefined') {
+  const byId = id => document.getElementById(id);
+  const states = new Map();
+  let current = ESPRESSO_DESIGNS[0];
+  const fields = ['name','url','text','time','direction','body'];
+  const safeURL = (value, placeholder=false) => {
+    const text = value.trim();
+    if (placeholder && text === '[url]') return text;
+    if (placeholder && text.startsWith('#')) return text;
+    try {const url=new URL(text); return ['https:','http:'].includes(url.protocol) ? text : '';} catch {return '';}
+  };
+  function cleanBody(raw) {
+    let source = raw.replace(/\[(\/?)(b|i|u|strong|em)\]/gi, '<$1$2>');
+    if (!/<\/?(?:p|blockquote)\b/i.test(source)) source = source.trim().split(/\n\s*\n/).map(p=>`<p>${p.replace(/\n/g,'<br>')}</p>`).join('\n');
+    const fragment = document.createElement('template');
+    fragment.innerHTML=source;
+    fragment.content.querySelectorAll('script,style,iframe,object,embed,svg,math,link,meta').forEach(el=>el.remove());
+    const allowed = new Set(['P','BR','B','STRONG','I','EM','U','BLOCKQUOTE','A']);
+    [...fragment.content.querySelectorAll('*')].reverse().forEach(el=>{
+      if (!allowed.has(el.tagName)) {el.replaceWith(...el.childNodes);return;}
+      const href = el.tagName==='A' ? safeURL(el.getAttribute('href') || '',true) : '';
+      [...el.attributes].forEach(attr=>el.removeAttribute(attr.name));
+      if(href) el.setAttribute('href',href);
+    });
+    const walker=document.createTreeWalker(fragment.content,NodeFilter.SHOW_COMMENT);let node;const comments=[];
+    while((node=walker.nextNode())) comments.push(node);
+    comments.forEach(node=>node.remove());
+    return fragment.innerHTML.trim();
+  }
+  function stateNow() {
+    const state={};
+    fields.forEach(key=>state[key]=byId(`edit-${key}`).value);
+    state.images=[...byId('image-fields').querySelectorAll('input')].map(input=>input.value);
+    return state;
+  }
+  function cleanState(state) {return {...state,url:safeURL(state.url,true),body:cleanBody(state.body),images:state.images.map(url=>safeURL(url))};}
+  function render() {
+    const state=stateNow();states.set(current.slug,state);
+    const clean=cleanState(state);
+    byId('preview-post').innerHTML=espMarkup(current,clean);
+    byId('copy-code').value=espSnippet(current,clean);
+    const words=byId('preview-post').querySelector('.esp-copy').textContent.trim().split(/\s+/).filter(Boolean).length;
+    byId('word-count').textContent=`${words} words${current.type==='bud' ? ' · buds aim for 100 or fewer' : ''}`;
+    byId('design-description').textContent=current.description;
+    byId('selected-name').textContent=`${current.name} / ${current.type==='bud' ? 'Bud' : current.type==='comms' ? 'Comms' : 'Thread'} ${current.number}`;
+    byId('original-snippet').href='https://github.com/lexdoescodingnow/templates/blob/main/espresso/'+espFilename(current);
+    byId('copy-status').textContent='';
+    byId('media-note').textContent=clean.images.filter(Boolean).length ? `${clean.images.filter(Boolean).length} GIF${clean.images.filter(Boolean).length===1?'':'s'}` : 'No GIFs';
+    byId('url-status').textContent=(state.url.trim()&&!clean.url)||(state.images.some((url,i)=>url.trim()&&!clean.images[i])) ? 'Use a complete http(s) URL, or [url] for the profile placeholder.' : '';
+  }
+  function addImage(value='') {
+    const row=document.createElement('div');row.className='image-field';
+    const label=document.createElement('label');const number=byId('image-fields').children.length+1;
+    label.textContent=`GIF ${number}`;
+    const input=document.createElement('input');input.type='text';input.value=value;input.placeholder='https://…';input.inputMode='url';input.addEventListener('input',render);label.append(input);
+    const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';remove.setAttribute('aria-label',`Remove GIF ${number}`);
+    remove.addEventListener('click',()=>{row.remove();renumberImages();render();});row.append(label,remove);byId('image-fields').append(row);
+  }
+  function renumberImages() { [...byId('image-fields').children].forEach((row,i)=>{row.querySelector('label').firstChild.textContent=`GIF ${i+1}`;row.querySelector('button').setAttribute('aria-label',`Remove GIF ${i+1}`);}); }
+  function selectDesign(slug) {
+    if(current&&byId('edit-name').value) states.set(current.slug,stateNow());
+    current=ESPRESSO_DESIGNS.find(design=>design.slug===slug)||ESPRESSO_DESIGNS[0];
+    const state=states.get(current.slug)||espDefault(current);
+    fields.forEach(key=>byId(`edit-${key}`).value=state[key]);
+    byId('image-fields').replaceChildren();state.images.forEach(url=>addImage(url));
+    byId('comms-fields').hidden=current.type!=='comms';
+    byId('design-select').value=current.slug;
+    document.querySelectorAll('[data-design]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.design===current.slug)));
+    render();
+  }
+  const samplePalettes={rose:['177,111,137','135,125,177','89,155,158'],juniper:['70,130,115','97,137,176','157,129,181'],ember:['182,106,85','174,118,140','133,130,178']};
+  function applyPalette() {
+    const colours=samplePalettes[byId('palette-select').value];
+    colours.forEach((value,i)=>byId('preview-post').style.setProperty(`--mgrgb${i+1}`,value));
+  }
+  function setMode() {
+    const mode=byId('mode-select').value;
+    if(mode==='system')document.documentElement.removeAttribute('color-mode');else document.documentElement.setAttribute('color-mode',mode);
+  }
+  ESPRESSO_DESIGNS.forEach(design=>{
+    const option=document.createElement('option');option.value=design.slug;option.textContent=`${design.type==='bud'?'Bud':design.type==='comms'?'Comms':'Thread'} ${design.number} · ${design.name}`;byId('design-select').append(option);
+    const button=document.createElement('button');button.type='button';button.dataset.design=design.slug;button.setAttribute('aria-pressed','false');
+    const number=document.createElement('span');number.textContent=design.number;
+    const name=document.createElement('span');name.textContent=design.name;
+    const count=document.createElement('small');count.textContent=design.gifs ? `${design.gifs} GIF${design.gifs===1?'':'s'}` : 'No GIF';
+    button.append(number,name,count);button.addEventListener('click',()=>selectDesign(design.slug));byId(`menu-${design.type}`).append(button);
+  });
+  fields.forEach(key=>byId(`edit-${key}`).addEventListener(key==='direction'?'change':'input',render));
+  byId('design-select').addEventListener('change',event=>selectDesign(event.target.value));
+  byId('add-image').addEventListener('click',()=>{addImage();render();});
+  byId('palette-select').addEventListener('change',applyPalette);
+  byId('mode-select').addEventListener('change',setMode);
+  byId('width-select').addEventListener('change',()=>{byId('preview-post').style.maxWidth=byId('width-select').value;});
+  byId('copy-button').addEventListener('click',async()=>{
+    try {await navigator.clipboard.writeText(byId('copy-code').value);byId('copy-status').textContent='Copied the complete [dohtml] block.';}
+    catch {byId('copy-code').focus();byId('copy-code').select();byId('copy-status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.';}
+  });
+  byId('download-button').addEventListener('click',()=>{
+    const url=URL.createObjectURL(new Blob([byId('copy-code').value],{type:'text/plain;charset=utf-8'}));
+    const link=document.createElement('a');link.href=url;link.download=espFilename(current);link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  });
+  const initialSlug=location.hash.slice(1);
+  selectDesign(ESPRESSO_DESIGNS.some(design=>design.slug===initialSlug)?initialSlug:ESPRESSO_DESIGNS[0].slug);applyPalette();setMode();
+}
+
+</script>
 </body>
 </html>

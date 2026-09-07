@@ -81,7 +81,7 @@ if (typeof document !== 'undefined') {
     byId('word-count').textContent=`${words} words${current.type==='bud' ? ' · buds aim for 100 or fewer' : ''}`;
     byId('design-description').textContent=current.description;
     byId('selected-name').textContent=`${current.name} / ${current.type==='bud' ? 'Bud' : current.type==='comms' ? 'Comms' : 'Thread'} ${current.number}`;
-    byId('original-snippet').href=espFilename(current);
+    byId('original-snippet').href='https://github.com/lexdoescodingnow/templates/blob/main/espresso/'+espFilename(current);
     byId('copy-status').textContent='';
     byId('media-note').textContent=clean.images.filter(Boolean).length ? `${clean.images.filter(Boolean).length} GIF${clean.images.filter(Boolean).length===1?'':'s'}` : 'No GIFs';
     byId('url-status').textContent=(state.url.trim()&&!clean.url)||(state.images.some((url,i)=>url.trim()&&!clean.images[i])) ? 'Use a complete http(s) URL, or [url] for the profile placeholder.' : '';

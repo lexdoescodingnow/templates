@@ -4,7 +4,7 @@ Fifteen JCink templates inspired by a late-night café poster: expressive serif 
 
 [Collection editor and preview](espresso-collection-preview.html) · [Download the complete collection](espresso-collection.zip)
 
-The preview is an HTML file. Download the collection ZIP, extract it, and open `espresso-collection-preview.html` in your browser. GitHub displays its source when opened in the repository. The fifteen individual text files below can be copied directly from GitHub.
+The preview is a standalone HTML file with its styles and editor included. Download and open `espresso-collection-preview.html` directly in your browser; no ZIP extraction or companion files are needed. GIFs and web fonts still load online. GitHub displays its source when opened in the repository. The fifteen individual text files below can be copied directly from GitHub.
 
 ## Threads
 
