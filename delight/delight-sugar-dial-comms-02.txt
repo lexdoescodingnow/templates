@@ -1,0 +1,24 @@
+[dohtml]
+<div class="dlt dlt-comms dlt-sugar-dial" data-direction="received">
+<div class="dlt-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="dlt-gifs">
+<img src="https://64.media.tumblr.com/a346b77df1e9666b0c1de8a846b0c2ea/aa22fe436c73d2d3-5a/s540x810/436ed3cb631425ec9f61c46e800a6cba22788904.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/4cef909e9937b826bbd429507a1fd2cd/fa5f904f4a8fcaa7-67/s540x810/c035730306ab2c135e472dec30fe7242eade873f.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="dlt-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Integer vitae sem.</i></p>
+<p><u>Praesent mollis</u> sapien vel ligula. Donec sed arcu ut lorem.</p>
+</div>
+
+<div class="dlt-finish" aria-hidden="true"><span class="dlt-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/delight/delight-collection-v1.css">
+[/dohtml]
