@@ -1,0 +1,26 @@
+[dohtml]
+<div class="brd brd-comms brd-daily-knead" data-direction="received">
+<div class="brd-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="brd-gifs">
+<img src="https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/4e8bc343b4a97d72034b21e2cb23550d/26023af90a68a470-c7/s400x600/3f80e4580084b8c6c42198d76ec4a8e9e3d1272e.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="brd-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="brd-receipt">Received · 09:41</span>
+<div class="brd-status"><span>09:41</span><span class="brd-battery" aria-hidden="true"></span></div>
+
+<div class="brd-finish" aria-hidden="true"><span class="brd-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-collection-v1.css">
+[/dohtml]
