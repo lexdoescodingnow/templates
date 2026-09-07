@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marmalade · Some things stay</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Italiana&family=La+Belle+Aurore&display=swap');
+
+.mrm {
+ --mrm-paper:#f8f7f5;--mrm-panel:#fffefd;--mrm-ink:#373737;--mrm-muted:#6e6b68;--mrm-line:#dedbd6;--mrm-peel:#b2824c;
+ --mrm-f1:154,76,69;--mrm-f2:127,97,63;--mrm-f3:61,111,115;
+ --mrm-c1:rgb(var(--mgrgb1,var(--mrm-f1)));--mrm-c2:rgb(var(--mgrgb2,var(--mrm-f2)));--mrm-c3:rgb(var(--mgrgb3,var(--mrm-f3)));
+ --mrm-forward:linear-gradient(110deg,var(--mrm-c1),var(--mrm-c2),var(--mrm-c3));--mrm-reverse:linear-gradient(110deg,var(--mrm-c3),var(--mrm-c2),var(--mrm-c1));
+ --mrm-tint1:rgba(var(--mgrgb1,var(--mrm-f1)),.08);--mrm-tint2:rgba(var(--mgrgb2,var(--mrm-f2)),.1);--mrm-tint3:rgba(var(--mgrgb3,var(--mrm-f3)),.09);
+ --mrm-jar:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 76'%3E%3Cg fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cellipse cx='30' cy='8' rx='17' ry='4'/%3E%3Cpath d='M13 8v6c0 5 34 5 34 0V8M15 17v8c0 4-7 7-7 13v28c0 8 44 8 44 0V38c0-6-7-9-7-13v-8M10 38c13 5 26 5 40 0M10 66c13 4 26 4 40 0M18 12l24 1M11 43h38v18H11'/%3E%3Ccircle cx='30' cy='52' r='7'/%3E%3Cpath d='m25 47 10 10m-10 0 10-10m-5-2v14m-7-7h14'/%3E%3C/g%3E%3C/svg%3E");
+ --mrm-slice:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='black' stroke-width='1.1'%3E%3Ccircle cx='40' cy='40' r='34'/%3E%3Ccircle cx='40' cy='40' r='29'/%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3Cpath d='M40 11v25m0 8v25M11 40h25m8 0h25M20 20l17 17m6 6 17 17M20 60l17-17m6-6 17-17M29 15l10 21m2 8 10 21M15 29l21 10m8 2 21 10M15 51l21-10m8-2 21-10M29 65l10-21m2-8 10-21'/%3E%3C/g%3E%3C/svg%3E");
+ --mrm-sprig:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 90'%3E%3Cg fill='none' stroke='black' stroke-width='1.3' stroke-linecap='round'%3E%3Cpath d='M8 83Q51 60 76 9M33 68Q9 47 24 44q19 3 9 24M45 56q-13-31 3-27 14 9-3 27M58 40q-8-26 8-23 11 11-8 23M37 65q28 6 28-10-13-12-28 10M54 46q28 6 27-11-17-7-27 11M69 24Q94 18 82 7q-14 0-13 17'/%3E%3C/g%3E%3C/svg%3E");
+ --mrm-ribbon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 65'%3E%3Cpath fill='none' stroke='black' stroke-width='1.2' d='M2 36c56 32 110-63 139-23s-82 60-78 28 115 8 161-7S255 2 274 12s-19 49-32 30 47-30 86-12 61 8 70-3'/%3E%3C/svg%3E");
+ box-sizing:border-box;position:relative;isolation:isolate;display:flex;flex-direction:column;width:540px;max-width:100%;margin:26px auto;padding:32px;background:var(--mrm-paper);color:var(--mrm-ink);border:1px solid var(--mrm-c1);border-radius:3px;box-shadow:0 16px 35px #14110d0b;font:400 14px/1.85 'DM Sans',Arial,sans-serif;text-align:left;text-shadow:none;letter-spacing:0;overflow-wrap:anywhere;color-scheme:light;
+}
+.mrm *,.mrm *::before,.mrm *::after{box-sizing:border-box}
+.mrm .mrm-meta{order:1;position:relative;min-width:0;padding:0 46px 0 0;margin:0 0 24px}
+.mrm .mrm-meta a{display:inline-block;max-width:100%;color:var(--mrm-c1);font:600 11px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.15em;text-decoration:none;text-transform:uppercase}
+.mrm .mrm-meta span{display:block;margin:7px 0 0;color:var(--mrm-c3);font:400 34px/1.12 'Italiana',Georgia,serif;letter-spacing:-.02em}
+.mrm .mrm-meta::after{content:"";position:absolute;right:0;top:1px;width:35px;height:46px;background:var(--mrm-peel);mask:var(--mrm-jar) center/contain no-repeat;-webkit-mask:var(--mrm-jar) center/contain no-repeat}
+.mrm a:focus-visible{outline:2px solid var(--mrm-c3);outline-offset:4px}
+.mrm .mrm-meta a:hover{text-decoration:underline;text-underline-offset:4px}
+.mrm .mrm-gifs{order:2;position:relative;display:flex;gap:10px;min-width:0;margin:0 0 26px;padding:7px;background:var(--mrm-forward)}
+.mrm .mrm-gifs img{display:block;flex:1 1 0;min-width:0;width:0;max-width:100%;aspect-ratio:1;object-fit:cover;border:3px solid var(--mrm-paper);background:var(--mrm-panel)}
+.mrm .mrm-gifs img:only-child{flex-basis:100%;width:100%;aspect-ratio:1.8}
+.mrm .mrm-copy{order:3;min-width:0;position:relative;font:inherit;line-height:inherit;color:var(--mrm-ink);text-align:left}
+.mrm .mrm-copy p{margin:0 0 1.25em;padding:0;font:inherit;color:inherit;letter-spacing:0;text-align:inherit}
+.mrm .mrm-copy p:last-child{margin-bottom:0}
+.mrm .mrm-copy :is(b,strong,i,em,u){background:none;color:var(--mrm-c1);text-shadow:none}
+.mrm .mrm-copy :is(b,strong){font-weight:700}
+.mrm .mrm-copy :is(i,em){font-style:italic}
+.mrm .mrm-copy u{text-decoration:underline;text-decoration-color:var(--mrm-c2);text-decoration-thickness:1px;text-underline-offset:4px}
+.mrm .mrm-copy a{color:var(--mrm-c3);text-decoration:underline;text-underline-offset:3px}
+.mrm .mrm-copy blockquote{margin:18px 0;padding:0 0 0 16px;border-left:2px solid var(--mrm-c2);font:inherit;color:inherit}
+.mrm .mrm-copy img{max-width:100%;height:auto}
+.mrm .mrm-finish{order:9;position:relative;display:flex;align-items:center;justify-content:center;gap:15px;margin-top:24px;min-height:33px;pointer-events:none}
+.mrm .mrm-finish::before,.mrm .mrm-finish::after{content:"";height:1px;flex:1;background:var(--mrm-forward);opacity:.55}
+.mrm .mrm-seal{display:block;width:34px;height:34px;flex:none;background:var(--mrm-peel);mask:var(--mrm-slice) center/contain no-repeat;-webkit-mask:var(--mrm-slice) center/contain no-repeat}
+@supports (background-clip:text) or (-webkit-background-clip:text){
+ .mrm .mrm-meta a,.mrm .mrm-meta span,.mrm .mrm-copy :is(b,strong,i,em,u){background-image:var(--mrm-forward);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+ .mrm .mrm-copy :is(i,em){background-image:var(--mrm-reverse)}
+}
+html[color-mode="dark"] .mrm{--mrm-paper:#202123;--mrm-panel:#292a2c;--mrm-ink:#e5e3df;--mrm-muted:#b8b4ae;--mrm-line:#454649;--mrm-peel:#c7a472;--mrm-f1:228,157,145;--mrm-f2:211,181,143;--mrm-f3:143,192,194;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode]) .mrm{--mrm-paper:#202123;--mrm-panel:#292a2c;--mrm-ink:#e5e3df;--mrm-muted:#b8b4ae;--mrm-line:#454649;--mrm-peel:#c7a472;--mrm-f1:228,157,145;--mrm-f2:211,181,143;--mrm-f3:143,192,194;color-scheme:dark}}
+
+.mrm.mrm-stillgold{border-top:5px solid var(--mrm-c1);border-bottom:5px solid var(--mrm-c3)}
+.mrm.mrm-stillgold .mrm-gifs{padding:20px 8px 15px;gap:7px;border:1px solid var(--mrm-c3);box-shadow:0 4px 0 var(--mrm-c2);background:var(--mrm-paper)}
+.mrm.mrm-stillgold .mrm-gifs img{aspect-ratio:.88;border:1px solid var(--mrm-c2)}
+.mrm.mrm-stillgold .mrm-gifs::after{content:"";position:absolute;left:8px;right:8px;top:6px;height:8px;background:var(--mrm-tint3);border-block:1px solid var(--mrm-c2);pointer-events:none}
+.mrm.mrm-stillgold .mrm-copy{padding:6px 6px 0}
+.mrm.mrm-stillgold .mrm-seal{mask-image:var(--mrm-sprig);-webkit-mask-image:var(--mrm-sprig);width:42px;height:38px}
+.mrm.mrm-seville-ledger{border:1px solid var(--mrm-c2);padding:35px 39px;background:linear-gradient(90deg,var(--mrm-tint1) 0 12px,transparent 12px),var(--mrm-paper)}
+.mrm.mrm-seville-ledger::before{content:"";position:absolute;inset:7px;border:1px dashed var(--mrm-c3);opacity:.5;pointer-events:none}
+.mrm.mrm-seville-ledger .mrm-meta{border-bottom:1px solid var(--mrm-c1);padding-bottom:19px}
+.mrm.mrm-seville-ledger .mrm-meta::after{mask-image:var(--mrm-slice);-webkit-mask-image:var(--mrm-slice);width:45px;height:45px}
+.mrm.mrm-seville-ledger .mrm-gifs{gap:19px;padding:0;background:none;align-items:center}
+.mrm.mrm-seville-ledger .mrm-gifs img{aspect-ratio:1.1;border:7px solid var(--mrm-panel);outline:1px dashed var(--mrm-c1);outline-offset:3px}
+.mrm.mrm-seville-ledger .mrm-gifs img+img{outline-color:var(--mrm-c3);aspect-ratio:.84}
+.mrm.mrm-seville-ledger .mrm-finish{justify-content:flex-end;margin-top:15px}
+.mrm.mrm-seville-ledger .mrm-finish::after{display:none}
+.mrm.mrm-seville-ledger .mrm-seal{mask-image:var(--mrm-jar);-webkit-mask-image:var(--mrm-jar);width:31px;height:40px}
+.mrm.mrm-sunday-preserve{padding-top:45px;border-radius:36px 36px 28px 28px;border-color:var(--mrm-c3);border-top:7px solid var(--mrm-c1)}
+.mrm.mrm-sunday-preserve::before{content:"";position:absolute;top:0;left:14px;right:14px;height:17px;background:repeating-linear-gradient(90deg,var(--mrm-tint1) 0 8px,transparent 8px 16px),repeating-linear-gradient(0deg,var(--mrm-tint3) 0 8px,transparent 8px 16px);border-bottom:1px solid var(--mrm-c2)}
+.mrm.mrm-sunday-preserve .mrm-meta{text-align:center;padding:0 38px}
+.mrm.mrm-sunday-preserve .mrm-meta span{font-family:'La Belle Aurore',Georgia,cursive;font-size:33px}
+.mrm.mrm-sunday-preserve .mrm-meta::after{display:none}
+.mrm.mrm-sunday-preserve .mrm-gifs{border-radius:90px 90px 8px 8px;padding:8px;gap:8px;background:linear-gradient(140deg,var(--mrm-c1),var(--mrm-c3))}
+.mrm.mrm-sunday-preserve .mrm-gifs img{aspect-ratio:1.1;border-radius:85px 5px 4px 4px}
+.mrm.mrm-sunday-preserve .mrm-gifs img+img{border-radius:5px 85px 4px 4px}
+.mrm.mrm-sunday-preserve .mrm-gifs img:only-child{border-radius:85px 85px 4px 4px}
+.mrm.mrm-sunday-preserve .mrm-copy{padding:19px 12px;border-block:1px solid var(--mrm-line)}
+.mrm.mrm-sunday-preserve .mrm-seal{mask-image:var(--mrm-jar);-webkit-mask-image:var(--mrm-jar);width:28px;height:38px}
+.mrm.mrm-amberlight{display:grid;grid-template-columns:80px minmax(0,1fr);gap:0 23px;border-left:5px solid var(--mrm-c1);border-right:5px solid var(--mrm-c3);padding:28px}
+.mrm.mrm-amberlight .mrm-meta{grid-column:1/-1;border-bottom:1px solid var(--mrm-c2);padding-bottom:20px}
+.mrm.mrm-amberlight .mrm-meta::after{mask-image:var(--mrm-sprig);-webkit-mask-image:var(--mrm-sprig);width:45px}
+.mrm.mrm-amberlight .mrm-gifs{grid-column:1;display:flex;flex-direction:column;align-self:start;margin:0;padding:0;background:none;gap:15px}
+.mrm.mrm-amberlight .mrm-gifs img{width:100%;flex:none;aspect-ratio:.66;border:3px solid var(--mrm-paper);outline:1px solid var(--mrm-c1)}
+.mrm.mrm-amberlight .mrm-gifs img+img{outline-color:var(--mrm-c3);border-radius:0 0 38px 38px}
+.mrm.mrm-amberlight .mrm-copy{grid-column:2}
+.mrm.mrm-amberlight .mrm-finish{grid-column:1/-1}
+.mrm.mrm-amberlight:not(:has(.mrm-gifs)) .mrm-copy{grid-column:1/-1}
+.mrm.mrm-dear-clement{display:grid;grid-template-columns:minmax(0,1fr) 145px;column-gap:18px;border-color:var(--mrm-c3);border-top:3px double var(--mrm-c1);padding:32px 34px 23px}
+.mrm.mrm-dear-clement .mrm-meta{grid-column:1;padding:8px 0 0;margin:0 0 23px;align-self:center}
+.mrm.mrm-dear-clement .mrm-meta span{font:400 32px/1.3 'La Belle Aurore',Georgia,cursive}
+.mrm.mrm-dear-clement .mrm-meta::after{display:none}
+.mrm.mrm-dear-clement .mrm-gifs{grid-column:2;gap:8px;padding:8px 0 15px;margin-bottom:17px;background:none;align-items:center}
+.mrm.mrm-dear-clement .mrm-gifs img{aspect-ratio:.76;border:4px solid var(--mrm-panel);outline:1px solid var(--mrm-c1);transform:rotate(-5deg)}
+.mrm.mrm-dear-clement .mrm-gifs img+img{outline-color:var(--mrm-c3);transform:rotate(5deg);margin-top:16px}
+.mrm.mrm-dear-clement .mrm-copy{grid-column:1/-1;border-top:1px solid var(--mrm-c2);padding-top:25px}
+.mrm.mrm-dear-clement .mrm-finish{grid-column:1/-1;margin-top:18px;height:36px;background:var(--mrm-peel);mask:var(--mrm-ribbon) center/contain no-repeat;-webkit-mask:var(--mrm-ribbon) center/contain no-repeat}
+.mrm.mrm-dear-clement .mrm-finish>*{display:none}
+.mrm.mrm-dear-clement .mrm-finish::before,.mrm.mrm-dear-clement .mrm-finish::after{display:none}
+
+.mrm.mrm-comms{width:360px;padding:20px 23px 16px;border:2px solid var(--mrm-c1);border-radius:40px;box-shadow:inset 0 0 0 5px var(--mrm-paper),inset 0 0 0 6px var(--mrm-c3),0 18px 36px #14110d12;font-size:13px;line-height:1.7}
+.mrm.mrm-comms::before{content:"";position:absolute;top:15px;left:calc(50% - 30px);width:60px;height:7px;border-radius:10px;background:var(--mrm-c2);opacity:.5}
+.mrm.mrm-comms .mrm-status{order:0;display:flex;justify-content:space-between;align-items:center;gap:15px;margin:0 1px 23px;font:600 10px/1.4 'DM Sans',Arial,sans-serif;color:var(--mrm-c3)}
+.mrm .mrm-signals{position:relative;width:24px;height:10px;border:1px solid var(--mrm-c3);border-radius:3px;background:linear-gradient(90deg,var(--mrm-c3) 0 75%,transparent 75%);background-clip:content-box;padding:2px}
+.mrm .mrm-signals::after{content:"";position:absolute;right:-4px;top:2px;width:2px;height:4px;background:var(--mrm-c3)}
+.mrm.mrm-comms .mrm-meta{order:2;margin:0 -9px 20px;padding:14px 15px 16px;text-align:center;border-bottom:1px solid var(--mrm-c3);border-radius:12px 12px 0 0;background:linear-gradient(110deg,var(--mrm-tint1),var(--mrm-tint3))}
+.mrm.mrm-comms .mrm-meta a{font-size:13px;letter-spacing:.05em}
+.mrm.mrm-comms .mrm-meta span{font:400 11px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.04em;margin-top:3px}
+.mrm.mrm-comms .mrm-meta::after{display:none}
+.mrm.mrm-comms .mrm-gifs{order:1;justify-content:center;align-items:center;gap:12px;background:none;padding:0;margin:0 auto;max-width:100%}
+.mrm.mrm-comms .mrm-gifs img{width:68px;height:68px;aspect-ratio:1;flex:none;border:4px solid var(--mrm-paper);outline:1px solid var(--mrm-c1);border-radius:50%}
+.mrm.mrm-comms .mrm-gifs img+img{outline-color:var(--mrm-c3)}
+.mrm.mrm-comms .mrm-copy{order:3;padding:0 0 5px}
+.mrm.mrm-comms .mrm-copy p{width:fit-content;max-width:94%;padding:11px 13px;margin:0 0 10px;border:1px solid var(--mrm-line);border-left:2px solid var(--mrm-c1);border-radius:15px 15px 15px 4px;background:var(--mrm-panel);box-shadow:2px 3px 0 var(--mrm-tint3)}
+.mrm.mrm-comms .mrm-copy p:nth-child(2n){border-left-color:var(--mrm-c3)}
+.mrm.mrm-comms .mrm-receipt{order:4;display:block;color:var(--mrm-muted);font:400 10px/1.5 'DM Sans',Arial,sans-serif;margin:5px 0 15px}
+.mrm.mrm-comms .mrm-device{order:5;position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:36px;border:1px solid var(--mrm-c3);border-radius:22px;padding:6px 10px;font:400 11px/1.4 'DM Sans',Arial,sans-serif;color:var(--mrm-muted);background:var(--mrm-panel)}
+.mrm.mrm-comms .mrm-device::before{content:"+";font-size:20px;font-weight:400;line-height:1;color:var(--mrm-c1)}
+.mrm.mrm-comms .mrm-device::after{content:"↑";text-align:center;width:21px;height:21px;line-height:19px;border:1px solid var(--mrm-c3);border-radius:50%;color:var(--mrm-c3)}
+.mrm.mrm-comms .mrm-device span{flex:1}
+.mrm.mrm-comms .mrm-finish{min-height:22px;margin-top:12px;gap:11px}
+.mrm.mrm-comms .mrm-finish::before,.mrm.mrm-comms .mrm-finish::after{flex:0 1 35px;opacity:.5}
+.mrm.mrm-comms .mrm-seal{width:21px;height:24px;mask-image:var(--mrm-jar);-webkit-mask-image:var(--mrm-jar)}
+.mrm.mrm-rindline .mrm-gifs{position:relative;padding:5px 20px 0}
+.mrm.mrm-rindline .mrm-gifs::before{content:"";position:absolute;inset:21px -24px 6px;border-block:1px solid var(--mrm-c2);z-index:-1;background:repeating-linear-gradient(90deg,var(--mrm-tint1) 0 7px,transparent 7px 14px),repeating-linear-gradient(0deg,var(--mrm-tint3) 0 7px,transparent 7px 14px)}
+.mrm.mrm-citrus-dial{border-radius:26px;border-color:var(--mrm-c3);padding-top:23px}
+.mrm.mrm-citrus-dial .mrm-gifs{margin:0 -8px;padding:5px;border:1px solid var(--mrm-c2);gap:4px;background:var(--mrm-forward);border-radius:16px;width:auto}
+.mrm.mrm-citrus-dial .mrm-gifs img{width:0;height:auto;flex:1 1 0;aspect-ratio:1.6;border:2px solid var(--mrm-paper);outline:none;border-radius:11px}
+.mrm.mrm-citrus-dial .mrm-meta{margin-top:8px;background:none}
+.mrm.mrm-citrus-dial .mrm-copy p{border-radius:6px 18px 18px 18px;box-shadow:none;border-left-width:1px;border-bottom:2px solid var(--mrm-c2)}
+.mrm.mrm-citrus-dial .mrm-seal{mask-image:var(--mrm-slice);-webkit-mask-image:var(--mrm-slice)}
+.mrm.mrm-jar-notes{width:390px;border-radius:11px;border-color:var(--mrm-c3);box-shadow:0 14px 30px #14110d15;padding:20px 25px}
+.mrm.mrm-jar-notes::before{top:25px;left:auto;right:27px;width:6px;height:6px;box-shadow:-10px 0 0 var(--mrm-c1),-20px 0 0 var(--mrm-c3);opacity:1}
+.mrm.mrm-jar-notes .mrm-status{margin:-1px -25px 20px;padding:0 25px 15px;border-bottom:1px solid var(--mrm-c1)}
+.mrm.mrm-jar-notes .mrm-status .mrm-signals{display:none}
+.mrm.mrm-jar-notes .mrm-gifs{order:1;gap:8px}
+.mrm.mrm-jar-notes .mrm-gifs img{width:55px;height:55px;border-radius:12px}
+.mrm.mrm-jar-notes .mrm-meta{background:none;margin-bottom:18px;border-bottom:1px dashed var(--mrm-c2)}
+.mrm.mrm-jar-notes .mrm-copy p{border-radius:3px 12px 12px 3px;max-width:95%;background:linear-gradient(var(--mrm-tint3),var(--mrm-tint3)),var(--mrm-panel);box-shadow:none}
+.mrm.mrm-jar-notes .mrm-device{border-radius:5px}
+.mrm.mrm-pectin-ping{border-radius:42px 42px 25px 25px;border-top:7px solid var(--mrm-c2)}
+.mrm.mrm-pectin-ping .mrm-gifs{border:1px solid var(--mrm-c1);border-radius:90px 90px 12px 12px;padding:10px 10px 8px;gap:7px;background:var(--mrm-tint3)}
+.mrm.mrm-pectin-ping .mrm-gifs img{border-radius:60px 60px 8px 8px;width:84px;height:95px;border:2px solid var(--mrm-paper);outline:none}
+.mrm.mrm-pectin-ping .mrm-meta{background:none}
+.mrm.mrm-pectin-ping .mrm-copy p{border-radius:20px 20px 20px 1px;border-left:1px solid var(--mrm-c1);box-shadow:none}
+.mrm.mrm-pectin-ping .mrm-finish{padding-bottom:12px;border-bottom:5px double var(--mrm-c3);border-radius:0 0 12px 12px}
+.mrm.mrm-sweet-reception{display:grid;grid-template-columns:67px minmax(0,1fr);column-gap:14px;border-radius:33px;border-bottom:5px solid var(--mrm-c3);padding:21px 24px 17px}
+.mrm.mrm-sweet-reception .mrm-status{grid-column:1/-1}
+.mrm.mrm-sweet-reception .mrm-gifs{grid-column:1;display:block;position:relative;width:67px;padding:0;margin:0 0 22px;align-self:start}
+.mrm.mrm-sweet-reception .mrm-gifs img{width:54px;height:54px;max-width:none;border-radius:14px;outline-color:var(--mrm-c1)}
+.mrm.mrm-sweet-reception .mrm-gifs img+img{width:35px;height:35px;margin:-18px 0 0 31px;position:relative;border-radius:50%;outline-color:var(--mrm-c3)}
+.mrm.mrm-sweet-reception .mrm-meta{grid-column:2;text-align:left;align-self:center;padding:5px 0 13px;margin:0 0 20px;background:none;border-bottom:2px solid var(--mrm-c2)}
+.mrm.mrm-sweet-reception .mrm-copy,.mrm.mrm-sweet-reception .mrm-receipt,.mrm.mrm-sweet-reception .mrm-device,.mrm.mrm-sweet-reception .mrm-finish{grid-column:1/-1}
+.mrm.mrm-sweet-reception .mrm-copy p{border-radius:14px 14px 14px 2px;background:linear-gradient(110deg,var(--mrm-tint1),var(--mrm-tint3)),var(--mrm-panel);box-shadow:none}
+.mrm.mrm-sweet-reception .mrm-seal{mask-image:var(--mrm-sprig);-webkit-mask-image:var(--mrm-sprig)}
+
+.mrm.mrm-bud{width:390px;padding:23px;font-size:13px;line-height:1.8}
+.mrm.mrm-bud .mrm-meta{margin-bottom:17px;padding-right:30px}
+.mrm.mrm-bud .mrm-meta a{font-size:10px;letter-spacing:.1em}
+.mrm.mrm-bud .mrm-meta span{font-size:25px;margin-top:4px}
+.mrm.mrm-bud .mrm-meta::after{width:23px;height:29px}
+.mrm.mrm-bud .mrm-gifs{margin:0 0 18px;padding:0;background:none;gap:9px;justify-content:flex-start}
+.mrm.mrm-bud .mrm-gifs img{flex:none;width:60px;height:60px;aspect-ratio:1;border:3px solid var(--mrm-paper);outline:1px solid var(--mrm-c1)}
+.mrm.mrm-bud .mrm-gifs img+img{outline-color:var(--mrm-c3)}
+.mrm.mrm-bud .mrm-copy p{margin-bottom:1em}
+.mrm.mrm-bud .mrm-copy p:last-child{margin-bottom:0}
+.mrm.mrm-bud .mrm-finish{margin-top:14px;min-height:22px;gap:10px}
+.mrm.mrm-bud .mrm-seal{width:22px;height:22px}
+.mrm.mrm-little-preserve{border-radius:22px 22px 12px 12px;border-top:5px solid var(--mrm-c2)}
+.mrm.mrm-little-preserve .mrm-gifs{padding:8px;border-block:1px solid var(--mrm-c3);background:repeating-linear-gradient(90deg,var(--mrm-tint1) 0 8px,transparent 8px 16px),repeating-linear-gradient(0deg,var(--mrm-tint3) 0 8px,transparent 8px 16px);justify-content:center}
+.mrm.mrm-little-preserve .mrm-gifs img{border-radius:9px}
+.mrm.mrm-little-preserve .mrm-seal{mask-image:var(--mrm-jar);-webkit-mask-image:var(--mrm-jar);height:27px}
+.mrm.mrm-peel-kiss{display:grid;grid-template-columns:minmax(0,1fr) 66px;gap:0 16px;border-left:4px solid var(--mrm-c1);border-color:var(--mrm-c1)}
+.mrm.mrm-peel-kiss .mrm-meta{grid-column:1;padding-right:0;margin:0 0 15px;align-self:center}
+.mrm.mrm-peel-kiss .mrm-meta::after{display:none}
+.mrm.mrm-peel-kiss .mrm-gifs{grid-column:2;position:relative;display:block;margin-bottom:15px}
+.mrm.mrm-peel-kiss .mrm-gifs img{width:54px;height:54px;border-radius:50%}
+.mrm.mrm-peel-kiss .mrm-gifs img+img{width:32px;height:32px;margin:-20px 0 0 34px;position:relative}
+.mrm.mrm-peel-kiss .mrm-copy,.mrm.mrm-peel-kiss .mrm-finish{grid-column:1/-1}
+.mrm.mrm-peel-kiss .mrm-finish{height:23px;background:var(--mrm-peel);mask:var(--mrm-ribbon) center/contain no-repeat;-webkit-mask:var(--mrm-ribbon) center/contain no-repeat}
+.mrm.mrm-peel-kiss .mrm-finish::before,.mrm.mrm-peel-kiss .mrm-finish::after,.mrm.mrm-peel-kiss .mrm-seal{display:none}
+.mrm.mrm-sugar-pip{border:1px dashed var(--mrm-c3);box-shadow:inset 0 0 0 6px var(--mrm-paper),inset 0 0 0 7px var(--mrm-line)}
+.mrm.mrm-sugar-pip .mrm-meta{text-align:center;padding:0}
+.mrm.mrm-sugar-pip .mrm-meta::after{display:none}
+.mrm.mrm-sugar-pip .mrm-gifs{justify-content:center;gap:14px;margin-bottom:17px}
+.mrm.mrm-sugar-pip .mrm-gifs img{width:54px;height:63px;transform:rotate(-5deg);border-width:5px}
+.mrm.mrm-sugar-pip .mrm-gifs img+img{transform:rotate(4deg)}
+.mrm.mrm-morning-spoon{display:grid;grid-template-columns:52px minmax(0,1fr);column-gap:18px;border-bottom:4px solid var(--mrm-c3)}
+.mrm.mrm-morning-spoon .mrm-meta{grid-column:1/-1;border-bottom:1px solid var(--mrm-c1);padding-bottom:12px}
+.mrm.mrm-morning-spoon .mrm-gifs{grid-column:1;flex-direction:column;gap:12px;margin:0}
+.mrm.mrm-morning-spoon .mrm-gifs img{width:52px;height:60px;border-radius:4px 4px 22px 22px}
+.mrm.mrm-morning-spoon .mrm-copy{grid-column:2}
+.mrm.mrm-morning-spoon .mrm-finish{grid-column:1/-1}
+.mrm.mrm-morning-spoon:not(:has(.mrm-gifs)) .mrm-copy{grid-column:1/-1}
+.mrm.mrm-last-zest{border-top:3px double var(--mrm-c1);border-bottom:3px double var(--mrm-c3);border-radius:0;padding:24px}
+.mrm.mrm-last-zest .mrm-meta span{font:400 26px/1.3 'La Belle Aurore',Georgia,cursive}
+.mrm.mrm-last-zest .mrm-gifs{padding:5px;background:var(--mrm-forward);gap:5px}
+.mrm.mrm-last-zest .mrm-gifs img{width:0;height:auto;flex:1 1 0;aspect-ratio:2.1;outline:none;border:2px solid var(--mrm-paper)}
+.mrm.mrm-last-zest .mrm-seal{mask-image:var(--mrm-sprig);-webkit-mask-image:var(--mrm-sprig);width:27px;height:25px}
+@media(max-width:480px){
+ .mrm.mrm-thread{padding:25px 22px}
+ .mrm.mrm-thread .mrm-meta span{font-size:29px}
+ .mrm.mrm-seville-ledger{padding:25px 29px}
+ .mrm.mrm-sunday-preserve{padding-top:40px}
+ .mrm.mrm-amberlight{grid-template-columns:62px minmax(0,1fr);gap:0 17px;padding:23px 19px}
+ .mrm.mrm-dear-clement{grid-template-columns:minmax(0,1fr) 100px;column-gap:14px}
+ .mrm.mrm-dear-clement .mrm-gifs{gap:6px}
+ .mrm.mrm-bud{padding:20px}
+ .mrm.mrm-comms{padding-inline:23px}
+ .mrm.mrm-jar-notes .mrm-status{margin-inline:-23px;padding-inline:23px}
+}
+@media(forced-colors:active){
+ .mrm .mrm-meta a,.mrm .mrm-meta span,.mrm .mrm-copy :is(b,strong,i,em,u){background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}
+ .mrm .mrm-gifs,.mrm .mrm-device,.mrm .mrm-copy p{border-color:CanvasText}
+}
+
+:root{--page:#f0eeea;--panel:#fbfaf8;--ink:#383933;--muted:#77766d;--line:#d5d2c8;--accent:#626b58}
+body{margin:0;background:var(--page);color:var(--ink);font:400 13px/1.6 'DM Sans',Arial,sans-serif}
+body *,body *::before,body *::after{box-sizing:border-box}
+body>header,body>main,body>footer{max-width:1260px;margin-inline:auto;padding-inline:44px}
+.collection-head{padding-top:35px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.overline,.collection-count{font-size:10px;letter-spacing:.19em;text-transform:uppercase}
+.overline{display:flex;align-items:center;justify-content:space-between;color:var(--muted)}
+.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:35px;margin-top:15px}
+.hero h1{font:400 clamp(55px,7vw,96px)/1.05 'Italiana',Georgia,serif;letter-spacing:-.045em;margin:0 0 4px}
+.hero .signature{font:400 27px/1.4 'La Belle Aurore',cursive;color:var(--accent);margin-left:5px}
+.hero p{max-width:300px;color:var(--muted);margin:0 0 12px}
+.collection-count{border:1px solid var(--line);padding:8px 12px;border-radius:3px;color:var(--muted)}
+main{padding-top:24px;padding-bottom:35px}
+.control-row{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:15px;flex-wrap:wrap}
+.formats{display:flex;gap:7px;align-items:center}
+button,select,input,textarea{font:inherit}
+button{cursor:pointer;border:1px solid var(--line);color:var(--ink);background:var(--panel);border-radius:3px;padding:9px 14px;line-height:1.4}
+button:hover{border-color:var(--accent)}
+button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--panel)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.formats button{min-width:100px}
+.mode-field{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted)}
+select,input,textarea{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:3px;padding:8px;max-width:100%;min-width:0}
+.variant-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:22px}
+.variant-tabs button{display:flex;align-items:center;gap:11px;padding:13px 12px;text-align:left}
+.variant-tabs b{font:400 22px/1 'Italiana',Georgia,serif;opacity:.7}
+.variant-tabs span{font-size:12px}
+.workspace{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);gap:26px;align-items:start}
+.stage{min-width:0}
+.stage-head{display:flex;gap:18px;justify-content:space-between;align-items:center;padding:0 0 14px}
+.stage-head h2{font:400 27px/1.1 'Italiana',Georgia,serif;margin:0 0 7px}
+.stage-head p{font-size:11px;color:var(--muted);margin:0}
+.paging{display:flex;gap:8px;align-items:center;white-space:nowrap}
+.paging button{padding:5px 10px;font-size:17px}
+.paging span{font-size:10px;color:var(--muted)}
+.canvas{position:relative;min-height:370px;padding:22px;background:radial-gradient(circle at 1px 1px,var(--line) .7px,transparent .8px) 0 0/12px 12px;border:1px solid var(--line);border-radius:3px;overflow:hidden}
+#render{width:100%;max-width:100%;margin:auto;transition:max-width .2s}
+#render.narrow{max-width:320px}
+#render>.mrm{margin:6px auto}
+.palette-row{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.palette-row button{padding:5px 9px;font-size:10px}
+.palette-row input[type="color"]{width:24px;height:24px;padding:2px;border-radius:50%;cursor:pointer}
+.palette-row label{font-size:10px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.palette-row input[type="checkbox"]{accent-color:var(--accent);vertical-align:middle}
+.editor{background:var(--panel);padding:23px;border:1px solid var(--line);border-radius:3px;min-width:0}
+.editor h2{font:400 23px/1.2 'Italiana',Georgia,serif;margin:0 0 5px}
+.editor .lead{color:var(--muted);font-size:11px;margin:0 0 16px}
+.editor label{display:block;font-size:10px;letter-spacing:.025em;color:var(--muted);margin-bottom:10px}
+.editor input:not([type="range"]),.editor textarea{display:block;width:100%;margin-top:4px;font-size:12px;color:var(--ink);letter-spacing:0;background:var(--page)}
+.editor textarea{resize:vertical;min-height:225px;line-height:1.7}
+.field-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.editor details{border-block:1px solid var(--line);padding:9px 0;margin:4px 0 13px}
+summary{cursor:pointer;font-size:12px}
+.editor details summary{margin-bottom:4px}
+.editor input[type="range"]{display:block;width:100%;accent-color:var(--accent);margin-top:6px;padding:0}
+.word-line{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:10px;color:var(--muted);margin:0 0 16px}
+.word-line button{font-size:10px;padding:5px 8px}
+.over{color:#b05f51}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.actions button{font-size:11px}
+.actions .primary{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+#copy-status{min-height:19px;margin:9px 0 0;color:var(--accent);font-size:11px}
+.stage-code{margin-top:16px;border:1px solid var(--line);padding:12px;background:var(--panel)}
+.stage-code textarea,.gallery textarea{display:block;width:100%;height:260px;resize:vertical;margin-top:12px;font:11px/1.6 ui-monospace,monospace;tab-size:2}
+.posting-note{font-size:11px;line-height:1.8;color:var(--muted);margin:13px 0 0}
+.all-gallery{border-top:1px solid var(--line);margin-top:30px;padding-top:20px}
+.all-gallery>summary{font:400 25px/1.3 'Italiana',Georgia,serif}
+.all-gallery>p{font-size:11px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start;margin-top:18px}
+.gallery>details{min-width:0;border:1px solid var(--line);background:var(--panel);padding:14px}
+.gallery-render>.mrm{margin-block:16px;max-width:100%}
+.gallery-description{font-size:11px;color:var(--muted)}
+.colophon{display:flex;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:18px;padding-bottom:25px;font-size:10px;color:var(--muted)}
+.colophon a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+[hidden]{display:none!important}
+html[color-mode="dark"]{--page:#191b1c;--panel:#242628;--ink:#e3e2dc;--muted:#b4b2a9;--line:#424647;--accent:#bcc6a6;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode]){--page:#191b1c;--panel:#242628;--ink:#e3e2dc;--muted:#b4b2a9;--line:#424647;--accent:#bcc6a6;color-scheme:dark}}
+@media(max-width:940px){body>header,body>main,body>footer{padding-inline:24px}.workspace{grid-template-columns:minmax(0,1.25fr) minmax(270px,1fr);gap:18px}.canvas{padding:12px}.gallery{grid-template-columns:1fr 1fr}.variant-tabs button{gap:7px;padding:10px 8px}.variant-tabs span{font-size:11px}}
+@media(max-width:720px){.workspace{grid-template-columns:1fr}.hero p{max-width:220px;font-size:11px}.hero{gap:20px}.variant-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}.editor{padding:20px}.gallery{grid-template-columns:1fr}.colophon{flex-direction:column;gap:8px}}
+@media(max-width:450px){body>header,body>main,body>footer{padding-inline:14px}.hero{display:block}.hero p{max-width:none;margin-top:12px}.collection-count{padding:5px 7px;font-size:9px}.overline{font-size:9px}.formats button{min-width:0;padding:8px 14px}.control-row{gap:12px}.canvas{padding:10px}.variant-tabs{gap:6px}.variant-tabs button{padding:9px 7px}.stage-head{align-items:start}.paging{gap:5px}.stage-head p{max-width:210px}.palette-row label{margin-left:0}.field-pair{gap:8px}}
+
+</style>
+</head>
+<body>
+<header class="collection-head">
+<div class="overline"><span>Leaf · The template pantry</span><span class="collection-count">15 named designs</span></div>
+<div class="hero"><div><h1>Marmalade</h1><div class="signature">Some things stay.</div></div><p>Window light. A note kept safe.<br>Little stories, preserved in warmth.<br>Five threads, five comms, five buds.</p></div>
+</header>
+<main>
+<div class="control-row"><nav class="formats" aria-label="Template type"><button type="button" data-kind="thread" aria-pressed="true">Threads</button><button type="button" data-kind="comms" aria-pressed="false">Comms</button><button type="button" data-kind="bud" aria-pressed="false">Buds</button></nav><label class="mode-field">Appearance <select id="mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label></div>
+<nav id="variant-tabs" class="variant-tabs" aria-label="Named designs"></nav>
+<div class="workspace">
+<section class="stage" aria-label="Template preview">
+<div class="stage-head"><div><h2 id="design-title">Stillgold</h2><p id="design-description">Fine window frames and paired portraits.</p></div><div class="paging"><button id="previous" type="button" aria-label="Previous design">←</button><span id="position">1 / 15</span><button id="next" type="button" aria-label="Next design">→</button></div></div>
+<div class="canvas"><div id="render"></div></div>
+<div class="palette-row" aria-label="Preview member colours"><button data-palette="0" aria-pressed="true">Rosewood</button><button data-palette="1" aria-pressed="false">Iris</button><button data-palette="2" aria-pressed="false">Fern</button><button data-palette="3" aria-pressed="false">Ink</button><input type="color" id="colour-one" aria-label="Preview member colour one"><input type="color" id="colour-two" aria-label="Preview member colour two"><input type="color" id="colour-three" aria-label="Preview member colour three"><label><input id="narrow" type="checkbox"> Narrow view</label></div>
+<details class="stage-code"><summary>Your copy-ready JCink code</summary><textarea id="code" readonly aria-label="Copy-ready JCink code" spellcheck="false"></textarea></details>
+<p class="posting-note">Member colours shown here are a preview; your forum supplies the colours. Inside [dohtml], formatting uses HTML tags. This editor also converts [b], [i], and [u] for you.</p>
+</section>
+<section class="editor" aria-label="Edit your template">
+<h2>Make it yours</h2><p class="lead">Edit here, then copy your complete posting code.</p>
+<div class="field-pair"><label>Character name(s)<input id="name" value="[name]"></label><label>Title / status<input id="subtitle" value="[text]"></label></div>
+<label>Profile or thread URL<input id="url" value="[url]" spellcheck="false"></label>
+<details open><summary>Character GIFs</summary><label>First GIF URL<input id="gif-one" spellcheck="false"></label><label>Second GIF URL<input id="gif-two" spellcheck="false"></label><div class="field-pair"><label>First GIF crop<input id="crop-one" type="range" min="0" max="100" value="50"></label><label>Second GIF crop<input id="crop-two" type="range" min="0" max="100" value="50"></label></div></details>
+<div id="comms-fields" class="field-pair" hidden><label>Device time<input id="time" value="09:41"></label><label>Message receipt<input id="receipt" value="Received · 09:41"></label></div>
+<label>Your writing<textarea id="body" spellcheck="false"></textarea></label>
+<div class="word-line"><span id="word-count"></span><button id="add-message" type="button" hidden>Add message</button></div>
+<div class="actions"><button id="copy" type="button" class="primary">Copy JCink code</button><button id="download" type="button">Download .txt</button><button id="reset" type="button">Reset design</button></div>
+<p id="copy-status" role="status" aria-live="polite"></p>
+</section>
+</div>
+<details class="all-gallery"><summary>The complete collection</summary><p>All fifteen original designs and their posting code. Open any name to preview it.</p><div class="gallery"><details><summary>01 · Stillgold · Thread</summary><p class="gallery-description">Fine window frames, paired portraits, and a botanical finish.</p><div class="gallery-render">
+<div class="mrm mrm-thread mrm-stillgold">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Stillgold posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-thread mrm-stillgold&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>02 · Seville Ledger · Thread</summary><p class="gallery-description">A stitched preserve label with two keepsake photo stamps.</p><div class="gallery-render">
+<div class="mrm mrm-thread mrm-seville-ledger">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Seville Ledger posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-thread mrm-seville-ledger&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>03 · Sunday Preserve · Thread</summary><p class="gallery-description">A gingham jar collar, soft shoulders, and handwritten lettering.</p><div class="gallery-render">
+<div class="mrm mrm-thread mrm-sunday-preserve">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Sunday Preserve posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-thread mrm-sunday-preserve&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>04 · Amberlight · Thread</summary><p class="gallery-description">A narrow portrait rail beside an intimate column of writing.</p><div class="gallery-render">
+<div class="mrm mrm-thread mrm-amberlight">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Amberlight posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-thread mrm-amberlight&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>05 · Dear Clement · Thread</summary><p class="gallery-description">A small correspondence card with photographs tucked into its corner.</p><div class="gallery-render">
+<div class="mrm mrm-thread mrm-dear-clement">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.</i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.</p>
+<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.</u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Dear Clement posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-thread mrm-dear-clement&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. &lt;b&gt;“Duis aute irure dolor in reprehenderit.”&lt;/b&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;p&gt;Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus interdum blandit.&lt;/i&gt; Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.&lt;/p&gt;
+&lt;p&gt;Curabitur vitae erat eu nisl lobortis tristique. &lt;u&gt;Nulla facilisi, sed tempus velit.&lt;/u&gt; Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>01 · Rindline · Comms</summary><p class="gallery-description">A classic handset with gingham contact trim and incoming bubbles.</p><div class="gallery-render">
+<div class="mrm mrm-comms mrm-rindline">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="mrm-receipt">Received · 09:41</span>
+<div class="mrm-status"><span>09:41</span><span class="mrm-signals" aria-hidden="true"></span></div>
+
+<div class="mrm-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Rindline posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-comms mrm-rindline&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;mrm-receipt&quot;&gt;Received · 09:41&lt;/span&gt;
+&lt;div class=&quot;mrm-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;mrm-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>02 · Citrus Dial · Comms</summary><p class="gallery-description">A compact phone with a panoramic double portrait header.</p><div class="gallery-render">
+<div class="mrm mrm-comms mrm-citrus-dial">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="mrm-receipt">Received · 09:41</span>
+<div class="mrm-status"><span>09:41</span><span class="mrm-signals" aria-hidden="true"></span></div>
+
+<div class="mrm-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Citrus Dial posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-comms mrm-citrus-dial&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;mrm-receipt&quot;&gt;Received · 09:41&lt;/span&gt;
+&lt;div class=&quot;mrm-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;mrm-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>03 · Jar Notes · Comms</summary><p class="gallery-description">A desktop messenger window with tinted note-like bubbles.</p><div class="gallery-render">
+<div class="mrm mrm-comms mrm-jar-notes">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="mrm-receipt">Received · 09:41</span>
+<div class="mrm-status"><span>09:41</span><span class="mrm-signals" aria-hidden="true"></span></div>
+
+<div class="mrm-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Jar Notes posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-comms mrm-jar-notes&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;mrm-receipt&quot;&gt;Received · 09:41&lt;/span&gt;
+&lt;div class=&quot;mrm-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;mrm-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>04 · Pectin Ping · Comms</summary><p class="gallery-description">A rounded handset with a tall contact window and soft chat bubbles.</p><div class="gallery-render">
+<div class="mrm mrm-comms mrm-pectin-ping">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="mrm-receipt">Received · 09:41</span>
+<div class="mrm-status"><span>09:41</span><span class="mrm-signals" aria-hidden="true"></span></div>
+
+<div class="mrm-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Pectin Ping posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-comms mrm-pectin-ping&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;mrm-receipt&quot;&gt;Received · 09:41&lt;/span&gt;
+&lt;div class=&quot;mrm-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;mrm-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>05 · Sweet Reception · Comms</summary><p class="gallery-description">A pocket messenger with overlapping avatars and a neat contact bar.</p><div class="gallery-render">
+<div class="mrm mrm-comms mrm-sweet-reception">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="mrm-receipt">Received · 09:41</span>
+<div class="mrm-status"><span>09:41</span><span class="mrm-signals" aria-hidden="true"></span></div>
+
+<div class="mrm-device" aria-hidden="true"><span>Message</span></div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Sweet Reception posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-comms mrm-sweet-reception&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Duis aute irure dolor.&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span class=&quot;mrm-receipt&quot;&gt;Received · 09:41&lt;/span&gt;
+&lt;div class=&quot;mrm-status&quot;&gt;&lt;span&gt;09:41&lt;/span&gt;&lt;span class=&quot;mrm-signals&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>01 · Little Preserve · Bud</summary><p class="gallery-description">A miniature jar label with a gingham portrait ribbon.</p><div class="gallery-render">
+<div class="mrm mrm-bud mrm-little-preserve">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Little Preserve posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-bud mrm-little-preserve&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>02 · Peel Kiss · Bud</summary><p class="gallery-description">Two overlapping portrait coins and a delicate citrus-peel flourish.</p><div class="gallery-render">
+<div class="mrm mrm-bud mrm-peel-kiss">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Peel Kiss posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-bud mrm-peel-kiss&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>03 · Sugar Pip · Bud</summary><p class="gallery-description">A small stitched keepsake with two photograph stamps.</p><div class="gallery-render">
+<div class="mrm mrm-bud mrm-sugar-pip">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Sugar Pip posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-bud mrm-sugar-pip&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>04 · Morning Spoon · Bud</summary><p class="gallery-description">A slender portrait rail and a small space for a quick reply.</p><div class="gallery-render">
+<div class="mrm mrm-bud mrm-morning-spoon">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Morning Spoon posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-bud mrm-morning-spoon&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+<details><summary>05 · Last Zest · Bud</summary><p class="gallery-description">A handwritten heading, panoramic GIF strip, and tiny botanical finish.</p><div class="gallery-render">
+<div class="mrm mrm-bud mrm-last-zest">
+<div class="mrm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="mrm-gifs">
+<img src="https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv" alt="Character portrait" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv" alt="Companion portrait" style="object-position:50% 50%;">
+</div>
+
+<div class="mrm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>
+
+<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>
+</div>
+
+</div><textarea readonly aria-label="Last Zest posting code">[dohtml]
+&lt;div class=&quot;mrm mrm-bud mrm-last-zest&quot;&gt;
+&lt;div class=&quot;mrm-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span&gt;[text]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-gifs&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;img src=&quot;https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv&quot; alt=&quot;Companion portrait&quot; style=&quot;object-position:50% 50%;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Duis aute irure dolor.”&lt;/b&gt; Praesent vel ligula id ipsum consequat tincidunt. &lt;i&gt;Etiam vitae ligula nec lacus.&lt;/i&gt; &lt;u&gt;Nulla facilisi.&lt;/u&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mrm-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;mrm-seal&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css&quot;&gt;
+[/dohtml]
+</textarea></details>
+</div></details>
+</main>
+<footer class="colophon"><span>Marmalade · A story preserved in warmth</span><a href="https://github.com/lexdoescodingnow/templates/tree/main/marmalade" target="_blank" rel="noopener">Open the Marmalade folder on GitHub ↗</a></footer>
+
+<script id="collection-data" type="application/json">[{"kind": "thread", "name": "Stillgold", "slug": "stillgold", "number": 1, "description": "Fine window frames, paired portraits, and a botanical finish.", "filename": "marmalade-stillgold-thread-01.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-thread mrm-stillgold\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "thread", "name": "Seville Ledger", "slug": "seville-ledger", "number": 2, "description": "A stitched preserve label with two keepsake photo stamps.", "filename": "marmalade-seville-ledger-thread-02.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-thread mrm-seville-ledger\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "thread", "name": "Sunday Preserve", "slug": "sunday-preserve", "number": 3, "description": "A gingham jar collar, soft shoulders, and handwritten lettering.", "filename": "marmalade-sunday-preserve-thread-03.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-thread mrm-sunday-preserve\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "thread", "name": "Amberlight", "slug": "amberlight", "number": 4, "description": "A narrow portrait rail beside an intimate column of writing.", "filename": "marmalade-amberlight-thread-04.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-thread mrm-amberlight\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "thread", "name": "Dear Clement", "slug": "dear-clement", "number": 5, "description": "A small correspondence card with photographs tucked into its corner.", "filename": "marmalade-dear-clement-thread-05.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-thread mrm-dear-clement\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus ac neque fringilla tincidunt. <b>“Duis aute irure dolor in reprehenderit.”<\/b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<p>Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus interdum blandit.<\/i> Integer non magna in velit fermentum dignissim. Donec ultrices, nisl a finibus mollis, nunc erat tempus lorem, quis interdum neque sapien vel sem.<\/p>\n<p>Curabitur vitae erat eu nisl lobortis tristique. <u>Nulla facilisi, sed tempus velit.<\/u> Suspendisse euismod, sapien sed vulputate dictum, neque erat luctus erat, vitae malesuada ligula augue eget arcu.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Rindline", "slug": "rindline", "number": 1, "description": "A classic handset with gingham contact trim and incoming bubbles.", "filename": "marmalade-rindline-comms-01.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-comms mrm-rindline\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"mrm-receipt\">Received · 09:41<\/span>\n<div class=\"mrm-status\"><span>09:41<\/span><span class=\"mrm-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"mrm-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Citrus Dial", "slug": "citrus-dial", "number": 2, "description": "A compact phone with a panoramic double portrait header.", "filename": "marmalade-citrus-dial-comms-02.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-comms mrm-citrus-dial\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"mrm-receipt\">Received · 09:41<\/span>\n<div class=\"mrm-status\"><span>09:41<\/span><span class=\"mrm-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"mrm-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Jar Notes", "slug": "jar-notes", "number": 3, "description": "A desktop messenger window with tinted note-like bubbles.", "filename": "marmalade-jar-notes-comms-03.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-comms mrm-jar-notes\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"mrm-receipt\">Received · 09:41<\/span>\n<div class=\"mrm-status\"><span>09:41<\/span><span class=\"mrm-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"mrm-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Pectin Ping", "slug": "pectin-ping", "number": 4, "description": "A rounded handset with a tall contact window and soft chat bubbles.", "filename": "marmalade-pectin-ping-comms-04.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-comms mrm-pectin-ping\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"mrm-receipt\">Received · 09:41<\/span>\n<div class=\"mrm-status\"><span>09:41<\/span><span class=\"mrm-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"mrm-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "comms", "name": "Sweet Reception", "slug": "sweet-reception", "number": 5, "description": "A pocket messenger with overlapping avatars and a neat contact bar.", "filename": "marmalade-sweet-reception-comms-05.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-comms mrm-sweet-reception\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n<p><b>Duis aute irure dolor.<\/b> Praesent vel ligula id ipsum consequat tincidunt.<\/p>\n<p><i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u><\/p>\n<\/div>\n\n<span class=\"mrm-receipt\">Received · 09:41<\/span>\n<div class=\"mrm-status\"><span>09:41<\/span><span class=\"mrm-signals\" aria-hidden=\"true\"><\/span><\/div>\n\n<div class=\"mrm-device\" aria-hidden=\"true\"><span>Message<\/span><\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Little Preserve", "slug": "little-preserve", "number": 1, "description": "A miniature jar label with a gingham portrait ribbon.", "filename": "marmalade-little-preserve-bud-01.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-bud mrm-little-preserve\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Peel Kiss", "slug": "peel-kiss", "number": 2, "description": "Two overlapping portrait coins and a delicate citrus-peel flourish.", "filename": "marmalade-peel-kiss-bud-02.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-bud mrm-peel-kiss\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Sugar Pip", "slug": "sugar-pip", "number": 3, "description": "A small stitched keepsake with two photograph stamps.", "filename": "marmalade-sugar-pip-bud-03.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-bud mrm-sugar-pip\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Morning Spoon", "slug": "morning-spoon", "number": 4, "description": "A slender portrait rail and a small space for a quick reply.", "filename": "marmalade-morning-spoon-bud-04.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-bud mrm-morning-spoon\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}, {"kind": "bud", "name": "Last Zest", "slug": "last-zest", "number": 5, "description": "A handwritten heading, panoramic GIF strip, and tiny botanical finish.", "filename": "marmalade-last-zest-bud-05.txt", "snippet": "[dohtml]\n<div class=\"mrm mrm-bud mrm-last-zest\">\n<div class=\"mrm-meta\">\n<a href=\"[url]\">[name]<\/a>\n<span>[text]<\/span>\n<\/div>\n\n<div class=\"mrm-gifs\">\n<img src=\"https://64.media.tumblr.com/88d5564126e3670f484f4d815f08d66e/d5d3a53409b58fdc-50/s540x810/e2b4e25ab37b0fec04747e61421da92f6efd59d8.gifv\" alt=\"Character portrait\" style=\"object-position:50% 50%;\">\n<img src=\"https://64.media.tumblr.com/1b0a22fa8cd6f592fc3d8b23cddc3414/801ab3783f860a99-81/s540x810/c926646c60181a97807b646b755aea7395fe970c.gifv\" alt=\"Companion portrait\" style=\"object-position:50% 50%;\">\n<\/div>\n\n<div class=\"mrm-copy\">\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”<\/b> Praesent vel ligula id ipsum consequat tincidunt. <i>Etiam vitae ligula nec lacus.<\/i> <u>Nulla facilisi.<\/u> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<\/p>\n<\/div>\n\n<div class=\"mrm-finish\" aria-hidden=\"true\"><span class=\"mrm-seal\"><\/span><\/div>\n<\/div>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css\">\n[/dohtml]\n"}]</script>
+<script>
+
+const collection=JSON.parse(document.getElementById('collection-data').textContent);
+const $=id=>document.getElementById(id);
+const drafts=new Map();
+let kind='thread',index=0,palette=0;
+const ids=['name','url','subtitle','gif-one','gif-two','crop-one','crop-two','body','time','receipt'];
+const palettes=[['#9a4c45','#7f613f','#3d6f73'],['#88508f','#7360a0','#426fa3'],['#456d56','#778151','#4b7388'],['#5d5955','#756d63','#555e63']];
+const darkPalettes=[['#e49d91','#d3b58f','#8fc0c2'],['#cb9ad4','#b4a2e0','#90bde6'],['#a0c3ac','#c5cc9b','#96c0d4'],['#d6cfca','#bdb7ae','#bec7cb']];
+const systemDark=matchMedia('(prefers-color-scheme:dark)');
+const current=()=>collection.filter(t=>t.kind===kind)[index];
+const esc=t=>String(t).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
+function safeLink(s){s=s.trim();if(s==='[url]'||s.startsWith('#'))return s;try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?s:'[url]'}catch{return '[url]'}}
+function safeImage(s){try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?s:''}catch{return ''}}
+function bodyHTML(s){let h=esc(s);h=h.replace(/\[(\/?)(b|i|u)\]/gi,(_,slash,tag)=>'<'+slash+tag.toLowerCase()+'>');h=h.replace(/&lt;(\/?)(p|b|strong|i|em|u|blockquote)&gt;/gi,(_,slash,tag)=>'<'+slash+tag.toLowerCase()+'>');h=h.replace(/&lt;br\s*\/?&gt;/gi,'<br>');if(!/<p>/i.test(h))h=h.split(/\n\s*\n/).map(p=>'<p>'+p.replaceAll('\n','<br>')+'</p>').join('\n');return h;}
+function defaults(t){const d=new DOMParser().parseFromString(t.snippet.replace('[dohtml]','').replace('[/dohtml]',''),'text/html');const images=d.querySelectorAll('.mrm-gifs img');return {'name':'[name]','url':'[url]','subtitle':'[text]','gif-one':images[0].getAttribute('src'),'gif-two':images[1].getAttribute('src'),'crop-one':'50','crop-two':'50','body':d.querySelector('.mrm-copy').innerHTML.trim().replaceAll('<b>','[b]').replaceAll('</b>','[/b]').replaceAll('<i>','[i]').replaceAll('</i>','[/i]').replaceAll('<u>','[u]').replaceAll('</u>','[/u]'),'time':'09:41','receipt':'Received · 09:41'};}
+function stash(){drafts.set(current().filename,Object.fromEntries(ids.map(id=>[id,$(id).value])))}
+function makeSnippet(t,fields){let s='[dohtml]\n<div class="mrm mrm-'+t.kind+' mrm-'+t.slug+'">\n<div class="mrm-meta">\n<a href="'+esc(safeLink(fields.url))+'">'+esc(fields.name)+'</a>\n<span>'+esc(fields.subtitle)+'</span>\n</div>\n';const imgs=[safeImage(fields['gif-one'].trim()),safeImage(fields['gif-two'].trim())];if(imgs.some(Boolean)){s+='\n<div class="mrm-gifs">\n';imgs.forEach((url,i)=>{if(url)s+='<img src="'+esc(url)+'" alt="'+(i?'Companion':'Character')+' portrait" style="object-position:50% '+Math.max(0,Math.min(100,Number(fields[i?'crop-two':'crop-one'])||0))+'%;">\n'});s+='</div>\n'}s+='\n<div class="mrm-copy">\n'+bodyHTML(fields.body)+'\n</div>\n';if(t.kind==='comms'){s+='\n<span class="mrm-receipt">'+esc(fields.receipt)+'</span>\n<div class="mrm-status"><span>'+esc(fields.time)+'</span><span class="mrm-signals" aria-hidden="true"></span></div>\n\n<div class="mrm-device" aria-hidden="true"><span>Message</span></div>\n'}s+='\n<div class="mrm-finish" aria-hidden="true"><span class="mrm-seal"></span></div>\n</div>\n\n<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/marmalade/marmalade-collection-v1.css">\n[/dohtml]\n';return s;}
+function render(){stash();const t=current(),s=makeSnippet(t,drafts.get(t.filename));$('render').innerHTML=s.replace('[dohtml]','').replace('[/dohtml]','').split('<link')[0];$('code').value=s;const plain=bodyHTML($('body').value).replace(/<[^>]*>/g,' ').replace(/&[^;]+;/g,' ');const count=plain.trim()?plain.trim().split(/\s+/).length:0;$('word-count').textContent=kind==='bud'?count+' / 100 words':count+' words';$('word-count').classList.toggle('over',kind==='bud'&&count>100);$('copy-status').textContent='';}
+function choose(){const t=current(),d=drafts.get(t.filename)||defaults(t);ids.forEach(id=>$(id).value=d[id]);$('comms-fields').hidden=kind!=='comms';$('add-message').hidden=kind!=='comms';$('design-title').textContent=t.name;$('position').textContent=(collection.indexOf(t)+1)+' / 15';$('design-description').textContent=t.description;const nav=$('variant-tabs');nav.innerHTML='';collection.filter(t=>t.kind===kind).forEach((t,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed',String(i===index));b.innerHTML='<b>'+String(i+1).padStart(2,'0')+'</b><span>'+t.name+'</span>';b.onclick=()=>{stash();index=i;choose()};nav.append(b)});document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.kind===kind)));render();}
+function applyColours(colours){colours.forEach((h,i)=>{const rgb=h.slice(1).match(/../g).map(v=>parseInt(v,16)).join(',');document.body.style.setProperty('--mgrgb'+(i+1),rgb);$(['colour-one','colour-two','colour-three'][i]).value=h});}
+function applyPalette(){const dark=$('mode').value==='dark'||($('mode').value==='system'&&systemDark.matches);applyColours((dark?darkPalettes:palettes)[palette]);document.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.palette)===palette)));}
+ids.forEach(id=>$(id).addEventListener('input',render));document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{stash();kind=b.dataset.kind;index=0;choose()});document.querySelectorAll('[data-palette]').forEach(b=>b.onclick=()=>{palette=Number(b.dataset.palette);applyPalette()});['colour-one','colour-two','colour-three'].forEach(id=>$(id).addEventListener('input',()=>{applyColours(['colour-one','colour-two','colour-three'].map(id=>$(id).value));document.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed','false'))}));$('mode').onchange=()=>{if($('mode').value==='system')document.documentElement.removeAttribute('color-mode');else document.documentElement.setAttribute('color-mode',$('mode').value);applyPalette()};systemDark.addEventListener('change',()=>{if($('mode').value==='system')applyPalette()});$('narrow').onchange=()=>$('render').classList.toggle('narrow',$('narrow').checked);
+$('copy').onclick=async()=>{try{await navigator.clipboard.writeText($('code').value);$('copy-status').textContent='Copied. Ready for your forum post.'}catch{document.querySelector('.stage-code').open=true;$('code').focus();$('code').select();let ok=false;try{ok=document.execCommand('copy')}catch{}$('copy-status').textContent=ok?'Copied. Ready for your forum post.':'Code selected. Press Ctrl+C or Cmd+C to copy.'}};
+$('download').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([$('code').value],{type:'text/plain;charset=umrm-8'}));a.download=current().filename;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);$('copy-status').textContent='Your posting code is ready to download.'};$('reset').onclick=()=>{drafts.delete(current().filename);choose()};applyPalette();choose();
+
+function move(delta){stash();const at=(collection.indexOf(current())+delta+collection.length)%collection.length;kind=collection[at].kind;index=collection.filter(t=>t.kind===kind).indexOf(collection[at]);choose()}
+$("previous").onclick=()=>move(-1);$("next").onclick=()=>move(1);
+$("add-message").onclick=()=>{$("body").value+="\n<p>Lorem ipsum dolor sit amet.</p>";render()};
+
+</script>
+</body>
+</html>
