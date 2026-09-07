@@ -903,7 +903,58 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 @media (max-width:1000px) {.collection-stage {grid-template-columns:repeat(2,minmax(0,1fr));}.collection-stage[data-family="threads"] {grid-template-columns:minmax(0,1fr);}}
 @media (max-width:640px) {.collection-stage {grid-template-columns:minmax(0,1fr);}.collection-header,.collection-stage,.collection-footer {width:calc(100% - 28px);}.collection-header h1 {font-size:43px;}.collection-description {min-height:0;}}
 </style>
-</head>
+<style>.banana-keepsake .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-cameo .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake.bn-cameo:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake.bn-cameo:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake.bn-cameo .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake.bn-cameo .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-ribbon .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake.bn-ribbon:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake.bn-ribbon:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake.bn-ribbon .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake.bn-ribbon .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-canopy .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake.bn-canopy:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake.bn-canopy:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake.bn-canopy .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake.bn-canopy .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-postcard .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake.bn-postcard:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake.bn-postcard:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake.bn-postcard .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake.bn-postcard .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-sprout .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-sprout:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-sprout:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-sprout .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-sprout .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-leaflet .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-leaflet:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-leaflet:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-leaflet .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-leaflet .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-tendril .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-tendril:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-tendril:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-tendril .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-tendril .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-twinleaf .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-twinleaf:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-twinleaf:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-twinleaf .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-twinleaf .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-pressing .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-pressing:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-pressing:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-pressing .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-pressing .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-postcard:not(:has(.bn-gifs img)) .bn-copy{margin-top:10px;} .banana-bud.bb-leaflet:not(:has(.bb-photo img)) .bb-meta{padding-top:0;} .banana-bud.bb-pressing:not(:has(.bb-photo img)) .bb-copy{margin-top:0;}
+</style></head>
 <body data-palette="mauve" data-width="normal">
 <header class="collection-header">
 <p class="collection-kicker">The Banana collection</p>
@@ -939,15 +990,15 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bn-finish" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Keepsake threads code</summary><textarea aria-label="Keepsake threads forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-keepsake&quot;&gt;
-&lt;div class=&quot;bn-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;bn-title&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bn-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;bn-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;div class="banana-keepsake"&gt;
+&lt;div class="bn-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="bn-title"&gt;Banana&lt;/div&gt;
+&lt;div class="bn-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="bn-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
+&lt;img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-copy&quot;&gt;
+&lt;div class="bn-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
@@ -956,9 +1007,9 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 
 &lt;p&gt;Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. &lt;b&gt;“Nullam quis risus eget urna mollis ornare vel eu leo.”&lt;/b&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bn-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-keepsake-v2.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -973,23 +1024,23 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bn-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
+</p><p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
 
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
-</div>
+</p><p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
+</p></div>
 <div class="bn-title">Banana</div>
 <div class="bn-finish" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Cameo threads code</summary><textarea aria-label="Cameo threads forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-keepsake bn-cameo&quot;&gt;
-&lt;div class=&quot;bn-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;bn-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;bn-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;div class="banana-keepsake bn-cameo"&gt;
+&lt;div class="bn-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="bn-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="bn-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-copy&quot;&gt;
+&lt;div class="bn-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -998,10 +1049,10 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 
 &lt;p&gt;Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. &lt;b&gt;“Nullam quis risus eget urna mollis ornare vel eu leo.”&lt;/b&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-title&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bn-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bn-title"&gt;Banana&lt;/div&gt;
+&lt;div class="bn-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-thread-variations.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -1017,24 +1068,24 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bn-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
+</p><p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
 
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
-</div>
+</p><p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
+</p></div>
 <div class="bn-title">Banana</div>
 <div class="bn-finish" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Ribbon threads code</summary><textarea aria-label="Ribbon threads forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-keepsake bn-ribbon&quot;&gt;
-&lt;div class=&quot;bn-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;bn-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;bn-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;div class="banana-keepsake bn-ribbon"&gt;
+&lt;div class="bn-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="bn-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="bn-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
+&lt;img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-copy&quot;&gt;
+&lt;div class="bn-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1043,10 +1094,10 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 
 &lt;p&gt;Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. &lt;b&gt;“Nullam quis risus eget urna mollis ornare vel eu leo.”&lt;/b&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-title&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bn-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bn-title"&gt;Banana&lt;/div&gt;
+&lt;div class="bn-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-thread-variations.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -1061,23 +1112,23 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bn-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
+</p><p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
 
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
-</div>
+</p><p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
+</p></div>
 <div class="bn-title">Banana</div>
 <div class="bn-finish" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Canopy threads code</summary><textarea aria-label="Canopy threads forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-keepsake bn-canopy&quot;&gt;
-&lt;div class=&quot;bn-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;bn-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;bn-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;div class="banana-keepsake bn-canopy"&gt;
+&lt;div class="bn-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="bn-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="bn-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-copy&quot;&gt;
+&lt;div class="bn-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1086,43 +1137,35 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 
 &lt;p&gt;Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. &lt;b&gt;“Nullam quis risus eget urna mollis ornare vel eu leo.”&lt;/b&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-title&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bn-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bn-title"&gt;Banana&lt;/div&gt;
+&lt;div class="bn-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-thread-variations.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
 <h2><span>05</span> Postcard</h2>
-<p class="collection-description">Two landscape prints, a postmark motif and a fine double border.</p>
+<p class="collection-description">A writing-led postcard with a postmark motif, botanical finish and fine double border.</p>
 <div class="banana-keepsake bn-postcard">
 <div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
 <div class="bn-subtitle">[text]</div>
-<div class="bn-gifs">
-<img loading="lazy" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
-<img loading="lazy" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
-</div>
 <div class="bn-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
+</p><p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
 
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
-</div>
+</p><p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
+</p></div>
 <div class="bn-title">Banana</div>
 <div class="bn-finish" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Postcard threads code</summary><textarea aria-label="Postcard threads forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-keepsake bn-postcard&quot;&gt;
-&lt;div class=&quot;bn-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;bn-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;bn-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;bn-copy&quot;&gt;
+&lt;div class="banana-keepsake bn-postcard"&gt;
+&lt;div class="bn-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="bn-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="bn-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1131,10 +1174,10 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 
 &lt;p&gt;Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. &lt;b&gt;“Nullam quis risus eget urna mollis ornare vel eu leo.”&lt;/b&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bn-title&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bn-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bn-title"&gt;Banana&lt;/div&gt;
+&lt;div class="bn-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-thread-variations.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article></section><section class="collection-stage" data-family="comms" aria-label="Comms" hidden><article class="collection-card">
@@ -1149,31 +1192,31 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bc-time"><span>[time]</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
 <div class="bc-compose" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Keepsake comms code</summary><textarea aria-label="Keepsake comms forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-comms-keepsake&quot;&gt;
-&lt;div class=&quot;bc-contact&quot;&gt;
-&lt;a class=&quot;bc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;bc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;bc-avatar&quot; src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-comms-keepsake"&gt;
+&lt;div class="bc-contact"&gt;
+&lt;a class="bc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="bc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-time&quot;&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bc-messages&quot;&gt;
+&lt;div class="bc-time"&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;bc-brand&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="bc-brand"&gt;Banana&lt;/div&gt;
+&lt;div class="bc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-keepsake-v3.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -1188,31 +1231,31 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bc-time"><span>[time]</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
 <div class="bc-compose" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Cameo comms code</summary><textarea aria-label="Cameo comms forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-comms-keepsake bc-cameo&quot;&gt;
-&lt;div class=&quot;bc-contact&quot;&gt;
-&lt;a class=&quot;bc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;bc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;bc-avatar&quot; src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-comms-keepsake bc-cameo"&gt;
+&lt;div class="bc-contact"&gt;
+&lt;a class="bc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="bc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-time&quot;&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bc-messages&quot;&gt;
+&lt;div class="bc-time"&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;bc-brand&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="bc-brand"&gt;Banana&lt;/div&gt;
+&lt;div class="bc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-variations.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -1227,31 +1270,31 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bc-time"><span>[time]</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
 <div class="bc-compose" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Ribbon comms code</summary><textarea aria-label="Ribbon comms forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-comms-keepsake bc-ribbon&quot;&gt;
-&lt;div class=&quot;bc-contact&quot;&gt;
-&lt;a class=&quot;bc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;bc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;bc-avatar&quot; src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-comms-keepsake bc-ribbon"&gt;
+&lt;div class="bc-contact"&gt;
+&lt;a class="bc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="bc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-time&quot;&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bc-messages&quot;&gt;
+&lt;div class="bc-time"&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;bc-brand&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="bc-brand"&gt;Banana&lt;/div&gt;
+&lt;div class="bc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-variations.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -1266,31 +1309,31 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bc-time"><span>[time]</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
 <div class="bc-compose" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Canopy comms code</summary><textarea aria-label="Canopy comms forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-comms-keepsake bc-canopy&quot;&gt;
-&lt;div class=&quot;bc-contact&quot;&gt;
-&lt;a class=&quot;bc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;bc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;bc-avatar&quot; src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-comms-keepsake bc-canopy"&gt;
+&lt;div class="bc-contact"&gt;
+&lt;a class="bc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="bc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-time&quot;&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bc-messages&quot;&gt;
+&lt;div class="bc-time"&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;bc-brand&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="bc-brand"&gt;Banana&lt;/div&gt;
+&lt;div class="bc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-variations.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -1305,31 +1348,31 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 <div class="bc-time"><span>[time]</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
 <div class="bc-compose" aria-hidden="true"></div>
 </div>
 <details><summary>Copy Postcard comms code</summary><textarea aria-label="Postcard comms forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-comms-keepsake bc-postcard&quot;&gt;
-&lt;div class=&quot;bc-contact&quot;&gt;
-&lt;a class=&quot;bc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;bc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;bc-avatar&quot; src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-comms-keepsake bc-postcard"&gt;
+&lt;div class="bc-contact"&gt;
+&lt;a class="bc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="bc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-time&quot;&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bc-messages&quot;&gt;
+&lt;div class="bc-time"&gt;&lt;span&gt;[time]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;bc-brand&quot;&gt;Banana&lt;/div&gt;
-&lt;div class=&quot;bc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="bc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="bc-brand"&gt;Banana&lt;/div&gt;
+&lt;div class="bc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-variations.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article></section><section class="collection-stage" data-family="buds" aria-label="Buds" hidden><article class="collection-card">
@@ -1342,52 +1385,46 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 </div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Sprout buds code</summary><textarea aria-label="Sprout buds forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-sprout&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-bud bb-sprout"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-photo"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
 <h2><span>02</span> Leaflet</h2>
-<p class="collection-description">A folded notecard with a taped miniature GIF.</p>
+<p class="collection-description">An image-free folded notecard for a quick reply.</p>
 <div class="banana-bud bb-leaflet">
 <div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
-<div class="bb-photo">
-<img loading="lazy" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
-</div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Leaflet buds code</summary><textarea aria-label="Leaflet buds forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-leaflet&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="banana-bud bb-leaflet"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -1400,23 +1437,23 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 </div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Tendril buds code</summary><textarea aria-label="Tendril buds forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-tendril&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-bud bb-tendril"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-photo"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
@@ -1430,53 +1467,47 @@ body[data-width="narrow"] .collection-stage :is(.banana-keepsake,.banana-comms-k
 </div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Twinleaf buds code</summary><textarea aria-label="Twinleaf buds forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-twinleaf&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-bud bb-twinleaf"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-photo"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
+&lt;img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article><article class="collection-card">
 <h2><span>05</span> Pressing</h2>
-<p class="collection-description">A narrow film still above a compact reply.</p>
+<p class="collection-description">A slim botanical note with the writing at its centre.</p>
 <div class="banana-bud bb-pressing">
 <div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
-<div class="bb-photo">
-<img loading="lazy" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
-</div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Pressing buds code</summary><textarea aria-label="Pressing buds forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-pressing&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="banana-bud bb-pressing"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </article></section></main>

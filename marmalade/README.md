@@ -1,51 +1,53 @@
 # Marmalade collection
 
-Fifteen JCink templates inspired by the Marmalade poster: window light, handwritten keepsakes, preserve labels, gingham jar collars, and delicate citrus and botanical drawings. Member colours shape the headers, frames, borders, and formatted text; the writing rests on neutral light or dark surfaces.
+Five threads, five comms and five buds. GIFs follow the composition: portrait pairs for paired frames, single portraits for contacts and narrow photo spaces, and image-free options for letters and tiny replies.
 
-[Download the preview/editor](marmalade-collection-preview.html) · [Complete collection ZIP](marmalade-collection.zip)
+[Preview and code](marmalade-collection-preview.html) · [Download collection](marmalade-collection.zip)
 
-| No. | Thread | Comms | Bud |
-| --- | --- | --- | --- |
-| 01 | [Stillgold](marmalade-stillgold-thread-01.txt) | [Rindline](marmalade-rindline-comms-01.txt) | [Little Preserve](marmalade-little-preserve-bud-01.txt) |
-| 02 | [Seville Ledger](marmalade-seville-ledger-thread-02.txt) | [Citrus Dial](marmalade-citrus-dial-comms-02.txt) | [Peel Kiss](marmalade-peel-kiss-bud-02.txt) |
-| 03 | [Sunday Preserve](marmalade-sunday-preserve-thread-03.txt) | [Jar Notes](marmalade-jar-notes-comms-03.txt) | [Sugar Pip](marmalade-sugar-pip-bud-03.txt) |
-| 04 | [Amberlight](marmalade-amberlight-thread-04.txt) | [Pectin Ping](marmalade-pectin-ping-comms-04.txt) | [Morning Spoon](marmalade-morning-spoon-bud-04.txt) |
-| 05 | [Dear Clement](marmalade-dear-clement-thread-05.txt) | [Sweet Reception](marmalade-sweet-reception-comms-05.txt) | [Last Zest](marmalade-last-zest-bud-05.txt) |
+## Threads
 
-![All fifteen Marmalade designs](marmalade-collection-overview.png)
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Stillgold](marmalade-stillgold-thread-01.txt) | 2 | Fine window frames, paired portraits, and a botanical finish. |
+| [Seville Ledger](marmalade-seville-ledger-thread-02.txt) | 1 | A stitched preserve label with one keepsake photo stamp. |
+| [Sunday Preserve](marmalade-sunday-preserve-thread-03.txt) | 1 | A gingham jar collar, soft shoulders, and handwritten lettering. |
+| [Amberlight](marmalade-amberlight-thread-04.txt) | 1 | A narrow portrait rail beside an intimate column of writing. |
+| [Dear Clement](marmalade-dear-clement-thread-05.txt) | 0 | A small image-free correspondence card with botanical details. |
 
-## Copying and editing
+## Comms
 
-Open a named `.txt` file, choose **Raw** on GitHub, and copy the entire `[dohtml]` block into your post. The stylesheet link is already included. Names, profile URLs, title/status text, both supplied GIF URLs, and the writing are at the top of each snippet. There are no comments or editing notes inside the templates.
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Rindline](marmalade-rindline-comms-01.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Citrus Dial](marmalade-citrus-dial-comms-02.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Jar Notes](marmalade-jar-notes-comms-03.txt) | 0 | A desktop messenger with a text contact header and tinted note-like bubbles. |
+| [Pectin Ping](marmalade-pectin-ping-comms-04.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Sweet Reception](marmalade-sweet-reception-comms-05.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
 
-Download and open `marmalade-collection-preview.html` to browse all 15 designs. Select Threads, Comms, or Buds, then a named design; Previous and Next cycle through the whole collection. Edit the fields and select **Copy JCink code** or **Download .txt**. Edits stay with each design while the page is open. The complete gallery also exposes every original snippet without JavaScript.
+## Buds
 
-The editor accepts `[b]`, `[i]`, and `[u]`, or the equivalent HTML tags. Inside `[dohtml]`, use `<b>`, `<i>`, and `<u>`; `strong` and `em` are supported too. Bold and underline use the forward member gradient (1 → 2 → 3); italics use the reverse gradient (3 → 2 → 1). Comms use one ordinary `<p>` per message; closed paragraphs and successive opening `<p>` tags both work.
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Little Preserve](marmalade-little-preserve-bud-01.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
+| [Peel Kiss](marmalade-peel-kiss-bud-02.txt) | 2 | Two overlapping portrait coins and a delicate citrus-peel flourish. |
+| [Sugar Pip](marmalade-sugar-pip-bud-03.txt) | 0 | A small stitched note with a compact image-free reply. |
+| [Morning Spoon](marmalade-morning-spoon-bud-04.txt) | 0 | A fine-lined miniature letter with room for a quick reply. |
+| [Last Zest](marmalade-last-zest-bud-05.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
 
-Both supplied Tumblr GIFs are included. Either GIF can be removed; the editor can omit both. The crop sliders adjust vertical framing. Replace `[name]` with a character name or names, `[url]` with a profile or thread link, and `[text]` with your title or status. All sample writing is lorem ipsum. Bud samples contain fewer than 100 words, and the editor counts words without cutting off longer replies. Phone controls are decorative.
+## Editing and integration
 
-## Styling
+Copy a complete `[dohtml]` block from a named `.txt` file. The editable `[url]`, `[name]`, `[text]`, image URLs, writing and comms time remain above the decoration and the stylesheet link. The supplied GIF URLs are examples, not a required pair.
 
-The forum snippets load `marmalade-collection-v1.css` from this repository through jsDelivr. No forum JavaScript, extra image assets, IDs, or one-time stylesheet installation is needed. The preview embeds this CSS so it opens locally; fonts and GIFs need an internet connection.
+Use the default layout in the table, or remove an image tag. If removing the final image, remove its empty portrait container too. Image-free layouts reclaim the space automatically. In previews with an editor, clearing a GIF URL omits that image from the preview and copied code; clearing both produces an image-free post. Custom edits are kept when switching designs.
 
-The inherited `--mgrgb1`, `--mgrgb2`, and `--mgrgb3` variables use comma-separated RGB values. Preview palette controls do not write fixed member colours into the posting code. Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system preference; system mode is used when that attribute is absent. All template styles are scoped to `.mrm`.
+Comms messages use ordinary `<p>` paragraphs; successive opening `<p>` tags work without closing tags or repeated classes. Device decoration is static. Buds encourage 100 words or fewer and never clip longer replies.
 
-Italiana, DM Sans, and La Belle Aurore are served by Google Fonts with local font fallbacks. Citrus slices, jars, peel curls, and botanical sprigs are original inline SVG masks included in the stylesheet. They need no external image host.
+Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` work too. Editors that accept `[b]`, `[i]` and `[u]` convert them to HTML. The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the design and emphasis. Bold and underline use colours 1 → 2 → 3; italics use 3 → 2 → 1.
 
-## Designs
+Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system fallback. Writing stays on neutral surfaces. Preview palette controls are samples; posts inherit the forum palette.
 
-- **Stillgold (thread):** Fine window frames, paired portraits, and a botanical finish.
-- **Seville Ledger (thread):** A stitched preserve label with two keepsake photo stamps.
-- **Sunday Preserve (thread):** A gingham jar collar, soft shoulders, and handwritten lettering.
-- **Amberlight (thread):** A narrow portrait rail beside an intimate column of writing.
-- **Dear Clement (thread):** A small correspondence card with photographs tucked into its corner.
-- **Rindline (comms):** A classic handset with gingham contact trim and incoming bubbles.
-- **Citrus Dial (comms):** A compact phone with a panoramic double portrait header.
-- **Jar Notes (comms):** A desktop messenger window with tinted note-like bubbles.
-- **Pectin Ping (comms):** A rounded handset with a tall contact window and soft chat bubbles.
-- **Sweet Reception (comms):** A pocket messenger with overlapping avatars and a neat contact bar.
-- **Little Preserve (bud):** A miniature jar label with a gingham portrait ribbon.
-- **Peel Kiss (bud):** Two overlapping portrait coins and a delicate citrus-peel flourish.
-- **Sugar Pip (bud):** A small stitched keepsake with two photograph stamps.
-- **Morning Spoon (bud):** A slender portrait rail and a small space for a quick reply.
-- **Last Zest (bud):** A handwritten heading, panoramic GIF strip, and tiny botanical finish.
+All current snippets use the fresh `marmalade-media-v2.css` stylesheet. Older CSS files remain available for existing posts. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS, fonts and GIFs require internet access; font fallbacks remain available. Existing forum posts retain their original markup: paste the revised snippet to adopt its new GIF layout.
+
+## Revision checks
+
+The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.

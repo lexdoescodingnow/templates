@@ -1,73 +1,49 @@
-# The Banana collection
+# Banana collection
 
-The complete set contains **five threads, five comms and five buds**. Keepsake is the original thread and phone design. Cameo, Ribbon, Canopy and Postcard are coordinated variations of both.
+Five threads, five comms and five buds. GIFs follow the composition: portrait pairs for paired frames, single portraits for contacts and narrow photo spaces, and image-free options for letters and tiny replies.
 
-Copy one linked snippet in full into a JCink post, including its `[dohtml]` wrapper and stylesheet link. Download [banana-collection-preview.html](banana-collection-preview.html) and open it in a browser to compare all fifteen with light/dark and sample group-colour controls. The preview uses the supplied online GIFs.
+[Preview and code](banana-collection-preview.html)
 
 ## Threads
 
-| Template code | Design | GIFs |
-| --- | --- | --- |
-| [Keepsake](banana-keepsake-snippet.txt) | The original staggered GIF portraits and botanical frame. | 2 |
-| [Cameo](banana-thread-cameo.txt) | A single oval portrait and a softer, rounded frame. | 1 |
-| [Ribbon](banana-thread-ribbon.txt) | Two aligned square GIFs crossed by a band of member colours. | 2 |
-| [Canopy](banana-thread-canopy.txt) | One wide, arched GIF with leaves framing the heading. | 1 |
-| [Postcard](banana-thread-postcard.txt) | Two landscape prints, a postmark motif and a fine double border. | 2 |
-
-[All five threads snippets](banana-thread-snippets.txt), in the order shown above.
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Keepsake](banana-keepsake-snippet.txt) | 2 | The original staggered GIF portraits and botanical frame. |
+| [Cameo](banana-thread-cameo.txt) | 1 | A single oval portrait and a softer, rounded frame. |
+| [Ribbon](banana-thread-ribbon.txt) | 2 | Two aligned square GIFs crossed by a band of member colours. |
+| [Canopy](banana-thread-canopy.txt) | 1 | One wide, arched GIF with leaves framing the heading. |
+| [Postcard](banana-thread-postcard.txt) | 0 | A writing-led postcard with a postmark motif, botanical finish and fine double border. |
 
 ## Comms
 
-| Template code | Design | GIFs |
-| --- | --- | --- |
-| [Keepsake](banana-comms-snippet.txt) | The original Banana phone with its contact header and incoming bubbles. | 1 |
-| [Cameo](banana-comms-cameo.txt) | A centred circular contact GIF and rounded message bubbles. | 1 |
-| [Ribbon](banana-comms-ribbon.txt) | A coloured header rule, round avatar and edged message bubbles. | 1 |
-| [Canopy](banana-comms-canopy.txt) | An arched contact banner inside a curved phone frame. | 1 |
-| [Postcard](banana-comms-postcard.txt) | A compact phone with a portrait on the right and a round home button. | 1 |
-
-[All five comms snippets](banana-comms-snippets.txt), in the order shown above.
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Keepsake](banana-comms-snippet.txt) | 1 | The original Banana phone with its contact header and incoming bubbles. |
+| [Cameo](banana-comms-cameo.txt) | 1 | A centred circular contact GIF and rounded message bubbles. |
+| [Ribbon](banana-comms-ribbon.txt) | 1 | A coloured header rule, round avatar and edged message bubbles. |
+| [Canopy](banana-comms-canopy.txt) | 1 | An arched contact banner inside a curved phone frame. |
+| [Postcard](banana-comms-postcard.txt) | 1 | A compact phone with a portrait on the right and a round home button. |
 
 ## Buds
 
-| Template code | Design | GIFs |
-| --- | --- | --- |
-| [Sprout](banana-bud-sprout.txt) | A rounded card with a leaf-shaped portrait. | 1 |
-| [Leaflet](banana-bud-leaflet.txt) | A folded notecard with a taped miniature GIF. | 1 |
-| [Tendril](banana-bud-tendril.txt) | An arched side portrait beside a short passage. | 1 |
-| [Twinleaf](banana-bud-twinleaf.txt) | Two overlapping character GIFs. | 2 |
-| [Pressing](banana-bud-pressing.txt) | A narrow film still above a compact reply. | 1 |
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Sprout](banana-bud-sprout.txt) | 1 | A rounded card with a leaf-shaped portrait. |
+| [Leaflet](banana-bud-leaflet.txt) | 0 | An image-free folded notecard for a quick reply. |
+| [Tendril](banana-bud-tendril.txt) | 1 | An arched side portrait beside a short passage. |
+| [Twinleaf](banana-bud-twinleaf.txt) | 2 | Two overlapping character GIFs. |
+| [Pressing](banana-bud-pressing.txt) | 0 | A slim botanical note with the writing at its centre. |
 
-[All five buds snippets](banana-buds-snippets.txt), in the order shown above.
+## Editing and integration
 
-## Editing and shared behaviour
+Copy a complete `[dohtml]` block from a named `.txt` file. The editable `[url]`, `[name]`, `[text]`, image URLs, writing and comms time remain above the decoration and the stylesheet link. The supplied GIF URLs are examples, not a required pair.
 
-The new snippets put profile URLs, names, `[text]`, GIFs and writing before decorative elements and the stylesheet link. The comms time and receipt are also editable. All eight new templates use plain opening `<p>` tags; closing `</p>` tags remain optional in their writing/message containers. Use `<br>` within a paragraph or bubble.
+Use the default layout in the table, or remove an image tag. If removing the final image, remove its empty portrait container too. Image-free layouts reclaim the space automatically. In previews with an editor, clearing a GIF URL omits that image from the preview and copied code; clearing both produces an image-free post. Custom edits are kept when switching designs.
 
-The thread examples retain the original lorem ipsum reply. Comms contain three short sample messages. Buds encourage replies of 100 words or fewer. None of the writing areas has a fixed-height scroll region or truncates longer replies.
+Comms messages use ordinary `<p>` paragraphs; successive opening `<p>` tags work without closing tags or repeated classes. Device decoration is static. Buds encourage 100 words or fewer and never clip longer replies.
 
-All wrappers inherit the forum’s `--mgrgb1`, `--mgrgb2` and `--mgrgb3` RGB variables. These colours affect the frames, surfaces, motifs and accents. Bold and underline use the forward gradient (1 → 2 → 3); italics use its reverse (3 → 2 → 1). Explicit `html[color-mode="light"]` or `html[color-mode="dark"]` takes precedence over the system preference.
+Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` work too. Editors that accept `[b]`, `[i]` and `[u]` convert them to HTML. The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the design and emphasis. Bold and underline use colours 1 → 2 → 3; italics use 3 → 2 → 1.
 
-Comms are received phone messages by default. An optional `<p class="bc-sent">` makes a bubble outgoing. Legacy `bc-message` divs and the `bc-received` class remain supported. Character images can also appear inside a message. Device clocks, icons, receipts, home indicators and compose bars are visual parts of the forum design; no JavaScript is used in the post snippets.
+Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system fallback. Writing stays on neutral surfaces. Preview palette controls are samples; posts inherit the forum palette.
 
-The four new comms snippets share identical markup apart from their wrapper modifier and sample GIF. With the variations stylesheet loaded, change `bc-cameo`, `bc-ribbon`, `bc-canopy` or `bc-postcard` to switch appearance.
-
-Thread modifiers are `bn-cameo`, `bn-ribbon`, `bn-canopy` and `bn-postcard`. Cameo and Canopy use one GIF; Ribbon and Postcard use two, and also support a single image. Use the corresponding snippet when switching between one- and two-GIF designs. Removing the modifier gives the original Keepsake appearance.
-
-## Hosted CSS
-
-The new thread snippets load:
-
-```text
-https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-thread-variations.css
-```
-
-The new comms snippets load:
-
-```text
-https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-comms-variations.css
-```
-
-Each stylesheet imports its existing Keepsake base, so posts still need only one stylesheet link. Variant rules require both the family wrapper and the variation class. The original files and the five Bud designs are unchanged.
-
-Documentation is kept here, outside the forum snippets. Source and paragraph parsing are checked; appearance still needs to be viewed inside JCink.
+All current snippets use the fresh `banana-media-v2.css` stylesheet. Older CSS files remain available for existing posts. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS, fonts and GIFs require internet access; font fallbacks remain available. Existing forum posts retain their original markup: paste the revised snippet to adopt its new GIF layout.

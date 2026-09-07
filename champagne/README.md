@@ -1,77 +1,53 @@
 # Champagne collection
 
-The completed Champagne collection contains **five threads, five comms and five buds**. All share fine gold line work, neutral writing surfaces, inherited member colours, Cormorant Garamond and Manrope typography, and the two supplied Tumblr GIFs.
+Five threads, five comms and five buds. GIFs follow the composition: portrait pairs for paired frames, single portraits for contacts and narrow photo spaces, and image-free options for letters and tiny replies.
 
-Open [champagne-collection-preview.html](champagne-collection-preview.html) to see **all fifteen designs immediately**. Jump to Threads, Comms or Buds, switch light/dark modes or sample group colours, and open the code beneath any design. The gallery is rendered directly in HTML; design visibility, appearance controls and code downloads do not depend on JavaScript or nested frames.
+[Preview and code](champagne-collection-preview.html)
 
-## Designs
+## Threads
 
-### Threads
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Cuvée](champagne-cuvee.txt) | 2 |  |
+| [Millésime](champagne-thread-millesime.txt) | 1 | A vintage bottle label with one landscape keepsake and ruled borders. |
+| [Rosée](champagne-thread-rosee.txt) | 1 | A single oval portrait, softly curved borders and an italic heading. |
+| [Éclat](champagne-thread-eclat.txt) | 2 |  |
+| [Réserve](champagne-thread-reserve.txt) | 0 | A quiet, image-free letter with fine rules and a footer signature. |
 
-[All five threads snippets](champagne-thread-snippets.txt) — the five complete `[dohtml]` blocks appear in the same order as this table.
+## Comms
 
-| Design | Look | Individual snippet |
-| --- | --- | --- |
-| Cuvée | Paired arched portraits, engraved lettering and a fine double frame. | [champagne-cuvee.txt](champagne-cuvee.txt) |
-| Millésime | A vintage bottle label with squared landscape portraits and ruled borders. | [champagne-thread-millesime.txt](champagne-thread-millesime.txt) |
-| Rosée | Softly curved borders, staggered oval portraits and an italic heading. | [champagne-thread-rosee.txt](champagne-thread-rosee.txt) |
-| Éclat | A geometric diptych with corner brackets and a left-aligned title. | [champagne-thread-eclat.txt](champagne-thread-eclat.txt) |
-| Réserve | A quieter writing-led layout with miniature portraits beneath the reply. | [champagne-thread-reserve.txt](champagne-thread-reserve.txt) |
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Perlage](champagne-comms-perlage.txt) | 1 |  |
+| [Flûte](champagne-comms-flute.txt) | 1 |  |
+| [Tchin](champagne-comms-tchin.txt) | 1 |  |
+| [Capsule](champagne-comms-capsule.txt) | 1 |  |
+| [Veillée](champagne-comms-veillee.txt) | 1 |  |
 
-### Comms
+## Buds
 
-[All five comms snippets](champagne-comms-snippets.txt) — the five complete `[dohtml]` blocks appear in the same order as this table.
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Mignon](champagne-bud-mignon.txt) | 1 | A compact double-framed card with one miniature portrait medallion. |
+| [Perle](champagne-bud-perle.txt) | 1 |  |
+| [Pétale](champagne-bud-petale.txt) | 1 |  |
+| [Étincelle](champagne-bud-etincelle.txt) | 0 | A crisp image-free note with a diamond accent and footer signature. |
+| [Goutte](champagne-bud-goutte.txt) | 0 | A slim colour ribbon and an uncluttered short reply. |
 
-| Design | Look | Individual snippet |
-| --- | --- | --- |
-| Perlage | A champagne-trimmed phone with a contact strip and separate message bubbles. | [champagne-comms-perlage.txt](champagne-comms-perlage.txt) |
-| Flûte | A slender handset with a tall cameo portrait and centred contact details. | [champagne-comms-flute.txt](champagne-comms-flute.txt) |
-| Tchin | A compact retro phone with a square avatar, message tiles and a round home button. | [champagne-comms-tchin.txt](champagne-comms-tchin.txt) |
-| Capsule | A softly rounded phone with a large circular portrait and right-aligned bubbles. | [champagne-comms-capsule.txt](champagne-comms-capsule.txt) |
-| Veillée | A wider phone with a character GIF banner and fine accent bars on the messages. | [champagne-comms-veillee.txt](champagne-comms-veillee.txt) |
+## Editing and integration
 
-### Buds
+Copy a complete `[dohtml]` block from a named `.txt` file. The editable `[url]`, `[name]`, `[text]`, image URLs, writing and comms time remain above the decoration and the stylesheet link. The supplied GIF URLs are examples, not a required pair.
 
-[All five buds snippets](champagne-buds-snippets.txt) — the five complete `[dohtml]` blocks appear in the same order as this table.
+Use the default layout in the table, or remove an image tag. If removing the final image, remove its empty portrait container too. Image-free layouts reclaim the space automatically. In previews with an editor, clearing a GIF URL omits that image from the preview and copied code; clearing both produces an image-free post. Custom edits are kept when switching designs.
 
-| Design | Look | Individual snippet |
-| --- | --- | --- |
-| Mignon | A compact double-framed card with two miniature portrait circles. | [champagne-bud-mignon.txt](champagne-bud-mignon.txt) |
-| Perle | A pearl-like single portrait above a centred name and a short reply. | [champagne-bud-perle.txt](champagne-bud-perle.txt) |
-| Pétale | A petite side portrait beside the name and writing, with a softer corner shape. | [champagne-bud-petale.txt](champagne-bud-petale.txt) |
-| Étincelle | A crisp miniature card with geometric photos, a diamond accent and a footer signature. | [champagne-bud-etincelle.txt](champagne-bud-etincelle.txt) |
-| Goutte | A slim colour ribbon, a spacious short reply and two tiny drop-shaped portraits below. | [champagne-bud-goutte.txt](champagne-bud-goutte.txt) |
+Comms messages use ordinary `<p>` paragraphs; successive opening `<p>` tags work without closing tags or repeated classes. Device decoration is static. Buds encourage 100 words or fewer and never clip longer replies.
 
-## Editing
+Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` work too. Editors that accept `[b]`, `[i]` and `[u]` convert them to HTML. The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the design and emphasis. Bold and underline use colours 1 → 2 → 3; italics use 3 → 2 → 1.
 
-Copy one whole `[dohtml]` block, including its single stylesheet link. All editable names, URLs, subtitles, GIFs, times and writing precede the decorative markup where possible. The `[url]`, `[name]`, `[text]` and comms `[time]` placeholders remain in the snippets; the preview uses sample values. The theme heading can also be edited.
+Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system fallback. Writing stays on neutral surfaces. Preview palette controls are samples; posts inherit the forum palette.
 
-Every comms message is one plain `<p>` element. Successive opening `<p>` tags work without closing tags or a repeated class. Closed `</p>` tags also work. Messages in every design belong to one sender; Capsule places that sender’s bubbles on the right. Receipt text is editable. Phone controls are decorative, and the forum snippets contain no scripts.
+All current snippets use the fresh `champagne-media-v2.css` stylesheet. Older CSS files remain available for existing posts. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS, fonts and GIFs require internet access; font fallbacks remain available. Existing forum posts retain their original markup: paste the revised snippet to adopt its new GIF layout.
 
-Buds are intended for replies of **100 words or fewer**. Each has a 36-word sample reply. There is no silent truncation or enforced input limit. Perle and Pétale start with a single GIF; the other buds and all threads use two. Single-GIF styling is included across the family.
+## Revision checks
 
-Native `<b>`, `<i>` and `<u>` examples are supplied inside `[dohtml]`. The CSS also covers `strong`, `em`, and the corresponding HTML when the forum parses `[b]`, `[i]` and `[u]`. BBCode parsing itself belongs to the forum.
-
-## Colours and modes
-
-The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` RGB triplets colour headings, frames, dividers, message edges and appropriate surfaces. Bold and underline use the forward group gradient, 1 → 2 → 3; italics use the reverse, 3 → 2 → 1. Body text stays on neutral light/dark surfaces. The default champagne palette is used only when group variables are absent.
-
-An explicit `html[color-mode="light"]` or `html[color-mode="dark"]` overrides the device preference fallback. All variants inherit this behaviour.
-
-## Stylesheets
-
-| Stylesheet | Purpose |
-| --- | --- |
-| [champagne-cuvee-v1.css](champagne-cuvee-v1.css) | Original Cuvée and shared thread styling |
-| [champagne-companions-v1.css](champagne-companions-v1.css) | Original Perlage/Mignon and shared comms/bud styling; imports the original thread file |
-| [champagne-thread-variations-v1.css](champagne-thread-variations-v1.css) | Four additional threads; imports the original thread file |
-| [champagne-comms-variations-v1.css](champagne-comms-variations-v1.css) | Four additional comms; imports the shared companions file |
-| [champagne-bud-variations-v1.css](champagne-bud-variations-v1.css) | Four additional buds; imports the shared companions file |
-
-Cuvée, Perlage and Mignon keep their original snippet and stylesheet URLs. The new variants each carry one stylesheet link. All style selectors remain scoped to their template wrappers. The preview embeds the complete styling, with external font and GIF dependencies.
-
-## Assets and checks
-
-The current collection uses the two GIF URLs supplied by Lex: [portrait one](https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv) and [portrait two](https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv). Typography uses Cormorant Garamond and Manrope through Google Fonts, with system fallbacks; decorative line work is embedded in CSS.
-
-Checks cover all fifteen snippets, paragraph parsing, placeholder placement, GIF URLs, stylesheet imports, and all fifteen initially visible gallery cards and their exact copy/download content. Browser visual verification and live JCink posting were not performed in this session.
+The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
