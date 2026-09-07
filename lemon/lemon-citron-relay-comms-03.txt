@@ -1,0 +1,26 @@
+[dohtml]
+<div class="lmn lmn-comms lmn-citron-relay" data-direction="received">
+<div class="lmn-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="lmn-status"><span>09:41</span><span class="lmn-battery" aria-hidden="true"></span></div>
+<span class="lmn-receipt">Received · 09:41</span>
+
+<div class="lmn-gifs">
+<img src="https://64.media.tumblr.com/71a187caf723418c5a9f39d70248ed2b/6362fa159a1211fc-ba/s540x810/7b3ff59504ed04e46c92fec54b9c0e02ef9ecee0.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/7c96ffd77e5b4de17d2ffbfa9d3fe9da/404c0ed782738582-29/s400x600/d6d2d5fc3a1e3b8a60693046bcdf31cb4bc3ac0a.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="lmn-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<div class="lmn-finish" aria-hidden="true"><span class="lmn-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lemon/lemon-collection-v1.css">
+[/dohtml]
