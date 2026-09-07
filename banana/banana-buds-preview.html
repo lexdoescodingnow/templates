@@ -275,7 +275,58 @@ body > footer {padding:0 0 35px;color:var(--subtle);font-size:12px;}
 @media (max-width:980px) {body > main {grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media (max-width:620px) {body > main {grid-template-columns:minmax(0,1fr);}body > header,body > main,body > footer {width:calc(100% - 28px);}h1 {font-size:44px;}.preview-description {min-height:0;}}
 </style>
-</head>
+<style>.banana-keepsake .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-cameo .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake.bn-cameo:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake.bn-cameo:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake.bn-cameo .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake.bn-cameo .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-ribbon .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake.bn-ribbon:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake.bn-ribbon:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake.bn-ribbon .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake.bn-ribbon .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-canopy .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake.bn-canopy:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake.bn-canopy:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake.bn-canopy .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake.bn-canopy .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-postcard .bn-gifs:not(:has(img)){display:none;}
+.banana-keepsake.bn-postcard:not(:has(.bn-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-keepsake.bn-postcard:not(:has(.bn-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-keepsake.bn-postcard .bn-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-keepsake.bn-postcard .bn-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-sprout .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-sprout:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-sprout:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-sprout .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-sprout .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-leaflet .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-leaflet:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-leaflet:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-leaflet .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-leaflet .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-tendril .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-tendril:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-tendril:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-tendril .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-tendril .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-twinleaf .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-twinleaf:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-twinleaf:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-twinleaf .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-twinleaf .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-bud.bb-pressing .bb-photo:not(:has(img)){display:none;}
+.banana-bud.bb-pressing:not(:has(.bb-photo img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.banana-bud.bb-pressing:not(:has(.bb-photo img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.banana-bud.bb-pressing .bb-photo:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.banana-bud.bb-pressing .bb-photo>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.banana-keepsake.bn-postcard:not(:has(.bn-gifs img)) .bn-copy{margin-top:10px;} .banana-bud.bb-leaflet:not(:has(.bb-photo img)) .bb-meta{padding-top:0;} .banana-bud.bb-pressing:not(:has(.bb-photo img)) .bb-copy{margin-top:0;}
+</style></head>
 <body data-palette="mauve">
 <header>
 <p class="preview-kicker">The Banana collection</p>
@@ -296,23 +347,23 @@ body > footer {padding:0 0 35px;color:var(--subtle);font-size:12px;}
 </div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Sprout code</summary><textarea aria-label="Sprout forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-sprout&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-bud bb-sprout"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-photo"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </section><section class="preview-item">
@@ -320,28 +371,22 @@ body > footer {padding:0 0 35px;color:var(--subtle);font-size:12px;}
 <p class="preview-description">A folded notecard with a taped miniature GIF.</p>
 <div class="banana-bud bb-leaflet">
 <div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
-<div class="bb-photo">
-<img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
-</div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Leaflet code</summary><textarea aria-label="Leaflet forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-leaflet&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="banana-bud bb-leaflet"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </section><section class="preview-item">
@@ -354,23 +399,23 @@ body > footer {padding:0 0 35px;color:var(--subtle);font-size:12px;}
 </div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Tendril code</summary><textarea aria-label="Tendril forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-tendril&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-bud bb-tendril"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-photo"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </section><section class="preview-item">
@@ -384,24 +429,24 @@ body > footer {padding:0 0 35px;color:var(--subtle);font-size:12px;}
 </div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Twinleaf code</summary><textarea aria-label="Twinleaf forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-twinleaf&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv&quot; alt=&quot;Character portrait&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
+&lt;div class="banana-bud bb-twinleaf"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-photo"&gt;
+&lt;img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait"&gt;
+&lt;img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </section><section class="preview-item">
@@ -409,28 +454,22 @@ body > footer {padding:0 0 35px;color:var(--subtle);font-size:12px;}
 <p class="preview-description">A cropped film still above a compact story card.</p>
 <div class="banana-bud bb-pressing">
 <div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
-<div class="bb-photo">
-<img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
-</div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
 <details><summary>Copy Pressing code</summary><textarea aria-label="Pressing forum code" spellcheck="false">[dohtml]
-&lt;div class=&quot;banana-bud bb-pressing&quot;&gt;
-&lt;div class=&quot;bb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;bb-photo&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv&quot; alt=&quot;Character portrait&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;bb-copy&quot;&gt;
+&lt;div class="banana-bud bb-pressing"&gt;
+&lt;div class="bb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;bb-mark&quot;&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="bb-mark"&gt;Banana &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-keepsake.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 </section></main>

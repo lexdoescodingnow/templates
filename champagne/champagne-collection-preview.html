@@ -543,6 +543,57 @@ body{margin:0;background:#e9e5de}
 #palette-rose:focus-visible~.gallery-page label[for="palette-rose"]{outline:2px solid #a88650;outline-offset:4px}
 #palette-violet:focus-visible~.gallery-page label[for="palette-violet"]{outline:2px solid #a88650;outline-offset:4px}
 #narrow-width:focus-visible~.gallery-page label[for="narrow-width"]{outline:2px solid #a88650;outline-offset:4px}
+</style><style>.champagne-cuvee .ch-gifs:not(:has(img)){display:none;}
+.champagne-cuvee:not(:has(.ch-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-cuvee:not(:has(.ch-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-cuvee .ch-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-cuvee .ch-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-cuvee.ch-millesime .ch-gifs:not(:has(img)){display:none;}
+.champagne-cuvee.ch-millesime:not(:has(.ch-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-cuvee.ch-millesime:not(:has(.ch-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-cuvee.ch-millesime .ch-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-cuvee.ch-millesime .ch-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-cuvee.ch-rosee .ch-gifs:not(:has(img)){display:none;}
+.champagne-cuvee.ch-rosee:not(:has(.ch-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-cuvee.ch-rosee:not(:has(.ch-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-cuvee.ch-rosee .ch-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-cuvee.ch-rosee .ch-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-cuvee.ch-eclat .ch-gifs:not(:has(img)){display:none;}
+.champagne-cuvee.ch-eclat:not(:has(.ch-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-cuvee.ch-eclat:not(:has(.ch-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-cuvee.ch-eclat .ch-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-cuvee.ch-eclat .ch-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-cuvee.ch-reserve .ch-gifs:not(:has(img)){display:none;}
+.champagne-cuvee.ch-reserve:not(:has(.ch-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-cuvee.ch-reserve:not(:has(.ch-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-cuvee.ch-reserve .ch-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-cuvee.ch-reserve .ch-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-bud .cb-photos:not(:has(img)){display:none;}
+.champagne-bud:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-bud:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-bud .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-bud .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-bud.cb-perle .cb-photos:not(:has(img)){display:none;}
+.champagne-bud.cb-perle:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-bud.cb-perle:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-bud.cb-perle .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-bud.cb-perle .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-bud.cb-petale .cb-photos:not(:has(img)){display:none;}
+.champagne-bud.cb-petale:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-bud.cb-petale:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-bud.cb-petale .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-bud.cb-petale .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-bud.cb-etincelle .cb-photos:not(:has(img)){display:none;}
+.champagne-bud.cb-etincelle:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-bud.cb-etincelle:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-bud.cb-etincelle .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-bud.cb-etincelle .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-bud.cb-goutte .cb-photos:not(:has(img)){display:none;}
+.champagne-bud.cb-goutte:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.champagne-bud.cb-goutte:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.champagne-bud.cb-goutte .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.champagne-bud.cb-goutte .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.champagne-cuvee.ch-rosee .ch-gifs:has(img:only-child){width:160px;max-width:70%;} .champagne-bud .cb-photos:has(img:only-child){width:64px;max-width:100%;margin-inline:auto;} .champagne-bud .cb-photos>img:only-child{height:64px;} .champagne-cuvee.ch-reserve:not(:has(.ch-gifs img)) .ch-copy{margin-bottom:0;}
 </style></head><body>
 <input class="preview-switch" type="radio" name="theme" id="theme-light" checked>
 <input class="preview-switch" type="radio" name="theme" id="theme-dark">
@@ -556,7 +607,7 @@ body{margin:0;background:#e9e5de}
 <div class="gallery-controls"><fieldset><legend>Appearance</legend><label for="theme-light">Light</label><label for="theme-dark">Dark</label></fieldset><fieldset><legend>Palette</legend><label for="palette-champagne">Champagne</label><label for="palette-rose">Rose &amp; tide</label><label for="palette-violet">Violet hour</label></fieldset><label for="narrow-width">Narrow width</label></div></header>
 <main>
 <section class="gallery-section" id="threads" aria-labelledby="threads-title"><div class="gallery-section-header"><h2 class="gallery-section-title" id="threads-title">Threads <span>5 designs</span></h2><a class="gallery-top" href="#top">Back to top</a></div><div class="gallery-grid">
-<article class="design-card" id="design-cuvee" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>01</span>Cuvée</h3><p class="design-description">Paired arched portraits, engraved lettering and a fine double frame.</p></header><div class="preview-stage">
+<article class="design-card" id="design-cuvee" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>01</span>Cuvée</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-cuvee">
 <div class="ch-names"><a href="#">Toby</a><span>&amp;</span><a href="#">Jude</a></div>
 <div class="ch-title">Champagne</div>
@@ -577,35 +628,34 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Cuvée code</summary><textarea readonly spellcheck="false" aria-label="Cuvée JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-cuvee&quot;&gt;
-&lt;div class=&quot;ch-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-title&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;ch-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ch-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="champagne-cuvee"&gt;
+&lt;div class="ch-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ch-title"&gt;Champagne&lt;/div&gt;
+&lt;div class="ch-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ch-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
+&lt;img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-copy&quot;&gt;
+&lt;div class="ch-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-crest&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ch-crest" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ch-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-cuvee-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-cuvee-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-cuvee.txt">Download Cuvée snippet</a></details></div></article>
-<article class="design-card" id="design-millesime" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>02</span>Millésime</h3><p class="design-description">A vintage bottle label with squared landscape portraits and ruled borders.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-cuvee.txt">Download Cuvée snippet</a></details></div></article>
+<article class="design-card" id="design-millesime" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>02</span>Millésime</h3><p class="design-description">A vintage bottle label with one landscape keepsake and ruled borders.</p></header><div class="preview-stage">
 <div class="champagne-cuvee ch-millesime">
 <div class="ch-names"><a href="#">Toby</a><span>&amp;</span><a href="#">Jude</a></div>
 <div class="ch-title">Champagne</div>
 <div class="ch-subtitle">Every last drop of you</div>
 <div class="ch-gifs">
 <img loading="lazy" decoding="async" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
 <div class="ch-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -619,35 +669,33 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Millésime code</summary><textarea readonly spellcheck="false" aria-label="Millésime JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-cuvee ch-millesime&quot;&gt;
-&lt;div class=&quot;ch-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-title&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;ch-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ch-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="champagne-cuvee ch-millesime"&gt;
+&lt;div class="ch-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ch-title"&gt;Champagne&lt;/div&gt;
+&lt;div class="ch-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ch-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-copy&quot;&gt;
+&lt;div class="ch-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-crest&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ch-crest" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ch-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-thread-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%20ch-millesime%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-thread-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-thread-millesime.txt">Download Millésime snippet</a></details></div></article>
-<article class="design-card" id="design-rosee" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>03</span>Rosée</h3><p class="design-description">Softly curved borders, staggered oval portraits and an italic heading.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%20ch-millesime%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-thread-millesime.txt">Download Millésime snippet</a></details></div></article>
+<article class="design-card" id="design-rosee" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>03</span>Rosée</h3><p class="design-description">A single oval portrait, softly curved borders and an italic heading.</p></header><div class="preview-stage">
 <div class="champagne-cuvee ch-rosee">
 <div class="ch-names"><a href="#">Toby</a><span>&amp;</span><a href="#">Jude</a></div>
 <div class="ch-title">Champagne</div>
 <div class="ch-subtitle">Every last drop of you</div>
 <div class="ch-gifs">
 <img loading="lazy" decoding="async" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
 <div class="ch-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -661,28 +709,27 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Rosée code</summary><textarea readonly spellcheck="false" aria-label="Rosée JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-cuvee ch-rosee&quot;&gt;
-&lt;div class=&quot;ch-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-title&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;ch-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ch-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="champagne-cuvee ch-rosee"&gt;
+&lt;div class="ch-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ch-title"&gt;Champagne&lt;/div&gt;
+&lt;div class="ch-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ch-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-copy&quot;&gt;
+&lt;div class="ch-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-crest&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ch-crest" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ch-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-thread-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%20ch-rosee%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-thread-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-thread-rosee.txt">Download Rosée snippet</a></details></div></article>
-<article class="design-card" id="design-eclat" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>04</span>Éclat</h3><p class="design-description">A geometric diptych with corner brackets and a left-aligned title.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%20ch-rosee%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-thread-rosee.txt">Download Rosée snippet</a></details></div></article>
+<article class="design-card" id="design-eclat" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>04</span>Éclat</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-cuvee ch-eclat">
 <div class="ch-names"><a href="#">Toby</a><span>&amp;</span><a href="#">Jude</a></div>
 <div class="ch-title">Champagne</div>
@@ -703,36 +750,32 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Éclat code</summary><textarea readonly spellcheck="false" aria-label="Éclat JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-cuvee ch-eclat&quot;&gt;
-&lt;div class=&quot;ch-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-title&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;ch-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ch-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="champagne-cuvee ch-eclat"&gt;
+&lt;div class="ch-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ch-title"&gt;Champagne&lt;/div&gt;
+&lt;div class="ch-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ch-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
+&lt;img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-copy&quot;&gt;
+&lt;div class="ch-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-crest&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ch-crest" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ch-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-thread-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%20ch-eclat%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-thread-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-thread-eclat.txt">Download Éclat snippet</a></details></div></article>
-<article class="design-card" id="design-reserve" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>05</span>Réserve</h3><p class="design-description">A quieter writing-led layout with miniature portraits beneath the reply.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%20ch-eclat%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-thread-eclat.txt">Download Éclat snippet</a></details></div></article>
+<article class="design-card" id="design-reserve" data-kind="thread"><header class="design-heading"><h3 class="design-name"><span>05</span>Réserve</h3><p class="design-description">A quiet, image-free letter with fine rules and a footer signature.</p></header><div class="preview-stage">
 <div class="champagne-cuvee ch-reserve">
 <div class="ch-names"><a href="#">Toby</a><span>&amp;</span><a href="#">Jude</a></div>
 <div class="ch-title">Champagne</div>
 <div class="ch-subtitle">Every last drop of you</div>
-<div class="ch-gifs">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
 <div class="ch-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -745,30 +788,26 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Réserve code</summary><textarea readonly spellcheck="false" aria-label="Réserve JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-cuvee ch-reserve&quot;&gt;
-&lt;div class=&quot;ch-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-title&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;ch-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ch-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ch-copy&quot;&gt;
+&lt;div class="champagne-cuvee ch-reserve"&gt;
+&lt;div class="ch-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ch-title"&gt;Champagne&lt;/div&gt;
+&lt;div class="ch-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ch-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ch-crest&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ch-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ch-crest" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ch-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-thread-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%20ch-reserve%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-gifs%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-thread-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-thread-reserve.txt">Download Réserve snippet</a></details></div></article>
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-cuvee%20ch-reserve%22%3E%0A%3Cdiv%20class%3D%22ch-names%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%26amp%3B%3C%2Fspan%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-title%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-subtitle%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20%3Cb%3E%E2%80%9CSed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%E2%80%9D%3C%2Fb%3E%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%3C%2Fp%3E%0A%0A%3Cp%3EDuis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20%3Ci%3EExcepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%3C%2Fi%3E%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%3C%2Fp%3E%0A%0A%3Cp%3EPraesent%20finibus%2C%20%3Cu%3Elorem%20at%20interdum%20facilisis%3C%2Fu%3E%2C%20neque%20sapien%20pellentesque%20nibh%2C%20in%20viverra%20tellus%20urna%20non%20arcu.%20Aenean%20euismod%2C%20sem%20vitae%20tincidunt%20dignissim%2C%20neque%20felis%20posuere%20lectus%2C%20vel%20ullamcorper%20erat%20arcu%20vitae%20erat.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-crest%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22ch-finish%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-thread-reserve.txt">Download Réserve snippet</a></details></div></article>
 </div></section>
 <section class="gallery-section" id="comms" aria-labelledby="comms-title"><div class="gallery-section-header"><h2 class="gallery-section-title" id="comms-title">Comms <span>5 designs</span></h2><a class="gallery-top" href="#top">Back to top</a></div><div class="gallery-grid">
-<article class="design-card" id="design-perlage" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>01</span>Perlage</h3><p class="design-description">A champagne-trimmed phone with a contact strip and separate message bubbles.</p></header><div class="preview-stage">
+<article class="design-card" id="design-perlage" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>01</span>Perlage</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-comms">
 <div class="cc-contact">
 <a class="cc-name" href="#">Toby</a>
@@ -778,9 +817,9 @@ body{margin:0;background:#e9e5de}
 <div class="cc-time">Today, 21:34</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
 <div class="cc-hardware" aria-hidden="true"></div>
@@ -788,27 +827,27 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Perlage code</summary><textarea readonly spellcheck="false" aria-label="Perlage JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-comms&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
+&lt;div class="champagne-comms"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Champagne&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-companions-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-perlage.txt">Download Perlage snippet</a></details></div></article>
-<article class="design-card" id="design-flute" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>02</span>Flûte</h3><p class="design-description">A slender handset with a tall cameo portrait and centred contact details.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-perlage.txt">Download Perlage snippet</a></details></div></article>
+<article class="design-card" id="design-flute" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>02</span>Flûte</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-comms cc-flute">
 <div class="cc-contact">
 <a class="cc-name" href="#">Toby</a>
@@ -818,9 +857,9 @@ body{margin:0;background:#e9e5de}
 <div class="cc-time">Today, 21:34</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
 <div class="cc-hardware" aria-hidden="true"></div>
@@ -828,27 +867,27 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Flûte code</summary><textarea readonly spellcheck="false" aria-label="Flûte JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-comms cc-flute&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="champagne-comms cc-flute"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Champagne&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-comms-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%20cc-flute%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-comms-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-flute.txt">Download Flûte snippet</a></details></div></article>
-<article class="design-card" id="design-tchin" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>03</span>Tchin</h3><p class="design-description">A compact retro phone with a square avatar, message tiles and a round home button.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%20cc-flute%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-flute.txt">Download Flûte snippet</a></details></div></article>
+<article class="design-card" id="design-tchin" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>03</span>Tchin</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-comms cc-tchin">
 <div class="cc-contact">
 <a class="cc-name" href="#">Toby</a>
@@ -858,9 +897,9 @@ body{margin:0;background:#e9e5de}
 <div class="cc-time">Today, 21:34</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
 <div class="cc-hardware" aria-hidden="true"></div>
@@ -868,27 +907,27 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Tchin code</summary><textarea readonly spellcheck="false" aria-label="Tchin JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-comms cc-tchin&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
+&lt;div class="champagne-comms cc-tchin"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Champagne&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-comms-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%20cc-tchin%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-comms-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-tchin.txt">Download Tchin snippet</a></details></div></article>
-<article class="design-card" id="design-capsule" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>04</span>Capsule</h3><p class="design-description">A softly rounded phone with a large circular portrait and right-aligned bubbles.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%20cc-tchin%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-tchin.txt">Download Tchin snippet</a></details></div></article>
+<article class="design-card" id="design-capsule" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>04</span>Capsule</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-comms cc-capsule">
 <div class="cc-contact">
 <a class="cc-name" href="#">Toby</a>
@@ -898,9 +937,9 @@ body{margin:0;background:#e9e5de}
 <div class="cc-time">Today, 21:34</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
 <div class="cc-hardware" aria-hidden="true"></div>
@@ -908,27 +947,27 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Capsule code</summary><textarea readonly spellcheck="false" aria-label="Capsule JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-comms cc-capsule&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="champagne-comms cc-capsule"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Champagne&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-comms-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%20cc-capsule%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-comms-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-capsule.txt">Download Capsule snippet</a></details></div></article>
-<article class="design-card" id="design-veillee" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>05</span>Veillée</h3><p class="design-description">A wider phone with a character GIF banner and fine accent bars on the messages.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%20cc-capsule%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-capsule.txt">Download Capsule snippet</a></details></div></article>
+<article class="design-card" id="design-veillee" data-kind="comms"><header class="design-heading"><h3 class="design-name"><span>05</span>Veillée</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-comms cc-veillee">
 <div class="cc-contact">
 <a class="cc-name" href="#">Toby</a>
@@ -938,9 +977,9 @@ body{margin:0;background:#e9e5de}
 <div class="cc-time">Today, 21:34</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
 <div class="cc-hardware" aria-hidden="true"></div>
@@ -948,59 +987,57 @@ body{margin:0;background:#e9e5de}
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Veillée code</summary><textarea readonly spellcheck="false" aria-label="Veillée JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-comms cc-veillee&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
+&lt;div class="champagne-comms cc-veillee"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Received&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Champagne&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Received&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Champagne&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-comms-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%20cc-veillee%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-comms-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-veillee.txt">Download Veillée snippet</a></details></div></article>
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-comms%20cc-veillee%22%3E%0A%3Cdiv%20class%3D%22cc-contact%22%3E%0A%3Ca%20class%3D%22cc-name%22%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%0A%3Cdiv%20class%3D%22cc-status%22%3E%5Btext%5D%3C%2Fdiv%3E%0A%3Cimg%20class%3D%22cc-avatar%22%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-time%22%3E%5Btime%5D%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-messages%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%0A%3Cp%3ESed%20do%20eiusmod%20tempor%20incididunt%20%3Ci%3Eut%20labore%20et%20dolore%3C%2Fi%3E%20magna%20aliqua.%0A%3Cp%3EUt%20enim%20ad%20minim%20veniam.%20%3Cu%3EQuis%20nostrud%20exercitation%3F%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-receipt%22%3EReceived%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-brand%22%3EChampagne%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-hardware%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cc-compose%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-comms-veillee.txt">Download Veillée snippet</a></details></div></article>
 </div></section>
 <section class="gallery-section" id="buds" aria-labelledby="buds-title"><div class="gallery-section-header"><h2 class="gallery-section-title" id="buds-title">Buds <span>5 designs</span></h2><a class="gallery-top" href="#top">Back to top</a></div><div class="gallery-grid">
-<article class="design-card" id="design-mignon" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>01</span>Mignon</h3><p class="design-description">A compact double-framed card with two miniature portrait circles.</p></header><div class="preview-stage">
+<article class="design-card" id="design-mignon" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>01</span>Mignon</h3><p class="design-description">A compact double-framed card with one miniature portrait medallion.</p></header><div class="preview-stage">
 <div class="champagne-bud">
 <div class="cb-meta"><a href="#">Toby</a><span>one more moment</span></div>
 <div class="cb-photos">
 <img loading="lazy" decoding="async" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Mignon code</summary><textarea readonly spellcheck="false" aria-label="Mignon JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-bud&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="champagne-bud"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-photos"&gt;
+&lt;img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-photos%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-companions-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-mignon.txt">Download Mignon snippet</a></details></div></article>
-<article class="design-card" id="design-perle" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>02</span>Perle</h3><p class="design-description">A pearl-like single portrait above a centred name and a short reply.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-photos%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-mignon.txt">Download Mignon snippet</a></details></div></article>
+<article class="design-card" id="design-perle" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>02</span>Perle</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-bud cb-perle">
 <div class="cb-meta"><a href="#">Toby</a><span>one more moment</span></div>
 <div class="cb-photos">
@@ -1008,27 +1045,27 @@ body{margin:0;background:#e9e5de}
 </div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Perle code</summary><textarea readonly spellcheck="false" aria-label="Perle JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-bud cb-perle&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
+&lt;div class="champagne-bud cb-perle"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-photos"&gt;
+&lt;img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-bud-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%20cb-perle%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-photos%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-bud-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-perle.txt">Download Perle snippet</a></details></div></article>
-<article class="design-card" id="design-petale" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>03</span>Pétale</h3><p class="design-description">A petite side portrait beside the name and writing, with a softer corner shape.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%20cb-perle%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-photos%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-perle.txt">Download Perle snippet</a></details></div></article>
+<article class="design-card" id="design-petale" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>03</span>Pétale</h3><p class="design-description"></p></header><div class="preview-stage">
 <div class="champagne-bud cb-petale">
 <div class="cb-meta"><a href="#">Toby</a><span>one more moment</span></div>
 <div class="cb-photos">
@@ -1036,85 +1073,69 @@ body{margin:0;background:#e9e5de}
 </div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Pétale code</summary><textarea readonly spellcheck="false" aria-label="Pétale JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-bud cb-petale&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="champagne-bud cb-petale"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-photos"&gt;
+&lt;img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-bud-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%20cb-petale%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-photos%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-bud-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-petale.txt">Download Pétale snippet</a></details></div></article>
-<article class="design-card" id="design-etincelle" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>04</span>Étincelle</h3><p class="design-description">A crisp miniature card with geometric photos, a diamond accent and a footer signature.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%20cb-petale%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-photos%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-petale.txt">Download Pétale snippet</a></details></div></article>
+<article class="design-card" id="design-etincelle" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>04</span>Étincelle</h3><p class="design-description">A crisp image-free note with a diamond accent and footer signature.</p></header><div class="preview-stage">
 <div class="champagne-bud cb-etincelle">
 <div class="cb-meta"><a href="#">Toby</a><span>one more moment</span></div>
-<div class="cb-photos">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Étincelle code</summary><textarea readonly spellcheck="false" aria-label="Étincelle JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-bud cb-etincelle&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="champagne-bud cb-etincelle"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-bud-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%20cb-etincelle%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-photos%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-bud-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-etincelle.txt">Download Étincelle snippet</a></details></div></article>
-<article class="design-card" id="design-goutte" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>05</span>Goutte</h3><p class="design-description">A slim colour ribbon, a spacious short reply and two tiny drop-shaped portraits below.</p></header><div class="preview-stage">
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%20cb-etincelle%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-etincelle.txt">Download Étincelle snippet</a></details></div></article>
+<article class="design-card" id="design-goutte" data-kind="bud"><header class="design-heading"><h3 class="design-name"><span>05</span>Goutte</h3><p class="design-description">A slim colour ribbon and an uncluttered short reply.</p></header><div class="preview-stage">
 <div class="champagne-bud cb-goutte">
 <div class="cb-meta"><a href="#">Toby</a><span>one more moment</span></div>
-<div class="cb-photos">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
-<img loading="lazy" decoding="async" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
 
 </div><div class="gallery-code"><details><summary>Copy Goutte code</summary><textarea readonly spellcheck="false" aria-label="Goutte JCink snippet">[dohtml]
-&lt;div class=&quot;champagne-bud cb-goutte&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:40% 50%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="champagne-bud cb-goutte"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Champagne &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-bud-variations-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/champagne/champagne-media-v2.css"&gt;
 [/dohtml]
-</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%20cb-goutte%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-photos%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2Fcbcc309cd601f309dd8fd3dfd13b6bf8%2F996ba8d81fe808ab-3f%2Fs540x810%2Fd716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A40%25%2050%25%3B%22%3E%0A%3Cimg%20src%3D%22https%3A%2F%2F64.media.tumblr.com%2F5171fa96d9b8536ee1c661571af91b19%2Fe4d3e377f6ce0b88-55%2Fs540x810%2F992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv%22%20alt%3D%22Character%20portrait%22%20style%3D%22object-position%3A50%25%2035%25%3B%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-bud-variations-v1.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-goutte.txt">Download Goutte snippet</a></details></div></article>
+</textarea><a class="gallery-download" href="data:text/plain;charset=utf-8,%5Bdohtml%5D%0A%3Cdiv%20class%3D%22champagne-bud%20cb-goutte%22%3E%0A%3Cdiv%20class%3D%22cb-meta%22%3E%3Ca%20href%3D%22%5Burl%5D%22%3E%5Bname%5D%3C%2Fa%3E%3Cspan%3E%5Btext%5D%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-copy%22%3E%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20%3Cb%3Econsectetur%20adipiscing%20elit.%3C%2Fb%3E%20Sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%0A%3Cp%3E%3Ci%3EUt%20enim%20ad%20minim%20veniam%2C%3C%2Fi%3E%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20%3Cu%3Ecommodo%20consequat.%3C%2Fu%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22cb-brand%22%3EChampagne%20%3Cspan%3Ebud%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flexdoescodingnow%2Ftemplates%40main%2Fchampagne%2Fchampagne-media-v2.css%22%3E%0A%5B%2Fdohtml%5D%0A" download="champagne-bud-goutte.txt">Download Goutte snippet</a></details></div></article>
 </div></section>
 </main><footer class="gallery-footer">Champagne · Five threads, five comms, five buds. GIFs supplied by Lex. Typography: Cormorant Garamond &amp; Manrope.</footer></div></body></html>

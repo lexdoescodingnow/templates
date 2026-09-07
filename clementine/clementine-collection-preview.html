@@ -400,7 +400,58 @@ html[color-mode="dark"] .design-index,html[color-mode="dark"] .entry-navigation 
 html[color-mode="dark"] .design-index a,html[color-mode="dark"] .entry-navigation a {color:#ccbba4;}
 html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-navigation a:hover {color:#eda070;}
 </style>
-</head>
+<style>.clementine-zest .ct-gifs:not(:has(img)){display:none;}
+.clementine-zest:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-zest:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-zest .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-zest .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-zest.ct-satsuma .ct-gifs:not(:has(img)){display:none;}
+.clementine-zest.ct-satsuma:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-zest.ct-satsuma:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-zest.ct-satsuma .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-zest.ct-satsuma .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-zest.ct-orangerie .ct-gifs:not(:has(img)){display:none;}
+.clementine-zest.ct-orangerie:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-zest.ct-orangerie:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-zest.ct-orangerie .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-zest.ct-orangerie .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-zest.ct-marmalade .ct-gifs:not(:has(img)){display:none;}
+.clementine-zest.ct-marmalade:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-zest.ct-marmalade:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-zest.ct-marmalade .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-zest.ct-marmalade .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-zest.ct-sunroom .ct-gifs:not(:has(img)){display:none;}
+.clementine-zest.ct-sunroom:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-zest.ct-sunroom:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-zest.ct-sunroom .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-zest.ct-sunroom .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-bud.cb-pip .cb-photos:not(:has(img)){display:none;}
+.clementine-bud.cb-pip:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-bud.cb-pip:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-bud.cb-pip .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-bud.cb-pip .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-bud.cb-pith .cb-photos:not(:has(img)){display:none;}
+.clementine-bud.cb-pith:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-bud.cb-pith:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-bud.cb-pith .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-bud.cb-pith .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-bud.cb-dew .cb-photos:not(:has(img)){display:none;}
+.clementine-bud.cb-dew:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-bud.cb-dew:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-bud.cb-dew .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-bud.cb-dew .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-bud.cb-segment .cb-photos:not(:has(img)){display:none;}
+.clementine-bud.cb-segment:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-bud.cb-segment:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-bud.cb-segment .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-bud.cb-segment .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-bud.cb-blossom .cb-photos:not(:has(img)){display:none;}
+.clementine-bud.cb-blossom:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
+.clementine-bud.cb-blossom:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
+.clementine-bud.cb-blossom .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
+.clementine-bud.cb-blossom .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
+.clementine-zest.ct-satsuma .ct-gifs:has(img:only-child){width:190px;max-width:75%;margin-inline:auto;}
+</style></head>
 <body>
 <header class="collection-head">
 <p class="collection-kicker">Complete collection · 15 designs</p>
@@ -445,39 +496,38 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="ct-finish" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Zest · JCink code</summary><textarea id="code-threads-zest" aria-label="Zest threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-zest&quot;&gt;
-&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ct-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;div class="clementine-zest"&gt;
+&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
+&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ct-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
+&lt;img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;div class="ct-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-zest-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-threads-zest" role="status"></span>
 </article>
 <article class="collection-entry" data-template="threads-satsuma" id="preview-threads-satsuma">
 <nav class="entry-navigation" aria-label="Browse from Satsuma"><a class="design-jump" href="#preview-threads-zest" aria-label="Previous design: Zest">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-orangerie" aria-label="Next design: Orangerie">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>02</span> Satsuma</h3><p>Paired citrus-shaped frames and a centred masthead.</p></div><button type="button" class="copy-button" data-source="code-threads-satsuma" aria-label="Copy Satsuma threads code">Copy code</button></div>
+<div class="entry-heading"><div><h3><span>02</span> Satsuma</h3><p>One citrus-shaped portrait beneath a centred masthead.</p></div><button type="button" class="copy-button" data-source="code-threads-satsuma" aria-label="Copy Satsuma threads code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-zest ct-satsuma">
 <div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
 <div class="ct-title">Clementine</div>
 <div class="ct-subtitle">[text]</div>
 <div class="ct-gifs">
 <img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
 </div>
 <div class="ct-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -490,25 +540,24 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="ct-finish" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Satsuma · JCink code</summary><textarea id="code-threads-satsuma" aria-label="Satsuma threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-zest ct-satsuma&quot;&gt;
-&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ct-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;div class="clementine-zest ct-satsuma"&gt;
+&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
+&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ct-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;div class="ct-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-threads-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-threads-satsuma" role="status"></span>
@@ -535,40 +584,36 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="ct-finish" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Orangerie · JCink code</summary><textarea id="code-threads-orangerie" aria-label="Orangerie threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-zest ct-orangerie&quot;&gt;
-&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ct-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;div class="clementine-zest ct-orangerie"&gt;
+&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
+&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ct-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
+&lt;img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;div class="ct-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-threads-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-threads-orangerie" role="status"></span>
 </article>
 <article class="collection-entry" data-template="threads-marmalade" id="preview-threads-marmalade">
 <nav class="entry-navigation" aria-label="Browse from Marmalade"><a class="design-jump" href="#preview-threads-orangerie" aria-label="Previous design: Orangerie">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-sunroom" aria-label="Next design: Sunroom">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>04</span> Marmalade</h3><p>A horizontal portrait strip with a fine coloured spine.</p></div><button type="button" class="copy-button" data-source="code-threads-marmalade" aria-label="Copy Marmalade threads code">Copy code</button></div>
+<div class="entry-heading"><div><h3><span>04</span> Marmalade</h3><p>An image-free correspondence page with a coloured spine.</p></div><button type="button" class="copy-button" data-source="code-threads-marmalade" aria-label="Copy Marmalade threads code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-zest ct-marmalade">
 <div class="ct-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
 <div class="ct-title">Clementine</div>
 <div class="ct-subtitle">[text]</div>
-<div class="ct-gifs">
-<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
-</div>
 <div class="ct-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -580,25 +625,21 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="ct-finish" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Marmalade · JCink code</summary><textarea id="code-threads-marmalade" aria-label="Marmalade threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-zest ct-marmalade&quot;&gt;
-&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ct-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;div class="clementine-zest ct-marmalade"&gt;
+&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
+&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ct-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-threads-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-threads-marmalade" role="status"></span>
@@ -625,25 +666,25 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="ct-finish" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Sunroom · JCink code</summary><textarea id="code-threads-sunroom" aria-label="Sunroom threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-zest ct-sunroom&quot;&gt;
-&lt;div class=&quot;ct-names&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-title&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;ct-subtitle&quot;&gt;[text]&lt;/div&gt;
-&lt;div class=&quot;ct-gifs&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 40%;&quot;&gt;
+&lt;div class="clementine-zest ct-sunroom"&gt;
+&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;/div&gt;
+&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
+&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
+&lt;div class="ct-gifs"&gt;
+&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
+&lt;img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-copy&quot;&gt;
+&lt;div class="ct-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
 
 &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ct-seal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;ct-finish&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-threads-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-threads-sunroom" role="status"></span>
@@ -662,33 +703,33 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="cc-time">[time]</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Delivered</div>
 <div class="cc-brand">Clementine</div>
 <div class="cc-hardware" aria-hidden="true"></div>
 <div class="cc-compose" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Pulp · JCink code</summary><textarea id="code-comms-pulp" aria-label="Pulp comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-comms cc-pulp&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="clementine-comms cc-pulp"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-comms-pulp" role="status"></span>
@@ -705,33 +746,33 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="cc-time">[time]</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Delivered</div>
 <div class="cc-brand">Clementine</div>
 <div class="cc-hardware" aria-hidden="true"></div>
 <div class="cc-compose" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Nectar · JCink code</summary><textarea id="code-comms-nectar" aria-label="Nectar comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-comms cc-nectar&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="clementine-comms cc-nectar"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-comms-nectar" role="status"></span>
@@ -748,33 +789,33 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="cc-time">[time]</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Delivered</div>
 <div class="cc-brand">Clementine</div>
 <div class="cc-hardware" aria-hidden="true"></div>
 <div class="cc-compose" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Peel · JCink code</summary><textarea id="code-comms-peel" aria-label="Peel comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-comms cc-peel&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="clementine-comms cc-peel"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-comms-peel" role="status"></span>
@@ -791,33 +832,33 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="cc-time">[time]</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Delivered</div>
 <div class="cc-brand">Clementine</div>
 <div class="cc-hardware" aria-hidden="true"></div>
 <div class="cc-compose" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Fleur · JCink code</summary><textarea id="code-comms-fleur" aria-label="Fleur comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-comms cc-fleur&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="clementine-comms cc-fleur"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-comms-fleur" role="status"></span>
@@ -834,33 +875,33 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 <div class="cc-time">[time]</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</div>
+</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
+</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+</p></div>
 <div class="cc-receipt">Delivered</div>
 <div class="cc-brand">Clementine</div>
 <div class="cc-hardware" aria-hidden="true"></div>
 <div class="cc-compose" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Pressé · JCink code</summary><textarea id="code-comms-presse" aria-label="Pressé comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-comms cc-presse&quot;&gt;
-&lt;div class=&quot;cc-contact&quot;&gt;
-&lt;a class=&quot;cc-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
-&lt;div class=&quot;cc-status&quot;&gt;[text]&lt;/div&gt;
-&lt;img class=&quot;cc-avatar&quot; src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="clementine-comms cc-presse"&gt;
+&lt;div class="cc-contact"&gt;
+&lt;a class="cc-name" href="[url]"&gt;[name]&lt;/a&gt;
+&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
+&lt;img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-time&quot;&gt;[time]&lt;/div&gt;
-&lt;div class=&quot;cc-messages&quot;&gt;
+&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
+&lt;div class="cc-messages"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
 &lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
 &lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cc-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;cc-brand&quot;&gt;Clementine&lt;/div&gt;
-&lt;div class=&quot;cc-hardware&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cc-compose&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
+&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
+&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-comms-presse" role="status"></span>
@@ -877,58 +918,52 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 </div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Clementine <span>bud</span></div>
 <div class="cb-mark" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Pip · JCink code</summary><textarea id="code-buds-pip" aria-label="Pip buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-bud cb-pip&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="clementine-bud cb-pip"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-photos"&gt;
+&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-buds-pip" role="status"></span>
 </article>
 <article class="collection-entry" data-template="buds-pith" id="preview-buds-pith">
 <nav class="entry-navigation" aria-label="Browse from Pith"><a class="design-jump" href="#preview-buds-pip" aria-label="Previous design: Pip">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-dew" aria-label="Next design: Dew">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>02</span> Pith</h3><p>A circular portrait above a small, centred note.</p></div><button type="button" class="copy-button" data-source="code-buds-pith" aria-label="Copy Pith buds code">Copy code</button></div>
+<div class="entry-heading"><div><h3><span>02</span> Pith</h3><p>A small centred note, carried by its typography and citrus motif.</p></div><button type="button" class="copy-button" data-source="code-buds-pith" aria-label="Copy Pith buds code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-bud cb-pith">
 <div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
-<div class="cb-photos">
-<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Clementine <span>bud</span></div>
 <div class="cb-mark" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Pith · JCink code</summary><textarea id="code-buds-pith" aria-label="Pith buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-bud cb-pith&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="clementine-bud cb-pith"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-buds-pith" role="status"></span>
@@ -944,59 +979,53 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 </div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Clementine <span>bud</span></div>
 <div class="cb-mark" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Dew · JCink code</summary><textarea id="code-buds-dew" aria-label="Dew buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-bud cb-dew&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="clementine-bud cb-dew"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-photos"&gt;
+&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
+&lt;img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-buds-dew" role="status"></span>
 </article>
 <article class="collection-entry" data-template="buds-segment" id="preview-buds-segment">
 <nav class="entry-navigation" aria-label="Browse from Segment"><a class="design-jump" href="#preview-buds-dew" aria-label="Previous design: Dew">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-blossom" aria-label="Next design: Blossom">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>04</span> Segment</h3><p>A little panoramic photograph over a short reply.</p></div><button type="button" class="copy-button" data-source="code-buds-segment" aria-label="Copy Segment buds code">Copy code</button></div>
+<div class="entry-heading"><div><h3><span>04</span> Segment</h3><p>A compact, image-free reply with a clean botanical finish.</p></div><button type="button" class="copy-button" data-source="code-buds-segment" aria-label="Copy Segment buds code">Copy code</button></div>
 <div class="template-stage"><div class="clementine-bud cb-segment">
 <div class="cb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
-<div class="cb-photos">
-<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Clementine <span>bud</span></div>
 <div class="cb-mark" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Segment · JCink code</summary><textarea id="code-buds-segment" aria-label="Segment buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-bud cb-segment&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="clementine-bud cb-segment"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-buds-segment" role="status"></span>
@@ -1011,25 +1040,25 @@ html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-nav
 </div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</div>
+</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+</p></div>
 <div class="cb-brand">Clementine <span>bud</span></div>
 <div class="cb-mark" aria-hidden="true"></div>
 </div></div>
 <details class="code-panel"><summary>Blossom · JCink code</summary><textarea id="code-buds-blossom" aria-label="Blossom buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class=&quot;clementine-bud cb-blossom&quot;&gt;
-&lt;div class=&quot;cb-meta&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-photos&quot;&gt;
-&lt;img src=&quot;https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv&quot; alt=&quot;Character portrait&quot; style=&quot;object-position:50% 35%;&quot;&gt;
+&lt;div class="clementine-bud cb-blossom"&gt;
+&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;[name]&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-photos"&gt;
+&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-copy&quot;&gt;
+&lt;div class="cb-copy"&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 &lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cb-brand&quot;&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cb-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-companions-v1.css&quot;&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-v2.css"&gt;
 [/dohtml]
 </textarea></details>
 <span class="copy-status" id="status-buds-blossom" role="status"></span>

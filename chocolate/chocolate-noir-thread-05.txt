@@ -1,0 +1,19 @@
+[dohtml]
+<article class="choco choco-noir choco-thread">
+<header class="choco-heading">
+<a class="choco-name" href="[url]">[name]</a>
+<h2 class="choco-title">[text]</h2>
+</header>
+
+<div class="choco-writing">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis aute irure dolor in reprehenderit</b> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nulla facilisi. Integer vel nibh in neque tincidunt dignissim, et in ipsum sit amet erat consequat volutpat.</p>
+<p>Etiam sit amet velit vel nibh luctus elementum. <u>Excepteur sint occaecat cupidatat non proident,</u> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<footer class="choco-finish"><span>Chocolate</span><span class="choco-cacao" aria-hidden="true"></span><span>Noir · 05</span></footer>
+<span class="choco-decor" aria-hidden="true"></span>
+</article>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/chocolate/chocolate-media-v2.css">
+[/dohtml]

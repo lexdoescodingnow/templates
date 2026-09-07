@@ -5,7 +5,7 @@ Buds are small thread replies intended to encourage 100 words or fewer: a brief 
 | Bud | Design | GIFs | Maximum width |
 | --- | --- | --- | --- |
 | [Sprout](banana-bud-sprout.txt) | A rounded card with one small leaf-shaped portrait. | 1 | 350px |
-| [Leaflet](banana-bud-leaflet.txt) | A folded notecard with a taped miniature GIF. | 1 | 300px |
+| [Leaflet](banana-bud-leaflet.txt) | An image-free folded notecard. | 1 | 300px |
 | [Tendril](banana-bud-tendril.txt) | An arched side portrait beside a short passage. | 1 | 410px |
 | [Twinleaf](banana-bud-twinleaf.txt) | Two overlapping GIF portraits and a slim coloured rule. | 2 | 365px |
 | [Pressing](banana-bud-pressing.txt) | A cropped film still above a compact story card. | 1 | 330px |
@@ -42,3 +42,6 @@ https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/banana/banana-buds-k
 ```
 
 This stylesheet is shared by the five current Bud designs, with rules scoped to `.banana-bud`.
+
+
+Current default GIF counts: Sprout 1, Leaflet 0, Tendril 1, Twinleaf 2, Pressing 0. See [the collection guide](README.md) for current snippets.

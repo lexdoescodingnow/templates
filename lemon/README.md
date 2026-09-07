@@ -1,51 +1,53 @@
 # Lemon collection
 
-Fifteen JCink templates inspired by the Lemon poster: romantic lettering, lemon-shaped portraits, climbing branches, blossoms, and delicate thorn details. Member colours shape the headers, frames, borders, and emphasis. Writing rests on neutral light or dark backgrounds.
+Five threads, five comms and five buds. GIFs follow the composition: portrait pairs for paired frames, single portraits for contacts and narrow photo spaces, and image-free options for letters and tiny replies.
 
-[Download the preview/editor](lemon-collection-preview.html) · [Complete collection ZIP](lemon-collection.zip)
+[Preview and code](lemon-collection-preview.html) · [Download collection](lemon-collection.zip)
 
-| No. | Thread | Comms | Bud |
-| --- | --- | --- | --- |
-| 01 | [Limoneto](lemon-limoneto-thread-01.txt) | [Limone Line](lemon-limone-line-comms-01.txt) | [Petalprick](lemon-petalprick-bud-01.txt) |
-| 02 | [Sorrento Vow](lemon-sorrento-vow-thread-02.txt) | [Amalfi Air](lemon-amalfi-air-comms-02.txt) | [Lemonlet](lemon-lemonlet-bud-02.txt) |
-| 03 | [Verna Reverie](lemon-verna-reverie-thread-03.txt) | [Citron Relay](lemon-citron-relay-comms-03.txt) | [Pollen Promise](lemon-pollen-promise-bud-03.txt) |
-| 04 | [Lunario](lemon-lunario-thread-04.txt) | [Verdello Voice](lemon-verdello-voice-comms-04.txt) | [Dewdrop Pact](lemon-dewdrop-pact-bud-04.txt) |
-| 05 | [Primofiore](lemon-primofiore-thread-05.txt) | [Sfusato Signal](lemon-sfusato-signal-comms-05.txt) | [Tenderthorn](lemon-tenderthorn-bud-05.txt) |
+## Threads
 
-![All fifteen Lemon designs](lemon-collection-overview.png)
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Limoneto](lemon-limoneto-thread-01.txt) | 2 | Paired lemon-shaped portraits, a climbing branch, and a sweeping handwritten title. |
+| [Sorrento Vow](lemon-sorrento-vow-thread-02.txt) | 2 | A formal portrait diptych above a centred invitation-style title and thorn-rule finish. |
+| [Verna Reverie](lemon-verna-reverie-thread-03.txt) | 0 | An image-free romantic page with a right-aligned script title and botanical finish. |
+| [Lunario](lemon-lunario-thread-04.txt) | 1 | One leaf-lens portrait, curved orbit lines and a tiny blossom garland. |
+| [Primofiore](lemon-primofiore-thread-05.txt) | 1 | A clean blossom masthead, colour-banded portrait, and a fine writing rule. |
 
-## Copy and edit
+## Comms
 
-Open any named `.txt` file, choose **Raw**, and copy the whole `[dohtml]` block into your post. The hosted stylesheet link is included. Editable names, URLs, titles, times, GIFs, and writing come before the final decoration and stylesheet. Posting snippets and CSS contain no comments, hidden tips, or editing instructions.
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Limone Line](lemon-limone-line-comms-01.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Amalfi Air](lemon-amalfi-air-comms-02.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Citron Relay](lemon-citron-relay-comms-03.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Verdello Voice](lemon-verdello-voice-comms-04.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Sfusato Signal](lemon-sfusato-signal-comms-05.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
 
-Replace `[url]` with your profile or thread link, `[name]` with your character name or names, and `[text]` with a title or status. Both supplied Tumblr GIFs and lorem ipsum are already filled in. Replace either GIF URL, remove one image line, or remove the entire GIF container. The image's `object-position` value adjusts its crop.
+## Buds
 
-Download and open **lemon-collection-preview.html** in a browser to use the editor. Type tabs, named buttons, and Previous/Next expose every design. Each design retains its edits while the page stays open. Copy and Download produce the complete posting snippet. The preview includes palette tests, Light/Dark/System modes, GIF crop sliders, and a word count for buds. All original snippets are also available in the expandable collection below the editor.
+| Design | GIFs | Layout |
+| --- | ---: | --- |
+| [Petalprick](lemon-petalprick-bud-01.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
+| [Lemonlet](lemon-lemonlet-bud-02.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
+| [Pollen Promise](lemon-pollen-promise-bud-03.txt) | 0 | A little centred promise with a blossom signature below the reply. |
+| [Dewdrop Pact](lemon-dewdrop-pact-bud-04.txt) | 2 | Two miniature leaf lenses above a short reply and a delicate garland. |
+| [Tenderthorn](lemon-tenderthorn-bud-05.txt) | 0 | A slender botanical note with a script title and no photographs. |
 
-Comms use ordinary `<p>` paragraphs: one paragraph is one message. Successive opening `<p>` tags work without closing tags. Set `data-direction="sent"` for outgoing bubbles, or keep `received` for incoming messages. Time and receipt text are editable at the top. The phone hardware is decorative. Bud samples contain fewer than 100 words; longer replies are never cut off.
+## Editing and integration
 
-The editor converts `[b]`, `[i]`, and `[u]` into `<b>`, `<i>`, and `<u>` for `[dohtml]`. In directly edited snippets, use the HTML tags. `<strong>` and `<em>` are also supported. Bold and underline follow the member gradient 1 → 2 → 3; italics reverse it to 3 → 2 → 1.
+Copy a complete `[dohtml]` block from a named `.txt` file. The editable `[url]`, `[name]`, `[text]`, image URLs, writing and comms time remain above the decoration and the stylesheet link. The supplied GIF URLs are examples, not a required pair.
 
-## Styling
+Use the default layout in the table, or remove an image tag. If removing the final image, remove its empty portrait container too. Image-free layouts reclaim the space automatically. In previews with an editor, clearing a GIF URL omits that image from the preview and copied code; clearing both produces an image-free post. Custom edits are kept when switching designs.
 
-Each posting snippet loads `lemon-collection-v1.css` through jsDelivr. No forum JavaScript, IDs, or manual stylesheet installation is required. Styles are scoped to `.lmn`. Blue Hour's inherited `--mgrgb1`, `--mgrgb2`, and `--mgrgb3` use comma-separated RGB values; preview palette settings never write fixed member colours into the copied code.
+Comms messages use ordinary `<p>` paragraphs; successive opening `<p>` tags work without closing tags or repeated classes. Device decoration is static. Buds encourage 100 words or fewer and never clip longer replies.
 
-Blue Hour's explicit `html[color-mode="light"]` and `html[color-mode="dark"]` settings override the system preference. The system preference is used when the attribute is absent. Google Fonts supplies Italiana, Great Vibes, and DM Sans, with local fallbacks. The original lemon, blossom, branch, garland, and thorn drawings are SVG masks embedded in the CSS. The preview embeds its styling; online GIFs and fonts need an internet connection.
+Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` work too. Editors that accept `[b]`, `[i]` and `[u]` convert them to HTML. The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the design and emphasis. Bold and underline use colours 1 → 2 → 3; italics use 3 → 2 → 1.
 
-## Designs
+Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system fallback. Writing stays on neutral surfaces. Preview palette controls are samples; posts inherit the forum palette.
 
-- **Limoneto (thread):** Paired lemon-shaped portraits, a climbing branch, and a sweeping handwritten title.
-- **Sorrento Vow (thread):** A formal portrait diptych above a centred invitation-style title and thorn-rule finish.
-- **Verna Reverie (thread):** A text-first romantic page with a right-aligned script title and paired portraits below.
-- **Lunario (thread):** Two leaf-lens portraits, curved orbit lines, and a tiny blossom garland.
-- **Primofiore (thread):** A clean blossom masthead, colour-banded photographs, and a fine writing rule.
-- **Limone Line (comms):** A botanical handset with leaf-cut contact portraits and a fine conversation rail.
-- **Amalfi Air (comms):** A slim phone with an editorial contact name and a panoramic double-photo banner.
-- **Citron Relay (comms):** A compact messenger phone with stacked contact thumbnails beside the name.
-- **Verdello Voice (comms):** A ribbed-edge handset with opposing portrait curves and softly raised bubbles.
-- **Sfusato Signal (comms):** A rounded phone with a paired portrait capsule and fluid message bubbles.
-- **Petalprick (bud):** A tiny script-headed reply with petal portraits and a coloured edge.
-- **Lemonlet (bud):** A compact curved note with two small portraits nestled beside the heading.
-- **Pollen Promise (bud):** A little centred promise with a portrait-and-blossom signature below the reply.
-- **Dewdrop Pact (bud):** Two miniature leaf lenses above a short reply and a delicate garland.
-- **Tenderthorn (bud):** A slender botanical card with a script title and a tiny double GIF ribbon.
+All current snippets use the fresh `lemon-media-v2.css` stylesheet. Older CSS files remain available for existing posts. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS, fonts and GIFs require internet access; font fallbacks remain available. Existing forum posts retain their original markup: paste the revised snippet to adopt its new GIF layout.
+
+## Revision checks
+
+The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
