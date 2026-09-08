@@ -54,7 +54,7 @@ Each design retains its edits while the preview is open. Use **Download .txt** t
 
 ## Forum integration
 
-Every current snippet includes one [hosted stylesheet link](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-v1.css) inside its `[dohtml]` block. The forum must permit external stylesheet links. No JavaScript or HTML loader runs in forum posts.
+Every current snippet includes one [hosted stylesheet link](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@6680ac1bd432029d04569442b9c275b88445a6c9/clementine/clementine-softlight-v1.css) inside its `[dohtml]` block. The forum must permit external stylesheet links. No JavaScript or HTML loader runs in forum posts. The stylesheet URL is pinned to its published revision to avoid stale CDN caches.
 
 Blue Hour’s inherited RGB triples `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the templates. Dark mode lightens those hues for emphasis and frames. Explicit `html[color-mode="light"]` or `html[color-mode="dark"]` overrides the system fallback. Styles are scoped to `.clm` wrappers and their descendants.
 

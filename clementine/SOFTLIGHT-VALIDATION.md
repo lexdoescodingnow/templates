@@ -12,5 +12,6 @@ Completed on 8 September 2026.
 - Light/dark/system attributes, width controls and colour-picker isolation pass generated-document checks.
 - CSS parses successfully; snippets and shared CSS contain no comments or instruction blocks.
 - Earlier Clementine posting files, CSS and preview remain unchanged for the later Tangerine migration.
+- Published revision-pinned jsDelivr stylesheet returns HTTP 200 as text/css and matches the local stylesheet byte for byte.
 
 These checks use HTML/CSS parsers and a DOM simulation, which does not calculate layout. The Cloud Browser security policy blocked local-file previews, so screenshots, rendered dimensions, visual font/GIF loading and live Blue Hour posting were not verified. Responsive rules and explicit forum-mode precedence are present in the stylesheet; they are not a claim of visual browser testing.
