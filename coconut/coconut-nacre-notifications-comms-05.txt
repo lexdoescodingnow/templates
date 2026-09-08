@@ -1,0 +1,19 @@
+[dohtml]
+<div class="ccn ccn-comms ccn-nacre-notifications" data-direction="received">
+<div class="ccn-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>09:41</time>
+</div>
+
+<div class="ccn-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Integer vel ipsum vitae.</i></p>
+<p><u>Donec consequat.</u> Sed fermentum libero et risus consectetur.</p>
+</div>
+
+<div class="ccn-ornament" aria-hidden="true"><svg viewBox="0 0 64 46" aria-hidden="true"><path d="M31 3C25 12 18 21 18 29a14 14 0 0 0 28 0C46 19 37 11 31 3Z"/><path d="M24 29q0 8 8 9M9 36q3-3 5 0m37 2q3-3 5 0"/></svg><span>Message</span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/coconut/coconut-collection-v1.css">
+[/dohtml]
