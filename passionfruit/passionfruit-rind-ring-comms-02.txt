@@ -1,0 +1,22 @@
+[dohtml]
+<div class="pfr pfr-comms pfr-rind-ring" data-direction="received">
+<div class="pfr-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="pfr-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Integer vel ipsum vitae.</i></p>
+<p><u>Donec consequat.</u> Sed fermentum libero et risus consectetur.</p>
+</div>
+
+<div class="pfr-art" aria-hidden="true"></div>
+<div class="pfr-device" aria-hidden="true"><span class="pfr-signal">▂▄▆</span><span class="pfr-camera"></span><span class="pfr-battery"></span></div>
+<div class="pfr-compose" aria-hidden="true"><span>+</span><span>Message</span><span>↑</span></div>
+<div class="pfr-keypad" aria-hidden="true"><span class="pfr-nav">●</span><span>1</span><span>2 abc</span><span>3 def</span><span>4 ghi</span><span>5 jkl</span><span>6 mno</span><span>7 pqrs</span><span>8 tuv</span><span>9 wxyz</span><span>*</span><span>0</span><span>＃</span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@a0c45fbc2a048a28c6d23745eeb930628af98c7f/passionfruit/passionfruit-collection-v1.css">
+[/dohtml]

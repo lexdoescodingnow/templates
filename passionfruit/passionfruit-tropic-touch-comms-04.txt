@@ -1,0 +1,21 @@
+[dohtml]
+<div class="pfr pfr-comms pfr-tropic-touch" data-direction="received">
+<div class="pfr-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="pfr-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Integer vel ipsum vitae.</i></p>
+<p><u>Donec consequat.</u> Sed fermentum libero et risus consectetur.</p>
+</div>
+
+<div class="pfr-art" aria-hidden="true"></div>
+<div class="pfr-device" aria-hidden="true"><span class="pfr-signal">▂▄▆</span><span class="pfr-camera"></span><span class="pfr-battery"></span></div>
+<div class="pfr-compose" aria-hidden="true"><span>+</span><span>Message</span><span>↑</span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@a0c45fbc2a048a28c6d23745eeb930628af98c7f/passionfruit/passionfruit-collection-v1.css">
+[/dohtml]
