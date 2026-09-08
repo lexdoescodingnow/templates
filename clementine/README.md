@@ -1,53 +1,63 @@
-# Clementine collection
+# Clementine · Softlight collection
 
-Five threads, five comms and five buds. GIFs follow the composition: portrait pairs for paired frames, single portraits for contacts and narrow photo spaces, and image-free options for letters and tiny replies.
+Fifteen new JCink designs inspired by the supplied Clementine poster: slow tenderness, soft daylight, delicate lettering, curling peel and small botanical line drawings. Member colours run through headers, frames, rules and emphasis, with neutral writing surfaces and restrained citrus accents.
 
-[Preview and code](clementine-collection-preview.html)
+[Download the standalone preview/editor](clementine-softlight-preview.html) · [Complete collection ZIP](clementine-softlight-collection.zip)
+
+GitHub shows HTML source. Download the preview HTML and open it in your browser to browse, edit and copy all fifteen designs. The HTML includes its own styles and editor; GIFs and optional Google Fonts load online. **View all 15 designs**, the named menu and previous/next controls all reach the complete collection.
+
+The previous collection was intended to be **Tangerine**. Its snippets, stylesheets and preview remain unchanged at their existing paths. See the [earlier collection index](https://github.com/lexdoescodingnow/templates/blob/main/clementine/tangerine-legacy-README.md) or its [original preview](https://github.com/lexdoescodingnow/templates/blob/main/clementine/clementine-collection-preview.html). This new collection uses separate class names and a new stylesheet, so existing posts retain their original design.
 
 ## Threads
 
-| Design | GIFs | Layout |
+| Design | Default GIFs | Composition |
 | --- | ---: | --- |
-| [Zest](clementine-zest.txt) | 2 | Staggered portraits and engraved citrus details. |
-| [Satsuma](clementine-thread-satsuma.txt) | 1 | One citrus-shaped portrait beneath a centred masthead. |
-| [Orangerie](clementine-thread-orangerie.txt) | 2 | Tall conservatory windows and a botanical finish. |
-| [Marmalade](clementine-thread-marmalade.txt) | 0 | An image-free correspondence page with a coloured spine. |
-| [Sunroom](clementine-thread-sunroom.txt) | 2 | A wide photograph with a small circular portrait inset. |
+| [Slow Peel](clementine-slow-peel-thread-01.txt) | 1 | A curled corner portrait beside an airy title, a fine colour frame and a hand-drawn ribbon of peel. |
+| [Daylit Vellum](clementine-daylit-vellum-thread-02.txt) | 0 | An image-free translucent-paper composition with segmented colour rules, leaf shadows and a literary drop cap. |
+| [Shared Segments](clementine-shared-segments-thread-03.txt) | 2 | A close-set pair of cinematic stills, a tiny ampersand seal and a spacious, centred title. |
+| [The Tender Hour](clementine-the-tender-hour-thread-04.txt) | 1 | A letterpress-style masthead, an offset landscape still and a sunrise drawn with the lightest possible line. |
+| [Citrus Reverie](clementine-citrus-reverie-thread-05.txt) | 0 | An image-free page with a sweeping type-led header, right-aligned dedication and one softly curved corner. |
 
 ## Comms
 
-| Design | GIFs | Layout |
+| Design | Default GIFs | Composition |
 | --- | ---: | --- |
-| [Pulp](clementine-comms-pulp.txt) | 1 | A rounded phone with a centred portrait and soft message bubbles. |
-| [Nectar](clementine-comms-nectar.txt) | 1 | A compact chat screen with a tinted contact bar. |
-| [Peel](clementine-comms-peel.txt) | 1 | A slim handset with a vertical portrait and folded message corners. |
-| [Fleur](clementine-comms-fleur.txt) | 1 | A portrait-led messenger with a wide photographic header. |
-| [Pressé](clementine-comms-presse.txt) | 1 | A square messenger with crisp message panels and a citrus seal. |
+| [Pocket Grove](clementine-pocket-grove-comms-01.txt) | 1 | A softly framed phone with a leaf-corner contact portrait and received-message bubbles. |
+| [Clementine OS](clementine-clementine-os-comms-02.txt) | 0 | A compact desktop-style messenger with a toolbar clock and crisp, coloured message rails. |
+| [Soft Signal](clementine-soft-signal-comms-03.txt) | 0 | A tall, rounded lock screen with a delicate oversized clock and stacked notification cards. |
+| [Petal Pixel](clementine-petal-pixel-comms-04.txt) | 1 | A camera-led chat device with a wide contact image, serif contact card and soft message bubbles. |
+| [Dusk Dial](clementine-dusk-dial-comms-05.txt) | 1 | A pocket flip-phone treatment with a small contact display, hinge rule and oval control pad. |
 
 ## Buds
 
-| Design | GIFs | Layout |
+| Design | Default GIFs | Composition |
 | --- | ---: | --- |
-| [Pip](clementine-bud-pip.txt) | 1 | A tiny portrait beside a quick reply. |
-| [Pith](clementine-bud-pith.txt) | 0 | A small centred note, carried by its typography and citrus motif. |
-| [Dew](clementine-bud-dew.txt) | 2 | Twin miniature portraits along the top edge. |
-| [Segment](clementine-bud-segment.txt) | 0 | A compact, image-free reply with a clean botanical finish. |
-| [Blossom](clementine-bud-blossom.txt) | 1 | A leaf-shaped portrait and an asymmetric frame. |
+| [Rindlet](clementine-rindlet-bud-01.txt) | 0 | A miniature folded-corner reply with a peel flourish and a member-colour lower edge. |
+| [Little Halo](clementine-little-halo-bud-02.txt) | 1 | A tiny ringed portrait beside a short title, followed by a compact reply. |
+| [Sugar Pollen](clementine-sugar-pollen-bud-03.txt) | 0 | A centred miniature note on a barely dotted background, with a small five-petal blossom. |
+| [Leaflit](clementine-leaflit-bud-04.txt) | 1 | A portrait tab to the right of a literary heading, with a fine botanical signature. |
+| [Clement Kiss](clementine-clement-kiss-bud-05.txt) | 0 | A small, gently curved reply card with a paired-segment signature. |
 
-## Editing and integration
+## Copy and edit
 
-Copy a complete `[dohtml]` block from a named `.txt` file. The editable `[url]`, `[name]`, `[text]`, image URLs, writing and comms time remain above the decoration and the stylesheet link. The supplied GIF URLs are examples, not a required pair.
+Open a named `.txt` file on GitHub and use **Copy raw file**. Paste the entire `[dohtml]` block into your forum post. Names, URLs, title/status, GIF URLs, comms time and writing come before decoration and the stylesheet link. Posting snippets and template CSS contain no comments, hidden tips or editing instructions.
 
-Use the default layout in the table, or remove an image tag. If removing the final image, remove its empty portrait container too. Image-free layouts reclaim the space automatically. In previews with an editor, clearing a GIF URL omits that image from the preview and copied code; clearing both produces an image-free post. Custom edits are kept when switching designs.
+`[url]` is the linked character or thread URL; `[name]` is the displayed name; `[text]` is the title or message status. The preview supplies sample names and titles while untouched copied code keeps all three placeholders. Writing defaults to lorem ipsum.
 
-Comms messages use ordinary `<p>` paragraphs; successive opening `<p>` tags work without closing tags or repeated classes. Device decoration is static. Buds encourage 100 words or fewer and never clip longer replies.
+Use ordinary `<p>` paragraphs. Comms accept successive opening `<p>` tags without closing each paragraph or adding a repeated class. `data-direction="received"`, `"sent"` and `"mixed"` select message alignment; mixed alternates the message direction. Device clocks, composer bars, hinge and control-pad details are decorative.
 
-Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` work too. Editors that accept `[b]`, `[i]` and `[u]` convert them to HTML. The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the design and emphasis. Bold and underline use colours 1 → 2 → 3; italics use 3 → 2 → 1.
+Inside `[dohtml]`, use `<b>`, `<i>` and `<u>`; `<strong>` and `<em>` also work. The preview editor converts `[b]`, `[i]` and `[u]` to HTML. Bold and underline run through member colours 1 → 2 → 3; italics reverse them to 3 → 2 → 1.
 
-Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system fallback. Writing stays on neutral surfaces. Preview palette controls are samples; posts inherit the forum palette.
+GIF counts follow each composition. Both supplied placeholder URLs are used exactly. Remove an image tag or use the editor’s **Remove** button; unused media space collapses. To add GIFs to an image-free design, use **Add GIF**, or add `<div class="cl-media"><img src="YOUR_GIF_URL" alt="Character portrait"></div>` immediately before `cl-copy`. Use `object-position` on an image to adjust its crop. Bud defaults have fewer than 100 words; longer replies are never clipped.
 
-All current snippets use the fresh `clementine-media-v2.css` stylesheet. Older CSS files remain available for existing posts. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS, fonts and GIFs require internet access; font fallbacks remain available. Existing forum posts retain their original markup: paste the revised snippet to adopt its new GIF layout.
+Each design retains its edits while the preview is open. Use **Download .txt** to keep the edited code. The editor accepts paragraph text, emphasis, links and blockquotes. Preview colour samples and custom colour pickers do not enter the posting code; the forum supplies the actual member palette. Light/dark/system and forum/375 px/320 px controls apply to the preview. Clipboard access has a select-and-copy fallback.
 
-## Revision checks
+## Forum integration
 
-The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
+Every current snippet includes one [hosted stylesheet link](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-v1.css) inside its `[dohtml]` block. The forum must permit external stylesheet links. No JavaScript or HTML loader runs in forum posts.
+
+Blue Hour’s inherited RGB triples `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the templates. Dark mode lightens those hues for emphasis and frames. Explicit `html[color-mode="light"]` or `html[color-mode="dark"]` overrides the system fallback. Styles are scoped to `.clm` wrappers and their descendants.
+
+Libre Caslon Display, Italiana and DM Sans fall back to Georgia and Arial. Original inline SVG peel, branch, segment, sunrise and blossom drawings require no external image downloads. Modern CSS `:has()`, container queries and `color-mix()` handle optional media, small layouts and colour tinting.
+
+To rebuild snippets and the standalone preview, run `node clementine/build-clementine.cjs` from the repository root. The ZIP includes this collection’s snippets, stylesheet, preview and build sources. See [validation notes](SOFTLIGHT-VALIDATION.md) for completed checks and their limits.

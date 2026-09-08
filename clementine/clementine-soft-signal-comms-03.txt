@@ -1,0 +1,19 @@
+[dohtml]
+<div class="clm clm-comms clm-soft-signal" data-direction="received">
+<div class="cl-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>09:41</time>
+</div>
+
+<div class="cl-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Praesent vitae justo.</i></p>
+<p><u>Donec consequat.</u> Cras tempus neque sed porta consequat.</p>
+</div>
+
+<div class="cl-ornament" aria-hidden="true"><svg viewBox="0 0 90 48" aria-hidden="true"><path d="M5 34h80M22 34a23 23 0 0 1 46 0M27 34a18 18 0 0 1 36 0M45 6V1M21 11l-4-4m-3 22H8m61-18 4-4m3 22h6M18 42h38m7 0h10"/></svg><span>Message</span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-v1.css">
+[/dohtml]
