@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Citron · Fifteen JCink Templates</title><meta name="description" content="Five threads, five comms and five buds. Preview, edit and copy the Citron collection."><style>.bh-citron{--ct-a:rgb(var(--mgrgb1,106,118,82));--ct-b:rgb(var(--mgrgb2,var(--mgrgb1,151,98,120)));--ct-c:rgb(var(--mgrgb3,var(--mgrgb2,var(--mgrgb1,75,119,128))));--ct-paper:#f9f8f5;--ct-panel:#efede8;--ct-ink:#302f2d;--ct-muted:#686560;--ct-line:#d6d2cb;--ct-shade:rgba(27,23,18,.08);--ct-forward:linear-gradient(110deg,var(--ct-a),var(--ct-b) 52%,var(--ct-c));--ct-reverse:linear-gradient(110deg,var(--ct-c),var(--ct-b) 52%,var(--ct-a));--ct-text-a:color-mix(in srgb,var(--ct-a) 68%,var(--ct-ink));--ct-text-b:color-mix(in srgb,var(--ct-b) 68%,var(--ct-ink));--ct-text-c:color-mix(in srgb,var(--ct-c) 68%,var(--ct-ink));--ct-text-forward:linear-gradient(110deg,var(--ct-text-a),var(--ct-text-b) 52%,var(--ct-text-c));--ct-text-reverse:linear-gradient(110deg,var(--ct-text-c),var(--ct-text-b) 52%,var(--ct-text-a));position:relative;isolation:isolate;box-sizing:border-box;width:calc(100% - 24px);max-width:550px;margin:32px auto;min-width:0;container-type:inline-size;display:grid;grid-template-columns:minmax(0,1fr);background:var(--ct-paper);color:var(--ct-ink);border:1px solid var(--ct-a);font:14px/1.8 'Trebuchet MS',Arial,sans-serif;text-align:left;color-scheme:light;box-shadow:0 14px 32px var(--ct-shade);overflow-wrap:anywhere}
+html[color-mode="dark"] .bh-citron{--ct-paper:#202120;--ct-panel:#292b28;--ct-ink:#e4e3dd;--ct-muted:#b4b4a9;--ct-line:#454740;--ct-shade:rgba(0,0,0,.18);color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-citron{--ct-paper:#202120;--ct-panel:#292b28;--ct-ink:#e4e3dd;--ct-muted:#b4b4a9;--ct-line:#454740;--ct-shade:rgba(0,0,0,.18);color-scheme:dark}}
+.bh-citron *,.bh-citron *::before,.bh-citron *::after,.bh-citron::before,.bh-citron::after{box-sizing:border-box}
+.bh-citron> *{min-width:0}
+.bh-citron .ctn-name{display:block;position:relative;margin:0;color:var(--ct-text-a);font:700 11px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;overflow-wrap:anywhere}
+.bh-citron .ctn-name:hover{text-decoration:underline;text-underline-offset:4px}
+.bh-citron a:focus-visible{outline:2px solid var(--ct-c);outline-offset:4px}
+.bh-citron .ctn-title{position:relative;font:normal 40px/1.06 'Bodoni MT',Didot,'Times New Roman',serif;letter-spacing:-.035em;color:var(--ct-text-a);text-wrap:balance;overflow-wrap:anywhere}
+.bh-citron .ctn-copy{position:relative;min-width:0;padding:30px 35px;text-align:left}
+.bh-citron .ctn-copy p{margin:0 0 1.35em;padding:0;font:inherit;color:inherit;text-align:inherit}
+.bh-citron .ctn-copy p:last-child{margin-bottom:0}
+.bh-citron .ctn-copy :is(b,strong,u){color:var(--ct-text-a);font-weight:700}
+.bh-citron .ctn-copy :is(i,em){color:var(--ct-text-c);font-style:italic}
+.bh-citron .ctn-copy u{text-decoration-color:var(--ct-b);text-decoration-thickness:1px;text-underline-offset:4px}
+.bh-citron .ctn-copy a{color:var(--ct-text-c);text-decoration:underline;text-underline-offset:3px}
+@supports(background-clip:text){.bh-citron .ctn-name,.bh-citron .ctn-title,.bh-citron .ctn-copy :is(b,strong,u){background-image:var(--ct-text-forward);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}.bh-citron .ctn-copy :is(i,em){background-image:var(--ct-text-reverse);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}}
+.bh-citron .ctn-media{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:10px;min-width:0;align-items:stretch}
+.bh-citron .ctn-media:not(:has(img)){display:none!important}
+.bh-citron .ctn-media img{display:block;width:100%;height:100%;min-width:0;max-width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 35%;border:1px solid var(--ct-b);background:var(--ct-panel)}
+.bh-citron .ctn-motif{pointer-events:none;position:relative;color:var(--ct-b)}
+.bh-citron .ctn-motif::before{content:"";display:block;position:absolute;inset:0;background:var(--ct-forward);-webkit-mask:var(--ct-fruit) center/contain no-repeat;mask:var(--ct-fruit) center/contain no-repeat}
+.bh-citron{--ct-fruit:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 110'%3E%3Cg fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round'%3E%3Cpath d='M25 50C22 35 33 27 49 28C54 20 66 27 72 24C85 23 93 32 104 33C117 38 120 54 117 68L123 77L115 82C111 99 90 99 79 101C61 109 47 92 35 90C21 85 17 67 25 50Z'/%3E%3Cpath d='M29 43C49 29 70 37 90 36M27 52C53 43 75 46 104 43M26 63C51 56 85 59 113 54M30 75C59 70 85 79 111 66M40 86C64 84 87 96 107 80M39 34L104 88M60 30L114 70M31 58L81 97M39 29C34 22 38 16 38 12M38 22C49 4 65 6 74 7C69 22 56 28 38 22M41 20L66 10'/%3E%3C/g%3E%3C/svg%3E")}
+.bh-citron.ctn-cedrat-atelier{padding:26px 28px 0;border-radius:3px 3px 70px 3px;border-top:7px solid var(--ct-a);background:linear-gradient(90deg,var(--ct-paper),var(--ct-paper)) padding-box,var(--ct-forward) border-box;border-right-color:var(--ct-c)}
+.bh-citron.ctn-cedrat-atelier .ctn-name{padding:0 95px 13px 0;border-bottom:1px solid var(--ct-line)}
+.bh-citron.ctn-cedrat-atelier .ctn-title{font-size:52px;padding:25px 0 23px;max-width:95%}
+.bh-citron.ctn-cedrat-atelier .ctn-media{gap:18px;padding:9px;border:1px solid var(--ct-a);background:var(--ct-panel)}
+.bh-citron.ctn-cedrat-atelier .ctn-media img{aspect-ratio:1.13;height:auto;border-radius:1px}
+.bh-citron.ctn-cedrat-atelier .ctn-copy{padding:27px 5px 36px}
+.bh-citron.ctn-cedrat-atelier .ctn-motif{position:absolute;right:21px;top:8px;width:80px;height:67px;transform:rotate(-12deg)}
+.bh-citron.ctn-cedrat-atelier::after{content:"";position:absolute;bottom:12px;right:15px;width:44px;height:44px;border-radius:50%;border:1px solid var(--ct-c);box-shadow:inset 0 0 0 5px var(--ct-paper),inset 0 0 0 6px var(--ct-a)}
+.bh-citron.ctn-albedo-archive{border:0;border-left:2px solid var(--ct-a);border-right:2px solid var(--ct-c);padding:0 26px 28px;background:linear-gradient(90deg,var(--ct-panel) 0 16px,transparent 16px),var(--ct-paper)}
+.bh-citron.ctn-albedo-archive .ctn-name{padding:21px 0 12px 13px;border-top:5px solid var(--ct-c)}
+.bh-citron.ctn-albedo-archive .ctn-title{font-size:46px;padding:15px 16px 25px 13px;border-bottom:1px solid var(--ct-b)}
+.bh-citron.ctn-albedo-archive .ctn-copy{padding:31px 12px 10px 58px}
+.bh-citron.ctn-albedo-archive .ctn-copy::before{content:"";position:absolute;top:35px;left:16px;width:20px;height:82px;border:1px solid var(--ct-a);border-radius:60% 40% 60% 40%;background:repeating-linear-gradient(110deg,transparent 0 5px,color-mix(in srgb,var(--ct-b) 40%,transparent) 5px 6px)}
+.bh-citron.ctn-albedo-archive .ctn-media{margin:24px 12px 0 13px}
+.bh-citron.ctn-albedo-archive .ctn-media img{aspect-ratio:2;height:auto}
+.bh-citron.ctn-albedo-archive .ctn-motif{height:30px;margin:18px 12px 0 58px;border-top:1px solid var(--ct-a)}
+.bh-citron.ctn-albedo-archive .ctn-motif::before{width:48px;height:37px;inset:-17px 0 auto auto;background:var(--ct-b)}
+.bh-citron.ctn-vesicle-verse{grid-template-columns:32px minmax(0,1fr) 32px;border:0;box-shadow:none;background:var(--ct-paper)}
+.bh-citron.ctn-vesicle-verse .ctn-name{grid-column:2;grid-row:1;padding:19px 17px 12px;background-color:var(--ct-paper);border-top:3px solid var(--ct-a)}
+.bh-citron.ctn-vesicle-verse .ctn-title{grid-column:2;grid-row:3;font:italic 34px/1.1 Georgia,serif;padding:22px 22px 0;background-color:var(--ct-paper);border-left:1px solid var(--ct-a);border-right:1px solid var(--ct-c)}
+.bh-citron.ctn-vesicle-verse .ctn-media{grid-column:1/-1;grid-row:2;gap:9px;background:var(--ct-forward);padding:9px;border-radius:6px}
+.bh-citron.ctn-vesicle-verse .ctn-media img{aspect-ratio:1.22;height:auto;border:0;border-radius:4px 4px 45% 4px}
+.bh-citron.ctn-vesicle-verse .ctn-media img:nth-child(even){border-radius:4px 4px 4px 45%}
+.bh-citron.ctn-vesicle-verse .ctn-copy{grid-column:2;grid-row:4;background:var(--ct-paper);border:1px solid var(--ct-a);border-top:0;border-right-color:var(--ct-c);padding:25px 22px 30px}
+.bh-citron.ctn-vesicle-verse .ctn-motif{grid-column:2;grid-row:5;height:27px;width:95px;justify-self:end;background:var(--ct-forward);border-radius:0 0 60px 60px}
+.bh-citron.ctn-vesicle-verse .ctn-motif::before{display:none}
+.bh-citron.ctn-vesicle-verse:not(:has(.ctn-media img)) .ctn-title{border-top:1px solid var(--ct-line);padding-top:26px}
+.bh-citron.ctn-pith-parfum{border:1px solid var(--ct-b);outline:1px solid var(--ct-a);outline-offset:-8px;padding:28px 27px 26px;border-radius:80px 80px 3px 3px}
+.bh-citron.ctn-pith-parfum .ctn-name{text-align:center;padding:5px 15px 15px}
+.bh-citron.ctn-pith-parfum .ctn-title{font-size:38px;text-align:center;border:1px solid var(--ct-b);border-radius:50%;padding:24px 30px;margin:0 5px 24px}
+.bh-citron.ctn-pith-parfum .ctn-media{gap:8px}
+.bh-citron.ctn-pith-parfum .ctn-media img{height:auto;aspect-ratio:2.3;border:0}
+.bh-citron.ctn-pith-parfum .ctn-copy{padding:28px 9px 20px}
+.bh-citron.ctn-pith-parfum .ctn-motif{height:40px;margin-top:12px;border-top:3px double var(--ct-b)}
+.bh-citron.ctn-pith-parfum .ctn-motif::before{inset:-17px auto auto calc(50% - 34px);width:68px;height:53px;background:var(--ct-c)}
+.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 116px;padding:0 27px 25px;gap:0 20px;border:0;border-bottom:8px solid var(--ct-c)}
+.bh-citron.ctn-zeste-manifesto .ctn-name{grid-column:1/-1;padding:22px 0 15px;border-bottom:2px solid var(--ct-a)}
+.bh-citron.ctn-zeste-manifesto .ctn-title{grid-column:1;grid-row:2;padding:26px 0 17px;font:700 43px/.98 'Arial Narrow',Impact,sans-serif;text-transform:uppercase;letter-spacing:-.035em}
+.bh-citron.ctn-zeste-manifesto .ctn-media{grid-column:2;grid-row:2/4;display:flex;flex-direction:column;justify-content:flex-start;padding:25px 0 0}
+.bh-citron.ctn-zeste-manifesto .ctn-media img{height:180px;flex:none;aspect-ratio:auto;border:0;border-radius:58px 58px 4px 4px}
+.bh-citron.ctn-zeste-manifesto .ctn-copy{grid-column:1;grid-row:3;padding:10px 0 5px;font-size:13px}
+.bh-citron.ctn-zeste-manifesto .ctn-copy p:first-child::first-letter{font:52px/.85 Georgia,serif;color:var(--ct-text-a);float:left;margin:4px 7px 0 0}
+.bh-citron.ctn-zeste-manifesto .ctn-motif{grid-column:2;grid-row:4;height:42px;margin-top:10px;background:radial-gradient(circle,var(--ct-b) 1px,transparent 1.5px) 0 0/9px 9px}
+.bh-citron.ctn-zeste-manifesto .ctn-motif::before{display:none}
+.bh-citron.ctn-zeste-manifesto:not(:has(.ctn-media img)){grid-template-columns:minmax(0,1fr)}
+.bh-citron.ctn-zeste-manifesto:not(:has(.ctn-media img)) .ctn-motif{grid-column:1;width:100px;justify-self:end}
+.bh-citron.ctn-comms{max-width:360px;border:2px solid var(--ct-a);padding:40px 17px 22px;border-radius:37px;grid-template-columns:minmax(0,1fr) 64px;column-gap:12px;background:linear-gradient(var(--ct-paper),var(--ct-paper)) padding-box,var(--ct-forward) border-box;border-color:transparent}
+.bh-citron.ctn-comms .ctn-time{position:absolute;top:15px;left:23px;font:700 10px/1.1 'Courier New',monospace;letter-spacing:.04em;color:var(--ct-muted)}
+.bh-citron.ctn-comms .ctn-name{grid-column:1;grid-row:1;align-self:end;font-size:13px;letter-spacing:.03em}
+.bh-citron.ctn-comms .ctn-title{grid-column:1;grid-row:2;font:11px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:0;padding:4px 0 8px}
+.bh-citron.ctn-comms .ctn-media{grid-column:2;grid-row:1/3;gap:5px;grid-template-columns:repeat(auto-fit,minmax(25px,1fr));align-self:center}
+.bh-citron.ctn-comms .ctn-media img{aspect-ratio:1;height:auto;border:2px solid var(--ct-b);border-radius:50%}
+.bh-citron.ctn-comms .ctn-copy{grid-column:1/-1;grid-row:3;display:flex;flex-direction:column;gap:10px;padding:24px 0 18px;margin-top:13px;border-top:1px solid var(--ct-line);font-size:13px;line-height:1.65}
+.bh-citron.ctn-comms .ctn-copy p{align-self:flex-start;max-width:91%;padding:12px 14px;border:1px solid color-mix(in srgb,var(--ct-a) 40%,var(--ct-line));border-left:3px solid var(--ct-a);border-radius:15px 15px 15px 4px;background:var(--ct-panel);margin:0}
+.bh-citron.ctn-comms[data-flow="sent"] .ctn-copy p,.bh-citron.ctn-comms[data-flow="mixed"] .ctn-copy p:nth-child(even){align-self:flex-end;border-left:1px solid color-mix(in srgb,var(--ct-c) 40%,var(--ct-line));border-right:3px solid var(--ct-c);border-radius:15px 15px 4px 15px}
+.bh-citron.ctn-comms:not(:has(.ctn-media img)) .ctn-name,.bh-citron.ctn-comms:not(:has(.ctn-media img)) .ctn-title{grid-column:1/-1}
+.bh-citron .ctn-hardware{grid-column:1/-1;grid-row:4;height:14px;position:relative;pointer-events:none}
+.bh-citron .ctn-hardware::before{content:"";position:absolute;bottom:0;left:calc(50% - 35px);width:70px;height:4px;border-radius:4px;background:var(--ct-forward)}
+.bh-citron.ctn-zestline::before{content:"";position:absolute;top:13px;right:24px;width:56px;height:9px;border-radius:10px;background:radial-gradient(circle at 10px 50%,var(--ct-c) 2px,transparent 3px),var(--ct-panel);border:1px solid var(--ct-b)}
+.bh-citron.ctn-zestline::after{content:"";position:absolute;right:-4px;top:125px;width:3px;height:42px;border-radius:2px;background:var(--ct-c)}
+.bh-citron.ctn-pithchat{max-width:380px;border-radius:65px 65px 26px 26px;border-width:5px;padding:48px 22px 18px;grid-template-columns:60px minmax(0,1fr)}
+.bh-citron.ctn-pithchat .ctn-name,.bh-citron.ctn-pithchat .ctn-title{grid-column:2}
+.bh-citron.ctn-pithchat .ctn-media{grid-column:1}
+.bh-citron.ctn-pithchat .ctn-media img{border-radius:18px}
+.bh-citron.ctn-pithchat .ctn-copy{background:var(--ct-panel);border:1px solid var(--ct-b);padding:15px;border-radius:12px;margin-top:16px}
+.bh-citron.ctn-pithchat .ctn-copy p{background:var(--ct-paper);font-size:12px;border-radius:7px}
+.bh-citron.ctn-pithchat .ctn-hardware{height:55px;margin-top:13px}
+.bh-citron.ctn-pithchat .ctn-hardware::before{width:43px;height:43px;left:calc(50% - 21px);bottom:3px;border:1px solid var(--ct-b);border-radius:50%;background:radial-gradient(circle,var(--ct-paper) 0 7px,var(--ct-a) 8px 9px,var(--ct-panel) 10px);box-shadow:-66px 0 0 -16px var(--ct-a),66px 0 0 -16px var(--ct-c)}
+.bh-citron.ctn-pithchat::before{content:"";position:absolute;top:21px;left:calc(50% - 25px);width:50px;height:4px;border-radius:4px;background:repeating-linear-gradient(90deg,var(--ct-a) 0 2px,transparent 2px 5px)}
+.bh-citron.ctn-cedra-sync{max-width:480px;border-radius:18px;padding:33px 19px 16px;grid-template-columns:minmax(0,1fr) 112px}
+.bh-citron.ctn-cedra-sync .ctn-media{grid-template-columns:repeat(auto-fit,minmax(40px,1fr))}
+.bh-citron.ctn-cedra-sync .ctn-media img{border-radius:7px;border-width:1px}
+.bh-citron.ctn-cedra-sync .ctn-title{font-family:'Courier New',monospace;font-size:10px}
+.bh-citron.ctn-cedra-sync .ctn-copy{border:1px solid var(--ct-b);border-radius:7px;padding:16px;background:linear-gradient(90deg,var(--ct-panel) 0 5px,var(--ct-paper) 5px)}
+.bh-citron.ctn-cedra-sync .ctn-copy p{border-radius:5px 10px 10px 5px}
+.bh-citron.ctn-cedra-sync .ctn-hardware{height:34px;margin:15px 6px 0;background:repeating-linear-gradient(90deg,transparent 0 7px,var(--ct-panel) 7px 10px),repeating-linear-gradient(0deg,var(--ct-a) 0 1px,var(--ct-panel) 1px 8px,var(--ct-b) 8px 9px);border-radius:3px}
+.bh-citron.ctn-cedra-sync .ctn-hardware::before{width:70px;height:6px;left:calc(50% - 35px);bottom:2px;border:1px solid var(--ct-c);background:var(--ct-paper);border-radius:2px}
+.bh-citron.ctn-cedra-sync::after{content:"";position:absolute;top:13px;right:21px;width:24px;height:8px;border:1px solid var(--ct-c);border-radius:2px;background:linear-gradient(90deg,var(--ct-c) 65%,transparent 65%)}
+.bh-citron.ctn-rindr{max-width:335px;border-radius:14px;padding:44px 23px 25px;border-width:1px;border-left-width:9px;background:linear-gradient(var(--ct-paper),var(--ct-paper)) padding-box,repeating-linear-gradient(0deg,var(--ct-a) 0 2px,var(--ct-c) 2px 4px) border-box}
+.bh-citron.ctn-rindr .ctn-name{font:700 28px/1.1 'Arial Narrow',Arial,sans-serif;text-transform:none;letter-spacing:-.045em}
+.bh-citron.ctn-rindr .ctn-title{padding-top:8px;font-family:'Courier New',monospace}
+.bh-citron.ctn-rindr .ctn-copy p{border-radius:1px;background:var(--ct-paper);border:1px solid var(--ct-b);border-bottom-width:3px;padding:12px}
+.bh-citron.ctn-rindr .ctn-media img{border-radius:3px}
+.bh-citron.ctn-rindr .ctn-hardware{height:34px;background:radial-gradient(circle,var(--ct-a) 1px,transparent 1.5px) 0 0/6px 6px;border-radius:4px}
+.bh-citron.ctn-rindr .ctn-hardware::before{height:17px;bottom:8px;background:var(--ct-paper);border:1px solid var(--ct-b)}
+.bh-citron.ctn-rindr::before{content:"";position:absolute;right:19px;top:15px;width:7px;height:7px;border-radius:50%;border:1px solid var(--ct-c)}
+.bh-citron.ctn-citros{max-width:365px;border-radius:45px 45px 30px 30px;padding:44px 17px 24px;grid-template-columns:minmax(0,1fr)}
+.bh-citron.ctn-citros .ctn-name{grid-column:1;grid-row:2;padding:16px 8px 0;font-size:17px;text-transform:none}
+.bh-citron.ctn-citros .ctn-title{grid-column:1;grid-row:3;padding:4px 8px 0}
+.bh-citron.ctn-citros .ctn-media{grid-column:1;grid-row:1;grid-template-columns:repeat(auto-fit,minmax(75px,1fr));background:var(--ct-forward);padding:5px;border-radius:25px 25px 8px 8px}
+.bh-citron.ctn-citros .ctn-media img{aspect-ratio:1.9;border:0;border-radius:20px 20px 5px 5px}
+.bh-citron.ctn-citros .ctn-copy{grid-row:4;padding-top:18px}
+.bh-citron.ctn-citros .ctn-copy p{background:var(--ct-panel);border:0;border-radius:18px;box-shadow:3px 3px 0 color-mix(in srgb,var(--ct-b) 50%,var(--ct-line));margin-bottom:3px}
+.bh-citron.ctn-citros .ctn-hardware{grid-row:5}
+.bh-citron.ctn-citros::before{content:"";position:absolute;top:13px;right:24px;width:40px;height:12px;border:1px solid var(--ct-c);border-radius:8px;background:radial-gradient(circle at 8px 50%,var(--ct-a) 2px,transparent 3px)}
+.bh-citron.ctn-bud{max-width:420px;font-size:13px;line-height:1.75;box-shadow:none}
+.bh-citron.ctn-bud .ctn-name{font-size:10px}
+.bh-citron.ctn-bud .ctn-title{font:italic 25px/1.18 Georgia,serif;letter-spacing:-.025em}
+.bh-citron.ctn-bud .ctn-copy{padding:18px 0 0}
+.bh-citron.ctn-bud .ctn-media{grid-template-columns:repeat(auto-fit,minmax(45px,1fr))}
+.bh-citron.ctn-bud .ctn-media img{height:auto;aspect-ratio:1;border-width:1px}
+.bh-citron.ctn-zestmark{padding:20px 24px;border:0;border-top:3px solid var(--ct-a);border-bottom:1px solid var(--ct-c);background:var(--ct-paper)}
+.bh-citron.ctn-zestmark .ctn-title{padding-top:6px}
+.bh-citron.ctn-zestmark .ctn-copy p:first-child::first-letter{font:37px/.9 Georgia,serif;color:var(--ct-text-a);float:left;margin:4px 6px 0 0}
+.bh-citron.ctn-zestmark .ctn-media{margin-top:14px}
+.bh-citron.ctn-zestmark .ctn-media img{aspect-ratio:2.5}
+.bh-citron.ctn-zestmark .ctn-motif{position:absolute;top:15px;right:14px;width:4px;height:4px;border-radius:50%;background:var(--ct-a);box-shadow:0 8px 0 var(--ct-b),0 16px 0 var(--ct-c)}
+.bh-citron.ctn-zestmark .ctn-motif::before{display:none}
+.bh-citron.ctn-pithlet{grid-template-columns:74px minmax(0,1fr);gap:0 17px;padding:20px;border:0;background:var(--ct-paper)}
+.bh-citron.ctn-pithlet .ctn-name{grid-column:2;grid-row:1;padding:3px 0}
+.bh-citron.ctn-pithlet .ctn-title{grid-column:2;grid-row:2;font-size:22px;border-bottom:1px solid var(--ct-b);padding-bottom:10px}
+.bh-citron.ctn-pithlet .ctn-media{grid-column:1;grid-row:1/3;align-self:center}
+.bh-citron.ctn-pithlet .ctn-media img{border-radius:50%;padding:4px;border:1px solid var(--ct-a)}
+.bh-citron.ctn-pithlet .ctn-copy{grid-column:1/-1;grid-row:3}
+.bh-citron.ctn-pithlet:not(:has(.ctn-media img)){grid-template-columns:minmax(0,1fr)}
+.bh-citron.ctn-pithlet:not(:has(.ctn-media img)) .ctn-name,.bh-citron.ctn-pithlet:not(:has(.ctn-media img)) .ctn-title{grid-column:1}
+.bh-citron.ctn-pithlet .ctn-motif{display:none}
+.bh-citron.ctn-oilspot{max-width:380px;border-radius:34px 4px 34px 4px;padding:24px 28px;outline:1px solid var(--ct-b);outline-offset:-7px}
+.bh-citron.ctn-oilspot .ctn-name{padding-right:53px}
+.bh-citron.ctn-oilspot .ctn-title{padding-top:10px}
+.bh-citron.ctn-oilspot .ctn-media{margin-top:16px}
+.bh-citron.ctn-oilspot .ctn-media img{aspect-ratio:2;border-radius:20px 3px}
+.bh-citron.ctn-oilspot .ctn-motif{position:absolute;right:14px;top:6px;width:57px;height:43px;transform:rotate(-20deg)}
+.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 98px;gap:0 15px;padding:20px;border:0;border-radius:3px;background:linear-gradient(var(--ct-paper),var(--ct-paper)) padding-box,var(--ct-forward) border-box;border-top:5px solid transparent;border-bottom:1px solid var(--ct-c)}
+.bh-citron.ctn-vesicle-kiss .ctn-name{grid-column:1;grid-row:1}
+.bh-citron.ctn-vesicle-kiss .ctn-title{grid-column:1;grid-row:2;padding-top:5px;font-size:21px}
+.bh-citron.ctn-vesicle-kiss .ctn-media{grid-column:2;grid-row:1/3;gap:5px;align-self:center;grid-template-columns:repeat(auto-fit,minmax(35px,1fr))}
+.bh-citron.ctn-vesicle-kiss .ctn-media img{border-radius:5px 5px 45% 5px}
+.bh-citron.ctn-vesicle-kiss .ctn-media img:nth-child(even){border-radius:5px 5px 5px 45%}
+.bh-citron.ctn-vesicle-kiss .ctn-copy{grid-column:1/-1;grid-row:3}
+.bh-citron.ctn-vesicle-kiss:not(:has(.ctn-media img)) .ctn-name,.bh-citron.ctn-vesicle-kiss:not(:has(.ctn-media img)) .ctn-title{grid-column:1/-1}
+.bh-citron.ctn-vesicle-kiss .ctn-motif{display:none}
+.bh-citron.ctn-rindscript{max-width:460px;padding:18px 28px 20px 22px;border:0;border-right:7px solid var(--ct-c);background:linear-gradient(90deg,var(--ct-paper),var(--ct-paper)) padding-box}
+.bh-citron.ctn-rindscript .ctn-name{width:fit-content;border:1px solid var(--ct-a);padding:5px 12px;border-radius:3px}
+.bh-citron.ctn-rindscript .ctn-title{padding-top:12px;font-size:24px}
+.bh-citron.ctn-rindscript .ctn-copy{padding-top:13px}
+.bh-citron.ctn-rindscript .ctn-media{margin-top:14px}
+.bh-citron.ctn-rindscript .ctn-media img{aspect-ratio:2.4}
+.bh-citron.ctn-rindscript .ctn-motif{position:absolute;top:0;bottom:0;right:5px;width:4px;background:repeating-linear-gradient(0deg,var(--ct-a) 0 1px,transparent 1px 5px)}
+.bh-citron.ctn-rindscript .ctn-motif::before{display:none}
+@container(max-width:380px){.bh-citron.ctn-thread .ctn-title{font-size:34px}.bh-citron.ctn-thread .ctn-copy{padding-left:15px;padding-right:15px}.bh-citron.ctn-cedrat-atelier .ctn-title{font-size:40px}.bh-citron.ctn-albedo-archive .ctn-copy{padding-left:42px}.bh-citron.ctn-albedo-archive .ctn-copy::before{left:9px;width:17px}.bh-citron.ctn-zeste-manifesto .ctn-title{font-size:34px}.bh-citron.ctn-zeste-manifesto .ctn-copy{padding-left:0;padding-right:0;grid-column:1/-1;grid-row:4}.bh-citron.ctn-zeste-manifesto .ctn-media{grid-row:2;align-self:center}.bh-citron.ctn-zeste-manifesto .ctn-media img{height:150px}.bh-citron.ctn-zeste-manifesto .ctn-motif{grid-row:5}.bh-citron.ctn-pith-parfum .ctn-title{font-size:30px;padding:21px 18px}}
+@media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
+</style><style>:root{font-family:Arial,Helvetica,sans-serif;font-size:16px;--pv-bg:#eeecee;--pv-paper:#fff;--pv-ink:#342e38;--pv-muted:#776c7d;--pv-line:#d5cdd8;--pv-accent:#815069;--pv-tint:#f2e9ee;--mgrgb1:65,123,119;--mgrgb2:133,115,147;--mgrgb3:173,113,80;color-scheme:light}
+html[color-mode="dark"]{--pv-bg:#171419;--pv-paper:#231e27;--pv-ink:#efe8f0;--pv-muted:#b9afbe;--pv-line:#403645;--pv-accent:#d4aac2;--pv-tint:#382a35;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]){--pv-bg:#171419;--pv-paper:#231e27;--pv-ink:#efe8f0;--pv-muted:#b9afbe;--pv-line:#403645;--pv-accent:#d4aac2;--pv-tint:#382a35;color-scheme:dark}}
+body{margin:0;background:var(--pv-bg);color:var(--pv-ink)}
+body *{box-sizing:border-box}button,input,textarea,select{font:inherit}button,select,input,textarea{color:var(--pv-ink);border:1px solid var(--pv-line);background:var(--pv-paper);border-radius:7px}button,select{cursor:pointer}button{padding:9px 12px;font-size:13px}button:hover{border-color:var(--pv-accent);background:var(--pv-tint)}:is(button,a,input,select,textarea):focus-visible{outline:2px solid var(--pv-accent);outline-offset:3px}button[aria-pressed="true"]{background:var(--pv-tint);color:var(--pv-accent);border-color:var(--pv-accent)}[hidden]{display:none!important}
+.pv-top{display:flex;align-items:center;gap:22px;padding:22px 32px;border-bottom:1px solid var(--pv-line);background:var(--pv-paper);flex-wrap:wrap}.pv-brand{margin:0;font:italic 46px/.85 Georgia,serif;letter-spacing:-3px;color:var(--pv-accent)}.pv-sub{font-size:12px;color:var(--pv-muted);line-height:1.6;letter-spacing:.07em}.pv-toolbar{margin-left:auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center}.pv-toolbar label{font-size:12px;color:var(--pv-muted);display:flex;align-items:center;gap:7px}.pv-toolbar select{font-size:12px;padding:8px}.pv-colours{display:flex;gap:4px}.pv-colours input{width:26px;height:26px;padding:1px;border-radius:50%;cursor:pointer}.pv-colours input::-webkit-color-swatch{border:0;border-radius:50%}.pv-colours input::-webkit-color-swatch-wrapper{padding:2px}
+.pv-workspace{display:grid;grid-template-columns:185px minmax(350px,1fr) 330px;gap:0;max-width:1600px;margin:auto;align-items:start}.pv-nav{padding:20px 12px;position:sticky;top:0;max-height:100vh;overflow:auto}.pv-nav h2{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--pv-muted);margin:17px 10px 8px}.pv-choice{display:flex;gap:10px;width:100%;text-align:left;background:transparent;border-color:transparent;padding:9px 10px;margin:2px 0;font-size:12px;line-height:1.3}.pv-choice span{font:italic 13px Georgia,serif;color:var(--pv-muted)}.pv-choice[aria-current="true"]{border-color:var(--pv-line);background:var(--pv-paper);color:var(--pv-accent)}
+.pv-canvas{min-width:0;padding:25px 24px 55px;min-height:90vh;border-left:1px solid var(--pv-line);border-right:1px solid var(--pv-line)}.pv-caption{display:flex;align-items:start;justify-content:space-between;gap:16px;margin:0 auto 12px;max-width:580px}.pv-caption h2{margin:0;font:italic 24px/1.2 Georgia,serif}.pv-caption p{font-size:12px;color:var(--pv-muted);line-height:1.6;margin:7px 0 0;max-width:390px}.pv-stepper{display:flex;gap:6px}.pv-stepper button{padding:7px 10px;line-height:1}.pv-stage{margin:auto;max-width:100%;min-width:0;transition:width .2s}.pv-stage .bh-citron{margin-top:28px}.pv-editor{padding:24px 22px;position:sticky;top:0;max-height:100vh;overflow:auto;background:var(--pv-paper)}.pv-editor h2{font-size:16px;margin:0 0 18px}.pv-field{display:block;font-size:12px;color:var(--pv-muted);margin:0 0 13px}.pv-field input,.pv-field select,.pv-field textarea{display:block;width:100%;margin-top:6px;padding:9px 10px;font-size:13px;line-height:1.45;background:var(--pv-bg)}.pv-field textarea{resize:vertical;min-height:180px;font:12px/1.65 'Courier New',monospace}.pv-field input{min-width:0}.pv-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pv-gif{padding:12px;border:1px solid var(--pv-line);border-radius:10px;margin-bottom:9px}.pv-gif .pv-field{margin-bottom:8px}.pv-gif button{padding:5px 8px;font-size:11px}.pv-gif-end{display:flex;align-items:end;gap:8px}.pv-gif-end label{flex:1;min-width:0}.pv-gif-end button{margin-bottom:8px}.pv-add{margin:0 0 17px}.pv-writing-label{display:flex;justify-content:space-between;gap:8px}.pv-count{font-size:11px}.pv-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.pv-primary{background:var(--pv-accent);color:var(--pv-paper);border-color:var(--pv-accent);font-weight:bold}.pv-primary:hover{color:var(--pv-accent)}.pv-hint{font-size:11px;line-height:1.65;color:var(--pv-muted);margin:7px 0 12px}.pv-editor details{margin-top:12px;font-size:12px}.pv-editor summary{cursor:pointer;color:var(--pv-accent)}.pv-code{width:100%;min-height:220px;margin-top:10px;padding:12px;font:11px/1.6 'Courier New',monospace;resize:vertical}.pv-status{font-size:12px;min-height:18px;color:var(--pv-accent);margin:8px 0}.pv-reset{border:0;background:transparent;padding:7px 0;font-size:11px;text-decoration:underline;color:var(--pv-muted)}
+.pv-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start;max-width:1650px;margin:0 auto;padding:27px}.pv-tile{min-width:0;border:1px solid var(--pv-line);border-radius:12px;background:var(--pv-paper);overflow:hidden}.pv-tile-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;border-bottom:1px solid var(--pv-line)}.pv-tile-head h2{font-size:14px;margin:0}.pv-tile-head small{display:block;font-size:10px;color:var(--pv-muted);letter-spacing:.07em;margin-top:5px;text-transform:uppercase}.pv-tile-head button{font-size:11px;padding:7px 9px}.pv-tile-stage{padding:8px 20px 16px;background:var(--pv-bg)}.pv-footer{padding:20px 32px;border-top:1px solid var(--pv-line);font-size:12px;color:var(--pv-muted);display:flex;flex-wrap:wrap;gap:18px}.pv-footer a{color:var(--pv-accent)}
+@media(min-width:1650px){.pv-workspace{grid-template-columns:220px minmax(350px,1fr) 370px}}
+@media(max-width:1120px){.pv-workspace{grid-template-columns:160px minmax(320px,1fr) 295px}.pv-canvas{padding:22px 18px}.pv-editor{padding:23px 16px}.pv-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:890px){.pv-workspace{grid-template-columns:150px minmax(0,1fr)}.pv-editor{position:static;grid-column:2;max-height:none;border-top:1px solid var(--pv-line)}.pv-canvas{min-height:0;border-right:0}.pv-nav{grid-row:1/3}.pv-top{padding:20px}.pv-toolbar{margin-left:0}.pv-stage{width:100%!important}.pv-gallery{padding:15px;gap:15px}}
+@media(max-width:570px){.pv-workspace{display:block}.pv-nav{position:static;display:flex;overflow-x:auto;padding:12px;gap:7px;max-height:none}.pv-nav h2{display:none}.pv-nav .pv-choice{white-space:nowrap;width:auto;margin:0}.pv-canvas{padding:20px 12px;border:0}.pv-editor{padding:24px 20px}.pv-caption{padding:0 9px}.pv-gallery{grid-template-columns:1fr;padding:12px}.pv-brand{font-size:42px}.pv-top{gap:15px}.pv-toolbar{gap:8px}.pv-sub{font-size:10px}.pv-footer{padding:20px}.pv-tile-stage{padding:8px 12px}}
+@media(prefers-reduced-motion:reduce){.pv-stage{transition:none}}
+</style></head>
+<body>
+<header class="pv-top"><h1 class="pv-brand">Citron</h1><div class="pv-sub">BEN & VINCE · THE ART OF SOMETHING BRIGHT<br>05 THREADS · 05 COMMS · 05 BUDS</div><div class="pv-toolbar"><label>Mode <select id="pv-mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Members <select id="pv-palette"><option value="tropic">Atelier</option><option value="lagoon">Lagoon</option><option value="ember">Ember</option><option value="mono">Monochrome</option><option value="custom">Custom</option></select></label><div class="pv-colours"><input id="pv-colour-1" aria-label="Member colour 1" type="color" value="#417b77"><input id="pv-colour-2" aria-label="Member colour 2" type="color" value="#857393"><input id="pv-colour-3" aria-label="Member colour 3" type="color" value="#ad7150"></div><label>Width <select id="pv-width"><option value="full">Full</option><option value="375">375 px</option><option value="320">320 px</option></select></label><button id="pv-view-all" aria-pressed="false">View all 15</button></div></header>
+<main><div class="pv-workspace" id="pv-workspace"><nav class="pv-nav" id="pv-nav" aria-label="Citron designs"></nav><section class="pv-canvas" aria-label="Template preview"><div class="pv-caption"><div><h2 id="pv-design-title">Cedrat Atelier</h2><p id="pv-design-description"></p></div><div class="pv-stepper"><button id="pv-previous" aria-label="Previous design">‹</button><button id="pv-next" aria-label="Next design">›</button></div></div><div class="pv-stage" id="pv-stage"><div class="bh-citron ctn-thread ctn-cedrat-atelier">
+<a class="ctn-name" href="#">Ben &amp; Vince</a>
+<div class="ctn-title">something bright beneath the skin</div>
+<div class="ctn-media">
+<img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
+<img src="https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv" alt="Character GIF" style="object-position:50% 35%">
+</div>
+<div class="ctn-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="ctn-motif" aria-hidden="true"></div>
+</div></div></section><aside class="pv-editor" id="pv-editor"><h2>Edit & copy</h2><label class="pv-field">Name<input id="pv-name" value="[name]"></label><label class="pv-field"><span id="pv-title-label">Title</span><input id="pv-title" value="[text]"></label><label class="pv-field">Name link<input id="pv-url" value="[url]"></label><div class="pv-two" id="pv-device-fields" hidden><label class="pv-field">Time<input id="pv-time" value="14:08"></label><label class="pv-field">Messages<select id="pv-flow"><option value="received">Received</option><option value="sent">Sent</option><option value="mixed">Alternating</option></select></label></div><div id="pv-gifs"></div><button class="pv-add" id="pv-add-gif">Add GIF</button><label class="pv-field"><span class="pv-writing-label">Writing<span id="pv-word-count" class="pv-count"></span></span><textarea id="pv-body" spellcheck="false"></textarea></label><p class="pv-hint">Use ordinary &lt;p&gt; paragraphs. [b], [i] and [u] are converted to HTML when copied. Preview colours and mode stay outside your posting code.</p><div class="pv-actions"><button id="pv-copy" class="pv-primary">Copy JCink code</button><button id="pv-download">Download .txt</button></div><p class="pv-status" id="pv-status" role="status" aria-live="polite"></p><details id="pv-code-details"><summary>View posting code</summary><textarea class="pv-code" id="pv-code" readonly aria-label="JCink posting code" spellcheck="false"></textarea></details><button id="pv-reset" class="pv-reset">Reset this design</button><p class="pv-hint">Edits remain while this page is open. Download an edited snippet to keep it.</p></aside></div><section id="pv-gallery" class="pv-gallery" aria-label="All fifteen Citron designs" hidden></section></main>
+<footer class="pv-footer"><span>Citron · The art of something bright</span><a href="https://github.com/lexdoescodingnow/templates/tree/main/citron">GitHub collection</a><span>Member colours · Blue Hour light/dark · Ready for [dohtml]</span></footer>
+<script type="application/json" id="citron-designs">[{"type":"thread","number":"01","name":"Cedrat Atelier","slug":"cedrat-atelier","gifs":2,"description":"A perfumer's specimen plate with a giant serif title, paired inset portraits and a textured citron medallion.","sample":"something bright beneath the skin"},{"type":"thread","number":"02","name":"Albedo Archive","slug":"albedo-archive","gifs":0,"description":"A spacious botanical journal with a split title band, embossed rind curves and an indented reading column.","sample":"the softest part of anything"},{"type":"thread","number":"03","name":"Vesicle Verse","slug":"vesicle-verse","gifs":2,"description":"A sculptural cell-window diptych with curved inner corners, a side-set caption and an open writing panel.","sample":"a thousand little ways to stay"},{"type":"thread","number":"04","name":"Pith & Parfum","slug":"pith-parfum","gifs":1,"description":"A perfume-label composition with a wide portrait, a formal oval title cartouche and fine double rules.","sample":"leave a little of yourself with me"},{"type":"thread","number":"05","name":"Zeste Manifesto","slug":"zeste-manifesto","gifs":1,"description":"An energetic typeset page with a narrow portrait column, oversized leading text and citrus-oil stippling.","sample":"a beautiful kind of sharp"},{"type":"comms","number":"01","name":"Zestline","slug":"zestline","gifs":1,"description":"A slim modern phone with an off-centre camera pill, round contact portrait and wide incoming bubbles.","sample":"online · a little closer"},{"type":"comms","number":"02","name":"PithChat","slug":"pithchat","gifs":1,"description":"A soft square smart communicator with a small contact tile, inset chat display and circular lower controller.","sample":"private messages"},{"type":"comms","number":"03","name":"Cedra Sync","slug":"cedra-sync","gifs":2,"description":"A landscape pocket communicator with paired contact tabs, a status rail and a tiny horizontal keyboard.","sample":"ben + vince · connected"},{"type":"comms","number":"04","name":"Rindr","slug":"rindr","gifs":0,"description":"A minimalist e-paper phone with a large contact name, squared bubbles and stippled rind grip.","sample":"one unread conversation"},{"type":"comms","number":"05","name":"CitrOS","slug":"citros","gifs":1,"description":"A curved glass phone with a full-width photo card, floating status capsule and layered message bubbles.","sample":"here, whenever you are"},{"type":"bud","number":"01","name":"Zestmark","slug":"zestmark","gifs":0,"description":"A tiny typeset note with an oversized opening letter and three oil-gland marks.","sample":"small, but full of feeling"},{"type":"bud","number":"02","name":"Pithlet","slug":"pithlet","gifs":1,"description":"A round little portrait beside a finely ruled title and a short open reply.","sample":"a softer kind of sweet"},{"type":"bud","number":"03","name":"Oilspot","slug":"oilspot","gifs":0,"description":"A miniature scent label with concentric rounded corners and an off-centre citron stamp.","sample":"you linger"},{"type":"bud","number":"04","name":"Vesicle Kiss","slug":"vesicle-kiss","gifs":2,"description":"Two tiny asymmetric cell portraits beside a shared heading, above a compact reply.","sample":"a little piece of us"},{"type":"bud","number":"05","name":"Rindscript","slug":"rindscript","gifs":0,"description":"A low horizontal note with a coloured inset nameplate and a finely ridged right edge.","sample":"right beneath the surface"}]</script><script>const CITRON_GIFS = [
+  'https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv',
+  'https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv'
+];
+const CITRON_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@27bcd53ac2847539f03f72f37222dd0ac07abbf7/citron/citron-atelier-v1.css';
+const CITRON_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\n\n<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>';
+const CITRON_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
+const CITRON_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+function citronEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function citronDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'14:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:CITRON_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?CITRON_THREAD:design.type==='comms'?CITRON_COMMS:CITRON_BUD }; }
+function citronFilename(design) { return `citron-${design.slug}-${design.type}-${design.number}.txt`; }
+function citronMarkup(design,state) {
+  const flow=design.type==='comms'?` data-flow="${citronEscape(state.flow)}"`:'';
+  const lines=[`<div class="bh-citron ctn-${design.type} ctn-${design.slug}"${flow}>`,`<a class="ctn-name" href="${citronEscape(state.url)}">${citronEscape(state.name)}</a>`,`<div class="ctn-title">${citronEscape(state.title)}</div>`];
+  if(design.type==='comms') lines.push(`<div class="ctn-time">${citronEscape(state.time)}</div>`);
+  const gifs=state.gifs.filter(g=>g.url.trim());
+  if(gifs.length) { lines.push('<div class="ctn-media">'); gifs.forEach(g=>lines.push(`<img src="${citronEscape(g.url.trim())}" alt="Character GIF" style="object-position:${citronEscape(g.position)}">`)); lines.push('</div>'); }
+  lines.push('<div class="ctn-copy">',state.body,'</div>',`<div class="${design.type==='comms'?'ctn-hardware':'ctn-motif'}" aria-hidden="true"></div>`,'</div>');
+  return lines.join('\n');
+}
+function citronSnippet(design,state) { return '[dohtml]\n'+citronMarkup(design,state)+'\n\n<link rel="stylesheet" href="'+CITRON_CSS_URL+'">\n[/dohtml]\n'; }
+if(typeof module!=='undefined') module.exports={CITRON_GIFS,CITRON_CSS_URL,citronDefaults,citronFilename,citronMarkup,citronSnippet};
+</script><script>const citronDesigns = JSON.parse(document.querySelector('#citron-designs').textContent);
+const citronStates = citronDesigns.map(citronDefaults);
+let citronIndex = 0;
+let citronGallery = false;
+const $ = selector => document.querySelector(selector);
+const labels = {thread:'Threads',comms:'Comms',bud:'Buds'};
+function citronSafeUrl(value,placeholder=true) {
+  const text=value.trim();
+  if(placeholder&&text==='[url]') return text;
+  if(!text) return '';
+  try { const u=new URL(text); return ['http:','https:'].includes(u.protocol)?text:'#'; } catch { return '#'; }
+}
+function citronCleanWriting(input) {
+  let html=input.replace(/\[(\/?)(b|i|u)\]/gi,'<$1$2>');
+  if(!/<p[\s>]/i.test(html)) html=html.split(/\n\s*\n/).filter(x=>x.trim()).map(x=>`<p>${x.replace(/\n/g,'<br>')}</p>`).join('\n');
+  const root=document.createElement('template');root.innerHTML=html;
+  function clean(parent) {
+    for(const node of [...parent.childNodes]) {
+      if(node.nodeType===8){node.remove();continue;}
+      if(node.nodeType!==1)continue;
+      if(['SCRIPT','STYLE','IFRAME','OBJECT','EMBED','FORM','INPUT'].includes(node.tagName)){node.remove();continue;}
+      clean(node);
+      if(!['P','BR','B','STRONG','I','EM','U','A'].includes(node.tagName)){node.replaceWith(...node.childNodes);continue;}
+      const href=node.tagName==='A'?citronSafeUrl(node.getAttribute('href')||''):null;
+      [...node.attributes].forEach(a=>node.removeAttribute(a.name));
+      if(href)node.setAttribute('href',href);
+    }
+  }
+  clean(root.content);return root.innerHTML;
+}
+function citronDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Ben & Vince':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function citronRender() {
+  const d=citronDesigns[citronIndex],s=citronStates[citronIndex];
+  $('#pv-stage').innerHTML=citronMarkup(d,citronDisplayState(d,s));
+  $('#pv-code').value=citronSnippet(d,s);
+  $('#pv-design-title').textContent=d.name;
+  $('#pv-design-description').textContent=d.description;
+  const wordText=document.createElement('div');wordText.innerHTML=s.body;
+  const count=(wordText.textContent.trim().match(/\S+/g)||[]).length;
+  $('#pv-word-count').textContent=`${count} words${d.type==='bud'?' · 100 suggested':''}`;
+  document.querySelectorAll('.pv-choice').forEach((el,i)=>el.setAttribute('aria-current',String(i===citronIndex)));
+  $('#pv-status').textContent='';
+}
+function citronRenderGifs() {
+  const group=$('#pv-gifs');group.replaceChildren();
+  citronStates[citronIndex].gifs.forEach((gif,index)=>{
+    const box=document.createElement('div');box.className='pv-gif';
+    box.innerHTML=`<label class="pv-field">GIF ${index+1} URL<input type="url" data-gif="${index}" value="${citronEscape(gif.url)}"></label><div class="pv-gif-end"><label class="pv-field">Crop position<input data-position="${index}" value="${citronEscape(gif.position)}"></label><button type="button" data-remove="${index}" aria-label="Remove GIF ${index+1}">Remove</button></div>`;
+    group.append(box);
+  });
+}
+function citronSelect(index) {
+  citronIndex=(index+citronDesigns.length)%citronDesigns.length;
+  const d=citronDesigns[citronIndex],s=citronStates[citronIndex];
+  $('#pv-name').value=s.name;$('#pv-title').value=s.title;$('#pv-url').value=s.url;$('#pv-time').value=s.time;$('#pv-flow').value=s.flow;$('#pv-body').value=s.body;
+  $('#pv-device-fields').hidden=d.type!=='comms';
+  $('#pv-title-label').textContent=d.type==='comms'?'Status':'Title';
+  citronRenderGifs();citronRender();
+}
+function citronBuildGallery() {
+  const gallery=$('#pv-gallery');gallery.replaceChildren();
+  citronDesigns.forEach((d,i)=>{
+    const tile=document.createElement('section');tile.className='pv-tile';
+    tile.innerHTML=`<div class="pv-tile-head"><h2>${citronEscape(d.name)}<small>${d.type==='bud'?'Buds':d.type} ${d.number} · Citron</small></h2><button data-open="${i}">Edit & copy</button></div><div class="pv-tile-stage">${citronMarkup(d,citronDisplayState(d,citronStates[i]))}</div>`;
+    gallery.append(tile);
+  });
+}
+function citronToggleGallery(value) {
+  citronGallery=value;$('#pv-workspace').hidden=value;$('#pv-gallery').hidden=!value;
+  $('#pv-view-all').textContent=value?'Back to editor':'View all 15';$('#pv-view-all').setAttribute('aria-pressed',String(value));
+  if(value)citronBuildGallery();
+}
+const nav=$('#pv-nav');
+Object.entries(labels).forEach(([kind,label])=>{
+  const heading=document.createElement('h2');heading.textContent=label;nav.append(heading);
+  citronDesigns.forEach((d,i)=>{if(d.type===kind){const button=document.createElement('button');button.className='pv-choice';button.innerHTML=`<span>${d.number}</span>${citronEscape(d.name)}`;button.onclick=()=>citronSelect(i);nav.append(button);}});
+});
+$('#pv-editor').addEventListener('input',event=>{
+  const e=event.target,s=citronStates[citronIndex];
+  if(e.id==='pv-name')s.name=e.value;
+  else if(e.id==='pv-title')s.title=e.value;
+  else if(e.id==='pv-url')s.url=citronSafeUrl(e.value);
+  else if(e.id==='pv-time')s.time=e.value;
+  else if(e.id==='pv-flow')s.flow=e.value;
+  else if(e.id==='pv-body')s.body=citronCleanWriting(e.value);
+  else if(e.hasAttribute('data-gif'))s.gifs[Number(e.dataset.gif)].url=citronSafeUrl(e.value,false);
+  else if(e.hasAttribute('data-position')){s.gifs[Number(e.dataset.position)].position=/^\d{1,3}%\s+\d{1,3}%$/.test(e.value.trim())?e.value.trim():'50% 50%';}
+  citronRender();
+});
+$('#pv-gifs').addEventListener('click',event=>{const b=event.target.closest('[data-remove]');if(b){citronStates[citronIndex].gifs.splice(Number(b.dataset.remove),1);citronRenderGifs();citronRender();}});
+$('#pv-add-gif').onclick=()=>{const gifs=citronStates[citronIndex].gifs;gifs.push({url:CITRON_GIFS[gifs.length%2],position:'50% 35%'});citronRenderGifs();citronRender();};
+$('#pv-previous').onclick=()=>citronSelect(citronIndex-1);$('#pv-next').onclick=()=>citronSelect(citronIndex+1);
+$('#pv-view-all').onclick=()=>citronToggleGallery(!citronGallery);
+$('#pv-gallery').addEventListener('click',event=>{const b=event.target.closest('[data-open]');if(b){citronToggleGallery(false);citronSelect(Number(b.dataset.open));window.scrollTo({top:0,behavior:'instant'});}});
+$('#pv-mode').onchange=event=>{if(event.target.value==='system')document.documentElement.removeAttribute('color-mode');else document.documentElement.setAttribute('color-mode',event.target.value);};
+$('#pv-width').onchange=event=>{$('#pv-stage').style.width=event.target.value==='full'?'100%':event.target.value+'px';};
+const citronPalettes={tropic:['#417b77','#857393','#ad7150'],lagoon:['#148578','#397bbc','#a260b4'],ember:['#bb6541','#ac465e','#8064ad'],mono:['#777777','#989898','#666666']};
+function citronApplyPalette(values) { values.forEach((hex,i)=>{const n=parseInt(hex.slice(1),16);document.documentElement.style.setProperty(`--mgrgb${i+1}`,`${n>>16},${n>>8&255},${n&255}`);$(`#pv-colour-${i+1}`).value=hex;}); }
+$('#pv-palette').onchange=event=>{if(citronPalettes[event.target.value])citronApplyPalette(citronPalettes[event.target.value]);};
+[1,2,3].forEach(i=>$(`#pv-colour-${i}`).oninput=()=>{citronApplyPalette([1,2,3].map(j=>$(`#pv-colour-${j}`).value));$('#pv-palette').value='custom';});
+$('#pv-copy').onclick=async()=>{
+  const code=$('#pv-code');
+  try { await navigator.clipboard.writeText(code.value);$('#pv-status').textContent='JCink code copied.'; }
+  catch { $('#pv-code-details').open=true;code.focus();code.select();$('#pv-status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.'; }
+};
+$('#pv-download').onclick=()=>{const url=URL.createObjectURL(new Blob([$('#pv-code').value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=citronFilename(citronDesigns[citronIndex]);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('#pv-status').textContent='Your edited snippet is ready to save.';};
+$('#pv-reset').onclick=()=>{citronStates[citronIndex]=citronDefaults(citronDesigns[citronIndex]);citronSelect(citronIndex);};
+document.addEventListener('click',event=>{const a=event.target.closest('.bh-citron a');if(a&&a.getAttribute('href')==='#')event.preventDefault();});
+citronSelect(0);
+</script>
+</body></html>
