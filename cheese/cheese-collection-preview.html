@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cheese · Fifteen JCink Templates</title><meta name="description" content="Five threads, five comms and five buds. Preview, edit and copy the Cheese collection."><style>.bh-cheese{--ch-a:rgb(var(--mgrgb1,154,82,103));--ch-b:rgb(var(--mgrgb2,var(--mgrgb1,129,116,155)));--ch-c:rgb(var(--mgrgb3,var(--mgrgb2,var(--mgrgb1,67,126,136))));--ch-paper:#faf9f6;--ch-panel:#eeeae4;--ch-ink:#343330;--ch-muted:#716c65;--ch-line:#d9d4cb;--ch-shade:rgba(37,31,26,.1);--ch-grad:linear-gradient(115deg,var(--ch-a),var(--ch-b) 52%,var(--ch-c));--ch-ta:color-mix(in srgb,var(--ch-a) 65%,var(--ch-ink));--ch-tb:color-mix(in srgb,var(--ch-b) 65%,var(--ch-ink));--ch-tc:color-mix(in srgb,var(--ch-c) 65%,var(--ch-ink));--ch-forward:linear-gradient(110deg,var(--ch-ta),var(--ch-tb) 52%,var(--ch-tc));--ch-reverse:linear-gradient(110deg,var(--ch-tc),var(--ch-tb) 52%,var(--ch-ta));position:relative;isolation:isolate;box-sizing:border-box;container-type:inline-size;min-width:0;width:calc(100% - 24px);max-width:560px;margin:32px auto;display:grid;grid-template-columns:minmax(0,1fr);background:var(--ch-paper);color:var(--ch-ink);border:1px solid var(--ch-a);font:14px/1.85 Verdana,Arial,sans-serif;text-align:left;overflow-wrap:anywhere;box-shadow:0 12px 30px var(--ch-shade);color-scheme:light}
+html[color-mode="dark"] .bh-cheese{--ch-paper:#202120;--ch-panel:#2b2b29;--ch-ink:#e9e6df;--ch-muted:#b9b3aa;--ch-line:#494740;--ch-shade:rgba(0,0,0,.22);color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-cheese{--ch-paper:#202120;--ch-panel:#2b2b29;--ch-ink:#e9e6df;--ch-muted:#b9b3aa;--ch-line:#494740;--ch-shade:rgba(0,0,0,.22);color-scheme:dark}}
+.bh-cheese *,.bh-cheese *::before,.bh-cheese *::after,.bh-cheese::before,.bh-cheese::after{box-sizing:border-box}
+.bh-cheese>*{min-width:0}
+.bh-cheese .chs-name{position:relative;display:block;margin:0;font:700 10px/1.65 Verdana,Arial,sans-serif;text-transform:uppercase;letter-spacing:.15em;text-decoration:none;color:var(--ch-ta);overflow-wrap:anywhere}
+.bh-cheese .chs-name:hover{text-decoration:underline;text-underline-offset:4px}
+.bh-cheese a:focus-visible{outline:2px solid var(--ch-c);outline-offset:4px}
+.bh-cheese .chs-title{position:relative;font:normal 42px/1.09 'Palatino Linotype','Book Antiqua',Palatino,Georgia,serif;letter-spacing:-.04em;color:var(--ch-ta);text-wrap:balance;overflow-wrap:anywhere}
+.bh-cheese .chs-copy{position:relative;min-width:0;padding:28px 32px;text-align:left}
+.bh-cheese .chs-copy p{padding:0;margin:0 0 1.4em;color:inherit;font:inherit;text-align:inherit}
+.bh-cheese .chs-copy p:last-child{margin-bottom:0}
+.bh-cheese .chs-copy :is(b,strong,u){font-weight:700;color:var(--ch-ta)}
+.bh-cheese .chs-copy :is(i,em){font-style:italic;color:var(--ch-tc)}
+.bh-cheese .chs-copy u{text-decoration:underline;text-decoration-color:var(--ch-b);text-decoration-thickness:1px;text-underline-offset:4px}
+.bh-cheese .chs-copy a{color:var(--ch-tc);text-decoration:underline;text-underline-offset:3px}
+@supports(background-clip:text){.bh-cheese .chs-name,.bh-cheese .chs-title,.bh-cheese .chs-copy :is(b,strong,u){background-image:var(--ch-forward);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}.bh-cheese .chs-copy :is(i,em){background-image:var(--ch-reverse);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}}
+.bh-cheese .chs-media{display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));gap:10px;min-width:0}
+.bh-cheese .chs-media:not(:has(img)){display:none!important}
+.bh-cheese .chs-media img{display:block;min-width:0;width:100%;max-width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 35%;border:1px solid var(--ch-b);background:var(--ch-panel)}
+.bh-cheese .chs-motif{position:relative;pointer-events:none;min-height:0}
+.bh-cheese{--ch-wedge:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 90'%3E%3Cg fill='none' stroke='black' stroke-width='2' stroke-linejoin='round'%3E%3Cpath d='M13 45L77 12Q96 23 98 40L98 72L13 81ZM13 45L98 40M13 45L13 81M25 39L80 36M37 33L79 29M29 54a5 5 0 1 0 1 0M62 60a7 7 0 1 0 1 0M85 47a4 4 0 1 0 1 0'/%3E%3C/g%3E%3C/svg%3E");--ch-vein:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 400'%3E%3Cg fill='none' stroke='black' stroke-width='1.5'%3E%3Cpath d='M71 0L52 37L66 59L43 93L58 128L32 161L49 198L28 221L38 258L18 299L39 337L27 375L38 400M52 37L22 26L4 3M66 59L93 71L103 105L132 119M43 93L21 104L2 137M58 128L90 137L83 161L118 178L139 172M49 198L70 211L78 242L108 267M38 258L66 272L69 306L103 324L128 319M18 299L2 285M39 337L59 326M27 375L61 363L85 386M83 161L60 168M78 242L103 227'/%3E%3C/g%3E%3C/svg%3E")}
+.bh-cheese.chs-fromagerie-folio{padding:26px 26px 0;border:0;border-left:9px solid var(--ch-a);border-right:1px solid var(--ch-c);background:linear-gradient(90deg,var(--ch-panel) 0 8px,var(--ch-paper) 8px)}
+.bh-cheese.chs-fromagerie-folio .chs-title{grid-row:1;padding:12px 85px 28px 5px;font-size:43px;min-height:132px}
+.bh-cheese.chs-fromagerie-folio .chs-media{grid-row:2;gap:7px;padding:6px;border:1px solid var(--ch-b);background:var(--ch-panel)}
+.bh-cheese.chs-fromagerie-folio .chs-media img{aspect-ratio:1.15;border:0}
+.bh-cheese.chs-fromagerie-folio .chs-name{grid-row:3;margin:18px -26px 0 -26px;padding:9px 29px;background-color:color-mix(in srgb,var(--ch-b) 14%,var(--ch-paper));border-top:1px solid var(--ch-a);border-bottom:1px solid var(--ch-c);text-align:center}
+.bh-cheese.chs-fromagerie-folio .chs-copy{grid-row:4;padding:25px 5px 32px}
+.bh-cheese.chs-fromagerie-folio .chs-motif{position:absolute;right:20px;top:32px;width:78px;height:78px;border-radius:50%;border:4px double var(--ch-b);outline:1px solid var(--ch-a);outline-offset:5px;transform:rotate(-10deg);background:var(--ch-panel)}
+.bh-cheese.chs-fromagerie-folio .chs-motif::before{content:"";position:absolute;inset:8px;background:var(--ch-grad);mask:var(--ch-wedge) center/contain no-repeat;-webkit-mask:var(--ch-wedge) center/contain no-repeat}
+.bh-cheese.chs-emmental-aperture{padding:31px 31px 20px 65px;border:0;border-radius:1px;background:linear-gradient(90deg,var(--ch-panel) 0 36px,var(--ch-paper) 36px)}
+.bh-cheese.chs-emmental-aperture::before{content:"";position:absolute;left:9px;top:20px;bottom:20px;width:18px;background:radial-gradient(circle at 50% 12px,var(--ch-paper) 6px,var(--ch-a) 6px 7px,transparent 8px) 0 0/18px 47px}
+.bh-cheese.chs-emmental-aperture .chs-name{padding-bottom:17px;border-bottom:1px solid var(--ch-b)}
+.bh-cheese.chs-emmental-aperture .chs-title{padding:23px 0;font:bold 45px/.99 Arial,sans-serif;letter-spacing:-.055em;max-width:360px}
+.bh-cheese.chs-emmental-aperture .chs-media{width:80%;margin:0 0 0 auto;padding:10px 0 17px;gap:12px}
+.bh-cheese.chs-emmental-aperture .chs-media img{border-radius:50%;aspect-ratio:1.2;border:2px solid var(--ch-c);padding:5px;box-shadow:-10px 8px 0 -4px var(--ch-b)}
+.bh-cheese.chs-emmental-aperture .chs-copy{padding:23px 0 18px;border-top:1px solid var(--ch-a)}
+.bh-cheese.chs-emmental-aperture .chs-motif{height:24px;background:radial-gradient(circle at 7px 10px,var(--ch-a) 3px,transparent 4px),radial-gradient(circle at 32px 15px,var(--ch-b) 5px,transparent 6px),radial-gradient(circle at 57px 8px,var(--ch-c) 2px,transparent 3px);width:70px}
+.bh-cheese.chs-raclette-reverie{border:1px solid var(--ch-b);padding-top:25px;grid-template-columns:26px minmax(0,1fr) 26px;border-radius:24px 24px 3px 3px;overflow:hidden}
+.bh-cheese.chs-raclette-reverie::before{content:"";position:absolute;left:0;right:0;top:0;height:96px;background:var(--ch-grad);clip-path:polygon(0 0,100% 0,100% 34%,94% 34%,94% 67%,91% 76%,88% 67%,88% 34%,79% 34%,79% 45%,76% 53%,73% 45%,73% 34%,18% 34%,18% 88%,15% 97%,12% 88%,12% 34%,0 34%)}
+.bh-cheese.chs-raclette-reverie .chs-name{grid-column:2;grid-row:1;text-align:center;padding:29px 35px 7px}
+.bh-cheese.chs-raclette-reverie .chs-title{grid-column:2;grid-row:2;text-align:center;font:italic 39px/1.12 Georgia,serif;padding:13px 14px 30px}
+.bh-cheese.chs-raclette-reverie .chs-media{grid-column:1/-1;grid-row:3;gap:3px;background:var(--ch-grad);padding:3px 0}
+.bh-cheese.chs-raclette-reverie .chs-media img{border:0;aspect-ratio:1.5}
+.bh-cheese.chs-raclette-reverie .chs-copy{grid-column:2;grid-row:4;padding:29px 7px 36px}
+.bh-cheese.chs-raclette-reverie .chs-motif{grid-column:2;grid-row:5;justify-self:center;width:85px;height:5px;background:var(--ch-grad);border-radius:20px;margin-bottom:22px}
+.bh-cheese.chs-blue-vein-letter{padding:32px 30px 26px 60px;border:0;border-right:4px solid var(--ch-c);box-shadow:none}
+.bh-cheese.chs-blue-vein-letter::before{content:"";position:absolute;top:0;bottom:0;left:0;width:47px;background:var(--ch-grad);mask:var(--ch-vein) left top/47px 400px repeat-y;-webkit-mask:var(--ch-vein) left top/47px 400px repeat-y;opacity:.6}
+.bh-cheese.chs-blue-vein-letter .chs-name{grid-row:1;padding:0 0 20px;border-bottom:3px double var(--ch-a)}
+.bh-cheese.chs-blue-vein-letter .chs-title{grid-row:2;font-size:49px;padding:27px 0 5px}
+.bh-cheese.chs-blue-vein-letter .chs-copy{grid-row:3;padding:25px 0 15px}
+.bh-cheese.chs-blue-vein-letter .chs-copy p:first-child::first-letter{font:46px/.9 Georgia,serif;color:var(--ch-ta);float:left;margin:5px 7px 0 0}
+.bh-cheese.chs-blue-vein-letter .chs-media{grid-row:4;margin:14px 0 4px}
+.bh-cheese.chs-blue-vein-letter .chs-media img{aspect-ratio:2.5}
+.bh-cheese.chs-blue-vein-letter .chs-motif{grid-row:5;height:25px;margin-top:12px;border-bottom:1px solid var(--ch-b);width:44%;justify-self:end}
+.bh-cheese.chs-affinage-nocturne{padding:28px 30px;border:1px solid var(--ch-a);border-bottom:10px solid var(--ch-c);outline:1px solid var(--ch-b);outline-offset:-9px;grid-template-columns:minmax(0,1fr) 120px;gap:0 24px}
+.bh-cheese.chs-affinage-nocturne .chs-name{grid-column:1;grid-row:1;align-self:end;padding-top:18px}
+.bh-cheese.chs-affinage-nocturne .chs-title{grid-column:1;grid-row:2;padding:9px 0 25px;font-size:34px}
+.bh-cheese.chs-affinage-nocturne .chs-media{grid-column:2;grid-row:1/3;align-self:center;gap:12px;padding:15px 0}
+.bh-cheese.chs-affinage-nocturne .chs-media img{border-radius:50%;padding:7px;border:5px double var(--ch-b);background:conic-gradient(from 30deg,var(--ch-a),var(--ch-c),var(--ch-a))}
+.bh-cheese.chs-affinage-nocturne .chs-copy{grid-column:1/-1;grid-row:3;padding:27px 4px 11px;border-top:1px solid var(--ch-b)}
+.bh-cheese.chs-affinage-nocturne .chs-motif{grid-column:1/-1;grid-row:4;height:17px;margin-top:20px;background:repeating-linear-gradient(90deg,var(--ch-a) 0 1px,transparent 1px 4px,var(--ch-b) 4px 6px,transparent 6px 9px);width:53px;justify-self:center}
+.bh-cheese.chs-affinage-nocturne:not(:has(.chs-media img)){grid-template-columns:minmax(0,1fr)}
+.bh-cheese.chs-comms{max-width:355px;padding:43px 18px 19px;border:3px solid transparent;border-radius:35px;background:linear-gradient(var(--ch-paper),var(--ch-paper)) padding-box,var(--ch-grad) border-box;grid-template-columns:58px minmax(0,1fr);column-gap:13px;font-size:12px;line-height:1.7}
+.bh-cheese.chs-comms .chs-name{grid-column:2;grid-row:1;align-self:end;font-size:12px;letter-spacing:.035em;text-transform:none}
+.bh-cheese.chs-comms .chs-title{grid-column:2;grid-row:2;font:11px/1.5 Verdana,sans-serif;letter-spacing:0;padding:3px 0 12px}
+.bh-cheese.chs-comms .chs-time{position:absolute;top:15px;left:23px;font:700 9px/1.2 'Courier New',monospace;color:var(--ch-muted)}
+.bh-cheese.chs-comms .chs-media{grid-column:1;grid-row:1/3;align-self:center;gap:6px;grid-template-columns:repeat(auto-fit,minmax(24px,1fr))}
+.bh-cheese.chs-comms .chs-media img{border-radius:17px;aspect-ratio:1;border:2px solid var(--ch-b)}
+.bh-cheese.chs-comms .chs-copy{grid-column:1/-1;grid-row:3;display:flex;flex-direction:column;gap:11px;padding:20px 0 18px;margin-top:8px;border-top:1px solid var(--ch-line)}
+.bh-cheese.chs-comms .chs-copy p{margin:0;max-width:91%;align-self:flex-start;background:var(--ch-panel);border:1px solid color-mix(in srgb,var(--ch-a) 45%,var(--ch-line));border-left:3px solid var(--ch-a);padding:11px 13px;border-radius:16px 16px 16px 3px}
+.bh-cheese.chs-comms[data-flow="sent"] .chs-copy p,.bh-cheese.chs-comms[data-flow="mixed"] .chs-copy p:nth-child(even){align-self:flex-end;border-left:1px solid color-mix(in srgb,var(--ch-c) 45%,var(--ch-line));border-right:3px solid var(--ch-c);border-radius:16px 16px 3px 16px}
+.bh-cheese.chs-comms:not(:has(.chs-media img)) .chs-name,.bh-cheese.chs-comms:not(:has(.chs-media img)) .chs-title{grid-column:1/-1}
+.bh-cheese .chs-hardware{position:relative;grid-column:1/-1;grid-row:4;height:20px;pointer-events:none}
+.bh-cheese .chs-hardware::before{content:"";position:absolute;bottom:0;left:calc(50% - 30px);height:4px;width:60px;border-radius:5px;background:var(--ch-grad)}
+.bh-cheese.chs-curdline{border-right-width:12px;padding-right:17px}
+.bh-cheese.chs-curdline::before{content:"";position:absolute;right:-10px;top:80px;bottom:70px;width:8px;background:radial-gradient(circle,var(--ch-paper) 2px,transparent 3px) 0 0/8px 24px}
+.bh-cheese.chs-curdline::after{content:"";position:absolute;right:18px;top:13px;width:28px;height:10px;border:1px solid var(--ch-b);border-radius:4px;background:linear-gradient(90deg,var(--ch-c) 70%,transparent 70%)}
+.bh-cheese.chs-wheywave{max-width:395px;border-radius:66px 66px 42px 42px;border-width:2px;padding:52px 26px 25px}
+.bh-cheese.chs-wheywave .chs-name{font:700 25px/1.1 'Courier New',monospace;letter-spacing:-.04em;padding-top:12px}
+.bh-cheese.chs-wheywave .chs-title{font-family:'Courier New',monospace;padding:7px 0 15px}
+.bh-cheese.chs-wheywave .chs-copy{padding:19px 14px;border:1px solid var(--ch-b);border-radius:5px;background:linear-gradient(135deg,color-mix(in srgb,var(--ch-c) 8%,var(--ch-paper)),var(--ch-paper));box-shadow:inset 0 0 0 4px var(--ch-panel)}
+.bh-cheese.chs-wheywave .chs-copy p{font:12px/1.65 'Courier New',monospace;border-radius:2px;background:var(--ch-paper);border-bottom:2px solid var(--ch-b)}
+.bh-cheese.chs-wheywave .chs-hardware{height:43px;margin:16px 18px 0;background:radial-gradient(circle,var(--ch-b) 1px,transparent 1.5px) 0 0/7px 7px;border-radius:40px}
+.bh-cheese.chs-wheywave .chs-hardware::before{left:calc(50% - 21px);bottom:4px;width:42px;height:34px;background:var(--ch-paper);border:1px solid var(--ch-a);border-radius:50%}
+.bh-cheese.chs-wheywave::before{content:"";position:absolute;top:19px;left:calc(50% - 20px);width:40px;height:5px;border:1px solid var(--ch-c);border-radius:8px}
+.bh-cheese.chs-wheywave .chs-time{top:35px;left:28px}
+.bh-cheese.chs-rind-relay{border:0;border-radius:22px;padding:44px 19px 20px;background:linear-gradient(90deg,color-mix(in srgb,var(--ch-a) 14%,var(--ch-paper)),var(--ch-paper));box-shadow:inset 0 0 0 2px var(--ch-b),0 12px 30px var(--ch-shade);grid-template-columns:minmax(0,1fr)}
+.bh-cheese.chs-rind-relay .chs-media{grid-column:1;grid-row:1;grid-template-columns:repeat(auto-fit,minmax(60px,1fr));gap:8px;background:var(--ch-grad);padding:5px;border-radius:12px}
+.bh-cheese.chs-rind-relay .chs-media img{aspect-ratio:1.55;border:0;border-radius:8px}
+.bh-cheese.chs-rind-relay .chs-name{grid-column:1;grid-row:2;padding:15px 5px 1px;text-align:center;font-size:15px}
+.bh-cheese.chs-rind-relay .chs-title{grid-column:1;grid-row:3;text-align:center;padding:4px 5px 32px;border-bottom:5px double var(--ch-b)}
+.bh-cheese.chs-rind-relay .chs-title::after{content:"";position:absolute;bottom:-9px;left:20px;width:19px;height:17px;border:1px solid var(--ch-b);border-radius:4px;background:linear-gradient(0deg,var(--ch-paper),var(--ch-b),var(--ch-paper));box-shadow:calc(100cqw - 117px) 0 0 -1px var(--ch-b)}
+.bh-cheese.chs-rind-relay .chs-copy{grid-row:4;border:1px solid var(--ch-b);border-radius:11px;padding:17px 12px;margin-top:27px;background:var(--ch-paper)}
+.bh-cheese.chs-rind-relay .chs-copy p{border-radius:10px}
+.bh-cheese.chs-rind-relay .chs-hardware{grid-row:5;margin-top:14px}
+.bh-cheese.chs-rind-relay::before{content:"";position:absolute;top:16px;right:24px;width:6px;height:6px;border-radius:50%;background:var(--ch-c);box-shadow:-12px 0 0 var(--ch-b)}
+.bh-cheese.chs-fondue-link{max-width:510px;padding:47px 20px 18px 15px;border-radius:14px;border-width:1px;grid-template-columns:49px minmax(0,1fr);column-gap:34px;background:linear-gradient(90deg,var(--ch-panel) 0 78px,var(--ch-paper) 78px) padding-box,var(--ch-grad) border-box}
+.bh-cheese.chs-fondue-link::before{content:"";position:absolute;left:0;right:0;top:0;height:29px;border-bottom:1px solid var(--ch-b);background:radial-gradient(circle at 16px 14px,var(--ch-a) 3px,transparent 4px),radial-gradient(circle at 29px 14px,var(--ch-b) 3px,transparent 4px),radial-gradient(circle at 42px 14px,var(--ch-c) 3px,transparent 4px)}
+.bh-cheese.chs-fondue-link .chs-time{left:auto;right:18px;top:10px}
+.bh-cheese.chs-fondue-link .chs-name{grid-row:1;grid-column:2;font-size:17px}
+.bh-cheese.chs-fondue-link .chs-title{grid-row:2;grid-column:2}
+.bh-cheese.chs-fondue-link .chs-media{position:relative;grid-column:1;grid-row:1/4;width:49px;align-self:start;display:flex;flex-direction:column;gap:12px}
+.bh-cheese.chs-fondue-link .chs-media img{border-radius:50%;flex:none}
+.bh-cheese.chs-fondue-link .chs-copy{grid-column:2;grid-row:3;border-top:3px double var(--ch-b)}
+.bh-cheese.chs-fondue-link .chs-copy p{box-shadow:2px 3px 0 color-mix(in srgb,var(--ch-b) 20%,var(--ch-panel));border-radius:12px 12px 12px 0}
+.bh-cheese.chs-fondue-link .chs-hardware{grid-column:2;height:27px;margin-top:7px;border:1px solid var(--ch-line);border-radius:6px}
+.bh-cheese.chs-fondue-link .chs-hardware::before{left:auto;right:8px;bottom:7px;width:13px;height:12px;border-radius:2px;clip-path:polygon(0 0,100% 50%,0 100%,20% 50%)}
+.bh-cheese.chs-fondue-link:not(:has(.chs-media img)){padding-left:24px;grid-template-columns:minmax(0,1fr);background:var(--ch-paper)}
+.bh-cheese.chs-casein-pocket{max-width:340px;padding:45px 20px 20px;border-radius:12px 12px 38px 38px;border-width:5px;grid-template-columns:minmax(0,1fr)}
+.bh-cheese.chs-casein-pocket .chs-media{grid-column:1;grid-row:1;grid-template-columns:repeat(auto-fit,minmax(65px,1fr));padding:7px;background:var(--ch-panel);border:1px solid var(--ch-a);border-radius:8px}
+.bh-cheese.chs-casein-pocket .chs-media img{aspect-ratio:2;border-radius:3px;border:0}
+.bh-cheese.chs-casein-pocket .chs-name{grid-column:1;grid-row:2;font-size:15px;padding:18px 0 4px}
+.bh-cheese.chs-casein-pocket .chs-title{grid-column:1;grid-row:3}
+.bh-cheese.chs-casein-pocket .chs-copy{grid-row:4;margin-top:0;padding-top:18px}
+.bh-cheese.chs-casein-pocket .chs-copy p{border-radius:3px;border-top:3px solid var(--ch-b);border-left-width:1px}
+.bh-cheese.chs-casein-pocket .chs-hardware{grid-row:5;height:63px;margin-top:5px;border-top:1px solid var(--ch-line)}
+.bh-cheese.chs-casein-pocket .chs-hardware::before{bottom:2px;left:calc(50% - 26px);width:52px;height:52px;border-radius:50%;border:1px solid var(--ch-a);background:radial-gradient(circle,var(--ch-paper) 0 12px,var(--ch-b) 13px 14px,transparent 15px),repeating-conic-gradient(var(--ch-panel) 0 7deg,var(--ch-c) 7deg 8deg);box-shadow:72px 0 0 -22px var(--ch-a),-72px 0 0 -22px var(--ch-c)}
+.bh-cheese.chs-casein-pocket::before{content:"";position:absolute;top:16px;right:20px;width:40px;height:4px;background:repeating-linear-gradient(90deg,var(--ch-a) 0 2px,transparent 2px 5px)}
+.bh-cheese.chs-bud{max-width:415px;box-shadow:none;font-size:12px;line-height:1.75}
+.bh-cheese.chs-bud .chs-name{font-size:9px}
+.bh-cheese.chs-bud .chs-title{font:normal 25px/1.13 Georgia,serif;letter-spacing:-.025em}
+.bh-cheese.chs-bud .chs-copy{padding:15px 0 0}
+.bh-cheese.chs-bud .chs-media{grid-template-columns:repeat(auto-fit,minmax(40px,1fr))}
+.bh-cheese.chs-brielet{max-width:370px;padding:27px 35px 30px;border-radius:70px 70px 36px 36px;outline:1px solid var(--ch-b);outline-offset:-7px;text-align:center;border-bottom:5px solid var(--ch-c)}
+.bh-cheese.chs-brielet .chs-title{padding-top:9px}
+.bh-cheese.chs-brielet .chs-copy{text-align:left}
+.bh-cheese.chs-brielet .chs-media{margin-top:16px}
+.bh-cheese.chs-brielet .chs-media img{aspect-ratio:2;border-radius:40px}
+.bh-cheese.chs-brielet .chs-motif{display:none}
+.bh-cheese.chs-crumble{border:0;border-left:24px solid var(--ch-panel);padding:20px 24px}
+.bh-cheese.chs-crumble::before{content:"";position:absolute;left:-18px;top:20px;bottom:20px;width:12px;background:radial-gradient(circle,var(--ch-a) 3px,transparent 4px) 0 0/12px 29px}
+.bh-cheese.chs-crumble .chs-title{font:700 27px/1.08 Arial,sans-serif;letter-spacing:-.04em;padding-top:7px}
+.bh-cheese.chs-crumble .chs-media{margin-top:15px}
+.bh-cheese.chs-crumble .chs-media img{aspect-ratio:2}
+.bh-cheese.chs-crumble .chs-motif{height:1px;width:55px;background:var(--ch-grad);margin-top:18px}
+.bh-cheese.chs-petit-rind{padding:20px 24px 20px 18px;grid-template-columns:62px minmax(0,1fr);gap:0 17px;border:0;border-right:6px solid var(--ch-c)}
+.bh-cheese.chs-petit-rind .chs-media{grid-column:1;grid-row:1/4;align-self:start;gap:9px}
+.bh-cheese.chs-petit-rind .chs-media img{aspect-ratio:.7;border:1px solid var(--ch-b);padding:3px;border-radius:2px 2px 22px 2px}
+.bh-cheese.chs-petit-rind .chs-name{grid-column:2;grid-row:1}
+.bh-cheese.chs-petit-rind .chs-title{grid-column:2;grid-row:2;font-size:22px;padding-top:6px}
+.bh-cheese.chs-petit-rind .chs-copy{grid-column:2;grid-row:3;padding-top:13px}
+.bh-cheese.chs-petit-rind .chs-motif{position:absolute;right:8px;top:0;bottom:0;width:3px;background:repeating-linear-gradient(0deg,var(--ch-b) 0 1px,transparent 1px 4px)}
+.bh-cheese.chs-petit-rind:not(:has(.chs-media img)){grid-template-columns:minmax(0,1fr)}
+.bh-cheese.chs-petit-rind:not(:has(.chs-media img)) :is(.chs-name,.chs-title,.chs-copy){grid-column:1}
+.bh-cheese.chs-curd-kiss{padding:22px 25px;border:0;border-top:1px solid var(--ch-b);border-bottom:1px solid var(--ch-a);border-radius:38px 38px 0 0}
+.bh-cheese.chs-curd-kiss .chs-media{grid-row:1;justify-self:center;width:150px;max-width:100%;gap:10px}
+.bh-cheese.chs-curd-kiss .chs-media img{border-radius:50%;border:3px double var(--ch-a);padding:3px}
+.bh-cheese.chs-curd-kiss .chs-name{grid-row:2;text-align:center;padding:6px 12px;margin:13px -10px 0;background-color:var(--ch-panel);border-radius:15px;border:1px solid var(--ch-b)}
+.bh-cheese.chs-curd-kiss .chs-title{grid-row:3;text-align:center;padding-top:15px;font-size:24px}
+.bh-cheese.chs-curd-kiss .chs-copy{grid-row:4}
+.bh-cheese.chs-curd-kiss .chs-motif{display:none}
+.bh-cheese.chs-last-shaving{padding:21px 27px;border:0;border-top:2px solid var(--ch-a);background:linear-gradient(135deg,var(--ch-paper) 0 calc(100% - 21px),var(--ch-panel) calc(100% - 21px));border-radius:2px 2px 22px 2px}
+.bh-cheese.chs-last-shaving .chs-name{width:fit-content;padding:3px 0 7px;border-bottom:1px solid var(--ch-b)}
+.bh-cheese.chs-last-shaving .chs-title{padding-top:13px;font-style:italic}
+.bh-cheese.chs-last-shaving .chs-media{margin-top:15px}
+.bh-cheese.chs-last-shaving .chs-media img{aspect-ratio:2.4}
+.bh-cheese.chs-last-shaving .chs-motif{height:17px;margin-top:8px;width:40px;justify-self:end;border-bottom:1px solid var(--ch-c);transform:rotate(-12deg)}
+@container(max-width:380px){.bh-cheese.chs-fromagerie-folio .chs-title{font-size:34px;padding-right:75px;min-height:122px}.bh-cheese.chs-fromagerie-folio .chs-motif{width:63px;height:63px;right:16px}.bh-cheese.chs-emmental-aperture .chs-title{font-size:36px}.bh-cheese.chs-blue-vein-letter .chs-title{font-size:39px}.bh-cheese.chs-raclette-reverie .chs-title{font-size:31px}.bh-cheese.chs-affinage-nocturne .chs-title{font-size:28px}}
+@media(max-width:430px){.bh-cheese{font-size:13px}.bh-cheese.chs-fromagerie-folio{padding-left:20px;padding-right:20px}.bh-cheese.chs-fromagerie-folio .chs-name{margin-left:-20px;margin-right:-20px}.bh-cheese.chs-emmental-aperture{padding:25px 23px 20px 53px}.bh-cheese.chs-blue-vein-letter{padding:27px 25px 23px 48px}.bh-cheese.chs-affinage-nocturne{padding:24px;grid-template-columns:minmax(0,1fr) 85px;gap:0 15px}.bh-cheese.chs-fondue-link{padding-left:10px;grid-template-columns:42px minmax(0,1fr);column-gap:24px;background:linear-gradient(90deg,var(--ch-panel) 0 62px,var(--ch-paper) 62px) padding-box,var(--ch-grad) border-box}.bh-cheese.chs-fondue-link .chs-media{width:42px}.bh-cheese.chs-petit-rind{grid-template-columns:49px minmax(0,1fr);gap:0 12px}.bh-cheese.chs-bud,.bh-cheese.chs-comms{font-size:12px}}
+
+.bh-cheese.chs-fondue-link:not(:has(.chs-media img)) :is(.chs-name,.chs-title,.chs-copy,.chs-hardware){grid-column:1}
+</style><style>:root{font-family:Arial,Helvetica,sans-serif;font-size:16px;--pv-bg:#eeecee;--pv-paper:#fff;--pv-ink:#342e38;--pv-muted:#776c7d;--pv-line:#d5cdd8;--pv-accent:#815069;--pv-tint:#f2e9ee;--mgrgb1:154,82,103;--mgrgb2:129,116,155;--mgrgb3:67,126,136;color-scheme:light}
+html[color-mode="dark"]{--pv-bg:#171419;--pv-paper:#231e27;--pv-ink:#efe8f0;--pv-muted:#b9afbe;--pv-line:#403645;--pv-accent:#d4aac2;--pv-tint:#382a35;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]){--pv-bg:#171419;--pv-paper:#231e27;--pv-ink:#efe8f0;--pv-muted:#b9afbe;--pv-line:#403645;--pv-accent:#d4aac2;--pv-tint:#382a35;color-scheme:dark}}
+body{margin:0;background:var(--pv-bg);color:var(--pv-ink)}
+body *{box-sizing:border-box}button,input,textarea,select{font:inherit}button,select,input,textarea{color:var(--pv-ink);border:1px solid var(--pv-line);background:var(--pv-paper);border-radius:7px}button,select{cursor:pointer}button{padding:9px 12px;font-size:13px}button:hover{border-color:var(--pv-accent);background:var(--pv-tint)}:is(button,a,input,select,textarea):focus-visible{outline:2px solid var(--pv-accent);outline-offset:3px}button[aria-pressed="true"]{background:var(--pv-tint);color:var(--pv-accent);border-color:var(--pv-accent)}[hidden]{display:none!important}
+.pv-top{display:flex;align-items:center;gap:22px;padding:22px 32px;border-bottom:1px solid var(--pv-line);background:var(--pv-paper);flex-wrap:wrap}.pv-brand{margin:0;font:italic 46px/.85 Georgia,serif;letter-spacing:-3px;color:var(--pv-accent)}.pv-sub{font-size:12px;color:var(--pv-muted);line-height:1.6;letter-spacing:.07em}.pv-toolbar{margin-left:auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center}.pv-toolbar label{font-size:12px;color:var(--pv-muted);display:flex;align-items:center;gap:7px}.pv-toolbar select{font-size:12px;padding:8px}.pv-colours{display:flex;gap:4px}.pv-colours input{width:26px;height:26px;padding:1px;border-radius:50%;cursor:pointer}.pv-colours input::-webkit-color-swatch{border:0;border-radius:50%}.pv-colours input::-webkit-color-swatch-wrapper{padding:2px}
+.pv-workspace{display:grid;grid-template-columns:185px minmax(350px,1fr) 330px;gap:0;max-width:1600px;margin:auto;align-items:start}.pv-nav{padding:20px 12px;position:sticky;top:0;max-height:100vh;overflow:auto}.pv-nav h2{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--pv-muted);margin:17px 10px 8px}.pv-choice{display:flex;gap:10px;width:100%;text-align:left;background:transparent;border-color:transparent;padding:9px 10px;margin:2px 0;font-size:12px;line-height:1.3}.pv-choice span{font:italic 13px Georgia,serif;color:var(--pv-muted)}.pv-choice[aria-current="true"]{border-color:var(--pv-line);background:var(--pv-paper);color:var(--pv-accent)}
+.pv-canvas{min-width:0;padding:25px 24px 55px;min-height:90vh;border-left:1px solid var(--pv-line);border-right:1px solid var(--pv-line)}.pv-caption{display:flex;align-items:start;justify-content:space-between;gap:16px;margin:0 auto 12px;max-width:580px}.pv-caption h2{margin:0;font:italic 24px/1.2 Georgia,serif}.pv-caption p{font-size:12px;color:var(--pv-muted);line-height:1.6;margin:7px 0 0;max-width:390px}.pv-stepper{display:flex;gap:6px}.pv-stepper button{padding:7px 10px;line-height:1}.pv-stage{margin:auto;max-width:100%;min-width:0;transition:width .2s}.pv-stage .bh-cheese{margin-top:28px}.pv-editor{padding:24px 22px;position:sticky;top:0;max-height:100vh;overflow:auto;background:var(--pv-paper)}.pv-editor h2{font-size:16px;margin:0 0 18px}.pv-field{display:block;font-size:12px;color:var(--pv-muted);margin:0 0 13px}.pv-field input,.pv-field select,.pv-field textarea{display:block;width:100%;margin-top:6px;padding:9px 10px;font-size:13px;line-height:1.45;background:var(--pv-bg)}.pv-field textarea{resize:vertical;min-height:180px;font:12px/1.65 'Courier New',monospace}.pv-field input{min-width:0}.pv-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pv-gif{padding:12px;border:1px solid var(--pv-line);border-radius:10px;margin-bottom:9px}.pv-gif .pv-field{margin-bottom:8px}.pv-gif button{padding:5px 8px;font-size:11px}.pv-gif-end{display:flex;align-items:end;gap:8px}.pv-gif-end label{flex:1;min-width:0}.pv-gif-end button{margin-bottom:8px}.pv-add{margin:0 0 17px}.pv-writing-label{display:flex;justify-content:space-between;gap:8px}.pv-count{font-size:11px}.pv-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.pv-primary{background:var(--pv-accent);color:var(--pv-paper);border-color:var(--pv-accent);font-weight:bold}.pv-primary:hover{color:var(--pv-accent)}.pv-hint{font-size:11px;line-height:1.65;color:var(--pv-muted);margin:7px 0 12px}.pv-editor details{margin-top:12px;font-size:12px}.pv-editor summary{cursor:pointer;color:var(--pv-accent)}.pv-code{width:100%;min-height:220px;margin-top:10px;padding:12px;font:11px/1.6 'Courier New',monospace;resize:vertical}.pv-status{font-size:12px;min-height:18px;color:var(--pv-accent);margin:8px 0}.pv-reset{border:0;background:transparent;padding:7px 0;font-size:11px;text-decoration:underline;color:var(--pv-muted)}
+.pv-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start;max-width:1650px;margin:0 auto;padding:27px}.pv-tile{min-width:0;border:1px solid var(--pv-line);border-radius:12px;background:var(--pv-paper);overflow:hidden}.pv-tile-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;border-bottom:1px solid var(--pv-line)}.pv-tile-head h2{font-size:14px;margin:0}.pv-tile-head small{display:block;font-size:10px;color:var(--pv-muted);letter-spacing:.07em;margin-top:5px;text-transform:uppercase}.pv-tile-head button{font-size:11px;padding:7px 9px}.pv-tile-stage{padding:8px 20px 16px;background:var(--pv-bg)}.pv-footer{padding:20px 32px;border-top:1px solid var(--pv-line);font-size:12px;color:var(--pv-muted);display:flex;flex-wrap:wrap;gap:18px}.pv-footer a{color:var(--pv-accent)}
+@media(min-width:1650px){.pv-workspace{grid-template-columns:220px minmax(350px,1fr) 370px}}
+@media(max-width:1120px){.pv-workspace{grid-template-columns:160px minmax(320px,1fr) 295px}.pv-canvas{padding:22px 18px}.pv-editor{padding:23px 16px}.pv-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:890px){.pv-workspace{grid-template-columns:150px minmax(0,1fr)}.pv-editor{position:static;grid-column:2;max-height:none;border-top:1px solid var(--pv-line)}.pv-canvas{min-height:0;border-right:0}.pv-nav{grid-row:1/3}.pv-top{padding:20px}.pv-toolbar{margin-left:0}.pv-stage{width:100%!important}.pv-gallery{padding:15px;gap:15px}}
+@media(max-width:570px){.pv-workspace{display:block}.pv-nav{position:static;display:flex;overflow-x:auto;padding:12px;gap:7px;max-height:none}.pv-nav h2{display:none}.pv-nav .pv-choice{white-space:nowrap;width:auto;margin:0}.pv-canvas{padding:20px 12px;border:0}.pv-editor{padding:24px 20px}.pv-caption{padding:0 9px}.pv-gallery{grid-template-columns:1fr;padding:12px}.pv-brand{font-size:42px}.pv-top{gap:15px}.pv-toolbar{gap:8px}.pv-sub{font-size:10px}.pv-footer{padding:20px}.pv-tile-stage{padding:8px 12px}}
+@media(prefers-reduced-motion:reduce){.pv-stage{transition:none}}
+
+.pv-brand{font-style:normal;letter-spacing:-2px;border:2px solid var(--pv-accent);border-radius:50%;padding:16px 21px;font-size:38px}.pv-top{border-bottom:4px double var(--pv-line)}.pv-caption h2{font-style:normal}.pv-stage{background:radial-gradient(circle,var(--pv-line) .7px,transparent 1px) 0 0/12px 12px}.pv-tile{border-radius:2px}.pv-tile-head h2{font-family:Georgia,serif;font-size:18px}
+</style></head>
+<body>
+<header class="pv-top"><h1 class="pv-brand">Cheese</h1><div class="pv-sub">MINSEO & TOMMY · A LITTLE CULTURE<br>05 THREADS · 05 COMMS · 05 BUDS</div><div class="pv-toolbar"><label>Mode <select id="pv-mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Members <select id="pv-palette"><option value="dairy">Cheese</option><option value="lagoon">Lagoon</option><option value="ember">Ember</option><option value="mono">Monochrome</option><option value="custom">Custom</option></select></label><div class="pv-colours"><input id="pv-colour-1" aria-label="Member colour 1" type="color" value="#9a5267"><input id="pv-colour-2" aria-label="Member colour 2" type="color" value="#81749b"><input id="pv-colour-3" aria-label="Member colour 3" type="color" value="#437e88"></div><label>Width <select id="pv-width"><option value="full">Full</option><option value="375">375 px</option><option value="320">320 px</option></select></label><button id="pv-view-all" aria-pressed="false">View all 15</button></div></header>
+<main><div class="pv-workspace" id="pv-workspace"><nav class="pv-nav" id="pv-nav" aria-label="Cheese designs"></nav><section class="pv-canvas" aria-label="Template preview"><div class="pv-caption"><div><h2 id="pv-design-title">Fromagerie Folio</h2><p id="pv-design-description"></p></div><div class="pv-stepper"><button id="pv-previous" aria-label="Previous design">‹</button><button id="pv-next" aria-label="Next design">›</button></div></div><div class="pv-stage" id="pv-stage"><div class="bh-cheese chs-thread chs-fromagerie-folio">
+<a class="chs-name" href="#">Minseo &amp; Tommy</a>
+<div class="chs-title">a little culture, a lot of love</div>
+<div class="chs-media">
+<img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
+<img src="https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv" alt="Character GIF" style="object-position:50% 35%">
+</div>
+<div class="chs-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="chs-motif" aria-hidden="true"></div>
+</div></div></section><aside class="pv-editor" id="pv-editor"><h2>Edit & copy</h2><label class="pv-field">Name<input id="pv-name" value="[name]"></label><label class="pv-field"><span id="pv-title-label">Title</span><input id="pv-title" value="[text]"></label><label class="pv-field">Name link<input id="pv-url" value="[url]"></label><div class="pv-two" id="pv-device-fields" hidden><label class="pv-field">Time<input id="pv-time" value="14:08"></label><label class="pv-field">Messages<select id="pv-flow"><option value="received">Received</option><option value="sent">Sent</option><option value="mixed">Alternating</option></select></label></div><div id="pv-gifs"></div><button class="pv-add" id="pv-add-gif">Add GIF</button><label class="pv-field"><span class="pv-writing-label">Writing<span id="pv-word-count" class="pv-count"></span></span><textarea id="pv-body" spellcheck="false"></textarea></label><p class="pv-hint">Use ordinary &lt;p&gt; paragraphs. [b], [i] and [u] are converted to HTML when copied. Preview colours and mode stay outside your posting code.</p><div class="pv-actions"><button id="pv-copy" class="pv-primary">Copy JCink code</button><button id="pv-download">Download .txt</button></div><p class="pv-status" id="pv-status" role="status" aria-live="polite"></p><details id="pv-code-details"><summary>View posting code</summary><textarea class="pv-code" id="pv-code" readonly aria-label="JCink posting code" spellcheck="false"></textarea></details><button id="pv-reset" class="pv-reset">Reset this design</button><p class="pv-hint">Edits remain while this page is open. Download an edited snippet to keep it.</p></aside></div><section id="pv-gallery" class="pv-gallery" aria-label="All fifteen Cheese designs" hidden></section></main>
+<footer class="pv-footer"><span>Cheese · A little culture</span><a href="https://github.com/lexdoescodingnow/templates/tree/main/cheese">GitHub collection</a><span>Member colours · Blue Hour light/dark · Ready for [dohtml]</span></footer>
+<script type="application/json" id="cheese-designs">[{"type":"thread","number":"01","name":"Fromagerie Folio","slug":"fromagerie-folio","gifs":2,"description":"A dairy-label folio with a bold circular maker seal, ribbon spine and paired photographs.","sample":"a little culture, a lot of love"},{"type":"thread","number":"02","name":"Emmental Aperture","slug":"emmental-aperture","gifs":1,"description":"An asymmetric Swiss-cheese frame with punched circles, a porthole portrait and broad typography.","sample":"all the spaces you fill"},{"type":"thread","number":"03","name":"Raclette Reverie","slug":"raclette-reverie","gifs":2,"description":"A low melting canopy above two cinematic photographs and a quiet, spacious reading panel.","sample":"let the world melt away"},{"type":"thread","number":"04","name":"Blue Vein Letter","slug":"blue-vein-letter","gifs":0,"description":"An open letter with branching blue-cheese veins, a marginal name and a generous editorial heading.","sample":"a beautiful kind of complicated"},{"type":"thread","number":"05","name":"Affinage Nocturne","slug":"affinage-nocturne","gifs":1,"description":"A circular cheese-wheel portrait seated in a square label, with a banded spine and a calm reading column.","sample":"some things only get better"},{"type":"comms","number":"01","name":"Curdline","slug":"curdline","gifs":1,"description":"A slim smartphone with a Swiss-hole bumper, an inset contact tile and soft incoming message bubbles.","sample":"online · just one more message"},{"type":"comms","number":"02","name":"Wheywave","slug":"wheywave","gifs":0,"description":"A compact oval-ended communicator with a wide e-paper screen and a perforated speaker foot.","sample":"private channel · connected"},{"type":"comms","number":"03","name":"Rind Relay","slug":"rind-relay","gifs":2,"description":"A folding phone with paired contact screens, two visible hinge joints and a separate chat display.","sample":"minseo + tommy · direct messages"},{"type":"comms","number":"04","name":"Fondue Link","slug":"fondue-link","gifs":1,"description":"A desktop messenger with a contact sidebar, a window-control strip and generous floating bubbles.","sample":"available · stay a little longer"},{"type":"comms","number":"05","name":"Casein Pocket","slug":"casein-pocket","gifs":1,"description":"A chunky pocket device with a portrait window, a thumb dial and squared chat bubbles.","sample":"one conversation, all evening"},{"type":"bud","number":"01","name":"Brielet","slug":"brielet","gifs":0,"description":"A tiny round-ended cheese label with concentric rind rules and a short reply.","sample":"just a little softer"},{"type":"bud","number":"02","name":"Crumble","slug":"crumble","gifs":0,"description":"A compact open note with a punched-circle spine and a bold little heading.","sample":"every little piece"},{"type":"bud","number":"03","name":"Petit Rind","slug":"petit-rind","gifs":1,"description":"A small portrait tab beside a folded paper slip with a ridged edge.","sample":"right here with you"},{"type":"bud","number":"04","name":"Curd Kiss","slug":"curd-kiss","gifs":2,"description":"Two miniature wheel portraits above a narrow shared name ribbon and a tiny reply.","sample":"two of a kind"},{"type":"bud","number":"05","name":"Last Shaving","slug":"last-shaving","gifs":0,"description":"An airy miniature note with a curled foil corner and one fine diagonal rule.","sample":"a little more of this"}]</script><script>const CHEESE_GIFS = [
+  'https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv',
+  'https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv'
+];
+const CHEESE_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@07c5461d66b80dbc6990f41625896477f24d5254/cheese/cheese-fromagerie-v1.css';
+const CHEESE_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\n\n<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>';
+const CHEESE_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
+const CHEESE_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+function cheeseEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function cheeseDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'14:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:CHEESE_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?CHEESE_THREAD:design.type==='comms'?CHEESE_COMMS:CHEESE_BUD }; }
+function cheeseFilename(design) { return `cheese-${design.slug}-${design.type}-${design.number}.txt`; }
+function cheeseMarkup(design,state) {
+  const flow=design.type==='comms'?` data-flow="${cheeseEscape(state.flow)}"`:'';
+  const lines=[`<div class="bh-cheese chs-${design.type} chs-${design.slug}"${flow}>`,`<a class="chs-name" href="${cheeseEscape(state.url)}">${cheeseEscape(state.name)}</a>`,`<div class="chs-title">${cheeseEscape(state.title)}</div>`];
+  if(design.type==='comms') lines.push(`<div class="chs-time">${cheeseEscape(state.time)}</div>`);
+  const gifs=state.gifs.filter(g=>g.url.trim());
+  if(gifs.length) { lines.push('<div class="chs-media">'); gifs.forEach(g=>lines.push(`<img src="${cheeseEscape(g.url.trim())}" alt="Character GIF" style="object-position:${cheeseEscape(g.position)}">`)); lines.push('</div>'); }
+  lines.push('<div class="chs-copy">',state.body,'</div>',`<div class="${design.type==='comms'?'chs-hardware':'chs-motif'}" aria-hidden="true"></div>`,'</div>');
+  return lines.join('\n');
+}
+function cheeseSnippet(design,state) { return '[dohtml]\n'+cheeseMarkup(design,state)+'\n\n<link rel="stylesheet" href="'+CHEESE_CSS_URL+'">\n[/dohtml]\n'; }
+if(typeof module!=='undefined') module.exports={CHEESE_GIFS,CHEESE_CSS_URL,cheeseDefaults,cheeseFilename,cheeseMarkup,cheeseSnippet};
+</script><script>const cheeseDesigns = JSON.parse(document.querySelector('#cheese-designs').textContent);
+const cheeseStates = cheeseDesigns.map(cheeseDefaults);
+let cheeseIndex = 0;
+let cheeseGallery = false;
+const $ = selector => document.querySelector(selector);
+const labels = {thread:'Threads',comms:'Comms',bud:'Buds'};
+function cheeseSafeUrl(value,placeholder=true) {
+  const text=value.trim();
+  if(placeholder&&text==='[url]') return text;
+  if(!text) return '';
+  try { const u=new URL(text); return ['http:','https:'].includes(u.protocol)?text:'#'; } catch { return '#'; }
+}
+function cheeseCleanWriting(input) {
+  let html=input.replace(/\[(\/?)(b|i|u)\]/gi,'<$1$2>');
+  if(!/<p[\s>]/i.test(html)) html=html.split(/\n\s*\n/).filter(x=>x.trim()).map(x=>`<p>${x.replace(/\n/g,'<br>')}</p>`).join('\n');
+  const root=document.createElement('template');root.innerHTML=html;
+  function clean(parent) {
+    for(const node of [...parent.childNodes]) {
+      if(node.nodeType===8){node.remove();continue;}
+      if(node.nodeType!==1)continue;
+      if(['SCRIPT','STYLE','IFRAME','OBJECT','EMBED','FORM','INPUT'].includes(node.tagName)){node.remove();continue;}
+      clean(node);
+      if(!['P','BR','B','STRONG','I','EM','U','A'].includes(node.tagName)){node.replaceWith(...node.childNodes);continue;}
+      const href=node.tagName==='A'?cheeseSafeUrl(node.getAttribute('href')||''):null;
+      [...node.attributes].forEach(a=>node.removeAttribute(a.name));
+      if(href)node.setAttribute('href',href);
+    }
+  }
+  clean(root.content);return root.innerHTML;
+}
+function cheeseDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Minseo & Tommy':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function cheeseRender() {
+  const d=cheeseDesigns[cheeseIndex],s=cheeseStates[cheeseIndex];
+  $('#pv-stage').innerHTML=cheeseMarkup(d,cheeseDisplayState(d,s));
+  $('#pv-code').value=cheeseSnippet(d,s);
+  $('#pv-design-title').textContent=d.name;
+  $('#pv-design-description').textContent=d.description;
+  const wordText=document.createElement('div');wordText.innerHTML=s.body;
+  const count=(wordText.textContent.trim().match(/\S+/g)||[]).length;
+  $('#pv-word-count').textContent=`${count} words${d.type==='bud'?' · 100 suggested':''}`;
+  document.querySelectorAll('.pv-choice').forEach((el,i)=>el.setAttribute('aria-current',String(i===cheeseIndex)));
+  $('#pv-status').textContent='';
+}
+function cheeseRenderGifs() {
+  const group=$('#pv-gifs');group.replaceChildren();
+  cheeseStates[cheeseIndex].gifs.forEach((gif,index)=>{
+    const box=document.createElement('div');box.className='pv-gif';
+    box.innerHTML=`<label class="pv-field">GIF ${index+1} URL<input type="url" data-gif="${index}" value="${cheeseEscape(gif.url)}"></label><div class="pv-gif-end"><label class="pv-field">Crop position<input data-position="${index}" value="${cheeseEscape(gif.position)}"></label><button type="button" data-remove="${index}" aria-label="Remove GIF ${index+1}">Remove</button></div>`;
+    group.append(box);
+  });
+}
+function cheeseSelect(index) {
+  cheeseIndex=(index+cheeseDesigns.length)%cheeseDesigns.length;
+  const d=cheeseDesigns[cheeseIndex],s=cheeseStates[cheeseIndex];
+  $('#pv-name').value=s.name;$('#pv-title').value=s.title;$('#pv-url').value=s.url;$('#pv-time').value=s.time;$('#pv-flow').value=s.flow;$('#pv-body').value=s.body;
+  $('#pv-device-fields').hidden=d.type!=='comms';
+  $('#pv-title-label').textContent=d.type==='comms'?'Status':'Title';
+  cheeseRenderGifs();cheeseRender();
+}
+function cheeseBuildGallery() {
+  const gallery=$('#pv-gallery');gallery.replaceChildren();
+  cheeseDesigns.forEach((d,i)=>{
+    const tile=document.createElement('section');tile.className='pv-tile';
+    tile.innerHTML=`<div class="pv-tile-head"><h2>${cheeseEscape(d.name)}<small>${d.type==='bud'?'Buds':d.type} ${d.number} · Cheese</small></h2><button data-open="${i}">Edit & copy</button></div><div class="pv-tile-stage">${cheeseMarkup(d,cheeseDisplayState(d,cheeseStates[i]))}</div>`;
+    gallery.append(tile);
+  });
+}
+function cheeseToggleGallery(value) {
+  cheeseGallery=value;$('#pv-workspace').hidden=value;$('#pv-gallery').hidden=!value;
+  $('#pv-view-all').textContent=value?'Back to editor':'View all 15';$('#pv-view-all').setAttribute('aria-pressed',String(value));
+  if(value)cheeseBuildGallery();
+}
+const nav=$('#pv-nav');
+Object.entries(labels).forEach(([kind,label])=>{
+  const heading=document.createElement('h2');heading.textContent=label;nav.append(heading);
+  cheeseDesigns.forEach((d,i)=>{if(d.type===kind){const button=document.createElement('button');button.className='pv-choice';button.innerHTML=`<span>${d.number}</span>${cheeseEscape(d.name)}`;button.onclick=()=>cheeseSelect(i);nav.append(button);}});
+});
+$('#pv-editor').addEventListener('input',event=>{
+  const e=event.target,s=cheeseStates[cheeseIndex];
+  if(e.id==='pv-name')s.name=e.value;
+  else if(e.id==='pv-title')s.title=e.value;
+  else if(e.id==='pv-url')s.url=cheeseSafeUrl(e.value);
+  else if(e.id==='pv-time')s.time=e.value;
+  else if(e.id==='pv-flow')s.flow=e.value;
+  else if(e.id==='pv-body')s.body=cheeseCleanWriting(e.value);
+  else if(e.hasAttribute('data-gif'))s.gifs[Number(e.dataset.gif)].url=cheeseSafeUrl(e.value,false);
+  else if(e.hasAttribute('data-position')){s.gifs[Number(e.dataset.position)].position=/^\d{1,3}%\s+\d{1,3}%$/.test(e.value.trim())?e.value.trim():'50% 50%';}
+  cheeseRender();
+});
+$('#pv-gifs').addEventListener('click',event=>{const b=event.target.closest('[data-remove]');if(b){cheeseStates[cheeseIndex].gifs.splice(Number(b.dataset.remove),1);cheeseRenderGifs();cheeseRender();}});
+$('#pv-add-gif').onclick=()=>{const gifs=cheeseStates[cheeseIndex].gifs;gifs.push({url:CHEESE_GIFS[gifs.length%2],position:'50% 35%'});cheeseRenderGifs();cheeseRender();};
+$('#pv-previous').onclick=()=>cheeseSelect(cheeseIndex-1);$('#pv-next').onclick=()=>cheeseSelect(cheeseIndex+1);
+$('#pv-view-all').onclick=()=>cheeseToggleGallery(!cheeseGallery);
+$('#pv-gallery').addEventListener('click',event=>{const b=event.target.closest('[data-open]');if(b){cheeseToggleGallery(false);cheeseSelect(Number(b.dataset.open));window.scrollTo({top:0,behavior:'instant'});}});
+$('#pv-mode').onchange=event=>{if(event.target.value==='system')document.documentElement.removeAttribute('color-mode');else document.documentElement.setAttribute('color-mode',event.target.value);};
+$('#pv-width').onchange=event=>{$('#pv-stage').style.width=event.target.value==='full'?'100%':event.target.value+'px';};
+const cheesePalettes={dairy:['#9a5267','#81749b','#437e88'],lagoon:['#148578','#397bbc','#a260b4'],ember:['#bb6541','#ac465e','#8064ad'],mono:['#777777','#989898','#666666']};
+function cheeseApplyPalette(values) { values.forEach((hex,i)=>{const n=parseInt(hex.slice(1),16);document.documentElement.style.setProperty(`--mgrgb${i+1}`,`${n>>16},${n>>8&255},${n&255}`);$(`#pv-colour-${i+1}`).value=hex;}); }
+$('#pv-palette').onchange=event=>{if(cheesePalettes[event.target.value])cheeseApplyPalette(cheesePalettes[event.target.value]);};
+[1,2,3].forEach(i=>$(`#pv-colour-${i}`).oninput=()=>{cheeseApplyPalette([1,2,3].map(j=>$(`#pv-colour-${j}`).value));$('#pv-palette').value='custom';});
+$('#pv-copy').onclick=async()=>{
+  const code=$('#pv-code');
+  try { await navigator.clipboard.writeText(code.value);$('#pv-status').textContent='JCink code copied.'; }
+  catch { $('#pv-code-details').open=true;code.focus();code.select();$('#pv-status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.'; }
+};
+$('#pv-download').onclick=()=>{const url=URL.createObjectURL(new Blob([$('#pv-code').value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=cheeseFilename(cheeseDesigns[cheeseIndex]);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('#pv-status').textContent='Your edited snippet is ready to save.';};
+$('#pv-reset').onclick=()=>{cheeseStates[cheeseIndex]=cheeseDefaults(cheeseDesigns[cheeseIndex]);cheeseSelect(cheeseIndex);};
+document.addEventListener('click',event=>{const a=event.target.closest('.bh-cheese a');if(a&&a.getAttribute('href')==='#')event.preventDefault();});
+cheeseSelect(0);
+</script>
+</body></html>
