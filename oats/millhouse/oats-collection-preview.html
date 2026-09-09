@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Oats · Chen & Song</title><style>:root{color-scheme:light;--page:#eeedea;--surface:#fafaf8;--text:#29262b;--subtle:#69646e;--edge:#d6d0d6;--accent:#346b78;--mgrgb1:68,125,137;--mgrgb2:185,105,118;--mgrgb3:130,115,153}
+html[color-mode="dark"]{color-scheme:dark;--page:#151519;--surface:#232328;--text:#f0ecf1;--subtle:#bab2bf;--edge:#44404b;--accent:#8ec7cf}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--text);font:16px/1.6 'Trebuchet MS',Arial,sans-serif}button,input,select,textarea{font:inherit}button,select,input,textarea{color:var(--text);background:var(--surface);border:1px solid var(--edge);border-radius:6px}button{padding:9px 16px;cursor:pointer}button:hover{border-color:var(--accent)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}a{color:var(--accent)}.collection-top{padding:26px 4vw 19px;border-bottom:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:italic 43px/1 Georgia,serif;letter-spacing:-.045em}.couple{margin-top:8px;color:var(--subtle);font-size:14px}.tools{display:flex;align-items:center;flex-wrap:wrap;gap:10px}.tools label{font-size:14px}.tools select{padding:8px}.colour-pair{display:flex;align-items:center;gap:6px}.colour-pair input{width:35px;height:34px;padding:3px;cursor:pointer}.workspace{display:grid;grid-template-columns:270px minmax(0,1fr) 340px;min-height:calc(100vh - 105px)}.design-nav{padding:22px 18px;border-right:1px solid var(--edge);background:var(--surface)}.design-nav h2{font:700 12px/1.4 'Trebuchet MS',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:20px 10px 9px;color:var(--subtle)}.design-nav h2:first-child{margin-top:0}.design-nav button{width:100%;display:flex;gap:12px;text-align:left;border:0;background:transparent;padding:9px 10px}.design-nav button[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 12%,var(--surface));color:var(--accent);box-shadow:inset 3px 0 var(--accent)}.design-nav button small{font-size:12px;opacity:.7;padding-top:2px}.preview-column{padding:23px 28px 40px;min-width:0}.preview-heading{display:flex;justify-content:space-between;gap:15px;align-items:start;max-width:680px;margin:0 auto 18px}.preview-heading h1{font:normal 27px/1.2 Georgia,serif;margin:0 0 8px}.preview-heading p{margin:0;font-size:14px;line-height:1.5;color:var(--subtle);max-width:450px}.preview-heading span{font:12px/1.4 'Trebuchet MS',Arial,sans-serif;white-space:nowrap;border:1px solid var(--edge);border-radius:20px;padding:5px 10px;color:var(--subtle)}#stage{min-width:0;max-width:100%;padding:4px 0 18px}#stage .bh-oats-millhouse{margin:25px auto}#stage .oat-name{pointer-events:none}.editor{padding:23px 20px;background:var(--surface);border-left:1px solid var(--edge);min-width:0}.editor h2{font:normal 25px/1.2 Georgia,serif;margin:0 0 19px}.editor label,.editor legend{display:block;font-size:14px;color:var(--subtle);margin-bottom:6px}.field{margin:0 0 14px}.field input,.field select,.field textarea{width:100%;padding:8px 10px;border-radius:5px}.field textarea{min-height:160px;resize:vertical;line-height:1.6;font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}fieldset{padding:0;border:0;margin:0 0 15px}.gif-entry{padding:10px;margin-bottom:10px;border:1px solid var(--edge);border-radius:7px}.gif-entry input[type="url"]{width:100%;padding:7px 8px;font-size:13px}.gif-bottom{display:flex;gap:12px;align-items:center;margin-top:9px}.gif-bottom label{display:flex;align-items:center;gap:7px;margin:0;font-size:12px}.gif-bottom input[type="range"]{width:90px}.gif-bottom button{margin-left:auto;font-size:12px;padding:5px 8px}.secondary{font-size:14px;padding:6px 11px}.actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0 10px}.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}#status{min-height:22px;font-size:13px;color:var(--accent)}.code-panel{max-width:680px;margin:0 auto;border-top:1px solid var(--edge);padding-top:18px}.code-panel summary{cursor:pointer;font-size:14px;color:var(--accent)}#code{width:100%;height:230px;resize:vertical;margin-top:12px;padding:15px;font:12px/1.6 'Courier New',monospace}.editor-note{font-size:13px;line-height:1.6;color:var(--subtle)}.editor-note code{font-size:12px}.footer-links{font-size:13px;display:flex;gap:17px;margin:17px 0 0}.word-count{font-size:12px;color:var(--subtle);margin-top:5px}.word-count.over{color:#b13d64}[hidden]{display:none!important}@media(max-width:1150px){.workspace{grid-template-columns:215px minmax(0,1fr)}.editor{grid-column:1/-1;border-top:1px solid var(--edge);border-left:0;display:grid;grid-template-columns:1fr 1fr;gap:0 25px}.editor h2,.editor .actions,.editor #status,.editor .editor-note{grid-column:1/-1}.editor .writing-field{grid-column:1/-1}.editor .writing-field textarea{min-height:160px}.preview-column{padding-left:22px;padding-right:22px}}@media(max-width:670px){.collection-top{padding:20px;align-items:start;flex-direction:column}.brand{font-size:38px}.tools{gap:9px}.workspace{display:block}.design-nav{display:flex;overflow-x:auto;gap:10px;padding:12px 17px;border-right:0;border-bottom:1px solid var(--edge)}.nav-group{min-width:200px}.design-nav h2{margin:0 10px 5px;font-size:12px}.design-nav button{font-size:14px;padding:7px 10px}.preview-column{padding:22px 16px}.preview-heading h1{font-size:25px}.preview-heading span{display:none}.editor{display:block;padding:22px 20px}.editor textarea{min-height:170px}}
+
+.bh-oats-millhouse{--o1:rgb(var(--mgrgb1,68,125,137));--o2:rgb(var(--mgrgb2,var(--mgrgb1,185,105,118)));--o3:rgb(var(--mgrgb3,var(--mgrgb2,var(--mgrgb1,130,115,153))));--opaper:#faf9f6;--opanel:#efeeea;--oink:#343538;--omuted:#68686b;--oedge:#d6d4ce;--ochaff:#b7a88e;--omix:18%;--og:linear-gradient(110deg,var(--o1),var(--o2),var(--o3));--org:linear-gradient(110deg,var(--o3),var(--o2),var(--o1));box-sizing:border-box;isolation:isolate;position:relative;display:grid;min-width:0;width:min(100%,530px);margin:30px auto;background:var(--opaper);color:var(--oink);font:15px/1.85 Georgia,'Times New Roman',serif;text-align:left;overflow-wrap:anywhere;color-scheme:light}
+html[color-mode="dark"] .bh-oats-millhouse{--opaper:#222326;--opanel:#2a2b2e;--oink:#e2e0dc;--omuted:#b9b7b3;--oedge:#49494b;--ochaff:#8b8171;--omix:30%;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-oats-millhouse{--opaper:#222326;--opanel:#2a2b2e;--oink:#e2e0dc;--omuted:#b9b7b3;--oedge:#49494b;--ochaff:#8b8171;--omix:30%;color-scheme:dark}}
+.bh-oats-millhouse,.bh-oats-millhouse *,.bh-oats-millhouse *::before,.bh-oats-millhouse *::after{box-sizing:border-box}
+.bh-oats-millhouse>*{min-width:0}
+.bh-oats-millhouse .oat-name{grid-area:name;justify-self:start;max-width:100%;color:var(--o1);color:color-mix(in srgb,var(--o1) 75%,var(--oink));font:700 10px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;text-decoration:none;border:0;padding:0;background:none;word-break:normal}
+.bh-oats-millhouse .oat-title{grid-area:title;font:normal 36px/1.08 Georgia,'Times New Roman',serif;letter-spacing:-.045em;color:var(--o1);color:color-mix(in srgb,var(--o1) 76%,var(--oink));text-wrap:balance}
+.bh-oats-millhouse .oat-media{grid-area:media;display:flex;flex-wrap:wrap;gap:12px;align-items:center;min-width:0}
+.bh-oats-millhouse .oat-media:empty,.bh-oats-millhouse .oat-media:not(:has(img[src]:not([src=""]))){display:none}
+.bh-oats-millhouse .oat-media img{display:block;min-width:0;max-width:100%;width:0;flex:1 1 60px;height:150px;object-fit:cover;border:0;margin:0;background:var(--opanel)}
+.bh-oats-millhouse .oat-media img[src=""],.bh-oats-millhouse .oat-media img:not([src]){display:none}
+.bh-oats-millhouse .oat-copy{grid-area:copy;min-width:0;font:inherit;line-height:1.85;text-align:left;letter-spacing:0;color:var(--oink)}
+.bh-oats-millhouse .oat-copy p{margin:0 0 1.15em;padding:0;text-align:inherit;font:inherit;color:inherit}
+.bh-oats-millhouse .oat-copy p:last-child{margin-bottom:0}
+.bh-oats-millhouse .oat-copy :is(b,strong,u){color:var(--o1);background:var(--og);background:linear-gradient(110deg,color-mix(in srgb,var(--o1) 74%,var(--oink)),color-mix(in srgb,var(--o2) 74%,var(--oink)),color-mix(in srgb,var(--o3) 74%,var(--oink)));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bh-oats-millhouse .oat-copy :is(i,em){color:var(--o3);background:var(--org);background:linear-gradient(110deg,color-mix(in srgb,var(--o3) 74%,var(--oink)),color-mix(in srgb,var(--o2) 74%,var(--oink)),color-mix(in srgb,var(--o1) 74%,var(--oink)));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bh-oats-millhouse .oat-copy u{text-decoration:underline;text-decoration-color:var(--o2);text-underline-offset:3px;text-decoration-thickness:1px}
+.bh-oats-millhouse .oat-copy a{color:var(--o1);color:color-mix(in srgb,var(--o1) 74%,var(--oink));text-decoration:underline;text-underline-offset:3px}
+.bh-oats-millhouse a:focus-visible{outline:2px solid var(--o2);outline-offset:5px}
+.bh-oats-millhouse .oat-detail{grid-area:detail;pointer-events:none}
+.bh-oats-millhouse.oat-thread{padding:34px;gap:20px;grid-template-areas:'name' 'title' 'media' 'copy' 'detail'}
+.bh-oats-millhouse.oat-thread:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-thread .oat-copy{padding-top:5px}
+.bh-oats-millhouse.oat-millstone-letters{border-top:5px solid var(--o1);border-bottom:5px solid var(--o3);grid-template-columns:1fr 1.15fr;grid-template-areas:'media name' 'media title' 'copy copy' 'detail detail';column-gap:30px;padding-top:36px;border-radius:0 0 28px 28px;box-shadow:inset 1px 0 var(--oedge),inset -1px 0 var(--oedge)}
+.bh-oats-millhouse.oat-millstone-letters .oat-name{align-self:end}
+.bh-oats-millhouse.oat-millstone-letters .oat-title{font-size:39px;align-self:start}
+.bh-oats-millhouse.oat-millstone-letters .oat-media{border-radius:50%;padding:17px;background:repeating-conic-gradient(from 8deg,color-mix(in srgb,var(--o1) 55%,var(--opaper)) 0deg 1deg,transparent 1deg 12deg);outline:1px solid var(--o2);outline-offset:-6px;gap:8px}
+.bh-oats-millhouse.oat-millstone-letters .oat-media img{height:auto;aspect-ratio:1;border-radius:50%;border:6px solid var(--opaper)}
+.bh-oats-millhouse.oat-millstone-letters .oat-copy{border-top:1px solid var(--oedge);padding-top:25px}
+.bh-oats-millhouse.oat-millstone-letters .oat-detail{height:12px;width:76px;justify-self:center;border-block:1px solid var(--o2);background:repeating-linear-gradient(90deg,transparent 0 8px,var(--o3) 8px 9px,transparent 9px 16px)}
+.bh-oats-millhouse.oat-millstone-letters:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-rolled-reverie{padding:36px 35px 44px;border-inline:2px solid var(--o2);border-radius:24px 4px 24px 4px;box-shadow:inset 0 8px var(--opanel),inset 0 -8px var(--opanel);gap:18px}
+.bh-oats-millhouse.oat-rolled-reverie::before,.bh-oats-millhouse.oat-rolled-reverie::after{content:'';position:absolute;left:7px;right:7px;height:10px;border:1px solid var(--o1);border-radius:100%;background:var(--opaper);top:5px;z-index:-1}
+.bh-oats-millhouse.oat-rolled-reverie::after{top:auto;bottom:5px;border-color:var(--o3)}
+.bh-oats-millhouse.oat-rolled-reverie .oat-title{font-size:43px;font-style:italic;max-width:360px}
+.bh-oats-millhouse.oat-rolled-reverie .oat-media{padding:12px 19px;background:linear-gradient(0deg,transparent 35%,color-mix(in srgb,var(--o2) 35%,var(--opaper)) 35% 70%,transparent 70%);gap:21px}
+.bh-oats-millhouse.oat-rolled-reverie .oat-media img{height:145px;border-radius:48% 12% 46% 14%;padding:5px;border:1px solid var(--o1);background:var(--opaper)}
+.bh-oats-millhouse.oat-rolled-reverie .oat-media img:nth-child(even){border-radius:12% 48% 14% 46%;border-color:var(--o3)}
+.bh-oats-millhouse.oat-rolled-reverie .oat-copy{padding-inline:8px}
+.bh-oats-millhouse.oat-rolled-reverie .oat-detail{height:1px;background:var(--og);margin-inline:18%}
+.bh-oats-millhouse.oat-kilnlight-folio{padding:38px;border:1px solid var(--o1);border-right:9px solid var(--o3);gap:23px;outline:1px solid var(--oedge);outline-offset:-13px}
+.bh-oats-millhouse.oat-kilnlight-folio .oat-name{border-left:20px solid var(--o2);padding-left:10px}
+.bh-oats-millhouse.oat-kilnlight-folio .oat-title{font:900 45px/.97 'Trebuchet MS',Arial,sans-serif;letter-spacing:-.065em;padding:20px 0 25px;border-top:3px solid var(--o1);border-bottom:1px solid var(--o2);max-width:100%}
+.bh-oats-millhouse.oat-kilnlight-folio .oat-detail{height:16px;background:linear-gradient(var(--o2),var(--o2)) left center/25px 1px no-repeat,linear-gradient(var(--o2),var(--o2)) 12px center/1px 16px no-repeat,linear-gradient(var(--o3),var(--o3)) right center/25px 1px no-repeat,linear-gradient(var(--o3),var(--o3)) calc(100% - 12px) center/1px 16px no-repeat}
+.bh-oats-millhouse.oat-kilnlight-folio .oat-media img{height:110px;filter:saturate(.85)}
+.bh-oats-millhouse.oat-oatmilk-almanac{width:min(100%,490px);padding:63px 29px 30px;border:1px solid var(--o2);border-radius:5px 5px 18px 18px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:'name name' 'media title' 'copy copy' 'detail detail';background:linear-gradient(150deg,transparent 50%,color-mix(in srgb,var(--o1) 18%,var(--opaper)) 51%) 0 0/50% 40px no-repeat,linear-gradient(210deg,transparent 50%,color-mix(in srgb,var(--o3) 22%,var(--opaper)) 51%) 100% 0/50% 40px no-repeat,var(--opaper);gap:20px}
+.bh-oats-millhouse.oat-oatmilk-almanac::before{content:'';position:absolute;top:13px;left:30%;right:30%;height:6px;background:var(--og);border-radius:1px}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-name{justify-self:center;letter-spacing:.22em}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-title{align-self:center;font-size:34px}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-media{padding:5px;background:var(--og);border-radius:2px 20px 2px 20px;overflow:hidden;gap:5px}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-media img{height:176px;border-radius:0 16px 0 16px}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-copy{padding:23px 20px;background:var(--opanel);border-radius:3px;border-top:2px solid var(--o2)}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-detail{height:8px;width:55px;justify-self:center;background:repeating-linear-gradient(90deg,var(--o1) 0 2px,transparent 2px 5px,var(--o3) 5px 6px,transparent 6px 9px)}
+.bh-oats-millhouse.oat-oatmilk-almanac:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-harvest-table{border:12px solid transparent;padding:29px;gap:19px;border-image:repeating-linear-gradient(45deg,var(--o1) 0 5px,var(--opanel) 5px 10px,var(--o3) 10px 15px,var(--opanel) 15px 20px) 12;grid-template-areas:'media' 'title' 'name' 'copy' 'detail';box-shadow:0 0 0 1px var(--oedge)}
+.bh-oats-millhouse.oat-harvest-table .oat-media{justify-content:center;gap:30px}
+.bh-oats-millhouse.oat-harvest-table .oat-media img{flex:0 1 107px;width:107px;height:107px;border-radius:50%;border:6px double var(--o1);padding:6px;background:var(--opaper)}
+.bh-oats-millhouse.oat-harvest-table .oat-media img:nth-child(even){border-color:var(--o3)}
+.bh-oats-millhouse.oat-harvest-table .oat-title{text-align:center;font-size:38px}
+.bh-oats-millhouse.oat-harvest-table .oat-name{justify-self:center}
+.bh-oats-millhouse.oat-harvest-table .oat-copy{border-top:1px solid var(--o2);padding-top:23px}
+.bh-oats-millhouse.oat-harvest-table .oat-detail{height:15px;width:60px;justify-self:center;background:radial-gradient(ellipse 4px 7px at 8px 7px,var(--ochaff) 90%,transparent),radial-gradient(ellipse 4px 7px at 29px 7px,var(--o2) 90%,transparent),radial-gradient(ellipse 4px 7px at 50px 7px,var(--ochaff) 90%,transparent)}
+.bh-oats-millhouse.oat-comms{width:min(100%,332px);font:13px/1.7 'Trebuchet MS',Arial,sans-serif;border:3px solid var(--o1);border-right-color:var(--o3);padding:25px 19px 17px;gap:12px;grid-template-areas:'time' 'media' 'name' 'title' 'copy' 'detail';border-radius:37px;background:var(--opanel);box-shadow:inset 0 0 0 4px var(--opaper),0 8px 20px #0000000a}
+.bh-oats-millhouse.oat-comms .oat-time{grid-area:time;justify-self:start;font:700 11px/1.4 'Trebuchet MS',Arial,sans-serif;letter-spacing:.04em;color:var(--oink)}
+.bh-oats-millhouse.oat-comms .oat-title{font:12px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:0;color:var(--omuted)}
+.bh-oats-millhouse.oat-comms .oat-name{font-size:12px;letter-spacing:.05em;text-transform:none}
+.bh-oats-millhouse.oat-comms .oat-media{gap:8px}
+.bh-oats-millhouse.oat-comms .oat-media img{height:85px;border-radius:15px;border:2px solid var(--o2)}
+.bh-oats-millhouse.oat-comms .oat-copy{padding:13px 0 9px;line-height:1.7}
+.bh-oats-millhouse.oat-comms .oat-copy p{width:fit-content;max-width:91%;padding:11px 13px;border-radius:15px 15px 15px 3px;margin:0 auto 9px 0;border:1px solid color-mix(in srgb,var(--o1) 25%,var(--oedge));background:var(--opaper);box-shadow:inset 3px 0 color-mix(in srgb,var(--o1) 45%,transparent)}
+.bh-oats-millhouse.oat-comms[data-flow="sent"] .oat-copy p,.bh-oats-millhouse.oat-comms[data-flow="alternate"] .oat-copy p:nth-child(even){margin-inline:auto 0;border-radius:15px 15px 3px 15px;border-color:color-mix(in srgb,var(--o3) 35%,var(--oedge));background:color-mix(in srgb,var(--o3) 9%,var(--opaper));box-shadow:inset -3px 0 color-mix(in srgb,var(--o3) 45%,transparent)}
+.bh-oats-millhouse.oat-comms .oat-detail{height:22px;position:relative}
+.bh-oats-millhouse.oat-comms .oat-detail::after{content:'';position:absolute;height:4px;width:35%;bottom:0;left:32.5%;border-radius:8px;background:var(--og)}
+.bh-oats-millhouse.oat-comms:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'time' 'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-oatline{padding-top:22px;grid-template-columns:58px minmax(0,1fr);grid-template-areas:'time time' 'media name' 'media title' 'copy copy' 'detail detail';column-gap:14px;row-gap:5px}
+.bh-oats-millhouse.oat-oatline::before{content:'';position:absolute;left:calc(50% - 24px);top:12px;width:48px;height:10px;border-radius:20px;background:var(--oink)}
+.bh-oats-millhouse.oat-oatline .oat-time{padding-bottom:24px}
+.bh-oats-millhouse.oat-oatline .oat-media img{height:70px;border-radius:30px;flex-basis:40px}
+.bh-oats-millhouse.oat-oatline .oat-name{align-self:end}
+.bh-oats-millhouse.oat-oatline .oat-copy{margin-top:17px;border-top:1px solid var(--oedge)}
+.bh-oats-millhouse.oat-oatline .oat-detail{border:1px solid var(--oedge);border-radius:20px;height:31px;background:var(--opaper);margin-bottom:12px}
+.bh-oats-millhouse.oat-oatline .oat-detail::before{content:'+';position:absolute;top:3px;left:11px;color:var(--o2);font:20px/1 Arial,sans-serif}
+.bh-oats-millhouse.oat-oatline .oat-detail::after{bottom:-15px}
+.bh-oats-millhouse.oat-oatline:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'time' 'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-milling-messenger{width:min(100%,385px);border-radius:15px;padding:24px;border-width:6px 12px 6px 6px;gap:10px;background:var(--opaper)}
+.bh-oats-millhouse.oat-milling-messenger .oat-time{font:36px/1 'Courier New',monospace;width:100%;padding-bottom:16px;border-bottom:2px solid var(--o2)}
+.bh-oats-millhouse.oat-milling-messenger .oat-copy{padding:15px;background:var(--opanel);border:1px solid var(--oedge);border-radius:4px}
+.bh-oats-millhouse.oat-milling-messenger .oat-copy p{max-width:100%;width:100%;border-radius:0;background:transparent;border:0;border-bottom:1px dotted var(--o1);padding:8px 0 13px;box-shadow:none}
+.bh-oats-millhouse.oat-milling-messenger .oat-detail{height:34px}
+.bh-oats-millhouse.oat-milling-messenger .oat-detail::after{height:26px;width:62px;left:calc(50% - 31px);border-radius:60% 15% 60% 15%;background:linear-gradient(90deg,var(--o1) 49%,var(--opaper) 49% 52%,var(--o3) 52%);border:1px solid var(--oedge)}
+.bh-oats-millhouse.oat-grain-frequency{width:min(100%,305px);padding:56px 18px 20px;border-radius:19px 19px 48px 48px;border-width:4px 6px;grid-template-columns:70px minmax(0,1fr);grid-template-areas:'time time' 'media name' 'media title' 'copy copy' 'detail detail';column-gap:13px;row-gap:4px}
+.bh-oats-millhouse.oat-grain-frequency::before{content:'';position:absolute;top:16px;left:26%;right:26%;height:19px;border-radius:12px;background:repeating-linear-gradient(0deg,var(--o1) 0 1px,transparent 1px 5px)}
+.bh-oats-millhouse.oat-grain-frequency .oat-time{padding-bottom:14px;font-family:'Courier New',monospace}
+.bh-oats-millhouse.oat-grain-frequency .oat-name{align-self:end}
+.bh-oats-millhouse.oat-grain-frequency .oat-media img{height:84px;border-radius:6px}
+.bh-oats-millhouse.oat-grain-frequency .oat-copy{margin-top:12px}
+.bh-oats-millhouse.oat-grain-frequency .oat-detail{height:50px}
+.bh-oats-millhouse.oat-grain-frequency .oat-detail::after{height:45px;width:45px;left:calc(50% - 22.5px);border-radius:50%;border:7px double var(--o2);background:linear-gradient(var(--o3),var(--o3)) center 7px/1px 11px no-repeat,var(--opaper)}
+.bh-oats-millhouse.oat-grain-frequency:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'time' 'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-soak-signal{width:min(100%,344px);padding:37px 19px 18px;border-radius:40px;gap:13px;background:linear-gradient(155deg,color-mix(in srgb,var(--o1) 20%,var(--opanel)),var(--opanel) 44%,color-mix(in srgb,var(--o3) 14%,var(--opanel)))}
+.bh-oats-millhouse.oat-soak-signal::before{content:'';position:absolute;top:11px;left:calc(50% - 4px);width:8px;height:8px;border-radius:50%;background:var(--oink)}
+.bh-oats-millhouse.oat-soak-signal .oat-time{font:normal 61px/1 'Trebuchet MS',Arial,sans-serif;letter-spacing:-.08em;justify-self:center;color:var(--o1);color:color-mix(in srgb,var(--o1) 70%,var(--oink));padding-bottom:9px}
+.bh-oats-millhouse.oat-soak-signal .oat-media{gap:7px}
+.bh-oats-millhouse.oat-soak-signal .oat-media img{height:117px;border-radius:32px 32px 8px 8px;border:3px solid var(--opaper)}
+.bh-oats-millhouse.oat-soak-signal .oat-name{padding-top:5px}
+.bh-oats-millhouse.oat-soak-signal .oat-copy{padding-top:1px}
+.bh-oats-millhouse.oat-soak-signal .oat-copy p{max-width:100%;width:100%;border-radius:12px;border-color:var(--oedge);box-shadow:0 3px 0 color-mix(in srgb,var(--o2) 14%,transparent)}
+.bh-oats-millhouse.oat-porridge-pocket{width:min(100%,485px);padding:25px 30px 22px 23px;border-radius:24px 14px 14px 24px;border-width:5px 11px 5px 5px;grid-template-columns:minmax(68px,.35fr) minmax(0,1fr);grid-template-areas:'time name' 'time title' 'media media' 'copy copy' 'detail detail';gap:10px 19px}
+.bh-oats-millhouse.oat-porridge-pocket::before{content:'';position:absolute;right:-7px;top:45px;bottom:45px;width:3px;border-radius:3px;background:var(--opaper)}
+.bh-oats-millhouse.oat-porridge-pocket .oat-time{font:26px/1.2 'Courier New',monospace;border-right:1px solid var(--o2);width:100%;align-self:stretch;display:flex;align-items:center;padding-right:10px;letter-spacing:-.09em}
+.bh-oats-millhouse.oat-porridge-pocket .oat-name{align-self:end}
+.bh-oats-millhouse.oat-porridge-pocket .oat-copy{background:var(--opaper);border:1px solid var(--oedge);border-radius:7px;padding:14px;margin-top:5px}
+.bh-oats-millhouse.oat-porridge-pocket .oat-copy p{background:var(--opanel);box-shadow:none;border-left:3px solid var(--o1);border-radius:2px 12px 12px 2px;font-size:12px}
+.bh-oats-millhouse.oat-porridge-pocket .oat-detail{height:13px}
+.bh-oats-millhouse.oat-porridge-pocket .oat-detail::after{width:13px;height:13px;left:calc(50% - 6px);border-radius:50%;border:2px solid var(--o2);background:none}
+.bh-oats-millhouse.oat-porridge-pocket:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'time name' 'time title' 'copy copy' 'detail detail'}
+.bh-oats-millhouse.oat-bud{width:min(100%,385px);font-size:13px;line-height:1.8;padding:24px;gap:10px;grid-template-areas:'name' 'title' 'media' 'copy' 'detail'}
+.bh-oats-millhouse.oat-bud .oat-name{font-size:9px}
+.bh-oats-millhouse.oat-bud .oat-title{font-size:24px;line-height:1.15}
+.bh-oats-millhouse.oat-bud .oat-media img{height:70px;border:2px solid var(--o2)}
+.bh-oats-millhouse.oat-bud:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-groatlet{padding:27px 34px;border:1px solid var(--o1);border-radius:44px 9px 44px 9px;box-shadow:inset 7px 0 color-mix(in srgb,var(--o2) 26%,var(--opaper));gap:10px}
+.bh-oats-millhouse.oat-groatlet .oat-name{justify-self:center}
+.bh-oats-millhouse.oat-groatlet .oat-title{text-align:center}
+.bh-oats-millhouse.oat-groatlet .oat-detail{height:9px;justify-self:center;width:34px;border-bottom:1px solid var(--o3);border-radius:50%}
+.bh-oats-millhouse.oat-husk{padding:24px 19px;grid-template-columns:66px minmax(0,1fr);grid-template-areas:'media name' 'media title' 'copy copy' 'detail detail';column-gap:17px;row-gap:7px;border-right:5px solid var(--o3);background:linear-gradient(100deg,color-mix(in srgb,var(--o1) 13%,var(--opaper)),var(--opaper) 35%);border-radius:27px 0 0 5px}
+.bh-oats-millhouse.oat-husk .oat-name{align-self:end}
+.bh-oats-millhouse.oat-husk .oat-media{border-left:3px solid var(--o1);padding:0 0 0 7px}
+.bh-oats-millhouse.oat-husk .oat-media img{height:83px;border-radius:25px 4px 25px 4px}
+.bh-oats-millhouse.oat-husk .oat-copy{padding-top:9px}
+.bh-oats-millhouse.oat-husk .oat-detail{height:1px;background:var(--og);width:25%}
+.bh-oats-millhouse.oat-husk:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-branlet{border-top:3px solid var(--o1);border-bottom:1px solid var(--o3);padding:20px 24px;grid-template-areas:'title' 'name' 'media' 'copy' 'detail';background:radial-gradient(ellipse 3px 5px at 94% 14px,var(--ochaff) 90%,transparent),radial-gradient(ellipse 4px 2px at 89% 19px,var(--o2) 90%,transparent),radial-gradient(ellipse 2px 4px at 95% 28px,var(--o3) 90%,transparent),var(--opaper)}
+.bh-oats-millhouse.oat-branlet .oat-title{padding-right:20px;border-left:3px solid var(--o2);padding-left:10px;font-family:'Trebuchet MS',Arial,sans-serif;letter-spacing:-.04em;font-size:22px}
+.bh-oats-millhouse.oat-branlet .oat-detail{height:0}
+.bh-oats-millhouse.oat-flakefold{grid-template-areas:'media' 'name' 'title' 'copy' 'detail';border:1px solid var(--oedge);border-radius:6px;padding:22px 26px;background:linear-gradient(135deg,color-mix(in srgb,var(--o1) 20%,var(--opaper)) 50%,transparent 50%) top left/28px 28px no-repeat,var(--opaper)}
+.bh-oats-millhouse.oat-flakefold .oat-media{justify-content:center;gap:9px;margin-bottom:1px}
+.bh-oats-millhouse.oat-flakefold .oat-media img{flex:0 1 80px;width:80px;height:57px;border-radius:55% 20% 55% 20%;padding:3px;border:1px solid var(--o1)}
+.bh-oats-millhouse.oat-flakefold .oat-media img:nth-child(even){border-radius:20% 55% 20% 55%;border-color:var(--o3)}
+.bh-oats-millhouse.oat-flakefold .oat-name{justify-self:center}
+.bh-oats-millhouse.oat-flakefold .oat-title{text-align:center;font-size:23px}
+.bh-oats-millhouse.oat-flakefold .oat-detail{height:4px;width:45%;justify-self:center;background:var(--og);border-radius:8px}
+.bh-oats-millhouse.oat-aftergrain{border-top:5px dotted var(--o2);border-left:1px solid var(--oedge);border-right:1px solid var(--oedge);padding:20px 23px 0;grid-template-areas:'title' 'media' 'copy' 'name' 'detail';gap:14px}
+.bh-oats-millhouse.oat-aftergrain .oat-title{font-style:italic;font-size:27px}
+.bh-oats-millhouse.oat-aftergrain .oat-name{justify-self:end;background:color-mix(in srgb,var(--o3) 14%,var(--opaper));padding:7px 15px;border-left:2px solid var(--o1)}
+.bh-oats-millhouse.oat-aftergrain .oat-detail{height:1px;background:var(--og)}
+.bh-oats-millhouse.oat-aftergrain:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'title' 'copy' 'name' 'detail'}
+@media(max-width:480px){.bh-oats-millhouse.oat-thread{padding:26px 23px;gap:18px}.bh-oats-millhouse.oat-thread .oat-title{font-size:32px}.bh-oats-millhouse.oat-millstone-letters{column-gap:17px}.bh-oats-millhouse.oat-millstone-letters .oat-title{font-size:28px}.bh-oats-millhouse.oat-millstone-letters .oat-media{padding:10px}.bh-oats-millhouse.oat-kilnlight-folio .oat-title{font-size:36px}.bh-oats-millhouse.oat-oatmilk-almanac{padding-top:60px;gap:15px}.bh-oats-millhouse.oat-oatmilk-almanac .oat-title{font-size:27px}.bh-oats-millhouse.oat-oatmilk-almanac .oat-media img{height:132px}.bh-oats-millhouse.oat-oatmilk-almanac .oat-copy{padding:18px 14px}.bh-oats-millhouse.oat-rolled-reverie .oat-media{padding-inline:0;gap:12px}.bh-oats-millhouse.oat-rolled-reverie .oat-media img{height:111px}.bh-oats-millhouse.oat-harvest-table{padding:22px;border-width:8px}.bh-oats-millhouse.oat-harvest-table .oat-media{gap:15px}.bh-oats-millhouse.oat-harvest-table .oat-media img{flex-basis:86px;width:86px;height:86px}.bh-oats-millhouse.oat-porridge-pocket{padding:20px 18px}.bh-oats-millhouse.oat-bud{padding-inline:22px}}
+@media(forced-colors:active){.bh-oats-millhouse .oat-copy :is(b,strong,i,em,u){background:none;-webkit-text-fill-color:currentColor}.bh-oats-millhouse{border:1px solid CanvasText}.bh-oats-millhouse .oat-media img{border:1px solid CanvasText}}
+</style></head>
+<body>
+<header class="collection-top"><div><div class="brand">Oats</div><div class="couple">Chen & Song · 15 templates</div></div><div class="tools"><label for="theme">Preview</label><select id="theme"><option value="light">Light</option><option value="dark">Dark</option></select><div class="colour-pair"><label for="colour-1">Member colours</label><input id="colour-1" type="color" value="#447d89" aria-label="Member colour 1"><input id="colour-2" type="color" value="#b96976" aria-label="Member colour 2"><input id="colour-3" type="color" value="#827399" aria-label="Member colour 3"></div></div></header>
+<main class="workspace">
+<nav class="design-nav" aria-label="Oats designs"><div class="nav-group"><h2>Threads</h2><button type="button" data-design="millstone-letters" aria-pressed="false"><small>01</small><span>Millstone Letters</span></button><button type="button" data-design="rolled-reverie" aria-pressed="false"><small>02</small><span>Rolled Reverie</span></button><button type="button" data-design="kilnlight-folio" aria-pressed="false"><small>03</small><span>Kilnlight Folio</span></button><button type="button" data-design="oatmilk-almanac" aria-pressed="false"><small>04</small><span>Oatmilk Almanac</span></button><button type="button" data-design="harvest-table" aria-pressed="false"><small>05</small><span>Harvest Table</span></button></div><div class="nav-group"><h2>Comms</h2><button type="button" data-design="oatline" aria-pressed="false"><small>01</small><span>Oatline</span></button><button type="button" data-design="milling-messenger" aria-pressed="false"><small>02</small><span>Milling Messenger</span></button><button type="button" data-design="grain-frequency" aria-pressed="false"><small>03</small><span>Grain Frequency</span></button><button type="button" data-design="soak-signal" aria-pressed="false"><small>04</small><span>Soak Signal</span></button><button type="button" data-design="porridge-pocket" aria-pressed="false"><small>05</small><span>Porridge Pocket</span></button></div><div class="nav-group"><h2>Buds</h2><button type="button" data-design="groatlet" aria-pressed="false"><small>01</small><span>Groatlet</span></button><button type="button" data-design="husk" aria-pressed="false"><small>02</small><span>Husk</span></button><button type="button" data-design="branlet" aria-pressed="false"><small>03</small><span>Branlet</span></button><button type="button" data-design="flakefold" aria-pressed="false"><small>04</small><span>Flakefold</span></button><button type="button" data-design="aftergrain" aria-pressed="false"><small>05</small><span>Aftergrain</span></button></div></nav>
+<section class="preview-column" aria-label="Template preview"><div class="preview-heading"><div><h1 id="design-title"></h1><p id="design-description"></p></div><span id="design-kind"></span></div><div id="stage"></div><details class="code-panel" id="code-panel"><summary>JCink code</summary><textarea id="code" readonly aria-label="Copy-ready JCink code" spellcheck="false"></textarea><div class="footer-links"><a id="raw-link" href="https://github.com/lexdoescodingnow/templates/tree/main/oats/millhouse">Original snippet on GitHub</a><a href="https://github.com/lexdoescodingnow/templates/tree/main/oats/millhouse">Oats folder</a></div></details></section>
+<aside class="editor" aria-label="Edit template"><h2>Make it yours</h2><div class="field"><label for="name">Name</label><input id="name" type="text" spellcheck="false"></div><div class="field"><label for="url">Name link</label><input id="url" type="text" spellcheck="false"></div><div class="field"><label for="title">Title / contact status</label><input id="title" type="text"></div><div class="split" id="comms-fields"><div class="field"><label for="time">Time</label><input id="time" type="text"></div><div class="field"><label for="flow">Messages</label><select id="flow"><option value="received">Received</option><option value="sent">Sent</option><option value="alternate">Alternating</option></select></div></div><fieldset><legend>Character GIFs</legend><div id="gif-fields"></div><button id="add-gif" type="button" class="secondary">Add GIF</button></fieldset><div class="field writing-field"><label for="writing">Writing</label><textarea id="writing" spellcheck="false"></textarea><div class="word-count" id="word-count"></div></div><div class="actions"><button id="copy" type="button" class="primary">Copy code</button><button id="download" type="button">Download .txt</button><button id="reset" type="button" class="secondary">Reset design</button></div><div id="status" role="status" aria-live="polite"></div><p class="editor-note">Use <code>&lt;p&gt;</code> for paragraphs or message bubbles. The editor accepts <code>[b]</code>, <code>[i]</code> and <code>[u]</code>. Preview names replace the placeholders for display; copied code keeps your field values. Preview colours are supplied by the forum when you post. Edits stay while this page is open.</p></aside>
+</main><script>const OATS_GIFS = [
+  'https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv',
+  'https://64.media.tumblr.com/98bd31f6306db4d06bb0bc4ef06e6c94/d4e5b75f44c65150-17/s400x600/0af9ecc9bc3041cdb831b0fe2f58dab52f8d5c58.gifv'
+];
+const OATS_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@d82f7e7ae2b07f805fb2be0976597e72fc90928b/oats/millhouse/oats-millhouse-v1.css';
+const OATS_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\n\n<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>';
+const OATS_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
+const OATS_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+function oatsEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function oatsDefaults(design) { return {name:'[name]',url:'[url]',title:'[text]',time:'07:24',flow:'received',gifs:OATS_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?OATS_THREAD:design.type==='comms'?OATS_COMMS:OATS_BUD}; }
+function oatsFilename(d) { return `oats-${d.slug}-${d.type}-${d.number}.txt`; }
+function oatsMarkup(d,s) {
+  const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';
+  const href=/^(https?:\/\/|mailto:|#)/i.test(s.url)||s.url==='[url]'?s.url:'[url]';
+  const lines=[`<div class="bh-oats-millhouse oat-${d.type} oat-${d.slug}"${flow}>`,`<a class="oat-name" href="${oatsEscape(href)}">${oatsEscape(s.name)}</a>`,`<div class="oat-title">${oatsEscape(s.title)}</div>`];
+  if(d.type==='comms') lines.push(`<div class="oat-time">${oatsEscape(s.time)}</div>`);
+  const gifs=s.gifs.filter(g=>/^https?:\/\//i.test(g.url.trim()));
+  if(gifs.length) { lines.push('<div class="oat-media">'); gifs.forEach(g=>lines.push(`<img src="${oatsEscape(g.url.trim())}" alt="Character GIF" style="object-position:${/^\d{1,3}% \d{1,3}%$/.test(g.position)?g.position:'50% 45%'}">`)); lines.push('</div>'); }
+  lines.push('<div class="oat-copy">',s.body,'</div>','<div class="oat-detail" aria-hidden="true"></div>','</div>');
+  return lines.join('\n');
+}
+function oatsSnippet(d,s) { return '[dohtml]\n'+oatsMarkup(d,s)+'\n\n<link rel="stylesheet" href="'+OATS_CSS_URL+'">\n[/dohtml]\n'; }
+if(typeof module!=='undefined') module.exports={OATS_GIFS,OATS_CSS_URL,oatsDefaults,oatsFilename,oatsMarkup,oatsSnippet};
+
+const OATS_DESIGNS = [{"type":"thread","number":"01","name":"Millstone Letters","slug":"millstone-letters","gifs":1,"sample":"the hours turn softly","description":"A portrait sits in a finely grooved millstone above an oversized serif title and a generous reading column."},{"type":"thread","number":"02","name":"Rolled Reverie","slug":"rolled-reverie","gifs":2,"sample":"all the ways we unfold","description":"Two pressed-grain portrait windows cross a broad colour band on a page with rolled paper edges."},{"type":"thread","number":"03","name":"Kilnlight Folio","slug":"kilnlight-folio","gifs":0,"sample":"a warmth that stays","description":"An angular mill-house folio with a monumental title, offset registration marks and a bold ruled header."},{"type":"thread","number":"04","name":"Oatmilk Almanac","slug":"oatmilk-almanac","gifs":1,"sample":"mornings made of you","description":"A folded-carton crown tops a photographic label, a side-set title and a softly framed writing panel."},{"type":"thread","number":"05","name":"Harvest Table","slug":"harvest-table","gifs":2,"sample":"a place beside me","description":"Two small saucer portraits sit above a woven placemat frame, a centred heading and an open neutral reading sheet."},{"type":"comms","number":"01","name":"Oatline","slug":"oatline","gifs":1,"sample":"online · thinking of you","description":"A tall smartphone with a pill-shaped contact portrait, a slim top camera and soft incoming bubbles."},{"type":"comms","number":"02","name":"Milling Messenger","slug":"milling-messenger","gifs":0,"sample":"one quiet conversation","description":"A square e-ink communicator with a broad clock strip, ruled message cards and a grain-shaped navigation rocker."},{"type":"comms","number":"03","name":"Grain Frequency","slug":"grain-frequency","gifs":1,"sample":"your favourite frequency","description":"A narrow pocket handset with a ribbed speaker, a small contact window and a round tuning control beneath the chat."},{"type":"comms","number":"04","name":"Soak Signal","slug":"soak-signal","gifs":1,"sample":"a message before morning","description":"A lock-screen phone with a large clock above a wide wallpaper portrait and translucent-looking neutral notification cards."},{"type":"comms","number":"05","name":"Porridge Pocket","slug":"porridge-pocket","gifs":0,"sample":"Chen & Song · connected","description":"A landscape pocket tablet with a stylus groove, a left-side clock and a separate recessed conversation pane."},{"type":"bud","number":"01","name":"Groatlet","slug":"groatlet","gifs":0,"sample":"one small beginning","description":"A miniature reply inside a grain-like frame, with a small indented seam and a short centred heading."},{"type":"bud","number":"02","name":"Husk","slug":"husk","gifs":1,"sample":"held in the little things","description":"A tiny portrait peeks from a split sleeve beside a compact reply and a narrow member-colour edge."},{"type":"bud","number":"03","name":"Branlet","slug":"branlet","gifs":0,"sample":"the part we keep","description":"A short square note with a scattered-flake corner, a divided title band and a crisp lower rule."},{"type":"bud","number":"04","name":"Flakefold","slug":"flakefold","gifs":2,"sample":"a little of us both","description":"Two tiny pressed-oat portraits share a folded tab above a compact open reply."},{"type":"bud","number":"05","name":"Aftergrain","slug":"aftergrain","gifs":0,"sample":"stay for another moment","description":"A miniature horizontal note with a three-colour stitched top edge and a small offset signature panel."}];
+const oatsStates = new Map(OATS_DESIGNS.map(d=>[d.slug,oatsDefaults(d)]));
+let oatsCurrent = OATS_DESIGNS[0];
+const el=id=>document.getElementById(id);
+function oatsFormat(value) { return value.replace(/\[(\/?)(b|i|u)\]/gi,(_,slash,tag)=>`<${slash}${tag.toLowerCase()}>`); }
+function oatsBody(value) {
+  const parsed=new DOMParser().parseFromString(oatsFormat(value),'text/html');
+  const allowed=new Set(['P','B','STRONG','I','EM','U','A','BR','SPAN']);
+  for(const node of [...parsed.body.querySelectorAll('*')].reverse()) {
+    if(!allowed.has(node.tagName)) { if(['SCRIPT','STYLE','IFRAME','OBJECT','SVG','MATH','TEMPLATE'].includes(node.tagName)) node.remove(); else node.replaceWith(...node.childNodes); continue; }
+    for(const attr of [...node.attributes]) { if(node.tagName==='A'&&attr.name==='href'&&(/^(https?:|mailto:|#)/i.test(attr.value)||attr.value==='[url]')) continue; node.removeAttribute(attr.name); }
+  }
+  return parsed.body.innerHTML;
+}
+function oatsRead() {
+  const s=oatsStates.get(oatsCurrent.slug);
+  for(const k of ['name','url','title','time','flow']) s[k]=el(k).value;
+  s.body=oatsBody(el('writing').value);
+  return s;
+}
+function oatsDraw() {
+  const s=oatsStates.get(oatsCurrent.slug);
+  const visible={...s,name:s.name==='[name]'?'Chen & Song':s.name,title:s.title==='[text]'?oatsCurrent.sample:s.title,url:'#'};
+  el('stage').innerHTML=oatsMarkup(oatsCurrent,visible);
+  el('code').value=oatsSnippet(oatsCurrent,s);
+  const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();
+  const count=text?text.split(/\s+/).length:0;
+  el('word-count').textContent=`${count} words${oatsCurrent.type==='bud'?' · buds are for replies of 100 words or fewer':''}`;
+  el('word-count').classList.toggle('over',oatsCurrent.type==='bud'&&count>100);
+}
+function oatsGifFields() {
+  const s=oatsStates.get(oatsCurrent.slug);
+  el('gif-fields').replaceChildren();
+  s.gifs.forEach((gif,index)=>{
+    const row=document.createElement('div');row.className='gif-entry';
+    const input=document.createElement('input');input.type='url';input.value=gif.url;input.setAttribute('aria-label',`GIF ${index+1} URL`);
+    input.addEventListener('input',()=>{const value=input.value.trim();gif.url=/^https?:\/\//i.test(value)?value:'';oatsDraw();});
+    const bottom=document.createElement('div');bottom.className='gif-bottom';
+    const label=document.createElement('label');label.textContent='Crop';
+    const crop=document.createElement('input');crop.type='range';crop.min='0';crop.max='100';crop.value=gif.position.split(' ')[1].replace('%','');crop.setAttribute('aria-label',`GIF ${index+1} vertical crop`);
+    crop.addEventListener('input',()=>{gif.position=`50% ${crop.value}%`;oatsDraw();});label.append(crop);
+    const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';remove.addEventListener('click',()=>{s.gifs.splice(index,1);oatsGifFields();oatsDraw();});
+    bottom.append(label,remove);row.append(input,bottom);el('gif-fields').append(row);
+  });
+}
+function oatsSelect(slug) {
+  oatsCurrent=OATS_DESIGNS.find(d=>d.slug===slug)||OATS_DESIGNS[0];
+  const s=oatsStates.get(oatsCurrent.slug);
+  for(const k of ['name','url','title','time','flow']) el(k).value=s[k];
+  el('writing').value=s.body;
+  el('comms-fields').hidden=oatsCurrent.type!=='comms';
+  el('design-title').textContent=oatsCurrent.name;
+  el('design-description').textContent=oatsCurrent.description;
+  el('design-kind').textContent=`${oatsCurrent.type==='bud'?'Bud':oatsCurrent.type==='thread'?'Thread':'Comms'} ${oatsCurrent.number}`;
+  for(const b of document.querySelectorAll('[data-design]'))b.setAttribute('aria-pressed',String(b.dataset.design===oatsCurrent.slug));
+  el('raw-link').href=`https://github.com/lexdoescodingnow/templates/blob/main/oats/millhouse/${oatsFilename(oatsCurrent)}`;
+  el('status').textContent='';oatsGifFields();oatsDraw();
+}
+for(const b of document.querySelectorAll('[data-design]'))b.addEventListener('click',()=>oatsSelect(b.dataset.design));
+for(const k of ['name','url','title','time','flow','writing'])el(k).addEventListener('input',()=>{oatsRead();oatsDraw();});
+el('add-gif').addEventListener('click',()=>{const s=oatsStates.get(oatsCurrent.slug);s.gifs.push({url:OATS_GIFS[s.gifs.length%2],position:'50% 45%'});oatsGifFields();oatsDraw();});
+el('reset').addEventListener('click',()=>{oatsStates.set(oatsCurrent.slug,oatsDefaults(oatsCurrent));oatsSelect(oatsCurrent.slug);});
+el('copy').addEventListener('click',async()=>{
+  const value=el('code').value;
+  try { await navigator.clipboard.writeText(value);el('status').textContent='Copied with [dohtml] tags.'; }
+  catch { const panel=el('code-panel');const wasOpen=panel.open;panel.open=true;el('code').focus();el('code').select();try {if(!document.execCommand('copy'))throw new Error('copy');el('status').textContent='Copied with [dohtml] tags.';panel.open=wasOpen;}catch{el('status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.';} }
+});
+el('download').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([el('code').value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=oatsFilename(oatsCurrent);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);el('status').textContent='Your edited snippet is ready.';});
+el('theme').addEventListener('change',()=>document.documentElement.setAttribute('color-mode',el('theme').value));
+for(let i=1;i<=3;i++)el('colour-'+i).addEventListener('input',()=>{const hex=el('colour-'+i).value;document.documentElement.style.setProperty('--mgrgb'+i,[1,3,5].map(start=>parseInt(hex.slice(start,start+2),16)).join(','));});
+oatsSelect(OATS_DESIGNS[0].slug);
+</script></body></html>
