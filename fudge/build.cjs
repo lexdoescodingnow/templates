@@ -1,0 +1,22 @@
+const fs=require('fs');
+const path=require('path');
+const root=__dirname;
+const designs=JSON.parse(fs.readFileSync(path.join(root,'designs.json'),'utf8'));
+const model=require('./fudge-model.js');
+for(const d of designs)fs.writeFileSync(path.join(root,model.fudgeFilename(d)),model.fudgeSnippet(d,model.fudgeDefaults(d)));
+const groups=[['thread','Threads'],['comms','Comms'],['bud','Buds']];
+const nav=groups.map(([type,name])=>`<div class="nav-group"><h2>${name}</h2>${designs.filter(d=>d.type===type).map(d=>`<button type="button" data-design="${d.slug}" aria-pressed="false"><small>${d.number}</small><span>${d.name}</span></button>`).join('')}</div>`).join('');
+const css=['fudge-preview.css','fudge-confection-v1.css'].map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
+const script=fs.readFileSync(path.join(root,'fudge-model.js'),'utf8')+'\nconst FUDGE_DESIGNS = '+JSON.stringify(designs)+';\n'+fs.readFileSync(path.join(root,'fudge-editor.js'),'utf8');
+const html=`<!doctype html>
+<html lang="en" color-mode="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fudge · Ren & Tsubasa</title><style>${css}</style></head>
+<body>
+<header class="collection-top"><div><div class="brand">Fudge</div><div class="couple">Ren & Tsubasa · 15 templates</div></div><div class="tools"><label for="theme">Preview</label><select id="theme"><option value="light">Light</option><option value="dark">Dark</option></select><div class="colour-pair"><label for="colour-1">Member colours</label><input id="colour-1" type="color" value="#8c6580" aria-label="Member colour 1"><input id="colour-2" type="color" value="#607e92" aria-label="Member colour 2"><input id="colour-3" type="color" value="#b38870" aria-label="Member colour 3"></div></div></header>
+<main class="workspace">
+<nav class="design-nav" aria-label="Fudge designs">${nav}</nav>
+<section class="preview-column" aria-label="Template preview"><div class="preview-heading"><div><h1 id="design-title"></h1><p id="design-description"></p></div><span id="design-kind"></span></div><div id="stage"></div><details class="code-panel" id="code-panel"><summary>JCink code</summary><textarea id="code" readonly aria-label="Copy-ready JCink code" spellcheck="false"></textarea><div class="footer-links"><a id="raw-link" href="https://github.com/lexdoescodingnow/templates/tree/main/fudge">Original snippet on GitHub</a><a href="https://github.com/lexdoescodingnow/templates/tree/main/fudge">Fudge folder</a></div></details></section>
+<aside class="editor" aria-label="Edit template"><h2>Make it yours</h2><div class="field"><label for="name">Name</label><input id="name" type="text" spellcheck="false"></div><div class="field"><label for="url">Name link</label><input id="url" type="text" spellcheck="false"></div><div class="field"><label for="title">Title / contact status</label><input id="title" type="text"></div><div class="split" id="comms-fields"><div class="field"><label for="time">Time</label><input id="time" type="text"></div><div class="field"><label for="flow">Messages</label><select id="flow"><option value="received">Received</option><option value="sent">Sent</option><option value="alternate">Alternating</option></select></div></div><fieldset><legend>Character GIFs</legend><div id="gif-fields"></div><button id="add-gif" type="button" class="secondary">Add GIF</button></fieldset><div class="field writing-field"><label for="writing">Writing</label><textarea id="writing" spellcheck="false"></textarea><div class="word-count" id="word-count"></div></div><div class="actions"><button id="copy" type="button" class="primary">Copy code</button><button id="download" type="button">Download .txt</button><button id="reset" type="button" class="secondary">Reset design</button></div><div id="status" role="status" aria-live="polite"></div><p class="editor-note">Use <code>&lt;p&gt;</code> for paragraphs or message bubbles. The editor accepts <code>[b]</code>, <code>[i]</code> and <code>[u]</code>. Preview names replace the placeholders for display; copied code keeps your field values. Preview colours are supplied by the forum when you post. Edits stay while this page is open.</p></aside>
+</main><script>${script.replace(/<\/script/gi,'<\\/script')}</script></body></html>`;
+fs.writeFileSync(path.join(root,'fudge-collection-preview.html'),html);
+console.log(`Built ${designs.length} snippets and the standalone Fudge preview.`);
