@@ -1,0 +1,102 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+const {JSDOM,VirtualConsole}=require('jsdom');
+const csstree=require('css-tree');
+const root=__dirname;
+const designs=require('./designs.json');
+const model=require('./lavender-model.js');
+const read=f=>fs.readFileSync(path.join(root,f),'utf8');
+let checks=0;
+function ok(value,message){assert.ok(value,message);checks++;}
+const css=read('lavender-stillroom-v1.css');
+const cssErrors=[];
+const ast=csstree.parse(css,{onParseError:e=>cssErrors.push(e.message)});
+ok(cssErrors.length===0,'CSS parses without syntax errors');
+csstree.walk(ast,{visit:'Rule',enter(node){if(node.prelude?.type==='SelectorList')for(const selector of node.prelude.children){ok(csstree.generate(selector).includes('.bh-lavender'),'All template selectors are scoped');}}});
+ok(!/\/\*|<!--/.test(css),'No CSS comments');
+ok(css.includes('html[color-mode="dark"] .bh-lavender'),'Explicit dark mode');
+ok(css.includes('html:not([color-mode="light"]):not([color-mode="dark"])'),'Explicit forum mode takes priority over system fallback');
+ok(css.includes('--lvd-text-gradient:linear-gradient(110deg,var(--lvd-a),var(--lvd-b) 52%,var(--lvd-c))'),'Forward emphasis gradient');
+ok(css.includes('--lvd-reverse:linear-gradient(110deg,var(--lvd-c),var(--lvd-b) 52%,var(--lvd-a))'),'Reverse italic gradient');
+ok(new Set(designs.map(d=>d.name)).size===15,'Fifteen distinct names');
+for(const kind of ['thread','comms','bud'])ok(designs.filter(d=>d.type===kind).length===5,'Five '+kind+' designs');
+for(const d of designs){
+ const s=model.lavenderDefaults(d),code=read(model.lavenderFilename(d));
+ ok(code===model.lavenderSnippet(d,s),d.name+' export matches model');
+ ok(code.startsWith('[dohtml]\n')&&code.trimEnd().endsWith('[/dohtml]'),d.name+' wrappers');
+ ok(!/<!--|\/\*|<script\b/.test(code),d.name+' no scripts or comments in snippet');
+ ok(code.indexOf('[url]')<code.indexOf('lvd-title')&&code.indexOf('[name]')<code.indexOf('lvd-title')&&code.indexOf('[text]')<code.indexOf('lvd-copy'),d.name+' placeholders at top');
+ const doc=new JSDOM(code.slice(9,code.lastIndexOf('[/dohtml]'))).window.document;
+ ok(doc.querySelectorAll('link[rel="stylesheet"]').length===1,d.name+' single stylesheet');
+ ok(doc.querySelectorAll('.lvd-media img').length===d.gifs,d.name+' GIF count');
+ for(const img of doc.querySelectorAll('img'))ok(model.LAVENDER_GIFS.includes(img.src),d.name+' exact supplied URL');
+ ok(doc.querySelector('.lvd-copy').textContent.includes('Lorem ipsum'),d.name+' sample writing');
+ if(d.type==='bud')ok(doc.querySelector('.lvd-copy').textContent.trim().split(/\s+/).length<=100,d.name+' under 100 words');
+ if(d.type==='comms'){
+  const short=new JSDOM(model.lavenderMarkup(d,{...s,body:'<p>First<p>Second<p>Third'})).window.document;
+  ok(short.querySelectorAll('.lvd-copy>p').length===3,d.name+' successive opening paragraphs');
+ }
+ const absent=new JSDOM(model.lavenderMarkup(d,{...s,gifs:[]})).window.document;
+ ok(!absent.querySelector('.lvd-media'),d.name+' removed media has no empty container');
+ const many=new JSDOM(model.lavenderMarkup(d,{...s,gifs:Array(4).fill({url:model.LAVENDER_GIFS[0],position:'50% 35%'})})).window.document;
+ ok(many.querySelectorAll('img').length===4,d.name+' multiple optional images');
+}
+const errors=[];
+const vc=new VirtualConsole();vc.on('jsdomError',e=>{if(e.type!=='css-parsing')errors.push(e.message)});
+const dom=new JSDOM(read('lavender-collection-preview.html'),{runScripts:'dangerously',virtualConsole:vc,url:'https://example.invalid/preview'});
+const w=dom.window,doc=w.document;
+w.scrollTo=()=>{};
+function input(id,value){const e=doc.getElementById(id);e.value=value;e.dispatchEvent(new w.Event('input',{bubbles:true}));}
+for(let i=0;i<15;i++){
+ doc.querySelectorAll('.pv-choice')[i].click();
+ ok(doc.querySelector('#pv-design-title').textContent===designs[i].name,designs[i].name+' selectable');
+ ok(doc.querySelector('#pv-code').value===read(model.lavenderFilename(designs[i])),designs[i].name+' editor defaults equal posting file');
+}
+doc.querySelectorAll('.pv-choice')[0].click();
+input('pv-name','Jinwoo & Yohan');input('pv-title','Dinner <for> two');input('pv-url','https://example.com/thread');
+input('pv-body','<p>[b]Bold[/b] and [i]italic[/i] with [u]underline[/u].<p>Another message');
+let code=doc.querySelector('#pv-code').value;
+ok(code.includes('<b>Bold</b>')&&code.includes('<i>italic</i>')&&code.includes('<u>underline</u>'),'BBCode emphasis converts');
+ok(code.includes('Dinner &lt;for&gt; two')&&code.includes('Jinwoo &amp; Yohan'),'Editable fields escape HTML');
+input('pv-body','<p>safe<script>bad()</script><img src=x onerror=bad()><a href="javascript:bad()">link</a></p>');
+code=doc.querySelector('#pv-code').value;
+ok(!code.includes('bad()')&&!code.includes('onerror'),'Editor strips executable input');
+input('pv-body','<p>'+('Long passage. '.repeat(150))+'</p>');
+ok(doc.querySelector('.lvd-copy').textContent.length>1800,'Long writing retained');
+doc.querySelectorAll('.pv-choice')[1].click();doc.querySelectorAll('.pv-choice')[0].click();
+ok(doc.querySelector('#pv-name').value==='Jinwoo & Yohan','Edits persist per design');
+while(doc.querySelector('[data-remove]'))doc.querySelector('[data-remove]').click();
+ok(!doc.querySelector('#pv-stage .lvd-media'),'Removing all images updates preview');
+doc.querySelector('#pv-add-gif').click();
+ok(doc.querySelectorAll('#pv-stage img').length===1,'Adding image updates preview');
+doc.querySelector('#pv-reset').click();
+ok(doc.querySelector('#pv-code').value===read(model.lavenderFilename(designs[0])),'Reset restores defaults');
+doc.querySelector('#pv-view-all').click();
+ok(doc.querySelectorAll('#pv-gallery .bh-lavender').length===15,'Gallery includes fifteen templates');
+doc.querySelector('[data-open="8"]').click();
+ok(doc.querySelector('#pv-design-title').textContent==='Lavandula OS','Gallery edit opens selected design');
+const mode=doc.querySelector('#pv-mode');mode.value='dark';mode.dispatchEvent(new w.Event('change'));
+ok(doc.documentElement.getAttribute('color-mode')==='dark','Dark mode selector updates root');
+mode.value='light';mode.dispatchEvent(new w.Event('change'));
+ok(doc.documentElement.getAttribute('color-mode')==='light','Light mode selector updates root');
+mode.value='system';mode.dispatchEvent(new w.Event('change'));
+ok(!doc.documentElement.hasAttribute('color-mode'),'System clears explicit mode');
+const palette=doc.querySelector('#pv-palette');palette.value='lagoon';palette.dispatchEvent(new w.Event('change'));
+ok(doc.documentElement.style.getPropertyValue('--mgrgb1')==='20,133,120','Palette controls update inherited member colour');
+ok(!doc.querySelector('#pv-code').value.includes('--mgrgb'),'Preview colours stay out of exports');
+const width=doc.querySelector('#pv-width');width.value='320';width.dispatchEvent(new w.Event('change'));
+ok(doc.querySelector('#pv-stage').style.width==='320px','Narrow width control updates preview');
+let copied='';Object.defineProperty(w.navigator,'clipboard',{value:{writeText:async text=>{copied=text}}});
+(async()=>{
+ await doc.querySelector('#pv-copy').onclick();
+ ok(copied===doc.querySelector('#pv-code').value,'Copy exports complete current snippet');
+ ok(doc.querySelector('#pv-status').textContent==='JCink code copied.','Copy success status');
+ w.navigator.clipboard.writeText=async()=>{throw Error('Denied')};
+ await doc.querySelector('#pv-copy').onclick();
+ ok(doc.querySelector('#pv-code-details').open,'Clipboard fallback opens code');
+ ok(doc.querySelector('#pv-code').selectionEnd===doc.querySelector('#pv-code').value.length,'Clipboard fallback selects all code');
+ ok(errors.length===0,'No editor runtime errors: '+errors.join('; '));
+ console.log(JSON.stringify({checks,templates:15,html:'passed',css:'parsed and scoped',editor:'passed',visualRendering:'not tested: cloud browser local URL policy'},null,2));
+ dom.window.close();
+})();

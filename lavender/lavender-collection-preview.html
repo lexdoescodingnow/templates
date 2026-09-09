@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lavender · Fifteen JCink Templates</title><meta name="description" content="Five threads, five comms and five buds. Preview, edit and copy the Lavender collection."><style>.bh-lavender,.bh-lavender *,.bh-lavender *::before,.bh-lavender *::after{box-sizing:border-box}
+.bh-lavender{--lvd-one:var(--mgrgb1,var(--mgrgb,128,104,159));--lvd-two:var(--mgrgb2,var(--lvd-one));--lvd-three:var(--mgrgb3,var(--lvd-two));--lvd-paper:#faf9f7;--lvd-panel:#f0efed;--lvd-ink:#343437;--lvd-muted:#6b686e;--lvd-shadow:rgba(28,25,31,.10);--lvd-line:rgba(var(--lvd-one),.42);--lvd-a:color-mix(in srgb,rgb(var(--lvd-one)) 72%,var(--lvd-ink));--lvd-b:color-mix(in srgb,rgb(var(--lvd-two)) 72%,var(--lvd-ink));--lvd-c:color-mix(in srgb,rgb(var(--lvd-three)) 72%,var(--lvd-ink));--lvd-gradient:linear-gradient(115deg,rgb(var(--lvd-one)),rgb(var(--lvd-two)) 52%,rgb(var(--lvd-three)));--lvd-text-gradient:linear-gradient(110deg,var(--lvd-a),var(--lvd-b) 52%,var(--lvd-c));--lvd-reverse:linear-gradient(110deg,var(--lvd-c),var(--lvd-b) 52%,var(--lvd-a));--lvd-flower:#9a85b4;position:relative;isolation:isolate;container-type:inline-size;width:min(530px,100%);margin:30px auto;color:var(--lvd-ink);background:var(--lvd-paper);font:14px/1.85 Georgia,'Times New Roman',serif;text-align:left;letter-spacing:normal;overflow-wrap:anywhere;color-scheme:light}
+html[color-mode="dark"] .bh-lavender{--lvd-paper:#202023;--lvd-panel:#2b2b2f;--lvd-ink:#e9e7e3;--lvd-muted:#b4b0b8;--lvd-shadow:rgba(0,0,0,.28);--lvd-line:rgba(var(--lvd-two),.56);color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-lavender{--lvd-paper:#202023;--lvd-panel:#2b2b2f;--lvd-ink:#e9e7e3;--lvd-muted:#b4b0b8;--lvd-shadow:rgba(0,0,0,.28);--lvd-line:rgba(var(--lvd-two),.56);color-scheme:dark}}
+.bh-lavender>*,.bh-lavender .lvd-media>*{min-width:0}
+.bh-lavender .lvd-name{display:block;width:fit-content;max-width:100%;font:700 10px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--lvd-a);text-decoration:none;border:0;background:none;padding:0}
+.bh-lavender .lvd-name:focus-visible,.bh-lavender .lvd-copy a:focus-visible{outline:2px solid var(--lvd-b);outline-offset:4px}
+.bh-lavender .lvd-title{font:normal 34px/1.08 Georgia,serif;letter-spacing:-.035em;color:var(--lvd-a);background:var(--lvd-text-gradient);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:10px 0 22px;padding-bottom:4px}
+.bh-lavender .lvd-copy{position:relative;color:var(--lvd-ink);font:inherit;text-align:left;letter-spacing:normal;white-space:normal}
+.bh-lavender .lvd-copy p{font:inherit;color:inherit;margin:0 0 1.2em;padding:0;text-align:inherit;letter-spacing:normal}
+.bh-lavender .lvd-copy p:last-child{margin-bottom:0}
+.bh-lavender .lvd-copy :is(b,strong,u){color:var(--lvd-a);background-image:var(--lvd-text-gradient);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:700}
+.bh-lavender .lvd-copy :is(i,em){color:var(--lvd-c);background-image:var(--lvd-reverse);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:700;font-style:italic}
+.bh-lavender .lvd-copy u{text-decoration:underline;text-decoration-color:var(--lvd-b);text-decoration-thickness:1px;text-underline-offset:3px}
+.bh-lavender .lvd-copy a{color:var(--lvd-a);font-weight:700;text-decoration:underline;text-decoration-color:var(--lvd-c);text-underline-offset:3px}
+.bh-lavender .lvd-media{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 23px;min-width:0}
+.bh-lavender .lvd-media img{display:block;flex:1 1 70px;min-width:0;width:0;max-width:100%;height:170px;object-fit:cover;object-position:50% 45%;background:var(--lvd-panel);border:2px solid rgba(var(--lvd-two),.8)}
+.bh-lavender .lvd-media img[src=""],.bh-lavender .lvd-media img:not([src]),.bh-lavender .lvd-media img[src="[url]"]{display:none}
+.bh-lavender .lvd-media:empty,.bh-lavender .lvd-media:not(:has(img[src]:not([src=""]):not([src="[url]"]))){display:none}
+.bh-lavender .lvd-motif,.bh-lavender .lvd-hardware{position:relative;pointer-events:none}
+.bh-lavender .lvd-motif::before,.bh-lavender .lvd-motif::after,.bh-lavender .lvd-hardware::before,.bh-lavender .lvd-hardware::after{content:"";position:absolute}
+.bh-lavender.lvd-thread{border:1px solid var(--lvd-line);padding:28px}
+.bh-lavender.lvd-stillroom-nocturne{margin-top:80px;padding:42px 28px 26px;border-radius:90px 90px 26px 26px;border-width:2px;background:linear-gradient(90deg,rgba(var(--lvd-one),.08),transparent 12%,transparent 88%,rgba(var(--lvd-three),.08)),var(--lvd-paper);box-shadow:inset 0 -9px rgba(var(--lvd-two),.11),0 12px 25px var(--lvd-shadow)}
+.bh-lavender.lvd-stillroom-nocturne::before{content:"";position:absolute;width:112px;height:44px;top:-46px;left:calc(50% - 56px);border:2px solid rgb(var(--lvd-one));border-radius:9px 9px 2px 2px;background:repeating-linear-gradient(90deg,transparent 0 5px,rgba(var(--lvd-three),.4) 5px 7px),var(--lvd-panel)}
+.bh-lavender.lvd-stillroom-nocturne::after{content:"";position:absolute;top:-7px;left:calc(50% - 73px);width:146px;height:8px;border:1px solid var(--lvd-line);border-radius:3px;background:var(--lvd-gradient)}
+.bh-lavender.lvd-stillroom-nocturne .lvd-name{margin:0 auto;text-align:center;border-bottom:1px solid var(--lvd-line);padding-bottom:9px}
+.bh-lavender.lvd-stillroom-nocturne .lvd-title{text-align:center;max-width:340px;margin:16px auto 23px;font-size:clamp(28px,8cqw,40px);font-style:italic}
+.bh-lavender.lvd-stillroom-nocturne .lvd-media{padding:7px;border:1px solid var(--lvd-line);border-radius:35px 35px 2px 2px;background:rgba(var(--lvd-two),.08)}
+.bh-lavender.lvd-stillroom-nocturne .lvd-media img{height:165px;border-radius:27px 27px 0 0;border:0}
+.bh-lavender.lvd-stillroom-nocturne .lvd-copy{padding:22px 17px;border:1px solid var(--lvd-line);background:var(--lvd-paper)}
+.bh-lavender.lvd-stillroom-nocturne .lvd-motif{height:30px;margin-top:13px}
+.bh-lavender.lvd-stillroom-nocturne .lvd-motif::before{left:calc(50% - 3px);top:0;width:6px;height:11px;border-radius:70% 30%;background:var(--lvd-flower);box-shadow:-7px 9px rgba(var(--lvd-one),.55),7px 9px rgba(var(--lvd-three),.55)}
+.bh-lavender.lvd-parallel-fields{display:grid;grid-template-columns:1fr 1fr;padding:28px 27px 30px;border:0;border-left:3px solid rgb(var(--lvd-one));border-right:3px solid rgb(var(--lvd-three));background:linear-gradient(90deg,rgba(var(--lvd-one),.05),transparent 50%,rgba(var(--lvd-three),.05)),var(--lvd-paper)}
+.bh-lavender.lvd-parallel-fields .lvd-name{grid-column:1/-1;padding-bottom:9px;border-bottom:1px solid var(--lvd-line)}
+.bh-lavender.lvd-parallel-fields .lvd-title{grid-column:1/-1;font-size:clamp(30px,9cqw,46px);max-width:90%;margin:16px 0 24px}
+.bh-lavender.lvd-parallel-fields .lvd-media{grid-column:1/-1;align-items:start;gap:18px;padding:0 0 35px;margin-bottom:15px;background:repeating-linear-gradient(101deg,transparent 0 15px,rgba(var(--lvd-two),.26) 15px 16px) bottom/100% 42px no-repeat}
+.bh-lavender.lvd-parallel-fields .lvd-media img{height:200px;border:0;border-bottom:7px solid rgb(var(--lvd-one));border-radius:85px 85px 0 0}
+.bh-lavender.lvd-parallel-fields .lvd-media img:nth-child(even){margin-top:38px;height:162px;border-color:rgb(var(--lvd-three));border-radius:0 0 85px 85px}
+.bh-lavender.lvd-parallel-fields .lvd-copy{grid-column:1/-1;padding:10px 5px 15px}
+.bh-lavender.lvd-parallel-fields .lvd-motif{grid-column:1/-1;height:22px;border-bottom:1px solid var(--lvd-line)}
+.bh-lavender.lvd-parallel-fields .lvd-motif::before{width:38%;height:6px;background:var(--lvd-gradient);bottom:-3px;right:0}
+.bh-lavender.lvd-linen-devotion{padding:74px 34px 35px;border:2px dashed rgba(var(--lvd-two),.55);border-radius:58px 58px 24px 24px;outline:1px solid var(--lvd-line);outline-offset:6px;width:min(480px,calc(100% - 16px));background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(var(--lvd-one),.025) 3px 4px),repeating-linear-gradient(90deg,transparent 0 3px,rgba(var(--lvd-three),.025) 3px 4px),var(--lvd-paper)}
+.bh-lavender.lvd-linen-devotion::before{content:"";position:absolute;top:43px;left:10%;width:80%;height:12px;border-top:1px solid rgb(var(--lvd-one));border-bottom:1px solid rgb(var(--lvd-three));background:rgba(var(--lvd-two),.14)}
+.bh-lavender.lvd-linen-devotion .lvd-name{margin:auto;text-align:center}
+.bh-lavender.lvd-linen-devotion .lvd-title{text-align:center;font-style:italic;font-size:clamp(30px,9cqw,43px);margin:16px 0 25px}
+.bh-lavender.lvd-linen-devotion .lvd-copy{padding:19px 0 0;border-top:1px solid var(--lvd-line)}
+.bh-lavender.lvd-linen-devotion .lvd-media img{height:150px;border-radius:45% 45% 4px 4px}
+.bh-lavender.lvd-linen-devotion .lvd-motif{position:absolute;top:18px;left:calc(50% - 35px);width:70px;height:40px}
+.bh-lavender.lvd-linen-devotion .lvd-motif::before{width:38px;height:22px;border:2px solid var(--lvd-a);border-radius:80% 80% 0 80%;transform:rotate(21deg);top:6px;left:0}
+.bh-lavender.lvd-linen-devotion .lvd-motif::after{width:38px;height:22px;border:2px solid var(--lvd-c);border-radius:80% 80% 80% 0;transform:rotate(-21deg);top:6px;right:0}
+.bh-lavender.lvd-vesper-specimen{display:grid;grid-template-columns:minmax(0,1fr) minmax(90px,.75fr);column-gap:23px;padding:27px;border:1px solid var(--lvd-line);border-top:8px solid rgb(var(--lvd-two));background:linear-gradient(90deg,rgba(var(--lvd-one),.08) 1px,transparent 1px) 26px 0/100% 100%,var(--lvd-paper)}
+.bh-lavender.lvd-vesper-specimen .lvd-name{grid-column:1;align-self:start;padding:9px 0 0 12px}
+.bh-lavender.lvd-vesper-specimen .lvd-title{grid-column:1;grid-row:2;margin:14px 0 25px;padding-left:12px;font-size:clamp(25px,7.5cqw,38px);align-self:center}
+.bh-lavender.lvd-vesper-specimen .lvd-media{grid-column:2;grid-row:1/3;align-items:center;margin:0 0 25px;padding:7px;border:1px solid var(--lvd-line);border-radius:50%}
+.bh-lavender.lvd-vesper-specimen .lvd-media img{border-radius:50%;height:215px;border:0}
+.bh-lavender.lvd-vesper-specimen .lvd-copy{grid-column:1/-1;padding:27px 7px 0 25px;border-top:1px solid var(--lvd-line)}
+.bh-lavender.lvd-vesper-specimen .lvd-motif{grid-column:1/-1;height:70px;margin:20px 0 0}
+.bh-lavender.lvd-vesper-specimen .lvd-motif::before{width:100px;height:65px;right:3px;bottom:0;background:var(--lvd-gradient);mask:var(--lvd-sprig) center/contain no-repeat;-webkit-mask:var(--lvd-sprig) center/contain no-repeat;transform:rotate(28deg)}
+.bh-lavender.lvd-vesper-specimen .lvd-motif::after{height:1px;width:calc(100% - 105px);top:45px;left:0;background:var(--lvd-gradient)}
+.bh-lavender.lvd-vesper-specimen:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) .lvd-name,.bh-lavender.lvd-vesper-specimen:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) .lvd-title{grid-column:1/-1}
+.bh-lavender.lvd-inflorescence{display:flex;flex-direction:column;padding:25px 32px 30px;border:0;background:var(--lvd-paper)}
+.bh-lavender.lvd-inflorescence .lvd-name{order:2;margin:0 auto 10px;text-align:center}
+.bh-lavender.lvd-inflorescence .lvd-title{order:3;text-align:center;font-size:clamp(30px,8.5cqw,43px);margin:0 auto 24px;max-width:350px}
+.bh-lavender.lvd-inflorescence .lvd-media{order:1;padding:0 25px 48px;gap:20px;justify-content:center;position:relative;margin-bottom:0;background:linear-gradient(90deg,transparent calc(50% - .5px),rgba(var(--lvd-two),.5) calc(50% - .5px),rgba(var(--lvd-two),.5) calc(50% + .5px),transparent calc(50% + .5px)) center bottom/100% 49px no-repeat}
+.bh-lavender.lvd-inflorescence .lvd-media img{height:205px;border-radius:90% 18% 80% 18%;border-width:4px;max-width:160px;transform:rotate(-7deg)}
+.bh-lavender.lvd-inflorescence .lvd-media img:nth-child(even){border-radius:18% 90% 18% 80%;transform:rotate(7deg);border-color:rgba(var(--lvd-three),.8)}
+.bh-lavender.lvd-inflorescence .lvd-copy{order:4;border-top:1px solid var(--lvd-line);border-bottom:1px solid var(--lvd-line);padding:25px 10px}
+.bh-lavender.lvd-inflorescence .lvd-motif{order:5;margin:15px auto 0;width:90px;height:40px}
+.bh-lavender.lvd-inflorescence .lvd-motif::before{height:36px;width:1px;background:rgb(var(--lvd-two));left:50%;top:0;transform:rotate(90deg)}
+.bh-lavender.lvd-inflorescence .lvd-motif::after{width:12px;height:23px;border:1px solid var(--lvd-a);border-radius:90% 0;transform:rotate(50deg);top:5px;left:32px;box-shadow:13px -12px 0 -2px rgba(var(--lvd-three),.28)}
+.bh-lavender.lvd-comms{width:min(345px,100%);font:13px/1.7 'Trebuchet MS',Arial,sans-serif;border:3px solid rgb(var(--lvd-one));border-radius:35px;padding:55px 21px 28px;background:var(--lvd-paper);box-shadow:inset 0 0 0 4px rgba(var(--lvd-two),.13),0 12px 28px var(--lvd-shadow)}
+.bh-lavender.lvd-comms .lvd-name{font-size:12px;letter-spacing:.05em;text-transform:none;line-height:1.5}
+.bh-lavender.lvd-comms .lvd-title{font:11px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:0;margin:5px 0 20px}
+.bh-lavender.lvd-comms .lvd-time{font:11px/1.2 'Courier New',monospace;color:var(--lvd-b);position:absolute;top:22px;left:22px;letter-spacing:.06em}
+.bh-lavender.lvd-comms .lvd-copy{padding:17px 0 10px;border-top:1px solid var(--lvd-line)}
+.bh-lavender.lvd-comms .lvd-copy p{width:fit-content;max-width:92%;padding:11px 13px;margin:0 auto 10px 0;background:linear-gradient(rgba(var(--lvd-one),.08),rgba(var(--lvd-one),.08)),var(--lvd-panel);border:1px solid rgba(var(--lvd-two),.25);border-radius:15px 15px 15px 4px}
+.bh-lavender.lvd-comms[data-flow="sent"] .lvd-copy p,.bh-lavender.lvd-comms[data-flow="mixed"] .lvd-copy p:nth-child(even){margin-left:auto;margin-right:0;background:linear-gradient(rgba(var(--lvd-three),.13),rgba(var(--lvd-three),.13)),var(--lvd-panel);border-color:rgba(var(--lvd-three),.35);border-radius:15px 15px 4px 15px}
+.bh-lavender.lvd-comms .lvd-media img{height:90px}
+.bh-lavender.lvd-comms .lvd-hardware{height:28px;margin-top:12px}
+.bh-lavender.lvd-duskline{display:grid;grid-template-columns:1fr 67px;column-gap:15px;border-radius:55px 55px 34px 34px;padding-top:64px}
+.bh-lavender.lvd-duskline::before{content:"";position:absolute;top:22px;left:calc(50% - 28px);height:7px;width:56px;border-radius:10px;background:var(--lvd-gradient)}
+.bh-lavender.lvd-duskline .lvd-name{grid-column:1;align-self:end}
+.bh-lavender.lvd-duskline .lvd-title{grid-column:1;align-self:start}
+.bh-lavender.lvd-duskline .lvd-media{grid-column:2;grid-row:1/3;margin:0 0 18px;align-self:center;gap:6px}
+.bh-lavender.lvd-duskline .lvd-media img{height:80px;border-radius:80% 20% 80% 25%}
+.bh-lavender.lvd-duskline .lvd-copy,.bh-lavender.lvd-duskline .lvd-hardware{grid-column:1/-1}
+.bh-lavender.lvd-duskline .lvd-hardware::before{bottom:0;left:calc(50% - 39px);height:4px;width:78px;border-radius:3px;background:var(--lvd-gradient)}
+.bh-lavender.lvd-duskline:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) .lvd-name,.bh-lavender.lvd-duskline:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) .lvd-title{grid-column:1/-1}
+.bh-lavender.lvd-sachet-sync{width:min(490px,100%);display:grid;grid-template-columns:minmax(68px,.38fr) minmax(0,1fr);column-gap:24px;border-radius:23px;padding:39px 18px 18px;border-width:2px;background:linear-gradient(90deg,rgba(var(--lvd-one),.1),transparent 40%),var(--lvd-paper)}
+.bh-lavender.lvd-sachet-sync .lvd-name{grid-column:2;padding-top:7px}
+.bh-lavender.lvd-sachet-sync .lvd-title{grid-column:2;margin-bottom:14px}
+.bh-lavender.lvd-sachet-sync .lvd-media{grid-column:1;grid-row:1/4;flex-direction:column;align-self:stretch;margin:0;padding:10px 0;gap:15px;position:relative}
+.bh-lavender.lvd-sachet-sync .lvd-media::after{content:"";position:absolute;top:0;bottom:0;right:-14px;width:4px;border-radius:2px;background:linear-gradient(0deg,rgb(var(--lvd-one)),var(--lvd-panel) 15% 85%,rgb(var(--lvd-three)));border:1px solid var(--lvd-line)}
+.bh-lavender.lvd-sachet-sync .lvd-media img{width:100%;flex:1 1 70px;height:120px;max-height:180px;min-height:65px;border-radius:11px;border:1px solid var(--lvd-line)}
+.bh-lavender.lvd-sachet-sync .lvd-copy{grid-column:2;border:1px solid var(--lvd-line);border-radius:10px;padding:12px 8px;background:var(--lvd-panel)}
+.bh-lavender.lvd-sachet-sync .lvd-copy p{max-width:100%;font-size:12px;padding:10px;background:var(--lvd-paper)}
+.bh-lavender.lvd-sachet-sync .lvd-hardware{grid-column:1/-1;height:13px;margin-top:14px}
+.bh-lavender.lvd-sachet-sync .lvd-hardware::before{top:6px;right:23%;width:37px;height:3px;border-radius:5px;background:var(--lvd-gradient)}
+.bh-lavender.lvd-sachet-sync .lvd-hardware::after{width:6px;height:6px;border:1px solid var(--lvd-c);border-radius:50%;left:6%;top:3px}
+.bh-lavender.lvd-sachet-sync:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) .lvd-name,.bh-lavender.lvd-sachet-sync:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) .lvd-title,.bh-lavender.lvd-sachet-sync:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) .lvd-copy{grid-column:1/-1}
+.bh-lavender.lvd-stemwave{width:min(295px,100%);padding:49px 20px 24px;border-radius:25px 25px 45px 45px;border-width:2px;border-left:9px solid rgb(var(--lvd-one));border-right:9px solid rgb(var(--lvd-three))}
+.bh-lavender.lvd-stemwave::before{content:"";position:absolute;top:18px;right:19px;width:45px;height:9px;background:repeating-linear-gradient(90deg,rgb(var(--lvd-two)) 0 3px,transparent 3px 7px);border-radius:8px}
+.bh-lavender.lvd-stemwave .lvd-name{font:700 14px/1.5 'Courier New',monospace}
+.bh-lavender.lvd-stemwave .lvd-copy{border:1px solid var(--lvd-line);box-shadow:inset 0 0 0 4px rgba(var(--lvd-two),.10);padding:14px 8px;background:var(--lvd-panel)}
+.bh-lavender.lvd-stemwave .lvd-copy p{border:0;border-left:2px solid var(--lvd-b);border-radius:0;max-width:100%;padding:9px;font-size:12px;background:var(--lvd-paper)}
+.bh-lavender.lvd-stemwave .lvd-media img{border-radius:6px}
+.bh-lavender.lvd-stemwave .lvd-hardware{height:102px;margin:20px auto 0;width:160px;max-width:100%;border-top:1px solid var(--lvd-line)}
+.bh-lavender.lvd-stemwave .lvd-hardware::before{width:34px;height:14px;left:5px;top:17px;border-radius:8px;background:rgba(var(--lvd-one),.26);box-shadow:57px 0 rgba(var(--lvd-two),.3),114px 0 rgba(var(--lvd-three),.3),0 24px rgba(var(--lvd-one),.26),57px 24px rgba(var(--lvd-two),.3),114px 24px rgba(var(--lvd-three),.3),0 48px rgba(var(--lvd-one),.26),57px 48px rgba(var(--lvd-two),.3),114px 48px rgba(var(--lvd-three),.3),0 72px rgba(var(--lvd-one),.26),57px 72px rgba(var(--lvd-two),.3),114px 72px rgba(var(--lvd-three),.3)}
+.bh-lavender.lvd-lavandula-os{width:min(490px,100%);display:grid;grid-template-columns:58px minmax(0,1fr);column-gap:22px;padding:53px 22px 20px;border:1px solid var(--lvd-line);border-radius:14px;box-shadow:0 16px 28px var(--lvd-shadow);background:linear-gradient(90deg,rgba(var(--lvd-one),.1) 84px,transparent 84px),var(--lvd-paper)}
+.bh-lavender.lvd-lavandula-os::before{content:"";position:absolute;top:17px;left:20px;width:7px;height:7px;border-radius:50%;background:rgb(var(--lvd-one));box-shadow:14px 0 rgb(var(--lvd-two)),28px 0 rgb(var(--lvd-three))}
+.bh-lavender.lvd-lavandula-os::after{content:"";position:absolute;top:38px;left:0;right:0;height:1px;background:var(--lvd-gradient)}
+.bh-lavender.lvd-lavandula-os .lvd-time{left:auto;right:20px;top:16px}
+.bh-lavender.lvd-lavandula-os .lvd-name,.bh-lavender.lvd-lavandula-os .lvd-title,.bh-lavender.lvd-lavandula-os .lvd-copy{grid-column:2}
+.bh-lavender.lvd-lavandula-os .lvd-media{grid-column:1;grid-row:1/4;display:flex;flex-direction:column;gap:12px;align-self:start;margin:0}
+.bh-lavender.lvd-lavandula-os .lvd-media img{width:100%;height:68px;flex:0 1 auto;border:2px solid rgb(var(--lvd-two));border-radius:28px 28px 7px 7px}
+.bh-lavender.lvd-lavandula-os .lvd-copy p{border-radius:6px 15px 15px 15px}
+.bh-lavender.lvd-lavandula-os .lvd-hardware{grid-column:2;height:27px;border:1px solid var(--lvd-line);border-radius:6px;background:var(--lvd-panel)}
+.bh-lavender.lvd-lavandula-os .lvd-hardware::before{width:9px;height:9px;left:10px;top:8px;border:1px solid var(--lvd-a);border-radius:50%}
+.bh-lavender.lvd-lavandula-os .lvd-hardware::after{width:12px;height:12px;right:10px;top:6px;border-top:2px solid var(--lvd-c);border-right:2px solid var(--lvd-c);transform:rotate(45deg) scale(.65)}
+.bh-lavender.lvd-lavandula-os:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))){background:var(--lvd-paper)}
+.bh-lavender.lvd-lavandula-os:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) :is(.lvd-name,.lvd-title,.lvd-copy,.lvd-hardware){grid-column:1/-1}
+.bh-lavender.lvd-pillow-talk{width:min(390px,100%);display:flex;flex-direction:column;border-radius:55px 55px 30px 30px;padding:30px 24px 24px;border:2px solid var(--lvd-a);box-shadow:0 8px 0 rgba(var(--lvd-three),.3),0 18px 23px var(--lvd-shadow)}
+.bh-lavender.lvd-pillow-talk .lvd-time{position:static;order:0;text-align:center;font:48px/1.1 'Courier New',monospace;letter-spacing:-.06em;margin:0 0 22px;color:var(--lvd-b)}
+.bh-lavender.lvd-pillow-talk .lvd-name{order:2;margin:auto;text-align:center}
+.bh-lavender.lvd-pillow-talk .lvd-title{order:3;text-align:center;margin-bottom:17px}
+.bh-lavender.lvd-pillow-talk .lvd-media{order:1;justify-content:center;margin:0 0 16px;gap:11px}
+.bh-lavender.lvd-pillow-talk .lvd-media img{height:65px;max-width:76px;border-radius:32px;border-color:var(--lvd-c)}
+.bh-lavender.lvd-pillow-talk .lvd-copy{order:4}
+.bh-lavender.lvd-pillow-talk .lvd-hardware{order:5;margin-top:16px;height:30px;border-top:1px solid var(--lvd-line);background:radial-gradient(circle,rgba(var(--lvd-two),.65) 1px,transparent 1.4px) center 9px/6px 6px;clip-path:inset(7px 15px 0 round 10px)}
+.bh-lavender.lvd-bud{width:min(390px,100%);font:13px/1.8 Georgia,serif;padding:24px;border:1px solid var(--lvd-line)}
+.bh-lavender.lvd-bud .lvd-name{font-size:9px;letter-spacing:.1em}
+.bh-lavender.lvd-bud .lvd-title{font-size:23px;line-height:1.15;margin:7px 0 17px}
+.bh-lavender.lvd-bud .lvd-media{gap:8px;margin-bottom:16px}
+.bh-lavender.lvd-bud .lvd-media img{height:75px}
+.bh-lavender.lvd-calyx{border:0;border-left:4px solid rgb(var(--lvd-one));border-right:4px solid rgb(var(--lvd-three));border-radius:30px;padding:21px 25px 25px}
+.bh-lavender.lvd-calyx .lvd-title{max-width:90%}
+.bh-lavender.lvd-calyx .lvd-motif{position:absolute;top:21px;right:20px;width:16px;height:20px}
+.bh-lavender.lvd-calyx .lvd-motif::before{width:5px;height:8px;left:5px;top:0;border-radius:80% 20%;background:var(--lvd-flower);box-shadow:-5px 7px rgba(var(--lvd-one),.5),5px 7px rgba(var(--lvd-three),.5)}
+.bh-lavender.lvd-calyx .lvd-media img{border-radius:22px}
+.bh-lavender.lvd-lavandin{display:grid;grid-template-columns:72px minmax(0,1fr);column-gap:19px;border:0;padding:24px 27px 24px 15px;border-bottom:1px solid var(--lvd-line)}
+.bh-lavender.lvd-lavandin .lvd-name,.bh-lavender.lvd-lavandin .lvd-title,.bh-lavender.lvd-lavandin .lvd-copy{grid-column:2}
+.bh-lavender.lvd-lavandin .lvd-media{grid-column:1;grid-row:1/4;align-self:center;flex-direction:column;gap:10px;margin:0}
+.bh-lavender.lvd-lavandin .lvd-media img{width:100%;height:112px;flex:none;border-radius:85% 20% 85% 20%;border-color:var(--lvd-b);border-width:3px}
+.bh-lavender.lvd-lavandin .lvd-motif{position:absolute;top:20px;right:10px;width:10px;height:70px;background:repeating-linear-gradient(0deg,transparent 0 5px,rgba(var(--lvd-three),.45) 5px 9px);border-left:1px solid var(--lvd-line)}
+.bh-lavender.lvd-lavandin:not(:has(.lvd-media img[src]:not([src=""]):not([src="[url]"]))) :is(.lvd-name,.lvd-title,.lvd-copy){grid-column:1/-1}
+.bh-lavender.lvd-scent-letter{width:min(350px,100%);display:grid;grid-template-columns:23px minmax(0,1fr);gap:0 19px;border-radius:55px 5px 5px 55px;padding:30px 24px 30px 17px;border:1px solid var(--lvd-line);border-right:8px solid rgb(var(--lvd-three))}
+.bh-lavender.lvd-scent-letter .lvd-name{grid-column:1;grid-row:1/4;writing-mode:vertical-rl;transform:rotate(180deg);max-width:none;align-self:center;justify-self:center;letter-spacing:.09em}
+.bh-lavender.lvd-scent-letter .lvd-title,.bh-lavender.lvd-scent-letter .lvd-media,.bh-lavender.lvd-scent-letter .lvd-copy{grid-column:2}
+.bh-lavender.lvd-scent-letter .lvd-title{font-style:italic;border-bottom:1px solid var(--lvd-line);padding-bottom:12px;margin-top:0}
+.bh-lavender.lvd-scent-letter .lvd-media img{border-radius:8px}
+.bh-lavender.lvd-scent-letter .lvd-motif{grid-column:2;height:5px;width:36px;background:var(--lvd-gradient);margin-top:18px;border-radius:5px}
+.bh-lavender.lvd-twin-whorls{display:flex;flex-direction:column;border:0;padding:25px 24px;border-top:1px solid var(--lvd-line);border-bottom:1px solid var(--lvd-line)}
+.bh-lavender.lvd-twin-whorls .lvd-media{order:0;justify-content:center;margin:0 0 13px;gap:12px}
+.bh-lavender.lvd-twin-whorls .lvd-media img{max-width:68px;height:82px;border-radius:50%;border-width:3px}
+.bh-lavender.lvd-twin-whorls .lvd-media img:nth-child(even){border-color:rgba(var(--lvd-three),.8)}
+.bh-lavender.lvd-twin-whorls .lvd-name{order:1;margin:0 auto;text-align:center}
+.bh-lavender.lvd-twin-whorls .lvd-title{order:2;text-align:center;margin:7px 0 15px}
+.bh-lavender.lvd-twin-whorls .lvd-copy{order:4}
+.bh-lavender.lvd-twin-whorls .lvd-motif{order:3;height:12px;margin:0 auto 12px;width:60px;border-top:1px solid var(--lvd-line)}
+.bh-lavender.lvd-twin-whorls .lvd-motif::before{width:7px;height:12px;border:1px solid var(--lvd-a);border-radius:80% 0;top:-10px;left:21px;transform:rotate(-30deg)}
+.bh-lavender.lvd-twin-whorls .lvd-motif::after{width:7px;height:12px;border:1px solid var(--lvd-c);border-radius:0 80%;top:-10px;right:21px;transform:rotate(30deg)}
+.bh-lavender.lvd-afterbloom{border:0;background:transparent;padding:20px 23px 28px 42px}
+.bh-lavender.lvd-afterbloom .lvd-title{font-style:italic;font-size:26px;margin-right:15px}
+.bh-lavender.lvd-afterbloom .lvd-copy{padding-bottom:18px;background:var(--lvd-paper)}
+.bh-lavender.lvd-afterbloom::after{content:"";position:absolute;bottom:17px;left:42px;right:23px;height:3px;background:var(--lvd-gradient)}
+.bh-lavender.lvd-afterbloom .lvd-media img{height:75px;border-radius:12px}
+.bh-lavender.lvd-afterbloom .lvd-motif{position:absolute;top:17px;left:8px;width:23px;height:81px}
+.bh-lavender.lvd-afterbloom .lvd-motif::before{height:81px;width:23px;background:var(--lvd-gradient);mask:var(--lvd-sprig) center/contain no-repeat;-webkit-mask:var(--lvd-sprig) center/contain no-repeat;transform:rotate(180deg)}
+@container(max-width:350px){.bh-lavender .lvd-title{font-size:28px}.bh-lavender.lvd-thread .lvd-copy{font-size:13px}.bh-lavender.lvd-vesper-specimen .lvd-title{font-size:26px}.bh-lavender.lvd-inflorescence .lvd-media{gap:12px;padding-left:8px;padding-right:8px}.bh-lavender.lvd-inflorescence .lvd-media img{height:165px}.bh-lavender.lvd-comms .lvd-title{font-size:11px}.bh-lavender.lvd-bud .lvd-title{font-size:22px}.bh-lavender.lvd-parallel-fields .lvd-media{gap:12px}.bh-lavender.lvd-parallel-fields .lvd-media img{height:160px}.bh-lavender.lvd-parallel-fields .lvd-media img:nth-child(even){height:122px}.bh-lavender.lvd-vesper-specimen .lvd-media img{height:175px}.bh-lavender.lvd-lavandula-os .lvd-copy p{padding:10px;font-size:12px}}
+@media(forced-colors:active){.bh-lavender .lvd-title,.bh-lavender .lvd-copy :is(b,strong,i,em,u){background:none;-webkit-text-fill-color:currentColor;color:CanvasText}.bh-lavender{border:1px solid CanvasText}}
+
+.bh-lavender{--lvd-sprig:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2030%20110%22%3E%3Cpath%20d%3D%22M15%20106Q16%2071%2014%2029M15%2082Q4%2078%203%2065Q13%2068%2015%2082M15%2091Q28%2083%2027%2072Q18%2078%2015%2091%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%2F%3E%3Cg%20fill%3D%22black%22%3E%3Cellipse%20cx%3D%2214%22%20cy%3D%2210%22%20rx%3D%223.4%22%20ry%3D%228%22%2F%3E%3Cellipse%20cx%3D%229%22%20cy%3D%2224%22%20rx%3D%223.8%22%20ry%3D%227%22%20transform%3D%22rotate%28-27%209%2024%29%22%2F%3E%3Cellipse%20cx%3D%2219%22%20cy%3D%2224%22%20rx%3D%223.8%22%20ry%3D%227%22%20transform%3D%22rotate%2827%2019%2024%29%22%2F%3E%3Cellipse%20cx%3D%228%22%20cy%3D%2238%22%20rx%3D%224%22%20ry%3D%228%22%20transform%3D%22rotate%28-30%208%2038%29%22%2F%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%2238%22%20rx%3D%224%22%20ry%3D%228%22%20transform%3D%22rotate%2830%2020%2038%29%22%2F%3E%3Cellipse%20cx%3D%228%22%20cy%3D%2252%22%20rx%3D%224%22%20ry%3D%228%22%20transform%3D%22rotate%28-33%208%2052%29%22%2F%3E%3Cellipse%20cx%3D%2221%22%20cy%3D%2252%22%20rx%3D%224%22%20ry%3D%228%22%20transform%3D%22rotate%2833%2021%2052%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")}
+</style><style>:root{font-family:Arial,Helvetica,sans-serif;font-size:16px;--pv-bg:#eeecee;--pv-paper:#fff;--pv-ink:#342e38;--pv-muted:#776c7d;--pv-line:#d5cdd8;--pv-accent:#815069;--pv-tint:#f2e9ee;--mgrgb1:128,104,159;--mgrgb2:88,126,136;--mgrgb3:165,111,134;color-scheme:light}
+html[color-mode="dark"]{--pv-bg:#171419;--pv-paper:#231e27;--pv-ink:#efe8f0;--pv-muted:#b9afbe;--pv-line:#403645;--pv-accent:#d4aac2;--pv-tint:#382a35;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]){--pv-bg:#171419;--pv-paper:#231e27;--pv-ink:#efe8f0;--pv-muted:#b9afbe;--pv-line:#403645;--pv-accent:#d4aac2;--pv-tint:#382a35;color-scheme:dark}}
+body{margin:0;background:var(--pv-bg);color:var(--pv-ink)}
+body *{box-sizing:border-box}button,input,textarea,select{font:inherit}button,select,input,textarea{color:var(--pv-ink);border:1px solid var(--pv-line);background:var(--pv-paper);border-radius:7px}button,select{cursor:pointer}button{padding:9px 12px;font-size:13px}button:hover{border-color:var(--pv-accent);background:var(--pv-tint)}:is(button,a,input,select,textarea):focus-visible{outline:2px solid var(--pv-accent);outline-offset:3px}button[aria-pressed="true"]{background:var(--pv-tint);color:var(--pv-accent);border-color:var(--pv-accent)}[hidden]{display:none!important}
+.pv-top{display:flex;align-items:center;gap:22px;padding:22px 32px;border-bottom:1px solid var(--pv-line);background:var(--pv-paper);flex-wrap:wrap}.pv-brand{margin:0;font:italic 46px/.85 Georgia,serif;letter-spacing:-3px;color:var(--pv-accent)}.pv-sub{font-size:12px;color:var(--pv-muted);line-height:1.6;letter-spacing:.07em}.pv-toolbar{margin-left:auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center}.pv-toolbar label{font-size:12px;color:var(--pv-muted);display:flex;align-items:center;gap:7px}.pv-toolbar select{font-size:12px;padding:8px}.pv-colours{display:flex;gap:4px}.pv-colours input{width:26px;height:26px;padding:1px;border-radius:50%;cursor:pointer}.pv-colours input::-webkit-color-swatch{border:0;border-radius:50%}.pv-colours input::-webkit-color-swatch-wrapper{padding:2px}
+.pv-workspace{display:grid;grid-template-columns:185px minmax(350px,1fr) 330px;gap:0;max-width:1600px;margin:auto;align-items:start}.pv-nav{padding:20px 12px;position:sticky;top:0;max-height:100vh;overflow:auto}.pv-nav h2{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--pv-muted);margin:17px 10px 8px}.pv-choice{display:flex;gap:10px;width:100%;text-align:left;background:transparent;border-color:transparent;padding:9px 10px;margin:2px 0;font-size:12px;line-height:1.3}.pv-choice span{font:italic 13px Georgia,serif;color:var(--pv-muted)}.pv-choice[aria-current="true"]{border-color:var(--pv-line);background:var(--pv-paper);color:var(--pv-accent)}
+.pv-canvas{min-width:0;padding:25px 24px 55px;min-height:90vh;border-left:1px solid var(--pv-line);border-right:1px solid var(--pv-line)}.pv-caption{display:flex;align-items:start;justify-content:space-between;gap:16px;margin:0 auto 12px;max-width:580px}.pv-caption h2{margin:0;font:italic 24px/1.2 Georgia,serif}.pv-caption p{font-size:12px;color:var(--pv-muted);line-height:1.6;margin:7px 0 0;max-width:390px}.pv-stepper{display:flex;gap:6px}.pv-stepper button{padding:7px 10px;line-height:1}.pv-stage{margin:auto;max-width:100%;min-width:0;transition:width .2s}.pv-stage .bh-lavender{margin-top:28px}.pv-editor{padding:24px 22px;position:sticky;top:0;max-height:100vh;overflow:auto;background:var(--pv-paper)}.pv-editor h2{font-size:16px;margin:0 0 18px}.pv-field{display:block;font-size:12px;color:var(--pv-muted);margin:0 0 13px}.pv-field input,.pv-field select,.pv-field textarea{display:block;width:100%;margin-top:6px;padding:9px 10px;font-size:13px;line-height:1.45;background:var(--pv-bg)}.pv-field textarea{resize:vertical;min-height:180px;font:12px/1.65 'Courier New',monospace}.pv-field input{min-width:0}.pv-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pv-gif{padding:12px;border:1px solid var(--pv-line);border-radius:10px;margin-bottom:9px}.pv-gif .pv-field{margin-bottom:8px}.pv-gif button{padding:5px 8px;font-size:11px}.pv-gif-end{display:flex;align-items:end;gap:8px}.pv-gif-end label{flex:1;min-width:0}.pv-gif-end button{margin-bottom:8px}.pv-add{margin:0 0 17px}.pv-writing-label{display:flex;justify-content:space-between;gap:8px}.pv-count{font-size:11px}.pv-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.pv-primary{background:var(--pv-accent);color:var(--pv-paper);border-color:var(--pv-accent);font-weight:bold}.pv-primary:hover{color:var(--pv-accent)}.pv-hint{font-size:11px;line-height:1.65;color:var(--pv-muted);margin:7px 0 12px}.pv-editor details{margin-top:12px;font-size:12px}.pv-editor summary{cursor:pointer;color:var(--pv-accent)}.pv-code{width:100%;min-height:220px;margin-top:10px;padding:12px;font:11px/1.6 'Courier New',monospace;resize:vertical}.pv-status{font-size:12px;min-height:18px;color:var(--pv-accent);margin:8px 0}.pv-reset{border:0;background:transparent;padding:7px 0;font-size:11px;text-decoration:underline;color:var(--pv-muted)}
+.pv-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start;max-width:1650px;margin:0 auto;padding:27px}.pv-tile{min-width:0;border:1px solid var(--pv-line);border-radius:12px;background:var(--pv-paper);overflow:hidden}.pv-tile-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;border-bottom:1px solid var(--pv-line)}.pv-tile-head h2{font-size:14px;margin:0}.pv-tile-head small{display:block;font-size:10px;color:var(--pv-muted);letter-spacing:.07em;margin-top:5px;text-transform:uppercase}.pv-tile-head button{font-size:11px;padding:7px 9px}.pv-tile-stage{padding:8px 20px 16px;background:var(--pv-bg)}.pv-footer{padding:20px 32px;border-top:1px solid var(--pv-line);font-size:12px;color:var(--pv-muted);display:flex;flex-wrap:wrap;gap:18px}.pv-footer a{color:var(--pv-accent)}
+@media(min-width:1650px){.pv-workspace{grid-template-columns:220px minmax(350px,1fr) 370px}}
+@media(max-width:1120px){.pv-workspace{grid-template-columns:160px minmax(320px,1fr) 295px}.pv-canvas{padding:22px 18px}.pv-editor{padding:23px 16px}.pv-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:890px){.pv-workspace{grid-template-columns:150px minmax(0,1fr)}.pv-editor{position:static;grid-column:2;max-height:none;border-top:1px solid var(--pv-line)}.pv-canvas{min-height:0;border-right:0}.pv-nav{grid-row:1/3}.pv-top{padding:20px}.pv-toolbar{margin-left:0}.pv-stage{width:100%!important}.pv-gallery{padding:15px;gap:15px}}
+@media(max-width:570px){.pv-workspace{display:block}.pv-nav{position:static;display:flex;overflow-x:auto;padding:12px;gap:7px;max-height:none}.pv-nav h2{display:none}.pv-nav .pv-choice{white-space:nowrap;width:auto;margin:0}.pv-canvas{padding:20px 12px;border:0}.pv-editor{padding:24px 20px}.pv-caption{padding:0 9px}.pv-gallery{grid-template-columns:1fr;padding:12px}.pv-brand{font-size:42px}.pv-top{gap:15px}.pv-toolbar{gap:8px}.pv-sub{font-size:10px}.pv-footer{padding:20px}.pv-tile-stage{padding:8px 12px}}
+@media(prefers-reduced-motion:reduce){.pv-stage{transition:none}}
+
+.pv-brand{font-size:46px;font-weight:normal;letter-spacing:-2px;color:#80689f}.pv-top{border-bottom:1px solid var(--pv-line)}.pv-stage{background:radial-gradient(ellipse at 50% 20%,rgba(128,104,159,.07),transparent 70%)}.pv-tile{border-radius:18px}.pv-caption h2{font-size:28px}.pv-tile-head h2{font-family:Georgia,serif;font-weight:normal;font-size:20px}
+</style></head>
+<body>
+<header class="pv-top"><h1 class="pv-brand">Lavender</h1><div class="pv-sub">JINWOO & YOHAN · THE STILLROOM COLLECTION<br>05 THREADS · 05 COMMS · 05 BUDS</div><div class="pv-toolbar"><label>Mode <select id="pv-mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Members <select id="pv-palette"><option value="stillroom">Lavender</option><option value="lagoon">Lagoon</option><option value="ember">Ember</option><option value="mono">Monochrome</option><option value="custom">Custom</option></select></label><div class="pv-colours"><input id="pv-colour-1" aria-label="Member colour 1" type="color" value="#80689f"><input id="pv-colour-2" aria-label="Member colour 2" type="color" value="#587e88"><input id="pv-colour-3" aria-label="Member colour 3" type="color" value="#a56f86"></div><label>Width <select id="pv-width"><option value="full">Full</option><option value="375">375 px</option><option value="320">320 px</option></select></label><button id="pv-view-all" aria-pressed="false">View all 15</button></div></header>
+<main><div class="pv-workspace" id="pv-workspace"><nav class="pv-nav" id="pv-nav" aria-label="Lavender designs"></nav><section class="pv-canvas" aria-label="Template preview"><div class="pv-caption"><div><h2 id="pv-design-title">Stillroom Nocturne</h2><p id="pv-design-description"></p></div><div class="pv-stepper"><button id="pv-previous" aria-label="Previous design">‹</button><button id="pv-next" aria-label="Next design">›</button></div></div><div class="pv-stage" id="pv-stage"><div class="bh-lavender lvd-thread lvd-stillroom-nocturne">
+<a class="lvd-name" href="#">Jinwoo &amp; Yohan</a>
+<div class="lvd-title">the quiet we come home to</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div></div></section><aside class="pv-editor" id="pv-editor"><h2>Edit & copy</h2><label class="pv-field">Name<input id="pv-name" value="[name]"></label><label class="pv-field"><span id="pv-title-label">Title</span><input id="pv-title" value="[text]"></label><label class="pv-field">Name link<input id="pv-url" value="[url]"></label><div class="pv-two" id="pv-device-fields" hidden><label class="pv-field">Time<input id="pv-time" value="22:08"></label><label class="pv-field">Messages<select id="pv-flow"><option value="received">Received</option><option value="sent">Sent</option><option value="mixed">Alternating</option></select></label></div><div id="pv-gifs"></div><button class="pv-add" id="pv-add-gif">Add GIF</button><label class="pv-field"><span class="pv-writing-label">Writing<span id="pv-word-count" class="pv-count"></span></span><textarea id="pv-body" spellcheck="false"></textarea></label><p class="pv-hint">Use ordinary &lt;p&gt; paragraphs. [b], [i] and [u] are converted to HTML when copied. Preview colours and mode stay outside your posting code.</p><div class="pv-actions"><button id="pv-copy" class="pv-primary">Copy JCink code</button><button id="pv-download">Download .txt</button></div><p class="pv-status" id="pv-status" role="status" aria-live="polite"></p><details id="pv-code-details"><summary>View posting code</summary><textarea class="pv-code" id="pv-code" readonly aria-label="JCink posting code" spellcheck="false"></textarea></details><button id="pv-reset" class="pv-reset">Reset this design</button><p class="pv-hint">Edits remain while this page is open. Download an edited snippet to keep it.</p></aside></div><section id="pv-gallery" class="pv-gallery" aria-label="All fifteen Lavender designs" hidden></section></main>
+<footer class="pv-footer"><span>Lavender · The Stillroom collection</span><a href="https://github.com/lexdoescodingnow/templates/tree/main/lavender">GitHub collection</a><span>Member colours · Blue Hour light/dark · Ready for [dohtml]</span></footer>
+<script type="application/json" id="lavender-designs">[{"type":"thread","number":"01","name":"Stillroom Nocturne","slug":"stillroom-nocturne","gifs":1,"description":"A perfume-flask silhouette with sloping shoulders, a ribbed stopper and a wide photographic label above a generous reading panel.","sample":"the quiet we come home to"},{"type":"thread","number":"02","name":"Parallel Fields","slug":"parallel-fields","gifs":2,"description":"Two staggered portrait windows rise over fine furrow lines, with a wide serif heading and a divided member-colour frame.","sample":"somewhere between earth and sky"},{"type":"thread","number":"03","name":"Linen Devotion","slug":"linen-devotion","gifs":0,"description":"A writing-led lavender sachet, gathered at the neck and edged with small stitches, with an open bow above the title.","sample":"held gently, held close"},{"type":"thread","number":"04","name":"Vesper Specimen","slug":"vesper-specimen","gifs":1,"description":"A botanical study sheet with a tall oval portrait, an off-centre heading and a drawn lavender raceme in the margin.","sample":"a little study in tenderness"},{"type":"thread","number":"05","name":"Inflorescence","slug":"inflorescence","gifs":2,"description":"Two seed-head portraits grow from fine stems above a symmetrical title and an airy page with a branching lower flourish.","sample":"all the ways we bloom"},{"type":"comms","number":"01","name":"Duskline","slug":"duskline","gifs":1,"description":"A softly arched smartphone with a seed-shaped contact portrait, an inset earpiece and generous incoming message bubbles.","sample":"online · stay a little longer"},{"type":"comms","number":"02","name":"Sachet Sync","slug":"sachet-sync","gifs":2,"description":"A book-style folding phone with two portrait tiles in its cover screen and a separate conversation display across a narrow hinge.","sample":"connected · just the two of us"},{"type":"comms","number":"03","name":"Stemwave","slug":"stemwave","gifs":0,"description":"A slender candybar messenger with a tall signal rail, square inset bubbles and a tactile twelve-key lower panel.","sample":"private line · available"},{"type":"comms","number":"04","name":"Lavandula OS","slug":"lavandula-os","gifs":1,"description":"A desktop messenger window with a narrow portrait sidebar, small window controls and a wide neutral conversation pane.","sample":"one conversation · two hearts"},{"type":"comms","number":"05","name":"Pillow Talk","slug":"pillow-talk","gifs":2,"description":"A bedside smart clock with a large time display, paired contact tiles, rounded message cards and a perforated speaker base.","sample":"before we fall asleep"},{"type":"bud","number":"01","name":"Calyx","slug":"calyx","gifs":0,"description":"A compact capsule note held between three-colour brackets, with a tiny lavender-flower punctuation mark.","sample":"a small beginning"},{"type":"bud","number":"02","name":"Lavandin","slug":"lavandin","gifs":1,"description":"A tiny seed-shaped portrait nestles beside a short reply, with three descending stitch lines in the opposite margin.","sample":"a moment kept close"},{"type":"bud","number":"03","name":"Scent Letter","slug":"scent-letter","gifs":0,"description":"A slim perfume blotter with a rounded tip, a narrow vertical name rail and a spare little note.","sample":"a trace of you"},{"type":"bud","number":"04","name":"Twin Whorls","slug":"twin-whorls","gifs":2,"description":"Two miniature oval portraits sit like paired flowers at the centre of a branching divider above a brief reply.","sample":"two little reasons"},{"type":"bud","number":"05","name":"Afterbloom","slug":"afterbloom","gifs":0,"description":"An open miniature folio with a small descending seed-head motif and an offset member-colour underline.","sample":"what stays with us"}]</script><script>const LAVENDER_GIFS = [
+  'https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv',
+  'https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv'
+];
+const LAVENDER_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css';
+const LAVENDER_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\n\n<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>';
+const LAVENDER_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
+const LAVENDER_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+function lavenderEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function lavenderDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'22:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:LAVENDER_GIFS[i%2],position:'50% 45%'})),body:design.type==='thread'?LAVENDER_THREAD:design.type==='comms'?LAVENDER_COMMS:LAVENDER_BUD }; }
+function lavenderFilename(design) { return `lavender-${design.slug}-${design.type}-${design.number}.txt`; }
+function lavenderMarkup(design,state) {
+  const flow=design.type==='comms'?` data-flow="${lavenderEscape(state.flow)}"`:'';
+  const lines=[`<div class="bh-lavender lvd-${design.type} lvd-${design.slug}"${flow}>`,`<a class="lvd-name" href="${lavenderEscape(state.url)}">${lavenderEscape(state.name)}</a>`,`<div class="lvd-title">${lavenderEscape(state.title)}</div>`];
+  if(design.type==='comms') lines.push(`<div class="lvd-time">${lavenderEscape(state.time)}</div>`);
+  const gifs=state.gifs.filter(g=>g.url.trim());
+  if(gifs.length) { lines.push('<div class="lvd-media">'); gifs.forEach(g=>lines.push(`<img src="${lavenderEscape(g.url.trim())}" alt="Character GIF" style="object-position:${lavenderEscape(g.position)}">`)); lines.push('</div>'); }
+  lines.push('<div class="lvd-copy">',state.body,'</div>',`<div class="${design.type==='comms'?'lvd-hardware':'lvd-motif'}" aria-hidden="true"></div>`,'</div>');
+  return lines.join('\n');
+}
+function lavenderSnippet(design,state) { return '[dohtml]\n'+lavenderMarkup(design,state)+'\n\n<link rel="stylesheet" href="'+LAVENDER_CSS_URL+'">\n[/dohtml]\n'; }
+if(typeof module!=='undefined') module.exports={LAVENDER_GIFS,LAVENDER_CSS_URL,lavenderDefaults,lavenderFilename,lavenderMarkup,lavenderSnippet};
+</script><script>const lavenderDesigns = JSON.parse(document.querySelector('#lavender-designs').textContent);
+const lavenderStates = lavenderDesigns.map(lavenderDefaults);
+let lavenderIndex = 0;
+let lavenderGallery = false;
+const $ = selector => document.querySelector(selector);
+const labels = {thread:'Threads',comms:'Comms',bud:'Buds'};
+function lavenderSafeUrl(value,placeholder=true) {
+  const text=value.trim();
+  if(placeholder&&text==='[url]') return text;
+  if(!text) return '';
+  try { const u=new URL(text); return ['http:','https:'].includes(u.protocol)?text:'#'; } catch { return '#'; }
+}
+function lavenderCleanWriting(input) {
+  let html=input.replace(/\[(\/?)(b|i|u)\]/gi,'<$1$2>');
+  if(!/<p[\s>]/i.test(html)) html=html.split(/\n\s*\n/).filter(x=>x.trim()).map(x=>`<p>${x.replace(/\n/g,'<br>')}</p>`).join('\n');
+  const root=document.createElement('template');root.innerHTML=html;
+  function clean(parent) {
+    for(const node of [...parent.childNodes]) {
+      if(node.nodeType===8){node.remove();continue;}
+      if(node.nodeType!==1)continue;
+      if(['SCRIPT','STYLE','IFRAME','OBJECT','EMBED','FORM','INPUT'].includes(node.tagName)){node.remove();continue;}
+      clean(node);
+      if(!['P','BR','B','STRONG','I','EM','U','A'].includes(node.tagName)){node.replaceWith(...node.childNodes);continue;}
+      const href=node.tagName==='A'?lavenderSafeUrl(node.getAttribute('href')||''):null;
+      [...node.attributes].forEach(a=>node.removeAttribute(a.name));
+      if(href)node.setAttribute('href',href);
+    }
+  }
+  clean(root.content);return root.innerHTML;
+}
+function lavenderDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Jinwoo & Yohan':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function lavenderRender() {
+  const d=lavenderDesigns[lavenderIndex],s=lavenderStates[lavenderIndex];
+  $('#pv-stage').innerHTML=lavenderMarkup(d,lavenderDisplayState(d,s));
+  $('#pv-code').value=lavenderSnippet(d,s);
+  $('#pv-design-title').textContent=d.name;
+  $('#pv-design-description').textContent=d.description;
+  const wordText=document.createElement('div');wordText.innerHTML=s.body;
+  const count=(wordText.textContent.trim().match(/\S+/g)||[]).length;
+  $('#pv-word-count').textContent=`${count} words${d.type==='bud'?' · 100 suggested':''}`;
+  document.querySelectorAll('.pv-choice').forEach((el,i)=>el.setAttribute('aria-current',String(i===lavenderIndex)));
+  $('#pv-status').textContent='';
+}
+function lavenderRenderGifs() {
+  const group=$('#pv-gifs');group.replaceChildren();
+  lavenderStates[lavenderIndex].gifs.forEach((gif,index)=>{
+    const box=document.createElement('div');box.className='pv-gif';
+    box.innerHTML=`<label class="pv-field">GIF ${index+1} URL<input type="url" data-gif="${index}" value="${lavenderEscape(gif.url)}"></label><div class="pv-gif-end"><label class="pv-field">Crop position<input data-position="${index}" value="${lavenderEscape(gif.position)}"></label><button type="button" data-remove="${index}" aria-label="Remove GIF ${index+1}">Remove</button></div>`;
+    group.append(box);
+  });
+}
+function lavenderSelect(index) {
+  lavenderIndex=(index+lavenderDesigns.length)%lavenderDesigns.length;
+  const d=lavenderDesigns[lavenderIndex],s=lavenderStates[lavenderIndex];
+  $('#pv-name').value=s.name;$('#pv-title').value=s.title;$('#pv-url').value=s.url;$('#pv-time').value=s.time;$('#pv-flow').value=s.flow;$('#pv-body').value=s.body;
+  $('#pv-device-fields').hidden=d.type!=='comms';
+  $('#pv-title-label').textContent=d.type==='comms'?'Status':'Title';
+  lavenderRenderGifs();lavenderRender();
+}
+function lavenderBuildGallery() {
+  const gallery=$('#pv-gallery');gallery.replaceChildren();
+  lavenderDesigns.forEach((d,i)=>{
+    const tile=document.createElement('section');tile.className='pv-tile';
+    tile.innerHTML=`<div class="pv-tile-head"><h2>${lavenderEscape(d.name)}<small>${d.type==='bud'?'Buds':d.type} ${d.number} · Lavender</small></h2><button data-open="${i}">Edit & copy</button></div><div class="pv-tile-stage">${lavenderMarkup(d,lavenderDisplayState(d,lavenderStates[i]))}</div>`;
+    gallery.append(tile);
+  });
+}
+function lavenderToggleGallery(value) {
+  lavenderGallery=value;$('#pv-workspace').hidden=value;$('#pv-gallery').hidden=!value;
+  $('#pv-view-all').textContent=value?'Back to editor':'View all 15';$('#pv-view-all').setAttribute('aria-pressed',String(value));
+  if(value)lavenderBuildGallery();
+}
+const nav=$('#pv-nav');
+Object.entries(labels).forEach(([kind,label])=>{
+  const heading=document.createElement('h2');heading.textContent=label;nav.append(heading);
+  lavenderDesigns.forEach((d,i)=>{if(d.type===kind){const button=document.createElement('button');button.className='pv-choice';button.innerHTML=`<span>${d.number}</span>${lavenderEscape(d.name)}`;button.onclick=()=>lavenderSelect(i);nav.append(button);}});
+});
+$('#pv-editor').addEventListener('input',event=>{
+  const e=event.target,s=lavenderStates[lavenderIndex];
+  if(e.id==='pv-name')s.name=e.value;
+  else if(e.id==='pv-title')s.title=e.value;
+  else if(e.id==='pv-url')s.url=lavenderSafeUrl(e.value);
+  else if(e.id==='pv-time')s.time=e.value;
+  else if(e.id==='pv-flow')s.flow=e.value;
+  else if(e.id==='pv-body')s.body=lavenderCleanWriting(e.value);
+  else if(e.hasAttribute('data-gif'))s.gifs[Number(e.dataset.gif)].url=lavenderSafeUrl(e.value,false);
+  else if(e.hasAttribute('data-position')){s.gifs[Number(e.dataset.position)].position=/^\d{1,3}%\s+\d{1,3}%$/.test(e.value.trim())?e.value.trim():'50% 50%';}
+  lavenderRender();
+});
+$('#pv-gifs').addEventListener('click',event=>{const b=event.target.closest('[data-remove]');if(b){lavenderStates[lavenderIndex].gifs.splice(Number(b.dataset.remove),1);lavenderRenderGifs();lavenderRender();}});
+$('#pv-add-gif').onclick=()=>{const gifs=lavenderStates[lavenderIndex].gifs;gifs.push({url:LAVENDER_GIFS[gifs.length%2],position:'50% 45%'});lavenderRenderGifs();lavenderRender();};
+$('#pv-previous').onclick=()=>lavenderSelect(lavenderIndex-1);$('#pv-next').onclick=()=>lavenderSelect(lavenderIndex+1);
+$('#pv-view-all').onclick=()=>lavenderToggleGallery(!lavenderGallery);
+$('#pv-gallery').addEventListener('click',event=>{const b=event.target.closest('[data-open]');if(b){lavenderToggleGallery(false);lavenderSelect(Number(b.dataset.open));window.scrollTo({top:0,behavior:'instant'});}});
+$('#pv-mode').onchange=event=>{if(event.target.value==='system')document.documentElement.removeAttribute('color-mode');else document.documentElement.setAttribute('color-mode',event.target.value);};
+$('#pv-width').onchange=event=>{$('#pv-stage').style.width=event.target.value==='full'?'100%':event.target.value+'px';};
+const lavenderPalettes={stillroom:['#80689f','#587e88','#a56f86'],lagoon:['#148578','#397bbc','#a260b4'],ember:['#bb6541','#ac465e','#8064ad'],mono:['#777777','#989898','#666666']};
+function lavenderApplyPalette(values) { values.forEach((hex,i)=>{const n=parseInt(hex.slice(1),16);document.documentElement.style.setProperty(`--mgrgb${i+1}`,`${n>>16},${n>>8&255},${n&255}`);$(`#pv-colour-${i+1}`).value=hex;}); }
+$('#pv-palette').onchange=event=>{if(lavenderPalettes[event.target.value])lavenderApplyPalette(lavenderPalettes[event.target.value]);};
+[1,2,3].forEach(i=>$(`#pv-colour-${i}`).oninput=()=>{lavenderApplyPalette([1,2,3].map(j=>$(`#pv-colour-${j}`).value));$('#pv-palette').value='custom';});
+$('#pv-copy').onclick=async()=>{
+  const code=$('#pv-code');
+  try { await navigator.clipboard.writeText(code.value);$('#pv-status').textContent='JCink code copied.'; }
+  catch { $('#pv-code-details').open=true;code.focus();code.select();$('#pv-status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.'; }
+};
+$('#pv-download').onclick=()=>{const url=URL.createObjectURL(new Blob([$('#pv-code').value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=lavenderFilename(lavenderDesigns[lavenderIndex]);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('#pv-status').textContent='Your edited snippet is ready to save.';};
+$('#pv-reset').onclick=()=>{lavenderStates[lavenderIndex]=lavenderDefaults(lavenderDesigns[lavenderIndex]);lavenderSelect(lavenderIndex);};
+document.addEventListener('click',event=>{const a=event.target.closest('.bh-lavender a');if(a&&a.getAttribute('href')==='#')event.preventDefault();});
+lavenderSelect(0);
+</script>
+</body></html>
