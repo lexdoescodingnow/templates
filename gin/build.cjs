@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const dir=__dirname;
+const designs=JSON.parse(fs.readFileSync(path.join(dir,'designs.json'),'utf8'));
+const model=require('./gin-model.js');
+for(const d of designs)fs.writeFileSync(path.join(dir,model.ginFilename(d)),model.ginSnippet(d,model.ginDefaults(d)));
+const read=n=>fs.readFileSync(path.join(dir,n),'utf8');
+const css=read('gin-preview.css')+'\n'+read('gin-distillery-v1.css');
+const script=read('gin-model.js')+'\nconst GIN_DESIGNS = '+JSON.stringify(designs)+';\n'+read('gin-editor.js');
+fs.writeFileSync(path.join(dir,'gin-collection-preview.html'),read('preview-shell.html').replace('GIN_STYLES',()=>css).replace('GIN_SCRIPT',()=>script));
+console.log('Built 15 Gin snippets and the standalone editor.');
