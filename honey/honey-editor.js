@@ -72,4 +72,3 @@ for(let i=1;i<=3;i++)el('colour-'+i).addEventListener('input',()=>{const hex=el(
 honeySelect(HONEY_DESIGNS[0].slug);
 
 el('preview-width').addEventListener('change',()=>el('stage').style.width=el('preview-width').value);
-
