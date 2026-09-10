@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const dir=__dirname;
+const read=n=>fs.readFileSync(path.join(dir,n),'utf8');
+const designs=JSON.parse(read('designs.json'));
+const model=require('./fiery-model.js');
+for(const d of designs)fs.writeFileSync(path.join(dir,model.fieryFilename(d)),model.fierySnippet(d,model.fieryDefaults(d)));
+const css=read('fiery-preview.css')+'\n'+read('fiery-ignition-v1.css');
+const script=read('fiery-model.js')+'\nconst FIERY_DESIGNS = '+JSON.stringify(designs)+';\n'+read('fiery-editor.js');
+fs.writeFileSync(path.join(dir,'fiery-collection-preview.html'),read('preview-shell.html').replace('FIERY_STYLES',()=>css).replace('FIERY_SCRIPT',()=>script));
+console.log('Built 15 Fiery snippets and the standalone editor.');
