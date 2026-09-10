@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nectarine · Akara & Clarity</title><style>:root{color-scheme:light;--page:#eeedea;--surface:#fafaf8;--text:#29262b;--subtle:#69646e;--edge:#d6d0d6;--accent:#3f6866;--mgrgb1:85,127,130;--mgrgb2:146,115,154;--mgrgb3:177,125,134}
+html[color-mode="dark"]{color-scheme:dark;--page:#151519;--surface:#232328;--text:#f0ecf1;--subtle:#bab2bf;--edge:#44404b;--accent:#9fcac3}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--text);font:16px/1.6 'Trebuchet MS',Arial,sans-serif}button,input,select,textarea{font:inherit}button,select,input,textarea{color:var(--text);background:var(--surface);border:1px solid var(--edge);border-radius:6px}button{padding:9px 16px;cursor:pointer}button:hover{border-color:var(--accent)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}a{color:var(--accent)}.collection-top{padding:26px 4vw 19px;border-bottom:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:italic 43px/1 Georgia,serif;letter-spacing:-.045em}.couple{margin-top:8px;color:var(--subtle);font-size:14px}.tools{display:flex;align-items:center;flex-wrap:wrap;gap:10px}.tools label{font-size:14px}.tools select{padding:8px}.colour-pair{display:flex;align-items:center;gap:6px}.colour-pair input{width:35px;height:34px;padding:3px;cursor:pointer}.workspace{display:grid;grid-template-columns:270px minmax(0,1fr) 340px;min-height:calc(100vh - 105px)}.design-nav{padding:22px 18px;border-right:1px solid var(--edge);background:var(--surface)}.design-nav h2{font:700 12px/1.4 'Trebuchet MS',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:20px 10px 9px;color:var(--subtle)}.design-nav h2:first-child{margin-top:0}.design-nav button{width:100%;display:flex;gap:12px;text-align:left;border:0;background:transparent;padding:9px 10px}.design-nav button[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 12%,var(--surface));color:var(--accent);box-shadow:inset 3px 0 var(--accent)}.design-nav button small{font-size:12px;opacity:.7;padding-top:2px}.preview-column{padding:23px 28px 40px;min-width:0}.preview-heading{display:flex;justify-content:space-between;gap:15px;align-items:start;max-width:680px;margin:0 auto 18px}.preview-heading h1{font:normal 27px/1.2 Georgia,serif;margin:0 0 8px}.preview-heading p{margin:0;font-size:14px;line-height:1.5;color:var(--subtle);max-width:450px}.preview-heading span{font:12px/1.4 'Trebuchet MS',Arial,sans-serif;white-space:nowrap;border:1px solid var(--edge);border-radius:20px;padding:5px 10px;color:var(--subtle)}#stage{min-width:0;max-width:100%;padding:4px 0 18px}#stage .bh-nectarine{margin:25px auto}#stage .nc-name{pointer-events:none}.editor{padding:23px 20px;background:var(--surface);border-left:1px solid var(--edge);min-width:0}.editor h2{font:normal 25px/1.2 Georgia,serif;margin:0 0 19px}.editor label,.editor legend{display:block;font-size:14px;color:var(--subtle);margin-bottom:6px}.field{margin:0 0 14px}.field input,.field select,.field textarea{width:100%;padding:8px 10px;border-radius:5px}.field textarea{min-height:160px;resize:vertical;line-height:1.6;font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}fieldset{padding:0;border:0;margin:0 0 15px}.gif-entry{padding:10px;margin-bottom:10px;border:1px solid var(--edge);border-radius:7px}.gif-entry input[type="url"]{width:100%;padding:7px 8px;font-size:13px}.gif-bottom{display:flex;gap:12px;align-items:center;margin-top:9px}.gif-bottom label{display:flex;align-items:center;gap:7px;margin:0;font-size:12px}.gif-bottom input[type="range"]{width:90px}.gif-bottom button{margin-left:auto;font-size:12px;padding:5px 8px}.secondary{font-size:14px;padding:6px 11px}.actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0 10px}.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}#status{min-height:22px;font-size:13px;color:var(--accent)}.code-panel{max-width:680px;margin:0 auto;border-top:1px solid var(--edge);padding-top:18px}.code-panel summary{cursor:pointer;font-size:14px;color:var(--accent)}#code{width:100%;height:230px;resize:vertical;margin-top:12px;padding:15px;font:12px/1.6 'Courier New',monospace}.editor-note{font-size:13px;line-height:1.6;color:var(--subtle)}.editor-note code{font-size:12px}.footer-links{font-size:13px;display:flex;gap:17px;margin:17px 0 0}.word-count{font-size:12px;color:var(--subtle);margin-top:5px}.word-count.over{color:#b13d64}[hidden]{display:none!important}@media(max-width:1150px){.workspace{grid-template-columns:215px minmax(0,1fr)}.editor{grid-column:1/-1;border-top:1px solid var(--edge);border-left:0;display:grid;grid-template-columns:1fr 1fr;gap:0 25px}.editor h2,.editor .actions,.editor #status,.editor .editor-note{grid-column:1/-1}.editor .writing-field{grid-column:1/-1}.editor .writing-field textarea{min-height:160px}.preview-column{padding-left:22px;padding-right:22px}}@media(max-width:670px){.collection-top{padding:20px;align-items:start;flex-direction:column}.brand{font-size:38px}.tools{gap:9px}.workspace{display:block}.design-nav{display:flex;overflow-x:auto;gap:10px;padding:12px 17px;border-right:0;border-bottom:1px solid var(--edge)}.nav-group{min-width:200px}.design-nav h2{margin:0 10px 5px;font-size:12px}.design-nav button{font-size:14px;padding:7px 10px}.preview-column{padding:22px 16px}.preview-heading h1{font-size:25px}.preview-heading span{display:none}.editor{display:block;padding:22px 20px}.editor textarea{min-height:170px}}
+.brand{font:italic 58px/.85 Georgia,serif;letter-spacing:-.06em}.collection-top{border-top:4px solid var(--accent)}.design-nav button{border-radius:4px 16px 4px 4px}#stage{margin-inline:auto}.preview-heading h1{font-style:italic}.tools{max-width:680px}
+
+.brand{font:600 43px/1 Georgia,serif;letter-spacing:-.06em}.collection-top{border-top:0;background:var(--surface)}.design-nav button{border-radius:0}.preview-heading h1{font-style:normal}.workspace{grid-template-columns:230px minmax(0,1fr) 330px}@media(max-width:1150px){.workspace{grid-template-columns:210px minmax(0,1fr)}}
+
+.bh-nectarine{--nc-bg:#fbfaf8;--nc-panel:#f0efec;--nc-ink:#302e34;--nc-muted:#716c74;--nc-edge:#d8d3d7;--nc-g1:rgb(var(--mgrgb1,108,136,145));--nc-g2:rgb(var(--mgrgb2,167,130,155));--nc-g3:rgb(var(--mgrgb3,178,148,130));--nc-c1:color-mix(in srgb,var(--nc-g1) 64%,var(--nc-ink));--nc-c2:color-mix(in srgb,var(--nc-g2) 64%,var(--nc-ink));--nc-c3:color-mix(in srgb,var(--nc-g3) 64%,var(--nc-ink));--nc-grad:linear-gradient(115deg,var(--nc-g1),var(--nc-g2),var(--nc-g3));--nc-forward:linear-gradient(115deg,var(--nc-c1),var(--nc-c2),var(--nc-c3));--nc-reverse:linear-gradient(115deg,var(--nc-c3),var(--nc-c2),var(--nc-c1));--nc-tint:color-mix(in srgb,var(--nc-g1) 9%,var(--nc-bg));box-sizing:border-box;position:relative;isolation:isolate;container-type:inline-size;display:grid;grid-template-columns:minmax(0,1fr);width:min(100%,550px);margin:30px auto;padding:30px;gap:14px;background:var(--nc-bg);color:var(--nc-ink);text-align:left;font:15px/1.85 Georgia,'Times New Roman',serif;overflow-wrap:anywhere;color-scheme:light}
+html[color-mode="dark"] .bh-nectarine{--nc-bg:#202024;--nc-panel:#29292e;--nc-ink:#eeebed;--nc-muted:#b7b0ba;--nc-edge:#48434b;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-nectarine{--nc-bg:#202024;--nc-panel:#29292e;--nc-ink:#eeebed;--nc-muted:#b7b0ba;--nc-edge:#48434b;color-scheme:dark}}
+.bh-nectarine *,.bh-nectarine *::before,.bh-nectarine *::after,.bh-nectarine::before,.bh-nectarine::after{box-sizing:border-box}
+.bh-nectarine>*{position:relative;min-width:0;z-index:1}
+.bh-nectarine .nc-name{grid-area:name;justify-self:start;align-self:center;color:var(--nc-c1);font:700 11px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:0;padding:0;max-width:100%}
+.bh-nectarine .nc-title{grid-area:title;color:var(--nc-c2);background:var(--nc-forward);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font:normal 38px/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.045em;text-wrap:balance;padding:2px 0 5px}
+.bh-nectarine .nc-copy{grid-area:copy;min-width:0;font:inherit;color:var(--nc-ink)}
+.bh-nectarine .nc-copy p{margin:0 0 1.25em;padding:0;font:inherit;color:inherit;text-align:inherit}
+.bh-nectarine .nc-copy p:last-child{margin-bottom:0}
+.bh-nectarine .nc-copy :is(b,strong,u){color:var(--nc-c1);background:var(--nc-forward);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.bh-nectarine .nc-copy :is(i,em){color:var(--nc-c3);background:var(--nc-reverse);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.bh-nectarine .nc-copy :is(b,strong){font-weight:700}
+.bh-nectarine .nc-copy :is(i,em){font-style:italic}
+.bh-nectarine .nc-copy u{text-decoration-line:underline;text-decoration-color:var(--nc-c2);text-decoration-thickness:1px;text-underline-offset:3px}
+.bh-nectarine .nc-copy a{color:var(--nc-c1);text-decoration:underline;text-decoration-color:var(--nc-g3);text-underline-offset:3px}
+.bh-nectarine a:focus-visible{outline:2px solid var(--nc-c1);outline-offset:4px}
+.bh-nectarine .nc-media{grid-area:media;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,65px),1fr));gap:9px;min-width:0;align-self:stretch}
+.bh-nectarine .nc-media:empty{display:none}
+.bh-nectarine .nc-media img{display:block;width:100%;min-width:0;height:100%;max-width:100%;min-height:0;aspect-ratio:1/1;object-fit:cover;border:0;border-radius:inherit;background:var(--nc-grad);color:var(--nc-ink);font:11px Arial,sans-serif}
+.bh-nectarine .nc-mark{grid-area:mark;pointer-events:none}
+.bh-nectarine .nc-time{grid-area:time;color:var(--nc-c1);font:600 10px/1.2 Arial,sans-serif;letter-spacing:.06em}
+.bh-nectarine .nc-hardware{grid-area:hardware;pointer-events:none;display:flex;justify-content:center;gap:12px;align-items:center}
+.bh-nectarine .nc-hardware span{display:block;width:7px;height:7px;border:1px solid var(--nc-g2);border-radius:50%}
+.bh-nectarine .nc-hardware span:nth-child(2){background:var(--nc-g1);border-color:var(--nc-g1)}
+.bh-nectarine.nc-thread{grid-template-areas:'name' 'title' 'media' 'copy' 'mark'}
+.bh-nectarine.nc-suture-study{grid-template-columns:112px minmax(0,1fr);grid-template-areas:'media name' 'media title' 'copy copy' 'mark mark';column-gap:25px;row-gap:14px;padding:35px 34px 26px;border-right:1px solid var(--nc-g3);border-bottom:3px solid var(--nc-g1)}
+.bh-nectarine.nc-suture-study::before{content:'';position:absolute;z-index:0;width:175px;height:192px;top:16px;left:10px;border:1px solid var(--nc-g2);border-radius:49% 51% 44% 56%;transform:rotate(-13deg)}
+.bh-nectarine.nc-suture-study::after{content:'';position:absolute;z-index:0;left:20px;top:225px;bottom:32px;width:2px;background:linear-gradient(var(--nc-g1),transparent)}
+.bh-nectarine.nc-suture-study .nc-media{min-height:172px;border-radius:52% 48% 47% 53%;border:3px solid var(--nc-bg);outline:1px solid var(--nc-g1);gap:4px;overflow:hidden}
+.bh-nectarine.nc-suture-study .nc-media img{aspect-ratio:2/3}
+.bh-nectarine.nc-suture-study .nc-name{align-self:end}
+.bh-nectarine.nc-suture-study .nc-title{font-style:italic;align-self:start;font-size:36px}
+.bh-nectarine.nc-suture-study .nc-copy{padding:28px 0 3px}
+.bh-nectarine.nc-suture-study .nc-mark{height:8px;width:58px;border-radius:50%;background:var(--nc-grad);justify-self:end}
+.bh-nectarine.nc-suture-study:not(:has(.nc-media img)){grid-template-columns:minmax(0,1fr);grid-template-areas:'name' 'title' 'copy' 'mark'}
+.bh-nectarine.nc-suture-study:not(:has(.nc-media img))::before{width:70px;height:80px;left:auto;right:15px;opacity:.2}
+.bh-nectarine.nc-cheek-to-cheek{grid-template-areas:'media' 'title' 'name' 'copy' 'mark';gap:0;padding:24px 24px 0;background:linear-gradient(var(--nc-bg),var(--nc-bg)) padding-box,var(--nc-grad) border-box;border:2px solid transparent;border-radius:100px 8px 8px 8px}
+.bh-nectarine.nc-cheek-to-cheek .nc-media{gap:6px;padding-bottom:24px;align-items:end}
+.bh-nectarine.nc-cheek-to-cheek .nc-media img{height:180px;aspect-ratio:1/1;border-radius:90px 6px 5px 30px;outline:1px solid var(--nc-g1);outline-offset:3px}
+.bh-nectarine.nc-cheek-to-cheek .nc-media img:nth-child(even){height:147px;border-radius:6px 70px 30px 5px;outline-color:var(--nc-g3)}
+.bh-nectarine.nc-cheek-to-cheek .nc-title{font-size:44px;font-style:italic;max-width:90%;padding:4px 0 12px}
+.bh-nectarine.nc-cheek-to-cheek .nc-name{justify-self:end;padding-bottom:20px}
+.bh-nectarine.nc-cheek-to-cheek .nc-copy{padding:25px 6px 26px;border-top:1px solid var(--nc-g2)}
+.bh-nectarine.nc-cheek-to-cheek .nc-mark{width:38%;height:6px;border-radius:5px 5px 0 0;background:var(--nc-grad);justify-self:center}
+.bh-nectarine.nc-freestone-journal{grid-template-areas:'name' 'title' 'media' 'copy' 'mark';gap:16px;padding:39px 34px 25px;border:1px solid var(--nc-edge)}
+.bh-nectarine.nc-freestone-journal::before{content:'';position:absolute;inset:16px 18px auto;height:190px;border:2px solid var(--nc-g1);border-bottom-color:transparent;border-right-color:var(--nc-g3);border-radius:50% 48% 42% 45%;transform:rotate(-5deg);opacity:.4;z-index:0}
+.bh-nectarine.nc-freestone-journal .nc-name{justify-self:center}
+.bh-nectarine.nc-freestone-journal .nc-title{text-align:center;font:900 46px/.97 'Arial Narrow',Arial,sans-serif;letter-spacing:-.06em;padding:16px 0 22px}
+.bh-nectarine.nc-freestone-journal .nc-copy{background:var(--nc-bg);border-top:3px double var(--nc-g2);padding-top:28px}
+.bh-nectarine.nc-freestone-journal .nc-media img{max-height:180px;aspect-ratio:2/1}
+.bh-nectarine.nc-freestone-journal .nc-mark{width:76px;height:24px;border:1px solid var(--nc-g3);border-radius:50%;background:repeating-linear-gradient(90deg,transparent 0 6px,var(--nc-g1) 6px 7px,transparent 7px 11px);justify-self:center;transform:rotate(-8deg);opacity:.7}
+.bh-nectarine.nc-nectar-current{grid-template-areas:'name' 'title' 'copy' 'media' 'mark';padding:36px 35px 23px;gap:18px;border-left:3px solid var(--nc-g1);border-radius:0 85px 0 30px}
+.bh-nectarine.nc-nectar-current::before{content:'';position:absolute;inset:10px 12px 12px 10px;border:1px solid var(--nc-g2);border-left:0;border-radius:0 70px 0 26px;z-index:0;pointer-events:none}
+.bh-nectarine.nc-nectar-current .nc-title{max-width:88%;font-size:42px}
+.bh-nectarine.nc-nectar-current .nc-copy{padding:7px 0 10px}
+.bh-nectarine.nc-nectar-current .nc-media{border-top:1px solid var(--nc-g3);padding-top:10px}
+.bh-nectarine.nc-nectar-current .nc-media img{height:130px;aspect-ratio:3/1;border-radius:2px 2px 36px 2px}
+.bh-nectarine.nc-nectar-current .nc-mark{height:20px;width:20px;border-radius:65% 35% 65% 0;background:var(--nc-grad);transform:rotate(-45deg);justify-self:end;margin:1px 7px 0}
+.bh-nectarine.nc-espalier-letters{grid-template-areas:'title' 'name' 'media' 'copy' 'mark';padding:23px 30px 27px;gap:20px;background:var(--nc-bg);border:0}
+.bh-nectarine.nc-espalier-letters .nc-title{padding:24px 16px 29px;border-top:1px solid var(--nc-g1);border-bottom:1px solid var(--nc-g3);font-size:45px}
+.bh-nectarine.nc-espalier-letters .nc-title::before{content:'';position:absolute;inset:-9px 22px -9px auto;width:18%;border-left:1px solid var(--nc-g2);border-right:5px solid var(--nc-g3);z-index:-1;opacity:.35;transform:skew(-12deg)}
+.bh-nectarine.nc-espalier-letters .nc-name{padding:3px 12px;border-left:7px solid var(--nc-g1);justify-self:end}
+.bh-nectarine.nc-espalier-letters .nc-copy{padding:5px 8px 6px}
+.bh-nectarine.nc-espalier-letters .nc-media img{max-height:150px;aspect-ratio:2/1}
+.bh-nectarine.nc-espalier-letters .nc-mark{height:4px;background:linear-gradient(90deg,var(--nc-g1) 0 22%,transparent 22% 25%,var(--nc-g2) 25% 64%,transparent 64% 67%,var(--nc-g3) 67%)}
+.bh-nectarine.nc-comms{width:min(100%,350px);grid-template-areas:'time' 'media' 'name' 'title' 'copy' 'hardware';gap:10px;padding:25px 18px 20px;border:3px solid var(--nc-g1);border-radius:35px;font:13px/1.65 Arial,Helvetica,sans-serif;box-shadow:inset 0 0 0 4px var(--nc-bg),inset 0 0 0 5px var(--nc-edge),0 12px 25px #0000000d}
+.bh-nectarine.nc-comms .nc-title{font:11px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.015em;padding:0;text-wrap:wrap}
+.bh-nectarine.nc-comms .nc-name{font-size:17px;letter-spacing:-.025em;text-transform:none}
+.bh-nectarine.nc-comms .nc-media{justify-self:center;width:76px}
+.bh-nectarine.nc-comms .nc-media img{aspect-ratio:1;height:76px;border-radius:50%;border:3px solid var(--nc-bg);outline:1px solid var(--nc-g2)}
+.bh-nectarine.nc-comms .nc-copy{padding:13px 0 18px}
+.bh-nectarine.nc-comms .nc-copy p{margin:0 auto 9px 0;padding:11px 13px;width:fit-content;max-width:93%;background:var(--nc-panel);border:1px solid color-mix(in srgb,var(--nc-g1) 35%,var(--nc-edge));border-radius:15px 15px 15px 4px}
+.bh-nectarine.nc-comms[data-flow="sent"] .nc-copy p,.bh-nectarine.nc-comms[data-flow="alternate"] .nc-copy p:nth-child(even){margin-left:auto;margin-right:0;background:color-mix(in srgb,var(--nc-g3) 12%,var(--nc-bg));border-color:var(--nc-g3);border-radius:15px 15px 4px 15px}
+.bh-nectarine.nc-comms .nc-copy p:last-child{margin-bottom:0}
+.bh-nectarine.nc-comms .nc-hardware{min-height:19px}
+.bh-nectarine.nc-blushline{padding-top:29px;background:linear-gradient(var(--nc-tint) 0 143px,var(--nc-bg) 143px)}
+.bh-nectarine.nc-blushline::before{content:'';position:absolute;top:12px;left:calc(50% - 30px);width:60px;height:6px;border-radius:10px;background:var(--nc-g2)}
+.bh-nectarine.nc-blushline .nc-media{width:90px;margin-top:2px}
+.bh-nectarine.nc-blushline .nc-media img{height:90px;border-width:5px;box-shadow:0 0 0 5px var(--nc-bg)}
+.bh-nectarine.nc-blushline .nc-name,.bh-nectarine.nc-blushline .nc-title{justify-self:center;text-align:center}
+.bh-nectarine.nc-blushline .nc-hardware{border-top:1px solid var(--nc-g2);padding-top:12px}
+.bh-nectarine.nc-stonefold{grid-template-columns:minmax(0,1fr) 65px;grid-template-areas:'time media' 'name media' 'title media' 'hardware hardware' 'copy copy';padding:21px 20px 25px;border-radius:48px 48px 28px 28px;border-color:var(--nc-g2);gap:8px 15px;background:linear-gradient(var(--nc-panel) 0 145px,var(--nc-bg) 145px)}
+.bh-nectarine.nc-stonefold .nc-media{width:60px;align-self:center}
+.bh-nectarine.nc-stonefold .nc-media img{height:69px;border-radius:40% 45% 40% 45%}
+.bh-nectarine.nc-stonefold .nc-name{align-self:end}
+.bh-nectarine.nc-stonefold .nc-hardware{padding:12px 0 7px;gap:4px;margin-top:4px}
+.bh-nectarine.nc-stonefold .nc-hardware span{height:9px;width:36%;border-radius:3px;background:var(--nc-grad);border:0}
+.bh-nectarine.nc-stonefold .nc-hardware span:nth-child(2){width:17%;background:var(--nc-panel);border:1px solid var(--nc-g1)}
+.bh-nectarine.nc-stonefold .nc-copy{border:1px solid var(--nc-g3);border-radius:9px 9px 21px 21px;padding:12px 10px}
+.bh-nectarine.nc-stonefold:not(:has(.nc-media img)){grid-template-columns:minmax(0,1fr);grid-template-areas:'time' 'name' 'title' 'hardware' 'copy'}
+.bh-nectarine.nc-nectar-slide{width:min(100%,325px);grid-template-columns:48px minmax(0,1fr);grid-template-areas:'time time' 'media name' 'media title' 'copy copy' 'hardware hardware';gap:7px 13px;padding:23px 20px 19px;border-radius:18px 18px 37px 37px;border-color:var(--nc-g3);background:var(--nc-panel)}
+.bh-nectarine.nc-nectar-slide .nc-media{width:44px;align-self:center}
+.bh-nectarine.nc-nectar-slide .nc-media img{height:48px;border-radius:7px}
+.bh-nectarine.nc-nectar-slide .nc-time{padding-bottom:9px;border-top:3px solid var(--nc-g1);padding-top:10px;text-align:right}
+.bh-nectarine.nc-nectar-slide .nc-name{font-size:16px;align-self:end}
+.bh-nectarine.nc-nectar-slide .nc-copy{margin-top:9px;padding:13px 9px;background:var(--nc-bg);border:1px solid var(--nc-g1);border-radius:5px}
+.bh-nectarine.nc-nectar-slide .nc-hardware{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:5px;padding:5px}
+.bh-nectarine.nc-nectar-slide .nc-hardware span{width:100%;height:11px;border-radius:7px;border:1px solid var(--nc-g2);background:var(--nc-bg)}
+.bh-nectarine.nc-nectar-slide .nc-hardware span:nth-child(3n+2){border-color:var(--nc-g1);background:var(--nc-tint)}
+.bh-nectarine.nc-nectar-slide:not(:has(.nc-media img)){grid-template-columns:minmax(0,1fr);grid-template-areas:'time' 'name' 'title' 'copy' 'hardware'}
+.bh-nectarine.nc-orchard-sync{width:min(100%,550px);grid-template-columns:108px minmax(0,1fr);grid-template-areas:'time copy' 'media copy' 'name copy' 'title copy' 'hardware hardware';gap:10px 23px;padding:22px 22px 14px;border-radius:25px 12px 25px 12px;border-color:var(--nc-g1);background:linear-gradient(90deg,var(--nc-tint) 0 146px,var(--nc-bg) 146px)}
+.bh-nectarine.nc-orchard-sync::before{content:'';position:absolute;left:147px;top:15px;bottom:36px;width:4px;border-inline:1px solid var(--nc-g2)}
+.bh-nectarine.nc-orchard-sync .nc-media{width:100%;grid-template-columns:1fr 1fr;gap:5px;align-self:end}
+.bh-nectarine.nc-orchard-sync .nc-media img{height:68px;aspect-ratio:3/4;border-radius:22px 3px 3px 22px;border-width:2px}
+.bh-nectarine.nc-orchard-sync .nc-media img:nth-child(even){border-radius:3px 22px 22px 3px;outline-color:var(--nc-g3)}
+.bh-nectarine.nc-orchard-sync .nc-name{font-size:16px;align-self:start}
+.bh-nectarine.nc-orchard-sync .nc-title{align-self:start;font-size:10px}
+.bh-nectarine.nc-orchard-sync .nc-copy{padding:2px 0 4px}
+.bh-nectarine.nc-orchard-sync .nc-copy p{font-size:12px;max-width:100%;padding:10px}
+.bh-nectarine.nc-orchard-sync .nc-hardware{padding-top:6px;border-top:1px solid var(--nc-g3)}
+.bh-nectarine.nc-orchard-sync:not(:has(.nc-media img)){grid-template-areas:'time copy' 'name copy' 'title copy' 'hardware hardware'}
+.bh-nectarine.nc-sunskin-os{grid-template-areas:'time' 'name' 'title' 'media' 'copy' 'hardware';padding:25px 24px 19px;border:1px solid var(--nc-g3);border-radius:50px 50px 33px 33px;gap:14px;box-shadow:inset 4px 0 0 var(--nc-g1),inset -3px 0 0 var(--nc-g2)}
+.bh-nectarine.nc-sunskin-os .nc-time{justify-self:center;padding:7px 23px;background:var(--nc-panel);border-radius:16px;color:var(--nc-c2)}
+.bh-nectarine.nc-sunskin-os .nc-name{font:normal 29px/1.15 Georgia,serif;margin-top:11px;max-width:85%}
+.bh-nectarine.nc-sunskin-os .nc-copy{border-top:1px solid var(--nc-g2);padding-top:21px}
+.bh-nectarine.nc-sunskin-os .nc-copy p{background:var(--nc-bg);border-color:var(--nc-g2);border-radius:20px 20px 20px 0}
+.bh-nectarine.nc-sunskin-os .nc-hardware span{width:18px;height:3px;border-radius:5px;border:0;background:var(--nc-g1)}
+.bh-nectarine.nc-sunskin-os .nc-hardware span:nth-child(2){width:45px;background:var(--nc-g2)}
+.bh-nectarine.nc-sunskin-os .nc-hardware span:nth-child(3){background:var(--nc-g3)}
+.bh-nectarine.nc-bud{width:min(100%,420px);grid-template-areas:'name' 'title' 'media' 'copy' 'mark';gap:11px;padding:24px;font:13px/1.8 Georgia,serif}
+.bh-nectarine.nc-bud .nc-title{font-size:24px;line-height:1.12}
+.bh-nectarine.nc-bud .nc-name{font-size:9px;letter-spacing:.12em}
+.bh-nectarine.nc-bud .nc-copy p{margin-bottom:.8em}
+.bh-nectarine.nc-bud .nc-media img{max-height:95px}
+.bh-nectarine.nc-suturelet{padding:18px 24px 21px;border-top:1px dashed var(--nc-g1);border-bottom:3px solid var(--nc-g3);border-radius:0 0 34px 0;grid-template-areas:'name' 'title' 'media' 'copy' 'mark';gap:10px}
+.bh-nectarine.nc-suturelet .nc-name{justify-self:end;padding:4px 8px;background:var(--nc-tint)}
+.bh-nectarine.nc-suturelet .nc-mark{width:30px;height:1px;background:var(--nc-g2);position:absolute;right:21px;bottom:12px;transform:rotate(-25deg)}
+.bh-nectarine.nc-blushmark{grid-template-columns:62px minmax(0,1fr);grid-template-areas:'name name' 'media title' 'media copy' 'mark mark';gap:10px 17px;padding:16px 22px 22px;border-top:9px solid var(--nc-g1);border-right:1px solid var(--nc-g2)}
+.bh-nectarine.nc-blushmark .nc-media{border-radius:50%;overflow:hidden;align-self:start}
+.bh-nectarine.nc-blushmark .nc-media img{height:104px;max-height:none;aspect-ratio:3/5}
+.bh-nectarine.nc-blushmark .nc-title{font-style:italic}
+.bh-nectarine.nc-blushmark .nc-mark{height:3px;width:32px;background:var(--nc-g3);justify-self:end}
+.bh-nectarine.nc-blushmark:not(:has(.nc-media img)){grid-template-columns:minmax(0,1fr);grid-template-areas:'name' 'title' 'copy' 'mark'}
+.bh-nectarine.nc-stonekiss{grid-template-columns:minmax(0,1fr) 104px;grid-template-areas:'title name' 'copy copy' 'mark media';gap:13px;padding:21px 24px;border-radius:3px 28px 3px 28px;border:1px solid var(--nc-g2)}
+.bh-nectarine.nc-stonekiss .nc-name{justify-self:end;text-align:right}
+.bh-nectarine.nc-stonekiss .nc-title{font-size:23px}
+.bh-nectarine.nc-stonekiss .nc-media{grid-template-columns:repeat(auto-fit,minmax(40px,1fr));gap:3px}
+.bh-nectarine.nc-stonekiss .nc-media img{height:60px;aspect-ratio:3/4;border-radius:70% 35% 65% 30%;border:2px solid var(--nc-g1)}
+.bh-nectarine.nc-stonekiss .nc-media img:nth-child(even){border-radius:35% 70% 30% 65%;border-color:var(--nc-g3)}
+.bh-nectarine.nc-stonekiss .nc-mark{height:1px;background:var(--nc-grad);align-self:center;margin-right:9px}
+.bh-nectarine.nc-stonekiss:not(:has(.nc-media img)){grid-template-columns:minmax(0,1fr);grid-template-areas:'name' 'title' 'copy' 'mark'}
+.bh-nectarine.nc-nectardrop{grid-template-areas:'title' 'media' 'copy' 'name' 'mark';padding:23px 32px 21px 24px;border:1px solid var(--nc-g1);border-radius:4px 4px 58px 4px;gap:13px}
+.bh-nectarine.nc-nectardrop .nc-name{padding:4px 10px;background:var(--nc-tint);border-bottom:1px solid var(--nc-g2)}
+.bh-nectarine.nc-nectardrop .nc-title{font-style:italic;max-width:85%}
+.bh-nectarine.nc-nectardrop .nc-mark{position:absolute;right:12px;top:12px;width:22px;height:32px;border:1px solid var(--nc-g3);border-radius:70% 0 65% 40%;transform:rotate(-20deg);opacity:.7}
+.bh-nectarine.nc-ripening-note{grid-template-columns:minmax(0,1fr) minmax(70px,35%);grid-template-areas:'media media' 'title name' 'copy copy' 'mark mark';padding:0 22px 19px;border-left:1px solid var(--nc-g2);gap:13px}
+.bh-nectarine.nc-ripening-note .nc-media{padding:6px;background:var(--nc-grad);margin-top:0}
+.bh-nectarine.nc-ripening-note .nc-media img{height:76px;max-height:76px;aspect-ratio:4/1}
+.bh-nectarine.nc-ripening-note .nc-name{justify-self:end;text-align:right;border-right:3px solid var(--nc-g3);padding-right:8px}
+.bh-nectarine.nc-ripening-note .nc-title{font-size:22px}
+.bh-nectarine.nc-ripening-note .nc-mark{height:2px;margin-left:27%;background:var(--nc-grad)}
+.bh-nectarine:not(:has(.nc-media img)) .nc-media{display:none}
+.bh-nectarine.nc-cheek-to-cheek:not(:has(.nc-media img)){grid-template-areas:'title' 'name' 'copy' 'mark';border-top-left-radius:45px;padding-top:33px}
+.bh-nectarine.nc-freestone-journal:not(:has(.nc-media img)){grid-template-areas:'name' 'title' 'copy' 'mark'}
+.bh-nectarine.nc-nectar-current:not(:has(.nc-media img)){grid-template-areas:'name' 'title' 'copy' 'mark'}
+.bh-nectarine.nc-espalier-letters:not(:has(.nc-media img)){grid-template-areas:'title' 'name' 'copy' 'mark'}
+.bh-nectarine.nc-blushline:not(:has(.nc-media img)){grid-template-areas:'time' 'name' 'title' 'copy' 'hardware';background:linear-gradient(var(--nc-tint) 0 90px,var(--nc-bg) 90px)}
+.bh-nectarine.nc-sunskin-os:not(:has(.nc-media img)){grid-template-areas:'time' 'name' 'title' 'copy' 'hardware'}
+.bh-nectarine.nc-suturelet:not(:has(.nc-media img)){grid-template-areas:'name' 'title' 'copy' 'mark'}
+.bh-nectarine.nc-nectardrop:not(:has(.nc-media img)){grid-template-areas:'title' 'copy' 'name' 'mark'}
+.bh-nectarine.nc-ripening-note:not(:has(.nc-media img)){grid-template-areas:'title name' 'copy copy' 'mark mark';padding-top:19px}
+@container(max-width:360px){.bh-nectarine .nc-title{font-size:30px}.bh-nectarine.nc-comms .nc-title{font-size:11px}.bh-nectarine.nc-bud .nc-title{font-size:22px}.bh-nectarine.nc-orchard-sync .nc-copy p{padding:8px;font-size:11px}.bh-nectarine.nc-cheek-to-cheek .nc-media img{height:130px}.bh-nectarine.nc-cheek-to-cheek .nc-media img:nth-child(even){height:112px}}
+@media(max-width:420px){.bh-nectarine.nc-thread{padding-left:22px;padding-right:22px}.bh-nectarine.nc-suture-study{grid-template-columns:85px minmax(0,1fr);column-gap:17px}.bh-nectarine.nc-suture-study .nc-media{min-height:145px}.bh-nectarine.nc-suture-study::before{width:135px;height:162px}.bh-nectarine.nc-suture-study::after{left:11px}.bh-nectarine.nc-orchard-sync{grid-template-columns:83px minmax(0,1fr);column-gap:17px;padding:20px 15px 13px;background:linear-gradient(90deg,var(--nc-tint) 0 110px,var(--nc-bg) 110px)}.bh-nectarine.nc-orchard-sync::before{left:111px}.bh-nectarine.nc-orchard-sync .nc-media img{height:56px}.bh-nectarine.nc-orchard-sync .nc-name{font-size:14px}.bh-nectarine.nc-blushmark{padding-left:17px;padding-right:17px;column-gap:13px}.bh-nectarine.nc-stonekiss{grid-template-columns:minmax(0,1fr) 88px;padding-left:19px;padding-right:19px}}
+@media(forced-colors:active){.bh-nectarine .nc-title,.bh-nectarine .nc-copy :is(b,strong,i,em,u){background:none;-webkit-text-fill-color:CanvasText;color:CanvasText}.bh-nectarine .nc-copy u{text-decoration-color:CanvasText}}
+</style></head>
+<body>
+<header class="collection-top"><div><div class="brand">Nectarine</div><div class="couple">Akara & Clarity · 15 templates</div></div><div class="tools"><label for="theme">Preview</label><select id="theme"><option value="light">Light</option><option value="dark">Dark</option></select><label for="preview-width">Width</label><select id="preview-width"><option value="auto">Fit</option><option value="320px">320 px</option><option value="550px">550 px</option></select><div class="colour-pair"><label for="colour-1">Member colours</label><input id="colour-1" type="color" value="#557f82" aria-label="Member colour 1"><input id="colour-2" type="color" value="#92739a" aria-label="Member colour 2"><input id="colour-3" type="color" value="#b17d86" aria-label="Member colour 3"></div></div></header>
+<main class="workspace">
+<nav class="design-nav" aria-label="Nectarine designs"><div class="nav-group"><h2>Threads</h2><button type="button" data-design="suture-study" aria-pressed="false"><small>01</small><span>Suture Study</span></button><button type="button" data-design="cheek-to-cheek" aria-pressed="false"><small>02</small><span>Cheek to Cheek</span></button><button type="button" data-design="freestone-journal" aria-pressed="false"><small>03</small><span>Freestone Journal</span></button><button type="button" data-design="nectar-current" aria-pressed="false"><small>04</small><span>Nectar Current</span></button><button type="button" data-design="espalier-letters" aria-pressed="false"><small>05</small><span>Espalier Letters</span></button></div><div class="nav-group"><h2>Comms</h2><button type="button" data-design="blushline" aria-pressed="false"><small>01</small><span>Blushline</span></button><button type="button" data-design="stonefold" aria-pressed="false"><small>02</small><span>Stonefold</span></button><button type="button" data-design="nectar-slide" aria-pressed="false"><small>03</small><span>Nectar Slide</span></button><button type="button" data-design="orchard-sync" aria-pressed="false"><small>04</small><span>Orchard Sync</span></button><button type="button" data-design="sunskin-os" aria-pressed="false"><small>05</small><span>Sunskin OS</span></button></div><div class="nav-group"><h2>Buds</h2><button type="button" data-design="suturelet" aria-pressed="false"><small>01</small><span>Suturelet</span></button><button type="button" data-design="blushmark" aria-pressed="false"><small>02</small><span>Blushmark</span></button><button type="button" data-design="stonekiss" aria-pressed="false"><small>03</small><span>Stonekiss</span></button><button type="button" data-design="nectardrop" aria-pressed="false"><small>04</small><span>Nectardrop</span></button><button type="button" data-design="ripening-note" aria-pressed="false"><small>05</small><span>Ripening Note</span></button></div></nav>
+<section class="preview-column" aria-label="Template preview"><div class="preview-heading"><div><h1 id="design-title"></h1><p id="design-description"></p></div><span id="design-kind"></span></div><div id="stage"></div><details class="code-panel" id="code-panel"><summary>JCink code</summary><textarea id="code" readonly aria-label="Copy-ready JCink code" spellcheck="false"></textarea><div class="footer-links"><a id="raw-link" href="https://github.com/lexdoescodingnow/templates/tree/main/nectarine">Original snippet on GitHub</a><a href="https://github.com/lexdoescodingnow/templates/tree/main/nectarine">Nectarine folder</a></div></details></section>
+<aside class="editor" aria-label="Edit template"><h2>Make it yours</h2><div class="field"><label for="name">Name</label><input id="name" type="text" spellcheck="false"></div><div class="field"><label for="url">Name link</label><input id="url" type="text" spellcheck="false"></div><div class="field"><label for="title">Title / contact status</label><input id="title" type="text"></div><div class="split" id="comms-fields"><div class="field"><label for="time">Time</label><input id="time" type="text"></div><div class="field"><label for="flow">Messages</label><select id="flow"><option value="received">Received</option><option value="sent">Sent</option><option value="alternate">Alternating</option></select></div></div><fieldset><legend>Character GIFs</legend><div id="gif-fields"></div><button id="add-gif" type="button" class="secondary">Add GIF</button></fieldset><div class="field writing-field"><label for="writing">Writing</label><textarea id="writing" spellcheck="false"></textarea><div class="word-count" id="word-count"></div></div><div class="actions"><button id="copy" type="button" class="primary">Copy code</button><button id="download" type="button">Download .txt</button><button id="reset" type="button" class="secondary">Reset design</button></div><div id="status" role="status" aria-live="polite"></div><p class="editor-note">Use <code>&lt;p&gt;</code> for paragraphs or message bubbles. The editor accepts <code>[b]</code>, <code>[i]</code> and <code>[u]</code>. Preview names replace the placeholders for display; copied code keeps your field values. Preview colours are supplied by the forum when you post. Edits stay while this page is open.</p></aside>
+</main><script>const NECTARINE_GIFS = ['https://64.media.tumblr.com/a21dacd132b4eebbb3905a74514c7a05/89640b7d6012320f-70/s400x600/43adad3799fa7c274fdb3a5d89f7591eaf23cac6.gifv','https://64.media.tumblr.com/1f4723d17dd160cc07fc51d337e9e1e1/f1271ce3a7ce64cd-a7/s540x810/0419be1a8e4f5536095eb8ae66131c211e4ec896.gifv'];
+const NECTARINE_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@ddee44e5d01dcbc09c6371f5a1b23259fed47a57/nectarine/nectarine-sunskin-v1.css';
+const NECTARINE_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\n\n<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>';
+const NECTARINE_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
+const NECTARINE_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+function nectarineEscape(v) { return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function nectarineSafeUrl(v) { const s=String(v).trim();return /^(https?:\/\/|mailto:|#)/i.test(s)||s==='[url]'?s:'#'; }
+function nectarineDefaults(d) { return {name:'[name]',url:'[url]',title:'[text]',time:'17:26',flow:'received',gifs:NECTARINE_GIFS.slice(0,d.gifs).map(url=>({url,position:'50% 45%'})),body:d.type==='thread'?NECTARINE_THREAD:d.type==='comms'?NECTARINE_COMMS:NECTARINE_BUD}; }
+function nectarineFilename(d) { return `nectarine-${d.slug}-${d.type}-${d.number}.txt`; }
+function nectarineMarkup(d,s) {
+  const flow=d.type==='comms'?` data-flow="${['sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';
+  const lines=[`<div class="bh-nectarine nc-${d.type} nc-${d.slug}"${flow}>`,`<a class="nc-name" href="${nectarineEscape(nectarineSafeUrl(s.url))}">${nectarineEscape(s.name)}</a>`,`<div class="nc-title">${nectarineEscape(s.title)}</div>`];
+  if(d.type==='comms')lines.push(`<div class="nc-time">${nectarineEscape(s.time)}</div>`);
+  const gifs=s.gifs.filter(g=>/^https?:\/\//i.test(g.url.trim()));
+  if(gifs.length) { lines.push('<div class="nc-media">');for(const g of gifs)lines.push(`<img src="${nectarineEscape(g.url.trim())}" alt="Character GIF" style="object-position:${/^\d{1,3}% \d{1,3}%$/.test(g.position)?g.position:'50% 45%'}">`);lines.push('</div>'); }
+  lines.push('<div class="nc-copy">',s.body,'</div>');
+  if(d.type==='comms')lines.push('<div class="nc-hardware" aria-hidden="true">'+Array(d.slug==='nectar-slide'?12:3).fill('<span></span>').join('')+'</div>');
+  else lines.push('<div class="nc-mark" aria-hidden="true"></div>');
+  lines.push('</div>');return lines.join('\n');
+}
+function nectarineSnippet(d,s) { return '[dohtml]\n'+nectarineMarkup(d,s)+'\n\n<link rel="stylesheet" href="'+NECTARINE_CSS_URL+'">\n[/dohtml]\n'; }
+if(typeof module!=='undefined')module.exports={NECTARINE_GIFS,NECTARINE_CSS_URL,nectarineDefaults,nectarineFilename,nectarineMarkup,nectarineSnippet};
+
+const NECTARINE_DESIGNS = [{"type":"thread","name":"Suture Study","slug":"suture-study","number":"01","gifs":1,"sample":"all the tender places","description":"A tall portrait and a split nectarine contour share the opening, above an open page with a fine seam running down its edge."},{"type":"thread","name":"Cheek to Cheek","slug":"cheek-to-cheek","number":"02","gifs":2,"sample":"where your light meets mine","description":"Two differently curved portrait panels meet at an offset seam, above a broad italic title and a low, softly framed writing panel."},{"type":"thread","name":"Freestone Journal","slug":"freestone-journal","number":"03","gifs":0,"sample":"nothing held too tightly","description":"A large typographic opening rests inside a broken fruit outline, with a small produce seal and a clean inset journal page."},{"type":"thread","name":"Nectar Current","slug":"nectar-current","number":"04","gifs":1,"sample":"follow the sweetest line","description":"A fine flowing contour travels around a spacious letter and a panoramic portrait at its foot, with a small drop-shaped finish."},{"type":"thread","name":"Espalier Letters","slug":"espalier-letters","number":"05","gifs":0,"sample":"the shape of growing close","description":"An open trellis masthead holds the title between asymmetric crossing bars, above an unboxed reading area and a three-part signature rule."},{"type":"comms","name":"Blushline","slug":"blushline","number":"01","gifs":1,"sample":"close enough to call","description":"A softly squared smartphone with a pill earpiece, a large circular contact portrait and rounded received-message bubbles."},{"type":"comms","name":"Stonefold","slug":"stonefold","number":"02","gifs":1,"sample":"meet me on the other side","description":"A hinged clamshell phone with a compact top display, a bright three-piece hinge and a separate lower conversation screen."},{"type":"comms","name":"Nectar Slide","slug":"nectar-slide","number":"03","gifs":1,"sample":"a little sweetness, sent","description":"A slider handset with a small contact tile, a tall inset message screen and an exposed twelve-key pad."},{"type":"comms","name":"Orchard Sync","slug":"orchard-sync","number":"04","gifs":2,"sample":"Akara ⇄ Clarity","description":"A landscape folding communicator places paired contact portraits in the left screen and a full conversation in the right screen."},{"type":"comms","name":"Sunskin OS","slug":"sunskin-os","number":"05","gifs":0,"sample":"you have my attention","description":"A spare curved smartphone uses a narrow floating status pill, an oversized contact name and lightly outlined message cards."},{"type":"bud","name":"Suturelet","slug":"suturelet","number":"01","gifs":0,"sample":"a small place to begin","description":"An open miniature note with a stitched top seam, a tiny title tab and a rounded lower member-colour rule."},{"type":"bud","name":"Blushmark","slug":"blushmark","number":"02","gifs":1,"sample":"a trace of you","description":"A narrow oval portrait sits beside a miniature reply beneath a broad member-colour cap."},{"type":"bud","name":"Stonekiss","slug":"stonekiss","number":"03","gifs":2,"sample":"two halves, held close","description":"A compact reply shares its lower edge with two touching seed-shaped portraits, under a small right-aligned signature."},{"type":"bud","name":"Nectardrop","slug":"nectardrop","number":"04","gifs":0,"sample":"stay a little sweeter","description":"A short teardrop-corner note with a large fine droplet outline at the edge and a recessed name plaque."},{"type":"bud","name":"Ripening Note","slug":"ripening-note","number":"05","gifs":1,"sample":"the right kind of slow","description":"A slim panoramic portrait rests above a two-column title and signature, with a tiny reply and an offset ruled foot."}];
+const nectarineStates = new Map(NECTARINE_DESIGNS.map(d=>[d.slug,nectarineDefaults(d)]));
+let nectarineCurrent = NECTARINE_DESIGNS[0];
+const el=id=>document.getElementById(id);
+function nectarineFormat(value) { return value.replace(/\[(\/?)(b|i|u)\]/gi,(_,slash,tag)=>`<${slash}${tag.toLowerCase()}>`); }
+function nectarineBody(value) {
+  const parsed=new DOMParser().parseFromString(nectarineFormat(value),'text/html');
+  const allowed=new Set(['P','B','STRONG','I','EM','U','A','BR','SPAN']);
+  for(const node of [...parsed.body.querySelectorAll('*')].reverse()) {
+    if(!allowed.has(node.tagName)) { if(['SCRIPT','STYLE','IFRAME','OBJECT','SVG','MATH','TEMPLATE'].includes(node.tagName)) node.remove(); else node.replaceWith(...node.childNodes); continue; }
+    for(const attr of [...node.attributes]) { if(node.tagName==='A'&&attr.name==='href'&&(/^(https?:|mailto:|#)/i.test(attr.value)||attr.value==='[url]')) continue; node.removeAttribute(attr.name); }
+  }
+  const walker=parsed.createTreeWalker(parsed.body,NodeFilter.SHOW_COMMENT);
+  const comments=[]; while(walker.nextNode())comments.push(walker.currentNode); comments.forEach(c=>c.remove());
+  return parsed.body.innerHTML;
+}
+function nectarineRead() {
+  const s=nectarineStates.get(nectarineCurrent.slug);
+  for(const k of ['name','url','title','time','flow']) s[k]=el(k).value;
+  s.body=nectarineBody(el('writing').value);
+  return s;
+}
+function nectarineDraw() {
+  const s=nectarineStates.get(nectarineCurrent.slug);
+  const visible={...s,name:s.name==='[name]'?'Akara & Clarity':s.name,title:s.title==='[text]'?nectarineCurrent.sample:s.title,url:'#'};
+  el('stage').innerHTML=nectarineMarkup(nectarineCurrent,visible);
+  el('code').value=nectarineSnippet(nectarineCurrent,s);
+  const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();
+  const count=text?text.split(/\s+/).length:0;
+  el('word-count').textContent=`${count} words${nectarineCurrent.type==='bud'?' · buds are for replies of 100 words or fewer':''}`;
+  el('word-count').classList.toggle('over',nectarineCurrent.type==='bud'&&count>100);
+}
+function nectarineGifFields() {
+  const s=nectarineStates.get(nectarineCurrent.slug);
+  el('gif-fields').replaceChildren();
+  s.gifs.forEach((gif,index)=>{
+    const row=document.createElement('div');row.className='gif-entry';
+    const input=document.createElement('input');input.type='url';input.value=gif.url;input.setAttribute('aria-label',`GIF ${index+1} URL`);
+    input.addEventListener('input',()=>{const value=input.value.trim();gif.url=/^https?:\/\//i.test(value)?value:'';nectarineDraw();});
+    const bottom=document.createElement('div');bottom.className='gif-bottom';
+    const label=document.createElement('label');label.textContent='Crop';
+    const crop=document.createElement('input');crop.type='range';crop.min='0';crop.max='100';crop.value=gif.position.split(' ')[1].replace('%','');crop.setAttribute('aria-label',`GIF ${index+1} vertical crop`);
+    crop.addEventListener('input',()=>{gif.position=`50% ${crop.value}%`;nectarineDraw();});label.append(crop);
+    const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';remove.addEventListener('click',()=>{s.gifs.splice(index,1);nectarineGifFields();nectarineDraw();});
+    bottom.append(label,remove);row.append(input,bottom);el('gif-fields').append(row);
+  });
+}
+function nectarineSelect(slug) {
+  nectarineCurrent=NECTARINE_DESIGNS.find(d=>d.slug===slug)||NECTARINE_DESIGNS[0];
+  const s=nectarineStates.get(nectarineCurrent.slug);
+  for(const k of ['name','url','title','time','flow']) el(k).value=s[k];
+  el('writing').value=s.body;
+  el('comms-fields').hidden=nectarineCurrent.type!=='comms';
+  el('design-title').textContent=nectarineCurrent.name;
+  el('design-description').textContent=nectarineCurrent.description;
+  el('design-kind').textContent=`${nectarineCurrent.type==='bud'?'Bud':nectarineCurrent.type==='thread'?'Thread':'Comms'} ${nectarineCurrent.number}`;
+  for(const b of document.querySelectorAll('[data-design]'))b.setAttribute('aria-pressed',String(b.dataset.design===nectarineCurrent.slug));
+  el('raw-link').href=`https://github.com/lexdoescodingnow/templates/blob/main/nectarine/${nectarineFilename(nectarineCurrent)}`;
+  el('status').textContent='';nectarineGifFields();nectarineDraw();
+}
+for(const b of document.querySelectorAll('[data-design]'))b.addEventListener('click',()=>nectarineSelect(b.dataset.design));
+for(const k of ['name','url','title','time','flow','writing'])el(k).addEventListener('input',()=>{nectarineRead();nectarineDraw();});
+el('add-gif').addEventListener('click',()=>{const s=nectarineStates.get(nectarineCurrent.slug);s.gifs.push({url:NECTARINE_GIFS[s.gifs.length%2],position:'50% 45%'});nectarineGifFields();nectarineDraw();});
+el('reset').addEventListener('click',()=>{nectarineStates.set(nectarineCurrent.slug,nectarineDefaults(nectarineCurrent));nectarineSelect(nectarineCurrent.slug);});
+el('copy').addEventListener('click',async()=>{
+  const value=el('code').value;
+  try { await navigator.clipboard.writeText(value);el('status').textContent='Copied with [dohtml] tags.'; }
+  catch { const panel=el('code-panel');const wasOpen=panel.open;panel.open=true;el('code').focus();el('code').select();try {if(!document.execCommand('copy'))throw new Error('copy');el('status').textContent='Copied with [dohtml] tags.';panel.open=wasOpen;}catch{el('status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.';} }
+});
+el('download').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([el('code').value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=nectarineFilename(nectarineCurrent);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);el('status').textContent='Your edited snippet is ready.';});
+el('theme').addEventListener('change',()=>document.documentElement.setAttribute('color-mode',el('theme').value));
+for(let i=1;i<=3;i++)el('colour-'+i).addEventListener('input',()=>{const hex=el('colour-'+i).value;document.documentElement.style.setProperty('--mgrgb'+i,[1,3,5].map(start=>parseInt(hex.slice(start,start+2),16)).join(','));});
+nectarineSelect(NECTARINE_DESIGNS[0].slug);
+
+el('preview-width').addEventListener('change',()=>el('stage').style.width=el('preview-width').value);
+</script></body></html>

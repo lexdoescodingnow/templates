@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const dir=__dirname;
+const read=n=>fs.readFileSync(path.join(dir,n),'utf8');
+const designs=JSON.parse(read('designs.json'));
+const model=require('./nectarine-model.js');
+for(const d of designs)fs.writeFileSync(path.join(dir,model.nectarineFilename(d)),model.nectarineSnippet(d,model.nectarineDefaults(d)));
+const css=read('nectarine-preview.css')+'\n'+read('nectarine-sunskin-v1.css');
+const script=read('nectarine-model.js')+'\nconst NECTARINE_DESIGNS = '+JSON.stringify(designs)+';\n'+read('nectarine-editor.js');
+fs.writeFileSync(path.join(dir,'nectarine-collection-preview.html'),read('preview-shell.html').replace('NECTARINE_STYLES',()=>css).replace('NECTARINE_SCRIPT',()=>script));
+console.log('Built 15 Nectarine snippets and the standalone editor.');
