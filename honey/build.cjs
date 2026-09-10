@@ -1,0 +1,12 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const dir=__dirname;
+const read=n=>fs.readFileSync(path.join(dir,n),'utf8');
+const designs=JSON.parse(read('designs.json'));
+const model=require('./honey-model.js');
+for(const d of designs)fs.writeFileSync(path.join(dir,model.honeyFilename(d)),model.honeySnippet(d,model.honeyDefaults(d)));
+const css=read('honey-preview.css')+'\n'+read('honey-apiary-v1.css');
+const script=read('honey-model.js')+'\nconst HONEY_DESIGNS = '+JSON.stringify(designs)+';\n'+read('honey-editor.js');
+const nav=['thread','comms','bud'].map(type=>'<div class="nav-group"><h2>'+({thread:'Threads',comms:'Comms',bud:'Buds'}[type])+'</h2>'+designs.filter(d=>d.type===type).map(d=>`<button type="button" data-design="${d.slug}" aria-pressed="false"><small>${d.number}</small><span>${d.name}</span></button>`).join('')+'</div>').join('');
+fs.writeFileSync(path.join(dir,'honey-collection-preview.html'),read('preview-shell.html').replace('HONEY_STYLES',()=>css).replace('HONEY_NAV',()=>nav).replace('HONEY_SCRIPT',()=>script));
+console.log('Built 15 Honey snippets and the standalone editor.');
