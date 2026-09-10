@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Macadamia · Journey & Kai</title><style>:root{color-scheme:light;--page:#eeedea;--surface:#fafaf8;--text:#29262b;--subtle:#69646e;--edge:#d6d0d6;--accent:#3f6866;--mgrgb1:85,127,130;--mgrgb2:146,115,154;--mgrgb3:177,125,134}
+html[color-mode="dark"]{color-scheme:dark;--page:#151519;--surface:#232328;--text:#f0ecf1;--subtle:#bab2bf;--edge:#44404b;--accent:#9fcac3}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--text);font:16px/1.6 'Trebuchet MS',Arial,sans-serif}button,input,select,textarea{font:inherit}button,select,input,textarea{color:var(--text);background:var(--surface);border:1px solid var(--edge);border-radius:6px}button{padding:9px 16px;cursor:pointer}button:hover{border-color:var(--accent)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}a{color:var(--accent)}.collection-top{padding:26px 4vw 19px;border-bottom:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:italic 43px/1 Georgia,serif;letter-spacing:-.045em}.couple{margin-top:8px;color:var(--subtle);font-size:14px}.tools{display:flex;align-items:center;flex-wrap:wrap;gap:10px}.tools label{font-size:14px}.tools select{padding:8px}.colour-pair{display:flex;align-items:center;gap:6px}.colour-pair input{width:35px;height:34px;padding:3px;cursor:pointer}.workspace{display:grid;grid-template-columns:270px minmax(0,1fr) 340px;min-height:calc(100vh - 105px)}.design-nav{padding:22px 18px;border-right:1px solid var(--edge);background:var(--surface)}.design-nav h2{font:700 12px/1.4 'Trebuchet MS',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:20px 10px 9px;color:var(--subtle)}.design-nav h2:first-child{margin-top:0}.design-nav button{width:100%;display:flex;gap:12px;text-align:left;border:0;background:transparent;padding:9px 10px}.design-nav button[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 12%,var(--surface));color:var(--accent);box-shadow:inset 3px 0 var(--accent)}.design-nav button small{font-size:12px;opacity:.7;padding-top:2px}.preview-column{padding:23px 28px 40px;min-width:0}.preview-heading{display:flex;justify-content:space-between;gap:15px;align-items:start;max-width:680px;margin:0 auto 18px}.preview-heading h1{font:normal 27px/1.2 Georgia,serif;margin:0 0 8px}.preview-heading p{margin:0;font-size:14px;line-height:1.5;color:var(--subtle);max-width:450px}.preview-heading span{font:12px/1.4 'Trebuchet MS',Arial,sans-serif;white-space:nowrap;border:1px solid var(--edge);border-radius:20px;padding:5px 10px;color:var(--subtle)}#stage{min-width:0;max-width:100%;padding:4px 0 18px}#stage .bh-maca{margin:25px auto}#stage .mc-name{pointer-events:none}.editor{padding:23px 20px;background:var(--surface);border-left:1px solid var(--edge);min-width:0}.editor h2{font:normal 25px/1.2 Georgia,serif;margin:0 0 19px}.editor label,.editor legend{display:block;font-size:14px;color:var(--subtle);margin-bottom:6px}.field{margin:0 0 14px}.field input,.field select,.field textarea{width:100%;padding:8px 10px;border-radius:5px}.field textarea{min-height:160px;resize:vertical;line-height:1.6;font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}fieldset{padding:0;border:0;margin:0 0 15px}.gif-entry{padding:10px;margin-bottom:10px;border:1px solid var(--edge);border-radius:7px}.gif-entry input[type="url"]{width:100%;padding:7px 8px;font-size:13px}.gif-bottom{display:flex;gap:12px;align-items:center;margin-top:9px}.gif-bottom label{display:flex;align-items:center;gap:7px;margin:0;font-size:12px}.gif-bottom input[type="range"]{width:90px}.gif-bottom button{margin-left:auto;font-size:12px;padding:5px 8px}.secondary{font-size:14px;padding:6px 11px}.actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0 10px}.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}#status{min-height:22px;font-size:13px;color:var(--accent)}.code-panel{max-width:680px;margin:0 auto;border-top:1px solid var(--edge);padding-top:18px}.code-panel summary{cursor:pointer;font-size:14px;color:var(--accent)}#code{width:100%;height:230px;resize:vertical;margin-top:12px;padding:15px;font:12px/1.6 'Courier New',monospace}.editor-note{font-size:13px;line-height:1.6;color:var(--subtle)}.editor-note code{font-size:12px}.footer-links{font-size:13px;display:flex;gap:17px;margin:17px 0 0}.word-count{font-size:12px;color:var(--subtle);margin-top:5px}.word-count.over{color:#b13d64}[hidden]{display:none!important}@media(max-width:1150px){.workspace{grid-template-columns:215px minmax(0,1fr)}.editor{grid-column:1/-1;border-top:1px solid var(--edge);border-left:0;display:grid;grid-template-columns:1fr 1fr;gap:0 25px}.editor h2,.editor .actions,.editor #status,.editor .editor-note{grid-column:1/-1}.editor .writing-field{grid-column:1/-1}.editor .writing-field textarea{min-height:160px}.preview-column{padding-left:22px;padding-right:22px}}@media(max-width:670px){.collection-top{padding:20px;align-items:start;flex-direction:column}.brand{font-size:38px}.tools{gap:9px}.workspace{display:block}.design-nav{display:flex;overflow-x:auto;gap:10px;padding:12px 17px;border-right:0;border-bottom:1px solid var(--edge)}.nav-group{min-width:200px}.design-nav h2{margin:0 10px 5px;font-size:12px}.design-nav button{font-size:14px;padding:7px 10px}.preview-column{padding:22px 16px}.preview-heading h1{font-size:25px}.preview-heading span{display:none}.editor{display:block;padding:22px 20px}.editor textarea{min-height:170px}}
+.brand{font:italic 58px/.85 Georgia,serif;letter-spacing:-.06em}.collection-top{border-top:4px solid var(--accent)}.design-nav button{border-radius:4px 16px 4px 4px}#stage{margin-inline:auto}.preview-heading h1{font-style:italic}.tools{max-width:680px}
+
+.brand{font:600 43px/1 Georgia,serif;letter-spacing:-.06em}.collection-top{border-top:0;background:var(--surface)}.design-nav button{border-radius:0}.preview-heading h1{font-style:normal}.workspace{grid-template-columns:230px minmax(0,1fr) 330px}@media(max-width:1150px){.workspace{grid-template-columns:210px minmax(0,1fr)}}
+
+.bh-maca{--mc-a:rgb(var(--mgrgb1,85,127,130));--mc-b:rgb(var(--mgrgb2,146,115,154));--mc-c:rgb(var(--mgrgb3,177,125,134));--mc-paper:#faf9f6;--mc-base:#eeede9;--mc-ink:#2c2c30;--mc-muted:#66636a;--mc-line:#d7d5d0;--mc-shell:#b49c79;--mc-fwd:linear-gradient(105deg,var(--mc-a),var(--mc-b) 52%,var(--mc-c));--mc-rev:linear-gradient(105deg,var(--mc-c),var(--mc-b) 52%,var(--mc-a));--mc-t1:color-mix(in srgb,var(--mc-a) 55%,var(--mc-ink));--mc-t2:color-mix(in srgb,var(--mc-b) 55%,var(--mc-ink));--mc-t3:color-mix(in srgb,var(--mc-c) 55%,var(--mc-ink));--mc-words:linear-gradient(105deg,var(--mc-t1),var(--mc-t2),var(--mc-t3));--mc-backwords:linear-gradient(105deg,var(--mc-t3),var(--mc-t2),var(--mc-t1));box-sizing:border-box;position:relative;isolation:isolate;container:macadamia/inline-size;display:grid;grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "title" "media" "copy";width:calc(100% - 24px);max-width:560px;margin:28px auto;background:var(--mc-paper);color:var(--mc-ink);font:14px/1.8 'Trebuchet MS',Arial,sans-serif;text-align:left;overflow-wrap:anywhere;color-scheme:light}
+.bh-maca *,.bh-maca *::before,.bh-maca *::after,.bh-maca::before,.bh-maca::after{box-sizing:border-box}
+html[color-mode="dark"] .bh-maca{--mc-paper:#212124;--mc-base:#18181a;--mc-ink:#eeece8;--mc-muted:#bdb9bd;--mc-line:#464448;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-maca{--mc-paper:#212124;--mc-base:#18181a;--mc-ink:#eeece8;--mc-muted:#bdb9bd;--mc-line:#464448;color-scheme:dark}}
+.bh-maca>*{min-width:0}
+.bh-maca .mc-name{grid-area:name;align-self:center;justify-self:start;display:block;max-width:100%;color:var(--mc-t1)!important;font:700 10px/1.55 'Trebuchet MS',Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none!important;padding:0;margin:0;overflow-wrap:anywhere}
+.bh-maca .mc-name:focus-visible{outline:2px solid var(--mc-b);outline-offset:5px}
+.bh-maca .mc-title{grid-area:title;margin:0;padding:0;color:var(--mc-t2);font:400 44px/1.06 Georgia,'Times New Roman',serif;letter-spacing:-.045em;text-transform:none;text-wrap:balance}
+.bh-maca .mc-copy{grid-area:copy;min-width:0;font:14px/1.9 'Trebuchet MS',Arial,sans-serif;letter-spacing:.005em;color:var(--mc-ink);text-align:left;padding:0;margin:0}
+.bh-maca .mc-copy p{display:block;margin:0 0 1.25em;padding:0;font:inherit;color:inherit;text-align:inherit}
+.bh-maca .mc-copy p:last-child{margin-bottom:0}
+.bh-maca .mc-copy :is(b,strong,u){color:transparent!important;-webkit-text-fill-color:transparent!important;background:var(--mc-words)!important;background-clip:text!important;-webkit-background-clip:text!important;font-weight:700!important;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bh-maca .mc-copy :is(i,em){color:transparent!important;-webkit-text-fill-color:transparent!important;background:var(--mc-backwords)!important;background-clip:text!important;-webkit-background-clip:text!important;font-style:italic!important;font-weight:500;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bh-maca .mc-copy u{text-decoration:underline!important;text-decoration-color:var(--mc-t2)!important;text-decoration-thickness:1px!important;text-underline-offset:3px}
+.bh-maca .mc-copy a{color:var(--mc-t1);text-decoration:underline;text-underline-offset:3px}
+.bh-maca .mc-media{grid-area:media;display:flex;gap:12px;min-width:0;margin:0;padding:0}
+.bh-maca .mc-media img{display:block;flex:1 1 0;min-width:0;width:0;max-width:100%;height:150px;object-fit:cover;object-position:50% 45%;border:0;margin:0;padding:0;background:var(--mc-base)}
+.bh-maca .mc-media:not(:has(img[src]:not([src=""]):not([src="[url]"]))){display:none!important}
+.bh-maca .mc-media img:is([src=""],[src="[url]"]),.bh-maca .mc-media img:not([src]){display:none!important}
+.bh-maca .mc-ornament{position:absolute;pointer-events:none;color:var(--mc-b)}
+.bh-maca .mc-title,.bh-maca .mc-name,.bh-maca .mc-copy,.bh-maca .mc-media{position:relative;z-index:1}
+.bh-maca.mc-thread .mc-copy{font-size:14px}
+.mc-raceme-letters{padding:33px 62px 38px 33px;border-left:5px solid var(--mc-a);border-bottom:1px solid var(--mc-b);row-gap:19px;background:linear-gradient(90deg,color-mix(in srgb,var(--mc-a) 4%,var(--mc-paper)),var(--mc-paper) 30%)}
+.mc-raceme-letters .mc-title{font-size:clamp(34px,9cqw,52px);max-width:370px}
+.mc-raceme-letters .mc-media{border-radius:0 60px 0 0;padding:6px;border:1px solid var(--mc-c);margin:4px 0 5px}
+.mc-raceme-letters .mc-media img{height:150px;border-radius:0 48px 0 0}
+.mc-raceme-letters .mc-ornament{right:14px;top:29px;width:36px;height:275px;background:linear-gradient(var(--mc-b),var(--mc-c)) 50% 0/1px 95% no-repeat}
+.mc-raceme-letters .mc-ornament::before,.mc-raceme-letters .mc-ornament::after{content:"";position:absolute;top:12px;left:4px;width:12px;height:12px;border:1px solid var(--mc-b);border-radius:55% 45% 55% 20%;background:var(--mc-paper);box-shadow:0 26px 0 -1px var(--mc-paper),0 26px 0 var(--mc-a),0 52px 0 -1px var(--mc-paper),0 52px 0 var(--mc-c),0 78px 0 -1px var(--mc-paper),0 78px 0 var(--mc-b),0 104px 0 -1px var(--mc-paper),0 104px 0 var(--mc-a),0 130px 0 -1px var(--mc-paper),0 130px 0 var(--mc-c),0 156px 0 -1px var(--mc-paper),0 156px 0 var(--mc-b),0 182px 0 -1px var(--mc-paper),0 182px 0 var(--mc-a)}
+.mc-raceme-letters .mc-ornament::after{left:20px;top:25px;transform:scaleX(-1)}
+.mc-terrazzo-milk{padding:30px 27px 39px;border:1px solid var(--mc-b);border-radius:2px 36px 2px 2px;row-gap:20px;background:linear-gradient(135deg,color-mix(in srgb,var(--mc-c) 13%,var(--mc-paper)),var(--mc-paper) 32%)}
+.mc-terrazzo-milk .mc-name{border-bottom:3px solid var(--mc-a);padding-bottom:9px}
+.mc-terrazzo-milk .mc-title{font:800 clamp(29px,9cqw,48px)/.98 Arial,sans-serif;letter-spacing:-.06em;transform:rotate(-3deg);padding:6px 10px 14px;max-width:90%;background:var(--mc-words);color:transparent;background-clip:text;-webkit-background-clip:text}
+.mc-terrazzo-milk .mc-media{gap:19px;align-items:center;margin:0 0 16px;padding:7px 0}
+.mc-terrazzo-milk .mc-media img{height:147px;border:6px solid color-mix(in srgb,var(--mc-a) 40%,var(--mc-paper));box-shadow:5px 7px 0 var(--mc-b);transform:rotate(-3deg);border-radius:18px 3px 3px 3px}
+.mc-terrazzo-milk .mc-media img:nth-child(even){height:115px;transform:rotate(4deg);border-color:color-mix(in srgb,var(--mc-c) 40%,var(--mc-paper));box-shadow:5px 7px 0 var(--mc-a);border-radius:3px 3px 22px 3px}
+.mc-terrazzo-milk .mc-copy{padding:18px 12px 0;border-top:1px solid var(--mc-line)}
+.mc-terrazzo-milk .mc-ornament{right:5px;top:19px;width:24px;height:27px;background:var(--mc-c);clip-path:polygon(15% 0,100% 17%,83% 100%,0 72%);transform:rotate(18deg)}
+.mc-terrazzo-milk::before{content:"";position:absolute;left:8px;bottom:9px;width:18px;height:16px;background:var(--mc-a);clip-path:polygon(0 12%,100% 0,72% 100%,10% 79%)}
+.mc-terrazzo-milk::after{content:"";position:absolute;right:18px;bottom:15px;width:51px;height:9px;background:var(--mc-c);clip-path:polygon(0 0,100% 45%,77% 100%,5% 100%)}
+.mc-hilum-press{padding:33px 33px 40px;border-top:9px solid var(--mc-a);border-right:1px solid var(--mc-line);border-left:1px solid var(--mc-line);row-gap:23px;background:var(--mc-paper)}
+.mc-hilum-press .mc-name{padding:8px 0 8px 39px;min-height:34px}
+.mc-hilum-press .mc-title{font:900 clamp(35px,10cqw,59px)/.96 Arial,Helvetica,sans-serif;letter-spacing:-.065em;max-width:430px;color:var(--mc-t1);padding-bottom:24px;border-bottom:1px solid var(--mc-b)}
+.mc-hilum-press .mc-copy{border-left:2px solid var(--mc-c);padding-left:24px}
+.mc-hilum-press .mc-ornament{left:29px;top:34px;width:28px;height:31px;border:2px solid var(--mc-b);border-radius:47% 53% 44% 56%;transform:rotate(-28deg);box-shadow:inset 0 0 0 5px var(--mc-paper),inset 0 0 0 6px var(--mc-c)}
+.mc-hilum-press::after{content:"";position:absolute;bottom:0;inset-inline:0;height:8px;background:linear-gradient(90deg,var(--mc-b) 0 67%,var(--mc-paper) 67% 72%,var(--mc-c) 72%)}
+.mc-whorl-house{padding:26px 31px 35px;border-top:1px solid var(--mc-b);border-bottom:6px solid var(--mc-a);row-gap:21px;grid-template-areas:"name" "media" "title" "copy";background:transparent}
+.mc-whorl-house .mc-name{justify-self:center;text-align:center;border:1px solid var(--mc-c);background:var(--mc-paper);padding:7px 15px}
+.mc-whorl-house .mc-media{padding:10px 26px;gap:9px;justify-self:center;width:100%;max-width:340px}
+.mc-whorl-house .mc-media img{height:165px;border-radius:70% 32% 46% 28% / 65% 58% 28% 40%;border:5px solid var(--mc-b);box-shadow:4px 3px 0 var(--mc-c)}
+.mc-whorl-house .mc-title{font-size:clamp(31px,9cqw,47px);font-style:italic;text-align:center;margin-top:3px}
+.mc-whorl-house .mc-copy{padding:25px;background:var(--mc-paper);border-top:1px solid var(--mc-c)}
+.mc-whorl-house .mc-ornament{right:3px;top:61px;width:48px;height:53px;transform:rotate(25deg)}
+.mc-whorl-house .mc-ornament::before,.mc-whorl-house .mc-ornament::after{content:"";position:absolute;width:16px;height:44px;background:color-mix(in srgb,var(--mc-a) 14%,var(--mc-paper));border:1px solid var(--mc-a);border-radius:100% 0 100% 0;transform:rotate(-22deg)}
+.mc-whorl-house .mc-ornament::after{left:20px;top:5px;transform:rotate(37deg);border-color:var(--mc-c)}
+.mc-whorl-house:not(:has(.mc-media img[src]:not([src=""]))) .mc-ornament{top:22px;right:3px;opacity:.6}
+.mc-orchard-weave{padding:32px 29px 34px 57px;row-gap:18px;grid-template-columns:18px minmax(0,1fr);grid-template-areas:"name title" "name media" "name copy";border-top:1px solid var(--mc-c);border-bottom:1px solid var(--mc-c);background:var(--mc-paper)}
+.mc-orchard-weave .mc-name{writing-mode:vertical-rl;transform:rotate(180deg);align-self:start;justify-self:center;max-height:230px;letter-spacing:.2em;padding-top:1px}
+.mc-orchard-weave .mc-title{font-size:clamp(32px,9cqw,46px);padding-bottom:22px;border-bottom:2px solid var(--mc-b)}
+.mc-orchard-weave .mc-copy{padding-top:5px}
+.mc-orchard-weave::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:23px;background:repeating-linear-gradient(0deg,transparent 0 10px,var(--mc-paper) 10px 14px),linear-gradient(90deg,var(--mc-a) 0 7px,var(--mc-paper) 7px 9px,var(--mc-c) 9px 16px,var(--mc-paper) 16px 18px,var(--mc-b) 18px)}
+.mc-orchard-weave .mc-ornament{left:3px;top:25px;bottom:25px;width:33px;background:repeating-linear-gradient(0deg,transparent 0 15px,var(--mc-b) 15px 19px,transparent 19px 35px,var(--mc-a) 35px 39px,transparent 39px 48px);opacity:.7}
+.bh-maca.mc-comms{max-width:355px;grid-template-areas:"time" "media" "name" "title" "copy" "controls";border:2px solid var(--mc-b);padding:20px 16px 17px;row-gap:8px;border-radius:34px;background:var(--mc-base);box-shadow:inset 0 0 0 4px var(--mc-paper),0 9px 0 -6px var(--mc-c)}
+.bh-maca.mc-comms .mc-name{font:700 16px/1.4 'Trebuchet MS',Arial,sans-serif;letter-spacing:-.02em;text-transform:none;justify-self:center;text-align:center}
+.bh-maca.mc-comms .mc-title{font:11px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:.015em;text-align:center;color:var(--mc-muted)}
+.bh-maca .mc-time{grid-area:time;position:relative;color:var(--mc-t1);font:700 10px/1.5 'Trebuchet MS',Arial,sans-serif;padding:0 9px 6px}
+.bh-maca.mc-comms .mc-media{width:58px;max-width:100%;justify-self:center;gap:4px;margin:5px 0}
+.bh-maca.mc-comms .mc-media img{height:55px;border:2px solid var(--mc-a);border-radius:11px}
+.bh-maca.mc-comms .mc-media:has(img:nth-child(2)){width:120px}
+.bh-maca.mc-comms .mc-copy{margin-top:9px;padding:16px 12px;background:var(--mc-paper);border:1px solid var(--mc-line);border-radius:21px;display:flow-root;font:13px/1.7 'Trebuchet MS',Arial,sans-serif}
+.bh-maca.mc-comms .mc-copy>p{clear:both;float:left;max-width:92%;margin:0 0 10px;padding:10px 12px;background:color-mix(in srgb,var(--mc-a) 9%,var(--mc-paper));border:1px solid color-mix(in srgb,var(--mc-a) 37%,var(--mc-line));border-left:3px solid var(--mc-a);border-radius:13px 13px 13px 3px}
+.bh-maca.mc-comms .mc-copy>p:last-child{margin-bottom:0}
+.bh-maca.mc-comms[data-flow="sent"] .mc-copy>p,.bh-maca.mc-comms[data-flow="alternate"] .mc-copy>p:nth-child(even){float:right;border-left:1px solid color-mix(in srgb,var(--mc-c) 37%,var(--mc-line));border-right:3px solid var(--mc-c);border-radius:13px 13px 3px 13px;background:color-mix(in srgb,var(--mc-c) 10%,var(--mc-paper))}
+.bh-maca .mc-controls{grid-area:controls;display:flex;align-items:center;justify-content:center;gap:12px;min-height:22px;margin:6px 0 0}
+.bh-maca .mc-controls span{display:block;width:6px;height:6px;border:1px solid var(--mc-b);border-radius:50%}
+.bh-maca .mc-controls span:nth-child(2){width:50px;height:5px;border:0;border-radius:5px;background:var(--mc-fwd)}
+.mc-raceme-mobile{padding-right:23px!important}
+.mc-raceme-mobile .mc-time::after{content:"";position:absolute;left:43%;top:2px;width:35px;height:4px;border-radius:5px;background:var(--mc-b);box-shadow:0 6px 0 -1px var(--mc-c)}
+.mc-raceme-mobile::after{content:"";position:absolute;right:10px;top:90px;bottom:63px;width:5px;background:radial-gradient(circle,var(--mc-b) 0 2px,transparent 2.6px) center top/5px 17px repeat-y}
+.mc-raceme-mobile .mc-media{transform:rotate(-5deg);padding:3px;border:1px solid var(--mc-c);border-radius:14px}
+.mc-raceme-mobile .mc-media img{height:52px}
+.bh-maca.mc-milkglass-duo{max-width:360px;border-radius:24px 24px 42px 42px;grid-template-areas:"time" "name" "title" "copy" "media" "controls";background:linear-gradient(150deg,color-mix(in srgb,var(--mc-a) 15%,var(--mc-base)),var(--mc-base) 38%,color-mix(in srgb,var(--mc-c) 13%,var(--mc-base)));padding:18px 18px 21px}
+.mc-milkglass-duo .mc-copy{border-radius:8px!important;border-bottom:5px double var(--mc-b)!important;padding-bottom:20px!important}
+.bh-maca.mc-milkglass-duo .mc-media{width:100%;gap:18px;padding:15px 24px 2px;margin:0;border-top:1px solid var(--mc-c)}
+.bh-maca.mc-milkglass-duo .mc-media img{height:76px;border-radius:18px 18px 27px 8px;border:3px solid color-mix(in srgb,var(--mc-a) 52%,var(--mc-paper))}
+.bh-maca.mc-milkglass-duo .mc-media img:nth-child(even){border-radius:18px 18px 8px 27px;border-color:color-mix(in srgb,var(--mc-c) 52%,var(--mc-paper))}
+.mc-milkglass-duo .mc-time::after{content:"";position:absolute;right:8px;width:18px;height:8px;top:3px;border:1px solid var(--mc-a);border-radius:2px;background:linear-gradient(90deg,var(--mc-a) 70%,transparent 70%)}
+.bh-maca.mc-roast-terminal{max-width:460px;margin-bottom:55px;border-radius:12px 12px 35px 35px;padding:24px 25px 18px;grid-template-columns:minmax(0,1fr) 50px;grid-template-areas:"time media" "name media" "title title" "copy copy" "controls controls";column-gap:10px;box-shadow:inset 0 0 0 6px color-mix(in srgb,var(--mc-b) 20%,var(--mc-paper)),0 2px 0 var(--mc-a);border-color:var(--mc-c)}
+.bh-maca.mc-roast-terminal .mc-name{justify-self:start;text-align:left;font-family:'Courier New',monospace}
+.bh-maca.mc-roast-terminal .mc-time{padding:0;font-family:'Courier New',monospace;letter-spacing:.18em}
+.bh-maca.mc-roast-terminal .mc-media{width:50px;align-self:center;padding:0;margin:0}
+.bh-maca.mc-roast-terminal .mc-media img{height:44px;border-radius:3px}
+.bh-maca.mc-roast-terminal .mc-title{text-align:left;font-family:'Courier New',monospace;padding-top:8px}
+.bh-maca.mc-roast-terminal .mc-copy{border:4px solid color-mix(in srgb,var(--mc-a) 28%,var(--mc-line));border-radius:10px;box-shadow:inset 0 3px 7px #00000018;font-family:'Courier New',monospace}
+.bh-maca.mc-roast-terminal .mc-copy>p{border-radius:2px;font-size:12px;border-left-width:1px}
+.bh-maca.mc-roast-terminal .mc-controls{justify-content:flex-end;padding-right:8px}
+.bh-maca.mc-roast-terminal .mc-controls span{width:9px;height:9px;background:var(--mc-b);border-radius:2px}
+.bh-maca.mc-roast-terminal .mc-controls span:nth-child(2){width:9px;height:9px;background:var(--mc-a)}
+.mc-roast-terminal::before{content:"";position:absolute;bottom:-21px;left:40%;width:20%;height:19px;background:linear-gradient(90deg,var(--mc-a),var(--mc-b));z-index:-1}
+.mc-roast-terminal::after{content:"";position:absolute;bottom:-29px;left:25%;width:50%;height:9px;background:var(--mc-base);border:2px solid var(--mc-c);border-radius:12px 12px 3px 3px}
+.bh-maca.mc-roast-terminal:not(:has(.mc-media img[src]:not([src=""]))) {grid-template-columns:minmax(0,1fr);grid-template-areas:"time" "name" "title" "copy" "controls"}
+.bh-maca.mc-orchard-pocket{max-width:375px;border-radius:23px 23px 38px 38px;grid-template-columns:48px minmax(0,1fr);grid-template-areas:"time time" "media name" "media title" "copy copy" "controls controls";column-gap:11px;padding:18px 18px 21px;background:linear-gradient(90deg,color-mix(in srgb,var(--mc-a) 17%,var(--mc-base)),var(--mc-base) 33%)}
+.bh-maca.mc-orchard-pocket .mc-time{padding-bottom:15px;text-align:right;border-top:4px dotted var(--mc-b);padding-top:7px}
+.bh-maca.mc-orchard-pocket .mc-media{width:48px;margin:0;align-self:center}
+.bh-maca.mc-orchard-pocket .mc-media img{height:48px;border-radius:6px}
+.bh-maca.mc-orchard-pocket .mc-name{justify-self:start;text-align:left;font-size:15px;align-self:end}
+.bh-maca.mc-orchard-pocket .mc-title{text-align:left;align-self:start;font-size:10px}
+.bh-maca.mc-orchard-pocket .mc-copy{border-radius:7px;font-size:12px}
+.bh-maca.mc-orchard-pocket .mc-copy>p{border-radius:6px;max-width:95%}
+.bh-maca.mc-orchard-pocket .mc-controls{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;padding:8px 2px 3px}
+.bh-maca.mc-orchard-pocket .mc-controls span{width:100%;height:13px;border:1px solid var(--mc-b);border-bottom:3px solid var(--mc-a);border-radius:3px 3px 6px 6px;background:var(--mc-paper)}
+.bh-maca.mc-orchard-pocket .mc-controls::after{content:"";grid-column:3/9;height:12px;border:1px solid var(--mc-b);border-bottom:3px solid var(--mc-a);border-radius:3px 3px 6px 6px;background:var(--mc-paper)}
+.bh-maca.mc-orchard-pocket:not(:has(.mc-media img[src]:not([src=""]))) {grid-template-columns:minmax(0,1fr);grid-template-areas:"time" "name" "title" "copy" "controls"}
+.bh-maca.mc-whisper-kernel{max-width:345px;border-radius:85px 85px 70px 70px;padding:36px 27px 26px;border-width:1px;box-shadow:inset 6px 0 0 color-mix(in srgb,var(--mc-a) 35%,var(--mc-base)),inset -6px 0 0 color-mix(in srgb,var(--mc-c) 35%,var(--mc-base));row-gap:9px}
+.bh-maca.mc-whisper-kernel .mc-time{justify-self:center;text-align:center;padding:4px 25px 9px;border-top:4px solid var(--mc-b);border-radius:10px}
+.bh-maca.mc-whisper-kernel .mc-name{font:400 24px/1.2 Georgia,serif;margin-top:4px}
+.bh-maca.mc-whisper-kernel .mc-copy{border-radius:27px 27px 33px 33px;padding:18px 10px;border:1px solid var(--mc-b)}
+.bh-maca.mc-whisper-kernel .mc-copy>p{font-size:12px;border:0;border-radius:19px 19px 19px 5px}
+.bh-maca.mc-whisper-kernel .mc-controls{margin-top:8px}
+.bh-maca.mc-whisper-kernel .mc-controls span{width:16px;height:8px;border-radius:100%;border-color:var(--mc-a)}
+.bh-maca.mc-whisper-kernel .mc-controls span:nth-child(2){width:30px;height:22px;border:1px solid var(--mc-b);border-radius:50%;background:transparent;box-shadow:inset 0 0 0 5px var(--mc-base),inset 0 0 0 6px var(--mc-c)}
+.bh-maca.mc-bud{max-width:385px;row-gap:10px;padding:24px;background:var(--mc-paper)}
+.bh-maca.mc-bud .mc-title{font-size:27px;line-height:1.12;letter-spacing:-.04em}
+.bh-maca.mc-bud .mc-copy{font-size:12px;line-height:1.85}
+.bh-maca.mc-bud .mc-name{font-size:9px;letter-spacing:.1em}
+.bh-maca.mc-bud .mc-media img{height:68px}
+.bh-maca.mc-hilum{padding:20px 24px 23px 51px;background:transparent;border-top:1px solid var(--mc-a)}
+.mc-hilum::after{content:"";position:absolute;bottom:0;right:0;width:66%;height:3px;background:var(--mc-fwd)}
+.mc-hilum .mc-ornament{left:9px;top:20px;width:26px;height:30px;border:2px solid var(--mc-b);border-radius:48% 53% 44% 51%;transform:rotate(21deg);box-shadow:inset 0 0 0 6px var(--mc-paper),inset 0 0 0 7px var(--mc-c)}
+.bh-maca.mc-butterfleck{grid-template-columns:minmax(0,1fr) 70px;grid-template-areas:"name media" "title media" "copy copy";column-gap:18px;padding:23px 25px 26px;border-right:4px solid var(--mc-c);border-bottom:1px solid var(--mc-b)}
+.bh-maca.mc-butterfleck .mc-media{align-self:center;border:1px solid var(--mc-a);padding:4px;transform:rotate(4deg)}
+.bh-maca.mc-butterfleck .mc-media img{height:68px;border-radius:11px 2px 2px 2px}
+.bh-maca.mc-butterfleck .mc-copy{padding-top:8px}
+.mc-butterfleck .mc-ornament{left:6px;bottom:8px;width:12px;height:16px;clip-path:polygon(14% 0,100% 17%,75% 100%,0 76%);background:var(--mc-a)}
+.bh-maca.mc-butterfleck:not(:has(.mc-media img[src]:not([src=""]))) {grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "title" "copy"}
+.bh-maca.mc-blossom-pair{padding:24px 26px 25px;grid-template-areas:"name" "media" "title" "copy";border:1px solid var(--mc-c);border-radius:45px 2px 2px 2px;text-align:center}
+.bh-maca.mc-blossom-pair .mc-name{justify-self:center;text-align:center}
+.bh-maca.mc-blossom-pair .mc-media{width:145px;max-width:100%;justify-self:center;gap:15px;padding-top:10px;margin:0 0 3px;border-top:1px solid var(--mc-b)}
+.bh-maca.mc-blossom-pair .mc-media img{height:59px;border-radius:50%;border:3px solid var(--mc-a)}
+.bh-maca.mc-blossom-pair .mc-media img:nth-child(even){border-color:var(--mc-c);transform:translateY(8px)}
+.bh-maca.mc-blossom-pair .mc-copy{text-align:left;padding-top:5px}
+.mc-blossom-pair .mc-ornament{left:12px;top:43px;width:7px;height:7px;border-radius:50%;border:1px solid var(--mc-a);box-shadow:2px 10px 0 -1px var(--mc-b),0 20px 0 -1px var(--mc-c)}
+.bh-maca.mc-crumbprint{max-width:315px;border:1px solid var(--mc-b);border-bottom:9px solid var(--mc-a);padding:21px 24px 25px;row-gap:13px}
+.bh-maca.mc-crumbprint .mc-title{font:800 29px/.98 Arial,sans-serif;letter-spacing:-.055em;color:var(--mc-t1)}
+.bh-maca.mc-crumbprint .mc-name{padding-right:29px}
+.bh-maca.mc-crumbprint .mc-copy{border-top:1px solid var(--mc-line);padding-top:14px}
+.mc-crumbprint .mc-ornament{right:20px;top:20px;width:8px;height:6px;background:var(--mc-c);border-radius:2px 4px 1px 2px;box-shadow:7px 7px 0 -1px var(--mc-a),-5px 15px 0 -1px var(--mc-b),2px 24px 0 -2px var(--mc-shell);transform:rotate(-20deg)}
+.bh-maca.mc-whorllet{padding:22px 24px 20px;border-left:1px solid var(--mc-b);border-bottom:1px solid var(--mc-c);grid-template-areas:"name" "title" "copy" "media";row-gap:10px;background:transparent}
+.bh-maca.mc-whorllet .mc-title{font-style:italic;padding-right:28px}
+.bh-maca.mc-whorllet .mc-media{width:125px;max-width:100%;justify-self:end;margin-top:5px;border-radius:80% 5% 75% 5%;background:var(--mc-fwd);padding:3px}
+.bh-maca.mc-whorllet .mc-media img{height:58px;border-radius:80% 5% 75% 5%}
+.mc-whorllet .mc-ornament{right:20px;top:21px;width:15px;height:28px;border:1px solid var(--mc-a);border-radius:100% 0 100% 0;transform:rotate(24deg)}
+@container macadamia (max-width:350px){.bh-maca .mc-title{font-size:32px}.bh-maca.mc-bud .mc-title{font-size:25px}.bh-maca.mc-comms .mc-title{font-size:10px}.mc-hilum-press .mc-copy{padding-left:15px}.mc-terrazzo-milk .mc-media img{height:112px}.mc-terrazzo-milk .mc-media img:nth-child(even){height:96px}.mc-whorl-house .mc-media{padding-inline:10px}.mc-whorl-house .mc-media img{height:137px}.mc-whorl-house .mc-copy{padding:18px}.bh-maca.mc-comms .mc-copy{padding:12px 9px}.bh-maca.mc-comms .mc-copy>p{padding:9px 10px}.mc-orchard-weave .mc-title{font-size:30px}}
+@media(forced-colors:active){.bh-maca .mc-copy :is(b,strong,i,em,u){background:none!important;color:CanvasText!important;-webkit-text-fill-color:CanvasText!important}.bh-maca .mc-title{background:none;color:CanvasText}.bh-maca{border:1px solid CanvasText}}
+</style></head>
+<body>
+<header class="collection-top"><div><div class="brand">Macadamia</div><div class="couple">Journey & Kai · 15 templates</div></div><div class="tools"><label for="theme">Preview</label><select id="theme"><option value="light">Light</option><option value="dark">Dark</option></select><label for="preview-width">Width</label><select id="preview-width"><option value="auto">Fit</option><option value="320px">320 px</option><option value="550px">550 px</option></select><div class="colour-pair"><label for="colour-1">Member colours</label><input id="colour-1" type="color" value="#557f82" aria-label="Member colour 1"><input id="colour-2" type="color" value="#92739a" aria-label="Member colour 2"><input id="colour-3" type="color" value="#b17d86" aria-label="Member colour 3"></div></div></header>
+<main class="workspace">
+<nav class="design-nav" aria-label="Macadamia designs"><div class="nav-group"><h2>Threads</h2><button type="button" data-design="raceme-letters" aria-pressed="false"><small>01</small><span>Raceme Letters</span></button><button type="button" data-design="terrazzo-milk" aria-pressed="false"><small>02</small><span>Terrazzo Milk</span></button><button type="button" data-design="hilum-press" aria-pressed="false"><small>03</small><span>Hilum Press</span></button><button type="button" data-design="whorl-house" aria-pressed="false"><small>04</small><span>Whorl House</span></button><button type="button" data-design="orchard-weave" aria-pressed="false"><small>05</small><span>Orchard Weave</span></button></div><div class="nav-group"><h2>Comms</h2><button type="button" data-design="raceme-mobile" aria-pressed="false"><small>01</small><span>Raceme Mobile</span></button><button type="button" data-design="milkglass-duo" aria-pressed="false"><small>02</small><span>Milkglass Duo</span></button><button type="button" data-design="roast-terminal" aria-pressed="false"><small>03</small><span>Roast Terminal</span></button><button type="button" data-design="orchard-pocket" aria-pressed="false"><small>04</small><span>Orchard Pocket</span></button><button type="button" data-design="whisper-kernel" aria-pressed="false"><small>05</small><span>Whisper Kernel</span></button></div><div class="nav-group"><h2>Buds</h2><button type="button" data-design="hilum" aria-pressed="false"><small>01</small><span>Hilum</span></button><button type="button" data-design="butterfleck" aria-pressed="false"><small>02</small><span>Butterfleck</span></button><button type="button" data-design="blossom-pair" aria-pressed="false"><small>03</small><span>Blossom Pair</span></button><button type="button" data-design="crumbprint" aria-pressed="false"><small>04</small><span>Crumbprint</span></button><button type="button" data-design="whorllet" aria-pressed="false"><small>05</small><span>Whorllet</span></button></div></nav>
+<section class="preview-column" aria-label="Template preview"><div class="preview-heading"><div><h1 id="design-title"></h1><p id="design-description"></p></div><span id="design-kind"></span></div><div id="stage"></div><details class="code-panel" id="code-panel"><summary>JCink code</summary><textarea id="code" readonly aria-label="Copy-ready JCink code" spellcheck="false"></textarea><div class="footer-links"><a id="raw-link" href="https://github.com/lexdoescodingnow/templates/tree/main/macadamia">Orimacadamiaal snippet on GitHub</a><a href="https://github.com/lexdoescodingnow/templates/tree/main/macadamia">Macadamia folder</a></div></details></section>
+<aside class="editor" aria-label="Edit template"><h2>Make it yours</h2><div class="field"><label for="name">Name</label><input id="name" type="text" spellcheck="false"></div><div class="field"><label for="url">Name link</label><input id="url" type="text" spellcheck="false"></div><div class="field"><label for="title">Title / contact status</label><input id="title" type="text"></div><div class="split" id="comms-fields"><div class="field"><label for="time">Time</label><input id="time" type="text"></div><div class="field"><label for="flow">Messages</label><select id="flow"><option value="received">Received</option><option value="sent">Sent</option><option value="alternate">Alternating</option></select></div></div><fieldset><legend>Character GIFs</legend><div id="gif-fields"></div><button id="add-gif" type="button" class="secondary">Add GIF</button></fieldset><div class="field writing-field"><label for="writing">Writing</label><textarea id="writing" spellcheck="false"></textarea><div class="word-count" id="word-count"></div></div><div class="actions"><button id="copy" type="button" class="primary">Copy code</button><button id="download" type="button">Download .txt</button><button id="reset" type="button" class="secondary">Reset design</button></div><div id="status" role="status" aria-live="polite"></div><p class="editor-note">Use <code>&lt;p&gt;</code> for paragraphs or message bubbles. The editor accepts <code>[b]</code>, <code>[i]</code> and <code>[u]</code>. Preview names replace the placeholders for display; copied code keeps your field values. Preview colours are supplied by the forum when you post. Edits stay while this page is open.</p></aside>
+</main><script>const MACADAMIA_GIFS = ["https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv", "https://64.media.tumblr.com/fc9ad72904d14093924519639765af84/7a0a4b57e7d99dd3-27/s540x810/382377f08c71e7101cda3709522afd7059a8ee17.gifv"];
+const MACADAMIA_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@78997f92cd959301d787d5427871b35f526626a8/macadamia/macadamia-orchard-v1.css';
+const MACADAMIA_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\n\n<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>';
+const MACADAMIA_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
+const MACADAMIA_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+function macadamiaSafeUrl(value) { const s=String(value).trim(); return /^(https?:\/\/|mailto:|#)/i.test(s)||s==='[url]'?s:'#'; }
+function macadamiaEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function macadamiaDefaults(design) { return {name:'[name]',url:'[url]',title:'[text]',time:'16:28',flow:'received',gifs:MACADAMIA_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?MACADAMIA_THREAD:design.type==='comms'?MACADAMIA_COMMS:MACADAMIA_BUD}; }
+function macadamiaFilename(d) { return `macadamia-${d.slug}-${d.type}-${d.number}.txt`; }
+function macadamiaMarkup(d,s) {
+  const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';
+  const lines=[`<div class="bh-maca mc-${d.type} mc-${d.slug}"${flow}>`,`<a class="mc-name" href="${macadamiaEscape(macadamiaSafeUrl(s.url))}">${macadamiaEscape(s.name)}</a>`,`<div class="mc-title">${macadamiaEscape(s.title)}</div>`];
+  if(d.type==='comms') lines.push(`<div class="mc-time">${macadamiaEscape(s.time)}</div>`);
+  const gifs=s.gifs.filter(g=>/^https?:\/\//i.test(g.url.trim()));
+  if(gifs.length) { lines.push('<div class="mc-media">'); gifs.forEach(g=>lines.push(`<img src="${macadamiaEscape(g.url.trim())}" alt="Character GIF" style="object-position:${/^\d{1,3}% \d{1,3}%$/.test(g.position)?g.position:'50% 45%'}">`)); lines.push('</div>'); }
+  lines.push('<div class="mc-copy">',s.body,'</div>');
+  if(d.type==='comms') lines.push('<div class="mc-controls" aria-hidden="true">'+Array(d.slug==='orchard-pocket'?30:d.slug==='roast-terminal'?5:3).fill('<span></span>').join('')+'</div>');
+  if(d.type!=='comms') lines.push('<div class="mc-ornament" aria-hidden="true"></div>');
+  lines.push('</div>');
+  return lines.join('\n');
+}
+function macadamiaSnippet(d,s) { return '[dohtml]\n'+macadamiaMarkup(d,s)+'\n\n<link rel="stylesheet" href="'+MACADAMIA_CSS_URL+'">\n[/dohtml]\n'; }
+if(typeof module!=='undefined') module.exports={MACADAMIA_GIFS,MACADAMIA_CSS_URL,macadamiaDefaults,macadamiaFilename,macadamiaMarkup,macadamiaSnippet};
+
+const MACADAMIA_DESIGNS = [{"type":"thread","name":"Raceme Letters","slug":"raceme-letters","number":"01","gifs":1,"sample":"the things we grow into","description":"A cascade of tiny macadamia blossoms runs beside a panoramic portrait and a broad, softly set reading page."},{"type":"thread","name":"Terrazzo Milk","slug":"terrazzo-milk","number":"02","gifs":2,"sample":"a little beautifully undone","description":"A fragmented mosaic frame holds two offset landscape portraits, a bold slanting title and a clean central writing surface."},{"type":"thread","name":"Hilum Press","slug":"hilum-press","number":"03","gifs":0,"sample":"where it all begins","description":"A writing-led letterpress page with a large seed-eye impression, compressed type, a split colour baseline and generous prose."},{"type":"thread","name":"Whorl House","slug":"whorl-house","number":"04","gifs":1,"sample":"in the quiet between","description":"A rounded triangular portrait sits among three radiating leaves above a centred title and a spare, open reading panel."},{"type":"thread","name":"Orchard Weave","slug":"orchard-weave","number":"05","gifs":0,"sample":"woven into the everyday","description":"An image-free page with an interlaced member-colour edge, a small sideways signature and a broad bookish title."},{"type":"comms","name":"Raceme Mobile","slug":"raceme-mobile","number":"01","gifs":1,"sample":"here for a little while","description":"A slim blossom-detailed phone with a square contact portrait, offset speaker slots and a rounded conversation screen."},{"type":"comms","name":"Milkglass Duo","slug":"milkglass-duo","number":"02","gifs":2,"sample":"both sides of the story","description":"A two-panel glass phone with its conversation above a paired contact dock and a slim illuminated hinge."},{"type":"comms","name":"Roast Terminal","slug":"roast-terminal","number":"03","gifs":1,"sample":"a message is waiting","description":"A miniature desktop terminal with a thick inset bezel, compact contact tile, square message cards and a pedestal base."},{"type":"comms","name":"Orchard Pocket","slug":"orchard-pocket","number":"04","gifs":1,"sample":"always in your pocket","description":"A compact keyboard phone with a short landscape display, a small contact tile and four rows of miniature keys."},{"type":"comms","name":"Whisper Kernel","slug":"whisper-kernel","number":"05","gifs":0,"sample":"close enough to hear","description":"A smooth pebble-shaped messenger with a wide earpiece, centred contact text and soft stacked conversation bubbles."},{"type":"bud","name":"Hilum","slug":"hilum","number":"01","gifs":0,"sample":"the smallest beginning","description":"A tiny round seed-eye imprint anchors a short open reply between offset coloured rules."},{"type":"bud","name":"Butterfleck","slug":"butterfleck","number":"02","gifs":1,"sample":"something soft to keep","description":"An asymmetric miniature with a portrait corner, a short reply and a scattering of terrazzo pieces."},{"type":"bud","name":"Blossom Pair","slug":"blossom-pair","number":"03","gifs":2,"sample":"two small reasons","description":"Two small portrait medallions hang from a fine flowering stem above a compact reply."},{"type":"bud","name":"Crumbprint","slug":"crumbprint","number":"04","gifs":0,"sample":"a trace of sweetness","description":"A tiny upright note with a bold sans heading, a scattered imprint and a wide coloured lower lip."},{"type":"bud","name":"Whorllet","slug":"whorllet","number":"05","gifs":1,"sample":"a moment unfolding","description":"A low, slanted leaf-shaped portrait sits below a short reply and a small member-colour leaf impression."}];
+const macadamiaStates = new Map(MACADAMIA_DESIGNS.map(d=>[d.slug,macadamiaDefaults(d)]));
+let macadamiaCurrent = MACADAMIA_DESIGNS[0];
+const el=id=>document.getElementById(id);
+function macadamiaFormat(value) { return value.replace(/\[(\/?)(b|i|u)\]/gi,(_,slash,tag)=>`<${slash}${tag.toLowerCase()}>`); }
+function macadamiaBody(value) {
+  const parsed=new DOMParser().parseFromString(macadamiaFormat(value),'text/html');
+  const allowed=new Set(['P','B','STRONG','I','EM','U','A','BR','SPAN']);
+  for(const node of [...parsed.body.querySelectorAll('*')].reverse()) {
+    if(!allowed.has(node.tagName)) { if(['SCRIPT','STYLE','IFRAME','OBJECT','SVG','MATH','TEMPLATE'].includes(node.tagName)) node.remove(); else node.replaceWith(...node.childNodes); continue; }
+    for(const attr of [...node.attributes]) { if(node.tagName==='A'&&attr.name==='href'&&(/^(https?:|mailto:|#)/i.test(attr.value)||attr.value==='[url]')) continue; node.removeAttribute(attr.name); }
+  }
+  const walker=parsed.createTreeWalker(parsed.body,NodeFilter.SHOW_COMMENT);
+  const comments=[]; while(walker.nextNode())comments.push(walker.currentNode); comments.forEach(c=>c.remove());
+  return parsed.body.innerHTML;
+}
+function macadamiaRead() {
+  const s=macadamiaStates.get(macadamiaCurrent.slug);
+  for(const k of ['name','url','title','time','flow']) s[k]=el(k).value;
+  s.body=macadamiaBody(el('writing').value);
+  return s;
+}
+function macadamiaDraw() {
+  const s=macadamiaStates.get(macadamiaCurrent.slug);
+  const visible={...s,name:s.name==='[name]'?'Journey & Kai':s.name,title:s.title==='[text]'?macadamiaCurrent.sample:s.title,url:'#'};
+  el('stage').innerHTML=macadamiaMarkup(macadamiaCurrent,visible);
+  el('code').value=macadamiaSnippet(macadamiaCurrent,s);
+  const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();
+  const count=text?text.split(/\s+/).length:0;
+  el('word-count').textContent=`${count} words${macadamiaCurrent.type==='bud'?' · buds are for replies of 100 words or fewer':''}`;
+  el('word-count').classList.toggle('over',macadamiaCurrent.type==='bud'&&count>100);
+}
+function macadamiaGifFields() {
+  const s=macadamiaStates.get(macadamiaCurrent.slug);
+  el('gif-fields').replaceChildren();
+  s.gifs.forEach((gif,index)=>{
+    const row=document.createElement('div');row.className='gif-entry';
+    const input=document.createElement('input');input.type='url';input.value=gif.url;input.setAttribute('aria-label',`GIF ${index+1} URL`);
+    input.addEventListener('input',()=>{const value=input.value.trim();gif.url=/^https?:\/\//i.test(value)?value:'';macadamiaDraw();});
+    const bottom=document.createElement('div');bottom.className='gif-bottom';
+    const label=document.createElement('label');label.textContent='Crop';
+    const crop=document.createElement('input');crop.type='range';crop.min='0';crop.max='100';crop.value=gif.position.split(' ')[1].replace('%','');crop.setAttribute('aria-label',`GIF ${index+1} vertical crop`);
+    crop.addEventListener('input',()=>{gif.position=`50% ${crop.value}%`;macadamiaDraw();});label.append(crop);
+    const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';remove.addEventListener('click',()=>{s.gifs.splice(index,1);macadamiaGifFields();macadamiaDraw();});
+    bottom.append(label,remove);row.append(input,bottom);el('gif-fields').append(row);
+  });
+}
+function macadamiaSelect(slug) {
+  macadamiaCurrent=MACADAMIA_DESIGNS.find(d=>d.slug===slug)||MACADAMIA_DESIGNS[0];
+  const s=macadamiaStates.get(macadamiaCurrent.slug);
+  for(const k of ['name','url','title','time','flow']) el(k).value=s[k];
+  el('writing').value=s.body;
+  el('comms-fields').hidden=macadamiaCurrent.type!=='comms';
+  el('design-title').textContent=macadamiaCurrent.name;
+  el('design-description').textContent=macadamiaCurrent.description;
+  el('design-kind').textContent=`${macadamiaCurrent.type==='bud'?'Bud':macadamiaCurrent.type==='thread'?'Thread':'Comms'} ${macadamiaCurrent.number}`;
+  for(const b of document.querySelectorAll('[data-design]'))b.setAttribute('aria-pressed',String(b.dataset.design===macadamiaCurrent.slug));
+  el('raw-link').href=`https://github.com/lexdoescodingnow/templates/blob/main/macadamia/${macadamiaFilename(macadamiaCurrent)}`;
+  el('status').textContent='';macadamiaGifFields();macadamiaDraw();
+}
+for(const b of document.querySelectorAll('[data-design]'))b.addEventListener('click',()=>macadamiaSelect(b.dataset.design));
+for(const k of ['name','url','title','time','flow','writing'])el(k).addEventListener('input',()=>{macadamiaRead();macadamiaDraw();});
+el('add-gif').addEventListener('click',()=>{const s=macadamiaStates.get(macadamiaCurrent.slug);s.gifs.push({url:MACADAMIA_GIFS[s.gifs.length%2],position:'50% 45%'});macadamiaGifFields();macadamiaDraw();});
+el('reset').addEventListener('click',()=>{macadamiaStates.set(macadamiaCurrent.slug,macadamiaDefaults(macadamiaCurrent));macadamiaSelect(macadamiaCurrent.slug);});
+el('copy').addEventListener('click',async()=>{
+  const value=el('code').value;
+  try { await navigator.clipboard.writeText(value);el('status').textContent='Copied with [dohtml] tags.'; }
+  catch { const panel=el('code-panel');const wasOpen=panel.open;panel.open=true;el('code').focus();el('code').select();try {if(!document.execCommand('copy'))throw new Error('copy');el('status').textContent='Copied with [dohtml] tags.';panel.open=wasOpen;}catch{el('status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.';} }
+});
+el('download').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([el('code').value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=macadamiaFilename(macadamiaCurrent);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);el('status').textContent='Your edited snippet is ready.';});
+el('theme').addEventListener('change',()=>document.documentElement.setAttribute('color-mode',el('theme').value));
+for(let i=1;i<=3;i++)el('colour-'+i).addEventListener('input',()=>{const hex=el('colour-'+i).value;document.documentElement.style.setProperty('--mgrgb'+i,[1,3,5].map(start=>parseInt(hex.slice(start,start+2),16)).join(','));});
+macadamiaSelect(MACADAMIA_DESIGNS[0].slug);
+
+el('preview-width').addEventListener('change',()=>el('stage').style.width=el('preview-width').value);
+</script></body></html>

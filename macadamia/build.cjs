@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const dir=__dirname;
+const designs=JSON.parse(fs.readFileSync(path.join(dir,'designs.json'),'utf8'));
+const model=require('./macadamia-model.js');
+for(const d of designs)fs.writeFileSync(path.join(dir,model.macadamiaFilename(d)),model.macadamiaSnippet(d,model.macadamiaDefaults(d)));
+const read=n=>fs.readFileSync(path.join(dir,n),'utf8');
+const css=read('macadamia-preview.css')+'\n'+read('macadamia-orchard-v1.css');
+const script=read('macadamia-model.js')+'\nconst MACADAMIA_DESIGNS = '+JSON.stringify(designs)+';\n'+read('macadamia-editor.js');
+fs.writeFileSync(path.join(dir,'macadamia-collection-preview.html'),read('preview-shell.html').replace('MACADAMIA_STYLES',()=>css).replace('MACADAMIA_SCRIPT',()=>script));
+console.log('Built 15 Macadamia snippets and the standalone editor.');
