@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const dir=__dirname;
+const read=n=>fs.readFileSync(path.join(dir,n),'utf8');
+const designs=JSON.parse(read('designs.json'));
+const model=require('./pumpkin-model.js');
+for(const d of designs)fs.writeFileSync(path.join(dir,model.pumpkinFilename(d)),model.pumpkinSnippet(d,model.pumpkinDefaults(d)));
+const css=read('pumpkin-preview.css')+'\n'+read('pumpkin-harvest-v1.css');
+const script=read('pumpkin-model.js')+'\nconst PUMPKIN_DESIGNS = '+JSON.stringify(designs)+';\n'+read('pumpkin-editor.js');
+fs.writeFileSync(path.join(dir,'pumpkin-collection-preview.html'),read('preview-shell.html').replace('PUMPKIN_STYLES',()=>css).replace('PUMPKIN_SCRIPT',()=>script));
+console.log('Built 15 Pumpkin snippets and the standalone editor.');
