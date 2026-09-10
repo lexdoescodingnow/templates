@@ -1,0 +1,163 @@
+.bh-sake-brew{--sk-a:rgb(var(--mgrgb1,66,116,135));--sk-b:rgb(var(--mgrgb2,139,96,142));--sk-c:rgb(var(--mgrgb3,162,102,109));--sk-paper:#faf9f7;--sk-panel:#f0efed;--sk-ink:#292b30;--sk-muted:#62636a;--sk-shadow:rgba(20,23,30,.09);--sk-1:color-mix(in srgb,var(--sk-a) 62%,var(--sk-ink));--sk-2:color-mix(in srgb,var(--sk-b) 62%,var(--sk-ink));--sk-3:color-mix(in srgb,var(--sk-c) 62%,var(--sk-ink));--sk-grad:linear-gradient(100deg,var(--sk-a),var(--sk-b),var(--sk-c));--sk-textgrad:linear-gradient(90deg,var(--sk-1),var(--sk-2),var(--sk-3));--sk-line:color-mix(in srgb,var(--sk-b) 38%,var(--sk-paper));box-sizing:border-box;position:relative;isolation:isolate;container-type:inline-size;display:grid;min-width:0;width:min(560px,100%);margin:28px auto;background:var(--sk-paper);color:var(--sk-ink);font:16px/1.8 Georgia,'Times New Roman',serif;text-align:left;overflow-wrap:anywhere;border:1px solid var(--sk-line);box-shadow:0 12px 36px var(--sk-shadow)}
+.bh-sake-brew *,.bh-sake-brew *::before,.bh-sake-brew *::after{box-sizing:border-box;min-width:0}
+html[color-mode="dark"] .bh-sake-brew{--sk-paper:#1b1d22;--sk-panel:#25272e;--sk-ink:#ececf0;--sk-muted:#b4b4bf;--sk-shadow:rgba(0,0,0,.22);color-scheme:dark}
+html[color-mode="light"] .bh-sake-brew{color-scheme:light}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-sake-brew{--sk-paper:#1b1d22;--sk-panel:#25272e;--sk-ink:#ececf0;--sk-muted:#b4b4bf;--sk-shadow:rgba(0,0,0,.22);color-scheme:dark}}
+.bh-sake-brew .sk-name{grid-area:name;display:block;position:relative;color:var(--sk-1);font:600 13px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:.12em;text-decoration:none;text-transform:uppercase;align-self:center}
+.bh-sake-brew .sk-name:hover{text-decoration:underline;text-underline-offset:4px}
+.bh-sake-brew .sk-name:focus-visible{outline:2px solid var(--sk-1);outline-offset:5px}
+.bh-sake-brew .sk-title{grid-area:title;position:relative;color:var(--sk-2);font:400 35px/1.16 Georgia,serif;letter-spacing:-.04em;text-wrap:balance}
+.bh-sake-brew .sk-copy{grid-area:copy;position:relative;min-height:0;line-height:1.85}
+.bh-sake-brew .sk-copy p{margin:0 0 1.15em;padding:0}
+.bh-sake-brew .sk-copy p:last-child{margin-bottom:0}
+.bh-sake-brew .sk-copy a{color:var(--sk-2);text-decoration:underline;text-underline-offset:3px}
+.bh-sake-brew .sk-copy :is(b,strong,i,em,u){background:var(--sk-textgrad);background-clip:text;-webkit-background-clip:text;color:var(--sk-1);-webkit-text-fill-color:transparent;font-weight:700}
+.bh-sake-brew .sk-copy :is(i,em){background-image:linear-gradient(90deg,var(--sk-3),var(--sk-2),var(--sk-1));font-style:italic}
+.bh-sake-brew .sk-copy u{text-decoration:underline;text-decoration-color:var(--sk-2);text-decoration-thickness:1px;text-underline-offset:4px}
+.bh-sake-brew .sk-media{grid-area:media;display:flex;gap:12px;flex-wrap:wrap;position:relative;align-items:stretch}
+.bh-sake-brew .sk-media:not(:has(img[src]:not([src=""]))){display:none!important}
+.bh-sake-brew .sk-media img{display:block;flex:1 1 100px;min-width:0;width:0;max-width:100%;height:180px;object-fit:cover;border:1px solid var(--sk-line);background:var(--sk-panel)}
+.bh-sake-brew .sk-media img[src=""]{display:none}
+.bh-sake-brew .sk-mark{grid-area:mark;display:flex;gap:5px;position:relative;pointer-events:none}
+.bh-sake-brew .sk-mark span{display:block;flex:1;background:var(--sk-a)}
+.bh-sake-brew .sk-mark span:nth-child(3n+2){background:var(--sk-b)}
+.bh-sake-brew .sk-mark span:nth-child(3n){background:var(--sk-c)}
+.bh-sake-brew.sk-thread{grid-template-areas:"name" "title" "media" "copy" "mark";gap:22px;padding:34px}
+.bh-sake-brew.sk-thread .sk-mark{height:4px}
+.bh-sake-brew.sk-koji-chronicle{grid-template-columns:16px minmax(0,1fr);grid-template-areas:"mark name" "mark title" "mark media" "mark copy";gap:26px 24px;padding:30px 34px 38px 18px;border-top:5px solid var(--sk-1)}
+.bh-sake-brew.sk-koji-chronicle .sk-name{padding:0 0 14px;border-bottom:1px solid var(--sk-line)}
+.bh-sake-brew.sk-koji-chronicle .sk-title{font-size:clamp(30px,9cqi,48px);padding:24px 18px;border:1px solid var(--sk-line);box-shadow:inset 0 0 0 6px var(--sk-paper),inset 0 0 0 7px var(--sk-line);background:linear-gradient(140deg,color-mix(in srgb,var(--sk-a) 9%,var(--sk-paper)),var(--sk-paper))}
+.bh-sake-brew.sk-koji-chronicle .sk-mark{height:auto;display:grid;grid-template-rows:1fr 2fr 1fr 2fr 1fr 3fr;gap:10px}
+.bh-sake-brew.sk-koji-chronicle .sk-mark span{opacity:.65}
+.bh-sake-brew.sk-koji-chronicle .sk-copy{font-size:17px}
+.bh-sake-brew.sk-kikichoko-reverie{grid-template-areas:"name" "media" "title" "copy" "mark";gap:26px;border-width:0 1px;padding:30px 38px;background:linear-gradient(var(--sk-paper),var(--sk-paper)) padding-box,var(--sk-grad) border-box}
+.bh-sake-brew.sk-kikichoko-reverie .sk-name{text-align:center;border-bottom:1px solid var(--sk-line);padding-bottom:16px}
+.bh-sake-brew.sk-kikichoko-reverie .sk-media{justify-content:center;gap:24px;padding:8px 0}
+.bh-sake-brew.sk-kikichoko-reverie .sk-media img{flex:0 1 164px;width:164px;height:164px;border-radius:50%;border:8px solid var(--sk-paper);outline:2px solid var(--sk-1);box-shadow:0 0 0 6px var(--sk-paper),0 0 0 8px var(--sk-3)}
+.bh-sake-brew.sk-kikichoko-reverie .sk-title{text-align:center;font-size:clamp(29px,8cqi,42px);padding-bottom:22px;border-bottom:1px solid var(--sk-line)}
+.bh-sake-brew.sk-kikichoko-reverie .sk-mark{justify-content:center;gap:8px;height:24px}
+.bh-sake-brew.sk-kikichoko-reverie .sk-mark span{flex:0 0 24px;border:1px solid var(--sk-2);border-radius:50%;background:transparent;box-shadow:inset 0 0 0 5px var(--sk-paper),inset 0 0 0 6px var(--sk-line)}
+.bh-sake-brew.sk-kikichoko-reverie .sk-mark span:nth-child(n+4){display:none}
+.bh-sake-brew.sk-moromi-interval{grid-template-columns:34px minmax(0,1fr);grid-template-areas:"name title" "name media" "mark copy";gap:22px 18px;padding:26px 30px 32px 14px;border:0;border-right:3px solid var(--sk-3)}
+.bh-sake-brew.sk-moromi-interval .sk-name{writing-mode:vertical-rl;align-self:start;justify-self:center;padding:8px 0;letter-spacing:.2em}
+.bh-sake-brew.sk-moromi-interval .sk-title{font-size:clamp(32px,9cqi,47px);padding-bottom:18px;border-bottom:5px double var(--sk-line)}
+.bh-sake-brew.sk-moromi-interval .sk-media{align-items:start;gap:14px}
+.bh-sake-brew.sk-moromi-interval .sk-media img{flex:1 1 80px;height:175px;border-width:0 0 6px;border-color:var(--sk-a)}
+.bh-sake-brew.sk-moromi-interval .sk-media img:nth-child(2n){flex:1.3 1 80px;height:220px;border-color:var(--sk-c);margin-top:18px}
+.bh-sake-brew.sk-moromi-interval .sk-media img:only-child{height:200px;margin:0}
+.bh-sake-brew.sk-moromi-interval .sk-mark{height:100%;display:flex;flex-direction:column;align-items:center;gap:9px}
+.bh-sake-brew.sk-moromi-interval .sk-mark span{width:4px;min-height:12px;max-height:36px}
+.bh-sake-brew.sk-kurabito-ledger{grid-template-columns:44px minmax(0,1fr);grid-template-areas:"mark name" "mark title" "mark media" "mark copy";gap:22px 24px;padding:30px 30px 34px 0;border:0;border-bottom:2px solid var(--sk-2);box-shadow:none}
+.bh-sake-brew.sk-kurabito-ledger .sk-mark{height:auto;display:flex;flex-direction:column;border-right:1px solid var(--sk-line);gap:28px;padding:0 10px}
+.bh-sake-brew.sk-kurabito-ledger .sk-mark span{flex:0 0 1px;transform:translateX(4px)}
+.bh-sake-brew.sk-kurabito-ledger .sk-mark span:nth-child(2n){transform:translateX(-4px)}
+.bh-sake-brew.sk-kurabito-ledger .sk-title{padding:24px 0;border-block:1px solid var(--sk-line);font-size:clamp(29px,8.5cqi,43px)}
+.bh-sake-brew.sk-kurabito-ledger .sk-copy{font-size:17px}
+.bh-sake-brew.sk-ginjo-veil{grid-template-areas:"name" "media" "title" "copy" "mark";padding:24px;gap:0;border:0;border-top:2px solid var(--sk-1)}
+.bh-sake-brew.sk-ginjo-veil .sk-name{margin:0 0 22px;border-left:20px solid var(--sk-1);padding-left:12px}
+.bh-sake-brew.sk-ginjo-veil .sk-media{margin:0 -24px;gap:2px}
+.bh-sake-brew.sk-ginjo-veil .sk-media img{height:230px;border:0;flex-basis:110px}
+.bh-sake-brew.sk-ginjo-veil .sk-title{font-size:clamp(28px,8cqi,43px);margin:0 16px;padding:23px 20px;background:var(--sk-panel);border-bottom:3px solid var(--sk-2);z-index:1}
+.bh-sake-brew.sk-ginjo-veil:has(.sk-media img[src]:not([src=""])) .sk-title{margin-top:-28px;background:color-mix(in srgb,var(--sk-paper) 92%,transparent);backdrop-filter:blur(8px)}
+.bh-sake-brew.sk-ginjo-veil .sk-copy{padding:28px 14px 24px}
+.bh-sake-brew.sk-ginjo-veil .sk-mark{height:16px;justify-content:space-between}
+.bh-sake-brew.sk-ginjo-veil .sk-mark span{flex:0 0 18px;background:none;border-bottom:1px solid var(--sk-3)}
+.bh-sake-brew.sk-ginjo-veil .sk-mark span:first-child{border-left:1px solid var(--sk-1)}
+.bh-sake-brew.sk-ginjo-veil .sk-mark span:last-child{border-right:1px solid var(--sk-3)}
+.bh-sake-brew.sk-comms{width:min(358px,100%);grid-template-areas:"time" "media" "name" "title" "copy" "hardware";gap:12px;padding:25px 16px 14px;border:3px solid var(--sk-1);border-radius:32px;font:16px/1.5 'Trebuchet MS',Arial,sans-serif;box-shadow:0 12px 28px var(--sk-shadow),inset 0 0 0 3px var(--sk-paper),inset 0 0 0 4px var(--sk-line)}
+.bh-sake-brew.sk-comms .sk-time{grid-area:time;font:600 13px/1.4 'Trebuchet MS',Arial,sans-serif;color:var(--sk-3);letter-spacing:.04em}
+.bh-sake-brew.sk-comms .sk-name{font-size:17px;letter-spacing:-.015em;text-transform:none}
+.bh-sake-brew.sk-comms .sk-title{font:400 13px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:0;color:var(--sk-muted)}
+.bh-sake-brew.sk-comms .sk-media{gap:6px}
+.bh-sake-brew.sk-comms .sk-media img{flex:0 1 64px;width:64px;height:64px;border-radius:15px;border:2px solid var(--sk-line)}
+.bh-sake-brew.sk-comms .sk-copy{padding:18px 0 12px;border-top:1px solid var(--sk-line);font:16px/1.6 'Trebuchet MS',Arial,sans-serif}
+.bh-sake-brew.sk-comms .sk-copy p{display:table;max-width:92%;margin:0 auto 10px 0;padding:12px 14px;background:var(--sk-panel);border:1px solid var(--sk-line);border-left:3px solid var(--sk-1);border-radius:17px 17px 17px 4px;overflow-wrap:anywhere}
+.bh-sake-brew.sk-comms[data-flow="sent"] .sk-copy p,.bh-sake-brew.sk-comms[data-flow="alternate"] .sk-copy p:nth-child(2n){margin-left:auto;margin-right:0;border-radius:17px 17px 4px 17px;border-left:1px solid var(--sk-line);border-right:3px solid var(--sk-3);background:color-mix(in srgb,var(--sk-c) 9%,var(--sk-paper))}
+.bh-sake-brew.sk-comms .sk-copy p:last-child{margin-bottom:0}
+.bh-sake-brew .sk-hardware{grid-area:hardware;position:relative;pointer-events:none;display:flex;justify-content:center;gap:4px;padding-top:10px;border-top:1px solid var(--sk-line)}
+.bh-sake-brew .sk-hardware span{display:none}
+.bh-sake-brew .sk-hardware span:first-child{display:block;width:68px;height:4px;background:var(--sk-2);border-radius:4px}
+.bh-sake-brew.sk-kura-dial{grid-template-columns:64px minmax(0,1fr);grid-template-areas:"time time" "media name" "media title" "copy copy" "hardware hardware";gap:8px 12px;padding-top:34px}
+.bh-sake-brew.sk-kura-dial::before{content:"";position:absolute;top:12px;left:calc(50% - 22px);height:4px;width:44px;border-radius:9px;background:var(--sk-1)}
+.bh-sake-brew.sk-kura-dial .sk-time{padding-bottom:10px}
+.bh-sake-brew.sk-kura-dial .sk-media img{flex-basis:64px;height:64px}
+.bh-sake-brew.sk-kura-dial .sk-media{align-content:start;grid-row:2 / 4}
+.bh-sake-brew.sk-kura-dial:not(:has(.sk-media img[src]:not([src=""]))) .sk-name,.bh-sake-brew.sk-kura-dial:not(:has(.sk-media img[src]:not([src=""]))) .sk-title{grid-column:1 / -1}
+.bh-sake-brew.sk-kura-dial .sk-copy{margin-top:10px}
+.bh-sake-brew.sk-koji-key{width:min(354px,100%);border-radius:22px 22px 39px 39px;padding:24px 17px 18px;gap:8px;background:var(--sk-panel);border-width:2px 5px}
+.bh-sake-brew.sk-koji-key .sk-time{text-align:right;border-bottom:3px double var(--sk-line);padding:0 4px 9px}
+.bh-sake-brew.sk-koji-key .sk-name{padding:10px 12px;background:linear-gradient(90deg,color-mix(in srgb,var(--sk-a) 15%,var(--sk-paper)),color-mix(in srgb,var(--sk-c) 15%,var(--sk-paper)));border-left:4px solid var(--sk-1);color:var(--sk-ink);font-size:16px}
+.bh-sake-brew.sk-koji-key .sk-title{padding:0 8px}
+.bh-sake-brew.sk-koji-key .sk-copy{padding:12px 8px;background:var(--sk-paper);border:1px solid var(--sk-line);border-radius:5px}
+.bh-sake-brew.sk-koji-key .sk-copy p{border-radius:4px;font-size:15px;padding:10px;max-width:96%}
+.bh-sake-brew.sk-koji-key .sk-hardware{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;padding:12px 6px 0;border-top:0}
+.bh-sake-brew.sk-koji-key .sk-hardware span{display:block;width:auto;height:16px;background:var(--sk-paper);border:1px solid var(--sk-line);border-bottom:3px solid var(--sk-2);border-radius:4px}
+.bh-sake-brew.sk-masu-relay{width:min(520px,100%);grid-template-columns:minmax(74px,.32fr) minmax(0,1fr);grid-template-areas:"time time" "media name" "media title" "media copy" "hardware hardware";gap:10px 16px;padding:20px 18px 13px;border-radius:18px;border:3px double var(--sk-1)}
+.bh-sake-brew.sk-masu-relay .sk-time{border-bottom:1px solid var(--sk-line);padding-bottom:12px}
+.bh-sake-brew.sk-masu-relay .sk-media{border-right:3px double var(--sk-line);padding-right:12px;align-content:start;gap:12px;flex-direction:column}
+.bh-sake-brew.sk-masu-relay .sk-media img{flex:0 0 auto;width:100%;height:auto;aspect-ratio:1/1.25;border-radius:3px;border:1px solid var(--sk-2);padding:3px}
+.bh-sake-brew.sk-masu-relay .sk-copy{border-top:0;padding-top:8px}
+.bh-sake-brew.sk-masu-relay .sk-copy p{font-size:15px;padding:10px 11px;max-width:100%;border-radius:7px}
+.bh-sake-brew.sk-masu-relay:not(:has(.sk-media img[src]:not([src=""]))) .sk-name,.bh-sake-brew.sk-masu-relay:not(:has(.sk-media img[src]:not([src=""]))) .sk-title,.bh-sake-brew.sk-masu-relay:not(:has(.sk-media img[src]:not([src=""]))) .sk-copy{grid-column:1 / -1}
+.bh-sake-brew.sk-namazake-touch{padding:34px 13px 14px;border:4px solid var(--sk-3);border-radius:37px;gap:10px;grid-template-areas:"time" "name" "title" "media" "copy" "hardware";overflow:hidden}
+.bh-sake-brew.sk-namazake-touch .sk-time{font:400 52px/1 Georgia,serif;text-align:center;margin-top:3px;color:var(--sk-1)}
+.bh-sake-brew.sk-namazake-touch .sk-name,.bh-sake-brew.sk-namazake-touch .sk-title{text-align:center}
+.bh-sake-brew.sk-namazake-touch .sk-media{margin:8px -13px 0;gap:2px}
+.bh-sake-brew.sk-namazake-touch .sk-media img{flex:1 1 100px;height:185px;width:0;min-width:0;border:0;border-radius:0}
+.bh-sake-brew.sk-namazake-touch .sk-copy{padding:14px 2px 12px;border-top:0}
+.bh-sake-brew.sk-namazake-touch .sk-copy p{max-width:100%;border-left:1px solid var(--sk-line);border-top:3px solid var(--sk-2);border-radius:12px;box-shadow:0 3px 10px var(--sk-shadow)}
+.bh-sake-brew.sk-shizuku-signal{width:min(328px,100%);padding:22px 15px 16px;gap:9px;border-radius:24px 24px 35px 35px;border:2px solid var(--sk-2);background:var(--sk-panel);grid-template-areas:"time" "name" "title" "media" "hardware" "copy"}
+.bh-sake-brew.sk-shizuku-signal .sk-time{text-align:center;font:400 40px/1.2 Georgia,serif;border:1px solid var(--sk-line);background:var(--sk-paper);padding:20px 10px 17px;border-radius:10px 10px 3px 3px;color:var(--sk-1)}
+.bh-sake-brew.sk-shizuku-signal .sk-name{text-align:center;font-size:18px}
+.bh-sake-brew.sk-shizuku-signal .sk-title{text-align:center}
+.bh-sake-brew.sk-shizuku-signal .sk-media{justify-content:center}
+.bh-sake-brew.sk-shizuku-signal .sk-hardware{padding:0;margin:7px -15px;height:15px;border-block:1px solid var(--sk-2);background:linear-gradient(0deg,var(--sk-panel),var(--sk-paper),var(--sk-panel))}
+.bh-sake-brew.sk-shizuku-signal .sk-hardware span:first-child{height:100%;width:60%;border-radius:0;border-inline:1px solid var(--sk-line);background:transparent}
+.bh-sake-brew.sk-shizuku-signal .sk-copy{padding:12px;background:var(--sk-paper);border:1px solid var(--sk-line);border-radius:3px 3px 20px 20px}
+.bh-sake-brew.sk-shizuku-signal .sk-copy p{font-size:15px;padding:10px;border-radius:9px 9px 9px 2px;max-width:100%}
+.bh-sake-brew.sk-bud{width:min(410px,100%);grid-template-areas:"name" "title" "media" "copy" "mark";gap:13px;padding:23px;box-shadow:none;font-size:16px}
+.bh-sake-brew.sk-bud .sk-title{font-size:24px;line-height:1.2}
+.bh-sake-brew.sk-bud .sk-copy{line-height:1.7}
+.bh-sake-brew.sk-bud .sk-media img{height:90px;flex-basis:65px}
+.bh-sake-brew.sk-bud .sk-mark{height:3px}
+.bh-sake-brew.sk-ochoko{grid-template-columns:74px minmax(0,1fr);grid-template-areas:"media name" "media title" "copy copy" "mark mark";gap:10px 16px;border:0;border-top:1px solid var(--sk-line)}
+.bh-sake-brew.sk-ochoko .sk-media{align-content:start;gap:12px}
+.bh-sake-brew.sk-ochoko .sk-media img{flex:0 0 68px;width:68px;height:68px;border:5px solid var(--sk-paper);outline:1px solid var(--sk-1);border-radius:50%;box-shadow:inset 0 0 0 1px var(--sk-3)}
+.bh-sake-brew.sk-ochoko .sk-copy{padding-top:8px}
+.bh-sake-brew.sk-ochoko:not(:has(.sk-media img[src]:not([src=""]))) .sk-name,.bh-sake-brew.sk-ochoko:not(:has(.sk-media img[src]:not([src=""]))) .sk-title{grid-column:1 / -1}
+.bh-sake-brew.sk-komelet{width:min(350px,100%);border:4px double var(--sk-2);padding:22px 25px;text-align:center;gap:16px}
+.bh-sake-brew.sk-komelet .sk-name{padding:8px 10px;background:color-mix(in srgb,var(--sk-b) 12%,var(--sk-paper));border-inline:6px solid var(--sk-1)}
+.bh-sake-brew.sk-komelet .sk-title{font-style:italic}
+.bh-sake-brew.sk-komelet .sk-copy{text-align:left}
+.bh-sake-brew.sk-komelet .sk-mark{height:7px;width:70px;justify-self:center}
+.bh-sake-brew.sk-kasumi-slip{width:min(440px,100%);grid-template-areas:"media" "name" "title" "copy" "mark";gap:12px;padding:0 23px 20px;border:0;border-bottom:1px solid var(--sk-3)}
+.bh-sake-brew.sk-kasumi-slip .sk-media{margin:0 -23px 4px;gap:2px;border-top:5px solid var(--sk-1)}
+.bh-sake-brew.sk-kasumi-slip .sk-media img{height:105px;border:0}
+.bh-sake-brew.sk-kasumi-slip .sk-name{border-left:1px solid var(--sk-line);padding-left:12px;margin-top:12px}
+.bh-sake-brew.sk-kasumi-slip .sk-title{padding-left:12px;border-left:1px solid var(--sk-line)}
+.bh-sake-brew.sk-kasumi-slip .sk-mark{width:45%;justify-self:end;height:2px}
+.bh-sake-brew.sk-tomezoe{grid-template-columns:8px minmax(0,1fr);grid-template-areas:"mark title" "mark media" "mark copy" "mark name";padding:21px 23px 21px 15px;gap:15px 16px;border:0;box-shadow:inset 0 -1px var(--sk-line)}
+.bh-sake-brew.sk-tomezoe .sk-title{font-size:26px}
+.bh-sake-brew.sk-tomezoe .sk-name{text-align:right;border-top:1px solid var(--sk-line);padding-top:10px}
+.bh-sake-brew.sk-tomezoe .sk-mark{height:auto;display:flex;flex-direction:column;gap:7px}
+.bh-sake-brew.sk-tomezoe .sk-mark span{min-height:9px}
+.bh-sake-brew.sk-renzoku{grid-template-columns:64px minmax(0,1fr);grid-template-areas:"media name" "media title" "media copy" "mark mark";gap:12px 17px;padding:20px;border:0;border-top:3px double var(--sk-2)}
+.bh-sake-brew.sk-renzoku .sk-media{align-content:start;gap:9px;border-right:1px solid var(--sk-line);padding-right:9px}
+.bh-sake-brew.sk-renzoku .sk-media img{flex:0 1 54px;width:54px;height:68px;border:1px solid var(--sk-1);padding:2px}
+.bh-sake-brew.sk-renzoku .sk-media img:nth-child(2n){border-color:var(--sk-3)}
+.bh-sake-brew.sk-renzoku .sk-title{font-size:24px}
+.bh-sake-brew.sk-renzoku:not(:has(.sk-media img[src]:not([src=""]))) .sk-name,.bh-sake-brew.sk-renzoku:not(:has(.sk-media img[src]:not([src=""]))) .sk-title,.bh-sake-brew.sk-renzoku:not(:has(.sk-media img[src]:not([src=""]))) .sk-copy{grid-column:1 / -1}
+@container(max-width:330px){.bh-sake-brew.sk-thread .sk-title{font-size:29px}.bh-sake-brew.sk-thread .sk-copy{font-size:16px}.bh-sake-brew.sk-ginjo-veil .sk-title{margin-inline:0;padding:20px 12px}.bh-sake-brew.sk-ginjo-veil .sk-copy{padding-inline:0}.bh-sake-brew.sk-renzoku .sk-copy{grid-column:1 / -1}.bh-sake-brew.sk-kikichoko-reverie .sk-media img{flex-basis:134px;width:134px;height:134px}}
+@media(forced-colors:active){.bh-sake-brew .sk-copy :is(b,strong,i,em,u){background:none;-webkit-text-fill-color:currentColor;color:CanvasText}.bh-sake-brew .sk-copy u{text-decoration-color:currentColor}.bh-sake-brew .sk-name{color:LinkText}}
+.bh-sake-brew.sk-thread .sk-name::after{content:"SAKE";display:block;font:500 12px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:.32em;margin-top:7px;color:var(--sk-3)}
+.bh-sake-brew.sk-comms .sk-hardware::after{content:"SAKE";font:500 10px/1 'Trebuchet MS',Arial,sans-serif;letter-spacing:.24em;color:var(--sk-3);align-self:center}
+.bh-sake-brew.sk-koji-key .sk-hardware::after{grid-column:1 / -1;text-align:center;padding-top:4px}
+.bh-sake-brew.sk-shizuku-signal .sk-hardware::after{display:none}
+.bh-sake-brew.sk-shizuku-signal .sk-time::after{content:"SAKE";display:block;font:500 10px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:.3em;margin-top:7px;color:var(--sk-3)}
+.bh-sake-brew.sk-thread:not(:has(.sk-media img[src]:not([src=""]))) {grid-template-areas:"name" "title" "copy" "mark"}
+.bh-sake-brew.sk-koji-chronicle:not(:has(.sk-media img[src]:not([src=""]))),.bh-sake-brew.sk-kurabito-ledger:not(:has(.sk-media img[src]:not([src=""]))) {grid-template-areas:"mark name" "mark title" "mark copy"}
+.bh-sake-brew.sk-moromi-interval:not(:has(.sk-media img[src]:not([src=""]))) {grid-template-areas:"name title" "mark copy"}
+.bh-sake-brew.sk-comms:not(:has(.sk-media img[src]:not([src=""]))) {grid-template-areas:"time" "name" "title" "copy" "hardware";grid-template-columns:minmax(0,1fr)}
+.bh-sake-brew.sk-shizuku-signal:not(:has(.sk-media img[src]:not([src=""]))) {grid-template-areas:"time" "name" "title" "hardware" "copy"}
+.bh-sake-brew.sk-bud:not(:has(.sk-media img[src]:not([src=""]))) {grid-template-areas:"name" "title" "copy" "mark";grid-template-columns:minmax(0,1fr)}
+.bh-sake-brew.sk-tomezoe:not(:has(.sk-media img[src]:not([src=""]))) {grid-template-columns:8px minmax(0,1fr);grid-template-areas:"mark title" "mark copy" "mark name"}
