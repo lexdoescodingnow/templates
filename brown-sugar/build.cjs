@@ -1,0 +1,12 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const dir=__dirname;
+const read=n=>fs.readFileSync(path.join(dir,n),'utf8');
+const designs=JSON.parse(read('designs.json'));
+const model=require('./brown-sugar-model.js');
+for(const d of designs) fs.writeFileSync(path.join(dir,model.brownSugarFilename(d)),model.brownSugarSnippet(d,model.brownSugarDefaults(d)));
+const css=read('brown-sugar-preview.css')+'\n'+read('brown-sugar-crystalline-v1.css');
+const script=read('brown-sugar-model.js')+'\nconst BROWN_SUGAR_DESIGNS = '+JSON.stringify(designs)+';\n'+read('brown-sugar-editor.js');
+const nav=['thread','comms','bud'].map(type=>'<div class="nav-group"><h2>'+({thread:'Threads',comms:'Comms',bud:'Buds'}[type])+'</h2>'+designs.filter(d=>d.type===type).map(d=>`<button type="button" data-design="${d.slug}" aria-pressed="false"><small>${d.number}</small><span>${d.name}</span></button>`).join('')+'</div>').join('');
+fs.writeFileSync(path.join(dir,'brown-sugar-collection-preview.html'),read('preview-shell.html').replace('BROWN_SUGAR_STYLES',()=>css).replace('BROWN_SUGAR_NAV',()=>nav).replace('BROWN_SUGAR_SCRIPT',()=>script));
+console.log('Built 15 Brown Sugar snippets and the standalone editor.');
