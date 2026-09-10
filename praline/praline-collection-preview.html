@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" color-mode="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Praline · Dongmin & Yonggi</title><style>:root{color-scheme:light;--page:#eeedea;--surface:#fafaf8;--text:#29262b;--subtle:#69646e;--edge:#d6d0d6;--accent:#78485e;--mgrgb1:85,127,130;--mgrgb2:146,115,154;--mgrgb3:177,125,134}
+html[color-mode="dark"]{color-scheme:dark;--page:#151519;--surface:#232328;--text:#f0ecf1;--subtle:#bab2bf;--edge:#44404b;--accent:#dc9dba}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--text);font:16px/1.6 'Trebuchet MS',Arial,sans-serif}button,input,select,textarea{font:inherit}button,select,input,textarea{color:var(--text);background:var(--surface);border:1px solid var(--edge);border-radius:6px}button{padding:9px 16px;cursor:pointer}button:hover{border-color:var(--accent)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}a{color:var(--accent)}.collection-top{padding:26px 4vw 19px;border-bottom:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:italic 43px/1 Georgia,serif;letter-spacing:-.045em}.couple{margin-top:8px;color:var(--subtle);font-size:14px}.tools{display:flex;align-items:center;flex-wrap:wrap;gap:10px}.tools label{font-size:14px}.tools select{padding:8px}.colour-pair{display:flex;align-items:center;gap:6px}.colour-pair input{width:35px;height:34px;padding:3px;cursor:pointer}.workspace{display:grid;grid-template-columns:270px minmax(0,1fr) 340px;min-height:calc(100vh - 105px)}.design-nav{padding:22px 18px;border-right:1px solid var(--edge);background:var(--surface)}.design-nav h2{font:700 12px/1.4 'Trebuchet MS',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:20px 10px 9px;color:var(--subtle)}.design-nav h2:first-child{margin-top:0}.design-nav button{width:100%;display:flex;gap:12px;text-align:left;border:0;background:transparent;padding:9px 10px}.design-nav button[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 12%,var(--surface));color:var(--accent);box-shadow:inset 3px 0 var(--accent)}.design-nav button small{font-size:12px;opacity:.7;padding-top:2px}.preview-column{padding:23px 28px 40px;min-width:0}.preview-heading{display:flex;justify-content:space-between;gap:15px;align-items:start;max-width:680px;margin:0 auto 18px}.preview-heading h1{font:normal 27px/1.2 Georgia,serif;margin:0 0 8px}.preview-heading p{margin:0;font-size:14px;line-height:1.5;color:var(--subtle);max-width:450px}.preview-heading span{font:12px/1.4 'Trebuchet MS',Arial,sans-serif;white-space:nowrap;border:1px solid var(--edge);border-radius:20px;padding:5px 10px;color:var(--subtle)}#stage{min-width:0;max-width:100%;padding:4px 0 18px}#stage .bh-praline{margin:25px auto}#stage .prl-name{pointer-events:none}.editor{padding:23px 20px;background:var(--surface);border-left:1px solid var(--edge);min-width:0}.editor h2{font:normal 25px/1.2 Georgia,serif;margin:0 0 19px}.editor label,.editor legend{display:block;font-size:14px;color:var(--subtle);margin-bottom:6px}.field{margin:0 0 14px}.field input,.field select,.field textarea{width:100%;padding:8px 10px;border-radius:5px}.field textarea{min-height:160px;resize:vertical;line-height:1.6;font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}fieldset{padding:0;border:0;margin:0 0 15px}.gif-entry{padding:10px;margin-bottom:10px;border:1px solid var(--edge);border-radius:7px}.gif-entry input[type="url"]{width:100%;padding:7px 8px;font-size:13px}.gif-bottom{display:flex;gap:12px;align-items:center;margin-top:9px}.gif-bottom label{display:flex;align-items:center;gap:7px;margin:0;font-size:12px}.gif-bottom input[type="range"]{width:90px}.gif-bottom button{margin-left:auto;font-size:12px;padding:5px 8px}.secondary{font-size:14px;padding:6px 11px}.actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0 10px}.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}#status{min-height:22px;font-size:13px;color:var(--accent)}.code-panel{max-width:680px;margin:0 auto;border-top:1px solid var(--edge);padding-top:18px}.code-panel summary{cursor:pointer;font-size:14px;color:var(--accent)}#code{width:100%;height:230px;resize:vertical;margin-top:12px;padding:15px;font:12px/1.6 'Courier New',monospace}.editor-note{font-size:13px;line-height:1.6;color:var(--subtle)}.editor-note code{font-size:12px}.footer-links{font-size:13px;display:flex;gap:17px;margin:17px 0 0}.word-count{font-size:12px;color:var(--subtle);margin-top:5px}.word-count.over{color:#b13d64}[hidden]{display:none!important}@media(max-width:1150px){.workspace{grid-template-columns:215px minmax(0,1fr)}.editor{grid-column:1/-1;border-top:1px solid var(--edge);border-left:0;display:grid;grid-template-columns:1fr 1fr;gap:0 25px}.editor h2,.editor .actions,.editor #status,.editor .editor-note{grid-column:1/-1}.editor .writing-field{grid-column:1/-1}.editor .writing-field textarea{min-height:160px}.preview-column{padding-left:22px;padding-right:22px}}@media(max-width:670px){.collection-top{padding:20px;align-items:start;flex-direction:column}.brand{font-size:38px}.tools{gap:9px}.workspace{display:block}.design-nav{display:flex;overflow-x:auto;gap:10px;padding:12px 17px;border-right:0;border-bottom:1px solid var(--edge)}.nav-group{min-width:200px}.design-nav h2{margin:0 10px 5px;font-size:12px}.design-nav button{font-size:14px;padding:7px 10px}.preview-column{padding:22px 16px}.preview-heading h1{font-size:25px}.preview-heading span{display:none}.editor{display:block;padding:22px 20px}.editor textarea{min-height:170px}}
+.brand{font:italic 48px/1 Georgia,serif;letter-spacing:-.05em}.collection-top{border-bottom:3px double var(--edge)}.design-nav button{border-radius:0}.design-nav button[aria-pressed="true"]{box-shadow:inset 3px 0 var(--accent)}#stage{margin-inline:auto}.tools{max-width:680px}
+#stage .prl-pocket-temper{margin:57px auto}
+
+.bh-praline{--prl-one:var(--mgrgb1,132,96,127);--prl-two:var(--mgrgb2,86,135,143);--prl-three:var(--mgrgb3,166,109,121);--prl-paper:#faf9f7;--prl-well:#f0efed;--prl-ink:#302e32;--prl-muted:#6a656d;--prl-caramel:#a9815e;--prl-line:rgba(var(--prl-two),.32);--prl-forward:linear-gradient(110deg,rgb(var(--prl-one)),rgb(var(--prl-two)),rgb(var(--prl-three)));--prl-reverse:linear-gradient(110deg,rgb(var(--prl-three)),rgb(var(--prl-two)),rgb(var(--prl-one)));--prl-text-one:color-mix(in srgb,rgb(var(--prl-one)) 66%,var(--prl-ink));--prl-text-two:color-mix(in srgb,rgb(var(--prl-two)) 66%,var(--prl-ink));--prl-text-three:color-mix(in srgb,rgb(var(--prl-three)) 66%,var(--prl-ink));--prl-readable:linear-gradient(110deg,var(--prl-text-one),var(--prl-text-two),var(--prl-text-three));--prl-readable-reverse:linear-gradient(110deg,var(--prl-text-three),var(--prl-text-two),var(--prl-text-one));position:relative;isolation:isolate;box-sizing:border-box;display:flex;flex-direction:column;gap:0;width:min(520px,100%);min-width:0;margin:32px auto;padding:32px;background:var(--prl-paper);color:var(--prl-ink);font:15px/1.85 Georgia,'Times New Roman',serif;text-align:left;overflow-wrap:anywhere;color-scheme:light}
+.bh-praline *,.bh-praline *::before,.bh-praline *::after,.bh-praline::before,.bh-praline::after{box-sizing:border-box}
+.bh-praline>*{position:relative;min-width:0;z-index:1}
+.bh-praline .prl-name{display:block;width:fit-content;max-width:100%;margin:0 0 10px;color:rgb(var(--prl-one));color:var(--prl-text-one);font:700 10px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;text-decoration:none}
+.bh-praline .prl-title{margin:0 0 25px;color:rgb(var(--prl-two));color:var(--prl-text-two);font:normal 40px/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.05em;text-wrap:balance}
+.bh-praline .prl-copy{min-width:0;text-align:justify}
+.bh-praline .prl-copy p{margin:0 0 1.15em;padding:0;font:inherit;color:inherit;line-height:inherit}
+.bh-praline .prl-copy p:last-child{margin-bottom:0}
+.bh-praline .prl-copy :is(b,strong,u){font-family:inherit;color:rgb(var(--prl-one));color:var(--prl-text-one)}
+.bh-praline .prl-copy :is(i,em){font-family:inherit;color:rgb(var(--prl-three));color:var(--prl-text-three)}
+.bh-praline .prl-copy :is(b,strong){font-weight:700}
+.bh-praline .prl-copy :is(i,em){font-style:italic}
+.bh-praline .prl-copy u{text-decoration:underline;text-decoration-color:rgb(var(--prl-two));text-decoration-thickness:1px;text-underline-offset:4px}
+.bh-praline .prl-copy a{color:rgb(var(--prl-two));color:var(--prl-text-two);text-underline-offset:3px}
+@supports (background-clip:text) or (-webkit-background-clip:text){
+.bh-praline .prl-title,.bh-praline .prl-copy :is(b,strong,u){background-image:var(--prl-forward);background-image:var(--prl-readable);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bh-praline .prl-copy :is(i,em){background-image:var(--prl-reverse);background-image:var(--prl-readable-reverse);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+}
+.bh-praline .prl-media{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 25px;align-items:stretch}
+.bh-praline .prl-media img{display:block;flex:1 1 90px;min-width:0;width:0;max-width:100%;height:150px;object-fit:cover;border:1px solid rgb(var(--prl-two));padding:4px;background:var(--prl-paper);box-shadow:none;filter:none}
+.bh-praline .prl-media img:is([src=""],[src="[url]"]),.bh-praline .prl-media img:not([src]){display:none}
+.bh-praline .prl-media:not(:has(img[src]:not([src=""]):not([src="[url]"]))){display:none}
+.bh-praline .prl-ornament{pointer-events:none}
+.bh-praline a:focus-visible{outline:2px solid rgb(var(--prl-two));outline-offset:5px}
+.bh-praline.prl-bud{width:min(370px,100%);font-size:13px;line-height:1.8;padding:24px}
+.bh-praline.prl-bud .prl-name{font-size:9px;letter-spacing:.14em;margin-bottom:8px}
+.bh-praline.prl-bud .prl-title{font-size:27px;margin-bottom:16px;letter-spacing:-.04em}
+.bh-praline.prl-bud .prl-media{gap:8px;margin-bottom:16px}
+.bh-praline.prl-bud .prl-media img{height:68px}
+.bh-praline.prl-comms{width:min(330px,100%);font:13px/1.7 'Trebuchet MS',Arial,sans-serif;padding:42px 17px 25px;border:3px solid rgb(var(--prl-one));border-radius:36px;box-shadow:inset 0 0 0 3px var(--prl-paper),inset 0 0 0 4px var(--prl-line);background:var(--prl-well)}
+.bh-praline.prl-comms .prl-name{font-size:13px;line-height:1.5;letter-spacing:.02em;text-transform:none;margin:0 0 4px}
+.bh-praline.prl-comms .prl-title{font:10px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:.06em;margin-bottom:15px;text-wrap:wrap}
+.bh-praline.prl-comms .prl-time{position:absolute;top:14px;left:24px;font:700 9px/1 'Trebuchet MS',Arial,sans-serif;color:var(--prl-muted)}
+.bh-praline.prl-comms .prl-media{margin-bottom:15px;gap:7px}
+.bh-praline.prl-comms .prl-media img{height:75px;border-radius:12px;padding:2px}
+.bh-praline.prl-comms .prl-copy{display:flex;flex-direction:column;gap:10px;padding:15px 0 12px;text-align:left;border-top:1px solid var(--prl-line)}
+.bh-praline.prl-comms .prl-copy p{position:relative;align-self:flex-start;max-width:92%;margin:0;padding:11px 14px;background:var(--prl-paper);color:var(--prl-ink);border:1px solid var(--prl-line);border-left:3px solid rgb(var(--prl-one));border-radius:3px 16px 16px 16px;box-shadow:0 2px 0 rgba(var(--prl-two),.04)}
+.bh-praline.prl-comms[data-flow="sent"] .prl-copy p,.bh-praline.prl-comms[data-flow="alternate"] .prl-copy p:nth-child(even){align-self:flex-end;border-left:1px solid var(--prl-line);border-right:3px solid rgb(var(--prl-three));border-radius:16px 3px 16px 16px;background:linear-gradient(rgba(var(--prl-three),.055),rgba(var(--prl-three),.055)),var(--prl-paper)}
+.bh-praline.prl-comms .prl-controls{display:flex;justify-content:center;gap:6px;margin-top:13px;padding:10px 0 0}
+.bh-praline.prl-comms .prl-controls span{width:26px;height:3px;background:rgb(var(--prl-two));border-radius:8px}
+.bh-praline.prl-dentelle-room{padding:36px clamp(25px,8%,52px) 43px;border-top:3px double rgb(var(--prl-one));border-bottom:3px double rgb(var(--prl-three));background:linear-gradient(90deg,rgba(var(--prl-one),.09),transparent 30px,transparent calc(100% - 30px),rgba(var(--prl-three),.09)),var(--prl-paper);text-align:center}
+.bh-praline.prl-dentelle-room::before,.bh-praline.prl-dentelle-room::after{content:"";position:absolute;top:0;bottom:0;width:14px;background:repeating-linear-gradient(90deg,transparent 0 3px,rgba(var(--prl-one),.36) 3px 4px,transparent 4px 7px);z-index:0}
+.bh-praline.prl-dentelle-room::before{left:0}.bh-praline.prl-dentelle-room::after{right:0;background:repeating-linear-gradient(90deg,transparent 0 3px,rgba(var(--prl-three),.36) 3px 4px,transparent 4px 7px)}
+.bh-praline.prl-dentelle-room .prl-name{margin-inline:auto}.bh-praline.prl-dentelle-room .prl-title{font-size:43px;font-style:italic;max-width:350px;align-self:center}
+.bh-praline.prl-dentelle-room .prl-media{gap:0;padding:7px;border:1px solid var(--prl-line);background:repeating-linear-gradient(90deg,rgba(var(--prl-two),.14) 0 1px,transparent 1px 5px)}
+.bh-praline.prl-dentelle-room .prl-media img{height:110px;border:4px solid var(--prl-paper);padding:0}
+.bh-praline.prl-dentelle-room .prl-copy{border-top:1px solid var(--prl-line);padding-top:25px}
+.bh-praline.prl-dentelle-room .prl-ornament{width:33px;height:11px;align-self:center;margin-top:28px;border-top:1px solid var(--prl-caramel);border-bottom:1px solid var(--prl-caramel);transform:skew(-25deg)}
+.bh-praline.prl-filament{padding:40px 39px 34px 49px;background:transparent;border-left:1px solid rgb(var(--prl-one));border-radius:0 0 0 36px}
+.bh-praline.prl-filament .prl-name{margin-bottom:22px}.bh-praline.prl-filament .prl-title{font-size:56px;font-style:italic;line-height:.94;margin-bottom:33px;max-width:330px}
+.bh-praline.prl-filament .prl-copy{background:var(--prl-paper);padding:26px 24px;border-top:1px solid rgb(var(--prl-two));border-bottom:1px solid rgb(var(--prl-three))}
+.bh-praline.prl-filament .prl-ornament{align-self:flex-end;width:103px;height:35px;margin-top:19px;border:1px solid rgb(var(--prl-two));border-left-color:transparent;border-radius:50%;transform:rotate(-11deg)}
+.bh-praline.prl-filament .prl-ornament::before{content:"";position:absolute;inset:9px -9px -3px 10px;border:1px solid var(--prl-caramel);border-right-color:transparent;border-radius:50%}
+.bh-praline.prl-caissette{display:grid;grid-template-columns:minmax(0,1fr) minmax(88px,.72fr);gap:0 24px;padding:29px 32px 39px;border:1px solid var(--prl-line);border-top:8px solid rgb(var(--prl-one));box-shadow:8px 8px 0 -4px var(--prl-paper),8px 8px 0 -3px rgba(var(--prl-three),.45);width:min(475px,calc(100% - 8px))}
+.bh-praline.prl-caissette .prl-name{grid-column:1/-1;grid-row:1;padding-bottom:14px;border-bottom:1px solid var(--prl-line);width:100%;margin-bottom:22px}
+.bh-praline.prl-caissette .prl-title{grid-column:1;grid-row:2;align-self:center;font-size:39px;margin:0 0 24px}
+.bh-praline.prl-caissette .prl-media{grid-column:2;grid-row:2;margin:0 0 24px;gap:6px;transform:rotate(3deg)}
+.bh-praline.prl-caissette .prl-media img{flex-basis:65px;height:172px;border-width:1px 1px 8px;border-color:rgb(var(--prl-two));padding:5px}
+.bh-praline.prl-caissette .prl-copy{grid-column:1/-1;grid-row:3;padding-top:21px;border-top:1px solid var(--prl-line)}
+.bh-praline.prl-caissette .prl-ornament{grid-column:1/-1;height:19px;margin-top:25px;background:linear-gradient(135deg,rgba(var(--prl-one),.18) 0 48%,transparent 49%) left/24px 19px no-repeat,linear-gradient(225deg,rgba(var(--prl-three),.2) 0 48%,transparent 49%) right/24px 19px no-repeat;border-bottom:1px solid var(--prl-line)}
+.bh-praline.prl-caissette:not(:has(.prl-media img[src]:not([src=""]):not([src="[url]"]))) .prl-title{grid-column:1/-1}
+.bh-praline.prl-pralinograph{display:grid;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);padding:24px 30px 34px;border-top:1px solid rgb(var(--prl-one));border-bottom:5px solid rgb(var(--prl-three))}
+.bh-praline.prl-pralinograph .prl-name{grid-column:1/-1;grid-row:2;justify-self:center;text-align:center;background:var(--prl-paper);padding:8px 18px;border:1px solid rgb(var(--prl-two));margin:-19px 14px 22px;max-width:calc(100% - 28px);z-index:2}
+.bh-praline.prl-pralinograph .prl-media{grid-column:1/-1;grid-row:1;margin:0;border:1px solid var(--prl-line);gap:20px;padding:9px;background:repeating-linear-gradient(0deg,transparent 0 6px,rgba(var(--prl-two),.12) 6px 7px)}
+.bh-praline.prl-pralinograph .prl-media img{height:174px;padding:0;border:0;border-bottom:10px solid var(--prl-paper)}
+.bh-praline.prl-pralinograph .prl-title{grid-column:1/-1;grid-row:3;text-align:right;font-size:44px;max-width:360px;justify-self:end;margin-bottom:26px}
+.bh-praline.prl-pralinograph .prl-copy{grid-column:1/-1;grid-row:4;margin-left:20px;padding-left:25px;border-left:1px solid rgb(var(--prl-one))}
+.bh-praline.prl-pralinograph .prl-ornament{grid-column:1/-1;height:6px;width:37px;margin:25px 0 0 auto;background:repeating-linear-gradient(90deg,var(--prl-caramel) 0 2px,transparent 2px 8px)}
+.bh-praline.prl-pralinograph:not(:has(.prl-media img[src]:not([src=""]):not([src="[url]"]))) .prl-name{margin:0 0 20px;justify-self:start}
+.bh-praline.prl-noisette-ledger{padding:0 35px 37px;border:1px solid var(--prl-line);border-top:0}
+.bh-praline.prl-noisette-ledger .prl-name{width:calc(100% + 70px);max-width:none;align-self:center;padding:16px 25px;margin:0 0 30px;border-top:7px double rgb(var(--prl-one));border-bottom:1px solid rgb(var(--prl-three));text-align:center;background:linear-gradient(90deg,rgba(var(--prl-one),.08),rgba(var(--prl-three),.09));letter-spacing:.26em}
+.bh-praline.prl-noisette-ledger .prl-title{font-size:49px;line-height:1.02;padding-left:19px;border-left:4px solid rgb(var(--prl-two));margin-bottom:28px}
+.bh-praline.prl-noisette-ledger .prl-copy{padding:24px 0 0;border-top:3px double var(--prl-line)}
+.bh-praline.prl-noisette-ledger .prl-copy>p:first-child::first-letter{float:left;font-size:59px;line-height:.85;margin:7px 8px 0 0;color:var(--prl-text-one)}
+.bh-praline.prl-noisette-ledger .prl-ornament{width:65px;height:13px;align-self:center;margin-top:26px;background:radial-gradient(ellipse,var(--prl-caramel) 0 2px,transparent 2.6px) 0 0/13px 13px}
+.bh-praline.prl-glace-chat{border-radius:33px 33px 42px 42px;border-width:2px 4px 7px;display:grid;grid-template-columns:minmax(0,1fr);padding:43px 17px 17px}
+.bh-praline.prl-glace-chat::before{content:"";position:absolute;top:13px;right:23px;width:8px;height:8px;border:2px solid rgb(var(--prl-one));border-radius:50%;box-shadow:-16px 0 0 -2px rgba(var(--prl-three),.7)}
+.bh-praline.prl-glace-chat .prl-media{grid-row:1;margin:0 0 16px;gap:4px;border-bottom:4px solid rgb(var(--prl-two));padding-bottom:6px;border-radius:4px 4px 22px 22px}
+.bh-praline.prl-glace-chat .prl-media img{height:112px;padding:0;border:0;border-radius:14px 14px 3px 3px}
+.bh-praline.prl-glace-chat .prl-name{grid-row:2;text-align:center;justify-self:center;font-size:15px}
+.bh-praline.prl-glace-chat .prl-title{grid-row:3;text-align:center;margin-bottom:8px}
+.bh-praline.prl-glace-chat .prl-copy{grid-row:4;border-top:0}.bh-praline.prl-glace-chat .prl-controls{grid-row:5;padding-top:13px;border-top:1px solid var(--prl-line)}
+.bh-praline.prl-glace-chat .prl-controls span:nth-child(2){width:40px;background:rgb(var(--prl-one))}
+.bh-praline.prl-prali-slide{width:min(302px,100%);border-radius:20px 20px 32px 32px;padding:47px 18px 21px;border-width:2px 3px 8px;box-shadow:inset 0 5px 0 rgba(var(--prl-two),.2),inset 0 0 0 5px var(--prl-paper)}
+.bh-praline.prl-prali-slide::before{content:"";position:absolute;left:32%;right:32%;top:17px;height:6px;background:repeating-linear-gradient(90deg,rgb(var(--prl-one)) 0 2px,transparent 2px 5px);border-radius:5px}
+.bh-praline.prl-prali-slide .prl-time{top:32px;left:auto;right:20px;font-size:8px}
+.bh-praline.prl-prali-slide .prl-name{font-size:13px;padding-right:36px}
+.bh-praline.prl-prali-slide .prl-copy{background:var(--prl-paper);padding:12px 9px;border:1px solid rgb(var(--prl-two));border-radius:4px;box-shadow:inset 0 2px 5px rgba(var(--prl-one),.1);font-size:12px}
+.bh-praline.prl-prali-slide .prl-copy p{max-width:96%;padding:9px 10px;border-radius:1px 9px 9px 9px}
+.bh-praline.prl-prali-slide .prl-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:22px;padding-top:21px;border-top:7px double rgb(var(--prl-two))}
+.bh-praline.prl-prali-slide .prl-controls span{display:block;width:auto;height:24px;border-radius:4px 4px 12px 12px;background:linear-gradient(rgba(var(--prl-one),.07),rgba(var(--prl-three),.13)),var(--prl-paper);border:1px solid var(--prl-line);box-shadow:0 2px 0 rgba(var(--prl-one),.25);font:11px/22px 'Trebuchet MS',Arial,sans-serif;text-align:center;color:var(--prl-text-one)}
+.bh-praline.prl-bonbon-mail{width:min(455px,100%);display:grid;grid-template-columns:90px minmax(0,1fr);gap:0 14px;padding:42px 20px 19px;border-radius:10px;border-width:1px 1px 4px;box-shadow:5px 5px 0 -1px rgba(var(--prl-three),.15);background:var(--prl-paper)}
+.bh-praline.prl-bonbon-mail::before{content:"";position:absolute;left:0;right:0;top:0;height:28px;border-radius:9px 9px 0 0;border-bottom:1px solid rgb(var(--prl-two));background:linear-gradient(90deg,rgba(var(--prl-one),.17),rgba(var(--prl-three),.12))}
+.bh-praline.prl-bonbon-mail::after{content:"";position:absolute;right:14px;top:11px;width:5px;height:5px;border-radius:50%;background:rgb(var(--prl-one));box-shadow:-10px 0 rgb(var(--prl-two)),-20px 0 rgb(var(--prl-three))}
+.bh-praline.prl-bonbon-mail .prl-time{top:10px;left:14px;font-size:8px}
+.bh-praline.prl-bonbon-mail .prl-media{grid-column:1;grid-row:1/3;gap:4px;margin:0 0 12px;align-items:center}
+.bh-praline.prl-bonbon-mail .prl-media img{flex:1 1 30px;height:40px;border-radius:4px;padding:2px}
+.bh-praline.prl-bonbon-mail .prl-name{grid-column:2;grid-row:1;font-size:13px;align-self:end}
+.bh-praline.prl-bonbon-mail .prl-title{grid-column:2;grid-row:2;margin:0 0 12px}
+.bh-praline.prl-bonbon-mail .prl-copy{grid-column:1/-1;grid-row:3;padding:16px 13px;background:var(--prl-well);border:1px solid var(--prl-line);border-radius:4px;gap:9px}
+.bh-praline.prl-bonbon-mail .prl-controls{grid-column:1/-1;grid-row:4;height:34px;margin-top:12px;border:1px solid var(--prl-line);border-radius:5px;justify-content:flex-end;align-items:center;padding:0 12px}
+.bh-praline.prl-bonbon-mail .prl-controls span{width:4px;height:4px}.bh-praline.prl-bonbon-mail .prl-controls span:last-child{width:18px;height:13px;border-radius:3px;margin-left:8px;background:rgb(var(--prl-one))}
+.bh-praline.prl-bonbon-mail:not(:has(.prl-media img[src]:not([src=""]):not([src="[url]"]))) :is(.prl-name,.prl-title){grid-column:1/-1}
+.bh-praline.prl-sucrose-touch{display:grid;grid-template-columns:minmax(0,1fr) 52px;gap:0 12px;border-radius:13px 13px 36px 13px;padding:45px 18px 21px;border:2px solid rgb(var(--prl-two));border-left:8px solid rgb(var(--prl-one));background:var(--prl-paper);box-shadow:inset -5px 0 0 rgba(var(--prl-three),.08)}
+.bh-praline.prl-sucrose-touch::before{content:"";position:absolute;top:16px;left:43%;width:30px;height:3px;background:rgb(var(--prl-two))}
+.bh-praline.prl-sucrose-touch .prl-name{grid-column:1;grid-row:1;align-self:end;padding-top:2px}
+.bh-praline.prl-sucrose-touch .prl-title{grid-column:1;grid-row:2;margin:0 0 18px}
+.bh-praline.prl-sucrose-touch .prl-media{grid-column:2;grid-row:1/3;margin:0 0 17px;gap:4px}.bh-praline.prl-sucrose-touch .prl-media img{height:52px;flex-basis:40px;border-radius:0 0 12px 0;border-right:3px solid rgb(var(--prl-three))}
+.bh-praline.prl-sucrose-touch .prl-copy{grid-column:1/-1;grid-row:3;border-top:3px double var(--prl-line)}
+.bh-praline.prl-sucrose-touch .prl-copy p{background:transparent;border-width:1px;border-color:rgb(var(--prl-two));border-radius:0 13px 13px 13px;box-shadow:none}
+.bh-praline.prl-sucrose-touch .prl-controls{grid-column:1/-1;grid-row:4;align-items:center;justify-content:flex-end;padding:6px 3px 0;border-top:1px solid var(--prl-line)}
+.bh-praline.prl-sucrose-touch .prl-controls span{width:7px;height:7px;border:1px solid rgb(var(--prl-two));border-radius:0;background:transparent}.bh-praline.prl-sucrose-touch .prl-controls span:last-child{width:24px;height:24px;border:3px double rgb(var(--prl-one));border-radius:50%;margin-left:14px}
+.bh-praline.prl-sucrose-touch:not(:has(.prl-media img[src]:not([src=""]):not([src="[url]"]))) :is(.prl-name,.prl-title){grid-column:1/-1}
+.bh-praline.prl-pocket-temper{width:min(270px,calc(100% - 12px));margin:59px auto;padding:43px 17px 23px;border:6px double rgb(var(--prl-one));border-radius:43px;box-shadow:0 0 0 3px var(--prl-paper),0 0 0 4px rgba(var(--prl-two),.45);background:var(--prl-paper)}
+.bh-praline.prl-pocket-temper::before{content:"";position:absolute;top:-31px;bottom:-31px;left:28%;right:28%;z-index:-1;border:1px solid rgb(var(--prl-two));border-radius:7px;background:repeating-linear-gradient(0deg,var(--prl-paper) 0 5px,rgba(var(--prl-two),.3) 5px 6px)}
+.bh-praline.prl-pocket-temper::after{content:"";position:absolute;right:-12px;top:71px;width:7px;height:22px;border-radius:0 3px 3px 0;background:repeating-linear-gradient(0deg,rgb(var(--prl-one)) 0 2px,rgb(var(--prl-three)) 2px 3px)}
+.bh-praline.prl-pocket-temper .prl-time{left:0;right:0;top:18px;text-align:center;font-size:12px;color:var(--prl-text-one)}
+.bh-praline.prl-pocket-temper .prl-name{text-align:center;margin:0 auto 3px;font-size:13px}.bh-praline.prl-pocket-temper .prl-title{text-align:center;font-size:9px;margin-bottom:10px}
+.bh-praline.prl-pocket-temper .prl-copy{gap:8px;font-size:12px;padding-top:13px}.bh-praline.prl-pocket-temper .prl-copy p{max-width:96%;padding:9px 11px;background:var(--prl-well);border-radius:11px}
+.bh-praline.prl-pocket-temper .prl-controls{margin:7px 0 0;padding:0}.bh-praline.prl-pocket-temper .prl-controls span{height:4px;width:4px;border-radius:50%}.bh-praline.prl-pocket-temper .prl-controls span:nth-child(2){width:17px}
+.bh-praline.prl-sugar-pleat{padding:25px 32px 29px;border-top:1px solid rgb(var(--prl-one));border-right:1px solid var(--prl-line);border-bottom:4px solid rgb(var(--prl-three));background:linear-gradient(90deg,rgba(var(--prl-one),.13),transparent 24px),var(--prl-paper)}
+.bh-praline.prl-sugar-pleat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:12px;background:repeating-linear-gradient(90deg,rgba(var(--prl-one),.5) 0 1px,transparent 1px 4px)}
+.bh-praline.prl-sugar-pleat .prl-title{font-size:31px;font-style:italic}.bh-praline.prl-sugar-pleat .prl-ornament{width:15px;height:4px;background:var(--prl-caramel);align-self:flex-end;margin-top:19px}
+.bh-praline.prl-gossamer{display:grid;grid-template-columns:58px minmax(0,1fr);gap:0 16px;padding:20px 19px 23px;background:transparent;border-top:1px solid rgb(var(--prl-one));border-bottom:1px solid rgb(var(--prl-three))}
+.bh-praline.prl-gossamer .prl-name{grid-column:2;grid-row:1;align-self:end}.bh-praline.prl-gossamer .prl-title{grid-column:2;grid-row:2;font-size:27px;align-self:start;margin-bottom:17px}
+.bh-praline.prl-gossamer .prl-media{grid-column:1;grid-row:1/3;margin:0 0 17px;gap:6px}.bh-praline.prl-gossamer .prl-media img{height:81px;flex-basis:42px;transform:rotate(-4deg);border:1px solid rgb(var(--prl-two));padding:3px}
+.bh-praline.prl-gossamer .prl-copy{grid-column:1/-1;grid-row:3;background:var(--prl-paper);padding:16px;border-left:1px solid var(--prl-line)}
+.bh-praline.prl-gossamer .prl-ornament{grid-column:2;justify-self:end;width:63px;height:19px;border:1px solid var(--prl-caramel);border-left-color:transparent;border-radius:50%;margin-top:13px;transform:rotate(-9deg)}
+.bh-praline.prl-gossamer:not(:has(.prl-media img[src]:not([src=""]):not([src="[url]"]))) :is(.prl-name,.prl-title){grid-column:1/-1}
+.bh-praline.prl-deux-bouchees{text-align:center;padding:0 23px 24px;border:1px solid var(--prl-line);border-bottom:3px double rgb(var(--prl-three));display:grid;grid-template-columns:minmax(0,1fr)}
+.bh-praline.prl-deux-bouchees .prl-name{grid-row:2;justify-self:center;margin:15px 0 7px}.bh-praline.prl-deux-bouchees .prl-title{grid-row:3;margin-bottom:18px;font-size:26px;font-style:italic}
+.bh-praline.prl-deux-bouchees .prl-media{grid-row:1;justify-content:center;gap:13px;padding:17px 15px 10px;margin:0 -10px;background:linear-gradient(90deg,rgba(var(--prl-one),.12),rgba(var(--prl-three),.12));border-bottom:1px solid rgb(var(--prl-two))}
+.bh-praline.prl-deux-bouchees .prl-media img{width:61px;max-width:61px;flex:0 1 61px;height:59px;padding:3px;border-color:rgb(var(--prl-one));box-shadow:3px 3px 0 var(--prl-paper)}
+.bh-praline.prl-deux-bouchees .prl-media img:nth-child(even){transform:translateY(5px);border-color:rgb(var(--prl-three))}
+.bh-praline.prl-deux-bouchees .prl-copy{grid-row:4;text-align:center}.bh-praline.prl-deux-bouchees .prl-ornament{grid-row:5;width:27px;height:5px;justify-self:center;border-top:1px solid var(--prl-caramel);margin-top:18px}
+.bh-praline.prl-paillette{width:min(405px,100%);display:grid;grid-template-columns:24px minmax(0,1fr);gap:0 16px;padding:22px;background:var(--prl-paper);border:1px solid rgb(var(--prl-two));border-left:6px solid rgb(var(--prl-one))}
+.bh-praline.prl-paillette .prl-name{grid-column:2;grid-row:1}.bh-praline.prl-paillette .prl-title{grid-column:2;grid-row:2;font-size:25px;padding-bottom:11px;border-bottom:1px solid var(--prl-line);margin-bottom:13px}.bh-praline.prl-paillette .prl-copy{grid-column:2;grid-row:4;text-align:left}.bh-praline.prl-paillette .prl-media{grid-column:2;grid-row:3}
+.bh-praline.prl-paillette .prl-ornament{grid-column:1;grid-row:1/5;align-self:center;width:20px;height:43px;background:linear-gradient(115deg,rgba(var(--prl-one),.36) 0 45%,var(--prl-caramel) 46% 49%,rgba(var(--prl-three),.32) 50%);clip-path:polygon(40% 0,100% 22%,72% 100%,0 67%)}
+.bh-praline.prl-pralinette{width:min(315px,100%);display:grid;grid-template-columns:minmax(0,1fr);padding:0 24px 25px;border:1px solid rgb(var(--prl-two));border-radius:3px 3px 16px 16px;box-shadow:inset 0 -5px 0 rgba(var(--prl-three),.12)}
+.bh-praline.prl-pralinette .prl-media{grid-row:1;margin:0 -24px 0;gap:0;padding:5px;background:repeating-linear-gradient(90deg,rgba(var(--prl-one),.27) 0 1px,transparent 1px 4px)}
+.bh-praline.prl-pralinette .prl-media img{height:74px;border:0;padding:0}
+.bh-praline.prl-pralinette .prl-name{grid-row:2;margin:0 0 17px -9px;padding:6px 10px;background:var(--prl-well);border-right:3px solid rgb(var(--prl-one));border-bottom:1px solid var(--prl-line);max-width:100%;width:fit-content}
+.bh-praline.prl-pralinette .prl-title{grid-row:3;font-size:29px;margin-bottom:17px}.bh-praline.prl-pralinette .prl-copy{grid-row:4}.bh-praline.prl-pralinette .prl-ornament{grid-row:5;justify-self:end;width:12px;height:12px;margin-top:18px;border:1px solid var(--prl-caramel);border-radius:3px;transform:rotate(15deg)}
+html[color-mode="dark"] .bh-praline{--prl-paper:#252426;--prl-well:#1c1b1e;--prl-ink:#ede9eb;--prl-muted:#bdb5bf;--prl-caramel:#bb9877;color-scheme:dark}
+html[color-mode="light"] .bh-praline{--prl-paper:#faf9f7;--prl-well:#f0efed;--prl-ink:#302e32;--prl-muted:#6a656d;--prl-caramel:#a9815e;color-scheme:light}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-praline{--prl-paper:#252426;--prl-well:#1c1b1e;--prl-ink:#ede9eb;--prl-muted:#bdb5bf;--prl-caramel:#bb9877;color-scheme:dark}}
+@media(max-width:420px){.bh-praline.prl-thread{font-size:14px;line-height:1.85}.bh-praline.prl-filament{padding:28px 19px 26px 25px}.bh-praline.prl-filament .prl-title{font-size:43px}.bh-praline.prl-filament .prl-copy{padding:21px 17px}.bh-praline.prl-caissette{gap:0 16px;padding:24px 21px 29px}.bh-praline.prl-caissette .prl-title{font-size:32px}.bh-praline.prl-pralinograph{padding:20px 21px 27px}.bh-praline.prl-pralinograph .prl-title{font-size:36px}.bh-praline.prl-pralinograph .prl-media img{height:128px}.bh-praline.prl-pralinograph .prl-copy{margin-left:4px;padding-left:16px}.bh-praline.prl-noisette-ledger{padding-inline:25px}.bh-praline.prl-noisette-ledger .prl-name{width:calc(100% + 50px)}.bh-praline.prl-noisette-ledger .prl-title{font-size:39px}.bh-praline.prl-dentelle-room .prl-title{font-size:35px}.bh-praline.prl-bonbon-mail{grid-template-columns:70px minmax(0,1fr);gap:0 10px;padding-inline:15px}}
+@media(forced-colors:active){.bh-praline .prl-title,.bh-praline .prl-copy :is(b,strong,i,em,u){background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}.bh-praline .prl-copy u{text-decoration-color:CanvasText}}
+.bh-praline.prl-pocket-temper::before,.bh-praline.prl-pocket-temper::after{content:"";position:absolute;left:28%;right:28%;height:26px;width:auto;z-index:-1;border:1px solid rgb(var(--prl-two));border-radius:6px;background:repeating-linear-gradient(0deg,var(--prl-paper) 0 5px,rgba(var(--prl-two),.3) 5px 6px)}
+.bh-praline.prl-pocket-temper::before{top:-32px;bottom:auto}.bh-praline.prl-pocket-temper::after{top:auto;bottom:-32px}
+.bh-praline.prl-pocket-temper .prl-copy::after{content:"";position:absolute;right:-30px;top:9px;width:7px;height:22px;border-radius:0 3px 3px 0;background:repeating-linear-gradient(0deg,rgb(var(--prl-one)) 0 2px,rgb(var(--prl-three)) 2px 3px)}
+</style></head>
+<body>
+<header class="collection-top"><div><div class="brand">Praline</div><div class="couple">Dongmin & Yonggi · 15 templates</div></div><div class="tools"><label for="theme">Preview</label><select id="theme"><option value="light">Light</option><option value="dark">Dark</option></select><label for="preview-width">Width</label><select id="preview-width"><option value="auto">Fit</option><option value="320px">320 px</option><option value="550px">550 px</option></select><div class="colour-pair"><label for="colour-1">Member colours</label><input id="colour-1" type="color" value="#557f82" aria-label="Member colour 1"><input id="colour-2" type="color" value="#92739a" aria-label="Member colour 2"><input id="colour-3" type="color" value="#b17d86" aria-label="Member colour 3"></div></div></header>
+<main class="workspace">
+<nav class="design-nav" aria-label="Praline designs"><div class="nav-group"><h2>Threads</h2><button type="button" data-design="dentelle-room" aria-pressed="false"><small>01</small><span>Dentelle Room</span></button><button type="button" data-design="filament" aria-pressed="false"><small>02</small><span>Filament</span></button><button type="button" data-design="caissette" aria-pressed="false"><small>03</small><span>Caissette</span></button><button type="button" data-design="pralinograph" aria-pressed="false"><small>04</small><span>Pralinograph</span></button><button type="button" data-design="noisette-ledger" aria-pressed="false"><small>05</small><span>Noisette Ledger</span></button></div><div class="nav-group"><h2>Comms</h2><button type="button" data-design="glace-chat" aria-pressed="false"><small>01</small><span>Glacé Chat</span></button><button type="button" data-design="prali-slide" aria-pressed="false"><small>02</small><span>Prali-Slide</span></button><button type="button" data-design="bonbon-mail" aria-pressed="false"><small>03</small><span>Bonbon Mail</span></button><button type="button" data-design="sucrose-touch" aria-pressed="false"><small>04</small><span>Sucrose Touch</span></button><button type="button" data-design="pocket-temper" aria-pressed="false"><small>05</small><span>Pocket Temper</span></button></div><div class="nav-group"><h2>Buds</h2><button type="button" data-design="sugar-pleat" aria-pressed="false"><small>01</small><span>Sugar Pleat</span></button><button type="button" data-design="gossamer" aria-pressed="false"><small>02</small><span>Gossamer</span></button><button type="button" data-design="deux-bouchees" aria-pressed="false"><small>03</small><span>Deux Bouchées</span></button><button type="button" data-design="paillette" aria-pressed="false"><small>04</small><span>Paillette</span></button><button type="button" data-design="pralinette" aria-pressed="false"><small>05</small><span>Pralinette</span></button></div></nav>
+<section class="preview-column" aria-label="Template preview"><div class="preview-heading"><div><h1 id="design-title"></h1><p id="design-description"></p></div><span id="design-kind"></span></div><div id="stage"></div><details class="code-panel" id="code-panel"><summary>JCink code</summary><textarea id="code" readonly aria-label="Copy-ready JCink code" spellcheck="false"></textarea><div class="footer-links"><a id="raw-link" href="https://github.com/lexdoescodingnow/templates/tree/main/praline">Original snippet on GitHub</a><a href="https://github.com/lexdoescodingnow/templates/tree/main/praline">Praline folder</a></div></details></section>
+<aside class="editor" aria-label="Edit template"><h2>Make it yours</h2><div class="field"><label for="name">Name</label><input id="name" type="text" spellcheck="false"></div><div class="field"><label for="url">Name link</label><input id="url" type="text" spellcheck="false"></div><div class="field"><label for="title">Title / contact status</label><input id="title" type="text"></div><div class="split" id="comms-fields"><div class="field"><label for="time">Time</label><input id="time" type="text"></div><div class="field"><label for="flow">Messages</label><select id="flow"><option value="received">Received</option><option value="sent">Sent</option><option value="alternate">Alternating</option></select></div></div><fieldset><legend>Character GIFs</legend><div id="gif-fields"></div><button id="add-gif" type="button" class="secondary">Add GIF</button></fieldset><div class="field writing-field"><label for="writing">Writing</label><textarea id="writing" spellcheck="false"></textarea><div class="word-count" id="word-count"></div></div><div class="actions"><button id="copy" type="button" class="primary">Copy code</button><button id="download" type="button">Download .txt</button><button id="reset" type="button" class="secondary">Reset design</button></div><div id="status" role="status" aria-live="polite"></div><p class="editor-note">Use <code>&lt;p&gt;</code> for paragraphs or message bubbles. The editor accepts <code>[b]</code>, <code>[i]</code> and <code>[u]</code>. Preview names replace the placeholders for display; copied code keeps your field values. Preview colours are supplied by the forum when you post. Edits stay while this page is open.</p></aside>
+</main><script>const PRALINE_GIFS = ['https://64.media.tumblr.com/04659cb2632d3e9064c76d90ad8ff4e8/bab9c44a1969631a-1e/s400x600/492fd9022060d0954deb17a1ff4477c02262e2bc.gifv','https://64.media.tumblr.com/41f3fe7ad308ff6a36c58e739425e5cc/2fbac92f2177d694-87/s400x600/0cbdad18114d0c4f3f99896ffa49818d9f798725.gifv'];
+const PRALINE_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@9cd9fd5af15b4e0f721ed5ed96dc0ff646bcb180/praline/praline-atelier-v1.css';
+const PRALINE_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\n\n<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>';
+const PRALINE_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
+const PRALINE_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
+function pralineEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function pralineDefaults(design) { return {name:'[name]',url:'[url]',title:'[text]',time:'20:46',flow:'received',gifs:PRALINE_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?PRALINE_THREAD:design.type==='comms'?PRALINE_COMMS:PRALINE_BUD}; }
+function pralineFilename(d) { return `praline-${d.slug}-${d.type}-${d.number}.txt`; }
+function pralineMarkup(d,s) {
+  const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';
+  const lines=[`<div class="bh-praline prl-${d.type} prl-${d.slug}"${flow}>`,`<a class="prl-name" href="${pralineEscape(s.url)}">${pralineEscape(s.name)}</a>`,`<div class="prl-title">${pralineEscape(s.title)}</div>`];
+  if(d.type==='comms') lines.push(`<div class="prl-time">${pralineEscape(s.time)}</div>`);
+  const gifs=s.gifs.filter(g=>g.url.trim());
+  if(gifs.length) { lines.push('<div class="prl-media">'); gifs.forEach(g=>lines.push(`<img src="${pralineEscape(g.url.trim())}" alt="Character GIF" style="object-position:${/^\d{1,3}% \d{1,3}%$/.test(g.position)?g.position:'50% 45%'}">`)); lines.push('</div>'); }
+  lines.push('<div class="prl-copy">',s.body,'</div>');
+  if(d.type==='comms') lines.push('<div class="prl-controls" aria-hidden="true">'+(d.slug==='prali-slide'?['1','2','3','4','5','6','7','8','9','*','0','#'].map(k=>'<span>'+k+'</span>').join(''):Array(3).fill('<span></span>').join(''))+'</div>');
+  if(d.type!=='comms') lines.push('<div class="prl-ornament" aria-hidden="true"></div>');
+  lines.push('</div>');
+  return lines.join('\n');
+}
+function pralineSnippet(d,s) { return '[dohtml]\n'+pralineMarkup(d,s)+'\n\n<link rel="stylesheet" href="'+PRALINE_CSS_URL+'">\n[/dohtml]\n'; }
+if(typeof module!=='undefined') module.exports={PRALINE_GIFS,PRALINE_CSS_URL,pralineDefaults,pralineFilename,pralineMarkup,pralineSnippet};
+
+const PRALINE_DESIGNS = [{"type":"thread","number":"01","name":"Dentelle Room","slug":"dentelle-room","gifs":2,"sample":"stay for the sweetness","description":"A pleated confectionery-paper frame, paired ribbon-wide portraits and a generous centred reading page."},{"type":"thread","number":"02","name":"Filament","slug":"filament","gifs":0,"sample":"the softest pull","description":"An open literary page with a flowing italic heading and a fine spun-sugar line ornament."},{"type":"thread","number":"03","name":"Caissette","slug":"caissette","gifs":1,"sample":"folded into you","description":"A portrait inset beside a narrow title column, opening into a full-width reply with a folded-paper foot."},{"type":"thread","number":"04","name":"Pralinograph","slug":"pralinograph","gifs":2,"sample":"between the layers","description":"A paired portrait frieze with an inset nameplate and a low, wide title above an indented reading column."},{"type":"thread","number":"05","name":"Noisette Ledger","slug":"noisette-ledger","gifs":0,"sample":"a little afterglow","description":"A letterpress-inspired page with a coloured double-rule masthead, an oversized initial-like ornament and small caramel grains."},{"type":"comms","number":"01","name":"Glacé Chat","slug":"glace-chat","gifs":1,"sample":"online now","description":"A softly squared smartphone with a broad contact-photo header, a tiny offset camera and rounded received messages."},{"type":"comms","number":"02","name":"Prali-Slide","slug":"prali-slide","gifs":0,"sample":"new messages","description":"A compact slider handset with a recessed chat screen, a ridged sliding joint and a visible numeric keypad."},{"type":"comms","number":"03","name":"Bonbon Mail","slug":"bonbon-mail","gifs":2,"sample":"conversation open","description":"A small desktop messenger window with a twin-avatar toolbar, window controls and neatly stacked chat bubbles."},{"type":"comms","number":"04","name":"Sucrose Touch","slug":"sucrose-touch","gifs":1,"sample":"delivered quietly","description":"An angular slim phone with a contact tile, outlined message bubbles and an off-centre navigation wheel."},{"type":"comms","number":"05","name":"Pocket Temper","slug":"pocket-temper","gifs":0,"sample":"just for you","description":"A compact wrist-device messenger with ribbed straps, a side crown and a tall rounded display."},{"type":"bud","number":"01","name":"Sugar Pleat","slug":"sugar-pleat","gifs":0,"sample":"one small thing","description":"A miniature pleated note with a broad serif title and a fine member-colour paper edge."},{"type":"bud","number":"02","name":"Gossamer","slug":"gossamer","gifs":1,"sample":"softly, still","description":"A light asymmetric reply with a narrow portrait stamp and a threadlike loop at its foot."},{"type":"bud","number":"03","name":"Deux Bouchées","slug":"deux-bouchees","gifs":2,"sample":"a piece for each","description":"Two tiny portrait squares share a stepped confectionery-paper band above a compact reply."},{"type":"bud","number":"04","name":"Paillette","slug":"paillette","gifs":0,"sample":"a passing sweetness","description":"A horizontal miniature note with a small faceted sugar flake and a coloured title rail."},{"type":"bud","number":"05","name":"Pralinette","slug":"pralinette","gifs":1,"sample":"save me the last","description":"A tiny confectionery sleeve with a full-width photo lip, a folded name tab and a short reply."}];
+const pralineStates = new Map(PRALINE_DESIGNS.map(d=>[d.slug,pralineDefaults(d)]));
+let pralineCurrent = PRALINE_DESIGNS[0];
+const el=id=>document.getElementById(id);
+function pralineFormat(value) { return value.replace(/\[(\/?)(b|i|u)\]/gi,(_,slash,tag)=>`<${slash}${tag.toLowerCase()}>`); }
+function pralineBody(value) {
+  const parsed=new DOMParser().parseFromString(pralineFormat(value),'text/html');
+  const allowed=new Set(['P','B','STRONG','I','EM','U','A','BR','SPAN']);
+  for(const node of [...parsed.body.querySelectorAll('*')].reverse()) {
+    if(!allowed.has(node.tagName)) { if(['SCRIPT','STYLE','IFRAME','OBJECT','SVG','MATH','TEMPLATE'].includes(node.tagName)) node.remove(); else node.replaceWith(...node.childNodes); continue; }
+    for(const attr of [...node.attributes]) { if(node.tagName==='A'&&attr.name==='href'&&(/^(https?:|mailto:|#)/i.test(attr.value)||attr.value==='[url]')) continue; node.removeAttribute(attr.name); }
+  }
+  return parsed.body.innerHTML;
+}
+function pralineRead() {
+  const s=pralineStates.get(pralineCurrent.slug);
+  for(const k of ['name','url','title','time','flow']) s[k]=el(k).value;
+  s.body=pralineBody(el('writing').value);
+  return s;
+}
+function pralineDraw() {
+  const s=pralineStates.get(pralineCurrent.slug);
+  const visible={...s,name:s.name==='[name]'?'Dongmin & Yonggi':s.name,title:s.title==='[text]'?pralineCurrent.sample:s.title,url:'#'};
+  el('stage').innerHTML=pralineMarkup(pralineCurrent,visible);
+  el('code').value=pralineSnippet(pralineCurrent,s);
+  const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();
+  const count=text?text.split(/\s+/).length:0;
+  el('word-count').textContent=`${count} words${pralineCurrent.type==='bud'?' · buds are for replies of 100 words or fewer':''}`;
+  el('word-count').classList.toggle('over',pralineCurrent.type==='bud'&&count>100);
+}
+function pralineGifFields() {
+  const s=pralineStates.get(pralineCurrent.slug);
+  el('gif-fields').replaceChildren();
+  s.gifs.forEach((gif,index)=>{
+    const row=document.createElement('div');row.className='gif-entry';
+    const input=document.createElement('input');input.type='url';input.value=gif.url;input.setAttribute('aria-label',`GIF ${index+1} URL`);
+    input.addEventListener('input',()=>{const value=input.value.trim();gif.url=/^https?:\/\//i.test(value)?value:'';pralineDraw();});
+    const bottom=document.createElement('div');bottom.className='gif-bottom';
+    const label=document.createElement('label');label.textContent='Crop';
+    const crop=document.createElement('input');crop.type='range';crop.min='0';crop.max='100';crop.value=gif.position.split(' ')[1].replace('%','');crop.setAttribute('aria-label',`GIF ${index+1} vertical crop`);
+    crop.addEventListener('input',()=>{gif.position=`50% ${crop.value}%`;pralineDraw();});label.append(crop);
+    const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';remove.addEventListener('click',()=>{s.gifs.splice(index,1);pralineGifFields();pralineDraw();});
+    bottom.append(label,remove);row.append(input,bottom);el('gif-fields').append(row);
+  });
+}
+function pralineSelect(slug) {
+  pralineCurrent=PRALINE_DESIGNS.find(d=>d.slug===slug)||PRALINE_DESIGNS[0];
+  const s=pralineStates.get(pralineCurrent.slug);
+  for(const k of ['name','url','title','time','flow']) el(k).value=s[k];
+  el('writing').value=s.body;
+  el('comms-fields').hidden=pralineCurrent.type!=='comms';
+  el('design-title').textContent=pralineCurrent.name;
+  el('design-description').textContent=pralineCurrent.description;
+  el('design-kind').textContent=`${pralineCurrent.type==='bud'?'Bud':pralineCurrent.type==='thread'?'Thread':'Comms'} ${pralineCurrent.number}`;
+  for(const b of document.querySelectorAll('[data-design]'))b.setAttribute('aria-pressed',String(b.dataset.design===pralineCurrent.slug));
+  el('raw-link').href=`https://github.com/lexdoescodingnow/templates/blob/main/praline/${pralineFilename(pralineCurrent)}`;
+  el('status').textContent='';pralineGifFields();pralineDraw();
+}
+for(const b of document.querySelectorAll('[data-design]'))b.addEventListener('click',()=>pralineSelect(b.dataset.design));
+for(const k of ['name','url','title','time','flow','writing'])el(k).addEventListener('input',()=>{pralineRead();pralineDraw();});
+el('add-gif').addEventListener('click',()=>{const s=pralineStates.get(pralineCurrent.slug);s.gifs.push({url:PRALINE_GIFS[s.gifs.length%2],position:'50% 45%'});pralineGifFields();pralineDraw();});
+el('reset').addEventListener('click',()=>{pralineStates.set(pralineCurrent.slug,pralineDefaults(pralineCurrent));pralineSelect(pralineCurrent.slug);});
+el('copy').addEventListener('click',async()=>{
+  const value=el('code').value;
+  try { await navigator.clipboard.writeText(value);el('status').textContent='Copied with [dohtml] tags.'; }
+  catch { const panel=el('code-panel');const wasOpen=panel.open;panel.open=true;el('code').focus();el('code').select();try {if(!document.execCommand('copy'))throw new Error('copy');el('status').textContent='Copied with [dohtml] tags.';panel.open=wasOpen;}catch{el('status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.';} }
+});
+el('download').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([el('code').value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=pralineFilename(pralineCurrent);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);el('status').textContent='Your edited snippet is ready.';});
+el('theme').addEventListener('change',()=>document.documentElement.setAttribute('color-mode',el('theme').value));
+for(let i=1;i<=3;i++)el('colour-'+i).addEventListener('input',()=>{const hex=el('colour-'+i).value;document.documentElement.style.setProperty('--mgrgb'+i,[1,3,5].map(start=>parseInt(hex.slice(start,start+2),16)).join(','));});
+pralineSelect(PRALINE_DESIGNS[0].slug);
+
+el('preview-width').addEventListener('change',()=>el('stage').style.width=el('preview-width').value);
+</script></body></html>
