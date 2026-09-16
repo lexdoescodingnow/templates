@@ -1,53 +1,59 @@
-# Bread collection
+# Bread · Second Rise
 
-Five threads, five comms and five buds. GIFs follow the composition: portrait pairs for paired frames, single portraits for contacts and narrow photo spaces, and image-free options for letters and tiny replies.
+A fresh 15-design collection for Jinseok and Lucas.
 
-[Preview and code](bread-collection-preview.html) · [Download collection](bread-collection.zip)
+[Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/bread/bread-second-rise-preview.html) · [Preview HTML source](bread-second-rise-preview.html) · [Forum showcase](bread-second-rise-forum-post.txt)
+
+Download the HTML preview and open it in your browser. GitHub displays HTML source. To use a template directly from GitHub, open its named `.txt` file below, click **Copy raw file**, and paste the full block into your forum post.
 
 ## Threads
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Pain de Papier](bread-pain-de-papier-thread-01.txt) | 2 | Folded paper-bag seams and a pair of framed keepsakes. |
-| [Levain Letters](bread-levain-letters-thread-02.txt) | 1 | A handwritten recipe page with one pinned photograph. |
-| [Hearthbound](bread-hearthbound-thread-03.txt) | 2 | Twin bakery windows with a soft, arched silhouette. |
-| [The Proofing Room](bread-the-proofing-room-thread-04.txt) | 0 | A writing-led recipe page with a banneton seal and generous space for the reply. |
-| [Sunday Crust](bread-sunday-crust-thread-05.txt) | 1 | A linen edge and one portrait tucked beside the title. |
+| [01 · Crumb Structure](bread-crumb-structure-thread-01.txt) | 2 | Sculpted, staggered portrait panels over a generous editorial reply. |
+| [02 · Pullman Nocturne](bread-pullman-nocturne-thread-02.txt) | 1 | A ridged loaf-tin frame, cooling-rack edge, and panoramic closing portrait. |
+| [03 · Plaited Vows](bread-plaited-vows-thread-03.txt) | 2 | An interwoven spine and overlapping round portraits, made for two. |
+| [04 · Fougasse Folio](bread-fougasse-folio-thread-04.txt) | 0 | An open writing page with a cut-leaf silhouette and a generous drop cap. |
+| [05 · Baker’s Measure](bread-bakers-measure-thread-05.txt) | 1 | A measured top edge, tall side portrait, and full-width writing below. |
 
 ## Comms
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Crumbline](bread-crumbline-comms-01.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Toast Talk](bread-toast-talk-comms-02.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Batch Chat](bread-batch-chat-comms-03.txt) | 2 | A small desktop messenger with recipe-card portraits. |
-| [Butterwire](bread-butterwire-comms-04.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Daily Knead](bread-daily-knead-comms-05.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [01 · Crust Signal](bread-crust-signal-comms-01.txt) | 1 | A soft modern phone with a contact portrait, a camera island, and grouped bubbles. |
+| [02 · Loafline](bread-loafline-comms-02.txt) | 1 | A compact candybar handset with a separate screen and a physical number pad. |
+| [03 · Starter Sync](bread-starter-sync-comms-03.txt) | 1 | A folding phone with a large cover portrait and a visible hinge. |
+| [04 · Brioche Buffer](bread-brioche-buffer-comms-04.txt) | 2 | A small tablet messenger with two profile tiles in its contact rail. |
+| [05 · Toastwave](bread-toastwave-comms-05.txt) | 0 | A slim lock-screen phone with stacked notification cards and a large editable clock. |
 
 ## Buds
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Petit Pain](bread-petit-pain-bud-01.txt) | 0 | A miniature loaf label with a short, image-free reply. |
-| [Sesame Kiss](bread-sesame-kiss-bud-02.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
-| [Crustlet](bread-crustlet-bud-03.txt) | 2 | A folded bakery packet with small photograph stamps. |
-| [Rye Note](bread-rye-note-bud-04.txt) | 0 | A handwritten note with a full-width reply and fine bakery details. |
-| [Pocket Roll](bread-pocket-roll-bud-05.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
+| [01 · Croûton](bread-crouton-bud-01.txt) | 0 | A tiny open-corner note with a single toasted square accent. |
+| [02 · Pinch of Rye](bread-pinch-of-rye-bud-02.txt) | 1 | A pinched corner, small rounded portrait, and a compact reply. |
+| [03 · Little Plait](bread-little-plait-bud-03.txt) | 2 | A miniature woven sign-off with two overlapping portrait seals. |
+| [04 · Heel & Heart](bread-heel-and-heart-bud-04.txt) | 0 | A rounded loaf-heel silhouette for a short, writing-led reply. |
+| [05 · Last Morsel](bread-last-morsel-bud-05.txt) | 1 | A narrow portrait tucked beside the reply and a broken crust edge. |
 
-## Editing and integration
+## Editing
 
-Copy a complete `[dohtml]` block from a named `.txt` file. The editable `[url]`, `[name]`, `[text]`, image URLs, writing and comms time remain above the decoration and the stylesheet link. The supplied GIF URLs are examples, not a required pair.
+Copy a named `.txt` block into a JCink post. Keep its `[dohtml]` tags and the single stylesheet link. The `[url]`, `[name]` and `[text]` fields, GIF URLs and writing come before the decorative markup and linked CSS. All notes live in this guide and the preview interface; the templates contain no comments or hidden instructions.
 
-Use the default layout in the table, or remove an image tag. If removing the final image, remove its empty portrait container too. Image-free layouts reclaim the space automatically. In previews with an editor, clearing a GIF URL omits that image from the preview and copied code; clearing both produces an image-free post. Custom edits are kept when switching designs.
+Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` also work. The preview editor accepts `[b]`, `[i]` and `[u]` and converts them before copying. Literal BBCode pasted directly into an HTML block depends on the forum parser. Bold and underline use group colours 1 → 2 → 3; italics reverse them. The inherited `--mgrgb1`, `--mgrgb2`, `--mgrgb3` variables must contain comma-separated RGB values.
 
-Comms messages use ordinary `<p>` paragraphs; successive opening `<p>` tags work without closing tags or repeated classes. Device decoration is static. Buds encourage 100 words or fewer and never clip longer replies.
+Neutral paper and writing surfaces follow Blue Hour’s `html[color-mode="light"]` and `html[color-mode="dark"]`. An explicit mode wins over the system preference. Preview palettes are samples and are never written into posting snippets. Headers, edges, portrait frames, ornament details, links and emphasis use the member colours. Main writing stays neutral for readability.
 
-Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` work too. Editors that accept `[b]`, `[i]` and `[u]` convert them to HTML. The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the design and emphasis. Bold and underline use colours 1 → 2 → 3; italics use 3 → 2 → 1.
+Each comms message is a plain `<p>` paragraph; successive opening tags work without closing tags. Change the wrapper’s `data-direction` to `received`, `sent`, or `alternating`. The device controls are decorative and do not send messages. Buds use short sample replies for posts of 100 words or fewer; longer writing expands normally.
 
-Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system fallback. Writing stays on neutral surfaces. Preview palette controls are samples; posts inherit the forum palette.
+Images are optional in all 15 designs. Clear either GIF field in the editor, or delete the relevant image tags from a snippet. Empty image containers collapse and the layout reflows. The supplied Tumblr GIF URLs are preserved exactly. Device layouts have zero, one or two default portraits as appropriate.
 
-All current snippets use the fresh `bread-media-v2.css` stylesheet. Older CSS files remain available for existing posts. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS, fonts and GIFs require internet access; font fallbacks remain available. Existing forum posts retain their original markup: paste the revised snippet to adopt its new GIF layout.
+The downloadable preview includes its CSS and editor, so its layout works when opened locally. GIFs still need access to Tumblr. Templates need the hosted CSS file; they use system fonts and no JavaScript. The forum showcase places a rendered template above each native `[code]` block. Click-to-copy on the forum depends on the skin’s code-block controls; the HTML preview has its own Copy code buttons.
 
-## Revision checks
+## Earlier Bread collection
 
-The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
+[Original 15 designs and guide](bread-original-collection.md) · [Original preview](bread-collection-preview.html)
+
+## Source
+
+`bread-second-rise-v1.css` contains the scoped posting styles. `second-rise-build.cjs` generates all 15 snippets, the standalone preview, this guide and the forum showcase. `second-rise-preview.css` and `second-rise-preview.js` are preview-only sources. Rebuild with `node bread/second-rise-build.cjs`.
