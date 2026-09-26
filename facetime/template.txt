@@ -1,5 +1,4 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.css">
 <div class="ft-social-template">
   <section class="ft-phone" aria-label="FaceTime social call">
     <header class="ft-top">
@@ -8,8 +7,8 @@
           <img src="https://64.media.tumblr.com/029e363e0e64fa1278d3e9432daa3b9c/cd7f4c6d7fa7220b-89/s400x600/4d47e504ae8da367a7236b87ed3ef81819e98df7.gifv" alt="">
         </span>
         <span class="ft-contact-copy">
-          <b>channybaby</b>
-          <em>@channybaby</em>
+          <b>[name]</b>
+          <em>[text]</em>
         </span>
       </div>
 
@@ -31,15 +30,15 @@
 
       <aside class="ft-pip" aria-label="Small camera stream">
         <div class="ft-pip-video" aria-hidden="true">
-          <img class="ft-pip-img" src="https://b.l3n.co/i/NOS1yr.gif" alt="">
+          <img class="ft-pip-img" src="[url]" alt="">
         </div>
       </aside>
 
       <div class="ft-nameplate">
         <span class="ft-dot" aria-hidden="true"></span>
         <div>
-          <strong>kim chan</strong>
-          <span>calling <b>prettyboy</b></span>
+          <strong>[name]</strong>
+          <span>calling <b>[name]</b></span>
         </div>
       </div>
 
@@ -70,4 +69,6 @@
   </section>
 </div>
 <script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.css">
 [/dohtml]

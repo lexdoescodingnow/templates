@@ -57,3 +57,7 @@ The inherited RGB triples `--mgrgb1`, `--mgrgb2`, and `--mgrgb3` drive the desig
 The ornaments are original inline SVG line drawings; no external image assets are required for the cake, petal or slice details. Cormorant Garamond and DM Sans fall back to Georgia and Arial. The optional fonts, hosted CSS and placeholder GIFs require internet access. Image-free reflow uses modern CSS `:has()` support.
 
 See [VALIDATION.md](VALIDATION.md) for the checks and verification limits.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/gateau-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/gateau-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

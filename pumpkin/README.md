@@ -95,3 +95,7 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` set the neu
 `designs.json` and `pumpkin-model.js` supply the fifteen snippets and editor defaults. Run `node pumpkin/build.cjs` from the repository root to rebuild the posting files and standalone preview. The stylesheet link is pinned to the immutable commit recorded in `stylesheet-revision.txt`.
 
 HTML/CSS parsing and editor integration checks passed for all fifteen designs. Browser access to the local preview was blocked, so visual rendering and a live JCink post have not been verified. [Validation details](VALIDATION.md).
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/pumpkin-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/pumpkin-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

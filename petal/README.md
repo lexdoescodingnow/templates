@@ -14,3 +14,7 @@ Compact ready-to-paste snippets:
 - `post-template.txt`
 
 The snippets keep the editable content in the post while the heavier styling lives in `petal.css`.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/petal-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/petal-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

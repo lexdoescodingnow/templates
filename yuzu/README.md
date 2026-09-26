@@ -115,3 +115,7 @@ Choose a design or **View all 15**. The editor supports names, links, title/stat
 Run `node yuzu/build.cjs` from the repository root to regenerate the snippets and standalone preview. `designs.json` holds the catalogue, and `yuzu-model.js` supplies the default content and markup. The editor interface follows the existing collections; the template layouts and motif drawings are new for Yuzu.
 
 Run `NODE_PATH=/path/to/node_modules node yuzu/validate.cjs` with `jsdom` and `css-tree` available. [VALIDATION.md](VALIDATION.md) records the completed checks and the limits of this session.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/yuzu-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/yuzu-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

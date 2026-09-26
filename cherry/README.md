@@ -67,3 +67,7 @@ The posting snippets load [cherry-orchard-v1.css](cherry-orchard-v1.css) through
 Run `node cherry/build.cjs` from the repository root to regenerate the fifteen posting files and standalone preview. `designs.json` lists the collection, `cherry-model.js` builds the markup, and `cherry-editor.js` supplies preview editing.
 
 [VALIDATION.md](VALIDATION.md) records source checks and their limits. Browser rendering and a live JCink post have not been verified.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/cherry-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/cherry-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

@@ -89,3 +89,7 @@ Blue Hour’s `html[color-mode="light"]` and `html[color-mode="dark"]` take prec
 `designs.json` and `sesame-model.js` generate the named snippets. Run `node sesame/build.cjs` from the repository root to rebuild them and the standalone editor. The posting stylesheet is pinned to the immutable GitHub commit recorded in `stylesheet-revision.txt`.
 
 [Validation record](VALIDATION.md).
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/sesame-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/sesame-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

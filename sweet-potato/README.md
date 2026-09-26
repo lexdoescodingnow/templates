@@ -34,3 +34,7 @@ This directory contains the current JCink-ready Sweet Potato template family.
 - Bold and underline use the forward member gradient; italics use the reverse gradient.
 
 Superseded thread, Comms, and Bud files have been removed. The three canonical snippet files are the only examples intended for forum use.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/sweet-potato-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/sweet-potato-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

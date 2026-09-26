@@ -103,3 +103,7 @@ Run `node plum/build.cjs` from the repository root to rebuild the stylesheet, de
 Run `node plum/validate.cjs` with Playwright and Chromium installed. `PLUM_BROWSER` optionally points to a browser executable; `PLUM_ASSET_MAP` optionally points to a local map of downloaded preview fonts and GIFs for repeatable rendering. Validation does not post to the forum.
 
 See [VALIDATION.md](VALIDATION.md) for the completed checks.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/plum-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/plum-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

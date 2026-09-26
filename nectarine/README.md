@@ -63,3 +63,7 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` set the neu
 `designs.json` and `nectarine-model.js` supply all fifteen snippets and the editor. Run `node nectarine/build.cjs` from the repository root to regenerate them. Each posting snippet links to `nectarine-sunskin-v1.css` at the immutable revision in `stylesheet-revision.txt`.
 
 [Validation details](VALIDATION.md). Browser rendering and a live JCink post remain unverified because this session's browser cannot open the local preview.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/nectarine-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/nectarine-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

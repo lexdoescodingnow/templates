@@ -109,3 +109,7 @@ Template styles are scoped to `.bh-mocha-latte`; inner classes use `ml-`. Modern
 Run `node mocha-latte/build.cjs` from the repository root to regenerate all posting snippets and the standalone preview. `designs.json` and `mocha-latte-model.js` provide the shared catalogue, defaults and markup used by the editor and exports.
 
 Run `NODE_PATH=/path/to/node_modules node mocha-latte/validate.cjs` with `jsdom` and `css-tree` installed. See [VALIDATION.md](VALIDATION.md) for checks and their limits.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/mocha-latte-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/mocha-latte-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

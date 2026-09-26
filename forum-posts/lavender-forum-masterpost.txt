@@ -1,0 +1,706 @@
+[size=7][b]LAVENDER[/b][/size]
+[i]16 designs · the complete collection[/i]
+
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+
+Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
+
+Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+
+[size=6][b]THREADS[/b][/size]
+
+[size=4][b]01 · Thread Snippet[/b][/size]
+A thread layout from the Lavender collection.
+
+[dohtml]
+<div class="lavender-thread" style="
+--main-gif: url('https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv');
+">
+
+  <span class="lavender-name">[name]</span>
+
+  <div class="lavender-post-text">
+    [text]
+  </div>
+
+  <div class="lavender-gallery">
+    <div class="lavender-main-gif"></div>
+
+    <div class="lavender-side">
+      <div class="lavender-accent is-round"><img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="" onerror="this.parentNode.remove();"></div>
+      <div class="lavender-accent"><img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="" onerror="this.parentNode.remove();"></div>
+      <div class="lavender-accent"><img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="" onerror="this.parentNode.remove();"></div>
+    </div>
+  </div>
+
+  <div class="lavender-label">pressed lavender notes</div>
+
+  <div class="lavender-footer">
+    <span class="lavender-sprig">[text]</span>
+    <span>[name]</span>
+  </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@de8e802846f3eb10c78fc8a05f65ce54609ad58f/lavender-thread.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="lavender-thread" style="
+--main-gif: url('[url]');
+">
+
+  <span class="lavender-name">[name]</span>
+
+  <div class="lavender-post-text">
+    [text]
+  </div>
+
+  <div class="lavender-gallery">
+    <div class="lavender-main-gif"></div>
+
+    <div class="lavender-side">
+      <div class="lavender-accent is-round"><img src="[url]" alt="" onerror="this.parentNode.remove();"></div>
+      <div class="lavender-accent"><img src="[url]" alt="" onerror="this.parentNode.remove();"></div>
+      <div class="lavender-accent"><img src="[url]" alt="" onerror="this.parentNode.remove();"></div>
+    </div>
+  </div>
+
+  <div class="lavender-label">pressed lavender notes</div>
+
+  <div class="lavender-footer">
+    <span class="lavender-sprig">[text]</span>
+    <span>[name]</span>
+  </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@de8e802846f3eb10c78fc8a05f65ce54609ad58f/lavender-thread.css">
+[/dohtml]
+[/code]
+
+[size=4][b]02 · Inflorescence[/b][/size]
+Two seed-head portraits grow from fine stems above a symmetrical title and an airy page with a branching lower flourish.
+
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-inflorescence">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-inflorescence">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]03 · Linen Devotion[/b][/size]
+A writing-led lavender sachet, gathered at the neck and edged with small stitches, with an open bow above the title.
+
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-linen-devotion">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-linen-devotion">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]04 · Parallel Fields[/b][/size]
+Two staggered portrait windows rise over fine furrow lines, with a wide serif heading and a divided member-colour frame.
+
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-parallel-fields">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-parallel-fields">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]05 · Stillroom Nocturne[/b][/size]
+A perfume-flask silhouette with sloping shoulders, a ribbed stopper and a wide photographic label above a generous reading panel.
+
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-stillroom-nocturne">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-stillroom-nocturne">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]06 · Vesper Specimen[/b][/size]
+A botanical study sheet with a tall oval portrait, an off-centre heading and a drawn lavender raceme in the margin.
+
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-vesper-specimen">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-thread lvd-vesper-specimen">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=6][b]COMMS[/b][/size]
+
+[size=4][b]07 · Duskline[/b][/size]
+A softly arched smartphone with a seed-shaped contact portrait, an inset earpiece and generous incoming message bubbles.
+
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-duskline" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-duskline" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]08 · Lavandula OS[/b][/size]
+A desktop messenger window with a narrow portrait sidebar, small window controls and a wide neutral conversation pane.
+
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-lavandula-os" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-lavandula-os" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]09 · Pillow Talk[/b][/size]
+A bedside smart clock with a large time display, paired contact tiles, rounded message cards and a perforated speaker base.
+
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-pillow-talk" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-pillow-talk" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]10 · Sachet Sync[/b][/size]
+A book-style folding phone with two portrait tiles in its cover screen and a separate conversation display across a narrow hinge.
+
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-sachet-sync" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-sachet-sync" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]11 · Stemwave[/b][/size]
+A slender candybar messenger with a tall signal rail, square inset bubbles and a tactile twelve-key lower panel.
+
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-stemwave" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-comms lvd-stemwave" data-flow="received">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-time">22:08</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
+<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+</div>
+<div class="lvd-hardware" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=6][b]BUDS[/b][/size]
+
+[size=4][b]12 · Afterbloom[/b][/size]
+An open miniature folio with a small descending seed-head motif and an offset member-colour underline.
+
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-afterbloom">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-afterbloom">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]13 · Calyx[/b][/size]
+A compact capsule note held between three-colour brackets, with a tiny lavender-flower punctuation mark.
+
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-calyx">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-calyx">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]14 · Lavandin[/b][/size]
+A tiny seed-shaped portrait nestles beside a short reply, with three descending stitch lines in the opposite margin.
+
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-lavandin">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-lavandin">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]15 · Scent Letter[/b][/size]
+A slim perfume blotter with a rounded tip, a narrow vertical name rail and a spare little note.
+
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-scent-letter">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-scent-letter">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]16 · Twin Whorls[/b][/size]
+Two miniature oval portraits sit like paired flowers at the centre of a branching divider above a brief reply.
+
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-twin-whorls">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-lavender lvd-bud lvd-twin-whorls">
+<a class="lvd-name" href="[url]">[name]</a>
+<div class="lvd-title">[text]</div>
+<div class="lvd-media">
+<img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
+<img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="lvd-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="lvd-motif" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@0d5ee7fd2512b7bab48ca81a496a83ee4ff6aa5c/lavender/lavender-stillroom-v1.css">
+[/dohtml]
+[/code]

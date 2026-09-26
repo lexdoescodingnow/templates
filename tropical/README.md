@@ -73,3 +73,7 @@ Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` take precedenc
 Run `node tropical/build.cjs` from the repository root to regenerate all posting snippets and the standalone preview. `designs.json` defines the names and layouts; `tropical-model.js` defines markup and placeholders. The editor retains the established collection workflow.
 
 Run `NODE_PATH=/path/to/dependencies/node_modules node tropical/validate.cjs` with `jsdom` and `css-tree` installed to check snippet structure and editor behaviour. See [VALIDATION.md](VALIDATION.md) for the checks performed and the visual-testing limitation.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/tropical-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/tropical-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

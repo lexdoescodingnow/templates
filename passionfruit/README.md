@@ -65,3 +65,7 @@ Bodoni Moda and DM Sans fall back to Georgia and Arial. Original vector passionf
 Run `node passionfruit/build.cjs` from the repository root to rebuild all snippets, the compiled stylesheet, design index and standalone preview. The builder reads `stylesheet-revision.txt`; for a future stylesheet release, publish the revised CSS and update that revision before rebuilding the posting snippets. The ZIP includes the sources and all fifteen snippets.
 
 See [VALIDATION.md](VALIDATION.md) for completed source and hosting checks. Visual rendering and live JCink behaviour remain unverified because this session's preview browser blocked local HTML files.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/passionfruit-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/passionfruit-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

@@ -1,14 +1,13 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/petal/petal.css">
-<div class="petal-post-template petal-post-dark" style="--petal-group:#00C853; --petal-leaf:#B2FF59; --petal-sky:#6BCBFF; --petal-sunset:#FF8D6A;">
+<div class="petal-post-template petal-post-dark">
   <aside class="petal-post-side">
     <div class="petal-post-side-media">
-      <img src="https://i.pinimg.com/originals/46/c1/1d/46c11ddf6d31d33ca9ceb8935a855f5b.jpg" alt="Choi Jinseok side profile">
+      <img src="[url]" alt="Choi Jinseok side profile">
     </div>
     <div class="petal-post-side-info">
       <span>Leaf Entertainment</span>
-      <h3>choi jinseok</h3>
-      <p>@choijinseok</p>
+      <h3>[name]</h3>
+      <p>[text]</p>
       <div class="petal-post-side-stats">
         <b>4.03m</b>
         <em>followers</em>
@@ -37,8 +36,8 @@
 
       <div class="petal-post-user">
         <div>
-          <h2>choi jinseok</h2>
-          <span>@choijinseok</span>
+          <h2>[name]</h2>
+          <span>[text]</span>
         </div>
         <b>Leaf verified</b>
       </div>
@@ -69,7 +68,7 @@
       </div>
 
       <article class="petal-post-caption">
-        <p><strong>@choijinseok</strong> studio day in <i>Los Angeles</i>. see you soon, petals. <u>new comeback soon</u>.</p>
+        <p><strong>[text]</strong> studio day in <i>Los Angeles</i>. see you soon, petals. <u>new comeback soon</u>.</p>
       </article>
 
       <div class="petal-post-comments">
@@ -85,4 +84,5 @@
   </main>
 </div>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/petal/petal-forum-v1.css">
 [/dohtml]

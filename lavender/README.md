@@ -65,3 +65,7 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` take preced
 Run `node lavender/build.cjs` from the repository root to rebuild the fifteen snippets and standalone preview. `designs.json` holds the names and layout descriptions; `lavender-model.js` supplies the markup and defaults. The editor interface follows the existing collection workflow; the fifteen template layouts and botanical details were created for Lavender.
 
 The HTML, CSS structure and editor behaviour passed automated checks. Visual browser review and a live JCink posting test were unavailable because the cloud browser blocked preview URLs. [VALIDATION.md](VALIDATION.md) records the checks and limits.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/lavender-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/lavender-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

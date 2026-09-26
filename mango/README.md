@@ -61,3 +61,7 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` override th
 `designs.json` and `mango-model.js` supply all fifteen snippets and editor defaults. Run `node mango/build.cjs` from the repository root to rebuild them and the standalone editor. The editor embeds its CSS and JavaScript; character GIFs still load from Tumblr. Posting snippets use the immutable stylesheet commit recorded in `stylesheet-revision.txt`.
 
 [Validation details](VALIDATION.md) distinguish completed functional checks from unverified browser rendering.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/mango-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/mango-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

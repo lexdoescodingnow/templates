@@ -65,3 +65,7 @@ Every snippet includes one jsDelivr stylesheet link pinned to the immutable GitH
 Run `node nuts/build.cjs` from the repository root to regenerate all snippets and the standalone preview. `designs.json` defines the catalogue, `nuts-model.js` produces posting markup, and `nuts-editor.js` powers the preview controls.
 
 See [VALIDATION.md](VALIDATION.md) for checks and limitations. The browser security policy blocked access to the local preview, so visual rendering and live JCink posting remain unverified.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/nuts-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/nuts-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

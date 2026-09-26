@@ -1,0 +1,166 @@
+[size=7][b]FACETIME[/b][/size]
+[i]1 designs · the complete collection[/i]
+
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+
+Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
+
+Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+
+[size=6][b]COMMS[/b][/size]
+
+[size=4][b]01 · Template[/b][/size]
+A comms layout from the FaceTime collection.
+
+[dohtml]
+<div class="ft-social-template">
+  <section class="ft-phone" aria-label="FaceTime social call">
+    <header class="ft-top">
+      <div class="ft-contact">
+        <span class="ft-avatar" aria-hidden="true">
+          <img src="https://64.media.tumblr.com/029e363e0e64fa1278d3e9432daa3b9c/cd7f4c6d7fa7220b-89/s400x600/4d47e504ae8da367a7236b87ed3ef81819e98df7.gifv" alt="">
+        </span>
+        <span class="ft-contact-copy">
+          <b>[name]</b>
+          <em>[text]</em>
+        </span>
+      </div>
+
+      <div class="ft-meta">
+        <span>00:34</span>
+        <span>live</span>
+      </div>
+    </header>
+
+    <main class="ft-screen">
+      <div class="ft-main-video" aria-hidden="true">
+        <img class="ft-main-img" src="https://64.media.tumblr.com/029e363e0e64fa1278d3e9432daa3b9c/cd7f4c6d7fa7220b-89/s400x600/4d47e504ae8da367a7236b87ed3ef81819e98df7.gifv" alt="">
+      </div>
+
+      <div class="ft-screen-tags">
+        <span>FaceTime</span>
+        <span>secure call</span>
+      </div>
+
+      <aside class="ft-pip" aria-label="Small camera stream">
+        <div class="ft-pip-video" aria-hidden="true">
+          <img class="ft-pip-img" src="https://64.media.tumblr.com/029e363e0e64fa1278d3e9432daa3b9c/cd7f4c6d7fa7220b-89/s400x600/4d47e504ae8da367a7236b87ed3ef81819e98df7.gifv" alt="">
+        </div>
+      </aside>
+
+      <div class="ft-nameplate">
+        <span class="ft-dot" aria-hidden="true"></span>
+        <div>
+          <strong>[name]</strong>
+          <span>calling <b>[name]</b></span>
+        </div>
+      </div>
+
+      <nav class="ft-controls" aria-label="Call controls">
+        <span title="camera">cam</span>
+        <span title="flip camera">flip</span>
+        <span title="mute">mic</span>
+        <span class="ft-end" title="end call">end</span>
+      </nav>
+
+      <div class="ft-reactions" aria-hidden="true"></div>
+    </main>
+
+    <section class="ft-chat">
+      <div class="ft-now">
+        <span>facetime transcript</span>
+      </div>
+
+      <article class="ft-dialogue">
+        <p>"oh, hey <b>pretty boy</b>, you look pretty. is that <i>new</i>?"</p>
+        <p>"don't hide from me. i can see the <u>smile</u> happening."</p>
+      </article>
+
+      <footer class="ft-footer">
+        <button class="ft-react-button" type="button">tap to react</button>
+      </footer>
+    </section>
+  </section>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="ft-social-template">
+  <section class="ft-phone" aria-label="FaceTime social call">
+    <header class="ft-top">
+      <div class="ft-contact">
+        <span class="ft-avatar" aria-hidden="true">
+          <img src="https://64.media.tumblr.com/029e363e0e64fa1278d3e9432daa3b9c/cd7f4c6d7fa7220b-89/s400x600/4d47e504ae8da367a7236b87ed3ef81819e98df7.gifv" alt="">
+        </span>
+        <span class="ft-contact-copy">
+          <b>[name]</b>
+          <em>[text]</em>
+        </span>
+      </div>
+
+      <div class="ft-meta">
+        <span>00:34</span>
+        <span>live</span>
+      </div>
+    </header>
+
+    <main class="ft-screen">
+      <div class="ft-main-video" aria-hidden="true">
+        <img class="ft-main-img" src="https://64.media.tumblr.com/029e363e0e64fa1278d3e9432daa3b9c/cd7f4c6d7fa7220b-89/s400x600/4d47e504ae8da367a7236b87ed3ef81819e98df7.gifv" alt="">
+      </div>
+
+      <div class="ft-screen-tags">
+        <span>FaceTime</span>
+        <span>secure call</span>
+      </div>
+
+      <aside class="ft-pip" aria-label="Small camera stream">
+        <div class="ft-pip-video" aria-hidden="true">
+          <img class="ft-pip-img" src="[url]" alt="">
+        </div>
+      </aside>
+
+      <div class="ft-nameplate">
+        <span class="ft-dot" aria-hidden="true"></span>
+        <div>
+          <strong>[name]</strong>
+          <span>calling <b>[name]</b></span>
+        </div>
+      </div>
+
+      <nav class="ft-controls" aria-label="Call controls">
+        <span title="camera">cam</span>
+        <span title="flip camera">flip</span>
+        <span title="mute">mic</span>
+        <span class="ft-end" title="end call">end</span>
+      </nav>
+
+      <div class="ft-reactions" aria-hidden="true"></div>
+    </main>
+
+    <section class="ft-chat">
+      <div class="ft-now">
+        <span>facetime transcript</span>
+      </div>
+
+      <article class="ft-dialogue">
+        <p>"oh, hey <b>pretty boy</b>, you look pretty. is that <i>new</i>?"</p>
+        <p>"don't hide from me. i can see the <u>smile</u> happening."</p>
+      </article>
+
+      <footer class="ft-footer">
+        <button class="ft-react-button" type="button">tap to react</button>
+      </footer>
+    </section>
+  </section>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.css">
+[/dohtml]
+[/code]

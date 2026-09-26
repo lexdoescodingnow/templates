@@ -1,7 +1,6 @@
 STANDARD
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 <div class="bh-bread bh-bread-card" style="--br-img1:url('[url]');--br-img2:url('[url2]');">
   <div class="bh-bread-body">[text]</div>
   <div class="bh-bread-head">
@@ -15,13 +14,14 @@ STANDARD
   </div>
   <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 [/dohtml]
 
 
 SINGLE GIF
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 <div class="bh-bread bh-bread-card bh-bread-card--single" style="--br-img1:url('[url]');">
   <div class="bh-bread-body">[text]</div>
   <div class="bh-bread-head">
@@ -34,13 +34,14 @@ SINGLE GIF
   </div>
   <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 [/dohtml]
 
 
 ROUNDED
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 <div class="bh-bread bh-bread-card bh-bread-card--rounded" style="--br-img1:url('[url]');--br-img2:url('[url2]');">
   <div class="bh-bread-body">[text]</div>
   <div class="bh-bread-head">
@@ -54,13 +55,14 @@ ROUNDED
   </div>
   <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 [/dohtml]
 
 
 SCROLL
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 <div class="bh-bread bh-bread-card bh-bread-card--scroll" style="--br-img1:url('[url]');--br-img2:url('[url2]');">
   <div class="bh-bread-body">[text]</div>
   <div class="bh-bread-head">
@@ -74,13 +76,14 @@ SCROLL
   </div>
   <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 [/dohtml]
 
 
 SPLIT
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 <div class="bh-bread bh-bread-card bh-bread-card--split" style="--br-img1:url('[url]');--br-img2:url('[url2]');">
   <div class="bh-bread-body">[text]</div>
   <div class="bh-bread-head">
@@ -94,4 +97,6 @@ SPLIT
   </div>
   <div class="bh-bread-foot"><div class="bh-bread-mark">some recipes are meant to be shared</div><div class="bh-bread-name">[name]</div></div>
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 [/dohtml]

@@ -63,3 +63,7 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` control neu
 `designs.json` and `fiery-model.js` provide the fifteen snippets and editor defaults. Run `node fiery/build.cjs` from the repository root to rebuild the individual snippets and standalone preview. Each snippet includes the stylesheet at the immutable commit recorded in `stylesheet-revision.txt`.
 
 [Validation details](VALIDATION.md). Static checks passed. Browser rendering and a live JCink post remain unverified: the available browser blocked access to the local preview.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/fiery-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/fiery-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

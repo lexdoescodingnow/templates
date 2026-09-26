@@ -63,3 +63,7 @@ Every snippet loads [fudge-confection-v1.css](fudge-confection-v1.css) through j
 Run `node fudge/build.cjs` from the repository root to rebuild the snippets and standalone preview. `designs.json` defines the catalogue, `fudge-model.js` generates the markup, and `fudge-editor.js` powers the preview controls.
 
 [VALIDATION.md](VALIDATION.md) records checks and limits. Browser visual rendering and live JCink posting have not been verified.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/fudge-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/fudge-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

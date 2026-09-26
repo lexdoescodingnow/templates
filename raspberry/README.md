@@ -73,3 +73,7 @@ All artwork is original CSS geometry or an embedded raspberry engraving. Local T
 Run `node raspberry/build.cjs` from the repository root to regenerate the posting snippets and standalone preview. Names and layout descriptions live in `designs.json`; markup and placeholders live in `raspberry-model.js`. The editor interface retains the familiar collection workflow; Raspberry template styling and artwork are new.
 
 See [VALIDATION.md](VALIDATION.md) for completed checks and the browser-preview limitation. No live JCink post was made.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/raspberry-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/raspberry-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

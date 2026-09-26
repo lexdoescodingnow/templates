@@ -61,3 +61,7 @@ Blue Hour’s explicit `html[color-mode="light"]` and `html[color-mode="dark"]` 
 ## Validation
 
 See [VALIDATION.md](VALIDATION.md) for the checks completed for this release and the limits of verification.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/espresso-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/espresso-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

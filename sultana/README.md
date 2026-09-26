@@ -63,3 +63,7 @@ Cormorant Garamond and Manrope fall back to Georgia and Arial. GIFs, optional we
 Run `node sultana/build.cjs` from the repository root to rebuild all fifteen snippets and the standalone preview from the editor and CSS source files. `designs.json` provides a readable index of the names and default image counts.
 
 See [VALIDATION.md](VALIDATION.md) for completed checks and their limits.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/sultana-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/sultana-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

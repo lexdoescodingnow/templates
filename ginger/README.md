@@ -69,3 +69,7 @@ All motifs are new CSS details or an embedded vector ginger-root drawing. The po
 Run `node ginger/build.cjs` from the repository root to regenerate the 15 snippets and the standalone preview. `designs.json` contains the names and layouts; `ginger-model.js` supplies the shared markup and defaults. The editor interface follows the existing collection workflow; the template designs and motifs are new.
 
 Run `python ginger/validate.py` with `lxml` installed for the source checks. See [VALIDATION.md](VALIDATION.md) for their scope and the browser limitation.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/ginger-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/ginger-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

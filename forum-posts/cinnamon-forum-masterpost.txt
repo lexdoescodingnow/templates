@@ -1,0 +1,758 @@
+[size=7][b]CINNAMON[/b][/size]
+[i]15 designs · the complete collection[/i]
+
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+
+Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
+
+Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+
+[size=6][b]THREADS[/b][/size]
+
+[size=4][b]01 · Barkbound[/b][/size]
+A tinted title panel, generous manuscript text and an engraved signature beneath.
+
+[dohtml]
+<div class="cnm cnm-thread cnm-barkbound">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-thread cnm-barkbound">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]02 · Canela Vellum[/b][/size]
+A vaulted vellum page with a double inset border and one panoramic portrait ribbon.
+
+[dohtml]
+<div class="cnm cnm-thread cnm-canela-vellum">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-thread cnm-canela-vellum">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]03 · Ceylon Sonata[/b][/size]
+A bound folio with a coloured spine, engraved cinnamon quills and portraits cut into a shallow chevron.
+
+[dohtml]
+<div class="cnm cnm-thread cnm-ceylon-sonata">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/0b56aa86fd0aa31d92ed9696cbe53b9d/a5ea46cd86dfd03b-6c/s540x810/c4de86e51c689e9424f0cb23cbffa8adc128aba1.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-thread cnm-ceylon-sonata">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/0b56aa86fd0aa31d92ed9696cbe53b9d/a5ea46cd86dfd03b-6c/s540x810/c4de86e51c689e9424f0cb23cbffa8adc128aba1.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]04 · Quill and Quiet[/b][/size]
+An oversized literary title beside one slender portrait sliver.
+
+[dohtml]
+<div class="cnm cnm-thread cnm-quill-and-quiet">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-thread cnm-quill-and-quiet">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]05 · Saigon Silk[/b][/size]
+A fine gradient binding with staggered silk-corner portraits and gently bracketed writing.
+
+[dohtml]
+<div class="cnm cnm-thread cnm-saigon-silk">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/0b56aa86fd0aa31d92ed9696cbe53b9d/a5ea46cd86dfd03b-6c/s540x810/c4de86e51c689e9424f0cb23cbffa8adc128aba1.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-thread cnm-saigon-silk">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/0b56aa86fd0aa31d92ed9696cbe53b9d/a5ea46cd86dfd03b-6c/s540x810/c4de86e51c689e9424f0cb23cbffa8adc128aba1.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sem vel orci blandit, vitae posuere erat tristique. <b>Integer at neque vitae.</b> Sed porta, ante vel luctus luctus, felis risus vulputate lorem, quis tincidunt arcu erat vitae sapien.</p>
+<p>Vivamus sed nulla et est laoreet interdum. <i>Aliquam erat volutpat.</i> Nunc facilisis, magna a eleifend venenatis, sem ipsum fermentum lacus, at viverra justo enim id purus. Suspendisse potenti. Donec commodo malesuada velit, sit amet mattis erat.</p>
+<p><u>Praesent in mollis lectus.</u> Mauris ut ligula vitae ipsum tempor accumsan. Nulla facilisi. Curabitur aliquet lectus a lacus porttitor, eget hendrerit ante rhoncus. Etiam tempus, nunc quis aliquam dictum, libero mi fringilla nisi, et dapibus eros nibh vel sem.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=6][b]COMMS[/b][/size]
+
+[size=4][b]06 · Afterglow Inbox[/b][/size]
+A lock-screen-inspired phone with a large clock and image-free notification cards.
+
+[dohtml]
+<div class="cnm cnm-comms cnm-afterglow-inbox" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-comms cnm-afterglow-inbox" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]07 · Cindertext[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="cnm cnm-comms cnm-cindertext" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-comms cnm-cindertext" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]08 · Quillwave[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="cnm cnm-comms cnm-quillwave" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-comms cnm-quillwave" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]09 · Simmer Signal[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="cnm cnm-comms cnm-simmer-signal" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-comms cnm-simmer-signal" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]10 · Velvet Relay[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="cnm cnm-comms cnm-velvet-relay" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-comms cnm-velvet-relay" data-direction="received">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+<time>21:08</time>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
+<p>Aliquam erat volutpat. <i>Sed eu nibh vitae.</i></p>
+<p><u>Donec consequat</u> neque vel metus. Nunc tempus purus in velit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=6][b]BUDS[/b][/size]
+
+[size=4][b]11 · Barklet[/b][/size]
+One small character portrait beside a compact reply and the original themed details.
+
+[dohtml]
+<div class="cnm cnm-bud cnm-barklet">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-bud cnm-barklet">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]12 · Cinderbud[/b][/size]
+A double-spined miniature with curled portrait corners and a perforated text divider.
+
+[dohtml]
+<div class="cnm cnm-bud cnm-cinderbud">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/0b56aa86fd0aa31d92ed9696cbe53b9d/a5ea46cd86dfd03b-6c/s540x810/c4de86e51c689e9424f0cb23cbffa8adc128aba1.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-bud cnm-cinderbud">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/0b56aa86fd0aa31d92ed9696cbe53b9d/a5ea46cd86dfd03b-6c/s540x810/c4de86e51c689e9424f0cb23cbffa8adc128aba1.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]13 · Curlsong[/b][/size]
+One small character portrait beside a compact reply and the original themed details.
+
+[dohtml]
+<div class="cnm cnm-bud cnm-curlsong">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-bud cnm-curlsong">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-gifs">
+<img src="https://64.media.tumblr.com/77b12bef0e84e0ad8da98bbdc542b53a/7159f7e7214784fd-9c/s1280x1920/e8e16374e5119e7fe64e425ef96369d3aedf7018.gifv" alt="Character portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]14 · Quilltip[/b][/size]
+An open little letter with a full-width reply and fine cinnamon engraving.
+
+[dohtml]
+<div class="cnm cnm-bud cnm-quilltip">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-bud cnm-quilltip">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]15 · Silkseed[/b][/size]
+A fine-lined, image-free reply slip with a literary heading.
+
+[dohtml]
+<div class="cnm cnm-bud cnm-silkseed">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="cnm cnm-bud cnm-silkseed">
+<div class="cnm-meta">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<div class="cnm-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean vitae risus. <i>Aliquam erat volutpat.</i> Sed a ligula non justo feugiat finibus. <u>Nulla facilisi.</u> Donec dictum neque sit amet lacus posuere, quis ornare nunc suscipit.</p>
+</div>
+
+<div class="cnm-finish" aria-hidden="true"><span class="cnm-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cinnamon/cinnamon-media-v2.css">
+[/dohtml]
+[/code]

@@ -71,3 +71,7 @@ Original motifs are drawn in CSS, with a tiny inline SVG neon-heart outline. All
 Run `node boba/build.cjs` from the repository root to regenerate the 15 snippets and standalone preview. `designs.json` contains the named designs; `boba-model.js` supplies the shared markup and defaults. The editor shell follows the existing collection workflow; Boba’s template styling and motifs are new.
 
 See [VALIDATION.md](VALIDATION.md) for checks and the testing limitation.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/boba-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/boba-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

@@ -61,3 +61,7 @@ Baskervville and Outfit fall back to Georgia and Arial. Original inline SVG line
 The preview is an authoring tool; only the `.txt` snippets belong in forum posts. To rebuild the included snippets and standalone preview from the source files, run `node coconut/build.cjs` from the repository root.
 
 See [VALIDATION.md](VALIDATION.md) for completed checks and their limits.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/coconut-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/coconut-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

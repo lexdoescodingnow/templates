@@ -1,7 +1,6 @@
 SENT
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 <div class="bh-bread-comms bh-bread-comms-card" style="--bc-avatar:url('[url]');">
   <div class="bh-bread-comms-head">
     <div class="bh-bread-comms-avatar"><div class="bh-bread-comms-avatar-core"></div></div>
@@ -11,17 +10,18 @@ SENT
   <div class="bh-bread-comms-chat">
     <div class="bh-bread-comms-date">[time]</div>
     <div class="bh-bread-comms-stream">
-      <div class="bh-bread-comms-row is-sent"><div class="bh-bread-comms-bubble">[text]</div><div class="bh-bread-comms-meta">[time]</div></div>
+      <div class="bh-bread-comms-row is-sent"><div class="bh-bread-comms-bubble"><p>[text]</p></div><div class="bh-bread-comms-meta">[time]</div></div>
     </div>
   </div>
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 [/dohtml]
 
 
 RECEIVED
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 <div class="bh-bread-comms bh-bread-comms-card" style="--bc-avatar:url('[url]');">
   <div class="bh-bread-comms-head">
     <div class="bh-bread-comms-avatar"><div class="bh-bread-comms-avatar-core"></div></div>
@@ -31,8 +31,10 @@ RECEIVED
   <div class="bh-bread-comms-chat">
     <div class="bh-bread-comms-date">[time]</div>
     <div class="bh-bread-comms-stream">
-      <div class="bh-bread-comms-row is-received"><div class="bh-bread-comms-bubble">[text]</div><div class="bh-bread-comms-meta">[time]</div></div>
+      <div class="bh-bread-comms-row is-received"><div class="bh-bread-comms-bubble"><p>[text]</p></div><div class="bh-bread-comms-meta">[time]</div></div>
     </div>
   </div>
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread.css');</style>
 [/dohtml]

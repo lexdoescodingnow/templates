@@ -63,3 +63,7 @@ All snippets contain one jsDelivr link to [praline-atelier-v1.css](praline-ateli
 Run `node praline/build.cjs` from the repository root to regenerate all fifteen snippets and the standalone preview. `designs.json` defines the catalogue, `praline-model.js` builds posting markup, and `praline-editor.js` powers the preview controls.
 
 [VALIDATION.md](VALIDATION.md) records the completed checks and their limits. Browser visual rendering and posting on the live forum remain unverified.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/praline-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/praline-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

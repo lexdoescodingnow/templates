@@ -61,3 +61,7 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` control the
 Run `node macadamia/build.cjs` from the repository root to generate the fifteen snippets and standalone editor from `designs.json` and `macadamia-model.js`. New snippets pin `macadamia-orchard-v1.css` to the immutable commit recorded in `stylesheet-revision.txt` and the `.bh-maca` wrapper. Earlier Macadamia CSS and posting files remain available; see the [previous thread index](LEGACY.md).
 
 [Validation details](VALIDATION.md). Source checks are recorded separately from visual verification. The local preview could not be opened by the available browser because its security policy blocked local URLs; rendered layouts and live forum posting remain unverified.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/macadamia-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/macadamia-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

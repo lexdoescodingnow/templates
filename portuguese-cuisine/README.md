@@ -71,3 +71,7 @@ The stylesheet uses modern CSS grid, container queries, `:has()`, `color-mix()` 
 Run `node portuguese-cuisine/build.cjs` from the repository root to regenerate the snippets and standalone preview. `designs.json` holds the catalogue, and `portuguese-cuisine-model.js` supplies default content and markup. Run `node portuguese-cuisine/validate.cjs` with `jsdom` and `css-tree` available to repeat the structural and editor checks.
 
 [VALIDATION.md](VALIDATION.md) records the checks and their limits. Browser screenshots and a live JCink rendering check were unavailable in the creation session; the cloud browser blocked local preview URLs. The saved preview is provided for visual review.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/portuguese-cuisine-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/portuguese-cuisine-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

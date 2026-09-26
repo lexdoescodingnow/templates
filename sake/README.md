@@ -62,3 +62,7 @@ Blue Hour’s `html[color-mode="light"]` and `html[color-mode="dark"]` set the n
 
 [Validation details](VALIDATION.md).
 
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/sake-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/sake-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

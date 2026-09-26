@@ -63,3 +63,7 @@ All posting CSS is scoped to `.bh-honey`. It uses modern CSS grid, `:has()`, `co
 `designs.json` and `honey-model.js` supply the named snippets and editor defaults. Run `node honey/build.cjs` from the repository root to rebuild the fifteen posting files and standalone editor. The editor embeds its CSS and JavaScript; only its character GIFs need a network connection. The posting stylesheet is pinned to the immutable GitHub commit recorded in `stylesheet-revision.txt`.
 
 See [VALIDATION.md](VALIDATION.md) for completed checks and the limits of browser verification.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/honey-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/honey-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

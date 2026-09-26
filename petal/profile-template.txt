@@ -1,6 +1,5 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/petal/petal.css">
-<div class="petal-template petal-dark" style="--petal-group:#00C853; --petal-leaf:#B2FF59; --petal-sky:#6BCBFF; --petal-sunset:#FF8D6A;">
+<div class="petal-template petal-dark">
   <main class="petal-app">
     <header class="petal-appbar">
       <div class="petal-logo">
@@ -32,7 +31,7 @@
         <span>la live</span>
       </div>
       <div class="petal-story">
-        <img src="https://i.pinimg.com/originals/46/c1/1d/46c11ddf6d31d33ca9ceb8935a855f5b.jpg" alt="fan story">
+        <img src="[url]" alt="fan story">
         <span>fans</span>
       </div>
     </section>
@@ -45,10 +44,10 @@
 
         <div class="petal-meta">
           <div class="petal-name-row">
-            <h2 class="petal-name">choi jinseok</h2>
+            <h2 class="petal-name">[name]</h2>
             <span class="petal-verified">Leaf verified</span>
           </div>
-          <span class="petal-handle">@choijinseok</span>
+          <span class="petal-handle">[text]</span>
           <p class="petal-blurb"><b>Leaf Entertainment</b> idol profile broadcasting from <i>Los Angeles</i>. Fan traffic is <u>currently trending</u>.</p>
 
           <div class="petal-profile-actions">
@@ -92,11 +91,11 @@
       <span>Leaf Entertainment</span>
       <span>LA</span>
     </div>
-    <img src="https://i.pinimg.com/originals/46/c1/1d/46c11ddf6d31d33ca9ceb8935a855f5b.jpg" alt="Jinseok featured image">
+    <img src="[url]" alt="Jinseok featured image">
     <div class="petal-feature-info">
       <span class="petal-feature-kicker">spotlight reel</span>
-      <h3>choi jinseok</h3>
-      <p>@choijinseok is live on Petal with Leaf Entertainment.</p>
+      <h3>[name]</h3>
+      <p>[text] is live on Petal with Leaf Entertainment.</p>
       <div class="petal-feature-actions">
         <span>like</span>
         <span>save</span>
@@ -106,4 +105,5 @@
   </aside>
 </div>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/petal/petal-forum-v1.css">
 [/dohtml]

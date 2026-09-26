@@ -75,3 +75,7 @@ There are no comments, hidden tips, instructional banners or editing notes in th
 Run `node italian-cuisine/build.cjs` from the repository root to regenerate the posting snippets and preview. `designs.json` holds the 15 distinct names and defaults; `italian-model.js` generates both posting markup and the preview. The existing editor workflow is retained, with original Italian Cuisine template styling.
 
 See [VALIDATION.md](VALIDATION.md) for completed source checks and the browser verification limitation.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/italian-cuisine-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/italian-cuisine-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

@@ -525,3 +525,25 @@ body.light-theme .bh-sake-pour {
   .bh-sake-pour__text::before { left: 14px; }
   .bh-sake-pour__tag { margin-right: 24px; }
 }
+
+html[color-mode="light"] .bh-sake-pour{  --sake-one: var(--mgrgb1, 151, 72, 91);
+  --sake-two: var(--mgrgb2, 185, 106, 112);
+  --sake-three: var(--mgrgb3, 107, 76, 113);
+  --sake-paper: #f5f0e7;
+  --sake-paper-deep: #e9e0d2;
+  --sake-card: rgba(255, 253, 248, 0.84);
+  --sake-ink: #373136;
+  --sake-muted: #857a78;
+  --sake-line: rgba(63, 51, 53, 0.14);
+  --sake-shadow: rgba(53, 38, 43, 0.17);
+  --sake-white: #fffdf8;
+color-scheme:light}
+html[color-mode="dark"] .bh-sake-pour{
+    --sake-paper: #1b191b;
+    --sake-paper-deep: #121113;
+    --sake-card: rgba(35, 32, 35, 0.91);
+    --sake-ink: #e8e1dc;
+    --sake-muted: #a79b9a;
+    --sake-line: rgba(255, 255, 255, 0.09);
+    --sake-shadow: rgba(0, 0, 0, 0.42);
+    --sake-white: #fffaf5;color-scheme:dark}

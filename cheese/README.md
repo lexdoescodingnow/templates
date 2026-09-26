@@ -81,3 +81,7 @@ The collection inherits `--mgrgb1`, `--mgrgb2` and `--mgrgb3` as RGB triples. Mi
 Run `node cheese/build.cjs` from the repository root to regenerate the snippets and standalone preview. `designs.json` is the catalogue; `cheese-model.js` supplies defaults and markup. The editor and exported defaults are generated from this same model.
 
 Run `NODE_PATH=/path/to/node_modules node cheese/validate.cjs` with `jsdom` and `css-tree` installed. See [VALIDATION.md](VALIDATION.md) for the checks performed and their limits.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/cheese-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/cheese-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

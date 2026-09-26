@@ -103,3 +103,7 @@ Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` override the s
 Run `node popcorn/build.cjs` from the repository root to regenerate all fifteen snippets and the standalone preview. The catalogue is in `designs.json`; `popcorn-model.js` defines the editable markup and sample writing.
 
 Run `NODE_PATH=/path/to/dependencies/node_modules node popcorn/validate.cjs` with `jsdom` and `css-tree` installed to check snippet structure, CSS syntax and editor behaviour. See [VALIDATION.md](VALIDATION.md) for the completed checks and visual-preview limitation.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/popcorn-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/popcorn-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

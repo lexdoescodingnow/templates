@@ -3,7 +3,6 @@ SAKE THREADS
 STANDARD · FIRST POUR
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family.css?v=20260725-2');</style>
 <div class="bh-sake-pour">
 
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>[name]</span></a>
@@ -27,12 +26,13 @@ STANDARD · FIRST POUR
 <div class="bh-sake-pour__base"><span>清酒</span><i></i><span>一献</span></div>
 
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family-forum-v1.css');</style>
 [/dohtml]
 
 SOLO POUR · SINGLE GIF
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family.css?v=20260725-2');</style>
 <div class="bh-sake-pour bh-sake-pour--solo">
 
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>[name]</span></a>
@@ -55,12 +55,13 @@ SOLO POUR · SINGLE GIF
 <div class="bh-sake-pour__base"><span>独酌</span><i></i><span>一景</span></div>
 
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family-forum-v1.css');</style>
 [/dohtml]
 
 ROUND CASK · SOFT EDGES
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family.css?v=20260725-2');</style>
 <div class="bh-sake-pour bh-sake-pour--rounded">
 
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>[name]</span></a>
@@ -84,12 +85,13 @@ ROUND CASK · SOFT EDGES
 <div class="bh-sake-pour__base"><span>まろやか</span><i></i><span>余白</span></div>
 
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family-forum-v1.css');</style>
 [/dohtml]
 
 NIGHT POUR · SCROLLBOX
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family.css?v=20260725-2');</style>
 <div class="bh-sake-pour bh-sake-pour--scroll">
 
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>[name]</span></a>
@@ -116,12 +118,13 @@ NIGHT POUR · SCROLLBOX
 <div class="bh-sake-pour__base"><span>深酌</span><i></i><span>読了</span></div>
 
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family-forum-v1.css');</style>
 [/dohtml]
 
 TASTING FLIGHT · OFFSET CARDS
 
 [dohtml]
-<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family.css?v=20260725-2');</style>
 <div class="bh-sake-pour bh-sake-pour--flight">
 
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>[name]</span></a>
@@ -145,4 +148,6 @@ TASTING FLIGHT · OFFSET CARDS
 <div class="bh-sake-pour__base"><span>試飲</span><i></i><span>二景</span></div>
 
 </div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-family-forum-v1.css');</style>
 [/dohtml]

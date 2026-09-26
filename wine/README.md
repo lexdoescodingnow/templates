@@ -61,3 +61,7 @@ Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` set the neutr
 All fifteen named snippets and the standalone editor use the same `designs.json` catalogue and `wine-model.js` generator. Run `node wine/build.cjs` from the repository root to regenerate the snippets and editor. All posting snippets load `wine-cellar-v1.css` from the immutable GitHub revision recorded in `stylesheet-revision.txt`.
 
 [Validation details](VALIDATION.md). Structural and editor checks passed; browser visual rendering and posting on the live forum remain unverified.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/wine-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/wine-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

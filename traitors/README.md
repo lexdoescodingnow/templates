@@ -65,3 +65,7 @@ Dark mode is handled with:
 html[color-mode='dark'] .bh-traitors
 html[color-mode='dark'] .bh-traitors-confessional
 ```
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/traitors-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/traitors-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

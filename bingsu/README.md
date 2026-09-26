@@ -67,3 +67,7 @@ See [VALIDATION.md](VALIDATION.md) for checks and limitations. Source validation
 ## Earlier Bingsu designs
 
 The previous [thread snippets](bingsu-compact-thread-snippets.txt), [comms snippet](bingsu-comms-snippet.txt), [buds snippets](bingsu-buds-snippets.txt) and their supporting stylesheets remain available. The new collection uses separate filenames and classes.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/bingsu-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/bingsu-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

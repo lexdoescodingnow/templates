@@ -1,0 +1,246 @@
+[size=7][b]TRAITORS[/b][/size]
+[i]4 designs · the complete collection[/i]
+
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+
+Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
+
+Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+
+[size=6][b]EVENT TEMPLATES[/b][/size]
+
+[size=4][b]01 · Generic Post Snippet[/b][/size]
+A event layout from the Traitors collection.
+
+[dohtml]
+<div class="bh-traitors bh-traitors-post" style='--gif:url("https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv");'>
+  <div class="shell">
+    <div class="dagger"></div>
+    <div class="intro">
+      <div class="gif"><span></span></div>
+      <div class="title">
+        <div class="kicker">faithful until proven otherwise</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+    </div>
+    <div class="post">
+      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="tag">the castle keeps careful records</div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-v4.css?v=20260424g4">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-traitors bh-traitors-post" style='--gif:url("[url]");'>
+  <div class="shell">
+    <div class="dagger"></div>
+    <div class="intro">
+      <div class="gif"><span></span></div>
+      <div class="title">
+        <div class="kicker">faithful until proven otherwise</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+    </div>
+    <div class="post">
+      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="tag">the castle keeps careful records</div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-v4.css?v=20260424g4">
+[/dohtml]
+[/code]
+
+[size=4][b]02 · Round Table Vote Snippet[/b][/size]
+A event layout from the Traitors collection.
+
+[dohtml]
+<div class="bh-traitors bh-traitors-vote" style='--gif:url("https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv");'>
+  <div class="shell">
+    <div class="header">
+      <div class="statement">
+        <div class="kicker">round table testimony</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+      <div class="gif"></div>
+    </div>
+    <div class="vote-card">
+      <div class="seal">X</div>
+      <div>
+        <div class="vote-label">my vote is cast for</div>
+        <div class="vote-name">[text]</div>
+      </div>
+    </div>
+    <div class="post">
+      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="tag">one name, one slate, one sentence</div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-v4.css?v=20260424g4">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-traitors bh-traitors-vote" style='--gif:url("[url]");'>
+  <div class="shell">
+    <div class="header">
+      <div class="statement">
+        <div class="kicker">round table testimony</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+      <div class="gif"></div>
+    </div>
+    <div class="vote-card">
+      <div class="seal">X</div>
+      <div>
+        <div class="vote-label">my vote is cast for</div>
+        <div class="vote-name">[text]</div>
+      </div>
+    </div>
+    <div class="post">
+      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="tag">one name, one slate, one sentence</div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-v4.css?v=20260424g4">
+[/dohtml]
+[/code]
+
+[size=4][b]03 · Testimonial Snippet[/b][/size]
+A event layout from the Traitors collection.
+
+[dohtml]
+<div class="bh-traitors-confessional" style='--gif:url("https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv");'>
+  <div class="shell">
+    <div class="topline">
+      <div class="rec">confessional</div>
+      <div class="cue">private testimony</div>
+    </div>
+    <div class="stage">
+      <div class="monitor"></div>
+      <div class="identity">
+        <div class="kicker">speaking to camera</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+    </div>
+    <div class="transcript">
+      <span class="quote">&ldquo;</span>
+      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="tag">truth looks different when no one else is listening</div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-testimonial.css?v=20260424t1">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-traitors-confessional" style='--gif:url("[url]");'>
+  <div class="shell">
+    <div class="topline">
+      <div class="rec">confessional</div>
+      <div class="cue">private testimony</div>
+    </div>
+    <div class="stage">
+      <div class="monitor"></div>
+      <div class="identity">
+        <div class="kicker">speaking to camera</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+    </div>
+    <div class="transcript">
+      <span class="quote">&ldquo;</span>
+      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="tag">truth looks different when no one else is listening</div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-testimonial.css?v=20260424t1">
+[/dohtml]
+[/code]
+
+[size=4][b]04 · Traitor Murder Snippet[/b][/size]
+A event layout from the Traitors collection.
+
+[dohtml]
+<div class="bh-traitors bh-traitors-murder" style='--gif:url("https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv");'>
+  <div class="shell">
+    <div class="banner">
+      <div class="nameplate">
+        <div class="kicker">a sealed order in the dark</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+    </div>
+    <div class="order">
+      <div class="mark">X</div>
+      <div>
+        <span>marked for murder</span>
+        <strong>[text]</strong>
+      </div>
+    </div>
+    <div class="post">
+      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="tag">treachery leaves fingerprints</div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-v4.css?v=20260424g4">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-traitors bh-traitors-murder" style='--gif:url("[url]");'>
+  <div class="shell">
+    <div class="banner">
+      <div class="nameplate">
+        <div class="kicker">a sealed order in the dark</div>
+        <div class="name">[name]</div>
+        <div class="sub">[text]</div>
+      </div>
+    </div>
+    <div class="order">
+      <div class="mark">X</div>
+      <div>
+        <span>marked for murder</span>
+        <strong>[text]</strong>
+      </div>
+    </div>
+    <div class="post">
+      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="tag">treachery leaves fingerprints</div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors.css?v=20260424g4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/traitors/traitors-v4.css?v=20260424g4">
+[/dohtml]
+[/code]

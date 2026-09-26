@@ -69,3 +69,7 @@ The type uses Georgia, Times New Roman, Arial and Courier New with local fallbac
 Run `node jelly/build.cjs` and `node jelly/validate.cjs` from the repository root. The source model produces both the individual snippets and the standalone preview, so they use the same markup and defaults.
 
 See [VALIDATION.md](VALIDATION.md) for the verification scope. Browser rendering and live JCink posting were not verified because local preview access was blocked by the session's browser policy.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/jelly-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/jelly-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

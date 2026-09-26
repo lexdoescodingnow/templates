@@ -61,3 +61,7 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` take preced
 Run `node brown-sugar/build.cjs` from the repository root to rebuild all fifteen snippets and the standalone editor from the shared model, design registry and styles. The editor embeds its CSS and JavaScript; GIFs load from Tumblr. Posting snippets use the immutable stylesheet revision recorded in `stylesheet-revision.txt`.
 
 [Validation details](VALIDATION.md) record source checks and the unverified visual rendering.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/brown-sugar-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/brown-sugar-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

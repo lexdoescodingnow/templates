@@ -63,3 +63,7 @@ Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` override the s
 [citron-atelier-v1.css](citron-atelier-v1.css) contains the shared styles. The posting URLs are pinned to the Git commit recorded in [stylesheet-revision.txt](stylesheet-revision.txt). The stylesheet applies directly to the pasted HTML; no JavaScript injector is required.
 
 The preview is standalone, with its CSS and editor embedded; its GIFs require internet access. `designs.json` holds the names, sample titles and image defaults. Run `node citron/build.cjs` from the repository root to rebuild the 15 snippets and preview. [VALIDATION.md](VALIDATION.md) records the completed checks and their limits.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/citron-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/citron-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

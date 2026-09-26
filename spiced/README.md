@@ -51,3 +51,7 @@ All current snippets use the fresh `spiced-media-v2.css` stylesheet. Older CSS f
 ## Revision checks
 
 The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/spiced-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/spiced-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

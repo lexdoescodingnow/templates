@@ -67,3 +67,7 @@ The snippets load [cream-patisserie-v1.css](cream-patisserie-v1.css) from an imm
 Run `node cream/build.cjs` from the repository root to rebuild the fifteen snippets and standalone preview. `designs.json` holds the collection names; `cream-model.js` generates the posting markup. `cream-editor.js` and `cream-preview.css` belong to the preview only.
 
 [VALIDATION.md](VALIDATION.md) records checks and their limits. A live JCink posting test has not been performed.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/cream-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/cream-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

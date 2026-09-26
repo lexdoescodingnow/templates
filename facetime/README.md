@@ -15,3 +15,7 @@ If jsDelivr caches an older version after an update, purge:
 
 https://purge.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.css
 https://purge.jsdelivr.net/gh/lexdoescodingnow/templates@main/facetime/facetime.js
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/facetime-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/facetime-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

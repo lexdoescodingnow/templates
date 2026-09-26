@@ -63,3 +63,7 @@ All fifteen posting snippets and the standalone editor use `designs.json` and `g
 Every posting snippet links to `gin-distillery-v1.css` at the immutable revision in `stylesheet-revision.txt`.
 
 [Validation details](VALIDATION.md). Structural, CSS and editor checks passed. Browser access to the local preview was blocked; visual rendering and posting on the live forum are unverified.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/gin-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/gin-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

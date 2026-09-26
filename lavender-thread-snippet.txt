@@ -1,20 +1,5 @@
 [dohtml]
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@de8e802846f3eb10c78fc8a05f65ce54609ad58f/lavender-thread.css">
-
-<!--
-QUICK EDITS:
-- Keep the member group class on the first div, e.g. capricornus.
-- Replace the main [url] at the top with the large GIF/image URL.
-- Replace [name] with the character name.
-- Replace [text] with the post content.
-- The three smaller GIF blocks are optional. Delete any .lavender-accent block, leave its src as [url], or set src="" and it will not show.
-- Delete the whole .lavender-side block for a large-GIF-only layout.
-- Add is-round to whichever small GIF should become the circular icon panel.
-- If your board strips link tags, replace the link above with:
-  <style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@de8e802846f3eb10c78fc8a05f65ce54609ad58f/lavender-thread.css');</style>
--->
-
-<div class="lavender-thread capricornus" style="
+<div class="lavender-thread" style="
 --main-gif: url('[url]');
 ">
 
@@ -42,4 +27,6 @@ QUICK EDITS:
   </div>
 
 </div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@de8e802846f3eb10c78fc8a05f65ce54609ad58f/lavender-thread.css">
 [/dohtml]

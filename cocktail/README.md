@@ -65,3 +65,7 @@ Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` take precedenc
 Run `node cocktail/build.cjs` from the repository root to regenerate all snippets and the standalone preview. The preview contains its own CSS, model and editor; the supplied GIFs are its only external assets. `designs.json` stores the names and layout defaults.
 
 Run `python3 cocktail/validate.py` with `lxml` installed for structural checks. Run `node cocktail/validate.cjs` with `jsdom` and `css-tree` available for the editor and CSS checks. See [VALIDATION.md](VALIDATION.md) for the checks completed and the browser verification limitation.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/cocktail-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/cocktail-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

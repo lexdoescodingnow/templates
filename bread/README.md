@@ -57,3 +57,7 @@ The downloadable preview includes its CSS and editor, so its layout works when o
 ## Source
 
 `bread-second-rise-v1.css` contains the scoped posting styles. `second-rise-build.cjs` generates all 15 snippets, the standalone preview, this guide and the forum showcase. `second-rise-preview.css` and `second-rise-preview.js` are preview-only sources. Rebuild with `node bread/second-rise-build.cjs`.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/bread-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/bread-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

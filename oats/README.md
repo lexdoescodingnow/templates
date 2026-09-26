@@ -69,3 +69,7 @@ All posting snippets load [oats-harvest-v1.css](oats-harvest-v1.css) from jsDeli
 Run `node oats/build.cjs` from the repository root to regenerate the fifteen snippets and the standalone preview. `designs.json` lists the collection, `oats-model.js` builds the markup, and `oats-editor.js` supplies the preview controls.
 
 [VALIDATION.md](VALIDATION.md) records the source and editor checks. Rendered appearance and a live JCink post have not been tested.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/oats-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/oats-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

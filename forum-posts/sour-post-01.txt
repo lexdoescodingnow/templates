@@ -1,0 +1,907 @@
+[size=7][b]SOUR[/b][/size]
+[i]15 designs · the complete collection[/i]
+
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+
+Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
+
+Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+
+
+[size=6][b]THREADS[/b][/size]
+
+[size=4][b]01 · Afterglow[/b][/size]
+Crystalline edges and a candy-shard motif frame an image-free page.
+
+[dohtml]
+<div class="sour-afterglow-thread">
+<div class="sour-afterglow-thread-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-afterglow-thread-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-afterglow-thread-meta">
+<span class="sour-afterglow-thread-note"></span>
+<span class="sour-afterglow-thread-time"></span>
+</div>
+
+<div class="sour-afterglow-thread-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-afterglow-thread">
+<div class="sour-afterglow-thread-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-afterglow-thread-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-afterglow-thread-meta">
+<span class="sour-afterglow-thread-note"></span>
+<span class="sour-afterglow-thread-time"></span>
+</div>
+
+<div class="sour-afterglow-thread-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]02 · Bonbon[/b][/size]
+One oval candy window, twisted wrapper ends and scattered sugar grains.
+
+[dohtml]
+<div class="sour-bonbon-thread">
+<div class="sour-bonbon-thread-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-bonbon-thread-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-bonbon-thread-meta">
+<span class="sour-bonbon-thread-note"></span>
+<span class="sour-bonbon-thread-time"></span>
+</div>
+
+<div class="sour-bonbon-thread-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-bonbon-thread-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-bonbon-thread">
+<div class="sour-bonbon-thread-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-bonbon-thread-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-bonbon-thread-meta">
+<span class="sour-bonbon-thread-note"></span>
+<span class="sour-bonbon-thread-time"></span>
+</div>
+
+<div class="sour-bonbon-thread-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-bonbon-thread-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]03 · Fizz[/b][/size]
+One circular portrait, sugar-coated gummy rings and fizzy bubbles.
+
+[dohtml]
+<div class="sour-fizz-thread">
+<div class="sour-fizz-thread-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-fizz-thread-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-fizz-thread-meta">
+<span class="sour-fizz-thread-note"></span>
+<span class="sour-fizz-thread-time"></span>
+</div>
+
+<div class="sour-fizz-thread-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-fizz-thread-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-fizz-thread">
+<div class="sour-fizz-thread-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-fizz-thread-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-fizz-thread-meta">
+<span class="sour-fizz-thread-note"></span>
+<span class="sour-fizz-thread-time"></span>
+</div>
+
+<div class="sour-fizz-thread-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-fizz-thread-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]04 · Ribbons[/b][/size]
+Looped sour belts, sugar crystals and softly tilted picture frames.
+
+[dohtml]
+<div class="sour-ribbons-thread">
+<div class="sour-ribbons-thread-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-ribbons-thread-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-ribbons-thread-meta">
+<span class="sour-ribbons-thread-note"></span>
+<span class="sour-ribbons-thread-time"></span>
+</div>
+
+<div class="sour-ribbons-thread-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/d4d5b79c9f3d799cf649c01d20ba6490/f38834c111f5a9d5-94/s540x810/05c6223c85a5ab058505946d8e013323d290aea1.gifv" alt="Character GIF two" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-ribbons-thread-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-ribbons-thread">
+<div class="sour-ribbons-thread-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-ribbons-thread-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-ribbons-thread-meta">
+<span class="sour-ribbons-thread-note"></span>
+<span class="sour-ribbons-thread-time"></span>
+</div>
+
+<div class="sour-ribbons-thread-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/d4d5b79c9f3d799cf649c01d20ba6490/f38834c111f5a9d5-94/s540x810/05c6223c85a5ab058505946d8e013323d290aea1.gifv" alt="Character GIF two" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-ribbons-thread-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]05 · Sherbet[/b][/size]
+Crimped sachet seams, sugar-speckled windows and illustrated dipping sticks.
+
+[dohtml]
+<div class="sour-sherbet">
+<div class="sour-sherbet-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-sherbet-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-sherbet-meta">
+<span class="sour-sherbet-note"></span>
+<span class="sour-sherbet-time"></span>
+</div>
+
+<div class="sour-sherbet-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/d4d5b79c9f3d799cf649c01d20ba6490/f38834c111f5a9d5-94/s540x810/05c6223c85a5ab058505946d8e013323d290aea1.gifv" alt="Character GIF two" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-sherbet-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-sherbet">
+<div class="sour-sherbet-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-sherbet-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-sherbet-meta">
+<span class="sour-sherbet-note"></span>
+<span class="sour-sherbet-time"></span>
+</div>
+
+<div class="sour-sherbet-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/d4d5b79c9f3d799cf649c01d20ba6490/f38834c111f5a9d5-94/s540x810/05c6223c85a5ab058505946d8e013323d290aea1.gifv" alt="Character GIF two" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-sherbet-reply">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae risus at sapien consequat fermentum. <b>“Praesent interdum, neque vel faucibus luctus.”</b> Maecenas tempor mollis tellus, vel condimentum eros finibus ac. Nulla facilisi.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam mollis nibh a justo finibus</i>, non dignissim neque tincidunt. Curabitur ac dui sed erat consectetur efficitur, et a faucibus lorem.</p>
+<p>Aliquam erat volutpat. Integer sed <u>sapien eget lacus pellentesque</u> consequat. Suspendisse potenti. Donec vel est vitae lectus ultrices malesuada. Sed in erat sit amet arcu finibus posuere, nec in lorem.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=6][b]COMMS[/b][/size]
+
+[size=4][b]06 · Afterglow[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="sour-afterglow-comms">
+<div class="sour-afterglow-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-afterglow-comms-title"></h2>
+
+<div class="sour-afterglow-comms-meta">
+<span class="sour-afterglow-comms-note"></span>
+<span class="sour-afterglow-comms-time">00:00</span>
+</div>
+
+<div class="sour-afterglow-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-afterglow-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-afterglow-comms">
+<div class="sour-afterglow-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-afterglow-comms-title"></h2>
+
+<div class="sour-afterglow-comms-meta">
+<span class="sour-afterglow-comms-note"></span>
+<span class="sour-afterglow-comms-time">00:00</span>
+</div>
+
+<div class="sour-afterglow-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-afterglow-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]07 · Bonbon[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="sour-bonbon-comms">
+<div class="sour-bonbon-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-bonbon-comms-title"></h2>
+
+<div class="sour-bonbon-comms-meta">
+<span class="sour-bonbon-comms-note"></span>
+<span class="sour-bonbon-comms-time">00:00</span>
+</div>
+
+<div class="sour-bonbon-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-bonbon-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-bonbon-comms">
+<div class="sour-bonbon-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-bonbon-comms-title"></h2>
+
+<div class="sour-bonbon-comms-meta">
+<span class="sour-bonbon-comms-note"></span>
+<span class="sour-bonbon-comms-time">00:00</span>
+</div>
+
+<div class="sour-bonbon-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-bonbon-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]08 · Fizz[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="sour-fizz-comms">
+<div class="sour-fizz-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-fizz-comms-title"></h2>
+
+<div class="sour-fizz-comms-meta">
+<span class="sour-fizz-comms-note"></span>
+<span class="sour-fizz-comms-time">00:00</span>
+</div>
+
+<div class="sour-fizz-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-fizz-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-fizz-comms">
+<div class="sour-fizz-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-fizz-comms-title"></h2>
+
+<div class="sour-fizz-comms-meta">
+<span class="sour-fizz-comms-note"></span>
+<span class="sour-fizz-comms-time">00:00</span>
+</div>
+
+<div class="sour-fizz-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-fizz-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]09 · Ribbons[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="sour-ribbons-comms">
+<div class="sour-ribbons-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-ribbons-comms-title"></h2>
+
+<div class="sour-ribbons-comms-meta">
+<span class="sour-ribbons-comms-note"></span>
+<span class="sour-ribbons-comms-time">00:00</span>
+</div>
+
+<div class="sour-ribbons-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-ribbons-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-ribbons-comms">
+<div class="sour-ribbons-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-ribbons-comms-title"></h2>
+
+<div class="sour-ribbons-comms-meta">
+<span class="sour-ribbons-comms-note"></span>
+<span class="sour-ribbons-comms-time">00:00</span>
+</div>
+
+<div class="sour-ribbons-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-ribbons-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]10 · Sherbet[/b][/size]
+One character contact portrait, with the original device frame and message bubbles.
+
+[dohtml]
+<div class="sour-sherbet-comms">
+<div class="sour-sherbet-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-sherbet-comms-title"></h2>
+
+<div class="sour-sherbet-comms-meta">
+<span class="sour-sherbet-comms-note"></span>
+<span class="sour-sherbet-comms-time">00:00</span>
+</div>
+
+<div class="sour-sherbet-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-sherbet-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-sherbet-comms">
+<div class="sour-sherbet-comms-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-sherbet-comms-title"></h2>
+
+<div class="sour-sherbet-comms-meta">
+<span class="sour-sherbet-comms-note"></span>
+<span class="sour-sherbet-comms-time">00:00</span>
+</div>
+
+<div class="sour-sherbet-comms-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-sherbet-comms-reply">
+<p>Lorem ipsum dolor sit amet. <b>Consectetur adipiscing elit?</b></p>
+<p>Vestibulum ante ipsum primis in faucibus. <i>Aliquam erat volutpat.</i></p>
+<p>Donec vel est vitae lectus. <u>Maecenas tempor mollis tellus.</u></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=6][b]BUDS[/b][/size]
+
+[size=4][b]11 · Afterglow[/b][/size]
+A miniature crystalline note with no portrait rail.
+
+[dohtml]
+<div class="sour-afterglow-bud">
+<div class="sour-afterglow-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-afterglow-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-afterglow-bud-meta">
+<span class="sour-afterglow-bud-note"></span>
+<span class="sour-afterglow-bud-time"></span>
+</div>
+
+<div class="sour-afterglow-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-afterglow-bud">
+<div class="sour-afterglow-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-afterglow-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-afterglow-bud-meta">
+<span class="sour-afterglow-bud-note"></span>
+<span class="sour-afterglow-bud-time"></span>
+</div>
+
+<div class="sour-afterglow-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]12 · Bonbon[/b][/size]
+Twisted wrapper ends, oval candy windows and scattered sugar grains.
+
+[dohtml]
+<div class="sour-bonbon-bud">
+<div class="sour-bonbon-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-bonbon-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-bonbon-bud-meta">
+<span class="sour-bonbon-bud-note"></span>
+<span class="sour-bonbon-bud-time"></span>
+</div>
+
+<div class="sour-bonbon-bud-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/d4d5b79c9f3d799cf649c01d20ba6490/f38834c111f5a9d5-94/s540x810/05c6223c85a5ab058505946d8e013323d290aea1.gifv" alt="Character GIF two" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-bonbon-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-bonbon-bud">
+<div class="sour-bonbon-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-bonbon-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-bonbon-bud-meta">
+<span class="sour-bonbon-bud-note"></span>
+<span class="sour-bonbon-bud-time"></span>
+</div>
+
+<div class="sour-bonbon-bud-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+<img src="https://64.media.tumblr.com/d4d5b79c9f3d799cf649c01d20ba6490/f38834c111f5a9d5-94/s540x810/05c6223c85a5ab058505946d8e013323d290aea1.gifv" alt="Character GIF two" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-bonbon-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]13 · Fizz[/b][/size]
+One small character portrait beside a compact reply and the original themed details.
+
+[dohtml]
+<div class="sour-fizz-bud">
+<div class="sour-fizz-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-fizz-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-fizz-bud-meta">
+<span class="sour-fizz-bud-note"></span>
+<span class="sour-fizz-bud-time"></span>
+</div>
+
+<div class="sour-fizz-bud-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-fizz-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-fizz-bud">
+<div class="sour-fizz-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-fizz-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-fizz-bud-meta">
+<span class="sour-fizz-bud-note"></span>
+<span class="sour-fizz-bud-time"></span>
+</div>
+
+<div class="sour-fizz-bud-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-fizz-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]14 · Ribbons[/b][/size]
+One small character portrait beside a compact reply and the original themed details.
+
+[dohtml]
+<div class="sour-ribbons-bud">
+<div class="sour-ribbons-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-ribbons-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-ribbons-bud-meta">
+<span class="sour-ribbons-bud-note"></span>
+<span class="sour-ribbons-bud-time"></span>
+</div>
+
+<div class="sour-ribbons-bud-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-ribbons-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-ribbons-bud">
+<div class="sour-ribbons-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-ribbons-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-ribbons-bud-meta">
+<span class="sour-ribbons-bud-note"></span>
+<span class="sour-ribbons-bud-time"></span>
+</div>
+
+<div class="sour-ribbons-bud-gifs">
+<img src="https://64.media.tumblr.com/e1adb827058c0cfcbf9b3ca43760a51c/36ef65c0ad3c944b-27/s540x810/a432182f4e7d8378b7a613d09d76fceca65eeb45.gifv" alt="Character GIF one" style="object-position:50% 50%;">
+</div>
+
+<div class="sour-ribbons-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]
+
+[size=4][b]15 · Sherbet[/b][/size]
+A tiny crimped sachet note, with room for the words alone.
+
+[dohtml]
+<div class="sour-sherbet-bud">
+<div class="sour-sherbet-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-sherbet-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-sherbet-bud-meta">
+<span class="sour-sherbet-bud-note"></span>
+<span class="sour-sherbet-bud-time"></span>
+</div>
+
+<div class="sour-sherbet-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="sour-sherbet-bud">
+<div class="sour-sherbet-bud-tag">
+<a href="[url]">[name]</a>
+<span>[text]</span>
+</div>
+
+<h2 class="sour-sherbet-bud-title">Lorem ipsum dolor.</h2>
+
+<div class="sour-sherbet-bud-meta">
+<span class="sour-sherbet-bud-note"></span>
+<span class="sour-sherbet-bud-time"></span>
+</div>
+
+<div class="sour-sherbet-bud-reply">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed vitae risus at sapien consequat fermentum. <i>Aliquam erat volutpat.</i> Integer sed sapien eget lacus pellentesque consequat. <u>Suspendisse potenti.</u> Donec vel est vitae lectus ultrices malesuada.</p>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sour/sour-media-v2.css">
+[/dohtml]
+[/code]

@@ -61,3 +61,7 @@ Blue Hour’s inherited RGB triples `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour
 Libre Caslon Display, Italiana and DM Sans fall back to Georgia and Arial. Original inline SVG peel, branch, segment, sunrise and blossom drawings require no external image downloads. Modern CSS `:has()`, container queries and `color-mix()` handle optional media, small layouts and colour tinting.
 
 To rebuild snippets and the standalone preview, run `node clementine/build-clementine.cjs` from the repository root. The ZIP includes this collection’s snippets, stylesheet, preview and build sources. See [validation notes](SOFTLIGHT-VALIDATION.md) for completed checks and their limits.
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/clementine-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/clementine-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).
