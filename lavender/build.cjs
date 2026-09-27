@@ -4,7 +4,7 @@ const root=__dirname;
 const designs=require('./designs.json');
 const {lavenderDefaults,lavenderFilename,lavenderSnippet,lavenderMarkup}=require('./lavender-model.js');
 const revisionPath=path.join(root,'stylesheet-revision.txt');
-if(fs.existsSync(revisionPath)){const revision=fs.readFileSync(revisionPath,'utf8').trim();if(!/^[a-f0-9]{40}$/.test(revision))throw new Error('Invalid stylesheet revision');const modelPath=path.join(root,'lavender-model.js');const updated=fs.readFileSync(modelPath,'utf8').replace(/templates@(?:main|[a-f0-9]{40})\/lavender\//g,'templates@'+revision+'/lavender/');if(updated!==fs.readFileSync(modelPath,'utf8')){fs.writeFileSync(modelPath,updated);delete require.cache[require.resolve('./lavender-model.js')];require('node:child_process').execFileSync(process.execPath,[__filename],{stdio:'inherit'});process.exit(0);}}
+if(fs.existsSync(revisionPath)){const revision=fs.readFileSync(revisionPath,'utf8').trim();if(!/^(main|[a-f0-9]{40})$/.test(revision))throw new Error('Invalid stylesheet revision');const modelPath=path.join(root,'lavender-model.js');const updated=fs.readFileSync(modelPath,'utf8').replace(/templates@(?:main|[a-f0-9]{40})\/lavender\//g,'templates@'+revision+'/lavender/');if(updated!==fs.readFileSync(modelPath,'utf8')){fs.writeFileSync(modelPath,updated);delete require.cache[require.resolve('./lavender-model.js')];require('node:child_process').execFileSync(process.execPath,[__filename],{stdio:'inherit'});process.exit(0);}}
 const read=f=>fs.readFileSync(path.join(root,f),'utf8');
 for(const d of designs)fs.writeFileSync(path.join(root,lavenderFilename(d)),lavenderSnippet(d,lavenderDefaults(d)));
 const preview=`<!doctype html>

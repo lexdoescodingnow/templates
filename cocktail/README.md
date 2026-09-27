@@ -1,5 +1,14 @@
 # Cocktail · A little after hours
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [cocktail-afterhours-standalone-v1.css](cocktail-afterhours-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates for **Callum & Dae**. Cocktail menus, coupe stems, fluted glass, citrus twists and bar tabs form a new collection, with member colours carrying the frames, headings and details over neutral writing surfaces.
 
 [Preview and editor](cocktail-collection-preview.html)

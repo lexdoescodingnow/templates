@@ -25,4 +25,4 @@ The standalone preview includes the actual posting CSS and an editor with 320 px
 
 ## Hosted stylesheet
 
-`https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@2f3e100fd0060773112ad7b345d433a81c642cfd/honey/honey-apiary-v1.css`
+`https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/honey/honey-apiary-standalone-v1.css`

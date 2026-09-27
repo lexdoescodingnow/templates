@@ -1,5 +1,14 @@
 # Espresso
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [espresso-collection-standalone-v1.css](espresso-collection-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates inspired by a late-night café poster: expressive serif titles, member-coloured frames, neutral writing surfaces and small espresso-machine, coffee-bean and café details.
 
 [Collection editor and preview](espresso-collection-preview.html) · [Download the complete collection](espresso-collection.zip)
@@ -40,7 +49,7 @@ The preview is a standalone HTML file with its styles and editor included. Downl
 
 Open a named `.txt` file, use GitHub’s **Copy raw file** control, and paste the complete `[dohtml]` block into your forum post. Editable `[url]`, `[name]`, `[text]`, times, GIF URLs and writing appear before the decoration and the stylesheet link. There are no template comments, hidden tips or instruction blocks.
 
-The single stylesheet link loads [espresso-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-v1.css). The snippets contain no scripts, external HTML injection or per-message classes. No skin installation is required when the forum permits external stylesheets inside `[dohtml]`.
+The single stylesheet link loads [espresso-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css). The snippets contain no scripts, external HTML injection or per-message classes. No skin installation is required when the forum permits external stylesheets inside `[dohtml]`.
 
 ## Editing
 

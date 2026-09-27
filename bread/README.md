@@ -1,5 +1,15 @@
 # Bread · Second Rise
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [bread-media-standalone-v1.css](bread-media-standalone-v1.css)
+- [bread-standalone-v1.css](bread-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 A fresh 15-design collection for Jinseok and Lucas.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/bread/bread-second-rise-preview.html) · [Preview HTML source](bread-second-rise-preview.html) · [Forum showcase](bread-second-rise-forum-post.txt)

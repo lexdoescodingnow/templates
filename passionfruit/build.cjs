@@ -2,7 +2,7 @@ const fs=require('fs'),path=require('path');
 const root=__dirname,{designs,motif,initial,markup}=require('./passionfruit-model.cjs');
 const revisionFile=path.join(root,'stylesheet-revision.txt');
 const revision=process.env.PASSIONFRUIT_CSS_REVISION||(fs.existsSync(revisionFile)?fs.readFileSync(revisionFile,'utf8').trim():'main');
-const cssUrl=`https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@${revision}/passionfruit/passionfruit-collection-v1.css`;
+const cssUrl=`https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/passionfruit/passionfruit-collection-standalone-v1.css`;
 let css=fs.readFileSync(path.join(root,'passionfruit-source.css'),'utf8');
 for(const m of ['flower','seed','section','filament']){
   const svg=motif(m).replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ').replace('currentColor','black');

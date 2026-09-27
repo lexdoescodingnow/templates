@@ -9,3 +9,5 @@ Bingsu is listed as two separate sets: [Thaw — 15 current designs](bingsu/READ
 Download and extract the pack, then open `forum-posts/index.html` to browse the collections and copy individual templates or complete forum posts. Paste the `.txt` masterposts or numbered parts into the forum editor; the `.html` files are browser previews.
 
 Shared CSS remains hosted in this repository. Posting snippets inherit member group colours and use the forum’s light/dark mode. See each flavour’s folder for its original editors and source files.
+
+The [standalone stylesheet repair](forum-posts/STYLESHEET-REPAIR.md) updates Boba and 46 other collections to fresh CSS files without stylesheet import dependencies. Use the current forum masterposts to adopt their revised loaders in existing forum posts.

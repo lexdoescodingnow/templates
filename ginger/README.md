@@ -1,5 +1,14 @@
 # Ginger · Some Connections Stay
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [ginger-apothecary-standalone-v1.css](ginger-apothecary-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates inspired by the supplied Ginger poster: apothecary labels, porcelain tea vessels, pressed botanicals and curling steam. Member colours shape the headers, frames, details and emphasis; the reading surfaces remain neutral in light and dark mode.
 
 [Downloadable preview and editor](ginger-collection-preview.html)

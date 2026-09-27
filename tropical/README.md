@@ -1,5 +1,14 @@
 # Tropical · Meet me at the equator
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [tropical-equator-standalone-v1.css](tropical-equator-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates for Davis and Theo: island cartography, fan palms, tidal contours, veranda shutters and geometric sunshades. Member colours carry the headers, frames, devices and emphasis; the writing surfaces stay neutral.
 
 [Preview and editor](tropical-collection-preview.html)

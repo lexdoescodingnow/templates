@@ -1,5 +1,14 @@
 # Boba · Two Hearts, One Cup
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [boba-afterhours-standalone-v1.css](boba-afterhours-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates inspired by the Boba poster: late-night cafe windows, neon hearts, twin drinks, tiger-sugar strokes and pearl impressions. Member colours shape the headers, borders, frames and emphasis; writing stays on neutral light or dark surfaces.
 
 [Downloadable preview and editor](boba-collection-preview.html) · [Complete collection ZIP](boba-two-hearts.zip)

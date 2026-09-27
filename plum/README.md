@@ -1,5 +1,14 @@
 # Plum · The Lasting Season
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [plum-lasting-season-standalone-v1.css](plum-lasting-season-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates inspired by the Plum poster: fine flowering branches, satin-like contours, fruit-stone engravings and romantic typography. Member colours shape the headers, frames and emphasis; reading surfaces stay neutral.
 
 [Preview and editor](plum-collection-preview.html) · [Complete collection ZIP](plum-lasting-season.zip)

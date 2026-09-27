@@ -5,7 +5,84 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Espresso — Fifteen JCink Templates</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bodonimoda/v28/aFT07PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbvZedvJtj-V7tIaZKMN4sQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bodonimoda/v28/aFT07PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbvZedvJtj-V7tIaZGsN4sQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bodonimoda/v28/aFT67PxzY382XsXX63LUYL6GYFcan6NJrKp-VPjfJMShrpsGFUt8oU7awIA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bodonimoda/v28/aFT67PxzY382XsXX63LUYL6GYFcan6NJrKp-VPjfJMShrpsGFUt8oXzawIA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bodonimoda/v28/aFT67PxzY382XsXX63LUYL6GYFcan6NJrKp-VPjfJMShrpsGFUt8oZDdwIA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n5ig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJ8lc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf) format('truetype');
+}
+
 .esp{--esp-bg:#f8f7f4;--esp-panel:#eeede9;--esp-ink:#353432;--esp-muted:#716f69;--esp-metal:#9a7957;--esp-a:rgb(var(--mgrgb1,130,81,94));--esp-b:rgb(var(--mgrgb2,101,103,143));--esp-c:rgb(var(--mgrgb3,59,120,123));--esp-line:rgba(var(--mgrgb2,101,103,143),.43);--esp-wash:rgba(var(--mgrgb1,130,81,94),.075);--esp-wash2:rgba(var(--mgrgb3,59,120,123),.08);--esp-grad:linear-gradient(115deg,var(--esp-a),var(--esp-b),var(--esp-c));--esp-rev:linear-gradient(115deg,var(--esp-c),var(--esp-b),var(--esp-a));position:relative;isolation:isolate;box-sizing:border-box;display:grid;min-width:0;width:100%;max-width:550px;margin:28px auto;background:var(--esp-bg);color:var(--esp-ink);font:14px/1.9 'Manrope',Arial,sans-serif;text-align:left;overflow-wrap:anywhere;color-scheme:light;}
 html[color-mode="dark"] .esp{--esp-bg:#202120;--esp-panel:#292a28;--esp-ink:#e0dfdb;--esp-muted:#afaea6;--esp-metal:#ba9974;--esp-a:rgb(var(--mgrgb1,205,153,169));--esp-b:rgb(var(--mgrgb2,166,170,212));--esp-c:rgb(var(--mgrgb3,126,188,186));--esp-line:rgba(var(--mgrgb2,166,170,212),.46);--esp-wash:rgba(var(--mgrgb1,205,153,169),.10);--esp-wash2:rgba(var(--mgrgb3,126,188,186),.11);color-scheme:dark;}
 @media(prefers-color-scheme:dark){html:not([color-mode]) .esp{--esp-bg:#202120;--esp-panel:#292a28;--esp-ink:#e0dfdb;--esp-muted:#afaea6;--esp-metal:#ba9974;--esp-a:rgb(var(--mgrgb1,205,153,169));--esp-b:rgb(var(--mgrgb2,166,170,212));--esp-c:rgb(var(--mgrgb3,126,188,186));--esp-line:rgba(var(--mgrgb2,166,170,212),.46);--esp-wash:rgba(var(--mgrgb1,205,153,169),.10);--esp-wash2:rgba(var(--mgrgb3,126,188,186),.11);color-scheme:dark;}}
@@ -264,7 +341,7 @@ main{display:grid;grid-template-columns:233px minmax(0,1fr);gap:36px;max-width:1
 <footer class="collection-footer"><span>Espresso · A love that lingers.</span><span>Member colours. Neutral pages. Small rituals.</span></footer>
 <noscript>This editor needs JavaScript. All fifteen ready-to-post text files are linked from the <a href="https://github.com/lexdoescodingnow/templates/blob/main/espresso/README.md">collection guide</a>.</noscript>
 <script>
-const ESPRESSO_CSS = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-v1.css';
+const ESPRESSO_CSS = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css';
 const ESPRESSO_GIFS = [
   'https://64.media.tumblr.com/eef9387aa15a193f58a6d4c3c9b2e3b4/4d0f68c67008821a-b7/s540x810/05a3fa51d18add7e86bfd22ecc170c3d26dd514b.gifv',
   'https://64.media.tumblr.com/32f19ce5b6bd5578e8d1197e81d46152/487924940000d932-8e/s540x810/3a37ef8214bdbb89067a27e4b0c6793c487c21f2.gifv'

@@ -1,5 +1,14 @@
 # Wine · Casper & Micah
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [wine-cellar-standalone-v1.css](wine-cellar-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen coordinated JCink designs: five threads, five phone-style comms and five miniature buds. Vineyard contours, decanter curves, bottle foils and sediment details connect the set. Member colours drive the headers, frames, lettering and message accents; reading surfaces stay neutral.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/wine/wine-collection-preview.html)

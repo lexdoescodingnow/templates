@@ -1,0 +1,188 @@
+.bh-sesame-atelier{--ss-a:rgb(var(--mgrgb1,145,91,125));--ss-b:rgb(var(--mgrgb2,80,125,124));--ss-c:rgb(var(--mgrgb3,174,123,78));--ss-paper:#faf9f6;--ss-panel:#eeede9;--ss-ink:#2e2c2c;--ss-muted:#696466;--ss-shadow:rgba(35,27,25,.09);--ss-1:color-mix(in srgb,var(--ss-a) 60%,var(--ss-ink));--ss-2:color-mix(in srgb,var(--ss-b) 60%,var(--ss-ink));--ss-3:color-mix(in srgb,var(--ss-c) 60%,var(--ss-ink));--ss-line:color-mix(in srgb,var(--ss-b) 35%,var(--ss-paper));--ss-grad:linear-gradient(115deg,var(--ss-a),var(--ss-b),var(--ss-c));--ss-textgrad:linear-gradient(90deg,var(--ss-1),var(--ss-2),var(--ss-3));position:relative;isolation:isolate;container-type:inline-size;box-sizing:border-box;display:grid;min-width:0;width:min(560px,100%);margin:28px auto;color:var(--ss-ink);background:var(--ss-paper);border:1px solid var(--ss-line);font:16px/1.85 Georgia,'Times New Roman',serif;text-align:left;overflow-wrap:anywhere;box-shadow:0 14px 35px var(--ss-shadow)}
+.bh-sesame-atelier *,.bh-sesame-atelier *::before,.bh-sesame-atelier *::after{box-sizing:border-box;min-width:0}
+html[color-mode="dark"] .bh-sesame-atelier{--ss-paper:#1e1d20;--ss-panel:#29272b;--ss-ink:#f0ecee;--ss-muted:#bdb5bb;--ss-shadow:rgba(0,0,0,.22);color-scheme:dark}
+html[color-mode="light"] .bh-sesame-atelier{color-scheme:light}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-sesame-atelier{--ss-paper:#1e1d20;--ss-panel:#29272b;--ss-ink:#f0ecee;--ss-muted:#bdb5bb;--ss-shadow:rgba(0,0,0,.22);color-scheme:dark}}
+.bh-sesame-atelier .ss-name{grid-area:name;display:block;position:relative;align-self:center;font:600 12px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ss-1);text-decoration:none}
+.bh-sesame-atelier .ss-name:hover{text-decoration:underline;text-underline-offset:4px}
+.bh-sesame-atelier .ss-name:focus-visible,.bh-sesame-atelier .ss-copy a:focus-visible{outline:2px solid var(--ss-2);outline-offset:4px}
+.bh-sesame-atelier .ss-title{grid-area:title;position:relative;color:var(--ss-2);font:400 38px/1.08 Georgia,'Times New Roman',serif;letter-spacing:-.045em;text-wrap:balance}
+.bh-sesame-atelier .ss-copy{grid-area:copy;position:relative;line-height:1.85}
+.bh-sesame-atelier .ss-copy p{padding:0;margin:0 0 1.15em}
+.bh-sesame-atelier .ss-copy p:last-child{margin-bottom:0}
+.bh-sesame-atelier .ss-copy a{color:var(--ss-2);text-decoration:underline;text-underline-offset:3px}
+.bh-sesame-atelier .ss-copy :is(b,strong,i,em,u){background-image:var(--ss-textgrad);background-clip:text;-webkit-background-clip:text;color:var(--ss-1);-webkit-text-fill-color:transparent;font-weight:700}
+.bh-sesame-atelier .ss-copy :is(i,em){background-image:linear-gradient(90deg,var(--ss-3),var(--ss-2),var(--ss-1));font-style:italic}
+.bh-sesame-atelier .ss-copy u{text-decoration:underline;text-decoration-color:var(--ss-2);text-decoration-thickness:1px;text-underline-offset:4px}
+.bh-sesame-atelier .ss-media{grid-area:media;position:relative;display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
+.bh-sesame-atelier .ss-media:not(:has(img[src]:not([src=""]))){display:none!important}
+.bh-sesame-atelier .ss-media img{display:block;min-width:0;flex:1 1 70px;width:0;max-width:100%;height:180px;object-fit:cover;border:2px solid var(--ss-line);background:var(--ss-panel)}
+.bh-sesame-atelier .ss-media img[src=""]{display:none}
+.bh-sesame-atelier .ss-seeds{grid-area:seeds;position:relative;pointer-events:none;display:flex;align-items:center;justify-content:center;gap:10px}
+.bh-sesame-atelier .ss-seeds span{display:block;width:7px;height:14px;background:var(--ss-a);border-radius:80% 20% 70% 30%;transform:rotate(25deg);flex:0 0 7px}
+.bh-sesame-atelier .ss-seeds span:nth-child(3n+2){background:var(--ss-b);transform:rotate(-20deg)}
+.bh-sesame-atelier .ss-seeds span:nth-child(3n){background:var(--ss-c);transform:rotate(65deg)}
+.bh-sesame-atelier.ss-thread{grid-template-areas:"name" "title" "media" "copy" "seeds";gap:24px;padding:32px}
+.bh-sesame-atelier.ss-benne-folio{grid-template-columns:minmax(0,1fr) minmax(0,.45fr);grid-template-areas:"name name" "title media" "seeds media" "copy copy";gap:22px;padding:28px 30px 34px;border:0;border-top:7px solid var(--ss-a);border-bottom:1px solid var(--ss-c)}
+.bh-sesame-atelier.ss-benne-folio::before{content:"";position:absolute;inset:0 0 auto;height:7px;background:var(--ss-grad);transform:translateY(-7px)}
+.bh-sesame-atelier.ss-benne-folio .ss-name{border-bottom:1px solid var(--ss-line);padding-bottom:14px}
+.bh-sesame-atelier.ss-benne-folio .ss-title{font-size:clamp(29px,11cqi,57px);align-self:end}
+.bh-sesame-atelier.ss-benne-folio .ss-media{align-self:stretch;align-items:center}
+.bh-sesame-atelier.ss-benne-folio .ss-media img{flex:1 1 100%;width:100%;height:210px;border-radius:80% 20% 72% 28% / 58% 24% 76% 42%;border:5px solid var(--ss-paper);outline:1px solid var(--ss-c)}
+.bh-sesame-atelier.ss-benne-folio .ss-seeds{display:grid;grid-template-columns:repeat(5,12px);gap:9px 17px;justify-content:start;align-self:start;padding:4px}
+.bh-sesame-atelier.ss-benne-folio .ss-seeds span:nth-child(2n){transform:rotate(-40deg) translateY(7px)}
+.bh-sesame-atelier.ss-benne-folio .ss-copy{border-top:1px solid var(--ss-line);padding-top:24px}
+.bh-sesame-atelier.ss-benne-folio:not(:has(.ss-media img[src]:not([src=""]))){grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "title" "seeds" "copy"}
+.bh-sesame-atelier.ss-tahini-silk{padding:44px 36px 32px;border-radius:95px 95px 12px 12px;border:1px solid var(--ss-a);grid-template-areas:"seeds" "name" "title" "media" "copy";gap:23px;box-shadow:inset 0 0 0 6px var(--ss-paper),inset 0 0 0 7px var(--ss-line),0 14px 35px var(--ss-shadow)}
+.bh-sesame-atelier.ss-tahini-silk .ss-name{text-align:center}
+.bh-sesame-atelier.ss-tahini-silk .ss-title{font-style:italic;text-align:center;font-size:clamp(31px,9cqi,49px);padding:20px 5px 25px;border-block:1px solid var(--ss-line);border-radius:46% 12% 46% 12% / 12% 20% 12% 20%}
+.bh-sesame-atelier.ss-tahini-silk .ss-media img{border-radius:55px 10px 55px 10px}
+.bh-sesame-atelier.ss-tahini-silk .ss-seeds{height:27px}
+.bh-sesame-atelier.ss-tahini-silk .ss-seeds span{width:36px;height:8px;flex-basis:36px;border-radius:90% 0 90% 0;transform:rotate(-10deg)}
+.bh-sesame-atelier.ss-tahini-silk .ss-seeds span:nth-child(n+4){display:none}
+.bh-sesame-atelier.ss-tahini-silk .ss-copy{padding:0 5px 6px}
+.bh-sesame-atelier.ss-goma-diptych{grid-template-areas:"media" "name" "title" "copy" "seeds";padding:25px 36px 30px;border:0;border-inline:1px solid var(--ss-b);gap:21px;background:linear-gradient(var(--ss-panel) 0 225px,var(--ss-paper) 225px)}
+.bh-sesame-atelier.ss-goma-diptych .ss-media{gap:16px;justify-content:center;padding:0 9px 8px}
+.bh-sesame-atelier.ss-goma-diptych .ss-media img{height:230px;flex:1 1 100px;border:6px solid var(--ss-paper);outline:1px solid var(--ss-a);border-radius:85% 15% 45% 55% / 60% 25% 75% 40%}
+.bh-sesame-atelier.ss-goma-diptych .ss-media img:nth-child(2n){border-radius:15% 85% 55% 45% / 25% 60% 40% 75%;outline-color:var(--ss-c)}
+.bh-sesame-atelier.ss-goma-diptych .ss-media img:only-child{flex:0 1 210px}
+.bh-sesame-atelier.ss-goma-diptych .ss-name{text-align:center;padding:10px 0;border-block:1px solid var(--ss-line);background:var(--ss-paper)}
+.bh-sesame-atelier.ss-goma-diptych .ss-title{font-size:clamp(31px,10cqi,51px);text-align:center;margin:4px 0 7px}
+.bh-sesame-atelier.ss-goma-diptych .ss-seeds{padding-top:12px;border-top:1px solid var(--ss-line)}
+.bh-sesame-atelier.ss-goma-diptych:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"name" "title" "copy" "seeds";background:var(--ss-paper)}
+.bh-sesame-atelier.ss-halva-maison{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-areas:"media name" "media title" "seeds seeds" "copy copy";padding:30px;gap:16px 24px;border:1px solid var(--ss-a);background:linear-gradient(135deg,color-mix(in srgb,var(--ss-a) 18%,var(--ss-panel)) 0 24px,transparent 24px),linear-gradient(-45deg,color-mix(in srgb,var(--ss-c) 22%,var(--ss-panel)) 0 24px,transparent 24px),var(--ss-paper)}
+.bh-sesame-atelier.ss-halva-maison .ss-media{align-self:center;padding:8px;background:var(--ss-grad);clip-path:polygon(0 0,87% 0,100% 13%,100% 100%,13% 100%,0 87%)}
+.bh-sesame-atelier.ss-halva-maison .ss-media img{height:190px;border:0;flex:1 1 100%;clip-path:polygon(0 0,87% 0,100% 13%,100% 100%,13% 100%,0 87%)}
+.bh-sesame-atelier.ss-halva-maison .ss-name{align-self:end;padding-top:10px}
+.bh-sesame-atelier.ss-halva-maison .ss-title{font-size:clamp(27px,8cqi,42px);align-self:start}
+.bh-sesame-atelier.ss-halva-maison .ss-seeds{margin-top:10px;justify-content:stretch;gap:5px;border-block:1px solid var(--ss-line);padding:12px 0}
+.bh-sesame-atelier.ss-halva-maison .ss-seeds span{width:auto;height:15px;flex:1;border-radius:0;clip-path:polygon(0 0,100% 25%,70% 100%,0 70%);transform:none;opacity:.7}
+.bh-sesame-atelier.ss-halva-maison .ss-seeds span:nth-child(2n){transform:rotate(180deg)}
+.bh-sesame-atelier.ss-halva-maison .ss-copy{padding-top:6px}
+.bh-sesame-atelier.ss-halva-maison:not(:has(.ss-media img[src]:not([src=""]))){grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "title" "seeds" "copy"}
+.bh-sesame-atelier.ss-sesamum-herbarium{grid-template-columns:33px minmax(0,1fr);grid-template-areas:"seeds name" "seeds title" "seeds media" "seeds copy";gap:25px 23px;padding:30px 30px 35px 20px;border:0;box-shadow:none;border-bottom:3px double var(--ss-c)}
+.bh-sesame-atelier.ss-sesamum-herbarium .ss-seeds{display:flex;flex-direction:column;gap:25px;justify-content:start;padding-top:12px;height:100%;background:linear-gradient(var(--ss-line),var(--ss-line)) center/1px 100% no-repeat}
+.bh-sesame-atelier.ss-sesamum-herbarium .ss-seeds span{flex:0 0 29px;width:13px;height:29px;transform:rotate(-33deg) translate(-6px,-3px);border-radius:80% 20% 75% 25%;box-shadow:inset 3px 0 0 color-mix(in srgb,var(--ss-paper) 45%,transparent)}
+.bh-sesame-atelier.ss-sesamum-herbarium .ss-seeds span:nth-child(2n){transform:rotate(33deg) translate(6px,-3px);border-radius:20% 80% 25% 75%}
+.bh-sesame-atelier.ss-sesamum-herbarium .ss-name{padding-bottom:12px;border-bottom:1px solid var(--ss-line)}
+.bh-sesame-atelier.ss-sesamum-herbarium .ss-title{font-size:clamp(33px,11cqi,59px);font-style:italic;letter-spacing:-.065em}
+.bh-sesame-atelier.ss-sesamum-herbarium .ss-copy{font-size:17px;border-top:1px solid var(--ss-line);padding-top:22px}
+.bh-sesame-atelier.ss-sesamum-herbarium .ss-media img{height:150px;border-radius:60px 0 60px 0}
+.bh-sesame-atelier.ss-thread:not(:has(.ss-media img[src]:not([src=""]))) .ss-media{display:none}
+.bh-sesame-atelier.ss-tahini-silk:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"seeds" "name" "title" "copy"}
+.bh-sesame-atelier.ss-sesamum-herbarium:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"seeds name" "seeds title" "seeds copy"}
+.bh-sesame-atelier.ss-comms{width:min(370px,100%);grid-template-areas:"time" "media" "name" "title" "copy" "hardware";gap:12px;padding:22px;font:14px/1.6 'Trebuchet MS',Arial,sans-serif;border:3px solid var(--ss-a);background:var(--ss-panel)}
+.bh-sesame-atelier.ss-comms .ss-name{font-size:17px;letter-spacing:0;text-transform:none;line-height:1.3}
+.bh-sesame-atelier.ss-comms .ss-title{font:12px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:0;color:var(--ss-muted);text-wrap:wrap}
+.bh-sesame-atelier .ss-time{grid-area:time;position:relative;font:600 11px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:.04em;color:var(--ss-3)}
+.bh-sesame-atelier.ss-comms .ss-copy{display:flow-root;font:14px/1.7 'Trebuchet MS',Arial,sans-serif;padding:12px 0 8px}
+.bh-sesame-atelier.ss-comms .ss-copy p{display:table;width:fit-content;max-width:91%;padding:12px 14px;margin:0 auto 10px 0;background:var(--ss-paper);border:1px solid var(--ss-line);border-left:3px solid var(--ss-b);border-radius:16px 16px 16px 4px;color:var(--ss-ink)}
+.bh-sesame-atelier.ss-comms .ss-copy p:last-child{margin-bottom:0}
+.bh-sesame-atelier.ss-comms[data-flow="sent"] .ss-copy p,.bh-sesame-atelier.ss-comms[data-flow="alternate"] .ss-copy p:nth-of-type(2n){margin-left:auto;margin-right:0;border-left:1px solid var(--ss-line);border-right:3px solid var(--ss-c);border-radius:16px 16px 4px 16px;background:color-mix(in srgb,var(--ss-c) 7%,var(--ss-paper))}
+.bh-sesame-atelier .ss-hardware{grid-area:hardware;display:flex;position:relative;pointer-events:none;justify-content:center;gap:6px}
+.bh-sesame-atelier .ss-hardware span{display:none}
+.bh-sesame-atelier .ss-hardware span:first-child{display:block;width:85px;height:4px;border-radius:20px;background:var(--ss-2)}
+.bh-sesame-atelier.ss-benne-beam{grid-template-columns:76px minmax(0,1fr);grid-template-areas:"time time" "media name" "media title" "copy copy" "hardware hardware";padding:28px 20px 20px;gap:8px 16px;border:4px solid transparent;border-radius:45px;background:linear-gradient(var(--ss-panel),var(--ss-panel)) padding-box,var(--ss-grad) border-box;box-shadow:inset 0 0 0 3px var(--ss-paper),0 14px 35px var(--ss-shadow)}
+.bh-sesame-atelier.ss-benne-beam .ss-time{padding:0 10px 18px}
+.bh-sesame-atelier.ss-benne-beam .ss-time::after{content:"";position:absolute;top:3px;left:43%;width:44px;height:6px;border-radius:10px;background:var(--ss-ink)}
+.bh-sesame-atelier.ss-benne-beam .ss-media{align-self:start;gap:6px}
+.bh-sesame-atelier.ss-benne-beam .ss-media img{width:100%;flex:1 1 100%;height:85px;border:2px solid var(--ss-c);border-radius:70% 30% 65% 35%}
+.bh-sesame-atelier.ss-benne-beam .ss-name{align-self:end}
+.bh-sesame-atelier.ss-benne-beam .ss-title{align-self:start}
+.bh-sesame-atelier.ss-benne-beam .ss-copy{border-top:1px solid var(--ss-line);margin-top:12px;padding-top:20px}
+.bh-sesame-atelier.ss-benne-beam:not(:has(.ss-media img[src]:not([src=""]))){grid-template-columns:minmax(0,1fr);grid-template-areas:"time" "name" "title" "copy" "hardware"}
+.bh-sesame-atelier.ss-goma-click{width:min(326px,100%);padding:20px 18px 24px;border-radius:35px 35px 48px 48px;gap:9px;border:3px solid var(--ss-b);border-top:14px solid var(--ss-a);box-shadow:inset 5px 0 0 var(--ss-paper),inset -5px 0 0 var(--ss-paper),0 14px 35px var(--ss-shadow)}
+.bh-sesame-atelier.ss-goma-click .ss-time{text-align:right;border-bottom:2px solid var(--ss-line);padding-bottom:9px}
+.bh-sesame-atelier.ss-goma-click .ss-name{padding:9px 10px 0;border-left:4px solid var(--ss-a)}
+.bh-sesame-atelier.ss-goma-click .ss-title{padding:0 10px 7px;border-left:4px solid var(--ss-c)}
+.bh-sesame-atelier.ss-goma-click .ss-copy{border:1px solid var(--ss-line);padding:13px 10px;border-radius:7px;background:var(--ss-paper);box-shadow:inset 0 2px 6px var(--ss-shadow);font-size:13px}
+.bh-sesame-atelier.ss-goma-click .ss-copy p{font-size:13px;padding:10px;border-radius:8px 8px 8px 2px;background:var(--ss-panel)}
+.bh-sesame-atelier.ss-goma-click .ss-hardware{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:11px 15px 0}
+.bh-sesame-atelier.ss-goma-click .ss-hardware span{display:block;width:auto;height:22px;border-radius:7px;background:var(--ss-paper);border:1px solid var(--ss-line);box-shadow:0 2px 0 var(--ss-2)}
+.bh-sesame-atelier.ss-goma-click .ss-hardware span:nth-child(3n){box-shadow:0 2px 0 var(--ss-3)}
+.bh-sesame-atelier.ss-goma-click .ss-media img{height:100px;border-radius:10px}
+.bh-sesame-atelier.ss-tahini-talk{width:min(540px,100%);grid-template-columns:minmax(0,.72fr) minmax(0,1.3fr);grid-template-areas:"time name" "media title" "media copy" "hardware hardware";gap:10px 20px;padding:23px;border-radius:28px;border:3px solid var(--ss-c);background:linear-gradient(90deg,color-mix(in srgb,var(--ss-a) 9%,var(--ss-panel)) 0 36%,var(--ss-panel) 36%);box-shadow:inset 0 0 0 5px var(--ss-paper),0 14px 35px var(--ss-shadow)}
+.bh-sesame-atelier.ss-tahini-talk .ss-time{align-self:center;font-size:18px;letter-spacing:-.03em}
+.bh-sesame-atelier.ss-tahini-talk .ss-name{padding-top:5px}
+.bh-sesame-atelier.ss-tahini-talk .ss-media{align-self:stretch;padding:5px;border-radius:65px 65px 16px 16px;border:1px solid var(--ss-a);background:var(--ss-paper)}
+.bh-sesame-atelier.ss-tahini-talk .ss-media img{width:100%;height:100%;min-height:175px;flex:1 1 100%;border:0;border-radius:60px 60px 12px 12px}
+.bh-sesame-atelier.ss-tahini-talk .ss-media:has(img:nth-child(2)) img{height:150px;min-height:0}
+.bh-sesame-atelier.ss-tahini-talk .ss-copy{padding-top:2px}
+.bh-sesame-atelier.ss-tahini-talk .ss-copy p{font-size:13px;padding:10px;max-width:96%}
+.bh-sesame-atelier.ss-tahini-talk .ss-hardware{border-top:1px solid var(--ss-line);padding-top:13px}
+.bh-sesame-atelier.ss-tahini-talk .ss-hardware span:first-child{height:7px;width:72px;background:var(--ss-grad)}
+.bh-sesame-atelier.ss-tahini-talk:not(:has(.ss-media img[src]:not([src=""]))){grid-template-columns:minmax(0,1fr);grid-template-areas:"time" "name" "title" "copy" "hardware";width:min(370px,100%);background:var(--ss-panel)}
+.bh-sesame-atelier.ss-sesamail-mini{width:min(330px,100%);grid-template-columns:minmax(0,1fr) 65px;grid-template-areas:"name time" "title time" "media media" "copy copy" "hardware hardware";padding:23px 21px;gap:8px 14px;border-radius:38px 20px 38px 20px;border:4px solid var(--ss-b);border-right:10px solid var(--ss-c)}
+.bh-sesame-atelier.ss-sesamail-mini::after{content:"";position:absolute;right:-10px;top:50px;width:7px;height:32px;border-radius:4px;background:var(--ss-1);border-block:4px solid var(--ss-a)}
+.bh-sesame-atelier.ss-sesamail-mini .ss-time{align-self:center;text-align:center;padding:14px 5px;background:var(--ss-paper);border:1px solid var(--ss-line);border-radius:12px;font-size:12px}
+.bh-sesame-atelier.ss-sesamail-mini .ss-copy{border:1px solid var(--ss-line);border-radius:15px;padding:14px 10px;background:var(--ss-paper);margin-top:11px;box-shadow:inset 0 2px 6px var(--ss-shadow)}
+.bh-sesame-atelier.ss-sesamail-mini .ss-copy p{padding:9px;font-size:13px;background:var(--ss-panel);border-radius:9px 9px 9px 3px}
+.bh-sesame-atelier.ss-sesamail-mini .ss-hardware{padding-top:8px;gap:9px}
+.bh-sesame-atelier.ss-sesamail-mini .ss-hardware span:nth-child(-n+3){display:block;width:7px;height:12px;border-radius:75% 25%;background:var(--ss-a);transform:rotate(30deg)}
+.bh-sesame-atelier.ss-sesamail-mini .ss-hardware span:nth-child(2){background:var(--ss-b)}
+.bh-sesame-atelier.ss-sesamail-mini .ss-hardware span:nth-child(3){background:var(--ss-c)}
+.bh-sesame-atelier.ss-sesamail-mini .ss-media img{height:100px;border-radius:15px}
+.bh-sesame-atelier.ss-podline-duo{width:min(362px,100%);grid-template-areas:"time" "media" "name" "title" "hardware" "copy";gap:10px;padding:21px 19px 22px;border-radius:46px 46px 25px 25px;border:3px solid var(--ss-a);border-bottom:9px solid var(--ss-b);background:var(--ss-panel)}
+.bh-sesame-atelier.ss-podline-duo .ss-time{text-align:center;letter-spacing:.12em;padding-bottom:6px}
+.bh-sesame-atelier.ss-podline-duo .ss-media{gap:12px;padding:8px 10px 4px}
+.bh-sesame-atelier.ss-podline-duo .ss-media img{height:119px;border-radius:65px;flex:1 1 75px;border:4px solid var(--ss-paper);outline:1px solid var(--ss-b)}
+.bh-sesame-atelier.ss-podline-duo .ss-media img:nth-child(2n){outline-color:var(--ss-c)}
+.bh-sesame-atelier.ss-podline-duo .ss-name,.bh-sesame-atelier.ss-podline-duo .ss-title{text-align:center}
+.bh-sesame-atelier.ss-podline-duo .ss-hardware{height:15px;margin:6px -19px 2px;background:linear-gradient(var(--ss-paper),var(--ss-line) 45%,var(--ss-panel) 55%,var(--ss-paper));border-block:1px solid var(--ss-line);justify-content:space-between;padding:0 30px}
+.bh-sesame-atelier.ss-podline-duo .ss-hardware span:nth-child(-n+2){display:block;width:27px;height:13px;border-radius:0;background:linear-gradient(90deg,var(--ss-a),var(--ss-panel),var(--ss-b));border-inline:1px solid var(--ss-2)}
+.bh-sesame-atelier.ss-podline-duo .ss-copy{padding:13px 11px;border:1px solid var(--ss-line);border-radius:12px;background:var(--ss-paper)}
+.bh-sesame-atelier.ss-podline-duo .ss-copy p{background:var(--ss-panel);font-size:13px}
+.bh-sesame-atelier.ss-goma-click:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"time" "name" "title" "copy" "hardware"}
+.bh-sesame-atelier.ss-sesamail-mini:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"name time" "title time" "copy copy" "hardware hardware"}
+.bh-sesame-atelier.ss-podline-duo:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"time" "name" "title" "hardware" "copy"}
+.bh-sesame-atelier.ss-bud{width:min(430px,100%);grid-template-areas:"name" "title" "media" "copy" "seeds";gap:13px;padding:24px;font-size:14px;line-height:1.75}
+.bh-sesame-atelier.ss-bud .ss-name{font-size:10px;letter-spacing:.12em}
+.bh-sesame-atelier.ss-bud .ss-title{font-size:27px;line-height:1.15}
+.bh-sesame-atelier.ss-bud .ss-copy{line-height:1.75}
+.bh-sesame-atelier.ss-bud .ss-media img{height:100px}
+.bh-sesame-atelier.ss-bud .ss-seeds span{height:10px;width:5px;flex-basis:5px}
+.bh-sesame-atelier.ss-hullkiss{width:min(375px,100%);grid-template-areas:"seeds" "name" "title" "media" "copy";padding:32px 30px 28px;border-radius:85px 8px 55px 8px;border:1px solid var(--ss-a);border-bottom:4px solid var(--ss-c)}
+.bh-sesame-atelier.ss-hullkiss .ss-seeds{justify-content:end;height:12px}
+.bh-sesame-atelier.ss-hullkiss .ss-seeds span:nth-child(n+4){display:none}
+.bh-sesame-atelier.ss-hullkiss .ss-title{font-style:italic;font-size:31px}
+.bh-sesame-atelier.ss-hullkiss .ss-copy{border-top:1px solid var(--ss-line);padding-top:12px}
+.bh-sesame-atelier.ss-hullkiss .ss-media img{border-radius:45px 8px}
+.bh-sesame-atelier.ss-ivory-speck{width:min(455px,100%);grid-template-columns:66px minmax(0,1fr);grid-template-areas:"media name" "media title" "copy copy" "seeds seeds";padding:22px;gap:8px 20px;border:1px dashed var(--ss-b);border-radius:14px;box-shadow:inset 0 0 0 6px var(--ss-paper),inset 0 0 0 7px var(--ss-line)}
+.bh-sesame-atelier.ss-ivory-speck .ss-media{align-self:center;gap:7px}
+.bh-sesame-atelier.ss-ivory-speck .ss-media img{height:78px;flex:1 1 100%;border-radius:75% 25% 68% 32%;border:2px solid var(--ss-c)}
+.bh-sesame-atelier.ss-ivory-speck .ss-name{align-self:end}
+.bh-sesame-atelier.ss-ivory-speck .ss-title{align-self:start;font-size:26px}
+.bh-sesame-atelier.ss-ivory-speck .ss-copy{padding-top:10px}
+.bh-sesame-atelier.ss-ivory-speck .ss-seeds{justify-content:end;height:12px}
+.bh-sesame-atelier.ss-ivory-speck .ss-seeds span:nth-child(n+4){display:none}
+.bh-sesame-atelier.ss-ivory-speck:not(:has(.ss-media img[src]:not([src=""]))){grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "title" "copy" "seeds"}
+.bh-sesame-atelier.ss-goma-glint{width:min(350px,100%);grid-template-columns:minmax(0,1fr) 35px;grid-template-areas:"name seeds" "title title" "media media" "copy copy";padding:25px;border:0;border-top:3px solid var(--ss-a);border-right:3px solid var(--ss-c);background:linear-gradient(135deg,var(--ss-panel) 0 16px,transparent 16px),var(--ss-paper)}
+.bh-sesame-atelier.ss-goma-glint .ss-seeds{display:grid;grid-template-columns:repeat(3,6px);gap:3px;justify-content:end}
+.bh-sesame-atelier.ss-goma-glint .ss-seeds span{width:6px;height:6px;border-radius:0;transform:none}
+.bh-sesame-atelier.ss-goma-glint .ss-seeds span:nth-child(2n){opacity:.35}
+.bh-sesame-atelier.ss-goma-glint .ss-title{font-size:30px;letter-spacing:-.05em;padding-top:7px}
+.bh-sesame-atelier.ss-goma-glint .ss-copy{border-top:1px solid var(--ss-line);padding-top:13px}
+.bh-sesame-atelier.ss-twin-kernels{width:min(400px,100%);grid-template-areas:"name" "media" "title" "copy" "seeds";padding:24px 26px 22px;border:1px solid var(--ss-b);border-radius:22px;text-align:center;gap:11px}
+.bh-sesame-atelier.ss-twin-kernels .ss-media{justify-content:space-between;gap:12px;margin-top:3px}
+.bh-sesame-atelier.ss-twin-kernels .ss-media img{height:67px;width:55px;flex:0 1 55px;border-radius:70% 30% 65% 35%;border:2px solid var(--ss-a)}
+.bh-sesame-atelier.ss-twin-kernels .ss-media img:nth-child(2n){border-radius:30% 70% 35% 65%;border-color:var(--ss-c)}
+.bh-sesame-atelier.ss-twin-kernels .ss-media:has(img:only-child){justify-content:center}
+.bh-sesame-atelier.ss-twin-kernels:has(.ss-media img:nth-child(2):last-child):not(:has(.ss-media img[src=""])){grid-template-columns:55px minmax(0,1fr) 55px;grid-template-areas:"name name name" "portrait1 title portrait2" "copy copy copy" "seeds seeds seeds";column-gap:12px}
+.bh-sesame-atelier.ss-twin-kernels:has(.ss-media img:nth-child(2):last-child):not(:has(.ss-media img[src=""])) .ss-media{display:contents}
+.bh-sesame-atelier.ss-twin-kernels:has(.ss-media img:nth-child(2):last-child):not(:has(.ss-media img[src=""])) .ss-media img:first-child{grid-area:portrait1;align-self:center}
+.bh-sesame-atelier.ss-twin-kernels:has(.ss-media img:nth-child(2):last-child):not(:has(.ss-media img[src=""])) .ss-media img:last-child{grid-area:portrait2;align-self:center}
+.bh-sesame-atelier.ss-twin-kernels:has(.ss-media img:nth-child(2):last-child):not(:has(.ss-media img[src=""])) .ss-title{align-self:center;font-size:25px}
+.bh-sesame-atelier.ss-twin-kernels .ss-copy{text-align:left;border-top:1px solid var(--ss-line);padding-top:13px}
+.bh-sesame-atelier.ss-twin-kernels .ss-seeds span:nth-child(n+4){display:none}
+.bh-sesame-atelier.ss-aftertoast{width:min(342px,100%);grid-template-columns:13px minmax(0,1fr);grid-template-areas:"seeds name" "seeds media" "seeds title" "seeds copy";gap:13px 18px;padding:22px 24px 24px 14px;border:0;border-bottom:1px solid var(--ss-a);background:linear-gradient(90deg,var(--ss-panel) 0 39px,var(--ss-paper) 39px)}
+.bh-sesame-atelier.ss-aftertoast .ss-seeds{display:flex;flex-direction:column;justify-content:start;gap:15px;padding-top:2px}
+.bh-sesame-atelier.ss-aftertoast .ss-seeds span{flex:0 0 8px;width:3px;height:8px;border-radius:4px;transform:rotate(-20deg)}
+.bh-sesame-atelier.ss-aftertoast .ss-media img{height:83px;border:0;border-bottom:4px solid var(--ss-c);border-radius:0 28px 0 0}
+.bh-sesame-atelier.ss-aftertoast .ss-title{font-style:italic;font-size:28px}
+.bh-sesame-atelier.ss-hullkiss:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"seeds" "name" "title" "copy"}
+.bh-sesame-atelier.ss-goma-glint:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"name seeds" "title title" "copy copy"}
+.bh-sesame-atelier.ss-twin-kernels:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"name" "title" "copy" "seeds"}
+.bh-sesame-atelier.ss-aftertoast:not(:has(.ss-media img[src]:not([src=""]))){grid-template-areas:"seeds name" "seeds title" "seeds copy"}
+@container(max-width:380px){.bh-sesame-atelier .ss-copy{font-size:15px}.bh-sesame-atelier.ss-bud .ss-copy{font-size:14px}.bh-sesame-atelier.ss-benne-folio .ss-media img{height:164px}.bh-sesame-atelier.ss-benne-folio .ss-seeds{gap:7px 10px;grid-template-columns:repeat(4,8px)}.bh-sesame-atelier.ss-goma-diptych .ss-media{padding-inline:0;gap:10px}.bh-sesame-atelier.ss-goma-diptych .ss-media img{height:175px;flex-basis:65px}.bh-sesame-atelier.ss-halva-maison .ss-media img{height:160px}.bh-sesame-atelier.ss-tahini-talk .ss-copy p{font-size:12px;padding:9px}.bh-sesame-atelier.ss-tahini-talk .ss-time{font-size:14px}.bh-sesame-atelier.ss-twin-kernels:has(.ss-media img:nth-child(2):last-child) .ss-title{font-size:22px}.bh-sesame-atelier.ss-comms .ss-copy{font-size:14px}}
+@media(max-width:600px){.bh-sesame-atelier.ss-thread{padding-left:22px;padding-right:22px}.bh-sesame-atelier.ss-sesamum-herbarium{padding-left:10px;column-gap:15px}.bh-sesame-atelier.ss-tahini-talk{padding:20px 16px;column-gap:13px}.bh-sesame-atelier.ss-halva-maison{column-gap:16px}.bh-sesame-atelier.ss-bud{padding-right:22px}.bh-sesame-atelier.ss-aftertoast{padding-left:12px}}
+@media(forced-colors:active){.bh-sesame-atelier .ss-copy :is(b,strong,i,em,u){background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}.bh-sesame-atelier .ss-copy u{text-decoration-color:CanvasText}.bh-sesame-atelier .ss-seeds span,.bh-sesame-atelier .ss-hardware span{border:1px solid CanvasText}}

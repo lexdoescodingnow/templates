@@ -1,5 +1,14 @@
 # Gâteau
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [gateau-collection-standalone-v1.css](gateau-collection-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates inspired by the supplied Gâteau poster: fine patisserie borders, layered cake details, sculptural serif lettering and small champagne-metal accents. Member colours drive the headers, frames, borders and emphasis. Writing sits on neutral surfaces.
 
 [Download and open the standalone HTML preview](gateau-collection-preview.html) · [Complete collection ZIP](gateau-collection.zip)
@@ -50,7 +59,7 @@ The editor supports plain paragraphs, basic formatting, links and blockquotes. P
 
 ## Forum integration
 
-Each snippet loads [gateau-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/gateau/gateau-collection-v1.css) from this repository. It contains no JavaScript and needs no additional HTML loader. The forum must allow external stylesheet links inside `[dohtml]`.
+Each snippet loads [gateau-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/gateau/gateau-collection-standalone-v1.css) from this repository. It contains no JavaScript and needs no additional HTML loader. The forum must allow external stylesheet links inside `[dohtml]`.
 
 The inherited RGB triples `--mgrgb1`, `--mgrgb2`, and `--mgrgb3` drive the design. Dark mode lightens those hues for clearer text and frame contrast. Fallback colours only apply when those variables are absent. Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system-preference fallback. Scoped CSS prevents the collection from restyling unrelated forum content.
 

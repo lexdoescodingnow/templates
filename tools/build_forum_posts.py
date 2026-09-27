@@ -3,6 +3,8 @@ from pathlib import Path
 import re,json,html,collections,zipfile
 from forum_inventory import ROOT,inventory,expand_css
 from forum_presentation import presentation
+from build_standalone_styles import refresh_standalone
+refresh_standalone()
 OUT=ROOT/'forum-posts';OUT.mkdir(exist_ok=True)
 rows=inventory();groups=collections.defaultdict(list)
 for r in rows:

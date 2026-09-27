@@ -1,5 +1,14 @@
 # Pumpkin · Dexter & Happy
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [pumpkin-harvest-standalone-v1.css](pumpkin-harvest-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates: five threads, five phone/device comms and five compact buds. Gourd ribs, seed impressions, carriage curves, patchwork seams and curling vines carry the collection. Member colours lead the headers, frames, devices and text accents over neutral reading surfaces.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/pumpkin/pumpkin-collection-preview.html)

@@ -1,5 +1,15 @@
 # Clementine · Softlight collection
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [clementine-media-standalone-v1.css](clementine-media-standalone-v1.css)
+- [clementine-softlight-standalone-v1.css](clementine-softlight-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen new JCink designs inspired by the supplied Clementine poster: slow tenderness, soft daylight, delicate lettering, curling peel and small botanical line drawings. Member colours run through headers, frames, rules and emphasis, with neutral writing surfaces and restrained citrus accents.
 
 [Download the standalone preview/editor](clementine-softlight-preview.html) · [Complete collection ZIP](clementine-softlight-collection.zip)
@@ -54,7 +64,7 @@ Each design retains its edits while the preview is open. Use **Download .txt** t
 
 ## Forum integration
 
-Every current snippet includes one [hosted stylesheet link](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@6680ac1bd432029d04569442b9c275b88445a6c9/clementine/clementine-softlight-v1.css) inside its `[dohtml]` block. The forum must permit external stylesheet links. No JavaScript or HTML loader runs in forum posts. The stylesheet URL is pinned to its published revision to avoid stale CDN caches.
+Every current snippet includes one [hosted stylesheet link](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-standalone-v1.css) inside its `[dohtml]` block. The forum must permit external stylesheet links. No JavaScript or HTML loader runs in forum posts. The stylesheet URL is pinned to its published revision to avoid stale CDN caches.
 
 Blue Hour’s inherited RGB triples `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the templates. Dark mode lightens those hues for emphasis and frames. Explicit `html[color-mode="light"]` or `html[color-mode="dark"]` overrides the system fallback. Styles are scoped to `.clm` wrappers and their descendants.
 

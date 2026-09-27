@@ -311,7 +311,7 @@ function plumMarkup(d,s) {
   lines.push('<div class="plm-copy">',s.body,'</div>',`<div class="${d.type==='comms'?'plm-device':'plm-ornament'}" aria-hidden="true"></div>`,'</div>');
   return lines.join('\n');
 }
-function plumSnippet(d,s,revision='main') {return '[dohtml]\n'+plumMarkup(d,s)+'\n\n<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@'+revision+'/plum/plum-lasting-season-v1.css">\n[/dohtml]\n';}
+function plumSnippet(d,s,revision='main') {return '[dohtml]\n'+plumMarkup(d,s)+'\n\n<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/plum/plum-lasting-season-standalone-v1.css">\n[/dohtml]\n';}
 if(typeof module!=='undefined')module.exports={PLUM_GIFS,PLUM_DESIGNS,PLUM_THREAD,PLUM_COMMS,PLUM_BUD,plumEscape,plumDefaults,plumFilename,plumMarkup,plumSnippet};
 </script><script>const plumDesigns = PLUM_DESIGNS;
 const plumStates = plumDesigns.map(plumDefaults);

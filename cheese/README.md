@@ -1,5 +1,14 @@
 # Cheese · A little culture
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [cheese-fromagerie-standalone-v1.css](cheese-fromagerie-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink designs for Minseo and Tommy: five threads, five electronic comms and five compact buds. Dairy labels, cheese-wheel portraits, Swiss holes, melting edges, branching veins and foil details give the collection its own visual identity. Member colours carry the headers, frames and emphasis; writing sits on neutral backgrounds.
 
 [Preview and editor](cheese-collection-preview.html)

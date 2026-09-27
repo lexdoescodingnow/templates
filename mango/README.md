@@ -1,5 +1,14 @@
 # Mango · Alastair & Jiyong
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [mango-orchard-standalone-v1.css](mango-orchard-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink designs with member-colour frames, headings and text accents on neutral surfaces. Asymmetric mango cheeks, scored flesh, small stones, stems and peel ribbons connect the collection.
 
 [Download the standalone preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/mango/mango-collection-preview.html)

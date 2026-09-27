@@ -1,5 +1,14 @@
 # Sweet Potato templates
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [sweet-potato-family-standalone-v1.css](sweet-potato-family-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 This directory contains the current JCink-ready Sweet Potato template family.
 
 ## Live files

@@ -1,5 +1,14 @@
 # Sesame · Stella & Valerie
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [sesame-atelier-standalone-v1.css](sesame-atelier-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen coordinated JCink templates: five threads, five phone-style comms and five compact buds. Seed silhouettes, sesame pods, tahini curves and halva folds provide the small flavour details. Member colours carry the headers, frames, borders and emphasis; the reading backgrounds stay neutral.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/sesame/sesame-collection-preview.html)

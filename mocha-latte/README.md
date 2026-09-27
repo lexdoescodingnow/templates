@@ -1,5 +1,14 @@
 # Mocha & Latte · The soft blend
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [mocha-latte-soft-blend-standalone-v1.css](mocha-latte-soft-blend-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates for **Taeyang, Elias and Yujun**: five threads, five electronic comms and five compact buds. Latte-art feathers, flowing milk contours, cocoa crosshatching and three-part portrait compositions form the collection. Member colours carry the headers, frames, borders and emphasis; writing sits on neutral light or dark backgrounds.
 
 [Preview and editor](mocha-latte-collection-preview.html) · [Complete collection](mocha-latte-collection.zip)

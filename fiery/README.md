@@ -1,5 +1,14 @@
 # Fiery · Asher & Hiroshi
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [fiery-ignition-standalone-v1.css](fiery-ignition-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen coordinated JCink templates: five threads, five phone/device comms and five miniature buds. Match strikes, candle windows, exhaust grilles, heat trails and small flames carry the inherited member palette over neutral reading surfaces.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/fiery/fiery-collection-preview.html)

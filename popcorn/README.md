@@ -1,5 +1,14 @@
 # Popcorn · Save me a seat
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [popcorn-picturehouse-standalone-v1.css](popcorn-picturehouse-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates for Caleb and Peter. Marquees, striped concession cartons, popped kernels, projection frames and theatre pleats give this collection its own cinema-inspired identity. Member colours drive the headers, borders, image frames, device cases and emphasis; writing stays on neutral surfaces.
 
 [Open the preview/editor file](popcorn-collection-preview.html)

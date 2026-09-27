@@ -1,5 +1,14 @@
 # Portuguese cuisine · À mesa
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [portuguese-cuisine-mesa-standalone-v1.css](portuguese-cuisine-mesa-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates for **Seojun & Wenjun**: five threads, five device-style comms and five miniature buds. Seafood tins, pastry paper, café hardware and small Portuguese table details sit alongside member colours on neutral backgrounds.
 
 [Preview and editor](portuguese-cuisine-collection-preview.html)

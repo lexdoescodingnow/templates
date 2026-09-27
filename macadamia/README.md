@@ -1,5 +1,14 @@
 # Macadamia · Journey & Kai
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [macadamia-orchard-standalone-v1.css](macadamia-orchard-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen new JCink designs: five threads, five device comms and five miniature buds. Macadamia blossom tassels, seed-eye impressions, terrazzo fragments and woven orchard details sit alongside inherited member colours and neutral reading surfaces.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/macadamia/macadamia-collection-preview.html)

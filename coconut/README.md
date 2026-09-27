@@ -1,5 +1,14 @@
 # Coconut
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [coconut-collection-standalone-v1.css](coconut-collection-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates inspired by the supplied Coconut poster: soft ivory fabric, protective coconut shells, palm shadows, woven coir and graceful italic lettering. Member colours shape the headers, frames, borders, emphasis and message surfaces. Ordinary writing rests on neutral light or dark backgrounds.
 
 [Download the standalone preview/editor](coconut-collection-preview.html) · [Complete collection ZIP](coconut-collection.zip)
@@ -52,7 +61,7 @@ The editor retains separate edits for each design while the page is open. Downlo
 
 ## Forum integration
 
-Every snippet loads [coconut-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/coconut/coconut-collection-v1.css). The forum must permit an external stylesheet link inside `[dohtml]`. No JavaScript or external HTML loader is used in forum posts.
+Every snippet loads [coconut-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/coconut/coconut-collection-standalone-v1.css). The forum must permit an external stylesheet link inside `[dohtml]`. No JavaScript or external HTML loader is used in forum posts.
 
 The inherited RGB triples `--mgrgb1`, `--mgrgb2` and `--mgrgb3` drive the designs. Fallbacks apply only when a variable is absent. Dark mode lightens the inherited hues for clearer emphasis and frames. Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` settings take precedence over the system preference fallback. All template selectors are scoped to `.ccn`.
 

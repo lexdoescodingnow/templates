@@ -1,0 +1,149 @@
+.bh-oats-millhouse{--o1:rgb(var(--mgrgb1,68,125,137));--o2:rgb(var(--mgrgb2,var(--mgrgb1,185,105,118)));--o3:rgb(var(--mgrgb3,var(--mgrgb2,var(--mgrgb1,130,115,153))));--opaper:#faf9f6;--opanel:#efeeea;--oink:#343538;--omuted:#68686b;--oedge:#d6d4ce;--ochaff:#b7a88e;--omix:18%;--og:linear-gradient(110deg,var(--o1),var(--o2),var(--o3));--org:linear-gradient(110deg,var(--o3),var(--o2),var(--o1));box-sizing:border-box;isolation:isolate;position:relative;display:grid;min-width:0;width:min(100%,530px);margin:30px auto;background:var(--opaper);color:var(--oink);font:15px/1.85 Georgia,'Times New Roman',serif;text-align:left;overflow-wrap:anywhere;color-scheme:light}
+html[color-mode="dark"] .bh-oats-millhouse{--opaper:#222326;--opanel:#2a2b2e;--oink:#e2e0dc;--omuted:#b9b7b3;--oedge:#49494b;--ochaff:#8b8171;--omix:30%;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .bh-oats-millhouse{--opaper:#222326;--opanel:#2a2b2e;--oink:#e2e0dc;--omuted:#b9b7b3;--oedge:#49494b;--ochaff:#8b8171;--omix:30%;color-scheme:dark}}
+.bh-oats-millhouse,.bh-oats-millhouse *,.bh-oats-millhouse *::before,.bh-oats-millhouse *::after{box-sizing:border-box}
+.bh-oats-millhouse>*{min-width:0}
+.bh-oats-millhouse .oat-name{grid-area:name;justify-self:start;max-width:100%;color:var(--o1);color:color-mix(in srgb,var(--o1) 75%,var(--oink));font:700 10px/1.6 'Trebuchet MS',Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;text-decoration:none;border:0;padding:0;background:none;word-break:normal}
+.bh-oats-millhouse .oat-title{grid-area:title;font:normal 36px/1.08 Georgia,'Times New Roman',serif;letter-spacing:-.045em;color:var(--o1);color:color-mix(in srgb,var(--o1) 76%,var(--oink));text-wrap:balance}
+.bh-oats-millhouse .oat-media{grid-area:media;display:flex;flex-wrap:wrap;gap:12px;align-items:center;min-width:0}
+.bh-oats-millhouse .oat-media:empty,.bh-oats-millhouse .oat-media:not(:has(img[src]:not([src=""]))){display:none}
+.bh-oats-millhouse .oat-media img{display:block;min-width:0;max-width:100%;width:0;flex:1 1 60px;height:150px;object-fit:cover;border:0;margin:0;background:var(--opanel)}
+.bh-oats-millhouse .oat-media img[src=""],.bh-oats-millhouse .oat-media img:not([src]){display:none}
+.bh-oats-millhouse .oat-copy{grid-area:copy;min-width:0;font:inherit;line-height:1.85;text-align:left;letter-spacing:0;color:var(--oink)}
+.bh-oats-millhouse .oat-copy p{margin:0 0 1.15em;padding:0;text-align:inherit;font:inherit;color:inherit}
+.bh-oats-millhouse .oat-copy p:last-child{margin-bottom:0}
+.bh-oats-millhouse .oat-copy :is(b,strong,u){color:var(--o1);background:var(--og);background:linear-gradient(110deg,color-mix(in srgb,var(--o1) 74%,var(--oink)),color-mix(in srgb,var(--o2) 74%,var(--oink)),color-mix(in srgb,var(--o3) 74%,var(--oink)));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bh-oats-millhouse .oat-copy :is(i,em){color:var(--o3);background:var(--org);background:linear-gradient(110deg,color-mix(in srgb,var(--o3) 74%,var(--oink)),color-mix(in srgb,var(--o2) 74%,var(--oink)),color-mix(in srgb,var(--o1) 74%,var(--oink)));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bh-oats-millhouse .oat-copy u{text-decoration:underline;text-decoration-color:var(--o2);text-underline-offset:3px;text-decoration-thickness:1px}
+.bh-oats-millhouse .oat-copy a{color:var(--o1);color:color-mix(in srgb,var(--o1) 74%,var(--oink));text-decoration:underline;text-underline-offset:3px}
+.bh-oats-millhouse a:focus-visible{outline:2px solid var(--o2);outline-offset:5px}
+.bh-oats-millhouse .oat-detail{grid-area:detail;pointer-events:none}
+.bh-oats-millhouse.oat-thread{padding:34px;gap:20px;grid-template-areas:'name' 'title' 'media' 'copy' 'detail'}
+.bh-oats-millhouse.oat-thread:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-thread .oat-copy{padding-top:5px}
+.bh-oats-millhouse.oat-millstone-letters{border-top:5px solid var(--o1);border-bottom:5px solid var(--o3);grid-template-columns:1fr 1.15fr;grid-template-areas:'media name' 'media title' 'copy copy' 'detail detail';column-gap:30px;padding-top:36px;border-radius:0 0 28px 28px;box-shadow:inset 1px 0 var(--oedge),inset -1px 0 var(--oedge)}
+.bh-oats-millhouse.oat-millstone-letters .oat-name{align-self:end}
+.bh-oats-millhouse.oat-millstone-letters .oat-title{font-size:39px;align-self:start}
+.bh-oats-millhouse.oat-millstone-letters .oat-media{border-radius:50%;padding:17px;background:repeating-conic-gradient(from 8deg,color-mix(in srgb,var(--o1) 55%,var(--opaper)) 0deg 1deg,transparent 1deg 12deg);outline:1px solid var(--o2);outline-offset:-6px;gap:8px}
+.bh-oats-millhouse.oat-millstone-letters .oat-media img{height:auto;aspect-ratio:1;border-radius:50%;border:6px solid var(--opaper)}
+.bh-oats-millhouse.oat-millstone-letters .oat-copy{border-top:1px solid var(--oedge);padding-top:25px}
+.bh-oats-millhouse.oat-millstone-letters .oat-detail{height:12px;width:76px;justify-self:center;border-block:1px solid var(--o2);background:repeating-linear-gradient(90deg,transparent 0 8px,var(--o3) 8px 9px,transparent 9px 16px)}
+.bh-oats-millhouse.oat-millstone-letters:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-rolled-reverie{padding:36px 35px 44px;border-inline:2px solid var(--o2);border-radius:24px 4px 24px 4px;box-shadow:inset 0 8px var(--opanel),inset 0 -8px var(--opanel);gap:18px}
+.bh-oats-millhouse.oat-rolled-reverie::before,.bh-oats-millhouse.oat-rolled-reverie::after{content:'';position:absolute;left:7px;right:7px;height:10px;border:1px solid var(--o1);border-radius:100%;background:var(--opaper);top:5px;z-index:-1}
+.bh-oats-millhouse.oat-rolled-reverie::after{top:auto;bottom:5px;border-color:var(--o3)}
+.bh-oats-millhouse.oat-rolled-reverie .oat-title{font-size:43px;font-style:italic;max-width:360px}
+.bh-oats-millhouse.oat-rolled-reverie .oat-media{padding:12px 19px;background:linear-gradient(0deg,transparent 35%,color-mix(in srgb,var(--o2) 35%,var(--opaper)) 35% 70%,transparent 70%);gap:21px}
+.bh-oats-millhouse.oat-rolled-reverie .oat-media img{height:145px;border-radius:48% 12% 46% 14%;padding:5px;border:1px solid var(--o1);background:var(--opaper)}
+.bh-oats-millhouse.oat-rolled-reverie .oat-media img:nth-child(even){border-radius:12% 48% 14% 46%;border-color:var(--o3)}
+.bh-oats-millhouse.oat-rolled-reverie .oat-copy{padding-inline:8px}
+.bh-oats-millhouse.oat-rolled-reverie .oat-detail{height:1px;background:var(--og);margin-inline:18%}
+.bh-oats-millhouse.oat-kilnlight-folio{padding:38px;border:1px solid var(--o1);border-right:9px solid var(--o3);gap:23px;outline:1px solid var(--oedge);outline-offset:-13px}
+.bh-oats-millhouse.oat-kilnlight-folio .oat-name{border-left:20px solid var(--o2);padding-left:10px}
+.bh-oats-millhouse.oat-kilnlight-folio .oat-title{font:900 45px/.97 'Trebuchet MS',Arial,sans-serif;letter-spacing:-.065em;padding:20px 0 25px;border-top:3px solid var(--o1);border-bottom:1px solid var(--o2);max-width:100%}
+.bh-oats-millhouse.oat-kilnlight-folio .oat-detail{height:16px;background:linear-gradient(var(--o2),var(--o2)) left center/25px 1px no-repeat,linear-gradient(var(--o2),var(--o2)) 12px center/1px 16px no-repeat,linear-gradient(var(--o3),var(--o3)) right center/25px 1px no-repeat,linear-gradient(var(--o3),var(--o3)) calc(100% - 12px) center/1px 16px no-repeat}
+.bh-oats-millhouse.oat-kilnlight-folio .oat-media img{height:110px;filter:saturate(.85)}
+.bh-oats-millhouse.oat-oatmilk-almanac{width:min(100%,490px);padding:63px 29px 30px;border:1px solid var(--o2);border-radius:5px 5px 18px 18px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:'name name' 'media title' 'copy copy' 'detail detail';background:linear-gradient(150deg,transparent 50%,color-mix(in srgb,var(--o1) 18%,var(--opaper)) 51%) 0 0/50% 40px no-repeat,linear-gradient(210deg,transparent 50%,color-mix(in srgb,var(--o3) 22%,var(--opaper)) 51%) 100% 0/50% 40px no-repeat,var(--opaper);gap:20px}
+.bh-oats-millhouse.oat-oatmilk-almanac::before{content:'';position:absolute;top:13px;left:30%;right:30%;height:6px;background:var(--og);border-radius:1px}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-name{justify-self:center;letter-spacing:.22em}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-title{align-self:center;font-size:34px}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-media{padding:5px;background:var(--og);border-radius:2px 20px 2px 20px;overflow:hidden;gap:5px}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-media img{height:176px;border-radius:0 16px 0 16px}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-copy{padding:23px 20px;background:var(--opanel);border-radius:3px;border-top:2px solid var(--o2)}
+.bh-oats-millhouse.oat-oatmilk-almanac .oat-detail{height:8px;width:55px;justify-self:center;background:repeating-linear-gradient(90deg,var(--o1) 0 2px,transparent 2px 5px,var(--o3) 5px 6px,transparent 6px 9px)}
+.bh-oats-millhouse.oat-oatmilk-almanac:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-harvest-table{border:12px solid transparent;padding:29px;gap:19px;border-image:repeating-linear-gradient(45deg,var(--o1) 0 5px,var(--opanel) 5px 10px,var(--o3) 10px 15px,var(--opanel) 15px 20px) 12;grid-template-areas:'media' 'title' 'name' 'copy' 'detail';box-shadow:0 0 0 1px var(--oedge)}
+.bh-oats-millhouse.oat-harvest-table .oat-media{justify-content:center;gap:30px}
+.bh-oats-millhouse.oat-harvest-table .oat-media img{flex:0 1 107px;width:107px;height:107px;border-radius:50%;border:6px double var(--o1);padding:6px;background:var(--opaper)}
+.bh-oats-millhouse.oat-harvest-table .oat-media img:nth-child(even){border-color:var(--o3)}
+.bh-oats-millhouse.oat-harvest-table .oat-title{text-align:center;font-size:38px}
+.bh-oats-millhouse.oat-harvest-table .oat-name{justify-self:center}
+.bh-oats-millhouse.oat-harvest-table .oat-copy{border-top:1px solid var(--o2);padding-top:23px}
+.bh-oats-millhouse.oat-harvest-table .oat-detail{height:15px;width:60px;justify-self:center;background:radial-gradient(ellipse 4px 7px at 8px 7px,var(--ochaff) 90%,transparent),radial-gradient(ellipse 4px 7px at 29px 7px,var(--o2) 90%,transparent),radial-gradient(ellipse 4px 7px at 50px 7px,var(--ochaff) 90%,transparent)}
+.bh-oats-millhouse.oat-comms{width:min(100%,332px);font:13px/1.7 'Trebuchet MS',Arial,sans-serif;border:3px solid var(--o1);border-right-color:var(--o3);padding:25px 19px 17px;gap:12px;grid-template-areas:'time' 'media' 'name' 'title' 'copy' 'detail';border-radius:37px;background:var(--opanel);box-shadow:inset 0 0 0 4px var(--opaper),0 8px 20px #0000000a}
+.bh-oats-millhouse.oat-comms .oat-time{grid-area:time;justify-self:start;font:700 11px/1.4 'Trebuchet MS',Arial,sans-serif;letter-spacing:.04em;color:var(--oink)}
+.bh-oats-millhouse.oat-comms .oat-title{font:12px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:0;color:var(--omuted)}
+.bh-oats-millhouse.oat-comms .oat-name{font-size:12px;letter-spacing:.05em;text-transform:none}
+.bh-oats-millhouse.oat-comms .oat-media{gap:8px}
+.bh-oats-millhouse.oat-comms .oat-media img{height:85px;border-radius:15px;border:2px solid var(--o2)}
+.bh-oats-millhouse.oat-comms .oat-copy{padding:13px 0 9px;line-height:1.7}
+.bh-oats-millhouse.oat-comms .oat-copy p{width:fit-content;max-width:91%;padding:11px 13px;border-radius:15px 15px 15px 3px;margin:0 auto 9px 0;border:1px solid color-mix(in srgb,var(--o1) 25%,var(--oedge));background:var(--opaper);box-shadow:inset 3px 0 color-mix(in srgb,var(--o1) 45%,transparent)}
+.bh-oats-millhouse.oat-comms[data-flow="sent"] .oat-copy p,.bh-oats-millhouse.oat-comms[data-flow="alternate"] .oat-copy p:nth-child(even){margin-inline:auto 0;border-radius:15px 15px 3px 15px;border-color:color-mix(in srgb,var(--o3) 35%,var(--oedge));background:color-mix(in srgb,var(--o3) 9%,var(--opaper));box-shadow:inset -3px 0 color-mix(in srgb,var(--o3) 45%,transparent)}
+.bh-oats-millhouse.oat-comms .oat-detail{height:22px;position:relative}
+.bh-oats-millhouse.oat-comms .oat-detail::after{content:'';position:absolute;height:4px;width:35%;bottom:0;left:32.5%;border-radius:8px;background:var(--og)}
+.bh-oats-millhouse.oat-comms:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'time' 'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-oatline{padding-top:22px;grid-template-columns:58px minmax(0,1fr);grid-template-areas:'time time' 'media name' 'media title' 'copy copy' 'detail detail';column-gap:14px;row-gap:5px}
+.bh-oats-millhouse.oat-oatline::before{content:'';position:absolute;left:calc(50% - 24px);top:12px;width:48px;height:10px;border-radius:20px;background:var(--oink)}
+.bh-oats-millhouse.oat-oatline .oat-time{padding-bottom:24px}
+.bh-oats-millhouse.oat-oatline .oat-media img{height:70px;border-radius:30px;flex-basis:40px}
+.bh-oats-millhouse.oat-oatline .oat-name{align-self:end}
+.bh-oats-millhouse.oat-oatline .oat-copy{margin-top:17px;border-top:1px solid var(--oedge)}
+.bh-oats-millhouse.oat-oatline .oat-detail{border:1px solid var(--oedge);border-radius:20px;height:31px;background:var(--opaper);margin-bottom:12px}
+.bh-oats-millhouse.oat-oatline .oat-detail::before{content:'+';position:absolute;top:3px;left:11px;color:var(--o2);font:20px/1 Arial,sans-serif}
+.bh-oats-millhouse.oat-oatline .oat-detail::after{bottom:-15px}
+.bh-oats-millhouse.oat-oatline:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'time' 'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-milling-messenger{width:min(100%,385px);border-radius:15px;padding:24px;border-width:6px 12px 6px 6px;gap:10px;background:var(--opaper)}
+.bh-oats-millhouse.oat-milling-messenger .oat-time{font:36px/1 'Courier New',monospace;width:100%;padding-bottom:16px;border-bottom:2px solid var(--o2)}
+.bh-oats-millhouse.oat-milling-messenger .oat-copy{padding:15px;background:var(--opanel);border:1px solid var(--oedge);border-radius:4px}
+.bh-oats-millhouse.oat-milling-messenger .oat-copy p{max-width:100%;width:100%;border-radius:0;background:transparent;border:0;border-bottom:1px dotted var(--o1);padding:8px 0 13px;box-shadow:none}
+.bh-oats-millhouse.oat-milling-messenger .oat-detail{height:34px}
+.bh-oats-millhouse.oat-milling-messenger .oat-detail::after{height:26px;width:62px;left:calc(50% - 31px);border-radius:60% 15% 60% 15%;background:linear-gradient(90deg,var(--o1) 49%,var(--opaper) 49% 52%,var(--o3) 52%);border:1px solid var(--oedge)}
+.bh-oats-millhouse.oat-grain-frequency{width:min(100%,305px);padding:56px 18px 20px;border-radius:19px 19px 48px 48px;border-width:4px 6px;grid-template-columns:70px minmax(0,1fr);grid-template-areas:'time time' 'media name' 'media title' 'copy copy' 'detail detail';column-gap:13px;row-gap:4px}
+.bh-oats-millhouse.oat-grain-frequency::before{content:'';position:absolute;top:16px;left:26%;right:26%;height:19px;border-radius:12px;background:repeating-linear-gradient(0deg,var(--o1) 0 1px,transparent 1px 5px)}
+.bh-oats-millhouse.oat-grain-frequency .oat-time{padding-bottom:14px;font-family:'Courier New',monospace}
+.bh-oats-millhouse.oat-grain-frequency .oat-name{align-self:end}
+.bh-oats-millhouse.oat-grain-frequency .oat-media img{height:84px;border-radius:6px}
+.bh-oats-millhouse.oat-grain-frequency .oat-copy{margin-top:12px}
+.bh-oats-millhouse.oat-grain-frequency .oat-detail{height:50px}
+.bh-oats-millhouse.oat-grain-frequency .oat-detail::after{height:45px;width:45px;left:calc(50% - 22.5px);border-radius:50%;border:7px double var(--o2);background:linear-gradient(var(--o3),var(--o3)) center 7px/1px 11px no-repeat,var(--opaper)}
+.bh-oats-millhouse.oat-grain-frequency:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'time' 'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-soak-signal{width:min(100%,344px);padding:37px 19px 18px;border-radius:40px;gap:13px;background:linear-gradient(155deg,color-mix(in srgb,var(--o1) 20%,var(--opanel)),var(--opanel) 44%,color-mix(in srgb,var(--o3) 14%,var(--opanel)))}
+.bh-oats-millhouse.oat-soak-signal::before{content:'';position:absolute;top:11px;left:calc(50% - 4px);width:8px;height:8px;border-radius:50%;background:var(--oink)}
+.bh-oats-millhouse.oat-soak-signal .oat-time{font:normal 61px/1 'Trebuchet MS',Arial,sans-serif;letter-spacing:-.08em;justify-self:center;color:var(--o1);color:color-mix(in srgb,var(--o1) 70%,var(--oink));padding-bottom:9px}
+.bh-oats-millhouse.oat-soak-signal .oat-media{gap:7px}
+.bh-oats-millhouse.oat-soak-signal .oat-media img{height:117px;border-radius:32px 32px 8px 8px;border:3px solid var(--opaper)}
+.bh-oats-millhouse.oat-soak-signal .oat-name{padding-top:5px}
+.bh-oats-millhouse.oat-soak-signal .oat-copy{padding-top:1px}
+.bh-oats-millhouse.oat-soak-signal .oat-copy p{max-width:100%;width:100%;border-radius:12px;border-color:var(--oedge);box-shadow:0 3px 0 color-mix(in srgb,var(--o2) 14%,transparent)}
+.bh-oats-millhouse.oat-porridge-pocket{width:min(100%,485px);padding:25px 30px 22px 23px;border-radius:24px 14px 14px 24px;border-width:5px 11px 5px 5px;grid-template-columns:minmax(68px,.35fr) minmax(0,1fr);grid-template-areas:'time name' 'time title' 'media media' 'copy copy' 'detail detail';gap:10px 19px}
+.bh-oats-millhouse.oat-porridge-pocket::before{content:'';position:absolute;right:-7px;top:45px;bottom:45px;width:3px;border-radius:3px;background:var(--opaper)}
+.bh-oats-millhouse.oat-porridge-pocket .oat-time{font:26px/1.2 'Courier New',monospace;border-right:1px solid var(--o2);width:100%;align-self:stretch;display:flex;align-items:center;padding-right:10px;letter-spacing:-.09em}
+.bh-oats-millhouse.oat-porridge-pocket .oat-name{align-self:end}
+.bh-oats-millhouse.oat-porridge-pocket .oat-copy{background:var(--opaper);border:1px solid var(--oedge);border-radius:7px;padding:14px;margin-top:5px}
+.bh-oats-millhouse.oat-porridge-pocket .oat-copy p{background:var(--opanel);box-shadow:none;border-left:3px solid var(--o1);border-radius:2px 12px 12px 2px;font-size:12px}
+.bh-oats-millhouse.oat-porridge-pocket .oat-detail{height:13px}
+.bh-oats-millhouse.oat-porridge-pocket .oat-detail::after{width:13px;height:13px;left:calc(50% - 6px);border-radius:50%;border:2px solid var(--o2);background:none}
+.bh-oats-millhouse.oat-porridge-pocket:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'time name' 'time title' 'copy copy' 'detail detail'}
+.bh-oats-millhouse.oat-bud{width:min(100%,385px);font-size:13px;line-height:1.8;padding:24px;gap:10px;grid-template-areas:'name' 'title' 'media' 'copy' 'detail'}
+.bh-oats-millhouse.oat-bud .oat-name{font-size:9px}
+.bh-oats-millhouse.oat-bud .oat-title{font-size:24px;line-height:1.15}
+.bh-oats-millhouse.oat-bud .oat-media img{height:70px;border:2px solid var(--o2)}
+.bh-oats-millhouse.oat-bud:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-groatlet{padding:27px 34px;border:1px solid var(--o1);border-radius:44px 9px 44px 9px;box-shadow:inset 7px 0 color-mix(in srgb,var(--o2) 26%,var(--opaper));gap:10px}
+.bh-oats-millhouse.oat-groatlet .oat-name{justify-self:center}
+.bh-oats-millhouse.oat-groatlet .oat-title{text-align:center}
+.bh-oats-millhouse.oat-groatlet .oat-detail{height:9px;justify-self:center;width:34px;border-bottom:1px solid var(--o3);border-radius:50%}
+.bh-oats-millhouse.oat-husk{padding:24px 19px;grid-template-columns:66px minmax(0,1fr);grid-template-areas:'media name' 'media title' 'copy copy' 'detail detail';column-gap:17px;row-gap:7px;border-right:5px solid var(--o3);background:linear-gradient(100deg,color-mix(in srgb,var(--o1) 13%,var(--opaper)),var(--opaper) 35%);border-radius:27px 0 0 5px}
+.bh-oats-millhouse.oat-husk .oat-name{align-self:end}
+.bh-oats-millhouse.oat-husk .oat-media{border-left:3px solid var(--o1);padding:0 0 0 7px}
+.bh-oats-millhouse.oat-husk .oat-media img{height:83px;border-radius:25px 4px 25px 4px}
+.bh-oats-millhouse.oat-husk .oat-copy{padding-top:9px}
+.bh-oats-millhouse.oat-husk .oat-detail{height:1px;background:var(--og);width:25%}
+.bh-oats-millhouse.oat-husk:not(:has(.oat-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:'name' 'title' 'copy' 'detail'}
+.bh-oats-millhouse.oat-branlet{border-top:3px solid var(--o1);border-bottom:1px solid var(--o3);padding:20px 24px;grid-template-areas:'title' 'name' 'media' 'copy' 'detail';background:radial-gradient(ellipse 3px 5px at 94% 14px,var(--ochaff) 90%,transparent),radial-gradient(ellipse 4px 2px at 89% 19px,var(--o2) 90%,transparent),radial-gradient(ellipse 2px 4px at 95% 28px,var(--o3) 90%,transparent),var(--opaper)}
+.bh-oats-millhouse.oat-branlet .oat-title{padding-right:20px;border-left:3px solid var(--o2);padding-left:10px;font-family:'Trebuchet MS',Arial,sans-serif;letter-spacing:-.04em;font-size:22px}
+.bh-oats-millhouse.oat-branlet .oat-detail{height:0}
+.bh-oats-millhouse.oat-flakefold{grid-template-areas:'media' 'name' 'title' 'copy' 'detail';border:1px solid var(--oedge);border-radius:6px;padding:22px 26px;background:linear-gradient(135deg,color-mix(in srgb,var(--o1) 20%,var(--opaper)) 50%,transparent 50%) top left/28px 28px no-repeat,var(--opaper)}
+.bh-oats-millhouse.oat-flakefold .oat-media{justify-content:center;gap:9px;margin-bottom:1px}
+.bh-oats-millhouse.oat-flakefold .oat-media img{flex:0 1 80px;width:80px;height:57px;border-radius:55% 20% 55% 20%;padding:3px;border:1px solid var(--o1)}
+.bh-oats-millhouse.oat-flakefold .oat-media img:nth-child(even){border-radius:20% 55% 20% 55%;border-color:var(--o3)}
+.bh-oats-millhouse.oat-flakefold .oat-name{justify-self:center}
+.bh-oats-millhouse.oat-flakefold .oat-title{text-align:center;font-size:23px}
+.bh-oats-millhouse.oat-flakefold .oat-detail{height:4px;width:45%;justify-self:center;background:var(--og);border-radius:8px}
+.bh-oats-millhouse.oat-aftergrain{border-top:5px dotted var(--o2);border-left:1px solid var(--oedge);border-right:1px solid var(--oedge);padding:20px 23px 0;grid-template-areas:'title' 'media' 'copy' 'name' 'detail';gap:14px}
+.bh-oats-millhouse.oat-aftergrain .oat-title{font-style:italic;font-size:27px}
+.bh-oats-millhouse.oat-aftergrain .oat-name{justify-self:end;background:color-mix(in srgb,var(--o3) 14%,var(--opaper));padding:7px 15px;border-left:2px solid var(--o1)}
+.bh-oats-millhouse.oat-aftergrain .oat-detail{height:1px;background:var(--og)}
+.bh-oats-millhouse.oat-aftergrain:not(:has(.oat-media img[src]:not([src=""]))){grid-template-areas:'title' 'copy' 'name' 'detail'}
+@media(max-width:480px){.bh-oats-millhouse.oat-thread{padding:26px 23px;gap:18px}.bh-oats-millhouse.oat-thread .oat-title{font-size:32px}.bh-oats-millhouse.oat-millstone-letters{column-gap:17px}.bh-oats-millhouse.oat-millstone-letters .oat-title{font-size:28px}.bh-oats-millhouse.oat-millstone-letters .oat-media{padding:10px}.bh-oats-millhouse.oat-kilnlight-folio .oat-title{font-size:36px}.bh-oats-millhouse.oat-oatmilk-almanac{padding-top:60px;gap:15px}.bh-oats-millhouse.oat-oatmilk-almanac .oat-title{font-size:27px}.bh-oats-millhouse.oat-oatmilk-almanac .oat-media img{height:132px}.bh-oats-millhouse.oat-oatmilk-almanac .oat-copy{padding:18px 14px}.bh-oats-millhouse.oat-rolled-reverie .oat-media{padding-inline:0;gap:12px}.bh-oats-millhouse.oat-rolled-reverie .oat-media img{height:111px}.bh-oats-millhouse.oat-harvest-table{padding:22px;border-width:8px}.bh-oats-millhouse.oat-harvest-table .oat-media{gap:15px}.bh-oats-millhouse.oat-harvest-table .oat-media img{flex-basis:86px;width:86px;height:86px}.bh-oats-millhouse.oat-porridge-pocket{padding:20px 18px}.bh-oats-millhouse.oat-bud{padding-inline:22px}}
+@media(forced-colors:active){.bh-oats-millhouse .oat-copy :is(b,strong,i,em,u){background:none;-webkit-text-fill-color:currentColor}.bh-oats-millhouse{border:1px solid CanvasText}.bh-oats-millhouse .oat-media img{border:1px solid CanvasText}}

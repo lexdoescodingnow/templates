@@ -1,4 +1,4 @@
-const ESPRESSO_CSS = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-v1.css';
+const ESPRESSO_CSS = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css';
 const ESPRESSO_GIFS = [
   'https://64.media.tumblr.com/eef9387aa15a193f58a6d4c3c9b2e3b4/4d0f68c67008821a-b7/s540x810/05a3fa51d18add7e86bfd22ecc170c3d26dd514b.gifv',
   'https://64.media.tumblr.com/32f19ce5b6bd5578e8d1197e81d46152/487924940000d932-8e/s540x810/3a37ef8214bdbb89067a27e4b0c6793c487c21f2.gifv'

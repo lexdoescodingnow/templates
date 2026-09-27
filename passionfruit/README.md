@@ -1,5 +1,14 @@
 # Passionfruit
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [passionfruit-collection-standalone-v1.css](passionfruit-collection-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates inspired by the Passionfruit poster: passionflower coronas, glossy seed shapes, botanical cross-sections and sweeping romantic lettering. Member colours drive the headers, frames, borders and emphasis, with neutral writing surfaces.
 
 [Standalone preview and editor](passionfruit-collection-preview.html)
@@ -54,7 +63,7 @@ The editor retains separate changes for each design while the page remains open.
 
 ## Forum integration
 
-Every snippet contains one link to [passionfruit-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@a0c45fbc2a048a28c6d23745eeb930628af98c7f/passionfruit/passionfruit-collection-v1.css), pinned to the published stylesheet commit `a0c45fb`. The forum must allow external stylesheet links inside `[dohtml]`. No JavaScript or external HTML injector runs in forum posts.
+Every snippet contains one link to [passionfruit-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/passionfruit/passionfruit-collection-standalone-v1.css), pinned to the published stylesheet commit `a0c45fb`. The forum must allow external stylesheet links inside `[dohtml]`. No JavaScript or external HTML injector runs in forum posts.
 
 The inherited RGB triples `--mgrgb1`, `--mgrgb2` and `--mgrgb3` drive the colours. Fallbacks apply only when those variables are absent. Light mode deepens member hues for emphasis; dark mode lightens them. Blue Hour's explicit `html[color-mode="light"]` and `html[color-mode="dark"]` settings override the system-preference fallback. Template styles are scoped to `.pfr` and its prefixed design classes.
 

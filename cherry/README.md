@@ -1,5 +1,14 @@
 # Cherry · Jaehwa & Ubin
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [cherry-orchard-standalone-v1.css](cherry-orchard-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen original JCink designs: five threads, five electronic-device comms and five miniature buds. Member colours run through titles, frames, borders and selected surfaces. Neutral reading areas and small cherry details tie the set together.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/cherry/cherry-collection-preview.html)

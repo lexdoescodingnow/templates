@@ -1,5 +1,14 @@
 # Cream · Haoyu & Malachi
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [cream-patisserie-standalone-v1.css](cream-patisserie-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen coordinated JCink templates: five threads, five electronic-device comms and five miniature buds. Cream appears through soft curves, layered borders, neutral surfaces and serif typography. Member colours carry the headers, frames and text accents.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/cream/cream-collection-preview.html)

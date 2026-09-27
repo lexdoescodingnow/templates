@@ -1,5 +1,14 @@
 # Sultana
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [sultana-collection-standalone-v1.css](sultana-collection-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates inspired by the supplied Sultana poster: engraved vinework, dried grape clusters, fluted velvet, fine frames and expressive serif lettering. Member colours shape the headers, frames, borders and emphasis; ordinary writing sits on neutral light or dark surfaces. All illustrations are original inline SVG linework.
 
 [Standalone preview and editor](sultana-collection-preview.html) · [Complete collection ZIP](sultana-collection.zip)
@@ -52,7 +61,7 @@ The editor keeps separate changes for each design while the page remains open. D
 
 ## Forum integration
 
-Each snippet includes one link to [sultana-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@1dffec02044997bcef2ba6f8ec4d5a10fa5c0005/sultana/sultana-collection-v1.css), served through jsDelivr from the published commit `1dffec0`. The forum must allow an external stylesheet inside `[dohtml]`. No JavaScript or external HTML loader runs in forum posts.
+Each snippet includes one link to [sultana-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sultana/sultana-collection-standalone-v1.css), served through jsDelivr from the published commit `1dffec0`. The forum must allow an external stylesheet inside `[dohtml]`. No JavaScript or external HTML loader runs in forum posts.
 
 Inherited RGB triples `--mgrgb1`, `--mgrgb2` and `--mgrgb3` drive the collection. Fallbacks apply only when those variables are missing. Dark mode lightens the member hues for legible emphasis. Blue Hour's explicit `html[color-mode="light"]` and `html[color-mode="dark"]` modes take precedence over the system preference fallback. Every template selector is scoped to `.sul`.
 

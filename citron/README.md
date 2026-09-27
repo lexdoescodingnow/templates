@@ -1,5 +1,14 @@
 # Citron · The art of something bright
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [citron-atelier-standalone-v1.css](citron-atelier-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen JCink templates for **Ben & Vince**: five threads, five phone-style comms and five miniature buds. Botanical specimen plates, wrinkled citron rind and perfume labels provide the details; member colours carry the design over neutral writing surfaces.
 
 [Preview and editor](citron-collection-preview.html)

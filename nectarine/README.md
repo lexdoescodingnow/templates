@@ -1,5 +1,14 @@
 # Nectarine · Akara & Clarity
 
+## Current stylesheet delivery
+
+This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+
+- [nectarine-sunskin-standalone-v1.css](nectarine-sunskin-standalone-v1.css)
+
+After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+
+
 Fifteen coordinated JCink templates: five threads, five phone/device comms and five miniature buds. Fruit seams, curved cheeks, freestone outlines, produce seals and flowing nectar details appear in the member palette, with neutral reading surfaces.
 
 [Download the preview and editor](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/nectarine/nectarine-collection-preview.html)
