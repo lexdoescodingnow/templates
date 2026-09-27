@@ -34,7 +34,7 @@ function portugueseRender() {
   $('#pv-stage').innerHTML=portugueseMarkup(d,portugueseDisplayState(d,s));
   $('#pv-code').value=portugueseSnippet(d,s);
   $('#pv-design-title').textContent=d.name;
-  $('#pv-design-description').textContent=d.description;
+
   const wordText=document.createElement('div');wordText.innerHTML=s.body;
   const count=(wordText.textContent.trim().match(/\S+/g)||[]).length;
   $('#pv-word-count').textContent=`${count} words${d.type==='bud'?' · 100 suggested':''}`;
@@ -61,7 +61,7 @@ function portugueseBuildGallery() {
   const gallery=$('#pv-gallery');gallery.replaceChildren();
   portugueseDesigns.forEach((d,i)=>{
     const tile=document.createElement('section');tile.className='pv-tile';
-    tile.innerHTML=`<div class="pv-tile-head"><h2>${portugueseEscape(d.name)}<small>${d.type==='bud'?'Buds':d.type} ${d.number} · Portuguese cuisine</small></h2><button data-open="${i}">Edit & copy</button></div><div class="pv-tile-stage">${portugueseMarkup(d,portugueseDisplayState(d,portugueseStates[i]))}</div>`;
+    tile.innerHTML=`<div class="pv-tile-head"><h2>${portugueseEscape(d.name)}<small>${d.type==='bud'?'Buds':d.type} ${d.number} · Fig</small></h2><button data-open="${i}">Edit & copy</button></div><div class="pv-tile-stage">${portugueseMarkup(d,portugueseDisplayState(d,portugueseStates[i]))}</div>`;
     gallery.append(tile);
   });
 }
@@ -105,5 +105,5 @@ $('#pv-copy').onclick=async()=>{
 };
 $('#pv-download').onclick=()=>{const url=URL.createObjectURL(new Blob([$('#pv-code').value],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=portugueseFilename(portugueseDesigns[portugueseIndex]);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('#pv-status').textContent='Your edited snippet is ready to save.';};
 $('#pv-reset').onclick=()=>{portugueseStates[portugueseIndex]=portugueseDefaults(portugueseDesigns[portugueseIndex]);portugueseSelect(portugueseIndex);};
-document.addEventListener('click',event=>{const a=event.target.closest('.bh-portuguese a');if(a&&a.getAttribute('href')==='#')event.preventDefault();});
+document.addEventListener('click',event=>{const a=event.target.closest('.fig-v1 a');if(a&&a.getAttribute('href')==='#')event.preventDefault();});
 portugueseSelect(0);

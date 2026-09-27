@@ -1,5 +1,7 @@
 # Template project defaults
 
+- Fig is Seojun & Wenjun. `collection-aliases.json` maps the stable `portuguese-cuisine/` snippet sources to Fig. Keep source filenames and old Portuguese Cuisine CSS endpoints available; current templates use the `fig-v1` root, `fg1` portrait frames/decorations and `fig/fig-orchard-standalone-v1.css`. Rebuild with `node portuguese-cuisine/build.cjs`; both editable preview addresses must show Fig.
+
 - Milk is Freddie & Ollie. `collection-aliases.json` maps the stable `italian-cuisine/` snippet sources to Milk in the catalogue. Keep their established filenames and legacy CSS endpoints available; current templates use the `milk-v2` wrapper and `milk/milk-bottlelight-standalone-v3.css`. Portraits use `mk3-portrait` frames and new `mk3` motifs; keep direct-image and `mk2` markup compatible for existing posts. All Milk standalone endpoints compile from `milk/milk-bottlelight-v2.css`. Rebuild the editor via `node italian-cuisine/build.cjs`; both preview addresses must show Milk.
 
 These are the user's defaults for new templates and requested revisions in this project.

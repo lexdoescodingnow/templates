@@ -29,6 +29,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Espresso | 15 | [espresso-forum-masterpost.txt](espresso-forum-masterpost.txt) | [Preview](espresso-preview.html) | 1 |
 | FaceTime | 1 | [facetime-forum-masterpost.txt](facetime-forum-masterpost.txt) | [Preview](facetime-preview.html) | 1 |
 | Fiery | 15 | [fiery-forum-masterpost.txt](fiery-forum-masterpost.txt) | [Preview](fiery-preview.html) | 1 |
+| Fig | 15 | [fig-forum-masterpost.txt](fig-forum-masterpost.txt) | [Preview](fig-preview.html) | 1 |
 | Fudge | 15 | [fudge-forum-masterpost.txt](fudge-forum-masterpost.txt) | [Preview](fudge-preview.html) | 1 |
 | Gateau | 15 | [gateau-forum-masterpost.txt](gateau-forum-masterpost.txt) | [Preview](gateau-preview.html) | 1 |
 | Gin | 15 | [gin-forum-masterpost.txt](gin-forum-masterpost.txt) | [Preview](gin-preview.html) | 1 |
@@ -51,7 +52,6 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Petal | 2 | [petal-forum-masterpost.txt](petal-forum-masterpost.txt) | [Preview](petal-preview.html) | 1 |
 | Plum | 15 | [plum-forum-masterpost.txt](plum-forum-masterpost.txt) | [Preview](plum-preview.html) | 1 |
 | Popcorn | 15 | [popcorn-forum-masterpost.txt](popcorn-forum-masterpost.txt) | [Preview](popcorn-preview.html) | 1 |
-| Portuguese Cuisine | 15 | [portuguese-cuisine-forum-masterpost.txt](portuguese-cuisine-forum-masterpost.txt) | [Preview](portuguese-cuisine-preview.html) | 1 |
 | Praline | 15 | [praline-forum-masterpost.txt](praline-forum-masterpost.txt) | [Preview](praline-preview.html) | 1 |
 | Pumpkin | 15 | [pumpkin-forum-masterpost.txt](pumpkin-forum-masterpost.txt) | [Preview](pumpkin-preview.html) | 1 |
 | Raspberry | 15 | [raspberry-forum-masterpost.txt](raspberry-forum-masterpost.txt) | [Preview](raspberry-preview.html) | 1 |
