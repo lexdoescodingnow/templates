@@ -888,7 +888,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A measured top edge, tall side portrait, and full-width writing below.",
-    "collection_index": 1
+    "collection_index": 1,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -902,7 +903,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "Sculpted, staggered portrait panels over a generous editorial reply.",
-    "collection_index": 2
+    "collection_index": 2,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -916,49 +918,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "An open writing page with a cut-leaf silhouette and a generous drop cap.",
-    "collection_index": 3
-  },
-  {
-    "folder": "bread",
-    "name": "Hearthbound",
-    "type": "thread",
-    "source": "bread/bread-hearthbound-thread-03.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-thread brd-hearthbound",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "Twin bakery windows with a soft, arched silhouette.",
-    "collection_index": 4
-  },
-  {
-    "folder": "bread",
-    "name": "Levain Letters",
-    "type": "thread",
-    "source": "bread/bread-levain-letters-thread-02.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-thread brd-levain-letters",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "A handwritten recipe page with one pinned photograph.",
-    "collection_index": 5
-  },
-  {
-    "folder": "bread",
-    "name": "Pain de Papier",
-    "type": "thread",
-    "source": "bread/bread-pain-de-papier-thread-01.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-thread brd-pain-de-papier",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "Folded paper-bag seams and a pair of framed keepsakes.",
-    "collection_index": 6
+    "collection_index": 3,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -972,7 +933,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "An interwoven spine and overlapping round portraits, made for two.",
-    "collection_index": 7
+    "collection_index": 4,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -986,114 +948,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A ridged loaf-tin frame, cooling-rack edge, and panoramic closing portrait.",
-    "collection_index": 8
-  },
-  {
-    "folder": "bread",
-    "name": "Sunday Crust",
-    "type": "thread",
-    "source": "bread/bread-sunday-crust-thread-05.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-thread brd-sunday-crust",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "A linen edge and one portrait tucked beside the title.",
-    "collection_index": 9
-  },
-  {
-    "folder": "bread",
-    "name": "The Proofing Room",
-    "type": "thread",
-    "source": "bread/bread-the-proofing-room-thread-04.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-thread brd-the-proofing-room",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "A writing-led recipe page with a banneton seal and generous space for the reply.",
-    "collection_index": 10
-  },
-  {
-    "folder": "bread",
-    "name": "Standard",
-    "type": "thread",
-    "source": "bread/bread-thread-snippet.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-bread bh-bread-card",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 11
-  },
-  {
-    "folder": "bread",
-    "name": "Single Gif",
-    "type": "thread",
-    "source": "bread/bread-thread-snippet.txt",
-    "block": 2,
-    "aliases": [],
-    "classes": "bh-bread bh-bread-card bh-bread-card--single",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 12
-  },
-  {
-    "folder": "bread",
-    "name": "Rounded",
-    "type": "thread",
-    "source": "bread/bread-thread-snippet.txt",
-    "block": 3,
-    "aliases": [],
-    "classes": "bh-bread bh-bread-card bh-bread-card--rounded",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 13
-  },
-  {
-    "folder": "bread",
-    "name": "Scroll",
-    "type": "thread",
-    "source": "bread/bread-thread-snippet.txt",
-    "block": 4,
-    "aliases": [],
-    "classes": "bh-bread bh-bread-card bh-bread-card--scroll",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 14
-  },
-  {
-    "folder": "bread",
-    "name": "Split",
-    "type": "thread",
-    "source": "bread/bread-thread-snippet.txt",
-    "block": 5,
-    "aliases": [],
-    "classes": "bh-bread bh-bread-card bh-bread-card--split",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 15
-  },
-  {
-    "folder": "bread",
-    "name": "Batch Chat",
-    "type": "comms",
-    "source": "bread/bread-batch-chat-comms-03.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-comms brd-batch-chat",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "A small desktop messenger with recipe-card portraits.",
-    "collection_index": 16
+    "collection_index": 5,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1107,61 +963,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A small tablet messenger with two profile tiles in its contact rail.",
-    "collection_index": 17
-  },
-  {
-    "folder": "bread",
-    "name": "Butterwire",
-    "type": "comms",
-    "source": "bread/bread-butterwire-comms-04.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-comms brd-butterwire",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "One character contact portrait, with the original device frame and message bubbles.",
-    "collection_index": 18
-  },
-  {
-    "folder": "bread",
-    "name": "Sent",
-    "type": "comms",
-    "source": "bread/bread-comms-snippet.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-bread-comms bh-bread-comms-card",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 19
-  },
-  {
-    "folder": "bread",
-    "name": "Received",
-    "type": "comms",
-    "source": "bread/bread-comms-snippet.txt",
-    "block": 2,
-    "aliases": [],
-    "classes": "bh-bread-comms bh-bread-comms-card",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 20
-  },
-  {
-    "folder": "bread",
-    "name": "Crumbline",
-    "type": "comms",
-    "source": "bread/bread-crumbline-comms-01.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-comms brd-crumbline",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "One character contact portrait, with the original device frame and message bubbles.",
-    "collection_index": 21
+    "collection_index": 6,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1175,21 +978,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A soft modern phone with a contact portrait, a camera island, and grouped bubbles.",
-    "collection_index": 22
-  },
-  {
-    "folder": "bread",
-    "name": "Daily Knead",
-    "type": "comms",
-    "source": "bread/bread-daily-knead-comms-05.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-comms brd-daily-knead",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "One character contact portrait, with the original device frame and message bubbles.",
-    "collection_index": 23
+    "collection_index": 7,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1203,7 +993,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A compact candybar handset with a separate screen and a physical number pad.",
-    "collection_index": 24
+    "collection_index": 8,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1217,21 +1008,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A folding phone with a large cover portrait and a visible hinge.",
-    "collection_index": 25
-  },
-  {
-    "folder": "bread",
-    "name": "Toast Talk",
-    "type": "comms",
-    "source": "bread/bread-toast-talk-comms-02.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-comms brd-toast-talk",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "One character contact portrait, with the original device frame and message bubbles.",
-    "collection_index": 26
+    "collection_index": 9,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1245,72 +1023,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A slim lock-screen phone with stacked notification cards and a large editable clock.",
-    "collection_index": 27
-  },
-  {
-    "folder": "bread",
-    "name": "Standard",
-    "type": "bud",
-    "source": "bread/bread-buds-snippets.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-bread-bud bh-bread-bud-card",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 28
-  },
-  {
-    "folder": "bread",
-    "name": "Portrait",
-    "type": "bud",
-    "source": "bread/bread-buds-snippets.txt",
-    "block": 2,
-    "aliases": [],
-    "classes": "bh-bread-bud bh-bread-bud-card bh-bread-bud-card--portrait",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 29
-  },
-  {
-    "folder": "bread",
-    "name": "Duo",
-    "type": "bud",
-    "source": "bread/bread-buds-snippets.txt",
-    "block": 3,
-    "aliases": [],
-    "classes": "bh-bread-bud bh-bread-bud-card bh-bread-bud-card--duo",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 30
-  },
-  {
-    "folder": "bread",
-    "name": "Minimal",
-    "type": "bud",
-    "source": "bread/bread-buds-snippets.txt",
-    "block": 4,
-    "aliases": [],
-    "classes": "bh-bread-bud bh-bread-bud-card bh-bread-bud-card--minimal",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 31
-  },
-  {
-    "folder": "bread",
-    "name": "Strip",
-    "type": "bud",
-    "source": "bread/bread-buds-snippets.txt",
-    "block": 5,
-    "aliases": [],
-    "classes": "bh-bread-bud bh-bread-bud-card bh-bread-bud-card--strip",
-    "css": [
-      "bread/bread-standalone-v1.css"
-    ],
-    "collection_index": 32
+    "collection_index": 10,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1324,21 +1038,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A tiny open-corner note with a single toasted square accent.",
-    "collection_index": 33
-  },
-  {
-    "folder": "bread",
-    "name": "Crustlet",
-    "type": "bud",
-    "source": "bread/bread-crustlet-bud-03.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-bud brd-crustlet",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "A folded bakery packet with small photograph stamps.",
-    "collection_index": 34
+    "collection_index": 11,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1352,7 +1053,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A rounded loaf-heel silhouette for a short, writing-led reply.",
-    "collection_index": 35
+    "collection_index": 12,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1366,7 +1068,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A narrow portrait tucked beside the reply and a broken crust edge.",
-    "collection_index": 36
+    "collection_index": 13,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1380,21 +1083,8 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A miniature woven sign-off with two overlapping portrait seals.",
-    "collection_index": 37
-  },
-  {
-    "folder": "bread",
-    "name": "Petit Pain",
-    "type": "bud",
-    "source": "bread/bread-petit-pain-bud-01.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "brd brd-bud brd-petit-pain",
-    "css": [
-      "bread/bread-media-standalone-v1.css"
-    ],
-    "description": "A miniature loaf label with a short, image-free reply.",
-    "collection_index": 38
+    "collection_index": 14,
+    "collection": "bread"
   },
   {
     "folder": "bread",
@@ -1408,7 +1098,356 @@
       "bread/bread-second-rise-v1.css"
     ],
     "description": "A pinched corner, small rounded portrait, and a compact reply.",
-    "collection_index": 39
+    "collection_index": 15,
+    "collection": "bread"
+  },
+  {
+    "folder": "bread",
+    "name": "Hearthbound",
+    "type": "thread",
+    "source": "bread/bread-hearthbound-thread-03.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-thread brd-hearthbound",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "Twin bakery windows with a soft, arched silhouette.",
+    "collection_index": 1,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Levain Letters",
+    "type": "thread",
+    "source": "bread/bread-levain-letters-thread-02.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-thread brd-levain-letters",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "A handwritten recipe page with one pinned photograph.",
+    "collection_index": 2,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Pain de Papier",
+    "type": "thread",
+    "source": "bread/bread-pain-de-papier-thread-01.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-thread brd-pain-de-papier",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "Folded paper-bag seams and a pair of framed keepsakes.",
+    "collection_index": 3,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Sunday Crust",
+    "type": "thread",
+    "source": "bread/bread-sunday-crust-thread-05.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-thread brd-sunday-crust",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "A linen edge and one portrait tucked beside the title.",
+    "collection_index": 4,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "The Proofing Room",
+    "type": "thread",
+    "source": "bread/bread-the-proofing-room-thread-04.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-thread brd-the-proofing-room",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "A writing-led recipe page with a banneton seal and generous space for the reply.",
+    "collection_index": 5,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Standard",
+    "type": "thread",
+    "source": "bread/bread-thread-snippet.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-bread bh-bread-card",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 6,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Single Gif",
+    "type": "thread",
+    "source": "bread/bread-thread-snippet.txt",
+    "block": 2,
+    "aliases": [],
+    "classes": "bh-bread bh-bread-card bh-bread-card--single",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 7,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Rounded",
+    "type": "thread",
+    "source": "bread/bread-thread-snippet.txt",
+    "block": 3,
+    "aliases": [],
+    "classes": "bh-bread bh-bread-card bh-bread-card--rounded",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 8,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Scroll",
+    "type": "thread",
+    "source": "bread/bread-thread-snippet.txt",
+    "block": 4,
+    "aliases": [],
+    "classes": "bh-bread bh-bread-card bh-bread-card--scroll",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 9,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Split",
+    "type": "thread",
+    "source": "bread/bread-thread-snippet.txt",
+    "block": 5,
+    "aliases": [],
+    "classes": "bh-bread bh-bread-card bh-bread-card--split",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 10,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Batch Chat",
+    "type": "comms",
+    "source": "bread/bread-batch-chat-comms-03.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-comms brd-batch-chat",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "A small desktop messenger with recipe-card portraits.",
+    "collection_index": 11,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Butterwire",
+    "type": "comms",
+    "source": "bread/bread-butterwire-comms-04.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-comms brd-butterwire",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "One character contact portrait, with the original device frame and message bubbles.",
+    "collection_index": 12,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Sent",
+    "type": "comms",
+    "source": "bread/bread-comms-snippet.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-bread-comms bh-bread-comms-card",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 13,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Received",
+    "type": "comms",
+    "source": "bread/bread-comms-snippet.txt",
+    "block": 2,
+    "aliases": [],
+    "classes": "bh-bread-comms bh-bread-comms-card",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 14,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Crumbline",
+    "type": "comms",
+    "source": "bread/bread-crumbline-comms-01.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-comms brd-crumbline",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "One character contact portrait, with the original device frame and message bubbles.",
+    "collection_index": 15,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Daily Knead",
+    "type": "comms",
+    "source": "bread/bread-daily-knead-comms-05.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-comms brd-daily-knead",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "One character contact portrait, with the original device frame and message bubbles.",
+    "collection_index": 16,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Toast Talk",
+    "type": "comms",
+    "source": "bread/bread-toast-talk-comms-02.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-comms brd-toast-talk",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "One character contact portrait, with the original device frame and message bubbles.",
+    "collection_index": 17,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Standard",
+    "type": "bud",
+    "source": "bread/bread-buds-snippets.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-bread-bud bh-bread-bud-card",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 18,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Portrait",
+    "type": "bud",
+    "source": "bread/bread-buds-snippets.txt",
+    "block": 2,
+    "aliases": [],
+    "classes": "bh-bread-bud bh-bread-bud-card bh-bread-bud-card--portrait",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 19,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Duo",
+    "type": "bud",
+    "source": "bread/bread-buds-snippets.txt",
+    "block": 3,
+    "aliases": [],
+    "classes": "bh-bread-bud bh-bread-bud-card bh-bread-bud-card--duo",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 20,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Minimal",
+    "type": "bud",
+    "source": "bread/bread-buds-snippets.txt",
+    "block": 4,
+    "aliases": [],
+    "classes": "bh-bread-bud bh-bread-bud-card bh-bread-bud-card--minimal",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 21,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Strip",
+    "type": "bud",
+    "source": "bread/bread-buds-snippets.txt",
+    "block": 5,
+    "aliases": [],
+    "classes": "bh-bread-bud bh-bread-bud-card bh-bread-bud-card--strip",
+    "css": [
+      "bread/bread-standalone-v1.css"
+    ],
+    "collection_index": 22,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Crustlet",
+    "type": "bud",
+    "source": "bread/bread-crustlet-bud-03.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-bud brd-crustlet",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "A folded bakery packet with small photograph stamps.",
+    "collection_index": 23,
+    "collection": "bread-legacy"
+  },
+  {
+    "folder": "bread",
+    "name": "Petit Pain",
+    "type": "bud",
+    "source": "bread/bread-petit-pain-bud-01.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "brd brd-bud brd-petit-pain",
+    "css": [
+      "bread/bread-media-standalone-v1.css"
+    ],
+    "description": "A miniature loaf label with a short, image-free reply.",
+    "collection_index": 24,
+    "collection": "bread-legacy"
   },
   {
     "folder": "bread",
@@ -1422,7 +1461,8 @@
       "bread/bread-media-standalone-v1.css"
     ],
     "description": "One small character portrait beside a compact reply and the original themed details.",
-    "collection_index": 40
+    "collection_index": 25,
+    "collection": "bread-legacy"
   },
   {
     "folder": "bread",
@@ -1436,7 +1476,8 @@
       "bread/bread-media-standalone-v1.css"
     ],
     "description": "A handwritten note with a full-width reply and fine bakery details.",
-    "collection_index": 41
+    "collection_index": 26,
+    "collection": "bread-legacy"
   },
   {
     "folder": "bread",
@@ -1450,7 +1491,8 @@
       "bread/bread-media-standalone-v1.css"
     ],
     "description": "One small character portrait beside a compact reply and the original themed details.",
-    "collection_index": 42
+    "collection_index": 27,
+    "collection": "bread-legacy"
   },
   {
     "folder": "brown-sugar",

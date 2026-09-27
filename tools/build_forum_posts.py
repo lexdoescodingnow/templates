@@ -8,7 +8,9 @@ refresh_standalone()
 OUT=ROOT/'forum-posts';OUT.mkdir(exist_ok=True)
 rows=inventory();groups=collections.defaultdict(list)
 for r in rows:
- collection='bingsu-legacy' if r['folder']=='bingsu' and 'bgs' not in r['classes'].split() else r['folder']
+ collection=r['folder']
+ if collection=='bingsu' and 'bgs' not in r['classes'].split():collection='bingsu-legacy'
+ if collection=='bread' and 'brr' not in r['classes'].split():collection='bread-legacy'
  groups[collection].append(r)
 TYPE={'thread':'Threads','comms':'Comms','bud':'Buds','social':'Social templates','event':'Event templates'}
 intro='Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.\n\nUse HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.\n\nClick-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.'
@@ -23,7 +25,7 @@ def strip_forum(code):return re.sub(r'\[/?dohtml\]','',code,flags=re.I)
 manifest=[];all_posts=[];tiles=[];md=['# Forum-ready template collection','',f'{len(rows)} distinct templates across {len(groups)} collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.','', 'Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.','', 'CSS and images are hosted online; no stylesheet installation in the forum admin panel is required. Forum click-to-copy depends on the skin. The browser previews include Copy buttons and a manual-selection fallback.','', '| Collection | Designs | Forum post | Preview | Numbered parts |','| --- | ---: | --- | --- | ---: |']
 for folder,items in sorted(groups.items()):
  items.sort(key=lambda r:(list(TYPE).index(r['type']),r['source'],r['block']))
- name={'bingsu':'Bingsu · Thaw','bingsu-legacy':'Bingsu · Legacy'}.get(folder,title(folder))
+ name={'bingsu':'Bingsu · Thaw','bingsu-legacy':'Bingsu · Legacy','bread':'Bread · Second Rise','bread-legacy':'Bread · Legacy'}.get(folder,title(folder))
  urls=[u for r in items for u in re.findall(r'<img[^>]*src="(https?[^\"]+)"',r['code'])]
  sample=urls[0] if urls else 'https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv'
  heading=f'[h1]{name.upper()}[/h1]\n\n'+intro+'\n\n'
@@ -39,7 +41,7 @@ for folder,items in sorted(groups.items()):
   bare=strip_forum(preview);bare=re.sub(r'<link\b[^>]*>|<style\b[^>]*>.*?</style>|<script\b[^>]*>.*?</script>','',bare,flags=re.S|re.I)
   srcdoc='<!doctype html><html color-mode="light"><head><meta charset="utf-8"><style>'+css+'</style><style>body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode="dark"] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}</style></head><body>'+bare+'</body></html>'
   cards.append(f'<section class="card" id="design-{i}"><div class="kicker">{html.escape(r["type"])} · {i:02d}</div><h2>{html.escape(label)}</h2><p>{html.escape(desc)}</p><iframe loading="lazy" title="{html.escape(label)} preview" srcdoc="{html.escape(srcdoc,quote=True)}"></iframe><div class="codebar"><button data-copy="code-{i}">Copy template code</button><span role="status"></span></div><textarea id="code-{i}" readonly spellcheck="false" aria-label="{html.escape(label)} posting code">{html.escape(code)}</textarea></section>')
-  manifest.append({k:v for k,v in r.items() if k not in ('code',)}|{'collection_index':i,**({'collection':folder} if r['folder']=='bingsu' else {})})
+  manifest.append({k:v for k,v in r.items() if k not in ('code',)}|{'collection_index':i,**({'collection':folder} if r['folder'] in ('bingsu','bread') else {})})
  post=heading+'\n'.join(blocks);postfile=folder+'-forum-masterpost.txt';(OUT/postfile).write_text(post)
  # Keep complete template sections together. Never split a code box across posts.
  parts=[];current=heading
@@ -60,7 +62,7 @@ index=f'<p class="kicker">LEX’S TEMPLATE COLLECTION · FORUM EDITION</p><h1>Ev
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 (OUT/'all-templates-forum-masterpost.txt').write_text('\n\n'.join(all_posts))
 for folder in groups:
- readme=ROOT/'bingsu'/'LEGACY.md' if folder=='bingsu-legacy' else ROOT/folder/'README.md'
+ readme=ROOT/folder.removesuffix('-legacy')/'LEGACY.md' if folder in ('bingsu-legacy','bread-legacy') else ROOT/folder/'README.md'
  original=readme.read_text() if readme.exists() else '# '+title(folder)+' templates\n'
  original=re.sub(r'\n## Forum-ready collection\n.*?(?=\n## |\Z)','',original,flags=re.S)
  original+='\n## Forum-ready collection\n\n[Preview-above-code forum masterpost](../forum-posts/'+folder+'-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/'+folder+'-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).\n'

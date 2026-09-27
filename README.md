@@ -4,7 +4,7 @@
 
 860 supported designs across 54 themed collections. Every design in the forum masterposts appears as a rendered preview above its complete copyable code. Larger collections also have numbered post parts.
 
-Bingsu is listed as two separate sets: [Thaw — 15 current designs](bingsu/README.md) and [Legacy — 11 earlier designs](bingsu/LEGACY.md). This makes 55 entries in the forum collection index.
+Bingsu is listed as two separate sets: [Thaw — 15 current designs](bingsu/README.md) and [Legacy — 11 earlier designs](bingsu/LEGACY.md). Bread is also separated into [Second Rise — 15 current designs](bread/README.md) and [Legacy — 27 earlier designs](bread/LEGACY.md). Together these make 56 entries in the forum collection index.
 
 Download and extract the pack, then open `forum-posts/index.html` to browse the collections and copy individual templates or complete forum posts. Paste the `.txt` masterposts or numbered parts into the forum editor; the `.html` files are browser previews.
 

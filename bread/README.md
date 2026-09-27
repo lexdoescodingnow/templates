@@ -1,9 +1,14 @@
 # Bread · Second Rise
 
+The 15 newer Bread designs for Jinseok & Lucas: five threads, five comms and five buds.
+
+[Current forum masterpost](../forum-posts/bread-forum-masterpost.txt) · [Browser preview with Copy buttons](../forum-posts/bread-preview.html) · [Download Second Rise package](bread-second-rise-repository.zip) · [27 earlier designs](LEGACY.md)
+
 ## Current stylesheet delivery
 
-This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
+All Bread generations use direct hosted stylesheets. The earlier collections now follow the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
 
+- [bread-second-rise-v1.css](bread-second-rise-v1.css) — Second Rise
 - [bread-media-standalone-v1.css](bread-media-standalone-v1.css)
 - [bread-standalone-v1.css](bread-standalone-v1.css)
 
@@ -48,7 +53,7 @@ Download the HTML preview and open it in your browser. GitHub displays HTML sour
 
 ## Editing
 
-Copy a named `.txt` block into a JCink post. Keep its `[dohtml]` tags and the single stylesheet link. The `[url]`, `[name]` and `[text]` fields, GIF URLs and writing come before the decorative markup and linked CSS. All notes live in this guide and the preview interface; the templates contain no comments or hidden instructions.
+Copy a named `.txt` block into a JCink post. Keep its `[dohtml]` tags and the single stylesheet link. Editable names, links, titles, GIF URLs and writing come before the decorative markup and linked CSS. The forum masterpost and separate package use concise writing markers in the copyable code. All notes live in this guide and the preview interface; the templates contain no comments or hidden instructions.
 
 Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` also work. The preview editor accepts `[b]`, `[i]` and `[u]` and converts them before copying. Literal BBCode pasted directly into an HTML block depends on the forum parser. Bold and underline use group colours 1 → 2 → 3; italics reverse them. The inherited `--mgrgb1`, `--mgrgb2`, `--mgrgb3` variables must contain comma-separated RGB values.
 
@@ -62,11 +67,13 @@ The downloadable preview includes its CSS and editor, so its layout works when o
 
 ## Earlier Bread collection
 
+The [Legacy collection](LEGACY.md) contains all 27 earlier designs, including the original named set and the earliest supported layouts. Its masterpost, preview and download are separate from Second Rise.
+
 [Original 15 designs and guide](bread-original-collection.md) · [Original preview](bread-collection-preview.html)
 
 ## Source
 
-`bread-second-rise-v1.css` contains the scoped posting styles. `second-rise-build.cjs` generates all 15 snippets, the standalone preview, this guide and the forum showcase. `second-rise-preview.css` and `second-rise-preview.js` are preview-only sources. Rebuild with `node bread/second-rise-build.cjs`.
+`bread-second-rise-v1.css` contains the scoped posting styles. `second-rise-build.cjs` generates all 15 snippets, the standalone preview, this guide and the forum showcase. `second-rise-preview.css` and `second-rise-preview.js` are preview-only sources. Rebuild with `node bread/second-rise-build.cjs`, then `python tools/build_forum_posts.py` and `python tools/build_bread_repositories.py` to refresh the separate forum collections and packages.
 
 ## Forum-ready collection
 
