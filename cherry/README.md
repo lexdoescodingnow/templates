@@ -80,3 +80,7 @@ Run `node cherry/build.cjs` from the repository root to regenerate the fifteen p
 ## Forum-ready collection
 
 [Preview-above-code forum masterpost](../forum-posts/cherry-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/cherry-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).
+
+## Kirsch Key keypad correction
+
+Kirsch Key now uses separate control classes so older Cherry stylesheets cannot force the new keypad into the old fixed-height area. For an existing post with keys spilling below the phone, append the complete [repair block](cherry-kirsch-key-forum-repair.txt) once at the end of that post. It also corrects the previous numbered-keypad markup. Current snippets and the [forum masterpost](../forum-posts/cherry-forum-masterpost.txt) already load the corrected standalone stylesheet.

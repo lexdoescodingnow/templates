@@ -3,7 +3,7 @@ const path=require('path');
 const root=__dirname;
 const designs=JSON.parse(fs.readFileSync(path.join(root,'designs.json'),'utf8'));
 const model=require('./cherry-model.js');
-fs.writeFileSync(path.join(root,'cherry-kirsch-key-v2.css'),fs.readFileSync(path.join(root,'cherry-orchard-v1.css'),'utf8'));
+for(const file of ['cherry-kirsch-key-v2.css','cherry-kirsch-key-v3.css']) fs.writeFileSync(path.join(root,file),fs.readFileSync(path.join(root,'cherry-orchard-v1.css'),'utf8'));
 for(const d of designs)fs.writeFileSync(path.join(root,model.cherryFilename(d)),model.cherrySnippet(d,model.cherryDefaults(d)));
 const groups=[['thread','Threads'],['comms','Comms'],['bud','Buds']];
 const nav=groups.map(([type,name])=>`<div class="nav-group"><h2>${name}</h2>${designs.filter(d=>d.type===type).map(d=>`<button type="button" data-design="${d.slug}" aria-pressed="false"><small>${d.number}</small><span>${d.name}</span></button>`).join('')}</div>`).join('');

@@ -12,7 +12,7 @@ function cherryFilename(d) { return `cherry-${d.slug}-${d.type}-${d.number}.txt`
 function cherryHardware(d) {
   if(d.slug!=='kirsch-key') return '<div class="chr-hardware" aria-hidden="true"></div>';
   const keys=[['1',''],['2','ABC'],['3','DEF'],['4','GHI'],['5','JKL'],['6','MNO'],['7','PQRS'],['8','TUV'],['9','WXYZ'],['*',''],['0','+'],['#','']];
-  return '<div class="chr-hardware" aria-hidden="true">\n<div class="chr-navigation"><span class="chr-softkey">−</span><span class="chr-select"></span><span class="chr-softkey">↩</span></div>\n<div class="chr-keypad">'+keys.map(([digit,letters])=>'<span class="chr-key">'+digit+'<small>'+letters+'</small></span>').join('')+'</div>\n</div>';
+  return '<div class="chr-k3-hardware" aria-hidden="true">\n<div class="chr-k3-navigation"><span class="chr-k3-softkey">−</span><span class="chr-k3-select"></span><span class="chr-k3-softkey">↩</span></div>\n<div class="chr-k3-keypad">'+keys.map(([digit,letters])=>'<span class="chr-k3-key">'+digit+'<small>'+letters+'</small></span>').join('')+'</div>\n</div>';
 }
 function cherryMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';
@@ -23,5 +23,5 @@ function cherryMarkup(d,s) {
   lines.push('<div class="chr-copy">',s.body,'</div>',d.type==='comms'?cherryHardware(d):'<div class="chr-mark" aria-hidden="true"></div>','</div>');
   return lines.join('\n');
 }
-function cherrySnippet(d,s) { const css=d.slug==='kirsch-key'?'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cherry/cherry-kirsch-key-v2.css':CHERRY_CSS_URL;return '[dohtml]\n'+cherryMarkup(d,s)+'\n\n<link rel="stylesheet" href="'+css+'">\n[/dohtml]\n'; }
+function cherrySnippet(d,s) { const css=d.slug==='kirsch-key'?'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cherry/cherry-kirsch-key-v3.css':CHERRY_CSS_URL;return '[dohtml]\n'+cherryMarkup(d,s)+'\n\n<link rel="stylesheet" href="'+css+'">\n[/dohtml]\n'; }
 if(typeof module!=='undefined') module.exports={CHERRY_GIFS,CHERRY_CSS_URL,cherryDefaults,cherryFilename,cherryMarkup,cherrySnippet};
