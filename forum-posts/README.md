@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-860 distinct templates across 59 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+860 distinct templates across 60 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -55,7 +55,8 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Praline | 15 | [praline-forum-masterpost.txt](praline-forum-masterpost.txt) | [Preview](praline-preview.html) | 1 |
 | Pumpkin | 15 | [pumpkin-forum-masterpost.txt](pumpkin-forum-masterpost.txt) | [Preview](pumpkin-preview.html) | 1 |
 | Raspberry | 15 | [raspberry-forum-masterpost.txt](raspberry-forum-masterpost.txt) | [Preview](raspberry-preview.html) | 1 |
-| Sake | 26 | [sake-forum-masterpost.txt](sake-forum-masterpost.txt) | [Preview](sake-preview.html) | 2 |
+| Sake · Brew | 15 | [sake-forum-masterpost.txt](sake-forum-masterpost.txt) | [Preview](sake-preview.html) | 1 |
+| Sake · Legacy | 11 | [sake-legacy-forum-masterpost.txt](sake-legacy-forum-masterpost.txt) | [Preview](sake-legacy-preview.html) | 1 |
 | Sesame | 15 | [sesame-forum-masterpost.txt](sesame-forum-masterpost.txt) | [Preview](sesame-preview.html) | 1 |
 | Sour | 15 | [sour-forum-masterpost.txt](sour-forum-masterpost.txt) | [Preview](sour-preview.html) | 1 |
 | Spiced | 15 | [spiced-forum-masterpost.txt](spiced-forum-masterpost.txt) | [Preview](spiced-preview.html) | 1 |

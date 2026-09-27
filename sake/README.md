@@ -1,12 +1,14 @@
-# Sake · Jett & Miles
+# Sake · Brew
+
+Jett & Miles’s 15 newer designs: five threads, five comms and five buds.
+
+[Current forum masterpost](../forum-posts/sake-forum-masterpost.txt) · [Browser preview with Copy buttons](../forum-posts/sake-preview.html) · [Download Brew package](sake-brew-repository.zip) · [11 older designs](LEGACY.md)
 
 ## Current stylesheet delivery
 
 This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
 
 - [sake-brew-standalone-v1.css](sake-brew-standalone-v1.css)
-- [sake-buds-standalone-v1.css](sake-buds-standalone-v1.css)
-- [sake-comms-forum-standalone-v1.css](sake-comms-forum-standalone-v1.css)
 
 After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
 
@@ -51,9 +53,9 @@ The downloadable HTML preview runs when opened in a browser. GitHub’s file vie
 
 ## Editing
 
-The linked `[name]` and `[url]` are the first editable fields in every snippet, followed by the heading or contact status `[text]`. Comms times and any character GIFs follow. Lorem ipsum sits in `sk-copy`, above decorative elements and the stylesheet link. Posting HTML and CSS contain no comments, hidden tips or instructions.
+The linked names and URL are the first editable fields in every snippet, followed by the heading or contact status. Comms times and any character GIFs follow. Lorem ipsum sits in `sk-copy`, above decorative elements and the stylesheet link. Posting HTML and CSS contain no comments, hidden tips or instructions.
 
-The preview displays **Jett & Miles**, or **Miles** as the comms contact, while the initial field values remain placeholders. Copy code and Download .txt export the current field values. Each design retains its edits while the page remains open; Reset design restores that design’s defaults.
+Names are prefilled with **Jett & Miles**. The forum masterpost keeps sample writing above copyable code with concise writing markers. Copy code and Download .txt export the current field values. Each design retains its edits while the page remains open; Reset design restores that design’s defaults.
 
 Use ordinary `<p>` paragraphs for writing and separate messages. Successive opening `<p>` tags are supported without repeating a class or a div for each message. Comms offer received, sent and alternating message layouts through `data-flow`. The device controls are decorative. Buds begin with 36 words and are designed for replies of 100 words or fewer; longer replies remain visible.
 
@@ -69,18 +71,10 @@ Blue Hour’s `html[color-mode="light"]` and `html[color-mode="dark"]` set the n
 
 ## Source and integration
 
-`designs.json` and `sake-model.js` generate the fifteen named snippets. Run `node sake/build.cjs` from the repository root to rebuild them and the standalone preview. The hosted posting CSS is pinned to the immutable GitHub revision in `stylesheet-revision.txt`. The earlier Sake files remain available for existing posts; the new collection has its own wrapper and stylesheet.
+`designs.json` and `sake-model.js` generate the fifteen named snippets. Run `node sake/build.cjs` from the repository root to rebuild them and the standalone preview. Current snippets load `sake-brew-standalone-v1.css` directly from the published main branch. The [Legacy set](LEGACY.md) has its own masterpost, preview and download. Existing source files and stylesheet URLs remain available. After rebuilding forum posts, run `python tools/build_sake_repositories.py` to refresh the separate packages.
 
 [Validation details](VALIDATION.md).
 
-
-## Design names
-
-Each design has a unique catalogue name. Existing filenames remain stable for saved links.
-
-| Current name | Previous label | Format | Source |
-| --- | --- | --- | --- |
-| Sakazuki Line | Comms Snippet | comms | [comms-snippet.txt](comms-snippet.txt) · block 1 |
 
 ## Forum-ready collection
 

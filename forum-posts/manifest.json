@@ -9812,7 +9812,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A wide portrait under a translucent label band, asymmetric corner brackets and a fine-lined writing panel.",
-    "collection_index": 1
+    "collection_index": 1,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -9826,7 +9827,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A tasting-ring portrait sits between two fine horizontal rules, opening into a centred title and spacious prose.",
-    "collection_index": 2
+    "collection_index": 2,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -9840,7 +9842,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A tall brewery-label page with an inset title block, three-colour margin bars and a generous uninterrupted letter.",
-    "collection_index": 3
+    "collection_index": 3,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -9854,7 +9857,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "An open brewer's ledger with a broad left register, stepped colour rules and a quiet serif reading column.",
-    "collection_index": 4
+    "collection_index": 4,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -9868,85 +9872,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A narrow name rail meets a broad letter with two unequal rectangular portraits and an offset typographic heading.",
-    "collection_index": 5
-  },
-  {
-    "folder": "sake",
-    "name": "Standard \u00b7 First Pour",
-    "type": "thread",
-    "source": "sake/thread-snippet.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-sake-pour",
-    "css": [
-      "sake/sake-family-forum-v1.css"
-    ],
-    "collection_index": 6
-  },
-  {
-    "folder": "sake",
-    "name": "Solo Pour \u00b7 Single Gif",
-    "type": "thread",
-    "source": "sake/thread-snippet.txt",
-    "block": 2,
-    "aliases": [],
-    "classes": "bh-sake-pour bh-sake-pour--solo",
-    "css": [
-      "sake/sake-family-forum-v1.css"
-    ],
-    "collection_index": 7
-  },
-  {
-    "folder": "sake",
-    "name": "Round Cask \u00b7 Soft Edges",
-    "type": "thread",
-    "source": "sake/thread-snippet.txt",
-    "block": 3,
-    "aliases": [],
-    "classes": "bh-sake-pour bh-sake-pour--rounded",
-    "css": [
-      "sake/sake-family-forum-v1.css"
-    ],
-    "collection_index": 8
-  },
-  {
-    "folder": "sake",
-    "name": "Night Pour \u00b7 Scrollbox",
-    "type": "thread",
-    "source": "sake/thread-snippet.txt",
-    "block": 4,
-    "aliases": [],
-    "classes": "bh-sake-pour bh-sake-pour--scroll",
-    "css": [
-      "sake/sake-family-forum-v1.css"
-    ],
-    "collection_index": 9
-  },
-  {
-    "folder": "sake",
-    "name": "Tasting Flight \u00b7 Offset Cards",
-    "type": "thread",
-    "source": "sake/thread-snippet.txt",
-    "block": 5,
-    "aliases": [],
-    "classes": "bh-sake-pour bh-sake-pour--flight",
-    "css": [
-      "sake/sake-family-forum-v1.css"
-    ],
-    "collection_index": 10
-  },
-  {
-    "folder": "sake",
-    "name": "Sakazuki Line",
-    "type": "comms",
-    "source": "sake/comms-snippet.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-sake-comms",
-    "css": [
-      "sake/sake-comms-forum-standalone-v1.css"
-    ],
-    "collection_index": 11
+    "collection_index": 5,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -9960,7 +9887,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A compact keyboard handset with a recessed message display, a two-tone name bar and a tactile key deck.",
-    "collection_index": 12
+    "collection_index": 6,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -9974,7 +9902,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A slim smartphone with an inset square contact portrait, a narrow earpiece and rounded incoming messages.",
-    "collection_index": 13
+    "collection_index": 7,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -9988,7 +9917,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A square folding communicator with a slim twin-contact panel beside its larger conversation screen.",
-    "collection_index": 14
+    "collection_index": 8,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -10002,7 +9932,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A tall edge-to-edge phone with a full-width contact photograph, oversized clock and floating neutral message cards.",
-    "collection_index": 15
+    "collection_index": 9,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -10016,72 +9947,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A compact flip handset with a separate clock display, a narrow hinge and a stepped lower conversation panel.",
-    "collection_index": 16
-  },
-  {
-    "folder": "sake",
-    "name": "Portrait Window \u00b7 Large Gif",
-    "type": "bud",
-    "source": "sake/buds-snippets.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-sake-bud bh-sake-bud--window",
-    "css": [
-      "sake/sake-buds-standalone-v1.css"
-    ],
-    "collection_index": 17
-  },
-  {
-    "folder": "sake",
-    "name": "Ochoko Bud \u00b7 Round Cup",
-    "type": "bud",
-    "source": "sake/buds-snippets.txt",
-    "block": 2,
-    "aliases": [],
-    "classes": "bh-sake-bud bh-sake-bud--cup",
-    "css": [
-      "sake/sake-buds-standalone-v1.css"
-    ],
-    "collection_index": 18
-  },
-  {
-    "folder": "sake",
-    "name": "Tasting Bud \u00b7 Two Gifs",
-    "type": "bud",
-    "source": "sake/buds-snippets.txt",
-    "block": 3,
-    "aliases": [],
-    "classes": "bh-sake-bud bh-sake-bud--flight",
-    "css": [
-      "sake/sake-buds-standalone-v1.css"
-    ],
-    "collection_index": 19
-  },
-  {
-    "folder": "sake",
-    "name": "Pressed Bud \u00b7 Text Only",
-    "type": "bud",
-    "source": "sake/buds-snippets.txt",
-    "block": 4,
-    "aliases": [],
-    "classes": "bh-sake-bud bh-sake-bud--note",
-    "css": [
-      "sake/sake-buds-standalone-v1.css"
-    ],
-    "collection_index": 20
-  },
-  {
-    "folder": "sake",
-    "name": "Quick Pour \u00b7 Compact Scroll",
-    "type": "bud",
-    "source": "sake/buds-snippets.txt",
-    "block": 5,
-    "aliases": [],
-    "classes": "bh-sake-bud bh-sake-bud--scroll",
-    "css": [
-      "sake/sake-buds-standalone-v1.css"
-    ],
-    "collection_index": 21
+    "collection_index": 10,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -10095,7 +9962,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A flat keepsake slip pairs a shallow panoramic portrait with a delicately offset title and short reply.",
-    "collection_index": 22
+    "collection_index": 11,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -10109,7 +9977,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A narrow miniature label with double outer rules, a notched name band and a short centred heading.",
-    "collection_index": 23
+    "collection_index": 12,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -10123,7 +9992,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A tiny tasting-circle portrait sits beside a compact reply, anchored by a fine three-colour footer.",
-    "collection_index": 24
+    "collection_index": 13,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -10137,7 +10007,8 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "Two small square portraits stack in a narrow side rail next to a shared miniature letter.",
-    "collection_index": 25
+    "collection_index": 14,
+    "collection": "sake"
   },
   {
     "folder": "sake",
@@ -10151,7 +10022,162 @@
       "sake/sake-brew-standalone-v1.css"
     ],
     "description": "A spare reply card with a vertical colour register, a low-set heading and a right-aligned name strip.",
-    "collection_index": 26
+    "collection_index": 15,
+    "collection": "sake"
+  },
+  {
+    "folder": "sake",
+    "name": "Standard \u00b7 First Pour",
+    "type": "thread",
+    "source": "sake/thread-snippet.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-sake-pour",
+    "css": [
+      "sake/sake-family-forum-v1.css"
+    ],
+    "collection_index": 1,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Solo Pour \u00b7 Single Gif",
+    "type": "thread",
+    "source": "sake/thread-snippet.txt",
+    "block": 2,
+    "aliases": [],
+    "classes": "bh-sake-pour bh-sake-pour--solo",
+    "css": [
+      "sake/sake-family-forum-v1.css"
+    ],
+    "collection_index": 2,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Round Cask \u00b7 Soft Edges",
+    "type": "thread",
+    "source": "sake/thread-snippet.txt",
+    "block": 3,
+    "aliases": [],
+    "classes": "bh-sake-pour bh-sake-pour--rounded",
+    "css": [
+      "sake/sake-family-forum-v1.css"
+    ],
+    "collection_index": 3,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Night Pour \u00b7 Scrollbox",
+    "type": "thread",
+    "source": "sake/thread-snippet.txt",
+    "block": 4,
+    "aliases": [],
+    "classes": "bh-sake-pour bh-sake-pour--scroll",
+    "css": [
+      "sake/sake-family-forum-v1.css"
+    ],
+    "collection_index": 4,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Tasting Flight \u00b7 Offset Cards",
+    "type": "thread",
+    "source": "sake/thread-snippet.txt",
+    "block": 5,
+    "aliases": [],
+    "classes": "bh-sake-pour bh-sake-pour--flight",
+    "css": [
+      "sake/sake-family-forum-v1.css"
+    ],
+    "collection_index": 5,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Sakazuki Line",
+    "type": "comms",
+    "source": "sake/comms-snippet.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-sake-comms",
+    "css": [
+      "sake/sake-comms-forum-standalone-v1.css"
+    ],
+    "collection_index": 6,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Portrait Window \u00b7 Large Gif",
+    "type": "bud",
+    "source": "sake/buds-snippets.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-sake-bud bh-sake-bud--window",
+    "css": [
+      "sake/sake-buds-standalone-v1.css"
+    ],
+    "collection_index": 7,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Ochoko Bud \u00b7 Round Cup",
+    "type": "bud",
+    "source": "sake/buds-snippets.txt",
+    "block": 2,
+    "aliases": [],
+    "classes": "bh-sake-bud bh-sake-bud--cup",
+    "css": [
+      "sake/sake-buds-standalone-v1.css"
+    ],
+    "collection_index": 8,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Tasting Bud \u00b7 Two Gifs",
+    "type": "bud",
+    "source": "sake/buds-snippets.txt",
+    "block": 3,
+    "aliases": [],
+    "classes": "bh-sake-bud bh-sake-bud--flight",
+    "css": [
+      "sake/sake-buds-standalone-v1.css"
+    ],
+    "collection_index": 9,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Pressed Bud \u00b7 Text Only",
+    "type": "bud",
+    "source": "sake/buds-snippets.txt",
+    "block": 4,
+    "aliases": [],
+    "classes": "bh-sake-bud bh-sake-bud--note",
+    "css": [
+      "sake/sake-buds-standalone-v1.css"
+    ],
+    "collection_index": 10,
+    "collection": "sake-legacy"
+  },
+  {
+    "folder": "sake",
+    "name": "Quick Pour \u00b7 Compact Scroll",
+    "type": "bud",
+    "source": "sake/buds-snippets.txt",
+    "block": 5,
+    "aliases": [],
+    "classes": "bh-sake-bud bh-sake-bud--scroll",
+    "css": [
+      "sake/sake-buds-standalone-v1.css"
+    ],
+    "collection_index": 11,
+    "collection": "sake-legacy"
   },
   {
     "folder": "sesame",
