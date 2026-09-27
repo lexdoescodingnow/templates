@@ -172,3 +172,6 @@ html[color-mode="dark"] .crl1{--cr-paper:#202122;--cr-inset:#18191a;--cr-ink:#e5
 .crl1-flakelet .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta art' 'copy copy'}
 .crl1-last-cheerio .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta' 'copy' 'art'}
 @container crl1 (max-width:300px){.crl1-prize-inside .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta' 'copy' 'art'}.crl1-spoonful-sms .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'art' 'meta' 'copy' 'receipt' 'device'}}
+.crl1-breakfast-club .crl1-title{font-size:47px}
+@container crl1 (max-width:420px){.crl1-breakfast-club .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'art' 'copy'}.crl1-breakfast-club .crl1-title{font-size:40px}.crl1-breakfast-club .crl1-media{max-width:220px;gap:12px}.crl1-breakfast-club .crl1-shot{aspect-ratio:3/4;border-radius:60px 60px 16px 16px}.crl1-breakfast-club .crl1-shot:nth-child(2){margin-top:0}}
+@container crl1 (max-width:300px){.crl1-breakfast-club .crl1-title{font-size:32px}}

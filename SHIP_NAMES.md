@@ -1,6 +1,6 @@
 # Ship names
 
-These names are prefilled in the editable name fields of all 853 flavour designs, including older supported layouts. The same defaults are used in collection editors, previews, forum masterposts and downloadable packs. Names and links remain editable.
+These names are prefilled in the editable name fields of all 868 flavour designs, including older supported layouts. The same defaults are used in collection editors, previews, forum masterposts and downloadable packs. Names and links remain editable.
 
 | Collection | Ship members |
 | --- | --- |
@@ -9,6 +9,7 @@ These names are prefilled in the editable name fields of all 853 flavour designs
 | [Boba](boba/) | Hunter & Soomin |
 | [Bread](bread/) | Jinseok & Lucas |
 | [Brown Sugar](brown-sugar/) | Chanwoo & Taehwan |
+| [Cereal](cereal/) | Hoseong & Sam |
 | [Champagne](champagne/) | Jude & Toby |
 | [Cheese](cheese/) | Minseo & Tommy |
 | [Cherry](cherry/) | Jaehwa & Ubin |
