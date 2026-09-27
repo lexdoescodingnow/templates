@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="en" color-mode="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cashew · Cookie &amp; Yiyun</title><style>@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAfJthTg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Caslon Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librecaslondisplay/v18/TuGOUUFxWphYQ6YI6q9Xp61FQzxDRKmzr2lR.ttf) format('truetype');
+}
+.cw1{--cw-a:rgb(var(--mgrgb1,136,81,104));--cw-b:rgb(var(--mgrgb2,110,105,151));--cw-c:rgb(var(--mgrgb3,56,117,112));--cw-grad:linear-gradient(115deg,var(--cw-a),var(--cw-b),var(--cw-c));--cw-back:linear-gradient(115deg,var(--cw-c),var(--cw-b),var(--cw-a));--cw-paper:#fcfbf8;--cw-wash:#f1efea;--cw-ink:#343536;--cw-muted:#70716e;--cw-nut:#c6b18a;--cw-line:color-mix(in srgb,var(--cw-b) 38%,var(--cw-paper));--cw-width:520px;width:min(100%,var(--cw-width));margin:26px auto;color:var(--cw-ink);font:14px/1.85 'DM Sans',Arial,sans-serif;text-align:left;isolation:isolate;container:cashew / inline-size;overflow-wrap:anywhere}
+.cw1,.cw1 *,.cw1 *::before,.cw1 *::after{box-sizing:border-box}
+.cw1 .cw1-layout{display:grid;grid-template-columns:minmax(0,1fr);background:var(--cw-paper);min-width:0}
+.cw1 .cw1-layout>*{min-width:0}
+.cw1 .cw1-head{grid-area:head;display:flex;flex-direction:column;gap:12px}
+.cw1 .cw1-name{font:600 10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--cw-a);text-decoration:none;align-self:flex-start;border-bottom:1px solid var(--cw-line);padding-bottom:5px;max-width:100%}
+.cw1 .cw1-title{display:block;font:400 42px/1.03 'Libre Caslon Display',Georgia,serif;letter-spacing:-.025em;color:var(--cw-a);background:var(--cw-grad);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:4px}
+.cw1 .cw1-sub{font:400 9px/1.6 'DM Sans',Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:var(--cw-muted)}
+.cw1 .cw1-media{grid-area:media;display:flex;gap:12px;align-items:start;align-self:start;min-width:0}
+.cw1 .cw1-shot{display:block;min-width:0;flex:1;padding:5px;background:var(--cw-grad);border:1px solid var(--cw-line);overflow:hidden}
+.cw1 .cw1-shot img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:var(--cw-crop,50% 35%);max-width:100%;margin:0;border:0}
+.cw1 .cw1-media:empty{display:none}
+.cw1 .cw1-copy{grid-area:copy;min-width:0;font:inherit;text-align:justify}
+.cw1 .cw1-copy p{margin:0 0 1.2em;padding:0;font:inherit;color:inherit;text-align:inherit}
+.cw1 .cw1-copy p:last-child{margin-bottom:0}
+.cw1 :is(b,strong,u){color:var(--cw-a);background:var(--cw-grad);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.cw1 :is(i,em){color:var(--cw-c);background:var(--cw-back);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.cw1 u{text-decoration:underline;text-decoration-color:var(--cw-b);text-underline-offset:4px;text-decoration-thickness:1px}
+.cw1 .cw1-copy a{color:var(--cw-a);text-decoration-color:var(--cw-c);text-underline-offset:3px}
+.cw1 a:focus-visible{outline:2px solid var(--cw-c);outline-offset:4px}
+.cw1 .cw1-art{grid-area:art;color:var(--cw-nut);display:flex;align-items:center;justify-content:center;gap:12px;line-height:0;pointer-events:none}
+.cw1 .cw1-art svg{display:block;width:68px;height:60px;flex:0 0 auto;overflow:visible}
+.cw1 .cw1-art::before,.cw1 .cw1-art::after{content:'';display:block;height:1px;flex:1;background:var(--cw-line)}
+.cw1 .cw1-art .cw1-leaf{color:var(--cw-c)}
+.cw1 .cw1-receipt{grid-area:receipt;display:flex;justify-content:space-between;gap:10px;font:400 9px/1.5 'DM Sans',Arial,sans-serif;color:var(--cw-muted);letter-spacing:.08em}
+.cw1 .cw1-device{grid-area:device;display:flex;align-items:center;justify-content:space-between;gap:15px;font:400 11px/1.5 'DM Sans',Arial,sans-serif;color:var(--cw-muted);padding:13px 17px;border:1px solid var(--cw-line);border-radius:24px;background:var(--cw-wash)}
+.cw1 .cw1-device span:last-child{color:var(--cw-c);font-size:18px}
+.cw1 .cw1-chrome{grid-area:chrome;display:flex;align-items:center;justify-content:space-between;font:600 9px/1.3 'DM Sans',Arial,sans-serif;letter-spacing:.15em;color:var(--cw-b)}
+html[color-mode=dark] .cw1{--cw-paper:#202225;--cw-wash:#282b2e;--cw-ink:#e0dfdb;--cw-muted:#b1b0ad;--cw-nut:#b5a080}
+html[color-mode=light] .cw1{--cw-paper:#fcfbf8;--cw-wash:#f1efea;--cw-ink:#343536;--cw-muted:#70716e;--cw-nut:#c6b18a}
+@media(prefers-color-scheme:dark){html:not([color-mode=light]):not([color-mode=dark]) .cw1{--cw-paper:#202225;--cw-wash:#282b2e;--cw-ink:#e0dfdb;--cw-muted:#b1b0ad;--cw-nut:#b5a080}}
+.cw1-reniform-reverie .cw1-layout{grid-template-columns:minmax(0,1fr) 144px;grid-template-areas:'head media' 'copy copy' 'art art';padding:36px;gap:30px 24px;border:1px solid var(--cw-line);border-top:6px solid var(--cw-a);border-radius:0 85px 0 0}
+.cw1-reniform-reverie .cw1-head{justify-content:center}
+.cw1-reniform-reverie .cw1-title{font-size:49px}
+.cw1-reniform-reverie .cw1-media{flex-direction:column}
+.cw1-reniform-reverie .cw1-shot{width:100%;border-radius:65px 65px 65px 10px;padding:7px}
+.cw1-reniform-reverie .cw1-shot img{aspect-ratio:3/4;border-radius:57px 57px 57px 5px}
+.cw1-reniform-reverie .cw1-copy{border-top:1px solid var(--cw-line);padding-top:26px}
+.cw1-reniform-reverie .cw1-art svg{width:46px;height:40px}
+.cw1-reniform-reverie:not(:has(.cw1-shot)) .cw1-layout{grid-template-columns:1fr;grid-template-areas:'head' 'copy' 'art'}
+.cw1-under-the-cashew-tree{--cw-width:490px}
+.cw1-under-the-cashew-tree .cw1-layout{grid-template-areas:'art' 'head' 'media' 'copy';gap:25px;padding:24px 43px 40px;border:1px solid var(--cw-line);outline:1px solid var(--cw-line);outline-offset:-9px;border-radius:130px 130px 8px 8px}
+.cw1-under-the-cashew-tree .cw1-head{text-align:center;align-items:center;gap:11px}
+.cw1-under-the-cashew-tree .cw1-name{align-self:center}
+.cw1-under-the-cashew-tree .cw1-art::before,.cw1-under-the-cashew-tree .cw1-art::after{display:none}
+.cw1-under-the-cashew-tree .cw1-art svg{width:112px;height:86px}
+.cw1-under-the-cashew-tree .cw1-media{justify-content:center;gap:18px}
+.cw1-under-the-cashew-tree .cw1-shot{max-width:126px;border-radius:50%;padding:6px}
+.cw1-under-the-cashew-tree .cw1-shot img{border-radius:50%}
+.cw1-under-the-cashew-tree .cw1-copy{padding-top:8px}
+.cw1-ivory-cotyledon{--cw-width:560px}
+.cw1-ivory-cotyledon .cw1-layout{grid-template-columns:112px minmax(0,1fr);grid-template-areas:'head head' 'media copy' 'art copy';gap:24px 28px;padding:32px;border-block:2px solid var(--cw-b);background:linear-gradient(90deg,var(--cw-wash) 0 142px,var(--cw-paper) 142px)}
+.cw1-ivory-cotyledon .cw1-head{padding-bottom:23px;border-bottom:1px solid var(--cw-line)}
+.cw1-ivory-cotyledon .cw1-title{font-size:47px}
+.cw1-ivory-cotyledon .cw1-media{flex-direction:column}
+.cw1-ivory-cotyledon .cw1-shot{width:100%;border-radius:55px 55px 0 0;padding:4px}
+.cw1-ivory-cotyledon .cw1-shot img{aspect-ratio:3/5;border-radius:49px 49px 0 0}
+.cw1-ivory-cotyledon .cw1-copy{font-size:13px;text-align:left}
+.cw1-ivory-cotyledon .cw1-art{align-self:start;padding-top:10px}
+.cw1-ivory-cotyledon .cw1-art::before,.cw1-ivory-cotyledon .cw1-art::after{display:none}
+.cw1-ivory-cotyledon:not(:has(.cw1-shot)) .cw1-layout{grid-template-columns:1fr;grid-template-areas:'head' 'copy' 'art';background:var(--cw-paper)}
+.cw1-roast-register{--cw-width:500px}
+.cw1-roast-register .cw1-layout{grid-template-columns:minmax(0,1fr) 65px;grid-template-areas:'head art' 'copy copy' 'media media';gap:26px 20px;padding:30px 35px;border-inline:1px solid var(--cw-line);border-top:12px double var(--cw-b);border-bottom:12px double var(--cw-c)}
+.cw1-roast-register .cw1-title{font:600 35px/.98 'DM Sans',Arial,sans-serif;letter-spacing:-.065em;text-transform:uppercase}
+.cw1-roast-register .cw1-head{gap:18px}
+.cw1-roast-register .cw1-art{align-self:stretch;flex-direction:column;background:radial-gradient(circle,var(--cw-line) 1px,transparent 1px) 0 0/8px 8px;border:1px solid var(--cw-line);padding:8px}
+.cw1-roast-register .cw1-art svg{width:49px;height:48px;background:var(--cw-paper);border-radius:50%}
+.cw1-roast-register .cw1-art::before,.cw1-roast-register .cw1-art::after{display:none}
+.cw1-roast-register .cw1-copy{padding-top:23px;border-top:1px dashed var(--cw-b)}
+.cw1-roast-register .cw1-media{justify-content:flex-end}
+.cw1-roast-register .cw1-shot{max-width:115px}
+.cw1-anacardium-nocturne{--cw-width:510px}
+.cw1-anacardium-nocturne .cw1-layout{grid-template-areas:'media' 'head' 'copy' 'art';gap:27px;padding:34px 40px;border-radius:8px 8px 110px 8px;background:linear-gradient(var(--cw-paper),var(--cw-paper)) padding-box,var(--cw-grad) border-box;border:2px solid transparent}
+.cw1-anacardium-nocturne .cw1-media{align-items:flex-start;gap:20px;padding:0 28px}
+.cw1-anacardium-nocturne .cw1-shot{border-radius:80px;padding:6px}
+.cw1-anacardium-nocturne .cw1-shot img{aspect-ratio:4/5;border-radius:70px}
+.cw1-anacardium-nocturne .cw1-shot:nth-child(2){margin-top:32px}
+.cw1-anacardium-nocturne .cw1-head{padding-left:19px;border-left:3px solid var(--cw-c)}
+.cw1-anacardium-nocturne .cw1-title{font-size:44px}
+.cw1-anacardium-nocturne .cw1-art{padding-right:35px}
+.cw1-comms{--cw-width:360px;font-size:12px;line-height:1.65}
+.cw1-comms .cw1-title{font:600 20px/1.2 'DM Sans',Arial,sans-serif;letter-spacing:-.03em}
+.cw1-comms .cw1-name{font-size:9px;letter-spacing:.06em}
+.cw1-comms .cw1-head{gap:5px}
+.cw1-comms .cw1-sub{font-size:8px;letter-spacing:.08em}
+.cw1-comms .cw1-copy{text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:11px}
+.cw1-comms .cw1-copy>p{margin:0;padding:12px 15px;max-width:93%;background:var(--cw-wash);border:1px solid var(--cw-line);border-left:2px solid var(--cw-a);border-radius:15px 15px 15px 3px;text-align:left}
+.cw1-comms[data-direction=sent] .cw1-copy>p,.cw1-comms[data-direction=alternating] .cw1-copy>p:nth-child(even){align-self:flex-end;border-radius:15px 15px 3px 15px;border-left:1px solid var(--cw-line);border-right:2px solid var(--cw-c);background:color-mix(in srgb,var(--cw-c) 9%,var(--cw-paper))}
+.cw1-comms .cw1-shot{padding:3px;border-radius:18px}
+.cw1-comms .cw1-shot img{border-radius:14px}
+.cw1-comms .cw1-art svg{width:25px;height:24px}
+.cw1-cashew-calling .cw1-layout{grid-template-columns:58px minmax(0,1fr);grid-template-areas:'chrome chrome' 'media head' 'copy copy' 'receipt receipt' 'device device';gap:21px 14px;padding:21px;border:3px solid var(--cw-b);border-radius:42px;box-shadow:inset 0 0 0 5px var(--cw-wash)}
+.cw1-cashew-calling .cw1-chrome{padding:2px 5px 12px;border-bottom:1px solid var(--cw-line)}
+.cw1-cashew-calling .cw1-chrome::before{content:'';height:7px;width:44px;border:1px solid var(--cw-b);border-radius:10px}
+.cw1-cashew-calling .cw1-chrome span:first-child{display:none}
+.cw1-cashew-calling .cw1-media{flex-direction:column}
+.cw1-cashew-calling .cw1-shot{width:100%}
+.cw1-cashew-calling .cw1-art{display:none}
+.cw1-cashew-calling:not(:has(.cw1-shot)) .cw1-head{grid-column:1/-1}
+.cw1-kernelink{--cw-width:545px}
+.cw1-kernelink .cw1-layout{grid-template-columns:133px minmax(0,1fr);grid-template-areas:'chrome chrome' 'head copy' 'media copy' 'art receipt' 'device device';gap:16px 26px;padding:23px;background:linear-gradient(90deg,var(--cw-wash) 0 170px,var(--cw-paper) 170px);border:2px solid var(--cw-b);border-radius:17px 17px 50px 17px}
+.cw1-kernelink .cw1-chrome{border-bottom:1px solid var(--cw-line);padding-bottom:13px}
+.cw1-kernelink .cw1-title{font-size:23px}
+.cw1-kernelink .cw1-head{align-self:start}
+.cw1-kernelink .cw1-media{align-self:start}
+.cw1-kernelink .cw1-shot{border-radius:50px 0 50px 0}
+.cw1-kernelink .cw1-shot img{border-radius:45px 0 45px 0;aspect-ratio:5/4}
+.cw1-kernelink .cw1-device{border-radius:5px 5px 25px 5px}
+.cw1-kernelink .cw1-copy>p{font-size:11px}
+.cw1-roastwave{--cw-width:335px}
+.cw1-roastwave .cw1-layout{grid-template-columns:60px minmax(0,1fr);grid-template-areas:'chrome chrome' 'media head' 'art art' 'copy copy' 'receipt receipt' 'device device';padding:23px;gap:18px 14px;border-radius:42px 42px 28px 28px;border:1px solid var(--cw-b);outline:4px solid var(--cw-wash);outline-offset:3px}
+.cw1-roastwave .cw1-chrome{justify-content:center;padding-bottom:9px;border-bottom:3px double var(--cw-line)}
+.cw1-roastwave .cw1-chrome span:first-child{display:none}
+.cw1-roastwave .cw1-media{flex-direction:column}
+.cw1-roastwave .cw1-shot{width:100%;border-radius:50%}
+.cw1-roastwave .cw1-shot img{border-radius:50%}
+.cw1-roastwave .cw1-art{margin:5px -16px;border-block:3px double var(--cw-line);padding-block:6px;background:var(--cw-wash)}
+.cw1-roastwave .cw1-art::before,.cw1-roastwave .cw1-art::after{flex:0 1 42px;height:4px;border-radius:5px;background:var(--cw-b)}
+.cw1-roastwave .cw1-copy{padding:14px 9px;border-radius:8px;background:var(--cw-wash);border:1px solid var(--cw-line)}
+.cw1-roastwave .cw1-copy>p{background:var(--cw-paper);font-size:11px;border-radius:5px;max-width:96%;padding:10px}
+.cw1-roastwave .cw1-device{border-radius:5px;justify-content:center;background:transparent;border:0;border-top:1px solid var(--cw-line);padding:7px}
+.cw1-roastwave .cw1-device span:last-child{border:1px solid var(--cw-c);width:34px;height:34px;display:grid;place-items:center;border-radius:50%}
+.cw1-roastwave:not(:has(.cw1-shot)) .cw1-head{grid-column:1/-1}
+.cw1-shellmail{--cw-width:475px}
+.cw1-shellmail .cw1-layout{grid-template-columns:minmax(0,1fr) 76px;grid-template-areas:'chrome chrome' 'head media' 'copy copy' 'receipt receipt' 'device device';gap:20px;padding:23px;border:1px solid var(--cw-line);border-radius:10px;box-shadow:5px 5px 0 color-mix(in srgb,var(--cw-b) 15%,var(--cw-paper))}
+.cw1-shellmail .cw1-chrome{background:var(--cw-grad);color:var(--cw-paper);margin:-23px -23px 0;padding:11px 17px;border-radius:9px 9px 0 0}
+.cw1-shellmail .cw1-chrome span:last-child{font-size:13px}
+.cw1-shellmail .cw1-media{flex-direction:column}
+.cw1-shellmail .cw1-shot{width:100%;border-radius:7px}
+.cw1-shellmail .cw1-shot img{border-radius:3px}
+.cw1-shellmail .cw1-head{justify-content:center}
+.cw1-shellmail .cw1-copy{padding-top:18px;border-top:1px solid var(--cw-line)}
+.cw1-shellmail .cw1-copy>p{border-radius:0;border-left:3px solid var(--cw-a);max-width:90%}
+.cw1-shellmail .cw1-art{display:none}
+.cw1-shellmail .cw1-device{border-radius:4px}
+.cw1-shellmail:not(:has(.cw1-shot)) .cw1-head{grid-column:1/-1}
+.cw1-caju-connect{--cw-width:370px}
+.cw1-caju-connect .cw1-layout{grid-template-areas:'chrome' 'media' 'head' 'copy' 'receipt' 'art' 'device';gap:17px;padding:27px 25px 22px;border:1px solid var(--cw-line);border-left:6px solid var(--cw-a);border-right:6px solid var(--cw-c);border-radius:75px 75px 40px 40px;background:var(--cw-wash)}
+.cw1-caju-connect .cw1-chrome{justify-content:center;font-size:8px}
+.cw1-caju-connect .cw1-chrome span:last-child{display:none}
+.cw1-caju-connect .cw1-head{text-align:center;align-items:center}
+.cw1-caju-connect .cw1-name{align-self:center}
+.cw1-caju-connect .cw1-media{justify-content:center;gap:7px}
+.cw1-caju-connect .cw1-shot{max-width:65px;border-radius:50%}
+.cw1-caju-connect .cw1-shot img{border-radius:50%}
+.cw1-caju-connect .cw1-copy>p{background:var(--cw-paper);max-width:100%;width:100%;border:1px solid var(--cw-line);border-top:3px solid var(--cw-a);border-radius:10px;font-size:11px}
+.cw1-caju-connect .cw1-device{padding:8px 14px;background:var(--cw-paper)}
+.cw1-bud{--cw-width:410px;font-size:13px;line-height:1.8}
+.cw1-bud .cw1-title{font-size:31px}
+.cw1-bud .cw1-head{gap:8px}
+.cw1-bud .cw1-name{font-size:9px;letter-spacing:.1em}
+.cw1-bud .cw1-sub{font-size:8px}
+.cw1-bud .cw1-art svg{width:38px;height:34px}
+.cw1-bud .cw1-copy{text-align:left}
+.cw1-seedcurl .cw1-layout{grid-template-columns:minmax(0,1fr) 77px;grid-template-areas:'head media' 'copy copy' 'art art';gap:18px;padding:26px;border:1px solid var(--cw-line);border-radius:6px 50px 6px 6px}
+.cw1-seedcurl .cw1-media{flex-direction:column}
+.cw1-seedcurl .cw1-shot{width:100%;padding:4px;border-radius:42px 42px 42px 4px}
+.cw1-seedcurl .cw1-shot img{border-radius:36px 36px 36px 2px;aspect-ratio:4/5}
+.cw1-seedcurl .cw1-art{justify-content:flex-start}
+.cw1-seedcurl .cw1-art::before{display:none}
+.cw1-seedcurl:not(:has(.cw1-shot)) .cw1-head{grid-column:1/-1}
+.cw1-cashewlet{--cw-width:365px}
+.cw1-cashewlet .cw1-layout{grid-template-areas:'head' 'copy' 'media' 'art';gap:19px;padding:27px 28px 20px;background:linear-gradient(var(--cw-paper),var(--cw-paper)) padding-box,var(--cw-grad) border-box;border:2px solid transparent;border-radius:40px 0 40px 0}
+.cw1-cashewlet .cw1-head{border-bottom:1px solid var(--cw-line);padding-bottom:16px}
+.cw1-cashewlet .cw1-shot{max-width:90px;border-radius:20px}
+.cw1-cashewlet .cw1-shot img{border-radius:15px}
+.cw1-cashewlet .cw1-art svg{width:25px;height:23px}
+.cw1-ivory-nib{--cw-width:440px}
+.cw1-ivory-nib .cw1-layout{grid-template-columns:85px minmax(0,1fr);grid-template-areas:'media head' 'copy copy' 'art art';gap:20px;padding:25px;border-block:1px solid var(--cw-line);border-left:5px solid var(--cw-b)}
+.cw1-ivory-nib .cw1-media{flex-direction:column;gap:6px}
+.cw1-ivory-nib .cw1-shot{width:100%;padding:3px;border-radius:0}
+.cw1-ivory-nib .cw1-shot img{aspect-ratio:3/2}
+.cw1-ivory-nib .cw1-head{justify-content:center}
+.cw1-ivory-nib .cw1-art{display:none}
+.cw1-ivory-nib .cw1-copy{padding-top:15px;border-top:1px dashed var(--cw-line)}
+.cw1-ivory-nib:not(:has(.cw1-shot)) .cw1-head{grid-column:1/-1}
+.cw1-toasted-comma{--cw-width:430px}
+.cw1-toasted-comma .cw1-layout{grid-template-columns:60px minmax(0,1fr);grid-template-areas:'art head' 'copy copy' 'media media';gap:20px 17px;padding:25px 30px;background:var(--cw-wash);border-radius:0 0 50px 0;border-top:5px solid var(--cw-c)}
+.cw1-toasted-comma .cw1-art{border:1px solid var(--cw-line);border-radius:50px 50px 50px 2px;background:var(--cw-paper)}
+.cw1-toasted-comma .cw1-art::before,.cw1-toasted-comma .cw1-art::after{display:none}
+.cw1-toasted-comma .cw1-title{font:600 24px/1.05 'DM Sans',Arial,sans-serif;letter-spacing:-.05em}
+.cw1-toasted-comma .cw1-shot{max-width:80px;border-radius:50%}
+.cw1-toasted-comma .cw1-shot img{border-radius:50%}
+.cw1-caju-sprig{--cw-width:390px}
+.cw1-caju-sprig .cw1-layout{grid-template-columns:minmax(0,1fr) 62px;grid-template-areas:'head art' 'media media' 'copy copy';gap:18px;padding:26px 30px;border:1px solid var(--cw-line);border-radius:70px 5px 5px 5px}
+.cw1-caju-sprig .cw1-head{padding-left:12px}
+.cw1-caju-sprig .cw1-title{font-size:34px}
+.cw1-caju-sprig .cw1-art::before,.cw1-caju-sprig .cw1-art::after{display:none}
+.cw1-caju-sprig .cw1-art svg{width:62px;height:67px}
+.cw1-caju-sprig .cw1-media{justify-content:flex-end}
+.cw1-caju-sprig .cw1-shot{max-width:110px;border-radius:40px 0 40px 0;padding:4px}
+.cw1-caju-sprig .cw1-shot img{border-radius:35px 0 35px 0;aspect-ratio:3/2}
+@container cashew (max-width:390px){
+.cw1 .cw1-layout{padding:24px;gap:20px}
+.cw1 .cw1-title{font-size:35px}
+.cw1-reniform-reverie .cw1-layout{grid-template-columns:minmax(0,1fr) 105px;gap:23px 17px}
+.cw1-reniform-reverie .cw1-title{font-size:39px}
+.cw1-under-the-cashew-tree .cw1-layout{padding:24px 28px;border-radius:95px 95px 8px 8px}
+.cw1-ivory-cotyledon .cw1-layout{grid-template-columns:80px minmax(0,1fr);gap:22px;background:linear-gradient(90deg,var(--cw-wash) 0 126px,var(--cw-paper) 126px)}
+.cw1-ivory-cotyledon .cw1-copy{font-size:12px}
+.cw1-roast-register .cw1-layout{grid-template-columns:minmax(0,1fr) 42px;gap:18px}
+.cw1-roast-register .cw1-title{font-size:31px}
+.cw1-roast-register .cw1-art svg{width:34px;height:36px}
+.cw1-anacardium-nocturne .cw1-media{padding:0 15px;gap:15px}
+.cw1-comms .cw1-layout{padding:21px;gap:17px}
+.cw1-comms .cw1-title{font-size:19px}
+.cw1-kernelink .cw1-layout{grid-template-columns:65px minmax(0,1fr);grid-template-areas:'chrome chrome' 'media head' 'copy copy' 'receipt receipt' 'device device';background:var(--cw-paper)}
+.cw1-kernelink .cw1-art{display:none}
+.cw1-kernelink .cw1-shot img{aspect-ratio:1}
+.cw1-kernelink:not(:has(.cw1-shot)) .cw1-head{grid-column:1/-1}
+.cw1-shellmail .cw1-chrome{margin:-21px -21px 0}
+.cw1-caju-connect .cw1-layout{padding:27px 21px 21px;gap:16px}
+.cw1-bud .cw1-layout{padding:23px;gap:18px}
+.cw1-bud .cw1-title{font-size:28px}
+.cw1-ivory-nib .cw1-layout{grid-template-columns:72px minmax(0,1fr)}
+.cw1-toasted-comma .cw1-title{font-size:23px}
+}
+@container cashew (max-width:300px){
+.cw1 .cw1-layout{padding:22px;gap:20px}
+.cw1 .cw1-title{font-size:32px}
+.cw1-reniform-reverie .cw1-layout{grid-template-columns:1fr;grid-template-areas:'head' 'media' 'copy' 'art';border-radius:0 55px 0 0}
+.cw1-reniform-reverie .cw1-media{flex-direction:row;max-width:140px}
+.cw1-ivory-cotyledon .cw1-layout{grid-template-columns:1fr;grid-template-areas:'head' 'media' 'copy' 'art';background:var(--cw-paper)}
+.cw1-ivory-cotyledon .cw1-media{flex-direction:row;max-width:110px}
+.cw1-ivory-cotyledon .cw1-shot img{aspect-ratio:1}
+.cw1-under-the-cashew-tree .cw1-layout{padding:22px 25px}
+.cw1-under-the-cashew-tree .cw1-title{font-size:32px}
+.cw1-anacardium-nocturne .cw1-media{padding:0;gap:10px}
+.cw1-roast-register .cw1-layout{grid-template-columns:minmax(0,1fr) 30px;gap:20px 12px}
+.cw1-roast-register .cw1-title{font-size:25px}
+.cw1-roast-register .cw1-art svg{width:27px;height:30px}
+.cw1-comms .cw1-layout{padding:19px;gap:15px 10px}
+.cw1-comms .cw1-title{font-size:17px}
+.cw1-comms .cw1-name{font-size:8px}
+.cw1-comms .cw1-copy>p{padding:10px;font-size:11px}
+.cw1-cashew-calling .cw1-layout,.cw1-roastwave .cw1-layout{grid-template-columns:45px minmax(0,1fr)}
+.cw1-shellmail .cw1-layout{grid-template-columns:minmax(0,1fr) 48px}
+.cw1-shellmail .cw1-chrome{margin:-19px -19px 0}
+.cw1-kernelink .cw1-layout{grid-template-columns:50px minmax(0,1fr)}
+.cw1-caju-connect .cw1-layout{padding:25px 17px 20px}
+.cw1-bud .cw1-title{font-size:27px}
+.cw1-seedcurl .cw1-layout{grid-template-columns:minmax(0,1fr) 58px;gap:17px 12px}
+.cw1-ivory-nib .cw1-layout{grid-template-columns:55px minmax(0,1fr);gap:17px 12px}
+.cw1-toasted-comma .cw1-layout{grid-template-columns:40px minmax(0,1fr);gap:18px 12px}
+.cw1-toasted-comma .cw1-title{font-size:22px}
+.cw1-caju-sprig .cw1-layout{grid-template-columns:minmax(0,1fr) 40px;padding:27px 20px 20px}
+.cw1-caju-sprig .cw1-art svg{width:40px;height:48px}
+.cw1-caju-sprig .cw1-title{font-size:28px}
+}
+
+body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 'DM Sans',Arial,sans-serif}body *{box-sizing:border-box}.cw-main{max-width:1080px;margin:auto;padding:50px 40px}.cw-collection{display:flex;justify-content:space-between;gap:15px;font:10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.15em;border-bottom:1px solid #aaa9a3;padding-bottom:14px}.cw-masthead{display:flex;align-items:center;justify-content:space-between;gap:20px}.cw-masthead h1{font:400 clamp(75px,15vw,160px)/1 'Libre Caslon Display',Georgia,serif;margin:25px 0 16px;letter-spacing:-.04em}.cw-emblem{display:block;width:100px;height:100px;color:#9d8963}.cw-emblem svg{width:100%;height:100%}.cw-toplinks{display:flex;flex-wrap:wrap;gap:23px;padding:18px 0 24px;border-bottom:1px solid #aaa9a3;font-size:11px}.cw-main a{color:inherit;text-underline-offset:4px}.cw-controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin:23px 0 48px}.cw-filters{display:flex;flex-wrap:wrap;gap:5px;margin-right:auto}.cw-controls label{display:flex;flex-direction:column;gap:5px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.cw-main button,.cw-main select,.cw-main input,.cw-main textarea{font:inherit;color:inherit}.cw-main button,.cw-main select{border:1px solid #a5a8a2;border-radius:20px;background:transparent;padding:9px 13px}.cw-main button{cursor:pointer;font-size:11px}.cw-main button[aria-pressed=true],.cw-actions .cw-copy{background:#3d4e49;color:#f4f5ee;border-color:#3d4e49}.cw-main :is(button,a,select,input,summary,textarea):focus-visible{outline:2px solid #517971;outline-offset:4px}.cw-card{margin-bottom:62px;scroll-margin-top:20px}.cw-card[hidden]{display:none}.cw-card-head{display:flex;align-items:baseline;gap:20px;border-bottom:1px solid #aaa9a3;padding-bottom:15px}.cw-card-head>span{font-size:9px;letter-spacing:.14em;min-width:82px}.cw-card-head>a{margin-left:auto;text-decoration:none}.cw-card h2{font:400 32px/1.1 'Libre Caslon Display',Georgia,serif;margin:0}.cw-stage{--mgrgb1:141,75,106;--mgrgb2:111,102,152;--mgrgb3:48,119,112;display:flow-root;padding:32px 20px;background:#f3f2ee;border:1px solid #cfcec7;border-top:0}.cw-editor{border:1px solid #aaa9a3;border-top:0}.cw-editor summary{padding:15px 17px;cursor:pointer;font-size:11px;font-weight:600}.cw-editor form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:8px 17px 20px}.cw-editor label{font-size:11px;display:flex;flex-direction:column;gap:7px}.cw-editor input,.cw-editor textarea{width:100%;border:1px solid #a5a8a2;padding:10px;background:#fbfaf7;border-radius:3px;font:12px/1.5 ui-monospace,monospace}.cw-writing{grid-column:1/-1}.cw-editor textarea{resize:vertical;min-height:160px}.cw-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:15px 0}.cw-actions a{font-size:11px}.cw-status{font-size:11px}.cw-code{display:block;resize:vertical;width:100%;height:135px;border:1px solid #a5a8a2;background:#f6f5f1;padding:13px;font:11px/1.6 ui-monospace,monospace!important;white-space:pre}.cw-footer{display:flex;justify-content:space-between;border-top:1px solid #aaa9a3;padding-top:20px;font-size:10px;letter-spacing:.1em}.cw-main[data-palette=blue] .cw-stage{--mgrgb1:62,100,166;--mgrgb2:139,82,143;--mgrgb3:69,127,143}.cw-main[data-palette=copper] .cw-stage{--mgrgb1:160,89,52;--mgrgb2:129,104,135;--mgrgb3:39,119,104}html[color-mode=dark] body{background:#141718;color:#e5e4df}html[color-mode=dark] .cw-stage{background:#191c1e;border-color:#404645;--mgrgb1:220,149,180;--mgrgb2:172,163,218;--mgrgb3:112,192,181}html[color-mode=dark] .cw-main[data-palette=blue] .cw-stage{--mgrgb1:131,172,230;--mgrgb2:210,153,209;--mgrgb3:123,195,217}html[color-mode=dark] .cw-main[data-palette=copper] .cw-stage{--mgrgb1:224,158,115;--mgrgb2:194,161,201;--mgrgb3:109,194,174}html[color-mode=dark] .cw-main :is(button,select,input,textarea){background:#242a2c;color:#e5e4df;border-color:#5f6663}html[color-mode=dark] .cw-main button[aria-pressed=true],html[color-mode=dark] .cw-actions .cw-copy{background:#d1dfd6;color:#26342e}.cw-main[data-width="390"] .cw1{width:min(100%,390px,var(--cw-width))}.cw-main[data-width="320"] .cw1{width:min(100%,320px,var(--cw-width))}.cw-main[data-width="260"] .cw1{width:min(100%,260px,var(--cw-width))}@media(max-width:600px){.cw-main{padding:30px 12px}.cw-collection{font-size:8px;flex-direction:column;gap:5px}.cw-emblem{width:65px;height:65px}.cw-toplinks{gap:12px;font-size:10px}.cw-controls{gap:13px}.cw-filters{width:100%}.cw-stage{padding:22px 8px}.cw-card-head{gap:10px}.cw-card h2{font-size:26px}.cw-card-head>span{min-width:65px;font-size:8px}.cw-editor form{grid-template-columns:1fr}.cw-actions{gap:8px}.cw-card{margin-bottom:40px}.cw-footer{font-size:8px}}
+</style></head><body><main class="cw-main" id="top"><header class="cw-intro"><div class="cw-collection"><span>COOKIE &amp; YIYUN</span><span>THE CURVED LINE / 15 DESIGNS</span></div><div class="cw-masthead"><h1>Cashew.</h1><span class="cw-emblem"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></span></div><nav class="cw-toplinks"><a href="../forum-posts/cashew-forum-masterpost.txt">Forum masterpost ↗</a><a href="cashew-collection.zip">Download collection ↗</a><a href="README.md">Editing guide ↗</a></nav></header><nav class="cw-controls" aria-label="Preview controls"><div class="cw-filters"><button data-filter="all" aria-pressed="true">All 15</button><button data-filter="thread" aria-pressed="false">Threads</button><button data-filter="comms" aria-pressed="false">Comms</button><button data-filter="bud" aria-pressed="false">Buds</button></div><label>Appearance<select id="cw-mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Width<select id="cw-width"><option value="full">Full</option><option value="390">390px</option><option value="320">320px</option><option value="260">260px</option></select></label><label>Member palette<select id="cw-palette"><option value="plum">Plum / jade</option><option value="blue">Blue / lilac</option><option value="copper">Copper / teal</option></select></label></nav><section class="cw-card" id="reniform-reverie" data-kind="thread"><header class="cw-card-head"><span>THREAD / 01</span><h2>Reniform Reverie</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-thread cw1-reniform-reverie">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">where your edges soften</span>
+<span class="cw1-sub">a quiet kind of closeness</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="where your edges soften" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a quiet kind of closeness" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-reniform-reverie-thread-01.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Reniform Reverie posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-thread cw1-reniform-reverie&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;where your edges soften&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;a quiet kind of closeness&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="under-the-cashew-tree" data-kind="thread"><header class="cw-card-head"><span>THREAD / 02</span><h2>Under the Cashew Tree</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-thread cw1-under-the-cashew-tree">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">a place to grow together</span>
+<span class="cw1-sub">beneath the same branches</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" alt="Character GIF 2" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 120 100" aria-hidden="true"><path class="cw1-leaf" d="M24 76Q59 51 92 15M54 50Q23 46 20 21Q49 23 54 50ZM72 33Q72 7 100 8Q99 30 72 33Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M44 62Q72 47 69 71Q67 87 53 88Q40 87 43 76Q49 72 52 77Q59 81 60 72Q56 67 50 70Q41 72 44 62Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="1.4"/><path d="M50 65L46 59" stroke="currentColor"/></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="a place to grow together" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="beneath the same branches" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-under-the-cashew-tree-thread-02.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Under the Cashew Tree posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-thread cw1-under-the-cashew-tree&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;a place to grow together&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;beneath the same branches&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv&quot; alt=&quot;Character GIF 2&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path class=&quot;cw1-leaf&quot; d=&quot;M24 76Q59 51 92 15M54 50Q23 46 20 21Q49 23 54 50ZM72 33Q72 7 100 8Q99 30 72 33Z&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;path d=&quot;M44 62Q72 47 69 71Q67 87 53 88Q40 87 43 76Q49 72 52 77Q59 81 60 72Q56 67 50 70Q41 72 44 62Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.4&quot;/&gt;&lt;path d=&quot;M50 65L46 59&quot; stroke=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="ivory-cotyledon" data-kind="thread"><header class="cw-card-head"><span>THREAD / 03</span><h2>Ivory Cotyledon</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-thread cw1-ivory-cotyledon">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">the shape of something tender</span>
+<span class="cw1-sub">held between these pages</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M57 20L48 34M75 29L62 36M82 48L68 48M75 66L62 57M58 80L55 65M39 78L42 64M22 62L37 56" fill="none" stroke="currentColor" stroke-width=".8"/></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="the shape of something tender" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="held between these pages" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-ivory-cotyledon-thread-03.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Ivory Cotyledon posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-thread cw1-ivory-cotyledon&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;the shape of something tender&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;held between these pages&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;path d=&quot;M57 20L48 34M75 29L62 36M82 48L68 48M75 66L62 57M58 80L55 65M39 78L42 64M22 62L37 56&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="roast-register" data-kind="thread"><header class="cw-card-head"><span>THREAD / 04</span><h2>Roast Register</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-thread cw1-roast-register">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">a little warmth remains</span>
+<span class="cw1-sub">collected, one moment at a time</span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 7V13M50 87V93M7 50H13M87 50H93M20 20L25 25M75 75L80 80M20 80L25 75M75 25L80 20" stroke="currentColor" stroke-width="1.2"/><g transform="translate(14 14) scale(.72)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="a little warmth remains" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="collected, one moment at a time" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-roast-register-thread-04.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Roast Register posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-thread cw1-roast-register&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;a little warmth remains&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;collected, one moment at a time&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M50 7V13M50 87V93M7 50H13M87 50H93M20 20L25 25M75 75L80 80M20 80L25 75M75 25L80 20&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;g transform=&quot;translate(14 14) scale(.72)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="anacardium-nocturne" data-kind="thread"><header class="cw-card-head"><span>THREAD / 05</span><h2>Anacardium Nocturne</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-thread cw1-anacardium-nocturne">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">the curve that leads to you</span>
+<span class="cw1-sub">when the evening settles</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" alt="Character GIF 2" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 110 100" aria-hidden="true"><g transform="translate(0 14) scale(.68)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g><g transform="translate(110 90) rotate(180) scale(.68)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="the curve that leads to you" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="when the evening settles" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-anacardium-nocturne-thread-05.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Anacardium Nocturne posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-thread cw1-anacardium-nocturne&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;the curve that leads to you&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;when the evening settles&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv&quot; alt=&quot;Character GIF 2&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 110 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;g transform=&quot;translate(0 14) scale(.68)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;g transform=&quot;translate(110 90) rotate(180) scale(.68)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="cashew-calling" data-kind="comms"><header class="cw-card-head"><span>COMMS / 01</span><h2>Cashew Calling</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-comms cw1-cashew-calling" data-direction="received">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">Yiyun</span>
+<span class="cw1-sub">online now</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cw1-receipt"><span>21:08</span><span>Delivered</span></div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></div>
+<div class="cw1-chrome" aria-hidden="true"><span>CASHEW</span><span>◦ ◦ ◦</span></div>
+<div class="cw1-device" aria-hidden="true"><span>Message…</span><span>↑</span></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Contact / conversation<input name="title" value="Yiyun" spellcheck="false"></label><label>Status<input name="subtitle" value="online now" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="21:08" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cw-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-cashew-calling-comms-01.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Cashew Calling posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-comms cw1-cashew-calling&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;Yiyun&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;online now&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-receipt&quot;&gt;&lt;span&gt;21:08&lt;/span&gt;&lt;span&gt;Delivered&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;CASHEW&lt;/span&gt;&lt;span&gt;◦ ◦ ◦&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message…&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="kernelink" data-kind="comms"><header class="cw-card-head"><span>COMMS / 02</span><h2>Kernelink</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-comms cw1-kernelink" data-direction="received">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">Cookie</span>
+<span class="cw1-sub">connection secure</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cw1-receipt"><span>21:08</span><span>Delivered</span></div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M57 20L48 34M75 29L62 36M82 48L68 48M75 66L62 57M58 80L55 65M39 78L42 64M22 62L37 56" fill="none" stroke="currentColor" stroke-width=".8"/></svg></div>
+<div class="cw1-chrome" aria-hidden="true"><span>KERNELINK</span><span>CONNECTED</span></div>
+<div class="cw1-device" aria-hidden="true"><span>Write a message…</span><span>↵</span></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Contact / conversation<input name="title" value="Cookie" spellcheck="false"></label><label>Status<input name="subtitle" value="connection secure" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="21:08" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cw-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-kernelink-comms-02.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Kernelink posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-comms cw1-kernelink&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;Cookie&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;connection secure&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-receipt&quot;&gt;&lt;span&gt;21:08&lt;/span&gt;&lt;span&gt;Delivered&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;path d=&quot;M57 20L48 34M75 29L62 36M82 48L68 48M75 66L62 57M58 80L55 65M39 78L42 64M22 62L37 56&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;KERNELINK&lt;/span&gt;&lt;span&gt;CONNECTED&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Write a message…&lt;/span&gt;&lt;span&gt;↵&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="roastwave" data-kind="comms"><header class="cw-card-head"><span>COMMS / 03</span><h2>Roastwave</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-comms cw1-roastwave" data-direction="received">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">Yiyun</span>
+<span class="cw1-sub">new messages</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cw1-receipt"><span>21:08</span><span>Delivered</span></div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 7V13M50 87V93M7 50H13M87 50H93M20 20L25 25M75 75L80 80M20 80L25 75M75 25L80 20" stroke="currentColor" stroke-width="1.2"/><g transform="translate(14 14) scale(.72)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g></svg></div>
+<div class="cw1-chrome" aria-hidden="true"><span>ROASTWAVE</span><span>◦ ROASTWAVE ◦</span></div>
+<div class="cw1-device" aria-hidden="true"><span>Reply</span><span>○</span></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Contact / conversation<input name="title" value="Yiyun" spellcheck="false"></label><label>Status<input name="subtitle" value="new messages" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="21:08" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cw-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-roastwave-comms-03.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Roastwave posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-comms cw1-roastwave&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;Yiyun&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;new messages&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-receipt&quot;&gt;&lt;span&gt;21:08&lt;/span&gt;&lt;span&gt;Delivered&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M50 7V13M50 87V93M7 50H13M87 50H93M20 20L25 25M75 75L80 80M20 80L25 75M75 25L80 20&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;g transform=&quot;translate(14 14) scale(.72)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;ROASTWAVE&lt;/span&gt;&lt;span&gt;◦ ROASTWAVE ◦&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Reply&lt;/span&gt;&lt;span&gt;○&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="shellmail" data-kind="comms"><header class="cw-card-head"><span>COMMS / 04</span><h2>Shellmail</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-comms cw1-shellmail" data-direction="received">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">Cookie</span>
+<span class="cw1-sub">active just now</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cw1-receipt"><span>21:08</span><span>Delivered</span></div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 110 100" aria-hidden="true"><g transform="translate(0 14) scale(.68)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g><g transform="translate(110 90) rotate(180) scale(.68)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g></svg></div>
+<div class="cw1-chrome" aria-hidden="true"><span>SHELLMAIL</span><span>−　□　×</span></div>
+<div class="cw1-device" aria-hidden="true"><span>Type a reply…</span><span>↗</span></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Contact / conversation<input name="title" value="Cookie" spellcheck="false"></label><label>Status<input name="subtitle" value="active just now" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="21:08" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cw-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-shellmail-comms-04.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Shellmail posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-comms cw1-shellmail&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;Cookie&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;active just now&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-receipt&quot;&gt;&lt;span&gt;21:08&lt;/span&gt;&lt;span&gt;Delivered&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 110 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;g transform=&quot;translate(0 14) scale(.68)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;g transform=&quot;translate(110 90) rotate(180) scale(.68)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;SHELLMAIL&lt;/span&gt;&lt;span&gt;−　□　×&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Type a reply…&lt;/span&gt;&lt;span&gt;↗&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="caju-connect" data-kind="comms"><header class="cw-card-head"><span>COMMS / 05</span><h2>Caju Connect</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-comms cw1-caju-connect" data-direction="received">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">Cookie &amp; Yiyun</span>
+<span class="cw1-sub">our little corner</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" alt="Character GIF 2" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cw1-receipt"><span>21:08</span><span>Delivered</span></div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 120 100" aria-hidden="true"><path class="cw1-leaf" d="M24 76Q59 51 92 15M54 50Q23 46 20 21Q49 23 54 50ZM72 33Q72 7 100 8Q99 30 72 33Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M44 62Q72 47 69 71Q67 87 53 88Q40 87 43 76Q49 72 52 77Q59 81 60 72Q56 67 50 70Q41 72 44 62Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="1.4"/><path d="M50 65L46 59" stroke="currentColor"/></svg></div>
+<div class="cw1-chrome" aria-hidden="true"><span>CAJU CONNECT</span><span>•••</span></div>
+<div class="cw1-device" aria-hidden="true"><span>Send a little hello</span><span>↑</span></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Contact / conversation<input name="title" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Status<input name="subtitle" value="our little corner" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="21:08" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cw-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-caju-connect-comms-05.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Caju Connect posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-comms cw1-caju-connect&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;Cookie &amp;amp; Yiyun&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;our little corner&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv&quot; alt=&quot;Character GIF 2&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-receipt&quot;&gt;&lt;span&gt;21:08&lt;/span&gt;&lt;span&gt;Delivered&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path class=&quot;cw1-leaf&quot; d=&quot;M24 76Q59 51 92 15M54 50Q23 46 20 21Q49 23 54 50ZM72 33Q72 7 100 8Q99 30 72 33Z&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;path d=&quot;M44 62Q72 47 69 71Q67 87 53 88Q40 87 43 76Q49 72 52 77Q59 81 60 72Q56 67 50 70Q41 72 44 62Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.4&quot;/&gt;&lt;path d=&quot;M50 65L46 59&quot; stroke=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;CAJU CONNECT&lt;/span&gt;&lt;span&gt;•••&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cw1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Send a little hello&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="seedcurl" data-kind="bud"><header class="cw-card-head"><span>BUDS / 01</span><h2>Seedcurl</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-bud cw1-seedcurl">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">stay a little closer</span>
+<span class="cw1-sub">one small moment</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="stay a little closer" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="one small moment" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-seedcurl-bud-01.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Seedcurl posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-bud cw1-seedcurl&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;stay a little closer&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;one small moment&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="cashewlet" data-kind="bud"><header class="cw-card-head"><span>BUDS / 02</span><h2>Cashewlet</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-bud cw1-cashewlet">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">something to hold</span>
+<span class="cw1-sub">just enough for us</span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M57 20L48 34M75 29L62 36M82 48L68 48M75 66L62 57M58 80L55 65M39 78L42 64M22 62L37 56" fill="none" stroke="currentColor" stroke-width=".8"/></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="something to hold" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="just enough for us" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-cashewlet-bud-02.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Cashewlet posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-bud cw1-cashewlet&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;something to hold&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;just enough for us&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;path d=&quot;M57 20L48 34M75 29L62 36M82 48L68 48M75 66L62 57M58 80L55 65M39 78L42 64M22 62L37 56&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="ivory-nib" data-kind="bud"><header class="cw-card-head"><span>BUDS / 03</span><h2>Ivory Nib</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-bud cw1-ivory-nib">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">a word, then another</span>
+<span class="cw1-sub">a note between two</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" alt="Character GIF 2" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 110 100" aria-hidden="true"><g transform="translate(0 14) scale(.68)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g><g transform="translate(110 90) rotate(180) scale(.68)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="a word, then another" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a note between two" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-ivory-nib-bud-03.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Ivory Nib posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-bud cw1-ivory-nib&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;a word, then another&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;a note between two&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv&quot; alt=&quot;Character GIF 2&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 110 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;g transform=&quot;translate(0 14) scale(.68)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;g transform=&quot;translate(110 90) rotate(180) scale(.68)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="toasted-comma" data-kind="bud"><header class="cw-card-head"><span>BUDS / 04</span><h2>Toasted Comma</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-bud cw1-toasted-comma">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">a pause for you</span>
+<span class="cw1-sub">warmth in the smallest things</span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 7V13M50 87V93M7 50H13M87 50H93M20 20L25 25M75 75L80 80M20 80L25 75M75 25L80 20" stroke="currentColor" stroke-width="1.2"/><g transform="translate(14 14) scale(.72)"><path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/></g></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="a pause for you" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="warmth in the smallest things" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-toasted-comma-bud-04.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Toasted Comma posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-bud cw1-toasted-comma&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;a pause for you&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;warmth in the smallest things&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M50 7V13M50 87V93M7 50H13M87 50H93M20 20L25 25M75 75L80 80M20 80L25 75M75 25L80 20&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;g transform=&quot;translate(14 14) scale(.72)&quot;&gt;&lt;path d=&quot;M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.17&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.8&quot;/&gt;&lt;path d=&quot;M66 24C79 36 78 54 65 67C51 80 29 70 24 54&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cw-card" id="caju-sprig" data-kind="bud"><header class="cw-card-head"><span>BUDS / 05</span><h2>Caju Sprig</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cw-stage">
+<div class="cw1 cw1-bud cw1-caju-sprig">
+<div class="cw1-layout">
+<div class="cw1-head">
+<a class="cw1-name" href="[url]">Cookie &amp; Yiyun</a>
+<span class="cw1-title">let it begin here</span>
+<span class="cw1-sub">a little room to grow</span>
+</div>
+<div class="cw1-media">
+<span class="cw1-shot"><img src="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" alt="Character GIF 1" style="--cw-crop:50% 35%"></span>
+</div>
+<div class="cw1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cw1-art" aria-hidden="true"><svg viewBox="0 0 120 100" aria-hidden="true"><path class="cw1-leaf" d="M24 76Q59 51 92 15M54 50Q23 46 20 21Q49 23 54 50ZM72 33Q72 7 100 8Q99 30 72 33Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M44 62Q72 47 69 71Q67 87 53 88Q40 87 43 76Q49 72 52 77Q59 81 60 72Q56 67 50 70Q41 72 44 62Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="1.4"/><path d="M50 65L46 59" stroke="currentColor"/></svg></div>
+</div>
+</div>
+
+</div><details class="cw-editor"><summary>Edit this template</summary><form><label>Names<input name="name" value="Cookie &amp; Yiyun" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="let it begin here" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a little room to grow" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cw-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cw-reset" type="button">Reset sample</button></form></details><div class="cw-actions"><button class="cw-copy" type="button">Copy template</button><button class="cw-placeholders" type="button">Copy [name] / [text] version</button><a href="cashew-caju-sprig-bud-05.txt">GitHub snippet ↗</a><span class="cw-status" role="status"></span></div><textarea class="cw-code" aria-label="Caju Sprig posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cw1 cw1-bud cw1-caju-sprig&quot;&gt;
+&lt;div class=&quot;cw1-layout&quot;&gt;
+&lt;div class=&quot;cw1-head&quot;&gt;
+&lt;a class=&quot;cw1-name&quot; href=&quot;[url]&quot;&gt;Cookie &amp;amp; Yiyun&lt;/a&gt;
+&lt;span class=&quot;cw1-title&quot;&gt;let it begin here&lt;/span&gt;
+&lt;span class=&quot;cw1-sub&quot;&gt;a little room to grow&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-media&quot;&gt;
+&lt;span class=&quot;cw1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cw-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cw1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path class=&quot;cw1-leaf&quot; d=&quot;M24 76Q59 51 92 15M54 50Q23 46 20 21Q49 23 54 50ZM72 33Q72 7 100 8Q99 30 72 33Z&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;path d=&quot;M44 62Q72 47 69 71Q67 87 53 88Q40 87 43 76Q49 72 52 77Q59 81 60 72Q56 67 50 70Q41 72 44 62Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.4&quot;/&gt;&lt;path d=&quot;M50 65L46 59&quot; stroke=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css&quot;&gt;
+[/dohtml]</textarea></section><footer class="cw-footer">CASHEW / THE CURVED LINE <a href="#top">Back to top ↑</a></footer></main><script>const designs=[{"type":"thread","name":"Reniform Reverie","slug":"reniform-reverie","images":1,"sampleTitle":"where your edges soften","subtitle":"a quiet kind of closeness","motif":1,"number":"01","file":"cashew-reniform-reverie-thread-01.txt"},{"type":"thread","name":"Under the Cashew Tree","slug":"under-the-cashew-tree","images":2,"sampleTitle":"a place to grow together","subtitle":"beneath the same branches","motif":2,"number":"02","file":"cashew-under-the-cashew-tree-thread-02.txt"},{"type":"thread","name":"Ivory Cotyledon","slug":"ivory-cotyledon","images":1,"sampleTitle":"the shape of something tender","subtitle":"held between these pages","motif":3,"number":"03","file":"cashew-ivory-cotyledon-thread-03.txt"},{"type":"thread","name":"Roast Register","slug":"roast-register","images":0,"sampleTitle":"a little warmth remains","subtitle":"collected, one moment at a time","motif":4,"number":"04","file":"cashew-roast-register-thread-04.txt"},{"type":"thread","name":"Anacardium Nocturne","slug":"anacardium-nocturne","images":2,"sampleTitle":"the curve that leads to you","subtitle":"when the evening settles","motif":5,"number":"05","file":"cashew-anacardium-nocturne-thread-05.txt"},{"type":"comms","name":"Cashew Calling","slug":"cashew-calling","images":1,"sampleTitle":"Yiyun","subtitle":"online now","motif":1,"number":"01","file":"cashew-cashew-calling-comms-01.txt"},{"type":"comms","name":"Kernelink","slug":"kernelink","images":1,"sampleTitle":"Cookie","subtitle":"connection secure","motif":3,"number":"02","file":"cashew-kernelink-comms-02.txt"},{"type":"comms","name":"Roastwave","slug":"roastwave","images":1,"sampleTitle":"Yiyun","subtitle":"new messages","motif":4,"number":"03","file":"cashew-roastwave-comms-03.txt"},{"type":"comms","name":"Shellmail","slug":"shellmail","images":1,"sampleTitle":"Cookie","subtitle":"active just now","motif":5,"number":"04","file":"cashew-shellmail-comms-04.txt"},{"type":"comms","name":"Caju Connect","slug":"caju-connect","images":2,"sampleTitle":"Cookie & Yiyun","subtitle":"our little corner","motif":2,"number":"05","file":"cashew-caju-connect-comms-05.txt"},{"type":"bud","name":"Seedcurl","slug":"seedcurl","images":1,"sampleTitle":"stay a little closer","subtitle":"one small moment","motif":1,"number":"01","file":"cashew-seedcurl-bud-01.txt"},{"type":"bud","name":"Cashewlet","slug":"cashewlet","images":0,"sampleTitle":"something to hold","subtitle":"just enough for us","motif":3,"number":"02","file":"cashew-cashewlet-bud-02.txt"},{"type":"bud","name":"Ivory Nib","slug":"ivory-nib","images":2,"sampleTitle":"a word, then another","subtitle":"a note between two","motif":5,"number":"03","file":"cashew-ivory-nib-bud-03.txt"},{"type":"bud","name":"Toasted Comma","slug":"toasted-comma","images":0,"sampleTitle":"a pause for you","subtitle":"warmth in the smallest things","motif":4,"number":"04","file":"cashew-toasted-comma-bud-04.txt"},{"type":"bud","name":"Caju Sprig","slug":"caju-sprig","images":1,"sampleTitle":"let it begin here","subtitle":"a little room to grow","motif":2,"number":"05","file":"cashew-caju-sprig-bud-05.txt"}];const gifs=["https://64.media.tumblr.com/6690b9e742b92526354571b1d3d2fad1/bc6f3af8721f1d21-f7/s400x600/6275ef80c0a945f25a981bacda6263da653b3598.gifv","https://64.media.tumblr.com/dc02b622d7671ea63edc93b2a6e30f18/fe1b6e52d8711060-9a/s400x600/053a6dce729fec0bf7ac6b148d2a58ab6b7116b3.gifv"];const writing={"thread":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>\n<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>\n<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>","comms":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>\n<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>","bud":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>"};const cssURL="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cashew/cashew-curved-line-v1.css";function esc(v){return String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
+function defaults(d){return {name:'Cookie & Yiyun',url:'[url]',title:d.sampleTitle,subtitle:d.subtitle,gif1:d.images?gifs[d.slug==='kernelink'||d.slug==='shellmail'?1:0]:'',gif2:d.images>1?gifs[1]:'',crop1:'50% 35%',crop2:'50% 35%',copy:writing[d.type],time:'21:08',receipt:'Delivered',direction:'received'};}
+function art(n){
+const kernel='<path d="M62 14C81 17 89 37 85 54C81 77 60 91 39 84C18 78 8 56 16 41C22 30 35 34 37 44C35 56 41 65 51 63C63 61 66 50 61 42C51 34 49 19 62 14Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.8"/><path d="M66 24C79 36 78 54 65 67C51 80 29 70 24 54" fill="none" stroke="currentColor" stroke-width="1.1"/>';
+if(n===2)return '<svg viewBox="0 0 120 100" aria-hidden="true"><path class="cw1-leaf" d="M24 76Q59 51 92 15M54 50Q23 46 20 21Q49 23 54 50ZM72 33Q72 7 100 8Q99 30 72 33Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M44 62Q72 47 69 71Q67 87 53 88Q40 87 43 76Q49 72 52 77Q59 81 60 72Q56 67 50 70Q41 72 44 62Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="1.4"/><path d="M50 65L46 59" stroke="currentColor"/></svg>';
+if(n===3)return '<svg viewBox="0 0 100 100" aria-hidden="true">'+kernel+'<path d="M57 20L48 34M75 29L62 36M82 48L68 48M75 66L62 57M58 80L55 65M39 78L42 64M22 62L37 56" fill="none" stroke="currentColor" stroke-width=".8"/></svg>';
+if(n===4)return '<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 7V13M50 87V93M7 50H13M87 50H93M20 20L25 25M75 75L80 80M20 80L25 75M75 25L80 20" stroke="currentColor" stroke-width="1.2"/><g transform="translate(14 14) scale(.72)">'+kernel+'</g></svg>';
+if(n===5)return '<svg viewBox="0 0 110 100" aria-hidden="true"><g transform="translate(0 14) scale(.68)">'+kernel+'</g><g transform="translate(110 90) rotate(180) scale(.68)">'+kernel+'</g></svg>';
+return '<svg viewBox="0 0 100 100" aria-hidden="true">'+kernel+'</svg>';
+}
+function template(d,s){
+const media=[s.gif1,s.gif2].map((g,i)=>g?`<span class="cw1-shot"><img src="${esc(g)}" alt="Character GIF ${i+1}" style="--cw-crop:${esc(s['crop'+(i+1)])}"></span>`:'').filter(Boolean).join('\n');
+const devices={
+'cashew-calling':['CASHEW','◦ ◦ ◦','Message…','↑'],
+'kernelink':['KERNELINK','CONNECTED','Write a message…','↵'],
+'roastwave':['ROASTWAVE','◦ ROASTWAVE ◦','Reply','○'],
+'shellmail':['SHELLMAIL','−　□　×','Type a reply…','↗'],
+'caju-connect':['CAJU CONNECT','•••','Send a little hello','↑']};
+const c=devices[d.slug];
+return `[dohtml]\n<div class="cw1 cw1-${d.type} cw1-${d.slug}"${d.type==='comms'?` data-direction="${esc(s.direction)}"`:''}>\n<div class="cw1-layout">\n<div class="cw1-head">\n<a class="cw1-name" href="${esc(s.url)}">${esc(s.name)}</a>\n<span class="cw1-title">${esc(s.title)}</span>\n<span class="cw1-sub">${esc(s.subtitle)}</span>\n</div>\n${media?`<div class="cw1-media">\n${media}\n</div>\n`:''}<div class="cw1-copy">\n${s.copy}\n</div>\n${c?`<div class="cw1-receipt"><span>${esc(s.time)}</span><span>${esc(s.receipt)}</span></div>\n`:''}<div class="cw1-art" aria-hidden="true">${art(d.motif)}</div>\n${c?`<div class="cw1-chrome" aria-hidden="true"><span>${c[0]}</span><span>${c[1]}</span></div>\n<div class="cw1-device" aria-hidden="true"><span>${c[2]}</span><span>${c[3]}</span></div>\n`:''}</div>\n</div>\n<link rel="stylesheet" href="${cssURL}">\n[/dohtml]`;
+}
+function bare(code){return code.replace(/\[\/?dohtml\]/gi,'').replace(/<link[^>]*>/gi,'');}
+const main=document.querySelector('.cw-main');
+const mode=document.getElementById('cw-mode');
+const mediaMode=window.matchMedia('(prefers-color-scheme:dark)');
+function setMode(){document.documentElement.setAttribute('color-mode',mode.value==='system'?(mediaMode.matches?'dark':'light'):mode.value);}
+mode.addEventListener('change',setMode);mediaMode.addEventListener('change',()=>{if(mode.value==='system')setMode();});
+document.getElementById('cw-width').addEventListener('change',e=>main.dataset.width=e.target.value);
+document.getElementById('cw-palette').addEventListener('change',e=>main.dataset.palette=e.target.value);
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.cw-card').forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.kind!==button.dataset.filter);}));
+function convertWriting(value){
+value=value.replace(/\[(\/)?(b|i|u)\]/gi,(_,close,tag)=>'<'+(close?'/':'')+tag.toLowerCase()+'>');
+const doc=new DOMParser().parseFromString(value,'text/html');
+doc.querySelectorAll('script,style,iframe,object,embed,link,meta').forEach(el=>el.remove());
+doc.querySelectorAll('*').forEach(el=>{for(const a of [...el.attributes])if(a.name.startsWith('on')||a.name==='srcdoc'||(/^(href|src)$/.test(a.name)&&/^\s*javascript:/i.test(a.value)))el.removeAttribute(a.name);});
+return doc.body.innerHTML;
+}
+async function copyValue(value,area,status){
+try{if(!navigator.clipboard)throw Error('clipboard');await navigator.clipboard.writeText(value);status.textContent='Copied.';}
+catch(e){area.value=value;area.focus();area.select();area.setSelectionRange(0,value.length);status.textContent='Code selected — press Ctrl+C or ⌘C.';}
+}
+for(const d of designs){
+const card=document.getElementById(d.slug),form=card.querySelector('form'),stage=card.querySelector('.cw-stage'),code=card.querySelector('.cw-code'),status=card.querySelector('.cw-status');
+function state(){const s={...defaults(d),...Object.fromEntries(new FormData(form))};s.copy=convertWriting(s.copy);for(const k of ['crop1','crop2'])if(!/^\d{1,3}%\s+\d{1,3}%$/.test(s[k]))s[k]='50% 35%';return s;}
+function update(){const value=template(d,state());stage.innerHTML=bare(value);code.value=value;status.textContent='';}
+form.addEventListener('submit',e=>e.preventDefault());form.addEventListener('input',update);form.addEventListener('change',update);
+card.querySelector('.cw-reset').addEventListener('click',()=>{const s=defaults(d);for(const [k,v] of Object.entries(s))if(form.elements.namedItem(k))form.elements.namedItem(k).value=v;update();});
+card.querySelector('.cw-copy').addEventListener('click',()=>{const value=template(d,state());code.value=value;copyValue(value,code,status);});
+card.querySelector('.cw-placeholders').addEventListener('click',()=>copyValue(template(d,{...state(),name:'[name]',url:'[url]',title:'[text]'}),code,status));
+}
+</script></body></html>

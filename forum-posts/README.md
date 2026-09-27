@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-875 distinct templates across 61 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+890 distinct templates across 62 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -15,6 +15,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Bread · Second Rise | 15 | [bread-forum-masterpost.txt](bread-forum-masterpost.txt) | [Preview](bread-preview.html) | 1 |
 | Bread · Legacy | 27 | [bread-legacy-forum-masterpost.txt](bread-legacy-forum-masterpost.txt) | [Preview](bread-legacy-preview.html) | 2 |
 | Brown Sugar | 15 | [brown-sugar-forum-masterpost.txt](brown-sugar-forum-masterpost.txt) | [Preview](brown-sugar-preview.html) | 1 |
+| Cashew | 15 | [cashew-forum-masterpost.txt](cashew-forum-masterpost.txt) | [Preview](cashew-preview.html) | 2 |
 | Cereal | 15 | [cereal-forum-masterpost.txt](cereal-forum-masterpost.txt) | [Preview](cereal-preview.html) | 1 |
 | Champagne | 15 | [champagne-forum-masterpost.txt](champagne-forum-masterpost.txt) | [Preview](champagne-preview.html) | 1 |
 | Cheese | 15 | [cheese-forum-masterpost.txt](cheese-forum-masterpost.txt) | [Preview](cheese-preview.html) | 1 |
