@@ -34,7 +34,7 @@ for(let i=0;i<15;i++){
  const d=designs[i],code=read(model.cheeseFilename(d));
  assert.equal($('#pv-code').value,code);
  assert(code.startsWith('[dohtml]\n')&&code.endsWith('[/dohtml]\n'));
- assert(['[name]','[text]','[url]'].every(x=>code.slice(0,250).includes(x)));
+ assert(['Minseo &amp; Tommy','[text]','[url]'].every(x=>code.slice(0,250).includes(x)));
  assert(!/<!--|\/\*|===/.test(code));
  assert(!/<script|<iframe/i.test(code));
  assert.equal((code.match(/<link /g)||[]).length,1);

@@ -28,7 +28,7 @@ function raspberryCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function raspberryDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Jian & Kijoon':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function raspberryDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function raspberryRender() {
   const d=raspberryDesigns[raspberryIndex],s=raspberryStates[raspberryIndex];
   $('#pv-stage').innerHTML=raspberryMarkup(d,raspberryDisplayState(d,s));

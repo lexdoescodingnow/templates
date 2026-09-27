@@ -13,7 +13,7 @@ function cleanCopy(value){
 }
 function refresh(card){
  const d=SR_DESIGNS.find(x=>x.slug===card.dataset.design),form=card.querySelector('form'),s=Object.fromEntries(new FormData(form));
- s.name=s.name.trim()||'[name]';s.title=s.title.trim()||'[text]';s.url=safeURL(s.url)||'[url]';
+ s.name=s.name.trim()||'Jinseok & Lucas';s.title=s.title.trim()||'[text]';s.url=safeURL(s.url)||'[url]';
  s.gif1=safeURL(s.gif1);s.gif2=safeURL(s.gif2);s.copy=cleanCopy(s.copy);
  const code=template(d,s);card.querySelector('.sr-code').value=code;
  card.querySelector('.sr-stage').innerHTML=code.replace('[dohtml]','').replace('[/dohtml]','').replace(/<link[^>]+>/g,'');

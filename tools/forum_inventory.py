@@ -68,7 +68,7 @@ def inventory():
      if d.get('slug','NO_SLUG') in row['source']:
       row.update(name=d['name'],description=d.get('description',''),type=d.get('type',row['type']))
   # Existing documentation carries the names of collections without a JSON manifest.
-  for md in folder.glob('*.md'):
+  for md in sorted(folder.glob('*.md'),key=lambda p:(p.name=='README.md',p.name)):
    for line in md.read_text().splitlines():
     if Path(row['source']).name in line and line.startswith('|'):
      z=re.search(r'\[([^\]]+)\]\('+re.escape(Path(row['source']).name)+r'\)',line)

@@ -8,7 +8,7 @@ const MOCHA_LATTE_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipis
 const MOCHA_LATTE_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const MOCHA_LATTE_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function mochaLatteEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function mochaLatteDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'14:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:MOCHA_LATTE_GIFS[i%3],position:'50% 35%'})),body:design.type==='thread'?MOCHA_LATTE_THREAD:design.type==='comms'?MOCHA_LATTE_COMMS:MOCHA_LATTE_BUD }; }
+function mochaLatteDefaults(design) { return { name:'Elias, Taeyang & Yujun',url:'[url]',title:'[text]',time:'14:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:MOCHA_LATTE_GIFS[i%3],position:'50% 35%'})),body:design.type==='thread'?MOCHA_LATTE_THREAD:design.type==='comms'?MOCHA_LATTE_COMMS:MOCHA_LATTE_BUD }; }
 function mochaLatteFilename(design) { return `mocha-latte-${design.slug}-${design.type}-${design.number}.txt`; }
 function mochaLatteMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${mochaLatteEscape(state.flow)}"`:'';

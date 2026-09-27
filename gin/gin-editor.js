@@ -21,7 +21,7 @@ function ginRead() {
 }
 function ginDraw() {
   const s=ginStates.get(ginCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'August & Linyu':s.name,title:s.title==='[text]'?ginCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?ginCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=ginMarkup(ginCurrent,visible);
   el('code').value=ginSnippet(ginCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

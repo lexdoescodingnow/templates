@@ -5,7 +5,7 @@ const PUMPKIN_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing 
 const PUMPKIN_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function pumpkinEscape(v) { return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function pumpkinSafeUrl(v) { const s=String(v).trim();return /^(https?:\/\/|mailto:|#)/i.test(s)||s==='[url]'?s:'#'; }
-function pumpkinDefaults(d) { return {name:'[name]',url:'[url]',title:'[text]',time:'19:42',flow:'received',gifs:PUMPKIN_GIFS.slice(0,d.gifs).map(url=>({url,position:'50% 45%'})),body:d.type==='thread'?PUMPKIN_THREAD:d.type==='comms'?PUMPKIN_COMMS:PUMPKIN_BUD}; }
+function pumpkinDefaults(d) { return {name:'Dexter & Happy',url:'[url]',title:'[text]',time:'19:42',flow:'received',gifs:PUMPKIN_GIFS.slice(0,d.gifs).map(url=>({url,position:'50% 45%'})),body:d.type==='thread'?PUMPKIN_THREAD:d.type==='comms'?PUMPKIN_COMMS:PUMPKIN_BUD}; }
 function pumpkinFilename(d) { return `pumpkin-${d.slug}-${d.type}-${d.number}.txt`; }
 function pumpkinMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';

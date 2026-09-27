@@ -21,7 +21,7 @@ function fieryRead() {
 }
 function fieryDraw() {
   const s=fieryStates.get(fieryCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?(fieryCurrent.type==='comms'?'Hiroshi':'Asher & Hiroshi'):s.name,title:s.title==='[text]'?fieryCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?fieryCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=fieryMarkup(fieryCurrent,visible);
   el('code').value=fierySnippet(fieryCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

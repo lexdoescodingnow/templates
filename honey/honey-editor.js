@@ -21,7 +21,7 @@ function honeyRead() {
 }
 function honeyDraw() {
   const s=honeyStates.get(honeyCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?(honeyCurrent.type==='comms'&&honeyCurrent.slug!=='royal-relay'?'Yuki':'Kota & Yuki'):s.name,title:s.title==='[text]'?honeyCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?honeyCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=honeyMarkup(honeyCurrent,visible);
   el('code').value=honeySnippet(honeyCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

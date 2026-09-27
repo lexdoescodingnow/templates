@@ -5,7 +5,7 @@ const GIN_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit
 const GIN_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function ginSafeUrl(value) { const s=String(value).trim(); return /^(https?:\/\/|mailto:|#)/i.test(s)||s==='[url]'?s:'#'; }
 function ginEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function ginDefaults(design) { return {name:'[name]',url:'[url]',title:'[text]',time:'22:16',flow:'received',gifs:GIN_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?GIN_THREAD:design.type==='comms'?GIN_COMMS:GIN_BUD}; }
+function ginDefaults(design) { return {name:'August & Linyu',url:'[url]',title:'[text]',time:'22:16',flow:'received',gifs:GIN_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?GIN_THREAD:design.type==='comms'?GIN_COMMS:GIN_BUD}; }
 function ginFilename(d) { return `gin-${d.slug}-${d.type}-${d.number}.txt`; }
 function ginMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';

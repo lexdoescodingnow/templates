@@ -7,7 +7,7 @@ const RASPBERRY_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipisci
 const RASPBERRY_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const RASPBERRY_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function raspberryEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function raspberryDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'00:26',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:RASPBERRY_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?RASPBERRY_THREAD:design.type==='comms'?RASPBERRY_COMMS:RASPBERRY_BUD }; }
+function raspberryDefaults(design) { return { name:'Jian & Kijoon',url:'[url]',title:'[text]',time:'00:26',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:RASPBERRY_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?RASPBERRY_THREAD:design.type==='comms'?RASPBERRY_COMMS:RASPBERRY_BUD }; }
 function raspberryFilename(design) { return `raspberry-${design.slug}-${design.type}-${design.number}.txt`; }
 function raspberryMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${raspberryEscape(state.flow)}"`:'';

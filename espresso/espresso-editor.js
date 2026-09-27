@@ -26,7 +26,7 @@ const ESPRESSO_DESIGNS = [
   {name:'One More Sip',slug:'one-more-sip',type:'bud',number:'05',gifs:0,description:'A tiny café receipt with split metadata, a perforated sign-off and a graphic till mark.',ornament:'<span>one more sip</span><span></span>'}
 ];
 const espEscape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const espDefault = design => ({name:'[name]',url:'[url]',text:'[text]',time:'23:08',direction:'received',body:ESPRESSO_COPY[design.type],images:ESPRESSO_GIFS.slice(0,design.gifs)});
+const espDefault = design => ({name:'Jaeho & Leo',url:'[url]',text:'[text]',time:'23:08',direction:'received',body:ESPRESSO_COPY[design.type],images:ESPRESSO_GIFS.slice(0,design.gifs)});
 const espFilename = design => `espresso-${design.slug}-${design.type}-${design.number}.txt`;
 function espMarkup(design, state) {
   const direction = design.type === 'comms' ? ` data-direction="${espEscape(state.direction)}"` : '';

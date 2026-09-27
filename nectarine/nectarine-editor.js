@@ -21,7 +21,7 @@ function nectarineRead() {
 }
 function nectarineDraw() {
   const s=nectarineStates.get(nectarineCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Akara & Clarity':s.name,title:s.title==='[text]'?nectarineCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?nectarineCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=nectarineMarkup(nectarineCurrent,visible);
   el('code').value=nectarineSnippet(nectarineCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

@@ -21,7 +21,7 @@ for(const d of designs){
   assert(code.includes(JELLY_CSS_URL),file);
   assert(css.includes(`.bhj-${d.slug}`),file+' has no variant CSS');
   assert(!/<!--|\/\*|<script|<style|<iframe|\bid=|\shidden[\s=>]/i.test(code),file);
-  assert(code.indexOf('[url]')<code.indexOf('bhj-copy')&&code.indexOf('[name]')<code.indexOf('bhj-copy')&&code.indexOf('[text]')<code.indexOf('bhj-copy'),file);
+  assert(code.indexOf('[url]')<code.indexOf('bhj-copy')&&code.indexOf('Bing &amp; Liang')<code.indexOf('bhj-copy')&&code.indexOf('[text]')<code.indexOf('bhj-copy'),file);
   assert(code.indexOf('bhj-copy')<code.indexOf(d.type==='comms'?'class="bhj-hardware"':'class="bhj-gel"'),file);
   assert.equal((code.match(/<img /g)||[]).length,d.gifs,file);
   for(const src of [...code.matchAll(/<img src="([^"]+)"/g)].map(x=>x[1]))assert(JELLY_GIFS.includes(src),file);

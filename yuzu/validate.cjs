@@ -34,11 +34,11 @@ for(let i=0;i<15;i++){
  const d=designs[i],code=read(model.yuzuFilename(d));
  assert.equal($('#pv-code').value,code);
  assert(code.startsWith('[dohtml]\n')&&code.endsWith('[/dohtml]\n'));
- assert(['[name]','[text]','[url]'].every(x=>code.slice(0,250).includes(x)));
+ assert(['Cole &amp; Jules','[text]','[url]'].every(x=>code.slice(0,250).includes(x)));
  assert(!/<!--|\/\*|===/.test(code));
  assert(!/<script|<iframe/i.test(code));
  assert.equal((code.match(/<link /g)||[]).length,1);
- assert.equal($('#pv-stage .yzu-name').textContent,'Cole & Julian');
+ assert.equal($('#pv-stage .yzu-name').textContent,'Cole & Jules');
  assert.equal(doc.querySelectorAll('#pv-stage .yzu-media img').length,d.gifs);
  if(d.type==='bud')assert($('#pv-stage .yzu-copy').textContent.split(/\s+/).length<=100);
  if(d.type==='comms')assert.equal(doc.querySelectorAll('#pv-stage .yzu-copy > p').length,3);

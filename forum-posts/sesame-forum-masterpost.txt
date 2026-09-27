@@ -1,7 +1,7 @@
 [size=7][b]SESAME[/b][/size]
 [i]15 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A seed-shaped portrait tucked into an asymmetric folio, with an oversized serif 
 
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-benne-folio">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -36,7 +36,7 @@ A seed-shaped portrait tucked into an asymmetric folio, with an oversized serif 
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-benne-folio">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -60,7 +60,7 @@ Two inward-facing seed portraits form a symmetrical diptych over a shared name s
 
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-goma-diptych">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -83,7 +83,7 @@ Two inward-facing seed portraits form a symmetrical diptych over a shared name s
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-goma-diptych">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -108,7 +108,7 @@ A folded confection wrapper with a square portrait, diagonal corner folds and a 
 
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-halva-maison">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -130,7 +130,7 @@ A folded confection wrapper with a square portrait, diagonal corner folds and a 
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-halva-maison">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -154,7 +154,7 @@ A botanical broadside with a sesame-pod spine, generous typography and an uninte
 
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-sesamum-herbarium">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -173,7 +173,7 @@ A botanical broadside with a sesame-pod spine, generous typography and an uninte
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-sesamum-herbarium">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -194,7 +194,7 @@ A writing-led oval-ended page with flowing ribbon rules, a wide italic heading a
 
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-tahini-silk">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -213,7 +213,7 @@ A writing-led oval-ended page with flowing ribbon rules, a wide italic heading a
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-thread ss-tahini-silk">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -236,7 +236,7 @@ A pill-edged smartphone with a seed-shaped contact portrait, three-colour frame 
 
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-benne-beam" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-media">
@@ -257,7 +257,7 @@ A pill-edged smartphone with a seed-shaped contact portrait, three-colour frame 
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-benne-beam" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-media">
@@ -280,7 +280,7 @@ A compact candybar handset with a recessed display, rounded-square keys and a tw
 
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-goma-click" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-copy">
@@ -298,7 +298,7 @@ A compact candybar handset with a recessed display, rounded-square keys and a tw
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-goma-click" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-copy">
@@ -318,7 +318,7 @@ A folding pocket phone with paired oval contact windows, a visible hinge and a s
 
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-podline-duo" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-media">
@@ -340,7 +340,7 @@ A folding pocket phone with paired oval contact windows, a visible hinge and a s
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-podline-duo" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-media">
@@ -364,7 +364,7 @@ A tiny square messaging device with a framed clock, a side dial and a softly rec
 
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-sesamail-mini" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-copy">
@@ -382,7 +382,7 @@ A tiny square messaging device with a framed clock, a side dial and a softly rec
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-sesamail-mini" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-copy">
@@ -402,7 +402,7 @@ A wide sliding communicator with a full-height portrait panel and its conversati
 
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-tahini-talk" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-media">
@@ -423,7 +423,7 @@ A wide sliding communicator with a full-height portrait panel and its conversati
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-comms ss-tahini-talk" data-flow="received">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-time">18:24</div>
 <div class="ss-media">
@@ -448,7 +448,7 @@ A slim folded bookmark with a panoramic image, vertical edge marks and an intima
 
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-aftertoast">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -466,7 +466,7 @@ A slim folded bookmark with a panoramic image, vertical edge marks and an intima
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-aftertoast">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -486,7 +486,7 @@ A miniature square poem tile with a stepped geometric corner and a compact serif
 
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-goma-glint">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -501,7 +501,7 @@ A miniature square poem tile with a stepped geometric corner and a compact serif
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-goma-glint">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -518,7 +518,7 @@ A tiny pointed seed envelope with a low-set title, two-colour edge and a short r
 
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-hullkiss">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -533,7 +533,7 @@ A tiny pointed seed envelope with a low-set title, two-colour edge and a short r
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-hullkiss">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -550,7 +550,7 @@ A horizontal keepsake card with a small seed portrait and delicate dotted stitch
 
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-ivory-speck">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -568,7 +568,7 @@ A horizontal keepsake card with a small seed portrait and delicate dotted stitch
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-ivory-speck">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -588,7 +588,7 @@ Two little seed portraits flank the heading of a rounded shared note.
 
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-twin-kernels">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -607,7 +607,7 @@ Two little seed portraits flank the heading of a rounded shared note.
 [code]
 [dohtml]
 <div class="bh-sesame-atelier ss-bud ss-twin-kernels">
-<a class="ss-name" href="[url]">[name]</a>
+<a class="ss-name" href="[url]">Stella &amp; Valerie</a>
 <div class="ss-title">[text]</div>
 <div class="ss-media">
 <img src="https://64.media.tumblr.com/43c1c6943973e4d8244e742ed542fb14/20e0d397f06a6f98-26/s1280x1920/5813cf28ad2f1ca2be36b68a5d4928754076748b.gifv" alt="Character GIF" style="object-position:50% 45%">

@@ -25,7 +25,7 @@ const designs = [
  ['bud','Last Morsel','last-morsel',1,'A narrow portrait tucked beside the reply and a broken crust edge.','one more thing']
 ].map((d,i)=>({type:d[0],name:d[1],slug:d[2],images:d[3],description:d[4],sampleTitle:d[5],number:String(i%5+1).padStart(2,'0'),file:`bread-${d[2]}-${d[0]}-${String(i%5+1).padStart(2,'0')}.txt`}));
 function esc(s){return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
-function defaults(d){return {name:'[name]',url:'[url]',title:'[text]',gif1:d.images?gifs[0]:'',gif2:d.images>1?gifs[1]:'',copy:d.type==='thread'?thread:d.type==='comms'?comms:bud,time:'09:41',receipt:'Delivered',direction:'received'};}
+function defaults(d){return {name:'Jinseok & Lucas',url:'[url]',title:'[text]',gif1:d.images?gifs[0]:'',gif2:d.images>1?gifs[1]:'',copy:d.type==='thread'?thread:d.type==='comms'?comms:bud,time:'09:41',receipt:'Delivered',direction:'received'};}
 function template(d,s){
  const media=[s.gif1,s.gif2].filter(Boolean).map((g,i)=>`<img src="${esc(g)}" alt="${i?'Lucas':'Jinseok'} character GIF">`).join('\n');
  const keypad='<div class="brr-device" aria-hidden="true">'+['1','2','3','4','5','6','7','8','9','✱','0','#'].map(x=>`<span>${x}</span>`).join('')+'</div>';

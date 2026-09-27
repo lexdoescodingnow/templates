@@ -28,7 +28,7 @@ function citronCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function citronDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Ben & Vince':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function citronDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function citronRender() {
   const d=citronDesigns[citronIndex],s=citronStates[citronIndex];
   $('#pv-stage').innerHTML=citronMarkup(d,citronDisplayState(d,s));

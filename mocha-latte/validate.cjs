@@ -34,11 +34,11 @@ for(let i=0;i<15;i++){
  const d=designs[i],code=read(model.mochaLatteFilename(d));
  assert.equal($('#pv-code').value,code);
  assert(code.startsWith('[dohtml]\n')&&code.endsWith('[/dohtml]\n'));
- assert(['[name]','[text]','[url]'].every(x=>code.slice(0,250).includes(x)));
+ assert(['Elias, Taeyang &amp; Yujun','[text]','[url]'].every(x=>code.slice(0,250).includes(x)));
  assert(!/<!--|\/\*|===/.test(code));
  assert(!/<script|<iframe/i.test(code));
  assert.equal((code.match(/<link /g)||[]).length,1);
- assert.equal($('#pv-stage .ml-name').textContent,'Taeyang · Elias · Yujun');
+ assert.equal($('#pv-stage .ml-name').textContent,'Elias, Taeyang & Yujun');
  assert.equal(doc.querySelectorAll('#pv-stage .ml-media img').length,d.gifs);
  if(d.type==='bud')assert($('#pv-stage .ml-copy').textContent.split(/\s+/).length<=100);
  if(d.type==='comms')assert.equal(doc.querySelectorAll('#pv-stage .ml-copy > p').length,3);

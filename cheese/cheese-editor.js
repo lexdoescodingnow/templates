@@ -28,7 +28,7 @@ function cheeseCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function cheeseDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Minseo & Tommy':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function cheeseDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function cheeseRender() {
   const d=cheeseDesigns[cheeseIndex],s=cheeseStates[cheeseIndex];
   $('#pv-stage').innerHTML=cheeseMarkup(d,cheeseDisplayState(d,s));

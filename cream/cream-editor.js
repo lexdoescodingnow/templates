@@ -19,7 +19,7 @@ function creamRead() {
 }
 function creamDraw() {
   const s=creamStates.get(creamCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Haoyu & Malachi':s.name,title:s.title==='[text]'?creamCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?creamCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=creamMarkup(creamCurrent,visible);
   el('code').value=creamSnippet(creamCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

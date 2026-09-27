@@ -21,7 +21,7 @@ function sesameRead() {
 }
 function sesameDraw() {
   const s=sesameStates.get(sesameCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?(sesameCurrent.type==='comms'&&sesameCurrent.slug!=='podline-duo'?'Valerie':'Stella & Valerie'):s.name,title:s.title==='[text]'?sesameCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?sesameCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=sesameMarkup(sesameCurrent,visible);
   el('code').value=sesameSnippet(sesameCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

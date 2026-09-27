@@ -1,12 +1,74 @@
 [size=7][b]BREAD[/b][/size]
 [i]42 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
 Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
 
+
+[size=6][b]COMMS[/b][/size]
+
+[size=4][b]16 · Batch Chat[/b][/size]
+A small desktop messenger with recipe-card portraits.
+
+[dohtml]
+<div class="brd brd-comms brd-batch-chat" data-direction="received">
+<div class="brd-meta">
+<a href="[url]">Jinseok &amp; Lucas</a>
+<span>[text]</span>
+</div>
+
+<div class="brd-gifs">
+<img src="https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/4e8bc343b4a97d72034b21e2cb23550d/26023af90a68a470-c7/s400x600/3f80e4580084b8c6c42198d76ec4a8e9e3d1272e.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="brd-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="brd-receipt">Received · 09:41</span>
+<div class="brd-status"><span>09:41</span><span class="brd-battery" aria-hidden="true"></span></div>
+
+<div class="brd-finish" aria-hidden="true"><span class="brd-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="brd brd-comms brd-batch-chat" data-direction="received">
+<div class="brd-meta">
+<a href="[url]">Jinseok &amp; Lucas</a>
+<span>[text]</span>
+</div>
+
+<div class="brd-gifs">
+<img src="https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<img src="https://64.media.tumblr.com/4e8bc343b4a97d72034b21e2cb23550d/26023af90a68a470-c7/s400x600/3f80e4580084b8c6c42198d76ec4a8e9e3d1272e.gifv" alt="Companion portrait" style="object-position:50% 40%;">
+</div>
+
+<div class="brd-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Duis aute irure dolor.</b> Praesent vel ligula id ipsum consequat tincidunt.</p>
+<p><i>Etiam vitae ligula nec lacus.</i> <u>Nulla facilisi.</u></p>
+</div>
+
+<span class="brd-receipt">Received · 09:41</span>
+<div class="brd-status"><span>09:41</span><span class="brd-battery" aria-hidden="true"></span></div>
+
+<div class="brd-finish" aria-hidden="true"><span class="brd-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-media-v2.css">
+[/dohtml]
+[/code]
 
 [size=4][b]17 · Brioche Buffer[/b][/size]
 A small tablet messenger with two profile tiles in its contact rail.
@@ -14,7 +76,7 @@ A small tablet messenger with two profile tiles in its contact rail.
 [dohtml]
 <div class="brr brr-comms brr-brioche-buffer" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -44,7 +106,7 @@ A small tablet messenger with two profile tiles in its contact rail.
 [dohtml]
 <div class="brr brr-comms brr-brioche-buffer" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -76,7 +138,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="brd brd-comms brd-butterwire" data-direction="received">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -104,7 +166,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="brd brd-comms brd-butterwire" data-direction="received">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -135,7 +197,7 @@ A comms layout from the Bread collection.
 <div class="bh-bread-comms bh-bread-comms-card" style="--bc-avatar:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');">
   <div class="bh-bread-comms-head">
     <div class="bh-bread-comms-avatar"><div class="bh-bread-comms-avatar-core"></div></div>
-    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">[name]</div></div>
+    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">Jinseok &amp; Lucas</div></div>
     <div class="bh-bread-comms-brand">bread</div>
   </div>
   <div class="bh-bread-comms-chat">
@@ -155,7 +217,7 @@ A comms layout from the Bread collection.
 <div class="bh-bread-comms bh-bread-comms-card" style="--bc-avatar:url('[url]');">
   <div class="bh-bread-comms-head">
     <div class="bh-bread-comms-avatar"><div class="bh-bread-comms-avatar-core"></div></div>
-    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">[name]</div></div>
+    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">Jinseok &amp; Lucas</div></div>
     <div class="bh-bread-comms-brand">bread</div>
   </div>
   <div class="bh-bread-comms-chat">
@@ -177,7 +239,7 @@ A comms layout from the Bread collection.
 <div class="bh-bread-comms bh-bread-comms-card" style="--bc-avatar:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');">
   <div class="bh-bread-comms-head">
     <div class="bh-bread-comms-avatar"><div class="bh-bread-comms-avatar-core"></div></div>
-    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">[name]</div></div>
+    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">Jinseok &amp; Lucas</div></div>
     <div class="bh-bread-comms-brand">bread</div>
   </div>
   <div class="bh-bread-comms-chat">
@@ -197,7 +259,7 @@ A comms layout from the Bread collection.
 <div class="bh-bread-comms bh-bread-comms-card" style="--bc-avatar:url('[url]');">
   <div class="bh-bread-comms-head">
     <div class="bh-bread-comms-avatar"><div class="bh-bread-comms-avatar-core"></div></div>
-    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">[name]</div></div>
+    <div class="bh-bread-comms-contact"><div class="bh-bread-comms-name">Jinseok &amp; Lucas</div></div>
     <div class="bh-bread-comms-brand">bread</div>
   </div>
   <div class="bh-bread-comms-chat">
@@ -218,7 +280,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="brd brd-comms brd-crumbline" data-direction="received">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -246,7 +308,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="brd brd-comms brd-crumbline" data-direction="received">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -276,7 +338,7 @@ A soft modern phone with a contact portrait, a camera island, and grouped bubble
 [dohtml]
 <div class="brr brr-comms brr-crust-signal" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -305,7 +367,7 @@ A soft modern phone with a contact portrait, a camera island, and grouped bubble
 [dohtml]
 <div class="brr brr-comms brr-crust-signal" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -336,7 +398,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="brd brd-comms brd-daily-knead" data-direction="received">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -364,7 +426,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="brd brd-comms brd-daily-knead" data-direction="received">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -394,7 +456,7 @@ A compact candybar handset with a separate screen and a physical number pad.
 [dohtml]
 <div class="brr brr-comms brr-loafline" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -423,7 +485,7 @@ A compact candybar handset with a separate screen and a physical number pad.
 [dohtml]
 <div class="brr brr-comms brr-loafline" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -454,7 +516,7 @@ A folding phone with a large cover portrait and a visible hinge.
 [dohtml]
 <div class="brr brr-comms brr-starter-sync" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -483,7 +545,7 @@ A folding phone with a large cover portrait and a visible hinge.
 [dohtml]
 <div class="brr brr-comms brr-starter-sync" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -514,7 +576,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="brd brd-comms brd-toast-talk" data-direction="received">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -542,7 +604,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="brd brd-comms brd-toast-talk" data-direction="received">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -572,7 +634,7 @@ A slim lock-screen phone with stacked notification cards and a large editable cl
 [dohtml]
 <div class="brr brr-comms brr-toastwave" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -597,7 +659,7 @@ A slim lock-screen phone with stacked notification cards and a large editable cl
 [dohtml]
 <div class="brr brr-comms brr-toastwave" data-direction="received">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 <small>09:41</small>
 </div>
@@ -625,7 +687,7 @@ A bud layout from the Bread collection.
 
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card" style="--bd-img1:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">keep it moving</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -636,7 +698,7 @@ A bud layout from the Bread collection.
 [code]
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card" style="--bd-img1:url('[url]');">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">keep it moving</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -649,7 +711,7 @@ A bud layout from the Bread collection.
 
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--portrait" style="--bd-img1:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">keep it moving</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -660,7 +722,7 @@ A bud layout from the Bread collection.
 [code]
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--portrait" style="--bd-img1:url('[url]');">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">keep it moving</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -673,7 +735,7 @@ A bud layout from the Bread collection.
 
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--duo" style="--bd-img1:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');--bd-img2:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-photo bh-bread-bud-photo--two"></div><div class="bh-bread-bud-chip">quick volley</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -684,7 +746,7 @@ A bud layout from the Bread collection.
 [code]
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--duo" style="--bd-img1:url('[url]');--bd-img2:url('[url2]');">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-photo bh-bread-bud-photo--two"></div><div class="bh-bread-bud-chip">quick volley</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -697,7 +759,7 @@ A bud layout from the Bread collection.
 
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--minimal">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -708,7 +770,7 @@ A bud layout from the Bread collection.
 [code]
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--minimal">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -721,7 +783,7 @@ A bud layout from the Bread collection.
 
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--strip" style="--bd-img1:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">small scene · quick turn</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -732,7 +794,7 @@ A bud layout from the Bread collection.
 [code]
 [dohtml]
 <div class="bh-bread-bud bh-bread-bud-card bh-bread-bud-card--strip" style="--bd-img1:url('[url]');">
-  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">[name]</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
+  <div class="bh-bread-bud-head"><div class="bh-bread-bud-seed"></div><div class="bh-bread-bud-brand"><span>quick growth</span><strong>bud</strong></div><div class="bh-bread-bud-identity"><span class="bh-bread-bud-name">Jinseok &amp; Lucas</span><span class="bh-bread-bud-limit">100 words or fewer</span></div></div>
   <div class="bh-bread-bud-layout"><div class="bh-bread-bud-media"><div class="bh-bread-bud-photo bh-bread-bud-photo--one"></div><div class="bh-bread-bud-chip">small scene · quick turn</div></div><div class="bh-bread-bud-copy"><div class="bh-bread-bud-body">[text]</div></div></div>
 </div>
 
@@ -746,7 +808,7 @@ A tiny open-corner note with a single toasted square accent.
 [dohtml]
 <div class="brr brr-bud brr-crouton">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -766,7 +828,7 @@ A tiny open-corner note with a single toasted square accent.
 [dohtml]
 <div class="brr brr-bud brr-crouton">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -788,7 +850,7 @@ A folded bakery packet with small photograph stamps.
 [dohtml]
 <div class="brd brd-bud brd-crustlet">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -812,7 +874,7 @@ A folded bakery packet with small photograph stamps.
 [dohtml]
 <div class="brd brd-bud brd-crustlet">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -838,7 +900,7 @@ A rounded loaf-heel silhouette for a short, writing-led reply.
 [dohtml]
 <div class="brr brr-bud brr-heel-and-heart">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -858,7 +920,7 @@ A rounded loaf-heel silhouette for a short, writing-led reply.
 [dohtml]
 <div class="brr brr-bud brr-heel-and-heart">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -880,7 +942,7 @@ A narrow portrait tucked beside the reply and a broken crust edge.
 [dohtml]
 <div class="brr brr-bud brr-last-morsel">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -904,7 +966,7 @@ A narrow portrait tucked beside the reply and a broken crust edge.
 [dohtml]
 <div class="brr brr-bud brr-last-morsel">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -921,97 +983,5 @@ A narrow portrait tucked beside the reply and a broken crust edge.
 </div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-second-rise-v1.css">
-[/dohtml]
-[/code]
-
-[size=4][b]37 · Little Plait[/b][/size]
-A miniature woven sign-off with two overlapping portrait seals.
-
-[dohtml]
-<div class="brr brr-bud brr-little-plait">
-<div class="brr-meta">
-<a href="[url]">[name]</a>
-<span>[text]</span>
-</div>
-
-<div class="brr-media">
-<img src="https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv" alt="Jinseok character GIF">
-<img src="https://64.media.tumblr.com/4e8bc343b4a97d72034b21e2cb23550d/26023af90a68a470-c7/s400x600/3f80e4580084b8c6c42198d76ec4a8e9e3d1272e.gifv" alt="Lucas character GIF">
-</div>
-
-<div class="brr-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Nunc vitae nisi vel justo.”</b> Aliquam erat volutpat. <i>Vestibulum ante ipsum</i>, in faucibus orci luctus. <u>Donec ornare</u> sem vel felis dignissim, at tincidunt urna.</p>
-</div>
-
-
-<div class="brr-ornament" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-second-rise-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="brr brr-bud brr-little-plait">
-<div class="brr-meta">
-<a href="[url]">[name]</a>
-<span>[text]</span>
-</div>
-
-<div class="brr-media">
-<img src="https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv" alt="Jinseok character GIF">
-<img src="https://64.media.tumblr.com/4e8bc343b4a97d72034b21e2cb23550d/26023af90a68a470-c7/s400x600/3f80e4580084b8c6c42198d76ec4a8e9e3d1272e.gifv" alt="Lucas character GIF">
-</div>
-
-<div class="brr-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Nunc vitae nisi vel justo.”</b> Aliquam erat volutpat. <i>Vestibulum ante ipsum</i>, in faucibus orci luctus. <u>Donec ornare</u> sem vel felis dignissim, at tincidunt urna.</p>
-</div>
-
-
-<div class="brr-ornament" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-second-rise-v1.css">
-[/dohtml]
-[/code]
-
-[size=4][b]38 · Petit Pain[/b][/size]
-A miniature loaf label with a short, image-free reply.
-
-[dohtml]
-<div class="brd brd-bud brd-petit-pain">
-<div class="brd-meta">
-<a href="[url]">[name]</a>
-<span>[text]</span>
-</div>
-
-<div class="brd-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Aenean vitae sapien sed sem tempus mollis. <i>Etiam vitae ligula nec lacus.</i> Praesent vel ligula id ipsum consequat tincidunt. <u>Nulla facilisi, sed tempus velit.</u></p>
-</div>
-
-<div class="brd-finish" aria-hidden="true"><span class="brd-mark"></span></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-media-v2.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="brd brd-bud brd-petit-pain">
-<div class="brd-meta">
-<a href="[url]">[name]</a>
-<span>[text]</span>
-</div>
-
-<div class="brd-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Aenean vitae sapien sed sem tempus mollis. <i>Etiam vitae ligula nec lacus.</i> Praesent vel ligula id ipsum consequat tincidunt. <u>Nulla facilisi, sed tempus velit.</u></p>
-</div>
-
-<div class="brd-finish" aria-hidden="true"><span class="brd-mark"></span></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-media-v2.css">
 [/dohtml]
 [/code]

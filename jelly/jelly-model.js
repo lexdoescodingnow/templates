@@ -7,7 +7,7 @@ const JELLY_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing e
 const JELLY_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const JELLY_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function jellyEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function jellyDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'21:09',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:JELLY_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?JELLY_THREAD:design.type==='comms'?JELLY_COMMS:JELLY_BUD }; }
+function jellyDefaults(design) { return { name:'Bing & Liang',url:'[url]',title:'[text]',time:'21:09',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:JELLY_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?JELLY_THREAD:design.type==='comms'?JELLY_COMMS:JELLY_BUD }; }
 function jellyFilename(design) { return `jelly-${design.slug}-${design.type}-${design.number}.txt`; }
 function jellyMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${jellyEscape(state.flow)}"`:'';

@@ -28,7 +28,7 @@ function tropicalCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function tropicalDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Davis & Theo':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function tropicalDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function tropicalRender() {
   const d=tropicalDesigns[tropicalIndex],s=tropicalStates[tropicalIndex];
   $('#pv-stage').innerHTML=tropicalMarkup(d,tropicalDisplayState(d,s));

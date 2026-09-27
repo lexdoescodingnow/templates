@@ -247,7 +247,7 @@ html[color-mode="dark"]{--ui-bg:#181e1b;--ui-paper:#222923;--ui-surface:#2b342d;
 <div class="palette-controls"><label>1 <input id="colour-1" aria-label="Member colour 1" type="color" value="#47797c"></label><label>2 <input id="colour-2" aria-label="Member colour 2" type="color" value="#6f769b"></label><label>3 <input id="colour-3" aria-label="Member colour 3" type="color" value="#97677d"></label><span>Preview colours only. Posts inherit member colours.</span></div>
 <div class="design-intro"><div><h2 id="selected-name"></h2><p id="design-description"></p></div><div class="pager"><button id="previous" type="button" aria-label="Previous design">←</button><button id="next" type="button" aria-label="Next design">→</button></div></div>
 <div class="editor-grid">
-<div class="preview-column"><div class="preview-heading"><span>Live forum preview</span><span id="media-note"></span></div><div class="forum-surface"><iframe id="preview-frame" title="Selected coconut template" sandbox="allow-same-origin" scrolling="no"></iframe></div><p class="preview-caption">Sample names and titles stand in for untouched placeholders here. Your copyable code retains [url], [name] and [text].</p></div>
+<div class="preview-column"><div class="preview-heading"><span>Live forum preview</span><span id="media-note"></span></div><div class="forum-surface"><iframe id="preview-frame" title="Selected coconut template" sandbox="allow-same-origin" scrolling="no"></iframe></div><p class="preview-caption">Ship names are prefilled and editable. Sample titles stand in for [text] in the preview; copyable code retains [url] and [text].</p></div>
 <section class="fields-column" aria-label="Editable content"><h3>Make it yours</h3>
 <label>Character / partner name<input id="edit-name" type="text"></label>
 <label>Character / thread URL<input id="edit-url" type="text" inputmode="url"></label>
@@ -292,7 +292,7 @@ const COCONUT_DESIGNS=[
 {name:'Tender Kernel',slug:'tender-kernel',type:'bud',number:'05',gifs:0,icon:'shell',sample:'the softest part',description:'A compact coconut-half note with a curved lower frame and a small engraved shell.'}
 ];
 const ccnEscape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const ccnDefault=design=>({name:'[name]',url:'[url]',text:'[text]',time:'09:41',direction:'received',body:COCONUT_COPY[design.type],images:COCONUT_GIFS.slice(0,design.gifs)});
+const ccnDefault=design=>({name:'Dustin & Noah',url:'[url]',text:'[text]',time:'09:41',direction:'received',body:COCONUT_COPY[design.type],images:COCONUT_GIFS.slice(0,design.gifs)});
 const ccnFilename=design=>`coconut-${design.slug}-${design.type}-${design.number}.txt`;
 function ccnMarkup(design,state){
   const direction=design.type==='comms'?` data-direction="${ccnEscape(state.direction)}"`:'';
@@ -331,7 +331,7 @@ if(typeof document!=='undefined'){
   }
   const readState=()=>({...Object.fromEntries(fields.map(k=>[k,el('edit-'+k).value])),images:[...el('image-fields').querySelectorAll('input')].map(input=>input.value)});
   const cleanState=state=>({...state,url:safeURL(state.url,true),body:cleanBody(state.body),images:state.images.map(value=>safeURL(value))});
-  const visualState=(design,state)=>({...state,name:state.name==='[name]'?'Dustin / Noah':state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
+  const visualState=(design,state)=>({...state,name:state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
   function frameDoc(design,state){
     const mode=el('mode-select').value;
     const variables=colours.map((value,i)=>`--mgrgb${i+1}:${value}`).join(';');

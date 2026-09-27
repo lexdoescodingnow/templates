@@ -1,7 +1,7 @@
 [size=7][b]BANANA[/b][/size]
 [i]15 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A thread layout from the Banana collection.
 
 [dohtml]
 <div class="banana-keepsake">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-title">Banana</div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-gifs">
@@ -40,7 +40,7 @@ A thread layout from the Banana collection.
 [code]
 [dohtml]
 <div class="banana-keepsake">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-title">Banana</div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-gifs">
@@ -68,7 +68,7 @@ A single oval portrait and a softer, rounded frame.
 
 [dohtml]
 <div class="banana-keepsake bn-cameo">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
@@ -93,7 +93,7 @@ A single oval portrait and a softer, rounded frame.
 [code]
 [dohtml]
 <div class="banana-keepsake bn-cameo">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
@@ -120,7 +120,7 @@ One wide, arched GIF with leaves framing the heading.
 
 [dohtml]
 <div class="banana-keepsake bn-canopy">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
@@ -145,7 +145,7 @@ One wide, arched GIF with leaves framing the heading.
 [code]
 [dohtml]
 <div class="banana-keepsake bn-canopy">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
@@ -172,7 +172,7 @@ A writing-led postcard with a postmark motif, botanical finish and fine double b
 
 [dohtml]
 <div class="banana-keepsake bn-postcard">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -194,7 +194,7 @@ A writing-led postcard with a postmark motif, botanical finish and fine double b
 [code]
 [dohtml]
 <div class="banana-keepsake bn-postcard">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -218,7 +218,7 @@ Two aligned square GIFs crossed by a band of member colours.
 
 [dohtml]
 <div class="banana-keepsake bn-ribbon">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
@@ -244,7 +244,7 @@ Two aligned square GIFs crossed by a band of member colours.
 [code]
 [dohtml]
 <div class="banana-keepsake bn-ribbon">
-<div class="bn-names"><a href="[url]">[name]</a><span>&amp;</span><a href="[url]">[name]</a></div>
+<div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-subtitle">[text]</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
@@ -275,7 +275,7 @@ A centred circular contact GIF and rounded message bubbles.
 [dohtml]
 <div class="banana-comms-keepsake bc-cameo">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -298,7 +298,7 @@ A centred circular contact GIF and rounded message bubbles.
 [dohtml]
 <div class="banana-comms-keepsake bc-cameo">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -323,7 +323,7 @@ An arched contact banner inside a curved phone frame.
 [dohtml]
 <div class="banana-comms-keepsake bc-canopy">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
@@ -346,7 +346,7 @@ An arched contact banner inside a curved phone frame.
 [dohtml]
 <div class="banana-comms-keepsake bc-canopy">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
@@ -371,7 +371,7 @@ A compact phone with a portrait on the right and a round home button.
 [dohtml]
 <div class="banana-comms-keepsake bc-postcard">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
@@ -394,7 +394,7 @@ A compact phone with a portrait on the right and a round home button.
 [dohtml]
 <div class="banana-comms-keepsake bc-postcard">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
@@ -419,7 +419,7 @@ A coloured header rule, round avatar and edged message bubbles.
 [dohtml]
 <div class="banana-comms-keepsake bc-ribbon">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -442,7 +442,7 @@ A coloured header rule, round avatar and edged message bubbles.
 [dohtml]
 <div class="banana-comms-keepsake bc-ribbon">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -467,7 +467,7 @@ The original Banana phone with its contact header and incoming bubbles.
 [dohtml]
 <div class="banana-comms-keepsake">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -490,7 +490,7 @@ The original Banana phone with its contact header and incoming bubbles.
 [dohtml]
 <div class="banana-comms-keepsake">
 <div class="bc-contact">
-<a class="bc-name" href="[url]">[name]</a>
+<a class="bc-name" href="[url]">Dom &amp; Taein</a>
 <div class="bc-status">[text]</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -516,7 +516,7 @@ An image-free folded notecard for a quick reply.
 
 [dohtml]
 <div class="banana-bud bb-leaflet">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
@@ -531,7 +531,7 @@ An image-free folded notecard for a quick reply.
 [code]
 [dohtml]
 <div class="banana-bud bb-leaflet">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
@@ -548,7 +548,7 @@ A slim botanical note with the writing at its centre.
 
 [dohtml]
 <div class="banana-bud bb-pressing">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
@@ -563,7 +563,7 @@ A slim botanical note with the writing at its centre.
 [code]
 [dohtml]
 <div class="banana-bud bb-pressing">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
@@ -580,7 +580,7 @@ A rounded card with a leaf-shaped portrait.
 
 [dohtml]
 <div class="banana-bud bb-sprout">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -598,7 +598,7 @@ A rounded card with a leaf-shaped portrait.
 [code]
 [dohtml]
 <div class="banana-bud bb-sprout">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -618,7 +618,7 @@ An arched side portrait beside a short passage.
 
 [dohtml]
 <div class="banana-bud bb-tendril">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -636,7 +636,7 @@ An arched side portrait beside a short passage.
 [code]
 [dohtml]
 <div class="banana-bud bb-tendril">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -656,7 +656,7 @@ Two overlapping character GIFs.
 
 [dohtml]
 <div class="banana-bud bb-twinleaf">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
@@ -675,7 +675,7 @@ Two overlapping character GIFs.
 [code]
 [dohtml]
 <div class="banana-bud bb-twinleaf">
-<div class="bb-meta"><a href="[url]">[name]</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">

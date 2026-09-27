@@ -159,7 +159,7 @@ const SULTANA_DESIGNS=[
   }
 ];
 const sulEscape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const sulDefault=design=>({name:'[name]',url:'[url]',text:'[text]',time:'21:08',direction:'received',body:SULTANA_COPY[design.type],images:SULTANA_GIFS.slice(0,design.gifs)});
+const sulDefault=design=>({name:'Jaehyun & Kia',url:'[url]',text:'[text]',time:'21:08',direction:'received',body:SULTANA_COPY[design.type],images:SULTANA_GIFS.slice(0,design.gifs)});
 const sulFilename=design=>`sultana-${design.slug}-${design.type}-${design.number}.txt`;
 function sulMarkup(design,state){
   const direction=design.type==='comms'?` data-direction="${sulEscape(state.direction)}"`:'';
@@ -198,7 +198,7 @@ if(typeof document!=='undefined'){
   }
   const readState=()=>({...Object.fromEntries(fields.map(k=>[k,el('edit-'+k).value])),images:[...el('image-fields').querySelectorAll('input')].map(input=>input.value)});
   const cleanState=state=>({...state,url:safeURL(state.url,true),body:cleanBody(state.body),images:state.images.map(value=>safeURL(value))});
-  const visualState=(design,state)=>({...state,name:state.name==='[name]'?'Kia / Jaehyun':state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
+  const visualState=(design,state)=>({...state,name:state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
   function frameDoc(design,state){
     const mode=el('mode-select').value;
     const variables=colours.map((value,i)=>`--mgrgb${i+1}:${value}`).join(';');

@@ -7,7 +7,7 @@ const BOBA_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing el
 const BOBA_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const BOBA_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function bobaEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function bobaDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'22:26',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:BOBA_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?BOBA_THREAD:design.type==='comms'?BOBA_COMMS:BOBA_BUD }; }
+function bobaDefaults(design) { return { name:'Hunter & Soomin',url:'[url]',title:'[text]',time:'22:26',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:BOBA_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?BOBA_THREAD:design.type==='comms'?BOBA_COMMS:BOBA_BUD }; }
 function bobaFilename(design) { return `boba-${design.slug}-${design.type}-${design.number}.txt`; }
 function bobaMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${bobaEscape(state.flow)}"`:'';

@@ -28,7 +28,7 @@ function italianCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function italianDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Freddie & Ollie':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function italianDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function italianRender() {
   const d=italianDesigns[italianIndex],s=italianStates[italianIndex];
   $('#pv-stage').innerHTML=italianMarkup(d,italianDisplayState(d,s));

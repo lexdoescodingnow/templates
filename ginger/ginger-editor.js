@@ -28,7 +28,7 @@ function gingerCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function gingerDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Aaron & Bandy':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function gingerDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function gingerRender() {
   const d=gingerDesigns[gingerIndex],s=gingerStates[gingerIndex];
   $('#pv-stage').innerHTML=gingerMarkup(d,gingerDisplayState(d,s));

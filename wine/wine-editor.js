@@ -19,7 +19,7 @@ function wineRead() {
 }
 function wineDraw() {
   const s=wineStates.get(wineCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Casper & Micah':s.name,title:s.title==='[text]'?wineCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?wineCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=wineMarkup(wineCurrent,visible);
   el('code').value=wineSnippet(wineCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

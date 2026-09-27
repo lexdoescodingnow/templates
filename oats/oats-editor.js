@@ -19,7 +19,7 @@ function oatsRead() {
 }
 function oatsDraw() {
   const s=oatsStates.get(oatsCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Chen & Song':s.name,title:s.title==='[text]'?oatsCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?oatsCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=oatsMarkup(oatsCurrent,visible);
   el('code').value=oatsSnippet(oatsCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

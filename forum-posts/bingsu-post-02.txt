@@ -1,7 +1,7 @@
 [size=7][b]BINGSU[/b][/size]
 [i]26 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -13,7 +13,7 @@ A slim candybar phone with crystalline navigation keys and a real twelve-key sil
 
 [dohtml]
 <div class="bgs bgs-comms bgs-sleet-signal" data-direction="received">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-copy">
@@ -33,7 +33,7 @@ A slim candybar phone with crystalline navigation keys and a real twelve-key sil
 [code]
 [dohtml]
 <div class="bgs bgs-comms bgs-sleet-signal" data-direction="received">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-copy">
@@ -55,7 +55,7 @@ A frosted notification phone with a tall clock, floating portrait tile and a sep
 
 [dohtml]
 <div class="bgs bgs-comms bgs-snowglow" data-direction="received">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-media">
@@ -78,7 +78,7 @@ A frosted notification phone with a tall clock, floating portrait tile and a sep
 [code]
 [dohtml]
 <div class="bgs bgs-comms bgs-snowglow" data-direction="received">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-media">
@@ -117,7 +117,7 @@ A bud layout from the Bingsu collection.
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Max GIF">
 </div>
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -153,7 +153,7 @@ A bud layout from the Bingsu collection.
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Max GIF">
 </div>
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -192,7 +192,7 @@ A bud layout from the Bingsu collection.
 
 <div class="bh-bud-head">
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -229,7 +229,7 @@ A bud layout from the Bingsu collection.
 
 <div class="bh-bud-head">
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -267,7 +267,7 @@ A bud layout from the Bingsu collection.
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Max GIF">
 </div>
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -302,7 +302,7 @@ A bud layout from the Bingsu collection.
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Max GIF">
 </div>
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -336,7 +336,7 @@ A bud layout from the Bingsu collection.
 
 <div class="bh-bud-head">
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -374,7 +374,7 @@ A bud layout from the Bingsu collection.
 
 <div class="bh-bud-head">
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -414,7 +414,7 @@ A bud layout from the Bingsu collection.
 
 <div class="bh-bud-head">
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -447,7 +447,7 @@ A bud layout from the Bingsu collection.
 
 <div class="bh-bud-head">
 <div>
-<h1 class="bh-bud-name">[name]</h1>
+<h1 class="bh-bud-name">Isaiah &amp; Max</h1>
 <span class="bh-bud-sub">[text]</span>
 </div>
 </div>
@@ -473,7 +473,7 @@ A compact reply held within four delicate crystalline corners and an open centre
 
 [dohtml]
 <div class="bgs bgs-bud bgs-frostpetal">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
@@ -488,7 +488,7 @@ A compact reply held within four delicate crystalline corners and an open centre
 [code]
 [dohtml]
 <div class="bgs bgs-bud bgs-frostpetal">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
@@ -505,7 +505,7 @@ A tiny angular glass slip with a notched heading and a crisp member-colour edge.
 
 [dohtml]
 <div class="bgs bgs-bud bgs-icelet">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
@@ -520,7 +520,7 @@ A tiny angular glass slip with a notched heading and a crisp member-colour edge.
 [code]
 [dohtml]
 <div class="bgs bgs-bud bgs-icelet">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
@@ -537,7 +537,7 @@ A low, quiet note with a broken frost baseline and a sweeping handwritten headin
 
 [dohtml]
 <div class="bgs bgs-bud bgs-last-snow">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
@@ -552,7 +552,7 @@ A low, quiet note with a broken frost baseline and a sweeping handwritten headin
 [code]
 [dohtml]
 <div class="bgs bgs-bud bgs-last-snow">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
@@ -569,7 +569,7 @@ A small curved dessert-glass portrait above a short reply and an understated sig
 
 [dohtml]
 <div class="bgs bgs-bud bgs-milky-kiss">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -587,7 +587,7 @@ A small curved dessert-glass portrait above a short reply and an understated sig
 [code]
 [dohtml]
 <div class="bgs bgs-bud bgs-milky-kiss">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -607,7 +607,7 @@ A portrait postage tile aligned with a flowing colour trace and a miniature lite
 
 [dohtml]
 <div class="bgs bgs-bud bgs-syrup-trace">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/5e0702ad4d9460939d8e5d215eebdf41/70b9785f66892c5a-bb/s540x810/40d7d4732ea502da42eeed8f99a237c19bdaa59f.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -625,7 +625,7 @@ A portrait postage tile aligned with a flowing colour trace and a miniature lite
 [code]
 [dohtml]
 <div class="bgs bgs-bud bgs-syrup-trace">
-<a class="bgs-name" href="[url]">[name]</a>
+<a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
 <div class="bgs-title">[text]</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/5e0702ad4d9460939d8e5d215eebdf41/70b9785f66892c5a-bb/s540x810/40d7d4732ea502da42eeed8f99a237c19bdaa59f.gifv" alt="Character GIF" style="object-position:50% 35%">

@@ -7,7 +7,7 @@ const COCKTAIL_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscin
 const COCKTAIL_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const COCKTAIL_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function cocktailEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function cocktailDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'00:24',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:COCKTAIL_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?COCKTAIL_THREAD:design.type==='comms'?COCKTAIL_COMMS:COCKTAIL_BUD }; }
+function cocktailDefaults(design) { return { name:'Cal & Dae',url:'[url]',title:'[text]',time:'00:24',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:COCKTAIL_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?COCKTAIL_THREAD:design.type==='comms'?COCKTAIL_COMMS:COCKTAIL_BUD }; }
 function cocktailFilename(design) { return `cocktail-${design.slug}-${design.type}-${design.number}.txt`; }
 function cocktailMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${cocktailEscape(state.flow)}"`:'';

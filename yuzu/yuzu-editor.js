@@ -28,7 +28,7 @@ function yuzuCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function yuzuDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Cole & Julian':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function yuzuDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function yuzuRender() {
   const d=yuzuDesigns[yuzuIndex],s=yuzuStates[yuzuIndex];
   $('#pv-stage').innerHTML=yuzuMarkup(d,yuzuDisplayState(d,s));

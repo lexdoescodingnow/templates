@@ -4,7 +4,7 @@ const WINE_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing el
 const WINE_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const WINE_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function wineEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function wineDefaults(design) { return {name:'[name]',url:'[url]',title:'[text]',time:'21:08',flow:'received',gifs:WINE_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?WINE_THREAD:design.type==='comms'?WINE_COMMS:WINE_BUD}; }
+function wineDefaults(design) { return {name:'Casper & Micah',url:'[url]',title:'[text]',time:'21:08',flow:'received',gifs:WINE_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?WINE_THREAD:design.type==='comms'?WINE_COMMS:WINE_BUD}; }
 function wineFilename(d) { return `wine-${d.slug}-${d.type}-${d.number}.txt`; }
 function wineMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';

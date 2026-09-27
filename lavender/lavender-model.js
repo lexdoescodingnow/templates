@@ -7,7 +7,7 @@ const LAVENDER_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscin
 const LAVENDER_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const LAVENDER_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function lavenderEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function lavenderDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'22:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:LAVENDER_GIFS[i%2],position:'50% 45%'})),body:design.type==='thread'?LAVENDER_THREAD:design.type==='comms'?LAVENDER_COMMS:LAVENDER_BUD }; }
+function lavenderDefaults(design) { return { name:'Jinwoo & Yohan',url:'[url]',title:'[text]',time:'22:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:LAVENDER_GIFS[i%2],position:'50% 45%'})),body:design.type==='thread'?LAVENDER_THREAD:design.type==='comms'?LAVENDER_COMMS:LAVENDER_BUD }; }
 function lavenderFilename(design) { return `lavender-${design.slug}-${design.type}-${design.number}.txt`; }
 function lavenderMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${lavenderEscape(state.flow)}"`:'';

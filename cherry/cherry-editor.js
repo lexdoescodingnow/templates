@@ -19,7 +19,7 @@ function cherryRead() {
 }
 function cherryDraw() {
   const s=cherryStates.get(cherryCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Jaehwa & Ubin':s.name,title:s.title==='[text]'?cherryCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?cherryCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=cherryMarkup(cherryCurrent,visible);
   el('code').value=cherrySnippet(cherryCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

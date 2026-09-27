@@ -1,7 +1,7 @@
 [size=7][b]SOUR[/b][/size]
 [i]15 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ Crystalline edges and a candy-shard motif frame an image-free page.
 [dohtml]
 <div class="sour-afterglow-thread">
 <div class="sour-afterglow-thread-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -41,7 +41,7 @@ Crystalline edges and a candy-shard motif frame an image-free page.
 [dohtml]
 <div class="sour-afterglow-thread">
 <div class="sour-afterglow-thread-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -69,7 +69,7 @@ One oval candy window, twisted wrapper ends and scattered sugar grains.
 [dohtml]
 <div class="sour-bonbon-thread">
 <div class="sour-bonbon-thread-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -99,7 +99,7 @@ One oval candy window, twisted wrapper ends and scattered sugar grains.
 [dohtml]
 <div class="sour-bonbon-thread">
 <div class="sour-bonbon-thread-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -131,7 +131,7 @@ One circular portrait, sugar-coated gummy rings and fizzy bubbles.
 [dohtml]
 <div class="sour-fizz-thread">
 <div class="sour-fizz-thread-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -161,7 +161,7 @@ One circular portrait, sugar-coated gummy rings and fizzy bubbles.
 [dohtml]
 <div class="sour-fizz-thread">
 <div class="sour-fizz-thread-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -193,7 +193,7 @@ Looped sour belts, sugar crystals and softly tilted picture frames.
 [dohtml]
 <div class="sour-ribbons-thread">
 <div class="sour-ribbons-thread-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -224,7 +224,7 @@ Looped sour belts, sugar crystals and softly tilted picture frames.
 [dohtml]
 <div class="sour-ribbons-thread">
 <div class="sour-ribbons-thread-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -257,7 +257,7 @@ Crimped sachet seams, sugar-speckled windows and illustrated dipping sticks.
 [dohtml]
 <div class="sour-sherbet">
 <div class="sour-sherbet-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -288,7 +288,7 @@ Crimped sachet seams, sugar-speckled windows and illustrated dipping sticks.
 [dohtml]
 <div class="sour-sherbet">
 <div class="sour-sherbet-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -323,7 +323,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-afterglow-comms">
 <div class="sour-afterglow-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -353,7 +353,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-afterglow-comms">
 <div class="sour-afterglow-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -385,7 +385,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-bonbon-comms">
 <div class="sour-bonbon-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -415,7 +415,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-bonbon-comms">
 <div class="sour-bonbon-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -447,7 +447,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-fizz-comms">
 <div class="sour-fizz-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -477,7 +477,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-fizz-comms">
 <div class="sour-fizz-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -509,7 +509,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-ribbons-comms">
 <div class="sour-ribbons-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -539,7 +539,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-ribbons-comms">
 <div class="sour-ribbons-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -571,7 +571,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-sherbet-comms">
 <div class="sour-sherbet-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -601,7 +601,7 @@ One character contact portrait, with the original device frame and message bubbl
 [dohtml]
 <div class="sour-sherbet-comms">
 <div class="sour-sherbet-comms-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -635,7 +635,7 @@ A miniature crystalline note with no portrait rail.
 [dohtml]
 <div class="sour-afterglow-bud">
 <div class="sour-afterglow-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -659,7 +659,7 @@ A miniature crystalline note with no portrait rail.
 [dohtml]
 <div class="sour-afterglow-bud">
 <div class="sour-afterglow-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -685,7 +685,7 @@ Twisted wrapper ends, oval candy windows and scattered sugar grains.
 [dohtml]
 <div class="sour-bonbon-bud">
 <div class="sour-bonbon-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -714,7 +714,7 @@ Twisted wrapper ends, oval candy windows and scattered sugar grains.
 [dohtml]
 <div class="sour-bonbon-bud">
 <div class="sour-bonbon-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -745,7 +745,7 @@ One small character portrait beside a compact reply and the original themed deta
 [dohtml]
 <div class="sour-fizz-bud">
 <div class="sour-fizz-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -773,7 +773,7 @@ One small character portrait beside a compact reply and the original themed deta
 [dohtml]
 <div class="sour-fizz-bud">
 <div class="sour-fizz-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -803,7 +803,7 @@ One small character portrait beside a compact reply and the original themed deta
 [dohtml]
 <div class="sour-ribbons-bud">
 <div class="sour-ribbons-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -831,7 +831,7 @@ One small character portrait beside a compact reply and the original themed deta
 [dohtml]
 <div class="sour-ribbons-bud">
 <div class="sour-ribbons-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -861,7 +861,7 @@ A tiny crimped sachet note, with room for the words alone.
 [dohtml]
 <div class="sour-sherbet-bud">
 <div class="sour-sherbet-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 
@@ -885,7 +885,7 @@ A tiny crimped sachet note, with room for the words alone.
 [dohtml]
 <div class="sour-sherbet-bud">
 <div class="sour-sherbet-bud-tag">
-<a href="[url]">[name]</a>
+<a href="[url]">Lyle &amp; Will</a>
 <span>[text]</span>
 </div>
 

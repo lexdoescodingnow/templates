@@ -14,7 +14,7 @@ snippets.forEach((s,i)=>{
  assert.equal(s,m.plumSnippet(m.PLUM_DESIGNS[i],m.plumDefaults(m.PLUM_DESIGNS[i]),revision));
  assert.ok(s.startsWith('[dohtml]\n')&&s.endsWith('[/dohtml]\n'));
  assert.equal((s.match(/<link /g)||[]).length,1);
- assert.ok(s.indexOf('[url]')<s.indexOf('plm-copy')&&s.indexOf('[name]')<s.indexOf('plm-copy')&&s.indexOf('[text]')<s.indexOf('plm-copy'));
+ assert.ok(s.indexOf('[url]')<s.indexOf('plm-copy')&&s.indexOf('Jason &amp; Mike')<s.indexOf('plm-copy')&&s.indexOf('[text]')<s.indexOf('plm-copy'));
  assert.ok(s.indexOf('<link')>s.indexOf('plm-copy'));
  assert.ok(!/<!--|<script|\/\*|===|---/.test(s));
  if(m.PLUM_DESIGNS[i].type==='bud')assert.ok(m.plumDefaults(m.PLUM_DESIGNS[i]).body.replace(/<[^>]*>/g,'').split(/\s+/).length<=100);

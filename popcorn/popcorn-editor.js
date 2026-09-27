@@ -28,7 +28,7 @@ function popcornCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function popcornDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Caleb & Peter':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function popcornDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function popcornRender() {
   const d=popcornDesigns[popcornIndex],s=popcornStates[popcornIndex];
   $('#pv-stage').innerHTML=popcornMarkup(d,popcornDisplayState(d,s));

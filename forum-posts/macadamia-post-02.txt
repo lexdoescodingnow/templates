@@ -1,7 +1,7 @@
 [size=7][b]MACADAMIA[/b][/size]
 [i]26 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -13,7 +13,7 @@ A miniature desktop terminal with a thick inset bezel, compact contact tile, squ
 
 [dohtml]
 <div class="bh-maca mc-comms mc-roast-terminal" data-flow="received">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
@@ -34,7 +34,7 @@ A miniature desktop terminal with a thick inset bezel, compact contact tile, squ
 [code]
 [dohtml]
 <div class="bh-maca mc-comms mc-roast-terminal" data-flow="received">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
@@ -57,7 +57,7 @@ A smooth pebble-shaped messenger with a wide earpiece, centred contact text and 
 
 [dohtml]
 <div class="bh-maca mc-comms mc-whisper-kernel" data-flow="received">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-time">16:28</div>
 <div class="mc-copy">
@@ -75,7 +75,7 @@ A smooth pebble-shaped messenger with a wide earpiece, centred contact text and 
 [code]
 [dohtml]
 <div class="bh-maca mc-comms mc-whisper-kernel" data-flow="received">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-time">16:28</div>
 <div class="mc-copy">
@@ -97,7 +97,7 @@ Two small portrait medallions hang from a fine flowering stem above a compact re
 
 [dohtml]
 <div class="bh-maca mc-bud mc-blossom-pair">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -116,7 +116,7 @@ Two small portrait medallions hang from a fine flowering stem above a compact re
 [code]
 [dohtml]
 <div class="bh-maca mc-bud mc-blossom-pair">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -144,7 +144,7 @@ A bud layout from the Macadamia collection.
 </a>
 
 <div class="bh-macbud-head">
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 </div>
 
@@ -171,7 +171,7 @@ A bud layout from the Macadamia collection.
 </a>
 
 <div class="bh-macbud-head">
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 </div>
 
@@ -197,7 +197,7 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <div>
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 </div>
 <span class="bh-macbud-limit">under 100 words</span>
@@ -223,7 +223,7 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <div>
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 </div>
 <span class="bh-macbud-limit">under 100 words</span>
@@ -250,7 +250,7 @@ A bud layout from the Macadamia collection.
 <div class="bh-macbud-shell">
 
 <div class="bh-macbud-head">
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 <span class="bh-macbud-limit">a reply in 100 words</span>
 </div>
@@ -278,7 +278,7 @@ A bud layout from the Macadamia collection.
 <div class="bh-macbud-shell">
 
 <div class="bh-macbud-head">
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 <span class="bh-macbud-limit">a reply in 100 words</span>
 </div>
@@ -312,7 +312,7 @@ A bud layout from the Macadamia collection.
 </a>
 
 <div class="bh-macbud-head">
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 </div>
 
@@ -339,7 +339,7 @@ A bud layout from the Macadamia collection.
 </a>
 
 <div class="bh-macbud-head">
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 </div>
 
@@ -365,7 +365,7 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <div>
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 </div>
 <span class="bh-macbud-limit">100 words or fewer</span>
@@ -396,7 +396,7 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <div>
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">[name]</a>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
 <span class="bh-macbud-meta">[text]</span>
 </div>
 <span class="bh-macbud-limit">100 words or fewer</span>
@@ -425,7 +425,7 @@ An asymmetric miniature with a portrait corner, a short reply and a scattering o
 
 [dohtml]
 <div class="bh-maca mc-bud mc-butterfleck">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -443,7 +443,7 @@ An asymmetric miniature with a portrait corner, a short reply and a scattering o
 [code]
 [dohtml]
 <div class="bh-maca mc-bud mc-butterfleck">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -463,7 +463,7 @@ A tiny upright note with a bold sans heading, a scattered imprint and a wide col
 
 [dohtml]
 <div class="bh-maca mc-bud mc-crumbprint">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -478,7 +478,7 @@ A tiny upright note with a bold sans heading, a scattered imprint and a wide col
 [code]
 [dohtml]
 <div class="bh-maca mc-bud mc-crumbprint">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -495,7 +495,7 @@ A tiny round seed-eye imprint anchors a short open reply between offset coloured
 
 [dohtml]
 <div class="bh-maca mc-bud mc-hilum">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -510,7 +510,7 @@ A tiny round seed-eye imprint anchors a short open reply between offset coloured
 [code]
 [dohtml]
 <div class="bh-maca mc-bud mc-hilum">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -527,7 +527,7 @@ A writing-led letterpress page with a large seed-eye impression, compressed type
 
 [dohtml]
 <div class="bh-maca mc-thread mc-hilum-press">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -546,7 +546,7 @@ A writing-led letterpress page with a large seed-eye impression, compressed type
 [code]
 [dohtml]
 <div class="bh-maca mc-thread mc-hilum-press">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -567,7 +567,7 @@ A low, slanted leaf-shaped portrait sits below a short reply and a small member-
 
 [dohtml]
 <div class="bh-maca mc-bud mc-whorllet">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -585,7 +585,7 @@ A low, slanted leaf-shaped portrait sits below a short reply and a small member-
 [code]
 [dohtml]
 <div class="bh-maca mc-bud mc-whorllet">
-<a class="mc-name" href="[url]">[name]</a>
+<a class="mc-name" href="[url]">Journey &amp; Kai</a>
 <div class="mc-title">[text]</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">

@@ -21,7 +21,7 @@ function brownSugarRead() {
 }
 function brownSugarDraw() {
   const s=brownSugarStates.get(brownSugarCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?(brownSugarCurrent.type==='comms'&&brownSugarCurrent.slug!=='duo-crystal'?'Taehwan':'Chanwoo & Taehwan'):s.name,title:s.title==='[text]'?brownSugarCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?brownSugarCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=brownSugarMarkup(brownSugarCurrent,visible);
   el('code').value=brownSugarSnippet(brownSugarCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

@@ -39,9 +39,9 @@ function motif(name) {
   return `<svg viewBox="0 0 120 120" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`;
 }
 function escapeHtml(s) {return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
-function initial(d) {return {url:'[url]',name:'[name]',title:'[text]',time:'21:08',images:Array.from({length:d.gifs},(_,i)=>gifs[(i+(d.number==='02'?1:0))%2]),body:writing[d.type],direction:'received'};}
+function initial(d) {return {url:'[url]',name:'Adriel & Lewis',title:'[text]',time:'21:08',images:Array.from({length:d.gifs},(_,i)=>gifs[(i+(d.number==='02'?1:0))%2]),body:writing[d.type],direction:'received'};}
 function markup(d,s=initial(d),preview=false) {
-  const name=preview && s.name==='[name]'?'Adriel & Lewis':s.name;
+  const name=s.name;
   const title=preview && s.title==='[text]'?d.sample:s.title;
   const url=preview && s.url==='[url]'?'#':s.url;
   let html=`<div class="pfr pfr-${d.type} pfr-${d.slug}"${d.type==='comms'?` data-direction="${escapeHtml(s.direction)}"`:''}>\n<div class="pfr-meta">\n<a href="${escapeHtml(url)}">${escapeHtml(name)}</a>\n<span>${escapeHtml(title)}</span>${d.type==='comms'?`\n<time>${escapeHtml(s.time)}</time>`:''}\n</div>\n`;

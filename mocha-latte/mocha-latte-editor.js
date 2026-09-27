@@ -28,7 +28,7 @@ function mochaLatteCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function mochaLatteDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Taeyang · Elias · Yujun':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function mochaLatteDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function mochaLatteRender() {
   const d=mochaLatteDesigns[mochaLatteIndex],s=mochaLatteStates[mochaLatteIndex];
   $('#pv-stage').innerHTML=mochaLatteMarkup(d,mochaLatteDisplayState(d,s));

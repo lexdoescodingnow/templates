@@ -187,7 +187,7 @@ const FUDGE_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing e
 const FUDGE_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const FUDGE_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function fudgeEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function fudgeDefaults(design) { return {name:'[name]',url:'[url]',title:'[text]',time:'21:08',flow:'received',gifs:FUDGE_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?FUDGE_THREAD:design.type==='comms'?FUDGE_COMMS:FUDGE_BUD}; }
+function fudgeDefaults(design) { return {name:'Ren & Tsubasa',url:'[url]',title:'[text]',time:'21:08',flow:'received',gifs:FUDGE_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?FUDGE_THREAD:design.type==='comms'?FUDGE_COMMS:FUDGE_BUD}; }
 function fudgeFilename(d) { return `fudge-${d.slug}-${d.type}-${d.number}.txt`; }
 function fudgeMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';
@@ -225,7 +225,7 @@ function fudgeRead() {
 }
 function fudgeDraw() {
   const s=fudgeStates.get(fudgeCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Ren & Tsubasa':s.name,title:s.title==='[text]'?fudgeCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?fudgeCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=fudgeMarkup(fudgeCurrent,visible);
   el('code').value=fudgeSnippet(fudgeCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

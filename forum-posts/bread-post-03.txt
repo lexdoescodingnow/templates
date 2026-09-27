@@ -1,12 +1,104 @@
 [size=7][b]BREAD[/b][/size]
 [i]42 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
 Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
 
+
+[size=4][b]37 · Little Plait[/b][/size]
+A miniature woven sign-off with two overlapping portrait seals.
+
+[dohtml]
+<div class="brr brr-bud brr-little-plait">
+<div class="brr-meta">
+<a href="[url]">Jinseok &amp; Lucas</a>
+<span>[text]</span>
+</div>
+
+<div class="brr-media">
+<img src="https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv" alt="Jinseok character GIF">
+<img src="https://64.media.tumblr.com/4e8bc343b4a97d72034b21e2cb23550d/26023af90a68a470-c7/s400x600/3f80e4580084b8c6c42198d76ec4a8e9e3d1272e.gifv" alt="Lucas character GIF">
+</div>
+
+<div class="brr-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Nunc vitae nisi vel justo.”</b> Aliquam erat volutpat. <i>Vestibulum ante ipsum</i>, in faucibus orci luctus. <u>Donec ornare</u> sem vel felis dignissim, at tincidunt urna.</p>
+</div>
+
+
+<div class="brr-ornament" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-second-rise-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="brr brr-bud brr-little-plait">
+<div class="brr-meta">
+<a href="[url]">Jinseok &amp; Lucas</a>
+<span>[text]</span>
+</div>
+
+<div class="brr-media">
+<img src="https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv" alt="Jinseok character GIF">
+<img src="https://64.media.tumblr.com/4e8bc343b4a97d72034b21e2cb23550d/26023af90a68a470-c7/s400x600/3f80e4580084b8c6c42198d76ec4a8e9e3d1272e.gifv" alt="Lucas character GIF">
+</div>
+
+<div class="brr-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Nunc vitae nisi vel justo.”</b> Aliquam erat volutpat. <i>Vestibulum ante ipsum</i>, in faucibus orci luctus. <u>Donec ornare</u> sem vel felis dignissim, at tincidunt urna.</p>
+</div>
+
+
+<div class="brr-ornament" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-second-rise-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]38 · Petit Pain[/b][/size]
+A miniature loaf label with a short, image-free reply.
+
+[dohtml]
+<div class="brd brd-bud brd-petit-pain">
+<div class="brd-meta">
+<a href="[url]">Jinseok &amp; Lucas</a>
+<span>[text]</span>
+</div>
+
+<div class="brd-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Aenean vitae sapien sed sem tempus mollis. <i>Etiam vitae ligula nec lacus.</i> Praesent vel ligula id ipsum consequat tincidunt. <u>Nulla facilisi, sed tempus velit.</u></p>
+</div>
+
+<div class="brd-finish" aria-hidden="true"><span class="brd-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-media-v2.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="brd brd-bud brd-petit-pain">
+<div class="brd-meta">
+<a href="[url]">Jinseok &amp; Lucas</a>
+<span>[text]</span>
+</div>
+
+<div class="brd-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Duis aute irure dolor.”</b> Aenean vitae sapien sed sem tempus mollis. <i>Etiam vitae ligula nec lacus.</i> Praesent vel ligula id ipsum consequat tincidunt. <u>Nulla facilisi, sed tempus velit.</u></p>
+</div>
+
+<div class="brd-finish" aria-hidden="true"><span class="brd-mark"></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bread/bread-media-v2.css">
+[/dohtml]
+[/code]
 
 [size=4][b]39 · Pinch of Rye[/b][/size]
 A pinched corner, small rounded portrait, and a compact reply.
@@ -14,7 +106,7 @@ A pinched corner, small rounded portrait, and a compact reply.
 [dohtml]
 <div class="brr brr-bud brr-pinch-of-rye">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -38,7 +130,7 @@ A pinched corner, small rounded portrait, and a compact reply.
 [dohtml]
 <div class="brr brr-bud brr-pinch-of-rye">
 <div class="brr-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -64,7 +156,7 @@ One small character portrait beside a compact reply and the original themed deta
 [dohtml]
 <div class="brd brd-bud brd-pocket-roll">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -87,7 +179,7 @@ One small character portrait beside a compact reply and the original themed deta
 [dohtml]
 <div class="brd brd-bud brd-pocket-roll">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -112,7 +204,7 @@ A handwritten note with a full-width reply and fine bakery details.
 [dohtml]
 <div class="brd brd-bud brd-rye-note">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -131,7 +223,7 @@ A handwritten note with a full-width reply and fine bakery details.
 [dohtml]
 <div class="brd brd-bud brd-rye-note">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -152,7 +244,7 @@ One small character portrait beside a compact reply and the original themed deta
 [dohtml]
 <div class="brd brd-bud brd-sesame-kiss">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 
@@ -175,7 +267,7 @@ One small character portrait beside a compact reply and the original themed deta
 [dohtml]
 <div class="brd brd-bud brd-sesame-kiss">
 <div class="brd-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jinseok &amp; Lucas</a>
 <span>[text]</span>
 </div>
 

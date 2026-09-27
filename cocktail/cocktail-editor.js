@@ -28,7 +28,7 @@ function cocktailCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function cocktailDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Callum & Dae':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function cocktailDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function cocktailRender() {
   const d=cocktailDesigns[cocktailIndex],s=cocktailStates[cocktailIndex];
   $('#pv-stage').innerHTML=cocktailMarkup(d,cocktailDisplayState(d,s));

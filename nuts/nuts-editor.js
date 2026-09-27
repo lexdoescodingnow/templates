@@ -19,7 +19,7 @@ function nutsRead() {
 }
 function nutsDraw() {
   const s=nutsStates.get(nutsCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Minharu & Taesung':s.name,title:s.title==='[text]'?nutsCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?nutsCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=nutsMarkup(nutsCurrent,visible);
   el('code').value=nutsSnippet(nutsCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

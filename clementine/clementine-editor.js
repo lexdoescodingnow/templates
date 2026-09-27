@@ -183,7 +183,7 @@ const CLEMENTINE_DESIGNS=[
   }
 ];
 const clmEscape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const clmDefault=design=>({name:'[name]',url:'[url]',text:'[text]',time:'09:41',direction:'received',body:CLEMENTINE_COPY[design.type],images:(design.gifs===1?[CLEMENTINE_GIFS[design.imageIndex||0]]:CLEMENTINE_GIFS.slice(0,design.gifs))});
+const clmDefault=design=>({name:'Siwoo & Yuseop',url:'[url]',text:'[text]',time:'09:41',direction:'received',body:CLEMENTINE_COPY[design.type],images:(design.gifs===1?[CLEMENTINE_GIFS[design.imageIndex||0]]:CLEMENTINE_GIFS.slice(0,design.gifs))});
 const clmFilename=design=>`clementine-${design.slug}-${design.type}-${design.number}.txt`;
 function clmMarkup(design,state){
   const direction=design.type==='comms'?` data-direction="${clmEscape(state.direction)}"`:'';
@@ -222,7 +222,7 @@ if(typeof document!=='undefined'){
   }
   const readState=()=>({...Object.fromEntries(fields.map(k=>[k,el('edit-'+k).value])),images:[...el('image-fields').querySelectorAll('input')].map(input=>input.value)});
   const cleanState=state=>({...state,url:safeURL(state.url,true),body:cleanBody(state.body),images:state.images.map(value=>safeURL(value))});
-  const visualState=(design,state)=>({...state,name:state.name==='[name]'?'Yuseop / Siwoo':state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
+  const visualState=(design,state)=>({...state,name:state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
   function frameDoc(design,state){
     const mode=el('mode-select').value;
     const variables=colours.map((value,i)=>`--mgrgb${i+1}:${value}`).join(';');

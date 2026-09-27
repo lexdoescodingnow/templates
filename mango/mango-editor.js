@@ -21,7 +21,7 @@ function mangoRead() {
 }
 function mangoDraw() {
   const s=mangoStates.get(mangoCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?(mangoCurrent.type==='comms'&&mangoCurrent.slug!=='cheek-chat'?'Jiyong':'Alastair & Jiyong'):s.name,title:s.title==='[text]'?mangoCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?mangoCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=mangoMarkup(mangoCurrent,visible);
   el('code').value=mangoSnippet(mangoCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

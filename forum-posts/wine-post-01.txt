@@ -1,7 +1,7 @@
 [size=7][b]WINE[/b][/size]
 [i]15 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A curving, wide-bottomed frame holds a single portrait beside a tall heading, op
 
 [dohtml]
 <div class="bh-wine wn-thread wn-decanter-study">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -37,7 +37,7 @@ A curving, wide-bottomed frame holds a single portrait beside a tall heading, op
 [code]
 [dohtml]
 <div class="bh-wine wn-thread wn-decanter-study">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -61,7 +61,7 @@ Two tall portraits form an asymmetric diptych above a strong horizontal title an
 
 [dohtml]
 <div class="bh-wine wn-thread wn-tannin-and-time">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -84,7 +84,7 @@ Two tall portraits form an asymmetric diptych above a strong horizontal title an
 [code]
 [dohtml]
 <div class="bh-wine wn-thread wn-tannin-and-time">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -109,7 +109,7 @@ An open cartographic page with a broad contour-map crest, an offset title and th
 
 [dohtml]
 <div class="bh-wine wn-thread wn-terroir-atlas">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -128,7 +128,7 @@ An open cartographic page with a broad contour-map crest, an offset title and th
 [code]
 [dohtml]
 <div class="bh-wine wn-thread wn-terroir-atlas">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -149,7 +149,7 @@ A spare typographic page with an oversized low-set heading, generous paragraph s
 
 [dohtml]
 <div class="bh-wine wn-thread wn-the-lees">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -168,7 +168,7 @@ A spare typographic page with an oversized low-set heading, generous paragraph s
 [code]
 [dohtml]
 <div class="bh-wine wn-thread wn-the-lees">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -189,7 +189,7 @@ A diagonal vineyard trellis frames two curved portraits over a colour-block name
 
 [dohtml]
 <div class="bh-wine wn-thread wn-veraison">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -212,7 +212,7 @@ A diagonal vineyard trellis frames two curved portraits over a colour-block name
 [code]
 [dohtml]
 <div class="bh-wine wn-thread wn-veraison">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -239,7 +239,7 @@ A broad foldable messenger with twin portrait tiles, a centre hinge seam and sof
 
 [dohtml]
 <div class="bh-wine wn-comms wn-amphora-link" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-media">
@@ -261,7 +261,7 @@ A broad foldable messenger with twin portrait tiles, a centre hinge seam and sof
 [code]
 [dohtml]
 <div class="bh-wine wn-comms wn-amphora-link" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-media">
@@ -285,7 +285,7 @@ A tall phone with a panoramic contact-photo header, a colour-washed name strip a
 
 [dohtml]
 <div class="bh-wine wn-comms wn-claret-connect" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-media">
@@ -306,7 +306,7 @@ A tall phone with a panoramic contact-photo header, a colour-washed name strip a
 [code]
 [dohtml]
 <div class="bh-wine wn-comms wn-claret-connect" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-media">
@@ -329,7 +329,7 @@ A notification-style phone with a large lock-screen clock, compact contact label
 
 [dohtml]
 <div class="bh-wine wn-comms wn-corkline" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-copy">
@@ -347,7 +347,7 @@ A notification-style phone with a large lock-screen clock, compact contact label
 [code]
 [dohtml]
 <div class="bh-wine wn-comms wn-corkline" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-copy">
@@ -367,7 +367,7 @@ A tailored smartphone with a pill camera, a small circular contact portrait and 
 
 [dohtml]
 <div class="bh-wine wn-comms wn-sommelier-os" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-media">
@@ -388,7 +388,7 @@ A tailored smartphone with a pill camera, a small circular contact portrait and 
 [code]
 [dohtml]
 <div class="bh-wine wn-comms wn-sommelier-os" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-media">
@@ -411,7 +411,7 @@ A slim corner-cut smartphone with a fine illuminated edge, a bottom contact dock
 
 [dohtml]
 <div class="bh-wine wn-comms wn-vintner-touch" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-copy">
@@ -429,7 +429,7 @@ A slim corner-cut smartphone with a fine illuminated edge, a bottom contact dock
 [code]
 [dohtml]
 <div class="bh-wine wn-comms wn-vintner-touch" data-flow="received">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-time">21:08</div>
 <div class="wn-copy">
@@ -451,7 +451,7 @@ A horizontal cellar-tag note with a punched loop, inked edge and a compact left-
 
 [dohtml]
 <div class="bh-wine wn-bud wn-corklet">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -466,7 +466,7 @@ A horizontal cellar-tag note with a punched loop, inked edge and a compact left-
 [code]
 [dohtml]
 <div class="bh-wine wn-bud wn-corklet">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -483,7 +483,7 @@ A narrow miniature reply with a tall glass-tube portrait and a small drop of col
 
 [dohtml]
 <div class="bh-wine wn-bud wn-pipette">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -501,7 +501,7 @@ A narrow miniature reply with a tall glass-tube portrait and a small drop of col
 [code]
 [dohtml]
 <div class="bh-wine wn-bud wn-pipette">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -521,7 +521,7 @@ A small open note with a ring-framed portrait overlapping a partial glass-rim im
 
 [dohtml]
 <div class="bh-wine wn-bud wn-rimprint">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -539,7 +539,7 @@ A small open note with a ring-framed portrait overlapping a partial glass-rim im
 [code]
 [dohtml]
 <div class="bh-wine wn-bud wn-rimprint">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -559,7 +559,7 @@ Two small bowl-shaped portraits sit above a shared stem line and a centred minia
 
 [dohtml]
 <div class="bh-wine wn-bud wn-two-sips">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -578,7 +578,7 @@ Two small bowl-shaped portraits sit above a shared stem line and a centred minia
 [code]
 [dohtml]
 <div class="bh-wine wn-bud wn-two-sips">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-media">
 <img src="https://64.media.tumblr.com/f8bb6805abfebb0928d1d4729b0bfa0b/85beaeb7f027f899-46/s540x810/785470f72900efcd05d2202286a67bceb1eb8b74.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -599,7 +599,7 @@ A compact bottle-foil sleeve with a serrated top edge, a narrow name band and a 
 
 [dohtml]
 <div class="bh-wine wn-bud wn-winefoil">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -614,7 +614,7 @@ A compact bottle-foil sleeve with a serrated top edge, a narrow name band and a 
 [code]
 [dohtml]
 <div class="bh-wine wn-bud wn-winefoil">
-<a class="wn-name" href="[url]">[name]</a>
+<a class="wn-name" href="[url]">Casper &amp; Micah</a>
 <div class="wn-title">[text]</div>
 <div class="wn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

@@ -28,7 +28,7 @@ function jellyCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function jellyDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Bing & Liang':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function jellyDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function jellyRender() {
   const d=jellyDesigns[jellyIndex],s=jellyStates[jellyIndex];
   $('#pv-stage').innerHTML=jellyMarkup(d,jellyDisplayState(d,s));

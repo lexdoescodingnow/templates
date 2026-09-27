@@ -35,7 +35,7 @@ for d in designs:
     s = file.read_text()
     assert s.startswith('[dohtml]\n') and s.endswith('[/dohtml]\n')
     assert s.count('[dohtml]') == 1 and s.count('[/dohtml]') == 1
-    assert all(t in s[:250] for t in ('[url]', '[name]', '[text]'))
+    assert all(t in s[:250] for t in ('[url]', 'Cal &amp; Dae', '[text]'))
     assert '<!--' not in s and '/*' not in s and '===' not in s
     doc = html.fromstring('<section>' + s[9:-10] + '</section>')
     wrapper = doc.xpath('./div')[0]

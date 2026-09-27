@@ -29,7 +29,7 @@ const COCONUT_DESIGNS=[
 {name:'Tender Kernel',slug:'tender-kernel',type:'bud',number:'05',gifs:0,icon:'shell',sample:'the softest part',description:'A compact coconut-half note with a curved lower frame and a small engraved shell.'}
 ];
 const ccnEscape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const ccnDefault=design=>({name:'[name]',url:'[url]',text:'[text]',time:'09:41',direction:'received',body:COCONUT_COPY[design.type],images:COCONUT_GIFS.slice(0,design.gifs)});
+const ccnDefault=design=>({name:'Dustin & Noah',url:'[url]',text:'[text]',time:'09:41',direction:'received',body:COCONUT_COPY[design.type],images:COCONUT_GIFS.slice(0,design.gifs)});
 const ccnFilename=design=>`coconut-${design.slug}-${design.type}-${design.number}.txt`;
 function ccnMarkup(design,state){
   const direction=design.type==='comms'?` data-direction="${ccnEscape(state.direction)}"`:'';
@@ -68,7 +68,7 @@ if(typeof document!=='undefined'){
   }
   const readState=()=>({...Object.fromEntries(fields.map(k=>[k,el('edit-'+k).value])),images:[...el('image-fields').querySelectorAll('input')].map(input=>input.value)});
   const cleanState=state=>({...state,url:safeURL(state.url,true),body:cleanBody(state.body),images:state.images.map(value=>safeURL(value))});
-  const visualState=(design,state)=>({...state,name:state.name==='[name]'?'Dustin / Noah':state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
+  const visualState=(design,state)=>({...state,name:state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
   function frameDoc(design,state){
     const mode=el('mode-select').value;
     const variables=colours.map((value,i)=>`--mgrgb${i+1}:${value}`).join(';');

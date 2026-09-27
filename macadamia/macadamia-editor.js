@@ -21,7 +21,7 @@ function macadamiaRead() {
 }
 function macadamiaDraw() {
   const s=macadamiaStates.get(macadamiaCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Journey & Kai':s.name,title:s.title==='[text]'?macadamiaCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?macadamiaCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=macadamiaMarkup(macadamiaCurrent,visible);
   el('code').value=macadamiaSnippet(macadamiaCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

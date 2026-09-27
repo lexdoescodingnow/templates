@@ -7,7 +7,7 @@ const PORTUGUESE_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipisc
 const PORTUGUESE_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const PORTUGUESE_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function portugueseEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function portugueseDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'19:42',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:PORTUGUESE_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?PORTUGUESE_THREAD:design.type==='comms'?PORTUGUESE_COMMS:PORTUGUESE_BUD }; }
+function portugueseDefaults(design) { return { name:'Seojun & Wenjun',url:'[url]',title:'[text]',time:'19:42',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:PORTUGUESE_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?PORTUGUESE_THREAD:design.type==='comms'?PORTUGUESE_COMMS:PORTUGUESE_BUD }; }
 function portugueseFilename(design) { return `portuguese-cuisine-${design.slug}-${design.type}-${design.number}.txt`; }
 function portugueseMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${portugueseEscape(state.flow)}"`:'';

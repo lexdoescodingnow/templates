@@ -7,7 +7,7 @@ const POPCORN_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing
 const POPCORN_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const POPCORN_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function popcornEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function popcornDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'21:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:POPCORN_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?POPCORN_THREAD:design.type==='comms'?POPCORN_COMMS:POPCORN_BUD }; }
+function popcornDefaults(design) { return { name:'Caleb & Peter',url:'[url]',title:'[text]',time:'21:08',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:POPCORN_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?POPCORN_THREAD:design.type==='comms'?POPCORN_COMMS:POPCORN_BUD }; }
 function popcornFilename(design) { return `popcorn-${design.slug}-${design.type}-${design.number}.txt`; }
 function popcornMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${popcornEscape(state.flow)}"`:'';

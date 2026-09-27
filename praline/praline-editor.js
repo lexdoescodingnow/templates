@@ -19,7 +19,7 @@ function pralineRead() {
 }
 function pralineDraw() {
   const s=pralineStates.get(pralineCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Dongmin & Yonggi':s.name,title:s.title==='[text]'?pralineCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?pralineCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=pralineMarkup(pralineCurrent,visible);
   el('code').value=pralineSnippet(pralineCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

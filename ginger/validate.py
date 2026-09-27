@@ -41,7 +41,7 @@ for d in designs:
  assert wrapper.tag=='div' and 'bh-ginger' in wrapper.get('class'),p
  assert link.tag=='link' and link.get('rel')=='stylesheet',p
  urls.add(link.get('href'))
- assert wrapper[0].tag=='a' and wrapper[0].text=='[name]' and wrapper[0].get('href')=='[url]',p
+ assert wrapper[0].tag=='a' and wrapper[0].text=='Aaron & Bandy' and wrapper[0].get('href')=='[url]',p
  assert wrapper[1].text=='[text]',p
  assert not wrapper.xpath('.//comment() | .//script | .//*[@id]'),p
  copy=wrapper.xpath('./div[@class="ggr-copy"]')[0]

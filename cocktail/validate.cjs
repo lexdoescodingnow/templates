@@ -29,7 +29,7 @@ for(let i=0;i<15;i++){
  assert.equal($('#pv-design-title').textContent,d.name);
  assert.equal($('#pv-code').value,fs.readFileSync(path.join(root,model.cocktailFilename(d)),'utf8'));
  assert.equal(doc.querySelectorAll('#pv-stage .ckt-media img').length,d.gifs);
- assert.equal($('#pv-stage .ckt-name').textContent,'Callum & Dae');
+ assert.equal($('#pv-stage .ckt-name').textContent,'Cal & Dae');
  for(let n=0;n<d.gifs;n++)click('[data-remove="0"]');
  assert.equal(doc.querySelectorAll('#pv-stage .ckt-media').length,0);
  assert(!$('#pv-code').value.includes('class="ckt-media"'));

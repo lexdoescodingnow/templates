@@ -306,7 +306,7 @@ html[color-mode="dark"]{--ui-bg:#1c181c;--ui-paper:#262127;--ui-surface:#322b32;
 <div class="palette-controls"><label>1 <input id="colour-1" aria-label="Member colour 1" type="color" value="#8f4b65"></label><label>2 <input id="colour-2" aria-label="Member colour 2" type="color" value="#716393"></label><label>3 <input id="colour-3" aria-label="Member colour 3" type="color" value="#3a7e81"></label><span>Preview colours only. Posts inherit member colours.</span></div>
 <div class="design-intro"><div><h2 id="selected-name"></h2><p id="design-description"></p></div><div class="pager"><button id="previous" type="button" aria-label="Previous design">←</button><button id="next" type="button" aria-label="Next design">→</button></div></div>
 <div class="editor-grid">
-<div class="preview-column"><div class="preview-heading"><span>Live forum preview</span><span id="media-note"></span></div><div class="forum-surface"><iframe id="preview-frame" title="Selected sultana template" sandbox="allow-same-origin" scrolling="no"></iframe></div><p class="preview-caption">Sample names and titles stand in for untouched placeholders here. Your copyable code retains [url], [name] and [text].</p></div>
+<div class="preview-column"><div class="preview-heading"><span>Live forum preview</span><span id="media-note"></span></div><div class="forum-surface"><iframe id="preview-frame" title="Selected sultana template" sandbox="allow-same-origin" scrolling="no"></iframe></div><p class="preview-caption">Ship names are prefilled and editable. Sample titles stand in for [text] in the preview; copyable code retains [url] and [text].</p></div>
 <section class="fields-column" aria-label="Editable content"><h3>Make it yours</h3>
 <label>Character / partner name<input id="edit-name" type="text"></label>
 <label>Character / thread URL<input id="edit-url" type="text" inputmode="url"></label>
@@ -481,7 +481,7 @@ const SULTANA_DESIGNS=[
   }
 ];
 const sulEscape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const sulDefault=design=>({name:'[name]',url:'[url]',text:'[text]',time:'21:08',direction:'received',body:SULTANA_COPY[design.type],images:SULTANA_GIFS.slice(0,design.gifs)});
+const sulDefault=design=>({name:'Jaehyun & Kia',url:'[url]',text:'[text]',time:'21:08',direction:'received',body:SULTANA_COPY[design.type],images:SULTANA_GIFS.slice(0,design.gifs)});
 const sulFilename=design=>`sultana-${design.slug}-${design.type}-${design.number}.txt`;
 function sulMarkup(design,state){
   const direction=design.type==='comms'?` data-direction="${sulEscape(state.direction)}"`:'';
@@ -520,7 +520,7 @@ if(typeof document!=='undefined'){
   }
   const readState=()=>({...Object.fromEntries(fields.map(k=>[k,el('edit-'+k).value])),images:[...el('image-fields').querySelectorAll('input')].map(input=>input.value)});
   const cleanState=state=>({...state,url:safeURL(state.url,true),body:cleanBody(state.body),images:state.images.map(value=>safeURL(value))});
-  const visualState=(design,state)=>({...state,name:state.name==='[name]'?'Kia / Jaehyun':state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
+  const visualState=(design,state)=>({...state,name:state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
   function frameDoc(design,state){
     const mode=el('mode-select').value;
     const variables=colours.map((value,i)=>`--mgrgb${i+1}:${value}`).join(';');

@@ -1,7 +1,7 @@
 [size=7][b]YUZU[/b][/size]
 [i]15 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ Two photographs nested inside a folded cloth parcel, diagonal member-colour corn
 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-knot-and-peel">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -37,7 +37,7 @@ Two photographs nested inside a folded cloth parcel, diagonal member-colour corn
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-knot-and-peel">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -62,7 +62,7 @@ A tall photographic bookmark crossing an asymmetrical paper jacket, paired with 
 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-komorebi-fold">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -84,7 +84,7 @@ A tall photographic bookmark crossing an asymmetrical paper jacket, paired with 
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-komorebi-fold">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -108,7 +108,7 @@ A fruit-crate cover with a bold packing-label title, unequal photo compartments 
 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-orchard-parcel">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -131,7 +131,7 @@ A fruit-crate cover with a bold packing-label title, unequal photo compartments 
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-orchard-parcel">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -156,7 +156,7 @@ A writing-led accordion folio with scored folds, a sideways signature tab and a 
 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-pulp-poetry">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -175,7 +175,7 @@ A writing-led accordion folio with scored folds, a sideways signature tab and a 
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-pulp-poetry">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -196,7 +196,7 @@ A tiled bathhouse threshold with a low panoramic portrait, a tiny floating yuzu 
 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-winter-bath">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -218,7 +218,7 @@ A tiled bathhouse threshold with a low panoramic portrait, a tiny floating yuzu 
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-winter-bath">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -244,7 +244,7 @@ A water-resistant phone with a tall carry loop, wide contact photograph and a ri
 
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-bathlight" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
@@ -265,7 +265,7 @@ A water-resistant phone with a tall carry loop, wide contact photograph and a ri
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-bathlight" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
@@ -288,7 +288,7 @@ A wide pocket pager with a left readout rail, squared message display and two ra
 
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-peel-pager" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-copy">
@@ -306,7 +306,7 @@ A wide pocket pager with a left readout rail, squared message display and two ra
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-peel-pager" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-copy">
@@ -326,7 +326,7 @@ A vertical folding handset with a double-photo cover, exposed hinge bar and a se
 
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-pulp-flip" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
@@ -348,7 +348,7 @@ A vertical folding handset with a double-photo cover, exposed hinge bar and a se
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-pulp-flip" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
@@ -372,7 +372,7 @@ A tiled smartphone with a square contact photo, a fine ceramic bezel and softly 
 
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-yuzen" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
@@ -393,7 +393,7 @@ A tiled smartphone with a square contact photo, a fine ceramic bezel and softly 
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-yuzen" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
@@ -416,7 +416,7 @@ A square retro slide-out messenger with an inset text screen, coloured corner sc
 
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-zestdeck" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-copy">
@@ -434,7 +434,7 @@ A square retro slide-out messenger with an inset text screen, coloured corner sc
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-zestdeck" data-flow="received">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-copy">
@@ -456,7 +456,7 @@ A slim tear-off slip with an offset title, three tiny fruit marks and a perforat
 
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-afterzest">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -471,7 +471,7 @@ A slim tear-off slip with an offset title, three tiny fruit marks and a perforat
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-afterzest">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -488,7 +488,7 @@ A tiny open note held between curled peel brackets, with a softly indented line 
 
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-peel-petal">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -503,7 +503,7 @@ A tiny open note held between curled peel brackets, with a softly indented line 
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-peel-petal">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -520,7 +520,7 @@ A miniature tiled corner card with a seed-shaped punctuation mark and a crisp li
 
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-pipnote">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -535,7 +535,7 @@ A miniature tiled corner card with a seed-shaped punctuation mark and a crisp li
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-pipnote">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -552,7 +552,7 @@ A narrow portrait tucked into a folded corner pocket, with a compact name tab an
 
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-rindlet">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -570,7 +570,7 @@ A narrow portrait tucked into a folded corner pocket, with a compact name tab an
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-rindlet">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -590,7 +590,7 @@ Two miniature photographs wrapped into one cloth parcel, a small crossed knot an
 
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-yuzu-musubi">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -609,7 +609,7 @@ Two miniature photographs wrapped into one cloth parcel, a small crossed knot an
 [code]
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-yuzu-musubi">
-<a class="yzu-name" href="[url]">[name]</a>
+<a class="yzu-name" href="[url]">Cole &amp; Jules</a>
 <div class="yzu-title">[text]</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">

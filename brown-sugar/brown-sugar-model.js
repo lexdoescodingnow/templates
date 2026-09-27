@@ -5,7 +5,7 @@ const BROWN_SUGAR_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipisc
 const BROWN_SUGAR_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function brownSugarEscape(v) { return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function brownSugarSafeUrl(v) { const s=String(v).trim(); return /^(https?:\/\/|mailto:|#)/i.test(s)||s==='[url]'?s:'#'; }
-function brownSugarDefaults(d) { return {name:'[name]',url:'[url]',title:'[text]',time:'21:08',flow:'received',gifs:BROWN_SUGAR_GIFS.slice(0,d.gifs).map(url=>({url,position:'50% 40%'})),body:d.type==='thread'?BROWN_SUGAR_THREAD:d.type==='comms'?BROWN_SUGAR_COMMS:BROWN_SUGAR_BUD}; }
+function brownSugarDefaults(d) { return {name:'Chanwoo & Taehwan',url:'[url]',title:'[text]',time:'21:08',flow:'received',gifs:BROWN_SUGAR_GIFS.slice(0,d.gifs).map(url=>({url,position:'50% 40%'})),body:d.type==='thread'?BROWN_SUGAR_THREAD:d.type==='comms'?BROWN_SUGAR_COMMS:BROWN_SUGAR_BUD}; }
 function brownSugarFilename(d) { return `brown-sugar-${d.slug}-${d.type}-${d.number}.txt`; }
 function brownSugarMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';

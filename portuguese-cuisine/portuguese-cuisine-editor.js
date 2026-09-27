@@ -28,7 +28,7 @@ function portugueseCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function portugueseDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Seojun & Wenjun':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function portugueseDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function portugueseRender() {
   const d=portugueseDesigns[portugueseIndex],s=portugueseStates[portugueseIndex];
   $('#pv-stage').innerHTML=portugueseMarkup(d,portugueseDisplayState(d,s));

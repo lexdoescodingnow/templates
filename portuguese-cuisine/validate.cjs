@@ -26,7 +26,7 @@ for(const d of designs){
  ok(code===model.portugueseSnippet(d,s),d.name+' export matches model');
  ok(code.startsWith('[dohtml]\n')&&code.trimEnd().endsWith('[/dohtml]'),d.name+' wrappers');
  ok(!/<!--|\/\*|<script\b/.test(code),d.name+' no scripts or comments in snippet');
- ok(code.indexOf('[url]')<code.indexOf('ptg-title')&&code.indexOf('[name]')<code.indexOf('ptg-title')&&code.indexOf('[text]')<code.indexOf('ptg-copy'),d.name+' placeholders at top');
+ ok(code.indexOf('[url]')<code.indexOf('ptg-title')&&code.indexOf('Seojun &amp; Wenjun')<code.indexOf('ptg-title')&&code.indexOf('[text]')<code.indexOf('ptg-copy'),d.name+' placeholders at top');
  const doc=new JSDOM(code.slice(9,code.lastIndexOf('[/dohtml]'))).window.document;
  ok(doc.querySelectorAll('link[rel="stylesheet"]').length===1,d.name+' single stylesheet');
  ok(doc.querySelectorAll('.ptg-media img').length===d.gifs,d.name+' GIF count');

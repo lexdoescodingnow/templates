@@ -21,7 +21,7 @@ function sakeRead() {
 }
 function sakeDraw() {
   const s=sakeStates.get(sakeCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?(sakeCurrent.type==='comms'?'Miles':'Jett & Miles'):s.name,title:s.title==='[text]'?sakeCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?sakeCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=sakeMarkup(sakeCurrent,visible);
   el('code').value=sakeSnippet(sakeCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

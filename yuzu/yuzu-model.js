@@ -7,7 +7,7 @@ const YUZU_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing el
 const YUZU_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const YUZU_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function yuzuEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function yuzuDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'20:16',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:YUZU_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?YUZU_THREAD:design.type==='comms'?YUZU_COMMS:YUZU_BUD }; }
+function yuzuDefaults(design) { return { name:'Cole & Jules',url:'[url]',title:'[text]',time:'20:16',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:YUZU_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?YUZU_THREAD:design.type==='comms'?YUZU_COMMS:YUZU_BUD }; }
 function yuzuFilename(design) { return `yuzu-${design.slug}-${design.type}-${design.number}.txt`; }
 function yuzuMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${yuzuEscape(state.flow)}"`:'';

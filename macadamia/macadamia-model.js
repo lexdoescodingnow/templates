@@ -5,7 +5,7 @@ const MACADAMIA_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscin
 const MACADAMIA_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function macadamiaSafeUrl(value) { const s=String(value).trim(); return /^(https?:\/\/|mailto:|#)/i.test(s)||s==='[url]'?s:'#'; }
 function macadamiaEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function macadamiaDefaults(design) { return {name:'[name]',url:'[url]',title:'[text]',time:'16:28',flow:'received',gifs:MACADAMIA_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?MACADAMIA_THREAD:design.type==='comms'?MACADAMIA_COMMS:MACADAMIA_BUD}; }
+function macadamiaDefaults(design) { return {name:'Journey & Kai',url:'[url]',title:'[text]',time:'16:28',flow:'received',gifs:MACADAMIA_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?MACADAMIA_THREAD:design.type==='comms'?MACADAMIA_COMMS:MACADAMIA_BUD}; }
 function macadamiaFilename(d) { return `macadamia-${d.slug}-${d.type}-${d.number}.txt`; }
 function macadamiaMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';

@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Citron · Forum templates</title><style>*{box-sizing:border-box}body{margin:0;padding:28px;background:#f3f1ed;color:#252a2f;font:15px/1.65 system-ui,sans-serif}main{max-width:1040px;margin:auto}a{color:#385c6a}h1{font:500 clamp(38px,6vw,66px)/1.1 Georgia,serif;letter-spacing:-.04em;margin:14px 0}h2{font:500 28px/1.2 Georgia,serif}h3{margin:0}.kicker{text-transform:uppercase;letter-spacing:.15em;font-size:11px}.intro{max-width:760px}.controls{position:sticky;top:0;background:#f3f1edf5;border-block:1px solid #cfcfca;padding:12px 0;display:flex;flex-wrap:wrap;gap:12px;z-index:2}button,select{font:inherit;padding:8px 12px;border:1px solid #9ea7a8;background:white;border-radius:6px;color:#26363b}button{cursor:pointer}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #468795;outline-offset:3px}.card{margin:32px 0;padding:22px;background:white;border:1px solid #d4d6d1;border-radius:12px}.card p{margin:8px 0 16px}iframe{border:0;display:block;width:100%;min-height:250px}.codebar{display:flex;gap:12px;align-items:center;margin:16px 0 8px}.codebar span{font-size:12px}textarea{display:block;resize:vertical;width:100%;min-height:160px;padding:16px;border:1px solid #aab1b5;background:#f6f7f8;color:#28343b;font:12px/1.5 ui-monospace,monospace}.links{display:flex;gap:14px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:15px}.tile{border:1px solid #d4d6d1;border-radius:10px;background:white;padding:20px}.tile h2{font-size:25px;margin:0 0 8px}.tile a{display:block}body.dark{background:#15191c;color:#e8e8e5}body.dark a{color:#a3cad4}body.dark .card,body.dark .tile{background:#20262a;border-color:#485259}body.dark .controls{background:#15191cf5;border-color:#485259}body.dark textarea{background:#141b20;color:#e3e9ed}body.dark button,body.dark select{background:#26343d;color:#f0f1ee}@media(max-width:520px){body{padding:12px}.card{padding:12px}.controls{position:static}}</style></head><body><main><p class="kicker">LEX’S TEMPLATE COLLECTION · FORUM EDITION</p><h1>Citron</h1><p class="intro">15 designs. Preview each template, then copy the complete code directly beneath it. The colours shown here are examples; posted templates inherit the member’s group colours.</p><p class="links"><a href="index.html">All collections</a><a href="citron-forum-masterpost.txt" download>Download forum masterpost</a></p><div class="controls"><label>Preview mode <select id="mode"><option value="light">Light</option><option value="dark">Dark</option></select></label><button data-copy="full-post">Copy complete forum post</button><span role="status"></span></div><details><summary>Complete forum post code</summary><textarea id="full-post" readonly>[size=7][b]CITRON[/b][/size]
 [i]15 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A spacious botanical journal with a split title band, embossed rind curves and a
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-albedo-archive&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &lt;i&gt;Ut enim ad minim veniam&lt;/i&gt;, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;u&gt;Duis aute irure dolor&lt;/u&gt; in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
@@ -34,7 +34,7 @@ A spacious botanical journal with a split title band, embossed rind curves and a
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-albedo-archive&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &lt;i&gt;Ut enim ad minim veniam&lt;/i&gt;, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;u&gt;Duis aute irure dolor&lt;/u&gt; in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
@@ -55,7 +55,7 @@ A perfumer&#x27;s specimen plate with a giant serif title, paired inset portrait
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-cedrat-atelier&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -78,7 +78,7 @@ A perfumer&#x27;s specimen plate with a giant serif title, paired inset portrait
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-cedrat-atelier&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -103,7 +103,7 @@ A perfume-label composition with a wide portrait, a formal oval title cartouche 
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-pith-parfum&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -125,7 +125,7 @@ A perfume-label composition with a wide portrait, a formal oval title cartouche 
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-pith-parfum&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -149,7 +149,7 @@ A sculptural cell-window diptych with curved inner corners, a side-set caption a
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-vesicle-verse&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -172,7 +172,7 @@ A sculptural cell-window diptych with curved inner corners, a side-set caption a
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-vesicle-verse&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -197,7 +197,7 @@ An energetic typeset page with a narrow portrait column, oversized leading text 
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-zeste-manifesto&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -219,7 +219,7 @@ An energetic typeset page with a narrow portrait column, oversized leading text 
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-zeste-manifesto&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -245,7 +245,7 @@ A landscape pocket communicator with paired contact tabs, a status rail and a ti
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-cedra-sync&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -267,7 +267,7 @@ A landscape pocket communicator with paired contact tabs, a status rail and a ti
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-cedra-sync&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -291,7 +291,7 @@ A curved glass phone with a full-width photo card, floating status capsule and l
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-citros&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -312,7 +312,7 @@ A curved glass phone with a full-width photo card, floating status capsule and l
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-citros&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -335,7 +335,7 @@ A soft square smart communicator with a small contact tile, inset chat display a
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-pithchat&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -356,7 +356,7 @@ A soft square smart communicator with a small contact tile, inset chat display a
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-pithchat&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -379,7 +379,7 @@ A minimalist e-paper phone with a large contact name, squared bubbles and stippl
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-rindr&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
@@ -397,7 +397,7 @@ A minimalist e-paper phone with a large contact name, squared bubbles and stippl
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-rindr&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
@@ -417,7 +417,7 @@ A slim modern phone with an off-centre camera pill, round contact portrait and w
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-zestline&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -438,7 +438,7 @@ A slim modern phone with an off-centre camera pill, round contact portrait and w
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-zestline&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -463,7 +463,7 @@ A miniature scent label with concentric rounded corners and an off-centre citron
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-oilspot&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -478,7 +478,7 @@ A miniature scent label with concentric rounded corners and an off-centre citron
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-oilspot&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -495,7 +495,7 @@ A round little portrait beside a finely ruled title and a short open reply.
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-pithlet&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -513,7 +513,7 @@ A round little portrait beside a finely ruled title and a short open reply.
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-pithlet&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -533,7 +533,7 @@ A low horizontal note with a coloured inset nameplate and a finely ridged right 
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-rindscript&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -548,7 +548,7 @@ A low horizontal note with a coloured inset nameplate and a finely ridged right 
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-rindscript&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -565,7 +565,7 @@ Two tiny asymmetric cell portraits beside a shared heading, above a compact repl
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-vesicle-kiss&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -584,7 +584,7 @@ Two tiny asymmetric cell portraits beside a shared heading, above a compact repl
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-vesicle-kiss&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -605,7 +605,7 @@ A tiny typeset note with an oversized opening letter and three oil-gland marks.
 
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-zestmark&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -620,7 +620,7 @@ A tiny typeset note with an oversized opening letter and three oil-gland marks.
 [code]
 [dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-zestmark&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -798,7 +798,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-thread ctn-albedo-archive&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &lt;i&gt;Ut enim ad minim veniam&lt;/i&gt;, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;u&gt;Duis aute irure dolor&lt;/u&gt; in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
@@ -813,7 +813,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-1">Copy template code</button><span role="status"></span></div><textarea id="code-1" readonly spellcheck="false" aria-label="Albedo Archive posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-albedo-archive&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &lt;i&gt;Ut enim ad minim veniam&lt;/i&gt;, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;u&gt;Duis aute irure dolor&lt;/u&gt; in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
@@ -994,7 +994,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-thread ctn-cedrat-atelier&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -1013,7 +1013,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-2">Copy template code</button><span role="status"></span></div><textarea id="code-2" readonly spellcheck="false" aria-label="Cedrat Atelier posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-cedrat-atelier&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -1198,7 +1198,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-thread ctn-pith-parfum&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -1216,7 +1216,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-3">Copy template code</button><span role="status"></span></div><textarea id="code-3" readonly spellcheck="false" aria-label="Pith &amp; Parfum posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-pith-parfum&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -1400,7 +1400,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-thread ctn-vesicle-verse&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -1419,7 +1419,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-4">Copy template code</button><span role="status"></span></div><textarea id="code-4" readonly spellcheck="false" aria-label="Vesicle Verse posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-vesicle-verse&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -1604,7 +1604,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-thread ctn-zeste-manifesto&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -1622,7 +1622,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-5">Copy template code</button><span role="status"></span></div><textarea id="code-5" readonly spellcheck="false" aria-label="Zeste Manifesto posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-thread ctn-zeste-manifesto&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -1806,7 +1806,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-comms ctn-cedra-sync&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -1824,7 +1824,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-6">Copy template code</button><span role="status"></span></div><textarea id="code-6" readonly spellcheck="false" aria-label="Cedra Sync posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-cedra-sync&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -2008,7 +2008,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-comms ctn-citros&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -2025,7 +2025,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-7">Copy template code</button><span role="status"></span></div><textarea id="code-7" readonly spellcheck="false" aria-label="CitrOS posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-citros&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -2208,7 +2208,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-comms ctn-pithchat&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -2225,7 +2225,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-8">Copy template code</button><span role="status"></span></div><textarea id="code-8" readonly spellcheck="false" aria-label="PithChat posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-pithchat&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -2408,7 +2408,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-comms ctn-rindr&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
@@ -2422,7 +2422,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-9">Copy template code</button><span role="status"></span></div><textarea id="code-9" readonly spellcheck="false" aria-label="Rindr posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-rindr&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
@@ -2602,7 +2602,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-comms ctn-zestline&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -2619,7 +2619,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-10">Copy template code</button><span role="status"></span></div><textarea id="code-10" readonly spellcheck="false" aria-label="Zestline posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-comms ctn-zestline&quot; data-flow=&quot;received&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-time&quot;&gt;14:08&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
@@ -2802,7 +2802,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-bud ctn-oilspot&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -2813,7 +2813,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-11">Copy template code</button><span role="status"></span></div><textarea id="code-11" readonly spellcheck="false" aria-label="Oilspot posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-oilspot&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -2990,7 +2990,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-bud ctn-pithlet&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -3004,7 +3004,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-12">Copy template code</button><span role="status"></span></div><textarea id="code-12" readonly spellcheck="false" aria-label="Pithlet posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-pithlet&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -3184,7 +3184,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-bud ctn-rindscript&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -3195,7 +3195,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-13">Copy template code</button><span role="status"></span></div><textarea id="code-13" readonly spellcheck="false" aria-label="Rindscript posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-rindscript&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -3372,7 +3372,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-bud ctn-vesicle-kiss&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -3387,7 +3387,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-14">Copy template code</button><span role="status"></span></div><textarea id="code-14" readonly spellcheck="false" aria-label="Vesicle Kiss posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-vesicle-kiss&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-media&quot;&gt;
 &lt;img src=&quot;https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv&quot; alt=&quot;Character GIF&quot; style=&quot;object-position:50% 35%&quot;&gt;
@@ -3568,7 +3568,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 @media(max-width:400px){.bh-citron{width:calc(100% - 16px);margin:22px auto}.bh-citron.ctn-cedrat-atelier{padding:21px 19px 0}.bh-citron.ctn-cedrat-atelier .ctn-media{gap:9px;padding:6px}.bh-citron.ctn-albedo-archive{padding-left:18px;padding-right:14px}.bh-citron.ctn-vesicle-verse{grid-template-columns:12px minmax(0,1fr) 12px}.bh-citron.ctn-pith-parfum{padding-left:19px;padding-right:19px}.bh-citron.ctn-zeste-manifesto{grid-template-columns:minmax(0,1fr) 90px;gap:0 12px;padding-left:18px;padding-right:18px}.bh-citron.ctn-cedra-sync{grid-template-columns:minmax(0,1fr) 84px;padding-left:13px;padding-right:13px}.bh-citron.ctn-cedra-sync .ctn-copy{padding:12px}.bh-citron.ctn-pithchat{padding-left:15px;padding-right:15px}.bh-citron.ctn-bud .ctn-title{font-size:21px}.bh-citron.ctn-vesicle-kiss{grid-template-columns:minmax(0,1fr) 80px;gap:0 10px;padding:17px}}
 &lt;/style&gt;&lt;style&gt;body{margin:0;padding:10px;display:flow-root;--mgrgb1:145,70,101;--mgrgb2:90,100,165;--mgrgb3:32,126,126}html[color-mode=&quot;dark&quot;] body{--mgrgb1:225,154,169;--mgrgb2:174,178,227;--mgrgb3:142,200,200}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;div class=&quot;bh-citron ctn-bud ctn-zestmark&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -3579,7 +3579,7 @@ html[color-mode=&quot;dark&quot;] .bh-citron{--ct-paper:#202120;--ct-panel:#292b
 
 &lt;/body&gt;&lt;/html&gt;"></iframe><div class="codebar"><button data-copy="code-15">Copy template code</button><span role="status"></span></div><textarea id="code-15" readonly spellcheck="false" aria-label="Zestmark posting code">[dohtml]
 &lt;div class=&quot;bh-citron ctn-bud ctn-zestmark&quot;&gt;
-&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;a class=&quot;ctn-name&quot; href=&quot;[url]&quot;&gt;Ben &amp;amp; Vince&lt;/a&gt;
 &lt;div class=&quot;ctn-title&quot;&gt;[text]&lt;/div&gt;
 &lt;div class=&quot;ctn-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit&lt;/b&gt;. &lt;i&gt;Sed do eiusmod tempor&lt;/i&gt; incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, &lt;u&gt;quis nostrud exercitation&lt;/u&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;

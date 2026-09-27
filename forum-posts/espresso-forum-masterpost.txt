@@ -1,7 +1,7 @@
 [size=7][b]ESPRESSO[/b][/size]
 [i]15 designs · the complete collection[/i]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then replace the name, link, title, image URLs and sample writing. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A cinematic café poster: one wide character still, sweeping serif title and a f
 [dohtml]
 <div class="esp esp-thread esp-afterhours">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -40,7 +40,7 @@ A cinematic café poster: one wide character still, sweeping serif title and a f
 [dohtml]
 <div class="esp esp-thread esp-afterhours">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -67,7 +67,7 @@ An image-free café menu with a vertical wordmark, italic title and a generous l
 [dohtml]
 <div class="esp esp-thread esp-crema-obscura">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -88,7 +88,7 @@ An image-free café menu with a vertical wordmark, italic title and a generous l
 [dohtml]
 <div class="esp esp-thread esp-crema-obscura">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -111,7 +111,7 @@ Two character stills in a twin-shot frame, a centred title and a long, unclutter
 [dohtml]
 <div class="esp esp-thread esp-doppio-vow">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -137,7 +137,7 @@ Two character stills in a twin-shot frame, a centred title and a long, unclutter
 [dohtml]
 <div class="esp esp-thread esp-doppio-vow">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -165,7 +165,7 @@ A precision espresso-machine panel with one inset portrait and a small pressure 
 [dohtml]
 <div class="esp esp-thread esp-ninth-bar">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -190,7 +190,7 @@ A precision espresso-machine panel with one inset portrait and a small pressure 
 [dohtml]
 <div class="esp esp-thread esp-ninth-bar">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -217,7 +217,7 @@ An image-free barista order sheet with a stamped name, ruled writing and perfora
 [dohtml]
 <div class="esp esp-thread esp-slow-extraction">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -238,7 +238,7 @@ An image-free barista order sheet with a stamped name, ruled writing and perfora
 [dohtml]
 <div class="esp esp-thread esp-slow-extraction">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -263,7 +263,7 @@ A nostalgic flip phone with a framed conversation screen, metal hinge and tactil
 [dohtml]
 <div class="esp esp-comms esp-dialtone-roast" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -289,7 +289,7 @@ A nostalgic flip phone with a framed conversation screen, metal hinge and tactil
 [dohtml]
 <div class="esp esp-comms esp-dialtone-roast" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -317,7 +317,7 @@ A portrait-led messenger with a wide contact cover, clock chip and simple receiv
 [dohtml]
 <div class="esp esp-comms esp-last-call" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -343,7 +343,7 @@ A portrait-led messenger with a wide contact cover, clock chip and simple receiv
 [dohtml]
 <div class="esp esp-comms esp-last-call" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -371,7 +371,7 @@ An image-free lock screen with a large café clock and incoming message notifica
 [dohtml]
 <div class="esp esp-comms esp-nightshift-dm" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -393,7 +393,7 @@ An image-free lock screen with a large café clock and incoming message notifica
 [dohtml]
 <div class="esp esp-comms esp-nightshift-dm" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -417,7 +417,7 @@ A compact keyboard handset with a square contact image, LCD-style conversation a
 [dohtml]
 <div class="esp esp-comms esp-portafilter-ping" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -443,7 +443,7 @@ A compact keyboard handset with a square contact image, LCD-style conversation a
 [dohtml]
 <div class="esp esp-comms esp-portafilter-ping" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -471,7 +471,7 @@ A modern phone with a single round contact portrait, member-coloured bubbles and
 [dohtml]
 <div class="esp esp-comms esp-steamline" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -497,7 +497,7 @@ A modern phone with a single round contact portrait, member-coloured bubbles and
 [dohtml]
 <div class="esp esp-comms esp-steamline" data-direction="received">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 <time>23:08</time>
 </div>
@@ -527,7 +527,7 @@ An open, image-free note with an italic heading, a tinted corner and a small cof
 [dohtml]
 <div class="esp esp-bud esp-beanmark">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -546,7 +546,7 @@ An open, image-free note with an italic heading, a tinted corner and a small cof
 [dohtml]
 <div class="esp esp-bud esp-beanmark">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -567,7 +567,7 @@ A short reply beside a narrow character still, framed with a member-coloured edg
 [dohtml]
 <div class="esp esp-bud esp-crema-kiss">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -590,7 +590,7 @@ A short reply beside a narrow character still, framed with a member-coloured edg
 [dohtml]
 <div class="esp esp-bud esp-crema-kiss">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -615,7 +615,7 @@ A small cup-shaped reply with one round portrait and a delicate saucer mark.
 [dohtml]
 <div class="esp esp-bud esp-demitasse">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -638,7 +638,7 @@ A small cup-shaped reply with one round portrait and a delicate saucer mark.
 [dohtml]
 <div class="esp esp-bud esp-demitasse">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -663,7 +663,7 @@ A tiny café receipt with split metadata, a perforated sign-off and a graphic ti
 [dohtml]
 <div class="esp esp-bud esp-one-more-sip">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -682,7 +682,7 @@ A tiny café receipt with split metadata, a perforated sign-off and a graphic ti
 [dohtml]
 <div class="esp esp-bud esp-one-more-sip">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -703,7 +703,7 @@ A concentrated, image-free reply with a compact monospaced heading and a single 
 [dohtml]
 <div class="esp esp-bud esp-ristretto">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 
@@ -722,7 +722,7 @@ A concentrated, image-free reply with a compact monospaced heading and a single 
 [dohtml]
 <div class="esp esp-bud esp-ristretto">
 <div class="esp-meta">
-<a href="[url]">[name]</a>
+<a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
 </div>
 

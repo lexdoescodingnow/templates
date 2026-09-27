@@ -24,7 +24,7 @@ for(const d of designs){
   const wrapper=doc.querySelector('.bh-raspberry');
   assert(wrapper);
   assert.equal(wrapper.children[0].getAttribute('href'),'[url]');
-  assert.equal(wrapper.children[0].textContent,'[name]');
+  assert.equal(wrapper.children[0].textContent,'Jian & Kijoon');
   assert.equal(wrapper.children[1].textContent,'[text]');
   assert.equal(doc.querySelectorAll('link[rel="stylesheet"]').length,1);
   assert.equal(doc.querySelectorAll('img').length,d.gifs);

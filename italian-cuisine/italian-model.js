@@ -7,7 +7,7 @@ const ITALIAN_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing
 const ITALIAN_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const ITALIAN_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function italianEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function italianDefaults(design) { return { name:'[name]',url:'[url]',title:'[text]',time:'20:45',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:ITALIAN_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?ITALIAN_THREAD:design.type==='comms'?ITALIAN_COMMS:ITALIAN_BUD }; }
+function italianDefaults(design) { return { name:'Freddie & Oliver',url:'[url]',title:'[text]',time:'20:45',flow:'received',gifs:Array.from({length:design.gifs},(_,i)=>({url:ITALIAN_GIFS[i%2],position:'50% 35%'})),body:design.type==='thread'?ITALIAN_THREAD:design.type==='comms'?ITALIAN_COMMS:ITALIAN_BUD }; }
 function italianFilename(design) { return `italian-${design.slug}-${design.type}-${design.number}.txt`; }
 function italianMarkup(design,state) {
   const flow=design.type==='comms'?` data-flow="${italianEscape(state.flow)}"`:'';

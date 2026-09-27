@@ -19,7 +19,7 @@ function fudgeRead() {
 }
 function fudgeDraw() {
   const s=fudgeStates.get(fudgeCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Ren & Tsubasa':s.name,title:s.title==='[text]'?fudgeCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?fudgeCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=fudgeMarkup(fudgeCurrent,visible);
   el('code').value=fudgeSnippet(fudgeCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

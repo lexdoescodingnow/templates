@@ -28,7 +28,7 @@ function lavenderCleanWriting(input) {
   }
   clean(root.content);return root.innerHTML;
 }
-function lavenderDisplayState(design,state) { return {...state,name:state.name==='[name]'?'Jinwoo & Yohan':state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
+function lavenderDisplayState(design,state) { return {...state,name:state.name,title:state.title==='[text]'?design.sample:state.title,url:state.url==='[url]'?'#':state.url}; }
 function lavenderRender() {
   const d=lavenderDesigns[lavenderIndex],s=lavenderStates[lavenderIndex];
   $('#pv-stage').innerHTML=lavenderMarkup(d,lavenderDisplayState(d,s));

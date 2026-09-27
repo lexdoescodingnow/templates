@@ -188,7 +188,7 @@ const CHERRY_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing 
 const CHERRY_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const CHERRY_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function cherryEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function cherryDefaults(design) { return {name:'[name]',url:'[url]',title:'[text]',time:'23:17',flow:'received',gifs:CHERRY_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?CHERRY_THREAD:design.type==='comms'?CHERRY_COMMS:CHERRY_BUD}; }
+function cherryDefaults(design) { return {name:'Jaehwa & Ubin',url:'[url]',title:'[text]',time:'23:17',flow:'received',gifs:CHERRY_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?CHERRY_THREAD:design.type==='comms'?CHERRY_COMMS:CHERRY_BUD}; }
 function cherryFilename(d) { return `cherry-${d.slug}-${d.type}-${d.number}.txt`; }
 function cherryMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';
@@ -224,7 +224,7 @@ function cherryRead() {
 }
 function cherryDraw() {
   const s=cherryStates.get(cherryCurrent.slug);
-  const visible={...s,name:s.name==='[name]'?'Jaehwa & Ubin':s.name,title:s.title==='[text]'?cherryCurrent.sample:s.title,url:'#'};
+  const visible={...s,name:s.name,title:s.title==='[text]'?cherryCurrent.sample:s.title,url:'#'};
   el('stage').innerHTML=cherryMarkup(cherryCurrent,visible);
   el('code').value=cherrySnippet(cherryCurrent,s);
   const text=new DOMParser().parseFromString(s.body,'text/html').body.textContent.trim();

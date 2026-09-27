@@ -23,7 +23,7 @@ const PLUM_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing el
 const PLUM_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const PLUM_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
 function plumEscape(value) { return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function plumDefaults(d) { return {name:'[name]',url:'[url]',title:'[text]',time:'22:14',flow:'received',body:d.type==='thread'?PLUM_THREAD:d.type==='comms'?PLUM_COMMS:PLUM_BUD,gifs:Array.from({length:d.gifs},(_,i)=>({url:PLUM_GIFS[i%2],position:'50% 35%'}))}; }
+function plumDefaults(d) { return {name:'Jason & Mike',url:'[url]',title:'[text]',time:'22:14',flow:'received',body:d.type==='thread'?PLUM_THREAD:d.type==='comms'?PLUM_COMMS:PLUM_BUD,gifs:Array.from({length:d.gifs},(_,i)=>({url:PLUM_GIFS[i%2],position:'50% 35%'}))}; }
 function plumFilename(d) {return `plum-${d.slug}-${d.type}-${d.number}.txt`;}
 function plumMarkup(d,s) {
   const lines=[`<div class="plm plm-${d.type} plm-${d.slug}"${d.type==='comms'?` data-flow="${plumEscape(s.flow)}"`:''}>`,`<a class="plm-name" href="${plumEscape(s.url)}">${plumEscape(s.name)}</a>`,`<div class="plm-title">${plumEscape(s.title)}</div>`];
