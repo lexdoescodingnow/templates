@@ -63,7 +63,6 @@
 .bh-italian.milk-v2[class] {
   all: unset;
   --mk-carton: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2050%22%3E%3Cpath%20d%3D%22M10%2016L18%205H35L40%2016V45H10ZM10%2016H40M18%205L24%2016V45M35%205L40%2016M28%2024H35V36H28Z%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");
-  --mk-pour: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20300%2060%22%3E%3Cpath%20d%3D%22M0%2036C40%2053%2082%201%20114%2020S154%2063%20199%2036S251%2031%20300%2011V60H0Z%22%2F%3E%3C%2Fsvg%3E");
   --mk-splash: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2050%22%3E%3Cpath%20d%3D%22M7%2038Q3%2028%2013%2030Q21%2031%2019%2018Q18%206%2023%205Q30%205%2029%2019Q27%2031%2036%2025Q46%2017%2047%2026Q48%2035%2038%2037Q46%2047%2033%2047H14Q5%2048%207%2038Z%22%2F%3E%3C%2Fsvg%3E");
   --mk-a: var(--mgrgb1,105,130,160);
   --mk-b: var(--mgrgb2,155,132,155);
@@ -517,12 +516,12 @@ html[color-mode="light"] .bh-italian.milk-v2[class] {
   height: 190px;
 }
 .bh-italian.milk-v2[class].mk-soft-spill :is(.mk2-motif,.mk3-motif) {
-  height: 46px;
-  margin-top: 22px;
-  background: var(--mk-ribbon);
-  mask: var(--mk-pour) center/100% 100% no-repeat;
-  -webkit-mask: var(--mk-pour) center/100% 100% no-repeat;
-  opacity: .55;
+  display: none;
+  height: 0;
+  margin: 0;
+  background: none;
+  mask: none;
+  -webkit-mask: none;
 }
 .bh-italian.milk-v2[class].itc-comms {
   max-width: 350px;
@@ -1294,6 +1293,17 @@ html[color-mode="light"] .bh-italian.milk-v2[class] {
   border: 1px solid rgb(var(--mk-c));
   border-radius: 50%;
   background: repeating-conic-gradient(rgba(var(--mk-a),.45) 0 3deg,var(--mk-panel) 3deg 12deg);
+}
+.bh-italian.milk-v2[class].mk-cap-kiss .itc-media > img[src],
+.bh-italian.milk-v2[class].mk-cap-kiss .itc-media > .mk3-portrait > img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+.bh-italian.milk-v2[class].mk-cap-kiss .itc-media > .mk3-portrait > img {
+  padding: 3px;
+}
+.bh-italian.milk-v2[class].mk-cap-kiss .itc-media > img[src] {
+  padding: 8px;
 }
 .bh-italian.milk-v2[class].mk-splashlet {
   display: grid;

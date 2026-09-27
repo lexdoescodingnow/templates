@@ -42,13 +42,15 @@ Freddie & Ollie are prefilled and editable. The editor accepts HTML or `[b]`, `[
 
 The original placeholder GIF URLs and per-design counts are retained. Images can be added, removed or cropped in the editor. Empty image containers disappear, and portrait columns reflow. Buds are intended for replies around 100 words or fewer.
 
-Each snippet links directly to [milk-bottlelight-standalone-v2.css](milk-bottlelight-standalone-v2.css) on `@main`. The compiled file contains the complete design and font-face rules with no CSS imports. Explicit Blue Hour light/dark mode overrides the system preference. Modern `:has()`, `color-mix()` and container queries are used. No hidden tips or editing comments are included in posting HTML or CSS.
+Each snippet links directly to [milk-bottlelight-standalone-v3.css](milk-bottlelight-standalone-v3.css) on `@main`. The compiled file contains the complete design and font-face rules with no CSS imports. Explicit Blue Hour light/dark mode overrides the system preference. Modern `:has()`, `color-mix()` and container queries are used. No hidden tips or editing comments are included in posting HTML or CSS.
 
 ## Layout repair
 
-All 15 designs use the repaired v2 stylesheet. GIFs fill the inside of their frames; circular portraits stay square, paired portraits use explicit grid tracks, and empty media is removed. Milkglass Letter, Dairy Dial, Cap Kiss and Sipmates reflow their portrait columns in narrow cards. Droplets, carton marks, foil caps and Splashlet’s accent occupy reserved spaces. Writing grows naturally without a fixed height or card clipping.
+All 15 designs use the repaired v3 stylesheet. GIFs fit inside their frames; circular portraits stay square, paired portraits use explicit grid tracks, and empty media is removed. Milkglass Letter, Dairy Dial, Cap Kiss and Sipmates reflow their portrait columns in narrow cards. Droplets, carton marks, foil caps and Splashlet’s accent occupy reserved spaces. Writing grows naturally without a fixed height or card clipping.
 
-For existing Milk posts, replace `milk-bottlelight-standalone-v1.css` with `milk-bottlelight-standalone-v2.css` in the stylesheet link. The old endpoint also receives the compatible fixes, but the fresh URL avoids its cached copy. No text needs to be re-entered. The original Italian Cuisine designs keep their own unchanged CSS.
+Soft Spill’s wave footer has been removed. Cap Kiss fits the full GIF inside its foil frame with a small neutral inset, reducing hairline clipping. Its default crop position is centred and remains editable.
+
+For existing Milk posts, replace `milk-bottlelight-standalone-v1.css` or `milk-bottlelight-standalone-v2.css` with `milk-bottlelight-standalone-v3.css` in the stylesheet link. The older endpoints also receive the compatible fixes, but the fresh URL avoids its cached copy. No text needs to be re-entered. The original Italian Cuisine designs keep their own unchanged CSS.
 
 ## Compatibility and source
 

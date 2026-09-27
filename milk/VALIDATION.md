@@ -2,9 +2,15 @@
 
 Checked 27 September 2026.
 
+## Follow-up adjustments
+
+- Soft Spill’s wave asset and footer markup are removed. The same footer is hidden in already-posted Milk markup so it leaves no empty space.
+- Cap Kiss uses `object-fit: contain` and a 3px inner inset, with a centred default position. This preserves the original GIF’s vertical content instead of forcing it to fill the circular crop. Added GIFs use the same default. Direct-image legacy markup receives equivalent inset sizing.
+- The fresh v3 standalone URL is used by every current snippet and preview. The v1 and v2 endpoints receive the same CSS for existing posts.
+
 ## Corrections
 
-- GIFs use independent `mk3-portrait` grid frames. Borders and padding belong to the frame; its image fills the interior with `object-fit: cover`. Clipping is restricted to image frames, not writing or entire cards.
+- GIFs use independent `mk3-portrait` grid frames. Borders and padding belong to the frame; its image fills the interior with `object-fit: cover`, except Cap Kiss’s inset `contain` treatment. Clipping is restricted to image frames, not writing or entire cards.
 - Cap Kiss and Carton Call portraits keep square proportions; Dairy Dial portraits follow their column width. Sipmates keeps explicit paired tracks. Wholehearted Pour and Dairy Dial no longer draw outlines outside their portrait boxes.
 - Milkglass Letter, Dairy Dial, Sipmates and Cap Kiss reflow at narrow container widths. Added images wrap or stack; removing all images removes their media container.
 - Splashlet’s accent sits in a grid cell. Droplet masks fit their reserved dimensions without rotation overflow. Morning Delivery reserves a full carton slot. Device controls keep their own minimum height and timestamps reserve battery space.
@@ -14,8 +20,8 @@ Checked 27 September 2026.
 
 - All 15 snippets exactly match the editor model: five threads, five comms and five buds. GIF defaults, editable member names and crop positions are retained. Bud sample writing stays under 100 words. Empty GIF entries are filtered out.
 - Static selector/cascade comparisons cover 360 markup/query cases: 15 designs, zero/one/two/four images, new and already-posted Milk markup, and 520px/300px/210px assumed container widths. Each case is compared with both older stylesheets before and after the repair stylesheet. No differing declarations remain, including generated pseudo-elements and first-letter rules. This is a source-level cascade comparison, not a browser computed-layout test; it does not expand every CSS shorthand.
-- CSS rules and selectors parse; JavaScript syntax checks pass. New snippets each contain one direct `@main/milk/milk-bottlelight-standalone-v2.css` link. Posting HTML and CSS contain no comments or hidden editing instructions.
-- The v1 and v2 standalone Milk endpoints contain identical repaired CSS and cached font-face rules without imports. The original Italian Cuisine stylesheet is unchanged. Both editable preview addresses contain identical rebuilt content.
+- CSS rules and selectors parse; JavaScript syntax checks pass. New snippets each contain one direct `@main/milk/milk-bottlelight-standalone-v3.css` link. Posting HTML and CSS contain no comments or hidden editing instructions.
+- The v1, v2 and v3 standalone Milk endpoints contain identical repaired CSS and cached font-face rules without imports. The original Italian Cuisine stylesheet is unchanged. Both editable preview addresses contain identical rebuilt content.
 - All 15 forum examples and copyable blocks are rebuilt. Examples retain lorem ipsum; copyable writing uses `[TEXT GOES HERE]` or `[MESSAGE GOES HERE]`. Existing Italian Cuisine forum addresses remain identical Milk aliases.
 - The inventory still contains 860 designs across 60 collection entries. The other 845 design records are unchanged. Every file in the complete forum ZIP matches the rebuilt directory byte for byte.
 

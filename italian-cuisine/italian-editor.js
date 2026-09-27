@@ -88,7 +88,7 @@ $('#pv-editor').addEventListener('input',event=>{
   italianRender();
 });
 $('#pv-gifs').addEventListener('click',event=>{const b=event.target.closest('[data-remove]');if(b){italianStates[italianIndex].gifs.splice(Number(b.dataset.remove),1);italianRenderGifs();italianRender();}});
-$('#pv-add-gif').onclick=()=>{const gifs=italianStates[italianIndex].gifs;gifs.push({url:ITALIAN_GIFS[gifs.length%2],position:'50% 35%'});italianRenderGifs();italianRender();};
+$('#pv-add-gif').onclick=()=>{const gifs=italianStates[italianIndex].gifs;gifs.push({url:ITALIAN_GIFS[gifs.length%2],position:italianGifPosition(italianDesigns[italianIndex])});italianRenderGifs();italianRender();};
 $('#pv-previous').onclick=()=>italianSelect(italianIndex-1);$('#pv-next').onclick=()=>italianSelect(italianIndex+1);
 $('#pv-view-all').onclick=()=>italianToggleGallery(!italianGallery);
 $('#pv-gallery').addEventListener('click',event=>{const b=event.target.closest('[data-open]');if(b){italianToggleGallery(false);italianSelect(Number(b.dataset.open));window.scrollTo({top:0,behavior:'instant'});}});
