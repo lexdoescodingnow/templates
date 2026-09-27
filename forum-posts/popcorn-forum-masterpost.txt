@@ -1,15 +1,8 @@
-[h1]POPCORN[/h1]
-
-Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
-
-Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
-
-Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+[align=center][H1]POPCORN[/H1][/align]
 
 [size=6][b]THREADS[/b][/size]
 
 [size=4][b]01 · Concession Letter[/b][/size]
-A folded concession carton with a striped crown, a single wide still and a torn-paper finish.
 
 [dohtml]
 <div class="bh-popcorn pcn-thread pcn-concession-letter">
@@ -51,7 +44,6 @@ A folded concession carton with a striped crown, a single wide still and a torn-
 [/code]
 
 [size=4][b]02 · Kernel Bloom[/b][/size]
-A sculptural popcorn crest, softly shaped paired portraits and an airy centred title.
 
 [dohtml]
 <div class="bh-popcorn pcn-thread pcn-kernel-bloom">
@@ -95,7 +87,6 @@ A sculptural popcorn crest, softly shaped paired portraits and an airy centred t
 [/code]
 
 [size=4][b]03 · Marquee Matinee[/b][/size]
-An illuminated marquee, a pair of widescreen stills and a generous neutral reading panel.
 
 [dohtml]
 <div class="bh-popcorn pcn-thread pcn-marquee-matinee">
@@ -139,7 +130,6 @@ An illuminated marquee, a pair of widescreen stills and a generous neutral readi
 [/code]
 
 [size=4][b]04 · Projection Room[/b][/size]
-A writing-led projection frame with registration corners, reel details and a quiet oversized heading.
 
 [dohtml]
 <div class="bh-popcorn pcn-thread pcn-projection-room">
@@ -175,7 +165,6 @@ A writing-led projection frame with registration corners, reel details and a qui
 [/code]
 
 [size=4][b]05 · Velvet Intermission[/b][/size]
-A theatre-inspired proscenium with pleated side panels and a broad portrait beneath the writing.
 
 [dohtml]
 <div class="bh-popcorn pcn-thread pcn-velvet-intermission">
@@ -219,7 +208,6 @@ A theatre-inspired proscenium with pleated side panels and a broad portrait bene
 [size=6][b]COMMS[/b][/size]
 
 [size=4][b]06 · Aftercredits[/b][/size]
-A chamfered phone with a panoramic contact screen, stacked notification cards and a glowing lower rim.
 
 [dohtml]
 <div class="bh-popcorn pcn-comms pcn-aftercredits" data-flow="received">
@@ -263,7 +251,6 @@ A chamfered phone with a panoramic contact screen, stacked notification cards an
 [/code]
 
 [size=4][b]07 · Kernel Ping[/b][/size]
-A squat pocket pager with an inset message display, signal pixels and a ridged control wheel.
 
 [dohtml]
 <div class="bh-popcorn pcn-comms pcn-kernel-ping" data-flow="received">
@@ -301,7 +288,6 @@ A squat pocket pager with an inset message display, signal pixels and a ridged c
 [/code]
 
 [size=4][b]08 · Lobby Chat[/b][/size]
-A freestanding lobby chat terminal with a portrait rail, squared speech bubbles and a pedestal.
 
 [dohtml]
 <div class="bh-popcorn pcn-comms pcn-lobby-chat" data-flow="received">
@@ -345,7 +331,6 @@ A freestanding lobby chat terminal with a portrait rail, squared speech bubbles 
 [/code]
 
 [size=4][b]09 · Popline[/b][/size]
-A striped-bumper smartphone with a compact contact portrait and rounded incoming messages.
 
 [dohtml]
 <div class="bh-popcorn pcn-comms pcn-popline" data-flow="received">
@@ -389,7 +374,6 @@ A striped-bumper smartphone with a compact contact portrait and rounded incoming
 [/code]
 
 [size=4][b]10 · Screen Two[/b][/size]
-A folding dual-screen messenger with paired contact displays, a visible hinge and a separate chat panel.
 
 [dohtml]
 <div class="bh-popcorn pcn-comms pcn-screen-two" data-flow="received">
@@ -437,7 +421,6 @@ A folding dual-screen messenger with paired contact displays, a visible hinge an
 [size=6][b]BUDS[/b][/size]
 
 [size=4][b]11 · Half-Popped[/b][/size]
-A compact two-frame keepsake with a shared caption and a tiny reply.
 
 [dohtml]
 <div class="bh-popcorn pcn-bud pcn-half-popped">
@@ -477,7 +460,6 @@ A compact two-frame keepsake with a shared caption and a tiny reply.
 [/code]
 
 [size=4][b]12 · Kettle Kiss[/b][/size]
-A small fluted note with a narrow striped fold and a warm typographic heading.
 
 [dohtml]
 <div class="bh-popcorn pcn-bud pcn-kettle-kiss">
@@ -509,7 +491,6 @@ A small fluted note with a narrow striped fold and a warm typographic heading.
 [/code]
 
 [size=4][b]13 · Last Kernel[/b][/size]
-An understated corner-bracket card with three small popped-kernel marks.
 
 [dohtml]
 <div class="bh-popcorn pcn-bud pcn-last-kernel">
@@ -541,7 +522,6 @@ An understated corner-bracket card with three small popped-kernel marks.
 [/code]
 
 [size=4][b]14 · Puffnote[/b][/size]
-A tiny popcorn-shaped portrait beside a soft, open reply card.
 
 [dohtml]
 <div class="bh-popcorn pcn-bud pcn-puffnote">
@@ -579,7 +559,6 @@ A tiny popcorn-shaped portrait beside a soft, open reply card.
 [/code]
 
 [size=4][b]15 · Saltlet[/b][/size]
-A miniature admission slip with a perforated name stub and a short reply.
 
 [dohtml]
 <div class="bh-popcorn pcn-bud pcn-saltlet">

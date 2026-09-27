@@ -1,16 +1,9 @@
-[h1]CINNAMON[/h1]
-
-Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
-
-Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
-
-Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+[align=center][H1]CINNAMON[/H1][/align]
 
 
 [size=6][b]THREADS[/b][/size]
 
 [size=4][b]01 · Barkbound[/b][/size]
-A tinted title panel, generous manuscript text and an engraved signature beneath.
 
 [dohtml]
 <div class="cnm cnm-thread cnm-barkbound">
@@ -52,7 +45,6 @@ A tinted title panel, generous manuscript text and an engraved signature beneath
 [/code]
 
 [size=4][b]02 · Canela Vellum[/b][/size]
-A vaulted vellum page with a double inset border and one panoramic portrait ribbon.
 
 [dohtml]
 <div class="cnm cnm-thread cnm-canela-vellum">
@@ -102,7 +94,6 @@ A vaulted vellum page with a double inset border and one panoramic portrait ribb
 [/code]
 
 [size=4][b]03 · Ceylon Sonata[/b][/size]
-A bound folio with a coloured spine, engraved cinnamon quills and portraits cut into a shallow chevron.
 
 [dohtml]
 <div class="cnm cnm-thread cnm-ceylon-sonata">
@@ -154,7 +145,6 @@ A bound folio with a coloured spine, engraved cinnamon quills and portraits cut 
 [/code]
 
 [size=4][b]04 · Quill and Quiet[/b][/size]
-An oversized literary title beside one slender portrait sliver.
 
 [dohtml]
 <div class="cnm cnm-thread cnm-quill-and-quiet">
@@ -204,7 +194,6 @@ An oversized literary title beside one slender portrait sliver.
 [/code]
 
 [size=4][b]05 · Saigon Silk[/b][/size]
-A fine gradient binding with staggered silk-corner portraits and gently bracketed writing.
 
 [dohtml]
 <div class="cnm cnm-thread cnm-saigon-silk">
@@ -258,7 +247,6 @@ A fine gradient binding with staggered silk-corner portraits and gently brackete
 [size=6][b]COMMS[/b][/size]
 
 [size=4][b]06 · Afterglow Inbox[/b][/size]
-A lock-screen-inspired phone with a large clock and image-free notification cards.
 
 [dohtml]
 <div class="cnm cnm-comms cnm-afterglow-inbox" data-direction="received">
@@ -304,7 +292,6 @@ A lock-screen-inspired phone with a large clock and image-free notification card
 [/code]
 
 [size=4][b]07 · Cindertext[/b][/size]
-One character contact portrait, with the original device frame and message bubbles.
 
 [dohtml]
 <div class="cnm cnm-comms cnm-cindertext" data-direction="received">
@@ -358,7 +345,6 @@ One character contact portrait, with the original device frame and message bubbl
 [/code]
 
 [size=4][b]08 · Quillwave[/b][/size]
-One character contact portrait, with the original device frame and message bubbles.
 
 [dohtml]
 <div class="cnm cnm-comms cnm-quillwave" data-direction="received">
@@ -412,7 +398,6 @@ One character contact portrait, with the original device frame and message bubbl
 [/code]
 
 [size=4][b]09 · Simmer Signal[/b][/size]
-One character contact portrait, with the original device frame and message bubbles.
 
 [dohtml]
 <div class="cnm cnm-comms cnm-simmer-signal" data-direction="received">
@@ -466,7 +451,6 @@ One character contact portrait, with the original device frame and message bubbl
 [/code]
 
 [size=4][b]10 · Velvet Relay[/b][/size]
-One character contact portrait, with the original device frame and message bubbles.
 
 [dohtml]
 <div class="cnm cnm-comms cnm-velvet-relay" data-direction="received">
@@ -522,7 +506,6 @@ One character contact portrait, with the original device frame and message bubbl
 [size=6][b]BUDS[/b][/size]
 
 [size=4][b]11 · Barklet[/b][/size]
-One small character portrait beside a compact reply and the original themed details.
 
 [dohtml]
 <div class="cnm cnm-bud cnm-barklet">
@@ -570,7 +553,6 @@ One small character portrait beside a compact reply and the original themed deta
 [/code]
 
 [size=4][b]12 · Cinderbud[/b][/size]
-A double-spined miniature with curled portrait corners and a perforated text divider.
 
 [dohtml]
 <div class="cnm cnm-bud cnm-cinderbud">
@@ -620,7 +602,6 @@ A double-spined miniature with curled portrait corners and a perforated text div
 [/code]
 
 [size=4][b]13 · Curlsong[/b][/size]
-One small character portrait beside a compact reply and the original themed details.
 
 [dohtml]
 <div class="cnm cnm-bud cnm-curlsong">
@@ -668,7 +649,6 @@ One small character portrait beside a compact reply and the original themed deta
 [/code]
 
 [size=4][b]14 · Quilltip[/b][/size]
-An open little letter with a full-width reply and fine cinnamon engraving.
 
 [dohtml]
 <div class="cnm cnm-bud cnm-quilltip">
@@ -708,7 +688,6 @@ An open little letter with a full-width reply and fine cinnamon engraving.
 [/code]
 
 [size=4][b]15 · Silkseed[/b][/size]
-A fine-lined, image-free reply slip with a literary heading.
 
 [dohtml]
 <div class="cnm cnm-bud cnm-silkseed">

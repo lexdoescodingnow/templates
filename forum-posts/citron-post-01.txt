@@ -1,16 +1,9 @@
-[h1]CITRON[/h1]
-
-Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
-
-Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
-
-Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+[align=center][H1]CITRON[/H1][/align]
 
 
 [size=6][b]THREADS[/b][/size]
 
 [size=4][b]01 · Albedo Archive[/b][/size]
-A spacious botanical journal with a split title band, embossed rind curves and an indented reading column.
 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-albedo-archive">
@@ -46,7 +39,6 @@ A spacious botanical journal with a split title band, embossed rind curves and a
 [/code]
 
 [size=4][b]02 · Cedrat Atelier[/b][/size]
-A perfumer's specimen plate with a giant serif title, paired inset portraits and a textured citron medallion.
 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-cedrat-atelier">
@@ -90,7 +82,6 @@ A perfumer's specimen plate with a giant serif title, paired inset portraits and
 [/code]
 
 [size=4][b]03 · Pith & Parfum[/b][/size]
-A perfume-label composition with a wide portrait, a formal oval title cartouche and fine double rules.
 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-pith-parfum">
@@ -132,7 +123,6 @@ A perfume-label composition with a wide portrait, a formal oval title cartouche 
 [/code]
 
 [size=4][b]04 · Vesicle Verse[/b][/size]
-A sculptural cell-window diptych with curved inner corners, a side-set caption and an open writing panel.
 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-vesicle-verse">
@@ -176,7 +166,6 @@ A sculptural cell-window diptych with curved inner corners, a side-set caption a
 [/code]
 
 [size=4][b]05 · Zeste Manifesto[/b][/size]
-An energetic typeset page with a narrow portrait column, oversized leading text and citrus-oil stippling.
 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-zeste-manifesto">
@@ -220,7 +209,6 @@ An energetic typeset page with a narrow portrait column, oversized leading text 
 [size=6][b]COMMS[/b][/size]
 
 [size=4][b]06 · Cedra Sync[/b][/size]
-A landscape pocket communicator with paired contact tabs, a status rail and a tiny horizontal keyboard.
 
 [dohtml]
 <div class="bh-citron ctn-comms ctn-cedra-sync" data-flow="received">
@@ -266,7 +254,6 @@ A landscape pocket communicator with paired contact tabs, a status rail and a ti
 [/code]
 
 [size=4][b]07 · CitrOS[/b][/size]
-A curved glass phone with a full-width photo card, floating status capsule and layered message bubbles.
 
 [dohtml]
 <div class="bh-citron ctn-comms ctn-citros" data-flow="received">
@@ -310,7 +297,6 @@ A curved glass phone with a full-width photo card, floating status capsule and l
 [/code]
 
 [size=4][b]08 · PithChat[/b][/size]
-A soft square smart communicator with a small contact tile, inset chat display and circular lower controller.
 
 [dohtml]
 <div class="bh-citron ctn-comms ctn-pithchat" data-flow="received">
@@ -354,7 +340,6 @@ A soft square smart communicator with a small contact tile, inset chat display a
 [/code]
 
 [size=4][b]09 · Rindr[/b][/size]
-A minimalist e-paper phone with a large contact name, squared bubbles and stippled rind grip.
 
 [dohtml]
 <div class="bh-citron ctn-comms ctn-rindr" data-flow="received">
@@ -392,7 +377,6 @@ A minimalist e-paper phone with a large contact name, squared bubbles and stippl
 [/code]
 
 [size=4][b]10 · Zestline[/b][/size]
-A slim modern phone with an off-centre camera pill, round contact portrait and wide incoming bubbles.
 
 [dohtml]
 <div class="bh-citron ctn-comms ctn-zestline" data-flow="received">
@@ -438,7 +422,6 @@ A slim modern phone with an off-centre camera pill, round contact portrait and w
 [size=6][b]BUDS[/b][/size]
 
 [size=4][b]11 · Oilspot[/b][/size]
-A miniature scent label with concentric rounded corners and an off-centre citron stamp.
 
 [dohtml]
 <div class="bh-citron ctn-bud ctn-oilspot">
@@ -470,7 +453,6 @@ A miniature scent label with concentric rounded corners and an off-centre citron
 [/code]
 
 [size=4][b]12 · Pithlet[/b][/size]
-A round little portrait beside a finely ruled title and a short open reply.
 
 [dohtml]
 <div class="bh-citron ctn-bud ctn-pithlet">
@@ -508,7 +490,6 @@ A round little portrait beside a finely ruled title and a short open reply.
 [/code]
 
 [size=4][b]13 · Rindscript[/b][/size]
-A low horizontal note with a coloured inset nameplate and a finely ridged right edge.
 
 [dohtml]
 <div class="bh-citron ctn-bud ctn-rindscript">
@@ -540,7 +521,6 @@ A low horizontal note with a coloured inset nameplate and a finely ridged right 
 [/code]
 
 [size=4][b]14 · Vesicle Kiss[/b][/size]
-Two tiny asymmetric cell portraits beside a shared heading, above a compact reply.
 
 [dohtml]
 <div class="bh-citron ctn-bud ctn-vesicle-kiss">
@@ -580,7 +560,6 @@ Two tiny asymmetric cell portraits beside a shared heading, above a compact repl
 [/code]
 
 [size=4][b]15 · Zestmark[/b][/size]
-A tiny typeset note with an oversized opening letter and three oil-gland marks.
 
 [dohtml]
 <div class="bh-citron ctn-bud ctn-zestmark">

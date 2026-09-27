@@ -1,57 +1,7 @@
-[h1]SAKE[/h1]
+[align=center][H1]SAKE[/H1][/align]
 
-Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
-
-Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
-
-Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
-
-
-[size=4][b]19 · Tasting Bud · Two Gifs[/b][/size]
-A bud layout from the Sake collection.
-
-[dohtml]
-<div class="bh-sake-bud bh-sake-bud--flight" style="--sb-img1:url('https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s400x600/e24d5427540bb2a9ad44af10efff7c7a8a43464e.gifv');--sb-img2:url('https://64.media.tumblr.com/1b73af8a8ab10c9387bb9b7e26438906/b5fe69bc666e12d9-7d/s400x600/af7a23e876aae74d30d035bf6c52fccebae2329a.gifv');">
-
-<a class="bh-sake-bud__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span><span>two moments · one reply</span></a>
-
-<div class="bh-sake-bud__body">
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed libero eget nibh posuere scelerisque. Sed sit amet tortor ut <u>nisl fermentum</u> suscipit.</p>
-</div>
-
-<div class="bh-sake-bud__media"><div class="bh-sake-bud__image bh-sake-bud__image--one"></div><div class="bh-sake-bud__image bh-sake-bud__image--two"></div><span class="bh-sake-bud__chip">paired tasting</span></div>
-
-<div class="bh-sake-bud__head"><div class="bh-sake-bud__heading"><span class="bh-sake-bud__kicker">二景 · tasting flight</span><strong class="bh-sake-bud__title">tasting bud</strong></div><span class="bh-sake-bud__seal">試</span></div>
-
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-buds-standalone-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-sake-bud bh-sake-bud--flight" style="--sb-img1:url('https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s400x600/e24d5427540bb2a9ad44af10efff7c7a8a43464e.gifv');--sb-img2:url('https://64.media.tumblr.com/1b73af8a8ab10c9387bb9b7e26438906/b5fe69bc666e12d9-7d/s400x600/af7a23e876aae74d30d035bf6c52fccebae2329a.gifv');">
-
-<a class="bh-sake-bud__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span><span>two moments · one reply</span></a>
-
-<div class="bh-sake-bud__body">
-<p>[TEXT GOES HERE]</p>
-</div>
-
-<div class="bh-sake-bud__media"><div class="bh-sake-bud__image bh-sake-bud__image--one"></div><div class="bh-sake-bud__image bh-sake-bud__image--two"></div><span class="bh-sake-bud__chip">paired tasting</span></div>
-
-<div class="bh-sake-bud__head"><div class="bh-sake-bud__heading"><span class="bh-sake-bud__kicker">二景 · tasting flight</span><strong class="bh-sake-bud__title">tasting bud</strong></div><span class="bh-sake-bud__seal">試</span></div>
-
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-buds-standalone-v1.css">
-[/dohtml]
-[/code]
 
 [size=4][b]20 · Pressed Bud · Text Only[/b][/size]
-A bud layout from the Sake collection.
 
 [dohtml]
 <div class="bh-sake-bud bh-sake-bud--note">
@@ -90,7 +40,6 @@ A bud layout from the Sake collection.
 [/code]
 
 [size=4][b]21 · Quick Pour · Compact Scroll[/b][/size]
-A bud layout from the Sake collection.
 
 [dohtml]
 <div class="bh-sake-bud bh-sake-bud--scroll" style="--sb-img1:url('https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s400x600/e24d5427540bb2a9ad44af10efff7c7a8a43464e.gifv');">
@@ -134,7 +83,6 @@ A bud layout from the Sake collection.
 [/code]
 
 [size=4][b]22 · Kasumi Slip[/b][/size]
-A flat keepsake slip pairs a shallow panoramic portrait with a delicately offset title and short reply.
 
 [dohtml]
 <div class="bh-sake-brew sk-bud sk-kasumi-slip">
@@ -172,7 +120,6 @@ A flat keepsake slip pairs a shallow panoramic portrait with a delicately offset
 [/code]
 
 [size=4][b]23 · Komelet[/b][/size]
-A narrow miniature label with double outer rules, a notched name band and a short centred heading.
 
 [dohtml]
 <div class="bh-sake-brew sk-bud sk-komelet">
@@ -204,7 +151,6 @@ A narrow miniature label with double outer rules, a notched name band and a shor
 [/code]
 
 [size=4][b]24 · Ochoko[/b][/size]
-A tiny tasting-circle portrait sits beside a compact reply, anchored by a fine three-colour footer.
 
 [dohtml]
 <div class="bh-sake-brew sk-bud sk-ochoko">
@@ -242,7 +188,6 @@ A tiny tasting-circle portrait sits beside a compact reply, anchored by a fine t
 [/code]
 
 [size=4][b]25 · Renzoku[/b][/size]
-Two small square portraits stack in a narrow side rail next to a shared miniature letter.
 
 [dohtml]
 <div class="bh-sake-brew sk-bud sk-renzoku">
@@ -282,7 +227,6 @@ Two small square portraits stack in a narrow side rail next to a shared miniatur
 [/code]
 
 [size=4][b]26 · Tomezoe[/b][/size]
-A spare reply card with a vertical colour register, a low-set heading and a right-aligned name strip.
 
 [dohtml]
 <div class="bh-sake-brew sk-bud sk-tomezoe">

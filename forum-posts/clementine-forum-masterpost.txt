@@ -1,15 +1,8 @@
-[h1]CLEMENTINE[/h1]
-
-Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
-
-Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
-
-Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+[align=center][H1]CLEMENTINE[/H1][/align]
 
 [size=6][b]THREADS[/b][/size]
 
 [size=4][b]01 · Citrus Reverie[/b][/size]
-An image-free page with a sweeping type-led header, right-aligned dedication and one softly curved corner.
 
 [dohtml]
 <div class="clm clm-thread clm-citrus-reverie">
@@ -51,7 +44,6 @@ An image-free page with a sweeping type-led header, right-aligned dedication and
 [/code]
 
 [size=4][b]02 · Daylit Vellum[/b][/size]
-An image-free translucent-paper composition with segmented colour rules, leaf shadows and a literary drop cap.
 
 [dohtml]
 <div class="clm clm-thread clm-daylit-vellum">
@@ -93,7 +85,6 @@ An image-free translucent-paper composition with segmented colour rules, leaf sh
 [/code]
 
 [size=4][b]03 · Shared Segments[/b][/size]
-A close-set pair of cinematic stills, a tiny ampersand seal and a spacious, centred title.
 
 [dohtml]
 <div class="clm clm-thread clm-shared-segments">
@@ -145,7 +136,6 @@ A close-set pair of cinematic stills, a tiny ampersand seal and a spacious, cent
 [/code]
 
 [size=4][b]04 · Slow Peel[/b][/size]
-A curled corner portrait beside an airy title, a fine colour frame and a hand-drawn ribbon of peel.
 
 [dohtml]
 <div class="clm clm-thread clm-slow-peel">
@@ -195,7 +185,6 @@ A curled corner portrait beside an airy title, a fine colour frame and a hand-dr
 [/code]
 
 [size=4][b]05 · The Tender Hour[/b][/size]
-A letterpress-style masthead, an offset landscape still and a sunrise drawn with the lightest possible line.
 
 [dohtml]
 <div class="clm clm-thread clm-the-tender-hour">
@@ -245,7 +234,6 @@ A letterpress-style masthead, an offset landscape still and a sunrise drawn with
 [/code]
 
 [size=4][b]06 · Marmalade[/b][/size]
-An image-free correspondence page with a coloured spine.
 
 [dohtml]
 <div class="clementine-zest ct-marmalade">
@@ -285,7 +273,6 @@ An image-free correspondence page with a coloured spine.
 [/code]
 
 [size=4][b]07 · Orangerie[/b][/size]
-Tall conservatory windows and a botanical finish.
 
 [dohtml]
 <div class="clementine-zest ct-orangerie">
@@ -333,7 +320,6 @@ Tall conservatory windows and a botanical finish.
 [/code]
 
 [size=4][b]08 · Satsuma[/b][/size]
-One citrus-shaped portrait beneath a centred masthead.
 
 [dohtml]
 <div class="clementine-zest ct-satsuma">
@@ -379,7 +365,6 @@ One citrus-shaped portrait beneath a centred masthead.
 [/code]
 
 [size=4][b]09 · Sunroom[/b][/size]
-A wide photograph with a small circular portrait inset.
 
 [dohtml]
 <div class="clementine-zest ct-sunroom">
@@ -427,7 +412,6 @@ A wide photograph with a small circular portrait inset.
 [/code]
 
 [size=4][b]10 · Zest[/b][/size]
-Staggered portraits and engraved citrus details.
 
 [dohtml]
 <div class="clementine-zest">
@@ -477,7 +461,6 @@ Staggered portraits and engraved citrus details.
 [size=6][b]COMMS[/b][/size]
 
 [size=4][b]11 · Clementine OS[/b][/size]
-A compact desktop-style messenger with a toolbar clock and crisp, coloured message rails.
 
 [dohtml]
 <div class="clm clm-comms clm-clementine-os" data-direction="received">
@@ -523,7 +506,6 @@ A compact desktop-style messenger with a toolbar clock and crisp, coloured messa
 [/code]
 
 [size=4][b]12 · Fleur[/b][/size]
-A portrait-led messenger with a wide photographic header.
 
 [dohtml]
 <div class="clementine-comms cc-fleur">
@@ -573,7 +555,6 @@ A portrait-led messenger with a wide photographic header.
 [/code]
 
 [size=4][b]13 · Nectar[/b][/size]
-A compact chat screen with a tinted contact bar.
 
 [dohtml]
 <div class="clementine-comms cc-nectar">
@@ -623,7 +604,6 @@ A compact chat screen with a tinted contact bar.
 [/code]
 
 [size=4][b]14 · Peel[/b][/size]
-A slim handset with a vertical portrait and folded message corners.
 
 [dohtml]
 <div class="clementine-comms cc-peel">
@@ -673,7 +653,6 @@ A slim handset with a vertical portrait and folded message corners.
 [/code]
 
 [size=4][b]15 · Pressé[/b][/size]
-A square messenger with crisp message panels and a citrus seal.
 
 [dohtml]
 <div class="clementine-comms cc-presse">
@@ -723,7 +702,6 @@ A square messenger with crisp message panels and a citrus seal.
 [/code]
 
 [size=4][b]16 · Pulp[/b][/size]
-A rounded phone with a centred portrait and soft message bubbles.
 
 [dohtml]
 <div class="clementine-comms cc-pulp">
@@ -773,7 +751,6 @@ A rounded phone with a centred portrait and soft message bubbles.
 [/code]
 
 [size=4][b]17 · Dusk Dial[/b][/size]
-A pocket flip-phone treatment with a small contact display, hinge rule and oval control pad.
 
 [dohtml]
 <div class="clm clm-comms clm-dusk-dial" data-direction="received">
@@ -827,7 +804,6 @@ A pocket flip-phone treatment with a small contact display, hinge rule and oval 
 [/code]
 
 [size=4][b]18 · Petal Pixel[/b][/size]
-A camera-led chat device with a wide contact image, serif contact card and soft message bubbles.
 
 [dohtml]
 <div class="clm clm-comms clm-petal-pixel" data-direction="received">
@@ -881,7 +857,6 @@ A camera-led chat device with a wide contact image, serif contact card and soft 
 [/code]
 
 [size=4][b]19 · Pocket Grove[/b][/size]
-A softly framed phone with a leaf-corner contact portrait and received-message bubbles.
 
 [dohtml]
 <div class="clm clm-comms clm-pocket-grove" data-direction="received">
@@ -935,7 +910,6 @@ A softly framed phone with a leaf-corner contact portrait and received-message b
 [/code]
 
 [size=4][b]20 · Soft Signal[/b][/size]
-A tall, rounded lock screen with a delicate oversized clock and stacked notification cards.
 
 [dohtml]
 <div class="clm clm-comms clm-soft-signal" data-direction="received">
@@ -983,7 +957,6 @@ A tall, rounded lock screen with a delicate oversized clock and stacked notifica
 [size=6][b]BUDS[/b][/size]
 
 [size=4][b]21 · Blossom[/b][/size]
-A leaf-shaped portrait and an asymmetric frame.
 
 [dohtml]
 <div class="clementine-bud cb-blossom">
@@ -1022,7 +995,6 @@ A leaf-shaped portrait and an asymmetric frame.
 [/code]
 
 [size=4][b]22 · Dew[/b][/size]
-Twin miniature portraits along the top edge.
 
 [dohtml]
 <div class="clementine-bud cb-dew">
@@ -1063,7 +1035,6 @@ Twin miniature portraits along the top edge.
 [/code]
 
 [size=4][b]23 · Pip[/b][/size]
-A tiny portrait beside a quick reply.
 
 [dohtml]
 <div class="clementine-bud cb-pip">
@@ -1102,7 +1073,6 @@ A tiny portrait beside a quick reply.
 [/code]
 
 [size=4][b]24 · Pith[/b][/size]
-A small centred note, carried by its typography and citrus motif.
 
 [dohtml]
 <div class="clementine-bud cb-pith">
@@ -1135,7 +1105,6 @@ A small centred note, carried by its typography and citrus motif.
 [/code]
 
 [size=4][b]25 · Segment[/b][/size]
-A compact, image-free reply with a clean botanical finish.
 
 [dohtml]
 <div class="clementine-bud cb-segment">
@@ -1168,7 +1137,6 @@ A compact, image-free reply with a clean botanical finish.
 [/code]
 
 [size=4][b]26 · Clement Kiss[/b][/size]
-A small, gently curved reply card with a paired-segment signature.
 
 [dohtml]
 <div class="clm clm-bud clm-clement-kiss">
@@ -1208,7 +1176,6 @@ A small, gently curved reply card with a paired-segment signature.
 [/code]
 
 [size=4][b]27 · Leaflit[/b][/size]
-A portrait tab to the right of a literary heading, with a fine botanical signature.
 
 [dohtml]
 <div class="clm clm-bud clm-leaflit">
@@ -1256,7 +1223,6 @@ A portrait tab to the right of a literary heading, with a fine botanical signatu
 [/code]
 
 [size=4][b]28 · Little Halo[/b][/size]
-A tiny ringed portrait beside a short title, followed by a compact reply.
 
 [dohtml]
 <div class="clm clm-bud clm-little-halo">
@@ -1304,7 +1270,6 @@ A tiny ringed portrait beside a short title, followed by a compact reply.
 [/code]
 
 [size=4][b]29 · Rindlet[/b][/size]
-A miniature folded-corner reply with a peel flourish and a member-colour lower edge.
 
 [dohtml]
 <div class="clm clm-bud clm-rindlet">
@@ -1344,7 +1309,6 @@ A miniature folded-corner reply with a peel flourish and a member-colour lower e
 [/code]
 
 [size=4][b]30 · Sugar Pollen[/b][/size]
-A centred miniature note on a barely dotted background, with a small five-petal blossom.
 
 [dohtml]
 <div class="clm clm-bud clm-sugar-pollen">

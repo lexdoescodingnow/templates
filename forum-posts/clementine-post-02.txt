@@ -1,68 +1,7 @@
-[h1]CLEMENTINE[/h1]
+[align=center][H1]CLEMENTINE[/H1][/align]
 
-Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
-
-Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
-
-Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
-
-
-[size=4][b]19 · Pocket Grove[/b][/size]
-A softly framed phone with a leaf-corner contact portrait and received-message bubbles.
-
-[dohtml]
-<div class="clm clm-comms clm-pocket-grove" data-direction="received">
-<div class="cl-meta">
-<a href="[url]">Siwoo &amp; Yuseop</a>
-<span>Pocket Grove</span>
-<time>09:41</time>
-</div>
-
-<div class="cl-media">
-<img src="https://64.media.tumblr.com/de19c72ed024a77cc65c1779801994e9/68c45d1f767d3167-1a/s540x810/da2e3b973004be9876964a7453fd1caf9cea4931.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-
-<div class="cl-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>
-<p>Aliquam erat volutpat. <i>Praesent vitae justo.</i></p>
-<p><u>Donec consequat.</u> Cras tempus neque sed porta consequat.</p>
-</div>
-
-<div class="cl-ornament" aria-hidden="true"><svg viewBox="0 0 90 48" aria-hidden="true"><path d="M7 40C30 38 51 24 79 6M25 35C11 29 13 17 14 16c10 1 15 8 11 19ZM42 26c-4-11 2-18 13-21 1 12-4 18-13 21ZM56 18c12 1 21 5 23 14-12 2-19-3-23-14"/><path d="M37 32c-7 0-11 6-8 12 3 7 17 6 20-1 2-7-4-13-12-11Z"/></svg><span>Message</span></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-standalone-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="clm clm-comms clm-pocket-grove" data-direction="received">
-<div class="cl-meta">
-<a href="[url]">Siwoo &amp; Yuseop</a>
-<span>Pocket Grove</span>
-<time>09:41</time>
-</div>
-
-<div class="cl-media">
-<img src="https://64.media.tumblr.com/de19c72ed024a77cc65c1779801994e9/68c45d1f767d3167-1a/s540x810/da2e3b973004be9876964a7453fd1caf9cea4931.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-
-<div class="cl-copy">
-<p>[MESSAGE GOES HERE]</p>
-<p>[MESSAGE GOES HERE]</p>
-<p>[MESSAGE GOES HERE]</p>
-</div>
-
-<div class="cl-ornament" aria-hidden="true"><svg viewBox="0 0 90 48" aria-hidden="true"><path d="M7 40C30 38 51 24 79 6M25 35C11 29 13 17 14 16c10 1 15 8 11 19ZM42 26c-4-11 2-18 13-21 1 12-4 18-13 21ZM56 18c12 1 21 5 23 14-12 2-19-3-23-14"/><path d="M37 32c-7 0-11 6-8 12 3 7 17 6 20-1 2-7-4-13-12-11Z"/></svg><span>Message</span></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-standalone-v1.css">
-[/dohtml]
-[/code]
 
 [size=4][b]20 · Soft Signal[/b][/size]
-A tall, rounded lock screen with a delicate oversized clock and stacked notification cards.
 
 [dohtml]
 <div class="clm clm-comms clm-soft-signal" data-direction="received">
@@ -110,7 +49,6 @@ A tall, rounded lock screen with a delicate oversized clock and stacked notifica
 [size=6][b]BUDS[/b][/size]
 
 [size=4][b]21 · Blossom[/b][/size]
-A leaf-shaped portrait and an asymmetric frame.
 
 [dohtml]
 <div class="clementine-bud cb-blossom">
@@ -149,7 +87,6 @@ A leaf-shaped portrait and an asymmetric frame.
 [/code]
 
 [size=4][b]22 · Dew[/b][/size]
-Twin miniature portraits along the top edge.
 
 [dohtml]
 <div class="clementine-bud cb-dew">
@@ -190,7 +127,6 @@ Twin miniature portraits along the top edge.
 [/code]
 
 [size=4][b]23 · Pip[/b][/size]
-A tiny portrait beside a quick reply.
 
 [dohtml]
 <div class="clementine-bud cb-pip">
@@ -229,7 +165,6 @@ A tiny portrait beside a quick reply.
 [/code]
 
 [size=4][b]24 · Pith[/b][/size]
-A small centred note, carried by its typography and citrus motif.
 
 [dohtml]
 <div class="clementine-bud cb-pith">
@@ -262,7 +197,6 @@ A small centred note, carried by its typography and citrus motif.
 [/code]
 
 [size=4][b]25 · Segment[/b][/size]
-A compact, image-free reply with a clean botanical finish.
 
 [dohtml]
 <div class="clementine-bud cb-segment">
@@ -295,7 +229,6 @@ A compact, image-free reply with a clean botanical finish.
 [/code]
 
 [size=4][b]26 · Clement Kiss[/b][/size]
-A small, gently curved reply card with a paired-segment signature.
 
 [dohtml]
 <div class="clm clm-bud clm-clement-kiss">
@@ -335,7 +268,6 @@ A small, gently curved reply card with a paired-segment signature.
 [/code]
 
 [size=4][b]27 · Leaflit[/b][/size]
-A portrait tab to the right of a literary heading, with a fine botanical signature.
 
 [dohtml]
 <div class="clm clm-bud clm-leaflit">
@@ -383,7 +315,6 @@ A portrait tab to the right of a literary heading, with a fine botanical signatu
 [/code]
 
 [size=4][b]28 · Little Halo[/b][/size]
-A tiny ringed portrait beside a short title, followed by a compact reply.
 
 [dohtml]
 <div class="clm clm-bud clm-little-halo">
@@ -431,7 +362,6 @@ A tiny ringed portrait beside a short title, followed by a compact reply.
 [/code]
 
 [size=4][b]29 · Rindlet[/b][/size]
-A miniature folded-corner reply with a peel flourish and a member-colour lower edge.
 
 [dohtml]
 <div class="clm clm-bud clm-rindlet">
@@ -471,7 +401,6 @@ A miniature folded-corner reply with a peel flourish and a member-colour lower e
 [/code]
 
 [size=4][b]30 · Sugar Pollen[/b][/size]
-A centred miniature note on a barely dotted background, with a small five-petal blossom.
 
 [dohtml]
 <div class="clm clm-bud clm-sugar-pollen">

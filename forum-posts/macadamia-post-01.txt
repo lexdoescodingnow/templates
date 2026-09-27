@@ -1,16 +1,9 @@
-[h1]MACADAMIA[/h1]
-
-Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
-
-Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
-
-Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
+[align=center][H1]MACADAMIA[/H1][/align]
 
 
 [size=6][b]THREADS[/b][/size]
 
 [size=4][b]01 · Orchard Weave[/b][/size]
-An image-free page with an interlaced member-colour edge, a small sideways signature and a broad bookish title.
 
 [dohtml]
 <div class="bh-maca mc-thread mc-orchard-weave">
@@ -46,7 +39,6 @@ An image-free page with an interlaced member-colour edge, a small sideways signa
 [/code]
 
 [size=4][b]02 · Raceme Letters[/b][/size]
-A cascade of tiny macadamia blossoms runs beside a panoramic portrait and a broad, softly set reading page.
 
 [dohtml]
 <div class="bh-maca mc-thread mc-raceme-letters">
@@ -88,7 +80,6 @@ A cascade of tiny macadamia blossoms runs beside a panoramic portrait and a broa
 [/code]
 
 [size=4][b]03 · Terrazzo Milk[/b][/size]
-A fragmented mosaic frame holds two offset landscape portraits, a bold slanting title and a clean central writing surface.
 
 [dohtml]
 <div class="bh-maca mc-thread mc-terrazzo-milk">
@@ -132,7 +123,6 @@ A fragmented mosaic frame holds two offset landscape portraits, a bold slanting 
 [/code]
 
 [size=4][b]04 · Macadamia 01 · Kernel Archive[/b][/size]
-A thread layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-macthread bh-macthread--kernel">
@@ -204,7 +194,6 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 [/code]
 
 [size=4][b]05 · Macadamia 02 · Soft Shell[/b][/size]
-A thread layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-macthread bh-macthread--soft">
@@ -276,7 +265,6 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 [/code]
 
 [size=4][b]06 · Macadamia 03 · Scroll Archive[/b][/size]
-A thread layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-macthread bh-macthread--scroll">
@@ -356,7 +344,6 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 [/code]
 
 [size=4][b]07 · Macadamia 04 · Single Serve[/b][/size]
-A thread layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-macthread bh-macthread--single">
@@ -428,7 +415,6 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 [/code]
 
 [size=4][b]08 · Macadamia 05 · Contact Sheet[/b][/size]
-A thread layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-macthread bh-macthread--contact">
@@ -502,7 +488,6 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 [/code]
 
 [size=4][b]09 · Whorl House[/b][/size]
-A rounded triangular portrait sits among three radiating leaves above a centred title and a spare, open reading panel.
 
 [dohtml]
 <div class="bh-maca mc-thread mc-whorl-house">
@@ -546,7 +531,6 @@ A rounded triangular portrait sits among three radiating leaves above a centred 
 [size=6][b]COMMS[/b][/size]
 
 [size=4][b]10 · Comms Snippet[/b][/size]
-A comms layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-maccomms">
@@ -652,7 +636,6 @@ Praesent accumsan justo vitae nisl vulputate. <b>Sed consequat elit varius</b>.
 [/code]
 
 [size=4][b]11 · Milkglass Duo[/b][/size]
-A two-panel glass phone with its conversation above a paired contact dock and a slim illuminated hinge.
 
 [dohtml]
 <div class="bh-maca mc-comms mc-milkglass-duo" data-flow="received">
@@ -698,7 +681,6 @@ A two-panel glass phone with its conversation above a paired contact dock and a 
 [/code]
 
 [size=4][b]12 · Orchard Pocket[/b][/size]
-A compact keyboard phone with a short landscape display, a small contact tile and four rows of miniature keys.
 
 [dohtml]
 <div class="bh-maca mc-comms mc-orchard-pocket" data-flow="received">
@@ -742,7 +724,6 @@ A compact keyboard phone with a short landscape display, a small contact tile an
 [/code]
 
 [size=4][b]13 · Raceme Mobile[/b][/size]
-A slim blossom-detailed phone with a square contact portrait, offset speaker slots and a rounded conversation screen.
 
 [dohtml]
 <div class="bh-maca mc-comms mc-raceme-mobile" data-flow="received">
@@ -786,7 +767,6 @@ A slim blossom-detailed phone with a square contact portrait, offset speaker slo
 [/code]
 
 [size=4][b]14 · Roast Terminal[/b][/size]
-A miniature desktop terminal with a thick inset bezel, compact contact tile, square message cards and a pedestal base.
 
 [dohtml]
 <div class="bh-maca mc-comms mc-roast-terminal" data-flow="received">
@@ -830,7 +810,6 @@ A miniature desktop terminal with a thick inset bezel, compact contact tile, squ
 [/code]
 
 [size=4][b]15 · Whisper Kernel[/b][/size]
-A smooth pebble-shaped messenger with a wide earpiece, centred contact text and soft stacked conversation bubbles.
 
 [dohtml]
 <div class="bh-maca mc-comms mc-whisper-kernel" data-flow="received">
@@ -870,7 +849,6 @@ A smooth pebble-shaped messenger with a wide earpiece, centred contact text and 
 [size=6][b]BUDS[/b][/size]
 
 [size=4][b]16 · Blossom Pair[/b][/size]
-Two small portrait medallions hang from a fine flowering stem above a compact reply.
 
 [dohtml]
 <div class="bh-maca mc-bud mc-blossom-pair">
@@ -910,7 +888,6 @@ Two small portrait medallions hang from a fine flowering stem above a compact re
 [/code]
 
 [size=4][b]17 · Macadamia Bud 01 · Sprout[/b][/size]
-A bud layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-macbud bh-macbud-sprout">
@@ -957,6 +934,116 @@ A bud layout from the Macadamia collection.
 </div>
 
 <div class="bh-macbud-foot"><span class="bh-macbud-tag">a little sprout</span><span class="bh-macbud-limit">100 words or fewer</span></div>
+
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-buds-v2.css?v=20260725-1">
+[/dohtml]
+[/code]
+
+[size=4][b]18 · Macadamia Bud 02 · Stemline[/b][/size]
+
+[dohtml]
+<div class="bh-macbud bh-macbud-stem">
+<div class="bh-macbud-shell">
+
+<div class="bh-macbud-head">
+<div>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
+
+</div>
+<span class="bh-macbud-limit">under 100 words</span>
+</div>
+
+<div class="bh-macbud-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate, sed consequat elit varius. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus mi vitae</u> nibh vulputate.</p>
+</div>
+
+<div class="bh-macbud-foot"><span class="bh-macbud-tag">stemline</span><a class="bh-macbud-open" href="[url]" target="_blank" rel="noopener">↗</a></div>
+
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-buds-v2.css?v=20260725-1">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-macbud bh-macbud-stem">
+<div class="bh-macbud-shell">
+
+<div class="bh-macbud-head">
+<div>
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
+
+</div>
+<span class="bh-macbud-limit">under 100 words</span>
+</div>
+
+<div class="bh-macbud-copy">
+<p>[TEXT GOES HERE]</p>
+</div>
+
+<div class="bh-macbud-foot"><span class="bh-macbud-tag">stemline</span><a class="bh-macbud-open" href="[url]" target="_blank" rel="noopener">↗</a></div>
+
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-buds-v2.css?v=20260725-1">
+[/dohtml]
+[/code]
+
+[size=4][b]19 · Macadamia Bud 03 · Pocket Bud[/b][/size]
+
+[dohtml]
+<div class="bh-macbud bh-macbud-pocket">
+<div class="bh-macbud-shell">
+
+<div class="bh-macbud-head">
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
+
+<span class="bh-macbud-limit">a reply in 100 words</span>
+</div>
+
+<a class="bh-macbud-photo" href="[url]" target="_blank" rel="noopener">
+<img src="https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv" alt="Character GIF">
+</a>
+
+<div class="bh-macbud-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus</u> mi vitae nibh vulputate, in sodales justo feugiat.</p>
+</div>
+
+<div class="bh-macbud-foot"><span class="bh-macbud-tag">pocket bud</span><span>quick volley</span></div>
+
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-buds-v2.css?v=20260725-1">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-macbud bh-macbud-pocket">
+<div class="bh-macbud-shell">
+
+<div class="bh-macbud-head">
+<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
+
+<span class="bh-macbud-limit">a reply in 100 words</span>
+</div>
+
+<a class="bh-macbud-photo" href="[url]" target="_blank" rel="noopener">
+<img src="https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv" alt="Character GIF">
+</a>
+
+<div class="bh-macbud-copy">
+<p>[TEXT GOES HERE]</p>
+</div>
+
+<div class="bh-macbud-foot"><span class="bh-macbud-tag">pocket bud</span><span>quick volley</span></div>
 
 </div>
 </div>

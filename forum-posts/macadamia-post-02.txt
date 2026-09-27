@@ -1,126 +1,7 @@
-[h1]MACADAMIA[/h1]
+[align=center][H1]MACADAMIA[/H1][/align]
 
-Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
-
-Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
-
-Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
-
-
-[size=4][b]18 · Macadamia Bud 02 · Stemline[/b][/size]
-A bud layout from the Macadamia collection.
-
-[dohtml]
-<div class="bh-macbud bh-macbud-stem">
-<div class="bh-macbud-shell">
-
-<div class="bh-macbud-head">
-<div>
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-
-</div>
-<span class="bh-macbud-limit">under 100 words</span>
-</div>
-
-<div class="bh-macbud-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate, sed consequat elit varius. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus mi vitae</u> nibh vulputate.</p>
-</div>
-
-<div class="bh-macbud-foot"><span class="bh-macbud-tag">stemline</span><a class="bh-macbud-open" href="[url]" target="_blank" rel="noopener">↗</a></div>
-
-</div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-buds-v2.css?v=20260725-1">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-macbud bh-macbud-stem">
-<div class="bh-macbud-shell">
-
-<div class="bh-macbud-head">
-<div>
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-
-</div>
-<span class="bh-macbud-limit">under 100 words</span>
-</div>
-
-<div class="bh-macbud-copy">
-<p>[TEXT GOES HERE]</p>
-</div>
-
-<div class="bh-macbud-foot"><span class="bh-macbud-tag">stemline</span><a class="bh-macbud-open" href="[url]" target="_blank" rel="noopener">↗</a></div>
-
-</div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-buds-v2.css?v=20260725-1">
-[/dohtml]
-[/code]
-
-[size=4][b]19 · Macadamia Bud 03 · Pocket Bud[/b][/size]
-A bud layout from the Macadamia collection.
-
-[dohtml]
-<div class="bh-macbud bh-macbud-pocket">
-<div class="bh-macbud-shell">
-
-<div class="bh-macbud-head">
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-
-<span class="bh-macbud-limit">a reply in 100 words</span>
-</div>
-
-<a class="bh-macbud-photo" href="[url]" target="_blank" rel="noopener">
-<img src="https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv" alt="Character GIF">
-</a>
-
-<div class="bh-macbud-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus</u> mi vitae nibh vulputate, in sodales justo feugiat.</p>
-</div>
-
-<div class="bh-macbud-foot"><span class="bh-macbud-tag">pocket bud</span><span>quick volley</span></div>
-
-</div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-buds-v2.css?v=20260725-1">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-macbud bh-macbud-pocket">
-<div class="bh-macbud-shell">
-
-<div class="bh-macbud-head">
-<a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-
-<span class="bh-macbud-limit">a reply in 100 words</span>
-</div>
-
-<a class="bh-macbud-photo" href="[url]" target="_blank" rel="noopener">
-<img src="https://64.media.tumblr.com/cbd790eebd66c26f8046102db42106d8/eea904048e52302a-36/s640x960/9b9c4618da971bd9b2c8d130668e36ed21145486.gifv" alt="Character GIF">
-</a>
-
-<div class="bh-macbud-copy">
-<p>[TEXT GOES HERE]</p>
-</div>
-
-<div class="bh-macbud-foot"><span class="bh-macbud-tag">pocket bud</span><span>quick volley</span></div>
-
-</div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/macadamia/macadamia-buds-v2.css?v=20260725-1">
-[/dohtml]
-[/code]
 
 [size=4][b]20 · Macadamia Bud 04 · Pressed Leaf[/b][/size]
-A bud layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-macbud bh-macbud-pressed">
@@ -176,7 +57,6 @@ A bud layout from the Macadamia collection.
 [/code]
 
 [size=4][b]21 · Macadamia Bud 05 · Twin Bud[/b][/size]
-A bud layout from the Macadamia collection.
 
 [dohtml]
 <div class="bh-macbud bh-macbud-pair">
@@ -240,7 +120,6 @@ A bud layout from the Macadamia collection.
 [/code]
 
 [size=4][b]22 · Butterfleck[/b][/size]
-An asymmetric miniature with a portrait corner, a short reply and a scattering of terrazzo pieces.
 
 [dohtml]
 <div class="bh-maca mc-bud mc-butterfleck">
@@ -278,7 +157,6 @@ An asymmetric miniature with a portrait corner, a short reply and a scattering o
 [/code]
 
 [size=4][b]23 · Crumbprint[/b][/size]
-A tiny upright note with a bold sans heading, a scattered imprint and a wide coloured lower lip.
 
 [dohtml]
 <div class="bh-maca mc-bud mc-crumbprint">
@@ -310,7 +188,6 @@ A tiny upright note with a bold sans heading, a scattered imprint and a wide col
 [/code]
 
 [size=4][b]24 · Hilum[/b][/size]
-A tiny round seed-eye imprint anchors a short open reply between offset coloured rules.
 
 [dohtml]
 <div class="bh-maca mc-bud mc-hilum">
@@ -342,7 +219,6 @@ A tiny round seed-eye imprint anchors a short open reply between offset coloured
 [/code]
 
 [size=4][b]25 · Hilum Press[/b][/size]
-A writing-led letterpress page with a large seed-eye impression, compressed type, a split colour baseline and generous prose.
 
 [dohtml]
 <div class="bh-maca mc-thread mc-hilum-press">
@@ -378,7 +254,6 @@ A writing-led letterpress page with a large seed-eye impression, compressed type
 [/code]
 
 [size=4][b]26 · Whorllet[/b][/size]
-A low, slanted leaf-shaped portrait sits below a short reply and a small member-colour leaf impression.
 
 [dohtml]
 <div class="bh-maca mc-bud mc-whorllet">

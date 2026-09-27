@@ -2,6 +2,7 @@
 
 These are the user's defaults for new templates and requested revisions in this project.
 
+- Forum masterposts use centered collection headings in `[align=center][H1]COLLECTION[/H1][/align]` format. Show each design’s numbered name directly above its rendered example and copyable code, without a design description or introductory instructions. Keep the corresponding browser previews equally concise; preserve the template HTML itself.
 - Keep forum snippets short: host shared CSS in this repository and include one stylesheet link inside each `[dohtml]` block. Put editable names, URLs, GIFs, timestamps and text before decorative markup and stylesheet links where possible.
 - Use plain `<p>` elements for separate comms messages. Support successive opening `<p>` tags without requiring closing tags in the message container. Use ordinary paragraph markup for writing; avoid requiring a repeated class or div for every message.
 - Use the member group's inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` RGB variables. Let these colours affect the actual template design, including headers, borders, frames and appropriate surfaces. Keep the content readable on neutral light/dark surfaces. A subject's signature colour must not overwhelm the group palette.
