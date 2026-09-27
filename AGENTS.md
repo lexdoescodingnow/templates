@@ -1,5 +1,7 @@
 # Template project defaults
 
+- Milk is Freddie & Ollie. `collection-aliases.json` maps the stable `italian-cuisine/` snippet sources to Milk in the catalogue. Keep their established filenames and legacy CSS endpoints available; current templates use the `milk-v2` wrapper and `milk/milk-bottlelight-standalone-v1.css`. Rebuild the editor via `node italian-cuisine/build.cjs`; both preview addresses must show Milk.
+
 These are the user's defaults for new templates and requested revisions in this project.
 
 - Clementine contains only the fifteen later Softlight (`clm`) designs for Siwoo & Yuseop. The fifteen original designs belong in `tangerine/` for Arthur & Nate, with separate masterposts and downloads. Keep legacy CSS identifiers and older Clementine stylesheet endpoints compatible, but do not restore the original snippets to the Clementine inventory. Run `python tools/build_citrus_packages.py` after rebuilding these forum collections.

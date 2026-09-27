@@ -34,7 +34,6 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Gin | 15 | [gin-forum-masterpost.txt](gin-forum-masterpost.txt) | [Preview](gin-preview.html) | 1 |
 | Ginger | 15 | [ginger-forum-masterpost.txt](ginger-forum-masterpost.txt) | [Preview](ginger-preview.html) | 1 |
 | Honey | 15 | [honey-forum-masterpost.txt](honey-forum-masterpost.txt) | [Preview](honey-preview.html) | 1 |
-| Italian Cuisine | 15 | [italian-cuisine-forum-masterpost.txt](italian-cuisine-forum-masterpost.txt) | [Preview](italian-cuisine-preview.html) | 1 |
 | Jelly | 15 | [jelly-forum-masterpost.txt](jelly-forum-masterpost.txt) | [Preview](jelly-preview.html) | 1 |
 | Lavender | 16 | [lavender-forum-masterpost.txt](lavender-forum-masterpost.txt) | [Preview](lavender-preview.html) | 1 |
 | Lemon | 15 | [lemon-forum-masterpost.txt](lemon-forum-masterpost.txt) | [Preview](lemon-preview.html) | 1 |
@@ -42,6 +41,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Macadamia · Legacy | 11 | [macadamia-legacy-forum-masterpost.txt](macadamia-legacy-forum-masterpost.txt) | [Preview](macadamia-legacy-preview.html) | 1 |
 | Mango | 15 | [mango-forum-masterpost.txt](mango-forum-masterpost.txt) | [Preview](mango-preview.html) | 1 |
 | Marmalade | 15 | [marmalade-forum-masterpost.txt](marmalade-forum-masterpost.txt) | [Preview](marmalade-preview.html) | 1 |
+| Milk | 15 | [milk-forum-masterpost.txt](milk-forum-masterpost.txt) | [Preview](milk-preview.html) | 1 |
 | Mocha Latte | 15 | [mocha-latte-forum-masterpost.txt](mocha-latte-forum-masterpost.txt) | [Preview](mocha-latte-preview.html) | 1 |
 | Nectarine | 15 | [nectarine-forum-masterpost.txt](nectarine-forum-masterpost.txt) | [Preview](nectarine-preview.html) | 1 |
 | Nuts | 15 | [nuts-forum-masterpost.txt](nuts-forum-masterpost.txt) | [Preview](nuts-preview.html) | 1 |

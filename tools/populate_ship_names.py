@@ -50,7 +50,9 @@ def update(text, names):
 def main():
     changed = []
     for folder, names in SHIPS.items():
-        paths = list((ROOT / folder).rglob('*'))
+        aliases = json.loads((ROOT / 'collection-aliases.json').read_text()) if (ROOT / 'collection-aliases.json').exists() else {}
+        folders = [folder] + [old for old, new in aliases.items() if new == folder]
+        paths = [p for source in folders for p in (ROOT / source).rglob('*')]
         if folder == 'lavender':
             paths.append(ROOT / 'lavender-thread-snippet.txt')
         for path in paths:

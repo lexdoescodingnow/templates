@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 import re,json,collections,subprocess
 from functools import lru_cache
 ROOT=Path(__file__).resolve().parents[1]
+COLLECTION_ALIASES=json.loads((ROOT/'collection-aliases.json').read_text()) if (ROOT/'collection-aliases.json').exists() else {}
 class RootParser(HTMLParser):
  def __init__(self):super().__init__();self.root=None
  def handle_starttag(self,tag,attrs):
@@ -58,7 +59,7 @@ def inventory():
    typ='comms' if re.search('comms|spc3|bh-bread-comms|ft-social',rel+' '+classes) else 'bud' if 'bud' in rel+' '+classes else 'thread'
    if folder=='petal':typ='social'
    if folder=='traitors':typ='event'
-   row={'folder':folder,'name':name,'type':typ,'source':rel,'block':n+1,'aliases':[],'classes':classes,'css':[str(x.relative_to(ROOT)) for x in css],'code':code}
+   row={'folder':COLLECTION_ALIASES.get(folder,folder),'name':name,'type':typ,'source':rel,'block':n+1,'aliases':[],'classes':classes,'css':[str(x.relative_to(ROOT)) for x in css],'code':code}
    items[key]=row
  for row in items.values():
   folder=ROOT/Path(row['source']).parent

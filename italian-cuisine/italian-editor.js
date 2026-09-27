@@ -34,7 +34,7 @@ function italianRender() {
   $('#pv-stage').innerHTML=italianMarkup(d,italianDisplayState(d,s));
   $('#pv-code').value=italianSnippet(d,s);
   $('#pv-design-title').textContent=d.name;
-  $('#pv-design-description').textContent=d.description;
+
   const wordText=document.createElement('div');wordText.innerHTML=s.body;
   const count=(wordText.textContent.trim().match(/\S+/g)||[]).length;
   $('#pv-word-count').textContent=`${count} words${d.type==='bud'?' · 100 suggested':''}`;
@@ -61,7 +61,7 @@ function italianBuildGallery() {
   const gallery=$('#pv-gallery');gallery.replaceChildren();
   italianDesigns.forEach((d,i)=>{
     const tile=document.createElement('section');tile.className='pv-tile';
-    tile.innerHTML=`<div class="pv-tile-head"><h2>${italianEscape(d.name)}<small>${d.type==='bud'?'Buds':d.type} ${d.number} · Italian Cuisine</small></h2><button data-open="${i}">Edit & copy</button></div><div class="pv-tile-stage">${italianMarkup(d,italianDisplayState(d,italianStates[i]))}</div>`;
+    tile.innerHTML=`<div class="pv-tile-head"><h2>${italianEscape(d.name)}<small>${d.type==='bud'?'Buds':d.type} ${d.number} · Milk</small></h2><button data-open="${i}">Edit & copy</button></div><div class="pv-tile-stage">${italianMarkup(d,italianDisplayState(d,italianStates[i]))}</div>`;
     gallery.append(tile);
   });
 }
@@ -94,7 +94,7 @@ $('#pv-view-all').onclick=()=>italianToggleGallery(!italianGallery);
 $('#pv-gallery').addEventListener('click',event=>{const b=event.target.closest('[data-open]');if(b){italianToggleGallery(false);italianSelect(Number(b.dataset.open));window.scrollTo({top:0,behavior:'instant'});}});
 $('#pv-mode').onchange=event=>{if(event.target.value==='system')document.documentElement.removeAttribute('color-mode');else document.documentElement.setAttribute('color-mode',event.target.value);};
 $('#pv-width').onchange=event=>{$('#pv-stage').style.width=event.target.value==='full'?'100%':event.target.value+'px';};
-const italianPalettes={poster:['#986342','#77825e','#976370'],lagoon:['#148578','#397bbc','#a260b4'],ember:['#bb6541','#ac465e','#8064ad'],mono:['#777777','#989898','#666666']};
+const italianPalettes={poster:['#6982a0','#9b849b','#72958c'],lagoon:['#148578','#397bbc','#a260b4'],ember:['#bb6541','#ac465e','#8064ad'],mono:['#777777','#989898','#666666']};
 function italianApplyPalette(values) { values.forEach((hex,i)=>{const n=parseInt(hex.slice(1),16);document.documentElement.style.setProperty(`--mgrgb${i+1}`,`${n>>16},${n>>8&255},${n&255}`);$(`#pv-colour-${i+1}`).value=hex;}); }
 $('#pv-palette').onchange=event=>{if(italianPalettes[event.target.value])italianApplyPalette(italianPalettes[event.target.value]);};
 [1,2,3].forEach(i=>$(`#pv-colour-${i}`).oninput=()=>{italianApplyPalette([1,2,3].map(j=>$(`#pv-colour-${j}`).value));$('#pv-palette').value='custom';});

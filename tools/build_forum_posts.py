@@ -2,7 +2,7 @@
 from pathlib import Path
 import unicodedata
 import re,json,html,collections,zipfile
-from forum_inventory import ROOT,inventory,expand_css
+from forum_inventory import ROOT,inventory,expand_css,COLLECTION_ALIASES
 from forum_presentation import presentation
 from build_standalone_styles import refresh_standalone
 refresh_standalone()
@@ -70,4 +70,14 @@ for folder in groups:
  original=re.sub(r'\n## Forum-ready collection\n.*?(?=\n## |\Z)','',original,flags=re.S)
  original+='\n## Forum-ready collection\n\n[Preview-above-code forum masterpost](../forum-posts/'+folder+'-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/'+folder+'-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).\n'
  readme.write_text(original)
+for old,new in COLLECTION_ALIASES.items():
+ for suffix in ('-forum-masterpost.txt','-preview.html'):
+  (OUT/(old+suffix)).write_bytes((OUT/(new+suffix)).read_bytes())
+ for part in OUT.glob(new+'-post-*.txt'):
+  (OUT/(old+part.name[len(new):])).write_bytes(part.read_bytes())
+with zipfile.ZipFile(ROOT/'forum-posts.zip','w',zipfile.ZIP_DEFLATED) as archive:
+ for path in sorted(OUT.rglob('*')):
+  if path.is_file():
+   info=zipfile.ZipInfo(path.relative_to(ROOT).as_posix(),date_time=(2026,9,27,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
+   archive.writestr(info,path.read_bytes())
 print(f'Generated {len(rows)} designs across {len(groups)} collections.')
