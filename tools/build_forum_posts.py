@@ -21,7 +21,7 @@ for folder,items in sorted(groups.items()):
  name=title(folder)
  urls=[u for r in items for u in re.findall(r'<img[^>]*src="(https?[^\"]+)"',r['code'])]
  sample=urls[0] if urls else 'https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv'
- heading=f'[size=7][b]{name.upper()}[/b][/size]\n[i]{len(items)} designs · the complete collection[/i]\n\n'+intro+'\n\n'
+ heading=f'[h1]{name.upper()}[/h1]\n\n'+intro+'\n\n'
  blocks=[];cards=[];lasttype=None
  for i,r in enumerate(items,1):
   label=r['name'];desc=r.get('description','')
