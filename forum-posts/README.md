@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-860 distinct templates across 56 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+860 distinct templates across 57 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -21,7 +21,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Chocolate | 15 | [chocolate-forum-masterpost.txt](chocolate-forum-masterpost.txt) | [Preview](chocolate-preview.html) | 1 |
 | Cinnamon | 15 | [cinnamon-forum-masterpost.txt](cinnamon-forum-masterpost.txt) | [Preview](cinnamon-preview.html) | 1 |
 | Citron | 15 | [citron-forum-masterpost.txt](citron-forum-masterpost.txt) | [Preview](citron-preview.html) | 1 |
-| Clementine | 30 | [clementine-forum-masterpost.txt](clementine-forum-masterpost.txt) | [Preview](clementine-preview.html) | 2 |
+| Clementine | 15 | [clementine-forum-masterpost.txt](clementine-forum-masterpost.txt) | [Preview](clementine-preview.html) | 1 |
 | Cocktail | 15 | [cocktail-forum-masterpost.txt](cocktail-forum-masterpost.txt) | [Preview](cocktail-preview.html) | 1 |
 | Coconut | 15 | [coconut-forum-masterpost.txt](coconut-forum-masterpost.txt) | [Preview](coconut-preview.html) | 1 |
 | Cream | 15 | [cream-forum-masterpost.txt](cream-forum-masterpost.txt) | [Preview](cream-preview.html) | 1 |
@@ -59,6 +59,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Spiced | 15 | [spiced-forum-masterpost.txt](spiced-forum-masterpost.txt) | [Preview](spiced-preview.html) | 1 |
 | Sultana | 15 | [sultana-forum-masterpost.txt](sultana-forum-masterpost.txt) | [Preview](sultana-preview.html) | 1 |
 | Sweet Potato | 12 | [sweet-potato-forum-masterpost.txt](sweet-potato-forum-masterpost.txt) | [Preview](sweet-potato-preview.html) | 1 |
+| Tangerine | 15 | [tangerine-forum-masterpost.txt](tangerine-forum-masterpost.txt) | [Preview](tangerine-preview.html) | 1 |
 | Toffee | 15 | [toffee-forum-masterpost.txt](toffee-forum-masterpost.txt) | [Preview](toffee-preview.html) | 1 |
 | Traitors | 4 | [traitors-forum-masterpost.txt](traitors-forum-masterpost.txt) | [Preview](traitors-preview.html) | 1 |
 | Tropical | 15 | [tropical-forum-masterpost.txt](tropical-forum-masterpost.txt) | [Preview](tropical-preview.html) | 1 |

@@ -61,4 +61,5 @@ const html=`<!doctype html>
 </html>
 `;
 fs.writeFileSync(path.join(root,'clementine-softlight-preview.html'),html);
+fs.writeFileSync(path.join(root,'clementine-collection-preview.html'),html);
 console.log('Built 15 posting snippets and the standalone Clementine preview.');

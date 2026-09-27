@@ -2,1109 +2,609 @@
 <html lang="en" color-mode="light">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clementine · The complete collection</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-
-.clementine-zest {
-  --ct-wheel:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.4%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2246%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2242%22/%3E%3Cpath%20d%3D%22M50.28%2042.00L51.33%2012.02A38%2038%200%200%201%2071.25%2018.50L54.47%2043.37Q50%2050%2050.28%2042.00Z%22/%3E%3Cpath%20d%3D%22M54.93%2043.70L73.40%2020.06A38%2038%200%200%201%2085.71%2037.00L57.52%2047.26Q50%2050%2054.93%2043.70Z%22/%3E%3Cpath%20d%3D%22M57.69%2047.79L86.53%2039.53A38%2038%200%200%201%2086.53%2060.47L57.69%2052.21Q50%2050%2057.69%2047.79Z%22/%3E%3Cpath%20d%3D%22M57.52%2052.74L85.71%2063.00A38%2038%200%200%201%2073.40%2079.94L54.93%2056.30Q50%2050%2057.52%2052.74Z%22/%3E%3Cpath%20d%3D%22M54.47%2056.63L71.25%2081.50A38%2038%200%200%201%2051.33%2087.98L50.28%2058.00Q50%2050%2054.47%2056.63Z%22/%3E%3Cpath%20d%3D%22M49.72%2058.00L48.67%2087.98A38%2038%200%200%201%2028.75%2081.50L45.53%2056.63Q50%2050%2049.72%2058.00Z%22/%3E%3Cpath%20d%3D%22M45.07%2056.30L26.60%2079.94A38%2038%200%200%201%2014.29%2063.00L42.48%2052.74Q50%2050%2045.07%2056.30Z%22/%3E%3Cpath%20d%3D%22M42.31%2052.21L13.47%2060.47A38%2038%200%200%201%2013.47%2039.53L42.31%2047.79Q50%2050%2042.31%2052.21Z%22/%3E%3Cpath%20d%3D%22M42.48%2047.26L14.29%2037.00A38%2038%200%200%201%2026.60%2020.06L45.07%2043.70Q50%2050%2042.48%2047.26Z%22/%3E%3Cpath%20d%3D%22M45.53%2043.37L28.75%2018.50A38%2038%200%200%201%2048.67%2012.02L49.72%2042.00Q50%2050%2045.53%2043.37Z%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%222.5%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2258.96%22%20cy%3D%2222.42%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28-72%2058.96%2022.42%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2273.46%22%20cy%3D%2232.95%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28-36%2073.46%2032.95%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2279.00%22%20cy%3D%2250.00%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%280%2079.00%2050.00%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2273.46%22%20cy%3D%2267.05%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%2836%2073.46%2067.05%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2258.96%22%20cy%3D%2277.58%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%2872%2058.96%2077.58%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2241.04%22%20cy%3D%2277.58%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28108%2041.04%2077.58%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2226.54%22%20cy%3D%2267.05%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28144%2026.54%2067.05%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2221.00%22%20cy%3D%2250.00%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28180%2021.00%2050.00%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2226.54%22%20cy%3D%2232.95%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28216%2026.54%2032.95%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2241.04%22%20cy%3D%2222.42%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28252%2041.04%2022.42%29%22%20fill%3D%22black%22/%3E%3C/svg%3E");
-  --ct-sprig:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20110%2060%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M16%2049C41%2049%2061%2030%2088%2010M43%2042C36%2042%2024%2037%2022%2025%2034%2026%2043%2032%2043%2042ZM57%2031C55%2019%2061%2010%2071%207%2074%2020%2065%2028%2057%2031ZM69%2024C77%2025%2088%2022%2094%2016%2084%2011%2074%2016%2069%2024Z%22/%3E%3Cpath%20d%3D%22M63%2050C62%2043%2068%2038%2077%2038%2086%2038%2092%2043%2091%2050%2090%2058%2065%2058%2063%2050ZM75%2038l2-6m0%204c4-5%208-5%2010-3-3%203-5%204-10%203%22/%3E%3C/g%3E%3C/svg%3E");
-  --ct-paper:#faf8f4;
-  --ct-panel:#fffdfa;
-  --ct-ink:#403b37;
-  --ct-muted:#776a60;
-  --ct-line:#ddd4c9;
-  --ct-rind:#d57639;
-  --ct-f1:159,66,30;
-  --ct-f2:158,103,42;
-  --ct-f3:92,113,67;
-  --ct-c1:rgb(var(--mgrgb1,var(--ct-f1)));
-  --ct-c2:rgb(var(--mgrgb2,var(--ct-f2)));
-  --ct-c3:rgb(var(--mgrgb3,var(--ct-f3)));
-  --ct-forward:linear-gradient(110deg,var(--ct-c1),var(--ct-c2),var(--ct-c3));
-  --ct-reverse:linear-gradient(110deg,var(--ct-c3),var(--ct-c2),var(--ct-c1));
-  position:relative;
-  isolation:isolate;
-  container-type:inline-size;
-  box-sizing:border-box;
-  display:flex;
-  flex-direction:column;
-  width:540px;
-  max-width:100%;
-  margin:28px auto;
-  padding:39px 0 30px;
-  overflow:hidden;
-  border:1px solid var(--ct-line);
-  border-radius:2px;
-  background:radial-gradient(ellipse at 100% 0,rgba(var(--mgrgb2,var(--ct-f2)),.08),transparent 36%),var(--ct-paper);
-  color:var(--ct-ink);
-  color-scheme:light;
-  font:400 14px/1.95 'DM Sans',Arial,sans-serif;
-  text-align:left;
-  text-shadow:none;
-  box-shadow:0 15px 45px #2014080d;
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clementine · Fifteen JCink Templates</title>
+<style id="collection-css">@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2rp2ywxg089UriCZaSExd86J3t9jz86Mvy4qCRAL19DksVat-JDW3z.ttf) format('truetype');
 }
-.clementine-zest *, .clementine-zest *::before, .clementine-zest *::after {box-sizing:border-box;}
-.clementine-zest::before, .clementine-zest::after {content:"";position:absolute;pointer-events:none;z-index:-1;}
-.clementine-zest::before {inset:9px;border:1px solid rgba(var(--mgrgb1,var(--ct-f1)),.37);}
-.clementine-zest::after {inset:14px;border:1px solid rgba(var(--mgrgb3,var(--ct-f3)),.2);}
-.clementine-zest .ct-names {display:flex;align-items:center;flex-wrap:wrap;gap:9px 13px;min-width:0;max-width:calc(84% - 60px);margin:0 8%;padding:0;}
-.clementine-zest .ct-names a {max-width:100%;margin:0;padding:0;border:0;background:none;color:var(--ct-c1);font:600 10px/1.8 'DM Sans',Arial,sans-serif;letter-spacing:.13em;text-decoration:none;text-transform:uppercase;overflow-wrap:anywhere;}
-.clementine-zest .ct-names a:last-child {color:var(--ct-c3);}
-.clementine-zest .ct-names span {color:var(--ct-muted);font:italic 400 20px/1 'Bodoni Moda',Georgia,serif;}
-.clementine-zest .ct-names a:hover {text-decoration:underline;text-underline-offset:4px;}
-.clementine-zest a:focus-visible {outline:2px solid var(--ct-c2);outline-offset:5px;}
-.clementine-zest .ct-title {position:relative;min-width:0;margin:19px 8% 0;padding:0;color:var(--ct-c1);font:italic 400 67px/1.2 'Bodoni Moda','Times New Roman',serif;font-size:clamp(30px,12.45cqi,67px);letter-spacing:-.065em;overflow-wrap:anywhere;}
-.clementine-zest .ct-subtitle {position:relative;min-width:0;margin:12px 8% 32px;padding:0 0 0 34px;color:var(--ct-muted);font:500 10px/1.9 'DM Sans',Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;overflow-wrap:anywhere;}
-.clementine-zest .ct-subtitle::before {content:"";position:absolute;left:0;top:9px;width:23px;height:1px;background:var(--ct-forward);}
-.clementine-zest .ct-seal {position:absolute;top:28px;right:8%;width:47px;height:47px;transform:rotate(-13deg);background:var(--ct-rind);-webkit-mask:var(--ct-wheel) center/contain no-repeat;mask:var(--ct-wheel) center/contain no-repeat;}
-.clementine-zest .ct-gifs {position:relative;isolation:isolate;display:flex;align-items:flex-start;gap:5%;width:78%;min-width:0;margin:0 auto 34px;padding:0 0 22px;}
-.clementine-zest .ct-gifs::before, .clementine-zest .ct-gifs::after {content:"";position:absolute;z-index:-1;pointer-events:none;}
-.clementine-zest .ct-gifs::before {top:19px;left:-7%;width:113%;height:calc(100% - 26px);border:1px solid rgba(var(--mgrgb2,var(--ct-f2)),.3);background:linear-gradient(125deg,rgba(var(--mgrgb1,var(--ct-f1)),.08),rgba(var(--mgrgb3,var(--ct-f3)),.1));transform:rotate(-3deg);}
-.clementine-zest .ct-gifs::after {width:47%;aspect-ratio:1;right:-14%;top:-33px;background:var(--ct-reverse);opacity:.24;transform:rotate(17deg);-webkit-mask:var(--ct-wheel) center/contain no-repeat;mask:var(--ct-wheel) center/contain no-repeat;}
-.clementine-zest .ct-gifs img {display:block;flex:0 0 44%;min-width:0;width:44%;max-width:44%;height:auto;aspect-ratio:4/5;margin:0;padding:5px;border:1px solid var(--ct-c1);border-radius:2px;object-fit:cover;background:var(--ct-panel);box-shadow:0 10px 20px #21130718;}
-.clementine-zest .ct-gifs img + img {flex-basis:51%;width:51%;max-width:51%;aspect-ratio:1.13;margin-top:44px;margin-top:8.2cqi;border-color:var(--ct-c3);}
-.clementine-zest .ct-gifs img:only-child {flex-basis:100%;width:100%;max-width:100%;aspect-ratio:3/2;margin:0;}
-.clementine-zest .ct-copy {position:relative;min-width:0;margin:0 9%;padding:30px 0 0;border-top:1px solid var(--ct-line);color:var(--ct-ink);font:400 14px/1.95 'DM Sans',Arial,sans-serif;letter-spacing:.005em;text-align:left;overflow-wrap:anywhere;}
-.clementine-zest .ct-copy::before {content:"";position:absolute;left:0;top:-2px;width:66px;height:3px;background:var(--ct-forward);}
-.clementine-zest .ct-copy p {margin:0 0 1.45em;padding:0;color:inherit;font:inherit;letter-spacing:inherit;text-align:inherit;}
-.clementine-zest .ct-copy p:last-child {margin-bottom:0;}
-.clementine-zest .ct-copy :is(b,strong,i,em,u) {color:var(--ct-c1);text-shadow:none;}
-.clementine-zest .ct-copy :is(b,strong) {font-weight:700;}
-.clementine-zest .ct-copy :is(i,em) {font-style:italic;}
-.clementine-zest .ct-copy u {text-decoration:underline;text-decoration-color:var(--ct-c2);text-decoration-thickness:1px;text-underline-offset:4px;}
-.clementine-zest .ct-copy a {color:var(--ct-c2);text-decoration:underline;text-underline-offset:4px;}
-.clementine-zest .ct-copy blockquote {margin:1.5em 0;padding:4px 0 4px 18px;border-left:2px solid var(--ct-c2);color:inherit;font:inherit;}
-.clementine-zest .ct-copy img {max-width:100%;height:auto;}
-.clementine-zest .ct-finish {position:relative;display:flex;align-items:center;justify-content:center;gap:18px;width:82%;height:53px;margin:27px auto 0;border-bottom:1px solid var(--ct-line);}
-.clementine-zest .ct-finish::before {content:"";display:block;flex:0 0 70px;height:40px;background:var(--ct-forward);-webkit-mask:var(--ct-sprig) center/contain no-repeat;mask:var(--ct-sprig) center/contain no-repeat;}
-@supports (background-clip:text) or (-webkit-background-clip:text) {
-  .clementine-zest .ct-title, .clementine-zest .ct-copy :is(b,strong,i,em,u) {background-image:var(--ct-forward);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
-  .clementine-zest .ct-copy :is(i,em) {background-image:var(--ct-reverse);}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2rp2ywxg089UriCZaSExd86J3t9jz86Mvy4qCRAL19DksVat-7DW3z.ttf) format('truetype');
 }
-html[color-mode="dark"] .clementine-zest {
-  --ct-paper:#242321;
-  --ct-panel:#302e2a;
-  --ct-ink:#e6e1d9;
-  --ct-muted:#bcb0a2;
-  --ct-line:#514a41;
-  --ct-rind:#d99a68;
-  --ct-f1:237,159,112;
-  --ct-f2:222,181,124;
-  --ct-f3:173,193,144;
-  color-scheme:dark;
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf) format('truetype');
 }
-@media (prefers-color-scheme:dark) {
-  html:not([color-mode]) .clementine-zest {
-    --ct-paper:#242321;
-    --ct-panel:#302e2a;
-    --ct-ink:#e6e1d9;
-    --ct-muted:#bcb0a2;
-    --ct-line:#514a41;
-    --ct-rind:#d99a68;
-    --ct-f1:237,159,112;
-    --ct-f2:222,181,124;
-    --ct-f3:173,193,144;
-    color-scheme:dark;
-  }
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhTg.ttf) format('truetype');
 }
-@container (max-width:390px) {
-  .clementine-zest .ct-names {gap:6px 9px;}
-  .clementine-zest .ct-names a {font-size:9px;letter-spacing:.08em;}
-  .clementine-zest .ct-seal {width:37px;height:37px;top:31px;}
-  .clementine-zest .ct-title {margin-top:22px;}
-  .clementine-zest .ct-subtitle {font-size:9px;letter-spacing:.12em;margin-bottom:27px;}
-  .clementine-zest .ct-gifs {margin-bottom:27px;padding-bottom:14px;}
-  .clementine-zest .ct-gifs img {padding:3px;}
-  .clementine-zest .ct-gifs::after {top:-22px;}
-  .clementine-zest .ct-copy {padding-top:24px;font-size:13px;line-height:1.9;}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAfJthTg.ttf) format('truetype');
 }
-@media (forced-colors:active) {
-  .clementine-zest {border-color:CanvasText;}
-  .clementine-zest .ct-title, .clementine-zest .ct-copy :is(b,strong,i,em,u) {background:none;color:CanvasText;-webkit-text-fill-color:CanvasText;}
-  .clementine-zest .ct-copy u {text-decoration-color:CanvasText;}
-  .clementine-zest .ct-names a, .clementine-zest .ct-copy a {color:LinkText;}
-  .clementine-zest .ct-gifs img {border-color:CanvasText;}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZthTg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Italiana';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/italiana/v21/QldNNTtLsx4E__B0XTmR.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Caslon Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librecaslondisplay/v18/TuGOUUFxWphYQ6YI6q9Xp61FQzxDRKmzr2lR.ttf) format('truetype');
 }
 
 
-.clementine-zest.ct-satsuma {padding-top:34px;border-radius:74px 74px 3px 3px;}
-.clementine-zest.ct-satsuma::before {border-radius:65px 65px 0 0;}
-.clementine-zest.ct-satsuma::after {border-radius:60px 60px 0 0;}
-.clementine-zest.ct-satsuma .ct-seal {position:relative;order:-1;top:auto;right:auto;align-self:center;width:40px;height:40px;margin:0 0 18px;}
-.clementine-zest.ct-satsuma .ct-names {justify-content:center;max-width:84%;}
-.clementine-zest.ct-satsuma .ct-title {text-align:center;margin-top:12px;}
-.clementine-zest.ct-satsuma .ct-subtitle {padding:0;text-align:center;margin-bottom:28px;}
-.clementine-zest.ct-satsuma .ct-subtitle::before {display:none;}
-.clementine-zest.ct-satsuma .ct-gifs {align-items:stretch;gap:6%;width:76%;padding:0 0 10px;}
-.clementine-zest.ct-satsuma .ct-gifs img {flex-basis:47%;width:47%;max-width:47%;aspect-ratio:1;margin:0;border-radius:50% 50% 4px 50%;padding:6px;}
-.clementine-zest.ct-satsuma .ct-gifs img + img {border-radius:50% 50% 50% 4px;}
-.clementine-zest.ct-satsuma .ct-gifs::before {top:10%;left:2%;width:96%;height:90%;border-radius:50%;transform:none;background:none;}
-.clementine-zest.ct-satsuma .ct-gifs::after {width:22%;right:39%;top:auto;bottom:-7px;opacity:.45;}
-.clementine-zest.ct-satsuma .ct-copy::before {left:calc(50% - 33px);}
-
-.clementine-zest.ct-orangerie {padding-top:34px;}
-.clementine-zest.ct-orangerie::before {border-radius:140px 140px 2px 2px;}
-.clementine-zest.ct-orangerie::after {border-radius:135px 135px 0 0;}
-.clementine-zest.ct-orangerie .ct-seal {position:relative;order:-1;top:auto;right:auto;align-self:center;width:60px;height:35px;margin-bottom:18px;background:var(--ct-forward);-webkit-mask-image:var(--ct-sprig);mask-image:var(--ct-sprig);transform:none;}
-.clementine-zest.ct-orangerie .ct-names {max-width:84%;justify-content:center;}
-.clementine-zest.ct-orangerie .ct-title {font-style:normal;text-align:center;letter-spacing:-.07em;}
-.clementine-zest.ct-orangerie .ct-subtitle {text-align:center;padding:0;}
-.clementine-zest.ct-orangerie .ct-subtitle::before {display:none;}
-.clementine-zest.ct-orangerie .ct-gifs {width:73%;gap:8%;padding-bottom:8px;}
-.clementine-zest.ct-orangerie .ct-gifs img {flex-basis:46%;width:46%;max-width:46%;aspect-ratio:3/4;margin:0;border-radius:100px 100px 0 0;outline:1px solid rgba(var(--mgrgb2,var(--ct-f2)),.35);outline-offset:5px;}
-.clementine-zest.ct-orangerie .ct-gifs::before {inset:15% -9% 7%;width:auto;height:auto;transform:none;border-top:0;border-bottom:0;background:repeating-linear-gradient(90deg,transparent 0 32%,rgba(var(--mgrgb2,var(--ct-f2)),.18) 32% calc(32% + 1px),transparent calc(32% + 1px) 50%);}
-.clementine-zest.ct-orangerie .ct-gifs::after {width:34%;right:-12%;top:auto;bottom:-15px;opacity:.18;}
-.clementine-zest.ct-orangerie .ct-finish {border-bottom:0;}
-
-.clementine-zest.ct-marmalade {border-left:5px solid var(--ct-c1);}
-.clementine-zest.ct-marmalade::before {inset:10px 10px 10px 7px;}
-.clementine-zest.ct-marmalade::after {display:none;}
-.clementine-zest.ct-marmalade .ct-title {font-style:normal;font-size:clamp(28px,11.5cqi,62px);letter-spacing:-.06em;}
-.clementine-zest.ct-marmalade .ct-gifs {width:82%;gap:3%;padding:11px 0;margin-bottom:28px;border-top:1px solid var(--ct-c2);border-bottom:1px solid var(--ct-c3);}
-.clementine-zest.ct-marmalade .ct-gifs img {flex-basis:48.5%;width:48.5%;max-width:48.5%;aspect-ratio:6/5;margin:0;padding:3px;border:0;box-shadow:none;}
-.clementine-zest.ct-marmalade .ct-gifs::before {inset:0 -8%;width:auto;height:auto;transform:none;border:0;background:linear-gradient(90deg,rgba(var(--mgrgb1,var(--ct-f1)),.06),rgba(var(--mgrgb3,var(--ct-f3)),.11));}
-.clementine-zest.ct-marmalade .ct-gifs::after {display:none;}
-.clementine-zest.ct-marmalade .ct-copy {padding-top:8px;border-top:0;}
-.clementine-zest.ct-marmalade .ct-copy::before {display:none;}
-.clementine-zest.ct-marmalade .ct-finish {justify-content:flex-start;}
-.clementine-zest.ct-marmalade .ct-finish::before {flex-basis:38px;height:38px;-webkit-mask-image:var(--ct-wheel);mask-image:var(--ct-wheel);}
-
-.clementine-zest.ct-sunroom {border-radius:3px 80px 3px 3px;}
-.clementine-zest.ct-sunroom::before {border-radius:0 72px 0 0;}
-.clementine-zest.ct-sunroom::after {border-radius:0 67px 0 0;}
-.clementine-zest.ct-sunroom .ct-seal {right:10%;opacity:.75;}
-.clementine-zest.ct-sunroom .ct-gifs {display:block;width:80%;padding:0 0 28px;margin-bottom:28px;}
-.clementine-zest.ct-sunroom .ct-gifs img:first-child {width:100%;max-width:100%;aspect-ratio:8/5;border-radius:3px 65px 3px 3px;padding:6px;}
-.clementine-zest.ct-sunroom .ct-gifs img + img {position:absolute;right:-4%;bottom:-5px;width:33%;max-width:33%;aspect-ratio:1;margin:0;border-radius:50%;padding:5px;border:1px solid var(--ct-c3);outline:5px solid var(--ct-paper);}
-.clementine-zest.ct-sunroom .ct-gifs::before {top:-12px;left:-12px;right:12px;bottom:43px;width:auto;height:auto;transform:none;border-radius:0 72px 0 0;background:none;}
-.clementine-zest.ct-sunroom .ct-gifs::after {right:auto;left:-13%;top:auto;bottom:0;width:35%;opacity:.16;}
-.clementine-zest.ct-sunroom .ct-copy::before {width:44px;}
-.clementine-zest.ct-sunroom .ct-finish {justify-content:flex-end;}
-.clementine-zest:is(.ct-satsuma,.ct-orangerie,.ct-marmalade) .ct-gifs img:only-child {flex-basis:100%;width:100%;max-width:100%;aspect-ratio:3/2;}
-@container (max-width:390px) {
-  .clementine-zest.ct-satsuma .ct-gifs img {padding:4px;}
-  .clementine-zest.ct-orangerie .ct-gifs {gap:10%;}
-  .clementine-zest.ct-orangerie .ct-gifs img {width:45%;max-width:45%;flex-basis:45%;outline-offset:3px;}
-  .clementine-zest.ct-sunroom .ct-gifs img:first-child {border-top-right-radius:42px;}
-  .clementine-zest.ct-sunroom .ct-gifs img + img {padding:3px;outline-width:3px;}
-}
-
-
-.clementine-comms, .clementine-bud {
-  --ct-wheel:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.4%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2246%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2242%22/%3E%3Cpath%20d%3D%22M50.28%2042.00L51.33%2012.02A38%2038%200%200%201%2071.25%2018.50L54.47%2043.37Q50%2050%2050.28%2042.00Z%22/%3E%3Cpath%20d%3D%22M54.93%2043.70L73.40%2020.06A38%2038%200%200%201%2085.71%2037.00L57.52%2047.26Q50%2050%2054.93%2043.70Z%22/%3E%3Cpath%20d%3D%22M57.69%2047.79L86.53%2039.53A38%2038%200%200%201%2086.53%2060.47L57.69%2052.21Q50%2050%2057.69%2047.79Z%22/%3E%3Cpath%20d%3D%22M57.52%2052.74L85.71%2063.00A38%2038%200%200%201%2073.40%2079.94L54.93%2056.30Q50%2050%2057.52%2052.74Z%22/%3E%3Cpath%20d%3D%22M54.47%2056.63L71.25%2081.50A38%2038%200%200%201%2051.33%2087.98L50.28%2058.00Q50%2050%2054.47%2056.63Z%22/%3E%3Cpath%20d%3D%22M49.72%2058.00L48.67%2087.98A38%2038%200%200%201%2028.75%2081.50L45.53%2056.63Q50%2050%2049.72%2058.00Z%22/%3E%3Cpath%20d%3D%22M45.07%2056.30L26.60%2079.94A38%2038%200%200%201%2014.29%2063.00L42.48%2052.74Q50%2050%2045.07%2056.30Z%22/%3E%3Cpath%20d%3D%22M42.31%2052.21L13.47%2060.47A38%2038%200%200%201%2013.47%2039.53L42.31%2047.79Q50%2050%2042.31%2052.21Z%22/%3E%3Cpath%20d%3D%22M42.48%2047.26L14.29%2037.00A38%2038%200%200%201%2026.60%2020.06L45.07%2043.70Q50%2050%2042.48%2047.26Z%22/%3E%3Cpath%20d%3D%22M45.53%2043.37L28.75%2018.50A38%2038%200%200%201%2048.67%2012.02L49.72%2042.00Q50%2050%2045.53%2043.37Z%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%222.5%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2258.96%22%20cy%3D%2222.42%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28-72%2058.96%2022.42%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2273.46%22%20cy%3D%2232.95%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28-36%2073.46%2032.95%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2279.00%22%20cy%3D%2250.00%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%280%2079.00%2050.00%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2273.46%22%20cy%3D%2267.05%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%2836%2073.46%2067.05%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2258.96%22%20cy%3D%2277.58%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%2872%2058.96%2077.58%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2241.04%22%20cy%3D%2277.58%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28108%2041.04%2077.58%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2226.54%22%20cy%3D%2267.05%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28144%2026.54%2067.05%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2221.00%22%20cy%3D%2250.00%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28180%2021.00%2050.00%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2226.54%22%20cy%3D%2232.95%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28216%2026.54%2032.95%29%22%20fill%3D%22black%22/%3E%3Cellipse%20cx%3D%2241.04%22%20cy%3D%2222.42%22%20rx%3D%222.5%22%20ry%3D%22.9%22%20transform%3D%22rotate%28252%2041.04%2022.42%29%22%20fill%3D%22black%22/%3E%3C/svg%3E");
-  --ct-sprig:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20110%2060%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M16%2049C41%2049%2061%2030%2088%2010M43%2042C36%2042%2024%2037%2022%2025%2034%2026%2043%2032%2043%2042ZM57%2031C55%2019%2061%2010%2071%207%2074%2020%2065%2028%2057%2031ZM69%2024C77%2025%2088%2022%2094%2016%2084%2011%2074%2016%2069%2024Z%22/%3E%3Cpath%20d%3D%22M63%2050C62%2043%2068%2038%2077%2038%2086%2038%2092%2043%2091%2050%2090%2058%2065%2058%2063%2050ZM75%2038l2-6m0%204c4-5%208-5%2010-3-3%203-5%204-10%203%22/%3E%3C/g%3E%3C/svg%3E");
-  --ct-paper:#faf8f4;
-  --ct-panel:#fffdfa;
-  --ct-ink:#403b37;
-  --ct-muted:#776a60;
-  --ct-line:#ddd4c9;
-  --ct-rind:#d57639;
-  --ct-f1:159,66,30;
-  --ct-f2:158,103,42;
-  --ct-f3:92,113,67;
-  --ct-c1:rgb(var(--mgrgb1,var(--ct-f1)));
-  --ct-c2:rgb(var(--mgrgb2,var(--ct-f2)));
-  --ct-c3:rgb(var(--mgrgb3,var(--ct-f3)));
-  --ct-forward:linear-gradient(110deg,var(--ct-c1),var(--ct-c2),var(--ct-c3));
-  --ct-reverse:linear-gradient(110deg,var(--ct-c3),var(--ct-c2),var(--ct-c1));
-}
-
-.clementine-comms, .clementine-bud {position:relative;isolation:isolate;container-type:inline-size;box-sizing:border-box;max-width:100%;margin:24px auto;border:1px solid var(--ct-line);background:var(--ct-paper);color:var(--ct-ink);color-scheme:light;font:400 13px/1.85 'DM Sans',Arial,sans-serif;text-align:left;text-shadow:none;overflow-wrap:anywhere;}
-.clementine-comms *, .clementine-comms *::before, .clementine-comms *::after, .clementine-bud *, .clementine-bud *::before, .clementine-bud *::after {box-sizing:border-box;}
-.clementine-comms a, .clementine-bud a {color:var(--ct-c1);text-decoration:none;background:none;text-shadow:none;}
-.clementine-comms a:hover, .clementine-bud a:hover {text-decoration:underline;text-underline-offset:4px;}
-.clementine-comms a:focus-visible, .clementine-bud a:focus-visible {outline:2px solid var(--ct-c2);outline-offset:4px;}
-.clementine-comms .cc-messages :is(b,strong,i,em,u), .clementine-bud .cb-copy :is(b,strong,i,em,u) {color:var(--ct-c1);text-shadow:none;}
-.clementine-comms .cc-messages :is(b,strong), .clementine-bud .cb-copy :is(b,strong) {font-weight:700;}
-.clementine-comms .cc-messages :is(i,em), .clementine-bud .cb-copy :is(i,em) {font-style:italic;}
-.clementine-comms .cc-messages u, .clementine-bud .cb-copy u {text-decoration:underline;text-decoration-color:var(--ct-c2);text-decoration-thickness:1px;text-underline-offset:3px;}
-.clementine-comms .cc-messages a, .clementine-bud .cb-copy a {color:var(--ct-c2);text-decoration:underline;text-underline-offset:3px;}
-@supports (background-clip:text) or (-webkit-background-clip:text) {
-  .clementine-comms .cc-brand, .clementine-bud .cb-brand, .clementine-comms .cc-messages :is(b,strong,i,em,u), .clementine-bud .cb-copy :is(b,strong,i,em,u) {background-image:var(--ct-forward);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
-  .clementine-comms .cc-messages :is(i,em), .clementine-bud .cb-copy :is(i,em) {background-image:var(--ct-reverse);}
-}
-.clementine-comms {display:flex;flex-direction:column;width:350px;padding:19px 0 20px;border:2px solid var(--ct-line);border-radius:32px;overflow:hidden;box-shadow:0 12px 35px #20140810;background:radial-gradient(ellipse at 100% 0,rgba(var(--mgrgb2,var(--ct-f2)),.1),transparent 45%),var(--ct-paper);}
-.clementine-comms .cc-hardware {order:-3;align-self:center;width:45px;height:4px;margin:0 0 14px;border-radius:4px;background:var(--ct-c2);opacity:.65;}
-.clementine-comms .cc-brand {order:-2;margin:0 22px 22px;padding:0;color:var(--ct-c1);font:italic 400 19px/1.2 'Bodoni Moda',Georgia,serif;letter-spacing:-.045em;}
-.clementine-comms .cc-contact {position:relative;display:grid;grid-template-columns:62px minmax(0,1fr);grid-template-rows:auto auto;align-items:center;column-gap:14px;margin:0 22px;padding:0 0 22px;border-bottom:1px solid var(--ct-line);min-width:0;}
-.clementine-comms .cc-name {grid-column:2;grid-row:1;align-self:end;display:block;min-width:0;margin:0;padding:0;border:0;color:var(--ct-c1);font:400 23px/1.35 'Bodoni Moda',Georgia,serif;letter-spacing:-.04em;overflow-wrap:anywhere;}
-.clementine-comms .cc-status {grid-column:2;grid-row:2;align-self:start;min-width:0;color:var(--ct-muted);font:500 9px/1.9 'DM Sans',Arial,sans-serif;letter-spacing:.08em;}
-.clementine-comms .cc-avatar {grid-column:1;grid-row:1 / span 2;display:block;width:62px;max-width:100%;height:62px;margin:0;padding:3px;border:1px solid var(--ct-c3);border-radius:50%;background:var(--ct-panel);object-fit:cover;}
-.clementine-comms .cc-time {margin:18px 22px;color:var(--ct-muted);font:500 9px/1.6 'DM Sans',Arial,sans-serif;letter-spacing:.12em;text-align:center;}
-.clementine-comms .cc-messages {min-width:0;margin:0 22px;padding:0;color:var(--ct-ink);font:400 13px/1.8 'DM Sans',Arial,sans-serif;text-align:left;}
-.clementine-comms .cc-messages p {position:relative;width:fit-content;max-width:94%;margin:0 0 9px auto;padding:11px 14px;border:1px solid rgba(var(--mgrgb2,var(--ct-f2)),.18);border-radius:17px 17px 4px 17px;background:linear-gradient(110deg,rgba(var(--mgrgb1,var(--ct-f1)),.075),rgba(var(--mgrgb3,var(--ct-f3)),.12)),var(--ct-panel);color:inherit;font:inherit;letter-spacing:normal;text-align:inherit;overflow-wrap:anywhere;}
-.clementine-comms .cc-messages p:last-child {margin-bottom:0;}
-.clementine-comms .cc-receipt {margin:8px 25px 0;color:var(--ct-muted);font:500 9px/1.5 'DM Sans',Arial,sans-serif;text-align:right;}
-.clementine-comms .cc-compose {position:relative;height:34px;margin:23px 22px 0;border:1px solid var(--ct-line);border-radius:22px;background:var(--ct-panel);}
-.clementine-comms .cc-compose::before {content:"";position:absolute;left:12px;top:8px;width:16px;height:16px;background:var(--ct-rind);-webkit-mask:var(--ct-wheel) center/contain no-repeat;mask:var(--ct-wheel) center/contain no-repeat;opacity:.8;}
-.clementine-comms .cc-compose::after {content:"";position:absolute;right:13px;top:11px;width:8px;height:8px;border-top:1px solid var(--ct-c2);border-right:1px solid var(--ct-c2);transform:rotate(45deg);}
-.clementine-comms.cc-pulp .cc-contact {display:flex;flex-direction:column;text-align:center;padding-bottom:20px;}
-.clementine-comms.cc-pulp .cc-avatar {order:-1;width:79px;height:79px;margin:0 0 12px;padding:4px;outline:1px solid rgba(var(--mgrgb1,var(--ct-f1)),.25);outline-offset:4px;}
-.clementine-comms.cc-pulp .cc-name, .clementine-comms.cc-pulp .cc-status {align-self:center;max-width:100%;}
-.clementine-comms.cc-pulp .cc-brand {text-align:center;margin-bottom:22px;}
-
-.clementine-comms.cc-nectar {border-radius:12px;padding-top:16px;border-top:3px solid var(--ct-c1);}
-.clementine-comms.cc-nectar .cc-hardware {display:none;}
-.clementine-comms.cc-nectar .cc-brand {margin-bottom:16px;font-size:18px;}
-.clementine-comms.cc-nectar .cc-contact {margin:0;padding:18px 22px;border-top:1px solid rgba(var(--mgrgb1,var(--ct-f1)),.2);border-bottom:1px solid rgba(var(--mgrgb3,var(--ct-f3)),.2);background:linear-gradient(115deg,rgba(var(--mgrgb1,var(--ct-f1)),.1),rgba(var(--mgrgb3,var(--ct-f3)),.13));}
-.clementine-comms.cc-nectar .cc-avatar {border-radius:12px;}
-.clementine-comms.cc-nectar .cc-name {font:600 14px/1.8 'DM Sans',Arial,sans-serif;letter-spacing:0;}
-.clementine-comms.cc-nectar .cc-messages p {border-radius:10px 10px 2px 10px;}
-.clementine-comms.cc-nectar .cc-compose {border-radius:8px;}
-
-.clementine-comms.cc-peel {width:334px;border-radius:36px 9px 36px 9px;}
-.clementine-comms.cc-peel .cc-brand {border-bottom:2px solid var(--ct-c1);padding-bottom:11px;}
-.clementine-comms.cc-peel .cc-contact {grid-template-columns:minmax(0,1fr) 65px;column-gap:15px;}
-.clementine-comms.cc-peel .cc-name, .clementine-comms.cc-peel .cc-status {grid-column:1;}
-.clementine-comms.cc-peel .cc-avatar {grid-column:2;width:65px;height:92px;border-radius:40px 40px 5px 5px;}
-.clementine-comms.cc-peel .cc-messages p {border-radius:12px 2px 18px 12px;border-right:3px solid var(--ct-c3);padding-right:13px;}
-.clementine-comms.cc-peel .cc-compose {border-radius:5px 5px 18px 5px;}
-
-.clementine-comms.cc-fleur {border-radius:28px;padding-top:17px;}
-.clementine-comms.cc-fleur .cc-brand {margin-bottom:16px;}
-.clementine-comms.cc-fleur .cc-contact {display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin:0 20px;padding-bottom:17px;}
-.clementine-comms.cc-fleur .cc-avatar {order:-1;width:100%;height:133px;margin:0 0 12px;border-radius:12px 42px 12px 12px;padding:4px;}
-.clementine-comms.cc-fleur .cc-name, .clementine-comms.cc-fleur .cc-status {align-self:auto;max-width:100%;}
-.clementine-comms.cc-fleur .cc-contact::after {content:"";position:absolute;right:7px;bottom:17px;width:26px;height:26px;background:var(--ct-rind);-webkit-mask:var(--ct-wheel) center/contain no-repeat;mask:var(--ct-wheel) center/contain no-repeat;}
-.clementine-comms.cc-fleur .cc-name, .clementine-comms.cc-fleur .cc-status {padding-right:42px;}
-.clementine-comms.cc-fleur .cc-messages p {border-radius:16px 4px 16px 16px;background:var(--ct-panel);border-color:rgba(var(--mgrgb1,var(--ct-f1)),.3);}
-
-.clementine-comms.cc-presse {width:370px;border-radius:4px;border:1px solid var(--ct-c2);padding-top:22px;}
-.clementine-comms.cc-presse .cc-hardware {display:none;}
-.clementine-comms.cc-presse .cc-brand {padding-bottom:13px;border-bottom:1px solid var(--ct-line);margin-bottom:20px;}
-.clementine-comms.cc-presse .cc-contact {grid-template-columns:52px minmax(0,1fr);padding-bottom:18px;}
-.clementine-comms.cc-presse .cc-avatar {width:52px;height:62px;border-radius:2px;}
-.clementine-comms.cc-presse .cc-time {text-align:left;margin-top:15px;margin-bottom:15px;}
-.clementine-comms.cc-presse .cc-messages p {max-width:100%;width:100%;margin-left:0;border:0;border-left:2px solid var(--ct-c3);border-radius:0;padding:9px 12px;background:linear-gradient(90deg,rgba(var(--mgrgb3,var(--ct-f3)),.095),transparent);}
-.clementine-comms.cc-presse .cc-receipt {text-align:left;margin-left:23px;}
-.clementine-comms.cc-presse .cc-compose {border-radius:2px;height:30px;}
-.clementine-comms.cc-presse .cc-compose::before {top:6px;}
-.clementine-comms.cc-presse .cc-compose::after {top:9px;}
-
-.clementine-bud {display:grid;grid-template-columns:62px minmax(0,1fr);grid-template-areas:"photo meta" "photo copy" "brand brand";gap:12px 17px;width:380px;padding:23px;border-radius:3px;}
-.clementine-bud .cb-meta {grid-area:meta;display:flex;flex-direction:column;gap:3px;min-width:0;padding:0;}
-.clementine-bud .cb-meta a {display:block;margin:0;padding:0;border:0;color:var(--ct-c1);font:400 20px/1.3 'Bodoni Moda',Georgia,serif;letter-spacing:-.04em;}
-.clementine-bud .cb-meta span {color:var(--ct-muted);font:500 9px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:.08em;}
-.clementine-bud .cb-photos {grid-area:photo;display:flex;align-items:flex-start;gap:6px;min-width:0;margin:0;padding:0;}
-.clementine-bud .cb-photos img {display:block;width:62px;max-width:100%;height:74px;margin:0;padding:3px;border:1px solid var(--ct-c3);border-radius:2px;background:var(--ct-panel);object-fit:cover;}
-.clementine-bud .cb-copy {grid-area:copy;min-width:0;margin:0;padding:0;color:var(--ct-ink);font:400 12px/1.8 'DM Sans',Arial,sans-serif;text-align:left;overflow-wrap:anywhere;}
-.clementine-bud .cb-copy p {margin:0 0 1em;padding:0;color:inherit;font:inherit;text-align:inherit;}
-.clementine-bud .cb-copy p:last-child {margin-bottom:0;}
-.clementine-bud .cb-brand {grid-area:brand;margin:3px 0 0;padding:10px 0 0;border-top:1px solid var(--ct-line);color:var(--ct-c1);font:italic 400 15px/1.4 'Bodoni Moda',Georgia,serif;letter-spacing:-.02em;}
-.clementine-bud .cb-brand span {margin-left:7px;font:500 8px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;}
-.clementine-bud .cb-mark {position:absolute;right:22px;bottom:22px;width:20px;height:20px;background:var(--ct-rind);-webkit-mask:var(--ct-wheel) center/contain no-repeat;mask:var(--ct-wheel) center/contain no-repeat;}
-.clementine-bud.cb-pip {border-top:3px solid var(--ct-c1);}
-.clementine-bud.cb-pip .cb-photos img {border-radius:30px 30px 2px 2px;}
-.clementine-bud.cb-pith {width:330px;grid-template-columns:minmax(0,1fr);grid-template-areas:"photo" "meta" "copy" "brand";gap:13px;padding:23px 26px 19px;border-radius:70px 70px 3px 3px;background:radial-gradient(ellipse at 50% 0,rgba(var(--mgrgb2,var(--ct-f2)),.095),transparent 45%),var(--ct-paper);}
-.clementine-bud.cb-pith .cb-photos {justify-content:center;}
-.clementine-bud.cb-pith .cb-photos img {width:62px;height:62px;border-radius:50%;outline:1px solid rgba(var(--mgrgb1,var(--ct-f1)),.25);outline-offset:4px;}
-.clementine-bud.cb-pith .cb-meta {text-align:center;margin-top:3px;}
-.clementine-bud.cb-pith .cb-brand {text-align:center;padding-right:0;}
-.clementine-bud.cb-pith .cb-mark {display:none;}
-.clementine-bud.cb-dew {width:370px;grid-template-columns:minmax(0,1fr) 92px;grid-template-areas:"meta photo" "copy copy" "brand brand";gap:17px 12px;border-radius:3px 30px 3px 3px;}
-.clementine-bud.cb-dew .cb-photos {gap:6px;justify-content:flex-end;}
-.clementine-bud.cb-dew .cb-photos img {width:43px;height:53px;flex:0 0 43px;padding:2px;}
-.clementine-bud.cb-dew .cb-photos img + img {margin-top:9px;border-color:var(--ct-c1);}
-.clementine-bud.cb-dew .cb-copy {padding-top:13px;border-top:1px solid rgba(var(--mgrgb2,var(--ct-f2)),.3);}
-.clementine-bud.cb-segment {width:350px;grid-template-columns:minmax(0,1fr);grid-template-areas:"meta" "photo" "copy" "brand";gap:14px;border-bottom:3px solid var(--ct-c3);}
-.clementine-bud.cb-segment .cb-meta {padding-right:30px;}
-.clementine-bud.cb-segment .cb-photos img {width:100%;height:87px;border-radius:2px 25px 2px 2px;}
-.clementine-bud.cb-segment .cb-mark {top:24px;bottom:auto;right:24px;}
-.clementine-bud.cb-blossom {width:365px;grid-template-columns:minmax(0,1fr) 66px;grid-template-areas:"meta photo" "copy copy" "brand brand";gap:14px;border-radius:4px 4px 40px 4px;}
-.clementine-bud.cb-blossom .cb-meta {align-self:center;}
-.clementine-bud.cb-blossom .cb-photos img {width:66px;height:74px;border-radius:50% 50% 4px 50%;}
-.clementine-bud.cb-blossom .cb-copy {padding-left:14px;border-left:2px solid var(--ct-c2);}
-.clementine-bud.cb-blossom .cb-mark {width:35px;right:28px;-webkit-mask-image:var(--ct-sprig);mask-image:var(--ct-sprig);}
-
-html[color-mode="dark"] .clementine-comms, html[color-mode="dark"] .clementine-bud {--ct-paper:#242321;--ct-panel:#302e2a;--ct-ink:#e6e1d9;--ct-muted:#bcb0a2;--ct-line:#514a41;--ct-rind:#d99a68;--ct-f1:237,159,112;--ct-f2:222,181,124;--ct-f3:173,193,144;color-scheme:dark;}
-@media (prefers-color-scheme:dark) {
-  html:not([color-mode]) .clementine-comms, html:not([color-mode]) .clementine-bud {--ct-paper:#242321;--ct-panel:#302e2a;--ct-ink:#e6e1d9;--ct-muted:#bcb0a2;--ct-line:#514a41;--ct-rind:#d99a68;--ct-f1:237,159,112;--ct-f2:222,181,124;--ct-f3:173,193,144;color-scheme:dark;}
-}
-@container (max-width:285px) {
-  .clementine-comms .cc-contact {margin-left:16px;margin-right:16px;column-gap:10px;}
-  .clementine-comms .cc-name {font-size:21px;}
-  .clementine-comms .cc-messages {margin-left:16px;margin-right:16px;font-size:12px;}
-  .clementine-comms .cc-messages p {max-width:100%;padding:10px 12px;}
-  .clementine-comms .cc-compose {margin-left:16px;margin-right:16px;}
-  .clementine-comms.cc-nectar .cc-contact {margin:0;padding-left:16px;padding-right:16px;}
-  .clementine-comms.cc-nectar .cc-name {font-size:13px;}
-  .clementine-comms.cc-fleur .cc-avatar {height:115px;}
-  .clementine-bud.cb-pip .cb-copy {grid-column:1 / -1;}
-  .clementine-bud.cb-pip .cb-photos {grid-row:1;}
-  .clementine-bud.cb-dew .cb-photos {gap:4px;}
-}
-@media (forced-colors:active) {
-  .clementine-comms, .clementine-bud, .clementine-comms .cc-avatar, .clementine-bud .cb-photos img {border-color:CanvasText;}
-  .clementine-comms .cc-brand, .clementine-bud .cb-brand, .clementine-comms .cc-messages :is(b,strong,i,em,u), .clementine-bud .cb-copy :is(b,strong,i,em,u) {background:none;color:CanvasText;-webkit-text-fill-color:CanvasText;}
-  .clementine-comms a, .clementine-bud a {color:LinkText;}
-  .clementine-comms .cc-messages u, .clementine-bud .cb-copy u {text-decoration-color:CanvasText;}
-}
-
-html {background:#eeeae3;color:#423d37;color-scheme:light;}
-body {margin:0;font:400 14px/1.6 'DM Sans',Arial,sans-serif;}
-button,select,textarea {font:inherit;}
-.collection-head {max-width:1180px;margin:auto;padding:40px 25px 25px;}
-.collection-kicker {font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 8px;color:#75695c;}
-.collection-head h1 {font:italic 400 53px/1.2 'Bodoni Moda',Georgia,serif;letter-spacing:-.055em;margin:0;}
-.collection-description {margin:13px 0 23px;color:#75695c;font-size:13px;}
-.collection-toolbar {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:15px;padding:18px 0 0;border-top:1px solid #ccc2b5;}
-.collection-filters,.appearance-controls {display:flex;flex-wrap:wrap;gap:7px;align-items:center;}
-.collection-toolbar button,.collection-toolbar select,.copy-button {padding:8px 11px;border:1px solid #bbb0a2;border-radius:4px;color:inherit;background:transparent;font:500 11px/1.5 'DM Sans',Arial,sans-serif;cursor:pointer;}
-.collection-toolbar button[aria-pressed="true"] {background:#423d37;color:#fffdfa;border-color:#423d37;}
-.collection-toolbar select {background:#eeeae3;max-width:100%;}
-.appearance-controls label {font-size:11px;display:flex;align-items:center;gap:7px;}
-.collection-main {max-width:1180px;margin:0 auto;padding:0 25px 45px;}
-.collection-group {padding-top:30px;}
-.collection-group[hidden] {display:none;}
-.group-heading {display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:24px;padding:0 0 14px;border-bottom:1px solid #ccc2b5;}
-.group-heading h2 {font:400 31px/1.3 'Bodoni Moda',Georgia,serif;margin:0;letter-spacing:-.04em;}
-.group-heading h2 span {font:500 10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.1em;vertical-align:middle;margin-left:8px;color:#7b6c5c;}
-.group-heading p {margin:0;color:#75695c;font-size:12px;}
-.collection-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 28px;align-items:start;}
-.grid-comms,.grid-buds {grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 22px;}
-.collection-entry {min-width:0;}
-.entry-heading {display:flex;gap:12px;align-items:flex-start;justify-content:space-between;min-height:81px;}
-.entry-heading h3 {font:400 23px/1.3 'Bodoni Moda',Georgia,serif;margin:0 0 6px;letter-spacing:-.03em;}
-.entry-heading h3 span {font:500 9px/1 'DM Sans',Arial,sans-serif;vertical-align:middle;letter-spacing:.08em;margin-right:5px;color:#8a765f;}
-.entry-heading p {font-size:11px;line-height:1.7;color:#75695c;margin:0;max-width:290px;}
-.copy-button {white-space:nowrap;flex-shrink:0;padding:6px 9px;margin-top:2px;}
-.template-stage {min-width:0;}
-.template-stage > :is(.clementine-zest,.clementine-comms,.clementine-bud) {margin-top:12px;margin-bottom:19px;}
-.code-panel {border:1px solid #cec4b8;border-radius:4px;font-size:11px;}
-.code-panel summary {padding:9px 11px;cursor:pointer;}
-.code-panel textarea {display:block;box-sizing:border-box;min-height:260px;width:100%;max-width:100%;border:0;border-top:1px solid #cec4b8;padding:14px;resize:vertical;background:#faf8f4;color:#403b37;font:11px/1.7 ui-monospace,monospace;}
-.copy-status {display:block;min-height:18px;margin:4px 0 0;font-size:10px;color:#75695c;}
-.collection-footer {text-align:center;border-top:1px solid #ccc2b5;margin-top:38px;padding-top:20px;color:#75695c;font-size:11px;}
-html[color-mode="dark"] {background:#181817;color:#e6e1d9;color-scheme:dark;}
-html[color-mode="dark"] :is(.collection-kicker,.collection-description,.group-heading p,.group-heading h2 span,.entry-heading p,.entry-heading h3 span,.copy-status,.collection-footer) {color:#b9ac9c;}
-html[color-mode="dark"] :is(.collection-toolbar,.group-heading,.collection-footer,.code-panel,.code-panel textarea) {border-color:#494239;}
-html[color-mode="dark"] :is(.collection-toolbar button,.collection-toolbar select,.copy-button) {border-color:#6a5e50;}
-html[color-mode="dark"] .collection-toolbar button[aria-pressed="true"] {background:#e6e1d9;color:#242321;border-color:#e6e1d9;}
-html[color-mode="dark"] .collection-toolbar select,html[color-mode="dark"] .code-panel textarea {background:#242321;color:#e6e1d9;}
-@media(max-width:1000px) {.grid-comms,.grid-buds{grid-template-columns:repeat(2,minmax(0,1fr));}}
-@media(max-width:720px) {.collection-grid{grid-template-columns:minmax(0,1fr);}.collection-head{padding:26px 17px 15px;}.collection-head h1{font-size:43px;}.collection-main{padding:0 17px 30px;}.entry-heading{min-height:0;margin-bottom:20px;}.collection-toolbar{align-items:flex-start;}.collection-grid{gap:25px;}}
-@media(max-width:380px) {.collection-head,.collection-main{padding-left:12px;padding-right:12px;}.collection-toolbar button,.collection-toolbar select{padding:7px 8px;font-size:10px;}}
-
-.design-index {display:grid;gap:10px;margin-top:21px;padding:18px 0 3px;border-top:1px solid #ccc2b5;scroll-margin-top:20px;}
-.design-index-row {display:flex;flex-wrap:wrap;align-items:baseline;gap:7px 13px;font-size:12px;}
-.design-index-row strong {min-width:59px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;}
-.design-index a,.entry-navigation a {color:#65533e;text-decoration:underline;text-underline-offset:3px;}
-.design-index a:hover,.entry-navigation a:hover {color:#9f421e;}
-.design-index a:focus-visible,.entry-navigation a:focus-visible {outline:2px solid #9f421e;outline-offset:4px;}
-.entry-navigation {display:flex;justify-content:space-between;gap:10px;margin:0 0 16px;padding:8px 0;border-top:1px solid #ccc2b5;font-size:10px;}
-.collection-entry {scroll-margin-top:24px;}
-.collection-entry:target {outline:1px solid #b39b7b;outline-offset:9px;}
-html[color-mode="dark"] .design-index,html[color-mode="dark"] .entry-navigation {border-color:#494239;}
-html[color-mode="dark"] .design-index a,html[color-mode="dark"] .entry-navigation a {color:#ccbba4;}
-html[color-mode="dark"] .design-index a:hover,html[color-mode="dark"] .entry-navigation a:hover {color:#eda070;}
+.clm{--cl-a:rgb(var(--mgrgb1,143,80,106));--cl-b:rgb(var(--mgrgb2,113,102,150));--cl-c:rgb(var(--mgrgb3,63,119,130));--cl-bg:#f8f7f4;--cl-panel:#fffefa;--cl-ink:#363633;--cl-muted:#706e69;--cl-rule:#deddd7;--cl-rind:#bb794c;--cl-shadow:#39332b12;--cl-forward:linear-gradient(110deg,var(--cl-a),var(--cl-b),var(--cl-c));--cl-reverse:linear-gradient(110deg,var(--cl-c),var(--cl-b),var(--cl-a));--cl-tint:color-mix(in srgb,var(--cl-a) 9%,var(--cl-bg));--cl-tint2:color-mix(in srgb,var(--cl-c) 10%,var(--cl-bg));position:relative;isolation:isolate;container-type:inline-size;box-sizing:border-box;display:grid;width:calc(100% - 24px);max-width:560px;min-width:0;margin:30px auto;background:var(--cl-bg);color:var(--cl-ink);font:400 14px/1.9 'DM Sans',Arial,sans-serif;text-align:left;overflow-wrap:anywhere;color-scheme:light;text-shadow:none;}
+html[color-mode="dark"] .clm{--cl-a:color-mix(in srgb,rgb(var(--mgrgb1,143,80,106)) 72%,#fff);--cl-b:color-mix(in srgb,rgb(var(--mgrgb2,113,102,150)) 72%,#fff);--cl-c:color-mix(in srgb,rgb(var(--mgrgb3,63,119,130)) 72%,#fff);--cl-bg:#222323;--cl-panel:#2b2c2c;--cl-ink:#e3e1dc;--cl-muted:#b2afa8;--cl-rule:#454746;--cl-rind:#cc9c71;--cl-shadow:#0003;color-scheme:dark;}
+@media (prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .clm{--cl-a:color-mix(in srgb,rgb(var(--mgrgb1,143,80,106)) 72%,#fff);--cl-b:color-mix(in srgb,rgb(var(--mgrgb2,113,102,150)) 72%,#fff);--cl-c:color-mix(in srgb,rgb(var(--mgrgb3,63,119,130)) 72%,#fff);--cl-bg:#222323;--cl-panel:#2b2c2c;--cl-ink:#e3e1dc;--cl-muted:#b2afa8;--cl-rule:#454746;--cl-rind:#cc9c71;--cl-shadow:#0003;color-scheme:dark;}}
+.clm *,.clm *::before,.clm *::after,.clm::before,.clm::after{box-sizing:border-box;}
+.clm>div{min-width:0;}
+.clm a{color:var(--cl-a);text-decoration:none;text-shadow:none;}
+.clm a:hover{text-decoration:underline;text-underline-offset:4px;}
+.clm a:focus-visible{outline:2px solid var(--cl-c);outline-offset:4px;}
+.clm .cl-meta{grid-area:meta;display:flex;position:relative;flex-direction:column;gap:12px;min-width:0;}
+.clm .cl-meta>a{width:fit-content;max-width:100%;font:600 10px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;}
+.clm .cl-meta>span{display:block;color:var(--cl-b);font:400 54px/1.02 'Libre Caslon Display',Georgia,serif;letter-spacing:-.03em;overflow-wrap:anywhere;}
+.clm .cl-meta>time{font:500 10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:.08em;color:var(--cl-muted);}
+.clm .cl-media{grid-area:media;display:flex;position:relative;gap:12px;min-width:0;align-self:start;}
+.clm .cl-media img{display:block;flex:1 1 0;width:0;min-width:0;max-width:100%;height:190px;object-fit:cover;object-position:50% 35%;border:0;background:var(--cl-tint2);}
+.clm .cl-media:not(:has(img[src]:not([src=""]))),.clm .cl-media img:not([src]),.clm .cl-media img[src=""]{display:none!important;}
+.clm .cl-copy{grid-area:copy;min-width:0;position:relative;}
+.clm .cl-copy p{margin:0 0 1.45em;padding:0;font:inherit;line-height:inherit;color:inherit;text-align:inherit;}
+.clm .cl-copy p:last-child{margin-bottom:0;}
+.clm .cl-copy blockquote{margin:1.4em 0;padding:5px 0 5px 20px;border-left:2px solid var(--cl-b);}
+.clm .cl-copy a{color:var(--cl-c);text-decoration:underline;text-decoration-color:var(--cl-a);text-underline-offset:4px;}
+.clm .cl-copy img{max-width:100%;height:auto;}
+.clm :is(b,strong,u){color:var(--cl-a);background-image:var(--cl-forward);}
+.clm :is(i,em){color:var(--cl-c);background-image:var(--cl-reverse);font-style:italic;}
+.clm :is(b,strong){font-weight:700;}
+.clm :is(b,strong,i,em,u){background-color:transparent;background-clip:text;-webkit-background-clip:text;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none;}
+@supports (background-clip:text) or (-webkit-background-clip:text){.clm :is(b,strong,i,em,u){color:transparent;-webkit-text-fill-color:transparent;}}
+.clm u{text-decoration:underline;text-decoration-color:var(--cl-b);text-underline-offset:4px;text-decoration-thickness:1px;}
+.clm .cl-ornament{grid-area:ornament;position:relative;display:flex;gap:13px;align-items:center;justify-content:center;min-width:0;pointer-events:none;color:var(--cl-rind);}
+.clm .cl-ornament svg{display:block;flex:none;width:70px;height:46px;fill:none;stroke:currentColor;stroke-width:1.15;stroke-linejoin:round;stroke-linecap:round;}
+.clm .cl-ornament>span{font:500 8px/1.5 'DM Sans',Arial,sans-serif;text-transform:uppercase;letter-spacing:.22em;}
+.clm .cl-ornament::before,.clm .cl-ornament::after{content:"";flex:1;height:1px;background:var(--cl-forward);opacity:.35;}
+.clm .cl-ornament::after{background:var(--cl-reverse);}
+.clm-thread{grid-template-areas:"meta" "media" "copy" "ornament";padding:36px;gap:28px;}
+.clm-slow-peel{grid-template-columns:minmax(0,1fr) 40%;grid-template-areas:"meta media" "copy copy" "ornament ornament";padding:37px 34px 22px;border:1px solid var(--cl-b);border-radius:3px 58px 3px 3px;gap:30px 24px;box-shadow:9px 9px 0 -3px var(--cl-tint2),9px 9px 0 -2px var(--cl-c);}
+.clm-slow-peel .cl-meta{align-self:center;gap:21px;padding:12px 0 22px;}
+.clm-slow-peel .cl-meta>span{font-size:49px;color:var(--cl-a);}
+.clm-slow-peel .cl-meta>a{border-bottom:1px solid var(--cl-c);padding-bottom:7px;}
+.clm-slow-peel .cl-media{border-radius:2px 40px 2px 2px;padding:5px;border:1px solid var(--cl-a);background:var(--cl-tint);flex-direction:column;}
+.clm-slow-peel .cl-media img{flex:auto;width:100%;height:210px;border-radius:0 33px 0 0;}
+.clm-slow-peel .cl-copy{border-top:1px solid var(--cl-rule);padding-top:25px;}
+.clm-slow-peel .cl-ornament{justify-content:flex-end;}
+.clm-slow-peel .cl-ornament svg{width:100px;height:48px;}
+.clm-slow-peel .cl-ornament::after{display:none;}
+.clm-slow-peel:not(:has(.cl-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:"meta" "copy" "ornament";}
+.clm-slow-peel:not(:has(.cl-media img[src]:not([src=""]))) .cl-meta{padding-right:12%;}
+.clm-daylit-vellum{border:1px solid var(--cl-rule);padding:40px 42px 25px 54px;gap:27px;background:linear-gradient(90deg,var(--cl-tint) 0 14px,transparent 14px),var(--cl-bg);}
+.clm-daylit-vellum::before{content:"";position:absolute;left:26px;top:24px;bottom:25px;width:2px;background:linear-gradient(var(--cl-a) 0 29%,transparent 29% 32%,var(--cl-b) 32% 65%,transparent 65% 68%,var(--cl-c) 68%);}
+.clm-daylit-vellum .cl-meta{padding:8px 0 33px;border-bottom:1px solid var(--cl-c);}
+.clm-daylit-vellum .cl-meta>span{font-size:63px;max-width:90%;color:var(--cl-a);}
+.clm-daylit-vellum .cl-meta::after{content:"";position:absolute;right:-9px;top:-12px;width:58px;height:106px;border-radius:100% 0 100% 0;background:var(--cl-tint2);transform:rotate(25deg);z-index:-1;box-shadow:-22px 38px 0 -14px var(--cl-tint);}
+.clm-daylit-vellum .cl-copy{font:400 15px/2 Georgia,serif;}
+.clm-daylit-vellum .cl-copy>p:first-child::first-letter{float:left;color:var(--cl-a);font:400 57px/.8 'Libre Caslon Display',Georgia,serif;padding:8px 8px 0 0;}
+.clm-daylit-vellum .cl-ornament{justify-content:flex-start;padding-top:8px;}
+.clm-daylit-vellum .cl-ornament::before{display:none;}
+.clm-shared-segments{grid-template-areas:"media" "meta" "copy" "ornament";gap:0;padding:0;border:1px solid var(--cl-b);}
+.clm-shared-segments .cl-media{gap:3px;padding:13px 13px 0;background:var(--cl-tint2);border-top:8px solid var(--cl-c);}
+.clm-shared-segments .cl-media img{height:220px;}
+.clm-shared-segments .cl-media:has(img+img)::after{content:"&";position:absolute;bottom:-14px;left:calc(50% - 17px);width:34px;height:34px;background:var(--cl-panel);border:1px solid var(--cl-a);border-radius:50%;text-align:center;color:var(--cl-a);font:24px/32px 'Libre Caslon Display',Georgia,serif;}
+.clm-shared-segments .cl-meta{text-align:center;align-items:center;padding:38px 38px 28px;border-bottom:1px solid var(--cl-c);}
+.clm-shared-segments .cl-meta>a{order:2;}
+.clm-shared-segments .cl-meta>span{font-size:58px;color:var(--cl-b);}
+.clm-shared-segments .cl-copy{margin:30px 38px;padding-left:20px;border-left:1px solid var(--cl-a);}
+.clm-shared-segments .cl-ornament{margin:0 38px 21px;}
+.clm-shared-segments:not(:has(.cl-media img[src]:not([src=""]))) .cl-meta{border-top:8px solid var(--cl-c);}
+.clm-the-tender-hour{grid-template-areas:"meta" "media" "copy" "ornament";padding:35px 40px 24px;border-block:2px solid var(--cl-a);gap:24px;box-shadow:inset 0 7px var(--cl-bg),inset 0 8px var(--cl-c),inset 0 -7px var(--cl-bg),inset 0 -8px var(--cl-c);}
+.clm-the-tender-hour .cl-meta{flex-direction:row;align-items:center;gap:22px;padding:10px 0 20px;border-bottom:1px solid var(--cl-rule);}
+.clm-the-tender-hour .cl-meta>a{flex:0 1 26%;padding-right:20px;border-right:1px solid var(--cl-c);letter-spacing:.1em;}
+.clm-the-tender-hour .cl-meta>span{flex:1;font-size:48px;color:var(--cl-a);font-family:'Italiana',Georgia,serif;}
+.clm-the-tender-hour .cl-media{margin:0 0 0 17%;padding:0 0 9px 9px;border-left:1px solid var(--cl-b);border-bottom:1px solid var(--cl-c);}
+.clm-the-tender-hour .cl-media img{height:140px;}
+.clm-the-tender-hour .cl-copy{padding:3px 8px;}
+.clm-the-tender-hour .cl-ornament svg{width:90px;}
+.clm-citrus-reverie{padding:44px 40px 26px;gap:27px;border-radius:0 0 90px 0;border:1px solid var(--cl-c);border-left:0;background:linear-gradient(140deg,var(--cl-tint),transparent 32%),var(--cl-bg);}
+.clm-citrus-reverie::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--cl-forward);}
+.clm-citrus-reverie .cl-meta{align-items:flex-end;text-align:right;border-bottom:1px solid var(--cl-a);padding-bottom:29px;}
+.clm-citrus-reverie .cl-meta>span{font-size:66px;line-height:.95;font-family:'Italiana',Georgia,serif;color:var(--cl-c);}
+.clm-citrus-reverie .cl-meta>a{order:2;margin-top:5px;}
+.clm-citrus-reverie .cl-copy{padding:0 0 0 16px;border-left:1px solid var(--cl-rule);font:400 15px/1.95 Georgia,serif;}
+.clm-citrus-reverie .cl-ornament{justify-content:flex-start;margin-right:20px;}
+.clm-citrus-reverie .cl-ornament::before{display:none;}
+.clm-thread:not(:has(.cl-media img[src]:not([src=""]))):is(.clm-daylit-vellum,.clm-the-tender-hour,.clm-citrus-reverie){grid-template-areas:"meta" "copy" "ornament";}
+.clm-comms{max-width:350px;grid-template-columns:58px minmax(0,1fr);grid-template-areas:"media meta" "copy copy" "ornament ornament";gap:22px 14px;padding:49px 21px 19px;border:2px solid var(--cl-b);border-radius:38px;font-size:13px;line-height:1.75;box-shadow:0 12px 28px var(--cl-shadow);}
+.clm-comms::before{content:"";position:absolute;top:15px;left:calc(50% - 22px);width:44px;height:5px;border-radius:6px;background:var(--cl-c);}
+.clm-comms::after{content:"";position:absolute;right:-4px;top:91px;width:3px;height:38px;background:var(--cl-a);border-radius:0 3px 3px 0;}
+.clm-comms .cl-meta{gap:3px;justify-content:center;}
+.clm-comms .cl-meta>a{font:600 14px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:0;text-transform:none;color:var(--cl-a);}
+.clm-comms .cl-meta>span{font:400 10px/1.6 'DM Sans',Arial,sans-serif;letter-spacing:0;color:var(--cl-muted);}
+.clm-comms .cl-meta>time{font-size:9px;}
+.clm-comms .cl-media{align-self:center;flex-direction:column;gap:6px;}
+.clm-comms .cl-media img{flex:auto;width:100%;height:58px;border-radius:20px;padding:3px;border:1px solid var(--cl-c);}
+.clm-comms .cl-copy{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--cl-rule);padding-top:19px;}
+.clm-comms .cl-copy>p{align-self:flex-start;max-width:91%;margin:0;padding:12px 14px;border:1px solid color-mix(in srgb,var(--cl-a) 26%,var(--cl-bg));border-radius:15px 15px 15px 3px;background:var(--cl-panel);}
+.clm-comms .cl-copy>p:nth-child(2n){border-color:color-mix(in srgb,var(--cl-c) 35%,var(--cl-bg));}
+.clm-comms[data-direction="sent"] .cl-copy>p,.clm-comms[data-direction="mixed"] .cl-copy>p:nth-child(2n){align-self:flex-end;border-radius:15px 15px 3px 15px;background:var(--cl-tint2);}
+.clm-comms .cl-ornament{height:36px;justify-content:space-between;border:1px solid var(--cl-rule);border-radius:30px;padding:0 11px;color:var(--cl-muted);gap:10px;}
+.clm-comms .cl-ornament::before{display:none;}
+.clm-comms .cl-ornament::after{content:"↑";flex:0 0 23px;height:23px;text-align:center;line-height:22px;background:var(--cl-tint2);color:var(--cl-c);border-radius:50%;opacity:1;}
+.clm-comms .cl-ornament svg{width:27px;height:23px;color:var(--cl-rind);}
+.clm-comms .cl-ornament>span{flex:1;font-size:10px;letter-spacing:0;text-transform:none;}
+.clm-comms:not(:has(.cl-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:"meta" "copy" "ornament";}
+.clm-pocket-grove{background:linear-gradient(145deg,var(--cl-tint),transparent 35%),var(--cl-bg);box-shadow:inset 0 0 0 4px var(--cl-bg),inset 0 0 0 5px var(--cl-rule),0 12px 28px var(--cl-shadow);}
+.clm-pocket-grove .cl-media img{border-radius:50% 50% 50% 12px;}
+.clm-pocket-grove .cl-meta>a::after{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--cl-c);margin:0 0 2px 7px;}
+.clm-clementine-os{max-width:374px;border-radius:24px;grid-template-columns:1fr;grid-template-areas:"meta" "media" "copy" "ornament";padding:42px 18px 18px;gap:15px;border:1px solid var(--cl-a);border-top:7px solid var(--cl-a);}
+.clm-clementine-os::before{top:13px;left:19px;width:5px;height:5px;box-shadow:10px 0 var(--cl-b),20px 0 var(--cl-c);}
+.clm-clementine-os::after{display:none;}
+.clm-clementine-os .cl-meta{padding:0 7px 15px;border-bottom:1px solid var(--cl-c);display:grid;grid-template-columns:minmax(0,1fr) auto;}
+.clm-clementine-os .cl-meta>a{grid-column:1;grid-row:1;font-size:18px;}
+.clm-clementine-os .cl-meta>span{grid-column:1;grid-row:2;}
+.clm-clementine-os .cl-meta>time{grid-column:2;grid-row:1/3;align-self:center;font-size:14px;color:var(--cl-c);}
+.clm-clementine-os .cl-media{flex-direction:row;}
+.clm-clementine-os .cl-media img{flex:1 1 0;width:0;height:95px;border-radius:8px;}
+.clm-clementine-os .cl-copy{border:0;padding:3px 0;gap:13px;}
+.clm-clementine-os .cl-copy>p{position:relative;max-width:100%;width:100%;border:0;border-left:3px solid var(--cl-a);border-radius:0 8px 8px 0;background:var(--cl-panel);box-shadow:0 1px 0 var(--cl-rule);}
+.clm-clementine-os .cl-copy>p:nth-child(2n){border-left-color:var(--cl-c);}
+.clm-clementine-os .cl-ornament{border-radius:6px;background:var(--cl-tint);}
+.clm-soft-signal{max-width:330px;grid-template-columns:1fr;grid-template-areas:"meta" "media" "copy" "ornament";padding:35px 20px 24px;border-radius:60px 60px 30px 30px;border:4px double var(--cl-a);gap:24px;background:linear-gradient(180deg,var(--cl-tint2),var(--cl-bg) 46%);}
+.clm-soft-signal::before{width:32px;height:3px;left:calc(50% - 16px);top:13px;}
+.clm-soft-signal::after{top:93px;}
+.clm-soft-signal .cl-meta{align-items:center;text-align:center;padding:11px 12px 18px;border-bottom:1px solid var(--cl-c);}
+.clm-soft-signal .cl-meta>time{order:-1;font:400 45px/1 'Italiana',Georgia,serif;color:var(--cl-b);letter-spacing:-2px;margin-bottom:8px;}
+.clm-soft-signal .cl-media{flex-direction:row;width:72px;justify-self:center;}
+.clm-soft-signal .cl-media img{flex:1 1 0;width:0;height:72px;border-radius:50%;}
+.clm-soft-signal .cl-copy{padding:0;border:0;gap:13px;}
+.clm-soft-signal .cl-copy>p{width:100%;max-width:100%;border:0;border-top:1px solid var(--cl-b);border-radius:10px;background:var(--cl-panel);padding:14px 15px;}
+.clm-soft-signal .cl-ornament{border:0;border-radius:0;justify-content:center;height:22px;}
+.clm-soft-signal .cl-ornament::after{content:"";height:4px;flex:0 0 80px;border-radius:5px;background:var(--cl-c);}
+.clm-soft-signal .cl-ornament>span,.clm-soft-signal .cl-ornament svg{display:none;}
+.clm-petal-pixel{max-width:360px;grid-template-columns:1fr;grid-template-areas:"media" "meta" "copy" "ornament";padding:37px 17px 17px;gap:0;border:1px solid var(--cl-c);border-radius:20px;background:var(--cl-panel);box-shadow:inset 0 0 0 5px var(--cl-tint2),0 12px 28px var(--cl-shadow);}
+.clm-petal-pixel::before{top:13px;width:22px;left:calc(50% - 11px);height:4px;}
+.clm-petal-pixel::after{display:none;}
+.clm-petal-pixel .cl-media{padding:0;flex-direction:row;}
+.clm-petal-pixel .cl-media img{flex:1 1 0;width:0;height:145px;border-radius:7px 7px 0 0;border:0;padding:0;}
+.clm-petal-pixel .cl-meta{padding:19px 16px;background:var(--cl-tint);border-bottom:2px solid var(--cl-c);}
+.clm-petal-pixel .cl-meta>a{font:400 29px/1.1 'Libre Caslon Display',Georgia,serif;}
+.clm-petal-pixel .cl-meta>time{position:absolute;right:12px;bottom:10px;}
+.clm-petal-pixel .cl-meta>span{max-width:80%;}
+.clm-petal-pixel .cl-copy{padding:20px 9px;border:0;background:var(--cl-bg);}
+.clm-petal-pixel .cl-copy>p{background:var(--cl-panel);border-radius:3px 16px 16px 16px;}
+.clm-petal-pixel .cl-ornament{margin:3px 0 0;border-radius:6px;}
+.clm-dusk-dial{max-width:324px;grid-template-columns:55px minmax(0,1fr);grid-template-areas:"media meta" "copy copy" "ornament ornament";padding:38px 19px 18px;gap:24px 12px;border:3px solid var(--cl-b);border-radius:35px 35px 55px 55px;background:var(--cl-tint2);}
+.clm-dusk-dial .cl-meta{padding:11px 13px;background:var(--cl-panel);border:1px solid var(--cl-c);border-radius:10px;}
+.clm-dusk-dial .cl-media img{height:60px;border-radius:8px;padding:0;border-color:var(--cl-a);}
+.clm-dusk-dial .cl-copy{padding:24px 8px 5px;border-top:6px double var(--cl-b);}
+.clm-dusk-dial .cl-copy>p{max-width:100%;font-size:12px;border-radius:7px 7px 7px 1px;}
+.clm-dusk-dial .cl-ornament{width:92px;height:39px;border:1px solid var(--cl-c);border-radius:23px;justify-self:center;justify-content:center;background:var(--cl-bg);}
+.clm-dusk-dial .cl-ornament>span{display:none;}
+.clm-dusk-dial .cl-ornament::after{content:"";width:21px;height:21px;flex:0 0 21px;background:none;border:1px solid var(--cl-b);}
+.clm-dusk-dial .cl-ornament svg{width:23px;}
+.clm-bud{max-width:425px;grid-template-areas:"meta" "media" "copy" "ornament";padding:23px 26px 17px;gap:16px;font-size:13px;line-height:1.85;}
+.clm-bud .cl-meta{gap:5px;}
+.clm-bud .cl-meta>a{font-size:9px;letter-spacing:.13em;}
+.clm-bud .cl-meta>span{font-size:32px;}
+.clm-bud .cl-media img{height:90px;}
+.clm-bud .cl-ornament svg{width:38px;height:26px;}
+.clm-bud .cl-ornament>span{font-size:7px;}
+.clm-rindlet{border:1px solid var(--cl-a);border-radius:0 30px 0 0;border-bottom:4px solid var(--cl-c);padding:22px 26px 14px;gap:14px;}
+.clm-rindlet .cl-meta{border-bottom:1px solid var(--cl-rule);padding-bottom:13px;}
+.clm-rindlet .cl-meta>span{color:var(--cl-a);font-family:'Italiana',Georgia,serif;font-size:34px;}
+.clm-rindlet .cl-ornament{justify-content:flex-end;}
+.clm-rindlet .cl-ornament::after{display:none;}
+.clm-little-halo{grid-template-columns:69px minmax(0,1fr);grid-template-areas:"media meta" "copy copy" "ornament ornament";border-radius:14px;border:1px solid var(--cl-rule);border-left:4px solid var(--cl-a);gap:17px 19px;}
+.clm-little-halo .cl-media{padding:4px;border:1px solid var(--cl-c);border-radius:50%;flex-direction:column;}
+.clm-little-halo .cl-media img{flex:auto;width:100%;height:59px;border-radius:50%;}
+.clm-little-halo .cl-meta{justify-content:center;}
+.clm-little-halo .cl-meta>span{color:var(--cl-c);}
+.clm-little-halo .cl-ornament{height:16px;}
+.clm-sugar-pollen{border-block:1px solid var(--cl-b);padding:23px 30px 18px;gap:15px;background:radial-gradient(circle at 11px 11px,var(--cl-tint2) 1px,transparent 1.5px) 0 0/9px 9px,var(--cl-bg);}
+.clm-sugar-pollen .cl-meta{align-items:center;text-align:center;}
+.clm-sugar-pollen .cl-meta>span{font:400 36px/1 'Italiana',Georgia,serif;color:var(--cl-a);}
+.clm-sugar-pollen .cl-copy{padding:15px 16px;background:var(--cl-panel);border:1px solid var(--cl-rule);}
+.clm-sugar-pollen .cl-ornament{gap:8px;}
+.clm-leaflit{grid-template-columns:minmax(0,1fr) 74px;grid-template-areas:"meta media" "copy copy" "ornament ornament";padding:25px 26px 19px;gap:18px;border:1px solid var(--cl-c);box-shadow:5px 5px 0 var(--cl-tint);}
+.clm-leaflit .cl-media{align-self:stretch;flex-direction:column;border-bottom:3px solid var(--cl-b);padding-bottom:4px;}
+.clm-leaflit .cl-media img{width:100%;flex:auto;height:87px;}
+.clm-leaflit .cl-meta{align-self:center;}
+.clm-leaflit .cl-meta>span{color:var(--cl-b);font-size:35px;}
+.clm-leaflit .cl-copy{border-top:1px solid var(--cl-rule);padding-top:17px;}
+.clm-leaflit .cl-ornament{justify-content:flex-start;}
+.clm-leaflit .cl-ornament::before{display:none;}
+.clm-clement-kiss{padding:25px 30px 19px;border:1px solid var(--cl-a);border-radius:3px 3px 50px 3px;background:linear-gradient(135deg,var(--cl-tint2),transparent 36%),var(--cl-bg);}
+.clm-clement-kiss .cl-meta{flex-direction:row;align-items:center;gap:16px;border-bottom:1px solid var(--cl-b);padding-bottom:16px;}
+.clm-clement-kiss .cl-meta>a{flex:0 1 35%;}
+.clm-clement-kiss .cl-meta>span{flex:1;color:var(--cl-c);font-size:30px;}
+.clm-clement-kiss .cl-ornament{margin-right:7px;}
+.clm-bud:not(:has(.cl-media img[src]:not([src=""]))){grid-template-columns:1fr;grid-template-areas:"meta" "copy" "ornament";}
+@container (max-width:420px){.clm-thread .cl-meta>span{font-size:44px;}.clm-slow-peel .cl-meta>span{font-size:37px;}.clm-daylit-vellum .cl-meta>span,.clm-citrus-reverie .cl-meta>span{font-size:50px;}.clm-the-tender-hour .cl-meta{gap:16px;}.clm-the-tender-hour .cl-meta>a{padding-right:14px;}}
+@container (max-width:330px){.clm-slow-peel .cl-media img{height:165px;}.clm-slow-peel .cl-meta>span{font-size:31px;}.clm-thread .cl-meta>span{overflow-wrap:anywhere;}.clm-comms .cl-meta>a{font-size:13px;}.clm-clementine-os .cl-meta>a{font-size:16px;}.clm-petal-pixel .cl-meta>a{font-size:27px;}.clm-bud .cl-meta>span{font-size:29px;}.clm-the-tender-hour .cl-meta{flex-direction:column;align-items:flex-start;}.clm-the-tender-hour .cl-meta>a{border-right:0;padding:0;}.clm-the-tender-hour .cl-meta>span{font-size:42px;}.clm-clement-kiss .cl-meta{flex-direction:column;align-items:flex-start;gap:7px;}}
+@media (max-width:600px){.clm-thread{padding:28px 23px 19px;gap:23px;}.clm-slow-peel{padding:28px 21px 17px;gap:23px 15px;}.clm-daylit-vellum{padding-left:39px;}.clm-daylit-vellum::before{left:22px;}.clm-shared-segments{padding:0;gap:0;}.clm-shared-segments .cl-meta{padding:30px 23px 24px;}.clm-shared-segments .cl-media img{height:180px;}.clm-shared-segments .cl-copy{margin:24px 23px;padding-left:15px;}.clm-shared-segments .cl-ornament{margin:0 23px 20px;}.clm-citrus-reverie{padding-left:29px;}.clm-bud{padding:21px 21px 16px;}.clm-sugar-pollen .cl-copy{padding:13px;}}
+@media (forced-colors:active){.clm :is(b,strong,i,em,u){background:none;color:CanvasText;-webkit-text-fill-color:CanvasText;}.clm,.clm .cl-media img,.clm-comms .cl-copy>p{border-color:CanvasText;}}
 </style>
-<style>.clementine-zest .ct-gifs:not(:has(img)){display:none;}
-.clementine-zest:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-zest:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-zest .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-zest .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-zest.ct-satsuma .ct-gifs:not(:has(img)){display:none;}
-.clementine-zest.ct-satsuma:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-zest.ct-satsuma:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-zest.ct-satsuma .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-zest.ct-satsuma .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-zest.ct-orangerie .ct-gifs:not(:has(img)){display:none;}
-.clementine-zest.ct-orangerie:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-zest.ct-orangerie:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-zest.ct-orangerie .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-zest.ct-orangerie .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-zest.ct-marmalade .ct-gifs:not(:has(img)){display:none;}
-.clementine-zest.ct-marmalade:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-zest.ct-marmalade:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-zest.ct-marmalade .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-zest.ct-marmalade .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-zest.ct-sunroom .ct-gifs:not(:has(img)){display:none;}
-.clementine-zest.ct-sunroom:not(:has(.ct-gifs img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-zest.ct-sunroom:not(:has(.ct-gifs img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-zest.ct-sunroom .ct-gifs:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-zest.ct-sunroom .ct-gifs>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-bud.cb-pip .cb-photos:not(:has(img)){display:none;}
-.clementine-bud.cb-pip:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-bud.cb-pip:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-bud.cb-pip .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-bud.cb-pip .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-bud.cb-pith .cb-photos:not(:has(img)){display:none;}
-.clementine-bud.cb-pith:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-bud.cb-pith:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-bud.cb-pith .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-bud.cb-pith .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-bud.cb-dew .cb-photos:not(:has(img)){display:none;}
-.clementine-bud.cb-dew:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-bud.cb-dew:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-bud.cb-dew .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-bud.cb-dew .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-bud.cb-segment .cb-photos:not(:has(img)){display:none;}
-.clementine-bud.cb-segment:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-bud.cb-segment:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-bud.cb-segment .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-bud.cb-segment .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-bud.cb-blossom .cb-photos:not(:has(img)){display:none;}
-.clementine-bud.cb-blossom:not(:has(.cb-photos img)){grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:none;}
-.clementine-bud.cb-blossom:not(:has(.cb-photos img)) > :is(div,header,footer,section,span,a,h2){grid-column:1/-1;grid-row:auto;}
-.clementine-bud.cb-blossom .cb-photos:has(>img:only-child){grid-template-columns:minmax(0,1fr);justify-content:center;}
-.clementine-bud.cb-blossom .cb-photos>img:only-child{width:100%;max-width:100%;flex-basis:100%;margin:0;transform:none;position:relative;inset:auto;}
-.clementine-zest.ct-satsuma .ct-gifs:has(img:only-child){width:190px;max-width:75%;margin-inline:auto;}
-</style></head>
+<style>:root{--ui-bg:#eeeee7;--ui-paper:#fafaf6;--ui-surface:#e5e7df;--ui-ink:#343a34;--ui-muted:#70796c;--ui-line:#cbd0c5;--ui-accent:#526d62;--ui-field:#fffffa;color-scheme:light;}
+html[color-mode="dark"]{--ui-bg:#181e1b;--ui-paper:#222923;--ui-surface:#2b342d;--ui-ink:#e5e8df;--ui-muted:#a8b3a4;--ui-line:#445145;--ui-accent:#b3c8b1;--ui-field:#1b221d;color-scheme:dark;}
+@media(prefers-color-scheme:dark){html:not([color-mode]){--ui-bg:#181e1b;--ui-paper:#222923;--ui-surface:#2b342d;--ui-ink:#e5e8df;--ui-muted:#a8b3a4;--ui-line:#445145;--ui-accent:#b3c8b1;--ui-field:#1b221d;color-scheme:dark;}}
+*{box-sizing:border-box;}body{margin:0;background:var(--ui-bg);color:var(--ui-ink);font:400 13px/1.6 'DM Sans',Arial,sans-serif;}button,input,textarea,select{font:inherit;}button,select{cursor:pointer;}button,a,input,select,textarea{-webkit-tap-highlight-color:transparent;}a{color:var(--ui-accent);text-underline-offset:4px;}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--ui-accent);outline-offset:4px;}[hidden]{display:none!important;}button{border:1px solid var(--ui-line);color:var(--ui-ink);background:var(--ui-paper);border-radius:5px;padding:9px 14px;}button:hover{border-color:var(--ui-accent);}button.primary{background:var(--ui-accent);color:var(--ui-bg);border-color:var(--ui-accent);}iframe{border:0;display:block;width:100%;min-width:0;background:transparent;}
+.cover{max-width:1560px;margin:auto;padding:27px 42px 0;}.cover-line{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:10px;letter-spacing:.15em;text-transform:uppercase;border-bottom:1px solid var(--ui-line);padding-bottom:20px;color:var(--ui-muted);}.cover-line a{text-decoration:none;}.cover-title{display:flex;align-items:center;justify-content:space-between;gap:35px;padding:26px 0 25px;}.cover h1{font:italic 400 clamp(65px,8vw,116px)/1 'Libre Caslon Display',Georgia,serif;letter-spacing:-.06em;color:var(--ui-accent);margin:0;}.cover-title p{max-width:285px;font-size:12px;line-height:1.8;color:var(--ui-muted);margin:0;}.cover-title svg{width:110px;height:80px;fill:none;stroke:currentColor;stroke-width:.9;opacity:.75;}.cover-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px 0 22px;border-bottom:1px solid var(--ui-line);color:var(--ui-muted);font-size:11px;}.cover-bottom button{font-size:11px;border-radius:30px;padding:9px 20px;background:transparent;border-color:var(--ui-accent);color:var(--ui-accent);}
+.workspace{display:grid;grid-template-columns:210px minmax(0,1fr);gap:32px;max-width:1560px;margin:auto;padding:32px 42px 48px;align-items:start;}.design-menu{position:sticky;top:20px;}.menu-title{font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 21px;color:var(--ui-muted);}.menu-group{border-top:1px solid var(--ui-line);padding:17px 0 18px;}.menu-group h2{font:400 24px/1.2 'Libre Caslon Display',Georgia,serif;margin:0 0 10px;color:var(--ui-accent);}.menu-group h2 small{font:400 10px/1 'DM Sans',Arial,sans-serif;margin-left:8px;color:var(--ui-muted);}.menu-group button{display:flex;align-items:center;gap:12px;width:100%;padding:8px 7px;text-align:left;font-size:11px;border:1px solid transparent;border-radius:3px;background:transparent;}.menu-group button small{font-size:9px;color:var(--ui-muted);}.menu-group button[aria-pressed="true"]{background:var(--ui-paper);border-color:var(--ui-line);color:var(--ui-accent);}.menu-footer{border-top:1px solid var(--ui-line);padding-top:17px;font-size:10px;}.workbench{min-width:0;}.controls{display:flex;gap:11px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--ui-line);}.controls label{font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--ui-muted);flex:1 1 115px;}.controls label:first-child{flex:1.7 1 220px;}select,input,textarea{background:var(--ui-field);border:1px solid var(--ui-line);border-radius:4px;color:var(--ui-ink);width:100%;padding:9px 10px;min-width:0;}select{margin-top:5px;font-size:11px;}.palette-controls{display:flex;gap:9px;align-items:center;font-size:10px;color:var(--ui-muted);padding:13px 0 0;}.palette-controls label{display:flex;align-items:center;gap:4px;}.palette-controls input{width:24px;height:24px;border-radius:50%;padding:2px;cursor:pointer;}.palette-controls>span{margin-left:auto;font-size:9px;}.design-intro{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;padding:26px 0 20px;}.design-intro h2{font:400 29px/1.2 'Libre Caslon Display',Georgia,serif;margin:0 0 8px;color:var(--ui-accent);}.design-intro p{font-size:11px;color:var(--ui-muted);margin:0;max-width:620px;}.pager{display:flex;gap:6px;}.pager button{font-size:16px;line-height:1;padding:10px 11px;background:none;}.editor-grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(250px,1fr);gap:25px;align-items:start;}.preview-column{min-width:0;}.preview-heading{display:flex;justify-content:space-between;color:var(--ui-muted);font-size:9px;letter-spacing:.11em;text-transform:uppercase;margin:0 0 10px;}.forum-surface{background:var(--ui-surface);border:1px solid var(--ui-line);border-radius:8px;padding:18px 11px;}.forum-surface iframe{max-width:604px;margin:auto;}.preview-caption{font-size:10px;line-height:1.7;color:var(--ui-muted);margin:12px 1px;}.fields-column{background:var(--ui-paper);padding:22px;border:1px solid var(--ui-line);border-radius:8px;}.fields-column h3,.code-panel h3{font:400 24px/1.3 'Libre Caslon Display',Georgia,serif;color:var(--ui-accent);margin:0 0 18px;}.fields-column label{display:block;font-size:10px;color:var(--ui-muted);margin:0 0 12px;}.fields-column input,.fields-column textarea,.fields-column select{margin-top:5px;font-size:11px;}.fields-column textarea{font:11px/1.65 ui-monospace,monospace;resize:vertical;min-height:200px;}.image-heading{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ui-line);padding-top:14px;margin:17px 0 10px;}.image-heading h4{font-size:11px;font-weight:500;margin:0;}.image-heading button,.image-field button{background:transparent;color:var(--ui-accent);border:0;padding:2px;font-size:10px;}.image-field{display:flex;gap:7px;align-items:end;margin-bottom:12px;}.image-field label{flex:1;min-width:0;margin:0;}.image-field button{margin-bottom:9px;font-size:9px;}.field-note{font-size:10px;line-height:1.7;color:var(--ui-muted);margin:10px 0 15px;}#comms-fields{display:grid;grid-template-columns:1fr 1.2fr;gap:12px;}#word-count,#url-status{font-size:10px;color:var(--ui-accent);margin:5px 0;}#url-status:empty{display:none;}.code-panel{border-top:1px solid var(--ui-line);margin-top:25px;padding-top:24px;}.code-heading{display:flex;justify-content:space-between;gap:20px;align-items:center;}.code-panel h3{margin:0 0 5px;}.code-heading p{font-size:10px;color:var(--ui-muted);margin:0;}.code-actions{display:flex;gap:8px;flex:none;}.code-actions button{font-size:11px;}.code-label{display:block;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--ui-muted);margin:19px 0 7px;}#copy-code{display:block;font:11px/1.65 ui-monospace,monospace;resize:vertical;padding:15px;}#copy-status{font-size:11px;color:var(--ui-accent);margin:9px 0;min-height:18px;}#original-snippet{font-size:10px;}
+.overview{max-width:1560px;margin:auto;padding:30px 42px 0;}.overview-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;gap:25px;}.overview-heading h2{font:400 32px/1.2 'Libre Caslon Display',Georgia,serif;margin:0;color:var(--ui-accent);}.overview-heading label{font-size:10px;color:var(--ui-muted);min-width:160px;}.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;align-items:start;}.gallery-card{padding:13px 5px 8px;background:var(--ui-surface);border:1px solid var(--ui-line);border-radius:8px;min-width:0;}.gallery-label{background:transparent;border:0;border-bottom:1px solid var(--ui-line);border-radius:0;display:block;width:calc(100% - 22px);margin:0 11px 6px;padding:0 3px 12px;text-align:left;font:400 17px/1.4 'Libre Caslon Display',Georgia,serif;color:var(--ui-accent);}.collection-footer{max-width:1476px;margin:0 auto;padding:25px 0 35px;border-top:1px solid var(--ui-line);font-size:10px;color:var(--ui-muted);display:flex;gap:25px;justify-content:space-between;}
+@media(max-width:1350px){.editor-grid{grid-template-columns:minmax(0,1fr);}.fields-column{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;}.fields-column h3,.fields-column .image-heading,.fields-column #image-fields,.fields-column .field-note,.fields-column>label:has(textarea),.fields-column #word-count,.fields-column #url-status,.fields-column #comms-fields{grid-column:1/-1;}.forum-surface{padding:17px;}.workspace{grid-template-columns:185px minmax(0,1fr);gap:26px;}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.collection-footer{margin-inline:42px;}}
+@media(max-width:800px){.cover{padding:22px 22px 0;}.cover-title{gap:20px;}.cover-title svg{display:none;}.cover-title p{max-width:200px;font-size:10px;}.cover-line{font-size:8px;}.cover-bottom{font-size:10px;}.workspace{display:block;padding:26px 22px 35px;}.design-menu{position:static;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-bottom:24px;}.menu-title,.menu-footer{grid-column:1/-1;margin:0;}.menu-group h2{font-size:21px;}.menu-group button{font-size:10px;gap:5px;padding:7px 3px;}.menu-group{padding-bottom:7px;}.overview{padding:24px 22px 0;}.gallery-grid{gap:17px;}.collection-footer{margin-inline:22px;}.palette-controls>span{max-width:140px;text-align:right;font-size:8px;}}
+@media(max-width:520px){.cover h1{font-size:70px;}.cover-title{display:block;}.cover-title p{max-width:100%;margin-top:18px;}.cover-line span{max-width:100px;text-align:right;}.cover-bottom{align-items:start;gap:15px;}.cover-bottom span{max-width:175px;}.cover-bottom button{white-space:nowrap;font-size:9px;padding:8px 12px;}.menu-group h2{font-size:19px;}.menu-group h2 small{margin-left:3px;font-size:8px;}.menu-group button{font-size:9px;}.design-menu{gap:9px;}.fields-column{display:block;padding:20px;}.forum-surface{padding:12px 3px;}.controls{gap:9px;}.controls label{flex-basis:calc(50% - 10px);}.controls label:first-child{flex-basis:100%;}.palette-controls{gap:6px;}.palette-controls>span{max-width:115px;}.design-intro h2{font-size:26px;}.pager button{padding:8px;}.code-heading{align-items:start;}.code-actions{flex-direction:column;}.code-actions button{padding:8px 12px;font-size:10px;}.gallery-grid{grid-template-columns:minmax(0,1fr);}.overview-heading h2{font-size:26px;}.overview-heading label{min-width:120px;}.collection-footer{flex-direction:column;gap:8px;}.overview-heading{gap:15px;}}
+
+.cover{background:linear-gradient(110deg,#f4efeb,#f7f5f0 55%,#ecefe8);border-bottom:1px solid #cfc9c0;}.cover-title h1{font-family:"Libre Caslon Display",Georgia,serif;letter-spacing:-.055em;color:#a46546;}.cover-title svg{color:#a46546;}.cover-title p{font-family:"DM Sans",Arial,sans-serif;}.design-menu button[aria-pressed="true"]{background:#ede5df;color:#6f463e;}.cover-line a{color:#6f5145;}html[color-mode="dark"] .cover{background:linear-gradient(110deg,#292622,#242624);border-color:#4a443d;}html[color-mode="dark"] .cover-title h1,html[color-mode="dark"] .cover-title svg{color:#d4a17a;}html[color-mode="dark"] .cover-line a{color:#ceb6a4;}html[color-mode="dark"] .design-menu button[aria-pressed="true"]{background:#3a302d;color:#e3c5b1;}
+
+:root{--ui-bg:#f0ede8;--ui-paper:#fbf9f5;--ui-surface:#e8e4dd;--ui-ink:#3c3833;--ui-muted:#777068;--ui-line:#d4cdc3;--ui-accent:#865f4d;--ui-field:#fffdf9;}html[color-mode="dark"]{--ui-bg:#1e201e;--ui-paper:#272925;--ui-surface:#30322d;--ui-ink:#e6e3dc;--ui-muted:#b8b2a6;--ui-line:#4b4d43;--ui-accent:#d0ad8c;--ui-field:#20221f;}@media(prefers-color-scheme:dark){html:not([color-mode]){--ui-bg:#1e201e;--ui-paper:#272925;--ui-surface:#30322d;--ui-ink:#e6e3dc;--ui-muted:#b8b2a6;--ui-line:#4b4d43;--ui-accent:#d0ad8c;--ui-field:#20221f;}html:not([color-mode]) .cover{background:linear-gradient(110deg,#292622,#242624);border-color:#4a443d;}html:not([color-mode]) .cover-title h1,html:not([color-mode]) .cover-title svg{color:#d4a17a;}html:not([color-mode]) .cover-line a{color:#ceb6a4;}html:not([color-mode]) .design-menu button[aria-pressed="true"]{background:#3a302d;color:#e3c5b1;}}
+</style>
+</head>
 <body>
-<header class="collection-head">
-<p class="collection-kicker">Complete collection · 15 designs</p>
-<h1>A little sweetness.</h1>
-<p class="collection-description">Five threads. Five comms. Five buds. Fifteen ways to keep the story growing.</p>
-<div class="collection-toolbar">
-<nav class="collection-filters" aria-label="Template type">
-<button type="button" data-filter="all" aria-pressed="true">All 15</button>
-<button type="button" data-filter="threads" aria-pressed="false">Threads 5</button>
-<button type="button" data-filter="comms" aria-pressed="false">Comms 5</button>
-<button type="button" data-filter="buds" aria-pressed="false">Buds 5</button>
-</nav>
-<div class="appearance-controls">
-<button type="button" data-mode="light" aria-pressed="true">Light</button>
-<button type="button" data-mode="dark" aria-pressed="false">Dark</button>
-<label>Colours <select id="palette"><option value="clementine">Clementine</option><option value="berry">Berry / lilac / blue</option><option value="grove">Teal / fern / olive</option></select></label>
-</div>
-</div>
-<nav class="design-index" id="design-index" aria-label="Choose a design"><div class="design-index-row"><strong>Threads</strong><a class="design-jump" href="#preview-threads-zest">Zest</a><a class="design-jump" href="#preview-threads-satsuma">Satsuma</a><a class="design-jump" href="#preview-threads-orangerie">Orangerie</a><a class="design-jump" href="#preview-threads-marmalade">Marmalade</a><a class="design-jump" href="#preview-threads-sunroom">Sunroom</a></div><div class="design-index-row"><strong>Comms</strong><a class="design-jump" href="#preview-comms-pulp">Pulp</a><a class="design-jump" href="#preview-comms-nectar">Nectar</a><a class="design-jump" href="#preview-comms-peel">Peel</a><a class="design-jump" href="#preview-comms-fleur">Fleur</a><a class="design-jump" href="#preview-comms-presse">Pressé</a></div><div class="design-index-row"><strong>Buds</strong><a class="design-jump" href="#preview-buds-pip">Pip</a><a class="design-jump" href="#preview-buds-pith">Pith</a><a class="design-jump" href="#preview-buds-dew">Dew</a><a class="design-jump" href="#preview-buds-segment">Segment</a><a class="design-jump" href="#preview-buds-blossom">Blossom</a></div></nav>
+<header class="cover">
+<div class="cover-line"><a href="https://github.com/lexdoescodingnow/templates/tree/main/clementine">Lex's template collection / Clementine</a><span>Threads · Comms · Buds</span></div>
+<div class="cover-title"><h1>Clementine</h1><svg viewBox="0 0 90 48" aria-hidden="true"><path d="M10 10c12-8 35-5 43 5s-2 17-17 17S14 23 23 18s33-4 43 5 5 17-9 19M12 13c11-8 31-5 37 3s-5 12-15 11M57 42c-9 1-16-2-17-6"/><path d="M59 10c1-7 9-9 17-5-5 6-11 8-17 5Zm0 0-7 5"/></svg><p>Some feelings don’t rush.<br>Fifteen quiet places for stories that peel back slowly.</p></div>
+<div class="cover-bottom"><span>05 threads · 05 electronic comms · 05 miniature buds</span><button type="button" id="overview-button" aria-expanded="false" aria-controls="overview">View all 15 designs</button></div>
 </header>
-<main class="collection-main">
-<section class="collection-group" data-kind="threads" aria-labelledby="heading-threads"><div class="group-heading"><h2 id="heading-threads">Threads <span>05</span></h2><p>Room for the whole story.</p></div><div class="collection-grid grid-threads">
-<article class="collection-entry" data-template="threads-zest" id="preview-threads-zest">
-<nav class="entry-navigation" aria-label="Browse from Zest"><a class="design-jump" href="#preview-buds-blossom" aria-label="Previous design: Blossom">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-satsuma" aria-label="Next design: Satsuma">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>01</span> Zest</h3><p>Staggered portraits and engraved citrus details.</p></div><button type="button" class="copy-button" data-source="code-threads-zest" aria-label="Copy Zest threads code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-zest">
-<div class="ct-names"><a href="[url]">Siwoo</a><span>&amp;</span><a href="[url]">Yuseop</a></div>
-<div class="ct-title">Clementine</div>
-<div class="ct-subtitle">[text]</div>
-<div class="ct-gifs">
-<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
+<section class="overview" id="overview" hidden>
+<div class="overview-heading"><h2>The whole collection</h2><label>Show<select id="gallery-filter"><option value="all">All 15 designs</option><option value="thread">Five threads</option><option value="comms">Five comms</option><option value="bud">Five buds</option></select></label></div><div class="gallery-grid" id="gallery-grid"></div>
+</section>
+<main class="workspace" id="editor-anchor">
+<nav class="design-menu" aria-label="Clementine designs">
+<p class="menu-title">Choose your design</p>
+<section class="menu-group"><h2>Threads <small>01–05</small></h2><div id="menu-thread"></div></section>
+<section class="menu-group"><h2>Comms <small>01–05</small></h2><div id="menu-comms"></div></section>
+<section class="menu-group"><h2>Buds <small>01–05</small></h2><div id="menu-bud"></div></section>
+<div class="menu-footer"><a href="https://github.com/lexdoescodingnow/templates/blob/main/clementine/README.md">Collection &amp; posting guide ↗</a></div>
+</nav>
+<section class="workbench">
+<div class="controls">
+<label>Design<select id="design-select"></select></label>
+<label>Colour sample<select id="palette-select"><option value="tidal">Dusk rose</option><option value="orchid">Orchid</option><option value="grove">Grove</option></select></label>
+<label>Mode<select id="mode-select"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label>
+<label>Preview width<select id="width-select"><option value="604px">Forum</option><option value="375px">375 px</option><option value="320px">320 px</option></select></label>
 </div>
-<div class="ct-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+<div class="palette-controls"><label>1 <input id="colour-1" aria-label="Member colour 1" type="color" value="#914c66"></label><label>2 <input id="colour-2" aria-label="Member colour 2" type="color" value="#726495"></label><label>3 <input id="colour-3" aria-label="Member colour 3" type="color" value="#367681"></label><span>Preview colours only. Posts inherit member colours.</span></div>
+<div class="design-intro"><div><h2 id="selected-name"></h2><p id="design-description"></p></div><div class="pager"><button id="previous" type="button" aria-label="Previous design">←</button><button id="next" type="button" aria-label="Next design">→</button></div></div>
+<div class="editor-grid">
+<div class="preview-column"><div class="preview-heading"><span>Live forum preview</span><span id="media-note"></span></div><div class="forum-surface"><iframe id="preview-frame" title="Selected clementine template" sandbox="allow-same-origin" scrolling="no"></iframe></div><p class="preview-caption">Ship names are prefilled and editable. Sample titles stand in for [text] in the preview; copyable code retains [url] and [text].</p></div>
+<section class="fields-column" aria-label="Editable content"><h3>Make it yours</h3>
+<label>Character / partner name<input id="edit-name" type="text"></label>
+<label>Character / thread URL<input id="edit-url" type="text" inputmode="url"></label>
+<label>Title / status text<input id="edit-text" type="text"></label>
+<div id="comms-fields" hidden><label>Time<input id="edit-time" type="text"></label><label>Message direction<select id="edit-direction"><option value="received">Received</option><option value="sent">Sent</option><option value="mixed">Mixed</option></select></label></div>
+<div class="image-heading"><h4>Character GIFs</h4><button id="add-image" type="button">+ Add GIF</button></div><div id="image-fields"></div><p class="field-note">Add or remove GIFs to suit the reply. Edits stay with each design while this page is open.</p>
+<label>Writing / messages<textarea id="edit-body" rows="10" spellcheck="false"></textarea></label><p id="word-count"></p><p id="url-status" role="status"></p>
+</section>
 </div>
-<div class="ct-seal" aria-hidden="true"></div>
-<div class="ct-finish" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Zest · JCink code</summary><textarea id="code-threads-zest" aria-label="Zest threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-zest"&gt;
-&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;Siwoo&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;Yuseop&lt;/a&gt;&lt;/div&gt;
-&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
-&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
-&lt;div class="ct-gifs"&gt;
-&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
-&lt;/div&gt;
-&lt;div class="ct-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-
-&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-threads-zest" role="status"></span>
-</article>
-<article class="collection-entry" data-template="threads-satsuma" id="preview-threads-satsuma">
-<nav class="entry-navigation" aria-label="Browse from Satsuma"><a class="design-jump" href="#preview-threads-zest" aria-label="Previous design: Zest">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-orangerie" aria-label="Next design: Orangerie">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>02</span> Satsuma</h3><p>One citrus-shaped portrait beneath a centred masthead.</p></div><button type="button" class="copy-button" data-source="code-threads-satsuma" aria-label="Copy Satsuma threads code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-zest ct-satsuma">
-<div class="ct-names"><a href="[url]">Siwoo</a><span>&amp;</span><a href="[url]">Yuseop</a></div>
-<div class="ct-title">Clementine</div>
-<div class="ct-subtitle">[text]</div>
-<div class="ct-gifs">
-<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="ct-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
-</div>
-<div class="ct-seal" aria-hidden="true"></div>
-<div class="ct-finish" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Satsuma · JCink code</summary><textarea id="code-threads-satsuma" aria-label="Satsuma threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-zest ct-satsuma"&gt;
-&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;Siwoo&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;Yuseop&lt;/a&gt;&lt;/div&gt;
-&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
-&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
-&lt;div class="ct-gifs"&gt;
-&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="ct-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-
-&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-threads-satsuma" role="status"></span>
-</article>
-<article class="collection-entry" data-template="threads-orangerie" id="preview-threads-orangerie">
-<nav class="entry-navigation" aria-label="Browse from Orangerie"><a class="design-jump" href="#preview-threads-satsuma" aria-label="Previous design: Satsuma">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-marmalade" aria-label="Next design: Marmalade">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>03</span> Orangerie</h3><p>Tall conservatory windows and a botanical finish.</p></div><button type="button" class="copy-button" data-source="code-threads-orangerie" aria-label="Copy Orangerie threads code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-zest ct-orangerie">
-<div class="ct-names"><a href="[url]">Siwoo</a><span>&amp;</span><a href="[url]">Yuseop</a></div>
-<div class="ct-title">Clementine</div>
-<div class="ct-subtitle">[text]</div>
-<div class="ct-gifs">
-<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
-</div>
-<div class="ct-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
-</div>
-<div class="ct-seal" aria-hidden="true"></div>
-<div class="ct-finish" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Orangerie · JCink code</summary><textarea id="code-threads-orangerie" aria-label="Orangerie threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-zest ct-orangerie"&gt;
-&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;Siwoo&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;Yuseop&lt;/a&gt;&lt;/div&gt;
-&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
-&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
-&lt;div class="ct-gifs"&gt;
-&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
-&lt;/div&gt;
-&lt;div class="ct-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-
-&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-threads-orangerie" role="status"></span>
-</article>
-<article class="collection-entry" data-template="threads-marmalade" id="preview-threads-marmalade">
-<nav class="entry-navigation" aria-label="Browse from Marmalade"><a class="design-jump" href="#preview-threads-orangerie" aria-label="Previous design: Orangerie">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-sunroom" aria-label="Next design: Sunroom">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>04</span> Marmalade</h3><p>An image-free correspondence page with a coloured spine.</p></div><button type="button" class="copy-button" data-source="code-threads-marmalade" aria-label="Copy Marmalade threads code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-zest ct-marmalade">
-<div class="ct-names"><a href="[url]">Siwoo</a><span>&amp;</span><a href="[url]">Yuseop</a></div>
-<div class="ct-title">Clementine</div>
-<div class="ct-subtitle">[text]</div>
-<div class="ct-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
-</div>
-<div class="ct-seal" aria-hidden="true"></div>
-<div class="ct-finish" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Marmalade · JCink code</summary><textarea id="code-threads-marmalade" aria-label="Marmalade threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-zest ct-marmalade"&gt;
-&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;Siwoo&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;Yuseop&lt;/a&gt;&lt;/div&gt;
-&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
-&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
-&lt;div class="ct-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-
-&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-threads-marmalade" role="status"></span>
-</article>
-<article class="collection-entry" data-template="threads-sunroom" id="preview-threads-sunroom">
-<nav class="entry-navigation" aria-label="Browse from Sunroom"><a class="design-jump" href="#preview-threads-marmalade" aria-label="Previous design: Marmalade">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-pulp" aria-label="Next design: Pulp">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>05</span> Sunroom</h3><p>A wide photograph with a small circular portrait inset.</p></div><button type="button" class="copy-button" data-source="code-threads-sunroom" aria-label="Copy Sunroom threads code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-zest ct-sunroom">
-<div class="ct-names"><a href="[url]">Siwoo</a><span>&amp;</span><a href="[url]">Yuseop</a></div>
-<div class="ct-title">Clementine</div>
-<div class="ct-subtitle">[text]</div>
-<div class="ct-gifs">
-<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;">
-</div>
-<div class="ct-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
-</div>
-<div class="ct-seal" aria-hidden="true"></div>
-<div class="ct-finish" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Sunroom · JCink code</summary><textarea id="code-threads-sunroom" aria-label="Sunroom threads snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-zest ct-sunroom"&gt;
-&lt;div class="ct-names"&gt;&lt;a href="[url]"&gt;Siwoo&lt;/a&gt;&lt;span&gt;&amp;amp;&lt;/span&gt;&lt;a href="[url]"&gt;Yuseop&lt;/a&gt;&lt;/div&gt;
-&lt;div class="ct-title"&gt;Clementine&lt;/div&gt;
-&lt;div class="ct-subtitle"&gt;[text]&lt;/div&gt;
-&lt;div class="ct-gifs"&gt;
-&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 40%;"&gt;
-&lt;/div&gt;
-&lt;div class="ct-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&lt;/b&gt; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-
-&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;i&gt;Excepteur sint occaecat cupidatat non proident,&lt;/i&gt; sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Praesent finibus, &lt;u&gt;lorem at interdum facilisis&lt;/u&gt;, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ct-seal" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="ct-finish" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-threads-sunroom" role="status"></span>
-</article>
-</div></section>
-<section class="collection-group" data-kind="comms" aria-labelledby="heading-comms"><div class="group-heading"><h2 id="heading-comms">Comms <span>05</span></h2><p>Little conversations, one message at a time.</p></div><div class="collection-grid grid-comms">
-<article class="collection-entry" data-template="comms-pulp" id="preview-comms-pulp">
-<nav class="entry-navigation" aria-label="Browse from Pulp"><a class="design-jump" href="#preview-threads-sunroom" aria-label="Previous design: Sunroom">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-nectar" aria-label="Next design: Nectar">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>01</span> Pulp</h3><p>A rounded phone with a centred portrait and soft message bubbles.</p></div><button type="button" class="copy-button" data-source="code-comms-pulp" aria-label="Copy Pulp comms code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-comms cc-pulp">
-<div class="cc-contact">
-<a class="cc-name" href="[url]">Siwoo &amp; Yuseop</a>
-<div class="cc-status">[text]</div>
-<img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="cc-time">[time]</div>
-<div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</p></div>
-<div class="cc-receipt">Delivered</div>
-<div class="cc-brand">Clementine</div>
-<div class="cc-hardware" aria-hidden="true"></div>
-<div class="cc-compose" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Pulp · JCink code</summary><textarea id="code-comms-pulp" aria-label="Pulp comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-comms cc-pulp"&gt;
-&lt;div class="cc-contact"&gt;
-&lt;a class="cc-name" href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;
-&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
-&lt;img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
-&lt;div class="cc-messages"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
-&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
-&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
-&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
-&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-comms-pulp" role="status"></span>
-</article>
-<article class="collection-entry" data-template="comms-nectar" id="preview-comms-nectar">
-<nav class="entry-navigation" aria-label="Browse from Nectar"><a class="design-jump" href="#preview-comms-pulp" aria-label="Previous design: Pulp">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-peel" aria-label="Next design: Peel">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>02</span> Nectar</h3><p>A compact chat screen with a tinted contact bar.</p></div><button type="button" class="copy-button" data-source="code-comms-nectar" aria-label="Copy Nectar comms code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-comms cc-nectar">
-<div class="cc-contact">
-<a class="cc-name" href="[url]">Siwoo &amp; Yuseop</a>
-<div class="cc-status">[text]</div>
-<img class="cc-avatar" src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="cc-time">[time]</div>
-<div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</p></div>
-<div class="cc-receipt">Delivered</div>
-<div class="cc-brand">Clementine</div>
-<div class="cc-hardware" aria-hidden="true"></div>
-<div class="cc-compose" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Nectar · JCink code</summary><textarea id="code-comms-nectar" aria-label="Nectar comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-comms cc-nectar"&gt;
-&lt;div class="cc-contact"&gt;
-&lt;a class="cc-name" href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;
-&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
-&lt;img class="cc-avatar" src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
-&lt;div class="cc-messages"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
-&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
-&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
-&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
-&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-comms-nectar" role="status"></span>
-</article>
-<article class="collection-entry" data-template="comms-peel" id="preview-comms-peel">
-<nav class="entry-navigation" aria-label="Browse from Peel"><a class="design-jump" href="#preview-comms-nectar" aria-label="Previous design: Nectar">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-fleur" aria-label="Next design: Fleur">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>03</span> Peel</h3><p>A slim handset with a vertical portrait and folded message corners.</p></div><button type="button" class="copy-button" data-source="code-comms-peel" aria-label="Copy Peel comms code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-comms cc-peel">
-<div class="cc-contact">
-<a class="cc-name" href="[url]">Siwoo &amp; Yuseop</a>
-<div class="cc-status">[text]</div>
-<img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="cc-time">[time]</div>
-<div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</p></div>
-<div class="cc-receipt">Delivered</div>
-<div class="cc-brand">Clementine</div>
-<div class="cc-hardware" aria-hidden="true"></div>
-<div class="cc-compose" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Peel · JCink code</summary><textarea id="code-comms-peel" aria-label="Peel comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-comms cc-peel"&gt;
-&lt;div class="cc-contact"&gt;
-&lt;a class="cc-name" href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;
-&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
-&lt;img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
-&lt;div class="cc-messages"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
-&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
-&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
-&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
-&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-comms-peel" role="status"></span>
-</article>
-<article class="collection-entry" data-template="comms-fleur" id="preview-comms-fleur">
-<nav class="entry-navigation" aria-label="Browse from Fleur"><a class="design-jump" href="#preview-comms-peel" aria-label="Previous design: Peel">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-comms-presse" aria-label="Next design: Pressé">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>04</span> Fleur</h3><p>A portrait-led messenger with a wide photographic header.</p></div><button type="button" class="copy-button" data-source="code-comms-fleur" aria-label="Copy Fleur comms code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-comms cc-fleur">
-<div class="cc-contact">
-<a class="cc-name" href="[url]">Siwoo &amp; Yuseop</a>
-<div class="cc-status">[text]</div>
-<img class="cc-avatar" src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="cc-time">[time]</div>
-<div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</p></div>
-<div class="cc-receipt">Delivered</div>
-<div class="cc-brand">Clementine</div>
-<div class="cc-hardware" aria-hidden="true"></div>
-<div class="cc-compose" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Fleur · JCink code</summary><textarea id="code-comms-fleur" aria-label="Fleur comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-comms cc-fleur"&gt;
-&lt;div class="cc-contact"&gt;
-&lt;a class="cc-name" href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;
-&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
-&lt;img class="cc-avatar" src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
-&lt;div class="cc-messages"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
-&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
-&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
-&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
-&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-comms-fleur" role="status"></span>
-</article>
-<article class="collection-entry" data-template="comms-presse" id="preview-comms-presse">
-<nav class="entry-navigation" aria-label="Browse from Pressé"><a class="design-jump" href="#preview-comms-fleur" aria-label="Previous design: Fleur">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-pip" aria-label="Next design: Pip">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>05</span> Pressé</h3><p>A square messenger with crisp message panels and a citrus seal.</p></div><button type="button" class="copy-button" data-source="code-comms-presse" aria-label="Copy Pressé comms code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-comms cc-presse">
-<div class="cc-contact">
-<a class="cc-name" href="[url]">Siwoo &amp; Yuseop</a>
-<div class="cc-status">[text]</div>
-<img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="cc-time">[time]</div>
-<div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-</p><p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-</p><p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
-</p></div>
-<div class="cc-receipt">Delivered</div>
-<div class="cc-brand">Clementine</div>
-<div class="cc-hardware" aria-hidden="true"></div>
-<div class="cc-compose" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Pressé · JCink code</summary><textarea id="code-comms-presse" aria-label="Pressé comms snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-comms cc-presse"&gt;
-&lt;div class="cc-contact"&gt;
-&lt;a class="cc-name" href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;
-&lt;div class="cc-status"&gt;[text]&lt;/div&gt;
-&lt;img class="cc-avatar" src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="cc-time"&gt;[time]&lt;/div&gt;
-&lt;div class="cc-messages"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt;
-&lt;p&gt;Sed do eiusmod tempor incididunt &lt;i&gt;ut labore et dolore&lt;/i&gt; magna aliqua.
-&lt;p&gt;Ut enim ad minim veniam. &lt;u&gt;Quis nostrud exercitation?&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cc-receipt"&gt;Delivered&lt;/div&gt;
-&lt;div class="cc-brand"&gt;Clementine&lt;/div&gt;
-&lt;div class="cc-hardware" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;div class="cc-compose" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-comms-presse" role="status"></span>
-</article>
-</div></section>
-<section class="collection-group" data-kind="buds" aria-labelledby="heading-buds"><div class="group-heading"><h2 id="heading-buds">Buds <span>05</span></h2><p>Small replies, under 100 words.</p></div><div class="collection-grid grid-buds">
-<article class="collection-entry" data-template="buds-pip" id="preview-buds-pip">
-<nav class="entry-navigation" aria-label="Browse from Pip"><a class="design-jump" href="#preview-comms-presse" aria-label="Previous design: Pressé">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-pith" aria-label="Next design: Pith">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>01</span> Pip</h3><p>A tiny portrait beside a quick reply.</p></div><button type="button" class="copy-button" data-source="code-buds-pip" aria-label="Copy Pip buds code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-bud cb-pip">
-<div class="cb-meta"><a href="[url]">Siwoo &amp; Yuseop</a><span>[text]</span></div>
-<div class="cb-photos">
-<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</p></div>
-<div class="cb-brand">Clementine <span>bud</span></div>
-<div class="cb-mark" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Pip · JCink code</summary><textarea id="code-buds-pip" aria-label="Pip buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-bud cb-pip"&gt;
-&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-photos"&gt;
-&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="cb-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-buds-pip" role="status"></span>
-</article>
-<article class="collection-entry" data-template="buds-pith" id="preview-buds-pith">
-<nav class="entry-navigation" aria-label="Browse from Pith"><a class="design-jump" href="#preview-buds-pip" aria-label="Previous design: Pip">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-dew" aria-label="Next design: Dew">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>02</span> Pith</h3><p>A small centred note, carried by its typography and citrus motif.</p></div><button type="button" class="copy-button" data-source="code-buds-pith" aria-label="Copy Pith buds code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-bud cb-pith">
-<div class="cb-meta"><a href="[url]">Siwoo &amp; Yuseop</a><span>[text]</span></div>
-<div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</p></div>
-<div class="cb-brand">Clementine <span>bud</span></div>
-<div class="cb-mark" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Pith · JCink code</summary><textarea id="code-buds-pith" aria-label="Pith buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-bud cb-pith"&gt;
-&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-buds-pith" role="status"></span>
-</article>
-<article class="collection-entry" data-template="buds-dew" id="preview-buds-dew">
-<nav class="entry-navigation" aria-label="Browse from Dew"><a class="design-jump" href="#preview-buds-pith" aria-label="Previous design: Pith">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-segment" aria-label="Next design: Segment">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>03</span> Dew</h3><p>Twin miniature portraits along the top edge.</p></div><button type="button" class="copy-button" data-source="code-buds-dew" aria-label="Copy Dew buds code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-bud cb-dew">
-<div class="cb-meta"><a href="[url]">Siwoo &amp; Yuseop</a><span>[text]</span></div>
-<div class="cb-photos">
-<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-<img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</p></div>
-<div class="cb-brand">Clementine <span>bud</span></div>
-<div class="cb-mark" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Dew · JCink code</summary><textarea id="code-buds-dew" aria-label="Dew buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-bud cb-dew"&gt;
-&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-photos"&gt;
-&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;img src="https://64.media.tumblr.com/4ceaebdcbe268e6be14578470aa8b7d3/c958cac1f9f130c2-80/s540x810/ad171cee54fc3498b8ef932692fefd6e1c784486.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="cb-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-buds-dew" role="status"></span>
-</article>
-<article class="collection-entry" data-template="buds-segment" id="preview-buds-segment">
-<nav class="entry-navigation" aria-label="Browse from Segment"><a class="design-jump" href="#preview-buds-dew" aria-label="Previous design: Dew">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-buds-blossom" aria-label="Next design: Blossom">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>04</span> Segment</h3><p>A compact, image-free reply with a clean botanical finish.</p></div><button type="button" class="copy-button" data-source="code-buds-segment" aria-label="Copy Segment buds code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-bud cb-segment">
-<div class="cb-meta"><a href="[url]">Siwoo &amp; Yuseop</a><span>[text]</span></div>
-<div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</p></div>
-<div class="cb-brand">Clementine <span>bud</span></div>
-<div class="cb-mark" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Segment · JCink code</summary><textarea id="code-buds-segment" aria-label="Segment buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-bud cb-segment"&gt;
-&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-buds-segment" role="status"></span>
-</article>
-<article class="collection-entry" data-template="buds-blossom" id="preview-buds-blossom">
-<nav class="entry-navigation" aria-label="Browse from Blossom"><a class="design-jump" href="#preview-buds-segment" aria-label="Previous design: Segment">← Previous</a><a href="#design-index">All designs</a><a class="design-jump" href="#preview-threads-zest" aria-label="Next design: Zest">Next →</a></nav>
-<div class="entry-heading"><div><h3><span>05</span> Blossom</h3><p>A leaf-shaped portrait and an asymmetric frame.</p></div><button type="button" class="copy-button" data-source="code-buds-blossom" aria-label="Copy Blossom buds code">Copy code</button></div>
-<div class="template-stage"><div class="clementine-bud cb-blossom">
-<div class="cb-meta"><a href="[url]">Siwoo &amp; Yuseop</a><span>[text]</span></div>
-<div class="cb-photos">
-<img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;">
-</div>
-<div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p><p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
-</p></div>
-<div class="cb-brand">Clementine <span>bud</span></div>
-<div class="cb-mark" aria-hidden="true"></div>
-</div></div>
-<details class="code-panel"><summary>Blossom · JCink code</summary><textarea id="code-buds-blossom" aria-label="Blossom buds snippet" readonly spellcheck="false">[dohtml]
-&lt;div class="clementine-bud cb-blossom"&gt;
-&lt;div class="cb-meta"&gt;&lt;a href="[url]"&gt;Siwoo &amp;amp; Yuseop&lt;/a&gt;&lt;span&gt;[text]&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-photos"&gt;
-&lt;img src="https://64.media.tumblr.com/7a19eb2ee81b8bc8d5f9342b0efebe55/0468f45eb5c7c7a7-0d/s400x600/4fa486afb19a19ea5bfb0d28478e5583b104b3df.gifv" alt="Character portrait" style="object-position:50% 35%;"&gt;
-&lt;/div&gt;
-&lt;div class="cb-copy"&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, &lt;b&gt;consectetur adipiscing elit.&lt;/b&gt; Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-&lt;p&gt;&lt;i&gt;Ut enim ad minim veniam,&lt;/i&gt; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &lt;u&gt;commodo consequat.&lt;/u&gt;
-&lt;/div&gt;
-&lt;div class="cb-brand"&gt;Clementine &lt;span&gt;bud&lt;/span&gt;&lt;/div&gt;
-&lt;div class="cb-mark" aria-hidden="true"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-media-standalone-v1.css"&gt;
-[/dohtml]
-</textarea></details>
-<span class="copy-status" id="status-buds-blossom" role="status"></span>
-</article>
-</div></section>
-<footer class="collection-footer">Clementine · Thread, comms &amp; bud templates</footer>
+<section class="code-panel"><div class="code-heading"><div><h3>Ready for your post</h3><p>Copy the complete block, or download your edited snippet.</p></div><div class="code-actions"><button id="copy-button" class="primary" type="button">Copy code</button><button id="download-button" type="button">Download .txt</button></div></div><label class="code-label" for="copy-code">Complete JCink code</label><textarea id="copy-code" rows="13" readonly spellcheck="false"></textarea><p id="copy-status" role="status" aria-live="polite"></p><a id="original-snippet" href="https://github.com/lexdoescodingnow/templates/tree/main/clementine">Open original snippet on GitHub ↗</a></section>
+</section>
 </main>
-<script>
-const palettes={berry:{light:['140,64,103','115,83,147','44,107,142'],dark:['221,156,191','183,157,221','119,190,220']},grove:{light:['41,107,106','78,112,73','121,110,45'],dark:['113,192,184','151,194,136','210,195,120']}};
-const stage=document.querySelector('.collection-main');
-const picker=document.getElementById('palette');
-function applyPalette(){
-  const values=palettes[picker.value]?.[document.documentElement.getAttribute('color-mode')];
-  for(let i=1;i<=3;i++){
-    if(values)stage.style.setProperty('--mgrgb'+i,values[i-1]);
-    else stage.style.removeProperty('--mgrgb'+i);
+<footer class="collection-footer"><span>Clementine / a collective of fifteen</span><span>Member colours throughout · Light &amp; dark · [dohtml] ready</span></footer>
+<script>const CLEMENTINE_CSS_URL='https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-standalone-v1.css';
+const CLEMENTINE_GIFS=[
+  "https://64.media.tumblr.com/de19c72ed024a77cc65c1779801994e9/68c45d1f767d3167-1a/s540x810/da2e3b973004be9876964a7453fd1caf9cea4931.gifv",
+  "https://64.media.tumblr.com/70963cc3dca49da4b30e002405f41efb/431f5ff79bb5aea1-2b/s540x810/056541739436ccfa35ed644be124f704ec586b5f.gifv"
+];
+const CLEMENTINE_COPY={
+  "thread": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> Mauris vel nunc vitae neque luctus tincidunt. Donec sit amet eros at augue finibus tincidunt. Integer placerat, erat vel facilisis viverra, nibh velit consequat neque, eget commodo nulla justo quis sapien.</p>\n<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Praesent vitae justo at sapien.</i> Nulla facilisi. Cras tempus, neque sed porta consequat, purus ipsum commodo lorem, ut aliquet nibh lectus non lacus.</p>\n<p>Suspendisse potenti. <u>Curabitur non sem vitae.</u> Nam vitae libero eget massa ullamcorper placerat. Sed mattis interdum velit, id fringilla nulla fermentum at. Morbi tincidunt, dui quis malesuada eleifend, ligula magna consequat erat, ac facilisis sem neque vitae nisi.</p>",
+  "comms": "<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b></p>\n<p>Aliquam erat volutpat. <i>Praesent vitae justo.</i></p>\n<p><u>Donec consequat.</u> Cras tempus neque sed porta consequat.</p>",
+  "bud": "<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Mauris vitae lorem sed risus tincidunt gravida. <i>Aliquam erat volutpat.</i> Nulla facilisi. <u>Praesent vitae justo.</u> Donec sit amet eros at augue finibus tincidunt.</p>"
+};
+const CLEMENTINE_ICONS={
+  "peel": "<svg viewBox=\"0 0 90 48\" aria-hidden=\"true\"><path d=\"M10 10c12-8 35-5 43 5s-2 17-17 17S14 23 23 18s33-4 43 5 5 17-9 19M12 13c11-8 31-5 37 3s-5 12-15 11M57 42c-9 1-16-2-17-6\"/><path d=\"M59 10c1-7 9-9 17-5-5 6-11 8-17 5Zm0 0-7 5\"/></svg>",
+  "branch": "<svg viewBox=\"0 0 90 48\" aria-hidden=\"true\"><path d=\"M7 40C30 38 51 24 79 6M25 35C11 29 13 17 14 16c10 1 15 8 11 19ZM42 26c-4-11 2-18 13-21 1 12-4 18-13 21ZM56 18c12 1 21 5 23 14-12 2-19-3-23-14\"/><path d=\"M37 32c-7 0-11 6-8 12 3 7 17 6 20-1 2-7-4-13-12-11Z\"/></svg>",
+  "pair": "<svg viewBox=\"0 0 90 48\" aria-hidden=\"true\"><path d=\"M9 21C10 11 31 5 42 13c8 10-4 22-17 20S10 27 9 21ZM48 23c-3-10 11-20 24-13 12 7 10 17-1 22-10 5-20 0-23-9Z\"/><path d=\"M14 20c2 5 8 9 15 8m25-10c1-5 8-8 14-5M32 38q12 7 27-1\"/></svg>",
+  "sunthread": "<svg viewBox=\"0 0 90 48\" aria-hidden=\"true\"><path d=\"M5 34h80M22 34a23 23 0 0 1 46 0M27 34a18 18 0 0 1 36 0M45 6V1M21 11l-4-4m-3 22H8m61-18 4-4m3 22h6M18 42h38m7 0h10\"/></svg>",
+  "bloom": "<svg viewBox=\"0 0 90 48\" aria-hidden=\"true\"><path d=\"M44 25c-18-1-18-15-10-15 4 0 7 4 10 11-6-15 6-24 10-16 2 5-2 10-7 17 14-12 26-2 17 4-4 3-10 2-17 1 16 6 13 22 4 17-4-2-5-8-6-15-1 17-17 21-17 11 0-5 6-9 14-12\"/><circle cx=\"45\" cy=\"25\" r=\"3\"/><path d=\"M15 13h1m61 24h1M21 32h1\"/></svg>"
+};
+const CLEMENTINE_DESIGNS=[
+  {
+    "name": "Slow Peel",
+    "slug": "slow-peel",
+    "type": "thread",
+    "number": "01",
+    "gifs": 1,
+    "icon": "peel",
+    "sample": "some feelings take their time",
+    "description": "A curled corner portrait beside an airy title, a fine colour frame and a hand-drawn ribbon of peel.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Daylit Vellum",
+    "slug": "daylit-vellum",
+    "type": "thread",
+    "number": "02",
+    "gifs": 0,
+    "icon": "branch",
+    "sample": "the light you leave behind",
+    "description": "An image-free translucent-paper composition with segmented colour rules, leaf shadows and a literary drop cap.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Shared Segments",
+    "slug": "shared-segments",
+    "type": "thread",
+    "number": "03",
+    "gifs": 2,
+    "icon": "pair",
+    "sample": "a little closer, a little softer",
+    "description": "A close-set pair of cinematic stills, a tiny ampersand seal and a spacious, centred title.",
+    "imageIndex": 0
+  },
+  {
+    "name": "The Tender Hour",
+    "slug": "the-tender-hour",
+    "type": "thread",
+    "number": "04",
+    "gifs": 1,
+    "icon": "sunthread",
+    "sample": "when the room turns quiet",
+    "description": "A letterpress-style masthead, an offset landscape still and a sunrise drawn with the lightest possible line.",
+    "imageIndex": 1
+  },
+  {
+    "name": "Citrus Reverie",
+    "slug": "citrus-reverie",
+    "type": "thread",
+    "number": "05",
+    "gifs": 0,
+    "icon": "bloom",
+    "sample": "all the things we grow into",
+    "description": "An image-free page with a sweeping type-led header, right-aligned dedication and one softly curved corner.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Pocket Grove",
+    "slug": "pocket-grove",
+    "type": "comms",
+    "number": "01",
+    "gifs": 1,
+    "icon": "branch",
+    "sample": "online · here with you",
+    "description": "A softly framed phone with a leaf-corner contact portrait and received-message bubbles.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Clementine OS",
+    "slug": "clementine-os",
+    "type": "comms",
+    "number": "02",
+    "gifs": 0,
+    "icon": "peel",
+    "sample": "direct messages",
+    "description": "A compact desktop-style messenger with a toolbar clock and crisp, coloured message rails.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Soft Signal",
+    "slug": "soft-signal",
+    "type": "comms",
+    "number": "03",
+    "gifs": 0,
+    "icon": "sunthread",
+    "sample": "new messages",
+    "description": "A tall, rounded lock screen with a delicate oversized clock and stacked notification cards.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Petal Pixel",
+    "slug": "petal-pixel",
+    "type": "comms",
+    "number": "04",
+    "gifs": 1,
+    "icon": "bloom",
+    "sample": "available · just a moment",
+    "description": "A camera-led chat device with a wide contact image, serif contact card and soft message bubbles.",
+    "imageIndex": 1
+  },
+  {
+    "name": "Dusk Dial",
+    "slug": "dusk-dial",
+    "type": "comms",
+    "number": "05",
+    "gifs": 1,
+    "icon": "pair",
+    "sample": "message received",
+    "description": "A pocket flip-phone treatment with a small contact display, hinge rule and oval control pad.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Rindlet",
+    "slug": "rindlet",
+    "type": "bud",
+    "number": "01",
+    "gifs": 0,
+    "icon": "peel",
+    "sample": "a little tenderness",
+    "description": "A miniature folded-corner reply with a peel flourish and a member-colour lower edge.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Little Halo",
+    "slug": "little-halo",
+    "type": "bud",
+    "number": "02",
+    "gifs": 1,
+    "icon": "sunthread",
+    "sample": "stay just a little",
+    "description": "A tiny ringed portrait beside a short title, followed by a compact reply.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Sugar Pollen",
+    "slug": "sugar-pollen",
+    "type": "bud",
+    "number": "03",
+    "gifs": 0,
+    "icon": "bloom",
+    "sample": "softly, softly",
+    "description": "A centred miniature note on a barely dotted background, with a small five-petal blossom.",
+    "imageIndex": 0
+  },
+  {
+    "name": "Leaflit",
+    "slug": "leaflit",
+    "type": "bud",
+    "number": "04",
+    "gifs": 1,
+    "icon": "branch",
+    "sample": "the quiet between us",
+    "description": "A portrait tab to the right of a literary heading, with a fine botanical signature.",
+    "imageIndex": 1
+  },
+  {
+    "name": "Clement Kiss",
+    "slug": "clement-kiss",
+    "type": "bud",
+    "number": "05",
+    "gifs": 0,
+    "icon": "pair",
+    "sample": "one more little thing",
+    "description": "A small, gently curved reply card with a paired-segment signature.",
+    "imageIndex": 0
   }
+];
+const clmEscape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clmDefault=design=>({name:'Siwoo & Yuseop',url:'[url]',text:'[text]',time:'09:41',direction:'received',body:CLEMENTINE_COPY[design.type],images:(design.gifs===1?[CLEMENTINE_GIFS[design.imageIndex||0]]:CLEMENTINE_GIFS.slice(0,design.gifs))});
+const clmFilename=design=>`clementine-${design.slug}-${design.type}-${design.number}.txt`;
+function clmMarkup(design,state){
+  const direction=design.type==='comms'?` data-direction="${clmEscape(state.direction)}"`:'';
+  const meta=`<div class="cl-meta">\n<a href="${clmEscape(state.url)}">${clmEscape(state.name)}</a>\n<span>${clmEscape(state.text)}</span>${design.type==='comms'?`\n<time>${clmEscape(state.time)}</time>`:''}\n</div>`;
+  const images=state.images.filter(value=>value.trim()).map((url,i)=>`<img src="${clmEscape(url.trim())}" alt="${i?'Companion portrait':'Character portrait'}" style="object-position:50% 35%;">`).join('\n');
+  const ornament=design.type==='comms'?`${CLEMENTINE_ICONS[design.icon]}<span>Message</span>`:`${CLEMENTINE_ICONS[design.icon]}<span>clementine</span>`;
+  return `<div class="clm clm-${design.type} clm-${design.slug}"${direction}>\n${meta}${images?`\n\n<div class="cl-media">\n${images}\n</div>`:''}\n\n<div class="cl-copy">\n${state.body}\n</div>\n\n<div class="cl-ornament" aria-hidden="true">${ornament}</div>\n</div>`;
 }
-document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{
-  document.documentElement.setAttribute('color-mode',button.dataset.mode);
-  document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
-  applyPalette();
-}));
-picker.addEventListener('change',applyPalette);
-document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
-  document.querySelectorAll('.collection-group').forEach(group=>group.hidden=button.dataset.filter!=='all'&&group.dataset.kind!==button.dataset.filter);
-  document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
-}));
-document.querySelectorAll('.copy-button').forEach(button=>button.addEventListener('click',async()=>{
-  const source=document.getElementById(button.dataset.source);
-  const entry=button.closest('.collection-entry');
-  const status=entry.querySelector('.copy-status');
-  try{
-    if(!navigator.clipboard)throw new Error();
-    await navigator.clipboard.writeText(source.value);
-    status.textContent='Copied';
-  }catch{
-    entry.querySelector('details').open=true;
-    source.focus();source.select();
-    status.textContent=document.execCommand('copy')?'Copied':'Code selected';
+const clmSnippet=(design,state)=>`[dohtml]\n${clmMarkup(design,state)}\n\n<link rel="stylesheet" href="${CLEMENTINE_CSS_URL}">\n[/dohtml]\n`;
+if(typeof module!=='undefined')module.exports={CLEMENTINE_DESIGNS,CLEMENTINE_COPY,CLEMENTINE_GIFS,clmDefault,clmMarkup,clmSnippet,clmFilename};
+if(typeof document!=='undefined'){
+  const el=id=>document.getElementById(id);
+  const states=new Map();
+  const fields=['name','url','text','time','direction','body'];
+  const palettes={tidal:['145,76,102','114,100,149','54,118,129'],orchid:['138,84,127','117,102,160','72,131,152'],grove:['71,115,85','117,123,74','149,111,81']};
+  let current=CLEMENTINE_DESIGNS[0];
+  let colours=palettes.tidal;
+  let galleryBuilt=false;
+  const safeURL=(value,placeholder=false)=>{
+    const s=value.trim();if(placeholder&&(s==='[url]'||s.startsWith('#')))return s;
+    try{return ['https:','http:'].includes(new URL(s).protocol)?s:'';}catch{return '';}
+  };
+  function cleanBody(raw){
+    let source=raw.replace(/\[(\/?)(b|i|u|strong|em)\]/gi,'<$1$2>');
+    if(!/<\/?(?:p|blockquote)\b/i.test(source))source=source.trim().split(/\n\s*\n/).map(p=>`<p>${p.replace(/\n/g,'<br>')}</p>`).join('\n');
+    const fragment=document.createElement('template');fragment.innerHTML=source;
+    fragment.content.querySelectorAll('script,style,iframe,object,embed,svg,math,link,meta').forEach(n=>n.remove());
+    const allowed=new Set(['P','BR','B','STRONG','I','EM','U','BLOCKQUOTE','A']);
+    [...fragment.content.querySelectorAll('*')].reverse().forEach(n=>{
+      if(!allowed.has(n.tagName)){n.replaceWith(...n.childNodes);return;}
+      const href=n.tagName==='A'?safeURL(n.getAttribute('href')||'',true):'';
+      [...n.attributes].forEach(a=>n.removeAttribute(a.name));if(href)n.setAttribute('href',href);
+    });
+    const walker=document.createTreeWalker(fragment.content,NodeFilter.SHOW_COMMENT);let n;const comments=[];while((n=walker.nextNode()))comments.push(n);comments.forEach(n=>n.remove());
+    return fragment.innerHTML.trim();
   }
-}));
-
-document.querySelectorAll('.design-jump').forEach(link=>link.addEventListener('click',()=>{
-  document.querySelector('[data-filter="all"]').click();
-}));
+  const readState=()=>({...Object.fromEntries(fields.map(k=>[k,el('edit-'+k).value])),images:[...el('image-fields').querySelectorAll('input')].map(input=>input.value)});
+  const cleanState=state=>({...state,url:safeURL(state.url,true),body:cleanBody(state.body),images:state.images.map(value=>safeURL(value))});
+  const visualState=(design,state)=>({...state,name:state.name,text:state.text==='[text]'?design.sample:state.text,url:state.url==='[url]'?'#':state.url});
+  function frameDoc(design,state){
+    const mode=el('mode-select').value;
+    const variables=colours.map((value,i)=>`--mgrgb${i+1}:${value}`).join(';');
+    return `<!doctype html><html lang="en"${mode==='system'?'':` color-mode="${mode}"`}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>${document.getElementById('collection-css').textContent}\nhtml,body{margin:0;padding:0;background:transparent;}body{display:flow-root;${variables}}.clm{margin:14px auto 18px;}a{pointer-events:none;}</style></head><body>${clmMarkup(design,visualState(design,state))}</body></html>`;
+  }
+  function fitFrame(frame){
+    const body=frame.contentDocument?.body;if(body)frame.style.height=Math.ceil(body.getBoundingClientRect().height+2)+'px';
+  }
+  function loadFrame(frame,design,state){
+    frame.onload=()=>{fitFrame(frame);frame.contentDocument.fonts?.ready.then(()=>fitFrame(frame));};
+    frame.srcdoc=frameDoc(design,state);
+  }
+  function render(){
+    const raw=readState();states.set(current.slug,raw);const state=cleanState(raw);
+    loadFrame(el('preview-frame'),current,state);el('copy-code').value=clmSnippet(current,state);
+    el('selected-name').textContent=`${current.name} · ${current.type==='bud'?'Bud':current.type==='comms'?'Comms':'Thread'} ${current.number}`;
+    el('design-description').textContent=current.description;
+    const words=state.body.replace(/<[^>]*>/g,' ').trim().split(/\s+/).filter(Boolean).length;
+    el('word-count').textContent=`${words} words${current.type==='bud'?' · buds aim for 100 or fewer':''}`;
+    const count=state.images.filter(Boolean).length;el('media-note').textContent=count?`${count} GIF${count===1?'':'s'}`:'Image-free';
+    el('copy-status').textContent='';el('original-snippet').href='https://github.com/lexdoescodingnow/templates/blob/main/clementine/'+clmFilename(current);
+    el('url-status').textContent=(raw.url.trim()&&!state.url)||raw.images.some((v,i)=>v.trim()&&!state.images[i])?'Use a complete http(s) URL, or [url] for the link placeholder.':'';
+    if(galleryBuilt){const frame=document.querySelector(`[data-preview="${current.slug}"]`);if(frame)loadFrame(frame,current,state);}
+  }
+  function addImage(value=''){
+    const row=document.createElement('div');row.className='image-field';
+    const label=document.createElement('label');label.textContent=`GIF ${el('image-fields').children.length+1}`;
+    const input=document.createElement('input');input.value=value;input.type='text';input.inputMode='url';input.placeholder='https://…';input.addEventListener('input',render);label.append(input);
+    const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';
+    remove.addEventListener('click',()=>{row.remove();[...el('image-fields').children].forEach((r,i)=>r.querySelector('label').firstChild.textContent=`GIF ${i+1}`);render();});row.append(label,remove);el('image-fields').append(row);
+  }
+  function selectDesign(slug){
+    current=CLEMENTINE_DESIGNS.find(d=>d.slug===slug)||CLEMENTINE_DESIGNS[0];
+    const state=states.get(current.slug)||clmDefault(current);fields.forEach(k=>el('edit-'+k).value=state[k]);
+    el('image-fields').replaceChildren();state.images.forEach(addImage);el('comms-fields').hidden=current.type!=='comms';el('design-select').value=current.slug;
+    document.querySelectorAll('[data-design]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.design===current.slug)));render();
+  }
+  function refreshFrames(){
+    loadFrame(el('preview-frame'),current,cleanState(readState()));
+    if(galleryBuilt)CLEMENTINE_DESIGNS.forEach(d=>loadFrame(document.querySelector(`[data-preview="${d.slug}"]`),d,cleanState(states.get(d.slug)||clmDefault(d))));
+  }
+  function buildGallery(){
+    if(galleryBuilt)return;galleryBuilt=true;
+    CLEMENTINE_DESIGNS.forEach(d=>{
+      const card=document.createElement('article');card.className='gallery-card';card.dataset.type=d.type;
+      const button=document.createElement('button');button.type='button';button.className='gallery-label';button.textContent=`${d.name} · ${d.type==='bud'?'Bud':d.type==='comms'?'Comms':'Thread'} ${d.number}`;
+      button.addEventListener('click',()=>{selectDesign(d.slug);el('editor-anchor').scrollIntoView({behavior:'smooth'});});
+      const frame=document.createElement('iframe');frame.title=d.name;frame.dataset.preview=d.slug;frame.setAttribute('sandbox','allow-same-origin');frame.setAttribute('scrolling','no');card.append(button,frame);el('gallery-grid').append(card);loadFrame(frame,d,cleanState(states.get(d.slug)||clmDefault(d)));
+    });
+  }
+  CLEMENTINE_DESIGNS.forEach(d=>{
+    const option=document.createElement('option');option.value=d.slug;option.textContent=`${d.type==='bud'?'Bud':d.type==='comms'?'Comms':'Thread'} ${d.number} · ${d.name}`;el('design-select').append(option);
+    const button=document.createElement('button');button.type='button';button.dataset.design=d.slug;button.innerHTML=`<small>${d.number}</small><span>${clmEscape(d.name)}</span>`;button.addEventListener('click',()=>selectDesign(d.slug));el('menu-'+d.type).append(button);
+  });
+  fields.forEach(k=>el('edit-'+k).addEventListener(k==='direction'?'change':'input',render));
+  el('design-select').addEventListener('change',e=>selectDesign(e.target.value));el('add-image').addEventListener('click',()=>{addImage();render();});
+  el('previous').addEventListener('click',()=>selectDesign(CLEMENTINE_DESIGNS[(CLEMENTINE_DESIGNS.indexOf(current)+14)%15].slug));
+  el('next').addEventListener('click',()=>selectDesign(CLEMENTINE_DESIGNS[(CLEMENTINE_DESIGNS.indexOf(current)+1)%15].slug));
+  el('mode-select').addEventListener('change',()=>{const mode=el('mode-select').value;if(mode==='system')document.documentElement.removeAttribute('color-mode');else document.documentElement.setAttribute('color-mode',mode);refreshFrames();});
+  el('width-select').addEventListener('change',()=>{el('preview-frame').style.maxWidth=el('width-select').value;requestAnimationFrame(()=>fitFrame(el('preview-frame')));});
+  const rgbToHex=rgb=>'#'+rgb.split(',').map(n=>Number(n).toString(16).padStart(2,'0')).join('');
+  el('palette-select').addEventListener('change',()=>{colours=palettes[el('palette-select').value];colours.forEach((c,i)=>el('colour-'+(i+1)).value=rgbToHex(c));refreshFrames();});
+  [1,2,3].forEach(i=>el('colour-'+i).addEventListener('input',()=>{colours=[...colours];const hex=el('colour-'+i).value.slice(1);colours[i-1]=[0,2,4].map(n=>parseInt(hex.slice(n,n+2),16)).join(',');refreshFrames();}));
+  el('copy-button').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(el('copy-code').value);el('copy-status').textContent='Copied the complete [dohtml] block.';}catch{el('copy-code').focus();el('copy-code').select();el('copy-status').textContent='Code selected. Press Ctrl+C or ⌘C to copy.';}});
+  el('download-button').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([el('copy-code').value],{type:'text/plain;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download=clmFilename(current);link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+  el('overview-button').addEventListener('click',()=>{el('overview').hidden=!el('overview').hidden;el('overview-button').setAttribute('aria-expanded',String(!el('overview').hidden));if(!el('overview').hidden){buildGallery();requestAnimationFrame(()=>document.querySelectorAll('#gallery-grid iframe').forEach(fitFrame));}});
+  el('gallery-filter').addEventListener('change',()=>{document.querySelectorAll('.gallery-card').forEach(c=>{c.hidden=el('gallery-filter').value!=='all'&&c.dataset.type!==el('gallery-filter').value;});requestAnimationFrame(()=>document.querySelectorAll('#gallery-grid iframe').forEach(fitFrame));});
+  window.addEventListener('resize',()=>requestAnimationFrame(()=>document.querySelectorAll('iframe').forEach(fitFrame)));
+  const initial=location.hash.slice(1);selectDesign(CLEMENTINE_DESIGNS.some(d=>d.slug===initial)?initial:CLEMENTINE_DESIGNS[0].slug);
+}
 </script>
 </body>
 </html>

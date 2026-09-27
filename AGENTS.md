@@ -2,6 +2,8 @@
 
 These are the user's defaults for new templates and requested revisions in this project.
 
+- Clementine contains only the fifteen later Softlight (`clm`) designs for Siwoo & Yuseop. The fifteen original designs belong in `tangerine/` for Arthur & Nate, with separate masterposts and downloads. Keep legacy CSS identifiers and older Clementine stylesheet endpoints compatible, but do not restore the original snippets to the Clementine inventory. Run `python tools/build_citrus_packages.py` after rebuilding these forum collections.
+
 - Give every individual design a unique public name across the whole catalogue, including thread, comms and bud variants. Keep established filenames and CSS identifiers stable. `template-names.json` records renamed designs by source file and block; keep source labels, editor data and forum previews in agreement. The forum builder rejects duplicate names.
 - Chocolate member icons belong in the footer emblem, clear of character GIFs and writing. Keep Gianduja portraits in an explicit grid and its decorative ribbon within the card edge.
 

@@ -3111,76 +3111,6 @@
   },
   {
     "folder": "clementine",
-    "name": "Marmalade",
-    "type": "thread",
-    "source": "clementine/clementine-thread-marmalade.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-zest ct-marmalade",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "An image-free correspondence page with a coloured spine.",
-    "collection_index": 6
-  },
-  {
-    "folder": "clementine",
-    "name": "Orangerie",
-    "type": "thread",
-    "source": "clementine/clementine-thread-orangerie.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-zest ct-orangerie",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "Tall conservatory windows and a botanical finish.",
-    "collection_index": 7
-  },
-  {
-    "folder": "clementine",
-    "name": "Satsuma",
-    "type": "thread",
-    "source": "clementine/clementine-thread-satsuma.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-zest ct-satsuma",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "One citrus-shaped portrait beneath a centred masthead.",
-    "collection_index": 8
-  },
-  {
-    "folder": "clementine",
-    "name": "Sunroom",
-    "type": "thread",
-    "source": "clementine/clementine-thread-sunroom.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-zest ct-sunroom",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A wide photograph with a small circular portrait inset.",
-    "collection_index": 9
-  },
-  {
-    "folder": "clementine",
-    "name": "Zest",
-    "type": "thread",
-    "source": "clementine/clementine-zest.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-zest",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "Staggered portraits and engraved citrus details.",
-    "collection_index": 10
-  },
-  {
-    "folder": "clementine",
     "name": "Clementine OS",
     "type": "comms",
     "source": "clementine/clementine-clementine-os-comms-02.txt",
@@ -3191,77 +3121,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A compact desktop-style messenger with a toolbar clock and crisp, coloured message rails.",
-    "collection_index": 11
-  },
-  {
-    "folder": "clementine",
-    "name": "Fleur",
-    "type": "comms",
-    "source": "clementine/clementine-comms-fleur.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-comms cc-fleur",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A portrait-led messenger with a wide photographic header.",
-    "collection_index": 12
-  },
-  {
-    "folder": "clementine",
-    "name": "Nectar",
-    "type": "comms",
-    "source": "clementine/clementine-comms-nectar.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-comms cc-nectar",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A compact chat screen with a tinted contact bar.",
-    "collection_index": 13
-  },
-  {
-    "folder": "clementine",
-    "name": "Peel",
-    "type": "comms",
-    "source": "clementine/clementine-comms-peel.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-comms cc-peel",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A slim handset with a vertical portrait and folded message corners.",
-    "collection_index": 14
-  },
-  {
-    "folder": "clementine",
-    "name": "Press\u00e9",
-    "type": "comms",
-    "source": "clementine/clementine-comms-presse.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-comms cc-presse",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A square messenger with crisp message panels and a citrus seal.",
-    "collection_index": 15
-  },
-  {
-    "folder": "clementine",
-    "name": "Pulp",
-    "type": "comms",
-    "source": "clementine/clementine-comms-pulp.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-comms cc-pulp",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A rounded phone with a centred portrait and soft message bubbles.",
-    "collection_index": 16
+    "collection_index": 6
   },
   {
     "folder": "clementine",
@@ -3275,7 +3135,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A pocket flip-phone treatment with a small contact display, hinge rule and oval control pad.",
-    "collection_index": 17
+    "collection_index": 7
   },
   {
     "folder": "clementine",
@@ -3289,7 +3149,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A camera-led chat device with a wide contact image, serif contact card and soft message bubbles.",
-    "collection_index": 18
+    "collection_index": 8
   },
   {
     "folder": "clementine",
@@ -3303,7 +3163,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A softly framed phone with a leaf-corner contact portrait and received-message bubbles.",
-    "collection_index": 19
+    "collection_index": 9
   },
   {
     "folder": "clementine",
@@ -3317,77 +3177,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A tall, rounded lock screen with a delicate oversized clock and stacked notification cards.",
-    "collection_index": 20
-  },
-  {
-    "folder": "clementine",
-    "name": "Blossom",
-    "type": "bud",
-    "source": "clementine/clementine-bud-blossom.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-bud cb-blossom",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A leaf-shaped portrait and an asymmetric frame.",
-    "collection_index": 21
-  },
-  {
-    "folder": "clementine",
-    "name": "Dew",
-    "type": "bud",
-    "source": "clementine/clementine-bud-dew.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-bud cb-dew",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "Twin miniature portraits along the top edge.",
-    "collection_index": 22
-  },
-  {
-    "folder": "clementine",
-    "name": "Pip",
-    "type": "bud",
-    "source": "clementine/clementine-bud-pip.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-bud cb-pip",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A tiny portrait beside a quick reply.",
-    "collection_index": 23
-  },
-  {
-    "folder": "clementine",
-    "name": "Pith",
-    "type": "bud",
-    "source": "clementine/clementine-bud-pith.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-bud cb-pith",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A small centred note, carried by its typography and citrus motif.",
-    "collection_index": 24
-  },
-  {
-    "folder": "clementine",
-    "name": "Segment",
-    "type": "bud",
-    "source": "clementine/clementine-bud-segment.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "clementine-bud cb-segment",
-    "css": [
-      "clementine/clementine-media-standalone-v1.css"
-    ],
-    "description": "A compact, image-free reply with a clean botanical finish.",
-    "collection_index": 25
+    "collection_index": 10
   },
   {
     "folder": "clementine",
@@ -3401,7 +3191,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A small, gently curved reply card with a paired-segment signature.",
-    "collection_index": 26
+    "collection_index": 11
   },
   {
     "folder": "clementine",
@@ -3415,7 +3205,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A portrait tab to the right of a literary heading, with a fine botanical signature.",
-    "collection_index": 27
+    "collection_index": 12
   },
   {
     "folder": "clementine",
@@ -3429,7 +3219,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A tiny ringed portrait beside a short title, followed by a compact reply.",
-    "collection_index": 28
+    "collection_index": 13
   },
   {
     "folder": "clementine",
@@ -3443,7 +3233,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A miniature folded-corner reply with a peel flourish and a member-colour lower edge.",
-    "collection_index": 29
+    "collection_index": 14
   },
   {
     "folder": "clementine",
@@ -3457,7 +3247,7 @@
       "clementine/clementine-softlight-standalone-v1.css"
     ],
     "description": "A centred miniature note on a barely dotted background, with a small five-petal blossom.",
-    "collection_index": 30
+    "collection_index": 15
   },
   {
     "folder": "cocktail",
@@ -11302,6 +11092,216 @@
       "sweet-potato/sweet-potato-family-standalone-v1.css"
     ],
     "collection_index": 12
+  },
+  {
+    "folder": "tangerine",
+    "name": "Marmalade",
+    "type": "thread",
+    "source": "tangerine/tangerine-thread-marmalade.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-zest ct-marmalade",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "An image-free correspondence page with a coloured spine.",
+    "collection_index": 1
+  },
+  {
+    "folder": "tangerine",
+    "name": "Orangerie",
+    "type": "thread",
+    "source": "tangerine/tangerine-thread-orangerie.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-zest ct-orangerie",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "Tall conservatory windows and a botanical finish.",
+    "collection_index": 2
+  },
+  {
+    "folder": "tangerine",
+    "name": "Satsuma",
+    "type": "thread",
+    "source": "tangerine/tangerine-thread-satsuma.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-zest ct-satsuma",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "One citrus-shaped portrait beneath a centred masthead.",
+    "collection_index": 3
+  },
+  {
+    "folder": "tangerine",
+    "name": "Sunroom",
+    "type": "thread",
+    "source": "tangerine/tangerine-thread-sunroom.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-zest ct-sunroom",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A wide photograph with a small circular portrait inset.",
+    "collection_index": 4
+  },
+  {
+    "folder": "tangerine",
+    "name": "Zest",
+    "type": "thread",
+    "source": "tangerine/tangerine-zest.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-zest",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "Staggered portraits and engraved citrus details.",
+    "collection_index": 5
+  },
+  {
+    "folder": "tangerine",
+    "name": "Fleur",
+    "type": "comms",
+    "source": "tangerine/tangerine-comms-fleur.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-comms cc-fleur",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A portrait-led messenger with a wide photographic header.",
+    "collection_index": 6
+  },
+  {
+    "folder": "tangerine",
+    "name": "Nectar",
+    "type": "comms",
+    "source": "tangerine/tangerine-comms-nectar.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-comms cc-nectar",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A compact chat screen with a tinted contact bar.",
+    "collection_index": 7
+  },
+  {
+    "folder": "tangerine",
+    "name": "Peel",
+    "type": "comms",
+    "source": "tangerine/tangerine-comms-peel.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-comms cc-peel",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A slim handset with a vertical portrait and folded message corners.",
+    "collection_index": 8
+  },
+  {
+    "folder": "tangerine",
+    "name": "Press\u00e9",
+    "type": "comms",
+    "source": "tangerine/tangerine-comms-presse.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-comms cc-presse",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A square messenger with crisp message panels and a citrus seal.",
+    "collection_index": 9
+  },
+  {
+    "folder": "tangerine",
+    "name": "Pulp",
+    "type": "comms",
+    "source": "tangerine/tangerine-comms-pulp.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-comms cc-pulp",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A rounded phone with a centred portrait and soft message bubbles.",
+    "collection_index": 10
+  },
+  {
+    "folder": "tangerine",
+    "name": "Blossom",
+    "type": "bud",
+    "source": "tangerine/tangerine-bud-blossom.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-bud cb-blossom",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A leaf-shaped portrait and an asymmetric frame.",
+    "collection_index": 11
+  },
+  {
+    "folder": "tangerine",
+    "name": "Dew",
+    "type": "bud",
+    "source": "tangerine/tangerine-bud-dew.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-bud cb-dew",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "Twin miniature portraits along the top edge.",
+    "collection_index": 12
+  },
+  {
+    "folder": "tangerine",
+    "name": "Pip",
+    "type": "bud",
+    "source": "tangerine/tangerine-bud-pip.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-bud cb-pip",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A tiny portrait beside a quick reply.",
+    "collection_index": 13
+  },
+  {
+    "folder": "tangerine",
+    "name": "Pith",
+    "type": "bud",
+    "source": "tangerine/tangerine-bud-pith.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-bud cb-pith",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A small centred note, carried by its typography and citrus motif.",
+    "collection_index": 14
+  },
+  {
+    "folder": "tangerine",
+    "name": "Segment",
+    "type": "bud",
+    "source": "tangerine/tangerine-bud-segment.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "clementine-bud cb-segment",
+    "css": [
+      "tangerine/tangerine-media-standalone-v1.css"
+    ],
+    "description": "A compact, image-free reply with a clean botanical finish.",
+    "collection_index": 15
   },
   {
     "folder": "toffee",

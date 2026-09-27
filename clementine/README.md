@@ -4,19 +4,18 @@
 
 This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
 
-- [clementine-media-standalone-v1.css](clementine-media-standalone-v1.css)
 - [clementine-softlight-standalone-v1.css](clementine-softlight-standalone-v1.css)
 
 After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
 
 
-Fifteen new JCink designs inspired by the supplied Clementine poster: slow tenderness, soft daylight, delicate lettering, curling peel and small botanical line drawings. Member colours run through headers, frames, rules and emphasis, with neutral writing surfaces and restrained citrus accents.
+Fifteen Softlight JCink designs for **Siwoo & Yuseop**, inspired by the supplied Clementine poster: slow tenderness, soft daylight, delicate lettering, curling peel and small botanical line drawings. Member colours run through headers, frames, rules and emphasis, with neutral writing surfaces and restrained citrus accents.
 
 [Download the standalone preview/editor](clementine-softlight-preview.html) · [Complete collection ZIP](clementine-softlight-collection.zip)
 
 GitHub shows HTML source. Download the preview HTML and open it in your browser to browse, edit and copy all fifteen designs. The HTML includes its own styles and editor; GIFs and optional Google Fonts load online. **View all 15 designs**, the named menu and previous/next controls all reach the complete collection.
 
-The previous collection was intended to be **Tangerine**. Its snippets, stylesheets and preview remain unchanged at their existing paths. See the [earlier collection index](https://github.com/lexdoescodingnow/templates/blob/main/clementine/tangerine-legacy-README.md) or its [original preview](https://github.com/lexdoescodingnow/templates/blob/main/clementine/clementine-collection-preview.html). This new collection uses separate class names and a new stylesheet, so existing posts retain their original design.
+The original fifteen designs now form **[Tangerine for Arthur & Nate](../tangerine/README.md)**, with their own snippets, preview, download and forum masterpost. Clementine contains only the fifteen later Softlight designs below. Older stylesheet URLs remain available for existing forum posts.
 
 ## Threads
 
@@ -52,7 +51,7 @@ The previous collection was intended to be **Tangerine**. Its snippets, styleshe
 
 Open a named `.txt` file on GitHub and use **Copy raw file**. Paste the entire `[dohtml]` block into your forum post. Names, URLs, title/status, GIF URLs, comms time and writing come before decoration and the stylesheet link. Posting snippets and template CSS contain no comments, hidden tips or editing instructions.
 
-`[url]` is the linked character or thread URL; `[name]` is the displayed name; `[text]` is the title or message status. The preview supplies sample names and titles while untouched copied code keeps all three placeholders. Writing defaults to lorem ipsum.
+Names are prefilled with Siwoo & Yuseop. Edit the linked character or thread URL, title or message status, GIFs and writing as needed. Forum masterposts retain sample writing in the previews and use `[TEXT GOES HERE]` or `[MESSAGE GOES HERE]` in their copyable code.
 
 Use ordinary `<p>` paragraphs. Comms accept successive opening `<p>` tags without closing each paragraph or adding a repeated class. `data-direction="received"`, `"sent"` and `"mixed"` select message alignment; mixed alternates the message direction. Device clocks, composer bars, hinge and control-pad details are decorative.
 
@@ -64,13 +63,13 @@ Each design retains its edits while the preview is open. Use **Download .txt** t
 
 ## Forum integration
 
-Every current snippet includes one [hosted stylesheet link](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-standalone-v1.css) inside its `[dohtml]` block. The forum must permit external stylesheet links. No JavaScript or HTML loader runs in forum posts. The stylesheet URL is pinned to its published revision to avoid stale CDN caches.
+Every current snippet includes one [hosted stylesheet link](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/clementine/clementine-softlight-standalone-v1.css) inside its `[dohtml]` block. The forum must permit external stylesheet links. No JavaScript or HTML loader runs in forum posts. The stylesheet follows the published `main` branch.
 
 Blue Hour’s inherited RGB triples `--mgrgb1`, `--mgrgb2` and `--mgrgb3` colour the templates. Dark mode lightens those hues for emphasis and frames. Explicit `html[color-mode="light"]` or `html[color-mode="dark"]` overrides the system fallback. Styles are scoped to `.clm` wrappers and their descendants.
 
 Libre Caslon Display, Italiana and DM Sans fall back to Georgia and Arial. Original inline SVG peel, branch, segment, sunrise and blossom drawings require no external image downloads. Modern CSS `:has()`, container queries and `color-mix()` handle optional media, small layouts and colour tinting.
 
-To rebuild snippets and the standalone preview, run `node clementine/build-clementine.cjs` from the repository root. The ZIP includes this collection’s snippets, stylesheet, preview and build sources. See [validation notes](SOFTLIGHT-VALIDATION.md) for completed checks and their limits.
+To rebuild snippets and both standalone preview URLs, run `node clementine/build-clementine.cjs` from the repository root, followed by `python tools/build_forum_posts.py` and `python tools/build_citrus_packages.py`. The ZIP includes only this collection’s snippets, stylesheets, previews, forum posts and build sources. See [validation notes](SOFTLIGHT-VALIDATION.md) for completed checks and their limits.
 
 ## Forum-ready collection
 
