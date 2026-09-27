@@ -43,6 +43,7 @@ These names are prefilled in the editable name fields of all 868 flavour designs
 | [Plum](plum/) | Jason & Mike |
 | [Popcorn](popcorn/) | Caleb & Peter |
 | [Portuguese Cuisine](portuguese-cuisine/) | Seojun & Wenjun |
+| [Potato](potato/) | Minwoo & Phoenix |
 | [Praline](praline/) | Dongmin & Yonggi |
 | [Pumpkin](pumpkin/) | Dexter & Happy |
 | [Raspberry](raspberry/) | Jian & Kijoon |

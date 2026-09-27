@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-890 distinct templates across 62 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+905 distinct templates across 63 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -54,6 +54,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Petal | 2 | [petal-forum-masterpost.txt](petal-forum-masterpost.txt) | [Preview](petal-preview.html) | 1 |
 | Plum | 15 | [plum-forum-masterpost.txt](plum-forum-masterpost.txt) | [Preview](plum-preview.html) | 1 |
 | Popcorn | 15 | [popcorn-forum-masterpost.txt](popcorn-forum-masterpost.txt) | [Preview](popcorn-preview.html) | 1 |
+| Potato | 15 | [potato-forum-masterpost.txt](potato-forum-masterpost.txt) | [Preview](potato-preview.html) | 2 |
 | Praline | 15 | [praline-forum-masterpost.txt](praline-forum-masterpost.txt) | [Preview](praline-preview.html) | 1 |
 | Pumpkin | 15 | [pumpkin-forum-masterpost.txt](pumpkin-forum-masterpost.txt) | [Preview](pumpkin-preview.html) | 1 |
 | Raspberry | 15 | [raspberry-forum-masterpost.txt](raspberry-forum-masterpost.txt) | [Preview](raspberry-preview.html) | 1 |

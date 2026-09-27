@@ -186,6 +186,6 @@ def concise_code(source, row):
 
 def presentation(row):
     source = row['code'].strip()
-    if row['folder'] in ('cereal', 'cashew'):
+    if row['folder'] in ('cereal', 'cashew', 'potato'):
         return source, source
     return concise_code(source, row), clean_fields(source, row, True)
