@@ -1,6 +1,6 @@
 [h1]BINGSU[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-classic">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 1 — Classic Twin</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
@@ -61,16 +61,12 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-classic">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 1 — Classic Twin</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
 <div class="bh-bingsu-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ipsum vel urna placerat feugiat. Vivamus fermentum, arcu vitae feugiat facilisis, neque eros sollicitudin erat, sit amet fringilla mauris ipsum quis lorem.</p>
-
-<p>Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi. Integer mollis, nisl id condimentum tincidunt, lectus sapien consequat erat, vitae tincidunt justo enim sit amet mauris.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bingsu-gif bh-bingsu-gif-one">
@@ -110,7 +106,7 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-single">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 2 — Single Scoop</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
@@ -153,16 +149,12 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-single">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 2 — Single Scoop</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
 <div class="bh-bingsu-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ipsum vel urna placerat feugiat. Vivamus fermentum, arcu vitae feugiat facilisis, neque eros sollicitudin erat, sit amet fringilla mauris ipsum quis lorem.</p>
-
-<p>Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi. Integer mollis, nisl id condimentum tincidunt, lectus sapien consequat erat, vitae tincidunt justo enim sit amet mauris.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bingsu-gif">
@@ -198,7 +190,7 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-round">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 3 — Soft Scoop</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
@@ -245,16 +237,12 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-round">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 3 — Soft Scoop</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
 <div class="bh-bingsu-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ipsum vel urna placerat feugiat. Vivamus fermentum, arcu vitae feugiat facilisis, neque eros sollicitudin erat, sit amet fringilla mauris ipsum quis lorem.</p>
-
-<p>Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi. Integer mollis, nisl id condimentum tincidunt, lectus sapien consequat erat, vitae tincidunt justo enim sit amet mauris.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bingsu-gif bh-bingsu-gif-one">
@@ -294,7 +282,7 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-scroll">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 4 — Snowglobe Scroll</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
@@ -341,20 +329,12 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-scroll">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 4 — Snowglobe Scroll</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
 <div class="bh-bingsu-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ipsum vel urna placerat feugiat. Vivamus fermentum, arcu vitae feugiat facilisis, neque eros sollicitudin erat, sit amet fringilla mauris ipsum quis lorem.</p>
-
-<p>Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi. Integer mollis, nisl id condimentum tincidunt, lectus sapien consequat erat, vitae tincidunt justo enim sit amet mauris.</p>
-
-<p>Curabitur commodo, erat vitae posuere consequat, nibh neque feugiat nisl, nec convallis augue sapien in lorem. Duis viverra sem vitae lectus malesuada, vel ultrices nulla facilisis.</p>
-
-<p>Aliquam erat volutpat. Suspendisse potenti. Morbi ultrices, velit vitae feugiat tempor, velit erat vulputate arcu, vitae mattis sapien mauris eget nibh.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bingsu-gif">
@@ -390,7 +370,7 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-split">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 5 — Layered Bowl</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
@@ -433,16 +413,12 @@ A thread layout from the Bingsu collection.
 [dohtml]
 <div class="bh-bingsu bh-bingsu-split">
 
-<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">[text]</a>
+<a class="bh-bingsu-link" href="[url]" target="_blank" rel="noopener">Variant 5 — Layered Bowl</a>
 
 <h1 class="bh-bingsu-name">Isaiah &amp; Max</h1>
 
 <div class="bh-bingsu-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ipsum vel urna placerat feugiat. Vivamus fermentum, arcu vitae feugiat facilisis, neque eros sollicitudin erat, sit amet fringilla mauris ipsum quis lorem.</p>
-
-<p>Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi. Integer mollis, nisl id condimentum tincidunt, lectus sapien consequat erat, vitae tincidunt justo enim sit amet mauris.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bingsu-gif">
@@ -478,7 +454,7 @@ Two portraits in a single fractured-glass composition, held above a fine central
 [dohtml]
 <div class="bgs bgs-thread bgs-crystal-veil">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">a beautiful kind of winter</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/5e0702ad4d9460939d8e5d215eebdf41/70b9785f66892c5a-bb/s540x810/40d7d4732ea502da42eeed8f99a237c19bdaa59f.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -501,17 +477,13 @@ Two portraits in a single fractured-glass composition, held above a fine central
 [dohtml]
 <div class="bgs bgs-thread bgs-crystal-veil">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">a beautiful kind of winter</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/5e0702ad4d9460939d8e5d215eebdf41/70b9785f66892c5a-bb/s540x810/40d7d4732ea502da42eeed8f99a237c19bdaa59f.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -526,7 +498,7 @@ A shallow dessert-glass portrait, three fine syrup lines and a broad literary pa
 [dohtml]
 <div class="bgs bgs-thread bgs-first-thaw">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">soft enough to stay</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/5e0702ad4d9460939d8e5d215eebdf41/70b9785f66892c5a-bb/s540x810/40d7d4732ea502da42eeed8f99a237c19bdaa59f.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -548,16 +520,12 @@ A shallow dessert-glass portrait, three fine syrup lines and a broad literary pa
 [dohtml]
 <div class="bgs bgs-thread bgs-first-thaw">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">soft enough to stay</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/5e0702ad4d9460939d8e5d215eebdf41/70b9785f66892c5a-bb/s540x810/40d7d4732ea502da42eeed8f99a237c19bdaa59f.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -572,7 +540,7 @@ An open snowfield page with flowing type, a narrow meltwater margin and a suspen
 [dohtml]
 <div class="bgs bgs-thread bgs-meltwater-letters">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">everything returns to you</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
 
@@ -591,13 +559,9 @@ An open snowfield page with flowing type, a narrow meltwater margin and a suspen
 [dohtml]
 <div class="bgs bgs-thread bgs-meltwater-letters">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">everything returns to you</div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -612,7 +576,7 @@ A frost-edged portrait window, a sweeping title and a clean page within an angul
 [dohtml]
 <div class="bgs bgs-thread bgs-rime-reverie">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">when the world turns quiet</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -634,16 +598,12 @@ A frost-edged portrait window, a sweeping title and a clean page within an angul
 [dohtml]
 <div class="bgs bgs-thread bgs-rime-reverie">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">when the world turns quiet</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -658,7 +618,7 @@ An airy frost-window folio with a geometric upper lattice, wide writing and a qu
 [dohtml]
 <div class="bgs bgs-thread bgs-snowlight-sonata">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">some things never melt</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
 
@@ -677,13 +637,9 @@ An airy frost-window folio with a geometric upper lattice, wide writing and a qu
 [dohtml]
 <div class="bgs bgs-thread bgs-snowlight-sonata">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">some things never melt</div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -700,7 +656,7 @@ A small landscape tablet with a capsule camera, contact portrait and generous in
 [dohtml]
 <div class="bgs bgs-comms bgs-berry-byte" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">available · for you</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -723,15 +679,15 @@ A small landscape tablet with a capsule camera, contact portrait and generous in
 [dohtml]
 <div class="bgs bgs-comms bgs-berry-byte" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">available · for you</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor incididunt</i> ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 <div class="bgs-device" aria-hidden="true"><span>•••</span><span>▰</span></div>
@@ -761,13 +717,13 @@ A comms layout from the Bingsu collection.
 
 <div class="bh-bingsu-comms-person">
 <h1 class="bh-bingsu-comms-name">Isaiah &amp; Max</h1>
-<span class="bh-bingsu-comms-status">[text]</span>
+<span class="bh-bingsu-comms-status">online</span>
 </div>
 
 <a class="bh-bingsu-comms-open" href="[url]" target="_blank" rel="noopener">↗</a>
 </div>
 
-<div class="bh-bingsu-comms-date">[time]</div>
+<div class="bh-bingsu-comms-date">09:41</div>
 
 <div class="bh-bingsu-comms-chat">
 <p>
@@ -818,24 +774,20 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 
 <div class="bh-bingsu-comms-person">
 <h1 class="bh-bingsu-comms-name">Isaiah &amp; Max</h1>
-<span class="bh-bingsu-comms-status">[text]</span>
+<span class="bh-bingsu-comms-status">online</span>
 </div>
 
 <a class="bh-bingsu-comms-open" href="[url]" target="_blank" rel="noopener">↗</a>
 </div>
 
-<div class="bh-bingsu-comms-date">[time]</div>
+<div class="bh-bingsu-comms-date">09:41</div>
 
 <div class="bh-bingsu-comms-chat">
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<span class="bh-bingsu-comms-time">11:42 pm · sent</span>
-</p>
+<p>[MESSAGE GOES HERE]
+<span class="bh-bingsu-comms-time">11:42 pm · sent</span></p>
 
-<p>
-Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
-<span class="bh-bingsu-comms-time">11:43 pm · read</span>
-</p>
+<p>[MESSAGE GOES HERE]
+<span class="bh-bingsu-comms-time">11:43 pm · read</span></p>
 
 <div class="bh-bingsu-comms-row bh-bingsu-comms-row-out">
 <div class="bh-bingsu-comms-media">
@@ -864,7 +816,7 @@ A translucent smartphone with a stepped ice frame, contact portrait and soft rec
 [dohtml]
 <div class="bgs bgs-comms bgs-frostline" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">online · just for you</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -887,15 +839,15 @@ A translucent smartphone with a stepped ice frame, contact portrait and soft rec
 [dohtml]
 <div class="bgs bgs-comms bgs-frostline" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">online · just for you</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor incididunt</i> ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 <div class="bgs-device" aria-hidden="true"><span>•••</span><span>▰</span></div>
@@ -912,7 +864,7 @@ A compact wrist communicator with a ridged strap, curved display and small digit
 [dohtml]
 <div class="bgs bgs-comms bgs-glace-chat" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">message received</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -932,12 +884,12 @@ A compact wrist communicator with a ridged strap, curved display and small digit
 [dohtml]
 <div class="bgs bgs-comms bgs-glace-chat" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">message received</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor incididunt</i> ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 <div class="bgs-device" aria-hidden="true"><span>•••</span><span>▰</span></div>
@@ -954,7 +906,7 @@ A slim candybar phone with crystalline navigation keys and a real twelve-key sil
 [dohtml]
 <div class="bgs bgs-comms bgs-sleet-signal" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">connected · direct message</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -974,12 +926,12 @@ A slim candybar phone with crystalline navigation keys and a real twelve-key sil
 [dohtml]
 <div class="bgs bgs-comms bgs-sleet-signal" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">connected · direct message</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor incididunt</i> ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 <div class="bgs-device" aria-hidden="true"><span>•••</span><span>▰</span></div>
@@ -996,7 +948,7 @@ A frosted notification phone with a tall clock, floating portrait tile and a sep
 [dohtml]
 <div class="bgs bgs-comms bgs-snowglow" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">three new messages</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -1019,15 +971,15 @@ A frosted notification phone with a tall clock, floating portrait tile and a sep
 [dohtml]
 <div class="bgs bgs-comms bgs-snowglow" data-direction="received">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">three new messages</div>
 <div class="bgs-time">21:08</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor incididunt</i> ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 <div class="bgs-device" aria-hidden="true"><span>•••</span><span>▰</span></div>
@@ -1058,7 +1010,7 @@ A bud layout from the Bingsu collection.
 </div>
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 1 — Snowcap</span>
 </div>
 </div>
 
@@ -1094,12 +1046,12 @@ A bud layout from the Bingsu collection.
 </div>
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 1 — Snowcap</span>
 </div>
 </div>
 
 <div class="bh-bud-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus fermentum arcu vitae feugiat facilisis, neque eros sollicitudin erat, sit amet fringilla mauris ipsum quis lorem.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bud-foot">
@@ -1133,7 +1085,7 @@ A bud layout from the Bingsu collection.
 <div class="bh-bud-head">
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 2 — Sprig</span>
 </div>
 </div>
 
@@ -1170,12 +1122,12 @@ A bud layout from the Bingsu collection.
 <div class="bh-bud-head">
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 2 — Sprig</span>
 </div>
 </div>
 
 <div class="bh-bud-copy">
-<p>Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi. Integer mollis, nisl id condimentum tincidunt, lectus sapien consequat erat, vitae tincidunt justo enim sit amet mauris. Curabitur commodo nibh neque feugiat nisl.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bud-foot">
@@ -1208,7 +1160,7 @@ A bud layout from the Bingsu collection.
 </div>
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 3 — Dewdrop</span>
 </div>
 </div>
 
@@ -1243,12 +1195,12 @@ A bud layout from the Bingsu collection.
 </div>
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 3 — Dewdrop</span>
 </div>
 </div>
 
 <div class="bh-bud-copy">
-<p>Aliquam erat volutpat. Suspendisse potenti. Morbi ultrices velit vitae feugiat tempor. Donec dignissim finibus sem, vitae tincidunt erat. Aenean sed justo vitae nulla vulputate aliquam, et consequat sapien.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bud-foot">
@@ -1277,7 +1229,7 @@ A bud layout from the Bingsu collection.
 <div class="bh-bud-head">
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 4 — Duet</span>
 </div>
 </div>
 
@@ -1315,7 +1267,7 @@ A bud layout from the Bingsu collection.
 <div class="bh-bud-head">
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 4 — Duet</span>
 </div>
 </div>
 
@@ -1325,7 +1277,7 @@ A bud layout from the Bingsu collection.
 </div>
 
 <div class="bh-bud-copy">
-<p>Maecenas vitae ipsum vel urna placerat feugiat. Vivamus fermentum neque eros sollicitudin erat, sit amet fringilla mauris ipsum quis lorem. Duis viverra sem vitae lectus malesuada, vel ultrices nulla facilisis.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bud-foot">
@@ -1355,7 +1307,7 @@ A bud layout from the Bingsu collection.
 <div class="bh-bud-head">
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 5 — Quick Note</span>
 </div>
 </div>
 
@@ -1388,12 +1340,12 @@ A bud layout from the Bingsu collection.
 <div class="bh-bud-head">
 <div>
 <h1 class="bh-bud-name">Isaiah &amp; Max</h1>
-<span class="bh-bud-sub">[text]</span>
+<span class="bh-bud-sub">Variant 5 — Quick Note</span>
 </div>
 </div>
 
 <div class="bh-bud-copy">
-<p>Curabitur commodo erat vitae posuere consequat. Duis viverra sem vitae lectus malesuada, vel ultrices nulla facilisis. Morbi ultrices velit vitae feugiat tempor, velit erat vulputate arcu, vitae mattis sapien mauris eget nibh.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-bud-foot">
@@ -1414,7 +1366,7 @@ A compact reply held within four delicate crystalline corners and an open centre
 [dohtml]
 <div class="bgs bgs-bud bgs-frostpetal">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">just one more moment</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
 </div>
@@ -1429,9 +1381,9 @@ A compact reply held within four delicate crystalline corners and an open centre
 [dohtml]
 <div class="bgs bgs-bud bgs-frostpetal">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">just one more moment</div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -1446,7 +1398,7 @@ A tiny angular glass slip with a notched heading and a crisp member-colour edge.
 [dohtml]
 <div class="bgs bgs-bud bgs-icelet">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">a small forever</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
 </div>
@@ -1461,9 +1413,9 @@ A tiny angular glass slip with a notched heading and a crisp member-colour edge.
 [dohtml]
 <div class="bgs bgs-bud bgs-icelet">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">a small forever</div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -1478,7 +1430,7 @@ A low, quiet note with a broken frost baseline and a sweeping handwritten headin
 [dohtml]
 <div class="bgs bgs-bud bgs-last-snow">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">stay until the thaw</div>
 <div class="bgs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
 </div>
@@ -1493,9 +1445,9 @@ A low, quiet note with a broken frost baseline and a sweeping handwritten headin
 [dohtml]
 <div class="bgs bgs-bud bgs-last-snow">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">stay until the thaw</div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -1510,7 +1462,7 @@ A small curved dessert-glass portrait above a short reply and an understated sig
 [dohtml]
 <div class="bgs bgs-bud bgs-milky-kiss">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">close enough to melt</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -1528,12 +1480,12 @@ A small curved dessert-glass portrait above a short reply and an understated sig
 [dohtml]
 <div class="bgs bgs-bud bgs-milky-kiss">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">close enough to melt</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/e35ceac47816686c278a7ac165bab3a7/70b9785f66892c5a-b9/s540x810/2065131487d65655fd7aebb347544f85329fd090.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>
@@ -1548,7 +1500,7 @@ A portrait postage tile aligned with a flowing colour trace and a miniature lite
 [dohtml]
 <div class="bgs bgs-bud bgs-syrup-trace">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">you leave a little sweetness</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/5e0702ad4d9460939d8e5d215eebdf41/70b9785f66892c5a-bb/s540x810/40d7d4732ea502da42eeed8f99a237c19bdaa59f.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -1566,12 +1518,12 @@ A portrait postage tile aligned with a flowing colour trace and a miniature lite
 [dohtml]
 <div class="bgs bgs-bud bgs-syrup-trace">
 <a class="bgs-name" href="[url]">Isaiah &amp; Max</a>
-<div class="bgs-title">[text]</div>
+<div class="bgs-title">you leave a little sweetness</div>
 <div class="bgs-media">
 <img src="https://64.media.tumblr.com/5e0702ad4d9460939d8e5d215eebdf41/70b9785f66892c5a-bb/s540x810/40d7d4732ea502da42eeed8f99a237c19bdaa59f.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bgs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u>.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bgs-ornament" aria-hidden="true"></div>
 </div>

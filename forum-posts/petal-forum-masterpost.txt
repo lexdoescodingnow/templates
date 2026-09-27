@@ -1,6 +1,6 @@
 [h1]PETAL[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -19,8 +19,8 @@ A social layout from the Petal collection.
     </div>
     <div class="petal-post-side-info">
       <span>Leaf Entertainment</span>
-      <h3>[name]</h3>
-      <p>[text]</p>
+      <h3>Character name</h3>
+      <p>Character name</p>
       <div class="petal-post-side-stats">
         <b>4.03m</b>
         <em>followers</em>
@@ -49,8 +49,8 @@ A social layout from the Petal collection.
 
       <div class="petal-post-user">
         <div>
-          <h2>[name]</h2>
-          <span>[text]</span>
+          <h2>Character name</h2>
+          <span>Character name</span>
         </div>
         <b>Leaf verified</b>
       </div>
@@ -81,7 +81,7 @@ A social layout from the Petal collection.
       </div>
 
       <article class="petal-post-caption">
-        <p><strong>[text]</strong> studio day in <i>Los Angeles</i>. see you soon, petals. <u>new comeback soon</u>.</p>
+        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></strong> studio day in <i>Los Angeles</i>. see you soon, petals. <u>new comeback soon</u>.</p>
       </article>
 
       <div class="petal-post-comments">
@@ -110,8 +110,8 @@ A social layout from the Petal collection.
     </div>
     <div class="petal-post-side-info">
       <span>Leaf Entertainment</span>
-      <h3>[name]</h3>
-      <p>[text]</p>
+      <h3>[NAME GOES HERE]</h3>
+      <p>Character name</p>
       <div class="petal-post-side-stats">
         <b>4.03m</b>
         <em>followers</em>
@@ -140,8 +140,8 @@ A social layout from the Petal collection.
 
       <div class="petal-post-user">
         <div>
-          <h2>[name]</h2>
-          <span>[text]</span>
+          <h2>[NAME GOES HERE]</h2>
+          <span>Character name</span>
         </div>
         <b>Leaf verified</b>
       </div>
@@ -172,13 +172,12 @@ A social layout from the Petal collection.
       </div>
 
       <article class="petal-post-caption">
-        <p><strong>[text]</strong> studio day in <i>Los Angeles</i>. see you soon, petals. <u>new comeback soon</u>.</p>
-      </article>
+<p>[TEXT GOES HERE]</p>
+</article>
 
       <div class="petal-post-comments">
-        <p><b>@leafent</b> verified on Petal by Leaf Entertainment.</p>
-        <p><b>@petalfan</b> the LA feed has been waiting for this.</p>
-      </div>
+<p>[TEXT GOES HERE]</p>
+</div>
 
       <footer class="petal-post-foot">
         <span>today, 2 minutes ago</span>
@@ -241,10 +240,10 @@ A social layout from the Petal collection.
 
         <div class="petal-meta">
           <div class="petal-name-row">
-            <h2 class="petal-name">[name]</h2>
+            <h2 class="petal-name">Character name</h2>
             <span class="petal-verified">Leaf verified</span>
           </div>
-          <span class="petal-handle">[text]</span>
+          <span class="petal-handle">@character</span>
           <p class="petal-blurb"><b>Leaf Entertainment</b> idol profile broadcasting from <i>Los Angeles</i>. Fan traffic is <u>currently trending</u>.</p>
 
           <div class="petal-profile-actions">
@@ -291,8 +290,8 @@ A social layout from the Petal collection.
     <img src="https://i.pinimg.com/736x/f9/7e/15/f97e1535c0448874a7c94ce7fa169d41.jpg" alt="Jinseok featured image">
     <div class="petal-feature-info">
       <span class="petal-feature-kicker">spotlight reel</span>
-      <h3>[name]</h3>
-      <p>[text] is live on Petal with Leaf Entertainment.</p>
+      <h3>Character name</h3>
+      <p>Character name is live on Petal with Leaf Entertainment.</p>
       <div class="petal-feature-actions">
         <span>like</span>
         <span>save</span>
@@ -353,11 +352,11 @@ A social layout from the Petal collection.
 
         <div class="petal-meta">
           <div class="petal-name-row">
-            <h2 class="petal-name">[name]</h2>
+            <h2 class="petal-name">[NAME GOES HERE]</h2>
             <span class="petal-verified">Leaf verified</span>
           </div>
-          <span class="petal-handle">[text]</span>
-          <p class="petal-blurb"><b>Leaf Entertainment</b> idol profile broadcasting from <i>Los Angeles</i>. Fan traffic is <u>currently trending</u>.</p>
+          <span class="petal-handle">@character</span>
+          <p class="petal-blurb">[TEXT GOES HERE]</p>
 
           <div class="petal-profile-actions">
             <span class="petal-action-main">following</span>
@@ -403,8 +402,8 @@ A social layout from the Petal collection.
     <img src="[url]" alt="Jinseok featured image">
     <div class="petal-feature-info">
       <span class="petal-feature-kicker">spotlight reel</span>
-      <h3>[name]</h3>
-      <p>[text] is live on Petal with Leaf Entertainment.</p>
+      <h3>[NAME GOES HERE]</h3>
+      <p>Character name is live on Petal with Leaf Entertainment.</p>
       <div class="petal-feature-actions">
         <span>like</span>
         <span>save</span>

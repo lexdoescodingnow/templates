@@ -1,6 +1,6 @@
 [h1]RASPBERRY[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A panoramic portrait inside thorn-stitched borders, a bold split heading and an 
 [dohtml]
 <div class="bh-raspberry rby-thread rby-bramble-letter">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">let me get tangled in you</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -36,16 +36,12 @@ A panoramic portrait inside thorn-stitched borders, a bold split heading and an 
 [dohtml]
 <div class="bh-raspberry rby-thread rby-bramble-letter">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">let me get tangled in you</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -60,7 +56,7 @@ A writing-led page with a broad coloured spine, a large italic heading and fine 
 [dohtml]
 <div class="bh-raspberry rby-thread rby-coulis-manuscript">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">soft words, sharp edges</div>
 <div class="rby-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -79,13 +75,9 @@ A writing-led page with a broad coloured spine, a large italic heading and fine 
 [dohtml]
 <div class="bh-raspberry rby-thread rby-coulis-manuscript">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">soft words, sharp edges</div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -100,7 +92,7 @@ A contact-sheet composition with a broad portrait, a berry-cell mosaic and a cri
 [dohtml]
 <div class="bh-raspberry rby-thread rby-drupelet-mosaic">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">all the little things</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -122,16 +114,12 @@ A contact-sheet composition with a broad portrait, a berry-cell mosaic and a cri
 [dohtml]
 <div class="bh-raspberry rby-thread rby-drupelet-mosaic">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">all the little things</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -146,7 +134,7 @@ An asymmetric editorial heading beside two offset portrait panels, with a miniat
 [dohtml]
 <div class="bh-raspberry rby-thread rby-framboise-study">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">the sweetness between us</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/278e3db30b99738c72e5aee06b455452/d787a3075cf08d99-0f/s400x600/3ba949a2081ccd8e8ea2feac8ae9c68c2576758e.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -169,17 +157,13 @@ An asymmetric editorial heading beside two offset portrait panels, with a miniat
 [dohtml]
 <div class="bh-raspberry rby-thread rby-framboise-study">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">the sweetness between us</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/278e3db30b99738c72e5aee06b455452/d787a3075cf08d99-0f/s400x600/3ba949a2081ccd8e8ea2feac8ae9c68c2576758e.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -194,7 +178,7 @@ An intimate night-letter composition with a perforated binding and a paired GIF 
 [dohtml]
 <div class="bh-raspberry rby-thread rby-rubus-nocturne">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">stay until the last light</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/278e3db30b99738c72e5aee06b455452/d787a3075cf08d99-0f/s400x600/3ba949a2081ccd8e8ea2feac8ae9c68c2576758e.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -217,17 +201,13 @@ An intimate night-letter composition with a perforated binding and a paired GIF 
 [dohtml]
 <div class="bh-raspberry rby-thread rby-rubus-nocturne">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">stay until the last light</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/278e3db30b99738c72e5aee06b455452/d787a3075cf08d99-0f/s400x600/3ba949a2081ccd8e8ea2feac8ae9c68c2576758e.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -244,7 +224,7 @@ A rounded smartphone with a beaded case edge, square contact tile and floating m
 [dohtml]
 <div class="bh-raspberry rby-comms rby-bramble-os" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">online · just for you</div>
 <div class="rby-time">00:26</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -265,15 +245,15 @@ A rounded smartphone with a beaded case edge, square contact tile and floating m
 [dohtml]
 <div class="bh-raspberry rby-comms rby-bramble-os" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">online · just for you</div>
 <div class="rby-time">00:26</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="rby-hardware" aria-hidden="true"></div>
 </div>
@@ -288,7 +268,7 @@ A horizontal chat tablet with a side camera, a wide contact bar and stacked inco
 [dohtml]
 <div class="bh-raspberry rby-comms rby-coulis-connect" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">you have my attention</div>
 <div class="rby-time">00:26</div>
 <div class="rby-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -306,12 +286,12 @@ A horizontal chat tablet with a side camera, a wide contact bar and stacked inco
 [dohtml]
 <div class="bh-raspberry rby-comms rby-coulis-connect" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">you have my attention</div>
 <div class="rby-time">00:26</div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="rby-hardware" aria-hidden="true"></div>
 </div>
@@ -326,7 +306,7 @@ A compact dual-screen clamshell with two contact stills above a ribbed hinge and
 [dohtml]
 <div class="bh-raspberry rby-comms rby-drupelet-dm" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">jian + kijoon · connected</div>
 <div class="rby-time">00:26</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -348,16 +328,16 @@ A compact dual-screen clamshell with two contact stills above a ribbed hinge and
 [dohtml]
 <div class="bh-raspberry rby-comms rby-drupelet-dm" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">jian + kijoon · connected</div>
 <div class="rby-time">00:26</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/278e3db30b99738c72e5aee06b455452/d787a3075cf08d99-0f/s400x600/3ba949a2081ccd8e8ea2feac8ae9c68c2576758e.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="rby-hardware" aria-hidden="true"></div>
 </div>
@@ -372,7 +352,7 @@ A retro candybar phone with a square display, slim contact portrait, pill naviga
 [dohtml]
 <div class="bh-raspberry rby-comms rby-framboise-fm" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">a little after midnight</div>
 <div class="rby-time">00:26</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -393,15 +373,15 @@ A retro candybar phone with a square display, slim contact portrait, pill naviga
 [dohtml]
 <div class="bh-raspberry rby-comms rby-framboise-fm" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">a little after midnight</div>
 <div class="rby-time">00:26</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="rby-hardware" aria-hidden="true"></div>
 </div>
@@ -416,7 +396,7 @@ A translucent bumper phone with a panoramic contact banner, angular message tail
 [dohtml]
 <div class="bh-raspberry rby-comms rby-thorntext" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">messages · delivered</div>
 <div class="rby-time">00:26</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -437,15 +417,15 @@ A translucent bumper phone with a panoramic contact banner, angular message tail
 [dohtml]
 <div class="bh-raspberry rby-comms rby-thorntext" data-flow="received">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">messages · delivered</div>
 <div class="rby-time">00:26</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="rby-hardware" aria-hidden="true"></div>
 </div>
@@ -462,7 +442,7 @@ A compact portrait bookmark with a thorn-stitched lower edge and short reply.
 [dohtml]
 <div class="bh-raspberry rby-bud rby-bramblekiss">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">caught on you</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -480,12 +460,12 @@ A compact portrait bookmark with a thorn-stitched lower edge and short reply.
 [dohtml]
 <div class="bh-raspberry rby-bud rby-bramblekiss">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">caught on you</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -500,7 +480,7 @@ A miniature open frame with a five-point calyx at its edge and a quiet two-line 
 [dohtml]
 <div class="bh-raspberry rby-bud rby-calyx">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">held, softly</div>
 <div class="rby-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -515,9 +495,9 @@ A miniature open frame with a five-point calyx at its edge and a quiet two-line 
 [dohtml]
 <div class="bh-raspberry rby-bud rby-calyx">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">held, softly</div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -532,7 +512,7 @@ A small stepped card with an offset heading and three member-colour droplet mark
 [dohtml]
 <div class="bh-raspberry rby-bud rby-drupe-drop">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">just a little closer</div>
 <div class="rby-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -547,9 +527,9 @@ A small stepped card with an offset heading and three member-colour droplet mark
 [dohtml]
 <div class="bh-raspberry rby-bud rby-drupe-drop">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">just a little closer</div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -564,7 +544,7 @@ A tiny horizontal slip with a seed-shaped title marker and clustered berry seal.
 [dohtml]
 <div class="bh-raspberry rby-bud rby-piplet">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">one small sweetness</div>
 <div class="rby-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -579,9 +559,9 @@ A tiny horizontal slip with a seed-shaped title marker and clustered berry seal.
 [dohtml]
 <div class="bh-raspberry rby-bud rby-piplet">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">one small sweetness</div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>
@@ -596,7 +576,7 @@ Two miniature square stills sit at opposite ends of a short central note.
 [dohtml]
 <div class="bh-raspberry rby-bud rby-raspberry-fleck">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">you, in miniature</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/278e3db30b99738c72e5aee06b455452/d787a3075cf08d99-0f/s400x600/3ba949a2081ccd8e8ea2feac8ae9c68c2576758e.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -615,13 +595,13 @@ Two miniature square stills sit at opposite ends of a short central note.
 [dohtml]
 <div class="bh-raspberry rby-bud rby-raspberry-fleck">
 <a class="rby-name" href="[url]">Jian &amp; Kijoon</a>
-<div class="rby-title">[text]</div>
+<div class="rby-title">you, in miniature</div>
 <div class="rby-media">
 <img src="https://64.media.tumblr.com/e430d3a63c22d394940394db97bee0e8/d787a3075cf08d99-40/s400x600/7251d36b57319194574408579f5429ac29084941.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/278e3db30b99738c72e5aee06b455452/d787a3075cf08d99-0f/s400x600/3ba949a2081ccd8e8ea2feac8ae9c68c2576758e.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="rby-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="rby-motif" aria-hidden="true"></div>
 </div>

@@ -1,6 +1,6 @@
 [h1]FUDGE[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ An indented literary page topped with oversized outline lettering, a block of me
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-aftermelt">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">softness has a memory</div>
 <div class="fdg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -32,13 +32,9 @@ An indented literary page topped with oversized outline lettering, a block of me
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-aftermelt">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">softness has a memory</div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -52,7 +48,7 @@ A thin foil frame around a tall portrait and a compressed heading; a tiny cocoa-
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-copper-set">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">the warmth that stays</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -73,16 +69,12 @@ A thin foil frame around a tall portrait and a compressed heading; a tiny cocoa-
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-copper-set">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">the warmth that stays</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -96,7 +88,7 @@ An open, asymmetric page with a fine marbled side panel and a large serif title 
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-marble-batch">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">some things take their time</div>
 <div class="fdg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -114,13 +106,9 @@ An open, asymmetric page with a fine marbled side panel and a large serif title 
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-marble-batch">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">some things take their time</div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -134,7 +122,7 @@ A long diagonal cutting line passes between two staggered photo tiles, with a sm
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-ribbon-knife">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">meet me in the middle</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c8c46e552c46eb3b8eab8c83fadeab25/f94511fe4ae38ee9-08/s250x400/54bca3f69b98eae5541d755ea98203dd5aa22308.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -156,17 +144,13 @@ A long diagonal cutting line passes between two staggered photo tiles, with a sm
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-ribbon-knife">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">meet me in the middle</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c8c46e552c46eb3b8eab8c83fadeab25/f94511fe4ae38ee9-08/s250x400/54bca3f69b98eae5541d755ea98203dd5aa22308.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -180,7 +164,7 @@ A scored confectionery slab: a bold condensed title, two square portraits in a s
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-softcut-atelier">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">cut from the same sweetness</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c8c46e552c46eb3b8eab8c83fadeab25/f94511fe4ae38ee9-08/s250x400/54bca3f69b98eae5541d755ea98203dd5aa22308.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -202,17 +186,13 @@ A scored confectionery slab: a bold condensed title, two square portraits in a s
 [dohtml]
 <div class="bh-fudge fdg-thread fdg-softcut-atelier">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">cut from the same sweetness</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c8c46e552c46eb3b8eab8c83fadeab25/f94511fe4ae38ee9-08/s250x400/54bca3f69b98eae5541d755ea98203dd5aa22308.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -228,7 +208,7 @@ A slim transparent-edge smartphone with an offset camera strip, a ticket-like co
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-confection-os" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">one new conversation</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -246,12 +226,12 @@ A slim transparent-edge smartphone with an offset camera strip, a ticket-like co
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-confection-os" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">one new conversation</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="fdg-controls" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -266,7 +246,7 @@ A flat-edged smartphone with a square camera aperture, contact portrait, incomin
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-fudgephone" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">online · just for you</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -287,15 +267,15 @@ A flat-edged smartphone with a square camera aperture, contact portrait, incomin
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-fudgephone" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">online · just for you</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="fdg-controls" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -310,7 +290,7 @@ A compact candybar handset with a speaker grille, inset chat screen, broad clock
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-setline" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">private line · connected</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -328,12 +308,12 @@ A compact candybar handset with a speaker grille, inset chat screen, broad clock
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-setline" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">private line · connected</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="fdg-controls" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -348,7 +328,7 @@ An upright keyboard phone with a small square portrait, a recessed conversation 
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-sugarbyte" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">typing something sweet</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -369,15 +349,15 @@ An upright keyboard phone with a small square portrait, a recessed conversation 
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-sugarbyte" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">typing something sweet</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="fdg-controls" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -392,7 +372,7 @@ A book-fold phone: stacked contact windows occupy one screen, messages fill the 
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-twin-temper" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">two here · one conversation</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -414,16 +394,16 @@ A book-fold phone: stacked contact windows occupy one screen, messages fill the 
 [dohtml]
 <div class="bh-fudge fdg-comms fdg-twin-temper" data-flow="received">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">two here · one conversation</div>
 <div class="fdg-time">21:08</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c8c46e552c46eb3b8eab8c83fadeab25/f94511fe4ae38ee9-08/s250x400/54bca3f69b98eae5541d755ea98203dd5aa22308.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="fdg-controls" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -440,7 +420,7 @@ A miniature foil-inspired note with short crimped edges, a staggered signature a
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-crinkle">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">something worth unwrapping</div>
 <div class="fdg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -454,9 +434,9 @@ A miniature foil-inspired note with short crimped edges, a staggered signature a
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-crinkle">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">something worth unwrapping</div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -470,7 +450,7 @@ A tiny square reply with an extruded member-colour edge, a scored corner and a c
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-cubit">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">a small piece of us</div>
 <div class="fdg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -484,9 +464,9 @@ A tiny square reply with an extruded member-colour edge, a scored corner and a c
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-cubit">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">a small piece of us</div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -500,7 +480,7 @@ A low, wide reply with a notched flavour tab, a condensed heading and a member-c
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-niblet">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">just one more word</div>
 <div class="fdg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -514,9 +494,9 @@ A low, wide reply with a notched flavour tab, a condensed heading and a member-c
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-niblet">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">just one more word</div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -530,7 +510,7 @@ A compact portrait-led note with a fine vertical rule and three small salt-cryst
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-saltpin">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">keep this little moment</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -547,12 +527,12 @@ A compact portrait-led note with a fine vertical rule and three small salt-cryst
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-saltpin">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">keep this little moment</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -566,7 +546,7 @@ Two narrow square-edged portraits bracket a small shared title above a brief rep
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-two-cuts">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">one for me, one for you</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c8c46e552c46eb3b8eab8c83fadeab25/f94511fe4ae38ee9-08/s250x400/54bca3f69b98eae5541d755ea98203dd5aa22308.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -584,13 +564,13 @@ Two narrow square-edged portraits bracket a small shared title above a brief rep
 [dohtml]
 <div class="bh-fudge fdg-bud fdg-two-cuts">
 <a class="fdg-name" href="[url]">Ren &amp; Tsubasa</a>
-<div class="fdg-title">[text]</div>
+<div class="fdg-title">one for me, one for you</div>
 <div class="fdg-media">
 <img src="https://64.media.tumblr.com/9528233ef641e2d59c5de83af0ee6ccc/bdfe4d79b5a3d85d-81/s400x600/26e2fc837e2903adac6a3e443ce9d04468f39957.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c8c46e552c46eb3b8eab8c83fadeab25/f94511fe4ae38ee9-08/s250x400/54bca3f69b98eae5541d755ea98203dd5aa22308.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="fdg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 

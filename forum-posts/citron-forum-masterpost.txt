@@ -1,6 +1,6 @@
 [h1]CITRON[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A spacious botanical journal with a split title band, embossed rind curves and a
 [dohtml]
 <div class="bh-citron ctn-thread ctn-albedo-archive">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">the softest part of anything</div>
 <div class="ctn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -33,13 +33,9 @@ A spacious botanical journal with a split title band, embossed rind curves and a
 [dohtml]
 <div class="bh-citron ctn-thread ctn-albedo-archive">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">the softest part of anything</div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -54,7 +50,7 @@ A perfumer's specimen plate with a giant serif title, paired inset portraits and
 [dohtml]
 <div class="bh-citron ctn-thread ctn-cedrat-atelier">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">something bright beneath the skin</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -77,17 +73,13 @@ A perfumer's specimen plate with a giant serif title, paired inset portraits and
 [dohtml]
 <div class="bh-citron ctn-thread ctn-cedrat-atelier">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">something bright beneath the skin</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -102,7 +94,7 @@ A perfume-label composition with a wide portrait, a formal oval title cartouche 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-pith-parfum">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">leave a little of yourself with me</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -124,16 +116,12 @@ A perfume-label composition with a wide portrait, a formal oval title cartouche 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-pith-parfum">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">leave a little of yourself with me</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -148,7 +136,7 @@ A sculptural cell-window diptych with curved inner corners, a side-set caption a
 [dohtml]
 <div class="bh-citron ctn-thread ctn-vesicle-verse">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">a thousand little ways to stay</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -171,17 +159,13 @@ A sculptural cell-window diptych with curved inner corners, a side-set caption a
 [dohtml]
 <div class="bh-citron ctn-thread ctn-vesicle-verse">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">a thousand little ways to stay</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -196,7 +180,7 @@ An energetic typeset page with a narrow portrait column, oversized leading text 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-zeste-manifesto">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">a beautiful kind of sharp</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -218,16 +202,12 @@ An energetic typeset page with a narrow portrait column, oversized leading text 
 [dohtml]
 <div class="bh-citron ctn-thread ctn-zeste-manifesto">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">a beautiful kind of sharp</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -244,7 +224,7 @@ A landscape pocket communicator with paired contact tabs, a status rail and a ti
 [dohtml]
 <div class="bh-citron ctn-comms ctn-cedra-sync" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">ben + vince · connected</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -266,16 +246,16 @@ A landscape pocket communicator with paired contact tabs, a status rail and a ti
 [dohtml]
 <div class="bh-citron ctn-comms ctn-cedra-sync" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">ben + vince · connected</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ctn-hardware" aria-hidden="true"></div>
 </div>
@@ -290,7 +270,7 @@ A curved glass phone with a full-width photo card, floating status capsule and l
 [dohtml]
 <div class="bh-citron ctn-comms ctn-citros" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">here, whenever you are</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -311,15 +291,15 @@ A curved glass phone with a full-width photo card, floating status capsule and l
 [dohtml]
 <div class="bh-citron ctn-comms ctn-citros" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">here, whenever you are</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ctn-hardware" aria-hidden="true"></div>
 </div>
@@ -334,7 +314,7 @@ A soft square smart communicator with a small contact tile, inset chat display a
 [dohtml]
 <div class="bh-citron ctn-comms ctn-pithchat" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">private messages</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -355,15 +335,15 @@ A soft square smart communicator with a small contact tile, inset chat display a
 [dohtml]
 <div class="bh-citron ctn-comms ctn-pithchat" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">private messages</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ctn-hardware" aria-hidden="true"></div>
 </div>
@@ -378,7 +358,7 @@ A minimalist e-paper phone with a large contact name, squared bubbles and stippl
 [dohtml]
 <div class="bh-citron ctn-comms ctn-rindr" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">one unread conversation</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -396,12 +376,12 @@ A minimalist e-paper phone with a large contact name, squared bubbles and stippl
 [dohtml]
 <div class="bh-citron ctn-comms ctn-rindr" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">one unread conversation</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ctn-hardware" aria-hidden="true"></div>
 </div>
@@ -416,7 +396,7 @@ A slim modern phone with an off-centre camera pill, round contact portrait and w
 [dohtml]
 <div class="bh-citron ctn-comms ctn-zestline" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">online · a little closer</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -437,15 +417,15 @@ A slim modern phone with an off-centre camera pill, round contact portrait and w
 [dohtml]
 <div class="bh-citron ctn-comms ctn-zestline" data-flow="received">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">online · a little closer</div>
 <div class="ctn-time">14:08</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ctn-hardware" aria-hidden="true"></div>
 </div>
@@ -462,7 +442,7 @@ A miniature scent label with concentric rounded corners and an off-centre citron
 [dohtml]
 <div class="bh-citron ctn-bud ctn-oilspot">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">you linger</div>
 <div class="ctn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -477,9 +457,9 @@ A miniature scent label with concentric rounded corners and an off-centre citron
 [dohtml]
 <div class="bh-citron ctn-bud ctn-oilspot">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">you linger</div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -494,7 +474,7 @@ A round little portrait beside a finely ruled title and a short open reply.
 [dohtml]
 <div class="bh-citron ctn-bud ctn-pithlet">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">a softer kind of sweet</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -512,12 +492,12 @@ A round little portrait beside a finely ruled title and a short open reply.
 [dohtml]
 <div class="bh-citron ctn-bud ctn-pithlet">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">a softer kind of sweet</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -532,7 +512,7 @@ A low horizontal note with a coloured inset nameplate and a finely ridged right 
 [dohtml]
 <div class="bh-citron ctn-bud ctn-rindscript">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">right beneath the surface</div>
 <div class="ctn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -547,9 +527,9 @@ A low horizontal note with a coloured inset nameplate and a finely ridged right 
 [dohtml]
 <div class="bh-citron ctn-bud ctn-rindscript">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">right beneath the surface</div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -564,7 +544,7 @@ Two tiny asymmetric cell portraits beside a shared heading, above a compact repl
 [dohtml]
 <div class="bh-citron ctn-bud ctn-vesicle-kiss">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">a little piece of us</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -583,13 +563,13 @@ Two tiny asymmetric cell portraits beside a shared heading, above a compact repl
 [dohtml]
 <div class="bh-citron ctn-bud ctn-vesicle-kiss">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">a little piece of us</div>
 <div class="ctn-media">
 <img src="https://64.media.tumblr.com/9a76147c1d2752e8e74551a4dad8aad1/8cab4836935205d8-ac/s400x600/14d549ecef17846599c3ac258480bcccd7cc5118.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/819fd996bd8654da8843cb036042a29c/f8b7926ec69092f5-a1/s400x600/c30c0438621ecd7f1a7796c5e3184d0c9215af11.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>
@@ -604,7 +584,7 @@ A tiny typeset note with an oversized opening letter and three oil-gland marks.
 [dohtml]
 <div class="bh-citron ctn-bud ctn-zestmark">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">small, but full of feeling</div>
 <div class="ctn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -619,9 +599,9 @@ A tiny typeset note with an oversized opening letter and three oil-gland marks.
 [dohtml]
 <div class="bh-citron ctn-bud ctn-zestmark">
 <a class="ctn-name" href="[url]">Ben &amp; Vince</a>
-<div class="ctn-title">[text]</div>
+<div class="ctn-title">small, but full of feeling</div>
 <div class="ctn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ctn-motif" aria-hidden="true"></div>
 </div>

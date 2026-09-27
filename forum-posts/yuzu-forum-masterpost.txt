@@ -1,6 +1,6 @@
 [h1]YUZU[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ Two photographs nested inside a folded cloth parcel, diagonal member-colour corn
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-knot-and-peel">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">all the things we carry</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/fd3c5001c30a1fcce9a8d4dff879d847/2701ec2b2d9b0c13-2a/s400x600/8d4a757f104e3fc5d88c3e55da19f15f9e02b362.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -37,17 +37,13 @@ Two photographs nested inside a folded cloth parcel, diagonal member-colour corn
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-knot-and-peel">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">all the things we carry</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/fd3c5001c30a1fcce9a8d4dff879d847/2701ec2b2d9b0c13-2a/s400x600/8d4a757f104e3fc5d88c3e55da19f15f9e02b362.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -62,7 +58,7 @@ A tall photographic bookmark crossing an asymmetrical paper jacket, paired with 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-komorebi-fold">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">where the light finds us</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -84,16 +80,12 @@ A tall photographic bookmark crossing an asymmetrical paper jacket, paired with 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-komorebi-fold">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">where the light finds us</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -108,7 +100,7 @@ A fruit-crate cover with a bold packing-label title, unequal photo compartments 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-orchard-parcel">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">handle with a little tenderness</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/fd3c5001c30a1fcce9a8d4dff879d847/2701ec2b2d9b0c13-2a/s400x600/8d4a757f104e3fc5d88c3e55da19f15f9e02b362.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -131,17 +123,13 @@ A fruit-crate cover with a bold packing-label title, unequal photo compartments 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-orchard-parcel">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">handle with a little tenderness</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/fd3c5001c30a1fcce9a8d4dff879d847/2701ec2b2d9b0c13-2a/s400x600/8d4a757f104e3fc5d88c3e55da19f15f9e02b362.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -156,7 +144,7 @@ A writing-led accordion folio with scored folds, a sideways signature tab and a 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-pulp-poetry">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">something bright between the lines</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -175,13 +163,9 @@ A writing-led accordion folio with scored folds, a sideways signature tab and a 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-pulp-poetry">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">something bright between the lines</div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -196,7 +180,7 @@ A tiled bathhouse threshold with a low panoramic portrait, a tiny floating yuzu 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-winter-bath">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">warmth, in the middle of winter</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -218,16 +202,12 @@ A tiled bathhouse threshold with a low panoramic portrait, a tiny floating yuzu 
 [dohtml]
 <div class="bh-yuzu yzu-thread yzu-winter-bath">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">warmth, in the middle of winter</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -244,7 +224,7 @@ A water-resistant phone with a tall carry loop, wide contact photograph and a ri
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-bathlight" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">one new conversation</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -265,15 +245,15 @@ A water-resistant phone with a tall carry loop, wide contact photograph and a ri
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-bathlight" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">one new conversation</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="yzu-hardware" aria-hidden="true"></div>
 </div>
@@ -288,7 +268,7 @@ A wide pocket pager with a left readout rail, squared message display and two ra
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-peel-pager" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">a little message for you</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -306,12 +286,12 @@ A wide pocket pager with a left readout rail, squared message display and two ra
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-peel-pager" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">a little message for you</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="yzu-hardware" aria-hidden="true"></div>
 </div>
@@ -326,7 +306,7 @@ A vertical folding handset with a double-photo cover, exposed hinge bar and a se
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-pulp-flip" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">connected · stay a while</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -348,16 +328,16 @@ A vertical folding handset with a double-photo cover, exposed hinge bar and a se
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-pulp-flip" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">connected · stay a while</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/fd3c5001c30a1fcce9a8d4dff879d847/2701ec2b2d9b0c13-2a/s400x600/8d4a757f104e3fc5d88c3e55da19f15f9e02b362.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="yzu-hardware" aria-hidden="true"></div>
 </div>
@@ -372,7 +352,7 @@ A tiled smartphone with a square contact photo, a fine ceramic bezel and softly 
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-yuzen" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">online · just us</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -393,15 +373,15 @@ A tiled smartphone with a square contact photo, a fine ceramic bezel and softly 
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-yuzen" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">online · just us</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="yzu-hardware" aria-hidden="true"></div>
 </div>
@@ -416,7 +396,7 @@ A square retro slide-out messenger with an inset text screen, coloured corner sc
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-zestdeck" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">private messages</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -434,12 +414,12 @@ A square retro slide-out messenger with an inset text screen, coloured corner sc
 [dohtml]
 <div class="bh-yuzu yzu-comms yzu-zestdeck" data-flow="received">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">private messages</div>
 <div class="yzu-time">20:16</div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="yzu-hardware" aria-hidden="true"></div>
 </div>
@@ -456,7 +436,7 @@ A slim tear-off slip with an offset title, three tiny fruit marks and a perforat
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-afterzest">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">the sweetness that stays</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -471,9 +451,9 @@ A slim tear-off slip with an offset title, three tiny fruit marks and a perforat
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-afterzest">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">the sweetness that stays</div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -488,7 +468,7 @@ A tiny open note held between curled peel brackets, with a softly indented line 
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-peel-petal">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">a softer kind of bright</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -503,9 +483,9 @@ A tiny open note held between curled peel brackets, with a softly indented line 
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-peel-petal">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">a softer kind of bright</div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -520,7 +500,7 @@ A miniature tiled corner card with a seed-shaped punctuation mark and a crisp li
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-pipnote">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">just a little hello</div>
 <div class="yzu-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -535,9 +515,9 @@ A miniature tiled corner card with a seed-shaped punctuation mark and a crisp li
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-pipnote">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">just a little hello</div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -552,7 +532,7 @@ A narrow portrait tucked into a folded corner pocket, with a compact name tab an
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-rindlet">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">close enough to keep</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -570,12 +550,12 @@ A narrow portrait tucked into a folded corner pocket, with a compact name tab an
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-rindlet">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">close enough to keep</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>
@@ -590,7 +570,7 @@ Two miniature photographs wrapped into one cloth parcel, a small crossed knot an
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-yuzu-musubi">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">tied to you</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/fd3c5001c30a1fcce9a8d4dff879d847/2701ec2b2d9b0c13-2a/s400x600/8d4a757f104e3fc5d88c3e55da19f15f9e02b362.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -609,13 +589,13 @@ Two miniature photographs wrapped into one cloth parcel, a small crossed knot an
 [dohtml]
 <div class="bh-yuzu yzu-bud yzu-yuzu-musubi">
 <a class="yzu-name" href="[url]">Cole &amp; Jules</a>
-<div class="yzu-title">[text]</div>
+<div class="yzu-title">tied to you</div>
 <div class="yzu-media">
 <img src="https://64.media.tumblr.com/5b5254f1317679b5137b5dd271906430/b91699b6ee1c832d-ef/s540x810/16e32033f0478a89109434662a659fec177343f5.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/fd3c5001c30a1fcce9a8d4dff879d847/2701ec2b2d9b0c13-2a/s400x600/8d4a757f104e3fc5d88c3e55da19f15f9e02b362.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="yzu-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="yzu-motif" aria-hidden="true"></div>
 </div>

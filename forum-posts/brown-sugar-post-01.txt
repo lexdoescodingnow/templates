@@ -1,6 +1,6 @@
 [h1]BROWN SUGAR[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ Faceted portrait, generous serif title, diagonal crystal seam.
 [dohtml]
 <div class="bh-bs bs-thread bs-demerara-drift">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">a little closer to home</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
@@ -37,16 +37,12 @@ Faceted portrait, generous serif title, diagonal crystal seam.
 [dohtml]
 <div class="bh-bs bs-thread bs-demerara-drift">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">a little closer to home</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-drift" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -61,7 +57,7 @@ Narrow portrait spine, looping molasses trace and long letter.
 [dohtml]
 <div class="bh-bs bs-thread bs-molasses-manuscript">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">you linger in everything</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
@@ -83,16 +79,12 @@ Narrow portrait spine, looping molasses trace and long letter.
 [dohtml]
 <div class="bh-bs bs-thread bs-molasses-manuscript">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">you linger in everything</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-trace" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -107,7 +99,7 @@ Pressed slab, stacked type, granular cut edges and recessed writing.
 [dohtml]
 <div class="bh-bs bs-thread bs-muscovado-press">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">all the ways we soften</div>
 <div class="bs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -126,13 +118,9 @@ Pressed slab, stacked type, granular cut edges and recessed writing.
 [dohtml]
 <div class="bh-bs bs-thread bs-muscovado-press">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">all the ways we soften</div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-stamp" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -147,7 +135,7 @@ Centred italic heading, shallow portrait, grain margins and scoop finish.
 [dohtml]
 <div class="bh-bs bs-thread bs-soft-brown-reverie">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">stay until the morning</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
@@ -169,16 +157,12 @@ Centred italic heading, shallow portrait, grain margins and scoop finish.
 [dohtml]
 <div class="bh-bs bs-thread bs-soft-brown-reverie">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">stay until the morning</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-scoop" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -193,7 +177,7 @@ Stepped portrait tiles, stair-set heading and wide writing terrace.
 [dohtml]
 <div class="bh-bs bs-thread bs-turbinado-terrace">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">we found our own rhythm</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 <img src="https://64.media.tumblr.com/d08cc3438ca4fa2c3d79c8772d5e08a4/1756d5eafa32a2f2-6b/s250x400/39763568c9dc2897ba68eb9a28a4ec7699eaa01e.gifv" alt="Character GIF" style="object-position:50% 40%">
@@ -216,17 +200,13 @@ Stepped portrait tiles, stair-set heading and wide writing terrace.
 [dohtml]
 <div class="bh-bs bs-thread bs-turbinado-terrace">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">we found our own rhythm</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 <img src="https://64.media.tumblr.com/d08cc3438ca4fa2c3d79c8772d5e08a4/1756d5eafa32a2f2-6b/s250x400/39763568c9dc2897ba68eb9a28a4ec7699eaa01e.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-terrace" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -243,7 +223,7 @@ Portrait clamshell with a double hinge and navigation key.
 [dohtml]
 <div class="bh-bs bs-comms bs-caster-call" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">available</div>
 <div class="bs-time">21:08</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
@@ -264,15 +244,15 @@ Portrait clamshell with a double hinge and navigation key.
 [dohtml]
 <div class="bh-bs bs-comms bs-caster-call" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">available</div>
 <div class="bs-time">21:08</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-hinge" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -287,7 +267,7 @@ Paired-contact phone with crystal windows and a message timeline.
 [dohtml]
 <div class="bh-bs bs-comms bs-duo-crystal" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">our little conversation</div>
 <div class="bs-time">21:08</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
@@ -309,16 +289,16 @@ Paired-contact phone with crystal windows and a message timeline.
 [dohtml]
 <div class="bh-bs bs-comms bs-duo-crystal" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">our little conversation</div>
 <div class="bs-time">21:08</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 <img src="https://64.media.tumblr.com/d08cc3438ca4fa2c3d79c8772d5e08a4/1756d5eafa32a2f2-6b/s250x400/39763568c9dc2897ba68eb9a28a4ec7699eaa01e.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-lens" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -333,7 +313,7 @@ Angular touch phone with a square contact portrait.
 [dohtml]
 <div class="bh-bs bs-comms bs-grainline" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">here with you</div>
 <div class="bs-time">21:08</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
@@ -354,15 +334,15 @@ Angular touch phone with a square contact portrait.
 [dohtml]
 <div class="bh-bs bs-comms bs-grainline" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">here with you</div>
 <div class="bs-time">21:08</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-camera" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -377,7 +357,7 @@ Landscape pocket messenger with a vertical clock and small keyboard.
 [dohtml]
 <div class="bh-bs bs-comms bs-molassenger" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">private messages</div>
 <div class="bs-time">21:08</div>
 <div class="bs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -395,12 +375,12 @@ Landscape pocket messenger with a vertical clock and small keyboard.
 [dohtml]
 <div class="bh-bs bs-comms bs-molassenger" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">private messages</div>
 <div class="bs-time">21:08</div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-keyboard" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -415,7 +395,7 @@ Square handheld terminal with a rounded display and monospace messages.
 [dohtml]
 <div class="bh-bs bs-comms bs-treacle-terminal" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">connection established</div>
 <div class="bs-time">21:08</div>
 <div class="bs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -433,12 +413,12 @@ Square handheld terminal with a rounded display and monospace messages.
 [dohtml]
 <div class="bh-bs bs-comms bs-treacle-terminal" data-flow="received">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">connection established</div>
 <div class="bs-time">21:08</div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-keys" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -455,7 +435,7 @@ A broad miniature reply with overlapping portrait tiles beneath.
 [dohtml]
 <div class="bh-bs bs-bud bs-brown-kiss">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">just like that</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 <img src="https://64.media.tumblr.com/d08cc3438ca4fa2c3d79c8772d5e08a4/1756d5eafa32a2f2-6b/s250x400/39763568c9dc2897ba68eb9a28a4ec7699eaa01e.gifv" alt="Character GIF" style="object-position:50% 40%">
@@ -474,13 +454,13 @@ A broad miniature reply with overlapping portrait tiles beneath.
 [dohtml]
 <div class="bh-bs bs-bud bs-brown-kiss">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">just like that</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 <img src="https://64.media.tumblr.com/d08cc3438ca4fa2c3d79c8772d5e08a4/1756d5eafa32a2f2-6b/s250x400/39763568c9dc2897ba68eb9a28a4ec7699eaa01e.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-kiss" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -495,7 +475,7 @@ Notched inset label with a slim name band.
 [dohtml]
 <div class="bh-bs bs-bud bs-crumbscript">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">something worth keeping</div>
 <div class="bs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -510,9 +490,9 @@ Notched inset label with a slim name band.
 [dohtml]
 <div class="bh-bs bs-bud bs-crumbscript">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">something worth keeping</div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-notch" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -527,7 +507,7 @@ Double corner binding and three scattered grains.
 [dohtml]
 <div class="bh-bs bs-bud bs-grainlet">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">one small sweetness</div>
 <div class="bs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -542,9 +522,9 @@ Double corner binding and three scattered grains.
 [dohtml]
 <div class="bh-bs bs-bud bs-grainlet">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">one small sweetness</div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-grain" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -559,7 +539,7 @@ Quiet italic note and three tilted crystal tiles.
 [dohtml]
 <div class="bh-bs bs-bud bs-last-crystal">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">a trace of us</div>
 <div class="bs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -574,9 +554,9 @@ Quiet italic note and three tilted crystal tiles.
 [dohtml]
 <div class="bh-bs bs-bud bs-last-crystal">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">a trace of us</div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-last" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -591,7 +571,7 @@ A tiny faceted portrait pinned beside a short title.
 [dohtml]
 <div class="bh-bs bs-bud bs-sugar-pin">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">thinking of you</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
@@ -609,12 +589,12 @@ A tiny faceted portrait pinned beside a short title.
 [dohtml]
 <div class="bh-bs bs-bud bs-sugar-pin">
 <a class="bs-name" href="[url]">Chanwoo &amp; Taehwan</a>
-<div class="bs-title">[text]</div>
+<div class="bs-title">thinking of you</div>
 <div class="bs-media">
 <img src="https://64.media.tumblr.com/b65212944048e51a93c73a347cdd093d/1756d5eafa32a2f2-88/s250x400/55ff3b94aa547a0542273ea7167af45770c5a344.gifv" alt="Character GIF" style="object-position:50% 40%">
 </div>
 <div class="bs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bs-ornament bs-pin" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>

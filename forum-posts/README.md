@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-860 distinct templates across 54 collections. Each live preview is immediately followed by its native forum code box.
+860 distinct templates across 54 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 

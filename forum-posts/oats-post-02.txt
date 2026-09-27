@@ -1,205 +1,11 @@
 [h1]OATS[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
 Click-to-copy on this forum uses the skin’s native code-box controls; you can also select and copy the code manually.
 
-
-[size=4][b]17 · Kernel OS[/b][/size]
-A compact handheld terminal with twin small contact windows, a recessed screen and a row of oval navigation keys.
-
-[dohtml]
-<div class="bh-oats oat-comms oat-kernel-os" data-flow="received">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-time">07:24</div>
-<div class="oat-media">
-<img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
-<img src="https://64.media.tumblr.com/98bd31f6306db4d06bb0bc4ef06e6c94/d4e5b75f44c65150-17/s400x600/0af9ecc9bc3041cdb831b0fe2f58dab52f8d5c58.gifv" alt="Character GIF" style="object-position:50% 45%">
-</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
-</div>
-<div class="oat-hardware" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@1de2df3cac903652be8e4cc7bd18480bf66440b9/oats/oats-harvest-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-oats oat-comms oat-kernel-os" data-flow="received">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-time">07:24</div>
-<div class="oat-media">
-<img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
-<img src="https://64.media.tumblr.com/98bd31f6306db4d06bb0bc4ef06e6c94/d4e5b75f44c65150-17/s400x600/0af9ecc9bc3041cdb831b0fe2f58dab52f8d5c58.gifv" alt="Character GIF" style="object-position:50% 45%">
-</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
-</div>
-<div class="oat-hardware" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@1de2df3cac903652be8e4cc7bd18480bf66440b9/oats/oats-harvest-v1.css">
-[/dohtml]
-[/code]
-
-[size=4][b]18 · Overnight Sync[/b][/size]
-A bedside message clock with a panoramic contact image, an oversized time display, soft notification cards and a low speaker grille.
-
-[dohtml]
-<div class="bh-oats oat-comms oat-overnight-sync" data-flow="received">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-time">07:24</div>
-<div class="oat-media">
-<img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
-</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
-</div>
-<div class="oat-hardware" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@1de2df3cac903652be8e4cc7bd18480bf66440b9/oats/oats-harvest-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-oats oat-comms oat-overnight-sync" data-flow="received">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-time">07:24</div>
-<div class="oat-media">
-<img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
-</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
-</div>
-<div class="oat-hardware" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@1de2df3cac903652be8e4cc7bd18480bf66440b9/oats/oats-harvest-v1.css">
-[/dohtml]
-[/code]
-
-[size=4][b]19 · Rolled Signal[/b][/size]
-A rollable electronic screen held between two cylindrical end bars, with wide incoming messages and a narrow side control.
-
-[dohtml]
-<div class="bh-oats oat-comms oat-rolled-signal" data-flow="received">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-time">07:24</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
-</div>
-<div class="oat-hardware" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@1de2df3cac903652be8e4cc7bd18480bf66440b9/oats/oats-harvest-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-oats oat-comms oat-rolled-signal" data-flow="received">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-time">07:24</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
-</div>
-<div class="oat-hardware" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@1de2df3cac903652be8e4cc7bd18480bf66440b9/oats/oats-harvest-v1.css">
-[/dohtml]
-[/code]
-
-[size=6][b]BUDS[/b][/size]
-
-[size=4][b]20 · Aftergrain[/b][/size]
-A miniature horizontal note with a three-colour stitched top edge and a small offset signature panel.
-
-[dohtml]
-<div class="bh-oats-millhouse oat-bud oat-aftergrain">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<div class="oat-detail" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@d82f7e7ae2b07f805fb2be0976597e72fc90928b/oats/millhouse/oats-millhouse-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-oats-millhouse oat-bud oat-aftergrain">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<div class="oat-detail" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@d82f7e7ae2b07f805fb2be0976597e72fc90928b/oats/millhouse/oats-millhouse-v1.css">
-[/dohtml]
-[/code]
-
-[size=4][b]21 · Branlet[/b][/size]
-A short square note with a scattered-flake corner, a divided title band and a crisp lower rule.
-
-[dohtml]
-<div class="bh-oats-millhouse oat-bud oat-branlet">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<div class="oat-detail" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@d82f7e7ae2b07f805fb2be0976597e72fc90928b/oats/millhouse/oats-millhouse-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-oats-millhouse oat-bud oat-branlet">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<div class="oat-detail" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@d82f7e7ae2b07f805fb2be0976597e72fc90928b/oats/millhouse/oats-millhouse-v1.css">
-[/dohtml]
-[/code]
 
 [size=4][b]22 · Flakefold[/b][/size]
 Two tiny pressed-oat portraits share a folded tab above a compact open reply.
@@ -207,7 +13,7 @@ Two tiny pressed-oat portraits share a folded tab above a compact open reply.
 [dohtml]
 <div class="bh-oats-millhouse oat-bud oat-flakefold">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">a little of us both</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/98bd31f6306db4d06bb0bc4ef06e6c94/d4e5b75f44c65150-17/s400x600/0af9ecc9bc3041cdb831b0fe2f58dab52f8d5c58.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -226,13 +32,13 @@ Two tiny pressed-oat portraits share a folded tab above a compact open reply.
 [dohtml]
 <div class="bh-oats-millhouse oat-bud oat-flakefold">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">a little of us both</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/98bd31f6306db4d06bb0bc4ef06e6c94/d4e5b75f44c65150-17/s400x600/0af9ecc9bc3041cdb831b0fe2f58dab52f8d5c58.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-detail" aria-hidden="true"></div>
 </div>
@@ -247,7 +53,7 @@ A miniature reply inside a grain-like frame, with a small indented seam and a sh
 [dohtml]
 <div class="bh-oats-millhouse oat-bud oat-groatlet">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">one small beginning</div>
 <div class="oat-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -262,9 +68,9 @@ A miniature reply inside a grain-like frame, with a small indented seam and a sh
 [dohtml]
 <div class="bh-oats-millhouse oat-bud oat-groatlet">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">one small beginning</div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-detail" aria-hidden="true"></div>
 </div>
@@ -279,7 +85,7 @@ A tiny portrait peeks from a split sleeve beside a compact reply and a narrow me
 [dohtml]
 <div class="bh-oats-millhouse oat-bud oat-husk">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">held in the little things</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -297,12 +103,12 @@ A tiny portrait peeks from a split sleeve beside a compact reply and a narrow me
 [dohtml]
 <div class="bh-oats-millhouse oat-bud oat-husk">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">held in the little things</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-detail" aria-hidden="true"></div>
 </div>
@@ -317,7 +123,7 @@ A small folded-paper reply with three stitched colour bars and an angled upper c
 [dohtml]
 <div class="bh-oats oat-bud oat-chafflet">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">something to keep</div>
 <div class="oat-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -332,9 +138,9 @@ A small folded-paper reply with three stitched colour bars and an angled upper c
 [dohtml]
 <div class="bh-oats oat-bud oat-chafflet">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">something to keep</div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-mark" aria-hidden="true"></div>
 </div>
@@ -349,7 +155,7 @@ A compact oval-ended note with a tiny falling grain motif, a centred name and a 
 [dohtml]
 <div class="bh-oats oat-bud oat-floret">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">just a little longer</div>
 <div class="oat-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -364,9 +170,9 @@ A compact oval-ended note with a tiny falling grain motif, a centred name and a 
 [dohtml]
 <div class="bh-oats oat-bud oat-floret">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">just a little longer</div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-mark" aria-hidden="true"></div>
 </div>
@@ -381,7 +187,7 @@ A miniature two-column reply with a squared portrait tile and a member-colour bo
 [dohtml]
 <div class="bh-oats oat-bud oat-groat">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">the smallest good thing</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -399,12 +205,12 @@ A miniature two-column reply with a squared portrait tile and a member-colour bo
 [dohtml]
 <div class="bh-oats oat-bud oat-groat">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">the smallest good thing</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-mark" aria-hidden="true"></div>
 </div>
@@ -419,7 +225,7 @@ A notchless smartphone with a square contact portrait, short grain-shaped speake
 [dohtml]
 <div class="bh-oats oat-comms oat-groatline" data-flow="received">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">online · good morning</div>
 <div class="oat-time">07:24</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -440,15 +246,13 @@ A notchless smartphone with a square contact portrait, short grain-shaped speake
 [dohtml]
 <div class="bh-oats oat-comms oat-groatline" data-flow="received">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">online · good morning</div>
 <div class="oat-time">07:24</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-hardware" aria-hidden="true"></div>
 </div>
@@ -463,7 +267,7 @@ A tiny asymmetric note with a tapered corner, a narrow side title and three roll
 [dohtml]
 <div class="bh-oats oat-bud oat-milkdrop">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">softly, all at once</div>
 <div class="oat-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -478,9 +282,9 @@ A tiny asymmetric note with a tapered corner, a narrow side title and three roll
 [dohtml]
 <div class="bh-oats oat-bud oat-milkdrop">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">softly, all at once</div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-mark" aria-hidden="true"></div>
 </div>
@@ -495,7 +299,7 @@ A short reply above two tilted clipped portrait tiles, finished with a small nam
 [dohtml]
 <div class="bh-oats oat-bud oat-twin-flakes">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">side by side, quietly</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/98bd31f6306db4d06bb0bc4ef06e6c94/d4e5b75f44c65150-17/s400x600/0af9ecc9bc3041cdb831b0fe2f58dab52f8d5c58.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -514,13 +318,13 @@ A short reply above two tilted clipped portrait tiles, finished with a small nam
 [dohtml]
 <div class="bh-oats oat-bud oat-twin-flakes">
 <a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">[text]</div>
+<div class="oat-title">side by side, quietly</div>
 <div class="oat-media">
 <img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/98bd31f6306db4d06bb0bc4ef06e6c94/d4e5b75f44c65150-17/s400x600/0af9ecc9bc3041cdb831b0fe2f58dab52f8d5c58.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-mark" aria-hidden="true"></div>
 </div>

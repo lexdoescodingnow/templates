@@ -1,6 +1,6 @@
 [h1]JELLY[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ Curved writing card with a translucent top lip and a tiny heart.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-soft-centre">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">the part i keep for you</div>
 <div class="bhj-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -34,13 +34,9 @@ Curved writing card with a translucent top lip and a tiny heart.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-soft-centre">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">the part i keep for you</div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -55,7 +51,7 @@ Floating landscape still, suspended title tab and offset glass corners.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-sweet-suspension">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">caught in a little forever</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -77,16 +73,12 @@ Floating landscape still, suspended title tab and offset glass corners.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-sweet-suspension">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">caught in a little forever</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -101,7 +93,7 @@ Upright jelly-mould portrait, rippled frame and open writing.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-tremolo">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">a heart that wobbles</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -123,16 +115,12 @@ Upright jelly-mould portrait, rippled frame and open writing.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-tremolo">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">a heart that wobbles</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -147,7 +135,7 @@ Asymmetric literary page with a narrow translucent side panel.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-velvet-set">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">tender, translucent, unforgettable</div>
 <div class="bhj-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -166,13 +154,9 @@ Asymmetric literary page with a narrow translucent side panel.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-velvet-set">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">tender, translucent, unforgettable</div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -187,7 +171,7 @@ Interlocking rounded portraits, sweeping title and a signature rail.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-vitreous-vow">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">only you make me set</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/1c93e90351f60edbaa53c72c378a7dbf/17c3aa33684ffc6d-9f/s540x810/995041155693fc290553e4cd985fb59fee5737b9.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -210,17 +194,13 @@ Interlocking rounded portraits, sweeping title and a signature rail.
 [dohtml]
 <div class="bh-jelly bhj-thread bhj-vitreous-vow">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">only you make me set</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/1c93e90351f60edbaa53c72c378a7dbf/17c3aa33684ffc6d-9f/s540x810/995041155693fc290553e4cd985fb59fee5737b9.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -237,7 +217,7 @@ Two-way pager with a recessed display and rounded keys.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-blush-beep" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">new messages</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -255,12 +235,12 @@ Two-way pager with a recessed display and rounded keys.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-blush-beep" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">new messages</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bhj-hardware" aria-hidden="true"></div>
 </div>
@@ -275,7 +255,7 @@ Flip phone with a portrait screen and a visible hinge.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-gel-relay" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">connected · today</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -296,15 +276,15 @@ Flip phone with a portrait screen and a visible hinge.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-gel-relay" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">connected · today</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bhj-hardware" aria-hidden="true"></div>
 </div>
@@ -319,7 +299,7 @@ Landscape chat handheld with gel buttons.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-lovebyte" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">private chat · player two</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -337,12 +317,12 @@ Landscape chat handheld with gel buttons.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-lovebyte" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">private chat · player two</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bhj-hardware" aria-hidden="true"></div>
 </div>
@@ -357,7 +337,7 @@ Clear-case smartphone with a contact capsule.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-quiver-chat" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">online · just for you</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -378,15 +358,15 @@ Clear-case smartphone with a contact capsule.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-quiver-chat" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">online · just for you</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bhj-hardware" aria-hidden="true"></div>
 </div>
@@ -401,7 +381,7 @@ Music-player messenger with a circular control wheel.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-wobblewave" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">now receiving · your messages</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -422,15 +402,15 @@ Music-player messenger with a circular control wheel.
 [dohtml]
 <div class="bh-jelly bhj-comms bhj-wobblewave" data-flow="received">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">now receiving · your messages</div>
 <div class="bhj-time">21:09</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bhj-hardware" aria-hidden="true"></div>
 </div>
@@ -447,7 +427,7 @@ Paired miniature portrait tiles alongside the reply.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-gelee-kiss">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">just one more</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/1c93e90351f60edbaa53c72c378a7dbf/17c3aa33684ffc6d-9f/s540x810/995041155693fc290553e4cd985fb59fee5737b9.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -466,13 +446,13 @@ Paired miniature portrait tiles alongside the reply.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-gelee-kiss">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">just one more</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/1c93e90351f60edbaa53c72c378a7dbf/17c3aa33684ffc6d-9f/s540x810/995041155693fc290553e4cd985fb59fee5737b9.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -487,7 +467,7 @@ A small slanted portrait beside a short reply.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-gliss">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">you make everything softer</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -505,12 +485,12 @@ A small slanted portrait beside a short reply.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-gliss">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">you make everything softer</div>
 <div class="bhj-media">
 <img src="https://64.media.tumblr.com/7a9b2d91b49476ddd3d0a1ce225fed03/b2f6d35ff876228d-c8/s540x810/4095a92e103c614113fb7cfe7bd1fc7b9d91bb09.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -525,7 +505,7 @@ Miniature gel frame with a glossy heart seal.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-heartlet">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">a little tenderness</div>
 <div class="bhj-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -540,9 +520,9 @@ Miniature gel frame with a glossy heart seal.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-heartlet">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">a little tenderness</div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -557,7 +537,7 @@ An open horizontal note with a translucent title lozenge.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-little-quake">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">still a little unsteady</div>
 <div class="bhj-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -572,9 +552,9 @@ An open horizontal note with a translucent title lozenge.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-little-quake">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">still a little unsteady</div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>
@@ -589,7 +569,7 @@ Rippled note with a floating name tab.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-sugar-tremor">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">something sweet is happening</div>
 <div class="bhj-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -604,9 +584,9 @@ Rippled note with a floating name tab.
 [dohtml]
 <div class="bh-jelly bhj-bud bhj-sugar-tremor">
 <a class="bhj-name" href="[url]">Bing &amp; Liang</a>
-<div class="bhj-title">[text]</div>
+<div class="bhj-title">something sweet is happening</div>
 <div class="bhj-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bhj-gel" aria-hidden="true"></div>
 </div>

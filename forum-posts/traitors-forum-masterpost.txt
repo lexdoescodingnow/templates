@@ -1,6 +1,6 @@
 [h1]TRAITORS[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -19,8 +19,8 @@ A event layout from the Traitors collection.
       <div class="gif"><span></span></div>
       <div class="title">
         <div class="kicker">faithful until proven otherwise</div>
-        <div class="name">[name]</div>
-        <div class="sub">[text]</div>
+        <div class="name">Character name</div>
+        <div class="sub">Generic Post Snippet</div>
       </div>
     </div>
     <div class="post">
@@ -44,13 +44,13 @@ A event layout from the Traitors collection.
       <div class="gif"><span></span></div>
       <div class="title">
         <div class="kicker">faithful until proven otherwise</div>
-        <div class="name">[name]</div>
-        <div class="sub">[text]</div>
+        <div class="name">[NAME GOES HERE]</div>
+        <div class="sub">Generic Post Snippet</div>
       </div>
     </div>
     <div class="post">
-      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
-    </div>
+<p>[TEXT GOES HERE]</p>
+</div>
     <div class="tag">the castle keeps careful records</div>
   </div>
 </div>
@@ -69,8 +69,8 @@ A event layout from the Traitors collection.
     <div class="header">
       <div class="statement">
         <div class="kicker">round table testimony</div>
-        <div class="name">[name]</div>
-        <div class="sub">[text]</div>
+        <div class="name">Character name</div>
+        <div class="sub">Round Table Vote Snippet</div>
       </div>
       <div class="gif"></div>
     </div>
@@ -78,7 +78,7 @@ A event layout from the Traitors collection.
       <div class="seal">X</div>
       <div>
         <div class="vote-label">my vote is cast for</div>
-        <div class="vote-name">[text]</div>
+        <div class="vote-name">Player name</div>
       </div>
     </div>
     <div class="post">
@@ -100,8 +100,8 @@ A event layout from the Traitors collection.
     <div class="header">
       <div class="statement">
         <div class="kicker">round table testimony</div>
-        <div class="name">[name]</div>
-        <div class="sub">[text]</div>
+        <div class="name">[NAME GOES HERE]</div>
+        <div class="sub">Round Table Vote Snippet</div>
       </div>
       <div class="gif"></div>
     </div>
@@ -109,12 +109,12 @@ A event layout from the Traitors collection.
       <div class="seal">X</div>
       <div>
         <div class="vote-label">my vote is cast for</div>
-        <div class="vote-name">[text]</div>
+        <div class="vote-name">[NAME GOES HERE]</div>
       </div>
     </div>
     <div class="post">
-      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
-    </div>
+<p>[TEXT GOES HERE]</p>
+</div>
     <div class="tag">one name, one slate, one sentence</div>
   </div>
 </div>
@@ -138,8 +138,8 @@ A event layout from the Traitors collection.
       <div class="monitor"></div>
       <div class="identity">
         <div class="kicker">speaking to camera</div>
-        <div class="name">[name]</div>
-        <div class="sub">[text]</div>
+        <div class="name">Character name</div>
+        <div class="sub">Testimonial Snippet</div>
       </div>
     </div>
     <div class="transcript">
@@ -166,13 +166,13 @@ A event layout from the Traitors collection.
       <div class="monitor"></div>
       <div class="identity">
         <div class="kicker">speaking to camera</div>
-        <div class="name">[name]</div>
-        <div class="sub">[text]</div>
+        <div class="name">[NAME GOES HERE]</div>
+        <div class="sub">Testimonial Snippet</div>
       </div>
     </div>
     <div class="transcript">
       <span class="quote">&ldquo;</span>
-      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
+      <p>[TEXT GOES HERE]</p>
     </div>
     <div class="tag">truth looks different when no one else is listening</div>
   </div>
@@ -191,15 +191,15 @@ A event layout from the Traitors collection.
     <div class="banner">
       <div class="nameplate">
         <div class="kicker">a sealed order in the dark</div>
-        <div class="name">[name]</div>
-        <div class="sub">[text]</div>
+        <div class="name">Character name</div>
+        <div class="sub">Traitor Murder Snippet</div>
       </div>
     </div>
     <div class="order">
       <div class="mark">X</div>
       <div>
         <span>marked for murder</span>
-        <strong>[text]</strong>
+        <strong>Player name</strong>
       </div>
     </div>
     <div class="post">
@@ -221,20 +221,20 @@ A event layout from the Traitors collection.
     <div class="banner">
       <div class="nameplate">
         <div class="kicker">a sealed order in the dark</div>
-        <div class="name">[name]</div>
-        <div class="sub">[text]</div>
+        <div class="name">[NAME GOES HERE]</div>
+        <div class="sub">Traitor Murder Snippet</div>
       </div>
     </div>
     <div class="order">
       <div class="mark">X</div>
       <div>
         <span>marked for murder</span>
-        <strong>[text]</strong>
+        <strong>[NAME GOES HERE]</strong>
       </div>
     </div>
     <div class="post">
-      <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam</u>, quis nostrud exercitation ullamco laboris.</p>
-    </div>
+<p>[TEXT GOES HERE]</p>
+</div>
     <div class="tag">treachery leaves fingerprints</div>
   </div>
 </div>

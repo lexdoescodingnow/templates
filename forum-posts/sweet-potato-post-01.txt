@@ -1,6 +1,6 @@
 [h1]SWEET POTATO[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -28,7 +28,9 @@ A thread layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spv3 spv3-standard" style="--sp-img1:url('[url]');--sp-img2:url('[url2]');">
-  <div class="spv3-standard-body spv3-copy spv3-bar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spv3-standard-body spv3-copy spv3-bar">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spv3-standard-name spv3-name">Danwoo &amp; Janghoon</div>
   <div class="spv3-standard-head"><div><div class="spv3-kicker">collective harvest · field note 01</div><div class="spv3-title spv3-standard-title">sweet potato</div><div class="spv3-sub spv3-standard-sub">soft centre · bright edges · rooted together</div></div><div class="spv3-icon"></div></div>
   <div class="spv3-standard-media"><div class="spv3-img spv3-img1 spv3-standard-gif1"></div><div class="spv3-img spv3-img2 spv3-standard-gif2"></div><div class="spv3-standard-ticket"><div class="spv3-tag">today's palette</div><div class="spv3-chips"><i></i><i></i><i></i></div><div class="spv3-standard-ticket-copy">the posting member colours every harvest</div></div><div class="spv3-standard-stamp"><strong>roasted slowly</strong><span>serve while warm</span></div></div>
@@ -57,7 +59,9 @@ A thread layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spv3 spv3-hero" style="--sp-img1:url('[url]');">
-  <div class="spv3-hero-body spv3-copy spv3-bar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spv3-hero-body spv3-copy spv3-bar">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spv3-hero-foot"><div class="spv3-tag">served as one complete scene</div><div class="spv3-name">Danwoo &amp; Janghoon</div></div>
   <div class="spv3-img spv3-img1 spv3-hero-media"><div class="spv3-hero-overlay"><div class="spv3-kicker spv3-hero-kicker">collective harvest · portrait edition</div><div class="spv3-title-lg spv3-hero-title">sweet potato</div><div class="spv3-sub spv3-hero-sub">one image · full flavour · member grown</div></div><div class="spv3-icon spv3-hero-icon"></div></div>
   <div class="spv3-hero-band"><div class="spv3-tag">single harvest portrait</div><div class="spv3-chips"><i></i><i></i><i></i></div></div>
@@ -85,7 +89,9 @@ A thread layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spv3 spv3-post" style="--sp-img1:url('[url]');--sp-img2:url('[url2]');">
-  <div class="spv3-post-body spv3-copy spv3-bar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spv3-post-body spv3-copy spv3-bar">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spv3-post-foot"><div class="spv3-tag">sent while the memory is warm</div><div class="spv3-name">Danwoo &amp; Janghoon</div></div>
   <div class="spv3-post-head"><div><div class="spv3-kicker">postmarked from the collective</div><div class="spv3-title-sm spv3-post-title">sweet potato</div><div class="spv3-sub spv3-post-sub">two moments · one warm dispatch</div></div><div class="spv3-icon"></div></div>
   <div class="spv3-post-media"><div class="spv3-img spv3-img1 spv3-post-gif1"></div><div class="spv3-img spv3-img2 spv3-post-gif2"></div></div>
@@ -113,7 +119,9 @@ A thread layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spv3 spv3-scroll" style="--sp-img1:url('[url]');--sp-img2:url('[url2]');">
-  <div class="spv3-scroll-bodywrap"><div class="spv3-scroll-body spv3-copy spv3-bar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div></div>
+  <div class="spv3-scroll-bodywrap"><div class="spv3-scroll-body spv3-copy spv3-bar">
+<p>[TEXT GOES HERE]</p>
+</div></div>
   <div class="spv3-scroll-foot"><div class="spv3-chips"><i></i><i></i><i></i></div><div class="spv3-name">Danwoo &amp; Janghoon</div></div>
   <div class="spv3-scroll-head"><div class="spv3-kicker">compact harvest · reading panel</div><div class="spv3-title-sm spv3-scroll-title">sweet potato</div><div class="spv3-sub spv3-scroll-sub">scroll to continue · member coloured throughout</div></div>
   <div class="spv3-scroll-media"><div class="spv3-img spv3-img1 spv3-scroll-thumb"></div><div class="spv3-img spv3-img2 spv3-scroll-thumb"></div></div>
@@ -141,7 +149,9 @@ A thread layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spv3 spv3-edit" style="--sp-img1:url('[url]');--sp-img2:url('[url2]');">
-  <div class="spv3-edit-body spv3-copy spv3-bar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spv3-edit-body spv3-copy spv3-bar">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spv3-edit-foot"><div class="spv3-tag">rooted together</div><div class="spv3-name">Danwoo &amp; Janghoon</div></div>
   <div class="spv3-edit-media"><div class="spv3-img spv3-img1 spv3-edit-gif"></div><div class="spv3-img spv3-img2 spv3-edit-gif"></div></div>
   <div class="spv3-edit-head"><div><div class="spv3-kicker">editorial field record</div><div class="spv3-title spv3-edit-title">sweet potato</div><div class="spv3-sub spv3-edit-sub">imagery left · story right</div></div><div class="spv3-icon"></div></div>
@@ -158,7 +168,7 @@ A comms layout from the Sweet Potato collection.
 
 [dohtml]
 <div class="spc3 spc3-card spc3-card--sent" style="--spc-avatar:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');">
-  <div class="spc3-message"><div class="spc3-bubble"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus.</p></div><div class="spc3-meta">[time] · sent</div></div>
+  <div class="spc3-message"><div class="spc3-bubble"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus.</p></div><div class="spc3-meta">09:41 · sent</div></div>
   <div class="spc3-name">Danwoo &amp; Janghoon</div>
   <div class="spc3-avatar"></div>
   <div class="spc3-brand"><span>sweet potato · comms</span><strong>rootline</strong></div>
@@ -173,7 +183,7 @@ A comms layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spc3 spc3-card spc3-card--sent" style="--spc-avatar:url('[url]');">
-  <div class="spc3-message"><div class="spc3-bubble"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus.</p></div><div class="spc3-meta">[time] · sent</div></div>
+  <div class="spc3-message"><div class="spc3-bubble"><p>[MESSAGE GOES HERE]</p></div><div class="spc3-meta">09:41 · sent</div></div>
   <div class="spc3-name">Danwoo &amp; Janghoon</div>
   <div class="spc3-avatar"></div>
   <div class="spc3-brand"><span>sweet potato · comms</span><strong>rootline</strong></div>
@@ -190,7 +200,7 @@ A comms layout from the Sweet Potato collection.
 
 [dohtml]
 <div class="spc3 spc3-card spc3-card--received" style="--spc-avatar:url('https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv');">
-  <div class="spc3-message"><div class="spc3-bubble"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus.</p></div><div class="spc3-meta">[time] · received</div></div>
+  <div class="spc3-message"><div class="spc3-bubble"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus.</p></div><div class="spc3-meta">09:41 · received</div></div>
   <div class="spc3-name">Danwoo &amp; Janghoon</div>
   <div class="spc3-avatar"></div>
   <div class="spc3-brand"><span>sweet potato · comms</span><strong>rootline</strong></div>
@@ -205,7 +215,7 @@ A comms layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spc3 spc3-card spc3-card--received" style="--spc-avatar:url('[url]');">
-  <div class="spc3-message"><div class="spc3-bubble"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus.</p></div><div class="spc3-meta">[time] · received</div></div>
+  <div class="spc3-message"><div class="spc3-bubble"><p>[MESSAGE GOES HERE]</p></div><div class="spc3-meta">09:41 · received</div></div>
   <div class="spc3-name">Danwoo &amp; Janghoon</div>
   <div class="spc3-avatar"></div>
   <div class="spc3-brand"><span>sweet potato · comms</span><strong>rootline</strong></div>
@@ -238,7 +248,9 @@ A bud layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spb1 spb1-card spb1-standard" style="--spb-img1:url('[url]');">
-  <div class="spb1-copy spb1-standard-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spb1-copy spb1-standard-copy">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spb1-name spb1-standard-name">Danwoo &amp; Janghoon</div>
   <div class="spb1-standard-head"><div class="spb1-standard-heading"><div class="spb1-kicker">sweet potato · quick reply</div><div class="spb1-logo spb1-standard-logo">bud</div></div><div class="spb1-icon"></div></div>
   <div class="spb1-media spb1-img1 spb1-standard-media"></div>
@@ -268,7 +280,9 @@ A bud layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spb1 spb1-card spb1-portrait" style="--spb-img1:url('[url]');">
-  <div class="spb1-copy spb1-portrait-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spb1-copy spb1-portrait-copy">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spb1-name spb1-portrait-name">Danwoo &amp; Janghoon</div>
   <div class="spb1-media spb1-img1 spb1-portrait-media"></div>
   <div class="spb1-portrait-head"><div><div class="spb1-kicker">sweet potato · portrait bud</div><div class="spb1-logo">bud</div></div><div class="spb1-icon"></div></div>
@@ -298,7 +312,9 @@ A bud layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spb1 spb1-card spb1-duo" style="--spb-img1:url('[url]');--spb-img2:url('[url2]');">
-  <div class="spb1-copy spb1-duo-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spb1-copy spb1-duo-copy">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spb1-name spb1-duo-name">Danwoo &amp; Janghoon</div>
   <div class="spb1-duo-head"><div><div class="spb1-kicker">sweet potato · quick volley</div><div class="spb1-logo">buds</div></div><div class="spb1-icon"></div></div>
   <div class="spb1-duo-media"><div class="spb1-media spb1-img1 spb1-duo-gif"></div><div class="spb1-media spb1-img2 spb1-duo-gif"></div></div>
@@ -327,7 +343,9 @@ A bud layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spb1 spb1-card spb1-note-v2" style="--spb-img1:url('[url]');">
-  <div class="spb1-copy spb1-note-v2-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spb1-copy spb1-note-v2-copy">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spb1-note-v2-foot"><span class="spb1-limit">100 words or fewer</span><span class="spb1-name">Danwoo &amp; Janghoon</span></div>
   <div class="spb1-media spb1-img1 spb1-note-v2-avatar"></div>
   <div class="spb1-note-v2-head"><div><div class="spb1-kicker">sweet potato · bud note</div><div class="spb1-logo">bud</div></div><div class="spb1-icon"></div></div>
@@ -356,7 +374,9 @@ A bud layout from the Sweet Potato collection.
 [code]
 [dohtml]
 <div class="spb1 spb1-card spb1-strip" style="--spb-img1:url('[url]');">
-  <div class="spb1-copy spb1-strip-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non libero commodo luctus. Sed feugiat urna at consequat facilisis, sapien neque dignissim enim.</p></div>
+  <div class="spb1-copy spb1-strip-copy">
+<p>[TEXT GOES HERE]</p>
+</div>
   <div class="spb1-name spb1-strip-name">Danwoo &amp; Janghoon</div>
   <div class="spb1-media spb1-img1 spb1-strip-media"></div>
   <div class="spb1-strip-head"><div><div class="spb1-kicker">sweet potato · scene strip</div><div class="spb1-logo">bud</div></div><div class="spb1-icon"></div></div>

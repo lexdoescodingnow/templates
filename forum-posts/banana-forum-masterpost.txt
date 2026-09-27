@@ -1,6 +1,6 @@
 [h1]BANANA[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A thread layout from the Banana collection.
 <div class="banana-keepsake">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-title">Banana</div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Compact Thread Snippets</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
@@ -41,19 +41,13 @@ A thread layout from the Banana collection.
 <div class="banana-keepsake">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
 <div class="bn-title">Banana</div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Compact Thread Snippets</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
 </div>
 <div class="bn-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
-
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b></p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bn-finish" aria-hidden="true"></div>
 </div>
@@ -68,7 +62,7 @@ A single oval portrait and a softer, rounded frame.
 [dohtml]
 <div class="banana-keepsake bn-cameo">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Cameo</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
 </div>
@@ -93,18 +87,12 @@ A single oval portrait and a softer, rounded frame.
 [dohtml]
 <div class="banana-keepsake bn-cameo">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Cameo</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
 </div>
 <div class="bn-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
-
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bn-title">Banana</div>
 <div class="bn-finish" aria-hidden="true"></div>
@@ -120,7 +108,7 @@ One wide, arched GIF with leaves framing the heading.
 [dohtml]
 <div class="banana-keepsake bn-canopy">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Canopy</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
 </div>
@@ -145,18 +133,12 @@ One wide, arched GIF with leaves framing the heading.
 [dohtml]
 <div class="banana-keepsake bn-canopy">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Canopy</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
 </div>
 <div class="bn-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
-
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bn-title">Banana</div>
 <div class="bn-finish" aria-hidden="true"></div>
@@ -172,7 +154,7 @@ A writing-led postcard with a postmark motif, botanical finish and fine double b
 [dohtml]
 <div class="banana-keepsake bn-postcard">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Postcard</div>
 <div class="bn-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -194,15 +176,9 @@ A writing-led postcard with a postmark motif, botanical finish and fine double b
 [dohtml]
 <div class="banana-keepsake bn-postcard">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Postcard</div>
 <div class="bn-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
-
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bn-title">Banana</div>
 <div class="bn-finish" aria-hidden="true"></div>
@@ -218,7 +194,7 @@ Two aligned square GIFs crossed by a band of member colours.
 [dohtml]
 <div class="banana-keepsake bn-ribbon">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Ribbon</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
@@ -244,19 +220,13 @@ Two aligned square GIFs crossed by a band of member colours.
 [dohtml]
 <div class="banana-keepsake bn-ribbon">
 <div class="bn-names"><a href="[url]">Dom</a><span>&amp;</span><a href="[url]">Taein</a></div>
-<div class="bn-subtitle">[text]</div>
+<div class="bn-subtitle">Ribbon</div>
 <div class="bn-gifs">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait" style="object-position:50% 40%;">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait" style="object-position:50% 40%;">
 </div>
 <div class="bn-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.
-
-<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. <b>“Nullam quis risus eget urna mollis ornare vel eu leo.”</b>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bn-title">Banana</div>
 <div class="bn-finish" aria-hidden="true"></div>
@@ -275,10 +245,10 @@ A centred circular contact GIF and rounded message bubbles.
 <div class="banana-comms-keepsake bc-cameo">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -298,14 +268,14 @@ A centred circular contact GIF and rounded message bubbles.
 <div class="banana-comms-keepsake bc-cameo">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
@@ -323,10 +293,10 @@ An arched contact banner inside a curved phone frame.
 <div class="banana-comms-keepsake bc-canopy">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -346,14 +316,14 @@ An arched contact banner inside a curved phone frame.
 <div class="banana-comms-keepsake bc-canopy">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
@@ -371,10 +341,10 @@ A compact phone with a portrait on the right and a round home button.
 <div class="banana-comms-keepsake bc-postcard">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -394,14 +364,14 @@ A compact phone with a portrait on the right and a round home button.
 <div class="banana-comms-keepsake bc-postcard">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
@@ -419,10 +389,10 @@ A coloured header rule, round avatar and edged message bubbles.
 <div class="banana-comms-keepsake bc-ribbon">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -442,14 +412,14 @@ A coloured header rule, round avatar and edged message bubbles.
 <div class="banana-comms-keepsake bc-ribbon">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
@@ -467,10 +437,10 @@ The original Banana phone with its contact header and incoming bubbles.
 <div class="banana-comms-keepsake">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -490,14 +460,14 @@ The original Banana phone with its contact header and incoming bubbles.
 <div class="banana-comms-keepsake">
 <div class="bc-contact">
 <a class="bc-name" href="[url]">Dom &amp; Taein</a>
-<div class="bc-status">[text]</div>
+<div class="bc-status">online</div>
 <img class="bc-avatar" src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
-<div class="bc-time"><span>[time]</span></div>
+<div class="bc-time"><span>09:41</span></div>
 <div class="bc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="bc-receipt">Received</div>
 <div class="bc-brand">Banana</div>
@@ -515,7 +485,7 @@ An image-free folded notecard for a quick reply.
 
 [dohtml]
 <div class="banana-bud bb-leaflet">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Leaflet</span></div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
@@ -530,10 +500,9 @@ An image-free folded notecard for a quick reply.
 [code]
 [dohtml]
 <div class="banana-bud bb-leaflet">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Leaflet</span></div>
 <div class="bb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
@@ -547,7 +516,7 @@ A slim botanical note with the writing at its centre.
 
 [dohtml]
 <div class="banana-bud bb-pressing">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Pressing</span></div>
 <div class="bb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
@@ -562,10 +531,9 @@ A slim botanical note with the writing at its centre.
 [code]
 [dohtml]
 <div class="banana-bud bb-pressing">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Pressing</span></div>
 <div class="bb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
@@ -579,7 +547,7 @@ A rounded card with a leaf-shaped portrait.
 
 [dohtml]
 <div class="banana-bud bb-sprout">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Sprout</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -597,13 +565,12 @@ A rounded card with a leaf-shaped portrait.
 [code]
 [dohtml]
 <div class="banana-bud bb-sprout">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Sprout</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
 <div class="bb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
@@ -617,7 +584,7 @@ An arched side portrait beside a short passage.
 
 [dohtml]
 <div class="banana-bud bb-tendril">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Tendril</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
@@ -635,13 +602,12 @@ An arched side portrait beside a short passage.
 [code]
 [dohtml]
 <div class="banana-bud bb-tendril">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Tendril</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 </div>
 <div class="bb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>
@@ -655,7 +621,7 @@ Two overlapping character GIFs.
 
 [dohtml]
 <div class="banana-bud bb-twinleaf">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Twinleaf</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
@@ -674,14 +640,13 @@ Two overlapping character GIFs.
 [code]
 [dohtml]
 <div class="banana-bud bb-twinleaf">
-<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>[text]</span></div>
+<div class="bb-meta"><a href="[url]">Dom &amp; Taein</a><span>Twinleaf</span></div>
 <div class="bb-photo">
 <img src="https://64.media.tumblr.com/c7db6576f12d010e5d7dbf69234bd3c3/6e14216fcec890ca-80/s400x600/9209c928d18919bc27201b7272fc4accf6ca5c0a.gifv" alt="Character portrait">
 <img src="https://64.media.tumblr.com/e70074e38b3000b61832ac065998f6f1/6e14216fcec890ca-67/s400x600/c986dd6dfcc1c5d17ea3504ba3b1ebbc1e9347ec.gifv" alt="Character portrait">
 </div>
 <div class="bb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bb-mark">Banana <span>bud</span></div>
 </div>

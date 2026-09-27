@@ -1,6 +1,6 @@
 [h1]CREAM[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A broad inset title between curved colour bands, two wide portraits and a genero
 [dohtml]
 <div class="bh-cream crm-thread crm-chantilly-chamber">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">a sweetness only we know</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1978136c37c02197cc3ccca6bd576647/36a4a769958466a4-56/s400x600/da9b3a21d188dda9ce13616f67530710b1439226.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -36,17 +36,13 @@ A broad inset title between curved colour bands, two wide portraits and a genero
 [dohtml]
 <div class="bh-cream crm-thread crm-chantilly-chamber">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">a sweetness only we know</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1978136c37c02197cc3ccca6bd576647/36a4a769958466a4-56/s400x600/da9b3a21d188dda9ce13616f67530710b1439226.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -60,7 +56,7 @@ A quiet literary page with a large inset quotation title, double cream-toned bor
 [dohtml]
 <div class="bh-cream crm-thread crm-clotted-reverie">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">there is no hurry here</div>
 <div class="crm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -78,13 +74,9 @@ A quiet literary page with a large inset quotation title, double cream-toned bor
 [dohtml]
 <div class="bh-cream crm-thread crm-clotted-reverie">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">there is no hurry here</div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -98,7 +90,7 @@ A low panoramic photograph beneath a split title-and-name header, held by fine a
 [dohtml]
 <div class="bh-cream crm-thread crm-creme-diplomate">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">all that is tender</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -119,16 +111,12 @@ A low panoramic photograph beneath a split title-and-name header, held by fine a
 [dohtml]
 <div class="bh-cream crm-thread crm-creme-diplomate">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">all that is tender</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -142,7 +130,7 @@ A narrow photographic left wing meets an offset title and long writing panel; th
 [dohtml]
 <div class="bh-cream crm-thread crm-double-fold">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">stay, a little closer</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1978136c37c02197cc3ccca6bd576647/36a4a769958466a4-56/s400x600/da9b3a21d188dda9ce13616f67530710b1439226.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -164,17 +152,13 @@ A narrow photographic left wing meets an offset title and long writing panel; th
 [dohtml]
 <div class="bh-cream crm-thread crm-double-fold">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">stay, a little closer</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1978136c37c02197cc3ccca6bd576647/36a4a769958466a4-56/s400x600/da9b3a21d188dda9ce13616f67530710b1439226.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -188,7 +172,7 @@ An asymmetric rounded panel with a large title descending beside a narrow colour
 [dohtml]
 <div class="bh-cream crm-thread crm-satin-custard">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">slowly, we become home</div>
 <div class="crm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -206,13 +190,9 @@ An asymmetric rounded panel with a large title descending beside a narrow colour
 [dohtml]
 <div class="bh-cream crm-thread crm-satin-custard">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">slowly, we become home</div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -228,7 +208,7 @@ A wide smartphone with a twin-photo contact banner, contrasting side bezels and 
 [dohtml]
 <div class="bh-cream crm-comms crm-creme-connect" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">Haoyu &amp; Malachi · connected</div>
 <div class="crm-time">21:08</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -249,16 +229,16 @@ A wide smartphone with a twin-photo contact banner, contrasting side bezels and 
 [dohtml]
 <div class="bh-cream crm-comms crm-creme-connect" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">Haoyu &amp; Malachi · connected</div>
 <div class="crm-time">21:08</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1978136c37c02197cc3ccca6bd576647/36a4a769958466a4-56/s400x600/da9b3a21d188dda9ce13616f67530710b1439226.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 </div>
 
@@ -272,7 +252,7 @@ A slim messaging handset with an inset portrait beside the contact details, an e
 [dohtml]
 <div class="bh-cream crm-comms crm-silk-relay" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">available · say something sweet</div>
 <div class="crm-time">21:08</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -292,15 +272,15 @@ A slim messaging handset with an inset portrait beside the contact details, an e
 [dohtml]
 <div class="bh-cream crm-comms crm-silk-relay" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">available · say something sweet</div>
 <div class="crm-time">21:08</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 </div>
 
@@ -314,7 +294,7 @@ A tall smartphone with a large rounded contact tile, slim status strip and soft 
 [dohtml]
 <div class="bh-cream crm-comms crm-softline" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">online · just for you</div>
 <div class="crm-time">21:08</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -334,15 +314,15 @@ A tall smartphone with a large rounded contact tile, slim status strip and soft 
 [dohtml]
 <div class="bh-cream crm-comms crm-softline" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">online · just for you</div>
 <div class="crm-time">21:08</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 </div>
 
@@ -356,7 +336,7 @@ A wide tablet messenger with a vertical time rail, a recessed conversation scree
 [dohtml]
 <div class="bh-cream crm-comms crm-velvet-inbox" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">a little note from you</div>
 <div class="crm-time">21:08</div>
 <div class="crm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -373,12 +353,12 @@ A wide tablet messenger with a vertical time rail, a recessed conversation scree
 [dohtml]
 <div class="bh-cream crm-comms crm-velvet-inbox" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">a little note from you</div>
 <div class="crm-time">21:08</div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 </div>
 
@@ -392,7 +372,7 @@ A compact square communicator with a prominent clock, layered screen corners and
 [dohtml]
 <div class="bh-cream crm-comms crm-whip-signal" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">private conversation</div>
 <div class="crm-time">21:08</div>
 <div class="crm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -409,12 +389,12 @@ A compact square communicator with a prominent clock, layered screen corners and
 [dohtml]
 <div class="bh-cream crm-comms crm-whip-signal" data-flow="received">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">private conversation</div>
 <div class="crm-time">21:08</div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 </div>
 
@@ -430,7 +410,7 @@ A brief open reply beside a broad curved colour bracket, with the name following
 [dohtml]
 <div class="bh-cream crm-bud crm-creamdrop">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">a soft place to land</div>
 <div class="crm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -444,9 +424,9 @@ A brief open reply beside a broad curved colour bracket, with the name following
 [dohtml]
 <div class="bh-cream crm-bud crm-creamdrop">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">a soft place to land</div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -460,7 +440,7 @@ A tiny rounded reply with one lifted corner, a colour-block name tab and a short
 [dohtml]
 <div class="bh-cream crm-bud crm-dollop">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">just a little sweetness</div>
 <div class="crm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -474,9 +454,9 @@ A tiny rounded reply with one lifted corner, a colour-block name tab and a short
 [dohtml]
 <div class="bh-cream crm-bud crm-dollop">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">just a little sweetness</div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -490,7 +470,7 @@ A horizontal closing note with a right-aligned signature, a fine three-colour un
 [dohtml]
 <div class="bh-cream crm-bud crm-last-lick">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">one more moment</div>
 <div class="crm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -504,9 +484,9 @@ A horizontal closing note with a right-aligned signature, a fine three-colour un
 [dohtml]
 <div class="bh-cream crm-bud crm-last-lick">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">one more moment</div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -520,7 +500,7 @@ A small square portrait interrupts the top rule of a compact centred note with a
 [dohtml]
 <div class="bh-cream crm-bud crm-petite-rosette">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">you, in the little things</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -537,12 +517,12 @@ A small square portrait interrupts the top rule of a compact centred note with a
 [dohtml]
 <div class="bh-cream crm-bud crm-petite-rosette">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">you, in the little things</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -556,7 +536,7 @@ Two miniature square portraits bookend a centred heading above a short shared re
 [dohtml]
 <div class="bh-cream crm-bud crm-two-spoonfuls">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">one for you, one for me</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1978136c37c02197cc3ccca6bd576647/36a4a769958466a4-56/s400x600/da9b3a21d188dda9ce13616f67530710b1439226.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -574,13 +554,13 @@ Two miniature square portraits bookend a centred heading above a short shared re
 [dohtml]
 <div class="bh-cream crm-bud crm-two-spoonfuls">
 <a class="crm-name" href="[url]">Haoyu &amp; Malachi</a>
-<div class="crm-title">[text]</div>
+<div class="crm-title">one for you, one for me</div>
 <div class="crm-media">
 <img src="https://64.media.tumblr.com/246b9c2eb98f355f5f631e48ac060421/f006b770ed68ce3b-bc/s400x600/53c6f05461637ccffc4e7e220e2bf240364cfbe5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1978136c37c02197cc3ccca6bd576647/36a4a769958466a4-56/s400x600/da9b3a21d188dda9ce13616f67530710b1439226.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="crm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 

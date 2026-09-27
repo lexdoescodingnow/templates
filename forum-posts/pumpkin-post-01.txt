@@ -1,6 +1,6 @@
 [h1]PUMPKIN[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A quiet carriage-window folio: a scalloped crest, fine coachwork corners and a l
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-carriage-hour">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">meet me before midnight</div>
 <div class="pk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -34,13 +34,9 @@ A quiet carriage-window folio: a scalloped crest, fine coachwork corners and a l
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-carriage-hour">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">meet me before midnight</div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -55,7 +51,7 @@ An airy botanical page with a curling vine in the margin, spaced small type and 
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-cucurbita-nocturne">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">what grows between us</div>
 <div class="pk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -74,13 +70,9 @@ An airy botanical page with a curling vine in the margin, spaced small type and 
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-cucurbita-nocturne">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">what grows between us</div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -95,7 +87,7 @@ A rounded gourd-shaped portrait sits above a fluted paper edge and a generous, b
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-gourd-house">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">somewhere soft to land</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -117,16 +109,12 @@ A rounded gourd-shaped portrait sits above a fluted paper edge and a generous, b
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-gourd-house">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">somewhere soft to land</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -141,7 +129,7 @@ A patchwork paper jacket with an offset square portrait, stepped colour blocks a
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-patchwork-almanac">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">a place in every season</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -163,16 +151,12 @@ A patchwork paper jacket with an offset square portrait, stepped colour blocks a
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-patchwork-almanac">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">a place in every season</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -187,7 +171,7 @@ A bold autumn broadsheet, with two portrait negatives, an oversized headline and
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-the-harvest-press">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">the season we stayed</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c1ae525cca133f5963045ed0e8fa903b/7f0c02188b41daa1-4d/s400x600/d6d971f4b2bd2cf1d2e5ca62260c8698fd6ce971.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -210,17 +194,13 @@ A bold autumn broadsheet, with two portrait negatives, an oversized headline and
 [dohtml]
 <div class="bh-pumpkin pk-thread pk-the-harvest-press">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">the season we stayed</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c1ae525cca133f5963045ed0e8fa903b/7f0c02188b41daa1-4d/s400x600/d6d971f4b2bd2cf1d2e5ca62260c8698fd6ce971.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -237,7 +217,7 @@ A curved flip phone with a portrait on the upper screen, a curled hinge and a se
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-curlicue-call" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">the line is still open</div>
 <div class="pk-time">19:42</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -258,15 +238,15 @@ A curved flip phone with a portrait on the upper screen, a curled hinge and a se
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-curlicue-call" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">the line is still open</div>
 <div class="pk-time">19:42</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="pk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -281,7 +261,7 @@ A tall lock-screen phone with a large translucent clock, portrait wallpaper and 
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-gourdglass" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">you light up the screen</div>
 <div class="pk-time">19:42</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -302,15 +282,15 @@ A tall lock-screen phone with a large translucent clock, portrait wallpaper and 
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-gourdglass" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">you light up the screen</div>
 <div class="pk-time">19:42</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="pk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -325,7 +305,7 @@ A wide dual-contact communicator with a split portrait strip, broad message scre
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-patchlink-duo" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">Dexter ⇄ Happy</div>
 <div class="pk-time">19:42</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -347,16 +327,16 @@ A wide dual-contact communicator with a split portrait strip, broad message scre
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-patchlink-duo" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">Dexter ⇄ Happy</div>
 <div class="pk-time">19:42</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c1ae525cca133f5963045ed0e8fa903b/7f0c02188b41daa1-4d/s400x600/d6d971f4b2bd2cf1d2e5ca62260c8698fd6ce971.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="pk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -371,7 +351,7 @@ A compact seed-edged keyboard phone with a recessed conversation display and a c
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-pepita-pocket" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">a little message for you</div>
 <div class="pk-time">19:42</div>
 <div class="pk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -389,12 +369,12 @@ A compact seed-edged keyboard phone with a recessed conversation display and a c
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-pepita-pocket" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">a little message for you</div>
 <div class="pk-time">19:42</div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="pk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -409,7 +389,7 @@ A fluted smartphone with a tiny pill camera, a contact portrait and softly round
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-rind-receiver" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">always within reach</div>
 <div class="pk-time">19:42</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -430,15 +410,15 @@ A fluted smartphone with a tiny pill camera, a contact portrait and softly round
 [dohtml]
 <div class="bh-pumpkin pk-comms pk-rind-receiver" data-flow="received">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">always within reach</div>
 <div class="pk-time">19:42</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="pk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -455,7 +435,7 @@ An asymmetric landscape keepsake with a square portrait stamp, low title and fin
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-afterpatch">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">keep a piece of this</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -473,12 +453,12 @@ An asymmetric landscape keepsake with a square portrait stamp, low title and fin
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-afterpatch">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">keep a piece of this</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -493,7 +473,7 @@ Two narrow lantern-window portraits sit together beside a short italic heading, 
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-little-lanterns">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">two lights left on</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c1ae525cca133f5963045ed0e8fa903b/7f0c02188b41daa1-4d/s400x600/d6d971f4b2bd2cf1d2e5ca62260c8698fd6ce971.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -512,13 +492,13 @@ Two narrow lantern-window portraits sit together beside a short italic heading, 
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-little-lanterns">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">two lights left on</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/c1ae525cca133f5963045ed0e8fa903b/7f0c02188b41daa1-4d/s400x600/d6d971f4b2bd2cf1d2e5ca62260c8698fd6ce971.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -533,7 +513,7 @@ A tiny rounded folio with a fluted top edge, broad name rule and a clean miniatu
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-riblet">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">a little room for us</div>
 <div class="pk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -548,9 +528,9 @@ A tiny rounded folio with a fluted top edge, broad name rule and a clean miniatu
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-riblet">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">a little room for us</div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -565,7 +545,7 @@ An open seed-packet slip with a folded name tab, tiny seed impressions and a sho
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-seedling-slip">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">the smallest beginning</div>
 <div class="pk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -580,9 +560,9 @@ An open seed-packet slip with a folded name tab, tiny seed impressions and a sho
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-seedling-slip">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">the smallest beginning</div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -597,7 +577,7 @@ A compact corner-tucked portrait and a looping vine bracket beside a small itali
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-tendril-tuck">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">stay tangled up with me</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -615,12 +595,12 @@ A compact corner-tucked portrait and a looping vine bracket beside a small itali
 [dohtml]
 <div class="bh-pumpkin pk-bud pk-tendril-tuck">
 <a class="pk-name" href="[url]">Dexter &amp; Happy</a>
-<div class="pk-title">[text]</div>
+<div class="pk-title">stay tangled up with me</div>
 <div class="pk-media">
 <img src="https://64.media.tumblr.com/66f3effae938c4b5c76d16bc453d37f3/3479249555ccb07c-ca/s400x600/139e7d8ebf30b112b7b90400b7f2b2370d99ede5.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="pk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="pk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>

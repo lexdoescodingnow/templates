@@ -1,6 +1,6 @@
 [h1]CHAMPAGNE[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A thread layout from the Champagne collection.
 <div class="champagne-cuvee">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Cuvée</div>
 <div class="ch-gifs">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 <img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
@@ -40,17 +40,13 @@ A thread layout from the Champagne collection.
 <div class="champagne-cuvee">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Cuvée</div>
 <div class="ch-gifs">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 <img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
 <div class="ch-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ch-crest" aria-hidden="true"></div>
 <div class="ch-finish" aria-hidden="true"></div>
@@ -67,7 +63,7 @@ A thread layout from the Champagne collection.
 <div class="champagne-cuvee ch-eclat">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Éclat</div>
 <div class="ch-gifs">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 <img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
@@ -92,17 +88,13 @@ A thread layout from the Champagne collection.
 <div class="champagne-cuvee ch-eclat">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Éclat</div>
 <div class="ch-gifs">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 <img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
 <div class="ch-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ch-crest" aria-hidden="true"></div>
 <div class="ch-finish" aria-hidden="true"></div>
@@ -119,7 +111,7 @@ A vintage bottle label with one landscape keepsake and ruled borders.
 <div class="champagne-cuvee ch-millesime">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Millésime</div>
 <div class="ch-gifs">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
@@ -143,16 +135,12 @@ A vintage bottle label with one landscape keepsake and ruled borders.
 <div class="champagne-cuvee ch-millesime">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Millésime</div>
 <div class="ch-gifs">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
 <div class="ch-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ch-crest" aria-hidden="true"></div>
 <div class="ch-finish" aria-hidden="true"></div>
@@ -169,7 +157,7 @@ A quiet, image-free letter with fine rules and a footer signature.
 <div class="champagne-cuvee ch-reserve">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Réserve</div>
 <div class="ch-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -190,13 +178,9 @@ A quiet, image-free letter with fine rules and a footer signature.
 <div class="champagne-cuvee ch-reserve">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Réserve</div>
 <div class="ch-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ch-crest" aria-hidden="true"></div>
 <div class="ch-finish" aria-hidden="true"></div>
@@ -213,7 +197,7 @@ A single oval portrait, softly curved borders and an italic heading.
 <div class="champagne-cuvee ch-rosee">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Rosée</div>
 <div class="ch-gifs">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
@@ -237,16 +221,12 @@ A single oval portrait, softly curved borders and an italic heading.
 <div class="champagne-cuvee ch-rosee">
 <div class="ch-names"><a href="[url]">Jude</a><span>&amp;</span><a href="[url]">Toby</a></div>
 <div class="ch-title">Champagne</div>
-<div class="ch-subtitle">[text]</div>
+<div class="ch-subtitle">Rosée</div>
 <div class="ch-gifs">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
 <div class="ch-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Praesent finibus, <u>lorem at interdum facilisis</u>, neque sapien pellentesque nibh, in viverra tellus urna non arcu. Aenean euismod, sem vitae tincidunt dignissim, neque felis posuere lectus, vel ullamcorper erat arcu vitae erat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ch-crest" aria-hidden="true"></div>
 <div class="ch-finish" aria-hidden="true"></div>
@@ -265,10 +245,10 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms cc-capsule">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -289,14 +269,14 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms cc-capsule">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
@@ -315,10 +295,10 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms cc-flute">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -339,14 +319,14 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms cc-flute">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
@@ -365,10 +345,10 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -389,14 +369,14 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
@@ -415,10 +395,10 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms cc-tchin">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -439,14 +419,14 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms cc-tchin">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
@@ -465,10 +445,10 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms cc-veillee">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
 <p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
@@ -489,14 +469,14 @@ A comms layout from the Champagne collection.
 <div class="champagne-comms cc-veillee">
 <div class="cc-contact">
 <a class="cc-name" href="[url]">Jude &amp; Toby</a>
-<div class="cc-status">[text]</div>
+<div class="cc-status">online</div>
 <img class="cc-avatar" src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
-<div class="cc-time">[time]</div>
+<div class="cc-time">09:41</div>
 <div class="cc-messages">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b>
-<p>Sed do eiusmod tempor incididunt <i>ut labore et dolore</i> magna aliqua.
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation?</u>
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
+<p>[MESSAGE GOES HERE]
 </div>
 <div class="cc-receipt">Received</div>
 <div class="cc-brand">Champagne</div>
@@ -515,7 +495,7 @@ A crisp image-free note with a diamond accent and footer signature.
 
 [dohtml]
 <div class="champagne-bud cb-etincelle">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Étincelle</span></div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
@@ -530,10 +510,9 @@ A crisp image-free note with a diamond accent and footer signature.
 [code]
 [dohtml]
 <div class="champagne-bud cb-etincelle">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Étincelle</span></div>
 <div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
@@ -547,7 +526,7 @@ A slim colour ribbon and an uncluttered short reply.
 
 [dohtml]
 <div class="champagne-bud cb-goutte">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Goutte</span></div>
 <div class="cb-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
@@ -562,10 +541,9 @@ A slim colour ribbon and an uncluttered short reply.
 [code]
 [dohtml]
 <div class="champagne-bud cb-goutte">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Goutte</span></div>
 <div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
@@ -579,7 +557,7 @@ A compact double-framed card with one miniature portrait medallion.
 
 [dohtml]
 <div class="champagne-bud">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Mignon</span></div>
 <div class="cb-photos">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
@@ -597,13 +575,12 @@ A compact double-framed card with one miniature portrait medallion.
 [code]
 [dohtml]
 <div class="champagne-bud">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Mignon</span></div>
 <div class="cb-photos">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
 <div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
@@ -617,7 +594,7 @@ A bud layout from the Champagne collection.
 
 [dohtml]
 <div class="champagne-bud cb-perle">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Perle</span></div>
 <div class="cb-photos">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
@@ -635,13 +612,12 @@ A bud layout from the Champagne collection.
 [code]
 [dohtml]
 <div class="champagne-bud cb-perle">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Perle</span></div>
 <div class="cb-photos">
 <img src="https://64.media.tumblr.com/cbcc309cd601f309dd8fd3dfd13b6bf8/996ba8d81fe808ab-3f/s540x810/d716b6373ccd5520d0ee95ad468c3aa7b272e7d3.gifv" alt="Character portrait" style="object-position:40% 50%;">
 </div>
 <div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>
@@ -655,7 +631,7 @@ A bud layout from the Champagne collection.
 
 [dohtml]
 <div class="champagne-bud cb-petale">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Pétale</span></div>
 <div class="cb-photos">
 <img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
@@ -673,13 +649,12 @@ A bud layout from the Champagne collection.
 [code]
 [dohtml]
 <div class="champagne-bud cb-petale">
-<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>[text]</span></div>
+<div class="cb-meta"><a href="[url]">Jude &amp; Toby</a><span>Pétale</span></div>
 <div class="cb-photos">
 <img src="https://64.media.tumblr.com/5171fa96d9b8536ee1c661571af91b19/e4d3e377f6ce0b88-55/s540x810/992ab5016a2dc63e0f5b00ccee85c0ceee182158.gifv" alt="Character portrait" style="object-position:50% 35%;">
 </div>
 <div class="cb-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <u>commodo consequat.</u>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="cb-brand">Champagne <span>bud</span></div>
 </div>

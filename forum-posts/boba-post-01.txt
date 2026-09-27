@@ -1,6 +1,6 @@
 [h1]BOBA[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ An image-free cafe menu with a large block title, fine order rules and a spaciou
 [dohtml]
 <div class="bh-boba bba-thread bba-afterhours-menu">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">the usual, with you</div>
 <div class="bba-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -34,13 +34,9 @@ An image-free cafe menu with a large block title, fine order rules and a spaciou
 [dohtml]
 <div class="bh-boba bba-thread bba-afterhours-menu">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">the usual, with you</div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -55,7 +51,7 @@ Twin tall cup portraits, a striped straw spine and a generous neutral letter ben
 [dohtml]
 <div class="bh-boba bba-thread bba-double-pour">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">two hearts, one cup</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/e118f92c99748c84525103c73d2b77d3/79a1fcfedcdbdf1b-82/s400x600/bef01177239c502726fde121913e02cb1712624e.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -78,17 +74,13 @@ Twin tall cup portraits, a striped straw spine and a generous neutral letter ben
 [dohtml]
 <div class="bh-boba bba-thread bba-double-pour">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">two hearts, one cup</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/e118f92c99748c84525103c73d2b77d3/79a1fcfedcdbdf1b-82/s400x600/bef01177239c502726fde121913e02cb1712624e.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -103,7 +95,7 @@ An illuminated cafe window with a panoramic still, tiled header and a neon heart
 [dohtml]
 <div class="bh-boba bba-thread bba-neon-steep">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">meet me after midnight</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -125,16 +117,12 @@ An illuminated cafe window with a panoramic still, tiled header and a neon heart
 [dohtml]
 <div class="bh-boba bba-thread bba-neon-steep">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">meet me after midnight</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -149,7 +137,7 @@ A circular drink-seal heading, pearl impression and fine double frame around a q
 [dohtml]
 <div class="bh-boba bba-thread bba-sealed-promise">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">some flavours stay</div>
 <div class="bba-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -168,13 +156,9 @@ A circular drink-seal heading, pearl impression and fine double frame around a q
 [dohtml]
 <div class="bh-boba bba-thread bba-sealed-promise">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">some flavours stay</div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -189,7 +173,7 @@ An offset landscape still, flowing tiger-sugar strokes and a handwritten heading
 [dohtml]
 <div class="bh-boba bba-thread bba-tiger-reverie">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">sweet, bold, undeniable</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -211,16 +195,12 @@ An offset landscape still, flowing tiger-sugar strokes and a handwritten heading
 [dohtml]
 <div class="bh-boba bba-thread bba-tiger-reverie">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">sweet, bold, undeniable</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -237,7 +217,7 @@ A pocket cafe terminal with an inset digital display, monospaced contact details
 [dohtml]
 <div class="bh-boba bba-comms bba-last-order" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">private channel</div>
 <div class="bba-time">22:26</div>
 <div class="bba-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -255,12 +235,12 @@ A pocket cafe terminal with an inset digital display, monospaced contact details
 [dohtml]
 <div class="bh-boba bba-comms bba-last-order" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">private channel</div>
 <div class="bba-time">22:26</div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bba-hardware" aria-hidden="true"></div>
 </div>
@@ -275,7 +255,7 @@ A rounded phone with a pearl-ring contact portrait, incoming bubbles and a dotte
 [dohtml]
 <div class="bh-boba bba-comms bba-pearl-ping" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">online · just for you</div>
 <div class="bba-time">22:26</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -296,15 +276,15 @@ A rounded phone with a pearl-ring contact portrait, incoming bubbles and a dotte
 [dohtml]
 <div class="bh-boba bba-comms bba-pearl-ping" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">online · just for you</div>
 <div class="bba-time">22:26</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bba-hardware" aria-hidden="true"></div>
 </div>
@@ -319,7 +299,7 @@ A slim notification phone with a small contact badge, striped side rail and tidy
 [dohtml]
 <div class="bh-boba bba-comms bba-sipline" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">messages · delivered</div>
 <div class="bba-time">22:26</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -340,15 +320,15 @@ A slim notification phone with a small contact badge, striped side rail and tidy
 [dohtml]
 <div class="bh-boba bba-comms bba-sipline" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">messages · delivered</div>
 <div class="bba-time">22:26</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bba-hardware" aria-hidden="true"></div>
 </div>
@@ -363,7 +343,7 @@ A compact clamshell messenger with a landscape contact screen, horizontal hinge 
 [dohtml]
 <div class="bh-boba bba-comms bba-steep-speak" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">connected · 22:26</div>
 <div class="bba-time">22:26</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -384,15 +364,15 @@ A compact clamshell messenger with a landscape contact screen, horizontal hinge 
 [dohtml]
 <div class="bh-boba bba-comms bba-steep-speak" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">connected · 22:26</div>
 <div class="bba-time">22:26</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bba-hardware" aria-hidden="true"></div>
 </div>
@@ -407,7 +387,7 @@ An image-free edge-to-edge phone with a bold contact header, narrow colour rail 
 [dohtml]
 <div class="bh-boba bba-comms bba-tapioca-touch" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">active now</div>
 <div class="bba-time">22:26</div>
 <div class="bba-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -425,12 +405,12 @@ An image-free edge-to-edge phone with a bold contact header, narrow colour rail 
 [dohtml]
 <div class="bh-boba bba-comms bba-tapioca-touch" data-flow="received">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">active now</div>
 <div class="bba-time">22:26</div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="bba-hardware" aria-hidden="true"></div>
 </div>
@@ -447,7 +427,7 @@ A low open note with an offset title and a neat row of pearl impressions.
 [dohtml]
 <div class="bh-boba bba-bud bba-chewlet">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">one more moment</div>
 <div class="bba-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -462,9 +442,9 @@ A low open note with an offset title and a neat row of pearl impressions.
 [dohtml]
 <div class="bh-boba bba-bud bba-chewlet">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">one more moment</div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -479,7 +459,7 @@ Two miniature portrait seals alongside a small caption and a short reply beneath
 [dohtml]
 <div class="bh-boba bba-bud bba-lidnote">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">side by side</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/e118f92c99748c84525103c73d2b77d3/79a1fcfedcdbdf1b-82/s400x600/bef01177239c502726fde121913e02cb1712624e.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -498,13 +478,13 @@ Two miniature portrait seals alongside a small caption and a short reply beneath
 [dohtml]
 <div class="bh-boba bba-bud bba-lidnote">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">side by side</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/e118f92c99748c84525103c73d2b77d3/79a1fcfedcdbdf1b-82/s400x600/bef01177239c502726fde121913e02cb1712624e.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -519,7 +499,7 @@ A tiny rounded note with a single oversized pearl corner and a short open reply.
 [dohtml]
 <div class="bh-boba bba-bud bba-mini-pearl">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">a little sweetness</div>
 <div class="bba-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -534,9 +514,9 @@ A tiny rounded note with a single oversized pearl corner and a short open reply.
 [dohtml]
 <div class="bh-boba bba-bud bba-mini-pearl">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">a little sweetness</div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -551,7 +531,7 @@ A drink-sleeve note with a gently tapered frame and a striped edge.
 [dohtml]
 <div class="bh-boba bba-bud bba-soft-sip">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">just us</div>
 <div class="bba-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -566,9 +546,9 @@ A drink-sleeve note with a gently tapered frame and a striped edge.
 [dohtml]
 <div class="bh-boba bba-bud bba-soft-sip">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">just us</div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>
@@ -583,7 +563,7 @@ A compact square label with a little portrait, double-rule heading and member-co
 [dohtml]
 <div class="bh-boba bba-bud bba-sugar-dot">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">saved you a sip</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -601,12 +581,12 @@ A compact square label with a little portrait, double-rule heading and member-co
 [dohtml]
 <div class="bh-boba bba-bud bba-sugar-dot">
 <a class="bba-name" href="[url]">Hunter &amp; Soomin</a>
-<div class="bba-title">[text]</div>
+<div class="bba-title">saved you a sip</div>
 <div class="bba-media">
 <img src="https://64.media.tumblr.com/2468325d17e46ec6b5b7684b1c0cd573/08812ed72dad76df-e8/s540x810/725cfd99f4306f299e968b4f60edaa2cb47d25d0.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="bba-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="bba-motif" aria-hidden="true"></div>
 </div>

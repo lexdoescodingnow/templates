@@ -1,6 +1,6 @@
 [h1]PLUM[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A sculpted portrait window set into a sweeping, open book-jacket heading, with p
 [dohtml]
 <div class="plm plm-thread plm-damson-vesper">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Damson Vesper</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -37,16 +37,12 @@ A sculpted portrait window set into a sweeping, open book-jacket heading, with p
 [dohtml]
 <div class="plm plm-thread plm-damson-vesper">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Damson Vesper</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -61,7 +57,7 @@ A quiet literary page held in a broad crescent frame, with a small centred title
 [dohtml]
 <div class="plm plm-thread plm-everripe">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Everripe</div>
 <div class="plm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -80,13 +76,9 @@ A quiet literary page held in a broad crescent frame, with a small centred title
 [dohtml]
 <div class="plm plm-thread plm-everripe">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Everripe</div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -101,7 +93,7 @@ Two landscape stills arranged like facing pages above a wide, centred title, wit
 [dohtml]
 <div class="plm plm-thread plm-prunus-sonata">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Prunus Sonata</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/bfca80cba0db1476360995334b791046/bd8bcf1daaa74e76-9e/s400x600/d67d60c9e9ae34fac1ac73bbf83f160c3db15460.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -124,17 +116,13 @@ Two landscape stills arranged like facing pages above a wide, centred title, wit
 [dohtml]
 <div class="plm plm-thread plm-prunus-sonata">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Prunus Sonata</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/bfca80cba0db1476360995334b791046/bd8bcf1daaa74e76-9e/s400x600/d67d60c9e9ae34fac1ac73bbf83f160c3db15460.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -149,7 +137,7 @@ A slender portrait running beside the opening of a long reply, a small asymmetri
 [dohtml]
 <div class="plm plm-thread plm-satin-dusk">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Satin Dusk</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -171,16 +159,12 @@ A slender portrait running beside the opening of a long reply, a small asymmetri
 [dohtml]
 <div class="plm plm-thread plm-satin-dusk">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Satin Dusk</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -195,7 +179,7 @@ An open typographic folio with a plum-stone engraving, an oversized upright head
 [dohtml]
 <div class="plm plm-thread plm-stone-and-stanza">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Stone &amp; Stanza</div>
 <div class="plm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -214,13 +198,9 @@ An open typographic folio with a plum-stone engraving, an oversized upright head
 [dohtml]
 <div class="plm plm-thread plm-stone-and-stanza">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Stone &amp; Stanza</div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -237,7 +217,7 @@ A softly bowed phone with a wide contact still, fine blossom speaker marks and c
 [dohtml]
 <div class="plm plm-comms plm-bloomline" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Bloomline</div>
 <div class="plm-time">22:14</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -258,15 +238,15 @@ A softly bowed phone with a wide contact still, fine blossom speaker marks and c
 [dohtml]
 <div class="plm plm-comms plm-bloomline" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Bloomline</div>
 <div class="plm-time">22:14</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="plm-device" aria-hidden="true"></div>
 </div>
@@ -281,7 +261,7 @@ A tall contemporary phone with a curved metal rim, a sculpted contact portrait a
 [dohtml]
 <div class="plm plm-comms plm-damson-dial" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Damson Dial</div>
 <div class="plm-time">22:14</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -302,15 +282,15 @@ A tall contemporary phone with a curved metal rim, a sculpted contact portrait a
 [dohtml]
 <div class="plm plm-comms plm-damson-dial" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Damson Dial</div>
 <div class="plm-time">22:14</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="plm-device" aria-hidden="true"></div>
 </div>
@@ -325,7 +305,7 @@ A pocket keyboard communicator with a horizontal display, outlined speech bubble
 [dohtml]
 <div class="plm plm-comms plm-orchard-echo" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Orchard Echo</div>
 <div class="plm-time">22:14</div>
 <div class="plm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -343,12 +323,12 @@ A pocket keyboard communicator with a horizontal display, outlined speech bubble
 [dohtml]
 <div class="plm plm-comms plm-orchard-echo" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Orchard Echo</div>
 <div class="plm-time">22:14</div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="plm-device" aria-hidden="true"></div>
 </div>
@@ -363,7 +343,7 @@ A compact square foldable phone, with a narrow hinge, a typographic contact scre
 [dohtml]
 <div class="plm plm-comms plm-prunus-inbox" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Prunus Inbox</div>
 <div class="plm-time">22:14</div>
 <div class="plm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -381,12 +361,12 @@ A compact square foldable phone, with a narrow hinge, a typographic contact scre
 [dohtml]
 <div class="plm plm-comms plm-prunus-inbox" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Prunus Inbox</div>
 <div class="plm-time">22:14</div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="plm-device" aria-hidden="true"></div>
 </div>
@@ -401,7 +381,7 @@ A desktop chat window with a slim app dock, titlebar lights, an inline contact p
 [dohtml]
 <div class="plm plm-comms plm-sloe-circuit" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Sloe Circuit</div>
 <div class="plm-time">22:14</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -422,15 +402,15 @@ A desktop chat window with a slim app dock, titlebar lights, an inline contact p
 [dohtml]
 <div class="plm plm-comms plm-sloe-circuit" data-flow="received">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Sloe Circuit</div>
 <div class="plm-time">22:14</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="plm-device" aria-hidden="true"></div>
 </div>
@@ -447,7 +427,7 @@ A miniature bookplate with an upright portrait, a tiny blossom and a compact rep
 [dohtml]
 <div class="plm plm-bud plm-bloomscript">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Bloomscript</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -465,12 +445,12 @@ A miniature bookplate with an upright portrait, a tiny blossom and a compact rep
 [dohtml]
 <div class="plm plm-bud plm-bloomscript">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Bloomscript</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -485,7 +465,7 @@ A low letter slip with an offset title, a fine branching rule and a small signat
 [dohtml]
 <div class="plm plm-bud plm-petaline">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Petaline</div>
 <div class="plm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -500,9 +480,9 @@ A low letter slip with an offset title, a fine branching rule and a small signat
 [dohtml]
 <div class="plm plm-bud plm-petaline">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Petaline</div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -517,7 +497,7 @@ A compact circular-seal heading above an intimate reply, with a delicate split l
 [dohtml]
 <div class="plm plm-bud plm-ripelet">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Ripelet</div>
 <div class="plm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -532,9 +512,9 @@ A compact circular-seal heading above an intimate reply, with a delicate split l
 [dohtml]
 <div class="plm plm-bud plm-ripelet">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Ripelet</div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -549,7 +529,7 @@ A narrow folded note with paired miniature stills across its top and a curved me
 [dohtml]
 <div class="plm plm-bud plm-sloe-whisper">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Sloe Whisper</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/bfca80cba0db1476360995334b791046/bd8bcf1daaa74e76-9e/s400x600/d67d60c9e9ae34fac1ac73bbf83f160c3db15460.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -568,13 +548,13 @@ A narrow folded note with paired miniature stills across its top and a curved me
 [dohtml]
 <div class="plm plm-bud plm-sloe-whisper">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Sloe Whisper</div>
 <div class="plm-media">
 <img src="https://64.media.tumblr.com/d87f2776480f9b1f20963c77ca2dffe0/5c9eb30503377fb8-6a/s400x600/722a67a687bad42c8378422ee08f76098f2a2d78.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/bfca80cba0db1476360995334b791046/bd8bcf1daaa74e76-9e/s400x600/d67d60c9e9ae34fac1ac73bbf83f160c3db15460.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>
@@ -589,7 +569,7 @@ A small asymmetrical note with a plum-stone cutout and an open, two-tone frame.
 [dohtml]
 <div class="plm plm-bud plm-stoneling">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Stoneling</div>
 <div class="plm-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -604,9 +584,9 @@ A small asymmetrical note with a plum-stone cutout and an open, two-tone frame.
 [dohtml]
 <div class="plm plm-bud plm-stoneling">
 <a class="plm-name" href="[url]">Jason &amp; Mike</a>
-<div class="plm-title">[text]</div>
+<div class="plm-title">Stoneling</div>
 <div class="plm-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="plm-ornament" aria-hidden="true"></div>
 </div>

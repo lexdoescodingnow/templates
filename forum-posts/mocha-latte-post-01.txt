@@ -1,6 +1,6 @@
 [h1]MOCHA LATTE[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ Offset horizontal photographs, cocoa crosshatching and an angular double-rule fr
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-cocoa-cadence">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">a little bittersweet</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -38,17 +38,13 @@ Offset horizontal photographs, cocoa crosshatching and an angular double-rule fr
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-cocoa-cadence">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">a little bittersweet</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -63,7 +59,7 @@ A literary page with topographic milk-and-cocoa contours, an oversized italic he
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-marbled-hours">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">where our hours intertwine</div>
 <div class="ml-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -82,13 +78,9 @@ A literary page with topographic milk-and-cocoa contours, an oversized italic he
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-marbled-hours">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">where our hours intertwine</div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -103,7 +95,7 @@ Three slender portrait ribbons, a feathered latte-art flourish and a large flowi
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-rosetta-reverie">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">all the ways we soften</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -127,18 +119,14 @@ Three slender portrait ribbons, a feathered latte-art flourish and a large flowi
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-rosetta-reverie">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">all the ways we soften</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/977ed3a58a62cc598a25729ff2119d8e/db1a85d9974f240f-82/s540x810/87304e08e9fd8359c465f6a0c71fb7a38fd6b929.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -153,7 +141,7 @@ A long teardrop portrait beside a sweeping title, with milk-pour curves carrying
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-silken-pour">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">fall into something soft</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -175,16 +163,12 @@ A long teardrop portrait beside a sweeping title, with milk-pour curves carrying
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-silken-pour">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">fall into something soft</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -199,7 +183,7 @@ Three staggered portrait panels over fine vertical pour-lines, a compact centre 
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-velvet-ratio">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">three parts, one feeling</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -223,18 +207,14 @@ Three staggered portrait panels over fine vertical pour-lines, a compact centre 
 [dohtml]
 <div class="bh-mocha-latte ml-thread ml-velvet-ratio">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">three parts, one feeling</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/977ed3a58a62cc598a25729ff2119d8e/db1a85d9974f240f-82/s540x810/87304e08e9fd8359c465f6a0c71fb7a38fd6b929.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -251,7 +231,7 @@ A landscape pocket messenger with ribbed grips, a small status display and crisp
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-cocoa-circuit" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">private channel · connected</div>
 <div class="ml-time">14:08</div>
 <div class="ml-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -269,12 +249,12 @@ A landscape pocket messenger with ribbed grips, a small status display and crisp
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-cocoa-circuit" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">private channel · connected</div>
 <div class="ml-time">14:08</div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ml-hardware" aria-hidden="true"></div>
 </div>
@@ -289,7 +269,7 @@ A softly squared smartphone with a petal contact portrait, rosetta speaker mark 
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-foamline" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">online · stay with me</div>
 <div class="ml-time">14:08</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -310,15 +290,15 @@ A softly squared smartphone with a petal contact portrait, rosetta speaker mark 
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-foamline" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">online · stay with me</div>
 <div class="ml-time">14:08</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ml-hardware" aria-hidden="true"></div>
 </div>
@@ -333,7 +313,7 @@ A rounded smartwatch messenger with twin contact tiles, a ridged band, a side cr
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-melt-mode" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">close at hand</div>
 <div class="ml-time">14:08</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -355,16 +335,16 @@ A rounded smartwatch messenger with twin contact tiles, a ridged band, a side cr
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-melt-mode" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">close at hand</div>
 <div class="ml-time">14:08</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ml-hardware" aria-hidden="true"></div>
 </div>
@@ -379,7 +359,7 @@ A group-chat smartphone with three tall contact tiles, a translucent member-colo
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-milkglass-messenger" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">our little group · 3 online</div>
 <div class="ml-time">14:08</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -402,7 +382,7 @@ A group-chat smartphone with three tall contact tiles, a translucent member-colo
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-milkglass-messenger" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">our little group · 3 online</div>
 <div class="ml-time">14:08</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -410,9 +390,9 @@ A group-chat smartphone with three tall contact tiles, a translucent member-colo
 <img src="https://64.media.tumblr.com/977ed3a58a62cc598a25729ff2119d8e/db1a85d9974f240f-82/s540x810/87304e08e9fd8359c465f6a0c71fb7a38fd6b929.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ml-hardware" aria-hidden="true"></div>
 </div>
@@ -427,7 +407,7 @@ An angular handset with a narrow side speaker rail, a corner portrait and a stro
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-pourcast" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">a message, just for you</div>
 <div class="ml-time">14:08</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -448,15 +428,15 @@ An angular handset with a narrow side speaker rail, a corner portrait and a stro
 [dohtml]
 <div class="bh-mocha-latte ml-comms ml-pourcast" data-flow="received">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">a message, just for you</div>
 <div class="ml-time">14:08</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ml-hardware" aria-hidden="true"></div>
 </div>
@@ -473,7 +453,7 @@ A small angular note with a clipped corner photograph, cocoa crosshatching and a
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-cocoa-flicker">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">a little warmth</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -491,12 +471,12 @@ A small angular note with a clipped corner photograph, cocoa crosshatching and a
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-cocoa-flicker">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">a little warmth</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -511,7 +491,7 @@ A little scalloped latte-art card with a slanted title and a thin three-colour b
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-foamlet">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">a softer sort of hello</div>
 <div class="ml-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -526,9 +506,9 @@ A little scalloped latte-art card with a slanted title and a thin three-colour b
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-foamlet">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">a softer sort of hello</div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -543,7 +523,7 @@ An open horizontal note with a small marbled swirl at the margin and a member-co
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-last-swirl">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">one more moment</div>
 <div class="ml-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -558,9 +538,9 @@ An open horizontal note with a small marbled swirl at the margin and a member-co
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-last-swirl">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">one more moment</div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -575,7 +555,7 @@ A compact asymmetrical drop with a curved colour edge, delicate heading and a ti
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-milktrace">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">the shape of a moment</div>
 <div class="ml-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -590,9 +570,9 @@ A compact asymmetrical drop with a curved colour edge, delicate heading and a ti
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-milktrace">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">the shape of a moment</div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>
@@ -607,7 +587,7 @@ A miniature three-portrait strip above one shared name, a fine title rule and a 
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-three-sugars">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">sweet in threes</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -627,14 +607,14 @@ A miniature three-portrait strip above one shared name, a fine title rule and a 
 [dohtml]
 <div class="bh-mocha-latte ml-bud ml-three-sugars">
 <a class="ml-name" href="[url]">Elias, Taeyang &amp; Yujun</a>
-<div class="ml-title">[text]</div>
+<div class="ml-title">sweet in threes</div>
 <div class="ml-media">
 <img src="https://64.media.tumblr.com/6036ab055e37f0c42d60da8cf827b1f3/91034b1f3d1013a1-b2/s540x810/7a1aa5a0436a5cef99bf5a71dd08b2a4b0e4c0da.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/ac1f4fbea8943b7630b608d4351a5d93/e52473e744651b82-9c/s1280x1920/966b433397d700d462dc95892ac241222e153ac4.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/977ed3a58a62cc598a25729ff2119d8e/db1a85d9974f240f-82/s540x810/87304e08e9fd8359c465f6a0c71fb7a38fd6b929.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ml-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ml-motif" aria-hidden="true"></div>
 </div>

@@ -1,6 +1,6 @@
 [h1]CHOCOLATE[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ Melted edges · gold filigree · portrait arches
 <article class="chc-ganache">
 <header class="chc-heading">
 <a class="chc-name" href="[url]">Jake &amp; River</a>
-<h2 class="chc-title">[text]</h2>
+<h2 class="chc-title">Ganache</h2>
 </header>
 
 <div class="chc-portraits">
@@ -42,7 +42,7 @@ Melted edges · gold filigree · portrait arches
 <article class="chc-ganache">
 <header class="chc-heading">
 <a class="chc-name" href="[url]">Jake &amp; River</a>
-<h2 class="chc-title">[text]</h2>
+<h2 class="chc-title">Ganache</h2>
 </header>
 
 <div class="chc-portraits">
@@ -51,9 +51,7 @@ Melted edges · gold filigree · portrait arches
 </div>
 
 <div class="chc-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis aute irure dolor in reprehenderit</b> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nulla facilisi. Integer vel nibh in neque tincidunt dignissim, et in ipsum sit amet erat consequat volutpat.</p>
-<p>Etiam sit amet velit vel nibh luctus elementum. <u>Excepteur sint occaecat cupidatat non proident,</u> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="chc-finish"><span>Chocolate</span><span class="chc-cacao" aria-hidden="true"></span><span>Ganache · 01</span></footer>
@@ -71,7 +69,7 @@ Cocoa ribbon · engraved leaves · offset portraits
 <article class="choco choco-gianduja choco-thread">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Gianduja</h2>
 </header>
 
 <div class="choco-portraits">
@@ -98,7 +96,7 @@ Cocoa ribbon · engraved leaves · offset portraits
 <article class="choco choco-gianduja choco-thread">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Gianduja</h2>
 </header>
 
 <div class="choco-portraits">
@@ -107,9 +105,7 @@ Cocoa ribbon · engraved leaves · offset portraits
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis aute irure dolor in reprehenderit</b> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nulla facilisi. Integer vel nibh in neque tincidunt dignissim, et in ipsum sit amet erat consequat volutpat.</p>
-<p>Etiam sit amet velit vel nibh luctus elementum. <u>Excepteur sint occaecat cupidatat non proident,</u> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Chocolate</span><span class="choco-cacao" aria-hidden="true"></span><span>Gianduja · 04</span></footer>
@@ -127,7 +123,7 @@ An image-free literary page with fine themed details.
 <article class="choco choco-noir choco-thread">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Noir</h2>
 </header>
 
 <div class="choco-writing">
@@ -149,13 +145,11 @@ An image-free literary page with fine themed details.
 <article class="choco choco-noir choco-thread">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Noir</h2>
 </header>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis aute irure dolor in reprehenderit</b> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nulla facilisi. Integer vel nibh in neque tincidunt dignissim, et in ipsum sit amet erat consequat volutpat.</p>
-<p>Etiam sit amet velit vel nibh luctus elementum. <u>Excepteur sint occaecat cupidatat non proident,</u> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Chocolate</span><span class="choco-cacao" aria-hidden="true"></span><span>Noir · 05</span></footer>
@@ -173,7 +167,7 @@ Folded foil · chocolate squares · crisp frame
 <article class="choco choco-praline choco-thread">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Praliné</h2>
 </header>
 
 <div class="choco-portraits">
@@ -199,7 +193,7 @@ Folded foil · chocolate squares · crisp frame
 <article class="choco choco-praline choco-thread">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Praliné</h2>
 </header>
 
 <div class="choco-portraits">
@@ -207,9 +201,7 @@ Folded foil · chocolate squares · crisp frame
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis aute irure dolor in reprehenderit</b> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nulla facilisi. Integer vel nibh in neque tincidunt dignissim, et in ipsum sit amet erat consequat volutpat.</p>
-<p>Etiam sit amet velit vel nibh luctus elementum. <u>Excepteur sint occaecat cupidatat non proident,</u> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Chocolate</span><span class="choco-cacao" aria-hidden="true"></span><span>Praliné · 02</span></footer>
@@ -227,7 +219,7 @@ Rounded silhouettes · piped borders · circular portrait
 <article class="choco choco-truffle choco-thread">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Truffle</h2>
 </header>
 
 <div class="choco-portraits">
@@ -253,7 +245,7 @@ Rounded silhouettes · piped borders · circular portrait
 <article class="choco choco-truffle choco-thread">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Truffle</h2>
 </header>
 
 <div class="choco-portraits">
@@ -261,9 +253,7 @@ Rounded silhouettes · piped borders · circular portrait
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis aute irure dolor in reprehenderit</b> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nulla facilisi. Integer vel nibh in neque tincidunt dignissim, et in ipsum sit amet erat consequat volutpat.</p>
-<p>Etiam sit amet velit vel nibh luctus elementum. <u>Excepteur sint occaecat cupidatat non proident,</u> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Chocolate</span><span class="choco-cacao" aria-hidden="true"></span><span>Truffle · 03</span></footer>
@@ -283,7 +273,7 @@ One character contact portrait, with the original device frame and message bubbl
 <article class="choco choco-ganache choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Ganache</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -311,7 +301,7 @@ One character contact portrait, with the original device frame and message bubbl
 <article class="choco choco-ganache choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Ganache</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -321,9 +311,9 @@ One character contact portrait, with the original device frame and message bubbl
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p><b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation. <u>Duis aute irure dolor in reprehenderit.</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Ganache</span><span class="choco-cacao" aria-hidden="true"></span><span>comms · 01</span></footer>
@@ -341,7 +331,7 @@ One character contact portrait, with the original device frame and message bubbl
 <article class="choco choco-gianduja choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Gianduja</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -369,7 +359,7 @@ One character contact portrait, with the original device frame and message bubbl
 <article class="choco choco-gianduja choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Gianduja</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -379,9 +369,9 @@ One character contact portrait, with the original device frame and message bubbl
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p><b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation. <u>Duis aute irure dolor in reprehenderit.</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Gianduja</span><span class="choco-cacao" aria-hidden="true"></span><span>comms · 04</span></footer>
@@ -399,7 +389,7 @@ One character contact portrait, with the original device frame and message bubbl
 <article class="choco choco-noir choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Noir</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -427,7 +417,7 @@ One character contact portrait, with the original device frame and message bubbl
 <article class="choco choco-noir choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Noir</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -437,9 +427,9 @@ One character contact portrait, with the original device frame and message bubbl
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p><b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation. <u>Duis aute irure dolor in reprehenderit.</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Noir</span><span class="choco-cacao" aria-hidden="true"></span><span>comms · 05</span></footer>
@@ -457,7 +447,7 @@ A text contact header and clean message bubbles.
 <article class="choco choco-praline choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Praliné</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -481,15 +471,15 @@ A text contact header and clean message bubbles.
 <article class="choco choco-praline choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Praliné</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p><b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation. <u>Duis aute irure dolor in reprehenderit.</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Praliné</span><span class="choco-cacao" aria-hidden="true"></span><span>comms · 02</span></footer>
@@ -507,7 +497,7 @@ One character contact portrait, with the original device frame and message bubbl
 <article class="choco choco-truffle choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Truffle</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -535,7 +525,7 @@ One character contact portrait, with the original device frame and message bubbl
 <article class="choco choco-truffle choco-comms">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Truffle</h2>
 </header>
 <div class="choco-meta"><time class="choco-time">21:08</time><span class="choco-receipt">delivered</span></div>
 
@@ -545,9 +535,9 @@ One character contact portrait, with the original device frame and message bubbl
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p><b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation. <u>Duis aute irure dolor in reprehenderit.</u></p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Truffle</span><span class="choco-cacao" aria-hidden="true"></span><span>comms · 03</span></footer>
@@ -567,7 +557,7 @@ One small character portrait beside a compact reply and the original themed deta
 <article class="choco choco-ganache choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Ganache</h2>
 </header>
 
 <div class="choco-portraits">
@@ -592,7 +582,7 @@ One small character portrait beside a compact reply and the original themed deta
 <article class="choco choco-ganache choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Ganache</h2>
 </header>
 
 <div class="choco-portraits">
@@ -600,8 +590,7 @@ One small character portrait beside a compact reply and the original themed deta
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Ganache</span><span class="choco-cacao" aria-hidden="true"></span><span>buds · 01</span></footer>
@@ -619,7 +608,7 @@ Cocoa ribbon · engraved leaves · offset portraits
 <article class="choco choco-gianduja choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Gianduja</h2>
 </header>
 
 <div class="choco-portraits">
@@ -645,7 +634,7 @@ Cocoa ribbon · engraved leaves · offset portraits
 <article class="choco choco-gianduja choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Gianduja</h2>
 </header>
 
 <div class="choco-portraits">
@@ -654,8 +643,7 @@ Cocoa ribbon · engraved leaves · offset portraits
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Gianduja</span><span class="choco-cacao" aria-hidden="true"></span><span>buds · 04</span></footer>
@@ -673,7 +661,7 @@ A compact image-free note for a quick reply.
 <article class="choco choco-noir choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Noir</h2>
 </header>
 
 <div class="choco-writing">
@@ -694,12 +682,11 @@ A compact image-free note for a quick reply.
 <article class="choco choco-noir choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Noir</h2>
 </header>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Noir</span><span class="choco-cacao" aria-hidden="true"></span><span>buds · 05</span></footer>
@@ -717,7 +704,7 @@ A compact image-free note for a quick reply.
 <article class="choco choco-praline choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Praliné</h2>
 </header>
 
 <div class="choco-writing">
@@ -738,12 +725,11 @@ A compact image-free note for a quick reply.
 <article class="choco choco-praline choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Praliné</h2>
 </header>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Praliné</span><span class="choco-cacao" aria-hidden="true"></span><span>buds · 02</span></footer>
@@ -761,7 +747,7 @@ One small character portrait beside a compact reply and the original themed deta
 <article class="choco choco-truffle choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Truffle</h2>
 </header>
 
 <div class="choco-portraits">
@@ -786,7 +772,7 @@ One small character portrait beside a compact reply and the original themed deta
 <article class="choco choco-truffle choco-buds">
 <header class="choco-heading">
 <a class="choco-name" href="[url]">Jake &amp; River</a>
-<h2 class="choco-title">[text]</h2>
+<h2 class="choco-title">Truffle</h2>
 </header>
 
 <div class="choco-portraits">
@@ -794,8 +780,7 @@ One small character portrait beside a compact reply and the original themed deta
 </div>
 
 <div class="choco-writing">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Sed do eiusmod tempor incididunt</b> ut labore et dolore magna aliqua.</p>
-<p><i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <footer class="choco-finish"><span>Truffle</span><span class="choco-cacao" aria-hidden="true"></span><span>buds · 03</span></footer>

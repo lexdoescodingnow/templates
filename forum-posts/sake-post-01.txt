@@ -1,6 +1,6 @@
 [h1]SAKE[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A wide portrait under a translucent label band, asymmetric corner brackets and a
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-ginjo-veil">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">something clear between us</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -37,16 +37,12 @@ A wide portrait under a translucent label band, asymmetric corner brackets and a
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-ginjo-veil">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">something clear between us</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="sk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="sk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -61,7 +57,7 @@ A tasting-ring portrait sits between two fine horizontal rules, opening into a c
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-kikichoko-reverie">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">a circle left unbroken</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -83,16 +79,12 @@ A tasting-ring portrait sits between two fine horizontal rules, opening into a c
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-kikichoko-reverie">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">a circle left unbroken</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="sk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="sk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -107,7 +99,7 @@ A tall brewery-label page with an inset title block, three-colour margin bars an
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-koji-chronicle">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">the quiet things we keep</div>
 <div class="sk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -126,13 +118,9 @@ A tall brewery-label page with an inset title block, three-colour margin bars an
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-koji-chronicle">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">the quiet things we keep</div>
 <div class="sk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="sk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -147,7 +135,7 @@ An open brewer's ledger with a broad left register, stepped colour rules and a q
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-kurabito-ledger">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">written in the margins</div>
 <div class="sk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -166,13 +154,9 @@ An open brewer's ledger with a broad left register, stepped colour rules and a q
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-kurabito-ledger">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">written in the margins</div>
 <div class="sk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="sk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -187,7 +171,7 @@ A narrow name rail meets a broad letter with two unequal rectangular portraits a
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-moromi-interval">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">give us a little time</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/18b63fb14a8e29af4cc967fe6080cdd9/f3265a7db61004ef-44/s400x600/7cd34772b803c8229b513991e69167fe9a6fb6cb.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -210,17 +194,13 @@ A narrow name rail meets a broad letter with two unequal rectangular portraits a
 [dohtml]
 <div class="bh-sake-brew sk-thread sk-moromi-interval">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">give us a little time</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/18b63fb14a8e29af4cc967fe6080cdd9/f3265a7db61004ef-44/s400x600/7cd34772b803c8229b513991e69167fe9a6fb6cb.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="sk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="sk-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -238,7 +218,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum, sapien vitae fringilla viverra, neque ligula tincidunt risus, sed consequat arcu erat at justo.</p>
 </div>
 
@@ -268,8 +248,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum, sapien vitae fringilla viverra, neque ligula tincidunt risus, sed consequat arcu erat at justo.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-sake-pour__gifs">
@@ -300,7 +279,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat, justo et pharetra dictum, ligula ligula aliquam nibh, a blandit augue massa in magna.</p>
 </div>
 
@@ -329,8 +308,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat, justo et pharetra dictum, ligula ligula aliquam nibh, a blandit augue massa in magna.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-sake-pour__gifs">
@@ -360,7 +338,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed libero eget nibh posuere scelerisque. Sed sit amet tortor ut nisl fermentum suscipit.</p>
 </div>
 
@@ -390,8 +368,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed libero eget nibh posuere scelerisque. Sed sit amet tortor ut nisl fermentum suscipit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-sake-pour__gifs">
@@ -422,7 +399,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a tristique risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
 <p>Donec condimentum risus vel ligula suscipit, quis commodo erat dictum. Aenean in leo at neque fermentum ullamcorper. Sed ut lacinia odio, at suscipit lectus.</p>
 <p>Fusce nec sem ut erat fringilla convallis. Cras eu sapien ut ipsum tincidunt faucibus. Donec faucibus lorem ut augue maximus, vitae pulvinar neque aliquam.</p>
@@ -455,11 +432,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a tristique risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-<p>Donec condimentum risus vel ligula suscipit, quis commodo erat dictum. Aenean in leo at neque fermentum ullamcorper. Sed ut lacinia odio, at suscipit lectus.</p>
-<p>Fusce nec sem ut erat fringilla convallis. Cras eu sapien ut ipsum tincidunt faucibus. Donec faucibus lorem ut augue maximus, vitae pulvinar neque aliquam.</p>
-<p>Sed pharetra ligula vel diam laoreet, sit amet aliquam arcu pulvinar. Nunc commodo velit sed eros rutrum, et interdum nunc semper.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-sake-pour__gifs">
@@ -490,7 +463,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac eros interdum, suscipit neque vitae, placerat nibh. Aliquam erat volutpat.</p>
 </div>
 
@@ -520,8 +493,7 @@ A thread layout from the Sake collection.
 <a class="bh-sake-pour__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span></a>
 
 <div class="bh-sake-pour__text">
-[text]
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac eros interdum, suscipit neque vitae, placerat nibh. Aliquam erat volutpat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-sake-pour__gifs">
@@ -565,15 +537,15 @@ A comms layout from the Sake collection.
 <div class="bh-sake-comms__neck"><i></i><i></i><i></i></div>
 
 <div class="bh-sake-comms__chat">
-<div class="bh-sake-comms__date">[date]</div>
+<div class="bh-sake-comms__date">Today</div>
 
 <div class="bh-sake-comms__messages">
-<p>[text]</p>
+<p></p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum vitae fringilla viverra.</p>
 <p><b>Lorem ipsum</b> dolor sit amet, <i>neque ligula</i> tincidunt risus, sed <u>consequat arcu</u> erat at justo.</p>
 </div>
 
-<div class="bh-sake-comms__sent-meta">[time] · delivered</div>
+<div class="bh-sake-comms__sent-meta">09:41 · delivered</div>
 </div>
 
 <div class="bh-sake-comms__footer"><span>清酒</span><i></i><span>message archive</span></div>
@@ -603,15 +575,15 @@ A comms layout from the Sake collection.
 <div class="bh-sake-comms__neck"><i></i><i></i><i></i></div>
 
 <div class="bh-sake-comms__chat">
-<div class="bh-sake-comms__date">[date]</div>
+<div class="bh-sake-comms__date">Today</div>
 
 <div class="bh-sake-comms__messages">
-<p>[text]</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum vitae fringilla viverra.</p>
-<p><b>Lorem ipsum</b> dolor sit amet, <i>neque ligula</i> tincidunt risus, sed <u>consequat arcu</u> erat at justo.</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 
-<div class="bh-sake-comms__sent-meta">[time] · delivered</div>
+<div class="bh-sake-comms__sent-meta">09:41 · delivered</div>
 </div>
 
 <div class="bh-sake-comms__footer"><span>清酒</span><i></i><span>message archive</span></div>
@@ -629,7 +601,7 @@ A compact keyboard handset with a recessed message display, a two-tone name bar 
 [dohtml]
 <div class="bh-sake-brew sk-comms sk-koji-key" data-flow="received">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">connected to Miles</div>
 <div class="sk-time">21:08</div>
 <div class="sk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -647,12 +619,12 @@ A compact keyboard handset with a recessed message display, a two-tone name bar 
 [dohtml]
 <div class="bh-sake-brew sk-comms sk-koji-key" data-flow="received">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">connected to Miles</div>
 <div class="sk-time">21:08</div>
 <div class="sk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="sk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -667,7 +639,7 @@ A slim smartphone with an inset square contact portrait, a narrow earpiece and r
 [dohtml]
 <div class="bh-sake-brew sk-comms sk-kura-dial" data-flow="received">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">messages · Jett &amp; Miles</div>
 <div class="sk-time">21:08</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -688,15 +660,15 @@ A slim smartphone with an inset square contact portrait, a narrow earpiece and r
 [dohtml]
 <div class="bh-sake-brew sk-comms sk-kura-dial" data-flow="received">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">messages · Jett &amp; Miles</div>
 <div class="sk-time">21:08</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="sk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="sk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -711,7 +683,7 @@ A square folding communicator with a slim twin-contact panel beside its larger c
 [dohtml]
 <div class="bh-sake-brew sk-comms sk-masu-relay" data-flow="received">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">Jett ↔ Miles</div>
 <div class="sk-time">21:08</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -733,16 +705,16 @@ A square folding communicator with a slim twin-contact panel beside its larger c
 [dohtml]
 <div class="bh-sake-brew sk-comms sk-masu-relay" data-flow="received">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">Jett ↔ Miles</div>
 <div class="sk-time">21:08</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/18b63fb14a8e29af4cc967fe6080cdd9/f3265a7db61004ef-44/s400x600/7cd34772b803c8229b513991e69167fe9a6fb6cb.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="sk-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="sk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -757,7 +729,7 @@ A tall edge-to-edge phone with a full-width contact photograph, oversized clock 
 [dohtml]
 <div class="bh-sake-brew sk-comms sk-namazake-touch" data-flow="received">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">one more message</div>
 <div class="sk-time">21:08</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -778,11 +750,31 @@ A tall edge-to-edge phone with a full-width contact photograph, oversized clock 
 [dohtml]
 <div class="bh-sake-brew sk-comms sk-namazake-touch" data-flow="received">
 <a class="sk-name" href="[url]">Jett &amp; Miles</a>
-<div class="sk-title">[text]</div>
+<div class="sk-title">one more message</div>
 <div class="sk-time">21:08</div>
 <div class="sk-media">
 <img src="https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s540x810/40f1aefcc3cc66a7c425b92a143754eb067deeb1.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
+<div class="sk-copy">
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+</div>
+<div class="sk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@7b7b7060351f769f23c731e107b9c02a805fa72e/sake/sake-brew-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]16 · Shizuku Signal[/b][/size]
+A compact flip handset with a separate clock display, a narrow hinge and a stepped lower conversation panel.
+
+[dohtml]
+<div class="bh-sake-brew sk-comms sk-shizuku-signal" data-flow="received">
+<a class="sk-name" href="[url]">Jett &amp; Miles</a>
+<div class="sk-title">the line is yours</div>
+<div class="sk-time">21:08</div>
 <div class="sk-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
 <p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
@@ -792,5 +784,111 @@ A tall edge-to-edge phone with a full-width contact photograph, oversized clock 
 </div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@7b7b7060351f769f23c731e107b9c02a805fa72e/sake/sake-brew-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-sake-brew sk-comms sk-shizuku-signal" data-flow="received">
+<a class="sk-name" href="[url]">Jett &amp; Miles</a>
+<div class="sk-title">the line is yours</div>
+<div class="sk-time">21:08</div>
+<div class="sk-copy">
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+</div>
+<div class="sk-hardware" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@7b7b7060351f769f23c731e107b9c02a805fa72e/sake/sake-brew-v1.css">
+[/dohtml]
+[/code]
+
+[size=6][b]BUDS[/b][/size]
+
+[size=4][b]17 · Portrait Window · Large Gif[/b][/size]
+A bud layout from the Sake collection.
+
+[dohtml]
+<div class="bh-sake-bud bh-sake-bud--window" style="--sb-img1:url('https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s400x600/e24d5427540bb2a9ad44af10efff7c7a8a43464e.gifv');">
+
+<a class="bh-sake-bud__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span><span>100 words or less</span></a>
+
+<div class="bh-sake-bud__body">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum vitae fringilla viverra. <b>Praesent vel lacus</b> sed sapien tempor consectetur.</p>
+</div>
+
+<div class="bh-sake-bud__media"><div class="bh-sake-bud__image bh-sake-bud__image--one"></div><span class="bh-sake-bud__chip">portrait window · one scene</span></div>
+
+<div class="bh-sake-bud__head"><div class="bh-sake-bud__heading"><span class="bh-sake-bud__kicker">一芽 · quick reply series</span><strong class="bh-sake-bud__title">portrait window</strong></div><span class="bh-sake-bud__seal">芽</span></div>
+
+</div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-buds.css?v=20260725-5');</style>
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-sake-bud bh-sake-bud--window" style="--sb-img1:url('https://64.media.tumblr.com/0fa53ab70ddb831873ecda0ad99fe813/85de0ff821ec2679-63/s400x600/e24d5427540bb2a9ad44af10efff7c7a8a43464e.gifv');">
+
+<a class="bh-sake-bud__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span><span>100 words or less</span></a>
+
+<div class="bh-sake-bud__body">
+<p>[TEXT GOES HERE]</p>
+</div>
+
+<div class="bh-sake-bud__media"><div class="bh-sake-bud__image bh-sake-bud__image--one"></div><span class="bh-sake-bud__chip">portrait window · one scene</span></div>
+
+<div class="bh-sake-bud__head"><div class="bh-sake-bud__heading"><span class="bh-sake-bud__kicker">一芽 · quick reply series</span><strong class="bh-sake-bud__title">portrait window</strong></div><span class="bh-sake-bud__seal">芽</span></div>
+
+</div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-buds.css?v=20260725-5');</style>
+[/dohtml]
+[/code]
+
+[size=4][b]18 · Ochoko Bud · Round Cup[/b][/size]
+A bud layout from the Sake collection.
+
+[dohtml]
+<div class="bh-sake-bud bh-sake-bud--cup" style="--sb-img1:url('https://64.media.tumblr.com/1b73af8a8ab10c9387bb9b7e26438906/b5fe69bc666e12d9-7d/s400x600/af7a23e876aae74d30d035bf6c52fccebae2329a.gifv');">
+
+<a class="bh-sake-bud__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span><span>small pour · fast volley</span></a>
+
+<div class="bh-sake-bud__body">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Neque ligula tincidunt</i> risus, sed consequat arcu erat at justo.</p>
+</div>
+
+<div class="bh-sake-bud__media"><div class="bh-sake-bud__image bh-sake-bud__image--one"></div></div>
+
+<div class="bh-sake-bud__head"><div class="bh-sake-bud__heading"><span class="bh-sake-bud__kicker">お猪口 · single serving</span><strong class="bh-sake-bud__title">ochoko bud</strong></div><span class="bh-sake-bud__seal">盃</span></div>
+
+</div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-buds.css?v=20260725-5');</style>
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-sake-bud bh-sake-bud--cup" style="--sb-img1:url('https://64.media.tumblr.com/1b73af8a8ab10c9387bb9b7e26438906/b5fe69bc666e12d9-7d/s400x600/af7a23e876aae74d30d035bf6c52fccebae2329a.gifv');">
+
+<a class="bh-sake-bud__tag" href="[url]" target="_blank" rel="noopener"><span>Jett &amp; Miles</span><span>small pour · fast volley</span></a>
+
+<div class="bh-sake-bud__body">
+<p>[TEXT GOES HERE]</p>
+</div>
+
+<div class="bh-sake-bud__media"><div class="bh-sake-bud__image bh-sake-bud__image--one"></div></div>
+
+<div class="bh-sake-bud__head"><div class="bh-sake-bud__heading"><span class="bh-sake-bud__kicker">お猪口 · single serving</span><strong class="bh-sake-bud__title">ochoko bud</strong></div><span class="bh-sake-bud__seal">盃</span></div>
+
+</div>
+
+<style>@import url('https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sake/sake-buds.css?v=20260725-5');</style>
 [/dohtml]
 [/code]

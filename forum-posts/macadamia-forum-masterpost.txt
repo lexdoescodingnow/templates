@@ -1,6 +1,6 @@
 [h1]MACADAMIA[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ An image-free page with an interlaced member-colour edge, a small sideways signa
 [dohtml]
 <div class="bh-maca mc-thread mc-orchard-weave">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">woven into the everyday</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -33,13 +33,9 @@ An image-free page with an interlaced member-colour edge, a small sideways signa
 [dohtml]
 <div class="bh-maca mc-thread mc-orchard-weave">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">woven into the everyday</div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -54,7 +50,7 @@ A cascade of tiny macadamia blossoms runs beside a panoramic portrait and a broa
 [dohtml]
 <div class="bh-maca mc-thread mc-raceme-letters">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">the things we grow into</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -76,16 +72,12 @@ A cascade of tiny macadamia blossoms runs beside a panoramic portrait and a broa
 [dohtml]
 <div class="bh-maca mc-thread mc-raceme-letters">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">the things we grow into</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -100,7 +92,7 @@ A fragmented mosaic frame holds two offset landscape portraits, a bold slanting 
 [dohtml]
 <div class="bh-maca mc-thread mc-terrazzo-milk">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">a little beautifully undone</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/fc9ad72904d14093924519639765af84/7a0a4b57e7d99dd3-27/s540x810/382377f08c71e7101cda3709522afd7059a8ee17.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -123,17 +115,13 @@ A fragmented mosaic frame holds two offset landscape portraits, a bold slanting 
 [dohtml]
 <div class="bh-maca mc-thread mc-terrazzo-milk">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">a little beautifully undone</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/fc9ad72904d14093924519639765af84/7a0a4b57e7d99dd3-27/s540x810/382377f08c71e7101cda3709522afd7059a8ee17.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -150,10 +138,10 @@ A thread layout from the Macadamia collection.
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>kernel archive</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 01 · Kernel Archive</a><span>kernel archive</span></div>
+<h1 class="bh-macthread-title">Macadamia 01 · Kernel Archive</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -189,10 +177,10 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>kernel archive</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 01 · Kernel Archive</a><span>kernel archive</span></div>
+<h1 class="bh-macthread-title">Macadamia 01 · Kernel Archive</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -201,15 +189,7 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 </div>
 
 <div class="bh-macthread-copy">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan justo vitae nisl vulputate</b>, sed consequat elit varius. <i>Integer feugiat nibh non facilisis mauris pretium non</i>. <u>Donec finibus mi vitae nibh vulputate</u>, in sodales justo feugiat.
-
-<br><br>
-
-Aliquam erat volutpat. Curabitur posuere, mi at rhoncus tincidunt, massa erat dictum ligula, vitae fermentum lectus lacus quis arcu. Sed suscipit blandit dui, et pellentesque urna porta at. Maecenas euismod felis vitae nulla posuere, vitae pellentesque nisl faucibus.
-
-<br><br>
-
-Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condimentum tellus et sem tincidunt, vitae malesuada lectus viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -230,10 +210,10 @@ A thread layout from the Macadamia collection.
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>soft shell</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 02 · Soft Shell</a><span>soft shell</span></div>
+<h1 class="bh-macthread-title">Macadamia 02 · Soft Shell</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -269,10 +249,10 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>soft shell</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 02 · Soft Shell</a><span>soft shell</span></div>
+<h1 class="bh-macthread-title">Macadamia 02 · Soft Shell</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -281,15 +261,7 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 </div>
 
 <div class="bh-macthread-copy">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan justo vitae nisl vulputate</b>, sed consequat elit varius. <i>Integer feugiat nibh non facilisis mauris pretium non</i>. <u>Donec finibus mi vitae nibh vulputate</u>, in sodales justo feugiat.
-
-<br><br>
-
-Aliquam erat volutpat. Curabitur posuere, mi at rhoncus tincidunt, massa erat dictum ligula, vitae fermentum lectus lacus quis arcu. Sed suscipit blandit dui, et pellentesque urna porta at. Maecenas euismod felis vitae nulla posuere, vitae pellentesque nisl faucibus.
-
-<br><br>
-
-Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condimentum tellus et sem tincidunt, vitae malesuada lectus viverra.
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -310,10 +282,10 @@ A thread layout from the Macadamia collection.
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>scroll archive</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 03 · Scroll Archive</a><span>scroll archive</span></div>
+<h1 class="bh-macthread-title">Macadamia 03 · Scroll Archive</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -357,10 +329,10 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>scroll archive</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 03 · Scroll Archive</a><span>scroll archive</span></div>
+<h1 class="bh-macthread-title">Macadamia 03 · Scroll Archive</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -369,23 +341,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 </div>
 
 <div class="bh-macthread-copy">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan justo vitae nisl vulputate</b>, sed consequat elit varius. <i>Integer feugiat nibh non facilisis mauris pretium non</i>. <u>Donec finibus mi vitae nibh vulputate</u>, in sodales justo feugiat.
-
-<br><br>
-
-Aliquam erat volutpat. Curabitur posuere, mi at rhoncus tincidunt, massa erat dictum ligula, vitae fermentum lectus lacus quis arcu. Sed suscipit blandit dui, et pellentesque urna porta at. Maecenas euismod felis vitae nulla posuere, vitae pellentesque nisl faucibus.
-
-<br><br>
-
-Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condimentum tellus et sem tincidunt, vitae malesuada lectus viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-
-<br><br>
-
-Fusce sit amet massa vel lectus tincidunt consequat. Donec mollis, urna in egestas venenatis, arcu metus malesuada neque, vitae feugiat lectus libero vitae justo. Morbi consequat dignissim nibh, vitae viverra ex volutpat non.
-
-<br><br>
-
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer fermentum erat vitae lacus interdum, ac viverra justo fermentum. Suspendisse potenti.
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -406,10 +362,10 @@ A thread layout from the Macadamia collection.
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>single serve</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 04 · Single Serve</a><span>single serve</span></div>
+<h1 class="bh-macthread-title">Macadamia 04 · Single Serve</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -445,10 +401,10 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>single serve</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 04 · Single Serve</a><span>single serve</span></div>
+<h1 class="bh-macthread-title">Macadamia 04 · Single Serve</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -457,15 +413,7 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 </div>
 
 <div class="bh-macthread-copy">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan justo vitae nisl vulputate</b>, sed consequat elit varius. <i>Integer feugiat nibh non facilisis mauris pretium non</i>. <u>Donec finibus mi vitae nibh vulputate</u>, in sodales justo feugiat.
-
-<br><br>
-
-Aliquam erat volutpat. Curabitur posuere, mi at rhoncus tincidunt, massa erat dictum ligula, vitae fermentum lectus lacus quis arcu. Sed suscipit blandit dui, et pellentesque urna porta at.
-
-<br><br>
-
-Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condimentum tellus et sem tincidunt, vitae malesuada lectus viverra.
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -486,10 +434,10 @@ A thread layout from the Macadamia collection.
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>contact sheet</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 05 · Contact Sheet</a><span>contact sheet</span></div>
+<h1 class="bh-macthread-title">Macadamia 05 · Contact Sheet</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -526,10 +474,10 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 <div class="bh-macthread-shell">
 
 <div class="bh-macthread-head">
-<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">[text]</a><span>contact sheet</span></div>
-<h1 class="bh-macthread-title">[text]</h1>
+<div class="bh-macthread-kicker"><a href="[url]" target="_blank" rel="noopener">Macadamia 05 · Contact Sheet</a><span>contact sheet</span></div>
+<h1 class="bh-macthread-title">Macadamia 05 · Contact Sheet</h1>
 <div class="bh-macthread-names">Journey &amp; Kai</div>
-<div class="bh-macthread-note">[text]</div>
+
 </div>
 
 <div class="bh-macthread-main">
@@ -539,15 +487,7 @@ Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condi
 </div>
 
 <div class="bh-macthread-copy">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan justo vitae nisl vulputate</b>, sed consequat elit varius. <i>Integer feugiat nibh non facilisis mauris pretium non</i>. <u>Donec finibus mi vitae nibh vulputate</u>, in sodales justo feugiat.
-
-<br><br>
-
-Aliquam erat volutpat. Curabitur posuere, mi at rhoncus tincidunt, massa erat dictum ligula, vitae fermentum lectus lacus quis arcu. Sed suscipit blandit dui, et pellentesque urna porta at. Maecenas euismod felis vitae nulla posuere, vitae pellentesque nisl faucibus.
-
-<br><br>
-
-Nullam efficitur ipsum non odio feugiat, sed tincidunt arcu dignissim. Sed condimentum tellus et sem tincidunt, vitae malesuada lectus viverra.
+<p>[TEXT GOES HERE]</p>
 </div>
 </div>
 
@@ -566,7 +506,7 @@ A rounded triangular portrait sits among three radiating leaves above a centred 
 [dohtml]
 <div class="bh-maca mc-thread mc-whorl-house">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">in the quiet between</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -588,16 +528,12 @@ A rounded triangular portrait sits among three radiating leaves above a centred 
 [dohtml]
 <div class="bh-maca mc-thread mc-whorl-house">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">in the quiet between</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -623,14 +559,14 @@ A comms layout from the Macadamia collection.
 <div class="bh-maccomms-identity">
 <span class="bh-maccomms-kicker">macadamia · private line</span>
 <a class="bh-maccomms-name" href="[url]" target="_blank" rel="noopener">Journey</a>
-<span class="bh-maccomms-status">[text]</span>
+<span class="bh-maccomms-status">online</span>
 <i class="bh-maccomms-line"></i>
 </div>
 
 <a class="bh-maccomms-open" href="[url]" target="_blank" rel="noopener">↗</a>
 </div>
 
-<div class="bh-maccomms-recipient">to <strong>Kai</strong><span>[text]</span></div>
+<div class="bh-maccomms-recipient">to <strong>Kai</strong><span>Comms Snippet</span></div>
 
 <div class="bh-maccomms-chat">
 <p>
@@ -679,35 +615,27 @@ Praesent accumsan justo vitae nisl vulputate. <b>Sed consequat elit varius</b>.
 <div class="bh-maccomms-identity">
 <span class="bh-maccomms-kicker">macadamia · private line</span>
 <a class="bh-maccomms-name" href="[url]" target="_blank" rel="noopener">Journey</a>
-<span class="bh-maccomms-status">[text]</span>
+<span class="bh-maccomms-status">online</span>
 <i class="bh-maccomms-line"></i>
 </div>
 
 <a class="bh-maccomms-open" href="[url]" target="_blank" rel="noopener">↗</a>
 </div>
 
-<div class="bh-maccomms-recipient">to <strong>Kai</strong><span>[text]</span></div>
+<div class="bh-maccomms-recipient">to <strong>Kai</strong><span>Comms Snippet</span></div>
 
 <div class="bh-maccomms-chat">
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<span class="bh-maccomms-time">11:42 pm</span>
-</p>
+<p>[MESSAGE GOES HERE]
+<span class="bh-maccomms-time">11:42 pm</span></p>
 
-<p>
-Praesent accumsan justo vitae nisl vulputate. <b>Sed consequat elit varius</b>.
-<span class="bh-maccomms-time">11:44 pm</span>
-</p>
+<p>[MESSAGE GOES HERE]
+<span class="bh-maccomms-time">11:44 pm</span></p>
 
-<p>
-<i>Integer feugiat nibh</i> non facilisis mauris pretium non.
-<span class="bh-maccomms-time">11:46 pm</span>
-</p>
+<p>[MESSAGE GOES HERE]
+<span class="bh-maccomms-time">11:46 pm</span></p>
 
-<p>
-<u>Donec finibus mi vitae nibh vulputate</u>, in sodales justo feugiat.
-<span class="bh-maccomms-time">11:47 pm</span>
-</p>
+<p>[MESSAGE GOES HERE]
+<span class="bh-maccomms-time">11:47 pm</span></p>
 </div>
 
 <div class="bh-maccomms-footer">
@@ -728,7 +656,7 @@ A two-panel glass phone with its conversation above a paired contact dock and a 
 [dohtml]
 <div class="bh-maca mc-comms mc-milkglass-duo" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">both sides of the story</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -750,16 +678,16 @@ A two-panel glass phone with its conversation above a paired contact dock and a 
 [dohtml]
 <div class="bh-maca mc-comms mc-milkglass-duo" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">both sides of the story</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/fc9ad72904d14093924519639765af84/7a0a4b57e7d99dd3-27/s540x810/382377f08c71e7101cda3709522afd7059a8ee17.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mc-controls" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -774,7 +702,7 @@ A compact keyboard phone with a short landscape display, a small contact tile an
 [dohtml]
 <div class="bh-maca mc-comms mc-orchard-pocket" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">always in your pocket</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -795,15 +723,15 @@ A compact keyboard phone with a short landscape display, a small contact tile an
 [dohtml]
 <div class="bh-maca mc-comms mc-orchard-pocket" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">always in your pocket</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mc-controls" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -818,7 +746,7 @@ A slim blossom-detailed phone with a square contact portrait, offset speaker slo
 [dohtml]
 <div class="bh-maca mc-comms mc-raceme-mobile" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">here for a little while</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -839,15 +767,15 @@ A slim blossom-detailed phone with a square contact portrait, offset speaker slo
 [dohtml]
 <div class="bh-maca mc-comms mc-raceme-mobile" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">here for a little while</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mc-controls" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -862,7 +790,7 @@ A miniature desktop terminal with a thick inset bezel, compact contact tile, squ
 [dohtml]
 <div class="bh-maca mc-comms mc-roast-terminal" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">a message is waiting</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -883,15 +811,15 @@ A miniature desktop terminal with a thick inset bezel, compact contact tile, squ
 [dohtml]
 <div class="bh-maca mc-comms mc-roast-terminal" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">a message is waiting</div>
 <div class="mc-time">16:28</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mc-controls" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -906,7 +834,7 @@ A smooth pebble-shaped messenger with a wide earpiece, centred contact text and 
 [dohtml]
 <div class="bh-maca mc-comms mc-whisper-kernel" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">close enough to hear</div>
 <div class="mc-time">16:28</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -924,12 +852,12 @@ A smooth pebble-shaped messenger with a wide earpiece, centred contact text and 
 [dohtml]
 <div class="bh-maca mc-comms mc-whisper-kernel" data-flow="received">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">close enough to hear</div>
 <div class="mc-time">16:28</div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mc-controls" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -946,7 +874,7 @@ Two small portrait medallions hang from a fine flowering stem above a compact re
 [dohtml]
 <div class="bh-maca mc-bud mc-blossom-pair">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">two small reasons</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/fc9ad72904d14093924519639765af84/7a0a4b57e7d99dd3-27/s540x810/382377f08c71e7101cda3709522afd7059a8ee17.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -965,13 +893,13 @@ Two small portrait medallions hang from a fine flowering stem above a compact re
 [dohtml]
 <div class="bh-maca mc-bud mc-blossom-pair">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">two small reasons</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/fc9ad72904d14093924519639765af84/7a0a4b57e7d99dd3-27/s540x810/382377f08c71e7101cda3709522afd7059a8ee17.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -993,7 +921,7 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 </div>
 
 <div class="bh-macbud-copy">
@@ -1020,11 +948,11 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 </div>
 
 <div class="bh-macbud-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus</u> mi vitae nibh vulputate.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-macbud-foot"><span class="bh-macbud-tag">a little sprout</span><span class="bh-macbud-limit">100 words or fewer</span></div>
@@ -1046,7 +974,7 @@ A bud layout from the Macadamia collection.
 <div class="bh-macbud-head">
 <div>
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 </div>
 <span class="bh-macbud-limit">under 100 words</span>
 </div>
@@ -1072,13 +1000,13 @@ A bud layout from the Macadamia collection.
 <div class="bh-macbud-head">
 <div>
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 </div>
 <span class="bh-macbud-limit">under 100 words</span>
 </div>
 
 <div class="bh-macbud-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate, sed consequat elit varius. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus mi vitae</u> nibh vulputate.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-macbud-foot"><span class="bh-macbud-tag">stemline</span><a class="bh-macbud-open" href="[url]" target="_blank" rel="noopener">↗</a></div>
@@ -1099,7 +1027,7 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 <span class="bh-macbud-limit">a reply in 100 words</span>
 </div>
 
@@ -1127,7 +1055,7 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 <span class="bh-macbud-limit">a reply in 100 words</span>
 </div>
 
@@ -1136,7 +1064,7 @@ A bud layout from the Macadamia collection.
 </a>
 
 <div class="bh-macbud-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus</u> mi vitae nibh vulputate, in sodales justo feugiat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-macbud-foot"><span class="bh-macbud-tag">pocket bud</span><span>quick volley</span></div>
@@ -1161,7 +1089,7 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 </div>
 
 <div class="bh-macbud-copy">
@@ -1188,11 +1116,11 @@ A bud layout from the Macadamia collection.
 
 <div class="bh-macbud-head">
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 </div>
 
 <div class="bh-macbud-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus mi vitae</u> nibh vulputate.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-macbud-foot"><span class="bh-macbud-tag">pressed leaf</span><span class="bh-macbud-limit">100 words or fewer</span></div>
@@ -1214,7 +1142,7 @@ A bud layout from the Macadamia collection.
 <div class="bh-macbud-head">
 <div>
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 </div>
 <span class="bh-macbud-limit">100 words or fewer</span>
 </div>
@@ -1245,7 +1173,7 @@ A bud layout from the Macadamia collection.
 <div class="bh-macbud-head">
 <div>
 <a class="bh-macbud-name" href="[url]" target="_blank" rel="noopener">Journey &amp; Kai</a>
-<span class="bh-macbud-meta">[text]</span>
+
 </div>
 <span class="bh-macbud-limit">100 words or fewer</span>
 </div>
@@ -1256,7 +1184,7 @@ A bud layout from the Macadamia collection.
 </div>
 
 <div class="bh-macbud-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Praesent accumsan</b> justo vitae nisl vulputate. <i>Integer feugiat nibh</i> non facilisis mauris pretium non. <u>Donec finibus</u> mi vitae nibh vulputate.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 
 <div class="bh-macbud-foot"><span class="bh-macbud-tag">twin bud</span><span>one quick beat</span></div>
@@ -1274,7 +1202,7 @@ An asymmetric miniature with a portrait corner, a short reply and a scattering o
 [dohtml]
 <div class="bh-maca mc-bud mc-butterfleck">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">something soft to keep</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -1292,12 +1220,12 @@ An asymmetric miniature with a portrait corner, a short reply and a scattering o
 [dohtml]
 <div class="bh-maca mc-bud mc-butterfleck">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">something soft to keep</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -1312,7 +1240,7 @@ A tiny upright note with a bold sans heading, a scattered imprint and a wide col
 [dohtml]
 <div class="bh-maca mc-bud mc-crumbprint">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">a trace of sweetness</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -1327,9 +1255,9 @@ A tiny upright note with a bold sans heading, a scattered imprint and a wide col
 [dohtml]
 <div class="bh-maca mc-bud mc-crumbprint">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">a trace of sweetness</div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -1344,7 +1272,7 @@ A tiny round seed-eye imprint anchors a short open reply between offset coloured
 [dohtml]
 <div class="bh-maca mc-bud mc-hilum">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">the smallest beginning</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -1359,9 +1287,9 @@ A tiny round seed-eye imprint anchors a short open reply between offset coloured
 [dohtml]
 <div class="bh-maca mc-bud mc-hilum">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">the smallest beginning</div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -1376,7 +1304,7 @@ A writing-led letterpress page with a large seed-eye impression, compressed type
 [dohtml]
 <div class="bh-maca mc-thread mc-hilum-press">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">where it all begins</div>
 <div class="mc-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -1395,13 +1323,9 @@ A writing-led letterpress page with a large seed-eye impression, compressed type
 [dohtml]
 <div class="bh-maca mc-thread mc-hilum-press">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">where it all begins</div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>
@@ -1416,7 +1340,7 @@ A low, slanted leaf-shaped portrait sits below a short reply and a small member-
 [dohtml]
 <div class="bh-maca mc-bud mc-whorllet">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">a moment unfolding</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -1434,12 +1358,12 @@ A low, slanted leaf-shaped portrait sits below a short reply and a small member-
 [dohtml]
 <div class="bh-maca mc-bud mc-whorllet">
 <a class="mc-name" href="[url]">Journey &amp; Kai</a>
-<div class="mc-title">[text]</div>
+<div class="mc-title">a moment unfolding</div>
 <div class="mc-media">
 <img src="https://64.media.tumblr.com/6bd3b8f94437764926500cd4fcb661f4/9b7c2c038f0c82f9-bb/s540x810/2daca43f44ae6f3a4074d46d71b16d6a8b6e6f78.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mc-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mc-ornament" aria-hidden="true"></div>
 </div>

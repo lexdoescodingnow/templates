@@ -1,6 +1,6 @@
 [h1]LAVENDER[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -20,7 +20,7 @@ A thread layout from the Lavender collection.
   <span class="lavender-name">Jinwoo &amp; Yohan</span>
 
   <div class="lavender-post-text">
-    [text]
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p>
   </div>
 
   <div class="lavender-gallery">
@@ -36,7 +36,7 @@ A thread layout from the Lavender collection.
   <div class="lavender-label">pressed lavender notes</div>
 
   <div class="lavender-footer">
-    <span class="lavender-sprig">[text]</span>
+
     <span>Jinwoo &amp; Yohan</span>
   </div>
 
@@ -55,8 +55,8 @@ A thread layout from the Lavender collection.
   <span class="lavender-name">Jinwoo &amp; Yohan</span>
 
   <div class="lavender-post-text">
-    [text]
-  </div>
+<p>[TEXT GOES HERE]</p>
+</div>
 
   <div class="lavender-gallery">
     <div class="lavender-main-gif"></div>
@@ -71,7 +71,7 @@ A thread layout from the Lavender collection.
   <div class="lavender-label">pressed lavender notes</div>
 
   <div class="lavender-footer">
-    <span class="lavender-sprig">[text]</span>
+
     <span>Jinwoo &amp; Yohan</span>
   </div>
 
@@ -87,7 +87,7 @@ Two seed-head portraits grow from fine stems above a symmetrical title and an ai
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-inflorescence">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">all the ways we bloom</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -110,17 +110,13 @@ Two seed-head portraits grow from fine stems above a symmetrical title and an ai
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-inflorescence">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">all the ways we bloom</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -135,7 +131,7 @@ A writing-led lavender sachet, gathered at the neck and edged with small stitche
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-linen-devotion">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">held gently, held close</div>
 <div class="lvd-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -154,13 +150,9 @@ A writing-led lavender sachet, gathered at the neck and edged with small stitche
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-linen-devotion">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">held gently, held close</div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -175,7 +167,7 @@ Two staggered portrait windows rise over fine furrow lines, with a wide serif he
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-parallel-fields">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">somewhere between earth and sky</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -198,17 +190,13 @@ Two staggered portrait windows rise over fine furrow lines, with a wide serif he
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-parallel-fields">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">somewhere between earth and sky</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -223,7 +211,7 @@ A perfume-flask silhouette with sloping shoulders, a ribbed stopper and a wide p
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-stillroom-nocturne">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">the quiet we come home to</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -245,16 +233,12 @@ A perfume-flask silhouette with sloping shoulders, a ribbed stopper and a wide p
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-stillroom-nocturne">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">the quiet we come home to</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -269,7 +253,7 @@ A botanical study sheet with a tall oval portrait, an off-centre heading and a d
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-vesper-specimen">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">a little study in tenderness</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -291,16 +275,12 @@ A botanical study sheet with a tall oval portrait, an off-centre heading and a d
 [dohtml]
 <div class="bh-lavender lvd-thread lvd-vesper-specimen">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">a little study in tenderness</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -317,7 +297,7 @@ A softly arched smartphone with a seed-shaped contact portrait, an inset earpiec
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-duskline" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">online · stay a little longer</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -338,15 +318,15 @@ A softly arched smartphone with a seed-shaped contact portrait, an inset earpiec
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-duskline" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">online · stay a little longer</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="lvd-hardware" aria-hidden="true"></div>
 </div>
@@ -361,7 +341,7 @@ A desktop messenger window with a narrow portrait sidebar, small window controls
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-lavandula-os" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">one conversation · two hearts</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -382,15 +362,15 @@ A desktop messenger window with a narrow portrait sidebar, small window controls
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-lavandula-os" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">one conversation · two hearts</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="lvd-hardware" aria-hidden="true"></div>
 </div>
@@ -405,7 +385,7 @@ A bedside smart clock with a large time display, paired contact tiles, rounded m
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-pillow-talk" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">before we fall asleep</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -427,16 +407,16 @@ A bedside smart clock with a large time display, paired contact tiles, rounded m
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-pillow-talk" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">before we fall asleep</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="lvd-hardware" aria-hidden="true"></div>
 </div>
@@ -451,7 +431,7 @@ A book-style folding phone with two portrait tiles in its cover screen and a sep
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-sachet-sync" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">connected · just the two of us</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -473,16 +453,16 @@ A book-style folding phone with two portrait tiles in its cover screen and a sep
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-sachet-sync" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">connected · just the two of us</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="lvd-hardware" aria-hidden="true"></div>
 </div>
@@ -497,7 +477,7 @@ A slender candybar messenger with a tall signal rail, square inset bubbles and a
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-stemwave" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">private line · available</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -515,12 +495,12 @@ A slender candybar messenger with a tall signal rail, square inset bubbles and a
 [dohtml]
 <div class="bh-lavender lvd-comms lvd-stemwave" data-flow="received">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">private line · available</div>
 <div class="lvd-time">22:08</div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="lvd-hardware" aria-hidden="true"></div>
 </div>
@@ -537,7 +517,7 @@ An open miniature folio with a small descending seed-head motif and an offset me
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-afterbloom">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">what stays with us</div>
 <div class="lvd-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -552,9 +532,9 @@ An open miniature folio with a small descending seed-head motif and an offset me
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-afterbloom">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">what stays with us</div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -569,7 +549,7 @@ A compact capsule note held between three-colour brackets, with a tiny lavender-
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-calyx">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">a small beginning</div>
 <div class="lvd-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -584,9 +564,9 @@ A compact capsule note held between three-colour brackets, with a tiny lavender-
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-calyx">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">a small beginning</div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -601,7 +581,7 @@ A tiny seed-shaped portrait nestles beside a short reply, with three descending 
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-lavandin">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">a moment kept close</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -619,12 +599,12 @@ A tiny seed-shaped portrait nestles beside a short reply, with three descending 
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-lavandin">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">a moment kept close</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -639,7 +619,7 @@ A slim perfume blotter with a rounded tip, a narrow vertical name rail and a spa
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-scent-letter">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">a trace of you</div>
 <div class="lvd-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -654,9 +634,9 @@ A slim perfume blotter with a rounded tip, a narrow vertical name rail and a spa
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-scent-letter">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">a trace of you</div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>
@@ -671,7 +651,7 @@ Two miniature oval portraits sit like paired flowers at the centre of a branchin
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-twin-whorls">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">two little reasons</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -690,13 +670,13 @@ Two miniature oval portraits sit like paired flowers at the centre of a branchin
 [dohtml]
 <div class="bh-lavender lvd-bud lvd-twin-whorls">
 <a class="lvd-name" href="[url]">Jinwoo &amp; Yohan</a>
-<div class="lvd-title">[text]</div>
+<div class="lvd-title">two little reasons</div>
 <div class="lvd-media">
 <img src="https://64.media.tumblr.com/e5afe1420ade397167ced2d86ac8f5f2/7bf4c79f69216461-fd/s400x600/85880c6eff098437b5dfe369501c2db225629c9a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/1d5ac3db48017d8a0ef76d5f6cc5e904/7bf4c79f69216461-1f/s400x600/7527b21341040310979e00b60bb6acbff68e2307.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="lvd-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="lvd-motif" aria-hidden="true"></div>
 </div>

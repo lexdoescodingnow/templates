@@ -1,6 +1,6 @@
 [h1]HONEY[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A bevelled portrait window meets a small bee emblem and a tall, offset typograph
 [dohtml]
 <div class="bh-honey hn-thread hn-apiary-no-two">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">somewhere only we know</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -36,16 +36,12 @@ A bevelled portrait window meets a small bee emblem and a tall, offset typograph
 [dohtml]
 <div class="bh-honey hn-thread hn-apiary-no-two">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">somewhere only we know</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-bee" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -60,7 +56,7 @@ Two hexagonal portraits lock into a comb-shaped header beside a large serif titl
 [dohtml]
 <div class="bh-honey hn-thread hn-comb-archive">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">every little thing we keep</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/cc3f56d86246f24fe55e21f7ac737577/3c9fa1e875df9e1d-ba/s400x600/fa48ceec365bd86db633538066a60df67dbcc821.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -83,17 +79,13 @@ Two hexagonal portraits lock into a comb-shaped header beside a large serif titl
 [dohtml]
 <div class="bh-honey hn-thread hn-comb-archive">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">every little thing we keep</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/cc3f56d86246f24fe55e21f7ac737577/3c9fa1e875df9e1d-ba/s400x600/fa48ceec365bd86db633538066a60df67dbcc821.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-comb" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -108,7 +100,7 @@ A panoramic portrait rests beneath a wide italic heading, between grooved dipper
 [dohtml]
 <div class="bh-honey hn-thread hn-melliferous">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">the sweetness of staying</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -130,16 +122,12 @@ A panoramic portrait rests beneath a wide italic heading, between grooved dipper
 [dohtml]
 <div class="bh-honey hn-thread hn-melliferous">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">the sweetness of staying</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-grooves" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -154,7 +142,7 @@ A long honey-dipper stroke and falling drops border an airy, writing-led page.
 [dohtml]
 <div class="bh-honey hn-thread hn-the-slow-pour">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">take your time with me</div>
 <div class="hn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -173,13 +161,9 @@ A long honey-dipper stroke and falling drops border an airy, writing-led page.
 [dohtml]
 <div class="bh-honey hn-thread hn-the-slow-pour">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">take your time with me</div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-dipper" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -194,7 +178,7 @@ A scalloped wax seal anchors a double-framed letter with an asymmetric title and
 [dohtml]
 <div class="bh-honey hn-thread hn-wax-and-wane">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">sealed with something sweet</div>
 <div class="hn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -213,13 +197,9 @@ A scalloped wax seal anchors a double-framed letter with an asymmetric title and
 [dohtml]
 <div class="bh-honey hn-thread hn-wax-and-wane">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">sealed with something sweet</div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-seal" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -236,7 +216,7 @@ A narrow handset with a grooved case, a panoramic contact screen and a honeycomb
 [dohtml]
 <div class="bh-honey hn-comms hn-buzzline" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">a little closer, always</div>
 <div class="hn-time">21:08</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -257,15 +237,15 @@ A narrow handset with a grooved case, a panoramic contact screen and a honeycomb
 [dohtml]
 <div class="bh-honey hn-comms hn-buzzline" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">a little closer, always</div>
 <div class="hn-time">21:08</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-keys" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -280,7 +260,7 @@ A slim smartphone with a hexagonal camera island, honeycomb contact portrait and
 [dohtml]
 <div class="bh-honey hn-comms hn-hivewire" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">online · just for you</div>
 <div class="hn-time">21:08</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -301,15 +281,15 @@ A slim smartphone with a hexagonal camera island, honeycomb contact portrait and
 [dohtml]
 <div class="bh-honey hn-comms hn-hivewire" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">online · just for you</div>
 <div class="hn-time">21:08</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-island" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -324,7 +304,7 @@ A broad touch phone pairs an oversized clock with a scalloped contact tab and in
 [dohtml]
 <div class="bh-honey hn-comms hn-honeyos" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">you have my attention</div>
 <div class="hn-time">21:08</div>
 <div class="hn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -342,12 +322,12 @@ A broad touch phone pairs an oversized clock with a scalloped contact tab and in
 [dohtml]
 <div class="bh-honey hn-comms hn-honeyos" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">you have my attention</div>
 <div class="hn-time">21:08</div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-touch" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -362,7 +342,7 @@ A squat pocket pager with a monochrome display, offset clock and a recessed circ
 [dohtml]
 <div class="bh-honey hn-comms hn-nectar-ping" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">one sweet notification</div>
 <div class="hn-time">21:08</div>
 <div class="hn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -380,12 +360,12 @@ A squat pocket pager with a monochrome display, offset clock and a recessed circ
 [dohtml]
 <div class="bh-honey hn-comms hn-nectar-ping" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">one sweet notification</div>
 <div class="hn-time">21:08</div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-wheel" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -400,7 +380,7 @@ An open flip phone joins two clipped contact windows to a separate conversation 
 [dohtml]
 <div class="bh-honey hn-comms hn-royal-relay" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">our own little world</div>
 <div class="hn-time">21:08</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -422,16 +402,16 @@ An open flip phone joins two clipped contact windows to a separate conversation 
 [dohtml]
 <div class="bh-honey hn-comms hn-royal-relay" data-flow="received">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">our own little world</div>
 <div class="hn-time">21:08</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/cc3f56d86246f24fe55e21f7ac737577/3c9fa1e875df9e1d-ba/s400x600/fa48ceec365bd86db633538066a60df67dbcc821.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-hinge" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -448,7 +428,7 @@ A landscape keepsake puts a low panoramic image under a short letter, with a liq
 [dohtml]
 <div class="bh-honey hn-bud hn-afterglaze">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">a trace of you remains</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -466,12 +446,12 @@ A landscape keepsake puts a low panoramic image under a short letter, with a liq
 [dohtml]
 <div class="bh-honey hn-bud hn-afterglaze">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">a trace of you remains</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-glaze" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -486,7 +466,7 @@ A tiny bevelled note with a cluster of open comb cells and a coloured corner.
 [dohtml]
 <div class="bh-honey hn-bud hn-combkiss">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">just a little sweetness</div>
 <div class="hn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -501,9 +481,9 @@ A tiny bevelled note with a cluster of open comb cells and a coloured corner.
 [dohtml]
 <div class="bh-honey hn-bud hn-combkiss">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">just a little sweetness</div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-comb" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -518,7 +498,7 @@ A miniature portrait is suspended beside a short reply from a fine, grooved dipp
 [dohtml]
 <div class="bh-honey hn-bud hn-dipperlet">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">stay for one more moment</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -536,12 +516,12 @@ A miniature portrait is suspended beside a short reply from a fine, grooved dipp
 [dohtml]
 <div class="bh-honey hn-bud hn-dipperlet">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">stay for one more moment</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-dipper" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -556,7 +536,7 @@ Two teardrop portraits touch above a tiny centred title and a shared miniature r
 [dohtml]
 <div class="bh-honey hn-bud hn-twin-drops">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">where you end, i begin</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/cc3f56d86246f24fe55e21f7ac737577/3c9fa1e875df9e1d-ba/s400x600/fa48ceec365bd86db633538066a60df67dbcc821.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -575,13 +555,13 @@ Two teardrop portraits touch above a tiny centred title and a shared miniature r
 [dohtml]
 <div class="bh-honey hn-bud hn-twin-drops">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">where you end, i begin</div>
 <div class="hn-media">
 <img src="https://64.media.tumblr.com/95f39286967e03b832d1b11f46ead2b4/bf7a28cf2c1d564b-52/s250x400/50038cbae16de9a3c8ef7a1bebc3e471d9473b37.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/cc3f56d86246f24fe55e21f7ac737577/3c9fa1e875df9e1d-ba/s400x600/fa48ceec365bd86db633538066a60df67dbcc821.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-drops" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -596,7 +576,7 @@ A narrow folded note is fastened by a small scalloped wax seal and a diagonal co
 [dohtml]
 <div class="bh-honey hn-bud hn-waxwing">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">a word worth keeping</div>
 <div class="hn-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -611,9 +591,9 @@ A narrow folded note is fastened by a small scalloped wax seal and a diagonal co
 [dohtml]
 <div class="bh-honey hn-bud hn-waxwing">
 <a class="hn-name" href="[url]">Kota &amp; Yuki</a>
-<div class="hn-title">[text]</div>
+<div class="hn-title">a word worth keeping</div>
 <div class="hn-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="hn-ornament hn-seal" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>

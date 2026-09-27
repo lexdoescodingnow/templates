@@ -1,6 +1,6 @@
 [h1]TROPICAL[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A palm-fan canopy, shuttered frame and paired panoramic windows above a long rep
 [dohtml]
 <div class="bh-tropical trp-thread trp-canopy-reverie">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">under a sky made of leaves</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -37,17 +37,13 @@ A palm-fan canopy, shuttered frame and paired panoramic windows above a long rep
 [dohtml]
 <div class="bh-tropical trp-thread trp-canopy-reverie">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">under a sky made of leaves</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -62,7 +58,7 @@ Cartographic rings and an offset double portrait beside an oversized editorial t
 [dohtml]
 <div class="bh-tropical trp-thread trp-latitude-letter">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">somewhere between you &amp; the sea</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -85,17 +81,13 @@ Cartographic rings and an offset double portrait beside an oversized editorial t
 [dohtml]
 <div class="bh-tropical trp-thread trp-latitude-letter">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">somewhere between you &amp; the sea</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -110,7 +102,7 @@ An image-free folded folio with diagonal rain marks and a coloured marginal rule
 [dohtml]
 <div class="bh-tropical trp-thread trp-monsoon-margins">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">let the weather write us in</div>
 <div class="trp-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -129,13 +121,9 @@ An image-free folded folio with diagonal rain marks and a coloured marginal rule
 [dohtml]
 <div class="bh-tropical trp-thread trp-monsoon-margins">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">let the weather write us in</div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -150,7 +138,7 @@ A geometric sunshade roof, a broad typographic panel and paired portraits at the
 [dohtml]
 <div class="bh-tropical trp-thread trp-solstice-pavilion">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">stay until the light turns gold</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -173,17 +161,13 @@ A geometric sunshade roof, a broad typographic panel and paired portraits at the
 [dohtml]
 <div class="bh-tropical trp-thread trp-solstice-pavilion">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">stay until the light turns gold</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -198,7 +182,7 @@ A tall lagoon arch, a single portrait and concentric tidal lines around an open 
 [dohtml]
 <div class="bh-tropical trp-thread trp-tidal-interval">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">the tide always finds its way</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -220,16 +204,12 @@ A tall lagoon arch, a single portrait and concentric tidal lines around an open 
 [dohtml]
 <div class="bh-tropical trp-thread trp-tidal-interval">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">the tide always finds its way</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -246,7 +226,7 @@ A circular camera island and full-width contact image inside an angular protecti
 [dohtml]
 <div class="bh-tropical trp-comms trp-atoll-os" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">active now · island time</div>
 <div class="trp-time">17:08</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -267,15 +247,15 @@ A circular camera island and full-width contact image inside an angular protecti
 [dohtml]
 <div class="bh-tropical trp-comms trp-atoll-os" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">active now · island time</div>
 <div class="trp-time">17:08</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="trp-hardware" aria-hidden="true"></div>
 </div>
@@ -290,7 +270,7 @@ An image-free smart display with a shutter-grille speaker and softly tinted mess
 [dohtml]
 <div class="bh-tropical trp-comms trp-cabana-chat" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">messages · just for you</div>
 <div class="trp-time">17:08</div>
 <div class="trp-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -308,12 +288,12 @@ An image-free smart display with a shutter-grille speaker and softly tinted mess
 [dohtml]
 <div class="bh-tropical trp-comms trp-cabana-chat" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">messages · just for you</div>
 <div class="trp-time">17:08</div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="trp-hardware" aria-hidden="true"></div>
 </div>
@@ -328,7 +308,7 @@ A landscape dual-contact messenger with a raised camera rail and scalloped messa
 [dohtml]
 <div class="bh-tropical trp-comms trp-lagoon-link" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">Davis + Theo · connected</div>
 <div class="trp-time">17:08</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -350,16 +330,16 @@ A landscape dual-contact messenger with a raised camera rail and scalloped messa
 [dohtml]
 <div class="bh-tropical trp-comms trp-lagoon-link" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">Davis + Theo · connected</div>
 <div class="trp-time">17:08</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="trp-hardware" aria-hidden="true"></div>
 </div>
@@ -374,7 +354,7 @@ A slim island smartphone with a palm-etched case, contact portrait and incoming 
 [dohtml]
 <div class="bh-tropical trp-comms trp-palmline" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">online · beneath the palms</div>
 <div class="trp-time">17:08</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -395,15 +375,15 @@ A slim island smartphone with a palm-etched case, contact portrait and incoming 
 [dohtml]
 <div class="bh-tropical trp-comms trp-palmline" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">online · beneath the palms</div>
 <div class="trp-time">17:08</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="trp-hardware" aria-hidden="true"></div>
 </div>
@@ -418,7 +398,7 @@ A rugged satellite messenger with an aerial, an inset contact screen and a rotar
 [dohtml]
 <div class="bh-tropical trp-comms trp-tradewind-radio" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">signal found · channel 02</div>
 <div class="trp-time">17:08</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -439,15 +419,15 @@ A rugged satellite messenger with an aerial, an inset contact screen and a rotar
 [dohtml]
 <div class="bh-tropical trp-comms trp-tradewind-radio" data-flow="received">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">signal found · channel 02</div>
 <div class="trp-time">17:08</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="trp-hardware" aria-hidden="true"></div>
 </div>
@@ -464,7 +444,7 @@ A low wave-edged reply card with small navigational notches.
 [dohtml]
 <div class="bh-tropical trp-bud trp-driftsong">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">wherever you drift</div>
 <div class="trp-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -479,9 +459,9 @@ A low wave-edged reply card with small navigational notches.
 [dohtml]
 <div class="bh-tropical trp-bud trp-driftsong">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">wherever you drift</div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -496,7 +476,7 @@ A narrow palm-shaped accent beside an airy miniature letter.
 [dohtml]
 <div class="bh-tropical trp-bud trp-palmscript">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">caught in the canopy</div>
 <div class="trp-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -511,9 +491,9 @@ A narrow palm-shaped accent beside an airy miniature letter.
 [dohtml]
 <div class="bh-tropical trp-bud trp-palmscript">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">caught in the canopy</div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -528,7 +508,7 @@ A compact triptych: two square stills framing the name, with the reply underneat
 [dohtml]
 <div class="bh-tropical trp-bud trp-reefnote">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">between the blue</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -547,13 +527,13 @@ A compact triptych: two square stills framing the name, with the reply underneat
 [dohtml]
 <div class="bh-tropical trp-bud trp-reefnote">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">between the blue</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/c94d8ffd3b6468645d352d358b1e597d/eb2766c519fef07b-6f/s540x810/0160fe92112de40a77471940806721605552cce3.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -568,7 +548,7 @@ A little tide-folded note with a radial salt-petal stamp.
 [dohtml]
 <div class="bh-tropical trp-bud trp-saltpetal">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">a little closer</div>
 <div class="trp-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -583,9 +563,9 @@ A little tide-folded note with a radial salt-petal stamp.
 [dohtml]
 <div class="bh-tropical trp-bud trp-saltpetal">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">a little closer</div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>
@@ -600,7 +580,7 @@ A tiny sunrise portrait with a curved horizon and an intimate short reply.
 [dohtml]
 <div class="bh-tropical trp-bud trp-sunlet">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">warmth, in miniature</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -618,12 +598,12 @@ A tiny sunrise portrait with a curved horizon and an intimate short reply.
 [dohtml]
 <div class="bh-tropical trp-bud trp-sunlet">
 <a class="trp-name" href="[url]">Davis &amp; Theo</a>
-<div class="trp-title">[text]</div>
+<div class="trp-title">warmth, in miniature</div>
 <div class="trp-media">
 <img src="https://64.media.tumblr.com/aa0b17494bb48a6da003d4be178ca9ce/56718cfa9db95c40-66/s400x600/b9c95a6c31a2a146a1ce94bab89d31d999a55055.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="trp-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="trp-motif" aria-hidden="true"></div>
 </div>

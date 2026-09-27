@@ -1,6 +1,6 @@
 [h1]CHERRY[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A title-led split header faces two stepped photographic windows, with a broad un
 [dohtml]
 <div class="bh-cherry chr-thread chr-griotte-duet">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">the space between us</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/d73965475c524cebae8066b15af6ad54/2d8763c575fb6836-d6/s540x810/6d722b3432b67f41ac2e75a8fdc84a7be8c53601.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -38,17 +38,13 @@ A title-led split header faces two stepped photographic windows, with a broad un
 [dohtml]
 <div class="bh-cherry chr-thread chr-griotte-duet">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">the space between us</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/d73965475c524cebae8066b15af6ad54/2d8763c575fb6836-d6/s540x810/6d722b3432b67f41ac2e75a8fdc84a7be8c53601.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -63,7 +59,7 @@ A sharp nightlife composition with a capsule panorama, a bold condensed heading 
 [dohtml]
 <div class="bh-cherry chr-thread chr-maraschino-club">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">meet me after midnight</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -85,16 +81,12 @@ A sharp nightlife composition with a capsule panorama, a bold condensed heading 
 [dohtml]
 <div class="bh-cherry chr-thread chr-maraschino-club">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">meet me after midnight</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -109,7 +101,7 @@ An orchard archive card with a narrow numbered-edge motif, a raised name tab and
 [dohtml]
 <div class="bh-cherry chr-thread chr-morello-index">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">everything worth keeping</div>
 <div class="chr-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -128,13 +120,9 @@ An orchard archive card with a narrow numbered-edge motif, a raised name tab and
 [dohtml]
 <div class="bh-cherry chr-thread chr-morello-index">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">everything worth keeping</div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -149,7 +137,7 @@ Twin circular portraits hang from a sweeping forked stem beneath a large editori
 [dohtml]
 <div class="bh-cherry chr-thread chr-stem-theory">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">two hearts, one stem</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/d73965475c524cebae8066b15af6ad54/2d8763c575fb6836-d6/s540x810/6d722b3432b67f41ac2e75a8fdc84a7be8c53601.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -172,17 +160,13 @@ Twin circular portraits hang from a sweeping forked stem beneath a large editori
 [dohtml]
 <div class="bh-cherry chr-thread chr-stem-theory">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">two hearts, one stem</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/d73965475c524cebae8066b15af6ad54/2d8763c575fb6836-d6/s540x810/6d722b3432b67f41ac2e75a8fdc84a7be8c53601.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -197,7 +181,7 @@ A literary folio with a stepped double frame, oversized italic heading and a sma
 [dohtml]
 <div class="bh-cherry chr-thread chr-stone-and-velvet">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">soft where it matters</div>
 <div class="chr-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -216,13 +200,9 @@ A literary folio with a stepped double frame, oversized italic heading and a sma
 [dohtml]
 <div class="bh-cherry chr-thread chr-stone-and-velvet">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">soft where it matters</div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -239,7 +219,7 @@ A modern phone with a camera capsule, a round contact portrait, soft message tai
 [dohtml]
 <div class="bh-cherry chr-comms chr-cherrywire" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">online · thinking of you</div>
 <div class="chr-time">23:17</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -260,15 +240,15 @@ A modern phone with a camera capsule, a round contact portrait, soft message tai
 [dohtml]
 <div class="bh-cherry chr-comms chr-cherrywire" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">online · thinking of you</div>
 <div class="chr-time">23:17</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chr-hardware" aria-hidden="true"></div>
 </div>
@@ -283,7 +263,7 @@ A landscape sliding communicator with paired contact windows and a full-width ke
 [dohtml]
 <div class="bh-cherry chr-comms chr-glace-link" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">just the two of us</div>
 <div class="chr-time">23:17</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -305,16 +285,16 @@ A landscape sliding communicator with paired contact windows and a full-width ke
 [dohtml]
 <div class="bh-cherry chr-comms chr-glace-link" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">just the two of us</div>
 <div class="chr-time">23:17</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/d73965475c524cebae8066b15af6ad54/2d8763c575fb6836-d6/s540x810/6d722b3432b67f41ac2e75a8fdc84a7be8c53601.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chr-hardware" aria-hidden="true"></div>
 </div>
@@ -329,7 +309,7 @@ A folding handset with a recessed conversation screen, a visible hinge and a com
 [dohtml]
 <div class="bh-cherry chr-comms chr-kirsch-key" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">private line · connected</div>
 <div class="chr-time">23:17</div>
 <div class="chr-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -347,12 +327,12 @@ A folding handset with a recessed conversation screen, a visible hinge and a com
 [dohtml]
 <div class="bh-cherry chr-comms chr-kirsch-key" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">private line · connected</div>
 <div class="chr-time">23:17</div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chr-hardware" aria-hidden="true"></div>
 </div>
@@ -367,7 +347,7 @@ A small wrist communicator with a rounded watch case, ribbed straps, a side crow
 [dohtml]
 <div class="bh-cherry chr-comms chr-nightcherry" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">a message after hours</div>
 <div class="chr-time">23:17</div>
 <div class="chr-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -385,12 +365,12 @@ A small wrist communicator with a rounded watch case, ribbed straps, a side crow
 [dohtml]
 <div class="bh-cherry chr-comms chr-nightcherry" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">a message after hours</div>
 <div class="chr-time">23:17</div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chr-hardware" aria-hidden="true"></div>
 </div>
@@ -405,7 +385,7 @@ A curved pocket music messenger with a square contact screen, compact messages a
 [dohtml]
 <div class="bh-cherry chr-comms chr-sweet-frequency" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">one new conversation</div>
 <div class="chr-time">23:17</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -426,15 +406,15 @@ A curved pocket music messenger with a square contact screen, compact messages a
 [dohtml]
 <div class="bh-cherry chr-comms chr-sweet-frequency" data-flow="received">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">one new conversation</div>
 <div class="chr-time">23:17</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chr-hardware" aria-hidden="true"></div>
 </div>
@@ -451,7 +431,7 @@ A small open note with a broad horizontal title tab and two offset cherry-colour
 [dohtml]
 <div class="bh-cherry chr-bud chr-blushlet">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">only a moment</div>
 <div class="chr-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -466,9 +446,9 @@ A small open note with a broad horizontal title tab and two offset cherry-colour
 [dohtml]
 <div class="bh-cherry chr-bud chr-blushlet">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">only a moment</div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -483,7 +463,7 @@ A spare miniature page enclosed by opposing corner strokes, finished with a smal
 [dohtml]
 <div class="bh-cherry chr-bud chr-last-stone">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">still here, still yours</div>
 <div class="chr-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -498,9 +478,9 @@ A spare miniature page enclosed by opposing corner strokes, finished with a smal
 [dohtml]
 <div class="bh-cherry chr-bud chr-last-stone">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">still here, still yours</div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -515,7 +495,7 @@ A compact asymmetric reply with a tiny round portrait tucked into a circular cut
 [dohtml]
 <div class="bh-cherry chr-bud chr-pipmark">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">keep this part</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -533,12 +513,12 @@ A compact asymmetric reply with a tiny round portrait tucked into a circular cut
 [dohtml]
 <div class="bh-cherry chr-bud chr-pipmark">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">keep this part</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -553,7 +533,7 @@ A miniature hanging orchard label, with a punched eyelet, a curved base and a sm
 [dohtml]
 <div class="bh-cherry chr-bud chr-stipule">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">a little closer</div>
 <div class="chr-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -568,9 +548,9 @@ A miniature hanging orchard label, with a punched eyelet, a curved base and a sm
 [dohtml]
 <div class="bh-cherry chr-bud chr-stipule">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">a little closer</div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>
@@ -585,7 +565,7 @@ A short reply beneath two interlocking portrait lenses and a centred name, with 
 [dohtml]
 <div class="bh-cherry chr-bud chr-twin-pits">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">where we overlap</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/d73965475c524cebae8066b15af6ad54/2d8763c575fb6836-d6/s540x810/6d722b3432b67f41ac2e75a8fdc84a7be8c53601.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -604,13 +584,13 @@ A short reply beneath two interlocking portrait lenses and a centred name, with 
 [dohtml]
 <div class="bh-cherry chr-bud chr-twin-pits">
 <a class="chr-name" href="[url]">Jaehwa &amp; Ubin</a>
-<div class="chr-title">[text]</div>
+<div class="chr-title">where we overlap</div>
 <div class="chr-media">
 <img src="https://64.media.tumblr.com/ae4cd360adab8ca0add7d032856a3a1c/b49856d94cec21b9-23/s540x810/c87c67acc5e6dc94908fdc6bf51350b5a94d0673.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/d73965475c524cebae8066b15af6ad54/2d8763c575fb6836-d6/s540x810/6d722b3432b67f41ac2e75a8fdc84a7be8c53601.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="chr-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chr-mark" aria-hidden="true"></div>
 </div>

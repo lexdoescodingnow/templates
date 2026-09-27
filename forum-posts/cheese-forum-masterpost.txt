@@ -1,6 +1,6 @@
 [h1]CHEESE[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -14,7 +14,7 @@ A circular cheese-wheel portrait seated in a square label, with a banded spine a
 [dohtml]
 <div class="bh-cheese chs-thread chs-affinage-nocturne">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">some things only get better</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -36,16 +36,12 @@ A circular cheese-wheel portrait seated in a square label, with a banded spine a
 [dohtml]
 <div class="bh-cheese chs-thread chs-affinage-nocturne">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">some things only get better</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -60,7 +56,7 @@ An open letter with branching blue-cheese veins, a marginal name and a generous 
 [dohtml]
 <div class="bh-cheese chs-thread chs-blue-vein-letter">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">a beautiful kind of complicated</div>
 <div class="chs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -79,13 +75,9 @@ An open letter with branching blue-cheese veins, a marginal name and a generous 
 [dohtml]
 <div class="bh-cheese chs-thread chs-blue-vein-letter">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">a beautiful kind of complicated</div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -100,7 +92,7 @@ An asymmetric Swiss-cheese frame with punched circles, a porthole portrait and b
 [dohtml]
 <div class="bh-cheese chs-thread chs-emmental-aperture">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">all the spaces you fill</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -122,16 +114,12 @@ An asymmetric Swiss-cheese frame with punched circles, a porthole portrait and b
 [dohtml]
 <div class="bh-cheese chs-thread chs-emmental-aperture">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">all the spaces you fill</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -146,7 +134,7 @@ A dairy-label folio with a bold circular maker seal, ribbon spine and paired pho
 [dohtml]
 <div class="bh-cheese chs-thread chs-fromagerie-folio">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">a little culture, a lot of love</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -169,17 +157,13 @@ A dairy-label folio with a bold circular maker seal, ribbon spine and paired pho
 [dohtml]
 <div class="bh-cheese chs-thread chs-fromagerie-folio">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">a little culture, a lot of love</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -194,7 +178,7 @@ A low melting canopy above two cinematic photographs and a quiet, spacious readi
 [dohtml]
 <div class="bh-cheese chs-thread chs-raclette-reverie">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">let the world melt away</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -217,17 +201,13 @@ A low melting canopy above two cinematic photographs and a quiet, spacious readi
 [dohtml]
 <div class="bh-cheese chs-thread chs-raclette-reverie">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">let the world melt away</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -244,7 +224,7 @@ A chunky pocket device with a portrait window, a thumb dial and squared chat bub
 [dohtml]
 <div class="bh-cheese chs-comms chs-casein-pocket" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">one conversation, all evening</div>
 <div class="chs-time">14:08</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -265,15 +245,15 @@ A chunky pocket device with a portrait window, a thumb dial and squared chat bub
 [dohtml]
 <div class="bh-cheese chs-comms chs-casein-pocket" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">one conversation, all evening</div>
 <div class="chs-time">14:08</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chs-hardware" aria-hidden="true"></div>
 </div>
@@ -288,7 +268,7 @@ A slim smartphone with a Swiss-hole bumper, an inset contact tile and soft incom
 [dohtml]
 <div class="bh-cheese chs-comms chs-curdline" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">online · just one more message</div>
 <div class="chs-time">14:08</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -309,15 +289,15 @@ A slim smartphone with a Swiss-hole bumper, an inset contact tile and soft incom
 [dohtml]
 <div class="bh-cheese chs-comms chs-curdline" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">online · just one more message</div>
 <div class="chs-time">14:08</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chs-hardware" aria-hidden="true"></div>
 </div>
@@ -332,7 +312,7 @@ A desktop messenger with a contact sidebar, a window-control strip and generous 
 [dohtml]
 <div class="bh-cheese chs-comms chs-fondue-link" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">available · stay a little longer</div>
 <div class="chs-time">14:08</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -353,15 +333,15 @@ A desktop messenger with a contact sidebar, a window-control strip and generous 
 [dohtml]
 <div class="bh-cheese chs-comms chs-fondue-link" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">available · stay a little longer</div>
 <div class="chs-time">14:08</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chs-hardware" aria-hidden="true"></div>
 </div>
@@ -376,7 +356,7 @@ A folding phone with paired contact screens, two visible hinge joints and a sepa
 [dohtml]
 <div class="bh-cheese chs-comms chs-rind-relay" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">minseo + tommy · direct messages</div>
 <div class="chs-time">14:08</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -398,16 +378,16 @@ A folding phone with paired contact screens, two visible hinge joints and a sepa
 [dohtml]
 <div class="bh-cheese chs-comms chs-rind-relay" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">minseo + tommy · direct messages</div>
 <div class="chs-time">14:08</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chs-hardware" aria-hidden="true"></div>
 </div>
@@ -422,7 +402,7 @@ A compact oval-ended communicator with a wide e-paper screen and a perforated sp
 [dohtml]
 <div class="bh-cheese chs-comms chs-wheywave" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">private channel · connected</div>
 <div class="chs-time">14:08</div>
 <div class="chs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -440,12 +420,12 @@ A compact oval-ended communicator with a wide e-paper screen and a perforated sp
 [dohtml]
 <div class="bh-cheese chs-comms chs-wheywave" data-flow="received">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">private channel · connected</div>
 <div class="chs-time">14:08</div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="chs-hardware" aria-hidden="true"></div>
 </div>
@@ -462,7 +442,7 @@ A tiny round-ended cheese label with concentric rind rules and a short reply.
 [dohtml]
 <div class="bh-cheese chs-bud chs-brielet">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">just a little softer</div>
 <div class="chs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -477,9 +457,9 @@ A tiny round-ended cheese label with concentric rind rules and a short reply.
 [dohtml]
 <div class="bh-cheese chs-bud chs-brielet">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">just a little softer</div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -494,7 +474,7 @@ A compact open note with a punched-circle spine and a bold little heading.
 [dohtml]
 <div class="bh-cheese chs-bud chs-crumble">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">every little piece</div>
 <div class="chs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -509,9 +489,9 @@ A compact open note with a punched-circle spine and a bold little heading.
 [dohtml]
 <div class="bh-cheese chs-bud chs-crumble">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">every little piece</div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -526,7 +506,7 @@ Two miniature wheel portraits above a narrow shared name ribbon and a tiny reply
 [dohtml]
 <div class="bh-cheese chs-bud chs-curd-kiss">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">two of a kind</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -545,13 +525,13 @@ Two miniature wheel portraits above a narrow shared name ribbon and a tiny reply
 [dohtml]
 <div class="bh-cheese chs-bud chs-curd-kiss">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">two of a kind</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cabed725dd159293eef618286186c157/db0a74d88505a244-08/s540x810/080a1ac4172cd1756cbc7f9b60f82455f3d2d5c4.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -566,7 +546,7 @@ An airy miniature note with a curled foil corner and one fine diagonal rule.
 [dohtml]
 <div class="bh-cheese chs-bud chs-last-shaving">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">a little more of this</div>
 <div class="chs-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -581,9 +561,9 @@ An airy miniature note with a curled foil corner and one fine diagonal rule.
 [dohtml]
 <div class="bh-cheese chs-bud chs-last-shaving">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">a little more of this</div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>
@@ -598,7 +578,7 @@ A small portrait tab beside a folded paper slip with a ridged edge.
 [dohtml]
 <div class="bh-cheese chs-bud chs-petit-rind">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">right here with you</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -616,12 +596,12 @@ A small portrait tab beside a folded paper slip with a ridged edge.
 [dohtml]
 <div class="bh-cheese chs-bud chs-petit-rind">
 <a class="chs-name" href="[url]">Minseo &amp; Tommy</a>
-<div class="chs-title">[text]</div>
+<div class="chs-title">right here with you</div>
 <div class="chs-media">
 <img src="https://64.media.tumblr.com/8b352aa76474f884a87d1ebd46d960e4/35b9ad32ad9eacb3-99/s540x810/2be71f25a601c62aed4d35dc391a40d3e7011a51.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="chs-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="chs-motif" aria-hidden="true"></div>
 </div>

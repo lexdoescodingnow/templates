@@ -1,6 +1,6 @@
 [h1]MANGO[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A broad asymmetric mango-cheek portrait sits inside concentric member-colour arc
 [dohtml]
 <div class="bh-mango mg-thread mg-alphonso-atelier">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">the sweetest part of staying</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -37,16 +37,12 @@ A broad asymmetric mango-cheek portrait sits inside concentric member-colour arc
 [dohtml]
 <div class="bh-mango mg-thread mg-alphonso-atelier">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">the sweetest part of staying</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-arcs" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -61,7 +57,7 @@ Two opposing fruit-cheek portraits flank a slim vertical name spine; the title s
 [dohtml]
 <div class="bh-mango mg-thread mg-cheek-to-cheek">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">somewhere between us</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/bfc96fdcd9fa8d93489a7e0154f0e6c2/23df87e4bd464086-ea/s400x600/52a55ac55a50008608e48b5551e2c49a2e0b3bdb.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -84,17 +80,13 @@ Two opposing fruit-cheek portraits flank a slim vertical name spine; the title s
 [dohtml]
 <div class="bh-mango mg-thread mg-cheek-to-cheek">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">somewhere between us</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/bfc96fdcd9fa8d93489a7e0154f0e6c2/23df87e4bd464086-ea/s400x600/52a55ac55a50008608e48b5551e2c49a2e0b3bdb.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-pip" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -109,7 +101,7 @@ A slender side portrait, an oversized monogram-like fruit curve and staggered ru
 [dohtml]
 <div class="bh-mango mg-thread mg-mangifera-nocturne">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">leave the light on</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -131,16 +123,12 @@ A slender side portrait, an oversized monogram-like fruit curve and staggered ru
 [dohtml]
 <div class="bh-mango mg-thread mg-mangifera-nocturne">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">leave the light on</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-crescent" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -155,7 +143,7 @@ A narrow curling peel winds through the margin of a tall letter, with a small ve
 [dohtml]
 <div class="bh-mango mg-thread mg-peel-poetry">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">a softer kind of undoing</div>
 <div class="mg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -174,13 +162,9 @@ A narrow curling peel winds through the margin of a tall letter, with a small ve
 [dohtml]
 <div class="bh-mango mg-thread mg-peel-poetry">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">a softer kind of undoing</div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-ribbon" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -195,7 +179,7 @@ An open typographic page with a nine-square mango score, a squared title field a
 [dohtml]
 <div class="bh-mango mg-thread mg-the-scored-heart">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">all the little pieces</div>
 <div class="mg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -214,13 +198,9 @@ An open typographic page with a nine-square mango score, a squared title field a
 [dohtml]
 <div class="bh-mango mg-thread mg-the-scored-heart">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">all the little pieces</div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p><u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-score" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -237,7 +217,7 @@ A wide folding touch device places paired portraits beside the conversation, joi
 [dohtml]
 <div class="bh-mango mg-comms mg-cheek-chat" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">private conversation</div>
 <div class="mg-time">22:16</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -259,16 +239,16 @@ A wide folding touch device places paired portraits beside the conversation, joi
 [dohtml]
 <div class="bh-mango mg-comms mg-cheek-chat" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">private conversation</div>
 <div class="mg-time">22:16</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/bfc96fdcd9fa8d93489a7e0154f0e6c2/23df87e4bd464086-ea/s400x600/52a55ac55a50008608e48b5551e2c49a2e0b3bdb.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-hinge" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -283,7 +263,7 @@ A compact square-screen messenger with a ribbed speaker, recessed display and ro
 [dohtml]
 <div class="bh-mango mg-comms mg-lassi-link" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">messages</div>
 <div class="mg-time">22:16</div>
 <div class="mg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -301,12 +281,12 @@ A compact square-screen messenger with a ribbed speaker, recessed display and ro
 [dohtml]
 <div class="bh-mango mg-comms mg-lassi-link" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">messages</div>
 <div class="mg-time">22:16</div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-buttons" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -321,7 +301,7 @@ A slim slider handset with a broad portrait header, separate message screen and 
 [dohtml]
 <div class="bh-mango mg-comms mg-manila-mail" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">available</div>
 <div class="mg-time">22:16</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -342,15 +322,15 @@ A slim slider handset with a broad portrait header, separate message screen and 
 [dohtml]
 <div class="bh-mango mg-comms mg-manila-mail" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">available</div>
 <div class="mg-time">22:16</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-keys" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -365,7 +345,7 @@ A smooth asymmetric smartphone with a curved top corner, tiny contact portrait a
 [dohtml]
 <div class="bh-mango mg-comms mg-pulp-signal" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">online now</div>
 <div class="mg-time">22:16</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -386,15 +366,15 @@ A smooth asymmetric smartphone with a curved top corner, tiny contact portrait a
 [dohtml]
 <div class="bh-mango mg-comms mg-pulp-signal" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">online now</div>
 <div class="mg-time">22:16</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-camera" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -409,7 +389,7 @@ A tall lock-screen handset frames an enormous clock, mango-slice notifications a
 [dohtml]
 <div class="bh-mango mg-comms mg-sliceos" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">two new messages</div>
 <div class="mg-time">22:16</div>
 <div class="mg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -427,12 +407,12 @@ A tall lock-screen handset frames an enormous clock, mango-slice notifications a
 [dohtml]
 <div class="bh-mango mg-comms mg-sliceos" data-flow="received">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">two new messages</div>
 <div class="mg-time">22:16</div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-gesture" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -449,7 +429,7 @@ A low paired-image strip sits beneath a tiny reply, with opposed mango-cheek cur
 [dohtml]
 <div class="bh-mango mg-bud mg-blush-bite">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">you, again</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/bfc96fdcd9fa8d93489a7e0154f0e6c2/23df87e4bd464086-ea/s400x600/52a55ac55a50008608e48b5551e2c49a2e0b3bdb.gifv" alt="Character GIF" style="object-position:50% 45%">
@@ -468,13 +448,13 @@ A low paired-image strip sits beneath a tiny reply, with opposed mango-cheek cur
 [dohtml]
 <div class="bh-mango mg-bud mg-blush-bite">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">you, again</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 <img src="https://64.media.tumblr.com/bfc96fdcd9fa8d93489a7e0154f0e6c2/23df87e4bd464086-ea/s400x600/52a55ac55a50008608e48b5551e2c49a2e0b3bdb.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-pip" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -489,7 +469,7 @@ A small squared card with a scored corner, stacked title and inset member-colour
 [dohtml]
 <div class="bh-mango mg-bud mg-golden-cube">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">piece by piece</div>
 <div class="mg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -504,9 +484,9 @@ A small squared card with a scored corner, stacked title and inset member-colour
 [dohtml]
 <div class="bh-mango mg-bud mg-golden-cube">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">piece by piece</div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-score" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
@@ -521,7 +501,7 @@ A slender diagonal peel edge holds a minimal note with a sideways name tab.
 [dohtml]
 <div class="bh-mango mg-bud mg-last-sliver">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">save this for me</div>
 <div class="mg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -536,9 +516,9 @@ A slender diagonal peel edge holds a minimal note with a sideways name tab.
 [dohtml]
 <div class="bh-mango mg-bud mg-last-sliver">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">save this for me</div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-sliver" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -553,7 +533,7 @@ A petite side portrait hangs from a curved stem beside a short reply.
 [dohtml]
 <div class="bh-mango mg-bud mg-petiole">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">just to say</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
@@ -571,12 +551,12 @@ A petite side portrait hangs from a curved stem beside a short reply.
 [dohtml]
 <div class="bh-mango mg-bud mg-petiole">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">just to say</div>
 <div class="mg-media">
 <img src="https://64.media.tumblr.com/896e783e62764e7ca374043b96034969/23df87e4bd464086-f6/s400x600/a7c170722be077a68309475d5fe0df2a7aba9c3a.gifv" alt="Character GIF" style="object-position:50% 45%">
 </div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-stem" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>
@@ -591,7 +571,7 @@ A compact seed-shaped corner and coloured binding hold a tiny open note.
 [dohtml]
 <div class="bh-mango mg-bud mg-stonelet">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">a small thing, kept</div>
 <div class="mg-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -606,9 +586,9 @@ A compact seed-shaped corner and coloured binding hold a tiny open note.
 [dohtml]
 <div class="bh-mango mg-bud mg-stonelet">
 <a class="mg-name" href="[url]">Alastair &amp; Jiyong</a>
-<div class="mg-title">[text]</div>
+<div class="mg-title">a small thing, kept</div>
 <div class="mg-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="mg-ornament mg-stone" aria-hidden="true"><span></span><span></span><span></span></div>
 </div>

@@ -1,6 +1,6 @@
 [h1]COCKTAIL[/h1]
 
-Each design is shown above its complete copyable code. Copy the code box beneath the design you want, then edit the prefilled ship names, link, title, image URLs and sample writing. Generic collections retain name placeholders. Keep the included stylesheet loader: it loads the hosted design automatically.
+Each design is shown above its complete copyable code. The examples show sample writing; the code uses [TEXT GOES HERE] or [MESSAGE GOES HERE] for your writing. Copy the code box beneath the design you want, then edit the names, link, title and image URLs as needed. Keep the included stylesheet loader: it loads the hosted design automatically.
 
 Use HTML bold, italic and underline tags inside the template. Bold and underline follow the member colours; italics reverse them. Comms use ordinary paragraphs. Buds are intended for replies of 100 words or fewer. Sample images are shown where a preview has an unfilled image URL.
 
@@ -15,7 +15,7 @@ A faceted double portrait, cut-glass corner engravings and an angular reading fr
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-cut-crystal">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">you catch the light differently</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cc1a0ce914623551f507bd715d7df0fa/74e5d2bf7696982c-fe/s400x600/fb62ca39aed47cf0edd07b421694e8e03d422d11.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -38,17 +38,13 @@ A faceted double portrait, cut-glass corner engravings and an angular reading fr
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-cut-crystal">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">you catch the light differently</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cc1a0ce914623551f507bd715d7df0fa/74e5d2bf7696982c-fe/s400x600/fb62ca39aed47cf0edd07b421694e8e03d422d11.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -63,7 +59,7 @@ A tall portrait in a fluted glass column beside a stacked heading, opening into 
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-highball-hour">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">make a little room for me</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -85,16 +81,12 @@ A tall portrait in a fluted glass column beside a stacked heading, opening into 
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-highball-hour">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">make a little room for me</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -109,7 +101,7 @@ A tilted citrus-peel flourish above an intimate letter, with a panoramic portrai
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-last-pour">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">stay for the last slow sip</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -131,16 +123,12 @@ A tilted citrus-peel flourish above an intimate letter, with a panoramic portrai
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-last-pour">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">stay for the last slow sip</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -155,7 +143,7 @@ A slender bar-tab folio with a ruled heading, column of measure marks and an ope
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-open-tab">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">put the rest on my heart</div>
 <div class="ckt-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -174,13 +162,9 @@ A slender bar-tab folio with a ruled heading, column of measure marks and an ope
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-open-tab">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">put the rest on my heart</div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -195,7 +179,7 @@ Twin coupe-shaped portraits, fine glass stems and a sweeping cocktail-menu headi
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-velvet-martini">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">a taste of something dangerous</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cc1a0ce914623551f507bd715d7df0fa/74e5d2bf7696982c-fe/s400x600/fb62ca39aed47cf0edd07b421694e8e03d422d11.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -218,17 +202,13 @@ Twin coupe-shaped portraits, fine glass stems and a sweeping cocktail-menu headi
 [dohtml]
 <div class="bh-cocktail ckt-thread ckt-velvet-martini">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">a taste of something dangerous</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cc1a0ce914623551f507bd715d7df0fa/74e5d2bf7696982c-fe/s400x600/fb62ca39aed47cf0edd07b421694e8e03d422d11.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -245,7 +225,7 @@ A portrait-backed contact header above neutral notification bubbles in a rounded
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-afterhours-os" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">still awake?</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -266,15 +246,15 @@ A portrait-backed contact header above neutral notification bubbles in a rounded
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-afterhours-os" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">still awake?</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ckt-hardware" aria-hidden="true"></div>
 </div>
@@ -289,7 +269,7 @@ An image-free edge-lit phone with a large contact heading, compact incoming bubb
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-neon-dial" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">a little after midnight</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
@@ -307,12 +287,12 @@ An image-free edge-lit phone with a large contact heading, compact incoming bubb
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-neon-dial" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">a little after midnight</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ckt-hardware" aria-hidden="true"></div>
 </div>
@@ -327,7 +307,7 @@ A polished smartphone with a pill-shaped contact portrait, olive-pick speaker an
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-olive-wire" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">online · only for you</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -348,15 +328,15 @@ A polished smartphone with a pill-shaped contact portrait, olive-pick speaker an
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-olive-wire" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">online · only for you</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ckt-hardware" aria-hidden="true"></div>
 </div>
@@ -371,7 +351,7 @@ An angular tabletop messenger with two contact tiles, a glassy display and a sep
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-rocks-relay" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">callum + dae · private chat</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -393,16 +373,16 @@ An angular tabletop messenger with two contact tiles, a glassy display and a sep
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-rocks-relay" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">callum + dae · private chat</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cc1a0ce914623551f507bd715d7df0fa/74e5d2bf7696982c-fe/s400x600/fb62ca39aed47cf0edd07b421694e8e03d422d11.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ckt-hardware" aria-hidden="true"></div>
 </div>
@@ -417,7 +397,7 @@ A compact slide-phone silhouette with a brushed cap, contact screen and stacked 
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-shaker-chat" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">messages · connected</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -438,15 +418,15 @@ A compact slide-phone silhouette with a brushed cap, contact screen and stacked 
 [dohtml]
 <div class="bh-cocktail ckt-comms ckt-shaker-chat" data-flow="received">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">messages · connected</div>
 <div class="ckt-time">00:24</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
+<p>[MESSAGE GOES HERE]</p>
 </div>
 <div class="ckt-hardware" aria-hidden="true"></div>
 </div>
@@ -463,7 +443,7 @@ A short horizontal reply with a little square portrait tucked into a measuring-l
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-dash-of-you">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">just enough to feel it</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
@@ -481,12 +461,12 @@ A short horizontal reply with a little square portrait tucked into a measuring-l
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-dash-of-you">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">just enough to feel it</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -501,7 +481,7 @@ Two miniature tumbler portraits beneath a shared heading and a small, open reply
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-double-measure">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">one for you, one for me</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cc1a0ce914623551f507bd715d7df0fa/74e5d2bf7696982c-fe/s400x600/fb62ca39aed47cf0edd07b421694e8e03d422d11.gifv" alt="Character GIF" style="object-position:50% 35%">
@@ -520,13 +500,13 @@ Two miniature tumbler portraits beneath a shared heading and a small, open reply
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-double-measure">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">one for you, one for me</div>
 <div class="ckt-media">
 <img src="https://64.media.tumblr.com/71c043deaa0240ab1cfb295ca564d1fb/74e5d2bf7696982c-b1/s400x600/67e321bb31969d8ba66290ae81272f2d4613baef.gifv" alt="Character GIF" style="object-position:50% 35%">
 <img src="https://64.media.tumblr.com/cc1a0ce914623551f507bd715d7df0fa/74e5d2bf7696982c-fe/s400x600/fb62ca39aed47cf0edd07b421694e8e03d422d11.gifv" alt="Character GIF" style="object-position:50% 35%">
 </div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -541,7 +521,7 @@ A rounded coaster note with embossed concentric corners, a centred caption and a
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-nightcap">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">one more before you go</div>
 <div class="ckt-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -556,9 +536,9 @@ A rounded coaster note with embossed concentric corners, a centred caption and a
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-nightcap">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">one more before you go</div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -573,7 +553,7 @@ A narrow reply card with an olive-tipped stirrer running through the title margi
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-swizzle">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">stir something in me</div>
 <div class="ckt-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -588,9 +568,9 @@ A narrow reply card with an olive-tipped stirrer running through the title margi
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-swizzle">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">stir something in me</div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
@@ -605,7 +585,7 @@ A tiny note crossed by a loose citrus-peel flourish and a single member-colour r
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-twistlet">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">a twist of you</div>
 <div class="ckt-copy">
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -620,9 +600,9 @@ A tiny note crossed by a loose citrus-peel flourish and a single member-colour r
 [dohtml]
 <div class="bh-cocktail ckt-bud ckt-twistlet">
 <a class="ckt-name" href="[url]">Cal &amp; Dae</a>
-<div class="ckt-title">[text]</div>
+<div class="ckt-title">a twist of you</div>
 <div class="ckt-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>[TEXT GOES HERE]</p>
 </div>
 <div class="ckt-motif" aria-hidden="true"></div>
 </div>
