@@ -289,71 +289,6 @@
   },
   {
     "folder": "bingsu",
-    "name": "Variant 1 \u2014 Classic Twin",
-    "type": "thread",
-    "source": "bingsu/bingsu-compact-thread-snippets.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-bingsu bh-bingsu-classic",
-    "css": [
-      "bingsu/bingsu-thread-templates-forum-v1.css"
-    ],
-    "collection_index": 1
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 2 \u2014 Single Scoop",
-    "type": "thread",
-    "source": "bingsu/bingsu-compact-thread-snippets.txt",
-    "block": 2,
-    "aliases": [],
-    "classes": "bh-bingsu bh-bingsu-single",
-    "css": [
-      "bingsu/bingsu-thread-templates-forum-v1.css"
-    ],
-    "collection_index": 2
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 3 \u2014 Soft Scoop",
-    "type": "thread",
-    "source": "bingsu/bingsu-compact-thread-snippets.txt",
-    "block": 3,
-    "aliases": [],
-    "classes": "bh-bingsu bh-bingsu-round",
-    "css": [
-      "bingsu/bingsu-thread-templates-forum-v1.css"
-    ],
-    "collection_index": 3
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 4 \u2014 Snowglobe Scroll",
-    "type": "thread",
-    "source": "bingsu/bingsu-compact-thread-snippets.txt",
-    "block": 4,
-    "aliases": [],
-    "classes": "bh-bingsu bh-bingsu-scroll",
-    "css": [
-      "bingsu/bingsu-thread-templates-forum-v1.css"
-    ],
-    "collection_index": 4
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 5 \u2014 Layered Bowl",
-    "type": "thread",
-    "source": "bingsu/bingsu-compact-thread-snippets.txt",
-    "block": 5,
-    "aliases": [],
-    "classes": "bh-bingsu bh-bingsu-split",
-    "css": [
-      "bingsu/bingsu-thread-templates-forum-v1.css"
-    ],
-    "collection_index": 5
-  },
-  {
-    "folder": "bingsu",
     "name": "Crystal Veil",
     "type": "thread",
     "source": "bingsu/bingsu-crystal-veil-thread-02.txt",
@@ -364,7 +299,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "Two portraits in a single fractured-glass composition, held above a fine central seam.",
-    "collection_index": 6
+    "collection_index": 1,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -378,7 +314,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A shallow dessert-glass portrait, three fine syrup lines and a broad literary page.",
-    "collection_index": 7
+    "collection_index": 2,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -392,7 +329,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "An open snowfield page with flowing type, a narrow meltwater margin and a suspended droplet.",
-    "collection_index": 8
+    "collection_index": 3,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -406,7 +344,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A frost-edged portrait window, a sweeping title and a clean page within an angular glass frame.",
-    "collection_index": 9
+    "collection_index": 4,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -420,7 +359,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "An airy frost-window folio with a geometric upper lattice, wide writing and a quiet lower signature.",
-    "collection_index": 10
+    "collection_index": 5,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -434,20 +374,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A small landscape tablet with a capsule camera, contact portrait and generous inset conversation pane.",
-    "collection_index": 11
-  },
-  {
-    "folder": "bingsu",
-    "name": "Comms Snippet",
-    "type": "comms",
-    "source": "bingsu/bingsu-comms-snippet.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-bingsu-comms",
-    "css": [
-      "bingsu/bingsu-comms-forum-v1.css"
-    ],
-    "collection_index": 12
+    "collection_index": 6,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -461,7 +389,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A translucent smartphone with a stepped ice frame, contact portrait and soft received-message bubbles.",
-    "collection_index": 13
+    "collection_index": 7,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -475,7 +404,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A compact wrist communicator with a ridged strap, curved display and small digital crown.",
-    "collection_index": 14
+    "collection_index": 8,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -489,7 +419,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A slim candybar phone with crystalline navigation keys and a real twelve-key silhouette.",
-    "collection_index": 15
+    "collection_index": 9,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -503,72 +434,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A frosted notification phone with a tall clock, floating portrait tile and a separate message tray.",
-    "collection_index": 16
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 1 \u2014 Snowcap",
-    "type": "bud",
-    "source": "bingsu/bingsu-buds-snippets.txt",
-    "block": 1,
-    "aliases": [],
-    "classes": "bh-bud bh-bud-snowcap",
-    "css": [
-      "bingsu/bingsu-buds-forum-v1.css"
-    ],
-    "collection_index": 17
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 2 \u2014 Sprig",
-    "type": "bud",
-    "source": "bingsu/bingsu-buds-snippets.txt",
-    "block": 2,
-    "aliases": [],
-    "classes": "bh-bud bh-bud-sprig",
-    "css": [
-      "bingsu/bingsu-buds-forum-v1.css"
-    ],
-    "collection_index": 18
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 3 \u2014 Dewdrop",
-    "type": "bud",
-    "source": "bingsu/bingsu-buds-snippets.txt",
-    "block": 3,
-    "aliases": [],
-    "classes": "bh-bud bh-bud-dewdrop",
-    "css": [
-      "bingsu/bingsu-buds-forum-v1.css"
-    ],
-    "collection_index": 19
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 4 \u2014 Duet",
-    "type": "bud",
-    "source": "bingsu/bingsu-buds-snippets.txt",
-    "block": 4,
-    "aliases": [],
-    "classes": "bh-bud bh-bud-duet",
-    "css": [
-      "bingsu/bingsu-buds-forum-v1.css"
-    ],
-    "collection_index": 20
-  },
-  {
-    "folder": "bingsu",
-    "name": "Variant 5 \u2014 Quick Note",
-    "type": "bud",
-    "source": "bingsu/bingsu-buds-snippets.txt",
-    "block": 5,
-    "aliases": [],
-    "classes": "bh-bud bh-bud-note",
-    "css": [
-      "bingsu/bingsu-buds-forum-v1.css"
-    ],
-    "collection_index": 21
+    "collection_index": 10,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -582,7 +449,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A compact reply held within four delicate crystalline corners and an open centre.",
-    "collection_index": 22
+    "collection_index": 11,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -596,7 +464,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A tiny angular glass slip with a notched heading and a crisp member-colour edge.",
-    "collection_index": 23
+    "collection_index": 12,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -610,7 +479,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A low, quiet note with a broken frost baseline and a sweeping handwritten heading.",
-    "collection_index": 24
+    "collection_index": 13,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -624,7 +494,8 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A small curved dessert-glass portrait above a short reply and an understated signature.",
-    "collection_index": 25
+    "collection_index": 14,
+    "collection": "bingsu"
   },
   {
     "folder": "bingsu",
@@ -638,7 +509,162 @@
       "bingsu/bingsu-thaw-v1.css"
     ],
     "description": "A portrait postage tile aligned with a flowing colour trace and a miniature literary reply.",
-    "collection_index": 26
+    "collection_index": 15,
+    "collection": "bingsu"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 1 \u2014 Classic Twin",
+    "type": "thread",
+    "source": "bingsu/bingsu-compact-thread-snippets.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-bingsu bh-bingsu-classic",
+    "css": [
+      "bingsu/bingsu-thread-templates-forum-v1.css"
+    ],
+    "collection_index": 1,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 2 \u2014 Single Scoop",
+    "type": "thread",
+    "source": "bingsu/bingsu-compact-thread-snippets.txt",
+    "block": 2,
+    "aliases": [],
+    "classes": "bh-bingsu bh-bingsu-single",
+    "css": [
+      "bingsu/bingsu-thread-templates-forum-v1.css"
+    ],
+    "collection_index": 2,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 3 \u2014 Soft Scoop",
+    "type": "thread",
+    "source": "bingsu/bingsu-compact-thread-snippets.txt",
+    "block": 3,
+    "aliases": [],
+    "classes": "bh-bingsu bh-bingsu-round",
+    "css": [
+      "bingsu/bingsu-thread-templates-forum-v1.css"
+    ],
+    "collection_index": 3,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 4 \u2014 Snowglobe Scroll",
+    "type": "thread",
+    "source": "bingsu/bingsu-compact-thread-snippets.txt",
+    "block": 4,
+    "aliases": [],
+    "classes": "bh-bingsu bh-bingsu-scroll",
+    "css": [
+      "bingsu/bingsu-thread-templates-forum-v1.css"
+    ],
+    "collection_index": 4,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 5 \u2014 Layered Bowl",
+    "type": "thread",
+    "source": "bingsu/bingsu-compact-thread-snippets.txt",
+    "block": 5,
+    "aliases": [],
+    "classes": "bh-bingsu bh-bingsu-split",
+    "css": [
+      "bingsu/bingsu-thread-templates-forum-v1.css"
+    ],
+    "collection_index": 5,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Comms Snippet",
+    "type": "comms",
+    "source": "bingsu/bingsu-comms-snippet.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-bingsu-comms",
+    "css": [
+      "bingsu/bingsu-comms-forum-v1.css"
+    ],
+    "collection_index": 6,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 1 \u2014 Snowcap",
+    "type": "bud",
+    "source": "bingsu/bingsu-buds-snippets.txt",
+    "block": 1,
+    "aliases": [],
+    "classes": "bh-bud bh-bud-snowcap",
+    "css": [
+      "bingsu/bingsu-buds-forum-v1.css"
+    ],
+    "collection_index": 7,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 2 \u2014 Sprig",
+    "type": "bud",
+    "source": "bingsu/bingsu-buds-snippets.txt",
+    "block": 2,
+    "aliases": [],
+    "classes": "bh-bud bh-bud-sprig",
+    "css": [
+      "bingsu/bingsu-buds-forum-v1.css"
+    ],
+    "collection_index": 8,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 3 \u2014 Dewdrop",
+    "type": "bud",
+    "source": "bingsu/bingsu-buds-snippets.txt",
+    "block": 3,
+    "aliases": [],
+    "classes": "bh-bud bh-bud-dewdrop",
+    "css": [
+      "bingsu/bingsu-buds-forum-v1.css"
+    ],
+    "collection_index": 9,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 4 \u2014 Duet",
+    "type": "bud",
+    "source": "bingsu/bingsu-buds-snippets.txt",
+    "block": 4,
+    "aliases": [],
+    "classes": "bh-bud bh-bud-duet",
+    "css": [
+      "bingsu/bingsu-buds-forum-v1.css"
+    ],
+    "collection_index": 10,
+    "collection": "bingsu-legacy"
+  },
+  {
+    "folder": "bingsu",
+    "name": "Variant 5 \u2014 Quick Note",
+    "type": "bud",
+    "source": "bingsu/bingsu-buds-snippets.txt",
+    "block": 5,
+    "aliases": [],
+    "classes": "bh-bud bh-bud-note",
+    "css": [
+      "bingsu/bingsu-buds-forum-v1.css"
+    ],
+    "collection_index": 11,
+    "collection": "bingsu-legacy"
   },
   {
     "folder": "boba",

@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-860 distinct templates across 54 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+860 distinct templates across 55 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -9,7 +9,8 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Collection | Designs | Forum post | Preview | Numbered parts |
 | --- | ---: | --- | --- | ---: |
 | Banana | 15 | [banana-forum-masterpost.txt](banana-forum-masterpost.txt) | [Preview](banana-preview.html) | 1 |
-| Bingsu | 26 | [bingsu-forum-masterpost.txt](bingsu-forum-masterpost.txt) | [Preview](bingsu-preview.html) | 2 |
+| Bingsu · Thaw | 15 | [bingsu-forum-masterpost.txt](bingsu-forum-masterpost.txt) | [Preview](bingsu-preview.html) | 1 |
+| Bingsu · Legacy | 11 | [bingsu-legacy-forum-masterpost.txt](bingsu-legacy-forum-masterpost.txt) | [Preview](bingsu-legacy-preview.html) | 1 |
 | Boba | 15 | [boba-forum-masterpost.txt](boba-forum-masterpost.txt) | [Preview](boba-preview.html) | 1 |
 | Bread | 42 | [bread-forum-masterpost.txt](bread-forum-masterpost.txt) | [Preview](bread-preview.html) | 3 |
 | Brown Sugar | 15 | [brown-sugar-forum-masterpost.txt](brown-sugar-forum-masterpost.txt) | [Preview](brown-sugar-preview.html) | 1 |

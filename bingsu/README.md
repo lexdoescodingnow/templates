@@ -1,5 +1,11 @@
 # Bingsu · The Thaw Collection
 
+**Current forum set:** [15-design Thaw masterpost](../forum-posts/bingsu-forum-masterpost.txt) · [Preview and copy code](../forum-posts/bingsu-preview.html) · [Thaw repository package](bingsu-thaw-repository.zip).
+
+**Older set:** [11-design legacy collection](LEGACY.md) · [Legacy repository package](bingsu-legacy-repository.zip).
+
+The forum masterposts and repository packages are now separated by generation. The current Bingsu masterpost contains only the newer Thaw designs. Each package contains that generation’s individual posting snippets, supporting stylesheets, preview and masterpost. Existing stylesheet URLs remain available for posted templates.
+
 Fifteen new JCink designs inspired by the supplied Bingsu poster: icy glass, crystalline edges, melting snow, dessert-glass curves and soft handwritten lettering. Member colours run through the headers, frames, borders and emphasis. Writing stays on neutral surfaces.
 
 [Standalone HTML preview and editor](bingsu-collection-preview.html) · [Download the complete collection](bingsu-thaw-collection.zip)
@@ -66,7 +72,7 @@ See [VALIDATION.md](VALIDATION.md) for checks and limitations. Source validation
 
 ## Earlier Bingsu designs
 
-The previous [thread snippets](bingsu-compact-thread-snippets.txt), [comms snippet](bingsu-comms-snippet.txt), [buds snippets](bingsu-buds-snippets.txt) and their supporting stylesheets remain available. The new collection uses separate filenames and classes.
+The previous five threads, one comms template and five buds have their own [legacy masterpost and archive](LEGACY.md). Their original source files and supporting stylesheet URLs remain available for compatibility. The newer collection uses separate filenames and classes.
 
 ## Forum-ready collection
 
