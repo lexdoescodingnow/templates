@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en" color-mode="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cereal · Hoseong &amp; Sam</title><style>.crl1{--cr-a:rgb(var(--mgrgb1,111,103,95));--cr-b:rgb(var(--mgrgb2,136,128,117));--cr-c:rgb(var(--mgrgb3,103,107,107));--cr-grad:linear-gradient(115deg,var(--cr-a),var(--cr-b),var(--cr-c));--cr-reverse:linear-gradient(115deg,var(--cr-c),var(--cr-b),var(--cr-a));--cr-paper:#faf9f5;--cr-inset:#f0efea;--cr-ink:#30302f;--cr-muted:#6d6a65;--cr-line:#d6d3cb;--cr-tint:color-mix(in srgb,var(--cr-a) 12%,var(--cr-paper));--cr-width:580px;container:crl1 / inline-size;isolation:isolate;display:block;width:min(100%,var(--cr-width));margin:24px auto;color:var(--cr-ink);font:15px/1.8 Georgia,'Times New Roman',serif;text-align:left;overflow-wrap:anywhere}
+html[color-mode="dark"] .crl1{--cr-paper:#202122;--cr-inset:#18191a;--cr-ink:#e5e3dd;--cr-muted:#b4b1a8;--cr-line:#494a49}
+@media(prefers-color-scheme:dark){html:not([color-mode]) .crl1{--cr-paper:#202122;--cr-inset:#18191a;--cr-ink:#e5e3dd;--cr-muted:#b4b1a8;--cr-line:#494a49}}
+.crl1 *,.crl1 *::before,.crl1 *::after{box-sizing:border-box}
+.crl1 .crl1-layout{position:relative;display:grid;min-width:0;background:var(--cr-paper);border:1px solid var(--cr-line)}
+.crl1 .crl1-meta{grid-area:meta;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.crl1 .crl1-meta a{font:750 11px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--cr-a);text-decoration:none;border:0;box-shadow:none;max-width:100%}
+.crl1 .crl1-title{display:block;font:800 44px/.96 'Arial Black','Helvetica Neue',Arial,sans-serif;letter-spacing:-.055em;color:var(--cr-a);max-width:100%;text-wrap:balance}
+.crl1 .crl1-sub{font:10px/1.4 ui-monospace,'Courier New',monospace;text-transform:uppercase;letter-spacing:.13em;color:var(--cr-muted)}
+.crl1 .crl1-media{grid-area:media;min-width:0;display:grid;gap:12px;align-self:start}
+.crl1 .crl1-media:empty,.crl1 .crl1-media:not(:has(img[src]:not([src=""]))){display:none}
+.crl1 .crl1-media img{display:block;width:100%;height:100%;min-width:0;max-width:100%;margin:0;object-fit:cover;object-position:var(--cr-crop,50% 35%);border:0;box-shadow:none}
+.crl1 .crl1-shot{display:block;min-width:0;overflow:hidden;border:3px solid var(--cr-a);background:var(--cr-inset);aspect-ratio:1}
+.crl1 .crl1-shot:nth-child(2){border-color:var(--cr-c)}
+.crl1 .crl1-copy{grid-area:copy;min-width:0;position:relative}
+.crl1 .crl1-copy p{font:inherit;color:inherit;line-height:inherit;text-align:inherit;margin:0 0 1.1em;padding:0}
+.crl1 .crl1-copy p:last-child{margin-bottom:0}
+.crl1 :is(b,strong,u){font-family:inherit;font-size:inherit;line-height:inherit;color:var(--cr-a);background:var(--cr-grad);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;box-shadow:none}
+.crl1 :is(b,strong){font-weight:750}
+.crl1 :is(i,em){font-family:inherit;font-size:inherit;line-height:inherit;font-style:italic;color:var(--cr-c);background:var(--cr-reverse);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;box-shadow:none}
+.crl1 u{text-decoration:underline;text-decoration-color:var(--cr-b);text-decoration-thickness:1px;text-underline-offset:4px}
+.crl1 .crl1-copy a{color:var(--cr-a);text-decoration:underline;text-underline-offset:3px}
+.crl1 a:focus-visible{outline:2px solid var(--cr-b);outline-offset:4px}
+.crl1 .crl1-art{grid-area:art;position:relative;display:flex;align-items:center;justify-content:center;gap:9px;min-width:0;min-height:42px;color:var(--cr-a)}
+.crl1 .crl1-art span{display:block;position:relative;flex:none;width:18px;height:20px;border:5px solid currentColor;border-radius:50%;transform:rotate(-24deg)}
+.crl1 .crl1-art span:nth-child(2){color:var(--cr-b);width:25px;height:23px;transform:rotate(20deg)}
+.crl1 .crl1-art span:nth-child(3){color:var(--cr-c);width:15px;height:19px;transform:rotate(42deg)}
+.crl1 .crl1-art span:nth-child(4){color:var(--cr-a);width:20px;height:17px;transform:rotate(12deg)}
+.crl1 .crl1-art span:nth-child(5){color:var(--cr-b);width:16px;height:21px}
+.crl1 .crl1-receipt{grid-area:receipt;font:10px/1.5 Arial,sans-serif;text-align:right;color:var(--cr-muted);min-width:0}
+.crl1 .crl1-device{grid-area:device;min-width:0;display:flex;align-items:center;justify-content:space-between;gap:10px;font:11px/1.5 Arial,sans-serif;color:var(--cr-muted);border:1px solid var(--cr-line);padding:10px 13px;border-radius:18px;background:var(--cr-inset)}
+.crl1 .crl1-device span:last-child{color:var(--cr-a);font-size:16px}
+.crl1-breakfast-club .crl1-layout{grid-template-columns:1.35fr 1fr;grid-template-areas:'meta media' 'art media' 'copy copy';padding:28px;gap:24px;border:2px solid var(--cr-a);box-shadow:8px 8px 0 var(--cr-tint)}
+.crl1-breakfast-club .crl1-meta{padding-top:12px}
+.crl1-breakfast-club .crl1-title{font-size:57px;text-transform:uppercase}
+.crl1-breakfast-club .crl1-media{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.crl1-breakfast-club .crl1-shot{aspect-ratio:2/5;border-radius:70px 70px 18px 18px;border-width:4px}
+.crl1-breakfast-club .crl1-shot:nth-child(2){margin-top:22px}
+.crl1-breakfast-club .crl1-copy{border-top:8px solid var(--cr-a);padding-top:25px}
+.crl1-breakfast-club .crl1-art{justify-content:flex-start;align-self:end}
+.crl1-breakfast-club .crl1-layout:not(:has(.crl1-media img)){grid-template-columns:1fr;grid-template-areas:'meta' 'art' 'copy'}
+.crl1-spoon-theory .crl1-layout{grid-template-columns:78px minmax(0,1fr);grid-template-areas:'media meta' 'media copy' 'art copy';column-gap:26px;row-gap:24px;padding:34px 32px;border:0;border-top:2px solid var(--cr-b);border-bottom:2px solid var(--cr-a)}
+.crl1-spoon-theory .crl1-title{font-family:Georgia,serif;font-style:italic;font-size:43px;font-weight:400;letter-spacing:-.04em}
+.crl1-spoon-theory .crl1-media{gap:16px;position:relative;padding-bottom:100px}
+.crl1-spoon-theory .crl1-media::after{content:'';position:absolute;bottom:0;left:calc(50% - 7px);width:14px;height:103px;background:var(--cr-grad);border-radius:0 0 20px 20px}
+.crl1-spoon-theory .crl1-shot{aspect-ratio:3/4;border-radius:50%;padding:3px;border-width:2px}
+.crl1-spoon-theory .crl1-shot img{border-radius:50%}
+.crl1-spoon-theory .crl1-art{align-self:end;flex-wrap:wrap;gap:7px;padding-bottom:5px}
+.crl1-spoon-theory .crl1-art span:nth-child(n+4){display:none}
+.crl1-spoon-theory .crl1-layout:not(:has(.crl1-media img)){grid-template-columns:1fr;grid-template-areas:'meta' 'copy' 'art'}
+.crl1-prize-inside .crl1-layout{grid-template-columns:minmax(0,1fr) 50px;grid-template-areas:'meta art' 'media media' 'copy copy';padding:34px;gap:24px;border:1px solid var(--cr-a);border-top:14px solid var(--cr-b);background:linear-gradient(90deg,var(--cr-tint) 10px,transparent 10px),var(--cr-paper)}
+.crl1-prize-inside .crl1-meta{border-bottom:2px solid var(--cr-a);padding-bottom:24px}
+.crl1-prize-inside .crl1-title{font-size:52px;text-transform:uppercase}
+.crl1-prize-inside .crl1-art{flex-direction:column;gap:6px;align-self:stretch;justify-content:space-around}
+.crl1-prize-inside .crl1-copy{padding:22px;border:1px dashed var(--cr-b);background:var(--cr-paper)}
+.crl1-prize-inside .crl1-media{grid-template-columns:repeat(auto-fit,minmax(80px,1fr))}
+.crl1-prize-inside .crl1-shot{aspect-ratio:2/1}
+.crl1-orbit-os .crl1-layout{grid-template-columns:1fr;grid-template-areas:'media' 'meta' 'copy' 'art';gap:25px;border:0;padding:32px;background:radial-gradient(ellipse at 50% 0,var(--cr-tint),transparent 300px),var(--cr-paper);border-bottom:3px solid var(--cr-c)}
+.crl1-orbit-os .crl1-media{display:flex;gap:20px;justify-content:center;align-items:center;width:100%;padding:10px 0 32px;border-bottom:2px solid var(--cr-b);border-radius:0 0 50% 50%}
+.crl1-orbit-os .crl1-shot{width:36%;max-width:160px;border-radius:50%;padding:7px;border-width:9px;transform:rotate(-8deg);box-shadow:0 0 0 1px var(--cr-line)}
+.crl1-orbit-os .crl1-shot:nth-child(2){transform:rotate(9deg)}
+.crl1-orbit-os .crl1-shot img{border-radius:50%}
+.crl1-orbit-os .crl1-meta{align-items:center;text-align:center}
+.crl1-orbit-os .crl1-title{font-family:Georgia,serif;font-size:47px;font-weight:400;letter-spacing:-.055em}
+.crl1-orbit-os .crl1-copy{padding-inline:18px}
+.crl1-after-the-crunch .crl1-layout{grid-template-columns:1fr 1fr;grid-template-areas:'meta meta' 'copy copy' 'media art';padding:30px;gap:25px;background:var(--cr-paper);border-top:6px solid var(--cr-c)}
+.crl1-after-the-crunch .crl1-meta{border-bottom:1px solid var(--cr-a);padding-bottom:24px}
+.crl1-after-the-crunch .crl1-title{font-size:48px;font-weight:400;font-family:Georgia,serif;letter-spacing:-.04em}
+.crl1-after-the-crunch .crl1-copy{padding-left:22px;border-left:1px solid var(--cr-b)}
+.crl1-after-the-crunch .crl1-shot{aspect-ratio:5/3;border-width:0;border-bottom:5px solid var(--cr-a)}
+.crl1-after-the-crunch .crl1-art{align-self:stretch;border-block:1px solid var(--cr-line);background:repeating-linear-gradient(90deg,transparent 0 9px,var(--cr-tint) 9px 10px);flex-wrap:wrap}
+.crl1-after-the-crunch .crl1-art span{border-radius:45% 55% 65% 35%;width:25px;height:33px;border-width:2px;box-shadow:inset 0 0 0 3px var(--cr-tint);transform:rotate(25deg)}
+.crl1-after-the-crunch .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta meta' 'copy copy' 'art art'}
+.crl1-comms{--cr-width:365px;font:13px/1.65 Arial,Helvetica,sans-serif}
+.crl1-comms .crl1-title{font:700 19px/1.2 Arial,sans-serif;letter-spacing:-.03em}
+.crl1-comms .crl1-meta a{letter-spacing:.07em;font-size:12px}
+.crl1-comms .crl1-copy{display:flex;flex-direction:column;gap:11px}
+.crl1-comms .crl1-copy p{max-width:89%;width:fit-content;margin:0;padding:12px 14px;border:1px solid var(--cr-line);border-left:3px solid var(--cr-a);background:var(--cr-paper);border-radius:4px 16px 16px 16px}
+.crl1-comms[data-direction="sent"] .crl1-copy p,.crl1-comms[data-direction="alternating"] .crl1-copy p:nth-child(even){align-self:flex-end;border-radius:16px 4px 16px 16px;background:var(--cr-tint);border-left:1px solid var(--cr-line);border-right:3px solid var(--cr-c)}
+.crl1-crunchline .crl1-layout{grid-template-columns:54px minmax(0,1fr);grid-template-areas:'art art' 'media meta' 'copy copy' 'receipt receipt' 'device device';padding:19px;gap:17px;border:3px solid var(--cr-a);border-radius:39px;box-shadow:inset 0 0 0 5px var(--cr-inset)}
+.crl1-crunchline .crl1-art{min-height:20px;height:20px;padding:0;margin:0 0 6px;gap:0}
+.crl1-crunchline .crl1-art::before{content:'';width:76px;height:19px;background:var(--cr-a);border-radius:20px}
+.crl1-crunchline .crl1-art span{display:none}
+.crl1-crunchline .crl1-shot{border-radius:20px;aspect-ratio:1}
+.crl1-crunchline .crl1-media{gap:6px}
+.crl1-crunchline .crl1-copy{padding-block:16px;min-height:160px;background:radial-gradient(ellipse at 93% 13%,transparent 8px,var(--cr-tint) 9px 13px,transparent 14px),radial-gradient(ellipse at 76% 90%,transparent 12px,var(--cr-tint) 13px 17px,transparent 18px)}
+.crl1-crunchline .crl1-layout:not(:has(.crl1-media img)){grid-template-columns:1fr;grid-template-areas:'art' 'meta' 'copy' 'receipt' 'device'}
+.crl1-loopback{--cr-width:460px}
+.crl1-loopback .crl1-layout{grid-template-columns:minmax(0,1fr) 75px;grid-template-areas:'meta media' 'copy copy' 'receipt art' 'device device';padding:23px;gap:17px;border:3px solid var(--cr-b);border-radius:14px 14px 34px 14px;box-shadow:6px 6px 0 var(--cr-tint)}
+.crl1-loopback .crl1-copy{padding:18px;background:var(--cr-inset);border:1px solid var(--cr-a);border-radius:5px;font-family:ui-monospace,'Courier New',monospace}
+.crl1-loopback .crl1-copy p{max-width:94%;border-radius:1px;background:var(--cr-paper);font-size:12px}
+.crl1-loopback .crl1-shot{border-radius:7px;border-width:2px}
+.crl1-loopback .crl1-art{gap:7px;min-height:20px}
+.crl1-loopback .crl1-art span{width:17px;height:17px;border-width:5px;transform:none}
+.crl1-loopback .crl1-art span:nth-child(n+4){display:none}
+.crl1-loopback .crl1-device{border:0;border-top:1px solid var(--cr-line);border-radius:0;background:transparent;padding-bottom:0;font-family:ui-monospace,monospace}
+.crl1-loopback .crl1-receipt{text-align:left;align-self:center}
+.crl1-loopback .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta meta' 'copy copy' 'receipt art' 'device device'}
+.crl1-snap-dispatch{--cr-width:530px}
+.crl1-snap-dispatch .crl1-layout{grid-template-columns:85px minmax(0,1fr);grid-template-areas:'meta meta' 'media copy' 'art receipt' 'device device';padding:20px;gap:20px;border:2px solid var(--cr-a);border-radius:26px}
+.crl1-snap-dispatch .crl1-meta{border-bottom:1px solid var(--cr-line);padding:5px 5px 18px}
+.crl1-snap-dispatch .crl1-media{padding-right:16px;border-right:2px solid var(--cr-b);gap:15px;align-self:stretch}
+.crl1-snap-dispatch .crl1-shot{border-radius:13px;aspect-ratio:4/5;align-self:start}
+.crl1-snap-dispatch .crl1-copy{background:var(--cr-inset);padding:15px;border-radius:8px;align-self:start}
+.crl1-snap-dispatch .crl1-art{gap:6px;min-height:12px}
+.crl1-snap-dispatch .crl1-art span{height:9px;width:9px;border:0;background:currentColor}
+.crl1-snap-dispatch .crl1-art span:nth-child(n+4){display:none}
+.crl1-snap-dispatch .crl1-device{border:0;background:var(--cr-tint);border-radius:8px}
+.crl1-snap-dispatch .crl1-layout:not(:has(.crl1-media img)){grid-template-columns:1fr;grid-template-areas:'meta' 'copy' 'receipt' 'art' 'device'}
+.crl1-breakfast-broadcast{--cr-width:330px;padding-block:35px;background:linear-gradient(90deg,transparent 24%,var(--cr-tint) 24% 27%,var(--cr-b) 27% 73%,var(--cr-tint) 73% 76%,transparent 76%);border-radius:65px}
+.crl1-breakfast-broadcast .crl1-layout{grid-template-columns:48px minmax(0,1fr);grid-template-areas:'media meta' 'copy copy' 'receipt receipt' 'device device';padding:27px 21px;gap:17px;border:4px solid var(--cr-a);border-radius:44px;box-shadow:inset 0 0 0 4px var(--cr-inset)}
+.crl1-breakfast-broadcast .crl1-shot{border-radius:50%;border-width:2px}
+.crl1-breakfast-broadcast .crl1-title{font-size:17px}
+.crl1-breakfast-broadcast .crl1-meta{gap:5px}
+.crl1-breakfast-broadcast .crl1-meta a{font-size:10px}
+.crl1-breakfast-broadcast .crl1-copy p{max-width:100%;border-radius:17px;font-size:12px}
+.crl1-breakfast-broadcast .crl1-device{justify-content:center;padding:7px;border:0;background:var(--cr-tint)}
+.crl1-breakfast-broadcast .crl1-art{display:none}
+.crl1-breakfast-broadcast .crl1-layout:not(:has(.crl1-media img)){grid-template-columns:1fr;grid-template-areas:'meta' 'copy' 'receipt' 'device'}
+.crl1-spoonful-sms{--cr-width:500px}
+.crl1-spoonful-sms .crl1-layout{grid-template-columns:minmax(0,1fr) 85px;grid-template-areas:'meta art' 'media media' 'copy copy' 'receipt receipt' 'device device';gap:18px;padding:22px;border:1px solid var(--cr-a);border-top:8px solid var(--cr-b);border-radius:6px;box-shadow:7px 7px 0 var(--cr-tint)}
+.crl1-spoonful-sms .crl1-meta{border-bottom:1px solid var(--cr-line);padding-bottom:17px}
+.crl1-spoonful-sms .crl1-art{align-self:start;justify-content:flex-end;gap:7px;min-height:18px}
+.crl1-spoonful-sms .crl1-art span{height:10px;width:10px;border:1px solid currentColor;transform:none;border-radius:0}
+.crl1-spoonful-sms .crl1-art span:nth-child(n+4){display:none}
+.crl1-spoonful-sms .crl1-media{grid-template-columns:repeat(auto-fit,minmax(80px,1fr))}
+.crl1-spoonful-sms .crl1-shot{max-width:90px;border-radius:6px}
+.crl1-spoonful-sms .crl1-copy{padding-inline:4px}
+.crl1-spoonful-sms .crl1-copy p{border-radius:5px}
+.crl1-spoonful-sms .crl1-device{border-radius:3px;padding:14px}
+.crl1-bud{--cr-width:430px;font-size:13px;line-height:1.75}
+.crl1-bud .crl1-title{font:500 23px/1.1 Georgia,serif;letter-spacing:-.035em}
+.crl1-bud .crl1-meta{gap:6px}
+.crl1-bud .crl1-meta a{font-size:9px;letter-spacing:.09em}
+.crl1-bud .crl1-sub{font-size:9px}
+.crl1-little-loop .crl1-layout{grid-template-columns:73px minmax(0,1fr);grid-template-areas:'media meta' 'art copy';padding:22px;gap:14px 23px;border:0;border-left:3px solid var(--cr-a)}
+.crl1-little-loop .crl1-shot{border-radius:50%;border:7px solid var(--cr-b);padding:3px}
+.crl1-little-loop .crl1-shot img{border-radius:50%}
+.crl1-little-loop .crl1-art{flex-wrap:wrap;align-self:start;gap:6px;min-height:20px}
+.crl1-little-loop .crl1-art span:nth-child(n+3){display:none}
+.crl1-little-loop .crl1-layout:not(:has(.crl1-media img)){grid-template-columns:1fr;grid-template-areas:'meta' 'copy' 'art'}
+.crl1-flakelet .crl1-layout{grid-template-columns:1fr 42px;grid-template-areas:'meta art' 'media media' 'copy copy';gap:18px;padding:25px;border:0;border-bottom:3px solid var(--cr-b);background:linear-gradient(135deg,transparent 9px,var(--cr-paper) 0) top left/100% 100%;filter:drop-shadow(0 1px 0 var(--cr-line))}
+.crl1-flakelet .crl1-art{min-height:24px;align-self:start;flex-wrap:wrap;gap:3px}
+.crl1-flakelet .crl1-art span{width:23px;height:28px;border:1px solid var(--cr-b);border-radius:60% 40% 55% 35%;background:var(--cr-tint);transform:rotate(34deg)}
+.crl1-flakelet .crl1-art span:nth-child(n+2){display:none}
+.crl1-flakelet .crl1-media{display:flex}.crl1-flakelet .crl1-shot{width:68px;border-radius:4px}
+.crl1-double-scoop .crl1-layout{grid-template-columns:minmax(0,1fr) 106px;grid-template-areas:'meta media' 'copy media' 'art art';column-gap:20px;row-gap:13px;padding:23px;border:1px solid var(--cr-line);border-radius:0 0 35px 35px;border-bottom:3px solid var(--cr-c)}
+.crl1-double-scoop .crl1-media{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-bottom:55px;position:relative}
+.crl1-double-scoop .crl1-shot{aspect-ratio:3/4;border-radius:50%;padding:2px;border-width:2px;position:relative;overflow:visible}
+.crl1-double-scoop .crl1-shot img{border-radius:50%}
+.crl1-double-scoop .crl1-shot::after{content:'';position:absolute;top:100%;left:calc(50% - 3px);width:6px;height:52px;border-radius:0 0 9px 9px;background:var(--cr-grad)}
+.crl1-double-scoop .crl1-art{min-height:2px;height:2px;background:var(--cr-grad);width:50%;justify-self:center;margin-top:5px}
+.crl1-double-scoop .crl1-art span{display:none}
+.crl1-double-scoop .crl1-layout:not(:has(.crl1-media img)){grid-template-columns:1fr;grid-template-areas:'meta' 'copy' 'art'}
+.crl1-pocket-prize .crl1-layout{grid-template-columns:76px minmax(0,1fr);grid-template-areas:'media meta' 'media copy' 'art art';padding:20px;gap:15px 21px;border:1px dashed var(--cr-a);border-left:8px solid var(--cr-b);box-shadow:4px 4px 0 var(--cr-tint)}
+.crl1-pocket-prize .crl1-shot{aspect-ratio:2/3;border:0;border-radius:5px}
+.crl1-pocket-prize .crl1-art{min-height:10px;background:repeating-linear-gradient(90deg,var(--cr-b) 0 2px,transparent 2px 5px,var(--cr-a) 5px 6px,transparent 6px 9px);height:10px;width:70px;justify-self:end}
+.crl1-pocket-prize .crl1-art span{display:none}
+.crl1-pocket-prize .crl1-layout:not(:has(.crl1-media img)){grid-template-columns:1fr;grid-template-areas:'meta' 'copy' 'art'}
+.crl1-last-cheerio .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'copy' 'art';gap:17px;padding:25px 34px 20px;border:0;border-top:4px solid var(--cr-a);border-bottom:2px solid var(--cr-b);border-radius:8px 8px 70px 70px}
+.crl1-last-cheerio .crl1-meta{align-items:center;text-align:center}
+.crl1-last-cheerio .crl1-copy{text-align:center}
+.crl1-last-cheerio .crl1-art{min-height:25px;gap:7px}
+.crl1-last-cheerio .crl1-art span{width:12px;height:15px;border-width:4px}
+.crl1-last-cheerio .crl1-art span:nth-child(n+4){display:none}
+.crl1-last-cheerio .crl1-media{display:flex;justify-content:center}.crl1-last-cheerio .crl1-shot{width:65px;border-radius:50%}
+@container crl1 (max-width:420px){.crl1 .crl1-title{font-size:36px}.crl1-breakfast-club .crl1-layout{padding:21px;gap:17px}.crl1-breakfast-club .crl1-title{font-size:41px}.crl1-breakfast-club .crl1-shot{aspect-ratio:1/3}.crl1-spoon-theory .crl1-layout{grid-template-columns:61px minmax(0,1fr);padding:25px 20px;column-gap:18px}.crl1-prize-inside .crl1-layout{padding:23px;gap:19px}.crl1-prize-inside .crl1-copy{padding:17px}.crl1-orbit-os .crl1-layout{padding:23px}.crl1-orbit-os .crl1-copy{padding:0}.crl1-after-the-crunch .crl1-layout{padding:23px}.crl1 .crl1-shot{box-shadow:none}.crl1-comms .crl1-title{font-size:19px}.crl1-breakfast-broadcast .crl1-title{font-size:17px}.crl1-bud .crl1-title{font-size:22px}.crl1-snap-dispatch .crl1-layout{grid-template-columns:61px minmax(0,1fr);gap:12px;padding:16px}.crl1-snap-dispatch .crl1-media{padding-right:10px}.crl1-snap-dispatch .crl1-copy{padding:9px}.crl1-double-scoop .crl1-layout{grid-template-columns:minmax(0,1fr) 82px;gap:12px;padding:20px}.crl1-little-loop .crl1-layout{grid-template-columns:60px minmax(0,1fr);gap:14px}.crl1-pocket-prize .crl1-layout{grid-template-columns:60px minmax(0,1fr);gap:14px;padding:17px}}
+@container crl1 (max-width:300px){.crl1-breakfast-club .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'art' 'copy'}.crl1-breakfast-club .crl1-media{max-width:180px}.crl1-breakfast-club .crl1-shot{aspect-ratio:3/4}.crl1-spoon-theory .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'copy' 'art'}.crl1-spoon-theory .crl1-media{padding-bottom:0;max-width:70px}.crl1-spoon-theory .crl1-media::after{display:none}.crl1-prize-inside .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'copy' 'art'}.crl1-prize-inside .crl1-art{flex-direction:row}.crl1-after-the-crunch .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'copy' 'media' 'art'}.crl1-after-the-crunch .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta' 'copy' 'art'}.crl1-snap-dispatch .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'copy' 'receipt' 'art' 'device'}.crl1-snap-dispatch .crl1-media{display:flex;border-right:0;padding-right:0}.crl1-snap-dispatch .crl1-shot{width:48px}.crl1-double-scoop .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'copy' 'art'}.crl1-double-scoop .crl1-media{max-width:100px;padding-bottom:55px}.crl1-pocket-prize .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'copy' 'art'}.crl1-pocket-prize .crl1-media{max-width:70px}.crl1-little-loop .crl1-layout{grid-template-columns:1fr;grid-template-areas:'meta' 'media' 'copy' 'art'}.crl1-little-loop .crl1-media{max-width:65px}.crl1 .crl1-title{font-size:30px}.crl1-comms .crl1-title{font-size:18px}.crl1-bud .crl1-title{font-size:22px}.crl1-spoonful-sms .crl1-layout{grid-template-columns:1fr;grid-template-areas:'art' 'meta' 'media' 'copy' 'receipt' 'device'}}
+.crl1-prize-inside .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta art' 'copy copy'}
+.crl1-orbit-os .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta' 'copy' 'art'}
+.crl1-spoonful-sms .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta art' 'copy copy' 'receipt receipt' 'device device'}
+.crl1-flakelet .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta art' 'copy copy'}
+.crl1-last-cheerio .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta' 'copy' 'art'}
+@container crl1 (max-width:300px){.crl1-prize-inside .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'meta' 'copy' 'art'}.crl1-spoonful-sms .crl1-layout:not(:has(.crl1-media img)){grid-template-areas:'art' 'meta' 'copy' 'receipt' 'device'}}
+
+body{margin:0;background:#eae8e2;color:#292a26;font:14px/1.5 Arial,Helvetica,sans-serif}body *{box-sizing:border-box}.cer-main{max-width:1050px;margin:0 auto;padding:55px 35px}.cer-intro{border-top:2px solid currentColor;padding-top:15px}.cer-kicker{font:11px/1.3 ui-monospace,monospace;letter-spacing:.14em}.cer-intro h1{font:900 clamp(65px,15vw,145px)/1 'Arial Black',Arial,sans-serif;letter-spacing:-.08em;margin:16px 0 25px;display:flex;justify-content:space-between;align-items:center}.cer-intro h1 span{font:400 38px/1 Georgia,serif;border:2px solid;width:94px;height:94px;border-radius:50%;display:grid;place-items:center;letter-spacing:-.05em}.cer-subline{display:flex;justify-content:space-between;gap:15px;font:11px/1.4 ui-monospace,monospace;letter-spacing:.05em;padding-bottom:24px;border-bottom:2px solid currentColor}.cer-main a{color:inherit;text-underline-offset:4px}.cer-controls{display:flex;flex-wrap:wrap;gap:15px;align-items:center;margin:25px 0 50px}.cer-filters{display:flex;flex-wrap:wrap;gap:5px;margin-right:auto}.cer-controls label{display:flex;flex-direction:column;gap:5px;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.cer-main button,.cer-main select,.cer-main input,.cer-main textarea{font:inherit;color:inherit}.cer-main button,.cer-main select{border:1px solid #aaa99f;border-radius:4px;background:transparent;padding:9px 13px}.cer-main button{cursor:pointer}.cer-main button[aria-pressed=true]{background:#292a26;color:#fff;border-color:#292a26}.cer-main :is(button,a,select,input,summary,textarea):focus-visible{outline:2px solid #55837a;outline-offset:4px}.cer-card{margin:0 0 60px;scroll-margin-top:20px}.cer-card[hidden]{display:none}.cer-card-head{display:flex;align-items:baseline;gap:20px;border-bottom:1px solid #b6b6ac;padding-bottom:15px}.cer-card-head>span{font:10px/1.5 ui-monospace,monospace;letter-spacing:.08em;min-width:85px}.cer-card h2{font:400 31px/1.15 Georgia,serif;letter-spacing:-.04em;margin:0}.cer-stage{--mgrgb1:146,79,90;--mgrgb2:133,112,64;--mgrgb3:57,110,96;padding:38px 18px;display:flow-root;background:#f3f2ee;border:1px solid #d4d3ca;border-top:0}.cer-editor{border:1px solid #b6b6ac;border-top:0}.cer-editor summary{padding:14px 17px;cursor:pointer;font-size:12px;font-weight:700}.cer-editor form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;padding:10px 17px 20px}.cer-editor label{font-size:11px;display:flex;flex-direction:column;gap:7px}.cer-editor input,.cer-editor textarea{width:100%;border:1px solid #b6b6ac;padding:10px;background:#f9f8f4;border-radius:3px;font:12px/1.5 ui-monospace,monospace}.cer-writing{grid-column:1/-1}.cer-editor textarea{resize:vertical;min-height:150px}.cer-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:15px 0}.cer-actions button,.cer-actions a{font-size:11px}.cer-actions .cer-copy{background:#292a26;color:#fff;border-color:#292a26}.cer-status{font-size:11px}.cer-code{display:block;resize:vertical;width:100%;height:130px;border:1px solid #b6b6ac;background:#f4f3ee;padding:13px;font:11px/1.6 ui-monospace,monospace!important;white-space:pre}.cer-footer{display:flex;justify-content:space-between;border-top:2px solid currentColor;padding-top:20px;font:11px/1.4 ui-monospace,monospace}.cer-main[data-palette=blue] .cer-stage{--mgrgb1:69,104,162;--mgrgb2:134,91,160;--mgrgb3:68,133,138}.cer-main[data-palette=orange] .cer-stage{--mgrgb1:166,91,39;--mgrgb2:135,96,120;--mgrgb3:36,118,116}html[color-mode=dark] body{background:#121415;color:#ecebe5}html[color-mode=dark] .cer-stage{background:#181b1c;border-color:#404543;--mgrgb1:220,148,159;--mgrgb2:194,173,119;--mgrgb3:126,186,166}html[color-mode=dark] .cer-main[data-palette=blue] .cer-stage{--mgrgb1:132,175,227;--mgrgb2:191,152,215;--mgrgb3:120,188,192}html[color-mode=dark] .cer-main[data-palette=orange] .cer-stage{--mgrgb1:226,157,100;--mgrgb2:205,153,185;--mgrgb3:104,190,186}html[color-mode=dark] .cer-main :is(button,select,input,textarea){border-color:#5c6461;background:#202526;color:#e4e8e4}html[color-mode=dark] .cer-main button[aria-pressed=true],html[color-mode=dark] .cer-actions .cer-copy{background:#e2e7de;color:#252a25}.cer-main .crl1{font-family:Georgia,'Times New Roman',serif}.cer-main .crl1-comms{font-family:Arial,Helvetica,sans-serif}@media(max-width:600px){.cer-main{padding:30px 12px}.cer-intro h1 span{width:61px;height:61px;font-size:25px}.cer-subline{flex-direction:column}.cer-controls{gap:13px}.cer-filters{width:100%}.cer-stage{padding:22px 8px}.cer-card-head{gap:10px}.cer-card h2{font-size:27px}.cer-card-head>span{min-width:71px}.cer-editor form{grid-template-columns:1fr}.cer-actions{gap:8px}.cer-actions a{padding:5px}.cer-card{margin-bottom:40px}}
+
+.cer-main[data-width="390"] .crl1{width:min(100%,390px,var(--cr-width))}.cer-main[data-width="320"] .crl1{width:min(100%,320px,var(--cr-width))}.cer-main[data-width="260"] .crl1{width:min(100%,260px,var(--cr-width))}
+</style></head><body><main class="cer-main"><header class="cer-intro"><span class="cer-kicker">HOSEONG &amp; SAM / FIRST POUR</span><h1>Cereal<span>15</span></h1><div class="cer-subline"><span>THREADS / COMMS / BUDS</span><a href="../forum-posts/cereal-forum-masterpost.txt">Forum masterpost ↗</a></div></header><nav class="cer-controls" aria-label="Preview controls"><div class="cer-filters"><button data-filter="all" aria-pressed="true">All 15</button><button data-filter="thread" aria-pressed="false">Threads</button><button data-filter="comms" aria-pressed="false">Comms</button><button data-filter="bud" aria-pressed="false">Buds</button></div><label>Mode<select id="cer-mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Preview width<select id="cer-width"><option value="full">Full</option><option value="390">390px</option><option value="320">320px</option><option value="260">260px</option></select></label><label>Member colours<select id="cer-palette"><option value="rose">Rose / olive</option><option value="blue">Blue / violet</option><option value="orange">Orange / teal</option></select></label></nav><section class="cer-card" id="breakfast-club" data-kind="thread"><header class="cer-card-head"><span>THREAD / 01</span><h2>Breakfast Club</h2></header><div class="cer-stage">
+<div class="crl1 crl1-thread crl1-breakfast-club">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">stay for breakfast</span>
+<span class="crl1-sub">two servings</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv" alt="Sam character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. <b>“Aliquam erat volutpat, sed tempus nunc.”</b> Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam a justo quis felis vulputate accumsan.</i> Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.</p>
+<p>Nulla facilisi. Proin vitae orci id nibh malesuada interdum. <u>Praesent id augue eget velit.</u> Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="stay for breakfast" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="two servings" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-breakfast-club-thread-01.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Breakfast Club posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-thread crl1-breakfast-club&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;stay for breakfast&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;two servings&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv&quot; alt=&quot;Sam character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="spoon-theory" data-kind="thread"><header class="cer-card-head"><span>THREAD / 02</span><h2>Spoon Theory</h2></header><div class="cer-stage">
+<div class="crl1 crl1-thread crl1-spoon-theory">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">the quiet before the day</span>
+<span class="crl1-sub">slow mornings</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. <b>“Aliquam erat volutpat, sed tempus nunc.”</b> Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam a justo quis felis vulputate accumsan.</i> Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.</p>
+<p>Nulla facilisi. Proin vitae orci id nibh malesuada interdum. <u>Praesent id augue eget velit.</u> Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="the quiet before the day" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="slow mornings" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-spoon-theory-thread-02.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Spoon Theory posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-thread crl1-spoon-theory&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;the quiet before the day&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;slow mornings&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="prize-inside" data-kind="thread"><header class="cer-card-head"><span>THREAD / 03</span><h2>Prize Inside</h2></header><div class="cer-stage">
+<div class="crl1 crl1-thread crl1-prize-inside">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">something worth keeping</span>
+<span class="crl1-sub">a little surprise</span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. <b>“Aliquam erat volutpat, sed tempus nunc.”</b> Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam a justo quis felis vulputate accumsan.</i> Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.</p>
+<p>Nulla facilisi. Proin vitae orci id nibh malesuada interdum. <u>Praesent id augue eget velit.</u> Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="something worth keeping" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a little surprise" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-prize-inside-thread-03.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Prize Inside posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-thread crl1-prize-inside&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;something worth keeping&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;a little surprise&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="orbit-os" data-kind="thread"><header class="cer-card-head"><span>THREAD / 04</span><h2>Orbit O’s</h2></header><div class="cer-stage">
+<div class="crl1 crl1-thread crl1-orbit-os">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">always coming back to you</span>
+<span class="crl1-sub">in your orbit</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv" alt="Sam character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. <b>“Aliquam erat volutpat, sed tempus nunc.”</b> Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam a justo quis felis vulputate accumsan.</i> Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.</p>
+<p>Nulla facilisi. Proin vitae orci id nibh malesuada interdum. <u>Praesent id augue eget velit.</u> Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="always coming back to you" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="in your orbit" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-orbit-os-thread-04.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Orbit O’s posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-thread crl1-orbit-os&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;always coming back to you&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;in your orbit&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv&quot; alt=&quot;Sam character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="after-the-crunch" data-kind="thread"><header class="cer-card-head"><span>THREAD / 05</span><h2>After the Crunch</h2></header><div class="cer-stage">
+<div class="crl1 crl1-thread crl1-after-the-crunch">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">when the world can wait</span>
+<span class="crl1-sub">just us, for a while</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. <b>“Aliquam erat volutpat, sed tempus nunc.”</b> Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam a justo quis felis vulputate accumsan.</i> Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.</p>
+<p>Nulla facilisi. Proin vitae orci id nibh malesuada interdum. <u>Praesent id augue eget velit.</u> Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="when the world can wait" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="just us, for a while" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-after-the-crunch-thread-05.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="After the Crunch posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-thread crl1-after-the-crunch&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;when the world can wait&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;just us, for a while&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. &lt;b&gt;“Aliquam erat volutpat, sed tempus nunc.”&lt;/b&gt; Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.&lt;/p&gt;
+&lt;p&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. &lt;i&gt;Etiam a justo quis felis vulputate accumsan.&lt;/i&gt; Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.&lt;/p&gt;
+&lt;p&gt;Nulla facilisi. Proin vitae orci id nibh malesuada interdum. &lt;u&gt;Praesent id augue eget velit.&lt;/u&gt; Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="crunchline" data-kind="comms"><header class="cer-card-head"><span>COMMS / 01</span><h2>Crunchline</h2></header><div class="cer-stage">
+<div class="crl1 crl1-comms crl1-crunchline" data-direction="received">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">good morning</span>
+<span class="crl1-sub">messages · 08:24</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae sem ut neque suscipit.</p>
+<p><i>Etiam a justo quis felis.</i> <u>Praesent id augue.</u></p>
+</div>
+<div class="crl1-receipt">Delivered</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="crl1-device" aria-hidden="true"><span>Message…</span><span>↗</span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="good morning" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="messages" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="08:24" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cer-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-crunchline-comms-01.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Crunchline posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-comms crl1-crunchline&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;good morning&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;messages · 08:24&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;crl1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message…&lt;/span&gt;&lt;span&gt;↗&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="loopback" data-kind="comms"><header class="cer-card-head"><span>COMMS / 02</span><h2>Loopback</h2></header><div class="cer-stage">
+<div class="crl1 crl1-comms crl1-loopback" data-direction="received">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">you have a message</span>
+<span class="crl1-sub">inbox / 03 · 08:24</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae sem ut neque suscipit.</p>
+<p><i>Etiam a justo quis felis.</i> <u>Praesent id augue.</u></p>
+</div>
+<div class="crl1-receipt">Delivered</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="crl1-device" aria-hidden="true"><span>◁　MENU　▷</span><span>•••</span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="you have a message" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="inbox / 03" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="08:24" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cer-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-loopback-comms-02.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Loopback posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-comms crl1-loopback&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;you have a message&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;inbox / 03 · 08:24&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;crl1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;◁　MENU　▷&lt;/span&gt;&lt;span&gt;•••&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="snap-dispatch" data-kind="comms"><header class="cer-card-head"><span>COMMS / 03</span><h2>Snap Dispatch</h2></header><div class="cer-stage">
+<div class="crl1 crl1-comms crl1-snap-dispatch" data-direction="received">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">our conversation</span>
+<span class="crl1-sub">connected · 08:24</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv" alt="Sam character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae sem ut neque suscipit.</p>
+<p><i>Etiam a justo quis felis.</i> <u>Praesent id augue.</u></p>
+</div>
+<div class="crl1-receipt">Delivered</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="crl1-device" aria-hidden="true"><span>Message…</span><span>↗</span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="our conversation" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="connected" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="08:24" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cer-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-snap-dispatch-comms-03.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Snap Dispatch posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-comms crl1-snap-dispatch&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;our conversation&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;connected · 08:24&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv&quot; alt=&quot;Sam character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;crl1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message…&lt;/span&gt;&lt;span&gt;↗&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="breakfast-broadcast" data-kind="comms"><header class="cer-card-head"><span>COMMS / 04</span><h2>Breakfast Broadcast</h2></header><div class="cer-stage">
+<div class="crl1 crl1-comms crl1-breakfast-broadcast" data-direction="received">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">a little wake-up call</span>
+<span class="crl1-sub">messages · 08:24</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae sem ut neque suscipit.</p>
+<p><i>Etiam a justo quis felis.</i> <u>Praesent id augue.</u></p>
+</div>
+<div class="crl1-receipt">Delivered</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="crl1-device" aria-hidden="true"><span>Reply</span><span>↗</span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="a little wake-up call" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="messages" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="08:24" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cer-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-breakfast-broadcast-comms-04.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Breakfast Broadcast posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-comms crl1-breakfast-broadcast&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;a little wake-up call&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;messages · 08:24&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;crl1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Reply&lt;/span&gt;&lt;span&gt;↗&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="spoonful-sms" data-kind="comms"><header class="cer-card-head"><span>COMMS / 05</span><h2>Spoonful SMS</h2></header><div class="cer-stage">
+<div class="crl1 crl1-comms crl1-spoonful-sms" data-direction="received">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">still here?</span>
+<span class="crl1-sub">online · 08:24</span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae sem ut neque suscipit.</p>
+<p><i>Etiam a justo quis felis.</i> <u>Praesent id augue.</u></p>
+</div>
+<div class="crl1-receipt">Delivered</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="crl1-device" aria-hidden="true"><span>Write a message…</span><span>↗</span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="still here?" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="online" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="08:24" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cer-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-spoonful-sms-comms-05.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Spoonful SMS posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-comms crl1-spoonful-sms&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;still here?&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;online · 08:24&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae sem ut neque suscipit.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Etiam a justo quis felis.&lt;/i&gt; &lt;u&gt;Praesent id augue.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;crl1-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Write a message…&lt;/span&gt;&lt;span&gt;↗&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="little-loop" data-kind="bud"><header class="cer-card-head"><span>BUDS / 01</span><h2>Little Loop</h2></header><div class="cer-stage">
+<div class="crl1 crl1-bud crl1-little-loop">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">one more minute</span>
+<span class="crl1-sub">just a little</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae sem ut neque suscipit. <i>Etiam a justo quis felis</i> vulputate accumsan. <u>Praesent id augue</u> eget velit.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="one more minute" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="just a little" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-little-loop-bud-01.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Little Loop posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-bud crl1-little-loop&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;one more minute&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;just a little&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="flakelet" data-kind="bud"><header class="cer-card-head"><span>BUDS / 02</span><h2>Flakelet</h2></header><div class="cer-stage">
+<div class="crl1 crl1-bud crl1-flakelet">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">a piece of the morning</span>
+<span class="crl1-sub">small comforts</span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae sem ut neque suscipit. <i>Etiam a justo quis felis</i> vulputate accumsan. <u>Praesent id augue</u> eget velit.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="a piece of the morning" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="small comforts" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-flakelet-bud-02.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Flakelet posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-bud crl1-flakelet&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;a piece of the morning&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;small comforts&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="double-scoop" data-kind="bud"><header class="cer-card-head"><span>BUDS / 03</span><h2>Double Scoop</h2></header><div class="cer-stage">
+<div class="crl1 crl1-bud crl1-double-scoop">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">room for two</span>
+<span class="crl1-sub">side by side</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv" alt="Sam character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae sem ut neque suscipit. <i>Etiam a justo quis felis</i> vulputate accumsan. <u>Praesent id augue</u> eget velit.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="room for two" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="side by side" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-double-scoop-bud-03.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Double Scoop posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-bud crl1-double-scoop&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;room for two&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;side by side&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv&quot; alt=&quot;Sam character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="pocket-prize" data-kind="bud"><header class="cer-card-head"><span>BUDS / 04</span><h2>Pocket Prize</h2></header><div class="cer-stage">
+<div class="crl1 crl1-bud crl1-pocket-prize">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">keep this one</span>
+<span class="crl1-sub">a lucky find</span>
+</div>
+<div class="crl1-media">
+<span class="crl1-shot"><img src="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" alt="Hoseong character GIF" style="--cr-crop:50% 35%"></span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae sem ut neque suscipit. <i>Etiam a justo quis felis</i> vulputate accumsan. <u>Praesent id augue</u> eget velit.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="keep this one" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a lucky find" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-pocket-prize-bud-04.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Pocket Prize posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-bud crl1-pocket-prize&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;keep this one&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;a lucky find&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-media&quot;&gt;
+&lt;span class=&quot;crl1-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv&quot; alt=&quot;Hoseong character GIF&quot; style=&quot;--cr-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cer-card" id="last-cheerio" data-kind="bud"><header class="cer-card-head"><span>BUDS / 05</span><h2>Last Cheerio</h2></header><div class="cer-stage">
+<div class="crl1 crl1-bud crl1-last-cheerio">
+<div class="crl1-layout">
+<div class="crl1-meta">
+<a href="[url]">Hoseong &amp; Sam</a>
+<span class="crl1-title">the sweetest little thing</span>
+<span class="crl1-sub">one last bite</span>
+</div>
+<div class="crl1-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae sem ut neque suscipit. <i>Etiam a justo quis felis</i> vulputate accumsan. <u>Praesent id augue</u> eget velit.</p>
+</div>
+<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+
+</div><details class="cer-editor"><summary>Edit template</summary><form><label>Names<input name="name" value="Hoseong &amp; Sam" spellcheck="false"></label><label>Link URL<input name="url" value="[url]" spellcheck="false"></label><label>Title<input name="title" value="the sweetest little thing" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="one last bite" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cer-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;</textarea></label><button class="cer-reset" type="button">Reset sample</button></form></details><div class="cer-actions"><button class="cer-copy" type="button">Copy code</button><button class="cer-placeholders" type="button">Copy [name] / [text] version</button><a href="cereal-last-cheerio-bud-05.txt">Open snippet</a><span class="cer-status" role="status"></span></div><textarea class="cer-code" aria-label="Last Cheerio posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;crl1 crl1-bud crl1-last-cheerio&quot;&gt;
+&lt;div class=&quot;crl1-layout&quot;&gt;
+&lt;div class=&quot;crl1-meta&quot;&gt;
+&lt;a href=&quot;[url]&quot;&gt;Hoseong &amp;amp; Sam&lt;/a&gt;
+&lt;span class=&quot;crl1-title&quot;&gt;the sweetest little thing&lt;/span&gt;
+&lt;span class=&quot;crl1-sub&quot;&gt;one last bite&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae sem ut neque suscipit. &lt;i&gt;Etiam a justo quis felis&lt;/i&gt; vulputate accumsan. &lt;u&gt;Praesent id augue&lt;/u&gt; eget velit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;crl1-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css&quot;&gt;
+[/dohtml]</textarea></section><footer class="cer-footer">CEREAL / FIRST POUR <a href="README.md">Editing guide</a></footer></main><script>const designs=[{"type":"thread","name":"Breakfast Club","slug":"breakfast-club","images":2,"sampleTitle":"stay for breakfast","subtitle":"two servings","number":"01","file":"cereal-breakfast-club-thread-01.txt"},{"type":"thread","name":"Spoon Theory","slug":"spoon-theory","images":1,"sampleTitle":"the quiet before the day","subtitle":"slow mornings","number":"02","file":"cereal-spoon-theory-thread-02.txt"},{"type":"thread","name":"Prize Inside","slug":"prize-inside","images":0,"sampleTitle":"something worth keeping","subtitle":"a little surprise","number":"03","file":"cereal-prize-inside-thread-03.txt"},{"type":"thread","name":"Orbit O’s","slug":"orbit-os","images":2,"sampleTitle":"always coming back to you","subtitle":"in your orbit","number":"04","file":"cereal-orbit-os-thread-04.txt"},{"type":"thread","name":"After the Crunch","slug":"after-the-crunch","images":1,"sampleTitle":"when the world can wait","subtitle":"just us, for a while","number":"05","file":"cereal-after-the-crunch-thread-05.txt"},{"type":"comms","name":"Crunchline","slug":"crunchline","images":1,"sampleTitle":"good morning","subtitle":"messages","number":"01","file":"cereal-crunchline-comms-01.txt"},{"type":"comms","name":"Loopback","slug":"loopback","images":1,"sampleTitle":"you have a message","subtitle":"inbox / 03","number":"02","file":"cereal-loopback-comms-02.txt"},{"type":"comms","name":"Snap Dispatch","slug":"snap-dispatch","images":2,"sampleTitle":"our conversation","subtitle":"connected","number":"03","file":"cereal-snap-dispatch-comms-03.txt"},{"type":"comms","name":"Breakfast Broadcast","slug":"breakfast-broadcast","images":1,"sampleTitle":"a little wake-up call","subtitle":"messages","number":"04","file":"cereal-breakfast-broadcast-comms-04.txt"},{"type":"comms","name":"Spoonful SMS","slug":"spoonful-sms","images":0,"sampleTitle":"still here?","subtitle":"online","number":"05","file":"cereal-spoonful-sms-comms-05.txt"},{"type":"bud","name":"Little Loop","slug":"little-loop","images":1,"sampleTitle":"one more minute","subtitle":"just a little","number":"01","file":"cereal-little-loop-bud-01.txt"},{"type":"bud","name":"Flakelet","slug":"flakelet","images":0,"sampleTitle":"a piece of the morning","subtitle":"small comforts","number":"02","file":"cereal-flakelet-bud-02.txt"},{"type":"bud","name":"Double Scoop","slug":"double-scoop","images":2,"sampleTitle":"room for two","subtitle":"side by side","number":"03","file":"cereal-double-scoop-bud-03.txt"},{"type":"bud","name":"Pocket Prize","slug":"pocket-prize","images":1,"sampleTitle":"keep this one","subtitle":"a lucky find","number":"04","file":"cereal-pocket-prize-bud-04.txt"},{"type":"bud","name":"Last Cheerio","slug":"last-cheerio","images":0,"sampleTitle":"the sweetest little thing","subtitle":"one last bite","number":"05","file":"cereal-last-cheerio-bud-05.txt"}];const gifs=["https://64.media.tumblr.com/6dbb86606de7a352905a1933cb7f8aed/6b0072fb593146dd-4c/s400x600/4ae09aa2881857ab7870aff6da0f06e58198abfc.gifv","https://64.media.tumblr.com/48164030e8190af46fc41c7910f1de9e/099c7f54a5578549-8c/s400x600/2ff312cad77bc77b24ae44d53d2229011afa5b82.gifv"];const writing={"thread":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque ac lectus faucibus feugiat. <b>“Aliquam erat volutpat, sed tempus nunc.”</b> Duis vitae turpis at erat posuere finibus. Integer quis lorem vel augue consequat volutpat.</p>\n<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. <i>Etiam a justo quis felis vulputate accumsan.</i> Sed tincidunt, mauris non imperdiet viverra, tellus leo aliquet urna, id pretium lacus enim in erat.</p>\n<p>Nulla facilisi. Proin vitae orci id nibh malesuada interdum. <u>Praesent id augue eget velit.</u> Aenean volutpat nibh at sapien dignissim, sit amet blandit erat interdum. Morbi ornare lectus vitae nibh consequat, quis viverra erat porta.</p>","comms":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n<p><b>Aliquam erat volutpat.</b> Donec vitae sem ut neque suscipit.</p>\n<p><i>Etiam a justo quis felis.</i> <u>Praesent id augue.</u></p>","bud":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae sem ut neque suscipit. <i>Etiam a justo quis felis</i> vulputate accumsan. <u>Praesent id augue</u> eget velit.</p>"};const cssURL="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cereal/cereal-first-pour-v1.css";function esc(v){return String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
+function defaults(d){return {name:'Hoseong & Sam',url:'[url]',title:d.sampleTitle,subtitle:d.subtitle,gif1:d.images?gifs[0]:'',gif2:d.images>1?gifs[1]:'',crop1:'50% 35%',crop2:'50% 35%',copy:writing[d.type],time:'08:24',receipt:'Delivered',direction:'received'};}
+function template(d,s){
+const media=[s.gif1,s.gif2].map((g,i)=>g?`<span class="crl1-shot"><img src="${esc(g)}" alt="${i?'Sam':'Hoseong'} character GIF" style="--cr-crop:${esc(s['crop'+(i+1)])}"></span>`:'').filter(Boolean).join('\n');
+const device=d.type==='comms'?`\n<div class="crl1-device" aria-hidden="true"><span>${d.slug==='loopback'?'◁　MENU　▷':d.slug==='breakfast-broadcast'?'Reply':d.slug==='spoonful-sms'?'Write a message…':'Message…'}</span><span>${d.slug==='loopback'?'•••':'↗'}</span></div>`:'';
+return `[dohtml]\n<div class="crl1 crl1-${d.type} crl1-${d.slug}"${d.type==='comms'?` data-direction="${esc(s.direction)}"`:''}>\n<div class="crl1-layout">\n<div class="crl1-meta">\n<a href="${esc(s.url)}">${esc(s.name)}</a>\n<span class="crl1-title">${esc(s.title)}</span>\n<span class="crl1-sub">${esc(s.subtitle)}${d.type==='comms'?` · ${esc(s.time)}`:''}</span>\n</div>\n${media?`<div class="crl1-media">\n${media}\n</div>\n`:''}<div class="crl1-copy">\n${s.copy}\n</div>\n${d.type==='comms'?`<div class="crl1-receipt">${esc(s.receipt)}</div>\n`:''}<div class="crl1-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>${device}\n</div>\n</div>\n<link rel="stylesheet" href="${cssURL}">\n[/dohtml]`;
+}
+function bare(code){return code.replace(/\[\/?dohtml\]/gi,'').replace(/<link[^>]*>/gi,'');}
+const main=document.querySelector('.cer-main');
+const mode=document.getElementById('cer-mode');
+const mediaMode=window.matchMedia('(prefers-color-scheme:dark)');
+function setMode(){document.documentElement.setAttribute('color-mode',mode.value==='system'?(mediaMode.matches?'dark':'light'):mode.value);}
+mode.addEventListener('change',setMode);mediaMode.addEventListener('change',()=>{if(mode.value==='system')setMode();});
+document.getElementById('cer-width').addEventListener('change',e=>main.dataset.width=e.target.value);
+document.getElementById('cer-palette').addEventListener('change',e=>main.dataset.palette=e.target.value);
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.cer-card').forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.kind!==button.dataset.filter);}));
+function convertWriting(value){
+ value=value.replace(/\[(\/)?(b|i|u)\]/gi,(_,close,tag)=>'<'+(close?'/':'')+tag.toLowerCase()+'>');
+ const doc=new DOMParser().parseFromString(value,'text/html');
+ doc.querySelectorAll('script,style,iframe,object,embed,link,meta').forEach(el=>el.remove());
+ doc.querySelectorAll('*').forEach(el=>{for(const a of [...el.attributes])if(a.name.startsWith('on')||a.name==='srcdoc'||(/^(href|src)$/.test(a.name)&&/^\s*javascript:/i.test(a.value)))el.removeAttribute(a.name);});
+ return doc.body.innerHTML;
+}
+async function copyValue(value,area,status){
+ try{if(!navigator.clipboard)throw Error('clipboard');await navigator.clipboard.writeText(value);status.textContent='Copied.';}
+ catch(e){area.value=value;area.focus();area.select();area.setSelectionRange(0,value.length);status.textContent='Code selected — press Ctrl+C or ⌘C.';}
+}
+for(const d of designs){
+ const card=document.getElementById(d.slug),form=card.querySelector('form'),stage=card.querySelector('.cer-stage'),code=card.querySelector('.cer-code'),status=card.querySelector('.cer-status');
+ function state(){const s={...defaults(d),...Object.fromEntries(new FormData(form))};s.copy=convertWriting(s.copy);for(const k of ['crop1','crop2'])if(!/^\d{1,3}%\s+\d{1,3}%$/.test(s[k]))s[k]='50% 35%';return s;}
+ function update(){const value=template(d,state());stage.innerHTML=bare(value);code.value=value;status.textContent='';}
+ form.addEventListener('submit',e=>e.preventDefault());form.addEventListener('input',update);form.addEventListener('change',update);
+ card.querySelector('.cer-reset').addEventListener('click',()=>{const s=defaults(d);for(const [k,v] of Object.entries(s))if(form.elements.namedItem(k))form.elements.namedItem(k).value=v;update();});
+ card.querySelector('.cer-copy').addEventListener('click',()=>{const value=template(d,state());code.value=value;copyValue(value,code,status);});
+ card.querySelector('.cer-placeholders').addEventListener('click',()=>copyValue(template(d,{...state(),name:'[name]',url:'[url]',title:'[text]'}),code,status));
+}
+</script></body></html>
