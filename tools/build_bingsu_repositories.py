@@ -26,6 +26,8 @@ for generation in ('legacy', 'thaw'):
     key = 'bingsu' if generation == 'thaw' else 'bingsu-legacy'
     title = 'Bingsu · ' + generation.title()
     files = {}
+    if generation == 'thaw':
+        files['bingsu/bingsu-thaw-stylesheet-repair.txt'] = (ROOT / 'bingsu' / 'bingsu-thaw-stylesheet-repair.txt').read_bytes()
     designs = []
     readme = [f'# {title}', '', 'Isaiah & Max', '',
               ('The 15 newer designs for current forum use: five threads, five comms and five buds.'
@@ -72,6 +74,10 @@ for generation in ('legacy', 'thaw'):
                '`bingsu/` contains only this generation’s individual posting snippets and supporting CSS. '
                '`forum-posts/` contains its masterpost, numbered parts and browser preview. '
                '`designs.json` lists the included designs.', '']
+    if generation == 'thaw':
+        readme += ['For an existing post that displays without its styling, add the complete '
+                   '[stylesheet repair block](bingsu/bingsu-thaw-stylesheet-repair.txt) once at the end of the post. '
+                   'The current snippets already include this import loader.', '']
     files['README.md'] = '\n'.join(readme)
     archive = ROOT / 'bingsu' / f'bingsu-{generation}-repository.zip'
     write_zip(archive, files)

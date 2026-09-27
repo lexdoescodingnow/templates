@@ -1,5 +1,15 @@
 # Bingsu Thaw validation
 
+## Forum stylesheet loader · 27 September 2026
+
+The reported Crystal Veil screenshot displays unstyled HTML: original-size GIFs, ordinary forum typography and no frame. The exact pinned stylesheet URL returned HTTP 200 with `text/css` and matched the local stylesheet byte for byte. The live topic returned a permission message, so the precise forum-side cause could not be inspected.
+
+The 15 Thaw snippets, builder and editor exports now use a `<style>` element containing one `@import` rule, replacing the `<link>` loader. This addresses post parsers that remove link elements while retaining styles. The stylesheet, design markup, GIF URLs, member-colour rules and light/dark rules are unchanged. A separate style-only repair block loads the same stylesheet once for an existing masterpost.
+
+Verified that all 15 canonical snippets and generated forum masterposts differ only in the loader, that every preview remains paired with its matching copy block, and that the imported URL resolves to the same shared CSS. JavaScript syntax and editor exports were checked. Refreshed the collection ZIP, repository package and complete forum-post pack. Legacy Bingsu files remain unchanged. Rendering on the member-only topic has not been verified; reposting or adding the repair block requires the forum member’s access.
+
+## Original source checks
+
 Source checks completed on 8 September 2026.
 
 - Exactly 15 unique new design names, with five threads, five comms and five buds. Names were checked against the repository's existing snippets and design indexes.

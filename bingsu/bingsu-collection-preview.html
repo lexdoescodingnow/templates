@@ -55,7 +55,7 @@ function sanitize(input){
   if(!/<(?:p|blockquote)[\s>]/.test(cleaned))return cleaned.split(/\n\s*\n/).map(p=>`<p>${p.replace(/\n/g,'<br>')}</p>`).join('\n');
   return cleaned;
 }
-function snippet(d,s){return '[dohtml]\n'+markup(d,s)+'\n\n<link rel="stylesheet" href="'+CSS_URL+'">\n[/dohtml]\n';}
+function snippet(d,s){return '[dohtml]\n'+markup(d,s)+'\n\n<style>@import url("'+CSS_URL+'");</style>\n[/dohtml]\n';}
 function doc(d,s){const c=colours();return `<!doctype html><html color-mode="${mode()}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>${TEMPLATE_CSS}</style><style>html,body{margin:0;padding:0;background:transparent}body{padding:8px;--mgrgb1:${c[0]};--mgrgb2:${c[1]};--mgrgb3:${c[2]}}.bgs{margin:22px auto}body>div{max-width:100%}</style></head><body>${markup(d,s,true)}</body></html>`;}
 function sizeFrame(frame){try{const h=Math.ceil(frame.contentDocument.body.getBoundingClientRect().height);frame.style.height=(h+3)+'px';}catch(e){}}
 function fillFrame(frame,d,s){frame.onload=()=>{sizeFrame(frame);frame.contentDocument.fonts.ready.then(()=>sizeFrame(frame));new ResizeObserver(()=>sizeFrame(frame)).observe(frame.contentDocument.body);};frame.srcdoc=doc(d,s);}

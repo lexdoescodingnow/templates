@@ -58,7 +58,9 @@ The preview editor supports name, title/status, URL, time, GIF and writing edits
 
 ## Forum integration
 
-Every snippet loads [bingsu-thaw-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@e253a721b65f56194260de60b03f676479ae72bd/bingsu/bingsu-thaw-v1.css), pinned to stylesheet commit `e253a721b65f56194260de60b03f676479ae72bd`. The forum must permit external stylesheet links inside `[dohtml]`. Posts contain the actual HTML and one stylesheet link; no JavaScript or external HTML injector runs in forum posts.
+Every snippet loads [bingsu-thaw-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@e253a721b65f56194260de60b03f676479ae72bd/bingsu/bingsu-thaw-v1.css), pinned to stylesheet commit `e253a721b65f56194260de60b03f676479ae72bd`. The loader uses `<style>@import url("…");</style>` inside `[dohtml]` so it does not depend on the forum retaining a `<link>` element. The forum must allow style elements and external CSS. No JavaScript or external HTML injector runs in forum posts.
+
+If an existing Thaw post shows plain text and full-size GIFs without its frame, add the complete block from [the stylesheet repair snippet](bingsu-thaw-stylesheet-repair.txt) once at the end of that post. It loads the shared styles for all 15 Thaw designs on the page; existing text and GIFs do not need replacing. Alternatively, replace the masterpost with the current forum-ready version.
 
 The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` RGB triples supply the member palette. Fallbacks apply only when they are absent. Colour mixes deepen emphasis on light backgrounds and lighten it on dark backgrounds. Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` override system preference. Template rules use the distinct `bgs` prefix.
 

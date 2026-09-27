@@ -9,7 +9,7 @@ for(const m of ['crystal','shards','droplet','bowl']){
   css+='\n'+designs.filter(d=>d.motif===m).map(d=>`.bgs-${d.slug}`).join(',')+`{--bgs-art:url("data:image/svg+xml,${encodeURIComponent(svg).replace(/'/g,'%27')}")}\n`;
 }
 fs.writeFileSync(path.join(root,'bingsu-thaw-v1.css'),css);
-for(const d of designs)fs.writeFileSync(path.join(root,`bingsu-${d.slug}-${d.type}-${d.number}.txt`),'[dohtml]\n'+markup(d,initial(d))+'\n\n<link rel="stylesheet" href="'+cssUrl+'">\n[/dohtml]\n');
+for(const d of designs)fs.writeFileSync(path.join(root,`bingsu-${d.slug}-${d.type}-${d.number}.txt`),'[dohtml]\n'+markup(d,initial(d))+'\n\n<style>@import url("'+cssUrl+'");</style>\n[/dohtml]\n');
 fs.writeFileSync(path.join(root,'designs.json'),JSON.stringify(designs,null,2)+'\n');
 const previewCss=fs.readFileSync(path.join(root,'bingsu-preview.css'),'utf8');
 const model=fs.readFileSync(path.join(root,'bingsu-model.cjs'),'utf8');
