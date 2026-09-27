@@ -1,4 +1,8 @@
-# Macadamia · Journey & Kai
+# Macadamia · Orchard
+
+Journey & Kai’s 15 newer designs: five threads, five comms and five buds.
+
+[Current forum masterpost](../forum-posts/macadamia-forum-masterpost.txt) · [Browser preview with Copy buttons](../forum-posts/macadamia-preview.html) · [Download Orchard package](macadamia-orchard-repository.zip) · [11 older designs](LEGACY.md)
 
 ## Current stylesheet delivery
 
@@ -49,9 +53,9 @@ For direct posting, open a named `.txt` file below, choose **Copy raw file**, an
 
 ## Editing
 
-The `[url]` and `[name]` link, followed by the `[text]` title or contact status, appear at the top of every snippet. Editable timestamps, GIF URLs and writing follow before decorative elements and the stylesheet link. Template HTML and CSS contain no comments, hidden instructions or editing tips.
+The editable name and link, followed by the title or contact status, appear at the top of every snippet. Editable timestamps, GIF URLs and writing follow before decorative elements and the stylesheet link. Template HTML and CSS contain no comments, hidden instructions or editing tips.
 
-The preview displays **Journey & Kai** and each design's sample title when the fields contain placeholders. Copied code preserves the field values, so replace `[name]`, `[url]` and `[text]` before posting. Use **Copy code** or **Download .txt** to export your current edits. Each design retains its edits while the editor is open; **Reset design** restores its defaults.
+Names are prefilled with **Journey & Kai**. The forum masterpost shows sample writing above copyable code with concise writing markers. Use **Copy code** or **Download .txt** in the editor to export your current edits. Each design retains its edits while the editor is open; **Reset design** restores its defaults.
 
 Use ordinary `<p>` elements for paragraphs and individual comms messages. Successive opening `<p>` tags work without closing each paragraph. Comms offer received, sent and alternating message layouts. The illustrated hardware controls are decorative. Buds begin with 36 words and are intended for replies of 100 words or fewer; longer replies are not clipped.
 
@@ -67,17 +71,9 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` control the
 
 ## Source and compatibility
 
-Run `node macadamia/build.cjs` from the repository root to generate the fifteen snippets and standalone editor from `designs.json` and `macadamia-model.js`. New snippets pin `macadamia-orchard-v1.css` to the immutable commit recorded in `stylesheet-revision.txt` and the `.bh-maca` wrapper. Earlier Macadamia CSS and posting files remain available; see the [previous thread index](LEGACY.md).
+Run `node macadamia/build.cjs` from the repository root to generate the fifteen snippets and standalone editor from `designs.json` and `macadamia-model.js`, then rebuild the forum posts and run `python tools/build_macadamia_repositories.py`. Current snippets use the direct `@main/macadamia/macadamia-orchard-standalone-v1.css` link and `.bh-maca` wrapper. The [Legacy collection](LEGACY.md) has its own masterpost, preview and download; original source paths and hosted CSS remain available for existing posts.
 
 [Validation details](VALIDATION.md). Source checks are recorded separately from visual verification. The local preview could not be opened by the available browser because its security policy blocked local URLs; rendered layouts and live forum posting remain unverified.
-
-## Design names
-
-Each design has a unique catalogue name. Existing filenames remain stable for saved links.
-
-| Current name | Previous label | Format | Source |
-| --- | --- | --- | --- |
-| Shellphone | Comms Snippet | comms | [macadamia-comms-snippet.txt](macadamia-comms-snippet.txt) · block 1 |
 
 ## Forum-ready collection
 

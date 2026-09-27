@@ -1,7 +1,44 @@
 [align=center][H1]OATS[/H1][/align]
 
 
-[size=4][b]25 · Chafflet[/b][/size]
+[size=4][b]25 · Husk[/b][/size]
+
+[dohtml]
+<div class="bh-oats-millhouse oat-bud oat-husk">
+<a class="oat-name" href="[url]">Chen &amp; Song</a>
+<div class="oat-title">held in the little things</div>
+<div class="oat-media">
+<img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="oat-copy">
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="oat-detail" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/oats/millhouse/oats-millhouse-standalone-v1.css">
+[/dohtml]
+
+[b]Copy code[/b]
+[code]
+[dohtml]
+<div class="bh-oats-millhouse oat-bud oat-husk">
+<a class="oat-name" href="[url]">Chen &amp; Song</a>
+<div class="oat-title">held in the little things</div>
+<div class="oat-media">
+<img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
+</div>
+<div class="oat-copy">
+<p>[TEXT GOES HERE]</p>
+</div>
+<div class="oat-detail" aria-hidden="true"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/oats/millhouse/oats-millhouse-standalone-v1.css">
+[/dohtml]
+[/code]
+
+[size=4][b]26 · Chafflet[/b][/size]
 
 [dohtml]
 <div class="bh-oats oat-bud oat-chafflet">
@@ -32,7 +69,7 @@
 [/dohtml]
 [/code]
 
-[size=4][b]26 · Floret[/b][/size]
+[size=4][b]27 · Floret[/b][/size]
 
 [dohtml]
 <div class="bh-oats oat-bud oat-floret">
@@ -63,7 +100,7 @@
 [/dohtml]
 [/code]
 
-[size=4][b]27 · Groat[/b][/size]
+[size=4][b]28 · Groat[/b][/size]
 
 [dohtml]
 <div class="bh-oats oat-bud oat-groat">
@@ -94,47 +131,6 @@
 <p>[TEXT GOES HERE]</p>
 </div>
 <div class="oat-mark" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/oats/oats-harvest-standalone-v1.css">
-[/dohtml]
-[/code]
-
-[size=4][b]28 · Groatline[/b][/size]
-
-[dohtml]
-<div class="bh-oats oat-comms oat-groatline" data-flow="received">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">online · good morning</div>
-<div class="oat-time">07:24</div>
-<div class="oat-media">
-<img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
-</div>
-<div class="oat-copy">
-<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>
-<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>
-</div>
-<div class="oat-hardware" aria-hidden="true"></div>
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/oats/oats-harvest-standalone-v1.css">
-[/dohtml]
-
-[b]Copy code[/b]
-[code]
-[dohtml]
-<div class="bh-oats oat-comms oat-groatline" data-flow="received">
-<a class="oat-name" href="[url]">Chen &amp; Song</a>
-<div class="oat-title">online · good morning</div>
-<div class="oat-time">07:24</div>
-<div class="oat-media">
-<img src="https://64.media.tumblr.com/9b704ccb069922789af50461c6ad9692/03f44faae6dfc70c-62/s540x810/f61abf8ae2516daa2fa92aa77977363c04b9867a.gifv" alt="Character GIF" style="object-position:50% 45%">
-</div>
-<div class="oat-copy">
-<p>[TEXT GOES HERE]</p>
-</div>
-<div class="oat-hardware" aria-hidden="true"></div>
 </div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/oats/oats-harvest-standalone-v1.css">

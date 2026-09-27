@@ -1,13 +1,27 @@
-# Macadamia JCink Thread Collection
+# Macadamia · Legacy
 
-Five coordinated thread templates sharing one member-group colour engine, light and dark mode support, and gradient formatting for bold, italic, and underlined text.
+Journey & Kai’s 11 older designs, kept separately from the newer 15-design Orchard collection.
 
-| No. | Variation | Structure | Paste-ready file |
-|---|---|---|---|
-| 01 | Kernel Archive | Original editorial split with one main GIF and one circular icon | [macadamia-thread-snippet.txt](./macadamia-thread-snippet.txt) |
-| 02 | Soft Shell | Fully rounded card with a wide GIF, overlapping icon, and inset writing panel | [macadamia-thread-soft-shell.txt](./macadamia-thread-soft-shell.txt) |
-| 03 | Scroll Archive | Compact split layout with a group-coloured scrollbar for longer posts | [macadamia-thread-scroll-archive.txt](./macadamia-thread-scroll-archive.txt) |
-| 04 | Single Serve | Angular postcard layout using one GIF and no separate icon | [macadamia-thread-single-serve.txt](./macadamia-thread-single-serve.txt) |
-| 05 | Contact Sheet | Asymmetrical three-GIF collective gallery with a central icon | [macadamia-thread-contact-sheet.txt](./macadamia-thread-contact-sheet.txt) |
+[Legacy forum masterpost](../forum-posts/macadamia-legacy-forum-masterpost.txt) · [Browser preview with Copy buttons](../forum-posts/macadamia-legacy-preview.html) · [Download Legacy package](macadamia-legacy-repository.zip) · [Current Orchard collection](README.md)
 
-The shared hosted files are [macadamia-thread.css](./macadamia-thread.css) and [macadamia-variants.css](./macadamia-variants.css).
+| Type | Designs |
+| --- | --- |
+| Threads | Kernel Archive, Soft Shell, Scroll Archive, Single Serve, Contact Sheet |
+| Comms | Shellphone |
+| Buds | Sprout, Stemline, Pocket Bud, Pressed Leaf, Twin Bud |
+
+The download contains one posting file per design, supporting stylesheets, a preview-above-code forum masterpost and a browser preview with Copy buttons. Examples retain sample writing while copyable snippets use concise writing markers. Names remain Journey & Kai.
+
+Original grouped source files remain at their existing paths: [five threads](macadamia-thread-snippet.txt), [Shellphone](macadamia-comms-snippet.txt), and [five buds](macadamia-buds-snippet.txt). Their hosted stylesheet URLs are unchanged, so existing posts retain their styling.
+
+## Design names
+
+Each design retains its established catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Shellphone | Comms Snippet | comms | [macadamia-comms-snippet.txt](macadamia-comms-snippet.txt) · block 1 |
+
+## Forum-ready collection
+
+[Preview-above-code forum masterpost](../forum-posts/macadamia-legacy-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/macadamia-legacy-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

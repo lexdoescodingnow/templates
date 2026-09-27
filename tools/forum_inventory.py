@@ -64,9 +64,10 @@ def inventory():
   folder=ROOT/Path(row['source']).parent
   for meta in [folder/'designs.json',folder/'bread-second-rise-manifest.json']:
    if meta.exists():
-    for d in json.loads(meta.read_text()):
+    for d in sorted(json.loads(meta.read_text()),key=lambda d:len(d.get('slug','')),reverse=True):
      if d.get('slug','NO_SLUG') in row['source']:
       row.update(name=d['name'],description=d.get('description',''),type=d.get('type',row['type']))
+      break
   # Existing documentation carries the names of collections without a JSON manifest.
   for md in sorted(folder.glob('*.md'),key=lambda p:(p.name=='README.md',p.name)):
    metadata=re.sub(r'\n## Design names\n.*?(?=\n## |\Z)','',md.read_text(),flags=re.S)
