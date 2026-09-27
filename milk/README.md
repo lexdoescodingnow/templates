@@ -42,13 +42,19 @@ Freddie & Ollie are prefilled and editable. The editor accepts HTML or `[b]`, `[
 
 The original placeholder GIF URLs and per-design counts are retained. Images can be added, removed or cropped in the editor. Empty image containers disappear, and portrait columns reflow. Buds are intended for replies around 100 words or fewer.
 
-Each snippet links directly to [milk-bottlelight-standalone-v1.css](milk-bottlelight-standalone-v1.css) on `@main`. The compiled file contains the complete design and font-face rules with no CSS imports. Explicit Blue Hour light/dark mode overrides the system preference. Modern `:has()`, `color-mix()` and container queries are used. No hidden tips or editing comments are included in posting HTML or CSS.
+Each snippet links directly to [milk-bottlelight-standalone-v2.css](milk-bottlelight-standalone-v2.css) on `@main`. The compiled file contains the complete design and font-face rules with no CSS imports. Explicit Blue Hour light/dark mode overrides the system preference. Modern `:has()`, `color-mix()` and container queries are used. No hidden tips or editing comments are included in posting HTML or CSS.
+
+## Layout repair
+
+All 15 designs use the repaired v2 stylesheet. GIFs fill the inside of their frames; circular portraits stay square, paired portraits use explicit grid tracks, and empty media is removed. Milkglass Letter, Dairy Dial, Cap Kiss and Sipmates reflow their portrait columns in narrow cards. Droplets, carton marks, foil caps and Splashlet’s accent occupy reserved spaces. Writing grows naturally without a fixed height or card clipping.
+
+For existing Milk posts, replace `milk-bottlelight-standalone-v1.css` with `milk-bottlelight-standalone-v2.css` in the stylesheet link. The old endpoint also receives the compatible fixes, but the fresh URL avoids its cached copy. No text needs to be re-entered. The original Italian Cuisine designs keep their own unchanged CSS.
 
 ## Compatibility and source
 
 Milk replaces the former Italian Cuisine collection in the catalogue. Existing source filenames and CSS identifiers remain stable under `italian-cuisine/`; those snippets and its existing preview now contain the Milk designs. This keeps saved source links useful. The old Italian Cuisine stylesheet files remain only for already-posted legacy HTML. To change an existing forum post to Milk, use its updated snippet.
 
-The fresh `milk-v2` wrapper and `mk2` decorative elements isolate Milk from legacy styling. The canonical collection alias is recorded in `collection-aliases.json`. All 15 public names are registered in `template-names.json` and the ship is recorded under Milk in `ship-names.json`.
+The `milk-v2` wrapper and `mk3` decorative elements isolate Milk from legacy styling. Each GIF sits inside its own `mk3-portrait` frame, so frame borders, padding and image cropping are sized separately. Older direct-image and `mk2` markup remain supported. The canonical collection alias is recorded in `collection-aliases.json`. All 15 public names are registered in `template-names.json` and the ship is recorded under Milk in `ship-names.json`.
 
 Run `python tools/build_standalone_styles.py`, `node italian-cuisine/build.cjs`, then `python tools/build_forum_posts.py` from the repository root. See [VALIDATION.md](VALIDATION.md) for checks and limits.
 

@@ -2,7 +2,7 @@ const ITALIAN_GIFS = [
   'https://64.media.tumblr.com/53cd02d7aa06bf88d5e3ac889b657b34/180d36336ffe5c55-4f/s540x810/eaade5bf01124fcaded89aa38c25d39d66e6c03a.gifv',
   'https://64.media.tumblr.com/4fd070746fcf0394f53c5e318c991385/c2636f996005f897-cd/s400x600/5d567ae9179f3ccfafa5b938311915117dd77ecf.gifv'
 ];
-const ITALIAN_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/milk/milk-bottlelight-standalone-v1.css';
+const ITALIAN_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/milk/milk-bottlelight-standalone-v2.css';
 const ITALIAN_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\n\n<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>';
 const ITALIAN_COMMS = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>.</p>\n<p><i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua.</p>\n<p>Ut enim ad minim veniam. <u>Quis nostrud exercitation</u>?</p>';
 const ITALIAN_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
@@ -14,8 +14,8 @@ function italianMarkup(design,state) {
   const lines=[`<div class="bh-italian milk-v2 mk-${design.visual} itc-${design.type} itc-${design.slug}"${flow}>`,`<a class="itc-name" href="${italianEscape(state.url)}">${italianEscape(state.name)}</a>`,`<div class="itc-title">${italianEscape(state.title)}</div>`];
   if(design.type==='comms') lines.push(`<div class="itc-time">${italianEscape(state.time)}</div>`);
   const gifs=state.gifs.filter(g=>g.url.trim());
-  if(gifs.length) { lines.push('<div class="itc-media">'); gifs.forEach(g=>lines.push(`<img src="${italianEscape(g.url.trim())}" alt="Character GIF" style="object-position:${italianEscape(g.position)}">`)); lines.push('</div>'); }
-  lines.push('<div class="itc-copy">',state.body,'</div>',`<div class="${design.type==='comms'?'mk2-hardware':'mk2-motif'}" aria-hidden="true"></div>`,'</div>');
+  if(gifs.length) { lines.push('<div class="itc-media">'); gifs.forEach(g=>lines.push(`<span class="mk3-portrait"><img src="${italianEscape(g.url.trim())}" alt="Character GIF" style="object-position:${italianEscape(g.position)}"></span>`)); lines.push('</div>'); }
+  lines.push('<div class="itc-copy">',state.body,'</div>',`<div class="${design.type==='comms'?'mk3-hardware':'mk3-motif'}" aria-hidden="true"></div>`,'</div>');
   return lines.join('\n');
 }
 function italianSnippet(design,state) { return '[dohtml]\n'+italianMarkup(design,state)+'\n\n<link rel="stylesheet" href="'+ITALIAN_CSS_URL+'">\n[/dohtml]\n'; }
