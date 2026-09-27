@@ -4,12 +4,12 @@
 
 This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
 
-- [espresso-collection-standalone-v1.css](espresso-collection-standalone-v1.css)
+- [espresso-layout-standalone-v2.css](espresso-layout-standalone-v2.css)
 
-After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+To rebuild this collection, run `python tools/build_standalone_styles.py`, `node espresso/build-espresso.cjs`, `python tools/build_forum_posts.py`, and `python tools/build_espresso_package.py` from the repository root. Follow the repository defaults to refresh the other split collection packages after a forum rebuild.
 
 
-Fifteen JCink templates inspired by a late-night café poster: expressive serif titles, member-coloured frames, neutral writing surfaces and small espresso-machine, coffee-bean and café details.
+Fifteen JCink templates for **Jaeho & Leo**, inspired by a late-night café poster: expressive serif titles, member-coloured frames, neutral writing surfaces and small espresso-machine, coffee-bean and café details.
 
 [Collection editor and preview](espresso-collection-preview.html) · [Download the complete collection](espresso-collection.zip)
 
@@ -47,9 +47,21 @@ The preview is a standalone HTML file with its styles and editor included. Downl
 
 ## Posting
 
-Open a named `.txt` file, use GitHub’s **Copy raw file** control, and paste the complete `[dohtml]` block into your forum post. Editable `[url]`, `[name]`, `[text]`, times, GIF URLs and writing appear before the decoration and the stylesheet link. There are no template comments, hidden tips or instruction blocks.
+Open a named `.txt` file, use GitHub’s **Copy raw file** control, and paste the complete `[dohtml]` block into your forum post. Editable names, links, titles, times, GIF URLs and writing appear before the decoration and the stylesheet link. There are no template comments, hidden tips or instruction blocks.
 
-The single stylesheet link loads [espresso-collection-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css). The snippets contain no scripts, external HTML injection or per-message classes. No skin installation is required when the forum permits external stylesheets inside `[dohtml]`.
+The single stylesheet link loads [espresso-layout-standalone-v2.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css). The snippets contain no scripts, external HTML injection or per-message classes. No skin installation is required when the forum permits external stylesheets inside `[dohtml]`.
+
+## Layout revision
+
+The current snippets include the `esp-layout-v2` marker and a fresh standalone stylesheet. Use the updated masterpost or copy a current snippet to adopt these fixes.
+
+- Ninth Bar and Crema Kiss keep portraits at a deliberate size, with stacked arrangements in narrow cards.
+- Last Call’s clock stays within its contact section instead of crossing the portrait edge.
+- Doppio Vow uses explicit portrait columns without a floating centre divider.
+- Coffee beans, cups, steam and the pressure gauge fit inside reserved footer spaces; keyboard controls have separate columns.
+- Title sizes and compact metadata respond to the template’s available width. Empty image areas still collapse.
+
+Names, GIF URLs, member-colour gradients, light/dark support and editable writing are preserved. Older stylesheet endpoints remain available for existing posts.
 
 ## Editing
 

@@ -1,5 +1,20 @@
 # Espresso release checks
 
+## Layout revision — 27 September 2026
+
+The `esp-layout-v2` revision passed:
+
+- CSS syntax parsing and fifteen DOM editor selections whose exports match the individual posting files.
+- Sixty zero/one/two/three-GIF markup states and all three message directions with ordinary paragraphs, including omitted closing tags.
+- 540 CSS cascade cases across wide and narrow cards, explicit light/dark modes and system fallbacks, and zero/one/three GIFs. Each case was checked with the new stylesheet alone and alongside the old stylesheet in both load orders.
+- Reserved icon dimensions, normal-flow clock placement, non-stretching portraits, narrow-card row placement and collapsed image-free columns.
+- Byte-for-byte preservation of the fifteen templates’ editable metadata, images and writing; only Espresso’s fifteen copyable blocks changed in the 860-template catalogue.
+- Full sample writing above concise writing markers in the forum masterpost.
+
+These are source, DOM and CSS cascade checks. Actual browser layout and a live JCink post have not been visually verified for this revision.
+
+## Original release
+
 Checked on 7 September 2026.
 
 | Check | Result |

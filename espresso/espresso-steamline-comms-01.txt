@@ -1,5 +1,5 @@
 [dohtml]
-<div class="esp esp-comms esp-steamline" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-steamline" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>[text]</span>
@@ -16,8 +16,8 @@
 <p><u>Donec consequat.</u> Sed fermentum libero et risus consectetur.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span class="esp-compose">Message</span></div>
+<div class="esp-ornament" aria-hidden="true"><span class="esp-v2-steam"><svg viewBox="0 0 22 28" aria-hidden="true"><path d="M6 25c7-7-6-8 1-15m7 9c7-7-6-8 1-15"/></svg></span><span class="esp-compose">Message</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]

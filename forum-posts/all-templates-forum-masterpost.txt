@@ -12458,7 +12458,7 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 [size=4][b]01 · Afterhours[/b][/size]
 
 [dohtml]
-<div class="esp esp-thread esp-afterhours">
+<div class="esp esp-layout-v2 esp-thread esp-afterhours">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Afterhours</span>
@@ -12474,16 +12474,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>Fusce ullamcorper, libero id molestie volutpat, sapien metus aliquet velit, eu scelerisque lacus dolor sed nibh. <u>Morbi tempus neque sed.</u> Praesent sit amet nibh non lectus vestibulum tincidunt. Nam nec nibh at lacus luctus elementum.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>espresso</span><span class="esp-bean"></span><span>after hours</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>espresso</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span><span>after hours</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-thread esp-afterhours">
+<div class="esp esp-layout-v2 esp-thread esp-afterhours">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Afterhours</span>
@@ -12497,17 +12497,17 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[TEXT GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>espresso</span><span class="esp-bean"></span><span>after hours</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>espresso</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span><span>after hours</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]02 · Crema Obscura[/b][/size]
 
 [dohtml]
-<div class="esp esp-thread esp-crema-obscura">
+<div class="esp esp-layout-v2 esp-thread esp-crema-obscura">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Crema Obscura</span>
@@ -12519,16 +12519,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>Fusce ullamcorper, libero id molestie volutpat, sapien metus aliquet velit, eu scelerisque lacus dolor sed nibh. <u>Morbi tempus neque sed.</u> Praesent sit amet nibh non lectus vestibulum tincidunt. Nam nec nibh at lacus luctus elementum.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>house blend</span><span class="esp-bean"></span><span>slowly savoured</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>house blend</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span><span>slowly savoured</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-thread esp-crema-obscura">
+<div class="esp esp-layout-v2 esp-thread esp-crema-obscura">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Crema Obscura</span>
@@ -12538,17 +12538,17 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[TEXT GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>house blend</span><span class="esp-bean"></span><span>slowly savoured</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>house blend</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span><span>slowly savoured</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]03 · Doppio Vow[/b][/size]
 
 [dohtml]
-<div class="esp esp-thread esp-doppio-vow">
+<div class="esp esp-layout-v2 esp-thread esp-doppio-vow">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Doppio Vow</span>
@@ -12565,16 +12565,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>Fusce ullamcorper, libero id molestie volutpat, sapien metus aliquet velit, eu scelerisque lacus dolor sed nibh. <u>Morbi tempus neque sed.</u> Praesent sit amet nibh non lectus vestibulum tincidunt. Nam nec nibh at lacus luctus elementum.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>double shot</span><span class="esp-cup"></span><span>one promise</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>double shot</span><span class="esp-v2-cup"><svg viewBox="0 0 44 32" aria-hidden="true"><path d="M7 6h24v9c0 7-5 11-12 11S7 22 7 15V6Zm24 3h4c6 0 6 10 0 10h-5M3 29h34"/></svg></span><span>one promise</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-thread esp-doppio-vow">
+<div class="esp esp-layout-v2 esp-thread esp-doppio-vow">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Doppio Vow</span>
@@ -12589,17 +12589,17 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[TEXT GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>double shot</span><span class="esp-cup"></span><span>one promise</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>double shot</span><span class="esp-v2-cup"><svg viewBox="0 0 44 32" aria-hidden="true"><path d="M7 6h24v9c0 7-5 11-12 11S7 22 7 15V6Zm24 3h4c6 0 6 10 0 10h-5M3 29h34"/></svg></span><span>one promise</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]04 · Ninth Bar[/b][/size]
 
 [dohtml]
-<div class="esp esp-thread esp-ninth-bar">
+<div class="esp esp-layout-v2 esp-thread esp-ninth-bar">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Ninth Bar</span>
@@ -12615,16 +12615,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>Fusce ullamcorper, libero id molestie volutpat, sapien metus aliquet velit, eu scelerisque lacus dolor sed nibh. <u>Morbi tempus neque sed.</u> Praesent sit amet nibh non lectus vestibulum tincidunt. Nam nec nibh at lacus luctus elementum.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>espresso<br>under pressure</span><span class="esp-gauge"></span><span>09 bar</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>espresso<br>under pressure</span><span class="esp-v2-gauge"><svg viewBox="0 0 72 44" aria-hidden="true"><path d="M3 39a33 33 0 0 1 66 0H3Zm7-1h5m-2-15 4 3m6-13 2 5M36 7v6m13 0-2 5m12 5-4 3m7 12h-5M36 38l14-18"/><circle cx="36" cy="38" r="2"/></svg></span><span>09 bar</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-thread esp-ninth-bar">
+<div class="esp esp-layout-v2 esp-thread esp-ninth-bar">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Ninth Bar</span>
@@ -12638,17 +12638,17 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[TEXT GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>espresso<br>under pressure</span><span class="esp-gauge"></span><span>09 bar</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>espresso<br>under pressure</span><span class="esp-v2-gauge"><svg viewBox="0 0 72 44" aria-hidden="true"><path d="M3 39a33 33 0 0 1 66 0H3Zm7-1h5m-2-15 4 3m6-13 2 5M36 7v6m13 0-2 5m12 5-4 3m7 12h-5M36 38l14-18"/><circle cx="36" cy="38" r="2"/></svg></span><span>09 bar</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]05 · Slow Extraction[/b][/size]
 
 [dohtml]
-<div class="esp esp-thread esp-slow-extraction">
+<div class="esp esp-layout-v2 esp-thread esp-slow-extraction">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Slow Extraction</span>
@@ -12660,16 +12660,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>Fusce ullamcorper, libero id molestie volutpat, sapien metus aliquet velit, eu scelerisque lacus dolor sed nibh. <u>Morbi tempus neque sed.</u> Praesent sit amet nibh non lectus vestibulum tincidunt. Nam nec nibh at lacus luctus elementum.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>01 / espresso</span><span class="esp-bean"></span><span>take your time</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>01 / espresso</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span><span>take your time</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-thread esp-slow-extraction">
+<div class="esp esp-layout-v2 esp-thread esp-slow-extraction">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Slow Extraction</span>
@@ -12679,10 +12679,10 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[TEXT GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>01 / espresso</span><span class="esp-bean"></span><span>take your time</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>01 / espresso</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span><span>take your time</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
@@ -12691,7 +12691,7 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 [size=4][b]06 · Dialtone Roast[/b][/size]
 
 [dohtml]
-<div class="esp esp-comms esp-dialtone-roast" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-dialtone-roast" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Dialtone Roast</span>
@@ -12711,13 +12711,13 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span class="esp-keypad"></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-comms esp-dialtone-roast" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-dialtone-roast" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Dialtone Roast</span>
@@ -12737,14 +12737,14 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span class="esp-keypad"></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]07 · Last Call[/b][/size]
 
 [dohtml]
-<div class="esp esp-comms esp-last-call" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-last-call" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Last Call</span>
@@ -12764,13 +12764,13 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span class="esp-compose">Message</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-comms esp-last-call" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-last-call" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Last Call</span>
@@ -12790,14 +12790,14 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span class="esp-compose">Message</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]08 · Nightshift DM[/b][/size]
 
 [dohtml]
-<div class="esp esp-comms esp-nightshift-dm" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-nightshift-dm" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Nightshift DM</span>
@@ -12813,13 +12813,13 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span class="esp-homebar"></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-comms esp-nightshift-dm" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-nightshift-dm" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Nightshift DM</span>
@@ -12835,14 +12835,14 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span class="esp-homebar"></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]09 · Portafilter Ping[/b][/size]
 
 [dohtml]
-<div class="esp esp-comms esp-portafilter-ping" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-portafilter-ping" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Portafilter Ping</span>
@@ -12862,13 +12862,13 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span class="esp-qwerty"></span><span class="esp-control"></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-comms esp-portafilter-ping" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-portafilter-ping" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Portafilter Ping</span>
@@ -12888,14 +12888,14 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span class="esp-qwerty"></span><span class="esp-control"></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]10 · Steamline[/b][/size]
 
 [dohtml]
-<div class="esp esp-comms esp-steamline" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-steamline" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Steamline</span>
@@ -12912,16 +12912,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p><u>Donec consequat.</u> Sed fermentum libero et risus consectetur.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span class="esp-compose">Message</span></div>
+<div class="esp-ornament" aria-hidden="true"><span class="esp-v2-steam"><svg viewBox="0 0 22 28" aria-hidden="true"><path d="M6 25c7-7-6-8 1-15m7 9c7-7-6-8 1-15"/></svg></span><span class="esp-compose">Message</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-comms esp-steamline" data-direction="received">
+<div class="esp esp-layout-v2 esp-comms esp-steamline" data-direction="received">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Steamline</span>
@@ -12938,10 +12938,10 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[MESSAGE GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span class="esp-compose">Message</span></div>
+<div class="esp-ornament" aria-hidden="true"><span class="esp-v2-steam"><svg viewBox="0 0 22 28" aria-hidden="true"><path d="M6 25c7-7-6-8 1-15m7 9c7-7-6-8 1-15"/></svg></span><span class="esp-compose">Message</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
@@ -12950,7 +12950,7 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 [size=4][b]11 · Beanmark[/b][/size]
 
 [dohtml]
-<div class="esp esp-bud esp-beanmark">
+<div class="esp esp-layout-v2 esp-bud esp-beanmark">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Beanmark</span>
@@ -12960,16 +12960,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean a ligula eu nibh consequat lacinia. <i>Aliquam erat volutpat.</i> Sed fermentum libero et risus consectetur. <u>Donec consequat.</u> Praesent sit amet nibh non lectus vestibulum tincidunt.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>leave a trace</span><span class="esp-bean"></span></div>
+<div class="esp-ornament" aria-hidden="true"><span>leave a trace</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-bud esp-beanmark">
+<div class="esp esp-layout-v2 esp-bud esp-beanmark">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Beanmark</span>
@@ -12979,17 +12979,17 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[TEXT GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>leave a trace</span><span class="esp-bean"></span></div>
+<div class="esp-ornament" aria-hidden="true"><span>leave a trace</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]12 · Crema Kiss[/b][/size]
 
 [dohtml]
-<div class="esp esp-bud esp-crema-kiss">
+<div class="esp esp-layout-v2 esp-bud esp-crema-kiss">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Crema Kiss</span>
@@ -13006,13 +13006,13 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span>espresso</span><span>soft finish</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-bud esp-crema-kiss">
+<div class="esp esp-layout-v2 esp-bud esp-crema-kiss">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Crema Kiss</span>
@@ -13029,14 +13029,14 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span>espresso</span><span>soft finish</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]13 · Demitasse[/b][/size]
 
 [dohtml]
-<div class="esp esp-bud esp-demitasse">
+<div class="esp esp-layout-v2 esp-bud esp-demitasse">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Demitasse</span>
@@ -13050,16 +13050,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean a ligula eu nibh consequat lacinia. <i>Aliquam erat volutpat.</i> Sed fermentum libero et risus consectetur. <u>Donec consequat.</u> Praesent sit amet nibh non lectus vestibulum tincidunt.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>espresso</span><span class="esp-cup"></span><span>a little closer</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>espresso</span><span class="esp-v2-cup"><svg viewBox="0 0 44 32" aria-hidden="true"><path d="M7 6h24v9c0 7-5 11-12 11S7 22 7 15V6Zm24 3h4c6 0 6 10 0 10h-5M3 29h34"/></svg></span><span>a little closer</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-bud esp-demitasse">
+<div class="esp esp-layout-v2 esp-bud esp-demitasse">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Demitasse</span>
@@ -13073,17 +13073,17 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[TEXT GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>espresso</span><span class="esp-cup"></span><span>a little closer</span></div>
+<div class="esp-ornament" aria-hidden="true"><span>espresso</span><span class="esp-v2-cup"><svg viewBox="0 0 44 32" aria-hidden="true"><path d="M7 6h24v9c0 7-5 11-12 11S7 22 7 15V6Zm24 3h4c6 0 6 10 0 10h-5M3 29h34"/></svg></span><span>a little closer</span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]14 · One More Sip[/b][/size]
 
 [dohtml]
-<div class="esp esp-bud esp-one-more-sip">
+<div class="esp esp-layout-v2 esp-bud esp-one-more-sip">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>One More Sip</span>
@@ -13096,13 +13096,13 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span>one more sip</span><span></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-bud esp-one-more-sip">
+<div class="esp esp-layout-v2 esp-bud esp-one-more-sip">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>One More Sip</span>
@@ -13115,14 +13115,14 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <div class="esp-ornament" aria-hidden="true"><span>one more sip</span><span></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
 [size=4][b]15 · Ristretto[/b][/size]
 
 [dohtml]
-<div class="esp esp-bud esp-ristretto">
+<div class="esp esp-layout-v2 esp-bud esp-ristretto">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Ristretto</span>
@@ -13132,16 +13132,16 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aenean a ligula eu nibh consequat lacinia. <i>Aliquam erat volutpat.</i> Sed fermentum libero et risus consectetur. <u>Donec consequat.</u> Praesent sit amet nibh non lectus vestibulum tincidunt.</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>short &amp; strong</span><span class="esp-bean"></span></div>
+<div class="esp-ornament" aria-hidden="true"><span>short &amp; strong</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="esp esp-bud esp-ristretto">
+<div class="esp esp-layout-v2 esp-bud esp-ristretto">
 <div class="esp-meta">
 <a href="[url]">Jaeho &amp; Leo</a>
 <span>Ristretto</span>
@@ -13151,10 +13151,10 @@ Praesent sed lacus at lectus malesuada aliquet. Nulla facilisi.
 <p>[TEXT GOES HERE]</p>
 </div>
 
-<div class="esp-ornament" aria-hidden="true"><span>short &amp; strong</span><span class="esp-bean"></span></div>
+<div class="esp-ornament" aria-hidden="true"><span>short &amp; strong</span><span class="esp-v2-bean"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M18 3C10 0 3 9 3 18s8 12 14 6 9-17 1-21Z"/><path d="M18 4C8 10 17 18 7 25"/></svg></span></div>
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-collection-standalone-v1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/espresso/espresso-layout-standalone-v2.css">
 [/dohtml]
 [/code]
 
