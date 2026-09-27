@@ -77,7 +77,7 @@ for generation in ('legacy', 'thaw'):
     if generation == 'thaw':
         readme += ['For an existing post that displays without its styling, add the complete '
                    '[stylesheet repair block](bingsu/bingsu-thaw-stylesheet-repair.txt) once at the end of the post. '
-                   'The current snippets already include this import loader.', '']
+                   'The current snippets already include this direct stylesheet link.', '']
     files['README.md'] = '\n'.join(readme)
     archive = ROOT / 'bingsu' / f'bingsu-{generation}-repository.zip'
     write_zip(archive, files)

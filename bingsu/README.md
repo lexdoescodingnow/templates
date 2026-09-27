@@ -58,17 +58,17 @@ The preview editor supports name, title/status, URL, time, GIF and writing edits
 
 ## Forum integration
 
-Every snippet loads [bingsu-thaw-v1.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@e253a721b65f56194260de60b03f676479ae72bd/bingsu/bingsu-thaw-v1.css), pinned to stylesheet commit `e253a721b65f56194260de60b03f676479ae72bd`. The loader uses `<style>@import url("…");</style>` inside `[dohtml]` so it does not depend on the forum retaining a `<link>` element. The forum must allow style elements and external CSS. No JavaScript or external HTML injector runs in forum posts.
+Every snippet loads [bingsu-thaw-forum-v2.css](https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/bingsu/bingsu-thaw-forum-v2.css) using a direct `<link rel="stylesheet">` inside `[dohtml]`, matching the user's working Banana collection. The fresh stylesheet contains all design and font-face rules directly, with no CSS imports or dependency on the old commit-pinned address. No JavaScript or external HTML injector runs in forum posts.
 
 If an existing Thaw post shows plain text and full-size GIFs without its frame, add the complete block from [the stylesheet repair snippet](bingsu-thaw-stylesheet-repair.txt) once at the end of that post. It loads the shared styles for all 15 Thaw designs on the page; existing text and GIFs do not need replacing. Alternatively, replace the masterpost with the current forum-ready version.
 
 The inherited `--mgrgb1`, `--mgrgb2` and `--mgrgb3` RGB triples supply the member palette. Fallbacks apply only when they are absent. Colour mixes deepen emphasis on light backgrounds and lighten it on dark backgrounds. Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` override system preference. Template rules use the distinct `bgs` prefix.
 
-Allura, Newsreader and DM Sans load from Google Fonts, with local cursive, Georgia and Arial fallbacks. Original crystal, ice-shard, droplet and dessert-glass motifs are encoded as SVG masks in the stylesheet. No separate decorative image files are required. CSS uses `color-mix()` and `:has()` for palette tinting and empty-media reflow. GIFs, optional fonts and the forum stylesheet need internet access.
+Allura, Newsreader and DM Sans use font-face definitions included directly in the stylesheet, with `font-display:swap` and local cursive, Georgia and Arial fallbacks. Font files load from Google's font host; the design does not wait for a Google Fonts stylesheet import. Original crystal, ice-shard, droplet and dessert-glass motifs are encoded as SVG masks in the stylesheet. No separate decorative image files are required. CSS uses `color-mix()` and `:has()` for palette tinting and empty-media reflow. GIFs, optional fonts and the forum stylesheet need internet access.
 
 ## Build and verification
 
-Run `node bingsu/build.cjs` from the repository root to rebuild the 15 snippets, compiled CSS, design index and standalone preview. The builder reads `stylesheet-revision.txt`; publish a new stylesheet revision and update that file before rebuilding when changing the hosted styles. The ZIP contains this new collection and its sources.
+Run `node bingsu/build.cjs` from the repository root to rebuild the 15 snippets, compiled CSS, design index, repair loader and standalone preview. The builder combines `bingsu-fonts.css` with the layout and SVG motifs and reads `stylesheet-revision.txt`, currently `main`. Keep future stylesheet revisions on fresh filenames when immediate cache refresh is needed. The ZIP contains this new collection and its sources.
 
 See [VALIDATION.md](VALIDATION.md) for checks and limitations. Source validation passed; visual browser rendering and live JCink posting were not verified because the session's browser blocked local preview access.
 

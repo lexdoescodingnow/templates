@@ -1,6 +1,16 @@
 # Bingsu Thaw validation
 
+## Standalone stylesheet revision · 27 September 2026
+
+The user confirmed that the import-only attempt below did not fix rendering and supplied a working Banana masterpost. That file uses a direct `<link rel="stylesheet">` to a fresh stylesheet on `@main`; its success disproves the earlier suggestion that this forum generally strips stylesheet links.
+
+The current Bingsu build now uses the same delivery pattern: `@main/bingsu/bingsu-thaw-forum-v2.css`. The new file directly includes the unchanged layout and motif rules plus eight font-face definitions, without any CSS imports. Fonts use `font-display:swap`. The original v1 file is retained for compatibility, but current snippets, editor exports, masterposts, repair loader and downloads use v2.
+
+Checks compare all 15 template bodies, sample writing, GIFs, names, member gradients and mode rules with the prior version. The only posting-markup change is the stylesheet loader. CSS syntax, all editor exports, preview/copy correspondence and ZIP contents are checked. The user's member-only topic remains unavailable, so this report does not claim a verified live forum render or a conclusive cause for the previous URL failing in their browser.
+
 ## Forum stylesheet loader · 27 September 2026
+
+**Superseded attempt: the user reported no improvement.**
 
 The reported Crystal Veil screenshot displays unstyled HTML: original-size GIFs, ordinary forum typography and no frame. The exact pinned stylesheet URL returned HTTP 200 with `text/css` and matched the local stylesheet byte for byte. The live topic returned a permission message, so the precise forum-side cause could not be inspected.
 

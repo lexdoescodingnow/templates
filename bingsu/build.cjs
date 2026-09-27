@@ -2,21 +2,23 @@ const fs=require('fs'),path=require('path');
 const root=__dirname,{designs,motif,initial,markup}=require('./bingsu-model.cjs');
 const revisionFile=path.join(root,'stylesheet-revision.txt');
 const revision=process.env.BINGSU_CSS_REVISION||(fs.existsSync(revisionFile)?fs.readFileSync(revisionFile,'utf8').trim():'main');
-const cssUrl=`https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@${revision}/bingsu/bingsu-thaw-v1.css`;
-let css=fs.readFileSync(path.join(root,'bingsu-source.css'),'utf8');
+const cssUrl=`https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@${revision}/bingsu/bingsu-thaw-forum-v2.css`;
+const fontCss=fs.readFileSync(path.join(root,'bingsu-fonts.css'),'utf8');
+let css=fontCss+'\n'+fs.readFileSync(path.join(root,'bingsu-source.css'),'utf8').replace(/^@import[^\n]*\n/,'');
 for(const m of ['crystal','shards','droplet','bowl']){
   const svg=motif(m).replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ').replace('currentColor','black');
   css+='\n'+designs.filter(d=>d.motif===m).map(d=>`.bgs-${d.slug}`).join(',')+`{--bgs-art:url("data:image/svg+xml,${encodeURIComponent(svg).replace(/'/g,'%27')}")}\n`;
 }
-fs.writeFileSync(path.join(root,'bingsu-thaw-v1.css'),css);
-for(const d of designs)fs.writeFileSync(path.join(root,`bingsu-${d.slug}-${d.type}-${d.number}.txt`),'[dohtml]\n'+markup(d,initial(d))+'\n\n<style>@import url("'+cssUrl+'");</style>\n[/dohtml]\n');
+fs.writeFileSync(path.join(root,'bingsu-thaw-forum-v2.css'),css);
+for(const d of designs)fs.writeFileSync(path.join(root,`bingsu-${d.slug}-${d.type}-${d.number}.txt`),'[dohtml]\n'+markup(d,initial(d))+'\n\n<link rel="stylesheet" href="'+cssUrl+'">\n[/dohtml]\n');
+fs.writeFileSync(path.join(root,'bingsu-thaw-stylesheet-repair.txt'),'[dohtml]\n<link rel="stylesheet" href="'+cssUrl+'">\n[/dohtml]\n');
 fs.writeFileSync(path.join(root,'designs.json'),JSON.stringify(designs,null,2)+'\n');
 const previewCss=fs.readFileSync(path.join(root,'bingsu-preview.css'),'utf8');
 const model=fs.readFileSync(path.join(root,'bingsu-model.cjs'),'utf8');
 const editor=fs.readFileSync(path.join(root,'bingsu-editor.js'),'utf8');
 const scriptValue=s=>JSON.stringify(s).replace(/</g,'\\u003c');
 const html=`<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Bingsu · 15 JCink templates</title><style>${css.split('\n')[0]}\n${previewCss}</style></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Bingsu · 15 JCink templates</title><style>${fontCss}\n${previewCss}</style></head>
 <body><header><div><div class="overline">The Bingsu collection</div><h1>A love that melts.</h1><p>Frosted edges. Soft conversations. Fifteen little places to leave something warm. Inspired by Isaiah & Max.</p></div><div class="flower" aria-hidden="true">${motif('crystal')}</div></header>
 <div class="toolbar"><label>Mode <select id="mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Member colours <select id="palette"><option value="poster">Bingsu</option><option value="ocean">Ocean</option><option value="rose">Rose</option><option value="forest">Forest</option><option value="mono">Monochrome</option></select></label><input id="colour1" type="color" value="#426ca3" aria-label="Member colour 1"><input id="colour2" type="color" value="#7691b9" aria-label="Member colour 2"><input id="colour3" type="color" value="#ca7891" aria-label="Member colour 3"><label>Post width <select id="width"><option value="570">Forum</option><option value="375">375 px</option><option value="320">320 px</option></select></label><span class="space"></span><button id="all" aria-pressed="false">View all 15 designs</button></div>
 <main class="layout" id="layout"><nav id="designs" aria-label="Template designs"></nav><section class="preview-area"><div class="title-row"><div><h2 id="designName"></h2><p id="designType"></p></div><div class="arrows"><button id="previous" aria-label="Previous design">←</button><button id="next" aria-label="Next design">→</button></div></div><p class="design-description" id="description"></p><div class="stage-shell" id="stageShell"><iframe id="stage" title="Selected template preview" sandbox="allow-same-origin"></iframe></div></section>
