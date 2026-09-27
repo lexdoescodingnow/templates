@@ -4,9 +4,9 @@
 
 This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
 
-- [sour-media-standalone-v1.css](sour-media-standalone-v1.css)
+- [sour-member-standalone-v3.css](sour-member-standalone-v3.css)
 
-After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
+Run `python sour/build-sour.py`, then `python tools/build_forum_posts.py` and `python tools/build_sour_package.py` to refresh Sour’s editor, posting files and download. Refresh the split collection packages after a full forum rebuild as described in `AGENTS.md`.
 
 
 Five threads, five comms and five buds. GIFs follow the composition: portrait pairs for paired frames, single portraits for contacts and narrow photo spaces, and image-free options for letters and tiny replies.
@@ -45,7 +45,7 @@ Five threads, five comms and five buds. GIFs follow the composition: portrait pa
 
 ## Editing and integration
 
-Copy a complete `[dohtml]` block from a named `.txt` file. The editable `[url]`, `[name]`, `[text]`, image URLs, writing and comms time remain above the decoration and the stylesheet link. The supplied GIF URLs are examples, not a required pair.
+Copy a complete `[dohtml]` block from a named `.txt` file. Lyle & Will, the editable `[url]`, title, image URLs, writing and comms time remain above the decoration and the stylesheet link. Forum code boxes use concise writing markers; their examples retain sample paragraphs. The supplied GIF URLs are examples, not a required pair.
 
 Use the default layout in the table, or remove an image tag. If removing the final image, remove its empty portrait container too. Image-free layouts reclaim the space automatically. In previews with an editor, clearing a GIF URL omits that image from the preview and copied code; clearing both produces an image-free post. Custom edits are kept when switching designs.
 
@@ -55,9 +55,11 @@ Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` work too. Ed
 
 Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system fallback. Writing stays on neutral surfaces. Preview palette controls are samples; posts inherit the forum palette.
 
-All current snippets use the fresh `sour-media-v2.css` stylesheet. Older CSS files remain available for existing posts. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS, fonts and GIFs require internet access; font fallbacks remain available. Existing forum posts retain their original markup: paste the revised snippet to adopt its new GIF layout.
+All current snippets use the fresh `sour-member-standalone-v3.css` stylesheet and `sour-members-v3` wrapper. Headers, names, frames, borders, message tints and emphasis inherit the member group palette. Writing surfaces and the small candy illustrations are neutral; the former fixed olive and plum colours are removed. The original illustration geometry, typography, GIF slots and layouts remain intact. Older CSS files remain available for existing posts. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS, fonts and GIFs require internet access; font fallbacks remain available. Existing forum posts retain their original markup: paste the revised snippet to adopt its new GIF layout.
 
 ## Revision checks
+
+The member-colour revision was checked across all 15 designs, explicit light/dark modes and system fallbacks, two width conditions and three stylesheet load orders. All editor selections, GIF counts, ship names, preview/code pairs and packaged files passed. The other 845 catalogue snippets are unchanged. Live forum rendering has not been verified.
 
 The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
 
