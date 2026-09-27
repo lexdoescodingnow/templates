@@ -4,7 +4,9 @@
 
 This collection now follows the working Banana/Bingsu setup: direct stylesheet links on `@main`, with all layout and font-face rules included directly and no CSS imports. Current snippets, editor exports and forum masterposts use the new files. Earlier stylesheets remain available for existing posts.
 
-- [citron-atelier-standalone-v1.css](citron-atelier-standalone-v1.css)
+- [citron-atelier-standalone-v2.css](citron-atelier-standalone-v2.css)
+
+The border and motif revision uses the `ctn-v2` wrapper and separate motif classes. Copy the revised snippet to adopt it. Citron drawings now have their own footer space, the double frames are inset border elements, and Zeste Manifesto stacks its content in narrow cards. Older stylesheet URLs remain available for existing posts.
 
 After rebuilding an editor or editing source CSS, run `python tools/build_standalone_styles.py`, then `python tools/build_forum_posts.py` to refresh posting files.
 
@@ -19,10 +21,10 @@ Open a named `.txt` file below and select **Copy raw file** on GitHub. Paste the
 
 | Design | Starting GIFs | Layout |
 | --- | ---: | --- |
-| [Cedrat Atelier](citron-cedrat-atelier-thread-01.txt) | 2 | A perfumer's specimen plate with a giant serif title, paired inset portraits and a textured citron medallion. |
+| [Cedrat Atelier](citron-cedrat-atelier-thread-01.txt) | 2 | A perfumer's specimen plate with a giant serif title, paired inset portraits and a citron footer illustration. |
 | [Albedo Archive](citron-albedo-archive-thread-02.txt) | 0 | A spacious botanical journal with a split title band, embossed rind curves and an indented reading column. |
 | [Vesicle Verse](citron-vesicle-verse-thread-03.txt) | 2 | A sculptural cell-window diptych with curved inner corners, a side-set caption and an open writing panel. |
-| [Pith & Parfum](citron-pith-parfum-thread-04.txt) | 1 | A perfume-label composition with a wide portrait, a formal oval title cartouche and fine double rules. |
+| [Pith & Parfum](citron-pith-parfum-thread-04.txt) | 1 | A perfume-label composition with a wide portrait, a rounded title cartouche and an inset double frame. |
 | [Zeste Manifesto](citron-zeste-manifesto-thread-05.txt) | 1 | An energetic typeset page with a narrow portrait column, oversized leading text and citrus-oil stippling. |
 
 ## Comms
@@ -41,15 +43,15 @@ Open a named `.txt` file below and select **Copy raw file** on GitHub. Paste the
 | --- | ---: | --- |
 | [Zestmark](citron-zestmark-bud-01.txt) | 0 | A tiny typeset note with an oversized opening letter and three oil-gland marks. |
 | [Pithlet](citron-pithlet-bud-02.txt) | 1 | A round little portrait beside a finely ruled title and a short open reply. |
-| [Oilspot](citron-oilspot-bud-03.txt) | 0 | A miniature scent label with concentric rounded corners and an off-centre citron stamp. |
+| [Oilspot](citron-oilspot-bud-03.txt) | 0 | A miniature scent label with concentric rounded corners and a separate citron footer stamp. |
 | [Vesicle Kiss](citron-vesicle-kiss-bud-04.txt) | 2 | Two tiny asymmetric cell portraits beside a shared heading, above a compact reply. |
 | [Rindscript](citron-rindscript-bud-05.txt) | 0 | A low horizontal note with a coloured inset nameplate and a finely ridged right edge. |
 
 ## Editing
 
-`[url]`, `[name]` and `[text]` are the first editable fields. `[text]` is the title or contact status. GIFs, the comms time and the lorem ipsum follow. The writing is in `ctn-copy`. All editable content comes before the decorative element and stylesheet link. Templates contain no comments, hidden editing notes or instruction blocks.
+The name link, Ben & Vince and the title are the first editable fields. GIFs, the comms time and the writing follow. The writing is in `ctn-copy`. All editable content comes before the decorative element and stylesheet link. Templates contain no comments, hidden editing notes or instruction blocks. The forum masterpost retains sample writing in its previews and concise writing placeholders in its copyable code.
 
-The preview shows **Ben & Vince** and sample titles. Unchanged exports keep the literal placeholders. Enter your actual name and title in the editor to include those in the copied code. Preview colours and mode are never written into posting snippets; forum posts inherit the member's group colours. Each design retains edits while the page stays open. Use **Download .txt** to save edited code.
+The preview shows **Ben & Vince** and sample titles. The editor's unchanged exports keep the supplied names and editable title/link placeholders. Enter a name and title in the editor to include those in the copied code. Preview colours and mode are never written into posting snippets; forum posts inherit the member's group colours. Each design retains edits while the page stays open. Use **Download .txt** to save edited code.
 
 Use ordinary `<p>` paragraphs. In comms, every paragraph is one message bubble, including successive opening `<p>` tags without closing tags. `data-flow="received"`, `"sent"` and `"mixed"` set message direction, also available in the editor. The device controls are decorative. Buds are designed for replies of 100 words or fewer; longer text remains visible.
 
@@ -69,7 +71,7 @@ Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` override the s
 
 ## Files
 
-[citron-atelier-v1.css](citron-atelier-v1.css) contains the shared styles. The posting URLs are pinned to the Git commit recorded in [stylesheet-revision.txt](stylesheet-revision.txt). The stylesheet applies directly to the pasted HTML; no JavaScript injector is required.
+[citron-atelier-v1.css](citron-atelier-v1.css) contains the editable shared styles; [citron-atelier-standalone-v2.css](citron-atelier-standalone-v2.css) is the current posting stylesheet on `main`. The stylesheet applies directly to the pasted HTML; no JavaScript injector is required.
 
 The preview is standalone, with its CSS and editor embedded; its GIFs require internet access. `designs.json` holds the names, sample titles and image defaults. Run `node citron/build.cjs` from the repository root to rebuild the 15 snippets and preview. [VALIDATION.md](VALIDATION.md) records the completed checks and their limits.
 
