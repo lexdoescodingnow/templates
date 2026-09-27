@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-860 distinct templates across 58 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+860 distinct templates across 59 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -45,7 +45,8 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Mocha Latte | 15 | [mocha-latte-forum-masterpost.txt](mocha-latte-forum-masterpost.txt) | [Preview](mocha-latte-preview.html) | 1 |
 | Nectarine | 15 | [nectarine-forum-masterpost.txt](nectarine-forum-masterpost.txt) | [Preview](nectarine-preview.html) | 1 |
 | Nuts | 15 | [nuts-forum-masterpost.txt](nuts-forum-masterpost.txt) | [Preview](nuts-preview.html) | 1 |
-| Oats | 30 | [oats-forum-masterpost.txt](oats-forum-masterpost.txt) | [Preview](oats-preview.html) | 2 |
+| Oats · Millhouse | 15 | [oats-forum-masterpost.txt](oats-forum-masterpost.txt) | [Preview](oats-preview.html) | 1 |
+| Oats · Legacy | 15 | [oats-legacy-forum-masterpost.txt](oats-legacy-forum-masterpost.txt) | [Preview](oats-legacy-preview.html) | 1 |
 | Passionfruit | 15 | [passionfruit-forum-masterpost.txt](passionfruit-forum-masterpost.txt) | [Preview](passionfruit-preview.html) | 1 |
 | Petal | 2 | [petal-forum-masterpost.txt](petal-forum-masterpost.txt) | [Preview](petal-preview.html) | 1 |
 | Plum | 15 | [plum-forum-masterpost.txt](plum-forum-masterpost.txt) | [Preview](plum-preview.html) | 1 |

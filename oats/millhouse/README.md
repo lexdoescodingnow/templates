@@ -1,4 +1,8 @@
-# Oats · Chen & Song
+# Oats · Millhouse
+
+The newer 15-design Oats collection for Chen & Song.
+
+[Current forum masterpost](../../forum-posts/oats-forum-masterpost.txt) · [Browser preview with Copy buttons](../../forum-posts/oats-preview.html) · [Download Millhouse package](../oats-millhouse-repository.zip) · [Older Harvest collection](../LEGACY.md)
 
 Fifteen JCink designs: five threads, five device-style comms and five miniature buds. Oats appears through millstone grooves, pressed-grain forms, folded cartons, woven borders and little flake details. Member colours carry the frames, headings and text emphasis over neutral light and dark surfaces.
 
@@ -17,51 +21,21 @@ For direct posting, open a named `.txt` below, choose **Copy raw file** on GitHu
 | [Kilnlight Folio](oats-kilnlight-folio-thread-03.txt) | 0 | An angular mill-house folio with a monumental title, offset registration marks and a bold ruled header. |
 | [Oatmilk Almanac](oats-oatmilk-almanac-thread-04.txt) | 1 | A folded-carton crown tops a photographic label, a side-set title and a softly framed writing panel. |
 | [Harvest Table](oats-harvest-table-thread-05.txt) | 2 | Two small saucer portraits sit above a woven placemat frame, a centred heading and an open neutral reading sheet. |
-| [Oatline](oats-oatline-comms-01.txt) | 1 | A tall smartphone with a pill-shaped contact portrait, a slim top camera and soft incoming bubbles. |
-| [Milling Messenger](oats-milling-messenger-comms-02.txt) | 0 | A square e-ink communicator with a broad clock strip, ruled message cards and a grain-shaped navigation rocker. |
-| [Grain Frequency](oats-grain-frequency-comms-03.txt) | 1 | A narrow pocket handset with a ribbed speaker, a small contact window and a round tuning control beneath the chat. |
-| [Soak Signal](oats-soak-signal-comms-04.txt) | 1 | A lock-screen phone with a large clock above a wide wallpaper portrait and translucent-looking neutral notification cards. |
-| [Porridge Pocket](oats-porridge-pocket-comms-05.txt) | 0 | A landscape pocket tablet with a stylus groove, a left-side clock and a separate recessed conversation pane. |
-| [Groatlet](oats-groatlet-bud-01.txt) | 0 | A miniature reply inside a grain-like frame, with a small indented seam and a short centred heading. |
-| [Husk](oats-husk-bud-02.txt) | 1 | A tiny portrait peeks from a split sleeve beside a compact reply and a narrow member-colour edge. |
-| [Branlet](oats-branlet-bud-03.txt) | 0 | A short square note with a scattered-flake corner, a divided title band and a crisp lower rule. |
-| [Flakefold](oats-flakefold-bud-04.txt) | 2 | Two tiny pressed-oat portraits share a folded tab above a compact open reply. |
-| [Aftergrain](oats-aftergrain-bud-05.txt) | 0 | A miniature horizontal note with a three-colour stitched top edge and a small offset signature panel. |
 
 ## Comms
 
 | Design | Starting GIFs | Layout |
 | --- | ---: | --- |
-| [Millstone Letters](oats-millstone-letters-thread-01.txt) | 1 | A portrait sits in a finely grooved millstone above an oversized serif title and a generous reading column. |
-| [Rolled Reverie](oats-rolled-reverie-thread-02.txt) | 2 | Two pressed-grain portrait windows cross a broad colour band on a page with rolled paper edges. |
-| [Kilnlight Folio](oats-kilnlight-folio-thread-03.txt) | 0 | An angular mill-house folio with a monumental title, offset registration marks and a bold ruled header. |
-| [Oatmilk Almanac](oats-oatmilk-almanac-thread-04.txt) | 1 | A folded-carton crown tops a photographic label, a side-set title and a softly framed writing panel. |
-| [Harvest Table](oats-harvest-table-thread-05.txt) | 2 | Two small saucer portraits sit above a woven placemat frame, a centred heading and an open neutral reading sheet. |
 | [Oatline](oats-oatline-comms-01.txt) | 1 | A tall smartphone with a pill-shaped contact portrait, a slim top camera and soft incoming bubbles. |
 | [Milling Messenger](oats-milling-messenger-comms-02.txt) | 0 | A square e-ink communicator with a broad clock strip, ruled message cards and a grain-shaped navigation rocker. |
 | [Grain Frequency](oats-grain-frequency-comms-03.txt) | 1 | A narrow pocket handset with a ribbed speaker, a small contact window and a round tuning control beneath the chat. |
 | [Soak Signal](oats-soak-signal-comms-04.txt) | 1 | A lock-screen phone with a large clock above a wide wallpaper portrait and translucent-looking neutral notification cards. |
 | [Porridge Pocket](oats-porridge-pocket-comms-05.txt) | 0 | A landscape pocket tablet with a stylus groove, a left-side clock and a separate recessed conversation pane. |
-| [Groatlet](oats-groatlet-bud-01.txt) | 0 | A miniature reply inside a grain-like frame, with a small indented seam and a short centred heading. |
-| [Husk](oats-husk-bud-02.txt) | 1 | A tiny portrait peeks from a split sleeve beside a compact reply and a narrow member-colour edge. |
-| [Branlet](oats-branlet-bud-03.txt) | 0 | A short square note with a scattered-flake corner, a divided title band and a crisp lower rule. |
-| [Flakefold](oats-flakefold-bud-04.txt) | 2 | Two tiny pressed-oat portraits share a folded tab above a compact open reply. |
-| [Aftergrain](oats-aftergrain-bud-05.txt) | 0 | A miniature horizontal note with a three-colour stitched top edge and a small offset signature panel. |
 
 ## Buds
 
 | Design | Starting GIFs | Layout |
 | --- | ---: | --- |
-| [Millstone Letters](oats-millstone-letters-thread-01.txt) | 1 | A portrait sits in a finely grooved millstone above an oversized serif title and a generous reading column. |
-| [Rolled Reverie](oats-rolled-reverie-thread-02.txt) | 2 | Two pressed-grain portrait windows cross a broad colour band on a page with rolled paper edges. |
-| [Kilnlight Folio](oats-kilnlight-folio-thread-03.txt) | 0 | An angular mill-house folio with a monumental title, offset registration marks and a bold ruled header. |
-| [Oatmilk Almanac](oats-oatmilk-almanac-thread-04.txt) | 1 | A folded-carton crown tops a photographic label, a side-set title and a softly framed writing panel. |
-| [Harvest Table](oats-harvest-table-thread-05.txt) | 2 | Two small saucer portraits sit above a woven placemat frame, a centred heading and an open neutral reading sheet. |
-| [Oatline](oats-oatline-comms-01.txt) | 1 | A tall smartphone with a pill-shaped contact portrait, a slim top camera and soft incoming bubbles. |
-| [Milling Messenger](oats-milling-messenger-comms-02.txt) | 0 | A square e-ink communicator with a broad clock strip, ruled message cards and a grain-shaped navigation rocker. |
-| [Grain Frequency](oats-grain-frequency-comms-03.txt) | 1 | A narrow pocket handset with a ribbed speaker, a small contact window and a round tuning control beneath the chat. |
-| [Soak Signal](oats-soak-signal-comms-04.txt) | 1 | A lock-screen phone with a large clock above a wide wallpaper portrait and translucent-looking neutral notification cards. |
-| [Porridge Pocket](oats-porridge-pocket-comms-05.txt) | 0 | A landscape pocket tablet with a stylus groove, a left-side clock and a separate recessed conversation pane. |
 | [Groatlet](oats-groatlet-bud-01.txt) | 0 | A miniature reply inside a grain-like frame, with a small indented seam and a short centred heading. |
 | [Husk](oats-husk-bud-02.txt) | 1 | A tiny portrait peeks from a split sleeve beside a compact reply and a narrow member-colour edge. |
 | [Branlet](oats-branlet-bud-03.txt) | 0 | A short square note with a scattered-flake corner, a divided title band and a crisp lower rule. |
@@ -94,7 +68,7 @@ This collection lives in `oats/millhouse` to preserve the separate Oats work alr
 
 ## Source and verification
 
-The snippets load [oats-millhouse-v1.css](oats-millhouse-v1.css) through jsDelivr at the immutable GitHub revision recorded in [stylesheet-revision.txt](stylesheet-revision.txt). The preview embeds the same CSS. No separate JavaScript injection is needed on the forum.
+The snippets load [oats-millhouse-standalone-v1.css](oats-millhouse-standalone-v1.css) directly through jsDelivr on the published main branch. The preview embeds the same CSS. No separate JavaScript injection is needed on the forum.
 
 Run `node oats/millhouse/build.cjs` from the repository root to rebuild all fifteen snippets and the preview. `designs.json` holds the names and starting layouts, while `oats-model.js` generates posting markup. `oats-editor.js` and `oats-preview.css` are used only by the preview.
 
