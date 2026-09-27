@@ -7,7 +7,7 @@ Isaiah & Max’s 11 earlier Bingsu designs, kept separately from the newer 15-de
 | Type | Designs |
 | --- | --- |
 | Threads | Classic Twin, Single Scoop, Soft Scoop, Snowglobe Scroll, Layered Bowl |
-| Comms | Original Bingsu comms |
+| Comms | Snowcap Messenger |
 | Buds | Snowcap, Sprig, Dewdrop, Duet, Quick Note |
 
 The package contains individual posting snippets and their supporting stylesheets. Its forum masterpost shows each design above its copyable code; the browser preview includes Copy buttons. Examples retain sample writing while the posting code uses concise writing markers. Original hosted stylesheet links are preserved, so existing posts keep working.

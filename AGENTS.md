@@ -2,6 +2,9 @@
 
 These are the user's defaults for new templates and requested revisions in this project.
 
+- Give every individual design a unique public name across the whole catalogue, including thread, comms and bud variants. Keep established filenames and CSS identifiers stable. `template-names.json` records renamed designs by source file and block; keep source labels, editor data and forum previews in agreement. The forum builder rejects duplicate names.
+- Chocolate member icons belong in the footer emblem, clear of character GIFs and writing. Keep Gianduja portraits in an explicit grid and its decorative ribbon within the card edge.
+
 - Forum masterposts use centered collection headings in `[align=center][H1]COLLECTION[/H1][/align]` format. Show each design’s numbered name directly above its rendered example and copyable code, without a design description or introductory instructions. Keep the corresponding browser previews equally concise; preserve the template HTML itself.
 - Keep forum snippets short: host shared CSS in this repository and include one stylesheet link inside each `[dohtml]` block. Put editable names, URLs, GIFs, timestamps and text before decorative markup and stylesheet links where possible.
 - Use plain `<p>` elements for separate comms messages. Support successive opening `<p>` tags without requiring closing tags in the message container. Use ordinary paragraph markup for writing; avoid requiring a repeated class or div for every message.

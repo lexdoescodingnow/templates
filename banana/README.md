@@ -18,11 +18,11 @@ Five threads, five comms and five buds. GIFs follow the composition: portrait pa
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Keepsake](banana-comms-snippet.txt) | 1 | The original Banana phone with its contact header and incoming bubbles. |
-| [Cameo](banana-comms-cameo.txt) | 1 | A centred circular contact GIF and rounded message bubbles. |
-| [Ribbon](banana-comms-ribbon.txt) | 1 | A coloured header rule, round avatar and edged message bubbles. |
-| [Canopy](banana-comms-canopy.txt) | 1 | An arched contact banner inside a curved phone frame. |
-| [Postcard](banana-comms-postcard.txt) | 1 | A compact phone with a portrait on the right and a round home button. |
+| [Banana Hotline](banana-comms-snippet.txt) | 1 | The original Banana phone with its contact header and incoming bubbles. |
+| [Peel Signal](banana-comms-cameo.txt) | 1 | A centred circular contact GIF and rounded message bubbles. |
+| [Silken Ping](banana-comms-ribbon.txt) | 1 | A coloured header rule, round avatar and edged message bubbles. |
+| [Leafline](banana-comms-canopy.txt) | 1 | An arched contact banner inside a curved phone frame. |
+| [Banana Mail](banana-comms-postcard.txt) | 1 | A compact phone with a portrait on the right and a round home button. |
 
 ## Buds
 
@@ -51,6 +51,19 @@ All current snippets use the fresh `banana-media-v2.css` stylesheet. Older CSS f
 ## Revision checks
 
 The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Keepsake | Compact Thread Snippets | thread | [banana-compact-thread-snippets.txt](banana-compact-thread-snippets.txt) · block 1 |
+| Peel Signal | Cameo | comms | [banana-comms-cameo.txt](banana-comms-cameo.txt) · block 1 |
+| Leafline | Canopy | comms | [banana-comms-canopy.txt](banana-comms-canopy.txt) · block 1 |
+| Banana Mail | Postcard | comms | [banana-comms-postcard.txt](banana-comms-postcard.txt) · block 1 |
+| Silken Ping | Ribbon | comms | [banana-comms-ribbon.txt](banana-comms-ribbon.txt) · block 1 |
+| Banana Hotline | Keepsake | comms | [banana-comms-snippet.txt](banana-comms-snippet.txt) · block 1 |
 
 ## Forum-ready collection
 

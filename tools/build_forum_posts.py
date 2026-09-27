@@ -1,5 +1,6 @@
 """Build preview-above-code forum posts from the canonical snippet inventory."""
 from pathlib import Path
+import unicodedata
 import re,json,html,collections,zipfile
 from forum_inventory import ROOT,inventory,expand_css
 from forum_presentation import presentation
@@ -7,6 +8,9 @@ from build_standalone_styles import refresh_standalone
 refresh_standalone()
 OUT=ROOT/'forum-posts';OUT.mkdir(exist_ok=True)
 rows=inventory();groups=collections.defaultdict(list)
+name_keys=[unicodedata.normalize('NFKD',r['name']).encode('ascii','ignore').decode().casefold() for r in rows]
+if len(name_keys)!=len(set(name_keys)):
+ raise ValueError('Template names must be unique across all collections; update template-names.json before publishing.')
 for r in rows:
  collection=r['folder']
  if collection=='bingsu' and 'bgs' not in r['classes'].split():collection='bingsu-legacy'

@@ -18,11 +18,11 @@ Five threads, five comms and five buds. GIFs follow the composition: portrait pa
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Keepsake](banana-comms-snippet.txt) | 1 | The original Banana phone with its contact header and incoming bubbles. |
-| [Cameo](banana-comms-cameo.txt) | 1 | A centred circular contact GIF and rounded message bubbles. |
-| [Ribbon](banana-comms-ribbon.txt) | 1 | A coloured header rule, round avatar and edged message bubbles. |
-| [Canopy](banana-comms-canopy.txt) | 1 | An arched contact banner inside a curved phone frame. |
-| [Postcard](banana-comms-postcard.txt) | 1 | A compact phone with a portrait on the right and a round home button. |
+| [Banana Hotline](banana-comms-snippet.txt) | 1 | The original Banana phone with its contact header and incoming bubbles. |
+| [Peel Signal](banana-comms-cameo.txt) | 1 | A centred circular contact GIF and rounded message bubbles. |
+| [Silken Ping](banana-comms-ribbon.txt) | 1 | A coloured header rule, round avatar and edged message bubbles. |
+| [Leafline](banana-comms-canopy.txt) | 1 | An arched contact banner inside a curved phone frame. |
+| [Banana Mail](banana-comms-postcard.txt) | 1 | A compact phone with a portrait on the right and a round home button. |
 
 ## Buds
 

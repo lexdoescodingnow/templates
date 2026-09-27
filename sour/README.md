@@ -27,21 +27,21 @@ Five threads, five comms and five buds. GIFs follow the composition: portrait pa
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Sherbet](sour-sherbet-comms-01.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Fizz](sour-fizz-comms-02.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Ribbons](sour-ribbons-comms-03.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Bonbon](sour-bonbon-comms-04.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Afterglow](sour-afterglow-comms-05.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Zingline](sour-sherbet-comms-01.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Fizzwire](sour-fizz-comms-02.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Ribbon Relay](sour-ribbons-comms-03.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Bonbon Buzz](sour-bonbon-comms-04.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Afterhours Lime](sour-afterglow-comms-05.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
 
 ## Buds
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Sherbet](sour-sherbet-bud-01.txt) | 0 | A tiny crimped sachet note, with room for the words alone. |
-| [Fizz](sour-fizz-bud-02.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
-| [Ribbons](sour-ribbons-bud-03.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
-| [Bonbon](sour-bonbon-bud-04.txt) | 2 | Twisted wrapper ends, oval candy windows and scattered sugar grains. |
-| [Afterglow](sour-afterglow-bud-05.txt) | 0 | A miniature crystalline note with no portrait rail. |
+| [Sherbet Speck](sour-sherbet-bud-01.txt) | 0 | A tiny crimped sachet note, with room for the words alone. |
+| [Fizzy Drop](sour-fizz-bud-02.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
+| [Sour Twist](sour-ribbons-bud-03.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
+| [Sugar Pucker](sour-bonbon-bud-04.txt) | 2 | Twisted wrapper ends, oval candy windows and scattered sugar grains. |
+| [Sugar Twilight](sour-afterglow-bud-05.txt) | 0 | A miniature crystalline note with no portrait rail. |
 
 ## Editing and integration
 
@@ -60,6 +60,23 @@ All current snippets use the fresh `sour-media-v2.css` stylesheet. Older CSS fil
 ## Revision checks
 
 The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Afterhours Lime | Afterglow | comms | [sour-afterglow-comms-05.txt](sour-afterglow-comms-05.txt) · block 1 |
+| Bonbon Buzz | Bonbon | comms | [sour-bonbon-comms-04.txt](sour-bonbon-comms-04.txt) · block 1 |
+| Fizzwire | Fizz | comms | [sour-fizz-comms-02.txt](sour-fizz-comms-02.txt) · block 1 |
+| Ribbon Relay | Ribbons | comms | [sour-ribbons-comms-03.txt](sour-ribbons-comms-03.txt) · block 1 |
+| Zingline | Sherbet | comms | [sour-sherbet-comms-01.txt](sour-sherbet-comms-01.txt) · block 1 |
+| Sugar Twilight | Afterglow | bud | [sour-afterglow-bud-05.txt](sour-afterglow-bud-05.txt) · block 1 |
+| Sugar Pucker | Bonbon | bud | [sour-bonbon-bud-04.txt](sour-bonbon-bud-04.txt) · block 1 |
+| Fizzy Drop | Fizz | bud | [sour-fizz-bud-02.txt](sour-fizz-bud-02.txt) · block 1 |
+| Sour Twist | Ribbons | bud | [sour-ribbons-bud-03.txt](sour-ribbons-bud-03.txt) · block 1 |
+| Sherbet Speck | Sherbet | bud | [sour-sherbet-bud-01.txt](sour-sherbet-bud-01.txt) · block 1 |
 
 ## Forum-ready collection
 

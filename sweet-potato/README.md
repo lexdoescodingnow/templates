@@ -44,6 +44,18 @@ This directory contains the current JCink-ready Sweet Potato template family.
 
 Superseded thread, Comms, and Bud files have been removed. The three canonical snippet files are the only examples intended for forum use.
 
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Ember Page | Standard | thread | [thread-snippets.txt](thread-snippets.txt) · block 1 |
+| Hearth Signal | Sent | comms | [comms-snippets.txt](comms-snippets.txt) · block 1 |
+| Harvest Reply | Received | comms | [comms-snippets.txt](comms-snippets.txt) · block 2 |
+| Roasted Crumb | Standard | bud | [buds-snippets.txt](buds-snippets.txt) · block 1 |
+| Copper Portrait | Portrait | bud | [buds-snippets.txt](buds-snippets.txt) · block 2 |
+
 ## Forum-ready collection
 
 [Preview-above-code forum masterpost](../forum-posts/sweet-potato-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/sweet-potato-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

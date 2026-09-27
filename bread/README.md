@@ -75,6 +75,18 @@ The [Legacy collection](LEGACY.md) contains all 27 earlier designs, including th
 
 `bread-second-rise-v1.css` contains the scoped posting styles. `second-rise-build.cjs` generates all 15 snippets, the standalone preview, this guide and the forum showcase. `second-rise-preview.css` and `second-rise-preview.js` are preview-only sources. Rebuild with `node bread/second-rise-build.cjs`, then `python tools/build_forum_posts.py` and `python tools/build_bread_repositories.py` to refresh the separate forum collections and packages.
 
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Daily Loaf | Standard | thread | [bread-thread-snippet.txt](bread-thread-snippet.txt) · block 1 |
+| Warm Dispatch | Sent | comms | [bread-comms-snippet.txt](bread-comms-snippet.txt) · block 1 |
+| Bakery Inbox | Received | comms | [bread-comms-snippet.txt](bread-comms-snippet.txt) · block 2 |
+| Crumb Seal | Standard | bud | [bread-buds-snippets.txt](bread-buds-snippets.txt) · block 1 |
+| Flour Portrait | Portrait | bud | [bread-buds-snippets.txt](bread-buds-snippets.txt) · block 2 |
+
 ## Forum-ready collection
 
 [Preview-above-code forum masterpost](../forum-posts/bread-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/bread-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

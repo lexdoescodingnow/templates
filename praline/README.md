@@ -31,7 +31,7 @@ Download the HTML preview and open it in your browser to see and edit the collec
 
 | Design | Starting GIFs | Layout |
 | --- | ---: | --- |
-| [Glacé Chat](praline-glace-chat-comms-01.txt) | 1 | A softly squared smartphone with a broad contact-photo header, a tiny offset camera and rounded received messages. |
+| [Caramel Switch](praline-glace-chat-comms-01.txt) | 1 | A softly squared smartphone with a broad contact-photo header, a tiny offset camera and rounded received messages. |
 | [Prali-Slide](praline-prali-slide-comms-02.txt) | 0 | A compact slider handset with a recessed chat screen, a ridged sliding joint and a visible numeric keypad. |
 | [Bonbon Mail](praline-bonbon-mail-comms-03.txt) | 2 | A small desktop messenger window with a twin-avatar toolbar, window controls and neatly stacked chat bubbles. |
 | [Sucrose Touch](praline-sucrose-touch-comms-04.txt) | 1 | An angular slim phone with a contact tile, outlined message bubbles and an off-centre navigation wheel. |
@@ -72,6 +72,14 @@ All snippets contain one jsDelivr link to [praline-atelier-v1.css](praline-ateli
 Run `node praline/build.cjs` from the repository root to regenerate all fifteen snippets and the standalone preview. `designs.json` defines the catalogue, `praline-model.js` builds posting markup, and `praline-editor.js` powers the preview controls.
 
 [VALIDATION.md](VALIDATION.md) records the completed checks and their limits. Browser visual rendering and posting on the live forum remain unverified.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Caramel Switch | Glacé Chat | comms | [praline-glace-chat-comms-01.txt](praline-glace-chat-comms-01.txt) · block 1 |
 
 ## Forum-ready collection
 

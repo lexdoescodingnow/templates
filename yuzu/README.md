@@ -32,7 +32,7 @@ Download the preview HTML and open it in a browser to edit and compare the desig
 | [Bathlight](yuzu-bathlight-comms-04.txt) | 1 | A water-resistant phone with a tall carry loop, wide contact photograph and a ribbed lower bumper. |
 | [Peel Pager](yuzu-peel-pager-comms-05.txt) | 0 | A wide pocket pager with a left readout rail, squared message display and two raised hardware keys. |
 | [Pipnote](yuzu-pipnote-bud-01.txt) | 0 | A miniature tiled corner card with a seed-shaped punctuation mark and a crisp little reply. |
-| [Rindlet](yuzu-rindlet-bud-02.txt) | 1 | A narrow portrait tucked into a folded corner pocket, with a compact name tab and a quiet reply beside it. |
+| [Yuzu Fleck](yuzu-rindlet-bud-02.txt) | 1 | A narrow portrait tucked into a folded corner pocket, with a compact name tab and a quiet reply beside it. |
 | [Peel Petal](yuzu-peel-petal-bud-03.txt) | 0 | A tiny open note held between curled peel brackets, with a softly indented line of writing. |
 | [Yuzu Musubi](yuzu-yuzu-musubi-bud-04.txt) | 2 | Two miniature photographs wrapped into one cloth parcel, a small crossed knot and a short shared note. |
 | [Afterzest](yuzu-afterzest-bud-05.txt) | 0 | A slim tear-off slip with an offset title, three tiny fruit marks and a perforated trailing edge. |
@@ -52,7 +52,7 @@ Download the preview HTML and open it in a browser to edit and compare the desig
 | [Bathlight](yuzu-bathlight-comms-04.txt) | 1 | A water-resistant phone with a tall carry loop, wide contact photograph and a ribbed lower bumper. |
 | [Peel Pager](yuzu-peel-pager-comms-05.txt) | 0 | A wide pocket pager with a left readout rail, squared message display and two raised hardware keys. |
 | [Pipnote](yuzu-pipnote-bud-01.txt) | 0 | A miniature tiled corner card with a seed-shaped punctuation mark and a crisp little reply. |
-| [Rindlet](yuzu-rindlet-bud-02.txt) | 1 | A narrow portrait tucked into a folded corner pocket, with a compact name tab and a quiet reply beside it. |
+| [Yuzu Fleck](yuzu-rindlet-bud-02.txt) | 1 | A narrow portrait tucked into a folded corner pocket, with a compact name tab and a quiet reply beside it. |
 | [Peel Petal](yuzu-peel-petal-bud-03.txt) | 0 | A tiny open note held between curled peel brackets, with a softly indented line of writing. |
 | [Yuzu Musubi](yuzu-yuzu-musubi-bud-04.txt) | 2 | Two miniature photographs wrapped into one cloth parcel, a small crossed knot and a short shared note. |
 | [Afterzest](yuzu-afterzest-bud-05.txt) | 0 | A slim tear-off slip with an offset title, three tiny fruit marks and a perforated trailing edge. |
@@ -72,7 +72,7 @@ Download the preview HTML and open it in a browser to edit and compare the desig
 | [Bathlight](yuzu-bathlight-comms-04.txt) | 1 | A water-resistant phone with a tall carry loop, wide contact photograph and a ribbed lower bumper. |
 | [Peel Pager](yuzu-peel-pager-comms-05.txt) | 0 | A wide pocket pager with a left readout rail, squared message display and two raised hardware keys. |
 | [Pipnote](yuzu-pipnote-bud-01.txt) | 0 | A miniature tiled corner card with a seed-shaped punctuation mark and a crisp little reply. |
-| [Rindlet](yuzu-rindlet-bud-02.txt) | 1 | A narrow portrait tucked into a folded corner pocket, with a compact name tab and a quiet reply beside it. |
+| [Yuzu Fleck](yuzu-rindlet-bud-02.txt) | 1 | A narrow portrait tucked into a folded corner pocket, with a compact name tab and a quiet reply beside it. |
 | [Peel Petal](yuzu-peel-petal-bud-03.txt) | 0 | A tiny open note held between curled peel brackets, with a softly indented line of writing. |
 | [Yuzu Musubi](yuzu-yuzu-musubi-bud-04.txt) | 2 | Two miniature photographs wrapped into one cloth parcel, a small crossed knot and a short shared note. |
 | [Afterzest](yuzu-afterzest-bud-05.txt) | 0 | A slim tear-off slip with an offset title, three tiny fruit marks and a perforated trailing edge. |
@@ -124,6 +124,14 @@ Choose a design or **View all 15**. The editor supports names, links, title/stat
 Run `node yuzu/build.cjs` from the repository root to regenerate the snippets and standalone preview. `designs.json` holds the catalogue, and `yuzu-model.js` supplies the default content and markup. The editor interface follows the existing collections; the template layouts and motif drawings are new for Yuzu.
 
 Run `NODE_PATH=/path/to/node_modules node yuzu/validate.cjs` with `jsdom` and `css-tree` available. [VALIDATION.md](VALIDATION.md) records the completed checks and the limits of this session.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Yuzu Fleck | Rindlet | bud | [yuzu-rindlet-bud-02.txt](yuzu-rindlet-bud-02.txt) · block 1 |
 
 ## Forum-ready collection
 

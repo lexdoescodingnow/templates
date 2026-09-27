@@ -22,7 +22,7 @@ Download the HTML preview and open it in your browser to select, edit and copy a
 | Design | Starting GIFs | Layout |
 | --- | ---: | --- |
 | [Suture Study](nectarine-suture-study-thread-01.txt) | 1 | A tall portrait and a split nectarine contour share the opening, above an open page with a fine seam running down its edge. |
-| [Cheek to Cheek](nectarine-cheek-to-cheek-thread-02.txt) | 2 | Two differently curved portrait panels meet at an offset seam, above a broad italic title and a low, softly framed writing panel. |
+| [Peachskin Duet](nectarine-cheek-to-cheek-thread-02.txt) | 2 | Two differently curved portrait panels meet at an offset seam, above a broad italic title and a low, softly framed writing panel. |
 | [Freestone Journal](nectarine-freestone-journal-thread-03.txt) | 0 | A large typographic opening rests inside a broken fruit outline, with a small produce seal and a clean inset journal page. |
 | [Nectar Current](nectarine-nectar-current-thread-04.txt) | 1 | A fine flowing contour travels around a spacious letter and a panoramic portrait at its foot, with a small drop-shaped finish. |
 | [Espalier Letters](nectarine-espalier-letters-thread-05.txt) | 0 | An open trellis masthead holds the title between asymmetric crossing bars, above an unboxed reading area and a three-part signature rule. |
@@ -72,6 +72,14 @@ Blue Hour's `html[color-mode="light"]` and `html[color-mode="dark"]` set the neu
 `designs.json` and `nectarine-model.js` supply all fifteen snippets and the editor. Run `node nectarine/build.cjs` from the repository root to regenerate them. Each posting snippet links to `nectarine-sunskin-v1.css` at the immutable revision in `stylesheet-revision.txt`.
 
 [Validation details](VALIDATION.md). Browser rendering and a live JCink post remain unverified because this session's browser cannot open the local preview.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Peachskin Duet | Cheek to Cheek | thread | [nectarine-cheek-to-cheek-thread-02.txt](nectarine-cheek-to-cheek-thread-02.txt) · block 1 |
 
 ## Forum-ready collection
 

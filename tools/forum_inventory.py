@@ -69,10 +69,16 @@ def inventory():
       row.update(name=d['name'],description=d.get('description',''),type=d.get('type',row['type']))
   # Existing documentation carries the names of collections without a JSON manifest.
   for md in sorted(folder.glob('*.md'),key=lambda p:(p.name=='README.md',p.name)):
-   for line in md.read_text().splitlines():
+   metadata=re.sub(r'\n## Design names\n.*?(?=\n## |\Z)','',md.read_text(),flags=re.S)
+   for line in metadata.splitlines():
     if Path(row['source']).name in line and line.startswith('|'):
      z=re.search(r'\[([^\]]+)\]\('+re.escape(Path(row['source']).name)+r'\)',line)
      if z:row['name']=re.sub(r'^\d+\s*·\s*','',z[1]);row['description']=line.split('|')[-2].strip()
+ names=json.loads((ROOT/'template-names.json').read_text()) if (ROOT/'template-names.json').exists() else []
+ by_source={(r['source'],r['block']):r['name'] for r in names}
+ for row in items.values():
+  key=(row['source'],row['block'])
+  if key in by_source:row['name']=by_source[key]
  return list(items.values())
 if __name__=='__main__':
  rows=inventory();Path('/tmp/template-inventory.json').write_text(json.dumps(rows,indent=2));print(json.dumps({'templates':len(rows),'collections':dict(sorted(collections.Counter(r['folder'] for r in rows).items()))},indent=2))

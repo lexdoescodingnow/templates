@@ -46,7 +46,7 @@ Download the preview HTML and open it in a browser to browse, edit and copy all 
 | [Groat](oats-groat-bud-02.txt) | 1 | A miniature two-column reply with a squared portrait tile and a member-colour border that turns around its lower edge. |
 | [Chafflet](oats-chafflet-bud-03.txt) | 0 | A small folded-paper reply with three stitched colour bars and an angled upper corner. |
 | [Twin Flakes](oats-twin-flakes-bud-04.txt) | 2 | A short reply above two tilted clipped portrait tiles, finished with a small name line between the images and heading. |
-| [Milkdrop](oats-milkdrop-bud-05.txt) | 0 | A tiny asymmetric note with a tapered corner, a narrow side title and three rolled-grain marks. |
+| [Oatdrop](oats-milkdrop-bud-05.txt) | 0 | A tiny asymmetric note with a tapered corner, a narrow side title and three rolled-grain marks. |
 
 ## Editing
 
@@ -79,6 +79,14 @@ All posting snippets load [oats-harvest-v1.css](oats-harvest-v1.css) from jsDeli
 Run `node oats/build.cjs` from the repository root to regenerate the fifteen snippets and the standalone preview. `designs.json` lists the collection, `oats-model.js` builds the markup, and `oats-editor.js` supplies the preview controls.
 
 [VALIDATION.md](VALIDATION.md) records the source and editor checks. Rendered appearance and a live JCink post have not been tested.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Oatdrop | Milkdrop | bud | [oats-milkdrop-bud-05.txt](oats-milkdrop-bud-05.txt) · block 1 |
 
 ## Forum-ready collection
 

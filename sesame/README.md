@@ -32,7 +32,7 @@ Open any named `.txt` file below and select **Copy raw file** on GitHub. Paste t
 | [Hullkiss](sesame-hullkiss-bud-01.txt) | 0 | A tiny pointed seed envelope with a low-set title, two-colour edge and a short reply. |
 | [Ivory Speck](sesame-ivory-speck-bud-02.txt) | 1 | A horizontal keepsake card with a small seed portrait and delicate dotted stitching. |
 | [Goma Glint](sesame-goma-glint-bud-03.txt) | 0 | A miniature square poem tile with a stepped geometric corner and a compact serif reply. |
-| [Twin Kernels](sesame-twin-kernels-bud-04.txt) | 2 | Two little seed portraits flank the heading of a rounded shared note. |
+| [Double Sesame](sesame-twin-kernels-bud-04.txt) | 2 | Two little seed portraits flank the heading of a rounded shared note. |
 | [Aftertoast](sesame-aftertoast-bud-05.txt) | 1 | A slim folded bookmark with a panoramic image, vertical edge marks and an intimate reply. |
 
 ## Comms
@@ -52,7 +52,7 @@ Open any named `.txt` file below and select **Copy raw file** on GitHub. Paste t
 | [Hullkiss](sesame-hullkiss-bud-01.txt) | 0 | A tiny pointed seed envelope with a low-set title, two-colour edge and a short reply. |
 | [Ivory Speck](sesame-ivory-speck-bud-02.txt) | 1 | A horizontal keepsake card with a small seed portrait and delicate dotted stitching. |
 | [Goma Glint](sesame-goma-glint-bud-03.txt) | 0 | A miniature square poem tile with a stepped geometric corner and a compact serif reply. |
-| [Twin Kernels](sesame-twin-kernels-bud-04.txt) | 2 | Two little seed portraits flank the heading of a rounded shared note. |
+| [Double Sesame](sesame-twin-kernels-bud-04.txt) | 2 | Two little seed portraits flank the heading of a rounded shared note. |
 | [Aftertoast](sesame-aftertoast-bud-05.txt) | 1 | A slim folded bookmark with a panoramic image, vertical edge marks and an intimate reply. |
 
 ## Buds
@@ -72,7 +72,7 @@ Open any named `.txt` file below and select **Copy raw file** on GitHub. Paste t
 | [Hullkiss](sesame-hullkiss-bud-01.txt) | 0 | A tiny pointed seed envelope with a low-set title, two-colour edge and a short reply. |
 | [Ivory Speck](sesame-ivory-speck-bud-02.txt) | 1 | A horizontal keepsake card with a small seed portrait and delicate dotted stitching. |
 | [Goma Glint](sesame-goma-glint-bud-03.txt) | 0 | A miniature square poem tile with a stepped geometric corner and a compact serif reply. |
-| [Twin Kernels](sesame-twin-kernels-bud-04.txt) | 2 | Two little seed portraits flank the heading of a rounded shared note. |
+| [Double Sesame](sesame-twin-kernels-bud-04.txt) | 2 | Two little seed portraits flank the heading of a rounded shared note. |
 | [Aftertoast](sesame-aftertoast-bud-05.txt) | 1 | A slim folded bookmark with a panoramic image, vertical edge marks and an intimate reply. |
 
 ## Editing
@@ -98,6 +98,14 @@ Blue Hour’s `html[color-mode="light"]` and `html[color-mode="dark"]` take prec
 `designs.json` and `sesame-model.js` generate the named snippets. Run `node sesame/build.cjs` from the repository root to rebuild them and the standalone editor. The posting stylesheet is pinned to the immutable GitHub commit recorded in `stylesheet-revision.txt`.
 
 [Validation record](VALIDATION.md).
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Double Sesame | Twin Kernels | bud | [sesame-twin-kernels-bud-04.txt](sesame-twin-kernels-bud-04.txt) · block 1 |
 
 ## Forum-ready collection
 

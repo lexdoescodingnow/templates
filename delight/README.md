@@ -31,7 +31,7 @@ Five threads, five comms and five buds. GIFs follow the composition: portrait pa
 | [Sugar Dial](delight-sugar-dial-comms-02.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
 | [Rosewire](delight-rosewire-comms-03.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
 | [Whip Whisper](delight-whip-whisper-comms-04.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Sweet Frequency](delight-sweet-frequency-comms-05.txt) | 0 | A colour-rimmed phone with a text contact panel and fluid message bubbles. |
+| [Whipped Whisper](delight-sweet-frequency-comms-05.txt) | 0 | A colour-rimmed phone with a text contact panel and fluid message bubbles. |
 
 ## Buds
 
@@ -60,6 +60,14 @@ All current snippets use the fresh `delight-media-v2.css` stylesheet. Older CSS 
 ## Revision checks
 
 The September 2026 GIF revision passed checks for all 180 posting snippets, 135 editor design selections, 540 zero/one/two-image editing states, 45 static copy panels and the twelve stylesheets. Writing and placeholders were preserved. The browser could not open local previews, so visual rendering and live JCink posting remain unverified.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Whipped Whisper | Sweet Frequency | comms | [delight-sweet-frequency-comms-05.txt](delight-sweet-frequency-comms-05.txt) · block 1 |
 
 ## Forum-ready collection
 

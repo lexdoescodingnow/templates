@@ -29,10 +29,10 @@ Open any named `.txt` file below, use GitHub’s **Copy raw file**, and paste th
 
 | Design | Default GIFs | Layout |
 | --- | ---: | --- |
-| [Palmline](tropical-palmline-comms-01.txt) | 1 | A slim island smartphone with a palm-etched case, contact portrait and incoming bubbles. |
-| [Lagoon Link](tropical-lagoon-link-comms-02.txt) | 2 | A landscape dual-contact messenger with a raised camera rail and scalloped message panel. |
+| [Frond Frequency](tropical-palmline-comms-01.txt) | 1 | A slim island smartphone with a palm-etched case, contact portrait and incoming bubbles. |
+| [Atoll Connection](tropical-lagoon-link-comms-02.txt) | 2 | A landscape dual-contact messenger with a raised camera rail and scalloped message panel. |
 | [Tradewind Radio](tropical-tradewind-radio-comms-03.txt) | 1 | A rugged satellite messenger with an aerial, an inset contact screen and a rotary control. |
-| [Cabana Chat](tropical-cabana-chat-comms-04.txt) | 0 | An image-free smart display with a shutter-grille speaker and softly tinted message cards. |
+| [Lanai Radio](tropical-cabana-chat-comms-04.txt) | 0 | An image-free smart display with a shutter-grille speaker and softly tinted message cards. |
 | [Atoll OS](tropical-atoll-os-comms-05.txt) | 1 | A circular camera island and full-width contact image inside an angular protective phone case. |
 
 ## Buds
@@ -82,6 +82,16 @@ Explicit `html[color-mode="light"]` and `html[color-mode="dark"]` take precedenc
 Run `node tropical/build.cjs` from the repository root to regenerate all posting snippets and the standalone preview. `designs.json` defines the names and layouts; `tropical-model.js` defines markup and placeholders. The editor retains the established collection workflow.
 
 Run `NODE_PATH=/path/to/dependencies/node_modules node tropical/validate.cjs` with `jsdom` and `css-tree` installed to check snippet structure and editor behaviour. See [VALIDATION.md](VALIDATION.md) for the checks performed and the visual-testing limitation.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Lanai Radio | Cabana Chat | comms | [tropical-cabana-chat-comms-04.txt](tropical-cabana-chat-comms-04.txt) · block 1 |
+| Atoll Connection | Lagoon Link | comms | [tropical-lagoon-link-comms-02.txt](tropical-lagoon-link-comms-02.txt) · block 1 |
+| Frond Frequency | Palmline | comms | [tropical-palmline-comms-01.txt](tropical-palmline-comms-01.txt) · block 1 |
 
 ## Forum-ready collection
 

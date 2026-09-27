@@ -11,28 +11,28 @@ Five threads, five comms and five buds for Jake & River. Member colours now lead
 | [Ganache](chocolate-ganache-thread-01.txt) | 2 | Melted edges · member-colour filigree · portrait arches |
 | [Praliné](chocolate-praline-thread-02.txt) | 1 | Folded foil · chocolate squares · crisp frame |
 | [Truffle](chocolate-truffle-thread-03.txt) | 1 | Rounded silhouettes · piped borders · circular portrait |
-| [Gianduja](chocolate-gianduja-thread-04.txt) | 2 | Member-colour ribbon · engraved leaves · offset portraits |
+| [Gianduja](chocolate-gianduja-thread-04.txt) | 2 | Slim member-colour edge · aligned portrait pair |
 | [Noir](chocolate-noir-thread-05.txt) | 0 | An image-free literary page with fine themed details. |
 
 ## Comms
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Ganache](chocolate-ganache-comms-01.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Praliné](chocolate-praline-comms-02.txt) | 0 | A text contact header and clean message bubbles. |
-| [Truffle](chocolate-truffle-comms-03.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Gianduja](chocolate-gianduja-comms-04.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
-| [Noir](chocolate-noir-comms-05.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Fondant Line](chocolate-ganache-comms-01.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Rocher Relay](chocolate-praline-comms-02.txt) | 0 | A text contact header and clean message bubbles. |
+| [Cocoa Call](chocolate-truffle-comms-03.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Nocciola](chocolate-gianduja-comms-04.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
+| [Midnight Dispatch](chocolate-noir-comms-05.txt) | 1 | One character contact portrait, with the original device frame and message bubbles. |
 
 ## Buds
 
 | Design | GIFs | Layout |
 | --- | ---: | --- |
-| [Ganache](chocolate-ganache-buds-01.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
-| [Praliné](chocolate-praline-buds-02.txt) | 0 | A compact image-free note for a quick reply. |
-| [Truffle](chocolate-truffle-buds-03.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
-| [Gianduja](chocolate-gianduja-buds-04.txt) | 2 | Member-colour ribbon · engraved leaves · offset portraits |
-| [Noir](chocolate-noir-buds-05.txt) | 0 | A compact image-free note for a quick reply. |
+| [Velvet Drop](chocolate-ganache-buds-01.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
+| [Feuilletine](chocolate-praline-buds-02.txt) | 0 | A compact image-free note for a quick reply. |
+| [Cocoa Dust](chocolate-truffle-buds-03.txt) | 1 | One small character portrait beside a compact reply and the original themed details. |
+| [Cremino](chocolate-gianduja-buds-04.txt) | 2 | Slim member-colour edge · compact portrait strip |
+| [Darkling](chocolate-noir-buds-05.txt) | 0 | A compact image-free note for a quick reply. |
 
 ## Editing and integration
 
@@ -46,15 +46,34 @@ Use `<b>`, `<i>` and `<u>` inside `[dohtml]`; `<strong>` and `<em>` work too. Ed
 
 Explicit Blue Hour `html[color-mode="light"]` and `html[color-mode="dark"]` modes override the system fallback. Writing stays on neutral surfaces. Preview palette controls are samples; posts inherit the forum palette.
 
-All current snippets use the fresh standalone `chocolate-member-v3.css` stylesheet and the `chocolate-members-v3` wrapper class. Paste the revised snippet to adopt the member-colour treatment. Existing posts retain their previous appearance until updated. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS and GIFs require internet access.
+All current snippets use the fresh standalone `chocolate-layout-v4.css` stylesheet. The `chocolate-members-v3` class applies member colours; `chocolate-layout-v4` applies the revised graphics and footer. Paste the revised snippet to adopt the update. Existing posts retain their previous appearance until updated. Image-free reflow uses modern CSS `:has()` selectors. Hosted CSS and GIFs require internet access.
+
+The member icon now occupies the central footer emblem, clear of portraits and writing. If no member icon is supplied, a small cacao motif fills the slot. Gianduja, Nocciola and Cremino use a slim colour ribbon and explicit portrait grids, with no overlapping leaf graphic or offset photos.
 
 The three inherited member colours drive the design; no member variables are set on the template itself. Headings mix the group hues with neutral ink for legibility. Soft washes use those same hues at lower opacity. A neutral fallback applies only when the forum provides no member colours.
 
-To rebuild the colour revision, edit `chocolate-member-theme-v3.css`, then run `python tools/build_chocolate_members.py` and `python tools/build_forum_posts.py`. The first command combines the existing layout stylesheet with the scoped colour rules and refreshes the snippets and editor. The second refreshes the forum masterpost and preview.
+To rebuild, edit `chocolate-member-theme-v3.css` for colours or `chocolate-layout-fixes-v4.css` for layout, then run `python tools/build_chocolate_members.py` and `python tools/build_forum_posts.py`. The first command combines the existing layout stylesheet with the scoped colour and layout rules and refreshes the snippets and editor. The second refreshes the forum masterpost and preview.
 
 ## Revision checks
 
-The member-colour revision preserves the fifteen layouts, image counts, writing and editable fields. Validation includes explicit and system light/dark modes and coexistence with the older Chocolate stylesheet in either load order. Live JCink rendering remains unverified.
+The collection retains five threads, five comms and five buds, with fifteen unique names. The graphics revision retains the supplied images, writing and editable fields. Checks cover narrow and wide layouts, removed images, explicit and system light/dark modes, and coexistence with older Chocolate stylesheets in either load order. Live JCink rendering remains unverified.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Fondant Line | Ganache | comms | [chocolate-ganache-comms-01.txt](chocolate-ganache-comms-01.txt) · block 1 |
+| Nocciola | Gianduja | comms | [chocolate-gianduja-comms-04.txt](chocolate-gianduja-comms-04.txt) · block 1 |
+| Midnight Dispatch | Noir | comms | [chocolate-noir-comms-05.txt](chocolate-noir-comms-05.txt) · block 1 |
+| Rocher Relay | Praliné | comms | [chocolate-praline-comms-02.txt](chocolate-praline-comms-02.txt) · block 1 |
+| Cocoa Call | Truffle | comms | [chocolate-truffle-comms-03.txt](chocolate-truffle-comms-03.txt) · block 1 |
+| Velvet Drop | Ganache | bud | [chocolate-ganache-buds-01.txt](chocolate-ganache-buds-01.txt) · block 1 |
+| Cremino | Gianduja | bud | [chocolate-gianduja-buds-04.txt](chocolate-gianduja-buds-04.txt) · block 1 |
+| Darkling | Noir | bud | [chocolate-noir-buds-05.txt](chocolate-noir-buds-05.txt) · block 1 |
+| Feuilletine | Praliné | bud | [chocolate-praline-buds-02.txt](chocolate-praline-buds-02.txt) · block 1 |
+| Cocoa Dust | Truffle | bud | [chocolate-truffle-buds-03.txt](chocolate-truffle-buds-03.txt) · block 1 |
 
 ## Forum-ready collection
 

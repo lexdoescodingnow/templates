@@ -76,6 +76,14 @@ See [VALIDATION.md](VALIDATION.md) for checks and limitations. Source validation
 
 The previous five threads, one comms template and five buds have their own [legacy masterpost and archive](LEGACY.md). Their original source files and supporting stylesheet URLs remain available for compatibility. The newer collection uses separate filenames and classes.
 
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Snowcap Messenger | Comms Snippet | comms | [bingsu-comms-snippet.txt](bingsu-comms-snippet.txt) · block 1 |
+
 ## Forum-ready collection
 
 [Preview-above-code forum masterpost](../forum-posts/bingsu-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/bingsu-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

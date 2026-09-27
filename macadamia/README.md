@@ -71,6 +71,14 @@ Run `node macadamia/build.cjs` from the repository root to generate the fifteen 
 
 [Validation details](VALIDATION.md). Source checks are recorded separately from visual verification. The local preview could not be opened by the available browser because its security policy blocked local URLs; rendered layouts and live forum posting remain unverified.
 
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Shellphone | Comms Snippet | comms | [macadamia-comms-snippet.txt](macadamia-comms-snippet.txt) · block 1 |
+
 ## Forum-ready collection
 
 [Preview-above-code forum masterpost](../forum-posts/macadamia-forum-masterpost.txt) · [Downloadable browser preview with Copy buttons](../forum-posts/macadamia-preview.html) · [All collections and numbered post parts](../forum-posts/README.md).

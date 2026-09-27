@@ -43,7 +43,7 @@ Open a named `.txt` file below, use GitHub’s **Copy raw file**, and paste the 
 | [Bramblekiss](raspberry-bramblekiss-bud-02.txt) | 1 | A compact portrait bookmark with a thorn-stitched lower edge and short reply. |
 | [Drupe Drop](raspberry-drupe-drop-bud-03.txt) | 0 | A small stepped card with an offset heading and three member-colour droplet marks. |
 | [Raspberry Fleck](raspberry-raspberry-fleck-bud-04.txt) | 2 | Two miniature square stills sit at opposite ends of a short central note. |
-| [Calyx](raspberry-calyx-bud-05.txt) | 0 | A miniature open frame with a five-point calyx at its edge and a quiet two-line heading. |
+| [Bramble Cup](raspberry-calyx-bud-05.txt) | 0 | A miniature open frame with a five-point calyx at its edge and a quiet two-line heading. |
 
 ## Editing
 
@@ -82,6 +82,14 @@ All artwork is original CSS geometry or an embedded raspberry engraving. Local T
 Run `node raspberry/build.cjs` from the repository root to regenerate the posting snippets and standalone preview. Names and layout descriptions live in `designs.json`; markup and placeholders live in `raspberry-model.js`. The editor interface retains the familiar collection workflow; Raspberry template styling and artwork are new.
 
 See [VALIDATION.md](VALIDATION.md) for completed checks and the browser-preview limitation. No live JCink post was made.
+
+## Design names
+
+Each design has a unique catalogue name. Existing filenames remain stable for saved links.
+
+| Current name | Previous label | Format | Source |
+| --- | --- | --- | --- |
+| Bramble Cup | Calyx | bud | [raspberry-calyx-bud-05.txt](raspberry-calyx-bud-05.txt) · block 1 |
 
 ## Forum-ready collection
 
