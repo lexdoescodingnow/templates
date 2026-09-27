@@ -9,14 +9,19 @@ const CHERRY_BUD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing eli
 function cherryEscape(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function cherryDefaults(design) { return {name:'Jaehwa & Ubin',url:'[url]',title:'[text]',time:'23:17',flow:'received',gifs:CHERRY_GIFS.slice(0,design.gifs).map(url=>({url,position:'50% 45%'})),body:design.type==='thread'?CHERRY_THREAD:design.type==='comms'?CHERRY_COMMS:CHERRY_BUD}; }
 function cherryFilename(d) { return `cherry-${d.slug}-${d.type}-${d.number}.txt`; }
+function cherryHardware(d) {
+  if(d.slug!=='kirsch-key') return '<div class="chr-hardware" aria-hidden="true"></div>';
+  const keys=[['1',''],['2','ABC'],['3','DEF'],['4','GHI'],['5','JKL'],['6','MNO'],['7','PQRS'],['8','TUV'],['9','WXYZ'],['*',''],['0','+'],['#','']];
+  return '<div class="chr-hardware" aria-hidden="true">\n<div class="chr-navigation"><span class="chr-softkey">−</span><span class="chr-select"></span><span class="chr-softkey">↩</span></div>\n<div class="chr-keypad">'+keys.map(([digit,letters])=>'<span class="chr-key">'+digit+'<small>'+letters+'</small></span>').join('')+'</div>\n</div>';
+}
 function cherryMarkup(d,s) {
   const flow=d.type==='comms'?` data-flow="${['received','sent','alternate'].includes(s.flow)?s.flow:'received'}"`:'';
   const lines=[`<div class="bh-cherry chr-${d.type} chr-${d.slug}"${flow}>`,`<a class="chr-name" href="${cherryEscape(s.url)}">${cherryEscape(s.name)}</a>`,`<div class="chr-title">${cherryEscape(s.title)}</div>`];
   if(d.type==='comms') lines.push(`<div class="chr-time">${cherryEscape(s.time)}</div>`);
   const gifs=s.gifs.filter(g=>g.url.trim());
   if(gifs.length) { lines.push('<div class="chr-media">'); gifs.forEach(g=>lines.push(`<img src="${cherryEscape(g.url.trim())}" alt="Character GIF" style="object-position:${/^\d{1,3}% \d{1,3}%$/.test(g.position)?g.position:'50% 45%'}">`)); lines.push('</div>'); }
-  lines.push('<div class="chr-copy">',s.body,'</div>',d.type==='comms'?'<div class="chr-hardware" aria-hidden="true"></div>':'<div class="chr-mark" aria-hidden="true"></div>','</div>');
+  lines.push('<div class="chr-copy">',s.body,'</div>',d.type==='comms'?cherryHardware(d):'<div class="chr-mark" aria-hidden="true"></div>','</div>');
   return lines.join('\n');
 }
-function cherrySnippet(d,s) { return '[dohtml]\n'+cherryMarkup(d,s)+'\n\n<link rel="stylesheet" href="'+CHERRY_CSS_URL+'">\n[/dohtml]\n'; }
+function cherrySnippet(d,s) { const css=d.slug==='kirsch-key'?'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cherry/cherry-kirsch-key-v2.css':CHERRY_CSS_URL;return '[dohtml]\n'+cherryMarkup(d,s)+'\n\n<link rel="stylesheet" href="'+css+'">\n[/dohtml]\n'; }
 if(typeof module!=='undefined') module.exports={CHERRY_GIFS,CHERRY_CSS_URL,cherryDefaults,cherryFilename,cherryMarkup,cherrySnippet};
