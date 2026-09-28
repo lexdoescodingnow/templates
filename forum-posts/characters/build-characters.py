@@ -14,7 +14,8 @@ core_js = (HERE / 'character-directory-v2.js').read_text()
 locator_js = (HERE / 'character-directory-locator.js').read_text()
 base = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/'
 css_link = '<link rel="stylesheet" href="' + base + 'character-directory-v2-locator-v1.css">'
-js_link = '<script defer src="' + base + 'character-directory-v2-locator-v1.js"></script>'
+js_link = '<script defer src="' + base + 'character-directory-v2-locator-v2.js"></script>'
+search_url = 'https://raw.githack.com/lexdoescodingnow/templates/main/forum-posts/characters/character-directory-v2-preview.html'
 
 def fields(code):
     return dict(re.findall(r'\[(PI|PG|CD|CN)=([\s\S]*?)\](?=\s*(?:\[(?:PI|PG|CD|CN)=|$))', code))
@@ -54,6 +55,7 @@ def widget(items, label='Character directory'):
 ''' + css_link + '\n' + js_link + '''
 <span class="pc-kicker">''' + escape(label) + '''</span>
 <h2 class="pc-title">Choose your character.</h2>
+<p class="pc-search-fallback"><a href="''' + search_url + '''" target="_blank" rel="noopener">Search all ''' + str(len(records)) + ''' characters ↗</a></p>
 <div class="pc-search" hidden><label><input class="pc-input" type="search" aria-label="Search names, partners, groups or face claims" placeholder="Name, partner, group or face claim…" autocomplete="off" spellcheck="false"></label><button class="pc-clear" type="button">Clear</button></div>
 <p class="pc-count" role="status" aria-live="polite">''' + str(len(items)) + ''' characters · A–Z</p>
 <div class="pc-list">
@@ -111,6 +113,7 @@ for part, indices in zip(parts, part_indices):
 (HERE / 'character-directory-locations.json').write_text(json.dumps(locations, ensure_ascii=False, indent=2) + '\n')
 js = core_js + '\n' + locator_js.replace('__PI_DIRECTORY_LOCATIONS__', json.dumps(locations, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c'))
 (HERE / 'character-directory-v2-locator-v1.js').write_text(js)
+(HERE / 'character-directory-v2-locator-v2.js').write_text(js)
 (HERE / 'character-directory-v2-locator-v1.css').write_text(css)
 
 delivery_preview = '<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leaf directory · forum delivery preview</title></head><body style="background:#161619;color:#eee;--mgrgb1:218,148,168;--mgrgb2:167,172,225;--mgrgb3:108,195,201">' + parts[0]['code'].removeprefix('[dohtml]\n').removesuffix('\n[/dohtml]\n') + '</body></html>'

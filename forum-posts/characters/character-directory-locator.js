@@ -1,5 +1,5 @@
 (function(){
-if(window.bhPiDirectoryLocationsV1){window.bhPiDirectoryLocationsV1.scan(document);return;}
+if(window.bhPiDirectoryLocationsV1&&window.bhPiDirectoryLocationsV1.version===2){window.bhPiDirectoryLocationsV1.scan(document);return;}
 var entries=__PI_DIRECTORY_LOCATIONS__;
 function words(value){return value.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(/\s+/).filter(function(word){return word&&word!=='and';});}
 function matches(query,haystack){return query.every(function(term){return haystack.some(function(word){return term.length===1?word===term:word.indexOf(term)!==-1;});});}
@@ -9,7 +9,7 @@ function reveal(name){var card=findCard(name);if(!card)return;var root=card.clos
 function init(root){
 if(root.pcLocationsReadyV1)return;
 var input=root.querySelector('.pc-input'),search=root.querySelector('.pc-search'),empty=root.querySelector('.pc-empty');
-if(!input||!search||!empty)return;
+if(!input||!search||!empty||!root.pcDirectoryReadyV2)return;
 var help=document.createElement('p');help.className='pc-location-help-v1';help.textContent='Search all '+entries.length+' characters. Results show their forum section.';
 var count=document.createElement('p');count.className='pc-location-count-v1';count.setAttribute('role','status');count.setAttribute('aria-live','polite');count.hidden=true;
 var results=document.createElement('div');results.className='pc-locations-v1';results.setAttribute('role','list');results.setAttribute('aria-label','Matching characters and forum sections');results.hidden=true;
@@ -34,9 +34,10 @@ input.addEventListener('input',filter);
 root.querySelector('.pc-clear').addEventListener('click',filter);
 input.addEventListener('keydown',function(event){if(event.key==='Escape')filter();});
 root.pcLocationsReadyV1=true;filter();
+var fallback=root.querySelector('.pc-search-fallback');if(fallback)fallback.hidden=true;
 }
-function scan(scope){if(scope.nodeType===1&&scope.matches('.bh-character-directory.pc-v2'))init(scope);if(scope.querySelectorAll)scope.querySelectorAll('.bh-character-directory.pc-v2').forEach(init);}
-window.bhPiDirectoryLocationsV1={scan:scan};scan(document);
+function scan(scope){if(scope.nodeType===1){var root=scope.closest('.bh-character-directory.pc-v2');if(root)init(root);}if(scope.querySelectorAll)scope.querySelectorAll('.bh-character-directory.pc-v2').forEach(init);}
+window.bhPiDirectoryLocationsV1={version:2,scan:scan};scan(document);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){scan(document);},{once:true});
 if(window.MutationObserver&&document.documentElement)new MutationObserver(function(changes){changes.forEach(function(change){change.addedNodes.forEach(function(node){if(node.nodeType===1)scan(node);});});}).observe(document.documentElement,{childList:true,subtree:true});
 })();
