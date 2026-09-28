@@ -1,0 +1,31 @@
+.bh-template-directory{--td-paper:#faf9f7;--td-field:#fff;--td-ink:#303035;--td-muted:#69696f;--td-line:#dedde0;--td-one:rgb(var(--mgrgb1,100,100,108));--td-two:rgb(var(--mgrgb2,120,120,128));--td-three:rgb(var(--mgrgb3,90,90,98));box-sizing:border-box;container-type:inline-size;isolation:isolate;display:flex;flex-direction:column;width:660px;max-width:100%;min-width:0;margin:24px auto;padding:24px;border:1px solid var(--td-line);border-top:3px solid var(--td-one);border-radius:14px;background:var(--td-paper);color:var(--td-ink);font:400 14px/1.5 Arial,sans-serif;text-align:left;color-scheme:light;}
+.bh-template-directory *,.bh-template-directory *::before,.bh-template-directory *::after{box-sizing:border-box;}
+.bh-template-directory [hidden]{display:none!important;}
+.bh-template-directory .bhtd-header{order:-3;display:block;margin:0 0 16px;padding:0;border:0;background:none;}
+.bh-template-directory .bhtd-kicker{display:block;margin:0 0 5px;color:var(--td-muted);font:600 10px/1.5 Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;}
+.bh-template-directory h2.bhtd-heading{display:block;margin:0;padding:0;border:0;background:none;color:var(--td-one);font:400 30px/1.2 Georgia,serif;letter-spacing:-.8px;text-transform:none;}
+.bh-template-directory .bhtd-search{display:flex;align-items:stretch;gap:8px;margin:18px 0 0;}
+.bh-template-directory .bhtd-label{display:block;flex:1;min-width:0;margin:0;padding:0;}
+.bh-template-directory .bhtd-input{display:block;appearance:none;-webkit-appearance:none;box-sizing:border-box;width:100%;min-width:0;min-height:44px;margin:0;padding:11px 13px;border:1px solid var(--td-line);border-radius:7px;outline-offset:3px;background:var(--td-field);color:var(--td-ink);font:400 13px/1.5 Arial,sans-serif;text-transform:none;letter-spacing:0;}
+.bh-template-directory .bhtd-input::placeholder{color:var(--td-muted);opacity:1;}
+.bh-template-directory .bhtd-clear{display:block;appearance:none;min-height:44px;margin:0;padding:10px 12px;border:1px solid var(--td-line);border-radius:7px;background:var(--td-field);color:var(--td-ink);font:600 11px/1.5 Arial,sans-serif;letter-spacing:0;text-transform:none;cursor:pointer;}
+.bh-template-directory .bhtd-clear:disabled{opacity:.45;cursor:default;}
+.bh-template-directory .bhtd-count{order:-2;display:block;margin:0 0 10px;padding:0;color:var(--td-muted);font:400 11px/1.5 Arial,sans-serif;letter-spacing:.3px;}
+.bh-template-directory .bhtd-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));align-content:start;gap:8px;max-height:380px;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:var(--td-one) var(--td-paper);scrollbar-gutter:stable;padding:3px 9px 3px 3px;margin:0;border:0;background:none;}
+.bh-template-directory .bhtd-list::-webkit-scrollbar{width:6px;}
+.bh-template-directory .bhtd-list::-webkit-scrollbar-thumb{background:var(--td-one);border-radius:9px;}
+.bh-template-directory .bhtd-entry{position:relative;display:flex;flex-direction:column;justify-content:center;gap:3px;min-height:66px;min-width:0;margin:0;padding:11px 28px 11px 13px;border:1px solid var(--td-line);border-left:2px solid var(--td-one);border-radius:7px;background:var(--td-field);color:var(--td-ink);font:400 12px/1.4 Arial,sans-serif;text-decoration:none;letter-spacing:0;text-transform:none;overflow-wrap:anywhere;}
+.bh-template-directory .bhtd-entry::after{content:'→';position:absolute;right:10px;top:50%;transform:translateY(-50%);color:var(--td-three);font:400 14px/1 Arial,sans-serif;}
+.bh-template-directory .bhtd-entry:hover{border-color:var(--td-two);background:linear-gradient(115deg,rgba(var(--mgrgb1,100,100,108),.07),rgba(var(--mgrgb3,90,90,98),.07)),var(--td-field);text-decoration:none;}
+.bh-template-directory .bhtd-flavour{display:block;color:var(--td-one);font:600 14px/1.3 Arial,sans-serif;letter-spacing:0;}
+.bh-template-directory .bhtd-ship{display:block;color:var(--td-muted);font:400 11px/1.5 Arial,sans-serif;letter-spacing:0;}
+.bh-template-directory .bhtd-empty{display:block;margin:0;padding:28px 12px;border:1px dashed var(--td-line);border-radius:7px;color:var(--td-muted);font:400 13px/1.6 Arial,sans-serif;text-align:center;}
+.bh-template-directory .bhtd-input:focus-visible,.bh-template-directory .bhtd-clear:focus-visible,.bh-template-directory .bhtd-entry:focus-visible{outline:2px solid var(--td-three);outline-offset:2px;}
+.bh-template-directory :is(b,strong,u){color:var(--td-one);}
+.bh-template-directory :is(i,em){color:var(--td-three);}
+.bh-template-directory u{text-decoration-color:var(--td-one);text-underline-offset:3px;}
+@supports (background-clip:text) or (-webkit-background-clip:text){.bh-template-directory h2.bhtd-heading,.bh-template-directory :is(b,strong,u){background-image:linear-gradient(110deg,var(--td-one),var(--td-two),var(--td-three));background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;}.bh-template-directory :is(i,em){background-image:linear-gradient(110deg,var(--td-three),var(--td-two),var(--td-one));background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;}}
+html[color-mode='dark'] .bh-template-directory{--td-paper:#202023;--td-field:#28282c;--td-ink:#eeeef1;--td-muted:#bcbcc4;--td-line:#424248;--td-one:rgb(var(--mgrgb1,196,196,204));--td-two:rgb(var(--mgrgb2,175,175,186));--td-three:rgb(var(--mgrgb3,211,211,220));color-scheme:dark;}
+@media(prefers-color-scheme:dark){html:not([color-mode]) .bh-template-directory{--td-paper:#202023;--td-field:#28282c;--td-ink:#eeeef1;--td-muted:#bcbcc4;--td-line:#424248;--td-one:rgb(var(--mgrgb1,196,196,204));--td-two:rgb(var(--mgrgb2,175,175,186));--td-three:rgb(var(--mgrgb3,211,211,220));color-scheme:dark;}}
+@media(max-width:420px){.bh-template-directory{padding:18px;}.bh-template-directory h2.bhtd-heading{font-size:26px;}}
+@media(forced-colors:active){.bh-template-directory h2.bhtd-heading,.bh-template-directory :is(b,strong,u,i,em){background:none;color:CanvasText;-webkit-text-fill-color:CanvasText;}.bh-template-directory .bhtd-flavour{color:LinkText;}}
