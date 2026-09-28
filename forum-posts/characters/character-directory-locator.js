@@ -14,7 +14,7 @@ var help=document.createElement('p');help.className='pc-location-help-v1';help.t
 var count=document.createElement('p');count.className='pc-location-count-v1';count.setAttribute('role','status');count.setAttribute('aria-live','polite');count.hidden=true;
 var results=document.createElement('div');results.className='pc-locations-v1';results.setAttribute('role','list');results.setAttribute('aria-label','Matching characters and forum sections');results.hidden=true;
 search.insertAdjacentElement('afterend',help);help.insertAdjacentElement('afterend',count);count.insertAdjacentElement('afterend',results);
-input.setAttribute('aria-label','Search all characters by name, nickname, partner, group or face claim');input.placeholder='Search all characters…';
+input.setAttribute('aria-label','Search all characters by name, nickname or partner');input.placeholder='Name, nickname or partner…';
 function filter(){
 var query=words(input.value);results.replaceChildren();count.hidden=!query.length;results.hidden=!query.length;
 if(!query.length){empty.textContent='No matching characters in this section.';return;}

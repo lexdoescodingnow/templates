@@ -3,6 +3,7 @@ from html import escape
 import json
 import re
 import unicodedata
+from vendor.rjsmin import jsmin
 
 HERE = Path(__file__).resolve().parent
 def sort_name(name):
@@ -14,8 +15,6 @@ core_js = (HERE / 'character-directory-v2.js').read_text()
 locator_js = (HERE / 'character-directory-locator.js').read_text()
 base = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/'
 css_link = '<link rel="stylesheet" href="' + base + 'character-directory-v2-locator-v1.css">'
-js_link = '<script defer src="' + base + 'character-directory-v2-locator-v2.js"></script>'
-search_url = 'https://raw.githack.com/lexdoescodingnow/templates/main/forum-posts/characters/character-directory-v2-preview.html'
 
 def fields(code):
     return dict(re.findall(r'\[(PI|PG|CD|CN)=([\s\S]*?)\](?=\s*(?:\[(?:PI|PG|CD|CN)=|$))', code))
@@ -35,7 +34,7 @@ def description(value):
     return ''.join(out) + ''.join('</' + tag + '>' for tag in reversed(stack))
 
 def copy_markup(code):
-    return escape(code).replace('[', '<span>&#91;</span>').replace(']', '&#93;')
+    return re.sub(r'&#91;(PI|PG|CD|CN)=', r'<span>&#91;</span>\1=', escape(code).replace('[', '&#91;'))
 
 cards = []
 for record in records:
@@ -46,23 +45,47 @@ for record in records:
         url = parts[key]
         if re.match(r'^https?://', url, re.I):
             cls = 'pc-photo' + (' pc-gif' if key == 'PG' else '')
-            alt = record['name'] + (' GIF' if key == 'PG' else ' portrait')
+            alt = record['name'] + ' portrait' if key == 'PI' else ''
             images.append('<img class="' + cls + '" src="' + escape(url, quote=True) + '" alt="' + escape(alt, quote=True) + '" loading="lazy">')
-    cards.append('<article class="pc-card">\n<div class="pc-identity"><div class="pc-images">' + ''.join(images) + '</div><div class="pc-person"><h3 class="pc-name">' + escape(record['name']) + '</h3><p class="pc-description">' + description(parts['CD']) + '</p></div></div>\n<div class="pc-actions"><button class="pc-copy" type="button" hidden>Copy PI</button><span class="pc-status" role="status" aria-live="polite"></span></div>\n<details class="pc-details"><summary>View / copy PI code</summary><pre class="pc-code" tabindex="0" aria-label="' + escape(record['name'], quote=True) + ' complete PI code"><code>' + copy_markup(record['code']) + '</code></pre></details>\n</article>')
+    cards.append('<article class="pc-card">\n<div class="pc-identity"><div class="pc-images">' + ''.join(images) + '</div><div class="pc-person"><h3 class="pc-name">' + escape(record['name']) + '</h3><p class="pc-description">' + description(parts['CD']) + '</p></div></div>\n<details class="pc-details"><summary>View / copy PI code</summary><pre class="pc-code"><code>' + copy_markup(record['code']) + '</code></pre></details>\n</article>')
+
+cn_index = {fields(record['code'])['CN'].casefold(): i for i, record in enumerate(records)}
+compact_locations = []
+for record in records:
+    cd = fields(record['code'])['CD']
+    nickname = re.match(r'❧ \[b\](.*?)\[/b\]', cd)[1]
+    if nickname.casefold() in record['name'].casefold().split():
+        nickname = ''
+    row = [record['name'], nickname, 0]
+    relation = re.search(r'♡ (.*?) ♡', cd)
+    if relation:
+        row.append([cn_index[name.casefold()] for name in re.findall(r'\[b\](.*?)\[/b\]', relation[1])])
+    compact_locations.append(row)
+
+def inline_script():
+    packed = json.dumps(compact_locations, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
+    unpack = '(function(a){var ranges={};a.forEach(function(r){var c=r[0].charAt(0);if(!ranges[r[2]])ranges[r[2]]=[c,c];else ranges[r[2]][1]=c;});return a.map(function(r,i){return {name:r[0],nickname:r[1]||r[0],part:r[2],range:ranges[r[2]].join("–"),order:i,description:r[1]+" "+(r[3]||[]).map(function(p){return a[p][0];}).join(" ")};});})(' + packed + ')'
+    source = core_js + '\n' + locator_js
+    names = 'scope selection source clearButton changes change haystack joined available results entry entries query result found input root'.split()
+    aliases = {name: 'v' + chr(97 + i) for i, name in enumerate(names)}
+    tokens = re.compile(r'''"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\b(?:''' + '|'.join(names) + r''')\b''')
+    source = tokens.sub(lambda match: aliases.get(match[0], match[0]), source)
+    return '<script>' + jsmin(source).replace('__PI_DIRECTORY_LOCATIONS__', unpack) + '</script>'
+
+inline_enhancement = inline_script()
 
 def widget(items, label='Character directory'):
     return '''<section class="bh-character-directory pc-v2" aria-label="Character PI directory">
-''' + css_link + '\n' + js_link + '''
+''' + css_link + '''
 <span class="pc-kicker">''' + escape(label) + '''</span>
 <h2 class="pc-title">Choose your character.</h2>
-<p class="pc-search-fallback"><a href="''' + search_url + '''" target="_blank" rel="noopener">Search all ''' + str(len(records)) + ''' characters ↗</a></p>
-<div class="pc-search" hidden><label><input class="pc-input" type="search" aria-label="Search names, partners, groups or face claims" placeholder="Name, partner, group or face claim…" autocomplete="off" spellcheck="false"></label><button class="pc-clear" type="button">Clear</button></div>
+<div class="pc-search" hidden></div>
 <p class="pc-count" role="status" aria-live="polite">''' + str(len(items)) + ''' characters · A–Z</p>
 <div class="pc-list">
 ''' + '\n'.join(items) + '''
 </div>
 <p class="pc-empty" hidden>No matching characters.</p>
-</section>'''
+''' + inline_enhancement + '\n</section>'
 
 def posting_code(items, label='Character directory'):
     return '[dohtml]\n' + widget(items, label) + '\n[/dohtml]\n'
@@ -78,13 +101,18 @@ part_indices = []
 pending = []
 for initial, indices in initial_groups:
     candidate = pending + indices
-    if pending and len(posting_code([cards[i] for i in candidate]).encode('utf-8')) >= 59500:
+    if pending and len(posting_code([cards[i] for i in candidate]).encode('utf-8')) >= 59900:
         part_indices.append(pending)
         pending = indices[:]
     else:
         pending = candidate
 if pending:
     part_indices.append(pending)
+
+for number, indices in enumerate(part_indices, 1):
+    for i in indices:
+        compact_locations[i][2] = number
+inline_enhancement = inline_script()
 
 parts = []
 for number, indices in enumerate(part_indices, 1):
@@ -119,7 +147,7 @@ js = core_js + '\n' + locator_js.replace('__PI_DIRECTORY_LOCATIONS__', json.dump
 delivery_preview = '<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leaf directory · forum delivery preview</title></head><body style="background:#161619;color:#eee;--mgrgb1:218,148,168;--mgrgb2:167,172,225;--mgrgb3:108,195,201">' + parts[0]['code'].removeprefix('[dohtml]\n').removesuffix('\n[/dohtml]\n') + '</body></html>'
 (HERE / 'character-directory-delivery-preview.html').write_text(delivery_preview)
 
-all_markup = widget(cards).replace(css_link, '<style>' + css + '</style>').replace(js_link, '<script>' + js + '</script>')
+all_markup = widget(cards).replace(css_link, '<style>' + css + '</style>').replace(inline_enhancement, '<script>' + js + '</script>')
 copy_panels = []
 for part in parts:
     number = part['number']

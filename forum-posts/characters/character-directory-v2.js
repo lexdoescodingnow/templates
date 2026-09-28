@@ -1,5 +1,5 @@
 (function(){
-if(window.bhPiDirectoryV2&&window.bhPiDirectoryV2.version===3){window.bhPiDirectoryV2.scan(document);return;}
+if(window.bhPiDirectoryV2&&window.bhPiDirectoryV2.version===4){window.bhPiDirectoryV2.scan(document);return;}
 function words(value){return value.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(/\s+/).filter(function(word){return word&&word!=='and';});}
 function init(root){
 if(root.pcDirectoryReadyV2)return;
@@ -19,11 +19,13 @@ var details=card.querySelector('.pc-details');
 var copy=card.querySelector('.pc-copy');
 var status=card.querySelector('.pc-status');
 var actions=card.querySelector('.pc-actions');
+if(!actions){actions=document.createElement('div');actions.className='pc-actions';card.querySelector('.pc-details').insertAdjacentElement('beforebegin',actions);}
+if(!status){status=document.createElement('span');status.className='pc-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');actions.append(status);}
 if(!copy&&actions){copy=document.createElement('button');copy.className='pc-copy';copy.type='button';copy.textContent='Copy PI';actions.prepend(copy);}
 if(source&&details&&copy&&status){
 copy.addEventListener('click',async function(){
 try{await navigator.clipboard.writeText(source.textContent);status.textContent='PI copied.';}
-catch(error){details.open=true;var field=card.querySelector('.pc-code');field.focus();var selection=window.getSelection();var range=document.createRange();range.selectNodeContents(source);selection.removeAllRanges();selection.addRange(range);status.textContent='Selected — press Ctrl+C or ⌘C.';}
+catch(error){details.open=true;var field=card.querySelector('.pc-code');field.tabIndex=0;field.focus();var selection=window.getSelection();var range=document.createRange();range.selectNodeContents(source);selection.removeAllRanges();selection.addRange(range);status.textContent='Selected — press Ctrl+C or ⌘C.';}
 });
 copy.hidden=false;
 }
@@ -40,7 +42,7 @@ root.pcDirectoryReadyV2=true;
 filter();
 }
 function scan(scope){if(scope.nodeType===1){var root=scope.closest('.bh-character-directory.pc-v2');if(root)init(root);}if(scope.querySelectorAll)scope.querySelectorAll('.bh-character-directory.pc-v2').forEach(init);}
-window.bhPiDirectoryV2={version:3,scan:scan};
+window.bhPiDirectoryV2={version:4,scan:scan};
 scan(document);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){scan(document);},{once:true});
 if(window.MutationObserver&&document.documentElement){new MutationObserver(function(changes){changes.forEach(function(change){change.addedNodes.forEach(function(node){if(node.nodeType===1)scan(node);});});}).observe(document.documentElement,{childList:true,subtree:true});}
