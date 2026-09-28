@@ -29,7 +29,7 @@ def description(value):
     return ''.join(out) + ''.join('</' + tag + '>' for tag in reversed(stack))
 
 def copy_markup(code):
-    return escape(code).replace('[', '<span>&#91;</span>').replace(']', '<span>&#93;</span>')
+    return escape(code).replace('[', '<span>&#91;</span>').replace(']', '&#93;')
 
 cards = []
 for record in records:
@@ -55,7 +55,7 @@ markup = '''<section class="bh-character-directory pc-v2" aria-label="Character 
 <p class="pc-empty" hidden>No matching characters.</p>
 ''' + css_link + '\n' + js_link + '\n</section>'
 code = '[dohtml]\n' + markup + '\n[/dohtml]\n'
-assert len(code) < 44000
+assert len(code.encode('utf-8')) < 60000, 'The static directory exceeds its posting budget; partition it before adding more entries.'
 assert not re.search(r'\[(PI|PG|CD|CN)=', code)
 (HERE / 'character-directory.txt').write_text(code)
 (HERE / 'character-directory-v2.txt').write_text(code)
