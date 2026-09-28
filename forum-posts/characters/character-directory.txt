@@ -1,0 +1,51 @@
+[dohtml]
+<section class="bh-character-directory" aria-label="Character PI directory">
+<script class="pc-data" type="application/json">
+[
+{
+  "name": "Song Yonggi",
+  "code": "\u005bPI=https://i.pinimg.com/736x/0b/03/a8/0b03a85ac00751c8de69a92dc3bd374d.jpg\u005d \u005bPG=https://64.media.tumblr.com/f796c3f838fdabe725592e07be5cddfb/ad537a3d9db721af-16/s400x600/41040ddb6e4e3e4e4151f5742c029b8962e2294b.gifv\u005d \u005bCD=\u005bb\u005dyonggi\u005b/b\u005d - 20 years old - he/him - idol / member of .KANE - looks like \u005bi\u005dlee leo\u005b/i\u005d\u005d \u005bCN=song yonggi\u005d"
+}
+]
+</script>
+<span class="pc-kicker">Character directory</span>
+<h2 class="pc-title">Choose your character.</h2>
+<div class="pc-search" hidden><label><input class="pc-input" type="search" aria-label="Search names, groups or face claims" placeholder="Name, group or face claim…" autocomplete="off" spellcheck="false"></label><button class="pc-clear" type="button">Clear</button></div>
+<p class="pc-count" role="status" aria-live="polite"></p>
+<div class="pc-list"></div>
+<p class="pc-empty" hidden>No matching characters.</p>
+<noscript>Enable JavaScript to browse and copy character codes.</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/character-directory-v1.css">
+<script>(function(){
+var root=document.currentScript.closest('.bh-character-directory');
+var records=JSON.parse(root.querySelector('.pc-data').textContent);
+var list=root.querySelector('.pc-list');
+var input=root.querySelector('.pc-input');
+var count=root.querySelector('.pc-count');
+var empty=root.querySelector('.pc-empty');
+function make(tag,cls,text){var el=document.createElement(tag);el.className=cls;if(text!==undefined)el.textContent=text;return el;}
+function plain(value){return value.replace(/\[\/?[a-z][^\]]*\]/gi,'');}
+function words(value){return value.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(/\s+/).filter(function(word){return word&&word!=='and';});}
+function fields(value){var result={};var re=/\[(PI|PG|CD|CN)=([\s\S]*?)\](?=\s*(?:\[(?:PI|PG|CD|CN)=|$))/g;var match;while((match=re.exec(value))!==null)result[match[1]]=match[2];return result;}
+records.sort(function(a,b){return a.name.localeCompare(b.name,'en',{sensitivity:'base'});});
+var cards=records.map(function(record){
+var parts=fields(record.code);
+var card=make('article','pc-card');
+var identity=make('div','pc-identity');
+var images=make('div','pc-images');
+['PI','PG'].forEach(function(key){var url=parts[key];if(!url||!/^https?:\/\//i.test(url))return;var img=make('img','pc-photo'+(key==='PG'?' pc-gif':''));img.src=url;img.alt=record.name+(key==='PG'?' GIF':' portrait');img.loading='lazy';img.addEventListener('error',function(){img.remove();if(!images.children.length)images.remove();});images.append(img);});
+if(images.children.length)identity.append(images);
+var person=make('div','pc-person');person.append(make('h3','pc-name',record.name),make('p','pc-description',plain(parts.CD||'')));identity.append(person);card.append(identity);
+var actions=make('div','pc-actions');var copy=make('button','pc-copy','Copy PI');copy.type='button';var status=make('span','pc-status','');status.setAttribute('role','status');status.setAttribute('aria-live','polite');actions.append(copy,status);card.append(actions);
+var details=make('details','pc-details');var source=make('textarea','pc-code');source.readOnly=true;source.spellcheck=false;source.setAttribute('aria-label',record.name+' complete PI code');source.value=record.code;details.append(make('summary','','View PI code'),source);card.append(details);
+copy.addEventListener('click',async function(){try{await navigator.clipboard.writeText(record.code);status.textContent='PI copied.';}catch(error){details.open=true;source.focus();source.select();source.setSelectionRange(0,source.value.length);status.textContent='Selected — press Ctrl+C or ⌘C.';}});
+list.append(card);return {element:card,words:words(record.name+' '+plain(parts.CD||'')+' '+(parts.CN||''))};
+});
+function filter(){var query=words(input.value);var found=0;cards.forEach(function(card){var match=query.every(function(term){return card.words.some(function(word){return term.length===1?word===term:word.indexOf(term)!==-1;});});card.element.hidden=!match;if(match)found++;});count.textContent=query.length?found+' of '+cards.length+' characters':cards.length+' character'+(cards.length===1?'':'s')+' · A–Z';empty.hidden=found!==0;list.hidden=found===0;list.scrollTop=0;}
+function clear(){input.value='';filter();input.focus();}
+input.addEventListener('input',filter);input.addEventListener('keydown',function(event){if(event.key==='Escape'){event.preventDefault();clear();}});root.querySelector('.pc-clear').addEventListener('click',clear);
+root.querySelector('.pc-search').hidden=false;filter();
+})();
+</script>
+</section>
+[/dohtml]
