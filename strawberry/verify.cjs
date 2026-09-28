@@ -3,7 +3,7 @@ const {JSDOM,VirtualConsole}=require('jsdom');
 const cssTree=require('css-tree');
 const root=__dirname,designs=JSON.parse(fs.readFileSync(path.join(root,'designs.json'),'utf8'));
 const html=fs.readFileSync(path.join(root,'strawberry-collection-preview.html'),'utf8');
-const css=fs.readFileSync(path.join(root,'strawberry-field-notes-v1.css'),'utf8');
+const css=fs.readFileSync(path.join(root,'strawberry-field-notes-v2.css'),'utf8');
 const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>{if(e.type!=='css parsing')errors.push(e.message);});
 const dom=new JSDOM(html,{runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.matchMedia=()=>({matches:false,addEventListener(){}});}});
 const {document}=dom.window;

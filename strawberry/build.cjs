@@ -1,7 +1,7 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const out=__dirname;
-const cssURL='https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/strawberry/strawberry-field-notes-v1.css';
+const cssURL='https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/strawberry/strawberry-field-notes-v2.css';
 const gifs=['https://64.media.tumblr.com/cca6dd1da20b54242db55e1df7f9cd3f/cbf6aa578e65d492-e0/s400x600/e7b1ffed3ef20378b4f49a71173d317f23c870b9.gifv','https://64.media.tumblr.com/4e917a77ac5fabc03cf1717d252b6f75/cbf6aa578e65d492-25/s400x600/d5e3503d4b92cb680cab8d0ee1a4a9f24dfac25c.gifv'];
 const writing={
 thread:'<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>\n<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>\n<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>',
@@ -25,7 +25,7 @@ const designs=[
 ['bud','Runner Mark','runner-mark',0,'a line in passing','the next entry',2]
 ].map((d,i)=>({type:d[0],name:d[1],slug:d[2],images:d[3],sampleTitle:d[4],subtitle:d[5],motif:d[6],number:String(i%5+1).padStart(2,'0'),file:`strawberry-${d[2]}-${d[0]}-${String(i%5+1).padStart(2,'0')}.txt`}));
 function esc(v){return String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
-function defaults(d){return {name:'[name]',url:'[url]',title:'[text]',subtitle:d.subtitle,gif1:d.images?gifs[d.slug==='runner-relay'||d.slug==='vesca-margin'?1:0]:'',gif2:d.images>1?gifs[1]:'',crop1:'50% 30%',crop2:'50% 30%',copy:writing[d.type],time:'14:08',receipt:'Delivered',direction:'received'};}
+function defaults(d){return {name:'[name]',url:'[url]',title:'[text]',subtitle:d.subtitle,gif1:d.images?gifs[d.slug==='runner-relay'||d.slug==='vesca-margin'?1:0]:'',gif2:d.images>1?gifs[1]:'',crop1:d.slug==='runner-relay'||d.slug==='vesca-margin'?'50% 30%':'78% 30%',crop2:'50% 30%',copy:writing[d.type],time:'14:08',receipt:'Delivered',direction:'received'};}
 function previewState(d,s){return {...s,name:s.name==='[name]'?'Jaehoon & Jinseok':s.name,title:s.title==='[text]'?d.sampleTitle:s.title};}
 function art(n){
 const berry='<path d="M26 33C8 40 17 65 48 89C72 80 93 48 74 35C65 29 60 34 51 35C42 29 34 28 26 33Z" fill="currentColor" fill-opacity=".07" stroke="currentColor" stroke-width="1.5"/><path d="M51 34L35 24L42 39L27 38L43 47L51 35L60 47L62 35L75 32L60 29L65 18L53 27L50 14L47 29" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M31 49l1 3m15 3l1 3m19-10l-1 3M37 63l1 3m19-4l-1 3M47 75l1 3m23-17l-1 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>';
@@ -42,7 +42,7 @@ return `[dohtml]\n<div class="sb1 sb1-${d.type} sb1-${d.slug}"${device?` data-di
 }
 function bare(code){return code.replace(/\[\/?dohtml\]/gi,'').replace(/<link[^>]*>/gi,'');}
 const css=fs.readFileSync(path.join(out,'layout.css'),'utf8');
-fs.writeFileSync(path.join(out,'strawberry-field-notes-v1.css'),css);
+fs.writeFileSync(path.join(out,'strawberry-field-notes-v2.css'),css);
 fs.writeFileSync(path.join(out,'designs.json'),JSON.stringify(designs,null,2)+'\n');
 for(const d of designs)fs.writeFileSync(path.join(out,d.file),template(d,defaults(d))+'\n');
 const cards=designs.map(d=>{
