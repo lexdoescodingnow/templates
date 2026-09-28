@@ -2,7 +2,11 @@
 
 [Preview and copy — v2](character-directory-v2-preview.html) · [Forum widget code — v2](character-directory-v2.txt)
 
-The directory contains 12 characters: Akara, Artie, Clarity, Dom, Eric, Haeun, Lyle, Mia, Tae, Toby, X and Yonggi. Each description uses the agreed ❧ Leaf flourish, bold nickname, delicate separators and italic face claim. Organisation names are bold where supplied. Avatars, GIFs, nicknames, ages, pronouns, jobs, face claims and final full-name tags retain their supplied details.
+The directory contains 12 characters: Akara, Artie, Clarity, Dom, Eric, Haeun, Lyle, Mia, Tae, Toby, X and Yonggi. Each description uses the agreed ❧ Leaf flourish, bold nickname, delicate separators and italic face claim. Organisation names and confirmed partners' names are bold. Relationship status follows the occupation and precedes the face claim. Avatars, GIFs, nicknames, ages, pronouns, jobs, face claims and final full-name tags retain their supplied details, including requested corrections.
+
+On 28 September 2026, Toby's avatar was replaced with `https://i.pinimg.com/1200x/f1/a4/b5/f1a4b527b22e1de26c6140264ee1b193.jpg`. Confirmed relationship descriptions now say Yonggi is married to Song Dongmin, Eric is married to Xiaofeng Jeon, Xiaofeng is married to Eric Jeon, and Toby is married to Jude Yoon. The remaining relationship fields await confirmed status wording; no unknown relationship is assumed to be single.
+
+Pending details: status for Dom/Taein, Akara/Clarity and Haeun/Franklin Jwa; status and partner full names for Artie/Nate and Lyle/Will; Mia's status and partner, if any. The user also corrected Hakyun to 24 following his 20 September birthday, but no Hakyun record or confirmed alias exists in the current twelve. Apply that correction when his PI record is identified; do not change another character's age based on it.
 
 Search matches full names, nicknames, employers, groups and face claims. All twelve cards, portraits, GIFs, formatted descriptions and complete PI code panels are present in the initial HTML. Opening View / copy PI code and selecting the code works without JavaScript. Search and one-click Copy PI buttons appear when the enhancement script runs. The directory inherits member colours and supports the forum's light/dark modes.
 
