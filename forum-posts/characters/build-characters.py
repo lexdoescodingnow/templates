@@ -66,8 +66,8 @@ def inline_script():
     packed = json.dumps(compact_locations, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
     unpack = '(function(a){var ranges={};a.forEach(function(r){var c=r[0].charAt(0);if(!ranges[r[2]])ranges[r[2]]=[c,c];else ranges[r[2]][1]=c;});return a.map(function(r,i){return {name:r[0],nickname:r[1]||r[0],part:r[2],range:ranges[r[2]].join("–"),order:i,description:r[1]+" "+(r[3]||[]).map(function(p){return a[p][0];}).join(" ")};});})(' + packed + ')'
     source = core_js + '\n' + locator_js
-    names = 'scope selection source clearButton changes change haystack joined available results entry entries query result found input root cards actions details status count list empty search'.split()
-    aliases = {name: 'v' + chr(97 + i) for i, name in enumerate(names)}
+    names = 'scope selection source clearButton changes change haystack joined available results entry entries query result found input root cards actions details status count list empty search help hint fallback matches findCard reveal words init'.split()
+    aliases = {name: 'v' + 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'[i] for i, name in enumerate(names)}
     tokens = re.compile(r'''"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\b(?:''' + '|'.join(names) + r''')\b''')
     source = tokens.sub(lambda match: aliases.get(match[0], match[0]), source)
     source = jsmin(source).replace('__PI_DIRECTORY_LOCATIONS__', unpack)
