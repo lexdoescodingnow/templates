@@ -1,6 +1,6 @@
 (function(){
-if(window.bhPiDirectoryV2&&window.bhPiDirectoryV2.version===4){window.bhPiDirectoryV2.scan(document);return;}
-function words(value){return value.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(/\s+/).filter(function(word){return word&&word!=='and';});}
+if(window.bhPiDirectoryV2&&window.bhPiDirectoryV2.version===5){window.bhPiDirectoryV2.scan(document);return;}
+function words(value){return value.normalize('NFKD').replace(new RegExp('['+String.fromCharCode(768)+'-'+String.fromCharCode(879)+']','g'),'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(' ').filter(function(word){return word&&word!=='and';});}
 function init(root){
 if(root.pcDirectoryReadyV2)return;
 var list=root.querySelector('.pc-list');
@@ -42,7 +42,7 @@ root.pcDirectoryReadyV2=true;
 filter();
 }
 function scan(scope){if(scope.nodeType===1){var root=scope.closest('.bh-character-directory.pc-v2');if(root)init(root);}if(scope.querySelectorAll)scope.querySelectorAll('.bh-character-directory.pc-v2').forEach(init);}
-window.bhPiDirectoryV2={version:4,scan:scan};
+window.bhPiDirectoryV2={version:5,scan:scan};
 scan(document);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){scan(document);},{once:true});
 if(window.MutationObserver&&document.documentElement){new MutationObserver(function(changes){changes.forEach(function(change){change.addedNodes.forEach(function(node){if(node.nodeType===1)scan(node);});});}).observe(document.documentElement,{childList:true,subtree:true});}

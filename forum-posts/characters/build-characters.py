@@ -66,11 +66,48 @@ def inline_script():
     packed = json.dumps(compact_locations, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
     unpack = '(function(a){var ranges={};a.forEach(function(r){var c=r[0].charAt(0);if(!ranges[r[2]])ranges[r[2]]=[c,c];else ranges[r[2]][1]=c;});return a.map(function(r,i){return {name:r[0],nickname:r[1]||r[0],part:r[2],range:ranges[r[2]].join("–"),order:i,description:r[1]+" "+(r[3]||[]).map(function(p){return a[p][0];}).join(" ")};});})(' + packed + ')'
     source = core_js + '\n' + locator_js
-    names = 'scope selection source clearButton changes change haystack joined available results entry entries query result found input root'.split()
+    names = 'scope selection source clearButton changes change haystack joined available results entry entries query result found input root cards actions details status count list empty search'.split()
     aliases = {name: 'v' + chr(97 + i) for i, name in enumerate(names)}
     tokens = re.compile(r'''"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\b(?:''' + '|'.join(names) + r''')\b''')
     source = tokens.sub(lambda match: aliases.get(match[0], match[0]), source)
-    return '<script>' + jsmin(source).replace('__PI_DIRECTORY_LOCATIONS__', unpack) + '</script>'
+    source = jsmin(source).replace('__PI_DIRECTORY_LOCATIONS__', unpack)
+    literal = re.compile(r'''"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*' ''', re.X)
+    def ascii_literal(match):
+        value = match[0]
+        if value.isascii():
+            return value
+        quote = value[0]
+        chunks = re.split(r'([^\x00-\x7f]+)', value[1:-1])
+        return '(' + '+'.join(
+            quote + chunk + quote if chunk.isascii()
+            else 'uc(' + ','.join(str(ord(char)) for char in chunk) + ')'
+            for chunk in chunks if chunk
+        ) + ')'
+    source = '(function(){var uc=String.fromCharCode;' + literal.sub(ascii_literal, source) + '})();'
+    source = re.sub(r'\(([rRcC]|[tT][mM])\)', r'( \1 )', source)
+    token = re.compile(r'''"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|/(?:\\.|[^/\\\n])+/[a-z]*|[A-Za-z_$][A-Za-z0-9_$]*|[0-9]+|===|!==|==|!=|<=|>=|\+\+|--|&&|\|\||=>|\+=|-=|\*=|/=|[^\s]''')
+    output = []
+    end = 0
+    run = 0
+    for match in token.finditer(source):
+        gap = source[end:match.start()]
+        assert not gap.strip(), 'Unrecognised JavaScript token.'
+        if gap:
+            output.append(gap)
+            run = 0
+        value = match[0]
+        prefix = re.split(r'\s', value)[0]
+        if run and run + len(prefix) > 40:
+            output.append(' ')
+            run = 0
+        output.append(value)
+        run = len(re.split(r'\s', value)[-1]) if re.search(r'\s', value) else run + len(value)
+        end = match.end()
+    source = ''.join(output) + source[end:]
+    assert source.isascii() and '\\' not in source
+    assert max(map(len, re.split(r'\s', source))) <= 40
+    assert not re.search(r'\((?:r|c|tm)\)', source, re.I)
+    return '<script>' + source + '</script>'
 
 inline_enhancement = inline_script()
 

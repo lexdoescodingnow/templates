@@ -1,7 +1,7 @@
 (function(){
-if(window.bhPiDirectoryLocationsV1&&window.bhPiDirectoryLocationsV1.version===2){window.bhPiDirectoryLocationsV1.scan(document);return;}
+if(window.bhPiDirectoryLocationsV1&&window.bhPiDirectoryLocationsV1.version===3){window.bhPiDirectoryLocationsV1.scan(document);return;}
 var entries=__PI_DIRECTORY_LOCATIONS__;
-function words(value){return value.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(/\s+/).filter(function(word){return word&&word!=='and';});}
+function words(value){return value.normalize('NFKD').replace(new RegExp('['+String.fromCharCode(768)+'-'+String.fromCharCode(879)+']','g'),'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(' ').filter(function(word){return word&&word!=='and';});}
 function matches(query,haystack){return query.every(function(term){return haystack.some(function(word){return term.length===1?word===term:word.indexOf(term)!==-1;});});}
 entries.forEach(function(entry){entry.identity=words(entry.name+' '+entry.nickname);entry.search=words(entry.name+' '+entry.description);});
 function findCard(name){return Array.from(document.querySelectorAll('.bh-character-directory.pc-v2 .pc-card')).find(function(card){var title=card.querySelector('.pc-name');return title&&title.textContent===name;});}
@@ -37,7 +37,7 @@ root.pcLocationsReadyV1=true;filter();
 var fallback=root.querySelector('.pc-search-fallback');if(fallback)fallback.hidden=true;
 }
 function scan(scope){if(scope.nodeType===1){var root=scope.closest('.bh-character-directory.pc-v2');if(root)init(root);}if(scope.querySelectorAll)scope.querySelectorAll('.bh-character-directory.pc-v2').forEach(init);}
-window.bhPiDirectoryLocationsV1={version:2,scan:scan};scan(document);
+window.bhPiDirectoryLocationsV1={version:3,scan:scan};scan(document);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){scan(document);},{once:true});
 if(window.MutationObserver&&document.documentElement)new MutationObserver(function(changes){changes.forEach(function(change){change.addedNodes.forEach(function(node){if(node.nodeType===1)scan(node);});});}).observe(document.documentElement,{childList:true,subtree:true});
 })();
