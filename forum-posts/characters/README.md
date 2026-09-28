@@ -1,6 +1,6 @@
 # Leaf character PI directory
 
-[Preview and copy](character-directory-preview.html) · [Forum widget code](character-directory.txt)
+[Preview and copy — v2](character-directory-v2-preview.html) · [Forum widget code — v2](character-directory-v2.txt)
 
 The directory contains 12 characters: Akara, Artie, Clarity, Dom, Eric, Haeun, Lyle, Mia, Tae, Toby, X and Yonggi. Each description uses the agreed ❧ Leaf flourish, bold nickname, delicate separators and italic face claim. Organisation names are bold where supplied. Avatars, GIFs, nicknames, ages, pronouns, jobs, face claims and final full-name tags retain their supplied details.
 
@@ -14,4 +14,6 @@ Ages remain exactly as supplied. Automatic ageing is not enabled or connected to
 
 Version 2 was checked with scripts disabled, stripped, delayed, executed outside the widget and loaded from the hosted-script path. All twelve PI strings and 24 image URLs are preserved. Search, clipboard success/fallback, repeated initialization and multiple widgets were also checked. The live forum has not been tested directly. The widget does not save visitor data or edit existing posts. The downloadable preview embeds both assets for offline use; its Copy directory widget button returns the forum version with hosted assets.
 
-Replace the old forum block with the newly generated `character-directory.txt`; updating its CSS alone cannot add the static cards. The screenshot's topic-title validation message is independent of widget rendering: the new topic needs a title longer than two characters.
+Replace the entire old forum block, including both `[dohtml]` tags, with `character-directory-v2.txt`. The saved forum code supplied on 28 September 2026 was still the original v1: it contained embedded JSON, an empty count and an empty card list. All twelve character records matched the current records. Changing only its stylesheet or refreshing that post cannot add the static cards.
+
+The versioned download starts with `<section class="bh-character-directory pc-v2"` after `[dohtml]`, includes a visible `12 characters · A–Z` count and contains twelve `<article>` cards. The builder also refreshes the original unversioned download and preview for compatibility. Use the versioned links above when replacing an older download.
