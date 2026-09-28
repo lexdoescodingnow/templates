@@ -2,9 +2,13 @@ from pathlib import Path
 from html import escape
 import json
 import re
+import unicodedata
 
 HERE = Path(__file__).resolve().parent
-records = sorted(json.loads((HERE / 'characters.json').read_text()), key=lambda row: row['name'].casefold())
+def sort_name(name):
+    return ''.join(c for c in unicodedata.normalize('NFKD', name) if not unicodedata.combining(c)).casefold()
+
+records = sorted(json.loads((HERE / 'characters.json').read_text()), key=lambda row: sort_name(row['name']))
 css = (HERE / 'character-directory-v2.css').read_text()
 js = (HERE / 'character-directory-v2.js').read_text()
 base = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/'
