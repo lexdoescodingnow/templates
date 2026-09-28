@@ -15,6 +15,10 @@ The full forum directory uses **six posts**. Replace all six earlier sections wi
 
 `character-directory.txt` and `character-directory-v2.txt` are compatibility aliases for **Part 1 only**. Use all six numbered files for the full directory, posting each separately. `character-directory-parts.json` records their ranges, counts and byte sizes.
 
+Copy the raw contents of each numbered TXT file, including the opening `[dohtml]` and closing `[/dohtml]`, into its own forum post. The stylesheet and deferred search script now appear immediately after the opening section, before the character entries. They are part of the block to copy. The six alphabetical divisions and every PI code are unchanged.
+
+The 28 September screenshot showed unstyled images and no search controls. A browser check of [the delivery preview](character-directory-delivery-preview.html), which uses the actual external loaders rather than embedded assets, confirmed that the existing hosted CSS and JavaScript load, size the portraits correctly and locate Jinseok in Part 2. The live forum topic requires sign-in, so its saved source could not be compared; the precise reason those loaders were absent or inactive in that post remains unconfirmed. Moving the loaders to the beginning makes them less likely to be omitted when copying a long block. The delivery preview is rebuilt from Part 1 with every build.
+
 ## Finding a character
 
 Search a given name, nickname or full name from any section. For example, **Jinseok** or **Jinny** finds **Choi Jinseok — Part 2 · C–G**, even from Part 1. The alphabetical filing remains based on the displayed full name, so Korean/Chinese/Japanese and Western naming order does not need to be guessed before searching.

@@ -1,5 +1,7 @@
 [dohtml]
 <section class="bh-character-directory pc-v2" aria-label="Character PI directory">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/character-directory-v2-locator-v1.css">
+<script defer src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/character-directory-v2-locator-v1.js"></script>
 <span class="pc-kicker">Character directory · part 4 of 6 · L–O</span>
 <h2 class="pc-title">Choose your character.</h2>
 <div class="pc-search" hidden><label><input class="pc-input" type="search" aria-label="Search names, partners, groups or face claims" placeholder="Name, partner, group or face claim…" autocomplete="off" spellcheck="false"></label><button class="pc-clear" type="button">Clear</button></div>
@@ -177,7 +179,5 @@
 </article>
 </div>
 <p class="pc-empty" hidden>No matching characters.</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/character-directory-v2-locator-v1.css">
-<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/character-directory-v2-locator-v1.js"></script>
 </section>
 [/dohtml]
