@@ -1,22 +1,22 @@
 # Leaf character PI directory
 
-[Preview and search all 85 characters](character-directory-v2-preview.html)
+[Preview and search all 108 characters](character-directory-v2-preview.html)
 
-The complete forum directory now uses **three posts**. Replace both earlier forum sections with the current Parts 1 and 2, then add Part 3 as another post. The alphabetical boundaries have changed; replace the complete older blocks rather than appending to them. Each file includes its own complete `[dohtml]` block, styling loader, character cards, search and copy controls. The preview searches all 85 together; each forum post searches its own alphabetical section.
+The complete forum directory now uses **three posts**. Replace all three earlier forum sections with the current numbered parts. The alphabetical boundaries have changed; replace the complete older blocks rather than appending to them. Each file includes its own complete `[dohtml]` block, styling loader, character cards, search and copy controls. The preview searches all 108 together; each forum post searches its own alphabetical section.
 
 | Forum file | Names | Characters |
 | --- | --- | --- |
-| [Part 1 — A–I](character-directory-v2-part-01.txt) | Aaron Wang through Isaiah Park | 30 |
-| [Part 2 — J–R](character-directory-v2-part-02.txt) | Jake Lee through Ryan Min | 30 |
-| [Part 3 — S–Y](character-directory-v2-part-03.txt) | Sato Hyunwoo through Yoon Kijoon | 25 |
+| [Part 1 — A–F](character-directory-v2-part-01.txt) | Aaron Wang through Freddie Lim | 35 |
+| [Part 2 — G–N](character-directory-v2-part-02.txt) | Gabriel Yang through Noah Kim | 37 |
+| [Part 3 — O–Z](character-directory-v2-part-03.txt) | Oliver Min-Peters through Zhou Yujie | 36 |
 
 `character-directory.txt` and `character-directory-v2.txt` are compatibility aliases for **Part 1 only**. They are labelled “part 1 of 3” inside the widget. Use all three numbered files for the complete collection; post each file separately. `character-directory-parts.json` records the current sections and their byte counts.
 
 ## Character details
 
-Descriptions use the ❧ Leaf flourish, bold nicknames, bold organisation and partner names, delicate separators, and italic face claims. Relationship text is framed by outline hearts: `♡ in a relationship with [b]partner[/b] ♡`, `♡ dating [b]partner[/b] ♡` or `♡ married to [b]partner[/b] ♡`. Characters without a supplied relationship have no status field: Alfie Shin, Cho Minho, Jeon Yejoon, Jessica Kim, Kim Heechan, Kim Jihwan and Wei Bowen.
+Descriptions use the ❧ Leaf flourish, bold nicknames, bold organisation and partner names, delicate separators, and italic face claims. Relationship text is framed by outline hearts: `♡ in a relationship with [b]partner[/b] ♡`, `♡ dating [b]partner[/b] ♡` or `♡ married to [b]partner[/b] ♡`. Characters without a supplied relationship have no status field: Alfie Shin, Chan Daejin, Cho Minho, Cody Baek, Jeon Yejoon, Jessica Kim, Kim Heechan, Kim Jihwan, Lee Kyoahn, Wei Bowen and Zhou Yujie.
 
-The fourth batch added 18 characters on 28 September 2026, bringing the directory to 85. Artie is **married to Nate Chung**, and Lyle is **married to Will Park**, as explicitly corrected by the user. These supersede the earlier generic relationship wording. Seo Hakyun remains 24 following his 20 September birthday. Toby's corrected avatar remains `https://i.pinimg.com/1200x/f1/a4/b5/f1a4b527b22e1de26c6140264ee1b193.jpg`.
+The fifth batch added 23 characters on 28 September 2026, bringing the directory to 108. Kai Jeong includes the subsequently supplied avatar `https://a.l3n.co/FCXLjb.png`. Choi Taeyang and Baek Yujun each list both of their partners, with each partner’s full name individually bold. Their shared partner is Elias Lim. No separate PI record has been invented for him. Peter Lee’s partner is now Caleb Sim, and Qiang Yichen’s partner is now Song Dongwoon. Artie is **married to Nate Chung**, and Lyle is **married to Will Park**, as explicitly corrected by the user. These supersede the earlier generic relationship wording. Seo Hakyun remains 24 following his 20 September birthday. Toby's corrected avatar remains `https://i.pinimg.com/1200x/f1/a4/b5/f1a4b527b22e1de26c6140264ee1b193.jpg`.
 
 Job titles are written out: Jake is chief content officer, River is chief security officer, Isaiah is chief marketing officer, and Park Taein and Seojun are chief executive officers. Toby's COO is expanded to chief operating officer and Dom's HR role to head of human resources. Jude is a registered nurse at **LACH**. Company, hospital and group names retain their established abbreviations, and the newly supplied chief medical and chief property officer roles are preserved exactly.
 
@@ -24,7 +24,7 @@ Partner shorthand resolves only through established names and nicknames. The fou
 
 The latest supplied Dongmin block uses **Shin Dongmin**, superseding the earlier “Song Dongmin” reference. His CN tag stays `shin dongmin`, and Yonggi's PI now says he is married to **Shin Dongmin**. Dongmin's reciprocal entry names Song Yonggi. Artie and Lyle retain their confirmed marriage wording.
 
-Adrian's entry includes the relationship with Shane Kang explicitly established by Shane's supplied record, just as Seojun's relationship with Wenjun was established by Wenjun's earlier record. Full names are still needed for **Taejoo, Song, Caleb and Ubin**. Their supplied shorthand is retained until confirmed. Do not infer surnames from marriage, face claims or unrelated name tokens; in particular, Qiang Yichen's partner “song” is not Song Yonggi.
+Adrian's entry includes the relationship with Shane Kang explicitly established by Shane's supplied record, just as Seojun's relationship with Wenjun was established by Wenjun's earlier record. Full names are still needed for **Taejoo, Ubin and Micah**. Their supplied shorthand is retained until confirmed. Do not infer surnames from marriage, face claims or unrelated name tokens; in particular, Qiang Yichen’s partner is Song Dongwoon, not Song Yonggi. Kang Hajun’s partner is Lee Joonki, following the established full name.
 
 All supplied image URLs, ages, pronouns and face claims are retained; occupations include the requested corrections and written-out titles. Xue Yiyun keeps “any pronouns”, Hwak Hoseong keeps the supplied spelling, and quoted occupation wording is preserved. Face claims consistently use the “looks like” label. No automatic ageing is connected; Canopy remains the authority for future age updates. Updating these files does not alter copied PI blocks in existing forum posts.
 
