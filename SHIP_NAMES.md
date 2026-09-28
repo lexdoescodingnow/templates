@@ -51,6 +51,7 @@ These names are prefilled in the editable name fields of all 868 flavour designs
 | [Sesame](sesame/) | Stella & Valerie |
 | [Sour](sour/) | Lyle & Will |
 | [Spiced](spiced/) | Hajun & Joonki |
+| [Strawberry](strawberry/) | Jaehoon & Jinseok |
 | [Sultana](sultana/) | Jaehyun & Kia |
 | [Sweet Potato](sweet-potato/) | Danwoo & Janghoon |
 | [Toffee](toffee/) | Beau & Joe |
@@ -59,6 +60,8 @@ These names are prefilled in the editable name fields of all 868 flavour designs
 | [Yuzu](yuzu/) | Cole & Jules |
 
 Mocha is Elias & Taeyang. Latte is Taeyang & Yujun. The combined Mocha & Latte collection displays **Elias, Taeyang & Yujun**.
+
+Strawberry is Jaehoon & Jinseok, who retain the flavour as exes. Its snippets preserve literal `[name]` and `[text]` fields at the user’s request; previews and the named-copy option show both names.
 
 FaceTime, Petal and Traitors retain generic editable names.
 

@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-905 distinct templates across 63 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+920 distinct templates across 64 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -63,6 +63,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Sesame | 15 | [sesame-forum-masterpost.txt](sesame-forum-masterpost.txt) | [Preview](sesame-preview.html) | 1 |
 | Sour | 15 | [sour-forum-masterpost.txt](sour-forum-masterpost.txt) | [Preview](sour-preview.html) | 1 |
 | Spiced | 15 | [spiced-forum-masterpost.txt](spiced-forum-masterpost.txt) | [Preview](spiced-preview.html) | 1 |
+| Strawberry | 15 | [strawberry-forum-masterpost.txt](strawberry-forum-masterpost.txt) | [Preview](strawberry-preview.html) | 2 |
 | Sultana | 15 | [sultana-forum-masterpost.txt](sultana-forum-masterpost.txt) | [Preview](sultana-preview.html) | 1 |
 | Sweet Potato | 12 | [sweet-potato-forum-masterpost.txt](sweet-potato-forum-masterpost.txt) | [Preview](sweet-potato-preview.html) | 1 |
 | Tangerine | 15 | [tangerine-forum-masterpost.txt](tangerine-forum-masterpost.txt) | [Preview](tangerine-preview.html) | 1 |
