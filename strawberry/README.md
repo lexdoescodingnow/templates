@@ -2,7 +2,7 @@
 
 Fifteen designs for Jaehoon & Jinseok: five threads, five device comms and five compact buds. They retain Strawberry as exes; the collection uses neutral wording and botanical details.
 
-[Open the editable preview](https://raw.githack.com/lexdoescodingnow/templates/main/strawberry/strawberry-collection-preview.html) · [Download the preview](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/strawberry/strawberry-collection-preview.html) · [Forum masterpost](../forum-posts/strawberry-forum-masterpost.txt) · [Complete download](strawberry-collection.zip)
+[Open the editable preview](https://raw.githack.com/lexdoescodingnow/templates/6ce739406213d4b9db2b88cb12f81f069ad1b411/strawberry/strawberry-collection-preview.html) · [Download the preview](https://github.com/lexdoescodingnow/templates/raw/refs/heads/main/strawberry/strawberry-collection-preview.html) · [Forum masterpost](../forum-posts/strawberry-forum-masterpost.txt) · [Complete download](strawberry-collection.zip)
 
 Previews appear above complete copyable code. Download the HTML preview and open it in a browser, or use **Copy raw file** on each GitHub snippet.
 

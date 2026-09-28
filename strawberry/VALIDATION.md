@@ -11,4 +11,8 @@
 
 Run `node strawberry/verify.cjs` with `jsdom` and `css-tree` available to Node.
 
-Local-file browser navigation was blocked by the browser URL policy. No live JCink post has been submitted.
+The published revision was inspected in Chrome in light and dark modes. All fifteen layouts passed overflow and GIF-frame checks at their full width and at 390px, 320px and 260px. Both supplied Tumblr GIFs loaded. Browser copy was checked by pasting its result into an editor field and resetting the sample. Computed bold and italic gradients run in opposite member-colour orders.
+
+The visual pass caught flex-compressed portrait frames; version 2 preserves their minimum content height and adjusts the first placeholder GIF crop. The live jsDelivr v2 stylesheet returned HTTP 200 with CSS content identical to the checked source.
+
+No live JCink post has been submitted.
