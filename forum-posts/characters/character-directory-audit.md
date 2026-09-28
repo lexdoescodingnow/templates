@@ -1,44 +1,47 @@
 # Character directory consistency audit
 
-28 September 2026 · 151 characters · 43 entries added in this batch
+28 September 2026 · 173 characters · 22 entries added in this batch
 
-Every entry contains all eight requested details: avatar, GIF, nickname, age, pronouns, occupation, face claim and full name. Every supplied image URL is retained. All relationship pairs for which both characters have entries agree on their partner names and status.
+Every entry contains the eight requested fields: avatar, secondary image, nickname, age, pronouns, occupation, face claim and full name. All supplied image URLs are retained except Duke's Tenor page, which is replaced by the direct GIF from that same page. Every relationship for which both characters have entries agrees on partner names and status.
 
-## Corrections applied
+## Latest corrections and confirmations
 
-- Changed six “dating” entries to “in a relationship with”: Sebastian Lee and Seo Hakyun; Baek Samuel and Hwak Hoseong; Asher Nam and Tanaka Hiroshi.
-- Preserved 26 married entries and both engaged entries. There are 105 entries marked “in a relationship with” and 18 without a supplied relationship.
-- Repaired Cal's malformed nickname/CD markup and applied the same bold nickname, Leaf flourish and heart framing used elsewhere.
-- Added Han Seoyeon's relationship with Mia Park, which was already explicitly established in Mia's entry.
-- Expanded partner references to Micah Ahn, Jung Taejoo and William Park. Retained Artie and Lyle's confirmed marriage wording.
-- Resolved Danwoo's “Jay” to Gwan Janghoon using Gwan's reciprocal relationship with Danwoo. Bae Jaehoon is a different Jay and has no supplied relationship.
-- Expanded Matthew and Lena's “tv personality” to “television personality”. Earlier chief-officer expansions and Jude's LACH workplace are preserved.
-- Standardised Stella and Kijoon's group-role wording to “idol / member of”. Bold organisation names are consistent, including BEDROCK, Dangdo, Tokkia, Hello Twenty Entertainment and TÉA.
-- Removed stray surrounding whitespace from Phoenix and Woobin's face-claim text. Preserved meaningful accents, pronouns and case in supplied names and nicknames.
+- Added all 22 supplied entries, including Elias Lim and Kwon Ubin. Elias, Taeyang and Yujun each name both other partners. Jaehwa's partner field now says Kwon Ubin.
+- Cal is the confirmed displayed name; Callum is his birth name. The directory retains `[CN=cal myung]`, nickname Cal and Mun's “engaged to Cal Myung” relationship.
+- Forest's face claim is now `kim seokjin`; Diego's is `samuel arredondo kim`, as explicitly corrected by the user.
+- Duke's [Tenor page](https://tenor.com/view/chu-siwoo-siwoo-just-b-gif-16176571204859617693) resolves to [this direct GIF](https://media1.tenor.com/m/4H65zb14YZ0AAAAd/chu-siwoo-siwoo.gif). Both his displayed image and copied PG use that direct URL.
+- Ubin's `7/11` workplace is bold and retains its original slash without extra spaces. Chunhee's group NYHD is bold; “& soloist” remains a separate role.
+- Preserved the distinction between Hiro Kimura and Tanaka Hiroshi, who share the nickname Hiro. Existing relationships remain unchanged.
 
-## Information still to confirm
+## Consistency retained across the directory
 
-| Entry or reference | Current information | What is still needed |
+- Every earlier “dating” status is now “in a relationship with”. There are 108 relationship entries, 26 married entries, two engaged entries and 37 entries without a supplied status.
+- Preserved marriage wording for Arthur and Nate Chung, Lyle and William Park, and all other married couples. Cal and Mun remain engaged.
+- Repaired Cal's earlier nickname/CD markup; maintained bold nicknames and partner names, Leaf flourishes and heart framing throughout.
+- Kept Han Seoyeon and Mia Park reciprocal, and kept Danwoo paired with Gwan Janghoon rather than the other Jay, Bae Jaehoon.
+- Retained expanded chief-officer titles, “television personality”, Jude's LACH workplace and consistent “idol / member of” formatting.
+- Preserved all ages and pronouns, meaningful accents, supplied full-name titles, intentional nickname case and earlier avatar corrections.
+
+## Remaining supplied-data details
+
+| Entry or reference | Current information | Remaining detail |
 | --- | --- | --- |
-| Elias Lim | Named as a partner by Taeyang and Yujun | His own complete PI entry, if he should appear in the directory. |
-| Ubin | Named as Jaehwa's partner | His full name and complete PI entry. No assumption was made that he is Jung Woobin. |
-| Cal Myung | Full-name field says `cal myung`; Mun's partner note says “callum” | Confirm whether the intended full name is Cal Myung or Callum Myung. The supplied CN is retained. |
-| Forest Lee | Face claim is `kim seojkin` | Confirm the spelling; the supplied text is retained. |
-| Diego Martinez | Face claim is `sameul arredondo kim` | Confirm the spelling; the supplied text is retained. |
+| Rain | Ryu Hyemi is “in a relationship with Rain” | No matching Rain entry or full name has been supplied. The short name remains in Hyemi's PI. |
+| Xiaoyang Li | His PG URL ends in `.jpg` | Retained as a still image. A direct animated GIF URL is needed only if animation is wanted. |
 
 ## Entries without a supplied relationship
 
-Alfie Shin; Bae Jaehoon; Chan Daejin; Cho Minho; Cody Baek; Diego Martinez; Forest Lee; Jeon Yejoon; Jessica Kim; Jung Woobin; Kim Heechan; Kim Jihwan; Lee Kyoahn; Miren Su; Shin Sangmin; Trần Bảo; Wei Bowen; Zhou Yujie.
+Alexander Park; Alfie Shin; Bae Jaehoon; Chan Daejin; Cho Minho; Cody Baek; Congressman Edison Lee; Deung Changmin; Diego Martinez; Forest Lee; Ga Baekhyeon; Gyeon Seunghwan; Hiro Kimura; Jamie Boo; Jeon Yejoon; Jessica Kim; Jung Woobin; Junichiro Yamasaki; Kim Heechan; Kim Jihwan; Lee Kyoahn; Lim Chunhee; Madison Sinclair; Mawaan Tehir; Milo Kim; Miren Su; Mun Sangook; Naveighbean Soup; Roman Parkinson-Kim; Seo Inseong; Shen Ronghui; Shin Sangmin; Trần Bảo; Wei Bowen; Xiaoli Li; Xiaoyang Li; Zhou Yujie.
 
-Their PI blocks omit the relationship section. This records the absence of supplied relationship information and does not assign them a “single” status.
+Their PI blocks omit the relationship section. This records the absence of supplied relationship information and does not assign a “single” status.
 
 ## Verification
 
-- 151 unique, complete PI blocks; all BBCode formatting tags are balanced.
-- 302 avatar/GIF URLs match the supplied records.
+- 173 unique, complete PI blocks with balanced BBCode formatting.
+- 346 image URLs checked against source data, including Duke's resolved direct GIF.
 - Every PI block copies exactly after running the directory enhancement and the forum's character-faking script locally.
-- Static cards remain available without scripts; delayed initialization works without a current script element.
-- All five forum sections contain unique, complete coverage, stay under the build size budget and match their preview copy controls.
-- Twenty-five search checks cover names, partners, jobs, accents and engagement wording; “dating” returns no entries.
+- Static cards are available without scripts; delayed initialization works without a current script element.
+- All six forum sections have unique, complete coverage, stay under the 60,000-byte build budget and match their preview copy controls.
+- Thirty-one search checks cover names, partners, jobs, accents, corrected face claims, engagement wording and Ubin's workplace; “dating” returns no entries.
 
 This is a content and local compatibility audit. It does not assert live availability of every externally hosted image or change ages automatically.
