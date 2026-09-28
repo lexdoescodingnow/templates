@@ -1,47 +1,40 @@
 # Character directory consistency audit
 
-28 September 2026 · 173 characters · 22 entries added in this batch
+28 September 2026 · 180 characters · seven entries added in this batch
 
-Every entry contains the eight requested fields: avatar, secondary image, nickname, age, pronouns, occupation, face claim and full name. All supplied image URLs are retained except Duke's Tenor page, which is replaced by the direct GIF from that same page. Every relationship for which both characters have entries agrees on partner names and status.
+No missing required fields, duplicate character records, unmatched partner references, or conflicting reciprocal relationship statuses were found in the supplied directory. Every entry contains an avatar, secondary GIF, nickname, age, pronouns, occupation, face claim and full-name field.
 
-## Latest corrections and confirmations
+## Latest updates
 
-- Added all 22 supplied entries, including Elias Lim and Kwon Ubin. Elias, Taeyang and Yujun each name both other partners. Jaehwa's partner field now says Kwon Ubin.
-- Cal is the confirmed displayed name; Callum is his birth name. The directory retains `[CN=cal myung]`, nickname Cal and Mun's “engaged to Cal Myung” relationship.
-- Forest's face claim is now `kim seokjin`; Diego's is `samuel arredondo kim`, as explicitly corrected by the user.
-- Duke's [Tenor page](https://tenor.com/view/chu-siwoo-siwoo-just-b-gif-16176571204859617693) resolves to [this direct GIF](https://media1.tenor.com/m/4H65zb14YZ0AAAAd/chu-siwoo-siwoo.gif). Both his displayed image and copied PG use that direct URL.
-- Ubin's `7/11` workplace is bold and retains its original slash without extra spaces. Chunhee's group NYHD is bold; “& soloist” remains a separate role.
-- Preserved the distinction between Hiro Kimura and Tanaka Hiroshi, who share the nickname Hiro. Existing relationships remain unchanged.
+- Added Noel Hampton, Yoo Byungjoon, Jeung Duckhwan, Nicky Villarreal, Rain Jeon, Alec Rivera and Oprah Winfrey.
+- Replaced Xiaoyang Li's old JPG with the supplied GIF in both his preview and copied PG code.
+- Expanded Hyemi's partner reference to Rain Jeon. Rain's entry names Ryu Hyemi, completing the last previously unmatched partner reference.
+- Removed the pasted backslash escaping around URL colons and the stray leading space in Nicky's nickname. Preserved Yoo Byungjoon's uppercase nickname B.
+- Preserved all supplied ages, occupations, pronouns, face claims and image URLs, including meaningful accents and full-name titles.
 
-## Consistency retained across the directory
+## Consistency across all entries
 
-- Every earlier “dating” status is now “in a relationship with”. There are 108 relationship entries, 26 married entries, two engaged entries and 37 entries without a supplied status.
-- Preserved marriage wording for Arthur and Nate Chung, Lyle and William Park, and all other married couples. Cal and Mun remain engaged.
-- Repaired Cal's earlier nickname/CD markup; maintained bold nicknames and partner names, Leaf flourishes and heart framing throughout.
-- Kept Han Seoyeon and Mia Park reciprocal, and kept Danwoo paired with Gwan Janghoon rather than the other Jay, Bae Jaehoon.
-- Retained expanded chief-officer titles, “television personality”, Jude's LACH workplace and consistent “idol / member of” formatting.
-- Preserved all ages and pronouns, meaningful accents, supplied full-name titles, intentional nickname case and earlier avatar corrections.
-
-## Remaining supplied-data details
-
-| Entry or reference | Current information | Remaining detail |
-| --- | --- | --- |
-| Rain | Ryu Hyemi is “in a relationship with Rain” | No matching Rain entry or full name has been supplied. The short name remains in Hyemi's PI. |
-| Xiaoyang Li | His PG URL ends in `.jpg` | Retained as a still image. A direct animated GIF URL is needed only if animation is wanted. |
+- Relationship wording is uniformly “in a relationship with”, “married to” or “engaged to”. There are 109 relationship entries, 26 married entries, two engaged entries and 43 entries without a supplied status.
+- All referenced partners now have their own entries. Reciprocal names and statuses agree throughout, including all three members of the Elias–Taeyang–Yujun relationship.
+- Every entry uses the ❧ Leaf flourish, bold nickname, separated age and pronouns, bold organisation and partner names, outline hearts around relationships and an italic face claim introduced by “looks like”.
+- Chief-officer roles are written out. Previous job wording corrections, Jude's LACH workplace, and consistent idol/member formatting remain in place.
+- Cal remains Cal as requested. Forest and Diego retain the corrected Seokjin and Samuel spellings. Hakyun remains 24, and earlier marriage and avatar corrections remain intact.
+- Duplicate nicknames refer to separate records and do not merge identities or override established partners.
 
 ## Entries without a supplied relationship
 
-Alexander Park; Alfie Shin; Bae Jaehoon; Chan Daejin; Cho Minho; Cody Baek; Congressman Edison Lee; Deung Changmin; Diego Martinez; Forest Lee; Ga Baekhyeon; Gyeon Seunghwan; Hiro Kimura; Jamie Boo; Jeon Yejoon; Jessica Kim; Jung Woobin; Junichiro Yamasaki; Kim Heechan; Kim Jihwan; Lee Kyoahn; Lim Chunhee; Madison Sinclair; Mawaan Tehir; Milo Kim; Miren Su; Mun Sangook; Naveighbean Soup; Roman Parkinson-Kim; Seo Inseong; Shen Ronghui; Shin Sangmin; Trần Bảo; Wei Bowen; Xiaoli Li; Xiaoyang Li; Zhou Yujie.
+Alec Rivera; Alexander Park; Alfie Shin; Bae Jaehoon; Chan Daejin; Cho Minho; Cody Baek; Congressman Edison Lee; Deung Changmin; Diego Martinez; Forest Lee; Ga Baekhyeon; Gyeon Seunghwan; Hiro Kimura; Jamie Boo; Jeon Yejoon; Jessica Kim; Jeung Duckhwan; Jung Woobin; Junichiro Yamasaki; Kim Heechan; Kim Jihwan; Lee Kyoahn; Lim Chunhee; Madison Sinclair; Mawaan Tehir; Milo Kim; Miren Su; Mun Sangook; Naveighbean Soup; Nicky Villarreal; Noel Hampton; Oprah Winfrey; Roman Parkinson-Kim; Seo Inseong; Shen Ronghui; Shin Sangmin; Trần Bảo; Wei Bowen; Xiaoli Li; Xiaoyang Li; Yoo Byungjoon; Zhou Yujie.
 
 Their PI blocks omit the relationship section. This records the absence of supplied relationship information and does not assign a “single” status.
 
 ## Verification
 
-- 173 unique, complete PI blocks with balanced BBCode formatting.
-- 346 image URLs checked against source data, including Duke's resolved direct GIF.
+- 180 unique records, each containing all four PI/PG/CD/CN tags and all eight requested content fields.
+- Balanced BBCode, consistent relationship wording, no leftover pasted URL escapes or leading nickname spaces.
+- 360 avatar/GIF URLs checked against the approved source records. All PG values use direct GIF URLs; no Tenor page URL or JPG remains in PG fields.
 - Every PI block copies exactly after running the directory enhancement and the forum's character-faking script locally.
-- Static cards are available without scripts; delayed initialization works without a current script element.
+- Static cards remain available without JavaScript. Delayed initialization works without a current script element, and clipboard fallback selects the complete code.
 - All six forum sections have unique, complete coverage, stay under the 60,000-byte build budget and match their preview copy controls.
-- Thirty-one search checks cover names, partners, jobs, accents, corrected face claims, engagement wording and Ubin's workplace; “dating” returns no entries.
+- Thirty-six searches pass, covering names, partners, jobs, accents, corrected face claims, engagement wording, B, Ducky and Rain. Search includes face claims, so “B” also matches Micah's face-claim alias Jay B.
 
-This is a content and local compatibility audit. It does not assert live availability of every externally hosted image or change ages automatically.
+The checks cover supplied content and local compatibility. Live availability of every externally hosted image was not reverified. Ages retain the supplied values; automatic ageing is not connected, and Canopy remains the authority for future age updates.
