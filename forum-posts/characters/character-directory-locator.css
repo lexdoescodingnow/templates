@@ -1,0 +1,9 @@
+.bh-character-directory.pc-v2 .pc-location-help-v1,.bh-character-directory.pc-v2 .pc-location-count-v1{margin:8px 0;color:var(--pc-muted);font:400 11px/1.6 Arial,sans-serif;}
+.bh-character-directory.pc-v2 .pc-locations-v1{display:grid;gap:6px;max-height:240px;margin:12px 0 18px;padding:2px 7px 2px 2px;overflow:auto;scrollbar-width:thin;scrollbar-color:var(--pc-one) var(--pc-paper);}
+.bh-character-directory.pc-v2 .pc-location-v1{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 12px;width:100%;min-width:0;min-height:0;margin:0;padding:10px 12px;border:1px solid var(--pc-line);border-left:2px solid var(--pc-two);border-radius:7px;background:var(--pc-card);color:var(--pc-ink);font:400 12px/1.5 Arial,sans-serif;letter-spacing:0;text-align:left;text-transform:none;}
+.bh-character-directory.pc-v2 button.pc-location-v1:hover{border-color:var(--pc-one);}
+.bh-character-directory.pc-v2 .pc-location-name-v1{min-width:0;overflow-wrap:anywhere;font-size:12px;}
+.bh-character-directory.pc-v2 .pc-location-section-v1{color:var(--pc-ink);font-size:11px;white-space:nowrap;}
+.bh-character-directory.pc-v2 .pc-location-hint-v1{grid-column:1/-1;color:var(--pc-muted);font-size:10px;font-weight:400;overflow-wrap:anywhere;}
+.bh-character-directory.pc-v2 h3.pc-name:focus-visible{outline:2px solid var(--pc-three);outline-offset:4px;}
+@media(max-width:420px){.bh-character-directory.pc-v2 .pc-location-v1{grid-template-columns:1fr;}.bh-character-directory.pc-v2 .pc-location-hint-v1{grid-column:auto;}}

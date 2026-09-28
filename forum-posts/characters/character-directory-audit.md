@@ -4,6 +4,14 @@
 
 No missing required fields, duplicate character records, unmatched partner references, or conflicting reciprocal relationship statuses were found in the supplied directory. Every entry contains an avatar, secondary GIF, nickname, age, pronouns, occupation, face claim and full-name field.
 
+## Directory-wide lookup update
+
+The full-name filing order and all 180 PI records are unchanged. Every section's search now lists matches across the whole directory, each with the correct part number and letter range. Jinseok and Jinny both lead with **Choi Jinseok — Part 2 · C–G** from all six sections. Name and nickname matches precede related profile matches.
+
+On-page results can jump to their card; off-page results give the forum section to open. No unverified forum post URL is used. Lookup metadata and forum files are generated from the same partition map, and the metadata is bundled into the enhancement rather than fetched at runtime.
+
+Verified all 180 index mappings, all six entry points, wrong-page lookups, same-page reveal/focus, delayed insertion, repeated scripts, both legacy script orders, clear/Escape behavior, and exact PI copying after navigation. The underlying content audit below still passes.
+
 ## Latest updates
 
 - Added Noel Hampton, Yoo Byungjoon, Jeung Duckhwan, Nicky Villarreal, Rain Jeon, Alec Rivera and Oprah Winfrey.

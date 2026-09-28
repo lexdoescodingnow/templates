@@ -9,11 +9,12 @@ def sort_name(name):
     return ''.join(c for c in unicodedata.normalize('NFKD', name) if not unicodedata.combining(c)).casefold()
 
 records = sorted(json.loads((HERE / 'characters.json').read_text()), key=lambda row: sort_name(row['name']))
-css = (HERE / 'character-directory-v2.css').read_text()
-js = (HERE / 'character-directory-v2.js').read_text()
+css = (HERE / 'character-directory-v2.css').read_text() + '\n' + (HERE / 'character-directory-locator.css').read_text()
+core_js = (HERE / 'character-directory-v2.js').read_text()
+locator_js = (HERE / 'character-directory-locator.js').read_text()
 base = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/forum-posts/characters/'
-css_link = '<link rel="stylesheet" href="' + base + 'character-directory-v2.css">'
-js_link = '<script src="' + base + 'character-directory-v2.js"></script>'
+css_link = '<link rel="stylesheet" href="' + base + 'character-directory-v2-locator-v1.css">'
+js_link = '<script src="' + base + 'character-directory-v2-locator-v1.js"></script>'
 
 def fields(code):
     return dict(re.findall(r'\[(PI|PG|CD|CN)=([\s\S]*?)\](?=\s*(?:\[(?:PI|PG|CD|CN)=|$))', code))
@@ -99,6 +100,18 @@ for filename in ('character-directory.txt', 'character-directory-v2.txt'):
 manifest = {'totalCharacters': len(records), 'totalParts': len(parts), 'parts': [{k: v for k, v in part.items() if k != 'code'} for part in parts]}
 (HERE / 'character-directory-parts.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
 
+locations = []
+for part, indices in zip(parts, part_indices):
+    for i in indices:
+        record = records[i]
+        cd = fields(record['code'])['CD']
+        nickname = re.match(r'❧ \[b\](.*?)\[/b\]', cd)[1]
+        locations.append(dict(name=record['name'], nickname=nickname, part=part['number'], range=part['range'], order=i, description=re.sub(r'\[/?(?:b|i|u)\]', '', cd)))
+(HERE / 'character-directory-locations.json').write_text(json.dumps(locations, ensure_ascii=False, indent=2) + '\n')
+js = core_js + '\n' + locator_js.replace('__PI_DIRECTORY_LOCATIONS__', json.dumps(locations, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c'))
+(HERE / 'character-directory-v2-locator-v1.js').write_text(js)
+(HERE / 'character-directory-v2-locator-v1.css').write_text(css)
+
 all_markup = widget(cards).replace(css_link, '<style>' + css + '</style>').replace(js_link, '<script>' + js + '</script>')
 copy_panels = []
 for part in parts:
@@ -108,7 +121,7 @@ for part in parts:
 
 preview = '''<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leaf character PI directory</title><style>body{margin:0;padding:24px 16px;background:#161619;color:#eee;font:14px/1.6 Arial,sans-serif}main{max-width:740px;margin:auto}.preview-tools{text-align:center}select,button{font:inherit;padding:9px 12px;background:#29292d;color:#eee;border:1px solid #777;border-radius:6px}button{cursor:pointer}.preview-member{--mgrgb1:218,148,168;--mgrgb2:167,172,225;--mgrgb3:108,195,201}html[color-mode='light'] body{background:#efeeec;color:#303035}html[color-mode='light'] .preview-member{--mgrgb1:148,58,98;--mgrgb2:102,80,154;--mgrgb3:21,120,129}.preview-part{margin:24px 0;padding:18px;border:1px solid #777;border-radius:8px}.preview-part h3{margin:0 0 12px}.widget-status{font-size:12px}.preview-code{box-sizing:border-box;width:100%;min-height:200px;margin-top:12px;padding:12px;background:#222;color:#eee;border:1px solid #777;font:12px/1.5 monospace}</style></head><body><main>
 <div class="preview-tools"><label>Preview mode <select id="preview-mode"><option value="dark">Dark</option><option value="light">Light</option></select></label></div><div class="preview-member">''' + all_markup + '''</div>
-<p>Search all ''' + str(len(records)) + ''' characters above. For the forum, copy each alphabetical part into a separate post; search within each post covers that part.</p>''' + '\n'.join(copy_panels) + '''
+<p>Search all ''' + str(len(records)) + ''' characters from any section to see their forum part. When an entry is on the current page, select its result to jump to it. Copy each alphabetical part into a separate forum post.</p>''' + '\n'.join(copy_panels) + '''
 </main><script>document.getElementById('preview-mode').addEventListener('change',function(){document.documentElement.setAttribute('color-mode',this.value);});document.querySelectorAll('.preview-part').forEach(function(part){part.querySelector('.copy-widget').addEventListener('click',async function(){var field=part.querySelector('.preview-code');var status=part.querySelector('.widget-status');try{await navigator.clipboard.writeText(field.value);status.textContent='Forum part copied.';}catch(error){part.querySelector('.widget-details').open=true;field.focus();field.select();field.setSelectionRange(0,field.value.length);status.textContent='Selected — press Ctrl+C or ⌘C.';}});});</script></body></html>'''
 for filename in ('character-directory-preview.html', 'character-directory-v2-preview.html'):
     (HERE / filename).write_text(preview)

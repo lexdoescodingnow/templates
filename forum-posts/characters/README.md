@@ -2,7 +2,7 @@
 
 [Preview and search all 180 characters](character-directory-v2-preview.html)
 
-The full forum directory uses **six posts**. Replace the earlier sections with the current numbered files. Parts 4–6 have new alphabetical boundaries; Part 2 is unchanged. Each file includes its own complete `[dohtml]` block, static character cards, stylesheet loader, search and copy controls. The preview searches the whole directory; each forum post searches its own section.
+The full forum directory uses **six posts**. Replace all six earlier sections with the current numbered files to use the directory-wide lookup. Character data, alphabetical ranges and section counts are unchanged by this lookup update. Each file includes its own complete `[dohtml]` block, static character cards, stylesheet loader, search and copy controls. Every search box now searches all 180 character profiles and lists the matching names with their forum part number and letter range. An entry on the current page can be opened directly from its result; an entry on another page shows which forum section to open. The lookup does not invent cross-page post links.
 
 | Forum file | Names | Characters |
 | --- | --- | --- |
@@ -14,6 +14,14 @@ The full forum directory uses **six posts**. Replace the earlier sections with t
 | [Part 6 — V–Z](character-directory-v2-part-06.txt) | Valerie Kwon through Zhou Yujie | 16 |
 
 `character-directory.txt` and `character-directory-v2.txt` are compatibility aliases for **Part 1 only**. Use all six numbered files for the full directory, posting each separately. `character-directory-parts.json` records their ranges, counts and byte sizes.
+
+## Finding a character
+
+Search a given name, nickname or full name from any section. For example, **Jinseok** or **Jinny** finds **Choi Jinseok — Part 2 · C–G**, even from Part 1. The alphabetical filing remains based on the displayed full name, so Korean/Chinese/Japanese and Western naming order does not need to be guessed before searching.
+
+Names and nicknames rank ahead of matches in partners, roles, groups and face claims. A search for Jinseok therefore places his own entry ahead of Lucas's related partner match. Local character cards still filter below the directory-wide location results.
+
+When the destination card is present anywhere on the current page, its result is a button that reveals and focuses the card. If the destination is on another forum page, the result states its part number and range. Direct cross-page navigation would require the actual forum post URLs; none have been invented.
 
 ## Character details
 
@@ -33,10 +41,12 @@ See [the consistency audit](character-directory-audit.md). No missing required f
 
 ## Maintenance
 
-`characters.json` holds the complete PI strings. Edit it and run `python forum-posts/characters/build-characters.py` from the repository root. The generator sorts by displayed full name without treating accent marks as separate letters, partitions at initial-letter boundaries, writes the numbered sections and manifest, and refreshes both preview filenames and Part 1 aliases. Every section is checked against a 60,000-byte UTF-8 build budget.
+`characters.json` holds the complete PI strings. Edit it and run `python forum-posts/characters/build-characters.py` from the repository root. The generator sorts by displayed full name without treating accent marks as separate letters, partitions at initial-letter boundaries, writes the numbered sections and manifest, and refreshes both preview filenames, Part 1 aliases, and the directory-wide location index. The same partition data produces every lookup label, preventing a name from pointing to the wrong section. Every section is checked against a 60,000-byte UTF-8 build budget.
 
-All cards, images, descriptions and complete PI code panels are static HTML. “View / copy PI code” works without JavaScript. The hosted `character-directory-v2.js` adds search and one-click copying without relying on `document.currentScript`. The style inherits member colours and respects the forum's light/dark modes. A failed clipboard request opens and selects the code for manual copying.
+All cards, images, descriptions and complete PI code panels are static HTML. “View / copy PI code” works without JavaScript. The current snippets load `character-directory-v2-locator-v1.js`, which bundles the existing v2 copy/filter enhancement, `character-directory-locator.js`, and all 180 location records. It has no separate JSON-fetch dependency and does not rely on `document.currentScript`. `character-directory-v2-locator-v1.css` bundles the established v2 stylesheet with the lookup styling from `character-directory-locator.css`. The original v2 endpoints remain available for older posts; use the refreshed snippets for the new lookup. The style inherits member colours and respects the forum's light/dark modes. A failed clipboard request opens and selects the code for manual copying.
 
 Code brackets are escaped, with opening brackets split into spans. This preserves exact copied text while keeping literal PI/PG/CD/CN tag openings out of serialized HTML, where the forum's character-faking script would otherwise process them. Keep this protection and static rendering when expanding the directory. Do not return to the original JSON-only script renderer.
 
 The user confirmed the original v2 layout works on the live forum. This 180-character expansion passed local checks for complete and balanced fields, intended source edits, static rendering, delayed/script-detached initialization, compatibility with the forum character-faking script, exact copying of every PI code, 36 searches, reciprocal relationship status and complete coverage across six bounded sections. All preview copy panels match their forum files. Image URLs were preserved and checked against source data; live availability of every third-party image was not reverified.
+
+The lookup update also passed checks for all 180 location mappings, Jinseok/Jinny discovery from every section, identity-first ordering, destinations absent from the current page, same-page jumps and focus, late-added sections, duplicate script loading, both legacy/enhanced script orders, clearing and Escape. All 180 copied PI strings remain exact.
