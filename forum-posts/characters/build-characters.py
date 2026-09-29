@@ -33,15 +33,8 @@ def description(value):
             out.append('</' + stack.pop() + '>')
     return ''.join(out) + ''.join('</' + tag + '>' for tag in reversed(stack))
 
-def forum_pi(code):
-    parts = fields(code)
-    return '[dohtml] ' + ' '.join(
-        '[' + key + '=' + (description(parts[key]) if key == 'CD' else escape(parts[key], quote=False)) + ']'
-        for key in ('PI', 'PG', 'CD', 'CN')
-    ) + ' [/dohtml]'
-
 def copy_markup(code):
-    return re.sub(r'&#91;(PI|PG|CD|CN)=', r'<span>&#91;</span>\1=', escape(forum_pi(code)).replace('&gt;', '>').replace('[', '&#91;'))
+    return escape(code).replace('[', '<span>[</span>')
 
 cards = []
 for record in records:
@@ -55,6 +48,8 @@ for record in records:
             alt = ''
             images.append('<img class="' + cls + '" src="' + escape(url, quote=True) + '" alt="' + escape(alt, quote=True) + '" loading="lazy">')
     cards.append('<article class="pc-card">\n<div class="pc-identity"><div class="pc-images">' + ''.join(images) + '</div><div class="pc-person"><h3 class="pc-name">' + escape(record['name']) + '</h3><p class="pc-description">' + description(parts['CD']) + '</p></div></div>\n<details class="pc-details"><summary>View / copy PI code</summary><pre class="pc-code"><code>' + copy_markup(record['code']) + '</code></pre></details>\n</article>')
+
+cards = [re.sub(r'class="([a-zA-Z][a-zA-Z0-9-]*)"', r'class=\1', card).replace('\n', '') for card in cards]
 
 cn_index = {fields(record['code'])['CN'].casefold(): i for i, record in enumerate(records)}
 compact_locations = []
@@ -73,7 +68,7 @@ def inline_script():
     packed = json.dumps(compact_locations, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
     unpack = '(function(a){var ranges={};a.forEach(function(r){var c=r[0].charAt(0);if(!ranges[r[2]])ranges[r[2]]=[c,c];else ranges[r[2]][1]=c;});return a.map(function(r,i){return {name:r[0],nickname:r[1]||r[0],part:r[2],range:ranges[r[2]].join("–"),order:i,description:r[1]+" "+(r[3]||[]).map(function(p){return a[p][0];}).join(" ")};});})(' + packed + ')'
     source = core_js + '\n' + locator_js
-    names = 'scope selection source clearButton changes change haystack joined available results entry entries query result found input root cards actions details status count list empty search help hint fallback matches findCard reveal words init'.split()
+    names = 'scope selection source clearButton changes change haystack joined available results entry entries query result found input root cards actions details status count list empty search help hint fallback matches findCard reveal words init clear copy card node label title event term word exact row item location field'.split()
     aliases = {name: 'v' + 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'[i] for i, name in enumerate(names)}
     tokens = re.compile(r'''"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\b(?:''' + '|'.join(names) + r''')\b''')
     source = tokens.sub(lambda match: aliases.get(match[0], match[0]), source)
