@@ -15,7 +15,15 @@ The full forum directory uses **six posts**. Replace all six earlier sections wi
 
 `character-directory.txt` and `character-directory-v2.txt` are compatibility aliases for **Part 1 only**. Use all six numbered files for the full directory, posting each separately. `character-directory-parts.json` records their ranges, counts and byte sizes.
 
-Copy the raw contents of each numbered TXT file, including the opening `[dohtml]` and closing `[/dohtml]`, into its own forum post. The stylesheet is near the beginning. The complete search and copy script is embedded at the end of each block, matching the working ship-template directory's inline delivery approach. Keep the whole block together. The six alphabetical divisions and every PI code are unchanged.
+Copy the raw contents of each numbered TXT file, including the opening `[dohtml]` and closing `[/dohtml]`, into its own forum post. The stylesheet is near the beginning. The complete search and copy script is embedded at the end of each block, matching the working ship-template directory's inline delivery approach. Keep the whole block together. The six alphabetical divisions and all character information are unchanged.
+
+## Posting a coloured PI
+
+Each Copy PI button and manual code panel now provides a complete `[dohtml]` block containing the PI, PG, CD and CN fields. Within CD, nicknames, organisations and partners use HTML `<b>` tags, and face claims use `<i>`. Blue Hour's existing post-header rules colour those elements with the posting member's group gradient. No additional stylesheet or script is needed in the copied PI.
+
+Paste the complete PI block after the thread template's closing `[/dohtml]`, keeping the two blocks separate. To update an existing post, replace its old PI block with the new copy. Updating a directory post only changes what future copies contain.
+
+The saved Jinseok thread supplied on 29 September contained plain CD text with no bold or italic elements, so the header's colour selectors had nothing to match. The directory preview's formatting had not carried into that posted PI. The generated HTML form preserves the formatting explicitly. [Jinseok's repair example](examples/choi-jinseok-colour-repair.txt) retains the avatar and GIF from that supplied thread; the canonical directory image URLs have not been changed.
 
 These snippets use in-post search with no external search hyperlink. No external JavaScript request or JSON fetch is required. The browser preview and [Part 1 delivery preview](character-directory-delivery-preview.html) also exercise the complete embedded controls.
 
@@ -59,7 +67,9 @@ The builder reduces redundant markup and shortens selected internal JavaScript i
 
 Run `node forum-posts/characters/tests/check-forum-script.cjs` after rebuilding. It reproduces the actual saved-page regular-expression syntax error, verifies that the generated scripts survive entity/symbol conversion and long-token wrapping, and checks the original six section ranges and posting budgets.
 
-Opening brackets in copy text remain HTML-escaped. The PI/PG/CD/CN field openings also remain split into spans so the forum's character-faking script cannot consume them. Formatting-tag brackets do not need extra spans. Complete copied strings remain identical to `characters.json`. Do not return to JSON-only card rendering or rely on `document.currentScript`.
+Opening brackets in copy text remain HTML-escaped. The PI/PG/CD/CN field openings also remain split into spans so the forum's character-faking script cannot consume them. HTML formatting in the copy panels is escaped as text. `characters.json` remains the canonical BBCode data; `forum_pi()` generates the equivalent HTML posting form without changing character facts or media. Both clipboard and manual copies use that same generated form. The adjacent character heading identifies the two decorative images, whose empty alt attributes avoid repeating the name and keep the six sections below their posting budgets. Do not return to JSON-only card rendering or rely on `document.currentScript`.
+
+The colour revision was checked for all 180 copied blocks using the actual Blue Hour character script: the bold and italic elements survive extraction into the header, the native header colour selectors match, and all four PI fields retain their values. Search, the single-help-line fix and the original six divisions remain intact. `python forum-posts/characters/tests/check-pi-format.py` checks the static generated copies against the canonical fields and formatting.
 
 The inline revision was tested with external resource loading disabled in all six parts, both independently and through Blue Hour's saved character-faking script. Every inline search initialized, Jinseok and Jinny located Part 2 · C–G, all 180 PI copies matched exactly, and all original part ranges and counts were preserved.
 

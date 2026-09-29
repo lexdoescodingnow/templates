@@ -33,8 +33,15 @@ def description(value):
             out.append('</' + stack.pop() + '>')
     return ''.join(out) + ''.join('</' + tag + '>' for tag in reversed(stack))
 
+def forum_pi(code):
+    parts = fields(code)
+    return '[dohtml] ' + ' '.join(
+        '[' + key + '=' + (description(parts[key]) if key == 'CD' else escape(parts[key], quote=False)) + ']'
+        for key in ('PI', 'PG', 'CD', 'CN')
+    ) + ' [/dohtml]'
+
 def copy_markup(code):
-    return re.sub(r'&#91;(PI|PG|CD|CN)=', r'<span>&#91;</span>\1=', escape(code).replace('[', '&#91;'))
+    return re.sub(r'&#91;(PI|PG|CD|CN)=', r'<span>&#91;</span>\1=', escape(forum_pi(code)).replace('&gt;', '>').replace('[', '&#91;'))
 
 cards = []
 for record in records:
@@ -45,7 +52,7 @@ for record in records:
         url = parts[key]
         if re.match(r'^https?://', url, re.I):
             cls = 'pc-photo' + (' pc-gif' if key == 'PG' else '')
-            alt = record['name'] + ' portrait' if key == 'PI' else ''
+            alt = ''
             images.append('<img class="' + cls + '" src="' + escape(url, quote=True) + '" alt="' + escape(alt, quote=True) + '" loading="lazy">')
     cards.append('<article class="pc-card">\n<div class="pc-identity"><div class="pc-images">' + ''.join(images) + '</div><div class="pc-person"><h3 class="pc-name">' + escape(record['name']) + '</h3><p class="pc-description">' + description(parts['CD']) + '</p></div></div>\n<details class="pc-details"><summary>View / copy PI code</summary><pre class="pc-code"><code>' + copy_markup(record['code']) + '</code></pre></details>\n</article>')
 
