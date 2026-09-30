@@ -53,5 +53,5 @@ for part in manifest['parts']:
     assert len(panels) == part['count']
     for markup in panels:
         assert '[' not in markup.replace('<span>[</span>', '')
-assert len(seen) == len(records) == 180
-print('PASS: all 180 static PI copies exactly match canonical BBCode, with literal formatting tags, no dohtml wrappers, and protected brackets after entity/BBCode processing.')
+assert len(seen) == len(records) == manifest['totalCharacters']
+print(f'PASS: all {len(records)} static PI copies exactly match canonical BBCode, with literal formatting tags, no dohtml wrappers, and protected brackets after entity/BBCode processing.')

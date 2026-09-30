@@ -12,7 +12,7 @@ function forumFormatting(source) {
 }
 const broken = "function words(value){return value.normalize('NFKD').replace(/[&#092;u0300-&#092;u036f]/g,'');}";
 assert.throws(() => new vm.Script(broken), /Invalid regular expression/);
-assert.deepEqual(manifest.parts.map(part => [part.range, part.count]), [['A–B',23],['C–G',35],['H–K',36],['L–O',34],['P–T',36],['V–Z',16]]);
+assert.deepEqual(manifest.parts.map(part => [part.range, part.count]), [['A–B',23],['C–G',36],['H–K',36],['L–O',34],['P–T',36],['V–Z',16]]);
 for (const part of manifest.parts) {
   const post = fs.readFileSync(path.join(directory, part.file), 'utf8');
   const scripts = Array.from(post.matchAll(/<script>([\s\S]*?)<\/script>/g), match => match[1]);
