@@ -186,8 +186,9 @@ def concise_code(source, row):
 
 def presentation(row):
     source = row['code'].strip()
-    if row['folder'] == 'strawberry':
-        example = source.replace('[name]', 'Jaehoon &amp; Jinseok').replace('[text]', escape(sample_title(row)))
+    if row['folder'] in ('strawberry', 'cucumber'):
+        names = {'strawberry': 'Jaehoon &amp; Jinseok', 'cucumber': 'Tao &amp; Zhiyuan'}
+        example = source.replace('[name]', names[row['folder']]).replace('[text]', escape(sample_title(row)))
         return source, example
     if row['folder'] in ('cereal', 'cashew', 'potato'):
         return source, source

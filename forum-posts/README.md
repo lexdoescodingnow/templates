@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-920 distinct templates across 64 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+935 distinct templates across 65 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -27,6 +27,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Cocktail | 15 | [cocktail-forum-masterpost.txt](cocktail-forum-masterpost.txt) | [Preview](cocktail-preview.html) | 1 |
 | Coconut | 15 | [coconut-forum-masterpost.txt](coconut-forum-masterpost.txt) | [Preview](coconut-preview.html) | 1 |
 | Cream | 15 | [cream-forum-masterpost.txt](cream-forum-masterpost.txt) | [Preview](cream-preview.html) | 1 |
+| Cucumber | 15 | [cucumber-forum-masterpost.txt](cucumber-forum-masterpost.txt) | [Preview](cucumber-preview.html) | 2 |
 | Delight | 15 | [delight-forum-masterpost.txt](delight-forum-masterpost.txt) | [Preview](delight-preview.html) | 1 |
 | Espresso | 15 | [espresso-forum-masterpost.txt](espresso-forum-masterpost.txt) | [Preview](espresso-preview.html) | 1 |
 | FaceTime | 1 | [facetime-forum-masterpost.txt](facetime-forum-masterpost.txt) | [Preview](facetime-preview.html) | 1 |

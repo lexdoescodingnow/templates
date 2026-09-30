@@ -20,6 +20,7 @@ These names are prefilled in the editable name fields of all 868 flavour designs
 | [Cocktail](cocktail/) | Cal & Dae |
 | [Coconut](coconut/) | Dustin & Noah |
 | [Cream](cream/) | Haoyu & Malachi |
+| [Cucumber](cucumber/) | Tao & Zhiyuan |
 | [Delight](delight/) | Eric & X |
 | [Espresso](espresso/) | Jaeho & Leo |
 | [Fiery](fiery/) | Asher & Hiroshi |

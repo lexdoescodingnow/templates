@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en" color-mode="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cucumber · Tao &amp; Zhiyuan</title><style>.cu1{--cu-a:rgb(var(--mgrgb1,108,89,124));--cu-b:rgb(var(--mgrgb2,64,117,123));--cu-c:rgb(var(--mgrgb3,84,120,92));--cu-grad:linear-gradient(120deg,var(--cu-a),var(--cu-b),var(--cu-c));--cu-reverse:linear-gradient(120deg,var(--cu-c),var(--cu-b),var(--cu-a));--cu-paper:#fbfaf7;--cu-inset:#eeefeb;--cu-ink:#303735;--cu-muted:#656e69;--cu-line:#d3d8d0;--cu-leaf:#6d8463;--cu-width:560px;box-sizing:border-box;width:min(100%,var(--cu-width));margin:24px auto;font:14px/1.8 Arial,Helvetica,sans-serif;text-align:left;color:var(--cu-ink);container:cucumber/inline-size;isolation:isolate}
+.cu1 *,.cu1 *::before,.cu1 *::after{box-sizing:border-box}
+.cu1 .cu-layout{position:relative;display:grid;min-width:0;background:var(--cu-paper);box-shadow:0 10px 30px #15241a0a}
+.cu1 .cu-layout>*{min-width:0}
+.cu1 .cu-head{grid-area:head;display:flex;flex-direction:column;gap:11px;overflow-wrap:anywhere}
+.cu1 .cu-name{display:block;max-width:100%;width:fit-content;font:600 10px/1.5 Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;color:var(--cu-a)}
+.cu1 .cu-title{font:500 39px/1.06 'Trebuchet MS',Arial,sans-serif;letter-spacing:-.055em;text-wrap:balance;color:var(--cu-a);background-image:var(--cu-grad);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cu1 .cu-sub{font:10px/1.6 Arial,sans-serif;letter-spacing:.08em;color:var(--cu-muted)}
+.cu1 .cu-media{grid-area:media;align-self:start;display:flex;gap:12px;align-items:start}
+.cu1 .cu-media:empty,.cu1 .cu-media:not(:has(img)){display:none}
+.cu1 .cu-shot{display:block;flex:1 1 0;min-width:0;padding:4px;background:var(--cu-grad);overflow:hidden}
+.cu1 .cu-shot img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:var(--cu-crop,50% 35%);border:3px solid var(--cu-paper);border-radius:inherit}
+.cu1 .cu-copy{grid-area:copy;font:14px/1.9 Arial,Helvetica,sans-serif;overflow-wrap:anywhere}
+.cu1 .cu-copy p{margin:0 0 17px;font:inherit;color:inherit}
+.cu1 .cu-copy p:last-child{margin-bottom:0}
+.cu1 .cu-copy :is(b,strong,i,em,u){color:var(--cu-a);background-image:var(--cu-grad);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none}
+.cu1 .cu-copy :is(b,strong){font-weight:700}
+.cu1 .cu-copy :is(i,em){font-style:italic;background-image:var(--cu-reverse)}
+.cu1 .cu-copy u{text-decoration:none;border-bottom:1px solid var(--cu-b);padding-bottom:1px}
+.cu1 .cu-copy a{color:var(--cu-a);text-underline-offset:3px}
+.cu1 .cu-art{grid-area:art;width:65px;color:var(--cu-leaf);align-self:center;justify-self:center;line-height:0}
+.cu1 .cu-art svg{display:block;width:100%;height:auto}
+.cu1 .cu-edition{grid-area:edition;font:9px/1.6 'Courier New',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--cu-c);overflow-wrap:anywhere}
+.cu1 .cu-chrome,.cu1 .cu-device{display:flex;justify-content:space-between;gap:15px;align-items:center;font:9px/1.5 Arial,sans-serif;letter-spacing:.08em;color:var(--cu-b)}
+.cu1 .cu-chrome{grid-area:chrome}.cu1 .cu-device{grid-area:device}
+.cu1 .cu-time{grid-area:time;font:10px/1.5 Arial,sans-serif;color:var(--cu-b)}
+.cu1 .cu-receipt{grid-area:receipt;font:9px/1.5 Arial,sans-serif;color:var(--cu-muted);text-align:right}
+.cu1 a:focus-visible{outline:2px solid var(--cu-c);outline-offset:4px}
+.cu1-cutglass-current .cu-layout{grid-template-columns:1fr 148px;grid-template-areas:'head media' 'art media' 'copy copy' 'edition edition';padding:34px;gap:20px 30px;border:1px solid var(--cu-a);border-radius:4px 90px 4px 4px}
+.cu1-cutglass-current .cu-head{justify-content:end}
+.cu1-cutglass-current .cu-media{display:grid;grid-template-columns:1fr}
+.cu1-cutglass-current .cu-shot{width:100%;border-radius:2px 75px 75px 75px;padding:6px}
+.cu1-cutglass-current .cu-shot img{aspect-ratio:3/4}
+.cu1-cutglass-current .cu-art{justify-self:start;width:58px}
+.cu1-cutglass-current .cu-copy{border-top:1px solid var(--cu-line);padding:24px 0 0 21px;border-left:2px solid var(--cu-c)}
+.cu1-cutglass-current .cu-edition{padding-top:10px;letter-spacing:.2em;text-align:right}
+.cu1-cutglass-current .cu-layout:not(:has(.cu-shot)){grid-template-columns:1fr 70px;grid-template-areas:'head art' 'copy copy' 'edition edition';border-top-right-radius:4px}
+.cu1-peel-continuum .cu-layout{grid-template-columns:1fr 1fr;grid-template-areas:'media media' 'head art' 'copy copy' 'edition edition';gap:26px 20px;padding:26px 36px 30px;border-left:9px solid var(--cu-a);border-right:1px solid var(--cu-c);border-radius:90px 8px 90px 8px}
+.cu1-peel-continuum .cu-media{gap:15px;padding:8px 10px;align-items:center}
+.cu1-peel-continuum .cu-shot{border-radius:75% 24% 65% 25%;transform:rotate(-7deg);padding:5px}
+.cu1-peel-continuum .cu-shot:nth-child(2){transform:rotate(7deg);border-radius:24% 75% 25% 65%;margin-top:33px}
+.cu1-peel-continuum .cu-shot img{aspect-ratio:1.25}
+.cu1-peel-continuum .cu-head{grid-column:1/-1;padding-right:90px}
+.cu1-peel-continuum .cu-art{grid-column:2;grid-row:2;width:115px;justify-self:end;align-self:end;transform:rotate(-23deg);margin-bottom:5px}
+.cu1-peel-continuum .cu-copy{padding-top:20px;border-top:1px solid var(--cu-b)}
+.cu1-peel-continuum .cu-edition{text-align:left;padding-right:45px}
+.cu1-peel-continuum .cu-layout:not(:has(.cu-shot)){grid-template-areas:'head art' 'copy copy' 'edition edition';border-top-left-radius:8px}
+.cu1-peel-continuum .cu-layout:not(:has(.cu-shot)) .cu-art{grid-row:1}
+.cu1-hothouse-hours .cu-layout{grid-template-columns:minmax(0,1fr) 60px;grid-template-areas:'head head' 'media media' 'copy art' 'edition edition';gap:24px 18px;padding:36px 32px 24px;border:1px solid var(--cu-b);border-top:9px solid var(--cu-c);background-image:linear-gradient(90deg,transparent 24px,color-mix(in srgb,var(--cu-c) 9%,transparent) 24px 25px,transparent 25px);border-radius:130px 130px 0 0}
+.cu1-hothouse-hours .cu-head{text-align:center;align-items:center;padding:10px 16px 0}
+.cu1-hothouse-hours .cu-title{font:italic 36px/1.13 Georgia,serif;letter-spacing:-.03em}
+.cu1-hothouse-hours .cu-media{padding:0 14px;gap:18px}
+.cu1-hothouse-hours .cu-shot{border-radius:100px 100px 0 0;padding:5px;border-bottom:8px solid var(--cu-a)}
+.cu1-hothouse-hours .cu-shot img{aspect-ratio:.9}
+.cu1-hothouse-hours .cu-art{width:65px;align-self:start;padding-top:20px}
+.cu1-hothouse-hours .cu-copy{border-top:1px solid var(--cu-line);padding-top:20px}
+.cu1-hothouse-hours .cu-edition{text-align:center;border-top:1px solid var(--cu-b);padding-top:13px}
+.cu1-hothouse-hours .cu-layout:not(:has(.cu-shot)){grid-template-areas:'head head' 'copy art' 'edition edition'}
+.cu1-rind-and-reason{--cu-width:505px}
+.cu1-rind-and-reason .cu-layout{grid-template-columns:1fr 80px;grid-template-areas:'edition edition' 'head art' 'media media' 'copy copy';padding:0 30px 34px;gap:24px 15px;border:1px solid var(--cu-b);box-shadow:inset 7px 0 var(--cu-paper),inset 8px 0 var(--cu-c)}
+.cu1-rind-and-reason .cu-edition{margin:0 -30px;padding:12px 22px;background:var(--cu-grad);color:var(--cu-paper);letter-spacing:.17em}
+.cu1-rind-and-reason .cu-title{font-size:42px}
+.cu1-rind-and-reason .cu-art{width:100px;transform:rotate(-55deg)}
+.cu1-rind-and-reason .cu-copy{border-top:3px double var(--cu-a);padding-top:24px;font-family:Georgia,serif;font-size:15px;line-height:1.95}
+.cu1-rind-and-reason .cu-media{gap:15px}.cu1-rind-and-reason .cu-shot{border-radius:4px}
+.cu1-rind-and-reason .cu-layout:not(:has(.cu-shot)){grid-template-areas:'edition edition' 'head art' 'copy copy'}
+.cu1-cucumber-water{--cu-width:590px}
+.cu1-cucumber-water .cu-layout{grid-template-columns:120px minmax(0,1fr);grid-template-areas:'media head' 'media copy' 'art copy' 'edition edition';gap:25px 30px;padding:30px;border:1px solid var(--cu-b);border-radius:65px 8px 8px 8px;background:linear-gradient(90deg,color-mix(in srgb,var(--cu-a) 8%,var(--cu-paper)) 150px,var(--cu-paper) 150px)}
+.cu1-cucumber-water .cu-media{display:grid;grid-template-columns:1fr;gap:18px}
+.cu1-cucumber-water .cu-shot{width:100%;border-radius:50%;padding:5px}
+.cu1-cucumber-water .cu-shot img{aspect-ratio:1}
+.cu1-cucumber-water .cu-title{font:italic 37px/1.07 Georgia,serif;letter-spacing:-.035em}
+.cu1-cucumber-water .cu-art{width:85px;align-self:start}
+.cu1-cucumber-water .cu-copy{padding-top:20px;border-top:1px solid var(--cu-b)}
+.cu1-cucumber-water .cu-edition{text-align:right;padding-top:10px}
+.cu1-cucumber-water .cu-layout:not(:has(.cu-shot)){grid-template-columns:60px 1fr;grid-template-areas:'art head' 'copy copy' 'edition edition';background:var(--cu-paper);border-radius:8px}
+.cu1-comms{--cu-width:355px}
+.cu1-comms .cu-title{font:600 25px/1.15 'Trebuchet MS',Arial,sans-serif;letter-spacing:-.03em}
+.cu1-comms .cu-name{font-size:9px;letter-spacing:.1em}
+.cu1-comms .cu-sub{font-size:10px;letter-spacing:.02em}
+.cu1-comms .cu-copy{display:flex;flex-direction:column;gap:10px;font-size:12px;line-height:1.65;text-align:left}
+.cu1-comms .cu-copy>p{align-self:flex-start;width:fit-content;max-width:91%;margin:0;padding:12px 14px;background:var(--cu-inset);border:1px solid color-mix(in srgb,var(--cu-a) 30%,var(--cu-line));border-radius:16px 16px 16px 3px}
+.cu1-comms[data-direction=sent] .cu-copy>p,.cu1-comms[data-direction=alternating] .cu-copy>p:nth-child(even){align-self:flex-end;background:color-mix(in srgb,var(--cu-c) 12%,var(--cu-paper));border-color:var(--cu-c);border-radius:16px 16px 3px 16px}
+.cu1-comms .cu-edition{font-size:8px;text-align:center;letter-spacing:.05em}
+.cu1-dewdial .cu-layout{grid-template-columns:1fr 1fr;grid-template-areas:'time chrome' 'media media' 'head head' 'copy copy' 'receipt receipt' 'device device' 'edition art';gap:18px 12px;padding:24px 20px 16px;border:5px solid var(--cu-a);border-radius:42px;box-shadow:inset 0 0 0 2px var(--cu-paper),inset 0 0 0 3px var(--cu-c),0 14px 30px #16241d12}
+.cu1-dewdial .cu-chrome{justify-content:end;font-size:8px}.cu1-dewdial .cu-chrome span:first-child{display:none}
+.cu1-dewdial .cu-media{max-width:90px;justify-self:center}.cu1-dewdial .cu-shot{border-radius:50%;padding:4px}.cu1-dewdial .cu-shot img{aspect-ratio:1}
+.cu1-dewdial .cu-head{align-items:center;text-align:center;gap:6px;padding-bottom:15px;border-bottom:1px solid var(--cu-line)}
+.cu1-dewdial .cu-device{border:1px solid var(--cu-b);border-radius:24px;padding:12px 14px;margin-top:2px}.cu1-dewdial .cu-device span:last-child{font-size:18px}
+.cu1-dewdial .cu-art{width:30px;justify-self:end}.cu1-dewdial .cu-edition{align-self:center;text-align:left}
+.cu1-dewdial .cu-layout:not(:has(.cu-shot)){grid-template-areas:'time chrome' 'head head' 'copy copy' 'receipt receipt' 'device device' 'edition art'}
+.cu1-pithline{--cu-width:465px}
+.cu1-pithline .cu-layout{grid-template-columns:38px minmax(0,1fr) 58px;grid-template-areas:'art chrome chrome' 'art head media' 'art time time' 'art copy copy' 'art receipt receipt' 'art device device' 'edition edition edition';gap:16px 18px;padding:22px 24px 15px 16px;border:3px solid var(--cu-c);border-radius:16px 56px 16px 16px}
+.cu1-pithline .cu-art{width:100%;height:100%;border-right:3px double var(--cu-b);background:repeating-linear-gradient(0deg,transparent 0 11px,color-mix(in srgb,var(--cu-a) 12%,transparent) 11px 12px);display:flex;align-items:center;padding-right:8px}.cu1-pithline .cu-art svg{transform:rotate(90deg);min-width:55px}
+.cu1-pithline .cu-chrome{border-bottom:1px solid var(--cu-b);padding-bottom:10px;font-size:8px;padding-right:8px}
+.cu1-pithline .cu-head{gap:6px}.cu1-pithline .cu-title{font:600 24px/1.2 'Courier New',monospace;letter-spacing:-.06em}
+.cu1-pithline .cu-shot{border-radius:12px;padding:3px}.cu1-pithline .cu-shot img{aspect-ratio:1}
+.cu1-pithline .cu-time{text-align:center}.cu1-pithline .cu-copy{padding:15px 12px;border:1px solid var(--cu-b);border-radius:4px;background:color-mix(in srgb,var(--cu-b) 5%,var(--cu-paper))}
+.cu1-pithline .cu-copy>p{font-family:'Courier New',monospace;font-size:12px;border:0;border-left:2px solid var(--cu-a);border-radius:0;background:var(--cu-paper);padding:8px 10px;max-width:100%}
+.cu1-pithline .cu-device{border-bottom:3px double var(--cu-c);padding:2px 0 12px}.cu1-pithline .cu-edition{padding-top:3px}
+.cu1-pithline .cu-layout:not(:has(.cu-shot)){grid-template-areas:'art chrome chrome' 'art head head' 'art time time' 'art copy copy' 'art receipt receipt' 'art device device' 'edition edition edition'}
+.cu1-tendril-touch{--cu-width:345px;padding:35px 0}
+.cu1-tendril-touch .cu-layout{grid-template-columns:52px 1fr;grid-template-areas:'chrome time' 'media head' 'copy copy' 'receipt receipt' 'device device' 'art edition';gap:15px 12px;padding:30px 22px 20px;border:7px solid var(--cu-b);border-radius:58px;box-shadow:0 -24px 0 -10px var(--cu-inset),0 -27px 0 -10px var(--cu-a),0 24px 0 -10px var(--cu-inset),0 27px 0 -10px var(--cu-c)}
+.cu1-tendril-touch .cu-chrome{font-size:7px}.cu1-tendril-touch .cu-chrome span:last-child{display:none}.cu1-tendril-touch .cu-time{text-align:right}
+.cu1-tendril-touch .cu-head{gap:5px}.cu1-tendril-touch .cu-title{font-size:21px}.cu1-tendril-touch .cu-name{font-size:8px}
+.cu1-tendril-touch .cu-media{align-self:center}.cu1-tendril-touch .cu-shot{padding:2px;border-radius:50%}.cu1-tendril-touch .cu-shot img{aspect-ratio:1;border-width:2px}
+.cu1-tendril-touch .cu-copy>p{border-radius:14px;padding:10px 12px;font-size:12px;max-width:96%}
+.cu1-tendril-touch .cu-device{padding:10px 13px;border-radius:20px;background:color-mix(in srgb,var(--cu-c) 14%,var(--cu-inset))}
+.cu1-tendril-touch .cu-art{width:22px;height:28px;overflow:hidden;justify-self:start}.cu1-tendril-touch .cu-edition{align-self:center;text-align:right;font-size:7px}
+.cu1-tendril-touch .cu-layout:not(:has(.cu-shot)){grid-template-areas:'chrome time' 'head head' 'copy copy' 'receipt receipt' 'device device' 'art edition'}
+.cu1-coolwire{--cu-width:500px}
+.cu1-coolwire .cu-layout{grid-template-columns:85px minmax(0,1fr) 55px;grid-template-areas:'chrome chrome chrome' 'media head head' 'media time time' 'art copy copy' 'edition receipt receipt' 'device device device';gap:18px;padding:0 22px 19px;border:1px solid var(--cu-a);border-radius:12px;background:linear-gradient(90deg,color-mix(in srgb,var(--cu-a) 8%,var(--cu-paper)) 123px,var(--cu-paper) 123px)}
+.cu1-coolwire .cu-chrome{margin:0 -22px;padding:13px 17px;border-bottom:1px solid var(--cu-b);background:var(--cu-grad);color:var(--cu-paper);border-radius:11px 11px 0 0}
+.cu1-coolwire .cu-head{gap:6px}.cu1-coolwire .cu-media{align-self:start}.cu1-coolwire .cu-shot{border-radius:15px;padding:3px}.cu1-coolwire .cu-shot img{aspect-ratio:1}
+.cu1-coolwire .cu-time{font-size:9px}.cu1-coolwire .cu-art{width:58px;transform:rotate(-65deg);align-self:start;margin-top:25px}
+.cu1-coolwire .cu-copy{border-top:1px solid var(--cu-line);padding-top:16px}.cu1-coolwire .cu-copy>p{max-width:100%;border-radius:4px 14px 14px 14px}
+.cu1-coolwire .cu-edition{align-self:center;font-size:7px}
+.cu1-coolwire .cu-device{border:1px solid var(--cu-b);border-radius:8px;padding:13px;margin-top:4px;background:var(--cu-paper)}
+.cu1-coolwire .cu-layout:not(:has(.cu-shot)){grid-template-columns:50px 1fr 35px;grid-template-areas:'chrome chrome chrome' 'art head head' 'time time time' 'copy copy copy' 'edition receipt receipt' 'device device device';background:var(--cu-paper)}
+.cu1-slice-signal{--cu-width:365px}
+.cu1-slice-signal .cu-layout{grid-template-columns:1fr 60px;grid-template-areas:'chrome chrome' 'time art' 'head head' 'media media' 'copy copy' 'receipt receipt' 'device device' 'edition edition';gap:20px 10px;padding:26px 22px 20px;border:2px solid var(--cu-c);border-radius:32px;background:linear-gradient(155deg,color-mix(in srgb,var(--cu-a) 13%,var(--cu-paper)),var(--cu-paper) 44%)}
+.cu1-slice-signal .cu-time{font:300 64px/.95 'Trebuchet MS',sans-serif;letter-spacing:-.08em;color:var(--cu-a)}
+.cu1-slice-signal .cu-art{width:58px}.cu1-slice-signal .cu-head{gap:7px}.cu1-slice-signal .cu-title{font-size:23px}
+.cu1-slice-signal .cu-copy{gap:9px}.cu1-slice-signal .cu-copy>p{max-width:100%;width:100%;border-radius:15px;background:color-mix(in srgb,var(--cu-b) 7%,var(--cu-paper));box-shadow:0 5px 10px #15241a05;border-left:4px solid var(--cu-b)}
+.cu1-slice-signal .cu-device{justify-content:center;font-size:9px;padding-bottom:13px;border-bottom:4px solid var(--cu-a);margin:0 35px}.cu1-slice-signal .cu-media{width:90px;justify-self:center}.cu1-slice-signal .cu-shot{border-radius:50%}.cu1-slice-signal .cu-shot img{aspect-ratio:1}
+.cu1-slice-signal .cu-layout:not(:has(.cu-shot)){grid-template-areas:'chrome chrome' 'time art' 'head head' 'copy copy' 'receipt receipt' 'device device' 'edition edition'}
+.cu1-bud{--cu-width:425px}
+.cu1-bud .cu-title{font-size:26px;letter-spacing:-.04em}.cu1-bud .cu-copy{font-size:13px;line-height:1.85}.cu1-bud .cu-name{font-size:9px;letter-spacing:.09em}.cu1-bud .cu-sub{font-size:9px}.cu1-bud .cu-head{gap:7px}.cu1-bud .cu-edition{font-size:8px}
+.cu1-sativus-speck .cu-layout{grid-template-columns:78px minmax(0,1fr);grid-template-areas:'media head' 'art copy' 'edition edition';gap:18px 22px;padding:26px;border:1px solid var(--cu-b);border-radius:58px 8px 8px 58px}
+.cu1-sativus-speck .cu-shot{border-radius:50%;padding:4px}.cu1-sativus-speck .cu-shot img{aspect-ratio:1}.cu1-sativus-speck .cu-art{width:49px;align-self:start}.cu1-sativus-speck .cu-copy{border-top:1px solid var(--cu-line);padding-top:12px}.cu1-sativus-speck .cu-edition{text-align:right}
+.cu1-sativus-speck .cu-layout:not(:has(.cu-shot)){grid-template-areas:'art head' 'copy copy' 'edition edition';border-radius:8px}
+.cu1-dewprint{--cu-width:390px}
+.cu1-dewprint .cu-layout{grid-template-columns:1fr 50px;grid-template-areas:'head art' 'media media' 'copy copy' 'edition edition';padding:25px;gap:18px;border-top:3px solid var(--cu-a);border-bottom:3px solid var(--cu-c);border-radius:0 32px 0 32px;background:linear-gradient(145deg,var(--cu-paper) 65%,color-mix(in srgb,var(--cu-c) 8%,var(--cu-paper)))}
+.cu1-dewprint .cu-title{font:italic 28px/1.13 Georgia,serif}.cu1-dewprint .cu-art{width:45px}.cu1-dewprint .cu-edition{border-top:1px solid var(--cu-line);padding-top:11px}.cu1-dewprint .cu-shot{border-radius:20px}.cu1-dewprint .cu-shot img{aspect-ratio:2}
+.cu1-dewprint .cu-layout:not(:has(.cu-shot)){grid-template-areas:'head art' 'copy copy' 'edition edition'}
+.cu1-peellet{--cu-width:395px}
+.cu1-peellet .cu-layout{grid-template-columns:1fr 70px;grid-template-areas:'media media' 'head art' 'copy copy' 'edition edition';gap:18px 10px;padding:20px 25px;border:1px solid var(--cu-a);border-radius:50px 3px 3px 3px}
+.cu1-peellet .cu-media{margin:0 -5px}.cu1-peellet .cu-shot{border-radius:40px 3px 40px 3px;padding:4px}.cu1-peellet .cu-shot img{aspect-ratio:2}.cu1-peellet .cu-art{width:72px;transform:rotate(30deg)}
+.cu1-peellet .cu-copy{padding-left:14px;border-left:3px solid var(--cu-b)}.cu1-peellet .cu-edition{text-align:right}
+.cu1-peellet .cu-layout:not(:has(.cu-shot)){grid-template-areas:'head art' 'copy copy' 'edition edition';border-radius:3px}
+.cu1-crisp-interval{--cu-width:440px}
+.cu1-crisp-interval .cu-layout{grid-template-columns:1fr 1fr;grid-template-areas:'head head' 'copy copy' 'media art' 'edition edition';padding:27px;gap:18px;border:1px solid var(--cu-c);border-left:7px solid var(--cu-a)}
+.cu1-crisp-interval .cu-title{font:italic 29px/1.1 Georgia,serif}.cu1-crisp-interval .cu-copy{border-top:1px solid var(--cu-b);padding-top:17px}.cu1-crisp-interval .cu-media{gap:7px}.cu1-crisp-interval .cu-shot{border-radius:5px 50% 5px 50%;padding:3px}.cu1-crisp-interval .cu-shot:nth-child(2){border-radius:50% 5px 50% 5px}.cu1-crisp-interval .cu-shot img{aspect-ratio:1;border-width:2px}.cu1-crisp-interval .cu-art{width:85px;justify-self:end}.cu1-crisp-interval .cu-edition{text-align:right;padding-top:4px}
+.cu1-crisp-interval .cu-layout:not(:has(.cu-shot)){grid-template-areas:'head head' 'copy copy' 'edition art'}
+.cu1-tendril-trace{--cu-width:430px}
+.cu1-tendril-trace .cu-layout{grid-template-columns:minmax(0,1fr) 66px;grid-template-areas:'head art' 'copy art' 'edition media';gap:18px 20px;padding:24px;border:1px solid var(--cu-b);border-radius:4px 4px 38px 4px;background:linear-gradient(90deg,var(--cu-paper) calc(100% - 90px),color-mix(in srgb,var(--cu-c) 7%,var(--cu-paper)) calc(100% - 90px))}
+.cu1-tendril-trace .cu-art{width:47px;align-self:start}.cu1-tendril-trace .cu-copy{padding-top:15px;border-top:1px solid var(--cu-line)}.cu1-tendril-trace .cu-shot{border-radius:35px 35px 35px 4px;padding:3px}.cu1-tendril-trace .cu-shot img{aspect-ratio:1}.cu1-tendril-trace .cu-edition{align-self:end;padding-bottom:4px}
+.cu1-tendril-trace .cu-layout:not(:has(.cu-shot)){grid-template-columns:1fr 40px;grid-template-areas:'head art' 'copy copy' 'edition edition';background:var(--cu-paper)}
+@container cucumber (max-width:440px){.cu1 .cu-title{font-size:32px}.cu1-cutglass-current .cu-layout{grid-template-columns:1fr 110px;padding:26px;gap:20px}.cu1-peel-continuum .cu-layout{padding:25px;gap:20px}.cu1-peel-continuum .cu-head{padding-right:70px}.cu1-peel-continuum .cu-art{width:85px}.cu1-hothouse-hours .cu-layout{padding:30px 25px 22px;grid-template-columns:1fr 40px}.cu1-hothouse-hours .cu-art{width:43px}.cu1-hothouse-hours .cu-media{padding:0;gap:12px}.cu1-cucumber-water .cu-layout{grid-template-columns:85px 1fr;padding:24px;gap:20px;background:linear-gradient(90deg,color-mix(in srgb,var(--cu-a) 8%,var(--cu-paper)) 109px,var(--cu-paper) 109px)}.cu1-cucumber-water .cu-art{width:65px}.cu1-comms .cu-title{font-size:24px}.cu1-pithline .cu-layout{grid-template-columns:22px 1fr 46px;gap:14px 12px;padding:20px 17px 14px 12px}.cu1-coolwire .cu-layout{grid-template-columns:65px 1fr 28px;gap:15px;padding:0 17px 17px;background:linear-gradient(90deg,color-mix(in srgb,var(--cu-a) 8%,var(--cu-paper)) 96px,var(--cu-paper) 96px)}.cu1-coolwire .cu-chrome{margin:0 -17px}.cu1-tendril-touch .cu-title{font-size:21px}.cu1-bud .cu-title{font-size:25px}.cu1-sativus-speck .cu-layout{gap:16px;padding:23px;grid-template-columns:66px 1fr}}
+@container cucumber (max-width:340px){.cu1 .cu-title{font-size:29px}.cu1 .cu-copy{font-size:13px}.cu1-cutglass-current .cu-layout{grid-template-columns:1fr 78px;padding:23px 18px;gap:18px 12px;border-top-right-radius:55px}.cu1-cutglass-current .cu-art{width:42px}.cu1-cutglass-current .cu-copy{padding-left:12px}.cu1-peel-continuum .cu-layout{padding:23px 18px;border-left-width:5px;border-radius:60px 5px 60px 5px}.cu1-peel-continuum .cu-head{padding-right:42px}.cu1-peel-continuum .cu-art{width:65px}.cu1-peel-continuum .cu-media{gap:10px;padding:6px 8px}.cu1-hothouse-hours .cu-layout{padding:25px 20px 20px;grid-template-columns:1fr 28px;gap:18px 8px;border-radius:85px 85px 0 0}.cu1-hothouse-hours .cu-art{width:32px}.cu1-hothouse-hours .cu-head{padding:8px 0 0}.cu1-rind-and-reason .cu-layout{padding:0 22px 24px;grid-template-columns:1fr 40px;gap:20px 10px}.cu1-rind-and-reason .cu-edition{margin:0 -22px;font-size:8px}.cu1-rind-and-reason .cu-art{width:65px}.cu1-cucumber-water .cu-layout{grid-template-columns:1fr 52px;grid-template-areas:'head head' 'media art' 'copy copy' 'edition edition';background:var(--cu-paper);padding:24px 20px;gap:20px 10px;border-radius:35px 5px 5px 5px}.cu1-cucumber-water .cu-media{display:flex;flex-direction:row;gap:8px}.cu1-cucumber-water .cu-art{width:50px;align-self:center}.cu1-comms .cu-copy{font-size:12px}.cu1-comms .cu-title{font-size:22px}.cu1-comms .cu-name{font-size:8px}.cu1-dewdial .cu-layout{padding:20px 15px 14px;border-width:4px}.cu1-pithline .cu-layout{grid-template-columns:14px 1fr 42px;padding:20px 14px 14px 9px;gap:14px 9px}.cu1-pithline .cu-copy{padding:10px 8px}.cu1-pithline .cu-art{padding-right:3px}.cu1-pithline .cu-art svg{min-width:35px}.cu1-pithline .cu-chrome{font-size:7px}.cu1-tendril-touch .cu-layout{padding:26px 15px 18px;border-width:5px;gap:13px 9px;grid-template-columns:42px 1fr}.cu1-tendril-touch .cu-title{font-size:20px}.cu1-tendril-touch .cu-name{font-size:7px}.cu1-coolwire .cu-layout{grid-template-columns:47px 1fr;grid-template-areas:'chrome chrome' 'media head' 'time time' 'copy copy' 'art receipt' 'edition edition' 'device device';padding:0 16px 17px;gap:15px 12px;background:var(--cu-paper)}.cu1-coolwire .cu-chrome{margin:0 -16px}.cu1-coolwire .cu-art{width:37px;transform:none;margin:0}.cu1-coolwire .cu-receipt{align-self:center}.cu1-coolwire .cu-layout:not(:has(.cu-shot)){grid-template-columns:1fr 35px;grid-template-areas:'chrome chrome' 'head art' 'time time' 'copy copy' 'receipt receipt' 'edition edition' 'device device'}.cu1-slice-signal .cu-layout{padding:22px 16px 18px;grid-template-columns:1fr 45px;gap:18px 8px}.cu1-slice-signal .cu-art{width:42px}.cu1-slice-signal .cu-time{font-size:54px}.cu1-slice-signal .cu-device{margin:0 15px}.cu1-bud .cu-title{font-size:24px}.cu1-sativus-speck .cu-layout{grid-template-columns:55px 1fr;grid-template-areas:'media head' 'copy copy' 'art edition';padding:21px 18px;gap:17px 13px;border-radius:40px 5px 5px 40px}.cu1-sativus-speck .cu-art{width:32px}.cu1-sativus-speck .cu-edition{align-self:center}.cu1-dewprint .cu-layout{padding:21px;grid-template-columns:1fr 35px;gap:16px 10px}.cu1-dewprint .cu-art{width:35px}.cu1-peellet .cu-layout{padding:18px;grid-template-columns:1fr 45px;gap:16px 8px}.cu1-peellet .cu-art{width:49px}.cu1-crisp-interval .cu-layout{padding:21px;gap:16px 10px}.cu1-crisp-interval .cu-art{width:66px}.cu1-tendril-trace .cu-layout{grid-template-columns:1fr 44px;padding:20px;gap:16px 12px;background:linear-gradient(90deg,var(--cu-paper) calc(100% - 64px),color-mix(in srgb,var(--cu-c) 7%,var(--cu-paper)) calc(100% - 64px))}.cu1-tendril-trace .cu-art{width:35px}}
+@media(prefers-color-scheme:dark){.cu1{--cu-paper:#1c2121;--cu-inset:#282e2d;--cu-ink:#e3e7e1;--cu-muted:#adb8af;--cu-line:#454f49;--cu-leaf:#a0b98f}}
+:is(html,body):is([color-mode=light],[data-theme=light],[data-mode=light],[data-color-mode=light],.light,.light-mode,.lightmode,.light-theme) .cu1,.cu1[data-theme=light]{--cu-paper:#fbfaf7;--cu-inset:#eeefeb;--cu-ink:#303735;--cu-muted:#656e69;--cu-line:#d3d8d0;--cu-leaf:#6d8463}
+:is(html,body):is([color-mode=dark],[data-theme=dark],[data-mode=dark],[data-color-mode=dark],.dark,.dark-mode,.darkmode,.dark-theme) .cu1,.cu1[data-theme=dark]{--cu-paper:#1c2121;--cu-inset:#282e2d;--cu-ink:#e3e7e1;--cu-muted:#adb8af;--cu-line:#454f49;--cu-leaf:#a0b98f}
+html[color-mode=light] .cu1{--cu-paper:#fbfaf7;--cu-inset:#eeefeb;--cu-ink:#303735;--cu-muted:#656e69;--cu-line:#d3d8d0;--cu-leaf:#6d8463}
+html[color-mode=dark] .cu1{--cu-paper:#1c2121;--cu-inset:#282e2d;--cu-ink:#e3e7e1;--cu-muted:#adb8af;--cu-line:#454f49;--cu-leaf:#a0b98f}
+
+body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}body *{box-sizing:border-box}.cp-main{max-width:1080px;margin:auto;padding:50px 40px}.cp-collection{display:flex;justify-content:space-between;gap:15px;font:10px/1.5 Arial,sans-serif;letter-spacing:.15em;border-bottom:1px solid #aaa9a3;padding-bottom:14px}.cp-masthead{display:flex;align-items:center;justify-content:space-between;gap:20px}.cp-masthead h1{font:400 clamp(75px,15vw,160px)/1 Georgia,serif;margin:25px 0 16px;letter-spacing:-.04em}.cp-emblem{display:block;width:100px;height:100px;color:#6b786e}.cp-emblem svg{width:100%;height:100%}.cp-toplinks{display:flex;flex-wrap:wrap;gap:23px;padding:18px 0 24px;border-bottom:1px solid #aaa9a3;font-size:11px}.cp-main a{color:inherit;text-underline-offset:4px}.cp-controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin:23px 0 48px}.cp-filters{display:flex;flex-wrap:wrap;gap:5px;margin-right:auto}.cp-controls label{display:flex;flex-direction:column;gap:5px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.cp-main button,.cp-main select,.cp-main input,.cp-main textarea{font:inherit;color:inherit}.cp-main button,.cp-main select{border:1px solid #a5a8a2;border-radius:20px;background:transparent;padding:9px 13px}.cp-main button{cursor:pointer;font-size:11px}.cp-main button[aria-pressed=true],.cp-actions .cp-copy{background:#3d4e49;color:#f4f5ee;border-color:#3d4e49}.cp-main :is(button,a,select,input,summary,textarea):focus-visible{outline:2px solid #517971;outline-offset:4px}.cp-card{margin-bottom:62px;scroll-margin-top:20px}.cp-card[hidden]{display:none}.cp-card-head{display:flex;align-items:baseline;gap:20px;border-bottom:1px solid #aaa9a3;padding-bottom:15px}.cp-card-head>span{font-size:9px;letter-spacing:.14em;min-width:82px}.cp-card-head>a{margin-left:auto;text-decoration:none}.cp-card h2{font:400 32px/1.1 Georgia,serif;margin:0}.cp-stage{--mgrgb1:141,75,106;--mgrgb2:111,102,152;--mgrgb3:48,119,112;display:flow-root;padding:32px 20px;background:#f3f2ee;border:1px solid #cfcec7;border-top:0}.cp-editor{border:1px solid #aaa9a3;border-top:0}.cp-editor summary{padding:15px 17px;cursor:pointer;font-size:11px;font-weight:600}.cp-editor form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:8px 17px 20px}.cp-editor label{font-size:11px;display:flex;flex-direction:column;gap:7px}.cp-editor input,.cp-editor textarea{width:100%;border:1px solid #a5a8a2;padding:10px;background:#fbfaf7;border-radius:3px;font:12px/1.5 ui-monospace,monospace}.cp-writing{grid-column:1/-1}.cp-editor textarea{resize:vertical;min-height:160px}.cp-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:15px 0}.cp-actions a{font-size:11px}.cp-status{font-size:11px}.cp-code{display:block;resize:vertical;width:100%;height:135px;border:1px solid #a5a8a2;background:#f6f5f1;padding:13px;font:11px/1.6 ui-monospace,monospace!important;white-space:pre}.cp-footer{display:flex;justify-content:space-between;border-top:1px solid #aaa9a3;padding-top:20px;font-size:10px;letter-spacing:.1em}.cp-main[data-palette=blue] .cp-stage{--mgrgb1:62,100,166;--mgrgb2:139,82,143;--mgrgb3:69,127,143}.cp-main[data-palette=copper] .cp-stage{--mgrgb1:160,89,52;--mgrgb2:129,104,135;--mgrgb3:39,119,104}html[color-mode=dark] body{background:#141718;color:#e5e4df}html[color-mode=dark] .cp-stage{background:#191c1e;border-color:#404645;--mgrgb1:220,149,180;--mgrgb2:172,163,218;--mgrgb3:112,192,181}html[color-mode=dark] .cp-main[data-palette=blue] .cp-stage{--mgrgb1:131,172,230;--mgrgb2:210,153,209;--mgrgb3:123,195,217}html[color-mode=dark] .cp-main[data-palette=copper] .cp-stage{--mgrgb1:224,158,115;--mgrgb2:194,161,201;--mgrgb3:109,194,174}html[color-mode=dark] .cp-main :is(button,select,input,textarea){background:#242a2c;color:#e5e4df;border-color:#5f6663}html[color-mode=dark] .cp-main button[aria-pressed=true],html[color-mode=dark] .cp-actions .cp-copy{background:#d1dfd6;color:#26342e}.cp-main[data-width="390"] .cu1{width:min(100%,390px,var(--cu-width))}.cp-main[data-width="320"] .cu1{width:min(100%,320px,var(--cu-width))}.cp-main[data-width="260"] .cu1{width:min(100%,260px,var(--cu-width))}@media(max-width:600px){.cp-main{padding:30px 12px}.cp-collection{font-size:8px;flex-direction:column;gap:5px}.cp-emblem{width:65px;height:65px}.cp-toplinks{gap:12px;font-size:10px}.cp-controls{gap:13px}.cp-filters{width:100%}.cp-stage{padding:22px 8px}.cp-card-head{gap:10px}.cp-card h2{font-size:26px}.cp-card-head>span{min-width:65px;font-size:8px}.cp-editor form{grid-template-columns:1fr}.cp-actions{gap:8px}.cp-card{margin-bottom:40px}.cp-footer{font-size:8px}}
+.cp-masthead{padding:20px 0}.cp-masthead h1{font-family:Trebuchet MS,Arial,sans-serif;letter-spacing:-.07em;line-height:.82;font-size:clamp(70px,12vw,135px)}.cp-masthead h1 em{font:italic 1em/.82 Georgia,serif;letter-spacing:-.075em}.cp-emblem{width:170px;height:200px;transform:rotate(-12deg);color:#718675}.cp-kicker{font:10px/1.5 Arial,sans-serif;letter-spacing:.18em}.cp-card-head h2{font-family:Trebuchet MS,Arial,sans-serif;font-size:29px;letter-spacing:-.04em}.cp-main .cp-named{border-style:dashed}@media(max-width:600px){.cp-emblem{width:85px;height:130px}.cp-card-head h2{font-size:24px}}
+</style></head><body><main class="cp-main" id="top"><header class="cp-intro"><div class="cp-collection"><span>TAO / ZHIYUAN</span><span>CUCUMBER / FIFTEEN DESIGNS</span></div><div class="cp-masthead"><div><span class="cp-kicker">THE CUCUMBER COLLECTION</span><h1>Cool<br><em>current.</em></h1></div><span class="cp-emblem"><svg viewBox="0 0 110 125" aria-hidden="true"><g transform="translate(27 32) scale(.7)"><circle cx="50" cy="50" r="43" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 3"/><path d="M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z" fill="currentColor" opacity=".32"/></g><path d="M22 10C18 20 7 27 10 37C13 49 32 47 34 36C36 28 26 21 22 10ZM77 4C74 11 68 15 69 20C71 29 84 27 85 21C86 15 79 9 77 4ZM21 88C18 93 13 98 14 103C16 109 25 109 28 104C30 99 24 93 21 88Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.1"/></svg></span></div><nav class="cp-toplinks"><a href="../forum-posts/cucumber-forum-masterpost.txt">Forum masterpost ↗</a><a href="cucumber-collection.zip">Download collection ↗</a><a href="README.md">Editing guide ↗</a></nav></header><nav class="cp-controls" aria-label="Preview controls"><div class="cp-filters"><button data-filter="all" aria-pressed="true">All 15</button><button data-filter="thread" aria-pressed="false">Threads</button><button data-filter="comms" aria-pressed="false">Comms</button><button data-filter="bud" aria-pressed="false">Buds</button></div><label>Appearance<select id="cp-mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Width<select id="cp-width"><option value="full">Full</option><option value="390">390px</option><option value="320">320px</option><option value="260">260px</option></select></label><label>Member palette<select id="cp-palette"><option value="plum">Plum / jade</option><option value="blue">Blue / lilac</option><option value="copper">Copper / teal</option></select></label></nav><section class="cp-card" id="cutglass-current" data-kind="thread"><header class="cp-card-head"><span>THREAD / 01</span><h2>Cutglass Current</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-thread cu1-cutglass-current">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">cool to the touch</span>
+<span class="cu-sub">a moment held in glass</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="43" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 3"/><path d="M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z" fill="currentColor" opacity=".32"/></svg></div>
+<div class="cu-edition">cucumber / cool current 01</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a moment held in glass" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-cutglass-current-thread-01.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Cutglass Current posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-thread cu1-cutglass-current&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;a moment held in glass&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;43&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.04&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;35&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot; stroke-dasharray=&quot;1 3&quot;/&gt;&lt;path d=&quot;M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z&quot; fill=&quot;currentColor&quot; opacity=&quot;.32&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / cool current 01&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="peel-continuum" data-kind="thread"><header class="cp-card-head"><span>THREAD / 02</span><h2>Peel Continuum</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-thread cu1-peel-continuum">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">a little closer still</span>
+<span class="cu-sub">in one unbroken line</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" alt="Character GIF 2" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 180 70" aria-hidden="true"><path d="M4 41C30 0 55 9 54 34S85 80 102 41S139-4 176 27L169 41C137 9 121 31 111 55S56 76 47 46S29 26 13 50Z" fill="currentColor" fill-opacity=".1" stroke="currentColor" stroke-width="1.2"/><path d="M5 42C31 15 45 23 49 44S83 80 105 45S138 3 174 31" fill="none" stroke="currentColor" stroke-width="3"/></svg></div>
+<div class="cu-edition">cucumber / cool current 02</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="in one unbroken line" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-peel-continuum-thread-02.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Peel Continuum posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-thread cu1-peel-continuum&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;in one unbroken line&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv&quot; alt=&quot;Character GIF 2&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 180 70&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M4 41C30 0 55 9 54 34S85 80 102 41S139-4 176 27L169 41C137 9 121 31 111 55S56 76 47 46S29 26 13 50Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.1&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;path d=&quot;M5 42C31 15 45 23 49 44S83 80 105 45S138 3 174 31&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / cool current 02&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="hothouse-hours" data-kind="thread"><header class="cp-card-head"><span>THREAD / 03</span><h2>Hothouse Hours</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-thread cu1-hothouse-hours">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">where the light lingers</span>
+<span class="cu-sub">beneath the climbing vines</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" alt="Character GIF 2" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 100 140" aria-hidden="true"><path d="M42 134C28 110 65 88 55 64S20 30 52 8M53 90C82 107 94 69 76 67C60 65 63 82 72 80M43 35C19 39 9 17 18 14C27 10 31 23 24 23" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M51 70C28 74 22 55 25 46C44 46 56 52 51 70ZM44 110C42 88 65 85 74 91C69 106 57 113 44 110Z" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><path d="M61 38C63 16 83 16 86 29L80 49C74 65 54 60 59 45Z" fill="currentColor" fill-opacity=".12" stroke="currentColor"/><path d="M66 46l9-19m-5 23l9-19" stroke="currentColor" stroke-width=".8"/></svg></div>
+<div class="cu-edition">cucumber / cool current 03</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="beneath the climbing vines" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-hothouse-hours-thread-03.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Hothouse Hours posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-thread cu1-hothouse-hours&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;beneath the climbing vines&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv&quot; alt=&quot;Character GIF 2&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M42 134C28 110 65 88 55 64S20 30 52 8M53 90C82 107 94 69 76 67C60 65 63 82 72 80M43 35C19 39 9 17 18 14C27 10 31 23 24 23&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M51 70C28 74 22 55 25 46C44 46 56 52 51 70ZM44 110C42 88 65 85 74 91C69 106 57 113 44 110Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.08&quot; stroke=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M61 38C63 16 83 16 86 29L80 49C74 65 54 60 59 45Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.12&quot; stroke=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M66 46l9-19m-5 23l9-19&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / cool current 03&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="rind-and-reason" data-kind="thread"><header class="cp-card-head"><span>THREAD / 04</span><h2>Rind &amp; Reason</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-thread cu1-rind-and-reason">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">beneath the surface</span>
+<span class="cu-sub">a quiet kind of clarity</span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 160 65" aria-hidden="true"><path d="M14 42C7 26 24 10 51 15L131 25C153 29 151 51 134 53L41 57C25 56 16 50 14 42Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M27 30Q51 21 128 33M24 38Q52 34 132 41M31 47Q52 44 123 47" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="7 5"/><path d="M141 35l10-6" stroke="currentColor" stroke-width="2"/></svg></div>
+<div class="cu-edition">cucumber / cool current 04</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a quiet kind of clarity" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-rind-and-reason-thread-04.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Rind &amp; Reason posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-thread cu1-rind-and-reason&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;a quiet kind of clarity&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 160 65&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M14 42C7 26 24 10 51 15L131 25C153 29 151 51 134 53L41 57C25 56 16 50 14 42Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M27 30Q51 21 128 33M24 38Q52 34 132 41M31 47Q52 44 123 47&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot; stroke-dasharray=&quot;7 5&quot;/&gt;&lt;path d=&quot;M141 35l10-6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / cool current 04&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="cucumber-water" data-kind="thread"><header class="cp-card-head"><span>THREAD / 05</span><h2>Cucumber Water</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-thread cu1-cucumber-water">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">let the world slow down</span>
+<span class="cu-sub">still water / soft company</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" alt="Character GIF 2" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>
+<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
+<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 110 125" aria-hidden="true"><g transform="translate(27 32) scale(.7)"><circle cx="50" cy="50" r="43" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 3"/><path d="M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z" fill="currentColor" opacity=".32"/></g><path d="M22 10C18 20 7 27 10 37C13 49 32 47 34 36C36 28 26 21 22 10ZM77 4C74 11 68 15 69 20C71 29 84 27 85 21C86 15 79 9 77 4ZM21 88C18 93 13 98 14 103C16 109 25 109 28 104C30 99 24 93 21 88Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.1"/></svg></div>
+<div class="cu-edition">cucumber / cool current 05</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="still water / soft company" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-cucumber-water-thread-05.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Cucumber Water posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-thread cu1-cucumber-water&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;still water / soft company&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv&quot; alt=&quot;Character GIF 2&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.&lt;/p&gt;
+&lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
+&lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 110 125&quot; aria-hidden=&quot;true&quot;&gt;&lt;g transform=&quot;translate(27 32) scale(.7)&quot;&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;43&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.04&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;35&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot; stroke-dasharray=&quot;1 3&quot;/&gt;&lt;path d=&quot;M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z&quot; fill=&quot;currentColor&quot; opacity=&quot;.32&quot;/&gt;&lt;/g&gt;&lt;path d=&quot;M22 10C18 20 7 27 10 37C13 49 32 47 34 36C36 28 26 21 22 10ZM77 4C74 11 68 15 69 20C71 29 84 27 85 21C86 15 79 9 77 4ZM21 88C18 93 13 98 14 103C16 109 25 109 28 104C30 99 24 93 21 88Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / cool current 05&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="dewdial" data-kind="comms"><header class="cp-card-head"><span>COMMS / 01</span><h2>Dewdial</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-comms cu1-dewdial" data-direction="received">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">Zhiyuan</span>
+<span class="cu-sub">online now</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cu-time">09:41</div>
+<div class="cu-receipt">Delivered</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 110 125" aria-hidden="true"><g transform="translate(27 32) scale(.7)"><circle cx="50" cy="50" r="43" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 3"/><path d="M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z" fill="currentColor" opacity=".32"/></g><path d="M22 10C18 20 7 27 10 37C13 49 32 47 34 36C36 28 26 21 22 10ZM77 4C74 11 68 15 69 20C71 29 84 27 85 21C86 15 79 9 77 4ZM21 88C18 93 13 98 14 103C16 109 25 109 28 104C30 99 24 93 21 88Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.1"/></svg></div>
+<div class="cu-edition">cucumber / connected 01</div>
+<div class="cu-chrome" aria-hidden="true"><span>DEWDIAL</span><span>▂ ▄ ▆</span></div>
+<div class="cu-device" aria-hidden="true"><span>Message</span><span>↑</span></div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Contact<input name="title" value="[text]" spellcheck="false"></label><label>Status<input name="subtitle" value="online now" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="09:41" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cp-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-dewdial-comms-01.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Dewdial posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-comms cu1-dewdial&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;online now&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-time&quot;&gt;09:41&lt;/div&gt;
+&lt;div class=&quot;cu-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 110 125&quot; aria-hidden=&quot;true&quot;&gt;&lt;g transform=&quot;translate(27 32) scale(.7)&quot;&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;43&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.04&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;35&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot; stroke-dasharray=&quot;1 3&quot;/&gt;&lt;path d=&quot;M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z&quot; fill=&quot;currentColor&quot; opacity=&quot;.32&quot;/&gt;&lt;/g&gt;&lt;path d=&quot;M22 10C18 20 7 27 10 37C13 49 32 47 34 36C36 28 26 21 22 10ZM77 4C74 11 68 15 69 20C71 29 84 27 85 21C86 15 79 9 77 4ZM21 88C18 93 13 98 14 103C16 109 25 109 28 104C30 99 24 93 21 88Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / connected 01&lt;/div&gt;
+&lt;div class=&quot;cu-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;DEWDIAL&lt;/span&gt;&lt;span&gt;▂ ▄ ▆&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="pithline" data-kind="comms"><header class="cp-card-head"><span>COMMS / 02</span><h2>Pithline</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-comms cu1-pithline" data-direction="received">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">Tao</span>
+<span class="cu-sub">secure connection</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cu-time">09:41</div>
+<div class="cu-receipt">Delivered</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 160 65" aria-hidden="true"><path d="M14 42C7 26 24 10 51 15L131 25C153 29 151 51 134 53L41 57C25 56 16 50 14 42Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M27 30Q51 21 128 33M24 38Q52 34 132 41M31 47Q52 44 123 47" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="7 5"/><path d="M141 35l10-6" stroke="currentColor" stroke-width="2"/></svg></div>
+<div class="cu-edition">cucumber / connected 02</div>
+<div class="cu-chrome" aria-hidden="true"><span>PITH / LINK</span><span>● LIVE</span></div>
+<div class="cu-device" aria-hidden="true"><span>Compose</span><span>↵</span></div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Contact<input name="title" value="[text]" spellcheck="false"></label><label>Status<input name="subtitle" value="secure connection" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="09:41" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cp-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-pithline-comms-02.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Pithline posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-comms cu1-pithline&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;secure connection&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-time&quot;&gt;09:41&lt;/div&gt;
+&lt;div class=&quot;cu-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 160 65&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M14 42C7 26 24 10 51 15L131 25C153 29 151 51 134 53L41 57C25 56 16 50 14 42Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M27 30Q51 21 128 33M24 38Q52 34 132 41M31 47Q52 44 123 47&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot; stroke-dasharray=&quot;7 5&quot;/&gt;&lt;path d=&quot;M141 35l10-6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / connected 02&lt;/div&gt;
+&lt;div class=&quot;cu-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;PITH / LINK&lt;/span&gt;&lt;span&gt;● LIVE&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Compose&lt;/span&gt;&lt;span&gt;↵&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="tendril-touch" data-kind="comms"><header class="cp-card-head"><span>COMMS / 03</span><h2>Tendril Touch</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-comms cu1-tendril-touch" data-direction="received">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">Zhiyuan</span>
+<span class="cu-sub">tap into the moment</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cu-time">09:41</div>
+<div class="cu-receipt">Delivered</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 100 140" aria-hidden="true"><path d="M42 134C28 110 65 88 55 64S20 30 52 8M53 90C82 107 94 69 76 67C60 65 63 82 72 80M43 35C19 39 9 17 18 14C27 10 31 23 24 23" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M51 70C28 74 22 55 25 46C44 46 56 52 51 70ZM44 110C42 88 65 85 74 91C69 106 57 113 44 110Z" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><path d="M61 38C63 16 83 16 86 29L80 49C74 65 54 60 59 45Z" fill="currentColor" fill-opacity=".12" stroke="currentColor"/><path d="M66 46l9-19m-5 23l9-19" stroke="currentColor" stroke-width=".8"/></svg></div>
+<div class="cu-edition">cucumber / connected 03</div>
+<div class="cu-chrome" aria-hidden="true"><span>TENDRIL</span><span>●</span></div>
+<div class="cu-device" aria-hidden="true"><span>Reply</span><span>↑</span></div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Contact<input name="title" value="[text]" spellcheck="false"></label><label>Status<input name="subtitle" value="tap into the moment" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="09:41" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cp-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-tendril-touch-comms-03.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Tendril Touch posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-comms cu1-tendril-touch&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;tap into the moment&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-time&quot;&gt;09:41&lt;/div&gt;
+&lt;div class=&quot;cu-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M42 134C28 110 65 88 55 64S20 30 52 8M53 90C82 107 94 69 76 67C60 65 63 82 72 80M43 35C19 39 9 17 18 14C27 10 31 23 24 23&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M51 70C28 74 22 55 25 46C44 46 56 52 51 70ZM44 110C42 88 65 85 74 91C69 106 57 113 44 110Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.08&quot; stroke=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M61 38C63 16 83 16 86 29L80 49C74 65 54 60 59 45Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.12&quot; stroke=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M66 46l9-19m-5 23l9-19&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / connected 03&lt;/div&gt;
+&lt;div class=&quot;cu-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;TENDRIL&lt;/span&gt;&lt;span&gt;●&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Reply&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="coolwire" data-kind="comms"><header class="cp-card-head"><span>COMMS / 04</span><h2>Coolwire</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-comms cu1-coolwire" data-direction="received">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">Tao</span>
+<span class="cu-sub">direct messages</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cu-time">09:41</div>
+<div class="cu-receipt">Delivered</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 180 70" aria-hidden="true"><path d="M4 41C30 0 55 9 54 34S85 80 102 41S139-4 176 27L169 41C137 9 121 31 111 55S56 76 47 46S29 26 13 50Z" fill="currentColor" fill-opacity=".1" stroke="currentColor" stroke-width="1.2"/><path d="M5 42C31 15 45 23 49 44S83 80 105 45S138 3 174 31" fill="none" stroke="currentColor" stroke-width="3"/></svg></div>
+<div class="cu-edition">cucumber / connected 04</div>
+<div class="cu-chrome" aria-hidden="true"><span>● ● ●</span><span>COOLWIRE</span></div>
+<div class="cu-device" aria-hidden="true"><span>Write a message</span><span>↗</span></div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Contact<input name="title" value="[text]" spellcheck="false"></label><label>Status<input name="subtitle" value="direct messages" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="09:41" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cp-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-coolwire-comms-04.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Coolwire posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-comms cu1-coolwire&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;direct messages&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-time&quot;&gt;09:41&lt;/div&gt;
+&lt;div class=&quot;cu-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 180 70&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M4 41C30 0 55 9 54 34S85 80 102 41S139-4 176 27L169 41C137 9 121 31 111 55S56 76 47 46S29 26 13 50Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.1&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;path d=&quot;M5 42C31 15 45 23 49 44S83 80 105 45S138 3 174 31&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / connected 04&lt;/div&gt;
+&lt;div class=&quot;cu-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;● ● ●&lt;/span&gt;&lt;span&gt;COOLWIRE&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Write a message&lt;/span&gt;&lt;span&gt;↗&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="slice-signal" data-kind="comms"><header class="cp-card-head"><span>COMMS / 05</span><h2>Slice Signal</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-comms cu1-slice-signal" data-direction="received">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">Tao &amp; Zhiyuan</span>
+<span class="cu-sub">new messages</span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>
+<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>
+</div>
+<div class="cu-time">09:41</div>
+<div class="cu-receipt">Delivered</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="43" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 3"/><path d="M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z" fill="currentColor" opacity=".32"/></svg></div>
+<div class="cu-edition">cucumber / connected 05</div>
+<div class="cu-chrome" aria-hidden="true"><span>SLICE / SIGNAL</span><span>▰</span></div>
+<div class="cu-device" aria-hidden="true"><span>Swipe to reply</span><span>↑</span></div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Contact<input name="title" value="[text]" spellcheck="false"></label><label>Status<input name="subtitle" value="new messages" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label>Time<input name="time" value="09:41" spellcheck="false"></label><label>Receipt<input name="receipt" value="Delivered" spellcheck="false"></label><label>Message direction<select name="direction"><option value="received">Received</option><option value="sent">Sent</option><option value="alternating">Alternating</option></select></label><label class="cp-writing">Messages<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-slice-signal-comms-05.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Slice Signal posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-comms cu1-slice-signal&quot; data-direction=&quot;received&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;new messages&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aliquam erat volutpat.&lt;/b&gt; Donec vitae leo sit amet augue.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Nullam id nisi quis justo.&lt;/i&gt; &lt;u&gt;Praesent vel velit.&lt;/u&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-time&quot;&gt;09:41&lt;/div&gt;
+&lt;div class=&quot;cu-receipt&quot;&gt;Delivered&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;43&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.04&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;35&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot; stroke-dasharray=&quot;1 3&quot;/&gt;&lt;path d=&quot;M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z&quot; fill=&quot;currentColor&quot; opacity=&quot;.32&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / connected 05&lt;/div&gt;
+&lt;div class=&quot;cu-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;SLICE / SIGNAL&lt;/span&gt;&lt;span&gt;▰&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Swipe to reply&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="sativus-speck" data-kind="bud"><header class="cp-card-head"><span>BUDS / 01</span><h2>Sativus Speck</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-bud cu1-sativus-speck">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">just a little moment</span>
+<span class="cu-sub">cucumber / a small beginning</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="43" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 3"/><path d="M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z" fill="currentColor" opacity=".32"/></svg></div>
+<div class="cu-edition">cucumber / small moments 01</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="cucumber / a small beginning" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-sativus-speck-bud-01.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Sativus Speck posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-bud cu1-sativus-speck&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;cucumber / a small beginning&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;43&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.04&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;35&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot; stroke-dasharray=&quot;1 3&quot;/&gt;&lt;path d=&quot;M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z&quot; fill=&quot;currentColor&quot; opacity=&quot;.32&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / small moments 01&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="dewprint" data-kind="bud"><header class="cp-card-head"><span>BUDS / 02</span><h2>Dewprint</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-bud cu1-dewprint">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">stay a second</span>
+<span class="cu-sub">a trace of something good</span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 110 125" aria-hidden="true"><g transform="translate(27 32) scale(.7)"><circle cx="50" cy="50" r="43" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 3"/><path d="M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z" fill="currentColor" opacity=".32"/></g><path d="M22 10C18 20 7 27 10 37C13 49 32 47 34 36C36 28 26 21 22 10ZM77 4C74 11 68 15 69 20C71 29 84 27 85 21C86 15 79 9 77 4ZM21 88C18 93 13 98 14 103C16 109 25 109 28 104C30 99 24 93 21 88Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.1"/></svg></div>
+<div class="cu-edition">cucumber / small moments 02</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a trace of something good" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-dewprint-bud-02.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Dewprint posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-bud cu1-dewprint&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;a trace of something good&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 110 125&quot; aria-hidden=&quot;true&quot;&gt;&lt;g transform=&quot;translate(27 32) scale(.7)&quot;&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;43&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.04&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;35&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot; stroke-dasharray=&quot;1 3&quot;/&gt;&lt;path d=&quot;M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z&quot; fill=&quot;currentColor&quot; opacity=&quot;.32&quot;/&gt;&lt;/g&gt;&lt;path d=&quot;M22 10C18 20 7 27 10 37C13 49 32 47 34 36C36 28 26 21 22 10ZM77 4C74 11 68 15 69 20C71 29 84 27 85 21C86 15 79 9 77 4ZM21 88C18 93 13 98 14 103C16 109 25 109 28 104C30 99 24 93 21 88Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.1&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / small moments 02&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="peellet" data-kind="bud"><header class="cp-card-head"><span>BUDS / 03</span><h2>Peellet</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-bud cu1-peellet">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">softly unfolding</span>
+<span class="cu-sub">one small turn</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 48%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 180 70" aria-hidden="true"><path d="M4 41C30 0 55 9 54 34S85 80 102 41S139-4 176 27L169 41C137 9 121 31 111 55S56 76 47 46S29 26 13 50Z" fill="currentColor" fill-opacity=".1" stroke="currentColor" stroke-width="1.2"/><path d="M5 42C31 15 45 23 49 44S83 80 105 45S138 3 174 31" fill="none" stroke="currentColor" stroke-width="3"/></svg></div>
+<div class="cu-edition">cucumber / small moments 03</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="one small turn" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 48%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-peellet-bud-03.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Peellet posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-bud cu1-peellet&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;one small turn&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 48%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 180 70&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M4 41C30 0 55 9 54 34S85 80 102 41S139-4 176 27L169 41C137 9 121 31 111 55S56 76 47 46S29 26 13 50Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.1&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;path d=&quot;M5 42C31 15 45 23 49 44S83 80 105 45S138 3 174 31&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / small moments 03&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="crisp-interval" data-kind="bud"><header class="cp-card-head"><span>BUDS / 04</span><h2>Crisp Interval</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-bud cu1-crisp-interval">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">between you and me</span>
+<span class="cu-sub">a pause in the day</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" alt="Character GIF 2" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 160 65" aria-hidden="true"><path d="M14 42C7 26 24 10 51 15L131 25C153 29 151 51 134 53L41 57C25 56 16 50 14 42Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M27 30Q51 21 128 33M24 38Q52 34 132 41M31 47Q52 44 123 47" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="7 5"/><path d="M141 35l10-6" stroke="currentColor" stroke-width="2"/></svg></div>
+<div class="cu-edition">cucumber / small moments 04</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="a pause in the day" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-crisp-interval-bud-04.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Crisp Interval posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-bud cu1-crisp-interval&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;a pause in the day&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv&quot; alt=&quot;Character GIF 2&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 160 65&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M14 42C7 26 24 10 51 15L131 25C153 29 151 51 134 53L41 57C25 56 16 50 14 42Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M27 30Q51 21 128 33M24 38Q52 34 132 41M31 47Q52 44 123 47&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot; stroke-dasharray=&quot;7 5&quot;/&gt;&lt;path d=&quot;M141 35l10-6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / small moments 04&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section>
+<section class="cp-card" id="tendril-trace" data-kind="bud"><header class="cp-card-head"><span>BUDS / 05</span><h2>Tendril Trace</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+<div class="cu1 cu1-bud cu1-tendril-trace">
+<div class="cu-layout">
+<div class="cu-head">
+<a class="cu-name" href="[url]">Tao &amp; Zhiyuan</a>
+<span class="cu-title">a little room to grow</span>
+<span class="cu-sub">here, with you</span>
+</div>
+<div class="cu-media">
+<span class="cu-shot"><img src="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" alt="Character GIF 1" style="--cu-crop:50% 35%"></span>
+</div>
+<div class="cu-copy">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
+</div>
+<div class="cu-art" aria-hidden="true"><svg viewBox="0 0 100 140" aria-hidden="true"><path d="M42 134C28 110 65 88 55 64S20 30 52 8M53 90C82 107 94 69 76 67C60 65 63 82 72 80M43 35C19 39 9 17 18 14C27 10 31 23 24 23" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M51 70C28 74 22 55 25 46C44 46 56 52 51 70ZM44 110C42 88 65 85 74 91C69 106 57 113 44 110Z" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><path d="M61 38C63 16 83 16 86 29L80 49C74 65 54 60 59 45Z" fill="currentColor" fill-opacity=".12" stroke="currentColor"/><path d="M66 46l9-19m-5 23l9-19" stroke="currentColor" stroke-width=".8"/></svg></div>
+<div class="cu-edition">cucumber / small moments 05</div>
+</div>
+</div>
+
+</div><details class="cp-editor"><summary>Edit this template</summary><form><label>[name] · Names<input name="name" value="[name]" spellcheck="false"></label><label>[url] · Link URL<input name="url" value="[url]" spellcheck="false"></label><label>[text] · Title<input name="title" value="[text]" spellcheck="false"></label><label>Subtitle<input name="subtitle" value="here, with you" spellcheck="false"></label><label>GIF 1 URL<input name="gif1" value="https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv" spellcheck="false"></label><label>GIF 2 URL<input name="gif2" value="" spellcheck="false"></label><label>GIF 1 position<input name="crop1" value="50% 35%" spellcheck="false"></label><label>GIF 2 position<input name="crop2" value="50% 35%" spellcheck="false"></label><label class="cp-writing">Writing<textarea name="copy" rows="7" spellcheck="false">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;</textarea></label><button class="cp-reset" type="button">Reset sample</button></form></details><div class="cp-actions"><button class="cp-copy" type="button">Copy template</button><button class="cp-named" type="button">Copy for Tao &amp; Zhiyuan</button><a href="cucumber-tendril-trace-bud-05.txt">Posting snippet ↗</a><span class="cp-status" role="status"></span></div><textarea class="cp-code" aria-label="Tendril Trace posting code" readonly spellcheck="false">[dohtml]
+&lt;div class=&quot;cu1 cu1-bud cu1-tendril-trace&quot;&gt;
+&lt;div class=&quot;cu-layout&quot;&gt;
+&lt;div class=&quot;cu-head&quot;&gt;
+&lt;a class=&quot;cu-name&quot; href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;
+&lt;span class=&quot;cu-title&quot;&gt;[text]&lt;/span&gt;
+&lt;span class=&quot;cu-sub&quot;&gt;here, with you&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-media&quot;&gt;
+&lt;span class=&quot;cu-shot&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv&quot; alt=&quot;Character GIF 1&quot; style=&quot;--cu-crop:50% 35%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-copy&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cu-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M42 134C28 110 65 88 55 64S20 30 52 8M53 90C82 107 94 69 76 67C60 65 63 82 72 80M43 35C19 39 9 17 18 14C27 10 31 23 24 23&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M51 70C28 74 22 55 25 46C44 46 56 52 51 70ZM44 110C42 88 65 85 74 91C69 106 57 113 44 110Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.08&quot; stroke=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M61 38C63 16 83 16 86 29L80 49C74 65 54 60 59 45Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.12&quot; stroke=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M66 46l9-19m-5 23l9-19&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;.8&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;cu-edition&quot;&gt;cucumber / small moments 05&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css&quot;&gt;
+[/dohtml]</textarea></section><footer class="cp-footer">CUCUMBER / COOL CURRENT <a href="#top">Back to top ↑</a></footer></main><script>const designs=[{"type":"thread","name":"Cutglass Current","slug":"cutglass-current","images":1,"sampleTitle":"cool to the touch","subtitle":"a moment held in glass","motif":1,"number":"01","file":"cucumber-cutglass-current-thread-01.txt"},{"type":"thread","name":"Peel Continuum","slug":"peel-continuum","images":2,"sampleTitle":"a little closer still","subtitle":"in one unbroken line","motif":2,"number":"02","file":"cucumber-peel-continuum-thread-02.txt"},{"type":"thread","name":"Hothouse Hours","slug":"hothouse-hours","images":2,"sampleTitle":"where the light lingers","subtitle":"beneath the climbing vines","motif":3,"number":"03","file":"cucumber-hothouse-hours-thread-03.txt"},{"type":"thread","name":"Rind & Reason","slug":"rind-and-reason","images":0,"sampleTitle":"beneath the surface","subtitle":"a quiet kind of clarity","motif":4,"number":"04","file":"cucumber-rind-and-reason-thread-04.txt"},{"type":"thread","name":"Cucumber Water","slug":"cucumber-water","images":2,"sampleTitle":"let the world slow down","subtitle":"still water / soft company","motif":5,"number":"05","file":"cucumber-cucumber-water-thread-05.txt"},{"type":"comms","name":"Dewdial","slug":"dewdial","images":1,"sampleTitle":"Zhiyuan","subtitle":"online now","motif":5,"number":"01","file":"cucumber-dewdial-comms-01.txt"},{"type":"comms","name":"Pithline","slug":"pithline","images":1,"sampleTitle":"Tao","subtitle":"secure connection","motif":4,"number":"02","file":"cucumber-pithline-comms-02.txt"},{"type":"comms","name":"Tendril Touch","slug":"tendril-touch","images":1,"sampleTitle":"Zhiyuan","subtitle":"tap into the moment","motif":3,"number":"03","file":"cucumber-tendril-touch-comms-03.txt"},{"type":"comms","name":"Coolwire","slug":"coolwire","images":1,"sampleTitle":"Tao","subtitle":"direct messages","motif":2,"number":"04","file":"cucumber-coolwire-comms-04.txt"},{"type":"comms","name":"Slice Signal","slug":"slice-signal","images":0,"sampleTitle":"Tao & Zhiyuan","subtitle":"new messages","motif":1,"number":"05","file":"cucumber-slice-signal-comms-05.txt"},{"type":"bud","name":"Sativus Speck","slug":"sativus-speck","images":1,"sampleTitle":"just a little moment","subtitle":"cucumber / a small beginning","motif":1,"number":"01","file":"cucumber-sativus-speck-bud-01.txt"},{"type":"bud","name":"Dewprint","slug":"dewprint","images":0,"sampleTitle":"stay a second","subtitle":"a trace of something good","motif":5,"number":"02","file":"cucumber-dewprint-bud-02.txt"},{"type":"bud","name":"Peellet","slug":"peellet","images":1,"sampleTitle":"softly unfolding","subtitle":"one small turn","motif":2,"number":"03","file":"cucumber-peellet-bud-03.txt"},{"type":"bud","name":"Crisp Interval","slug":"crisp-interval","images":2,"sampleTitle":"between you and me","subtitle":"a pause in the day","motif":4,"number":"04","file":"cucumber-crisp-interval-bud-04.txt"},{"type":"bud","name":"Tendril Trace","slug":"tendril-trace","images":1,"sampleTitle":"a little room to grow","subtitle":"here, with you","motif":3,"number":"05","file":"cucumber-tendril-trace-bud-05.txt"}];const gifs=["https://64.media.tumblr.com/4125c90392ec277c761b1d2427f4feb3/9ec4b4db231f7d93-2e/s400x600/70cfbcf3debacabcaf1bd9dc2b7917ec9eae073a.gifv","https://64.media.tumblr.com/4b4e61332ab9db142357da4fb0f2c1e8/9ec4b4db231f7d93-bb/s400x600/d9849a35430d61ff40b65fc315a27821340e6c59.gifv"];const writing={"thread":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>\n<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>\n<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>","comms":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>\n<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>","bud":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>"};const cssURL="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/cucumber/cucumber-cool-current-v1.css";function esc(v){return String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
+function defaults(d){return {name:'[name]',url:'[url]',title:'[text]',subtitle:d.subtitle,gif1:d.images?gifs[d.slug==='pithline'||d.slug==='coolwire'||d.slug==='tendril-trace'?1:0]:'',gif2:d.images>1?gifs[1]:'',crop1:d.slug==='peellet'?'50% 48%':'50% 35%',crop2:'50% 35%',copy:writing[d.type],time:'09:41',receipt:'Delivered',direction:'received'};}
+function previewState(d,s){return {...s,name:s.name==='[name]'?'Tao & Zhiyuan':s.name,title:s.title==='[text]'?d.sampleTitle:s.title};}
+function art(n){
+const seeds='<path d="M49 48C38 35 43 26 48 27C53 30 54 39 49 48ZM43 54C26 60 20 52 24 48C30 45 39 49 43 54ZM54 55C66 43 75 48 73 53C71 59 61 60 54 55Z" fill="currentColor" opacity=".32"/>';
+const slice='<circle cx="50" cy="50" r="43" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 3"/>'+seeds;
+if(n===2)return '<svg viewBox="0 0 180 70" aria-hidden="true"><path d="M4 41C30 0 55 9 54 34S85 80 102 41S139-4 176 27L169 41C137 9 121 31 111 55S56 76 47 46S29 26 13 50Z" fill="currentColor" fill-opacity=".1" stroke="currentColor" stroke-width="1.2"/><path d="M5 42C31 15 45 23 49 44S83 80 105 45S138 3 174 31" fill="none" stroke="currentColor" stroke-width="3"/></svg>';
+if(n===3)return '<svg viewBox="0 0 100 140" aria-hidden="true"><path d="M42 134C28 110 65 88 55 64S20 30 52 8M53 90C82 107 94 69 76 67C60 65 63 82 72 80M43 35C19 39 9 17 18 14C27 10 31 23 24 23" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M51 70C28 74 22 55 25 46C44 46 56 52 51 70ZM44 110C42 88 65 85 74 91C69 106 57 113 44 110Z" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><path d="M61 38C63 16 83 16 86 29L80 49C74 65 54 60 59 45Z" fill="currentColor" fill-opacity=".12" stroke="currentColor"/><path d="M66 46l9-19m-5 23l9-19" stroke="currentColor" stroke-width=".8"/></svg>';
+if(n===4)return '<svg viewBox="0 0 160 65" aria-hidden="true"><path d="M14 42C7 26 24 10 51 15L131 25C153 29 151 51 134 53L41 57C25 56 16 50 14 42Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M27 30Q51 21 128 33M24 38Q52 34 132 41M31 47Q52 44 123 47" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="7 5"/><path d="M141 35l10-6" stroke="currentColor" stroke-width="2"/></svg>';
+if(n===5)return '<svg viewBox="0 0 110 125" aria-hidden="true"><g transform="translate(27 32) scale(.7)">'+slice+'</g><path d="M22 10C18 20 7 27 10 37C13 49 32 47 34 36C36 28 26 21 22 10ZM77 4C74 11 68 15 69 20C71 29 84 27 85 21C86 15 79 9 77 4ZM21 88C18 93 13 98 14 103C16 109 25 109 28 104C30 99 24 93 21 88Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.1"/></svg>';
+return '<svg viewBox="0 0 100 100" aria-hidden="true">'+slice+'</svg>';
+}
+function template(d,s){
+const media=[s.gif1,s.gif2].map((g,i)=>g?`<span class="cu-shot"><img src="${esc(g)}" alt="Character GIF ${i+1}" style="--cu-crop:${esc(s['crop'+(i+1)])}"></span>`:'').filter(Boolean).join('\n');
+const chrome={dewdial:['DEWDIAL','▂ ▄ ▆','Message','↑'],pithline:['PITH / LINK','● LIVE','Compose','↵'],'tendril-touch':['TENDRIL','●','Reply','↑'],coolwire:['● ● ●','COOLWIRE','Write a message','↗'],'slice-signal':['SLICE / SIGNAL','▰','Swipe to reply','↑']}[d.slug];
+return `[dohtml]\n<div class="cu1 cu1-${d.type} cu1-${d.slug}"${chrome?` data-direction="${esc(s.direction)}"`:''}>\n<div class="cu-layout">\n<div class="cu-head">\n<a class="cu-name" href="${esc(s.url)}">${esc(s.name)}</a>\n<span class="cu-title">${esc(s.title)}</span>\n<span class="cu-sub">${esc(s.subtitle)}</span>\n</div>\n${media?`<div class="cu-media">\n${media}\n</div>\n`:''}<div class="cu-copy">\n${s.copy}\n</div>\n${chrome?`<div class="cu-time">${esc(s.time)}</div>\n<div class="cu-receipt">${esc(s.receipt)}</div>\n`:''}<div class="cu-art" aria-hidden="true">${art(d.motif)}</div>\n<div class="cu-edition">cucumber / ${d.type==='bud'?'small moments':d.type==='comms'?'connected':'cool current'} ${d.number}</div>\n${chrome?`<div class="cu-chrome" aria-hidden="true"><span>${chrome[0]}</span><span>${chrome[1]}</span></div>\n<div class="cu-device" aria-hidden="true"><span>${chrome[2]}</span><span>${chrome[3]}</span></div>\n`:''}</div>\n</div>\n<link rel="stylesheet" href="${cssURL}">\n[/dohtml]`;
+}
+function bare(code){return code.replace(/\[\/?dohtml\]/gi,'').replace(/<link[^>]*>/gi,'');}
+const main=document.querySelector('.cp-main');
+const mode=document.getElementById('cp-mode');
+const mediaMode=window.matchMedia('(prefers-color-scheme:dark)');
+function setMode(){document.documentElement.setAttribute('color-mode',mode.value==='system'?(mediaMode.matches?'dark':'light'):mode.value);}
+mode.addEventListener('change',setMode);mediaMode.addEventListener('change',()=>{if(mode.value==='system')setMode();});
+document.getElementById('cp-width').addEventListener('change',e=>main.dataset.width=e.target.value);
+document.getElementById('cp-palette').addEventListener('change',e=>main.dataset.palette=e.target.value);
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.cp-card').forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.kind!==button.dataset.filter);}));
+function convertWriting(value){
+value=value.replace(/\[(\/)?(b|i|u)\]/gi,(_,close,tag)=>'<'+(close?'/':'')+tag.toLowerCase()+'>');
+const doc=new DOMParser().parseFromString(value,'text/html');
+doc.querySelectorAll('script,style,iframe,object,embed,link,meta').forEach(el=>el.remove());
+doc.querySelectorAll('*').forEach(el=>{for(const a of [...el.attributes])if(a.name.startsWith('on')||a.name==='srcdoc'||(/^(href|src)$/.test(a.name)&&/^\s*javascript:/i.test(a.value)))el.removeAttribute(a.name);});
+return doc.body.innerHTML;
+}
+async function copyValue(value,area,status){
+try{if(!navigator.clipboard)throw Error('clipboard');await navigator.clipboard.writeText(value);status.textContent='Copied.';}
+catch(e){area.value=value;area.focus();area.select();area.setSelectionRange(0,value.length);status.textContent='Code selected — press Ctrl+C or ⌘C.';}
+}
+for(const d of designs){
+const card=document.getElementById(d.slug),form=card.querySelector('form'),stage=card.querySelector('.cp-stage'),code=card.querySelector('.cp-code'),status=card.querySelector('.cp-status');
+function state(){const s={...defaults(d),...Object.fromEntries(new FormData(form))};s.copy=convertWriting(s.copy);for(const k of ['crop1','crop2'])if(!/^\d{1,3}%\s+\d{1,3}%$/.test(s[k]))s[k]='50% 30%';return s;}
+function update(){const s=state();stage.innerHTML=bare(template(d,previewState(d,s)));code.value=template(d,s);status.textContent='';}
+form.addEventListener('submit',e=>e.preventDefault());form.addEventListener('input',update);form.addEventListener('change',update);
+card.querySelector('.cp-reset').addEventListener('click',()=>{const s=defaults(d);for(const [k,v] of Object.entries(s))if(form.elements.namedItem(k))form.elements.namedItem(k).value=v;update();});
+card.querySelector('.cp-copy').addEventListener('click',()=>{const value=template(d,state());code.value=value;copyValue(value,code,status);});
+card.querySelector('.cp-named').addEventListener('click',()=>{const value=template(d,previewState(d,state()));code.value=value;copyValue(value,code,status);});
+}
+</script></body></html>
