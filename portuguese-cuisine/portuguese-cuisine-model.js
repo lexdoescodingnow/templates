@@ -1,6 +1,6 @@
 const PORTUGUESE_GIFS = [
-  'https://64.media.tumblr.com/92604d3cdbc0538f2fb48399aae355da/f5c6b7766ef6c194-65/s400x600/122532586f919489dad6fb800d4318c059404742.gifv',
-  'https://64.media.tumblr.com/1eb213d42e0f426c44c1ae33cb0db1e7/f5c6b7766ef6c194-6b/s400x600/d4c127b4d817f703d75e6a23e5e120cee74b7565.gifv'
+  'https://64.media.tumblr.com/4391088096a606ae75e4af9b29f621cc/b029dfc736bb02f0-13/s400x600/2a20cd6d3f7ab3978c4f5c460076fabbed32277d.gifv',
+  'https://64.media.tumblr.com/6a926c000bbdb822ff4097156b88d845/f279d15783aa31d1-23/s400x600/e7901579650a240ce38de883304cb5e5ed70fae3.gifv'
 ];
 const PORTUGUESE_CSS_URL = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/fig/fig-orchard-standalone-v1.css';
 const PORTUGUESE_THREAD = '<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\n\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\n\n<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>';
