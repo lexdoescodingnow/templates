@@ -15,3 +15,9 @@ Checked 27 September 2026.
 ## Rendering limit
 
 The Cloud Browser rejected the local HTTP preview with `ERR_BLOCKED_BY_CLIENT`. No screenshot or live JCink layout test was completed. The checks above establish source consistency, editor behaviour and stylesheet isolation; exact appearance under the forum skin remains unverified. GIFs depend on their remote host.
+
+## 5 November 2026 refresh
+
+All fifteen snippets now also exist directly under `fig/`, with stable Portuguese Cuisine aliases retained. Literal `[name]`, `[url]` and `[text]` fields and lorem ipsum survive canonical files, editor exports and forum copy boxes. The supplied November GIF URLs replace the previous placeholders. The preview resolves the name to Seojun & Wenjun.
+
+The 561 parser, DOM, stylesheet and editor assertions passed again, including 120 legacy stylesheet cases. The complete forum builder succeeded with 935 designs across 65 collections; native Fig files are deduplicated against their compatibility aliases. Headless Chromium could not launch because this environment denied its process socket; visual rendering and live JCink appearance remain unverified.

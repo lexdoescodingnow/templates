@@ -17,3 +17,8 @@ const preview=`<!doctype html>
 fs.writeFileSync(path.join(root,'portuguese-cuisine-collection-preview.html'),preview);
 fs.writeFileSync(path.join(root,'../fig/fig-collection-preview.html'),preview);
 console.log(`Built ${designs.length} posting snippets and the standalone preview.`);
+
+for(const d of designs){
+ const slug=d.name.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+ fs.writeFileSync(path.join(root,'../fig',`fig-${slug}-${d.type}-${d.number}.txt`),portugueseSnippet(d,portugueseDefaults(d)));
+}

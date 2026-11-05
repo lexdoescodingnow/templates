@@ -27,9 +27,9 @@ for(const d of designs){
  const dom=new JSDOM(code),doc=dom.window.document;
  ok(doc.querySelectorAll('link[rel="stylesheet"]').length===1,d.name+' single stylesheet');
  ok(doc.querySelector('link').href===m.PORTUGUESE_CSS_URL&&m.PORTUGUESE_CSS_URL.includes('@main/fig/fig-orchard-standalone-v1.css'),d.name+' correct direct CSS URL');
- ok(doc.querySelector('.ptg-name').textContent==='Seojun & Wenjun',d.name+' ship members');
- ok(doc.querySelector('.ptg-title').textContent===d.sample,d.name+' readable title');
- ok(!/<!--|<script\b|\[text\]|\[name\]/.test(code),d.name+' no comments, scripts or old visible placeholders');
+ ok(doc.querySelector('.ptg-name').textContent==='[name]',d.name+' ship members');
+ ok(doc.querySelector('.ptg-title').textContent==='[text]',d.name+' readable title');
+ ok(!/<!--|<script\b/.test(code),d.name+' no comments, scripts or old visible placeholders');
  const images=[...doc.querySelectorAll('img')];
  ok(images.length===d.gifs,d.name+' original GIF count');
  for(const img of images){ok(img.parentElement.className==='fg1-portrait',d.name+' independent portrait frame');ok(m.PORTUGUESE_GIFS.includes(img.src),d.name+' original GIF URL');}

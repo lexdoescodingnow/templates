@@ -8,39 +8,39 @@ Five threads, five phone/device comms and five buds, redesigned with split figs,
 
 | Design | Default GIFs | Posting snippet |
 | --- | ---: | --- |
-| Velvet Split | 2 | [Copy code](../portuguese-cuisine/portuguese-cuisine-conserva-de-saudade-thread-01.txt) |
-| Under the Fig Tree | 1 | [Copy code](../portuguese-cuisine/portuguese-cuisine-mil-folhas-thread-02.txt) |
-| Honeyed Chamber | 2 | [Copy code](../portuguese-cuisine/portuguese-cuisine-mare-a-mesa-thread-03.txt) |
-| Orchard Ledger | 0 | [Copy code](../portuguese-cuisine/portuguese-cuisine-tasca-das-horas-thread-04.txt) |
-| September Fig | 1 | [Copy code](../portuguese-cuisine/portuguese-cuisine-nata-de-domingo-thread-05.txt) |
+| Velvet Split | 2 | [Velvet Split](fig-velvet-split-thread-01.txt) |
+| Under the Fig Tree | 1 | [Under the Fig Tree](fig-under-the-fig-tree-thread-02.txt) |
+| Honeyed Chamber | 2 | [Honeyed Chamber](fig-honeyed-chamber-thread-03.txt) |
+| Orchard Ledger | 0 | [Orchard Ledger](fig-orchard-ledger-thread-04.txt) |
+| September Fig | 1 | [September Fig](fig-september-fig-thread-05.txt) |
 
 ## Comms
 
 | Design | Default GIFs | Posting snippet |
 | --- | ---: | --- |
-| Syconium Signal | 1 | [Copy code](../portuguese-cuisine/portuguese-cuisine-bica-chamada-comms-01.txt) |
-| Ficus Frequency | 0 | [Copy code](../portuguese-cuisine/portuguese-cuisine-piri-piri-ping-comms-02.txt) |
-| Orchard Dial | 1 | [Copy code](../portuguese-cuisine/portuguese-cuisine-linha-de-mercado-comms-03.txt) |
-| Pulp Exchange | 2 | [Copy code](../portuguese-cuisine/portuguese-cuisine-doce-recado-comms-04.txt) |
-| Canopy Console | 0 | [Copy code](../portuguese-cuisine/portuguese-cuisine-mesa-reservada-comms-05.txt) |
+| Syconium Signal | 1 | [Syconium Signal](fig-syconium-signal-comms-01.txt) |
+| Ficus Frequency | 0 | [Ficus Frequency](fig-ficus-frequency-comms-02.txt) |
+| Orchard Dial | 1 | [Orchard Dial](fig-orchard-dial-comms-03.txt) |
+| Pulp Exchange | 2 | [Pulp Exchange](fig-pulp-exchange-comms-04.txt) |
+| Canopy Console | 0 | [Canopy Console](fig-canopy-console-comms-05.txt) |
 
 ## Buds
 
 | Design | Default GIFs | Posting snippet |
 | --- | ---: | --- |
-| Seedlet | 0 | [Copy code](../portuguese-cuisine/portuguese-cuisine-migalha-bud-01.txt) |
-| Ficus Kiss | 1 | [Copy code](../portuguese-cuisine/portuguese-cuisine-beijinho-de-canela-bud-02.txt) |
-| Honeydrop Note | 0 | [Copy code](../portuguese-cuisine/portuguese-cuisine-sal-de-mar-bud-03.txt) |
-| Stem & Stay | 1 | [Copy code](../portuguese-cuisine/portuguese-cuisine-gota-de-azeite-bud-04.txt) |
-| Twin Pips | 2 | [Copy code](../portuguese-cuisine/portuguese-cuisine-ultima-colher-bud-05.txt) |
+| Seedlet | 0 | [Seedlet](fig-seedlet-bud-01.txt) |
+| Ficus Kiss | 1 | [Ficus Kiss](fig-ficus-kiss-bud-02.txt) |
+| Honeydrop Note | 0 | [Honeydrop Note](fig-honeydrop-note-bud-03.txt) |
+| Stem & Stay | 1 | [Stem & Stay](fig-stem-and-stay-bud-04.txt) |
+| Twin Pips | 2 | [Twin Pips](fig-twin-pips-bud-05.txt) |
 
 ## Editing and posting
 
-Copy a named snippet's complete `[dohtml]` block, or use the forum masterpost to display every example directly above its copyable code. Seojun & Wenjun, the link, title/status, time, GIFs and writing remain editable near the top. Forum examples show lorem ipsum; their copyable code uses `[TEXT GOES HERE]` or `[MESSAGE GOES HERE]`.
+Copy a named snippet's complete `[dohtml]` block, or use the forum masterpost to display every example directly above its copyable code. Literal `[name]`, `[url]` and `[text]` fields sit at the top; GIFs, time and lorem ipsum writing follow before decorations. The preview displays Seojun & Wenjun. Forum examples show lorem ipsum; their copyable code retains the same lorem ipsum and literal editable placeholders.
 
 The editor accepts ordinary HTML and converts `[b]`, `[i]` and `[u]` to HTML emphasis. Direct `[dohtml]` snippets use `<b>`, `<i>` and `<u>`; `<strong>` and `<em>` are also supported. Bold/underline use member colours 1 → 2 → 3; italics reverse them. Comms use ordinary `<p>` messages, including successive opening tags, and support received, sent and alternating alignment. Device controls are decorative.
 
-The supplied GIF URLs and each design's default image count are retained. Images can be added, removed and cropped. Each image has its own `fg1-portrait` frame; border sizing is separate from image sizing. Clipping is restricted to portrait frames. Empty media is omitted, and portrait columns reclaim their space. Bud samples remain under 100 words.
+The two GIF URLs supplied on 5 November 2026 and each design's default image count are retained. Images can be added, removed and cropped. Each image has its own `fg1-portrait` frame; border sizing is separate from image sizing. Clipping is restricted to portrait frames. Empty media is omitted, and portrait columns reclaim their space. Bud samples remain under 100 words.
 
 Each current snippet links directly to `@main/fig/fig-orchard-standalone-v1.css`. This stylesheet is self-contained with no CSS imports. It inherits `--mgrgb1`, `--mgrgb2`, `--mgrgb3`; Blue Hour's explicit light/dark mode overrides the system fallback. No hidden tips, HTML comments or CSS comments are included in posting templates. No forum JavaScript is required.
 
