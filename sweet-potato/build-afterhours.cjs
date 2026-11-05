@@ -1,1 +1,1 @@
-require('./build-cozy.cjs');
+require('./build-hearth.cjs');
