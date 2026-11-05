@@ -1,5 +1,7 @@
 # Character directory consistency audit
 
+**Age review: 5 November 2026.** Updated 24 age fields against the live Canopy calendar for 30 September–5 November inclusive. The remaining 157 records and every non-age field are unchanged. [Birthday update details](age-updates/2026-11-05.md).
+
 30 September 2026 · 181 characters · Everett Tsai added
 
 No missing required fields, duplicate character records, unmatched partner references, or conflicting reciprocal relationship statuses were found in the supplied directory. Every entry contains an avatar, secondary GIF, nickname, age, pronouns, occupation, face claim and full-name field.

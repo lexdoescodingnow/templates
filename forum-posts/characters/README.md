@@ -2,6 +2,8 @@
 
 [Preview and search all 181 characters](character-directory-v2-preview.html)
 
+**Ages updated through 5 November 2026:** 24 birthdays since the 30 September Everett update have been reconciled with the live Canopy calendar. [View the dates and age changes](age-updates/2026-11-05.md). Replace the six numbered forum posts to use the refreshed copies.
+
 The full forum directory uses **six posts**. Replace all six earlier sections with the current numbered files to use the directory-wide lookup. The alphabetical ranges are unchanged; Everett brings Part 2 to 36 characters and the full directory to 181. Each file includes its own complete `[dohtml]` block, static character cards, stylesheet loader, and embedded search and copy controls. Every search box searches all 181 names, nicknames and partner references and lists the matching names with their forum part number and letter range. An entry on the current page can be opened directly from its result; an entry on another page shows which forum section to open. The lookup does not invent cross-page post links.
 
 | Forum file | Names | Characters |
@@ -43,7 +45,7 @@ When the destination card is present anywhere on the current page, its result is
 
 ## Character details
 
-Everett Tsai was added on 30 September 2026, bringing the directory to **181 characters**. He uses the nickname Rett, is 30, uses he/him, works as a personal trainer, and has the user-supplied face claim **Fan Cheng Chang**. No relationship status was supplied, so none is displayed. His original uploaded avatar is hosted at `assets/everett-tsai.jpg`, and his PG uses the supplied Tumblr GIF. His complete plain-BBCode PI is also available in [everett-tsai.txt](examples/everett-tsai.txt). Both Everett and Rett locate **Part 2 · C–G**. The previous 180 records are unchanged. Replace all six forum sections to refresh the embedded search index everywhere.
+Everett Tsai was added on 30 September 2026, bringing the directory to **181 characters**. He uses the nickname Rett, is 30, uses he/him, works as a personal trainer, and has the user-supplied face claim **Fan Cheng Chang**. No relationship status was supplied, so none is displayed. His original uploaded avatar is hosted at `assets/everett-tsai.jpg`, and his PG uses the supplied Tumblr GIF. His complete plain-BBCode PI is also available in [everett-tsai.txt](examples/everett-tsai.txt). Both Everett and Rett locate **Part 2 · C–G**. At that addition, the previous 180 records were unchanged. Replace all six forum sections to refresh the embedded search index everywhere.
 
 The eighth batch added seven characters on 28 September 2026, bringing the directory to 180. Xiaoyang now has the supplied animated GIF, and Rain Jeon and Ryu Hyemi name each other consistently. Escaped URL punctuation has been cleaned and Nicky’s stray leading nickname space removed; the uppercase nickname B is retained. All supplied entries include an avatar, secondary image, nickname, numeric age, pronouns, occupation, face claim and full-name CN field. The ❧ Leaf flourish, bold nicknames, bold organisations and partner names, italic face claims and outline-heart relationship framing are consistent throughout.
 
