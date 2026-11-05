@@ -16,7 +16,7 @@ for kind,group in names.items():
   if kind=='thread':sample*=3
   if kind=='comms':sample='<p>Lorem ipsum dolor sit amet.</p><p><b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p>'
   media='\n'.join(f'<img src="{g}" alt="Character GIF">' for g in gifs[:(2 if kind=='thread' and n%2 else 1)])
-  code=f'[dohtml]\n<div class="pr1 pr1-{kind} pr1-v{n}">\n<div class="pr-head">\n<a class="pr-name" href="[url]">[name]</a>\n<span class="pr-title">[text]</span>\n</div>\n<div class="pr-media">\n{media}\n</div>\n<div class="pr-copy">\n{sample}\n</div>\n'+('<div class="pr-status">09:41 · Connected</div>\n' if kind=='comms' else '')+f'<div class="pr-foot"><span>{name} / '+('Delivered' if kind=='comms' else 'Pear')+'</span><span class="pr-fruit" aria-hidden="true"></span></div>\n</div>\n<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-forum-v2.css">\n[/dohtml]'
+  code=f'[dohtml]\n<div class="pr1 pr1-{kind} pr1-v{n}">\n<div class="pr-head">\n<a class="pr-name" href="[url]">[name]</a>\n<span class="pr-title">[text]</span>\n</div>\n<div class="pr-media">\n{media}\n</div>\n<div class="pr-copy">\n{sample}\n</div>\n'+('<div class="pr-status">09:41 · Connected</div>\n' if kind=='comms' else '')+f'<div class="pr-foot"><span>{name} / '+('Delivered' if kind=='comms' else 'Pear')+'</span><span class="pr-fruit" aria-hidden="true"></span></div>\n</div>\n<link rel="stylesheet" href="https://raw.githack.com/lexdoescodingnow/templates/main/pear/pear-orchard-forum-v2.css">\n[/dohtml]'
   (P/file).write_text(code,encoding='utf-8');rows.append(dict(name=name,slug=slug,type=kind,file=file))
   example=code.replace('[name]','Haneul &amp; Taejoo').replace('[text]',name).replace('[url]','#').replace('[dohtml]','').replace('[/dohtml]','')
   cards.append(f'<section><h2>{name} · {kind}</h2><div class="preview">{example}</div><button onclick="copy(this)">Copy template</button><button onclick="update(this)">Update preview</button><textarea aria-label="{name} editable posting code">{html.escape(code)}</textarea></section>')
@@ -30,4 +30,5 @@ with zipfile.ZipFile(P/'pear-collection.zip','w',zipfile.ZIP_DEFLATED) as z:
  for f in P.iterdir():
   if f.suffix in ('.txt','.css','.html','.md','.json'):z.write(f,f.name)
 print('Built 15 Pear designs, preview, forum masterpost and ZIP.')
+
 
