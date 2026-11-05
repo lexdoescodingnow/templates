@@ -12,9 +12,29 @@ html[color-mode=dark] .pear3{--pe3-paper:#202222;--pe3-inset:#292c2c;--pe3-ink:#
 @container pear (max-width:410px){.pear3-thread .pe3-layout{padding:22px;gap:18px}.pear3-thread .pe3-title{font-size:30px}.pear3-thread .pe3-layout{grid-template-columns:1fr;grid-template-areas:'head' 'media' 'copy' 'art' 'edition'}.pear3-thread .pe3-media{flex-direction:row}.pear3-thread .pe3-shot img{aspect-ratio:4/3}.pear3-thread .pe3-art{width:35px}.pear3-comms .pe3-layout{padding:20px 14px}.pear3 .pe3-edition{letter-spacing:0}.pear3-bud .pe3-layout{padding:18px}}
 
 
+.pear3 .pe3-edition{border:0;padding-top:0;justify-content:flex-end;letter-spacing:.13em;font-size:8px;opacity:.8}
+.pear3 .pe3-art:empty{display:none}
+.pear3 .pe3-portrait-mark{width:auto;line-height:normal}
+.pear3-bosc-correspondence .pe3-portrait-mark{justify-self:start;align-self:center}
+.pear3-bosc-correspondence .pe3-member{width:42px;height:42px;border-radius:4px;transform:rotate(-6deg);border-color:var(--pe3-c)}
+.pear3-russet-observatory .pe3-portrait-mark{justify-self:end;align-self:start}
+.pear3-russet-observatory .pe3-member{width:48px;height:60px;border-radius:25px 25px 3px 3px}
+.pear3-russet-observatory:not(:has(.pe3-media img)) .pe3-layout{grid-template-columns:minmax(0,1fr) 55px;grid-template-areas:'head art' 'copy copy' 'edition edition'}
+.pear3-pyrus-pocket .pe3-chrome{align-items:center}
+.pear3-pyrus-pocket .pe3-member{width:22px;height:22px;flex-basis:22px;padding:0;border:0}
+.pear3-bosc-correspondence .pe3-shot,.pear3-bosc-button .pe3-shot{background:var(--pe3-a)}
+.pear3-espalier-folio .pe3-shot,.pear3-espalier-sprig .pe3-shot{background:transparent;border-bottom:3px solid var(--pe3-c);padding:0}
+.pear3-espalier-folio .pe3-shot img,.pear3-espalier-sprig .pe3-shot img{border:0}
+.pear3-nashi-reverie .pe3-shot,.pear3-nashi-whisper .pe3-shot{background:transparent;padding:3px;border:1px solid var(--pe3-b)}
+.pear3-bud .pe3-edition{font-size:7px;text-transform:none;letter-spacing:.03em}
+.pear3-comms .pe3-edition{font:8px/1.4 monospace;text-align:center;justify-content:center;opacity:.55}
+.pear3-espalier-folio .pe3-art,.pear3-russet-keepsake .pe3-art{width:65px}
+.pear3-nashi-reverie .pe3-art,.pear3-nashi-whisper .pe3-art{width:75px}
+
 body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}body *{box-sizing:border-box}.cp-main{max-width:1080px;margin:auto;padding:50px 40px}.cp-collection{display:flex;justify-content:space-between;gap:15px;font:10px/1.5 Arial,sans-serif;letter-spacing:.15em;border-bottom:1px solid #aaa9a3;padding-bottom:14px}.cp-masthead{display:flex;align-items:center;justify-content:space-between;gap:20px}.cp-masthead h1{font:400 clamp(75px,15vw,160px)/1 Georgia,serif;margin:25px 0 16px;letter-spacing:-.04em}.cp-emblem{display:block;width:100px;height:100px;color:#6b786e}.cp-emblem svg{width:100%;height:100%}.cp-toplinks{display:flex;flex-wrap:wrap;gap:23px;padding:18px 0 24px;border-bottom:1px solid #aaa9a3;font-size:11px}.cp-main a{color:inherit;text-underline-offset:4px}.cp-controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin:23px 0 48px}.cp-filters{display:flex;flex-wrap:wrap;gap:5px;margin-right:auto}.cp-controls label{display:flex;flex-direction:column;gap:5px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.cp-main button,.cp-main select,.cp-main input,.cp-main textarea{font:inherit;color:inherit}.cp-main button,.cp-main select{border:1px solid #a5a8a2;border-radius:20px;background:transparent;padding:9px 13px}.cp-main button{cursor:pointer;font-size:11px}.cp-main button[aria-pressed=true],.cp-actions .cp-copy{background:#3d4e49;color:#f4f5ee;border-color:#3d4e49}.cp-main :is(button,a,select,input,summary,textarea):focus-visible{outline:2px solid #517971;outline-offset:4px}.cp-card{margin-bottom:62px;scroll-margin-top:20px}.cp-card[hidden]{display:none}.cp-card-head{display:flex;align-items:baseline;gap:20px;border-bottom:1px solid #aaa9a3;padding-bottom:15px}.cp-card-head>span{font-size:9px;letter-spacing:.14em;min-width:82px}.cp-card-head>a{margin-left:auto;text-decoration:none}.cp-card h2{font:400 32px/1.1 Georgia,serif;margin:0}.cp-stage{--mgrgb1:141,75,106;--mgrgb2:111,102,152;--mgrgb3:48,119,112;display:flow-root;padding:32px 20px;background:#f3f2ee;border:1px solid #cfcec7;border-top:0}.cp-editor{border:1px solid #aaa9a3;border-top:0}.cp-editor summary{padding:15px 17px;cursor:pointer;font-size:11px;font-weight:600}.cp-editor form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:8px 17px 20px}.cp-editor label{font-size:11px;display:flex;flex-direction:column;gap:7px}.cp-editor input,.cp-editor textarea{width:100%;border:1px solid #a5a8a2;padding:10px;background:#fbfaf7;border-radius:3px;font:12px/1.5 ui-monospace,monospace}.cp-writing{grid-column:1/-1}.cp-editor textarea{resize:vertical;min-height:160px}.cp-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:15px 0}.cp-actions a{font-size:11px}.cp-status{font-size:11px}.cp-code{display:block;resize:vertical;width:100%;height:135px;border:1px solid #a5a8a2;background:#f6f5f1;padding:13px;font:11px/1.6 ui-monospace,monospace!important;white-space:pre}.cp-footer{display:flex;justify-content:space-between;border-top:1px solid #aaa9a3;padding-top:20px;font-size:10px;letter-spacing:.1em}.cp-main[data-palette=blue] .cp-stage{--mgrgb1:62,100,166;--mgrgb2:139,82,143;--mgrgb3:69,127,143}.cp-main[data-palette=copper] .cp-stage{--mgrgb1:160,89,52;--mgrgb2:129,104,135;--mgrgb3:39,119,104}html[color-mode=dark] body{background:#141718;color:#e5e4df}html[color-mode=dark] .cp-stage{background:#191c1e;border-color:#404645;--mgrgb1:220,149,180;--mgrgb2:172,163,218;--mgrgb3:112,192,181}html[color-mode=dark] .cp-main[data-palette=blue] .cp-stage{--mgrgb1:131,172,230;--mgrgb2:210,153,209;--mgrgb3:123,195,217}html[color-mode=dark] .cp-main[data-palette=copper] .cp-stage{--mgrgb1:224,158,115;--mgrgb2:194,161,201;--mgrgb3:109,194,174}html[color-mode=dark] .cp-main :is(button,select,input,textarea){background:#242a2c;color:#e5e4df;border-color:#5f6663}html[color-mode=dark] .cp-main button[aria-pressed=true],html[color-mode=dark] .cp-actions .cp-copy{background:#d1dfd6;color:#26342e}.cp-main[data-width="390"] .pear3{width:min(100%,390px,var(--pe3-width))}.cp-main[data-width="320"] .pear3{width:min(100%,320px,var(--pe3-width))}.cp-main[data-width="260"] .pear3{width:min(100%,260px,var(--pe3-width))}@media(max-width:600px){.cp-main{padding:30px 12px}.cp-collection{font-size:8px;flex-direction:column;gap:5px}.cp-emblem{width:65px;height:65px}.cp-toplinks{gap:12px;font-size:10px}.cp-controls{gap:13px}.cp-filters{width:100%}.cp-stage{padding:22px 8px}.cp-card-head{gap:10px}.cp-card h2{font-size:26px}.cp-card-head>span{min-width:65px;font-size:8px}.cp-editor form{grid-template-columns:1fr}.cp-actions{gap:8px}.cp-card{margin-bottom:40px}.cp-footer{font-size:8px}}
 .cp-masthead{padding:20px 0}.cp-masthead h1{font-family:Trebuchet MS,Arial,sans-serif;letter-spacing:-.07em;line-height:.82;font-size:clamp(70px,12vw,135px)}.cp-masthead h1 em{font:italic 1em/.82 Georgia,serif;letter-spacing:-.075em}.cp-emblem{width:170px;height:200px;transform:rotate(-12deg);color:#718675}.cp-kicker{font:10px/1.5 Arial,sans-serif;letter-spacing:.18em}.cp-card-head h2{font-family:Trebuchet MS,Arial,sans-serif;font-size:29px;letter-spacing:-.04em}.cp-main .cp-named{border-style:dashed}@media(max-width:600px){.cp-emblem{width:85px;height:130px}.cp-card-head h2{font-size:24px}}
-</style></head><body><main class="cp-main" id="top"><header class="cp-intro"><div class="cp-collection"><span>HANEUL / TAEJOO</span><span>PEAR / FIFTEEN DESIGNS</span></div><div class="cp-masthead"><div><span class="cp-kicker">THE PEAR COLLECTION</span><h1>Soft<br><em>season.</em></h1></div><span class="cp-emblem"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></span></div><nav class="cp-toplinks"><a href="../forum-posts/pear-forum-masterpost.txt">Forum masterpost ↗</a><a href="pear-collection.zip">Download collection ↗</a><a href="README.md">Editing guide ↗</a></nav></header><nav class="cp-controls" aria-label="Preview controls"><div class="cp-filters"><button data-filter="all" aria-pressed="true">All 15</button><button data-filter="thread" aria-pressed="false">Threads</button><button data-filter="comms" aria-pressed="false">Comms</button><button data-filter="bud" aria-pressed="false">Buds</button></div><label>Appearance<select id="cp-mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Width<select id="cp-width"><option value="full">Full</option><option value="390">390px</option><option value="320">320px</option><option value="260">260px</option></select></label><label>Member palette<select id="cp-palette"><option value="plum">Plum / jade</option><option value="blue">Blue / lilac</option><option value="copper">Copper / teal</option></select></label></nav><section class="cp-card" id="pyrus-atelier" data-kind="thread"><header class="cp-card-head"><span>THREAD / 01</span><h2>Pyrus Atelier</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
+.cp-stage{--icon:url("https://64.media.tumblr.com/b4c09678f3c58d9c1d8cd5a678434f3b/8e9b4780f7fc5ebe-27/s250x400/f29f3f1643c8f827c4586a9776504bcb0a039ab3.gifv")}
+</style></head><body><main class="cp-main" id="top"><header class="cp-intro"><div class="cp-collection"><span>HANEUL / TAEJOO</span><span>PEAR / FIFTEEN DESIGNS</span></div><div class="cp-masthead"><div><span class="cp-kicker">THE PEAR COLLECTION</span><h1>Soft<br><em>season.</em></h1></div><span class="cp-emblem"><svg viewBox="0 0 100 30" aria-hidden="true"><path d="M3 21Q24 2 47 17T97 9" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="49" cy="15" r="3" fill="currentColor"/></svg></span></div><nav class="cp-toplinks"><a href="../forum-posts/pear-forum-masterpost.txt">Forum masterpost ↗</a><a href="pear-collection.zip">Download collection ↗</a><a href="README.md">Editing guide ↗</a></nav></header><nav class="cp-controls" aria-label="Preview controls"><div class="cp-filters"><button data-filter="all" aria-pressed="true">All 15</button><button data-filter="thread" aria-pressed="false">Threads</button><button data-filter="comms" aria-pressed="false">Comms</button><button data-filter="bud" aria-pressed="false">Buds</button></div><label>Appearance<select id="cp-mode"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label>Width<select id="cp-width"><option value="full">Full</option><option value="390">390px</option><option value="320">320px</option><option value="260">260px</option></select></label><label>Member palette<select id="cp-palette"><option value="plum">Plum / jade</option><option value="blue">Blue / lilac</option><option value="copper">Copper / teal</option></select></label></nav><section class="cp-card" id="pyrus-atelier" data-kind="thread"><header class="cp-card-head"><span>THREAD / 01</span><h2>Pyrus Atelier</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-thread pear3-pyrus-atelier">
 <div class="pe3-layout">
 <div class="pe3-head">
@@ -32,7 +52,7 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
 </div>
 <div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Pyrus Atelier / thread</span></div>
+<div class="pe3-edition"><span>Pyrus Atelier</span></div>
 </div>
 </div>
 
@@ -56,10 +76,10 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Pyrus Atelier / thread&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Pyrus Atelier&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="bosc-correspondence" data-kind="thread"><header class="cp-card-head"><span>THREAD / 02</span><h2>Bosc Correspondence</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-thread pear3-bosc-correspondence">
@@ -77,8 +97,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
 <p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
 </div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Bosc Correspondence / thread</span></div>
+<div class="pe3-art pe3-portrait-mark"><span class="pe3-member" aria-hidden="true"></span></div>
+<div class="pe3-edition"><span>Bosc Correspondence</span></div>
 </div>
 </div>
 
@@ -100,11 +120,11 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
 &lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Bosc Correspondence / thread&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art pe3-portrait-mark&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Bosc Correspondence&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="espalier-folio" data-kind="thread"><header class="cp-card-head"><span>THREAD / 03</span><h2>Espalier Folio</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-thread pear3-espalier-folio">
@@ -123,8 +143,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
 <p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
 </div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Espalier Folio / thread</span></div>
+<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 100 40" aria-hidden="true"><path d="M39 29Q22 2 34 5Q47 12 39 29M58 29Q53 8 65 5Q79 2 58 29" fill="currentColor"/><path d="M4 20H20M80 20H96" stroke="currentColor"/></svg></div>
+<div class="pe3-edition"><span>Espalier Folio</span></div>
 </div>
 </div>
 
@@ -147,11 +167,11 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
 &lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Espalier Folio / thread&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 40&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M39 29Q22 2 34 5Q47 12 39 29M58 29Q53 8 65 5Q79 2 58 29&quot; fill=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M4 20H20M80 20H96&quot; stroke=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Espalier Folio&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="russet-observatory" data-kind="thread"><header class="cp-card-head"><span>THREAD / 04</span><h2>Russet Observatory</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-thread pear3-russet-observatory">
@@ -166,8 +186,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
 <p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
 </div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Russet Observatory / thread</span></div>
+<div class="pe3-art pe3-portrait-mark"><span class="pe3-member" aria-hidden="true"></span></div>
+<div class="pe3-edition"><span>Russet Observatory</span></div>
 </div>
 </div>
 
@@ -186,11 +206,11 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
 &lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Russet Observatory / thread&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art pe3-portrait-mark&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Russet Observatory&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="nashi-reverie" data-kind="thread"><header class="cp-card-head"><span>THREAD / 05</span><h2>Nashi Reverie</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-thread pear3-nashi-reverie">
@@ -208,8 +228,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>
 <p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>
 </div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Nashi Reverie / thread</span></div>
+<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 100 30" aria-hidden="true"><path d="M3 21Q24 2 47 17T97 9" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="49" cy="15" r="3" fill="currentColor"/></svg></div>
+<div class="pe3-edition"><span>Nashi Reverie</span></div>
 </div>
 </div>
 
@@ -231,11 +251,11 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;p&gt;Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo tincidunt interdum.&lt;/i&gt; Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.&lt;/p&gt;
 &lt;p&gt;Curabitur id ligula ac augue sodales congue. &lt;u&gt;Praesent vel velit sed arcu.&lt;/u&gt; Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Nashi Reverie / thread&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 30&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M3 21Q24 2 47 17T97 9&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.4&quot;/&gt;&lt;circle cx=&quot;49&quot; cy=&quot;15&quot; r=&quot;3&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Nashi Reverie&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="pyrus-pocket" data-kind="comms"><header class="cp-card-head"><span>COMMS / 01</span><h2>Pyrus Pocket</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-comms pear3-pyrus-pocket" data-direction="received">
@@ -255,9 +275,9 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 </div>
 <div class="pe3-time">09:41</div>
 <div class="pe3-receipt">Delivered</div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Pyrus Pocket / comms</span></div>
-<div class="pe3-chrome" aria-hidden="true"><span>PYRUS POCKET</span><span>● CONNECTED</span></div>
+<div class="pe3-art" aria-hidden="true"></div>
+<div class="pe3-edition"><span>Pyrus Pocket</span></div>
+<div class="pe3-chrome" aria-hidden="true"><span>PYRUS POCKET</span><span class="pe3-member" aria-hidden="true"></span><span>● CONNECTED</span></div>
 <div class="pe3-device" aria-hidden="true"><span>Message</span><span>↑</span></div>
 </div>
 </div>
@@ -282,13 +302,13 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;/div&gt;
 &lt;div class=&quot;pe3-time&quot;&gt;09:41&lt;/div&gt;
 &lt;div class=&quot;pe3-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Pyrus Pocket / comms&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;PYRUS POCKET&lt;/span&gt;&lt;span&gt;● CONNECTED&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Pyrus Pocket&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;PYRUS POCKET&lt;/span&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;● CONNECTED&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="bosc-beeper" data-kind="comms"><header class="cp-card-head"><span>COMMS / 02</span><h2>Bosc Beeper</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-comms pear3-bosc-beeper" data-direction="received">
@@ -308,8 +328,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 </div>
 <div class="pe3-time">09:41</div>
 <div class="pe3-receipt">Delivered</div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Bosc Beeper / comms</span></div>
+<div class="pe3-art" aria-hidden="true"></div>
+<div class="pe3-edition"><span>Bosc Beeper</span></div>
 <div class="pe3-chrome" aria-hidden="true"><span>BOSC BEEPER</span><span>● CONNECTED</span></div>
 <div class="pe3-device" aria-hidden="true"><span>Message</span><span>↑</span></div>
 </div>
@@ -335,13 +355,13 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;/div&gt;
 &lt;div class=&quot;pe3-time&quot;&gt;09:41&lt;/div&gt;
 &lt;div class=&quot;pe3-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Bosc Beeper / comms&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Bosc Beeper&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;BOSC BEEPER&lt;/span&gt;&lt;span&gt;● CONNECTED&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="espalier-screen" data-kind="comms"><header class="cp-card-head"><span>COMMS / 03</span><h2>Espalier Screen</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-comms pear3-espalier-screen" data-direction="received">
@@ -361,8 +381,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 </div>
 <div class="pe3-time">09:41</div>
 <div class="pe3-receipt">Delivered</div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Espalier Screen / comms</span></div>
+<div class="pe3-art" aria-hidden="true"></div>
+<div class="pe3-edition"><span>Espalier Screen</span></div>
 <div class="pe3-chrome" aria-hidden="true"><span>ESPALIER SCREEN</span><span>● CONNECTED</span></div>
 <div class="pe3-device" aria-hidden="true"><span>Message</span><span>↑</span></div>
 </div>
@@ -388,13 +408,13 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;/div&gt;
 &lt;div class=&quot;pe3-time&quot;&gt;09:41&lt;/div&gt;
 &lt;div class=&quot;pe3-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Espalier Screen / comms&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Espalier Screen&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;ESPALIER SCREEN&lt;/span&gt;&lt;span&gt;● CONNECTED&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="russet-relay" data-kind="comms"><header class="cp-card-head"><span>COMMS / 04</span><h2>Russet Relay</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-comms pear3-russet-relay" data-direction="received">
@@ -415,8 +435,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 </div>
 <div class="pe3-time">09:41</div>
 <div class="pe3-receipt">Delivered</div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Russet Relay / comms</span></div>
+<div class="pe3-art" aria-hidden="true"></div>
+<div class="pe3-edition"><span>Russet Relay</span></div>
 <div class="pe3-chrome" aria-hidden="true"><span>RUSSET RELAY</span><span>● CONNECTED</span></div>
 <div class="pe3-device" aria-hidden="true"><span>Message</span><span>↑</span></div>
 </div>
@@ -443,13 +463,13 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;/div&gt;
 &lt;div class=&quot;pe3-time&quot;&gt;09:41&lt;/div&gt;
 &lt;div class=&quot;pe3-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Russet Relay / comms&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Russet Relay&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;RUSSET RELAY&lt;/span&gt;&lt;span&gt;● CONNECTED&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="nashi-touch" data-kind="comms"><header class="cp-card-head"><span>COMMS / 05</span><h2>Nashi Touch</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-comms pear3-nashi-touch" data-direction="received">
@@ -466,8 +486,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 </div>
 <div class="pe3-time">09:41</div>
 <div class="pe3-receipt">Delivered</div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Nashi Touch / comms</span></div>
+<div class="pe3-art" aria-hidden="true"></div>
+<div class="pe3-edition"><span>Nashi Touch</span></div>
 <div class="pe3-chrome" aria-hidden="true"><span>NASHI TOUCH</span><span>● CONNECTED</span></div>
 <div class="pe3-device" aria-hidden="true"><span>Message</span><span>↑</span></div>
 </div>
@@ -490,13 +510,13 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;/div&gt;
 &lt;div class=&quot;pe3-time&quot;&gt;09:41&lt;/div&gt;
 &lt;div class=&quot;pe3-receipt&quot;&gt;Delivered&lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Nashi Touch / comms&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Nashi Touch&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-chrome&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;NASHI TOUCH&lt;/span&gt;&lt;span&gt;● CONNECTED&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;pe3-device&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;Message&lt;/span&gt;&lt;span&gt;↑&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="pyrus-pip" data-kind="bud"><header class="cp-card-head"><span>BUDS / 01</span><h2>Pyrus Pip</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-bud pear3-pyrus-pip">
@@ -513,7 +533,7 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
 </div>
 <div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Pyrus Pip / bud</span></div>
+<div class="pe3-edition"><span>Pyrus Pip</span></div>
 </div>
 </div>
 
@@ -532,10 +552,10 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Pyrus Pip / bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Pyrus Pip&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="bosc-button" data-kind="bud"><header class="cp-card-head"><span>BUDS / 02</span><h2>Bosc Button</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-bud pear3-bosc-button">
@@ -548,8 +568,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <div class="pe3-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
 </div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Bosc Button / bud</span></div>
+<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 60" aria-hidden="true"><path d="M8 50Q49 18 110 12M40 31Q26 5 12 15Q14 37 40 31M67 21Q73 47 94 39Q94 18 67 21" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
+<div class="pe3-edition"><span>Bosc Button</span></div>
 </div>
 </div>
 
@@ -564,11 +584,11 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;div class=&quot;pe3-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Bosc Button / bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 60&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M8 50Q49 18 110 12M40 31Q26 5 12 15Q14 37 40 31M67 21Q73 47 94 39Q94 18 67 21&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Bosc Button&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="espalier-sprig" data-kind="bud"><header class="cp-card-head"><span>BUDS / 03</span><h2>Espalier Sprig</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-bud pear3-espalier-sprig">
@@ -584,8 +604,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <div class="pe3-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
 </div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Espalier Sprig / bud</span></div>
+<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 100 40" aria-hidden="true"><path d="M39 29Q22 2 34 5Q47 12 39 29M58 29Q53 8 65 5Q79 2 58 29" fill="currentColor"/><path d="M4 20H20M80 20H96" stroke="currentColor"/></svg></div>
+<div class="pe3-edition"><span>Espalier Sprig</span></div>
 </div>
 </div>
 
@@ -603,11 +623,11 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;div class=&quot;pe3-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Espalier Sprig / bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 40&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M39 29Q22 2 34 5Q47 12 39 29M58 29Q53 8 65 5Q79 2 58 29&quot; fill=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M4 20H20M80 20H96&quot; stroke=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Espalier Sprig&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="russet-keepsake" data-kind="bud"><header class="cp-card-head"><span>BUDS / 04</span><h2>Russet Keepsake</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-bud pear3-russet-keepsake">
@@ -624,8 +644,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <div class="pe3-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
 </div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Russet Keepsake / bud</span></div>
+<div class="pe3-art" aria-hidden="true"></div>
+<div class="pe3-edition"><span>Russet Keepsake</span></div>
 </div>
 </div>
 
@@ -644,11 +664,11 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;div class=&quot;pe3-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Russet Keepsake / bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Russet Keepsake&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
 [/dohtml]</textarea></section>
 <section class="cp-card" id="nashi-whisper" data-kind="bud"><header class="cp-card-head"><span>BUDS / 05</span><h2>Nashi Whisper</h2><a href="#top" aria-label="Back to top">↑</a></header><div class="cp-stage">
 <div class="pear3 pear3-bud pear3-nashi-whisper">
@@ -664,8 +684,8 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 <div class="pe3-copy">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>
 </div>
-<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg></div>
-<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>Nashi Whisper / bud</span></div>
+<div class="pe3-art" aria-hidden="true"><svg viewBox="0 0 100 30" aria-hidden="true"><path d="M3 21Q24 2 47 17T97 9" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="49" cy="15" r="3" fill="currentColor"/></svg></div>
+<div class="pe3-edition"><span>Nashi Whisper</span></div>
 </div>
 </div>
 
@@ -683,19 +703,24 @@ body{margin:0;background:#eae8e3;color:#333536;font:14px/1.5 Arial,sans-serif}bo
 &lt;div class=&quot;pe3-copy&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;“Aliquam erat volutpat.”&lt;/b&gt; Donec vitae leo sit amet augue congue malesuada. &lt;i&gt;Nullam id nisi quis justo&lt;/i&gt; tincidunt interdum. &lt;u&gt;Praesent vel velit&lt;/u&gt; sed arcu.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 120 140&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z&quot; fill=&quot;currentColor&quot; fill-opacity=&quot;.06&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;path d=&quot;M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;37&quot; cy=&quot;103&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;80&quot; cy=&quot;107&quot; r=&quot;1&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span class=&quot;pe3-member&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;Nashi Whisper / bud&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-art&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 100 30&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M3 21Q24 2 47 17T97 9&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.4&quot;/&gt;&lt;circle cx=&quot;49&quot; cy=&quot;15&quot; r=&quot;3&quot; fill=&quot;currentColor&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;div class=&quot;pe3-edition&quot;&gt;&lt;span&gt;Nashi Whisper&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css&quot;&gt;
-[/dohtml]</textarea></section><footer class="cp-footer">PEAR / SOFT SEASON <a href="#top">Back to top ↑</a></footer></main><script>const designs=[{"name":"Pyrus Atelier","slug":"pyrus-atelier","type":"thread","file":"pear-pyrus-atelier-thread-01.txt","images":2,"sampleTitle":"a little room to ripen","subtitle":"Haneul / Taejoo","motif":1,"number":"01"},{"name":"Bosc Correspondence","slug":"bosc-correspondence","type":"thread","file":"pear-bosc-correspondence-thread-02.txt","images":1,"sampleTitle":"held in your hands","subtitle":"Haneul / Taejoo","motif":2,"number":"02"},{"name":"Espalier Folio","slug":"espalier-folio","type":"thread","file":"pear-espalier-folio-thread-03.txt","images":2,"sampleTitle":"where the branches meet","subtitle":"Haneul / Taejoo","motif":3,"number":"03"},{"name":"Russet Observatory","slug":"russet-observatory","type":"thread","file":"pear-russet-observatory-thread-04.txt","images":0,"sampleTitle":"a season worth keeping","subtitle":"Haneul / Taejoo","motif":4,"number":"04"},{"name":"Nashi Reverie","slug":"nashi-reverie","type":"thread","file":"pear-nashi-reverie-thread-05.txt","images":1,"sampleTitle":"softness, slowly","subtitle":"Haneul / Taejoo","motif":5,"number":"05"},{"name":"Pyrus Pocket","slug":"pyrus-pocket","type":"comms","file":"pear-pyrus-pocket-comms-01.txt","images":1,"sampleTitle":"a little room to ripen","subtitle":"Haneul / Taejoo","motif":1,"number":"01"},{"name":"Bosc Beeper","slug":"bosc-beeper","type":"comms","file":"pear-bosc-beeper-comms-02.txt","images":1,"sampleTitle":"held in your hands","subtitle":"Haneul / Taejoo","motif":2,"number":"02"},{"name":"Espalier Screen","slug":"espalier-screen","type":"comms","file":"pear-espalier-screen-comms-03.txt","images":1,"sampleTitle":"where the branches meet","subtitle":"Haneul / Taejoo","motif":3,"number":"03"},{"name":"Russet Relay","slug":"russet-relay","type":"comms","file":"pear-russet-relay-comms-04.txt","images":2,"sampleTitle":"a season worth keeping","subtitle":"Haneul / Taejoo","motif":4,"number":"04"},{"name":"Nashi Touch","slug":"nashi-touch","type":"comms","file":"pear-nashi-touch-comms-05.txt","images":0,"sampleTitle":"softness, slowly","subtitle":"Haneul / Taejoo","motif":5,"number":"05"},{"name":"Pyrus Pip","slug":"pyrus-pip","type":"bud","file":"pear-pyrus-pip-bud-01.txt","images":1,"sampleTitle":"a little room to ripen","subtitle":"Haneul / Taejoo","motif":1,"number":"01"},{"name":"Bosc Button","slug":"bosc-button","type":"bud","file":"pear-bosc-button-bud-02.txt","images":0,"sampleTitle":"held in your hands","subtitle":"Haneul / Taejoo","motif":2,"number":"02"},{"name":"Espalier Sprig","slug":"espalier-sprig","type":"bud","file":"pear-espalier-sprig-bud-03.txt","images":1,"sampleTitle":"where the branches meet","subtitle":"Haneul / Taejoo","motif":3,"number":"03"},{"name":"Russet Keepsake","slug":"russet-keepsake","type":"bud","file":"pear-russet-keepsake-bud-04.txt","images":2,"sampleTitle":"a season worth keeping","subtitle":"Haneul / Taejoo","motif":4,"number":"04"},{"name":"Nashi Whisper","slug":"nashi-whisper","type":"bud","file":"pear-nashi-whisper-bud-05.txt","images":1,"sampleTitle":"softness, slowly","subtitle":"Haneul / Taejoo","motif":5,"number":"05"}];const gifs=["https://64.media.tumblr.com/b4c09678f3c58d9c1d8cd5a678434f3b/8e9b4780f7fc5ebe-27/s250x400/f29f3f1643c8f827c4586a9776504bcb0a039ab3.gifv","https://64.media.tumblr.com/6714ee4dc78c2bff9f2abdaa6d4f0e98/8e9b4780f7fc5ebe-9b/s250x400/2a3a511ff69c46ec6428f0f1fdd13d0e73e81aaa.gifv"];const writing={"thread":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>\n<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>\n<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>","comms":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>\n<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>","bud":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>"};const cssURL="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v3.css";function esc(v){return String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css&quot;&gt;
+[/dohtml]</textarea></section><footer class="cp-footer">PEAR / SOFT SEASON <a href="#top">Back to top ↑</a></footer></main><script>const designs=[{"name":"Pyrus Atelier","slug":"pyrus-atelier","type":"thread","file":"pear-pyrus-atelier-thread-01.txt","images":2,"sampleTitle":"a little room to ripen","subtitle":"Haneul / Taejoo","motif":1,"number":"01"},{"name":"Bosc Correspondence","slug":"bosc-correspondence","type":"thread","file":"pear-bosc-correspondence-thread-02.txt","images":1,"sampleTitle":"held in your hands","subtitle":"Haneul / Taejoo","motif":2,"number":"02"},{"name":"Espalier Folio","slug":"espalier-folio","type":"thread","file":"pear-espalier-folio-thread-03.txt","images":2,"sampleTitle":"where the branches meet","subtitle":"Haneul / Taejoo","motif":3,"number":"03"},{"name":"Russet Observatory","slug":"russet-observatory","type":"thread","file":"pear-russet-observatory-thread-04.txt","images":0,"sampleTitle":"a season worth keeping","subtitle":"Haneul / Taejoo","motif":4,"number":"04"},{"name":"Nashi Reverie","slug":"nashi-reverie","type":"thread","file":"pear-nashi-reverie-thread-05.txt","images":1,"sampleTitle":"softness, slowly","subtitle":"Haneul / Taejoo","motif":5,"number":"05"},{"name":"Pyrus Pocket","slug":"pyrus-pocket","type":"comms","file":"pear-pyrus-pocket-comms-01.txt","images":1,"sampleTitle":"a little room to ripen","subtitle":"Haneul / Taejoo","motif":1,"number":"01"},{"name":"Bosc Beeper","slug":"bosc-beeper","type":"comms","file":"pear-bosc-beeper-comms-02.txt","images":1,"sampleTitle":"held in your hands","subtitle":"Haneul / Taejoo","motif":2,"number":"02"},{"name":"Espalier Screen","slug":"espalier-screen","type":"comms","file":"pear-espalier-screen-comms-03.txt","images":1,"sampleTitle":"where the branches meet","subtitle":"Haneul / Taejoo","motif":3,"number":"03"},{"name":"Russet Relay","slug":"russet-relay","type":"comms","file":"pear-russet-relay-comms-04.txt","images":2,"sampleTitle":"a season worth keeping","subtitle":"Haneul / Taejoo","motif":4,"number":"04"},{"name":"Nashi Touch","slug":"nashi-touch","type":"comms","file":"pear-nashi-touch-comms-05.txt","images":0,"sampleTitle":"softness, slowly","subtitle":"Haneul / Taejoo","motif":5,"number":"05"},{"name":"Pyrus Pip","slug":"pyrus-pip","type":"bud","file":"pear-pyrus-pip-bud-01.txt","images":1,"sampleTitle":"a little room to ripen","subtitle":"Haneul / Taejoo","motif":1,"number":"01"},{"name":"Bosc Button","slug":"bosc-button","type":"bud","file":"pear-bosc-button-bud-02.txt","images":0,"sampleTitle":"held in your hands","subtitle":"Haneul / Taejoo","motif":2,"number":"02"},{"name":"Espalier Sprig","slug":"espalier-sprig","type":"bud","file":"pear-espalier-sprig-bud-03.txt","images":1,"sampleTitle":"where the branches meet","subtitle":"Haneul / Taejoo","motif":3,"number":"03"},{"name":"Russet Keepsake","slug":"russet-keepsake","type":"bud","file":"pear-russet-keepsake-bud-04.txt","images":2,"sampleTitle":"a season worth keeping","subtitle":"Haneul / Taejoo","motif":4,"number":"04"},{"name":"Nashi Whisper","slug":"nashi-whisper","type":"bud","file":"pear-nashi-whisper-bud-05.txt","images":1,"sampleTitle":"softness, slowly","subtitle":"Haneul / Taejoo","motif":5,"number":"05"}];const gifs=["https://64.media.tumblr.com/b4c09678f3c58d9c1d8cd5a678434f3b/8e9b4780f7fc5ebe-27/s250x400/f29f3f1643c8f827c4586a9776504bcb0a039ab3.gifv","https://64.media.tumblr.com/6714ee4dc78c2bff9f2abdaa6d4f0e98/8e9b4780f7fc5ebe-9b/s250x400/2a3a511ff69c46ec6428f0f1fdd13d0e73e81aaa.gifv"];const writing={"thread":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Pellentesque vel urna vitae libero blandit lacinia. Maecenas euismod, arcu vitae luctus vestibulum, nibh massa tempus felis, sed pretium sem mi nec augue.</p>\n<p>Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo tincidunt interdum.</i> Sed suscipit, ipsum a volutpat elementum, ante neque luctus quam, at interdum turpis felis vitae metus. Integer non purus sed mi aliquam finibus.</p>\n<p>Curabitur id ligula ac augue sodales congue. <u>Praesent vel velit sed arcu.</u> Cras imperdiet lorem non augue posuere, eu eleifend justo finibus. Suspendisse potenti. Fusce euismod elit eget nibh interdum, sed egestas justo aliquet.</p>","comms":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n<p><b>Aliquam erat volutpat.</b> Donec vitae leo sit amet augue.</p>\n<p><i>Nullam id nisi quis justo.</i> <u>Praesent vel velit.</u></p>","bud":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>“Aliquam erat volutpat.”</b> Donec vitae leo sit amet augue congue malesuada. <i>Nullam id nisi quis justo</i> tincidunt interdum. <u>Praesent vel velit</u> sed arcu.</p>"};const cssURL="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/pear/pear-orchard-standalone-v4.css";function esc(v){return String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
 function defaults(d){return {name:'[name]',url:'[url]',title:'[text]',subtitle:d.subtitle,gif1:d.images?gifs[d.slug==='pithline'||d.slug==='coolwire'||d.slug==='tendril-trace'?1:0]:'',gif2:d.images>1?gifs[1]:'',crop1:d.slug==='peellet'?'50% 48%':'50% 35%',crop2:'50% 35%',copy:writing[d.type],time:'09:41',receipt:'Delivered',direction:'received'};}
 function previewState(d,s){return {...s,name:s.name==='[name]'?'Haneul & Taejoo':s.name,title:s.title==='[text]'?d.sampleTitle:s.title};}
-function art(n){return '<svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg>';}
+function art(n){
+if(n===2)return '<svg viewBox="0 0 120 60" aria-hidden="true"><path d="M8 50Q49 18 110 12M40 31Q26 5 12 15Q14 37 40 31M67 21Q73 47 94 39Q94 18 67 21" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>';
+if(n===3)return '<svg viewBox="0 0 100 40" aria-hidden="true"><path d="M39 29Q22 2 34 5Q47 12 39 29M58 29Q53 8 65 5Q79 2 58 29" fill="currentColor"/><path d="M4 20H20M80 20H96" stroke="currentColor"/></svg>';
+if(n===4)return '';
+if(n===5)return '<svg viewBox="0 0 100 30" aria-hidden="true"><path d="M3 21Q24 2 47 17T97 9" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="49" cy="15" r="3" fill="currentColor"/></svg>';
+return '<svg viewBox="0 0 120 140" aria-hidden="true"><path d="M57 24C40 25 45 47 33 63C8 96 24 127 59 128C98 129 112 98 87 66C74 49 78 25 61 24Z" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.5"/><path d="M59 25Q54 11 66 4M61 19Q85 0 95 16Q77 30 61 19M57 43Q44 65 42 87" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M58 92Q46 73 50 72Q62 72 58 92M65 94Q67 74 73 77Q80 85 65 94" fill="currentColor"/><circle cx="37" cy="103" r="1" fill="currentColor"/><circle cx="80" cy="107" r="1" fill="currentColor"/></svg>';}
 function template(d,s){
 const media=[s.gif1,s.gif2].map((g,i)=>g?`<span class="pe3-shot"><img src="${esc(g)}" alt="Character GIF ${i+1}" style="--pe3-crop:${esc(s['crop'+(i+1)])}"></span>`:'').filter(Boolean).join('\n');
 const chrome=d.type==='comms'?[d.name.toUpperCase(),'● CONNECTED','Message','↑']:null;
-return `[dohtml]\n<div class="pear3 pear3-${d.type} pear3-${d.slug}"${chrome?` data-direction="${esc(s.direction)}"`:''}>\n<div class="pe3-layout">\n<div class="pe3-head">\n<a class="pe3-name" href="${esc(s.url)}">${esc(s.name)}</a>\n<span class="pe3-title">${esc(s.title)}</span>\n<span class="pe3-sub">${esc(s.subtitle)}</span>\n</div>\n${media?`<div class="pe3-media">\n${media}\n</div>\n`:''}<div class="pe3-copy">\n${s.copy}\n</div>\n${chrome?`<div class="pe3-time">${esc(s.time)}</div>\n<div class="pe3-receipt">${esc(s.receipt)}</div>\n`:''}<div class="pe3-art" aria-hidden="true">${art(d.motif)}</div>\n<div class="pe3-edition"><span class="pe3-member" aria-hidden="true"></span><span>${d.name} / ${d.type}</span></div>\n${chrome?`<div class="pe3-chrome" aria-hidden="true"><span>${chrome[0]}</span><span>${chrome[1]}</span></div>\n<div class="pe3-device" aria-hidden="true"><span>${chrome[2]}</span><span>${chrome[3]}</span></div>\n`:''}</div>\n</div>\n<link rel="stylesheet" href="${cssURL}">\n[/dohtml]`;
+return `[dohtml]\n<div class="pear3 pear3-${d.type} pear3-${d.slug}"${chrome?` data-direction="${esc(s.direction)}"`:''}>\n<div class="pe3-layout">\n<div class="pe3-head">\n<a class="pe3-name" href="${esc(s.url)}">${esc(s.name)}</a>\n<span class="pe3-title">${esc(s.title)}</span>\n<span class="pe3-sub">${esc(s.subtitle)}</span>\n</div>\n${media?`<div class="pe3-media">\n${media}\n</div>\n`:''}<div class="pe3-copy">\n${s.copy}\n</div>\n${chrome?`<div class="pe3-time">${esc(s.time)}</div>\n<div class="pe3-receipt">${esc(s.receipt)}</div>\n`:''}${['bosc-correspondence','russet-observatory'].includes(d.slug)?'<div class="pe3-art pe3-portrait-mark"><span class="pe3-member" aria-hidden="true"></span></div>':`<div class="pe3-art" aria-hidden="true">${d.type==='comms'?'':art(d.motif)}</div>`}\n<div class="pe3-edition"><span>${d.name}</span></div>\n${chrome?`<div class="pe3-chrome" aria-hidden="true"><span>${chrome[0]}</span>${d.slug==='pyrus-pocket'?'<span class="pe3-member" aria-hidden="true"></span>':''}<span>${chrome[1]}</span></div>\n<div class="pe3-device" aria-hidden="true"><span>${chrome[2]}</span><span>${chrome[3]}</span></div>\n`:''}</div>\n</div>\n<link rel="stylesheet" href="${cssURL}">\n[/dohtml]`;
 }
 function bare(code){return code.replace(/\[\/?dohtml\]/gi,'').replace(/<link[^>]*>/gi,'');}
 const main=document.querySelector('.cp-main');

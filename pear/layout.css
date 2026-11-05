@@ -10,3 +10,22 @@
 html[color-mode=dark] .pear3{--pe3-paper:#202222;--pe3-inset:#292c2c;--pe3-ink:#e7e6e1;--pe3-line:#464a49}@media(prefers-color-scheme:dark){html:not([color-mode=light]) .pear3{--pe3-paper:#202222;--pe3-inset:#292c2c;--pe3-ink:#e7e6e1;--pe3-line:#464a49}}
 @container pear (max-width:410px){.pear3-thread .pe3-layout{padding:22px;gap:18px}.pear3-thread .pe3-title{font-size:30px}.pear3-thread .pe3-layout{grid-template-columns:1fr;grid-template-areas:'head' 'media' 'copy' 'art' 'edition'}.pear3-thread .pe3-media{flex-direction:row}.pear3-thread .pe3-shot img{aspect-ratio:4/3}.pear3-thread .pe3-art{width:35px}.pear3-comms .pe3-layout{padding:20px 14px}.pear3 .pe3-edition{letter-spacing:0}.pear3-bud .pe3-layout{padding:18px}}
 
+
+.pear3 .pe3-edition{border:0;padding-top:0;justify-content:flex-end;letter-spacing:.13em;font-size:8px;opacity:.8}
+.pear3 .pe3-art:empty{display:none}
+.pear3 .pe3-portrait-mark{width:auto;line-height:normal}
+.pear3-bosc-correspondence .pe3-portrait-mark{justify-self:start;align-self:center}
+.pear3-bosc-correspondence .pe3-member{width:42px;height:42px;border-radius:4px;transform:rotate(-6deg);border-color:var(--pe3-c)}
+.pear3-russet-observatory .pe3-portrait-mark{justify-self:end;align-self:start}
+.pear3-russet-observatory .pe3-member{width:48px;height:60px;border-radius:25px 25px 3px 3px}
+.pear3-russet-observatory:not(:has(.pe3-media img)) .pe3-layout{grid-template-columns:minmax(0,1fr) 55px;grid-template-areas:'head art' 'copy copy' 'edition edition'}
+.pear3-pyrus-pocket .pe3-chrome{align-items:center}
+.pear3-pyrus-pocket .pe3-member{width:22px;height:22px;flex-basis:22px;padding:0;border:0}
+.pear3-bosc-correspondence .pe3-shot,.pear3-bosc-button .pe3-shot{background:var(--pe3-a)}
+.pear3-espalier-folio .pe3-shot,.pear3-espalier-sprig .pe3-shot{background:transparent;border-bottom:3px solid var(--pe3-c);padding:0}
+.pear3-espalier-folio .pe3-shot img,.pear3-espalier-sprig .pe3-shot img{border:0}
+.pear3-nashi-reverie .pe3-shot,.pear3-nashi-whisper .pe3-shot{background:transparent;padding:3px;border:1px solid var(--pe3-b)}
+.pear3-bud .pe3-edition{font-size:7px;text-transform:none;letter-spacing:.03em}
+.pear3-comms .pe3-edition{font:8px/1.4 monospace;text-align:center;justify-content:center;opacity:.55}
+.pear3-espalier-folio .pe3-art,.pear3-russet-keepsake .pe3-art{width:65px}
+.pear3-nashi-reverie .pe3-art,.pear3-nashi-whisper .pe3-art{width:75px}

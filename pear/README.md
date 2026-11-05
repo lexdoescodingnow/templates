@@ -20,9 +20,9 @@ Haneul & Taejoo. Five threads, five device comms, five miniature threads.
 - bud: [Russet Keepsake](pear-russet-keepsake-bud-04.txt)
 - bud: [Nashi Whisper](pear-nashi-whisper-bud-05.txt)
 
-The current set uses the isolated pear3 wrapper and pear-orchard-standalone-v3.css. Replace old posting HTML to adopt these layouts. Older CSS remains available for existing posts.
+The current set uses the isolated pear3 wrapper and pear-orchard-standalone-v4.css. Replace old posting HTML to adopt these layouts. Older CSS remains available for existing posts.
 
-All posting colours come directly from inherited --mgrgb1, --mgrgb2 and --mgrgb3, with a neutral grey fallback only. No coloured overrides or colour mixing are included. Headers, image frames, borders and emphasis use these colours. The footer inherits --icon as the forum member image. Neutral backgrounds respond to Blue Hour light/dark mode.
+All posting colours come directly from inherited --mgrgb1, --mgrgb2 and --mgrgb3, with a neutral grey fallback only. No coloured overrides or colour mixing are included. Headers, image frames, borders and emphasis use these colours. Member images appear selectively: Bosc Correspondence has a lower corner stamp, Russet Observatory an upper portrait seal, and Pyrus Pocket a status-bar avatar. The other twelve designs omit member images. Finishing details vary between a pear, branch, seeds, a fine curve and undecorated space. Neutral backgrounds respond to Blue Hour light/dark mode.
 
 The preview palette selector simulates forum member groups; these demo values are never exported. Editable name, URL and title placeholders are first, followed by GIFs and writing. The preview includes labelled fields, GIF crops, message direction, live HTML and named-copy controls. It converts [b], [i] and [u] to HTML for dohtml posting. Direct snippets use b, i and u tags. Bold and underline use the forward member gradient; italic uses its reverse.
 
