@@ -5,135 +5,135 @@
 [size=4][b]01 · Goguma Nocturne[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-t1">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">a little warmth</div><div class="gg-sub">군고구마 · roasted sweet potato</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t1">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">the warmth we come home to</div><div class="h-sub">군고구마 &nbsp; / &nbsp; a warmth worth keeping</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-t1">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">a little warmth</div><div class="gg-sub">군고구마 · roasted sweet potato</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t1">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; a warmth worth keeping</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]02 · Kiln Almanac[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-t2">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">saved you the sweeter half</div><div class="gg-sub">따뜻한 · warm & cosy</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t2">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">a sweeter kind of ordinary</div><div class="h-sub">군고구마 &nbsp; / &nbsp; shared between two</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Character GIF 2"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-t2">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">saved you the sweeter half</div><div class="gg-sub">따뜻한 · warm & cosy</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t2">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; shared between two</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Character GIF 2"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]03 · Purple Peel Sonata[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-t3">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">stay a little longer</div><div class="gg-sub">우리 둘 · the two of us</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t3">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">with you, the world slows</div><div class="h-sub">군고구마 &nbsp; / &nbsp; slow evenings, soft company</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 57C5 41 18 22 36 17S68 19 68 35S41 67 25 66Z"/><path d="M19 54C15 43 25 29 39 25S61 27 58 37S36 59 26 59Z"/><path d="M31 34L37 31M47 44L53 39M24 48L28 44"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-t3">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">stay a little longer</div><div class="gg-sub">우리 둘 · the two of us</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t3">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; slow evenings, soft company</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 57C5 41 18 22 36 17S68 19 68 35S41 67 25 66Z"/><path d="M19 54C15 43 25 29 39 25S61 27 58 37S36 59 26 59Z"/><path d="M31 34L37 31M47 44L53 39M24 48L28 44"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]04 · Root Cellar Folio[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-t4">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">the way home</div><div class="gg-sub">집으로 · on our way home</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t4">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">all the small things</div><div class="h-sub">군고구마 &nbsp; / &nbsp; the comforts of home</div></div>
+<div class="h-media"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-t4">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">the way home</div><div class="gg-sub">집으로 · on our way home</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t4">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; the comforts of home</div></div>
+<div class="h-media"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]05 · Sugarwood Study[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-t5">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">under the same blanket</div><div class="gg-sub">포근한 · snug together</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t5">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">somewhere soft to land</div><div class="h-sub">군고구마 &nbsp; / &nbsp; together, quietly</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Character GIF 2"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-t5">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">under the same blanket</div><div class="gg-sub">포근한 · snug together</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-t5">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; together, quietly</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Character GIF 2"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <u>Duis aute irure dolor</u> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
@@ -142,135 +142,155 @@
 [size=4][b]06 · Goguma Pocket[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-c1 gg-phone">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">come home soon</div><div class="gg-sub">군고구마 · roasted sweet potato</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c1 h-phone">
+<div class="h-head"><a class="h-name" href="#">Janghoon</a><div class="h-title">online now</div><div class="h-sub">군고구마 &nbsp; / &nbsp; a warmth worth keeping</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-c1 gg-phone">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">come home soon</div><div class="gg-sub">군고구마 · roasted sweet potato</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c1 h-phone">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; a warmth worth keeping</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]07 · Kiln Dial[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-c2 gg-phone">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">something warm for you</div><div class="gg-sub">따뜻한 · warm & cosy</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c2 h-phone">
+<div class="h-head"><a class="h-name" href="#">Danwoo</a><div class="h-title">a little closer</div><div class="h-sub">군고구마 &nbsp; / &nbsp; shared between two</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Character GIF 2"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-c2 gg-phone">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">something warm for you</div><div class="gg-sub">따뜻한 · warm & cosy</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c2 h-phone">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; shared between two</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Character GIF 2"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]08 · Peelwave Terminal[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-c3 gg-phone">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">our little corner</div><div class="gg-sub">우리 둘 · the two of us</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c3 h-phone">
+<div class="h-head"><a class="h-name" href="#">Janghoon</a><div class="h-title">at home with you</div><div class="h-sub">군고구마 &nbsp; / &nbsp; slow evenings, soft company</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 57C5 41 18 22 36 17S68 19 68 35S41 67 25 66Z"/><path d="M19 54C15 43 25 29 39 25S61 27 58 37S36 59 26 59Z"/><path d="M31 34L37 31M47 44L53 39M24 48L28 44"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-c3 gg-phone">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">our little corner</div><div class="gg-sub">우리 둘 · the two of us</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c3 h-phone">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; slow evenings, soft company</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 57C5 41 18 22 36 17S68 19 68 35S41 67 25 66Z"/><path d="M19 54C15 43 25 29 39 25S61 27 58 37S36 59 26 59Z"/><path d="M31 34L37 31M47 44L53 39M24 48L28 44"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]09 · Rootline Mini[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-c4 gg-phone">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">one more message</div><div class="gg-sub">집으로 · on our way home</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c4 h-phone">
+<div class="h-head"><a class="h-name" href="#">Danwoo</a><div class="h-title">message received</div><div class="h-sub">군고구마 &nbsp; / &nbsp; the comforts of home</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-c4 gg-phone">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">one more message</div><div class="gg-sub">집으로 · on our way home</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c4 h-phone">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; the comforts of home</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]10 · Sugarwood Touch[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-c5 gg-phone">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">still here, with you</div><div class="gg-sub">포근한 · snug together</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c5 h-phone">
+<div class="h-head"><a class="h-name" href="#">Janghoon</a><div class="h-title">still here</div><div class="h-sub">군고구마 &nbsp; / &nbsp; together, quietly</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-c5 gg-phone">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet.</p><p>Consectetur adipiscing elit. <b>Aliquam erat volutpat.</b></p><p><i>Sed do eiusmod tempor.</i> <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"></div>
-<div class="gg-top"><div class="gg-devicebar"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div><div class="gg-eyebrow">a message from home</div><div class="gg-title">still here, with you</div><div class="gg-sub">포근한 · snug together</div></div>
-<div class="gg-bottom"><span>delivered, with love</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-c5 h-phone">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; together, quietly</div></div>
+<div class="h-time"><span>21:08</span><span>● ● ● &nbsp; ▰</span></div>
+<div class="h-media"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><b>Aliquam erat volutpat.</b> Sed do eiusmod tempor.</p><p><i>Ut enim ad minim veniam.</i> <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-hardware" aria-hidden="true"></div>
+<div class="h-foot"><span>delivered</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
@@ -279,134 +299,134 @@
 [size=4][b]11 · Goguma Morsel[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-b1 gg-bud">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">half for you</div><div class="gg-sub">군고구마 · roasted sweet potato</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b1 h-bud">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">a little warmth</div><div class="h-sub">군고구마 &nbsp; / &nbsp; a warmth worth keeping</div></div>
+<div class="h-media"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-b1 gg-bud">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">half for you</div><div class="gg-sub">군고구마 · roasted sweet potato</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b1 h-bud">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; a warmth worth keeping</div></div>
+<div class="h-media"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]12 · Kiln Fleck[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-b2 gg-bud">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">warm from the oven</div><div class="gg-sub">따뜻한 · warm & cosy</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b2 h-bud">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">saved you half</div><div class="h-sub">군고구마 &nbsp; / &nbsp; shared between two</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-b2 gg-bud">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">warm from the oven</div><div class="gg-sub">따뜻한 · warm & cosy</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b2 h-bud">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; shared between two</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]13 · Peel Curl[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-b3 gg-bud">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">just us two</div><div class="gg-sub">우리 둘 · the two of us</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b3 h-bud">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">our quiet hours</div><div class="h-sub">군고구마 &nbsp; / &nbsp; slow evenings, soft company</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Character GIF 2"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 57C5 41 18 22 36 17S68 19 68 35S41 67 25 66Z"/><path d="M19 54C15 43 25 29 39 25S61 27 58 37S36 59 26 59Z"/><path d="M31 34L37 31M47 44L53 39M24 48L28 44"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-b3 gg-bud">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">just us two</div><div class="gg-sub">우리 둘 · the two of us</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b3 h-bud">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; slow evenings, soft company</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Character GIF 2"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 57C5 41 18 22 36 17S68 19 68 35S41 67 25 66Z"/><path d="M19 54C15 43 25 29 39 25S61 27 58 37S36 59 26 59Z"/><path d="M31 34L37 31M47 44L53 39M24 48L28 44"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]14 · Rootlet Note[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-b4 gg-bud">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">a small kindness</div><div class="gg-sub">집으로 · on our way home</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b4 h-bud">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">small comforts</div><div class="h-sub">군고구마 &nbsp; / &nbsp; the comforts of home</div></div>
+<div class="h-media"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-b4 gg-bud">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">a small kindness</div><div class="gg-sub">집으로 · on our way home</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b4 h-bud">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; the comforts of home</div></div>
+<div class="h-media"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 60 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M20 85C4 68 39 64 22 45S44 20 29 5M37 91C21 75 54 66 39 50S55 27 44 14M8 63C1 48 20 41 12 29"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
 
 [size=4][b]15 · Sugarwood Spark[/b][/size]
 
 [dohtml]
-<div class="ggc2 gg-b5 gg-bud">
-<a class="gg-name" href="#">Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">sweet little things</div><div class="gg-sub">포근한 · snug together</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b5 h-bud">
+<div class="h-head"><a class="h-name" href="#">Danwoo &amp; Janghoon</a><div class="h-title">close to you</div><div class="h-sub">군고구마 &nbsp; / &nbsp; together, quietly</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 
 [b]Copy code[/b]
 [code]
 [dohtml]
-<div class="ggc2 gg-b5 gg-bud">
-<a class="gg-name" href="[url]">[name] · Danwoo &amp; Janghoon</a>
-<div class="gg-copy"><p>[text] Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Aliquam erat volutpat.</b> <i>Sed do eiusmod tempor</i> incididunt ut labore et dolore magna aliqua. <u>Ut enim ad minim veniam.</u></p></div>
-<div class="gg-pictures"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Danwoo"><img src="https://64.media.tumblr.com/f2c5e890c47222794d25b221951276c8/eb8559a595fe1202-eb/s400x600/2a5e85642103f0f3b933aee93225b8e45568c1cb.gifv" alt="Janghoon"></div>
-<div class="gg-top"><div class="gg-eyebrow">sweet potato · danwoo &amp; janghoon</div><div class="gg-title">sweet little things</div><div class="gg-sub">포근한 · snug together</div></div>
-<div class="gg-bottom"><span>a warm little world for two</span><span class="gg-sticker" aria-hidden="true"><span class="gg-steam">~ ~</span></span></div>
+<div class="sph3 h-b5 h-bud">
+<div class="h-head"><a class="h-name" href="[url]">[name]</a><div class="h-title">[text]</div><div class="h-sub">군고구마 &nbsp; / &nbsp; together, quietly</div></div>
+<div class="h-media"><img src="https://64.media.tumblr.com/efe82fc291756c5ea21a9ca49167390e/eb8559a595fe1202-5f/s400x600/966a97e603f4a838237b3cdce3fa58801c713008.gifv" alt="Character GIF 1"></div>
+<div class="h-copy"><p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Sed do eiusmod tempor incididunt ut labore. <i>Ut enim ad minim veniam,</i> quis nostrud exercitation ullamco laboris. <u>Duis aute irure dolor.</u></p></div>
+<div class="h-mark" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 54C2 34 55 5 67 18S44 72 23 64C6 58 23 36 42 30S62 33 48 45S25 56 24 49"/><path d="M19 60L9 70M64 21L71 10"/></g></svg></div>
+<div class="h-foot"><span>danwoo &amp; janghoon</span><span>sweet potato</span></div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-cozy-standalone-v2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/sweet-potato/sweet-potato-hearth-standalone-v3.css">
 [/dohtml]
 [/code]
