@@ -1,6 +1,8 @@
 # Blue Hour · Character atelier
 
-Open **[atelier.html](atelier.html)** in your browser. This single file contains the editor, the layout, and starter records for all 181 characters in the existing PI directory. You can download it and double-click it; there is nothing to install. Photos, Spotify players and the map still need an internet connection.
+Open **[atelier.html](atelier.html)** in your browser. This single file contains the editor, the layout, and all 181 characters in the current PI directory, enriched from their development posts and the latest encyclopaedia. You can download it and double-click it; there is nothing to install. Photos, Spotify players and maps still need an internet connection.
+
+**[Browse every character](cast.html)** · **[Download all 181 posts, previews and the editor](all-characters.zip)** · **[See source coverage and unresolved details](migration-coverage.html)**
 
 **[See Sam's completed example](sam-preview.html)** · **[Ben's photo theme](ben-preview.html)** · **[Cookie's photo theme](cookie-preview.html)** · **[Sam's ready-to-paste forum post](sam-forum.txt)**
 
@@ -8,14 +10,22 @@ The fifth version automatically matches the panel colours to the header photogra
 
 ## Everyday editing
 
-1. Choose a character or create a new one.
+1. Choose a character or create a new one. Search by name, or filter the cast by Development post, Encyclopaedia details, Directory details, or Updates to review. A character opened from the cast browser is selected automatically.
 2. Edit the labelled fields. Add connections, songs and story entries with the corresponding buttons.
    In Photos, colour & place, replace the header photo and its colours will be matched automatically. Adjust the crop and add a separate portrait / PI image as needed. Manual colour is an optional override. Use starter appearance restores the supplied header/PI photos while keeping other details.
 3. Change the three polaroid names, images and optional links. For a map, enter a city label, use Find a place on OpenStreetMap, then paste the map address into OpenStreetMap link and choose Use this map view. Coordinates and zoom can also be edited directly. Clearing the coordinates hides the map. The pin is a location you set for the character, not live tracking. Ship details and shared stories can be expanded inside their connection card.
 4. Copy the forum post and paste it into your Blue Hour development post. The copy includes its `[dohtml]` wrapper, one hosted stylesheet and one shared script for the map and automatic colour matching.
-5. Save a library backup regularly. Import that backup on another computer or share it with Sara to continue editing.
+5. Save a library backup regularly. Import that backup on another computer or share it with Sara to continue editing. Backups also remember which supplied details your draft was based on, so later source updates can preserve your changes.
 
 Changes are saved in this browser when storage is available. A backup is a downloadable data file; you do not need to open or edit its contents. Browser saving does **not** publish to GitHub, update the live forum, or synchronise with Sara. Re-copy the forum post after changing its content. To keep a shared version in GitHub, upload the exported backup to the repository; import that same backup before either of you makes the next edit.
+
+## Supplied details and your edits
+
+The small source panel above the form identifies where a character's supplied details came from and links to those sources. Its label describes the available source, not a promise that every section is complete. Missing information stays blank. Source notices and update controls appear only in the editor, never in the copied forum post.
+
+When you open a newer copy of the editor, unchanged supplied fields can receive new source details automatically. Your edited fields, added entries and deliberately removed entries are kept. If both your draft and the source changed the same detail, **Review source updates** shows the two versions side by side. Tick only the changes you want, then choose **Apply selected updates**. **Keep my edits** keeps your current version for every item in that review. Neither option publishes anything to the forum.
+
+Older backups without comparison history are treated cautiously: blank details may be filled, while differing filled details are offered for review. Download a fresh backup after reviewing updates to carry those choices to another browser or to Sara.
 
 ## One connected record
 
@@ -29,7 +39,11 @@ The **in-world date** controls chronology. A separate posting date is available.
 
 Sam is the worked example: his supplied profile facts, ten Spotify tracks, four connections, and all five original tracker links are preserved. **Cereal** is his flavour with Hoseong; **Lindor** (Dom), **Mochidoki** (CRAZHES), and **Pringles** (Jiae) are brands. The three renamed comms keep their original links, now titled Lindor Pistachio, Pringles Texas BBQ and Mochidoki Cake Batter. The newer Cereal Bar comms is also included. His current age is **25**, and he is **partnered with Hoseong**, as confirmed by Lex. His polaroids show Hoseong, Jiae and Hajun as requested. The location headline remains Los Angeles and the residence remains San Bernardino; the map uses a city-level San Bernardino pin. No in-world dates have been guessed for these entries.
 
-The other cast records are starters from the existing character directory, not a migration of every development post. Their missing biographies, playlists, timelines, polaroids and maps can be filled in through the form. Ages are imported snapshots, not automatic birthday calculations. The original PI directory remains separate and unchanged.
+The rollout was checked on 6 November 2026 against the live 181-character directory. All 58 character development topics were read across 72 pages and 239 posts. Their structured facts, header photographs, Spotify embeds and explicit tracker links are combined with the current encyclopaedia, naming key, and matched comms/story catalogue. Older names are matched to current identities, including Lucas Choi, Jake Lee and Kwon Kennedy. The current PI directory controls identity, age, occupation, face claim and recorded partners; ages are snapshots, not automatic birthday calculations.
+
+The library contains 1,120 fact rows and 635 character-specific story entries linking to 305 distinct topics. Music is available for 26 characters, with 189 song/album entries and any supplied full playlists. Known locations supply 49 city/community overview maps. The 137 profiles with polaroids use the selected people already approved for Sam or recorded current partners; other close-person choices are left for you. These are editable starting choices, not a ranking of relationships.
+
+Coverage is recorded separately from how many fields are filled: 58 profiles have development-post imports, 122 have additional encyclopaedia/catalogue details, and Rain Jeon currently has directory details only. Unknown birthdays, missing playlists and in-world dates stay blank. Original long-form writing is retained in source captures; the displayed profile uses concise facts and selected continuity notes. The coverage report lists source differences and missing material without putting editorial notes into forum posts. The original PI directory remains separate and unchanged.
 
 ## GitHub and forum delivery
 
@@ -47,6 +61,6 @@ The folder is also suitable for [GitHub Pages](https://docs.github.com/en/pages/
 
 ## Development
 
-Run `node character-dossier/build.cjs` from the repository root to refresh the starter data, portable editor and Sam outputs. Run `node character-dossier/check.cjs` for the content-preservation and export checks. The build does not alter existing collections or the PI directory.
+Run `node character-dossier/build.cjs` from the repository root to refresh the enriched library, portable editor, cast browser, all-character ZIP and coverage report. Run `node character-dossier/check.cjs`, `node character-dossier/check-source-updates.cjs`, `node character-dossier/check-migration.cjs`, and `node character-dossier/all-cast-check.cjs` for content preservation, editor updates, source migration and archive validation. The build does not alter existing collections or the PI directory.
 
 Sources: the existing `forum-posts/characters/characters.json` and `ship-names.json`, Lex's supplied Sam profile and tracker, Lex's confirmed revisions, the encyclopaedia's [Flavour and brand name key](https://chatgpt.com/space/page_0eadef96d4a0819194dc68c40f67f199), and the comms catalogue verified on 5 November 2026. Spotify iframe sizing follows the [official embed guide](https://developer.spotify.com/documentation/embeds/tutorials/creating-an-embed). Map styling and tiles come from [OpenFreeMap](https://openfreemap.org/quick_start/) with [MapLibre](https://maplibre.org/maplibre-gl-js/docs/); the initial location is [San Bernardino's city record](https://www.openstreetmap.org/relation/253639). Map credits follow the providers' [attribution guidance](https://openfreemap.org/#attribution).

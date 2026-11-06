@@ -30,6 +30,7 @@ for (const name of ['seed-data.js', 'dossier-model.js', 'palette.js', 'editor.js
 }
 if (/src=["'](?:seed-data|dossier-model|palette|editor)\.js/.test(portable)) throw new Error('Portable script bundling failed.');
 write('atelier.html', portable);
-console.log('Built the portable editor, Sam preview, and Sam forum post from '+library.characters.length+' starter records.');
+require('./build-cast.cjs').buildAllCast(library, { cssUrl, runtime });
+console.log('Built the portable editor, approved examples, and all-cast outputs from '+library.characters.length+' character records.');
 
 

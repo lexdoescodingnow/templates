@@ -20,6 +20,7 @@
     <section class="atelier-toolbar" aria-label="Character and export tools">
       <div class="character-controls">
         <label class="sr-only" for="character-search">Search characters</label><input id="character-search" type="search" placeholder="Find a character…" autocomplete="off">
+        <label class="sr-only" for="source-filter">Filter characters by source</label><select id="source-filter"><option value="all">All sources</option><option value="development">Development posts</option><option value="encyclopaedia">Encyclopaedia details</option><option value="directory">Directory details</option><option value="review">Updates to review</option></select>
         <label class="sr-only" for="character-picker">Choose character</label><select id="character-picker"></select>
         <button id="new-character" type="button" class="button-quiet">＋ New</button><button id="duplicate-character" type="button" class="button-quiet">Duplicate</button>
       </div>
@@ -29,6 +30,7 @@
     <div class="atelier-workspace">
       <aside class="edit-panel" aria-labelledby="edit-title">
         <div class="panel-heading"><div><p class="eyebrow">MAKE IT THEIR OWN</p><h2 id="edit-title">The details</h2></div><span id="character-count" class="mini-count"></span></div>
+        <div id="source-summary" class="source-summary" hidden></div>
         <div id="source-notices" class="source-notices" hidden></div>
         <form id="character-form" autocomplete="off"></form>
         <details class="editor-section backup-section">
@@ -50,6 +52,7 @@
     <footer class="atelier-footer"><span>BLUE HOUR / CHARACTER ATELIER</span><span>Made for the details worth keeping.</span></footer>
   </main>
   <dialog id="copy-fallback"><form method="dialog"><div class="dialog-heading"><h2>Your forum post</h2><button aria-label="Close copy window">Close</button></div><p>Your browser could not copy automatically. Select the text below and copy it, then paste it into your forum post.</p><textarea id="manual-copy" readonly spellcheck="false" aria-label="Forum post to copy manually"></textarea></form></dialog>
+  <dialog id="source-review" class="source-review-dialog"><div class="dialog-heading"><h2>Review source updates</h2><button id="close-source-review" type="button">Close</button></div><p id="source-review-intro"></p><div id="source-review-items"></div><div class="source-review-actions"><button id="keep-source-edits" type="button">Keep my edits</button><button id="apply-source-updates" type="button" class="button-primary">Apply selected updates</button></div></dialog>
   <noscript><p class="noscript-message">The editor needs JavaScript. Completed forum posts can be read without it.</p></noscript>
   <script src="seed-data.js"></script>
   <script src="dossier-model.js"></script>

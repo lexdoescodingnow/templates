@@ -1,0 +1,43 @@
+html { color-scheme:dark; background:#111615; color:#eff1eb; font:14px/1.5 'Segoe UI',Arial,sans-serif; }
+body { margin:0; }
+.cast-shell, .cast-shell * { box-sizing:border-box; }
+.cast-shell { max-width:1370px; padding:24px; margin:auto; }
+.cast-heading { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; padding-bottom:22px; }
+.cast-heading h1 { font-size:26px; letter-spacing:-.04em; margin:0 0 3px; }
+.cast-heading p { margin:0; color:#aab7ad; font-size:12px; }
+.cast-actions { display:flex; flex-wrap:wrap; gap:8px; }
+.cast-shell :is(button,.cast-button) { display:inline-flex; align-items:center; justify-content:center; border:1px solid #3b4940; border-radius:8px; background:#243129; color:#eaf1e7; padding:8px 12px; text-decoration:none; font:600 12px/1.35 'Segoe UI',Arial,sans-serif; cursor:pointer; }
+.cast-shell :is(button,.cast-button):hover { background:#314338; }
+.cast-shell :is(button,a,input,textarea):focus-visible { outline:2px solid #c5daaf; outline-offset:3px; }
+.cast-workspace { display:grid; grid-template-columns:235px minmax(0,1fr); align-items:start; gap:22px; }
+.cast-sidebar { position:sticky; top:16px; min-width:0; padding:14px; border:1px solid #303d33; border-radius:14px; background:#1a231d; }
+.cast-sidebar label { display:block; margin-bottom:7px; font-weight:600; font-size:12px; }
+.cast-sidebar input { width:100%; border:1px solid #465449; border-radius:8px; padding:9px 10px; background:#101813; color:#f0f3ee; font:13px 'Segoe UI',Arial,sans-serif; }
+.cast-result-count { display:block; margin:10px 0 7px; font-size:11px; color:#aab7ad; }
+.cast-list { display:grid; gap:4px; max-height:68vh; overflow:auto; padding-right:3px; }
+.cast-list button { justify-content:flex-start; text-align:left; padding:9px 10px; border-color:transparent; background:transparent; font-weight:500; }
+.cast-list button[aria-current=true] { background:#324533; border-color:#617a58; }
+.cast-list button span { display:block; }
+.cast-list button small { display:block; color:#bac4b6; font-size:10px; font-weight:400; }
+.cast-list button[hidden] { display:none; }
+.cast-stage { min-width:0; }
+.cast-toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:8px; padding:0 0 10px; }
+.cast-toolbar h2 { font-size:17px; margin:0 auto 0 0; letter-spacing:-.02em; }
+.cast-status { min-height:21px; margin:0 0 6px; color:#bdcdb3; font-size:12px; }
+.cast-code { margin:12px 0; border:1px solid #344438; border-radius:10px; padding:12px; background:#19231c; }
+.cast-code summary { cursor:pointer; font-size:12px; font-weight:600; }
+.cast-code textarea { display:block; width:100%; min-height:180px; margin-top:10px; padding:12px; resize:vertical; border:1px solid #465449; border-radius:7px; background:#101813; color:#d9e6d0; font:11px/1.5 Consolas,monospace; }
+.cast-preview>.bh-dossier-v5 { margin-top:0; }
+.cast-empty { padding:14px; color:#b4c0ae; }
+.cast-noscript { padding:16px; margin:12px 0; border:1px solid #617a58; border-radius:10px; }
+.cast-noscript a { color:#d0e6ba; }
+html[color-mode=light] { color-scheme:light; background:#edf1eb; color:#223023; }
+html[color-mode=light] .cast-heading p,html[color-mode=light] .cast-result-count { color:#52624d; }
+html[color-mode=light] .cast-sidebar,html[color-mode=light] .cast-code { background:#fff; border-color:#c5cebf; }
+html[color-mode=light] .cast-shell :is(button,.cast-button) { background:#edf3e8; color:#263522; border-color:#b6c5aa; }
+html[color-mode=light] .cast-list button { background:transparent; border-color:transparent; }
+html[color-mode=light] .cast-list button[aria-current=true] { background:#d8e7cf; border-color:#94ad82; }
+html[color-mode=light] .cast-list button small,html[color-mode=light] .cast-status { color:#506846; }
+html[color-mode=light] .cast-shell :is(input,textarea) { background:#f8faf6; color:#223023; border-color:#b5c2ac; }
+@media(max-width:780px) { .cast-shell { padding:16px 10px; } .cast-workspace { grid-template-columns:1fr; gap:16px; } .cast-sidebar { position:static; } .cast-list { max-height:185px; grid-template-columns:repeat(2,minmax(0,1fr)); } .cast-toolbar h2 { width:100%; } }
+@media(max-width:410px) { .cast-heading h1 { font-size:23px; } .cast-list { grid-template-columns:1fr; max-height:150px; } .cast-shell .cast-button,.cast-shell button { padding:8px 10px; } }

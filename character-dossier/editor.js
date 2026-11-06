@@ -22,6 +22,11 @@
   const photoThemeStates = new Map();
   const photoThemeJobs = new Map();
   let photoThemeSequence = 0;
+  const sourceUpdates = new Map();
+  let sourceReviewCharacterId = '';
+  const SOURCE_FIELDS = ['name', 'nickname', 'age', 'pronouns', 'gender', 'occupation', 'location', 'writer', 'portrait', 'avatar', 'imagePosition', 'facts', 'currentChapter', 'asOf', 'notes', 'relationshipStatus', 'relationships', 'timeline', 'songs', 'playlistUrl', 'polaroids', 'mapLocation', 'mapLatitude', 'mapLongitude', 'mapZoom'];
+  const SOURCE_LABELS = { name: 'Full name', nickname: 'Preferred name', age: 'Age', pronouns: 'Pronouns', gender: 'Gender', occupation: 'Occupation', location: 'Location', writer: 'Writer', portrait: 'Header photo', avatar: 'PI portrait', imagePosition: 'Photo crop', facts: 'Encyclopaedia facts', currentChapter: 'Current chapter', asOf: 'Story date', notes: 'Continuity notes', relationshipStatus: 'Relationship status', relationships: 'Connections', timeline: 'Story archive', songs: 'Soundtrack', playlistUrl: 'Playlist', polaroids: 'Polaroids', mapLocation: 'Map place', mapLatitude: 'Map latitude', mapLongitude: 'Map longitude', mapZoom: 'Map zoom', title: 'Title', date: 'In-world date', postedDate: 'Posting date', dateLabel: 'Date label', participants: 'Participants', type: 'Type', status: 'Status', connectionIds: 'Linked connections', summary: 'Summary', milestone: 'Pivotal moment', kind: 'Connection type', flavour: 'Flavour', brand: 'Brand', url: 'Link', image: 'Photo', pinned: 'Pinned connection', featured: 'Featured relationship', quote: 'Shared quote', artist: 'Artist', note: 'Song note', label: 'Fact label', value: 'Fact' };
+  const COVERAGE_LABELS = { development: 'Development post', encyclopaedia: 'Encyclopaedia details', directory: 'Directory details', custom: 'Your own character' };
   const LIST_LIMITS = { facts: 150, relationships: 200, timeline: 1500, songs: 200, polaroids: 3 };
   const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, image: 4000, imagePosition: 30, mapLocation: 250, mapLatitude: 40, mapLongitude: 40, mapZoom: 2, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, brand: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
   const COLOUR_PALETTE = [['Fern', '#5b8612'], ['Sand', '#a99b8e'], ['Apricot', '#d9804d'], ['Blue', '#5187b5'], ['Rose', '#b9768c']];
@@ -92,10 +97,116 @@
   function seedLibrary() {
     return Dossier.normalizeDataset(clone(globalThis.DOSSIER_SEED || { version: 1, characters: [{ id: uid('character'), name: '' }] }));
   }
+  function sourceMetadata(id) {
+    const all = globalThis.DOSSIER_SOURCE_METADATA || {};
+    const raw = Object.hasOwn(all, id) && all[id] && typeof all[id] === 'object' ? all[id] : {};
+    const inSeed = globalThis.DOSSIER_SEED?.characters?.some(character => character.id === id);
+    const coverage = ['development', 'encyclopaedia', 'directory'].includes(raw.coverage) ? raw.coverage : inSeed ? 'directory' : 'custom';
+    return { ...raw, coverage, label: typeof raw.label === 'string' && raw.label.trim() ? raw.label : COVERAGE_LABELS[coverage] };
+  }
+  function normalizeSourceTracking(raw, ids) {
+    const result = Object.create(null);
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return result;
+    ids.forEach(id => {
+      if (!Object.hasOwn(raw, id)) return;
+      const record = raw[id];
+      if (!record || typeof record !== 'object' || !record.baseline || typeof record.revision !== 'string') return;
+      try { result[id] = { revision: record.revision.slice(0, 200), baseline: Dossier.normalizeCharacter(record.baseline) }; } catch (_) {}
+    });
+    return result;
+  }
+  function equalSource(a, b) { return JSON.stringify(a) === JSON.stringify(b); }
+  function sourceCopy(value) { return value === undefined ? undefined : clone(value); }
+  function sourceBlank(value) { return value === undefined || value === null || value === '' || Array.isArray(value) && value.length === 0; }
+  function sourceRevision(metadata, incoming) {
+    if (typeof metadata.revision === 'string' && metadata.revision) return metadata.revision;
+    const text = JSON.stringify(incoming); let hash = 2166136261;
+    for (let index = 0; index < text.length; index += 1) hash = Math.imul(hash ^ text.charCodeAt(index), 16777619);
+    return 'source-' + (hash >>> 0).toString(16);
+  }
+  function sourceListKey(field, item) {
+    if (!item || typeof item !== 'object' || Array.isArray(item)) return '';
+    if (field === 'relationships' || field === 'timeline') return typeof item.id === 'string' ? item.id : '';
+    if (field === 'facts') return typeof item.label === 'string' ? item.label.trim().toLocaleLowerCase() : '';
+    if (field === 'songs') return item.url || [item.artist || '', item.title || ''].join('|').toLocaleLowerCase();
+    return '';
+  }
+  function mergeSourceValue(currentValue, baseline, incoming, context) {
+    if (equalSource(currentValue, incoming)) return sourceCopy(currentValue);
+    const allArrays = Array.isArray(currentValue) && Array.isArray(incoming) && (!context.known || Array.isArray(baseline));
+    const keyed = allArrays && ['relationships', 'timeline', 'facts', 'songs'].includes(context.field) && context.path.length === 1;
+    if (keyed) {
+      const arrays = [currentValue, incoming, context.known ? baseline : []];
+      const valid = arrays.every(items => { const keys = items.map(item => sourceListKey(context.field, item)); return keys.every(Boolean) && new Set(keys).size === keys.length; });
+      if (valid) {
+        const oldMap = new Map((context.known ? baseline : []).map(item => [sourceListKey(context.field, item), item]));
+        const newMap = new Map(incoming.map(item => [sourceListKey(context.field, item), item]));
+        const currentKeys = new Set(currentValue.map(item => sourceListKey(context.field, item)));
+        const merged = currentValue.map(item => {
+          const key = sourceListKey(context.field, item), previous = oldMap.get(key), next = newMap.get(key);
+          const path = [...context.path, { list: context.field, key }];
+          const label = context.label + ' · ' + (item.title || item.name || item.label || 'Entry');
+          if (!next) {
+            if (oldMap.has(key)) context.conflicts.push({ path, label, current: sourceCopy(item), incoming: null, remove: true });
+            return sourceCopy(item);
+          }
+          const result = sourceCopy(item);
+          Object.keys(next).filter(field => field !== 'id').forEach(field => {
+            result[field] = mergeSourceValue(item[field], previous?.[field], next[field], { ...context, known: oldMap.has(key) && Object.hasOwn(previous, field), path: [...path, field], label: label + ' · ' + (SOURCE_LABELS[field] || field) });
+          });
+          return result;
+        });
+        incoming.forEach(item => { const key = sourceListKey(context.field, item); if (!currentKeys.has(key) && !oldMap.has(key)) merged.push(sourceCopy(item)); });
+        return merged;
+      }
+    }
+    if (context.known && equalSource(currentValue, baseline)) return sourceCopy(incoming);
+    if (context.known && equalSource(incoming, baseline)) return sourceCopy(currentValue);
+    if (!context.known && sourceBlank(currentValue)) return sourceCopy(incoming);
+    context.conflicts.push({ path: context.path, label: context.label, current: sourceCopy(currentValue), incoming: sourceCopy(incoming), remove: false });
+    return sourceCopy(currentValue);
+  }
+  function applySourceUpdates() {
+    const latest = seedLibrary().characters;
+    let previous = [];
+    try { if (globalThis.DOSSIER_PREVIOUS_SEED) previous = Dossier.normalizeDataset(globalThis.DOSSIER_PREVIOUS_SEED).characters; } catch (_) {}
+    const oldSeeds = new Map(previous.map(character => [character.id, character]));
+    const currentById = new Map(library.characters.map(character => [character.id, character]));
+    library.sourceTracking = library.sourceTracking || Object.create(null);
+    sourceUpdates.clear();
+    let changedCharacters = 0, added = 0;
+    latest.forEach(incoming => {
+      const metadata = sourceMetadata(incoming.id);
+      const revision = sourceRevision(metadata, incoming);
+      let character = currentById.get(incoming.id);
+      if (!character) { if (library.characters.length >= 500) return; character = sourceCopy(incoming); library.characters.push(character); currentById.set(character.id, character); added += 1; dirty = true; }
+      const tracked = library.sourceTracking[character.id];
+      if (tracked?.revision === revision) return;
+      const baseline = tracked?.baseline || oldSeeds.get(character.id);
+      const fields = Array.isArray(metadata.knownFields) ? metadata.knownFields.filter(field => SOURCE_FIELDS.includes(field)) : SOURCE_FIELDS;
+      const conflicts = [];
+      const before = JSON.stringify(character);
+      fields.forEach(field => {
+        character[field] = mergeSourceValue(character[field], baseline?.[field], incoming[field], { known: Boolean(baseline && Object.hasOwn(baseline, field)), field, path: [field], label: SOURCE_LABELS[field] || field, conflicts });
+      });
+      if (before !== JSON.stringify(character)) { changedCharacters += 1; dirty = true; }
+      if (conflicts.length) {
+        sourceUpdates.set(character.id, { revision, incoming, conflicts });
+        if (!tracked && baseline) { library.sourceTracking[character.id] = { revision: '', baseline: sourceCopy(baseline) }; dirty = true; }
+      }
+      else { library.sourceTracking[character.id] = { revision, baseline: sourceCopy(incoming) }; dirty = true; }
+    });
+    return { changedCharacters, added, reviews: sourceUpdates.size };
+  }
+  function selectFromAddress() {
+    let requested = '';
+    try { const url = new URL(location.href); requested = url.searchParams.get('character') || new URLSearchParams(url.hash.replace(/^#/, '')).get('character') || ''; } catch (_) {}
+    if (requested && library.characters.some(character => character.id === requested)) settings.selectedId = requested;
+  }
   function normalizeDraftDataset(raw) {
     const prepared = clone(raw);
     const characters = prepared && Array.isArray(prepared.characters) ? prepared.characters : prepared && (Object.hasOwn(prepared, 'name') || Object.hasOwn(prepared, 'id')) ? [prepared] : [];
-    const starters = new Map((Array.isArray(globalThis.DOSSIER_SEED?.characters) ? globalThis.DOSSIER_SEED.characters : []).map(character => [character.id, character]));
+    const starters = new Map((Array.isArray(globalThis.DOSSIER_SEED?.characters) ? globalThis.DOSSIER_SEED.characters : []).map(character => [character.id, Dossier.normalizeCharacter(character)]));
     characters.forEach(character => {
       if (!character || typeof character !== 'object' || Array.isArray(character)) return;
       if (character.id === 'baek-samuel' && Array.isArray(character.relationships)) {
@@ -160,6 +271,7 @@
       Object.assign(character, mapDrafts[index]);
       if (Array.isArray(characters[index]?.tags)) character.tags = characters[index].tags.filter(tag => typeof tag === 'string');
     });
+    normalized.sourceTracking = normalizeSourceTracking(raw?.sourceTracking, normalized.characters.map(character => character.id));
     return normalized;
   }
   function initData() {
@@ -189,6 +301,9 @@
       const sam = library.characters.find(character => /baek samuel/i.test(character.name));
       settings.selectedId = (sam || library.characters[0]).id;
     }
+    const updates = applySourceUpdates();
+    selectFromAddress();
+    if (updates.changedCharacters || updates.added) message('Source details refreshed for ' + updates.changedCharacters + ' character' + (updates.changedCharacters === 1 ? '' : 's') + (updates.added ? '; ' + updates.added + ' added to your cast' : '') + '. Edited details are kept for review.');
     $('save-status').textContent = storageAvailable ? 'Ready · changes save in this browser' : 'Download a backup to save your changes';
     if (recoveryDownload) {
       const button = node('button', { type: 'button', text: 'Download the unopened draft', onclick: () => download(recoveryDownload, 'character-atelier-recovery.json') });
@@ -197,15 +312,18 @@
   }
   function updatePicker() {
     const query = $('character-search').value.trim().toLocaleLowerCase();
-    const matches = [...library.characters].sort((a, b) => labelFor(a).localeCompare(labelFor(b))).filter(character => !query || [character.name, character.nickname, character.writer].join(' ').toLocaleLowerCase().includes(query));
+    const coverage = $('source-filter')?.value || 'all';
+    const matches = [...library.characters].sort((a, b) => labelFor(a).localeCompare(labelFor(b))).filter(character => (!query || [character.name, character.nickname, character.writer].join(' ').toLocaleLowerCase().includes(query)) && (coverage === 'all' || coverage === 'review' ? coverage !== 'review' || sourceUpdates.has(character.id) : sourceMetadata(character.id).coverage === coverage));
     $('character-picker').replaceChildren();
-    if (!matches.some(character => character.id === settings.selectedId)) matches.unshift(current());
+    const shownCount = matches.length;
+    const outsideFilter = !matches.some(character => character.id === settings.selectedId);
+    if (outsideFilter) matches.unshift(current());
     matches.forEach(character => {
-      const option = node('option', { value: character.id, text: labelFor(character) });
+      const option = node('option', { value: character.id, text: labelFor(character) + (outsideFilter && character.id === settings.selectedId ? ' (currently open)' : '') });
       option.selected = character.id === settings.selectedId;
       $('character-picker').append(option);
     });
-    $('character-count').textContent = library.characters.length + ' in your cast';
+    $('character-count').textContent = (query || coverage !== 'all' ? shownCount + ' shown · ' : '') + library.characters.length + ' in your cast';
     $('character-picker').setAttribute('aria-label', 'Choose character. ' + matches.length + ' options');
   }
   function field(label, target, key, options) {
@@ -482,9 +600,81 @@
     });
     $('source-notices').hidden = !$('source-notices').childElementCount;
   }
+  function renderSourceSummary() {
+    const panel = $('source-summary'); if (!panel) return;
+    const character = current(), metadata = sourceMetadata(character.id), pending = sourceUpdates.get(character.id);
+    panel.replaceChildren(); panel.hidden = false;
+    const heading = node('div', { className: 'source-summary-heading' }, [node('span', { className: 'source-badge', 'data-coverage': metadata.coverage, text: metadata.label }), node('span', { className: 'source-summary-state', text: pending ? 'Your edits are kept' : metadata.coverage === 'custom' ? 'Personal draft' : 'No pending updates' })]);
+    panel.append(heading);
+    if (metadata.coverage === 'directory') panel.append(help('Identity details are ready. Further development material has not been added for this character.'));
+    if (metadata.coverage === 'encyclopaedia') panel.append(help('Includes the available encyclopaedia details for this character.'));
+    if (metadata.coverage === 'development') panel.append(help('Includes details gathered from the character’s development post.'));
+    if (typeof metadata.updatedAt === 'string') {
+      const date = new Date(metadata.updatedAt);
+      if (Number.isFinite(date.getTime())) panel.append(node('small', { className: 'source-checked', text: 'Checked ' + date.toLocaleDateString('en-GB', { timeZone: 'Europe/London', day: 'numeric', month: 'long', year: 'numeric' }) }));
+    }
+    const sources = Array.isArray(metadata.sourceUrls) ? metadata.sourceUrls : [];
+    const links = node('div', { className: 'source-links' });
+    sources.slice(0, 8).forEach((source, index) => {
+      const url = Dossier.safeUrl(typeof source === 'string' ? source : source?.url);
+      if (url) links.append(node('a', { href: url, target: '_blank', rel: 'noopener noreferrer', text: typeof source?.label === 'string' ? source.label + ' ↗' : 'Source ' + (index + 1) + ' ↗' }));
+    });
+    if (links.childElementCount) panel.append(links);
+    if (pending) panel.append(node('button', { type: 'button', className: 'source-review-button', text: 'Review ' + pending.conflicts.length + ' source update' + (pending.conflicts.length === 1 ? '' : 's'), onclick: () => openSourceReview(character.id) }));
+  }
+  function sourceValuePreview(value, missing) {
+    if (missing) return 'Not listed in the latest source';
+    if (value === undefined || value === null || value === '' || Array.isArray(value) && value.length === 0) return 'Empty';
+    if (typeof value === 'boolean') return value ? 'Yes' : 'No';
+    if (Array.isArray(value)) return value.map(item => typeof item === 'object' ? item.label ? item.label + ': ' + (item.value || '') : item.title || item.name || item.url || 'Entry' : String(item)).join('\n');
+    if (typeof value === 'object') return [value.title || value.name || value.label, value.summary || value.value, value.url].filter(Boolean).join('\n');
+    return String(value);
+  }
+  function openSourceReview(id) {
+    const update = sourceUpdates.get(id), character = library.characters.find(item => item.id === id);
+    if (!update || !character) return;
+    sourceReviewCharacterId = id;
+    $('source-review-intro').textContent = 'The latest source differs from your version of ' + labelFor(character) + '. Choose the details you want to update. Unselected details will stay as you have them.';
+    $('source-review-items').replaceChildren();
+    update.conflicts.forEach((conflict, index) => {
+      const checkbox = node('input', { type: 'checkbox', value: String(index), 'data-source-choice': '' });
+      const heading = node('label', { className: 'source-change-choice' }, [checkbox, node('span', { text: conflict.label })]);
+      const sides = node('div', { className: 'source-change-sides' }, [node('div', {}, [node('h3', { text: 'Your version' }), node('p', { text: sourceValuePreview(conflict.current, false) })]), node('div', {}, [node('h3', { text: 'Latest source' }), node('p', { text: sourceValuePreview(conflict.incoming, conflict.remove) })])]);
+      $('source-review-items').append(node('section', { className: 'source-change' }, [heading, sides]));
+    });
+    $('source-review').showModal();
+  }
+  function applySourceConflict(character, conflict) {
+    let target = character;
+    for (let index = 0; index < conflict.path.length; index += 1) {
+      const segment = conflict.path[index], last = index === conflict.path.length - 1;
+      if (typeof segment === 'object') {
+        if (!Array.isArray(target)) return;
+        const position = target.findIndex(item => sourceListKey(segment.list, item) === segment.key);
+        if (position < 0) return;
+        if (last) { if (conflict.remove) target.splice(position, 1); else target[position] = sourceCopy(conflict.incoming); return; }
+        target = target[position];
+      } else {
+        if (!target || typeof target !== 'object') return;
+        if (last) { target[segment] = sourceCopy(conflict.incoming); return; }
+        target = target[segment];
+      }
+    }
+  }
+  function finishSourceReview(useSelected) {
+    const update = sourceUpdates.get(sourceReviewCharacterId), character = library.characters.find(item => item.id === sourceReviewCharacterId);
+    if (!update || !character) { $('source-review').close(); return; }
+    let applied = 0;
+    if (useSelected) document.querySelectorAll('[data-source-choice]:checked').forEach(input => { const conflict = update.conflicts[Number(input.value)]; if (conflict) { applySourceConflict(character, conflict); applied += 1; } });
+    library.sourceTracking[character.id] = { revision: update.revision, baseline: sourceCopy(update.incoming) };
+    sourceUpdates.delete(character.id);
+    cancelPhotoTheme(character.id); photoThemeStates.delete(character.id);
+    $('source-review').close(); changed(); updatePicker(); renderForm(); updatePreview(); saveDraft();
+    message(applied ? 'Applied ' + applied + ' selected update' + (applied === 1 ? '' : 's') + '. Your other edits were kept.' : 'Your edits were kept. This source update is marked as reviewed.');
+  }
   function renderForm() {
     const character = current();
-    $('character-form').replaceChildren(); renderNotices();
+    $('character-form').replaceChildren(); renderSourceSummary(); renderNotices();
     let body = section('identity', '01', 'Identity');
     body.append(field('Full name', character, 'name', { picker: true }), grid(field('Preferred name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Gender', character, 'gender'), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }));
     body = section('appearance', '02', 'Photos, colour & place');
@@ -613,7 +803,10 @@
   }
   function exportBackup(single) {
     saveDraft();
-    const data = { version: 1, characters: clone(single ? [current()] : library.characters) };
+    const characters = clone(single ? [current()] : library.characters);
+    const sourceTracking = Object.create(null);
+    characters.forEach(character => { if (library.sourceTracking?.[character.id]) sourceTracking[character.id] = clone(library.sourceTracking[character.id]); });
+    const data = { version: 1, characters, sourceTracking };
     download(JSON.stringify(data, null, 2), single ? fileName(current()) + '-editable.json' : 'blue-hour-character-library.json');
     $('backup-status').textContent = 'Backup downloaded. It includes ' + data.characters.length + ' character' + (data.characters.length === 1 ? '' : 's') + '.';
     message(single ? 'Editable character backup downloaded.' : 'Editable library backup downloaded.');
@@ -621,7 +814,7 @@
   async function importBackup(event) {
     const input = event.target; const file = input.files && input.files[0]; if (!file) return;
     try {
-      if (file.size > 4 * 1024 * 1024) throw new Error('This backup is larger than 4 MB. Import a smaller character or library backup.');
+      if (file.size > 20 * 1024 * 1024) throw new Error('This backup is larger than 20 MB. Import a smaller character or library backup.');
       const imported = normalizeDraftDataset(JSON.parse(await file.text()));
       if (!imported.characters.length) throw new Error('The backup does not contain any characters.');
       const byId = new Map(library.characters.map(character => [character.id, character]));
@@ -630,7 +823,10 @@
       imported.characters.forEach(character => byId.set(character.id, character));
       if (byId.size > 500) throw new Error('The combined library would contain more than 500 characters. Import a smaller backup.');
       imported.characters.forEach(character => { cancelPhotoTheme(character.id); photoThemeStates.delete(character.id); });
-      library = { version: 1, characters: [...byId.values()] };
+      const sourceTracking = Object.assign(Object.create(null), library.sourceTracking || {});
+      imported.characters.forEach(character => { if (imported.sourceTracking?.[character.id]) sourceTracking[character.id] = imported.sourceTracking[character.id]; else delete sourceTracking[character.id]; });
+      library = { version: 1, characters: [...byId.values()], sourceTracking };
+      applySourceUpdates();
       dirty = true;
       settings.selectedId = imported.characters[0].id;
       $('character-search').value = ''; updatePicker(); renderForm(); updatePreview(); saveDraft();
@@ -643,6 +839,7 @@
     document.querySelector('.delivery-section .section-number').textContent = '09';
     $('character-form').addEventListener('submit', event => event.preventDefault());
     $('character-search').addEventListener('input', updatePicker);
+    $('source-filter')?.addEventListener('change', updatePicker);
     $('character-picker').addEventListener('change', event => switchCharacter(event.target.value));
     $('new-character').addEventListener('click', () => createCharacter(false));
     $('duplicate-character').addEventListener('click', () => createCharacter(true));
@@ -651,6 +848,9 @@
     $('save-character').addEventListener('click', () => exportBackup(true));
     $('save-library').addEventListener('click', () => exportBackup(false));
     $('import-backup').addEventListener('change', importBackup);
+    $('close-source-review')?.addEventListener('click', () => $('source-review').close());
+    $('keep-source-edits')?.addEventListener('click', () => finishSourceReview(false));
+    $('apply-source-updates')?.addEventListener('click', () => finishSourceReview(true));
     $('stylesheet-url').value = settings.stylesheetUrl;
     $('stylesheet-url').addEventListener('input', event => { settings.stylesheetUrl = event.target.value; saveSettings(); clearTimeout(previewTimer); previewTimer = setTimeout(updatePreview, 350); });
     $('restore-stylesheet').addEventListener('click', () => { settings.stylesheetUrl = DEFAULT_STYLESHEET; $('stylesheet-url').value = DEFAULT_STYLESHEET; saveSettings(); updatePreview(); message('Original shared stylesheet address restored.'); });
@@ -658,6 +858,7 @@
     $('preview-width').addEventListener('click', () => { settings.narrow = !settings.narrow; saveSettings(); updatePreview(); });
     $('dossier-preview').addEventListener('load', () => { resizePreview(); setTimeout(resizePreview, 300); setTimeout(resizePreview, 1200); try { const doc = $('dossier-preview').contentDocument; doc.querySelectorAll('a[href]').forEach(link => { if (/^https?:/i.test(link.getAttribute('href'))) { link.target = '_blank'; link.rel = 'noopener noreferrer'; } }); doc.addEventListener('toggle', () => setTimeout(resizePreview, 0), true); doc.addEventListener('click', () => setTimeout(resizePreview, 0)); } catch (_) {} });
     window.addEventListener('resize', resizePreview);
+    window.addEventListener('hashchange', () => { const before = settings.selectedId; selectFromAddress(); if (settings.selectedId !== before) switchCharacter(settings.selectedId); });
     window.addEventListener('storage', event => {
       if (event.key === STORAGE_KEY && event.newValue !== lastStoredLibrary) {
         externalChange = true;
@@ -670,7 +871,7 @@
   }
   try {
     if (!globalThis.Dossier) throw new Error('The editor files are incomplete. Keep index.html, editor.js, dossier-model.js, seed-data.js, and both stylesheets together.');
-    initData(); bindControls(); updatePicker(); renderForm(); updatePreview();
+    initData(); bindControls(); updatePicker(); renderForm(); updatePreview(); saveDraft();
   } catch (error) {
     message('The atelier could not open. ' + error.message, true);
     $('save-status').textContent = 'Could not open the library';

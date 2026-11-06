@@ -260,7 +260,10 @@ test('City maps export safe location data and isolate their interactive document
   assert(mapHtml.includes('https://www.openstreetmap.org/copyright'));
   assert(mapHtml.includes('https://www.openmaptiles.org/'));
   assert(mapHtml.includes('https://www.openstreetmap.org/?mlat='+sam.mapLatitude+'&amp;mlon='+sam.mapLongitude));
-  assert(library.characters.filter(item=>item.id!==sam.id).every(item=>!item.mapLatitude && !item.mapLongitude));
+  const migration = JSON.parse(read('migration-sources.json'));
+  for (const item of library.characters.filter(item=>item.id!==sam.id && item.mapLatitude && item.mapLongitude)) {
+    assert(migration.characters.find(row=>row.id===item.id).sources.some(source=>source.kind==='map'), 'Imported map pins need a verified place source: '+item.id);
+  }
   for (const fields of [
     {mapLatitude:'86'}, {mapLatitude:'-86'}, {mapLongitude:'181'}, {mapLongitude:'-181'},
     {mapLatitude:'NaN'}, {mapLatitude:'Infinity'}, {mapLongitude:'0;alert(1)'},
