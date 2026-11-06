@@ -2,12 +2,15 @@
 
 Open **[atelier.html](atelier.html)** in your browser. This single file contains the editor, the layout, and starter records for all 181 characters in the existing PI directory. You can download it and double-click it; there is nothing to install. Photos and Spotify players still need an internet connection.
 
-**[See Sam's completed example](sam-preview.html)** · **[Sam's ready-to-paste forum post](sam-forum.txt)**
+**[See Sam's completed example](sam-preview.html)** · **[Ben's sand palette](ben-preview.html)** · **[Cookie's apricot palette](cookie-preview.html)** · **[Sam's ready-to-paste forum post](sam-forum.txt)**
+
+The second version uses distinct responsive panels and a colour palette led by the character's photos. A wide layout pairs the header photo with its identity panel, the facts with connections, and the timeline with the soundtrack. These rearrange into a single column inside narrower forum posts. A separate PI portrait can sit in the identity panel. The original version's stylesheet remains available for existing posts.
 
 ## Everyday editing
 
 1. Choose a character or create a new one.
 2. Edit the labelled fields. Add connections, songs and story entries with the corresponding buttons.
+   In Identity & atmosphere, choose a colour swatch or your own colour, adjust the header crop, and add a separate portrait / PI image. Use starter appearance restores the supplied photos and palette for that character while keeping their other details.
 3. Pin up to three connections as the inner circle. Feature any relationship you want expanded as a ship, including past relationships or multiple partners.
 4. Copy the forum post and paste it into your Blue Hour development post. The copy includes its `[dohtml]` wrapper and one hosted stylesheet link.
 5. Save a library backup regularly. Import that backup on another computer or share it with Sara to continue editing.
@@ -32,7 +35,7 @@ The other cast records are starters from the existing character directory, not a
 
 The layout, editor, starter content and generators live together in `character-dossier/`. Shared forum styling is served from the `character-dossier-v1` branch of `lexdoescodingnow/templates` through jsDelivr. Keep that branch available while posts use its stylesheet URL. The editor has an advanced stylesheet field for a future permanent destination.
 
-The exported forum post contains static HTML and a stylesheet link. It needs no in-post JavaScript, JSON fetch, tracker library, icon package, or copy of the earlier third-party tracker code. It follows the repository's member-group colours and Blue Hour light/dark mode. The browser editor uses JavaScript locally; that editor code is not included in forum posts.
+The exported forum post contains static HTML and a stylesheet link. It needs no in-post JavaScript, JSON fetch, tracker library, icon package, or copy of the earlier third-party tracker code. Character colour leads the panels, tags, borders and highlights, with member colours retained for bold/italic text. It follows Blue Hour light/dark mode. The browser editor uses JavaScript locally; that editor code is not included in forum posts. The current stylesheet is `dossier-v2.css` with the isolated `bh-dossier-v2` wrapper; the earlier `dossier-v1.css` remains unchanged.
 
 The folder is also suitable for [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), which serves static HTML, CSS and JavaScript. The portable editor is usable without setting up Pages.
 

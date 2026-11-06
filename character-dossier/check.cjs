@@ -25,7 +25,7 @@ function safeNormalization(input, assertion) {
   catch (error) { assert(error instanceof Error); return; }
   assertion(value);
 }
-const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css';
+const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css';
 const sam = library.characters.find(item => item.id === 'baek-samuel');
 
 test('All 181 canonical identities and imported details survive normalization', () => {
@@ -41,6 +41,7 @@ test('All 181 canonical identities and imported details survive normalization', 
     assert.equal(actual.occupation, clean(description.match(/years old\s*⋄\s*[^⋄]+⋄\s*([\s\S]*?)(?:\s*⋄\s*♡|\s*⸺\s*looks like)/)[1]));
     assert.equal(actual.facts.find(item => item.label === 'Face claim').value, description.match(/looks like\s*\[i\]([\s\S]*?)\[\/i\]/)[1]);
     assert(actual.portrait.startsWith('https://'));
+    assert.equal(actual.avatar, original.name === 'Baek Samuel' ? 'https://c.l3n.co/i/n8qt60.png' : original.code.match(/\[PI=([^\]]+)\]/)[1]);
     const partnerSection = description.match(/♡\s*(married to|engaged to|in a relationship with)\s*([\s\S]*?)\s*♡/);
     const partnerNames = partnerSection ? Array.from(partnerSection[2].matchAll(/\[b\]([\s\S]*?)\[\/b\]/g), match=>match[1].toLowerCase()) : [];
     assert.deepEqual(actual.relationships.filter(item=>item.kind==='Partner').map(item=>item.name.toLowerCase()).sort(), partnerNames.sort());
@@ -66,6 +67,16 @@ test('Sam retains the approved age/status, all facts, songs, connections and tra
   assert(sam.timeline.every(item => item.connectionIds.every(id => connectionIds.has(id))));
 });
 
+test('Sam, Ben and Cookie retain their distinct supplied colours and separate portrait images', () => {
+  assert.equal(sam.accent, '#5b8612');
+  assert.equal(library.characters.find(item => item.id === 'ben-dam').accent, '#a99b8e');
+  assert.equal(library.characters.find(item => item.id === 'cookie-chalongrat-vihokratana').accent, '#d9804d');
+  assert.equal(sam.avatar, 'https://c.l3n.co/i/n8qt60.png');
+  assert.equal(sam.portrait, 'https://b.l3n.co/i/n8q1lD.png');
+  const html = Dossier.render(sam);
+  assert(html.includes(sam.avatar) && html.includes(sam.portrait));
+});
+
 test('Invalid imports cannot silently replace a library with an empty or malformed dataset', () => {
   for (const input of [null, [], {}, {version:1, characters:[]}, {version:1, characters:'wrong'}, {version:1, characters:[null]}]) {
     assert.throws(() => Dossier.normalizeDataset(input));
@@ -77,7 +88,7 @@ test('Invalid imports cannot silently replace a library with an empty or malform
 });
 
 test('Unicode, quotation marks, distinct story dates and connection links round-trip intact', () => {
-  const raw = character({name:'Trần Bảo & Bāng Dí', nickname:'B', notes:'“a memory” — 雨 & café',
+  const raw = character({name:'Trần Bảo & Bāng Dí', nickname:'B', notes:'“a memory” — 雨 & café', avatar:'https://example.com/portrait.png', imagePosition:'75% 20%',
     relationships:[{id:'connection-one',name:'Seo Hyemi',kind:'Friend',summary:'she said “hello”'}],
     timeline:[{id:'story-one',title:'The next day',date:'2026-10-13',postedDate:'2026-11-06',dateLabel:'Autumn',participants:'Bảo & Hyemi',connectionIds:['connection-one'],type:'Thread'}]});
   const first = Dossier.normalizeCharacter(raw);
@@ -85,9 +96,23 @@ test('Unicode, quotation marks, distinct story dates and connection links round-
   assert.deepEqual(roundtrip, first);
   assert.equal(roundtrip.name, raw.name);
   assert.equal(roundtrip.notes, raw.notes);
+  assert.equal(roundtrip.avatar, raw.avatar);
+  assert.equal(roundtrip.imagePosition, '75% 20%');
   assert.equal(roundtrip.timeline[0].date, '2026-10-13');
   assert.equal(roundtrip.timeline[0].postedDate, '2026-11-06');
   assert.deepEqual(roundtrip.timeline[0].connectionIds, ['connection-one']);
+});
+
+test('Portrait addresses and image cropping cannot inject markup or arbitrary styles', () => {
+  const invalid = Dossier.normalizeCharacter(character({avatar:'javascript:alert(1)',imagePosition:'50% 35%;x:y'}));
+  assert.equal(invalid.avatar, '');
+  assert.notEqual(invalid.imagePosition, '50% 35%;x:y');
+  assert(!Dossier.render(invalid).includes('x:y'));
+  const boundary = Dossier.normalizeCharacter(character({imagePosition:'0% 100%'}));
+  assert.equal(boundary.imagePosition, '0% 100%');
+  for (const imagePosition of ['-1% 35%','101% 35%','50% 101%','url(x)','50%']) {
+    safeNormalization(character({imagePosition}), result => assert.notEqual(result.imagePosition, imagePosition));
+  }
 });
 
 test('Chronology supports year, month and day precision and preserves undated ordering', () => {
@@ -165,16 +190,20 @@ test('Forum output contains complete static content and one shared stylesheet', 
   assert.equal((output.match(/<link\b[^>]*rel="stylesheet"/g)||[]).length, 1);
   assert(!/<script\b|pgy-pikeplace|dropboxusercontent|unpkg\.com|bluehour-cosmicmeet/i.test(output));
   assert(output.includes(stylesheet));
+  assert(/class="bh-dossier-v2"/.test(output));
+  assert(!/class="bh-dossier-v1"|\/dossier-v1\.css/.test(output));
   for (const entry of sam.timeline) assert(output.includes(entry.url.replaceAll('&','&amp;')));
   for (const fact of sam.facts) assert(output.includes(Dossier.escapeHtml(fact.value)));
   for (const song of sam.songs) assert(output.includes(Dossier.escapeHtml(song.title)));
   assert(!/\bundefined\b|\bNaN\b/.test(output));
+  const generated = read('sam-forum.txt');
+  assert.equal(generated, output, 'The supplied forum file must match the current renderer and fresh stylesheet');
 });
 
 test('The portable editor bundles all scripts and contains parseable JavaScript', () => {
   const portable = read('atelier.html');
   assert(!/<script\b[^>]*\bsrc=/i.test(portable));
-  assert(!/<link\b[^>]*href="(?:editor|dossier-v1)\.css"/i.test(portable));
+  assert(!/<link\b[^>]*href="(?:editor|dossier-v[12])\.css"/i.test(portable));
   const scripts = Array.from(portable.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi), match=>match[1]);
   assert(scripts.length >= 3);
   scripts.forEach((script,index) => new vm.Script(script, {filename:'atelier-script-'+index+'.js'}));

@@ -12,6 +12,7 @@ var DOSSIER_SEED = {
       "location": "los angeles, ca",
       "writer": "",
       "portrait": "https://b.l3n.co/i/n8q1lD.png",
+      "avatar": "https://c.l3n.co/i/n8qt60.png",
       "accent": "#5b8612",
       "tags": [
         "ANXIOUS HEART",
@@ -304,7 +305,8 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/30/88/04/308804aa9613fcc4632966c03c97aee5.jpg",
-      "accent": "#8a9b91",
+      "avatar": "https://i.pinimg.com/736x/30/88/04/308804aa9613fcc4632966c03c97aee5.jpg",
+      "accent": "#a99b8e",
       "tags": [],
       "facts": [
         {
@@ -347,7 +349,8 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/oMivle.png",
-      "accent": "#8a9b91",
+      "avatar": "https://a.l3n.co/i/oMivle.png",
+      "accent": "#d9804d",
       "tags": [],
       "facts": [
         {
@@ -390,6 +393,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/7xcAhH.png",
+      "avatar": "https://a.l3n.co/i/7xcAhH.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -433,6 +437,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/7GzlJm.png",
+      "avatar": "https://c.l3n.co/i/7GzlJm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -476,6 +481,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/zKIFnb.png",
+      "avatar": "https://c.l3n.co/i/zKIFnb.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -519,6 +525,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/F5Ao85.png",
+      "avatar": "https://c.l3n.co/F5Ao85.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -562,6 +569,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/41/a8/0e/41a80e53e4224f11d5f577c5367b3d4a.jpg",
+      "avatar": "https://i.pinimg.com/736x/41/a8/0e/41a80e53e4224f11d5f577c5367b3d4a.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -605,6 +613,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/ea/43/b5/ea43b5528dc8987e7d2703f0770ae380.jpg",
+      "avatar": "https://i.pinimg.com/564x/ea/43/b5/ea43b5528dc8987e7d2703f0770ae380.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -633,6 +642,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://qph.cf2.quoracdn.net/main-qimg-8d025e9147ed77ac785384e21f161e6a-lq",
+      "avatar": "https://qph.cf2.quoracdn.net/main-qimg-8d025e9147ed77ac785384e21f161e6a-lq",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -661,6 +671,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/Xh1IBT.png",
+      "avatar": "https://d.l3n.co/Xh1IBT.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -689,6 +700,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/oWDI9q.png",
+      "avatar": "https://c.l3n.co/i/oWDI9q.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -732,6 +744,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/5f/65/85/5f6585c61490d9b5315f675a1888fc96.jpg",
+      "avatar": "https://i.pinimg.com/736x/5f/65/85/5f6585c61490d9b5315f675a1888fc96.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -775,6 +788,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/esccbQ.png",
+      "avatar": "https://b.l3n.co/i/esccbQ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -818,6 +832,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/cRyuYm.png",
+      "avatar": "https://d.l3n.co/cRyuYm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -861,6 +876,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/76/d0/85/76d085596ed30eec77ce9cea6662212f.jpg",
+      "avatar": "https://i.pinimg.com/736x/76/d0/85/76d085596ed30eec77ce9cea6662212f.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -904,6 +920,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/oecfUF.png",
+      "avatar": "https://d.l3n.co/i/oecfUF.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -947,6 +964,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/OvvESK.png",
+      "avatar": "https://b.l3n.co/i/OvvESK.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -975,6 +993,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/O0D7nT.png",
+      "avatar": "https://c.l3n.co/i/O0D7nT.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1018,6 +1037,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/YFvKPZ.png",
+      "avatar": "https://a.l3n.co/i/YFvKPZ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1075,6 +1095,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/LMluXK.png",
+      "avatar": "https://a.l3n.co/i/LMluXK.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1118,6 +1139,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/HeRTR5.png",
+      "avatar": "https://b.l3n.co/i/HeRTR5.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1161,6 +1183,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/a0/25/05/a02505313421795866707953c6bf7a0c.jpg",
+      "avatar": "https://i.pinimg.com/564x/a0/25/05/a02505313421795866707953c6bf7a0c.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1204,6 +1227,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/a4/8d/55/a48d55744d37dae8503fd11f42374c82.jpg",
+      "avatar": "https://i.pinimg.com/564x/a4/8d/55/a48d55744d37dae8503fd11f42374c82.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1247,6 +1271,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/Y4O8R0.png",
+      "avatar": "https://a.l3n.co/i/Y4O8R0.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1290,6 +1315,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/Yjn5hC.png",
+      "avatar": "https://b.l3n.co/i/Yjn5hC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1333,6 +1359,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/LTxqBr.png",
+      "avatar": "https://b.l3n.co/i/LTxqBr.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1376,6 +1403,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/2e/7b/a1/2e7ba18ed9661c2831af58231e10ce1a.jpg",
+      "avatar": "https://i.pinimg.com/736x/2e/7b/a1/2e7ba18ed9661c2831af58231e10ce1a.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1404,6 +1432,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/uQEsHq.png",
+      "avatar": "https://a.l3n.co/i/uQEsHq.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1432,6 +1461,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/unk6K2.png",
+      "avatar": "https://a.l3n.co/i/unk6K2.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1475,6 +1505,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/o5jiTQ.png",
+      "avatar": "https://b.l3n.co/i/o5jiTQ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1518,6 +1549,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/98/e4/04/98e404eabd0a4851111235eff2916a3e.jpg",
+      "avatar": "https://i.pinimg.com/736x/98/e4/04/98e404eabd0a4851111235eff2916a3e.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1561,6 +1593,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/MYIJzo.png",
+      "avatar": "https://c.l3n.co/i/MYIJzo.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1604,6 +1637,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/f9/7e/4d/f97e4d5ca8e846efc26f4dd04b95d31b.jpg",
+      "avatar": "https://i.pinimg.com/736x/f9/7e/4d/f97e4d5ca8e846efc26f4dd04b95d31b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1661,6 +1695,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://media.gq-magazine.co.uk/photos/5eb3d896c4c96a22342e8559/1:1/w_1080,h_1080,c_limit/20200506-Andrew-Scott-01.jpg",
+      "avatar": "https://media.gq-magazine.co.uk/photos/5eb3d896c4c96a22342e8559/1:1/w_1080,h_1080,c_limit/20200506-Andrew-Scott-01.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1704,6 +1739,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/91/45/76/914576812827f5fbad87f82711e3f04b.jpg",
+      "avatar": "https://i.pinimg.com/736x/91/45/76/914576812827f5fbad87f82711e3f04b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1747,6 +1783,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/55/21/dd/5521dd7a88f61ce4cbf3ae5aa2af9937.jpg",
+      "avatar": "https://i.pinimg.com/736x/55/21/dd/5521dd7a88f61ce4cbf3ae5aa2af9937.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1775,6 +1812,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/YwcyLe.png",
+      "avatar": "https://b.l3n.co/i/YwcyLe.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1818,6 +1856,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/YoMOu9.png",
+      "avatar": "https://a.l3n.co/i/YoMOu9.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1846,6 +1885,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/M1af7i.png",
+      "avatar": "https://a.l3n.co/i/M1af7i.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1889,6 +1929,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/5b/4e/fa/5b4efac9316f6ffa95a8fe4ccbb49e04.jpg",
+      "avatar": "https://i.pinimg.com/736x/5b/4e/fa/5b4efac9316f6ffa95a8fe4ccbb49e04.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1917,6 +1958,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/cRgCJD.png",
+      "avatar": "https://a.l3n.co/cRgCJD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1945,6 +1987,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/HeivTi.png",
+      "avatar": "https://b.l3n.co/i/HeivTi.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1988,6 +2031,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/9c/de/f1/9cdef122473550bd52ccc2eaa22d0fe2.jpg",
+      "avatar": "https://i.pinimg.com/736x/9c/de/f1/9cdef122473550bd52ccc2eaa22d0fe2.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2031,6 +2075,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/HejHgF.png",
+      "avatar": "https://a.l3n.co/i/HejHgF.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2074,6 +2119,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/Dyb3Jb.png",
+      "avatar": "https://a.l3n.co/i/Dyb3Jb.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2131,6 +2177,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/fadZax.png",
+      "avatar": "https://b.l3n.co/fadZax.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2174,6 +2221,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://raw.githubusercontent.com/lexdoescodingnow/templates/main/forum-posts/characters/assets/everett-tsai.jpg",
+      "avatar": "https://raw.githubusercontent.com/lexdoescodingnow/templates/main/forum-posts/characters/assets/everett-tsai.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2202,6 +2250,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/3kRqhm.jpeg",
+      "avatar": "https://c.l3n.co/i/3kRqhm.jpeg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2245,6 +2294,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/d7/0a/85/d70a8592dfbaa97e19e5b10fd93b4367.jpg",
+      "avatar": "https://i.pinimg.com/1200x/d7/0a/85/d70a8592dfbaa97e19e5b10fd93b4367.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2273,6 +2323,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/fa/68/d7/fa68d76f080d65f6ea5babdd2e6124c5.jpg",
+      "avatar": "https://i.pinimg.com/736x/fa/68/d7/fa68d76f080d65f6ea5babdd2e6124c5.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2316,6 +2367,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/LDlxt0.png",
+      "avatar": "https://b.l3n.co/i/LDlxt0.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2359,6 +2411,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/6e/c4/56/6ec456f533d520a1ba2028ce77587a9e.jpg",
+      "avatar": "https://i.pinimg.com/736x/6e/c4/56/6ec456f533d520a1ba2028ce77587a9e.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2387,6 +2440,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/3dKLvc.jpeg",
+      "avatar": "https://a.l3n.co/i/3dKLvc.jpeg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2430,6 +2484,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/UlhEFv.png",
+      "avatar": "https://c.l3n.co/UlhEFv.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2473,6 +2528,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/oXFmck.png",
+      "avatar": "https://d.l3n.co/i/oXFmck.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2516,6 +2572,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/1a/52/05/1a5205137849892cce2b5912cfbf0725.jpg",
+      "avatar": "https://i.pinimg.com/736x/1a/52/05/1a5205137849892cce2b5912cfbf0725.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2559,6 +2616,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/Fl16Vb.png",
+      "avatar": "https://b.l3n.co/Fl16Vb.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2602,6 +2660,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/72/e0/39/72e0398e8175b66ab429def529f2f9ff.jpg",
+      "avatar": "https://i.pinimg.com/1200x/72/e0/39/72e0398e8175b66ab429def529f2f9ff.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2630,6 +2689,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/Opyi2x.png",
+      "avatar": "https://a.l3n.co/i/Opyi2x.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2673,6 +2733,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/PcjgbZ.png",
+      "avatar": "https://d.l3n.co/PcjgbZ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2701,6 +2762,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/Yh7h1i.png",
+      "avatar": "https://c.l3n.co/i/Yh7h1i.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2744,6 +2806,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/SwHm5o.png",
+      "avatar": "https://c.l3n.co/i/SwHm5o.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2787,6 +2850,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/LBOPCz.png",
+      "avatar": "https://a.l3n.co/i/LBOPCz.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2830,6 +2894,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/fZchP3.png",
+      "avatar": "https://d.l3n.co/fZchP3.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2873,6 +2938,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/SYptS9.png",
+      "avatar": "https://a.l3n.co/i/SYptS9.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2916,6 +2982,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/mXFAdD.png",
+      "avatar": "https://b.l3n.co/i/mXFAdD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2959,6 +3026,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/b4/04/13/b4041368b10b225aedca1d5bba2dcf63.jpg",
+      "avatar": "https://i.pinimg.com/564x/b4/04/13/b4041368b10b225aedca1d5bba2dcf63.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2987,6 +3055,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/89/a3/2f/89a32f0fbc6e555cb5a6f2bb61b229ef.jpg",
+      "avatar": "https://i.pinimg.com/736x/89/a3/2f/89a32f0fbc6e555cb5a6f2bb61b229ef.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3030,6 +3099,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/e54USD.png",
+      "avatar": "https://c.l3n.co/i/e54USD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3073,6 +3143,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/34/ad/32/34ad32ff08153f893da09e4a218e17ab.jpg",
+      "avatar": "https://i.pinimg.com/736x/34/ad/32/34ad32ff08153f893da09e4a218e17ab.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3101,6 +3172,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/70/c6/ac/70c6ac4f1d4de9b0b7e2b7a7d648cc54.jpg",
+      "avatar": "https://i.pinimg.com/736x/70/c6/ac/70c6ac4f1d4de9b0b7e2b7a7d648cc54.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3129,6 +3201,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/X6VGZ1.png",
+      "avatar": "https://a.l3n.co/X6VGZ1.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3172,6 +3245,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/z9UuEC.png",
+      "avatar": "https://c.l3n.co/i/z9UuEC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3200,6 +3274,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/MRE2aP.png",
+      "avatar": "https://b.l3n.co/i/MRE2aP.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3243,6 +3318,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://random.lensdump.com/M5la0Q.gif",
+      "avatar": "https://random.lensdump.com/M5la0Q.gif",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3286,6 +3362,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/10/b7/94/10b794a0898b1a89c64325fa480d592c.jpg",
+      "avatar": "https://i.pinimg.com/736x/10/b7/94/10b794a0898b1a89c64325fa480d592c.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3329,6 +3406,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/S0PsGr.png",
+      "avatar": "https://a.l3n.co/i/S0PsGr.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3372,6 +3450,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/YwXIdm.png",
+      "avatar": "https://b.l3n.co/i/YwXIdm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3415,6 +3494,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/YOIEUC.png",
+      "avatar": "https://c.l3n.co/i/YOIEUC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3458,6 +3538,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/oXP74H.png",
+      "avatar": "https://a.l3n.co/i/oXP74H.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3501,6 +3582,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/cJEguD.png",
+      "avatar": "https://d.l3n.co/cJEguD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3529,6 +3611,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/74/1d/dc/741ddc9337807d50c8f511fb035f92f8.jpg",
+      "avatar": "https://i.pinimg.com/1200x/74/1d/dc/741ddc9337807d50c8f511fb035f92f8.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3557,6 +3640,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/FCXLjb.png",
+      "avatar": "https://a.l3n.co/FCXLjb.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3600,6 +3684,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/1d/0e/a1/1d0ea148b884ea49a4dbf5da7fb350ae.jpg",
+      "avatar": "https://i.pinimg.com/736x/1d/0e/a1/1d0ea148b884ea49a4dbf5da7fb350ae.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3643,6 +3728,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/o7L6Re.png",
+      "avatar": "https://b.l3n.co/i/o7L6Re.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3686,6 +3772,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/53/b3/6b/53b36b16033232d828e5d7972f5886d4.jpg",
+      "avatar": "https://i.pinimg.com/736x/53/b3/6b/53b36b16033232d828e5d7972f5886d4.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3729,6 +3816,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/6d/c3/ff/6dc3ff2ab7933112da9fec0df501fd36.jpg",
+      "avatar": "https://i.pinimg.com/1200x/6d/c3/ff/6dc3ff2ab7933112da9fec0df501fd36.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3757,6 +3845,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/NFwTck.png",
+      "avatar": "https://c.l3n.co/i/NFwTck.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3785,6 +3874,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/oeX0Ac.png",
+      "avatar": "https://d.l3n.co/i/oeX0Ac.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3828,6 +3918,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/Nl3aVr.png",
+      "avatar": "https://a.l3n.co/i/Nl3aVr.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3871,6 +3962,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/XYPH77.png",
+      "avatar": "https://b.l3n.co/XYPH77.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3914,6 +4006,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/Nl46cc.png",
+      "avatar": "https://b.l3n.co/i/Nl46cc.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3957,6 +4050,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/13/74/65/13746566e061ed3ace480439737cabbe.jpg",
+      "avatar": "https://i.pinimg.com/736x/13/74/65/13746566e061ed3ace480439737cabbe.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4000,6 +4094,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/da/64/20/da6420bd84c5542bb021f79f56c690a8.jpg",
+      "avatar": "https://i.pinimg.com/736x/da/64/20/da6420bd84c5542bb021f79f56c690a8.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4043,6 +4138,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/0a/a7/12/0aa712a9aea8aad814df69b628743701.jpg",
+      "avatar": "https://i.pinimg.com/736x/0a/a7/12/0aa712a9aea8aad814df69b628743701.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4086,6 +4182,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/YSyWL9.png",
+      "avatar": "https://c.l3n.co/i/YSyWL9.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4114,6 +4211,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/HZQzfM.png",
+      "avatar": "https://b.l3n.co/i/HZQzfM.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4157,6 +4255,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/OvfLnr.png",
+      "avatar": "https://a.l3n.co/i/OvfLnr.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4200,6 +4299,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/z9cSbq.png",
+      "avatar": "https://b.l3n.co/i/z9cSbq.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4243,6 +4343,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/ffTSpm.png",
+      "avatar": "https://c.l3n.co/ffTSpm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4286,6 +4387,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/8d/f2/59/8df2597c97184cff5d94ffa51a6b70cc.jpg",
+      "avatar": "https://i.pinimg.com/736x/8d/f2/59/8df2597c97184cff5d94ffa51a6b70cc.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4314,6 +4416,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/7uwHZq.png",
+      "avatar": "https://a.l3n.co/i/7uwHZq.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4357,6 +4460,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/oxIY7i.png",
+      "avatar": "https://b.l3n.co/i/oxIY7i.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4400,6 +4504,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/0e/79/e6/0e79e6aa69a88c2408183ad415edf163.jpg",
+      "avatar": "https://i.pinimg.com/564x/0e/79/e6/0e79e6aa69a88c2408183ad415edf163.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4443,6 +4548,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/8e/fe/73/8efe733e1b4dd2fee8453d15d6a1f2c7.jpg",
+      "avatar": "https://i.pinimg.com/736x/8e/fe/73/8efe733e1b4dd2fee8453d15d6a1f2c7.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4471,6 +4577,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/44/80/4b/44804ba92254b89815a9a34eab368da6.jpg",
+      "avatar": "https://i.pinimg.com/736x/44/80/4b/44804ba92254b89815a9a34eab368da6.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4514,6 +4621,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/1d/bb/ec/1dbbec0ca85d2e127382e41242ddc60d.jpg",
+      "avatar": "https://i.pinimg.com/1200x/1d/bb/ec/1dbbec0ca85d2e127382e41242ddc60d.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4557,6 +4665,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/1f/23/e0/1f23e0b206d23e0edbff5202bb29070d.jpg",
+      "avatar": "https://i.pinimg.com/736x/1f/23/e0/1f23e0b206d23e0edbff5202bb29070d.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4585,6 +4694,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/SYSWF2.png",
+      "avatar": "https://a.l3n.co/i/SYSWF2.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4628,6 +4738,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/OBEAZv.png",
+      "avatar": "https://c.l3n.co/i/OBEAZv.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4671,6 +4782,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/zyWc7v.png",
+      "avatar": "https://c.l3n.co/i/zyWc7v.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4714,6 +4826,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/P77SLD.png",
+      "avatar": "https://a.l3n.co/P77SLD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4757,6 +4870,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/n2gpIA.png",
+      "avatar": "https://a.l3n.co/i/n2gpIA.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4800,6 +4914,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/79/47/46/794746b4eafb915e9519f73ee6d0da7a.jpg",
+      "avatar": "https://i.pinimg.com/736x/79/47/46/794746b4eafb915e9519f73ee6d0da7a.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4843,6 +4958,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/8d/56/ac/8d56acb57c3dfc3ef26353fa989d4261.jpg",
+      "avatar": "https://i.pinimg.com/1200x/8d/56/ac/8d56acb57c3dfc3ef26353fa989d4261.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4871,6 +4987,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/82/aa/44/82aa44e10d007c133eab41b0999e6d83.jpg",
+      "avatar": "https://i.pinimg.com/736x/82/aa/44/82aa44e10d007c133eab41b0999e6d83.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4914,6 +5031,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/d9/76/c9/d976c9d909234a93634bff8ca725273c.jpg",
+      "avatar": "https://i.pinimg.com/1200x/d9/76/c9/d976c9d909234a93634bff8ca725273c.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4942,6 +5060,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/Y363B5.png",
+      "avatar": "https://c.l3n.co/i/Y363B5.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4985,6 +5104,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/PDUpG5.png",
+      "avatar": "https://b.l3n.co/PDUpG5.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5013,6 +5133,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/34/6f/c6/346fc6e2b43d9a5bc16f24ad1eca8e7b.jpg",
+      "avatar": "https://i.pinimg.com/736x/34/6f/c6/346fc6e2b43d9a5bc16f24ad1eca8e7b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5056,6 +5177,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/oAAqhm.png",
+      "avatar": "https://a.l3n.co/i/oAAqhm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5099,6 +5221,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/4e/7c/7b/4e7c7b3f3d1a5cfc356fc4fc93373172.jpg",
+      "avatar": "https://i.pinimg.com/736x/4e/7c/7b/4e7c7b3f3d1a5cfc356fc4fc93373172.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5127,6 +5250,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/0a/67/74/0a6774e9ad8d46867eeb885e651b328f.jpg",
+      "avatar": "https://i.pinimg.com/564x/0a/67/74/0a6774e9ad8d46867eeb885e651b328f.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5155,6 +5279,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/zKiMUD.png",
+      "avatar": "https://c.l3n.co/i/zKiMUD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5198,6 +5323,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/0e/9a/b1/0e9ab12e2bc518fe6812cd3cf17f731c.jpg",
+      "avatar": "https://i.pinimg.com/564x/0e/9a/b1/0e9ab12e2bc518fe6812cd3cf17f731c.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5241,6 +5367,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/2c/6b/ce/2c6bce4e9378cab66a9f82ab9f0a3366.jpg",
+      "avatar": "https://i.pinimg.com/564x/2c/6b/ce/2c6bce4e9378cab66a9f82ab9f0a3366.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5269,6 +5396,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/5a/84/c4/5a84c4e31f02c3dce1c57ecbf6f64fd0.jpg",
+      "avatar": "https://i.pinimg.com/736x/5a/84/c4/5a84c4e31f02c3dce1c57ecbf6f64fd0.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5312,6 +5440,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/3d/94/47/3d9447c2f807b34f01ca86075b94ecbe.jpg",
+      "avatar": "https://i.pinimg.com/564x/3d/94/47/3d9447c2f807b34f01ca86075b94ecbe.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5340,6 +5469,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/oLglCZ.png",
+      "avatar": "https://a.l3n.co/i/oLglCZ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5383,6 +5513,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/LmFCym.png",
+      "avatar": "https://c.l3n.co/i/LmFCym.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5426,6 +5557,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/eb/04/bd/eb04bd06db91b8c25d5279e82c0f50f4.jpg",
+      "avatar": "https://i.pinimg.com/736x/eb/04/bd/eb04bd06db91b8c25d5279e82c0f50f4.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5469,6 +5601,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/06/4b/fb/064bfb465ada6d703ef2876707f35116.jpg",
+      "avatar": "https://i.pinimg.com/736x/06/4b/fb/064bfb465ada6d703ef2876707f35116.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5512,6 +5645,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/c9R45Z.png",
+      "avatar": "https://a.l3n.co/c9R45Z.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5555,6 +5689,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/YDI7IK.png",
+      "avatar": "https://c.l3n.co/i/YDI7IK.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5598,6 +5733,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/n6xO5q.png",
+      "avatar": "https://b.l3n.co/i/n6xO5q.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5641,6 +5777,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/7ychtA.png",
+      "avatar": "https://b.l3n.co/i/7ychtA.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5684,6 +5821,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/PTXDHo.png",
+      "avatar": "https://a.l3n.co/PTXDHo.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5712,6 +5850,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/oxIMRm.png",
+      "avatar": "https://d.l3n.co/i/oxIMRm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5755,6 +5894,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/fa/78/3f/fa783fc1c02abbbaffcb2d02fa8b7898.jpg",
+      "avatar": "https://i.pinimg.com/564x/fa/78/3f/fa783fc1c02abbbaffcb2d02fa8b7898.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5798,6 +5938,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/Or7hlH.png",
+      "avatar": "https://b.l3n.co/i/Or7hlH.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5841,6 +5982,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/41/93/fb/4193fbd56bf251b5084d504a39f89422.jpg",
+      "avatar": "https://i.pinimg.com/736x/41/93/fb/4193fbd56bf251b5084d504a39f89422.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5884,6 +6026,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/40/52/81/4052813daa992651ee076b27248b96ca.jpg",
+      "avatar": "https://i.pinimg.com/736x/40/52/81/4052813daa992651ee076b27248b96ca.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5927,6 +6070,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/bgdJIH.png",
+      "avatar": "https://c.l3n.co/bgdJIH.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5970,6 +6114,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/bf/1e/d6/bf1ed60fa5ba3012791722490351d565.jpg",
+      "avatar": "https://i.pinimg.com/736x/bf/1e/d6/bf1ed60fa5ba3012791722490351d565.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5998,6 +6143,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://pbs.twimg.com/media/EXGRtgyWAAEgiN9?format=jpg&name=large",
+      "avatar": "https://pbs.twimg.com/media/EXGRtgyWAAEgiN9?format=jpg&name=large",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6041,6 +6187,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/Mjq8rv.png",
+      "avatar": "https://c.l3n.co/i/Mjq8rv.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6084,6 +6231,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/z9UaXA.png",
+      "avatar": "https://a.l3n.co/i/z9UaXA.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6127,6 +6275,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/ob8upC.png",
+      "avatar": "https://d.l3n.co/i/ob8upC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6170,6 +6319,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/7Gz0YT.png",
+      "avatar": "https://c.l3n.co/i/7Gz0YT.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6213,6 +6363,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/PuOuCq.png",
+      "avatar": "https://d.l3n.co/PuOuCq.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6241,6 +6392,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/PW7qVA.png",
+      "avatar": "https://d.l3n.co/PW7qVA.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6284,6 +6436,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/2e/c1/d4/2ec1d47b4f7e615fb5672c89cd2e999b.jpg",
+      "avatar": "https://i.pinimg.com/736x/2e/c1/d4/2ec1d47b4f7e615fb5672c89cd2e999b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6312,6 +6465,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/HXTBWm.png",
+      "avatar": "https://a.l3n.co/i/HXTBWm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6355,6 +6509,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/ed/f8/3d/edf83d8ba8b068692d236da3b06611be.jpg",
+      "avatar": "https://i.pinimg.com/736x/ed/f8/3d/edf83d8ba8b068692d236da3b06611be.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6398,6 +6553,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/b7vlmP.png",
+      "avatar": "https://b.l3n.co/b7vlmP.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6441,6 +6597,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/0b/03/a8/0b03a85ac00751c8de69a92dc3bd374d.jpg",
+      "avatar": "https://i.pinimg.com/736x/0b/03/a8/0b03a85ac00751c8de69a92dc3bd374d.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6484,6 +6641,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/XYPpyT.png",
+      "avatar": "https://c.l3n.co/XYPpyT.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6527,6 +6685,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/d1/6b/fa/d16bfae9e53538bd91bc27803eb94469.jpg",
+      "avatar": "https://i.pinimg.com/736x/d1/6b/fa/d16bfae9e53538bd91bc27803eb94469.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6570,6 +6729,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/DLw11v.png",
+      "avatar": "https://b.l3n.co/i/DLw11v.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6613,6 +6773,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/3qXoFQ.png",
+      "avatar": "https://a.l3n.co/i/3qXoFQ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6656,6 +6817,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/ME0ufK.png",
+      "avatar": "https://a.l3n.co/i/ME0ufK.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6699,6 +6861,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/f1/a4/b5/f1a4b527b22e1de26c6140264ee1b193.jpg",
+      "avatar": "https://i.pinimg.com/1200x/f1/a4/b5/f1a4b527b22e1de26c6140264ee1b193.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6742,6 +6905,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/09/22/c0/0922c0a2413a974ca6295f4cb14cc4a2.jpg",
+      "avatar": "https://i.pinimg.com/736x/09/22/c0/0922c0a2413a974ca6295f4cb14cc4a2.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6785,6 +6949,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/42/00/1c/42001cb15bbd5a5554b7d99821190458.jpg",
+      "avatar": "https://i.pinimg.com/736x/42/00/1c/42001cb15bbd5a5554b7d99821190458.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6813,6 +6978,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/83/bf/61/83bf61dbc27f61d9bea271ed34f8c78b.jpg",
+      "avatar": "https://i.pinimg.com/736x/83/bf/61/83bf61dbc27f61d9bea271ed34f8c78b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6856,6 +7022,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/YztQm3.png",
+      "avatar": "https://a.l3n.co/i/YztQm3.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6899,6 +7066,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/fa9Kvx.png",
+      "avatar": "https://b.l3n.co/fa9Kvx.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6942,6 +7110,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/44/12/11/441211c999427159251ec83a5518cd58.jpg",
+      "avatar": "https://i.pinimg.com/1200x/44/12/11/441211c999427159251ec83a5518cd58.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6970,6 +7139,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/M0LKQ7.png",
+      "avatar": "https://a.l3n.co/i/M0LKQ7.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7013,6 +7183,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/zy2CYe.png",
+      "avatar": "https://c.l3n.co/i/zy2CYe.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7056,6 +7227,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/fe/2a/cf/fe2acf8c66fd74148d1793888ff17fb6.jpg",
+      "avatar": "https://i.pinimg.com/1200x/fe/2a/cf/fe2acf8c66fd74148d1793888ff17fb6.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7099,6 +7271,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/ed/01/0a/ed010aa4acca888014a377974db138c1.jpg",
+      "avatar": "https://i.pinimg.com/1200x/ed/01/0a/ed010aa4acca888014a377974db138c1.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7142,6 +7315,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/YoWSl5.png",
+      "avatar": "https://a.l3n.co/i/YoWSl5.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7170,6 +7344,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/FuG4IC.png",
+      "avatar": "https://b.l3n.co/FuG4IC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7198,6 +7373,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/e9/2b/ce/e92bce1f1c2b35e314d6684301eb1083.jpg",
+      "avatar": "https://i.pinimg.com/736x/e9/2b/ce/e92bce1f1c2b35e314d6684301eb1083.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7241,6 +7417,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/oMjBqc.png",
+      "avatar": "https://b.l3n.co/i/oMjBqc.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7284,6 +7461,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/7wZIeZ.png",
+      "avatar": "https://a.l3n.co/i/7wZIeZ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7327,6 +7505,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/HHuc5o.png",
+      "avatar": "https://a.l3n.co/i/HHuc5o.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7355,6 +7534,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/79/b0/60/79b06038d7fe35d7e903ebfa609d0034.jpg",
+      "avatar": "https://i.pinimg.com/736x/79/b0/60/79b06038d7fe35d7e903ebfa609d0034.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7398,6 +7578,7 @@ var DOSSIER_SEED = {
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/cvhuX9.png",
+      "avatar": "https://c.l3n.co/cvhuX9.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [

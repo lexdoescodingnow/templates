@@ -102,7 +102,9 @@
       id: slug(raw.id || raw.name || raw.nickname, 'character'), name: text(raw.name, 160), nickname: text(raw.nickname, 160),
       age: text(raw.age, 40), pronouns: text(raw.pronouns, 80), gender: text(raw.gender, 120),
       occupation: text(raw.occupation, 250), location: text(raw.location, 250), writer: text(raw.writer, 120),
-      portrait: safeUrl(raw.portrait), accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
+      portrait: safeUrl(raw.portrait), avatar: safeUrl(raw.avatar),
+      imagePosition: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.imagePosition, 20)) ? text(raw.imagePosition, 20) : '50% 35%',
+      accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
       tags: Array.from(new Set(list(raw.tags, 50).map(function (tag) { return text(tag, 120).replace(/^#+/, '').trim(); }).filter(Boolean))),
       facts: records(raw.facts, 150).map(function (fact) { return { label: text(fact.label, 160), value: text(fact.value, 2000) }; }),
       currentChapter: text(raw.currentChapter, 5000), asOf: text(raw.asOf, 120), notes: text(raw.notes, 15000),
@@ -174,7 +176,7 @@
   }
   function render(raw, options) {
     options = options || {};
-    var c = normalizeCharacter(raw), prefix = 'bd1-' + slug(options.instanceId || c.id, 'character');
+    var c = normalizeCharacter(raw), prefix = 'bd2-' + slug(options.instanceId || c.id, 'character');
     var sectionCounter = 0;
     function heading(title, extra) {
       sectionCounter += 1;
@@ -193,16 +195,20 @@
     var basics = [['Gender', c.gender], ['Occupation', c.occupation], ['Based in', c.location]].filter(function (item) { return item[1]; });
     var name = c.nickname || c.name;
     var meta = [c.age ? c.age + ' years old' : '', c.pronouns].filter(Boolean);
-    var html = '<article class="bh-dossier-v1" style="--bd1-accent:' + c.accent + '">';
+    var html = '<article class="bh-dossier-v2" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
     html += '<header class="bd1-cover" id="' + prefix + '-overview">';
     html += '<div class="bd1-masthead"><span>Character dossier</span>' + (c.writer ? '<span>Written by ' + escapeHtml(c.writer) + '</span>' : '') + '</div>';
     if (c.portrait) html += '<figure class="bd1-hero"><img src="' + escapeHtml(c.portrait) + '" alt="' + escapeHtml(name ? name + ' — character portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer"><span class="bd1-photo-mark" aria-hidden="true">✦</span></figure>';
-    html += '<div class="bd1-identity"><div><span class="bd1-eyebrow">The character archive</span>';
+    html += '<div class="bd1-identity"><div class="bd1-identity-main">';
+    if (c.avatar) html += '<img class="bd1-profile-image" src="' + escapeHtml(c.avatar) + '" alt="' + escapeHtml(name ? name + ' — portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer">';
+    html += '<span class="bd1-eyebrow">Character profile</span>';
     if (name) html += '<h1>' + escapeHtml(name) + '</h1>';
     if (c.nickname && c.name && c.nickname.toLowerCase() !== c.name.toLowerCase()) html += '<div class="bd1-fullname">' + escapeHtml(c.name) + '</div>';
     if (meta.length) html += '<p class="bd1-identity-meta">' + meta.map(escapeHtml).join('<span aria-hidden="true"> / </span>') + '</p>';
     html += '</div>';
     if (c.relationshipStatus || c.occupation || c.location) html += '<div class="bd1-summary">' + (c.relationshipStatus ? '<span class="bd1-status">' + escapeHtml(c.relationshipStatus) + '</span>' : '') + (c.occupation ? '<span>' + escapeHtml(c.occupation) + '</span>' : '') + (c.location ? '<span>' + escapeHtml(c.location) + '</span>' : '') + '</div>';
+    var stats = [[relationships.length, 'Connections', 'connections'], [entries.length, 'Stories', 'story'], [songs.length, 'Songs', 'soundtrack']].filter(function (item) { return item[0]; });
+    if (stats.length) html += '<div class="bd1-stats">' + stats.map(function (item) { return '<a href="#' + prefix + '-' + item[2] + '"><span>' + item[0] + '</span><small>' + item[1] + '</small></a>'; }).join('') + '</div>';
     html += '</div></header>';
     var nav = [['overview', 'Overview']];
     if (pinned.length) nav.push(['people', 'Inner circle']);
@@ -220,7 +226,7 @@
       html += '</section>';
     }
     if (pinned.length) {
-      html += '<section class="bd1-section" id="' + prefix + '-people">' + heading('The inner circle') + '<div class="bd1-pinned">';
+      html += '<section class="bd1-section bd1-people-panel" id="' + prefix + '-people">' + heading('The inner circle') + '<div class="bd1-pinned">';
       pinned.forEach(function (r, index) {
         html += '<a class="bd1-person" href="#' + prefix + '-connection-' + r.id + '"><span class="bd1-person-number">0' + (index + 1) + '</span>';
         if (r.portrait) html += '<img src="' + escapeHtml(r.portrait) + '" alt="" loading="lazy" referrerpolicy="no-referrer">';
@@ -229,7 +235,7 @@
       html += '</div></section>';
     }
     if (relationships.length) {
-      html += '<section class="bd1-section" id="' + prefix + '-connections">' + heading(hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections & flavour') + '<div class="bd1-connections">';
+      html += '<section class="bd1-section bd1-connections-panel" id="' + prefix + '-connections">' + heading(hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections & flavour') + '<div class="bd1-connections">';
       relationships.forEach(function (r) {
         var linked = entries.filter(function (entry) { return entry.connectionIds.indexOf(r.id) !== -1; });
         html += '<article class="bd1-connection' + (r.featured ? ' bd1-featured' : '') + '" id="' + prefix + '-connection-' + r.id + '"><div class="bd1-connection-head">';
@@ -247,7 +253,7 @@
       html += '</div></section>';
     }
     if (entries.length) {
-      html += '<section class="bd1-section" id="' + prefix + '-story">' + heading('The story so far', entries.length + (entries.length === 1 ? ' entry' : ' entries'));
+      html += '<section class="bd1-section bd1-story-panel" id="' + prefix + '-story">' + heading('The story so far', entries.length + (entries.length === 1 ? ' entry' : ' entries'));
       var currentYear = null;
       entries.forEach(function (entry) {
         var year = entry.date ? entry.date.slice(0, 4) : 'Undated';
@@ -270,11 +276,11 @@
       html += '</ol></div></section>';
     }
     if (songs.length || c.playlistUrl) {
-      html += '<section class="bd1-section" id="' + prefix + '-soundtrack">' + heading('On repeat', songs.length ? songs.length + (songs.length === 1 ? ' song' : ' songs') : '');
+      html += '<section class="bd1-section bd1-soundtrack-panel" id="' + prefix + '-soundtrack">' + heading('On repeat', songs.length ? songs.length + (songs.length === 1 ? ' song' : ' songs') : '');
       if (c.playlistUrl) html += '<div class="bd1-main-playlist">' + player(c.playlistUrl, name ? name + ' — playlist' : 'Character playlist') + '</div>';
       if (songs.length) html += '<div class="bd1-songs">' + songs.map(function (song, index) {
         var label = song.title || song.artist || 'Listen';
-        return '<details class="bd1-song"' + (index < 3 ? ' open' : '') + '><summary><span class="bd1-song-number">' + String(index + 1).padStart(2, '0') + '</span><span><span class="bd1-song-title">' + escapeHtml(label) + '</span>' + (song.artist && song.artist !== label ? '<span class="bd1-song-artist">' + escapeHtml(song.artist) + '</span>' : '') + '</span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body">' + paragraphs(song.note, 'bd1-song-note') + player(song.url, label) + '</div></details>';
+        return '<details class="bd1-song"' + (index === 0 ? ' open' : '') + '><summary><span class="bd1-song-number">' + String(index + 1).padStart(2, '0') + '</span><span><span class="bd1-song-title">' + escapeHtml(label) + '</span>' + (song.artist && song.artist !== label ? '<span class="bd1-song-artist">' + escapeHtml(song.artist) + '</span>' : '') + '</span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body">' + paragraphs(song.note, 'bd1-song-note') + player(song.url, label) + '</div></details>';
       }).join('') + '</div>';
       html += '</section>';
     }

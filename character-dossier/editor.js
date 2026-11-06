@@ -2,7 +2,8 @@
   'use strict';
   const STORAGE_KEY = 'bluehour.character-atelier.library.v1';
   const SETTINGS_KEY = 'bluehour.character-atelier.settings.v1';
-  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css';
+  const PREVIOUS_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css';
+  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css';
   const $ = id => document.getElementById(id);
   const clone = value => JSON.parse(JSON.stringify(value));
   let fieldCounter = 0;
@@ -18,7 +19,8 @@
   let lastStoredLibrary = null;
   let externalChange = false;
   const LIST_LIMITS = { facts: 150, relationships: 200, timeline: 1500, songs: 200 };
-  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
+  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, imagePosition: 30, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
+  const COLOUR_PALETTE = [['Fern', '#5b8612'], ['Sand', '#a99b8e'], ['Apricot', '#d9804d'], ['Blue', '#5187b5'], ['Rose', '#b9768c']];
 
   function uid(prefix) {
     return prefix + '-' + (globalThis.crypto && crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 9));
@@ -89,6 +91,12 @@
   function normalizeDraftDataset(raw) {
     const prepared = clone(raw);
     const characters = prepared && Array.isArray(prepared.characters) ? prepared.characters : prepared && (Object.hasOwn(prepared, 'name') || Object.hasOwn(prepared, 'id')) ? [prepared] : [];
+    const starters = new Map((Array.isArray(globalThis.DOSSIER_SEED?.characters) ? globalThis.DOSSIER_SEED.characters : []).map(character => [character.id, character]));
+    characters.forEach(character => {
+      if (!character || typeof character !== 'object' || Array.isArray(character) || Object.hasOwn(character, 'avatar')) return;
+      const starter = starters.get(character.id);
+      if (starter && typeof starter.avatar === 'string') character.avatar = starter.avatar;
+    });
     const dates = characters.map(character => {
       if (character && typeof character === 'object') Object.entries(LIST_LIMITS).forEach(([key, limit]) => {
         if (Array.isArray(character[key]) && character[key].length > limit) throw new Error('A character can contain up to ' + limit + ' ' + key + ' records.');
@@ -116,6 +124,7 @@
         settings.theme = savedSettings.theme === 'light' ? 'light' : 'dark';
         settings.narrow = savedSettings.narrow === true;
         settings.stylesheetUrl = typeof savedSettings.stylesheetUrl === 'string' ? savedSettings.stylesheetUrl : DEFAULT_STYLESHEET;
+        if (settings.stylesheetUrl === PREVIOUS_STYLESHEET) settings.stylesheetUrl = DEFAULT_STYLESHEET;
       }
       const saved = localStorage.getItem(STORAGE_KEY);
       lastStoredLibrary = saved;
@@ -189,6 +198,63 @@
   }
   function help(text) { return node('p', { className: 'field-help', text }); }
   function grid() { return node('div', { className: 'form-grid' }, [...arguments]); }
+  function fullHex(value) {
+    if (/^#[0-9a-f]{6}$/i.test(value || '')) return value.toLowerCase();
+    if (/^#[0-9a-f]{3}$/i.test(value || '')) return '#' + value.slice(1).split('').map(letter => letter + letter).join('').toLowerCase();
+    return '';
+  }
+  function updateChromeColour() {
+    const colour = fullHex(current().accent);
+    if (colour) document.documentElement.style.setProperty('--character-colour', colour);
+  }
+  function colourFields(character) {
+    const wrapper = node('fieldset', { className: 'colour-fieldset' }, node('legend', { text: 'Character colour' }));
+    const picker = node('input', { type: 'color', 'aria-label': 'Choose character colour', 'data-field': 'accent-picker' });
+    const swatches = node('div', { className: 'colour-swatches', role: 'group', 'aria-label': 'Character colour palette' });
+    let hexInput;
+    function syncColour() {
+      const hex = fullHex(character.accent);
+      if (hex) picker.value = hex;
+      swatches.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.colour === hex)));
+      updateChromeColour();
+    }
+    function chooseColour(value) {
+      character.accent = value; hexInput.value = value; syncColour(); changed();
+    }
+    const hex = field('Hex colour', character, 'accent', { placeholder: '#5b8612', maxLength: 7, onChange: syncColour });
+    hexInput = hex.querySelector('input');
+    picker.value = fullHex(character.accent) || '#5b8612';
+    picker.addEventListener('input', () => chooseColour(picker.value));
+    wrapper.append(node('div', { className: 'colour-controls' }, [picker, hex]), help('Sets the colour of this character’s panels, tags and highlights. Match it to their photos.'));
+    COLOUR_PALETTE.forEach(([name, value]) => {
+      const button = node('button', { type: 'button', className: 'colour-swatch', 'data-colour': value, 'aria-label': name + ' ' + value, 'aria-pressed': 'false', onclick: () => chooseColour(value) }, [node('span', { className: 'colour-swatch-dot', 'aria-hidden': 'true' }), node('span', { text: name })]);
+      button.style.setProperty('--swatch', value); swatches.append(button);
+    });
+    wrapper.append(swatches); syncColour();
+    return wrapper;
+  }
+  function cropField(character) {
+    const wrapper = node('label', { className: 'form-field' }, 'Header crop');
+    const select = node('select', { 'data-field': 'imagePosition' });
+    const crops = [['50% 20%', 'Higher'], ['50% 35%', 'Portrait focus'], ['50% 50%', 'Centre'], ['50% 80%', 'Lower']];
+    const currentValue = character.imagePosition || '50% 35%';
+    if (!crops.some(([value]) => value === currentValue)) crops.push([currentValue, 'Custom position']);
+    crops.forEach(([value, text]) => select.append(node('option', { value, text })));
+    select.value = currentValue;
+    select.addEventListener('change', () => { character.imagePosition = select.value; changed(); });
+    wrapper.append(select); return wrapper;
+  }
+  function starterAppearance(character) {
+    const starter = globalThis.DOSSIER_SEED && globalThis.DOSSIER_SEED.characters.find(item => item.id === character.id);
+    if (!starter) return node('span');
+    return node('div', { className: 'starter-appearance' }, [node('button', { type: 'button', className: 'button-quiet', text: 'Use starter appearance', onclick: () => {
+      character.portrait = starter.portrait || '';
+      character.avatar = starter.avatar || '';
+      character.accent = starter.accent || '#a99b8e';
+      changed(); renderForm(); updatePreview();
+      message('Starter photos and colour restored for ' + labelFor(character) + '.');
+    } }), help('Restore this character’s starter photos and colour.')]);
+  }
   function section(id, number, title) {
     const element = node('details', { className: 'editor-section', 'data-section': id }); element.open = openSections.has(id);
     element.append(node('summary', {}, [node('span', { className: 'section-number', text: number }), node('span', { text: title }), node('span', { className: 'section-chevron', 'aria-hidden': 'true', text: '＋' })]));
@@ -237,7 +303,7 @@
     const character = current();
     $('character-form').replaceChildren(); renderNotices();
     let body = section('identity', '01', 'Identity & atmosphere');
-    body.append(field('Full name', character, 'name', { picker: true }), grid(field('Preferred name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Gender', character, 'gender'), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }), field('Header photograph', character, 'portrait', { type: 'url', placeholder: 'https://…' }), field('Character accent colour', character, 'accent', { placeholder: '#789348', maxLength: 7, help: 'A small personal accent alongside the forum group colours.' }), field('Personality tags', character, 'tags', { array: true, multiline: true, rows: 3, help: 'One tag per line. Empty tags are omitted.' }));
+    body.append(field('Full name', character, 'name', { picker: true }), grid(field('Preferred name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Gender', character, 'gender'), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }), field('Header photograph', character, 'portrait', { type: 'url', placeholder: 'https://…' }), cropField(character), field('Portrait / PI image', character, 'avatar', { type: 'url', placeholder: 'https://…', help: 'An optional separate portrait for the identity panel.' }), colourFields(character), starterAppearance(character), field('Personality tags', character, 'tags', { array: true, multiline: true, rows: 3, help: 'One tag per line. Empty tags are omitted.' }));
     body = section('facts', '02', 'The encyclopaedia');
     body.append(help('Keep the established facts here: birthday, languages, favourites, and all their small details.'));
     repeater(body, 'facts', 'Fact', item => item.label, () => ({ label: '', value: '' }), (row, item, title) => row.append(field('Fact label', item, 'label', { onChange: title }), field('Value', item, 'value', { multiline: true, rows: 2 })));
@@ -290,9 +356,9 @@
       if (character.tags.some(tag => tag.length > 120)) throw new Error('Keep each personality tag to 120 characters or fewer. Your full draft is kept until you shorten it.');
       const rendered = Dossier.render(character, { includeStylesheet: false });
       generatedCode = Dossier.forum(character, stylesheetUrl());
-      const localCss = new URL('dossier-v1.css', document.baseURI).href;
+      const localCss = new URL('dossier-v2.css', document.baseURI).href;
       const css = typeof globalThis.DOSSIER_PREVIEW_CSS === 'string' ? '<style>' + globalThis.DOSSIER_PREVIEW_CSS.replace(/<\/style/gi, '<\\/style') + '</style>' : '<link rel="stylesheet" href="' + Dossier.escapeHtml(localCss) + '">';
-      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v1{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
+      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v2{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
       $('dossier-preview').srcdoc = doc;
       $('preview-error').hidden = true;
       $('forum-code').value = generatedCode;

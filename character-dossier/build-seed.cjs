@@ -27,13 +27,14 @@ function parseCharacter(record) {
   const pronouns = capture(description, /years old\s*⋄\s*([^⋄]+)⋄/, 'pronouns');
   const occupation = plain(capture(description, /years old\s*⋄\s*[^⋄]+⋄\s*([\s\S]*?)(?:\s*⋄\s*♡|\s*⸺\s*looks like)/, 'occupation'));
   const faceclaim = plain(capture(description, /looks like\s*\[i\]([\s\S]*?)\[\/i\]/, 'face claim'));
+  const portrait = capture(record.code, /\[PI=([^\]]+)\]/, 'portrait');
   const partnerSection = description.match(/♡\s*(married to|engaged to|in a relationship with)\s*([\s\S]*?)\s*♡/);
   const partnerStatus = partnerSection ? ({'married to':'Married', 'engaged to':'Engaged', 'in a relationship with':'In a relationship'})[partnerSection[1]] : '';
   const relationships = partnerSection ? Array.from(partnerSection[2].matchAll(/\[b\]([\s\S]*?)\[\/b\]/g), item => relationship({id:slug(item[1]), name:plain(item[1]), kind:'Partner', status:partnerStatus, featured:true})) : [];
   if (partnerSection) assert(relationships.length, 'Unparsed relationship for ' + record.name);
   return {
     id:slug(record.name), name:record.name, nickname, age, pronouns, gender:'', occupation,
-    location:'', writer:'', portrait:capture(record.code, /\[PI=([^\]]+)\]/, 'portrait'), accent:'#8a9b91', tags:[],
+    location:'', writer:'', portrait, avatar:portrait, accent:'#8a9b91', tags:[],
     facts:[{label:'Face claim', value:faceclaim}], currentChapter:'', asOf:'', notes:'',
     relationshipStatus:partnerStatus, relationships, timeline:[], songs:[], playlistUrl:''
   };
@@ -64,8 +65,10 @@ for (const record of characters) {
 
 const sam = byName.get('baek samuel');
 assert(sam && sam.age === '25', 'Sam should use the user-confirmed current directory age of 25.');
+byName.get('ben dam').accent = '#a99b8e';
+byName.get('cookie chalongrat vihokratana').accent = '#d9804d';
 Object.assign(sam, {
-  gender:'cisgender male', location:'los angeles, ca', portrait:'https://b.l3n.co/i/n8q1lD.png', accent:'#5b8612',
+  gender:'cisgender male', location:'los angeles, ca', portrait:'https://b.l3n.co/i/n8q1lD.png', avatar:'https://c.l3n.co/i/n8qt60.png', accent:'#5b8612',
   relationshipStatus:'In a relationship',
   tags:['ANXIOUS HEART', 'BRAVER THAN HE THINKS', 'DEEPLY ATTACHED', 'EMOTIONALLY TUNED', 'GENTLE HUMOUR', 'OVERTHINKER', 'QUIET LOYALTY', 'ROUTINE COMFORT', 'SAFETY SEEKER', 'SOFT-SPOKEN'],
   facts:[

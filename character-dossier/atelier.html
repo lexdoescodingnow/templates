@@ -12,6 +12,21 @@
 @media(max-width:760px){.atelier-header{height:74px}.atelier-intro{padding:32px 0 26px;align-items:flex-start;flex-direction:column;gap:20px}.intro-status{max-width:none}.intro-status small{display:inline;margin-left:8px;padding:0}.intro-status small br{display:none}.atelier-workspace{grid-template-columns:1fr}.edit-panel{order:0}.preview-panel{order:1}.character-controls{display:grid;grid-template-columns:1fr 1fr;width:100%}.character-controls input,.character-controls select{width:100%}.character-controls input{grid-column:1/-1}.character-controls select{grid-column:1/-1}.export-controls{width:100%}.export-controls button{flex:1}.atelier-toolbar{gap:10px}.atelier-header-label{display:none}.preview-canvas{padding:14px 8px}.atelier-footer{flex-direction:column;gap:7px}.atelier-brand{font-size:11px}.source-notices{font-size:12px}.field-help{font-size:12px}.form-field{font-size:11px}.editor-section>summary{font-size:14px}.panel-heading,.preview-heading{margin-top:8px}.feedback{min-height:0}.preview-heading{margin-top:24px}.intro-copy{max-width:300px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 @media(min-width:761px) and (max-width:1000px){.atelier-workspace{grid-template-columns:1fr}.edit-panel{max-width:none}.preview-panel{min-width:0}.preview-canvas{padding:28px 20px}.preview-heading{margin-top:24px}.section-body{max-width:640px}.panel-heading{margin-bottom:12px}}
+:root{--character-colour:#5b8612;--accent:color-mix(in srgb,var(--character-colour) 48%,#eef4e4)}
+h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.055em}
+.atelier-mark{color:var(--accent)}
+.preview-canvas{border-top:3px solid var(--character-colour);border-radius:10px}
+.button-primary:hover{background:color-mix(in srgb,var(--accent) 80%,white);border-color:color-mix(in srgb,var(--accent) 80%,white)}
+.colour-fieldset{min-width:0;border:1px solid var(--line);border-radius:8px;padding:15px 13px;margin:6px 0 14px;background:color-mix(in srgb,var(--character-colour) 5%,var(--surface))}
+.colour-fieldset legend{font-size:11px;font-weight:600;color:#d4dbde;padding:0 7px}
+.colour-controls{display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:end;margin-bottom:10px}
+.colour-controls .form-field{margin:0}.colour-controls input[type=color]{height:40px;cursor:pointer;padding:4px;border-radius:6px}
+.colour-controls input[type=color]::-webkit-color-swatch-wrapper{padding:1px}.colour-controls input[type=color]::-webkit-color-swatch{border:0;border-radius:3px}
+.colour-swatches{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.colour-swatch{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:8px 3px;font-size:9px;min-width:0;background:transparent;border-color:transparent;border-radius:6px}
+.colour-swatch:hover{background:#ffffff08;border-color:#596368}.colour-swatch[aria-pressed=true]{border-color:var(--swatch);background:color-mix(in srgb,var(--swatch) 12%,var(--surface))}
+.colour-swatch-dot{width:20px;height:20px;border-radius:50%;background:var(--swatch);box-shadow:inset 0 0 0 1px #ffffff1a}
+.starter-appearance{margin:0 0 18px}.starter-appearance .button-quiet{border:1px solid var(--line);font-size:11px;padding:9px 11px}.starter-appearance .field-help{font-size:10px;margin:7px 0 0}
 </style>
 </head>
 <body>
@@ -73,6 +88,7 @@
       "location": "los angeles, ca",
       "writer": "",
       "portrait": "https://b.l3n.co/i/n8q1lD.png",
+      "avatar": "https://c.l3n.co/i/n8qt60.png",
       "accent": "#5b8612",
       "tags": [
         "ANXIOUS HEART",
@@ -365,7 +381,8 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/30/88/04/308804aa9613fcc4632966c03c97aee5.jpg",
-      "accent": "#8a9b91",
+      "avatar": "https://i.pinimg.com/736x/30/88/04/308804aa9613fcc4632966c03c97aee5.jpg",
+      "accent": "#a99b8e",
       "tags": [],
       "facts": [
         {
@@ -408,7 +425,8 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/oMivle.png",
-      "accent": "#8a9b91",
+      "avatar": "https://a.l3n.co/i/oMivle.png",
+      "accent": "#d9804d",
       "tags": [],
       "facts": [
         {
@@ -451,6 +469,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/7xcAhH.png",
+      "avatar": "https://a.l3n.co/i/7xcAhH.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -494,6 +513,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/7GzlJm.png",
+      "avatar": "https://c.l3n.co/i/7GzlJm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -537,6 +557,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/zKIFnb.png",
+      "avatar": "https://c.l3n.co/i/zKIFnb.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -580,6 +601,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/F5Ao85.png",
+      "avatar": "https://c.l3n.co/F5Ao85.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -623,6 +645,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/41/a8/0e/41a80e53e4224f11d5f577c5367b3d4a.jpg",
+      "avatar": "https://i.pinimg.com/736x/41/a8/0e/41a80e53e4224f11d5f577c5367b3d4a.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -666,6 +689,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/ea/43/b5/ea43b5528dc8987e7d2703f0770ae380.jpg",
+      "avatar": "https://i.pinimg.com/564x/ea/43/b5/ea43b5528dc8987e7d2703f0770ae380.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -694,6 +718,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://qph.cf2.quoracdn.net/main-qimg-8d025e9147ed77ac785384e21f161e6a-lq",
+      "avatar": "https://qph.cf2.quoracdn.net/main-qimg-8d025e9147ed77ac785384e21f161e6a-lq",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -722,6 +747,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/Xh1IBT.png",
+      "avatar": "https://d.l3n.co/Xh1IBT.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -750,6 +776,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/oWDI9q.png",
+      "avatar": "https://c.l3n.co/i/oWDI9q.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -793,6 +820,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/5f/65/85/5f6585c61490d9b5315f675a1888fc96.jpg",
+      "avatar": "https://i.pinimg.com/736x/5f/65/85/5f6585c61490d9b5315f675a1888fc96.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -836,6 +864,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/esccbQ.png",
+      "avatar": "https://b.l3n.co/i/esccbQ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -879,6 +908,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/cRyuYm.png",
+      "avatar": "https://d.l3n.co/cRyuYm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -922,6 +952,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/76/d0/85/76d085596ed30eec77ce9cea6662212f.jpg",
+      "avatar": "https://i.pinimg.com/736x/76/d0/85/76d085596ed30eec77ce9cea6662212f.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -965,6 +996,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/oecfUF.png",
+      "avatar": "https://d.l3n.co/i/oecfUF.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1008,6 +1040,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/OvvESK.png",
+      "avatar": "https://b.l3n.co/i/OvvESK.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1036,6 +1069,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/O0D7nT.png",
+      "avatar": "https://c.l3n.co/i/O0D7nT.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1079,6 +1113,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/YFvKPZ.png",
+      "avatar": "https://a.l3n.co/i/YFvKPZ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1136,6 +1171,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/LMluXK.png",
+      "avatar": "https://a.l3n.co/i/LMluXK.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1179,6 +1215,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/HeRTR5.png",
+      "avatar": "https://b.l3n.co/i/HeRTR5.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1222,6 +1259,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/a0/25/05/a02505313421795866707953c6bf7a0c.jpg",
+      "avatar": "https://i.pinimg.com/564x/a0/25/05/a02505313421795866707953c6bf7a0c.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1265,6 +1303,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/a4/8d/55/a48d55744d37dae8503fd11f42374c82.jpg",
+      "avatar": "https://i.pinimg.com/564x/a4/8d/55/a48d55744d37dae8503fd11f42374c82.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1308,6 +1347,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/Y4O8R0.png",
+      "avatar": "https://a.l3n.co/i/Y4O8R0.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1351,6 +1391,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/Yjn5hC.png",
+      "avatar": "https://b.l3n.co/i/Yjn5hC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1394,6 +1435,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/LTxqBr.png",
+      "avatar": "https://b.l3n.co/i/LTxqBr.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1437,6 +1479,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/2e/7b/a1/2e7ba18ed9661c2831af58231e10ce1a.jpg",
+      "avatar": "https://i.pinimg.com/736x/2e/7b/a1/2e7ba18ed9661c2831af58231e10ce1a.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1465,6 +1508,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/uQEsHq.png",
+      "avatar": "https://a.l3n.co/i/uQEsHq.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1493,6 +1537,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/unk6K2.png",
+      "avatar": "https://a.l3n.co/i/unk6K2.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1536,6 +1581,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/o5jiTQ.png",
+      "avatar": "https://b.l3n.co/i/o5jiTQ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1579,6 +1625,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/98/e4/04/98e404eabd0a4851111235eff2916a3e.jpg",
+      "avatar": "https://i.pinimg.com/736x/98/e4/04/98e404eabd0a4851111235eff2916a3e.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1622,6 +1669,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/MYIJzo.png",
+      "avatar": "https://c.l3n.co/i/MYIJzo.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1665,6 +1713,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/f9/7e/4d/f97e4d5ca8e846efc26f4dd04b95d31b.jpg",
+      "avatar": "https://i.pinimg.com/736x/f9/7e/4d/f97e4d5ca8e846efc26f4dd04b95d31b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1722,6 +1771,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://media.gq-magazine.co.uk/photos/5eb3d896c4c96a22342e8559/1:1/w_1080,h_1080,c_limit/20200506-Andrew-Scott-01.jpg",
+      "avatar": "https://media.gq-magazine.co.uk/photos/5eb3d896c4c96a22342e8559/1:1/w_1080,h_1080,c_limit/20200506-Andrew-Scott-01.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1765,6 +1815,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/91/45/76/914576812827f5fbad87f82711e3f04b.jpg",
+      "avatar": "https://i.pinimg.com/736x/91/45/76/914576812827f5fbad87f82711e3f04b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1808,6 +1859,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/55/21/dd/5521dd7a88f61ce4cbf3ae5aa2af9937.jpg",
+      "avatar": "https://i.pinimg.com/736x/55/21/dd/5521dd7a88f61ce4cbf3ae5aa2af9937.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1836,6 +1888,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/YwcyLe.png",
+      "avatar": "https://b.l3n.co/i/YwcyLe.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1879,6 +1932,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/YoMOu9.png",
+      "avatar": "https://a.l3n.co/i/YoMOu9.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1907,6 +1961,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/M1af7i.png",
+      "avatar": "https://a.l3n.co/i/M1af7i.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1950,6 +2005,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/5b/4e/fa/5b4efac9316f6ffa95a8fe4ccbb49e04.jpg",
+      "avatar": "https://i.pinimg.com/736x/5b/4e/fa/5b4efac9316f6ffa95a8fe4ccbb49e04.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -1978,6 +2034,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/cRgCJD.png",
+      "avatar": "https://a.l3n.co/cRgCJD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2006,6 +2063,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/HeivTi.png",
+      "avatar": "https://b.l3n.co/i/HeivTi.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2049,6 +2107,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/9c/de/f1/9cdef122473550bd52ccc2eaa22d0fe2.jpg",
+      "avatar": "https://i.pinimg.com/736x/9c/de/f1/9cdef122473550bd52ccc2eaa22d0fe2.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2092,6 +2151,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/HejHgF.png",
+      "avatar": "https://a.l3n.co/i/HejHgF.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2135,6 +2195,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/Dyb3Jb.png",
+      "avatar": "https://a.l3n.co/i/Dyb3Jb.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2192,6 +2253,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/fadZax.png",
+      "avatar": "https://b.l3n.co/fadZax.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2235,6 +2297,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://raw.githubusercontent.com/lexdoescodingnow/templates/main/forum-posts/characters/assets/everett-tsai.jpg",
+      "avatar": "https://raw.githubusercontent.com/lexdoescodingnow/templates/main/forum-posts/characters/assets/everett-tsai.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2263,6 +2326,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/3kRqhm.jpeg",
+      "avatar": "https://c.l3n.co/i/3kRqhm.jpeg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2306,6 +2370,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/d7/0a/85/d70a8592dfbaa97e19e5b10fd93b4367.jpg",
+      "avatar": "https://i.pinimg.com/1200x/d7/0a/85/d70a8592dfbaa97e19e5b10fd93b4367.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2334,6 +2399,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/fa/68/d7/fa68d76f080d65f6ea5babdd2e6124c5.jpg",
+      "avatar": "https://i.pinimg.com/736x/fa/68/d7/fa68d76f080d65f6ea5babdd2e6124c5.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2377,6 +2443,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/LDlxt0.png",
+      "avatar": "https://b.l3n.co/i/LDlxt0.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2420,6 +2487,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/6e/c4/56/6ec456f533d520a1ba2028ce77587a9e.jpg",
+      "avatar": "https://i.pinimg.com/736x/6e/c4/56/6ec456f533d520a1ba2028ce77587a9e.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2448,6 +2516,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/3dKLvc.jpeg",
+      "avatar": "https://a.l3n.co/i/3dKLvc.jpeg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2491,6 +2560,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/UlhEFv.png",
+      "avatar": "https://c.l3n.co/UlhEFv.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2534,6 +2604,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/oXFmck.png",
+      "avatar": "https://d.l3n.co/i/oXFmck.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2577,6 +2648,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/1a/52/05/1a5205137849892cce2b5912cfbf0725.jpg",
+      "avatar": "https://i.pinimg.com/736x/1a/52/05/1a5205137849892cce2b5912cfbf0725.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2620,6 +2692,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/Fl16Vb.png",
+      "avatar": "https://b.l3n.co/Fl16Vb.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2663,6 +2736,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/72/e0/39/72e0398e8175b66ab429def529f2f9ff.jpg",
+      "avatar": "https://i.pinimg.com/1200x/72/e0/39/72e0398e8175b66ab429def529f2f9ff.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2691,6 +2765,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/Opyi2x.png",
+      "avatar": "https://a.l3n.co/i/Opyi2x.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2734,6 +2809,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/PcjgbZ.png",
+      "avatar": "https://d.l3n.co/PcjgbZ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2762,6 +2838,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/Yh7h1i.png",
+      "avatar": "https://c.l3n.co/i/Yh7h1i.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2805,6 +2882,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/SwHm5o.png",
+      "avatar": "https://c.l3n.co/i/SwHm5o.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2848,6 +2926,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/LBOPCz.png",
+      "avatar": "https://a.l3n.co/i/LBOPCz.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2891,6 +2970,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/fZchP3.png",
+      "avatar": "https://d.l3n.co/fZchP3.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2934,6 +3014,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/SYptS9.png",
+      "avatar": "https://a.l3n.co/i/SYptS9.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -2977,6 +3058,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/mXFAdD.png",
+      "avatar": "https://b.l3n.co/i/mXFAdD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3020,6 +3102,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/b4/04/13/b4041368b10b225aedca1d5bba2dcf63.jpg",
+      "avatar": "https://i.pinimg.com/564x/b4/04/13/b4041368b10b225aedca1d5bba2dcf63.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3048,6 +3131,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/89/a3/2f/89a32f0fbc6e555cb5a6f2bb61b229ef.jpg",
+      "avatar": "https://i.pinimg.com/736x/89/a3/2f/89a32f0fbc6e555cb5a6f2bb61b229ef.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3091,6 +3175,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/e54USD.png",
+      "avatar": "https://c.l3n.co/i/e54USD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3134,6 +3219,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/34/ad/32/34ad32ff08153f893da09e4a218e17ab.jpg",
+      "avatar": "https://i.pinimg.com/736x/34/ad/32/34ad32ff08153f893da09e4a218e17ab.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3162,6 +3248,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/70/c6/ac/70c6ac4f1d4de9b0b7e2b7a7d648cc54.jpg",
+      "avatar": "https://i.pinimg.com/736x/70/c6/ac/70c6ac4f1d4de9b0b7e2b7a7d648cc54.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3190,6 +3277,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/X6VGZ1.png",
+      "avatar": "https://a.l3n.co/X6VGZ1.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3233,6 +3321,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/z9UuEC.png",
+      "avatar": "https://c.l3n.co/i/z9UuEC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3261,6 +3350,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/MRE2aP.png",
+      "avatar": "https://b.l3n.co/i/MRE2aP.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3304,6 +3394,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://random.lensdump.com/M5la0Q.gif",
+      "avatar": "https://random.lensdump.com/M5la0Q.gif",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3347,6 +3438,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/10/b7/94/10b794a0898b1a89c64325fa480d592c.jpg",
+      "avatar": "https://i.pinimg.com/736x/10/b7/94/10b794a0898b1a89c64325fa480d592c.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3390,6 +3482,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/S0PsGr.png",
+      "avatar": "https://a.l3n.co/i/S0PsGr.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3433,6 +3526,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/YwXIdm.png",
+      "avatar": "https://b.l3n.co/i/YwXIdm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3476,6 +3570,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/YOIEUC.png",
+      "avatar": "https://c.l3n.co/i/YOIEUC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3519,6 +3614,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/oXP74H.png",
+      "avatar": "https://a.l3n.co/i/oXP74H.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3562,6 +3658,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/cJEguD.png",
+      "avatar": "https://d.l3n.co/cJEguD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3590,6 +3687,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/74/1d/dc/741ddc9337807d50c8f511fb035f92f8.jpg",
+      "avatar": "https://i.pinimg.com/1200x/74/1d/dc/741ddc9337807d50c8f511fb035f92f8.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3618,6 +3716,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/FCXLjb.png",
+      "avatar": "https://a.l3n.co/FCXLjb.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3661,6 +3760,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/1d/0e/a1/1d0ea148b884ea49a4dbf5da7fb350ae.jpg",
+      "avatar": "https://i.pinimg.com/736x/1d/0e/a1/1d0ea148b884ea49a4dbf5da7fb350ae.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3704,6 +3804,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/o7L6Re.png",
+      "avatar": "https://b.l3n.co/i/o7L6Re.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3747,6 +3848,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/53/b3/6b/53b36b16033232d828e5d7972f5886d4.jpg",
+      "avatar": "https://i.pinimg.com/736x/53/b3/6b/53b36b16033232d828e5d7972f5886d4.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3790,6 +3892,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/6d/c3/ff/6dc3ff2ab7933112da9fec0df501fd36.jpg",
+      "avatar": "https://i.pinimg.com/1200x/6d/c3/ff/6dc3ff2ab7933112da9fec0df501fd36.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3818,6 +3921,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/NFwTck.png",
+      "avatar": "https://c.l3n.co/i/NFwTck.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3846,6 +3950,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/oeX0Ac.png",
+      "avatar": "https://d.l3n.co/i/oeX0Ac.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3889,6 +3994,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/Nl3aVr.png",
+      "avatar": "https://a.l3n.co/i/Nl3aVr.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3932,6 +4038,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/XYPH77.png",
+      "avatar": "https://b.l3n.co/XYPH77.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -3975,6 +4082,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/Nl46cc.png",
+      "avatar": "https://b.l3n.co/i/Nl46cc.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4018,6 +4126,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/13/74/65/13746566e061ed3ace480439737cabbe.jpg",
+      "avatar": "https://i.pinimg.com/736x/13/74/65/13746566e061ed3ace480439737cabbe.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4061,6 +4170,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/da/64/20/da6420bd84c5542bb021f79f56c690a8.jpg",
+      "avatar": "https://i.pinimg.com/736x/da/64/20/da6420bd84c5542bb021f79f56c690a8.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4104,6 +4214,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/0a/a7/12/0aa712a9aea8aad814df69b628743701.jpg",
+      "avatar": "https://i.pinimg.com/736x/0a/a7/12/0aa712a9aea8aad814df69b628743701.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4147,6 +4258,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/YSyWL9.png",
+      "avatar": "https://c.l3n.co/i/YSyWL9.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4175,6 +4287,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/HZQzfM.png",
+      "avatar": "https://b.l3n.co/i/HZQzfM.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4218,6 +4331,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/OvfLnr.png",
+      "avatar": "https://a.l3n.co/i/OvfLnr.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4261,6 +4375,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/z9cSbq.png",
+      "avatar": "https://b.l3n.co/i/z9cSbq.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4304,6 +4419,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/ffTSpm.png",
+      "avatar": "https://c.l3n.co/ffTSpm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4347,6 +4463,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/8d/f2/59/8df2597c97184cff5d94ffa51a6b70cc.jpg",
+      "avatar": "https://i.pinimg.com/736x/8d/f2/59/8df2597c97184cff5d94ffa51a6b70cc.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4375,6 +4492,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/7uwHZq.png",
+      "avatar": "https://a.l3n.co/i/7uwHZq.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4418,6 +4536,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/oxIY7i.png",
+      "avatar": "https://b.l3n.co/i/oxIY7i.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4461,6 +4580,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/0e/79/e6/0e79e6aa69a88c2408183ad415edf163.jpg",
+      "avatar": "https://i.pinimg.com/564x/0e/79/e6/0e79e6aa69a88c2408183ad415edf163.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4504,6 +4624,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/8e/fe/73/8efe733e1b4dd2fee8453d15d6a1f2c7.jpg",
+      "avatar": "https://i.pinimg.com/736x/8e/fe/73/8efe733e1b4dd2fee8453d15d6a1f2c7.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4532,6 +4653,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/44/80/4b/44804ba92254b89815a9a34eab368da6.jpg",
+      "avatar": "https://i.pinimg.com/736x/44/80/4b/44804ba92254b89815a9a34eab368da6.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4575,6 +4697,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/1d/bb/ec/1dbbec0ca85d2e127382e41242ddc60d.jpg",
+      "avatar": "https://i.pinimg.com/1200x/1d/bb/ec/1dbbec0ca85d2e127382e41242ddc60d.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4618,6 +4741,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/1f/23/e0/1f23e0b206d23e0edbff5202bb29070d.jpg",
+      "avatar": "https://i.pinimg.com/736x/1f/23/e0/1f23e0b206d23e0edbff5202bb29070d.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4646,6 +4770,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/SYSWF2.png",
+      "avatar": "https://a.l3n.co/i/SYSWF2.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4689,6 +4814,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/OBEAZv.png",
+      "avatar": "https://c.l3n.co/i/OBEAZv.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4732,6 +4858,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/zyWc7v.png",
+      "avatar": "https://c.l3n.co/i/zyWc7v.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4775,6 +4902,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/P77SLD.png",
+      "avatar": "https://a.l3n.co/P77SLD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4818,6 +4946,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/n2gpIA.png",
+      "avatar": "https://a.l3n.co/i/n2gpIA.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4861,6 +4990,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/79/47/46/794746b4eafb915e9519f73ee6d0da7a.jpg",
+      "avatar": "https://i.pinimg.com/736x/79/47/46/794746b4eafb915e9519f73ee6d0da7a.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4904,6 +5034,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/8d/56/ac/8d56acb57c3dfc3ef26353fa989d4261.jpg",
+      "avatar": "https://i.pinimg.com/1200x/8d/56/ac/8d56acb57c3dfc3ef26353fa989d4261.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4932,6 +5063,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/82/aa/44/82aa44e10d007c133eab41b0999e6d83.jpg",
+      "avatar": "https://i.pinimg.com/736x/82/aa/44/82aa44e10d007c133eab41b0999e6d83.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -4975,6 +5107,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/d9/76/c9/d976c9d909234a93634bff8ca725273c.jpg",
+      "avatar": "https://i.pinimg.com/1200x/d9/76/c9/d976c9d909234a93634bff8ca725273c.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5003,6 +5136,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/Y363B5.png",
+      "avatar": "https://c.l3n.co/i/Y363B5.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5046,6 +5180,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/PDUpG5.png",
+      "avatar": "https://b.l3n.co/PDUpG5.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5074,6 +5209,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/34/6f/c6/346fc6e2b43d9a5bc16f24ad1eca8e7b.jpg",
+      "avatar": "https://i.pinimg.com/736x/34/6f/c6/346fc6e2b43d9a5bc16f24ad1eca8e7b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5117,6 +5253,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/oAAqhm.png",
+      "avatar": "https://a.l3n.co/i/oAAqhm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5160,6 +5297,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/4e/7c/7b/4e7c7b3f3d1a5cfc356fc4fc93373172.jpg",
+      "avatar": "https://i.pinimg.com/736x/4e/7c/7b/4e7c7b3f3d1a5cfc356fc4fc93373172.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5188,6 +5326,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/0a/67/74/0a6774e9ad8d46867eeb885e651b328f.jpg",
+      "avatar": "https://i.pinimg.com/564x/0a/67/74/0a6774e9ad8d46867eeb885e651b328f.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5216,6 +5355,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/zKiMUD.png",
+      "avatar": "https://c.l3n.co/i/zKiMUD.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5259,6 +5399,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/0e/9a/b1/0e9ab12e2bc518fe6812cd3cf17f731c.jpg",
+      "avatar": "https://i.pinimg.com/564x/0e/9a/b1/0e9ab12e2bc518fe6812cd3cf17f731c.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5302,6 +5443,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/2c/6b/ce/2c6bce4e9378cab66a9f82ab9f0a3366.jpg",
+      "avatar": "https://i.pinimg.com/564x/2c/6b/ce/2c6bce4e9378cab66a9f82ab9f0a3366.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5330,6 +5472,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/5a/84/c4/5a84c4e31f02c3dce1c57ecbf6f64fd0.jpg",
+      "avatar": "https://i.pinimg.com/736x/5a/84/c4/5a84c4e31f02c3dce1c57ecbf6f64fd0.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5373,6 +5516,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/3d/94/47/3d9447c2f807b34f01ca86075b94ecbe.jpg",
+      "avatar": "https://i.pinimg.com/564x/3d/94/47/3d9447c2f807b34f01ca86075b94ecbe.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5401,6 +5545,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/oLglCZ.png",
+      "avatar": "https://a.l3n.co/i/oLglCZ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5444,6 +5589,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/LmFCym.png",
+      "avatar": "https://c.l3n.co/i/LmFCym.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5487,6 +5633,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/eb/04/bd/eb04bd06db91b8c25d5279e82c0f50f4.jpg",
+      "avatar": "https://i.pinimg.com/736x/eb/04/bd/eb04bd06db91b8c25d5279e82c0f50f4.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5530,6 +5677,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/06/4b/fb/064bfb465ada6d703ef2876707f35116.jpg",
+      "avatar": "https://i.pinimg.com/736x/06/4b/fb/064bfb465ada6d703ef2876707f35116.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5573,6 +5721,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/c9R45Z.png",
+      "avatar": "https://a.l3n.co/c9R45Z.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5616,6 +5765,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/YDI7IK.png",
+      "avatar": "https://c.l3n.co/i/YDI7IK.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5659,6 +5809,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/n6xO5q.png",
+      "avatar": "https://b.l3n.co/i/n6xO5q.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5702,6 +5853,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/7ychtA.png",
+      "avatar": "https://b.l3n.co/i/7ychtA.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5745,6 +5897,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/PTXDHo.png",
+      "avatar": "https://a.l3n.co/PTXDHo.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5773,6 +5926,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/oxIMRm.png",
+      "avatar": "https://d.l3n.co/i/oxIMRm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5816,6 +5970,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/564x/fa/78/3f/fa783fc1c02abbbaffcb2d02fa8b7898.jpg",
+      "avatar": "https://i.pinimg.com/564x/fa/78/3f/fa783fc1c02abbbaffcb2d02fa8b7898.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5859,6 +6014,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/Or7hlH.png",
+      "avatar": "https://b.l3n.co/i/Or7hlH.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5902,6 +6058,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/41/93/fb/4193fbd56bf251b5084d504a39f89422.jpg",
+      "avatar": "https://i.pinimg.com/736x/41/93/fb/4193fbd56bf251b5084d504a39f89422.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5945,6 +6102,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/40/52/81/4052813daa992651ee076b27248b96ca.jpg",
+      "avatar": "https://i.pinimg.com/736x/40/52/81/4052813daa992651ee076b27248b96ca.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -5988,6 +6146,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/bgdJIH.png",
+      "avatar": "https://c.l3n.co/bgdJIH.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6031,6 +6190,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/bf/1e/d6/bf1ed60fa5ba3012791722490351d565.jpg",
+      "avatar": "https://i.pinimg.com/736x/bf/1e/d6/bf1ed60fa5ba3012791722490351d565.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6059,6 +6219,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://pbs.twimg.com/media/EXGRtgyWAAEgiN9?format=jpg&name=large",
+      "avatar": "https://pbs.twimg.com/media/EXGRtgyWAAEgiN9?format=jpg&name=large",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6102,6 +6263,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/Mjq8rv.png",
+      "avatar": "https://c.l3n.co/i/Mjq8rv.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6145,6 +6307,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/z9UaXA.png",
+      "avatar": "https://a.l3n.co/i/z9UaXA.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6188,6 +6351,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/i/ob8upC.png",
+      "avatar": "https://d.l3n.co/i/ob8upC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6231,6 +6395,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/7Gz0YT.png",
+      "avatar": "https://c.l3n.co/i/7Gz0YT.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6274,6 +6439,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/PuOuCq.png",
+      "avatar": "https://d.l3n.co/PuOuCq.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6302,6 +6468,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://d.l3n.co/PW7qVA.png",
+      "avatar": "https://d.l3n.co/PW7qVA.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6345,6 +6512,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/2e/c1/d4/2ec1d47b4f7e615fb5672c89cd2e999b.jpg",
+      "avatar": "https://i.pinimg.com/736x/2e/c1/d4/2ec1d47b4f7e615fb5672c89cd2e999b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6373,6 +6541,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/HXTBWm.png",
+      "avatar": "https://a.l3n.co/i/HXTBWm.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6416,6 +6585,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/ed/f8/3d/edf83d8ba8b068692d236da3b06611be.jpg",
+      "avatar": "https://i.pinimg.com/736x/ed/f8/3d/edf83d8ba8b068692d236da3b06611be.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6459,6 +6629,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/b7vlmP.png",
+      "avatar": "https://b.l3n.co/b7vlmP.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6502,6 +6673,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/0b/03/a8/0b03a85ac00751c8de69a92dc3bd374d.jpg",
+      "avatar": "https://i.pinimg.com/736x/0b/03/a8/0b03a85ac00751c8de69a92dc3bd374d.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6545,6 +6717,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/XYPpyT.png",
+      "avatar": "https://c.l3n.co/XYPpyT.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6588,6 +6761,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/d1/6b/fa/d16bfae9e53538bd91bc27803eb94469.jpg",
+      "avatar": "https://i.pinimg.com/736x/d1/6b/fa/d16bfae9e53538bd91bc27803eb94469.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6631,6 +6805,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/DLw11v.png",
+      "avatar": "https://b.l3n.co/i/DLw11v.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6674,6 +6849,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/3qXoFQ.png",
+      "avatar": "https://a.l3n.co/i/3qXoFQ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6717,6 +6893,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/ME0ufK.png",
+      "avatar": "https://a.l3n.co/i/ME0ufK.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6760,6 +6937,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/f1/a4/b5/f1a4b527b22e1de26c6140264ee1b193.jpg",
+      "avatar": "https://i.pinimg.com/1200x/f1/a4/b5/f1a4b527b22e1de26c6140264ee1b193.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6803,6 +6981,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/09/22/c0/0922c0a2413a974ca6295f4cb14cc4a2.jpg",
+      "avatar": "https://i.pinimg.com/736x/09/22/c0/0922c0a2413a974ca6295f4cb14cc4a2.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6846,6 +7025,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/42/00/1c/42001cb15bbd5a5554b7d99821190458.jpg",
+      "avatar": "https://i.pinimg.com/736x/42/00/1c/42001cb15bbd5a5554b7d99821190458.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6874,6 +7054,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/83/bf/61/83bf61dbc27f61d9bea271ed34f8c78b.jpg",
+      "avatar": "https://i.pinimg.com/736x/83/bf/61/83bf61dbc27f61d9bea271ed34f8c78b.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6917,6 +7098,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/YztQm3.png",
+      "avatar": "https://a.l3n.co/i/YztQm3.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -6960,6 +7142,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/fa9Kvx.png",
+      "avatar": "https://b.l3n.co/fa9Kvx.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7003,6 +7186,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/44/12/11/441211c999427159251ec83a5518cd58.jpg",
+      "avatar": "https://i.pinimg.com/1200x/44/12/11/441211c999427159251ec83a5518cd58.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7031,6 +7215,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/M0LKQ7.png",
+      "avatar": "https://a.l3n.co/i/M0LKQ7.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7074,6 +7259,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/i/zy2CYe.png",
+      "avatar": "https://c.l3n.co/i/zy2CYe.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7117,6 +7303,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/fe/2a/cf/fe2acf8c66fd74148d1793888ff17fb6.jpg",
+      "avatar": "https://i.pinimg.com/1200x/fe/2a/cf/fe2acf8c66fd74148d1793888ff17fb6.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7160,6 +7347,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/1200x/ed/01/0a/ed010aa4acca888014a377974db138c1.jpg",
+      "avatar": "https://i.pinimg.com/1200x/ed/01/0a/ed010aa4acca888014a377974db138c1.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7203,6 +7391,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/YoWSl5.png",
+      "avatar": "https://a.l3n.co/i/YoWSl5.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7231,6 +7420,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/FuG4IC.png",
+      "avatar": "https://b.l3n.co/FuG4IC.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7259,6 +7449,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/e9/2b/ce/e92bce1f1c2b35e314d6684301eb1083.jpg",
+      "avatar": "https://i.pinimg.com/736x/e9/2b/ce/e92bce1f1c2b35e314d6684301eb1083.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7302,6 +7493,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://b.l3n.co/i/oMjBqc.png",
+      "avatar": "https://b.l3n.co/i/oMjBqc.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7345,6 +7537,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/7wZIeZ.png",
+      "avatar": "https://a.l3n.co/i/7wZIeZ.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7388,6 +7581,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://a.l3n.co/i/HHuc5o.png",
+      "avatar": "https://a.l3n.co/i/HHuc5o.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7416,6 +7610,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://i.pinimg.com/736x/79/b0/60/79b06038d7fe35d7e903ebfa609d0034.jpg",
+      "avatar": "https://i.pinimg.com/736x/79/b0/60/79b06038d7fe35d7e903ebfa609d0034.jpg",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -7459,6 +7654,7 @@
       "location": "",
       "writer": "",
       "portrait": "https://c.l3n.co/cvhuX9.png",
+      "avatar": "https://c.l3n.co/cvhuX9.png",
       "accent": "#8a9b91",
       "tags": [],
       "facts": [
@@ -8310,7 +8506,9 @@ var DOSSIER_NOTICES = {
       id: slug(raw.id || raw.name || raw.nickname, 'character'), name: text(raw.name, 160), nickname: text(raw.nickname, 160),
       age: text(raw.age, 40), pronouns: text(raw.pronouns, 80), gender: text(raw.gender, 120),
       occupation: text(raw.occupation, 250), location: text(raw.location, 250), writer: text(raw.writer, 120),
-      portrait: safeUrl(raw.portrait), accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
+      portrait: safeUrl(raw.portrait), avatar: safeUrl(raw.avatar),
+      imagePosition: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.imagePosition, 20)) ? text(raw.imagePosition, 20) : '50% 35%',
+      accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
       tags: Array.from(new Set(list(raw.tags, 50).map(function (tag) { return text(tag, 120).replace(/^#+/, '').trim(); }).filter(Boolean))),
       facts: records(raw.facts, 150).map(function (fact) { return { label: text(fact.label, 160), value: text(fact.value, 2000) }; }),
       currentChapter: text(raw.currentChapter, 5000), asOf: text(raw.asOf, 120), notes: text(raw.notes, 15000),
@@ -8382,7 +8580,7 @@ var DOSSIER_NOTICES = {
   }
   function render(raw, options) {
     options = options || {};
-    var c = normalizeCharacter(raw), prefix = 'bd1-' + slug(options.instanceId || c.id, 'character');
+    var c = normalizeCharacter(raw), prefix = 'bd2-' + slug(options.instanceId || c.id, 'character');
     var sectionCounter = 0;
     function heading(title, extra) {
       sectionCounter += 1;
@@ -8401,16 +8599,20 @@ var DOSSIER_NOTICES = {
     var basics = [['Gender', c.gender], ['Occupation', c.occupation], ['Based in', c.location]].filter(function (item) { return item[1]; });
     var name = c.nickname || c.name;
     var meta = [c.age ? c.age + ' years old' : '', c.pronouns].filter(Boolean);
-    var html = '<article class="bh-dossier-v1" style="--bd1-accent:' + c.accent + '">';
+    var html = '<article class="bh-dossier-v2" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
     html += '<header class="bd1-cover" id="' + prefix + '-overview">';
     html += '<div class="bd1-masthead"><span>Character dossier</span>' + (c.writer ? '<span>Written by ' + escapeHtml(c.writer) + '</span>' : '') + '</div>';
     if (c.portrait) html += '<figure class="bd1-hero"><img src="' + escapeHtml(c.portrait) + '" alt="' + escapeHtml(name ? name + ' — character portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer"><span class="bd1-photo-mark" aria-hidden="true">✦</span></figure>';
-    html += '<div class="bd1-identity"><div><span class="bd1-eyebrow">The character archive</span>';
+    html += '<div class="bd1-identity"><div class="bd1-identity-main">';
+    if (c.avatar) html += '<img class="bd1-profile-image" src="' + escapeHtml(c.avatar) + '" alt="' + escapeHtml(name ? name + ' — portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer">';
+    html += '<span class="bd1-eyebrow">Character profile</span>';
     if (name) html += '<h1>' + escapeHtml(name) + '</h1>';
     if (c.nickname && c.name && c.nickname.toLowerCase() !== c.name.toLowerCase()) html += '<div class="bd1-fullname">' + escapeHtml(c.name) + '</div>';
     if (meta.length) html += '<p class="bd1-identity-meta">' + meta.map(escapeHtml).join('<span aria-hidden="true"> / </span>') + '</p>';
     html += '</div>';
     if (c.relationshipStatus || c.occupation || c.location) html += '<div class="bd1-summary">' + (c.relationshipStatus ? '<span class="bd1-status">' + escapeHtml(c.relationshipStatus) + '</span>' : '') + (c.occupation ? '<span>' + escapeHtml(c.occupation) + '</span>' : '') + (c.location ? '<span>' + escapeHtml(c.location) + '</span>' : '') + '</div>';
+    var stats = [[relationships.length, 'Connections', 'connections'], [entries.length, 'Stories', 'story'], [songs.length, 'Songs', 'soundtrack']].filter(function (item) { return item[0]; });
+    if (stats.length) html += '<div class="bd1-stats">' + stats.map(function (item) { return '<a href="#' + prefix + '-' + item[2] + '"><span>' + item[0] + '</span><small>' + item[1] + '</small></a>'; }).join('') + '</div>';
     html += '</div></header>';
     var nav = [['overview', 'Overview']];
     if (pinned.length) nav.push(['people', 'Inner circle']);
@@ -8428,7 +8630,7 @@ var DOSSIER_NOTICES = {
       html += '</section>';
     }
     if (pinned.length) {
-      html += '<section class="bd1-section" id="' + prefix + '-people">' + heading('The inner circle') + '<div class="bd1-pinned">';
+      html += '<section class="bd1-section bd1-people-panel" id="' + prefix + '-people">' + heading('The inner circle') + '<div class="bd1-pinned">';
       pinned.forEach(function (r, index) {
         html += '<a class="bd1-person" href="#' + prefix + '-connection-' + r.id + '"><span class="bd1-person-number">0' + (index + 1) + '</span>';
         if (r.portrait) html += '<img src="' + escapeHtml(r.portrait) + '" alt="" loading="lazy" referrerpolicy="no-referrer">';
@@ -8437,7 +8639,7 @@ var DOSSIER_NOTICES = {
       html += '</div></section>';
     }
     if (relationships.length) {
-      html += '<section class="bd1-section" id="' + prefix + '-connections">' + heading(hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections & flavour') + '<div class="bd1-connections">';
+      html += '<section class="bd1-section bd1-connections-panel" id="' + prefix + '-connections">' + heading(hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections & flavour') + '<div class="bd1-connections">';
       relationships.forEach(function (r) {
         var linked = entries.filter(function (entry) { return entry.connectionIds.indexOf(r.id) !== -1; });
         html += '<article class="bd1-connection' + (r.featured ? ' bd1-featured' : '') + '" id="' + prefix + '-connection-' + r.id + '"><div class="bd1-connection-head">';
@@ -8455,7 +8657,7 @@ var DOSSIER_NOTICES = {
       html += '</div></section>';
     }
     if (entries.length) {
-      html += '<section class="bd1-section" id="' + prefix + '-story">' + heading('The story so far', entries.length + (entries.length === 1 ? ' entry' : ' entries'));
+      html += '<section class="bd1-section bd1-story-panel" id="' + prefix + '-story">' + heading('The story so far', entries.length + (entries.length === 1 ? ' entry' : ' entries'));
       var currentYear = null;
       entries.forEach(function (entry) {
         var year = entry.date ? entry.date.slice(0, 4) : 'Undated';
@@ -8478,11 +8680,11 @@ var DOSSIER_NOTICES = {
       html += '</ol></div></section>';
     }
     if (songs.length || c.playlistUrl) {
-      html += '<section class="bd1-section" id="' + prefix + '-soundtrack">' + heading('On repeat', songs.length ? songs.length + (songs.length === 1 ? ' song' : ' songs') : '');
+      html += '<section class="bd1-section bd1-soundtrack-panel" id="' + prefix + '-soundtrack">' + heading('On repeat', songs.length ? songs.length + (songs.length === 1 ? ' song' : ' songs') : '');
       if (c.playlistUrl) html += '<div class="bd1-main-playlist">' + player(c.playlistUrl, name ? name + ' — playlist' : 'Character playlist') + '</div>';
       if (songs.length) html += '<div class="bd1-songs">' + songs.map(function (song, index) {
         var label = song.title || song.artist || 'Listen';
-        return '<details class="bd1-song"' + (index < 3 ? ' open' : '') + '><summary><span class="bd1-song-number">' + String(index + 1).padStart(2, '0') + '</span><span><span class="bd1-song-title">' + escapeHtml(label) + '</span>' + (song.artist && song.artist !== label ? '<span class="bd1-song-artist">' + escapeHtml(song.artist) + '</span>' : '') + '</span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body">' + paragraphs(song.note, 'bd1-song-note') + player(song.url, label) + '</div></details>';
+        return '<details class="bd1-song"' + (index === 0 ? ' open' : '') + '><summary><span class="bd1-song-number">' + String(index + 1).padStart(2, '0') + '</span><span><span class="bd1-song-title">' + escapeHtml(label) + '</span>' + (song.artist && song.artist !== label ? '<span class="bd1-song-artist">' + escapeHtml(song.artist) + '</span>' : '') + '</span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body">' + paragraphs(song.note, 'bd1-song-note') + player(song.url, label) + '</div></details>';
       }).join('') + '</div>';
       html += '</section>';
     }
@@ -8503,11 +8705,12 @@ var DOSSIER_NOTICES = {
   return { normalizeCharacter: normalizeCharacter, normalizeDataset: normalizeDataset, render: render, forum: forum, sortTimeline: sortTimeline, escapeHtml: escapeHtml, safeUrl: safeUrl };
 }));
 </script>
-  <script>window.DOSSIER_PREVIEW_CSS=".bh-dossier-v1 {\n  --bd1-bg: #202123;\n  --bd1-panel: #27292b;\n  --bd1-inset: #1b1c1e;\n  --bd1-ink: #ece8e2;\n  --bd1-muted: #aaa9a5;\n  --bd1-line: rgba(220, 224, 225, .12);\n  --bd1-accent-ink: color-mix(in srgb, var(--bd1-accent) 45%, var(--bd1-ink));\n  --bd1-group1: var(--mgrgb1, 130, 158, 168);\n  --bd1-group2: var(--mgrgb2, 161, 137, 153);\n  --bd1-group3: var(--mgrgb3, 157, 164, 135);\n  --bd1-forward: linear-gradient(110deg, rgb(var(--bd1-group1)), rgb(var(--bd1-group2)), rgb(var(--bd1-group3)));\n  --bd1-reverse: linear-gradient(110deg, rgb(var(--bd1-group3)), rgb(var(--bd1-group2)), rgb(var(--bd1-group1)));\n  box-sizing: border-box;\n  width: min(100%, 760px);\n  margin: 24px auto;\n  overflow: hidden;\n  border: 1px solid var(--bd1-line);\n  border-radius: 22px;\n  background: var(--bd1-bg);\n  color: var(--bd1-ink);\n  font: 15px/1.6 Arial, Helvetica, sans-serif;\n  text-align: left;\n  letter-spacing: normal;\n  box-shadow: 0 18px 65px rgba(0, 0, 0, .13);\n  container: bd1 / inline-size;\n  isolation: isolate;\n  overflow-wrap: anywhere;\n  color-scheme: dark;\n}\n.bh-dossier-v1 *, .bh-dossier-v1 *::before, .bh-dossier-v1 *::after { box-sizing: border-box; }\n.bh-dossier-v1 :is(h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul, ol) { margin: 0; padding: 0; color: inherit; }\n.bh-dossier-v1 :is(h1, h2, h3, h4) { font-weight: 400; text-transform: none; letter-spacing: normal; }\n.bh-dossier-v1 :is(a, a:visited) { color: inherit; text-decoration: none; font-weight: inherit; }\n.bh-dossier-v1 a:hover { color: var(--bd1-ink); text-decoration: underline; text-underline-offset: 4px; }\n.bh-dossier-v1 :is(a, summary):focus-visible { outline: 2px solid rgb(var(--bd1-group1)); outline-offset: 5px; border-radius: 3px; }\n.bh-dossier-v1 :is(b, strong, u) { background: var(--bd1-forward); background-clip: text; -webkit-background-clip: text; color: transparent; }\n.bh-dossier-v1 :is(i, em) { background: var(--bd1-reverse); background-clip: text; -webkit-background-clip: text; color: transparent; }\n.bh-dossier-v1 img { display: block; max-width: 100%; border: 0; }\n.bh-dossier-v1 section, .bh-dossier-v1 article, .bh-dossier-v1 header, .bh-dossier-v1 li { scroll-margin-top: 130px; }\n.bh-dossier-v1 .bd1-masthead { display: flex; justify-content: space-between; gap: 12px; padding: 17px 30px; background: linear-gradient(100deg, rgba(var(--bd1-group1), .11), rgba(var(--bd1-group2), .07), rgba(var(--bd1-group3), .1)); border-bottom: 1px solid var(--bd1-line); color: var(--bd1-muted); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .17em; }\n.bh-dossier-v1 .bd1-hero { position: relative; height: 288px; background: var(--bd1-inset); }\n.bh-dossier-v1 .bd1-hero::after { content: ''; position: absolute; inset: auto 0 0; height: 4px; background: var(--bd1-forward); }\n.bh-dossier-v1 .bd1-hero > img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }\n.bh-dossier-v1 .bd1-photo-mark { position: absolute; right: 28px; bottom: 24px; display: grid; place-items: center; width: 46px; height: 46px; border: 1px solid rgba(255, 255, 255, .25); border-radius: 50%; background: rgba(22, 23, 24, .68); color: var(--bd1-accent); font-size: 29px; }\n.bh-dossier-v1 .bd1-identity { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding: 29px 34px 31px; }\n.bh-dossier-v1 .bd1-eyebrow { display: block; color: var(--bd1-muted); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }\n.bh-dossier-v1 .bd1-identity > div:first-child { min-width: 0; }\n.bh-dossier-v1 h1 { margin-top: 5px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(40px, 9cqi, 68px); line-height: 1.1; letter-spacing: -.055em; }\n.bh-dossier-v1 .bd1-fullname { margin-top: 7px; color: var(--bd1-muted); font-size: 14px; }\n.bh-dossier-v1 .bd1-identity-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 11px; color: var(--bd1-muted); font-size: 12px; }\n.bh-dossier-v1 .bd1-identity-meta > span { color: var(--bd1-accent); }\n.bh-dossier-v1 .bd1-summary { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; max-width: 43%; padding-bottom: 3px; text-align: right; color: var(--bd1-muted); font-size: 12px; }\n.bh-dossier-v1 .bd1-status { display: inline-block; margin-bottom: 4px; padding: 4px 10px; border: 1px solid var(--bd1-line); border-left: 3px solid var(--bd1-accent); border-radius: 3px; background: var(--bd1-panel); color: var(--bd1-ink); font-size: 11px; }\n.bh-dossier-v1 .bd1-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; padding: 13px 22px; border-top: 1px solid var(--bd1-line); border-bottom: 1px solid var(--bd1-line); background: var(--bd1-inset); }\n.bh-dossier-v1 .bd1-nav a { padding: 3px 0; color: var(--bd1-muted); font-size: 11px; }\n.bh-dossier-v1 .bd1-content { padding: 0 34px; }\n.bh-dossier-v1 .bd1-section { padding: 30px 0 33px; border-bottom: 1px solid var(--bd1-line); }\n.bh-dossier-v1 .bd1-section:last-child { border-bottom: 0; }\n.bh-dossier-v1 .bd1-section-heading { display: flex; align-items: baseline; gap: 12px; margin-bottom: 22px; }\n.bh-dossier-v1 .bd1-number { flex: 0 0 auto; font-size: 10px; font-weight: 700; color: var(--bd1-ink); color: var(--bd1-accent-ink); }\n.bh-dossier-v1 h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 27px; line-height: 1.2; letter-spacing: -.035em; }\n.bh-dossier-v1 .bd1-heading-note { margin-left: auto; color: var(--bd1-muted); font-size: 10px; text-align: right; }\n.bh-dossier-v1 .bd1-tags { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; }\n.bh-dossier-v1 .bd1-tags li { display: block; padding: 4px 9px; border: 1px solid rgba(var(--bd1-group1), .2); border-radius: 4px; background: rgba(var(--bd1-group1), .07); font-size: 11px; color: var(--bd1-ink); }\n.bh-dossier-v1 .bd1-chapter { margin: 23px 0 0; padding: 16px 20px; border-left: 2px solid var(--bd1-accent); background: var(--bd1-panel); border-radius: 0 7px 7px 0; }\n.bh-dossier-v1 .bd1-chapter p { margin-top: 9px; font-size: 14px; }\n.bh-dossier-v1 .bd1-facts { display: grid; grid-template-columns: 1fr 1fr; column-gap: 27px; margin-top: 21px; }\n.bh-dossier-v1 .bd1-facts > div { padding: 12px 0; border-bottom: 1px solid var(--bd1-line); min-width: 0; }\n.bh-dossier-v1 .bd1-facts dt { margin-bottom: 3px; font-size: 10px; color: var(--bd1-muted); text-transform: uppercase; letter-spacing: .08em; }\n.bh-dossier-v1 .bd1-facts dd { font-size: 13px; line-height: 1.5; white-space: pre-line; }\n.bh-dossier-v1 .bd1-pinned { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }\n.bh-dossier-v1 .bd1-person { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 19px 16px 16px; background: linear-gradient(145deg, rgba(var(--bd1-group1), .09), rgba(var(--bd1-group2), .03)), var(--bd1-panel); border: 1px solid var(--bd1-line); border-radius: 9px; }\n.bh-dossier-v1 .bd1-person:hover { text-decoration: none; border-color: rgba(var(--bd1-group1), .5); }\n.bh-dossier-v1 .bd1-person-number { position: absolute; top: 11px; right: 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 20px; line-height: 1; color: rgba(var(--bd1-group1), .4); }\n.bh-dossier-v1 .bd1-person > img { width: 50px; height: 50px; margin-bottom: 12px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(var(--bd1-group1), .4); }\n.bh-dossier-v1 .bd1-person-name { margin-top: 12px; padding-right: 10px; font-family: Georgia, 'Times New Roman', serif; font-size: 21px; line-height: 1.2; }\n.bh-dossier-v1 .bd1-person-kind { margin-top: 6px; color: var(--bd1-muted); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }\n.bh-dossier-v1 .bd1-person-flavour { margin-top: 14px; color: var(--bd1-muted); font-size: 12px; }\n.bh-dossier-v1 .bd1-connections { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }\n.bh-dossier-v1 .bd1-connection { min-width: 0; padding: 20px; border: 1px solid var(--bd1-line); border-radius: 9px; background: var(--bd1-panel); }\n.bh-dossier-v1 .bd1-featured { grid-column: 1 / -1; border-top: 2px solid rgb(var(--bd1-group2)); background: linear-gradient(110deg, rgba(var(--bd1-group1), .065), transparent 45%, rgba(var(--bd1-group3), .05)), var(--bd1-panel); }\n.bh-dossier-v1 .bd1-connection-head { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }\n.bh-dossier-v1 .bd1-connection-head > div { flex: 1; min-width: 90px; }\n.bh-dossier-v1 .bd1-avatar { width: 42px; height: 42px; object-fit: cover; border-radius: 50%; }\n.bh-dossier-v1 .bd1-connection h3 { margin-top: 3px; font-family: Georgia, 'Times New Roman', serif; font-size: 25px; line-height: 1.2; }\n.bh-dossier-v1 .bd1-small-status { align-self: flex-start; padding: 3px 7px; border: 1px solid var(--bd1-line); border-radius: 3px; color: var(--bd1-muted); font-size: 9px; }\n.bh-dossier-v1 .bd1-flavour { display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; margin-top: 18px; padding-top: 11px; border-top: 1px solid var(--bd1-line); font-size: 13px; }\n.bh-dossier-v1 .bd1-flavour > span:first-child { font-size: 9px; text-transform: uppercase; letter-spacing: .1em; color: var(--bd1-muted); }\n.bh-dossier-v1 .bd1-connection-copy { margin-top: 13px; font-size: 13px; color: var(--bd1-muted); }\n.bh-dossier-v1 blockquote { margin: 19px 0 4px; padding: 3px 0 3px 18px; border-left: 2px solid var(--bd1-accent); font-family: Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 1.5; }\n.bh-dossier-v1 blockquote p + p { margin-top: 8px; }\n.bh-dossier-v1 .bd1-relationship-playlist { margin-top: 12px; color: var(--bd1-muted); font-size: 11px; }\n.bh-dossier-v1 .bd1-linked-story { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--bd1-line); font-size: 11px; }\n.bh-dossier-v1 summary { cursor: pointer; }\n.bh-dossier-v1 .bd1-linked-story summary { color: var(--bd1-muted); }\n.bh-dossier-v1 .bd1-linked-story ul { margin-top: 10px; list-style: none; }\n.bh-dossier-v1 .bd1-linked-story li a { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; }\n.bh-dossier-v1 .bd1-linked-story small { color: var(--bd1-muted); font-size: 9px; }\n.bh-dossier-v1 .bd1-year-group { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; }\n.bh-dossier-v1 .bd1-year-group + .bd1-year-group { margin-top: 18px; }\n.bh-dossier-v1 .bd1-year { padding-top: 4px; font-family: Georgia, 'Times New Roman', serif; font-size: 19px; line-height: 1.5; color: var(--bd1-muted); }\n.bh-dossier-v1 .bd1-timeline { list-style: none; border-left: 1px solid var(--bd1-line); }\n.bh-dossier-v1 .bd1-entry { position: relative; padding: 0 0 24px 24px; }\n.bh-dossier-v1 .bd1-entry:last-child { padding-bottom: 8px; }\n.bh-dossier-v1 .bd1-entry::before { content: ''; position: absolute; top: 10px; left: -4px; width: 7px; height: 7px; border-radius: 50%; background: rgb(var(--bd1-group1)); box-shadow: 0 0 0 4px var(--bd1-bg); }\n.bh-dossier-v1 .bd1-milestone::before { border-radius: 1px; transform: rotate(45deg); background: var(--bd1-accent); }\n.bh-dossier-v1 .bd1-entry-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 10px; color: var(--bd1-muted); font-size: 10px; }\n.bh-dossier-v1 .bd1-type { padding: 3px 6px; border-radius: 3px; background: rgba(var(--bd1-group1), .09); border: 1px solid rgba(var(--bd1-group1), .16); color: var(--bd1-ink); font-size: 9px; }\n.bh-dossier-v1 .bd1-entry-status { margin-left: auto; font-size: 9px; }\n.bh-dossier-v1 h4 { margin-top: 8px; font-family: Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 1.3; }\n.bh-dossier-v1 .bd1-participants { margin-top: 4px; color: var(--bd1-muted); font-size: 11px; }\n.bh-dossier-v1 .bd1-entry-people { display: flex; flex-wrap: wrap; gap: 5px 10px; margin-top: 8px; color: var(--bd1-muted); font-size: 10px; }\n.bh-dossier-v1 .bd1-entry-people a { border-bottom: 1px dotted rgba(var(--bd1-group2), .6); }\n.bh-dossier-v1 .bd1-entry-copy { margin-top: 10px; font-size: 13px; }\n.bh-dossier-v1 .bd1-posted-date { margin-top: 8px; color: var(--bd1-muted); font-size: 9px; }\n.bh-dossier-v1 .bd1-main-playlist { margin-bottom: 18px; }\n.bh-dossier-v1 .bd1-song { border-top: 1px solid var(--bd1-line); }\n.bh-dossier-v1 .bd1-song:last-child { border-bottom: 1px solid var(--bd1-line); }\n.bh-dossier-v1 .bd1-song > summary { display: flex; align-items: center; gap: 14px; list-style: none; padding: 14px 0; }\n.bh-dossier-v1 .bd1-song > summary::-webkit-details-marker { display: none; }\n.bh-dossier-v1 .bd1-song-number { align-self: flex-start; padding-top: 2px; min-width: 18px; color: var(--bd1-ink); color: var(--bd1-accent-ink); font-size: 10px; }\n.bh-dossier-v1 .bd1-song-title { display: block; font-size: 13px; font-weight: 700; line-height: 1.5; }\n.bh-dossier-v1 .bd1-song-artist { display: block; margin-top: 2px; color: var(--bd1-muted); font-size: 10px; }\n.bh-dossier-v1 .bd1-song-toggle { margin-left: auto; font-size: 18px; color: var(--bd1-muted); }\n.bh-dossier-v1 .bd1-song[open] .bd1-song-toggle { transform: rotate(45deg); }\n.bh-dossier-v1 .bd1-song-body { padding: 0 0 14px 32px; }\n.bh-dossier-v1 .bd1-song-note { margin: 0 0 10px; font-size: 12px; color: var(--bd1-muted); }\n.bh-dossier-v1 .bd1-player { display: block; width: 100%; max-width: 100%; border: 0; border-radius: 10px; background: var(--bd1-inset); }\n.bh-dossier-v1 .bd1-listen { padding-top: 6px; color: var(--bd1-muted); font-size: 10px; }\n.bh-dossier-v1 .bd1-notes > p { margin-top: 13px; font-size: 14px; }\n.bh-dossier-v1 .bd1-footer { display: flex; justify-content: space-between; gap: 15px; padding: 17px 34px; border-top: 1px solid var(--bd1-line); background: linear-gradient(100deg, rgba(var(--bd1-group3), .06), rgba(var(--bd1-group1), .07)); color: var(--bd1-muted); font-size: 10px; }\nhtml[color-mode=\"light\"] .bh-dossier-v1 { --bd1-bg: #faf8f5; --bd1-panel: #f0ede8; --bd1-inset: #eeebe6; --bd1-ink: #292c2e; --bd1-muted: #656663; --bd1-line: rgba(45, 50, 50, .14); color-scheme: light; }\nhtml[color-mode=\"dark\"] .bh-dossier-v1 { --bd1-bg: #202123; --bd1-panel: #27292b; --bd1-inset: #1b1c1e; --bd1-ink: #ece8e2; --bd1-muted: #aaa9a5; --bd1-line: rgba(220, 224, 225, .12); color-scheme: dark; }\n@media (prefers-color-scheme: light) {\n  html:not([color-mode=\"dark\"]):not([color-mode=\"light\"]) .bh-dossier-v1 { --bd1-bg: #faf8f5; --bd1-panel: #f0ede8; --bd1-inset: #eeebe6; --bd1-ink: #292c2e; --bd1-muted: #656663; --bd1-line: rgba(45, 50, 50, .14); color-scheme: light; }\n}\n@container bd1 (max-width: 540px) {\n  .bh-dossier-v1 .bd1-hero { height: 225px; }\n  .bh-dossier-v1 .bd1-masthead { padding: 14px 22px; font-size: 9px; }\n  .bh-dossier-v1 .bd1-identity { padding: 25px 22px; gap: 16px; }\n  .bh-dossier-v1 .bd1-summary { max-width: 44%; font-size: 10px; }\n  .bh-dossier-v1 .bd1-content { padding: 0 22px; }\n  .bh-dossier-v1 .bd1-connections { grid-template-columns: 1fr; }\n  .bh-dossier-v1 .bd1-pinned { gap: 8px; }\n  .bh-dossier-v1 .bd1-person { padding: 18px 10px 13px; }\n  .bh-dossier-v1 .bd1-person-name { font-size: 18px; }\n  .bh-dossier-v1 .bd1-person-kind { font-size: 9px; }\n  .bh-dossier-v1 .bd1-person-flavour { font-size: 10px; }\n  .bh-dossier-v1 .bd1-person-number { font-size: 17px; }\n  .bh-dossier-v1 .bd1-year-group { grid-template-columns: 52px minmax(0, 1fr); gap: 10px; }\n  .bh-dossier-v1 .bd1-year { font-size: 16px; }\n  .bh-dossier-v1 .bd1-entry { padding-left: 19px; }\n  .bh-dossier-v1 .bd1-footer { padding: 16px 22px; }\n}\n@container bd1 (max-width: 380px) {\n  .bh-dossier-v1 .bd1-hero { height: 195px; }\n  .bh-dossier-v1 .bd1-masthead { flex-wrap: wrap; gap: 4px 10px; padding: 13px 18px; }\n  .bh-dossier-v1 .bd1-identity { display: block; padding: 22px 18px; }\n  .bh-dossier-v1 .bd1-summary { align-items: flex-start; max-width: none; margin-top: 18px; text-align: left; font-size: 11px; }\n  .bh-dossier-v1 .bd1-content { padding: 0 16px; }\n  .bh-dossier-v1 .bd1-nav { gap: 3px 15px; padding: 11px 18px; }\n  .bh-dossier-v1 .bd1-section-heading { flex-wrap: wrap; gap: 8px; }\n  .bh-dossier-v1 .bd1-heading-note { flex-basis: 100%; margin-left: 22px; text-align: left; }\n  .bh-dossier-v1 h2 { font-size: 25px; }\n  .bh-dossier-v1 .bd1-facts { column-gap: 17px; }\n  .bh-dossier-v1 .bd1-pinned { grid-template-columns: 1fr; }\n  .bh-dossier-v1 .bd1-person { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; padding: 15px; }\n  .bh-dossier-v1 .bd1-person > img { grid-column: 1; grid-row: 1 / 4; margin: 0; }\n  .bh-dossier-v1 .bd1-person-name { grid-column: 2; margin: 0; padding-right: 16px; font-size: 21px; }\n  .bh-dossier-v1 .bd1-person-kind, .bh-dossier-v1 .bd1-person-flavour { grid-column: 2; margin: 0; }\n  .bh-dossier-v1 .bd1-person:not(:has(img)) { grid-template-columns: 1fr; }\n  .bh-dossier-v1 .bd1-person:not(:has(img)) :is(.bd1-person-name, .bd1-person-kind, .bd1-person-flavour) { grid-column: 1; }\n  .bh-dossier-v1 .bd1-year-group { display: block; }\n  .bh-dossier-v1 .bd1-year { margin: 0 0 13px; font-size: 20px; }\n  .bh-dossier-v1 .bd1-timeline { margin-left: 4px; }\n  .bh-dossier-v1 .bd1-song-body { padding-left: 0; }\n  .bh-dossier-v1 .bd1-footer { flex-direction: column; gap: 5px; padding: 15px 18px; }\n}\n@container bd1 (max-width: 313px) {\n  .bh-dossier-v1 .bd1-player { display: none; }\n}\n@media print {\n  .bh-dossier-v1 { max-width: none; box-shadow: none; }\n  .bh-dossier-v1 .bd1-nav, .bh-dossier-v1 .bd1-footer a { display: none; }\n  .bh-dossier-v1 .bd1-connection, .bh-dossier-v1 .bd1-entry { break-inside: avoid; }\n}\n";</script><script>(function () {
+  <script>window.DOSSIER_PREVIEW_CSS=".bh-dossier-v2 {\n  --bd1-accent: #5b8612;\n  --bd1-bg: color-mix(in srgb, var(--bd1-accent) 5%, #111515);\n  --bd1-panel: color-mix(in srgb, var(--bd1-accent) 5%, #1c2121);\n  --bd1-inset: color-mix(in srgb, var(--bd1-accent) 6%, #242a28);\n  --bd1-ink: #f2f4ed;\n  --bd1-muted: #acb5aa;\n  --bd1-accent-ink: color-mix(in srgb, var(--bd1-accent) 58%, #f5ffe7);\n  --bd1-line: color-mix(in srgb, var(--bd1-accent) 24%, #353c37);\n  --bd2-tint: color-mix(in srgb, var(--bd1-accent) 16%, var(--bd1-panel));\n  --bd2-rich: color-mix(in srgb, var(--bd1-accent) 31%, var(--bd1-panel));\n  --bd1-forward: linear-gradient(110deg, rgb(var(--mgrgb1,130,158,168)), rgb(var(--mgrgb2,161,137,153)), rgb(var(--mgrgb3,157,164,135)));\n  --bd1-reverse: linear-gradient(110deg, rgb(var(--mgrgb3,157,164,135)), rgb(var(--mgrgb2,161,137,153)), rgb(var(--mgrgb1,130,158,168)));\n  box-sizing: border-box;\n  width: min(100%, 940px);\n  margin: 22px auto;\n  padding: 16px;\n  background: var(--bd1-bg);\n  color: var(--bd1-ink);\n  border: 1px solid var(--bd1-line);\n  border-radius: 26px;\n  font: 14px/1.6 Inter, 'Segoe UI', Arial, sans-serif;\n  text-align: left;\n  letter-spacing: normal;\n  overflow-wrap: anywhere;\n  isolation: isolate;\n  container: bd2 / inline-size;\n  color-scheme: dark;\n}\n.bh-dossier-v2 *, .bh-dossier-v2 *::before, .bh-dossier-v2 *::after { box-sizing: border-box; }\n.bh-dossier-v2 :is(h1,h2,h3,h4,p,figure,blockquote,dl,dd,ul,ol) { margin: 0; padding: 0; color: inherit; }\n.bh-dossier-v2 :is(h1,h2,h3,h4) { font-family: Inter,'Segoe UI',Arial,sans-serif; text-transform: none; font-weight: 750; letter-spacing: -.035em; }\n.bh-dossier-v2 :is(a,a:visited) { color: inherit; text-decoration: none; font-weight: inherit; }\n.bh-dossier-v2 a:hover { color: var(--bd1-accent-ink); text-decoration: underline; text-underline-offset: 4px; }\n.bh-dossier-v2 :is(a,summary):focus-visible { outline: 2px solid var(--bd1-accent-ink); outline-offset: 4px; border-radius: 4px; }\n.bh-dossier-v2 :is(b,strong,u) { background:var(--bd1-forward);background-clip:text;-webkit-background-clip:text;color:transparent; }\n.bh-dossier-v2 :is(i,em) { background:var(--bd1-reverse);background-clip:text;-webkit-background-clip:text;color:transparent; }\n.bh-dossier-v2 img { display: block; max-width: 100%; border: 0; }\n.bh-dossier-v2 :is(section,article,header,li) { min-width: 0; scroll-margin-top: 130px; }\n.bh-dossier-v2 .bd1-cover { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); gap: 14px; }\n.bh-dossier-v2 .bd1-masthead { grid-column:1/-1; display:flex;justify-content:space-between;gap:15px; padding:3px 7px 2px; color:var(--bd1-accent-ink);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase; }\n.bh-dossier-v2 .bd1-hero { position:relative;min-height:385px;border-radius:18px;overflow:hidden;background:var(--bd1-inset);border:1px solid var(--bd1-line); }\n.bh-dossier-v2 .bd1-hero>img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--bd2-image-position,50% 35%); }\n.bh-dossier-v2 .bd1-hero::after { content:'';position:absolute;inset:auto 0 0;height:35%;background:linear-gradient(transparent,rgba(9,16,8,.32));pointer-events:none; }\n.bh-dossier-v2 .bd1-photo-mark { position:absolute;z-index:1;right:16px;bottom:16px;display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--bd2-rich);color:var(--bd1-accent-ink);font-size:25px;border:1px solid color-mix(in srgb,var(--bd1-accent) 60%,transparent); }\n.bh-dossier-v2 .bd1-identity { display:flex;flex-direction:column;justify-content:center;gap:20px;padding:25px;border:1px solid var(--bd1-line);border-radius:18px;background:linear-gradient(145deg,var(--bd2-rich),var(--bd1-panel) 85%);min-width:0; }\n.bh-dossier-v2 .bd1-cover:not(:has(.bd1-hero)) .bd1-identity { grid-column:1/-1; }\n.bh-dossier-v2 .bd1-profile-image { width:72px;height:72px;object-fit:cover;object-position:center 25%;border-radius:21px;margin-bottom:17px;border:3px solid var(--bd1-accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--bd1-accent) 16%,transparent); }\n.bh-dossier-v2 .bd1-eyebrow { display:block;color:var(--bd1-accent-ink);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase; }\n.bh-dossier-v2 h1 { font-size:clamp(38px,7cqi,64px);line-height:1.02;letter-spacing:-.06em;margin-top:7px;color:var(--bd1-accent-ink);font-weight:800; }\n.bh-dossier-v2 .bd1-fullname { margin-top:8px;font-size:13px;font-weight:600; }\n.bh-dossier-v2 .bd1-identity-meta { display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;color:var(--bd1-muted);font-size:12px; }\n.bh-dossier-v2 .bd1-identity-meta>span { color:var(--bd1-accent-ink); }\n.bh-dossier-v2 .bd1-summary { display:flex;flex-direction:column;align-items:flex-start;gap:5px;color:var(--bd1-muted);font-size:12px; }\n.bh-dossier-v2 .bd1-status { display:inline-flex;align-items:center;gap:7px;background:var(--bd2-tint);border:1px solid var(--bd1-line);border-radius:20px;padding:5px 10px;color:var(--bd1-ink);font-size:11px;margin-bottom:4px; }\n.bh-dossier-v2 .bd1-status::before { content:'';width:5px;height:5px;border-radius:50%;background:var(--bd1-accent-ink); }\n.bh-dossier-v2 .bd1-stats { display:flex;gap:8px;flex-wrap:wrap;padding-top:15px;border-top:1px solid var(--bd1-line);margin-top:auto; }\n.bh-dossier-v2 .bd1-stats a { flex:1;min-width:65px; }\n.bh-dossier-v2 .bd1-stats a>span { display:block;font-size:23px;font-weight:750;line-height:1.2;color:var(--bd1-accent-ink); }\n.bh-dossier-v2 .bd1-stats small { display:block;font-size:10px;color:var(--bd1-muted);margin-top:3px; }\n.bh-dossier-v2 .bd1-nav { display:flex;flex-wrap:wrap;gap:7px;margin:15px 0;padding:0; }\n.bh-dossier-v2 .bd1-nav a { display:block;background:var(--bd1-panel);border:1px solid var(--bd1-line);border-radius:9px;padding:9px 13px;font-size:11px;font-weight:650;color:var(--bd1-muted); }\n.bh-dossier-v2 .bd1-nav a:hover { background:var(--bd2-tint);color:var(--bd1-accent-ink);text-decoration:none; }\n.bh-dossier-v2 .bd1-content { display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:14px;align-items:start;grid-auto-flow:row dense; }\n.bh-dossier-v2 .bd1-section { min-width:0;grid-column:1/-1;padding:22px;background:var(--bd1-panel);border:1px solid var(--bd1-line);border-radius:18px; }\n.bh-dossier-v2 .bd1-section-heading { display:flex;align-items:center;gap:10px;margin-bottom:20px; }\n.bh-dossier-v2 .bd1-section-heading::before { content:'';width:4px;height:22px;border-radius:4px;background:var(--bd1-accent);flex:none; }\n.bh-dossier-v2 .bd1-number { display:none; }\n.bh-dossier-v2 h2 { font-size:20px;line-height:1.25; }\n.bh-dossier-v2 .bd1-heading-note { margin-left:auto;font-size:10px;color:var(--bd1-muted);white-space:nowrap; }\n.bh-dossier-v2 .bd1-tags { display:flex;flex-wrap:wrap;gap:6px;list-style:none; }\n.bh-dossier-v2 .bd1-tags li { padding:5px 9px;border:1px solid var(--bd1-line);border-radius:6px;background:var(--bd2-tint);color:var(--bd1-accent-ink);font-size:10px;font-weight:650;line-height:1.5; }\n.bh-dossier-v2 .bd1-chapter { margin-top:17px;padding:15px;background:var(--bd2-tint);border-radius:10px;border-left:3px solid var(--bd1-accent); }\n.bh-dossier-v2 .bd1-chapter p { margin-top:8px;font-size:13px; }\n.bh-dossier-v2 .bd1-facts { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px;margin-top:16px; }\n.bh-dossier-v2 .bd1-facts>div { padding:12px 0;border-bottom:1px solid var(--bd1-line);min-width:0; }\n.bh-dossier-v2 .bd1-facts dt { font-size:10px;letter-spacing:.045em;color:var(--bd1-accent-ink);text-transform:uppercase;font-weight:600;margin-bottom:4px; }\n.bh-dossier-v2 .bd1-facts dd { font-size:13px;font-weight:500;line-height:1.55;white-space:pre-line; }\n.bh-dossier-v2 .bd1-pinned { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px; }\n.bh-dossier-v2 .bd1-person { position:relative;display:flex;flex-direction:column;align-items:flex-start;padding:18px 16px;background:var(--bd2-tint);border:1px solid var(--bd1-line);border-radius:13px;min-width:0; }\n.bh-dossier-v2 .bd1-person:hover { background:var(--bd2-rich);text-decoration:none; }\n.bh-dossier-v2 .bd1-person-number { position:absolute;right:12px;top:12px;color:var(--bd1-accent-ink);font-size:10px;opacity:.7; }\n.bh-dossier-v2 .bd1-person>img { width:55px;height:55px;object-fit:cover;object-position:center 25%;border-radius:17px;margin-bottom:13px;border:2px solid var(--bd1-accent); }\n.bh-dossier-v2 .bd1-person-name { font-size:16px;font-weight:700;line-height:1.3; }\n.bh-dossier-v2 .bd1-person-kind { color:var(--bd1-muted);font-size:11px;margin-top:4px; }\n.bh-dossier-v2 .bd1-person-flavour { font-size:11px;color:var(--bd1-accent-ink);margin-top:8px; }\n.bh-dossier-v2 .bd1-connections { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px; }\n.bh-dossier-v2 .bd1-connection { padding:16px;background:var(--bd1-inset);border:1px solid var(--bd1-line);border-radius:13px; }\n.bh-dossier-v2 .bd1-featured { grid-column:1/-1;background:linear-gradient(125deg,var(--bd2-rich),var(--bd2-tint));border-color:color-mix(in srgb,var(--bd1-accent) 60%,var(--bd1-line)); }\n.bh-dossier-v2 .bd1-connection-head { display:flex;align-items:center;gap:11px;flex-wrap:wrap; }\n.bh-dossier-v2 .bd1-connection-head>div { flex:1;min-width:90px; }\n.bh-dossier-v2 .bd1-avatar { width:45px;height:45px;border-radius:14px;object-fit:cover;object-position:center 25%;border:2px solid color-mix(in srgb,var(--bd1-accent) 50%,var(--bd1-line)); }\n.bh-dossier-v2 .bd1-featured .bd1-avatar { width:59px;height:59px;border-radius:18px; }\n.bh-dossier-v2 h3 { font-size:16px;line-height:1.3; }\n.bh-dossier-v2 .bd1-connection .bd1-eyebrow { font-size:9px;margin-bottom:4px;letter-spacing:.07em; }\n.bh-dossier-v2 .bd1-small-status { font-size:10px;color:var(--bd1-muted);margin-left:auto; }\n.bh-dossier-v2 .bd1-flavour { display:flex;gap:8px;align-items:center;margin-top:13px; }\n.bh-dossier-v2 .bd1-flavour>span:first-child { font-size:9px;text-transform:uppercase;letter-spacing:.09em;color:var(--bd1-muted); }\n.bh-dossier-v2 .bd1-flavour>span:last-child { padding:3px 9px;border-radius:6px;background:var(--bd2-tint);color:var(--bd1-accent-ink);font-size:12px;font-weight:650; }\n.bh-dossier-v2 .bd1-connection-copy { margin-top:12px;font-size:13px; }\n.bh-dossier-v2 blockquote { padding:12px 14px;margin-top:14px;border-left:2px solid var(--bd1-accent);font:italic 15px/1.6 Georgia,serif;color:var(--bd1-muted); }\n.bh-dossier-v2 .bd1-relationship-playlist { margin-top:13px;color:var(--bd1-accent-ink);font-size:11px; }\n.bh-dossier-v2 .bd1-linked-story { margin-top:13px;padding-top:11px;border-top:1px solid var(--bd1-line);font-size:11px; }\n.bh-dossier-v2 summary { cursor:pointer; }\n.bh-dossier-v2 .bd1-linked-story summary { color:var(--bd1-accent-ink); }\n.bh-dossier-v2 .bd1-linked-story ul { list-style:none;display:grid;gap:7px;margin-top:11px; }\n.bh-dossier-v2 .bd1-linked-story li a { display:flex;justify-content:space-between;gap:10px; }\n.bh-dossier-v2 .bd1-linked-story small { color:var(--bd1-muted);font-size:10px; }\n.bh-dossier-v2 .bd1-year-group+.bd1-year-group { margin-top:23px; }\n.bh-dossier-v2 .bd1-year { display:inline-block;padding:4px 9px;margin-bottom:14px;border-radius:6px;background:var(--bd2-tint);font-size:11px;letter-spacing:.02em;color:var(--bd1-accent-ink); }\n.bh-dossier-v2 .bd1-timeline { list-style:none;border-left:1px solid var(--bd1-line);margin-left:3px; }\n.bh-dossier-v2 .bd1-entry { position:relative;padding:14px;margin:0 0 12px 16px;border:1px solid var(--bd1-line);border-radius:11px;background:var(--bd1-inset); }\n.bh-dossier-v2 .bd1-entry:last-child { margin-bottom:0; }\n.bh-dossier-v2 .bd1-entry::before { content:'';position:absolute;left:-21px;top:22px;width:7px;height:7px;background:var(--bd1-accent);border-radius:50%;box-shadow:0 0 0 4px var(--bd1-panel); }\n.bh-dossier-v2 .bd1-milestone { background:var(--bd2-tint);border-color:var(--bd1-accent); }\n.bh-dossier-v2 .bd1-milestone::before { border-radius:2px;transform:rotate(45deg); }\n.bh-dossier-v2 .bd1-entry-meta { display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:10px;color:var(--bd1-muted); }\n.bh-dossier-v2 .bd1-type { font-size:9px;font-weight:700;letter-spacing:.03em;padding:3px 7px;background:var(--bd2-tint);color:var(--bd1-accent-ink);border-radius:5px; }\n.bh-dossier-v2 .bd1-entry-status { margin-left:auto; }\n.bh-dossier-v2 h4 { font-size:17px;line-height:1.35;margin-top:9px; }\n.bh-dossier-v2 .bd1-participants { font-size:11px;color:var(--bd1-muted);margin-top:5px; }\n.bh-dossier-v2 .bd1-entry-people { display:flex;flex-wrap:wrap;gap:6px;margin-top:11px; }\n.bh-dossier-v2 .bd1-entry-people a { font-size:10px;padding:3px 7px;border:1px solid var(--bd1-line);border-radius:5px;color:var(--bd1-accent-ink); }\n.bh-dossier-v2 .bd1-entry-copy { margin-top:11px;font-size:13px; }\n.bh-dossier-v2 .bd1-posted-date { margin-top:10px;color:var(--bd1-muted);font-size:10px; }\n.bh-dossier-v2 .bd1-main-playlist { margin-bottom:15px; }\n.bh-dossier-v2 .bd1-songs { display:grid;gap:8px; }\n.bh-dossier-v2 .bd1-song { border:1px solid var(--bd1-line);background:var(--bd1-inset);border-radius:10px;min-width:0; }\n.bh-dossier-v2 .bd1-song>summary { display:flex;align-items:center;gap:10px;list-style:none;padding:12px; }\n.bh-dossier-v2 .bd1-song>summary::-webkit-details-marker { display:none; }\n.bh-dossier-v2 .bd1-song-number { display:grid;place-items:center;width:28px;height:28px;flex:0 0 28px;background:var(--bd2-tint);border-radius:8px;font-size:10px;font-weight:600;color:var(--bd1-accent-ink); }\n.bh-dossier-v2 .bd1-song-title { display:block;font-size:12px;font-weight:650;line-height:1.5; }\n.bh-dossier-v2 .bd1-song-artist { display:block;font-size:10px;color:var(--bd1-muted);margin-top:2px; }\n.bh-dossier-v2 .bd1-song-toggle { margin-left:auto;flex:none;color:var(--bd1-accent-ink);font-size:16px; }\n.bh-dossier-v2 .bd1-song[open] { background:var(--bd2-tint); }\n.bh-dossier-v2 .bd1-song[open] .bd1-song-toggle { transform:rotate(45deg); }\n.bh-dossier-v2 .bd1-song-body { padding:0 10px 11px; }\n.bh-dossier-v2 .bd1-song-note { font-size:12px;color:var(--bd1-muted);margin:0 0 10px; }\n.bh-dossier-v2 .bd1-player { display:block;width:100%;border:0;border-radius:10px;background:var(--bd1-inset);max-width:100%; }\n.bh-dossier-v2 .bd1-listen { margin-top:7px;font-size:10px;color:var(--bd1-accent-ink); }\n.bh-dossier-v2 .bd1-notes>p { font-size:14px;margin-top:12px; }\n.bh-dossier-v2 .bd1-footer { display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:19px 6px 3px;color:var(--bd1-muted);font-size:10px; }\n.bh-dossier-v2 .bd1-footer a { color:var(--bd1-accent-ink); }\nhtml[color-mode=\"light\"] .bh-dossier-v2 { --bd1-bg:color-mix(in srgb,var(--bd1-accent) 4%,#f1f3ee);--bd1-panel:#fff;--bd1-inset:color-mix(in srgb,var(--bd1-accent) 4%,#f4f5f0);--bd1-ink:#242e24;--bd1-muted:#616b60;--bd1-accent-ink:color-mix(in srgb,var(--bd1-accent) 70%,#152012);--bd1-line:color-mix(in srgb,var(--bd1-accent) 20%,#dfe4db);color-scheme:light; }\n@media(prefers-color-scheme:light) {\n  html:not([color-mode=\"dark\"]):not([color-mode=\"light\"]) .bh-dossier-v2 { --bd1-bg:color-mix(in srgb,var(--bd1-accent) 4%,#f1f3ee);--bd1-panel:#fff;--bd1-inset:color-mix(in srgb,var(--bd1-accent) 4%,#f4f5f0);--bd1-ink:#242e24;--bd1-muted:#616b60;--bd1-accent-ink:color-mix(in srgb,var(--bd1-accent) 70%,#152012);--bd1-line:color-mix(in srgb,var(--bd1-accent) 20%,#dfe4db);color-scheme:light; }\n}\n@container bd2 (min-width:820px) {\n  .bh-dossier-v2 .bd1-overview { grid-column:1;grid-row:1; }\n  .bh-dossier-v2 .bd1-connections-panel { grid-column:2;grid-row:1; }\n  .bh-dossier-v2 .bd1-story-panel { grid-column:1; }\n  .bh-dossier-v2 .bd1-soundtrack-panel { grid-column:2; }\n  .bh-dossier-v2 .bd1-content:not(:has(.bd1-overview)) .bd1-connections-panel,\n  .bh-dossier-v2 .bd1-content:not(:has(.bd1-connections-panel)) .bd1-overview,\n  .bh-dossier-v2 .bd1-content:not(:has(.bd1-story-panel)) .bd1-soundtrack-panel,\n  .bh-dossier-v2 .bd1-content:not(:has(.bd1-soundtrack-panel)) .bd1-story-panel { grid-column:1/-1; }\n  .bh-dossier-v2 .bd1-connections { grid-template-columns:1fr; }\n  .bh-dossier-v2 .bd1-people-panel { grid-column:1/-1; }\n}\n@container bd2 (max-width:680px) {\n  .bh-dossier-v2 .bd1-cover { grid-template-columns:1fr;gap:11px; }\n  .bh-dossier-v2 .bd1-hero { min-height:260px; }\n  .bh-dossier-v2 .bd1-identity { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:20px;padding:22px; }\n  .bh-dossier-v2 .bd1-profile-image { width:60px;height:60px;margin-bottom:13px;border-radius:17px; }\n  .bh-dossier-v2 .bd1-summary { justify-content:center; }\n  .bh-dossier-v2 .bd1-stats { grid-column:1/-1;gap:15px; }\n  .bh-dossier-v2 .bd1-stats a { display:flex;gap:8px;align-items:center; }\n  .bh-dossier-v2 .bd1-stats a>span { font-size:20px; }\n  .bh-dossier-v2 .bd1-stats small { margin:0; }\n}\n@container bd2 (max-width:500px) {\n  .bh-dossier-v2 .bd1-connections { grid-template-columns:1fr; }\n  .bh-dossier-v2 .bd1-section { padding:17px; }\n  .bh-dossier-v2 .bd1-identity { padding:20px;gap:15px; }\n  .bh-dossier-v2 .bd1-summary { font-size:11px; }\n  .bh-dossier-v2 .bd1-pinned { gap:8px; }\n  .bh-dossier-v2 .bd1-person { padding:13px 10px; }\n  .bh-dossier-v2 .bd1-person-name { font-size:14px; }\n  .bh-dossier-v2 .bd1-person>img { width:45px;height:45px;border-radius:14px; }\n}\n@container bd2 (max-width:380px) {\n  .bh-dossier-v2 .bd1-hero { min-height:210px; }\n  .bh-dossier-v2 .bd1-masthead { flex-wrap:wrap;font-size:9px; }\n  .bh-dossier-v2 .bd1-identity { grid-template-columns:1fr; }\n  .bh-dossier-v2 .bd1-identity-main { padding-right:72px;position:relative;min-height:67px; }\n  .bh-dossier-v2 .bd1-profile-image { position:absolute;right:0;top:0;width:54px;height:54px;margin:0; }\n  .bh-dossier-v2 .bd1-identity-main:not(:has(.bd1-profile-image)) { padding-right:0; }\n  .bh-dossier-v2 .bd1-summary { gap:4px; }\n  .bh-dossier-v2 .bd1-stats a { display:block;min-width:55px; }\n  .bh-dossier-v2 .bd1-stats small { margin-top:3px; }\n  .bh-dossier-v2 .bd1-nav { gap:6px; }\n  .bh-dossier-v2 .bd1-nav a { padding:8px 10px;font-size:10px; }\n  .bh-dossier-v2 .bd1-section { padding:15px; }\n  .bh-dossier-v2 h2 { font-size:19px; }\n  .bh-dossier-v2 .bd1-heading-note { white-space:normal;text-align:right; }\n  .bh-dossier-v2 .bd1-facts { column-gap:14px; }\n  .bh-dossier-v2 .bd1-facts dd { font-size:12px; }\n  .bh-dossier-v2 .bd1-pinned { grid-template-columns:1fr; }\n  .bh-dossier-v2 .bd1-person { display:grid;grid-template-columns:auto 1fr;gap:3px 12px;padding:13px; }\n  .bh-dossier-v2 .bd1-person>img { grid-column:1;grid-row:1/4;margin:0; }\n  .bh-dossier-v2 .bd1-person-name,.bh-dossier-v2 .bd1-person-kind,.bh-dossier-v2 .bd1-person-flavour { grid-column:2;margin:0; }\n  .bh-dossier-v2 .bd1-person:not(:has(img)) { grid-template-columns:1fr; }\n  .bh-dossier-v2 .bd1-person:not(:has(img))>span { grid-column:1; }\n  .bh-dossier-v2 .bd1-entry { padding:12px;margin-left:12px; }\n  .bh-dossier-v2 .bd1-entry::before { left:-17px; }\n}\n@container bd2 (max-width:334px) {\n  .bh-dossier-v2 .bd1-player { display:none; }\n}\n@media(max-width:430px) {\n  .bh-dossier-v2 { padding:10px;border-radius:20px; }\n}\n@media print {\n  .bh-dossier-v2 { max-width:none;box-shadow:none; }\n  .bh-dossier-v2 .bd1-nav,.bh-dossier-v2 .bd1-footer a { display:none; }\n  .bh-dossier-v2 .bd1-connection,.bh-dossier-v2 .bd1-entry { break-inside:avoid; }\n}\n";</script><script>(function () {
   'use strict';
   const STORAGE_KEY = 'bluehour.character-atelier.library.v1';
   const SETTINGS_KEY = 'bluehour.character-atelier.settings.v1';
-  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css';
+  const PREVIOUS_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css';
+  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css';
   const $ = id => document.getElementById(id);
   const clone = value => JSON.parse(JSON.stringify(value));
   let fieldCounter = 0;
@@ -8523,7 +8726,8 @@ var DOSSIER_NOTICES = {
   let lastStoredLibrary = null;
   let externalChange = false;
   const LIST_LIMITS = { facts: 150, relationships: 200, timeline: 1500, songs: 200 };
-  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
+  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, imagePosition: 30, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
+  const COLOUR_PALETTE = [['Fern', '#5b8612'], ['Sand', '#a99b8e'], ['Apricot', '#d9804d'], ['Blue', '#5187b5'], ['Rose', '#b9768c']];
 
   function uid(prefix) {
     return prefix + '-' + (globalThis.crypto && crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 9));
@@ -8594,6 +8798,12 @@ var DOSSIER_NOTICES = {
   function normalizeDraftDataset(raw) {
     const prepared = clone(raw);
     const characters = prepared && Array.isArray(prepared.characters) ? prepared.characters : prepared && (Object.hasOwn(prepared, 'name') || Object.hasOwn(prepared, 'id')) ? [prepared] : [];
+    const starters = new Map((Array.isArray(globalThis.DOSSIER_SEED?.characters) ? globalThis.DOSSIER_SEED.characters : []).map(character => [character.id, character]));
+    characters.forEach(character => {
+      if (!character || typeof character !== 'object' || Array.isArray(character) || Object.hasOwn(character, 'avatar')) return;
+      const starter = starters.get(character.id);
+      if (starter && typeof starter.avatar === 'string') character.avatar = starter.avatar;
+    });
     const dates = characters.map(character => {
       if (character && typeof character === 'object') Object.entries(LIST_LIMITS).forEach(([key, limit]) => {
         if (Array.isArray(character[key]) && character[key].length > limit) throw new Error('A character can contain up to ' + limit + ' ' + key + ' records.');
@@ -8621,6 +8831,7 @@ var DOSSIER_NOTICES = {
         settings.theme = savedSettings.theme === 'light' ? 'light' : 'dark';
         settings.narrow = savedSettings.narrow === true;
         settings.stylesheetUrl = typeof savedSettings.stylesheetUrl === 'string' ? savedSettings.stylesheetUrl : DEFAULT_STYLESHEET;
+        if (settings.stylesheetUrl === PREVIOUS_STYLESHEET) settings.stylesheetUrl = DEFAULT_STYLESHEET;
       }
       const saved = localStorage.getItem(STORAGE_KEY);
       lastStoredLibrary = saved;
@@ -8694,6 +8905,63 @@ var DOSSIER_NOTICES = {
   }
   function help(text) { return node('p', { className: 'field-help', text }); }
   function grid() { return node('div', { className: 'form-grid' }, [...arguments]); }
+  function fullHex(value) {
+    if (/^#[0-9a-f]{6}$/i.test(value || '')) return value.toLowerCase();
+    if (/^#[0-9a-f]{3}$/i.test(value || '')) return '#' + value.slice(1).split('').map(letter => letter + letter).join('').toLowerCase();
+    return '';
+  }
+  function updateChromeColour() {
+    const colour = fullHex(current().accent);
+    if (colour) document.documentElement.style.setProperty('--character-colour', colour);
+  }
+  function colourFields(character) {
+    const wrapper = node('fieldset', { className: 'colour-fieldset' }, node('legend', { text: 'Character colour' }));
+    const picker = node('input', { type: 'color', 'aria-label': 'Choose character colour', 'data-field': 'accent-picker' });
+    const swatches = node('div', { className: 'colour-swatches', role: 'group', 'aria-label': 'Character colour palette' });
+    let hexInput;
+    function syncColour() {
+      const hex = fullHex(character.accent);
+      if (hex) picker.value = hex;
+      swatches.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.colour === hex)));
+      updateChromeColour();
+    }
+    function chooseColour(value) {
+      character.accent = value; hexInput.value = value; syncColour(); changed();
+    }
+    const hex = field('Hex colour', character, 'accent', { placeholder: '#5b8612', maxLength: 7, onChange: syncColour });
+    hexInput = hex.querySelector('input');
+    picker.value = fullHex(character.accent) || '#5b8612';
+    picker.addEventListener('input', () => chooseColour(picker.value));
+    wrapper.append(node('div', { className: 'colour-controls' }, [picker, hex]), help('Sets the colour of this character’s panels, tags and highlights. Match it to their photos.'));
+    COLOUR_PALETTE.forEach(([name, value]) => {
+      const button = node('button', { type: 'button', className: 'colour-swatch', 'data-colour': value, 'aria-label': name + ' ' + value, 'aria-pressed': 'false', onclick: () => chooseColour(value) }, [node('span', { className: 'colour-swatch-dot', 'aria-hidden': 'true' }), node('span', { text: name })]);
+      button.style.setProperty('--swatch', value); swatches.append(button);
+    });
+    wrapper.append(swatches); syncColour();
+    return wrapper;
+  }
+  function cropField(character) {
+    const wrapper = node('label', { className: 'form-field' }, 'Header crop');
+    const select = node('select', { 'data-field': 'imagePosition' });
+    const crops = [['50% 20%', 'Higher'], ['50% 35%', 'Portrait focus'], ['50% 50%', 'Centre'], ['50% 80%', 'Lower']];
+    const currentValue = character.imagePosition || '50% 35%';
+    if (!crops.some(([value]) => value === currentValue)) crops.push([currentValue, 'Custom position']);
+    crops.forEach(([value, text]) => select.append(node('option', { value, text })));
+    select.value = currentValue;
+    select.addEventListener('change', () => { character.imagePosition = select.value; changed(); });
+    wrapper.append(select); return wrapper;
+  }
+  function starterAppearance(character) {
+    const starter = globalThis.DOSSIER_SEED && globalThis.DOSSIER_SEED.characters.find(item => item.id === character.id);
+    if (!starter) return node('span');
+    return node('div', { className: 'starter-appearance' }, [node('button', { type: 'button', className: 'button-quiet', text: 'Use starter appearance', onclick: () => {
+      character.portrait = starter.portrait || '';
+      character.avatar = starter.avatar || '';
+      character.accent = starter.accent || '#a99b8e';
+      changed(); renderForm(); updatePreview();
+      message('Starter photos and colour restored for ' + labelFor(character) + '.');
+    } }), help('Restore this character’s starter photos and colour.')]);
+  }
   function section(id, number, title) {
     const element = node('details', { className: 'editor-section', 'data-section': id }); element.open = openSections.has(id);
     element.append(node('summary', {}, [node('span', { className: 'section-number', text: number }), node('span', { text: title }), node('span', { className: 'section-chevron', 'aria-hidden': 'true', text: '＋' })]));
@@ -8742,7 +9010,7 @@ var DOSSIER_NOTICES = {
     const character = current();
     $('character-form').replaceChildren(); renderNotices();
     let body = section('identity', '01', 'Identity & atmosphere');
-    body.append(field('Full name', character, 'name', { picker: true }), grid(field('Preferred name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Gender', character, 'gender'), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }), field('Header photograph', character, 'portrait', { type: 'url', placeholder: 'https://…' }), field('Character accent colour', character, 'accent', { placeholder: '#789348', maxLength: 7, help: 'A small personal accent alongside the forum group colours.' }), field('Personality tags', character, 'tags', { array: true, multiline: true, rows: 3, help: 'One tag per line. Empty tags are omitted.' }));
+    body.append(field('Full name', character, 'name', { picker: true }), grid(field('Preferred name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Gender', character, 'gender'), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }), field('Header photograph', character, 'portrait', { type: 'url', placeholder: 'https://…' }), cropField(character), field('Portrait / PI image', character, 'avatar', { type: 'url', placeholder: 'https://…', help: 'An optional separate portrait for the identity panel.' }), colourFields(character), starterAppearance(character), field('Personality tags', character, 'tags', { array: true, multiline: true, rows: 3, help: 'One tag per line. Empty tags are omitted.' }));
     body = section('facts', '02', 'The encyclopaedia');
     body.append(help('Keep the established facts here: birthday, languages, favourites, and all their small details.'));
     repeater(body, 'facts', 'Fact', item => item.label, () => ({ label: '', value: '' }), (row, item, title) => row.append(field('Fact label', item, 'label', { onChange: title }), field('Value', item, 'value', { multiline: true, rows: 2 })));
@@ -8795,9 +9063,9 @@ var DOSSIER_NOTICES = {
       if (character.tags.some(tag => tag.length > 120)) throw new Error('Keep each personality tag to 120 characters or fewer. Your full draft is kept until you shorten it.');
       const rendered = Dossier.render(character, { includeStylesheet: false });
       generatedCode = Dossier.forum(character, stylesheetUrl());
-      const localCss = new URL('dossier-v1.css', document.baseURI).href;
+      const localCss = new URL('dossier-v2.css', document.baseURI).href;
       const css = typeof globalThis.DOSSIER_PREVIEW_CSS === 'string' ? '<style>' + globalThis.DOSSIER_PREVIEW_CSS.replace(/<\/style/gi, '<\\/style') + '</style>' : '<link rel="stylesheet" href="' + Dossier.escapeHtml(localCss) + '">';
-      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v1{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
+      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v2{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
       $('dossier-preview').srcdoc = doc;
       $('preview-error').hidden = true;
       $('forum-code').value = generatedCode;
