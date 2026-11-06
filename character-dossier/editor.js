@@ -2,8 +2,8 @@
   'use strict';
   const STORAGE_KEY = 'bluehour.character-atelier.library.v1';
   const SETTINGS_KEY = 'bluehour.character-atelier.settings.v1';
-  const PREVIOUS_STYLESHEETS = ['https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css'];
-  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v4.css';
+  const PREVIOUS_STYLESHEETS = ['https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v4.css'];
+  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.css';
   const $ = id => document.getElementById(id);
   const clone = value => JSON.parse(JSON.stringify(value));
   let fieldCounter = 0;
@@ -13,13 +13,17 @@
   let settings = { selectedId: '', theme: 'dark', narrow: false, stylesheetUrl: DEFAULT_STYLESHEET };
   let storageAvailable = true;
   let generatedCode = '';
+  let exportBusy = false;
   let openSections = new Set(['identity']);
   let recoveryDownload = null;
   let dirty = false;
   let lastStoredLibrary = null;
   let externalChange = false;
+  const photoThemeStates = new Map();
+  const photoThemeJobs = new Map();
+  let photoThemeSequence = 0;
   const LIST_LIMITS = { facts: 150, relationships: 200, timeline: 1500, songs: 200, polaroids: 3 };
-  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, image: 4000, imagePosition: 30, mapLocation: 250, mapLatitude: 40, mapLongitude: 40, mapZoom: 2, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
+  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, image: 4000, imagePosition: 30, mapLocation: 250, mapLatitude: 40, mapLongitude: 40, mapZoom: 2, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, brand: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
   const COLOUR_PALETTE = [['Fern', '#5b8612'], ['Sand', '#a99b8e'], ['Apricot', '#d9804d'], ['Blue', '#5187b5'], ['Rose', '#b9768c']];
 
   function uid(prefix) {
@@ -94,7 +98,37 @@
     const starters = new Map((Array.isArray(globalThis.DOSSIER_SEED?.characters) ? globalThis.DOSSIER_SEED.characters : []).map(character => [character.id, character]));
     characters.forEach(character => {
       if (!character || typeof character !== 'object' || Array.isArray(character)) return;
+      if (character.id === 'baek-samuel' && Array.isArray(character.relationships)) {
+        const knownBrands = { dom: ['almond', 'Lindor'], crazhes: ['marshmallow', 'Mochidoki'], jiae: ['treacle', 'Pringles'] };
+        character.relationships.forEach(connection => {
+          if (!connection || typeof connection !== 'object' || Object.hasOwn(connection, 'brand')) return;
+          const previous = knownBrands[connection.id];
+          if (previous && String(connection.flavour || '').trim().toLowerCase() === previous[0]) { connection.brand = previous[1]; connection.flavour = ''; }
+        });
+      }
       const starter = starters.get(character.id);
+      if (character.id === 'baek-samuel' && Array.isArray(character.timeline)) {
+        const legacy = [
+          { id: 'almond-croissant', title: 'almond croissant', currentTitle: 'Lindor Pistachio', topic: '62747', participants: 'sam & dom', type: 'Comms', connectionIds: ['dom'] },
+          { id: 'treacle-tart', title: 'treacle tart', currentTitle: 'Pringles Texas BBQ', topic: '64015', participants: 'sam & jiae', type: 'Comms', connectionIds: ['jiae'] },
+          { id: 'marshmallow-spread', title: 'marshmallow spread', currentTitle: 'Mochidoki Cake Batter', topic: '83999', participants: 'CRAZHES', type: 'Comms', connectionIds: ['crazhes'] },
+          { id: 'pumpkin-pie', title: 'pumpkin pie', topic: '98948', participants: 'group thread', type: 'Thread', connectionIds: [] },
+          { id: 'cereal-milk', title: 'cereal milk', topic: '104200', participants: 'sam & hoseong', type: 'Thread', connectionIds: ['hoseong'] }
+        ];
+        const topicOf = entry => { try { const url = new URL(entry.url); return url.origin === 'https://bluehour.jcink.net' && url.pathname === '/index.php' ? url.searchParams.get('showtopic') : ''; } catch (_) { return ''; } };
+        const blank = value => value === undefined || value === '';
+        const untouchedLegacy = character.timeline.length === 5 && legacy.every(previous => {
+          const entry = character.timeline.find(item => item && item.id === previous.id);
+          return entry && String(entry.title || '').trim().toLowerCase() === previous.title && entry.url === 'https://bluehour.jcink.net/index.php?showtopic=' + previous.topic && entry.participants === previous.participants && entry.type === previous.type && JSON.stringify(entry.connectionIds) === JSON.stringify(previous.connectionIds) && ['date', 'dateLabel', 'postedDate', 'status', 'summary'].every(key => blank(entry[key])) && (entry.milestone === undefined || entry.milestone === false);
+        });
+        character.timeline.forEach(entry => {
+          if (!entry || typeof entry !== 'object') return;
+          const previous = legacy.find(item => item.id === entry.id && item.currentTitle);
+          if (previous && topicOf(entry) === previous.topic && String(entry.title || '').trim().toLowerCase() === previous.title) entry.title = previous.currentTitle;
+        });
+        const cerealBar = starter?.timeline?.find(entry => entry.id === 'cereal-bar' && topicOf(entry) === '112783');
+        if (untouchedLegacy && cerealBar && !character.timeline.some(entry => topicOf(entry) === '112783')) character.timeline.push(clone(cerealBar));
+      }
       if (!starter) return;
       ['avatar', 'polaroids', 'mapLocation', 'mapLatitude', 'mapLongitude', 'mapZoom'].forEach(key => {
         if (!Object.hasOwn(character, key) && Object.hasOwn(starter, key)) character[key] = clone(starter[key]);
@@ -221,8 +255,97 @@
     const colour = fullHex(current().accent);
     if (colour) document.documentElement.style.setProperty('--character-colour', colour);
   }
+  function cancelPhotoTheme(id) {
+    const job = photoThemeJobs.get(id);
+    if (job) { clearTimeout(job.timer); job.controller.abort(); job.resolve?.({ status: 'cancelled' }); photoThemeJobs.delete(id); }
+  }
+  function cancelOtherPhotoThemes(keepId) {
+    photoThemeJobs.forEach((job, id) => { if (id !== keepId) { cancelPhotoTheme(id); photoThemeStates.delete(id); } });
+  }
+  function showPhotoThemeStatus(character) {
+    if (character !== current()) return;
+    const status = document.querySelector('[data-photo-theme-status]');
+    if (!status) return;
+    const state = photoThemeStates.get(character.id);
+    status.dataset.state = character.themeMode === 'manual' ? 'manual' : state?.status || 'idle';
+    status.textContent = character.themeMode === 'manual' ? 'Your chosen colour is applied to this character.' : state?.message || 'The header photo sets the colour of the whole page automatically.';
+    const retry = document.querySelector('[data-photo-theme-retry]');
+    if (retry) retry.hidden = character.themeMode === 'manual' || !character.portrait;
+    const hex = fullHex(character.accent);
+    const manual = document.querySelector('[data-field="accent"]');
+    const picker = document.querySelector('[data-field="accent-picker"]');
+    if (manual && document.activeElement !== manual) manual.value = character.accent || '';
+    if (picker && hex) picker.value = hex;
+    document.querySelectorAll('[data-colour]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.colour === hex)));
+  }
+  function requestPhotoTheme(character, force) {
+    const crop = character.imagePosition || '50% 35%';
+    const url = Dossier.safeUrl(character.portrait);
+    const key = url + '|' + crop;
+    if (character.themeMode === 'manual') { cancelPhotoTheme(character.id); showPhotoThemeStatus(character); return Promise.resolve({ status: 'manual' }); }
+    if (!url) {
+      cancelPhotoTheme(character.id);
+      photoThemeStates.set(character.id, { key, status: 'idle', message: character.portrait ? 'Use a complete header image address to create its colour theme.' : 'Add a header photo to create its colour theme.' });
+      showPhotoThemeStatus(character); return Promise.resolve(photoThemeStates.get(character.id));
+    }
+    const activeJob = photoThemeJobs.get(character.id);
+    if (!force && activeJob && photoThemeStates.get(character.id)?.key === key) { showPhotoThemeStatus(character); return activeJob.promise; }
+    if (!force && character.paletteSource === url && (character.paletteCrop || '50% 35%') === crop && fullHex(character.accent)) {
+      cancelPhotoTheme(character.id);
+      photoThemeStates.set(character.id, { key, status: 'ready', message: 'Colour matched automatically to the header photo.' });
+      showPhotoThemeStatus(character); return Promise.resolve(photoThemeStates.get(character.id));
+    }
+    const previous = photoThemeStates.get(character.id);
+    if (!force && previous?.key === key && ['loading', 'error'].includes(previous.status)) { showPhotoThemeStatus(character); return photoThemeJobs.get(character.id)?.promise || Promise.resolve(previous); }
+    cancelPhotoTheme(character.id);
+    if (!globalThis.PhotoPalette) {
+      photoThemeStates.set(character.id, { key, status: 'error', message: 'Automatic colour sampling is unavailable because palette.js did not load. The previous colour is kept.' });
+      showPhotoThemeStatus(character); return Promise.resolve(photoThemeStates.get(character.id));
+    }
+    const controller = new AbortController();
+    const token = ++photoThemeSequence;
+    const job = { token, controller, timer: null, resolve: null, promise: null };
+    job.promise = new Promise(resolve => { job.resolve = resolve; });
+    photoThemeJobs.set(character.id, job);
+    photoThemeStates.set(character.id, { key, status: 'loading', message: 'Finding the colours in the header photo…' });
+    showPhotoThemeStatus(character);
+    const stillCurrent = () => photoThemeJobs.get(character.id)?.token === token && !controller.signal.aborted && character.themeMode !== 'manual' && Dossier.safeUrl(character.portrait) === url && (character.imagePosition || '50% 35%') === crop && library.characters.includes(character);
+    job.timer = setTimeout(async () => {
+      try {
+        const sources = globalThis.PHOTO_PALETTE_SOURCES || {};
+        const sourceUrl = typeof sources[url] === 'string' ? sources[url] : undefined;
+        const colour = await PhotoPalette.get(url, { crop, sourceUrl, signal: controller.signal, refresh: Boolean(force) });
+        if (!stillCurrent()) { job.resolve({ status: 'cancelled' }); return; }
+        character.accent = colour; character.themeMode = 'auto'; character.paletteSource = url; character.paletteCrop = crop;
+        photoThemeJobs.delete(character.id);
+        photoThemeStates.set(character.id, { key, status: 'ready', message: 'Colour matched automatically to the header photo.' });
+        if (character === current()) { updateChromeColour(); showPhotoThemeStatus(character); }
+        changed();
+        job.resolve({ status: 'ready' });
+      } catch (error) {
+        if (error.name === 'AbortError' || !stillCurrent()) { job.resolve({ status: 'cancelled' }); return; }
+        photoThemeJobs.delete(character.id);
+        photoThemeStates.set(character.id, { key, status: 'error', message: error.message || 'The photo could not be sampled. The previous colour is kept.' });
+        showPhotoThemeStatus(character);
+        job.resolve({ status: 'error', message: error.message });
+      }
+    }, force ? 0 : 350);
+    return job.promise;
+  }
   function colourFields(character) {
     const wrapper = node('fieldset', { className: 'colour-fieldset' }, node('legend', { text: 'Character colour' }));
+    const automatic = character.themeMode !== 'manual';
+    const modeControls = node('div', { className: 'colour-mode-controls', role: 'group', 'aria-label': 'Character colour source' });
+    modeControls.append(node('button', { type: 'button', 'aria-pressed': String(automatic), text: 'From header photo', onclick: () => {
+      character.themeMode = 'auto'; changed(); renderForm(); requestPhotoTheme(character, true);
+    } }), node('button', { type: 'button', 'aria-pressed': String(!automatic), text: 'Choose my own', onclick: () => {
+      character.themeMode = 'manual'; cancelPhotoTheme(character.id); changed(); renderForm(); showPhotoThemeStatus(character);
+    } }));
+    const themeStatus = node('p', { className: 'photo-theme-status', 'data-photo-theme-status': '', role: 'status', 'aria-live': 'polite', text: automatic ? 'The header photo sets the colour of the whole page automatically.' : 'Your chosen colour is applied to this character.' });
+    const retry = node('button', { type: 'button', className: 'photo-theme-retry', 'data-photo-theme-retry': '', text: 'Sample photo again', onclick: () => requestPhotoTheme(character, true) });
+    retry.hidden = !automatic || !character.portrait;
+    wrapper.append(modeControls, themeStatus, retry);
+    const manualControls = node('div', { className: 'colour-manual-controls', hidden: automatic });
     const picker = node('input', { type: 'color', 'aria-label': 'Choose character colour', 'data-field': 'accent-picker' });
     const swatches = node('div', { className: 'colour-swatches', role: 'group', 'aria-label': 'Character colour palette' });
     let hexInput;
@@ -232,19 +355,20 @@
       swatches.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.colour === hex)));
       updateChromeColour();
     }
+    function markManual() { character.themeMode = 'manual'; character.paletteSource = ''; character.paletteCrop = ''; cancelPhotoTheme(character.id); syncColour(); }
     function chooseColour(value) {
-      character.accent = value; hexInput.value = value; syncColour(); changed();
+      character.accent = value; hexInput.value = value; markManual(); changed();
     }
-    const hex = field('Hex colour', character, 'accent', { placeholder: '#5b8612', maxLength: 7, onChange: syncColour });
+    const hex = field('Hex colour', character, 'accent', { placeholder: '#5b8612', maxLength: 7, onChange: markManual });
     hexInput = hex.querySelector('input');
     picker.value = fullHex(character.accent) || '#5b8612';
     picker.addEventListener('input', () => chooseColour(picker.value));
-    wrapper.append(node('div', { className: 'colour-controls' }, [picker, hex]), help('Sets the colour of this character’s panels, borders and highlights. Match it to their photos.'));
+    manualControls.append(node('div', { className: 'colour-controls' }, [picker, hex]), help('A manual override for this character’s panels, borders and highlights.'));
     COLOUR_PALETTE.forEach(([name, value]) => {
       const button = node('button', { type: 'button', className: 'colour-swatch', 'data-colour': value, 'aria-label': name + ' ' + value, 'aria-pressed': 'false', onclick: () => chooseColour(value) }, [node('span', { className: 'colour-swatch-dot', 'aria-hidden': 'true' }), node('span', { text: name })]);
       button.style.setProperty('--swatch', value); swatches.append(button);
     });
-    wrapper.append(swatches); syncColour();
+    manualControls.append(swatches); wrapper.append(manualControls); syncColour();
     return wrapper;
   }
   function cropField(character) {
@@ -264,9 +388,10 @@
     return node('div', { className: 'starter-appearance' }, [node('button', { type: 'button', className: 'button-quiet', text: 'Use starter appearance', onclick: () => {
       character.portrait = starter.portrait || '';
       character.avatar = starter.avatar || '';
-      character.accent = starter.accent || '#a99b8e';
+      character.accent = starter.accent || '#a99b8e'; character.themeMode = 'auto'; character.paletteSource = ''; character.paletteCrop = '';
+      cancelPhotoTheme(character.id); photoThemeStates.delete(character.id);
       changed(); renderForm(); updatePreview();
-      message('Starter photos and colour restored for ' + labelFor(character) + '.');
+      message('Starter photos restored for ' + labelFor(character) + '. The colour will follow the header.');
     } }), help('Restore this character’s starter photos and colour.')]);
   }
   function mapSearchUrl(place) {
@@ -369,10 +494,10 @@
     body = section('facts', '03', 'The encyclopaedia');
     body.append(help('Keep the established facts here: birthday, languages, favourites, and all their small details.'));
     repeater(body, 'facts', 'Fact', item => item.label, () => ({ label: '', value: '' }), (row, item, title) => row.append(field('Fact label', item, 'label', { onChange: title }), field('Value', item, 'value', { multiline: true, rows: 2 })));
-    body = section('people', '04', 'People, ships & flavours');
-    body.append(help('Each connection lives here once. Add their flavour, shared details and links, then choose these same connections when adding a story entry.'));
-    repeater(body, 'relationships', 'Connection', item => item.name, () => ({ id: uid('connection'), name: '', kind: '', flavour: '', status: '', portrait: '', url: '', summary: '', pinned: false, featured: false, quote: '', playlistUrl: '' }), (row, item, title) => {
-      row.append(field('Connection name', item, 'name', { onChange: title }), grid(field('Connection type', item, 'kind', { choices: ['', 'Partner', 'Friend', 'Family', 'Group', 'Other'] }), field('Flavour', item, 'flavour')), field('Connection status', item, 'status', { placeholder: 'Active / past / developing' }), check('Feature this ship or relationship', item, 'featured'), field('What they mean to each other', item, 'summary', { multiline: true }), field('Portrait', item, 'portrait', { type: 'url', placeholder: 'https://…' }), field('Profile or development post', item, 'url', { type: 'url', placeholder: 'https://…' }), field('A shared quote', item, 'quote', { multiline: true, rows: 2 }), field('Shared playlist', item, 'playlistUrl', { type: 'url', placeholder: 'https://open.spotify.com/playlist/…' }));
+    body = section('people', '04', 'Flavours & brands');
+    body.append(help('Each connection lives here once. Keep a flavour, a brand, or both, then choose these same connections when adding a story entry.'));
+    repeater(body, 'relationships', 'Connection', item => item.name, () => ({ id: uid('connection'), name: '', kind: '', flavour: '', brand: '', status: '', portrait: '', url: '', summary: '', pinned: false, featured: false, quote: '', playlistUrl: '' }), (row, item, title) => {
+      row.append(field('Connection name', item, 'name', { onChange: title }), field('Connection type', item, 'kind', { choices: ['', 'Partner', 'Friend', 'Family', 'Group', 'Other'] }), grid(field('Flavour', item, 'flavour'), field('Brand', item, 'brand')), field('Connection status', item, 'status', { placeholder: 'Active / past / developing' }), check('Feature this ship or relationship', item, 'featured'), field('What they mean to each other', item, 'summary', { multiline: true }), field('Portrait', item, 'portrait', { type: 'url', placeholder: 'https://…' }), field('Profile or development post', item, 'url', { type: 'url', placeholder: 'https://…' }), field('A shared quote', item, 'quote', { multiline: true, rows: 2 }), field('Shared playlist', item, 'playlistUrl', { type: 'url', placeholder: 'https://open.spotify.com/playlist/…' }));
     }, item => {
       const linked = character.timeline.filter(entry => entry.connectionIds.includes(item.id));
       if (linked.length && !confirm('Remove ' + (item.name || 'this connection') + '? Its link will also be removed from ' + linked.length + ' story entries. The stories themselves will stay.')) return false;
@@ -413,13 +538,14 @@
     try {
       const rendered = Dossier.render(character, { includeStylesheet: false });
       generatedCode = Dossier.forum(character, stylesheetUrl());
-      const localCss = new URL('dossier-v4.css', document.baseURI).href;
+      const localCss = new URL('dossier-v5.css', document.baseURI).href;
       const css = typeof globalThis.DOSSIER_PREVIEW_CSS === 'string' ? '<style>' + globalThis.DOSSIER_PREVIEW_CSS.replace(/<\/style/gi, '<\\/style') + '</style>' : '<link rel="stylesheet" href="' + Dossier.escapeHtml(localCss) + '">';
-      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v4{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
+      const runtime = typeof globalThis.DOSSIER_PREVIEW_RUNTIME === 'string' ? '<script>' + globalThis.DOSSIER_PREVIEW_RUNTIME.replace(/<\/script/gi, '<\\/script') + '</script>' : '<script src="' + Dossier.escapeHtml(new URL('dossier-runtime-v5.js', document.baseURI).href) + '"></script>';
+      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v5{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + runtime + '</body></html>';
       $('dossier-preview').srcdoc = doc;
       $('preview-error').hidden = true;
       $('forum-code').value = generatedCode;
-      $('copy-post').disabled = false; $('download-post').disabled = false;
+      $('copy-post').disabled = exportBusy; $('download-post').disabled = exportBusy;
     } catch (error) {
       generatedCode = '';
       $('preview-error').textContent = 'Finish this detail to update the preview: ' + error.message;
@@ -431,9 +557,10 @@
     $('preview-theme').setAttribute('aria-pressed', String(settings.theme === 'light'));
     $('preview-width').setAttribute('aria-pressed', String(settings.narrow));
     document.querySelector('.preview-canvas').dataset.narrow = String(settings.narrow);
+    requestPhotoTheme(character, false);
   }
   function switchCharacter(id) {
-    saveDraft(); settings.selectedId = id; saveSettings();
+    saveDraft(); cancelOtherPhotoThemes(id); settings.selectedId = id; saveSettings();
     updatePicker(); renderForm(); updatePreview();
     message('Editing ' + labelFor(current()) + '.');
   }
@@ -444,22 +571,44 @@
     character.id = uid('character');
     if (duplicate) character.name = labelFor(current()) + ' — copy';
     library.characters.push(character); settings.selectedId = character.id;
+    cancelOtherPhotoThemes(character.id);
     dirty = true;
     $('character-search').value = ''; openSections.add('identity');
     updatePicker(); renderForm(); updatePreview(); saveDraft();
     $('character-form').querySelector('[data-field="name"]').focus();
     message(duplicate ? 'A separate copy is ready to edit.' : 'A blank character is ready to make your own.');
   }
+  async function preparePost() {
+    if (exportBusy) return null;
+    updatePreview(); if (!generatedCode) return null;
+    const character = current();
+    const originalUrl = Dossier.safeUrl(character.portrait);
+    const originalCrop = character.imagePosition || '50% 35%';
+    exportBusy = true;
+    $('copy-post').disabled = true; $('download-post').disabled = true;
+    if (character.themeMode !== 'manual' && originalUrl && (character.paletteSource !== originalUrl || (character.paletteCrop || '50% 35%') !== originalCrop)) message('Matching the page colour to the header photo before preparing the post…');
+    try {
+      const result = await requestPhotoTheme(character, false);
+      if (current() !== character || Dossier.safeUrl(character.portrait) !== originalUrl || (character.imagePosition || '50% 35%') !== originalCrop || result?.status === 'cancelled') {
+        message('The character or photo changed while the post was being prepared. Copy or download again to use the current version.', true); return null;
+      }
+      updatePreview();
+      return generatedCode ? { code: generatedCode, character, fallback: result?.status === 'error' } : null;
+    } finally {
+      exportBusy = false;
+      $('copy-post').disabled = !generatedCode; $('download-post').disabled = !generatedCode;
+    }
+  }
   async function copyPost() {
-    updatePreview(); if (!generatedCode) return;
+    const post = await preparePost(); if (!post) return;
     try {
       if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
-      await navigator.clipboard.writeText(generatedCode);
-      message('Forum post copied. Paste it into the development thread.');
+      await navigator.clipboard.writeText(post.code);
+      message(post.fallback ? 'Forum post copied with the previous colour because the photo could not be sampled.' : 'Forum post copied. Paste it into the development thread.');
     } catch (_) {
-      $('manual-copy').value = generatedCode;
+      $('manual-copy').value = post.code;
       $('copy-fallback').showModal(); $('manual-copy').focus(); $('manual-copy').select();
-      message('Your post is ready in the copy window.');
+      message(post.fallback ? 'Your post is ready in the copy window, using the previous colour because the photo could not be sampled.' : 'Your post is ready in the copy window.');
     }
   }
   function exportBackup(single) {
@@ -480,6 +629,7 @@
       if (conflicts.length && !confirm('This backup contains ' + conflicts.length + ' character' + (conflicts.length === 1 ? '' : 's') + ' already in your library. Replace their current drafts with the imported versions? Other characters will stay unchanged. Save a backup first if you want to keep both versions.')) { message('Import cancelled. Your library is unchanged.'); return; }
       imported.characters.forEach(character => byId.set(character.id, character));
       if (byId.size > 500) throw new Error('The combined library would contain more than 500 characters. Import a smaller backup.');
+      imported.characters.forEach(character => { cancelPhotoTheme(character.id); photoThemeStates.delete(character.id); });
       library = { version: 1, characters: [...byId.values()] };
       dirty = true;
       settings.selectedId = imported.characters[0].id;
@@ -497,7 +647,7 @@
     $('new-character').addEventListener('click', () => createCharacter(false));
     $('duplicate-character').addEventListener('click', () => createCharacter(true));
     $('copy-post').addEventListener('click', copyPost);
-    $('download-post').addEventListener('click', () => { updatePreview(); if (!generatedCode) return; download(generatedCode, fileName(current()) + '-forum-post.txt', 'text/plain;charset=utf-8'); message('Forum post downloaded. Paste its contents into your development thread.'); });
+    $('download-post').addEventListener('click', async () => { const post = await preparePost(); if (!post) return; download(post.code, fileName(post.character) + '-forum-post.txt', 'text/plain;charset=utf-8'); message(post.fallback ? 'Forum post downloaded with the previous colour because the photo could not be sampled.' : 'Forum post downloaded. Paste its contents into your development thread.'); });
     $('save-character').addEventListener('click', () => exportBackup(true));
     $('save-library').addEventListener('click', () => exportBackup(false));
     $('import-backup').addEventListener('change', importBackup);

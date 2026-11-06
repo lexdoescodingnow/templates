@@ -17,7 +17,7 @@ const capture = (text, pattern, label) => {
 };
 
 function relationship(values) {
-  return {id:'', name:'', kind:'Other', flavour:'', status:'', portrait:'', url:'', summary:'', pinned:false, featured:false, quote:'', playlistUrl:'', ...values};
+  return {id:'', name:'', kind:'Other', flavour:'', brand:'', status:'', portrait:'', url:'', summary:'', pinned:false, featured:false, quote:'', playlistUrl:'', ...values};
 }
 
 function parseCharacter(record) {
@@ -96,18 +96,24 @@ Object.assign(sam, {
     {label:'Favorite food', value:'pizza'},
     {label:'Face claim', value:'kang yuchan'}
   ],
+  // Current naming categories: https://chatgpt.com/space/page_0eadef96d4a0819194dc68c40f67f199
+  // The key is sourced to Lex's FLAVOUR LIST, Blue Hour topic 86726. Brands do not imply romance.
   relationships:[
-    relationship({id:'dom', name:'Dom', flavour:'almond', status:'Active', portrait:byName.get('dominic lim').portrait}),
+    relationship({id:'dom', name:'Dom', brand:'Lindor', status:'Active', portrait:byName.get('dominic lim').portrait}),
     relationship({id:'hoseong', name:'Hwak Hoseong', kind:'Partner', flavour:'cereal', status:'Active', portrait:'https://64.media.tumblr.com/249bd77b93613f7adfe8e9bad8aed989/2ea52ad3c9269f24-0a/s540x810/f575f8f33a06017a9a9e024239ef77986315a849.gifv', url:'https://bluehour.jcink.net/index.php?showtopic=104200', featured:true}),
-    relationship({id:'crazhes', name:'CRAZHES', kind:'Group', flavour:'marshmallow', status:'Active'}),
-    relationship({id:'jiae', name:'Jiae', flavour:'treacle', status:'Active', portrait:byName.get('baek jiae').portrait})
+    relationship({id:'crazhes', name:'CRAZHES', kind:'Group', brand:'Mochidoki', status:'Active'}),
+    relationship({id:'jiae', name:'Jiae', brand:'Pringles', status:'Active', portrait:byName.get('baek jiae').portrait})
   ],
   timeline:[
-    ['almond-croissant', 'almond croissant', '62747', 'Comms', 'sam & dom', ['dom']],
-    ['treacle-tart', 'treacle tart', '64015', 'Comms', 'sam & jiae', ['jiae']],
-    ['marshmallow-spread', 'marshmallow spread', '83999', 'Comms', 'CRAZHES', ['crazhes']],
+    // Renamed topics retain their existing record IDs and destinations. Topic 62747 is indexed
+    // as Lindor Pistachio in the encyclopaedia's relationship source map (30 September 2026).
+    // Topics 64015, 83999 and 112783 were read for the comms catalogue on 5 November 2026.
+    ['almond-croissant', 'Lindor Pistachio', '62747', 'Comms', 'sam & dom', ['dom']],
+    ['treacle-tart', 'Pringles Texas BBQ', '64015', 'Comms', 'sam & jiae', ['jiae']],
+    ['marshmallow-spread', 'Mochidoki Cake Batter', '83999', 'Comms', 'CRAZHES', ['crazhes']],
     ['pumpkin-pie', 'pumpkin pie', '98948', 'Thread', 'group thread', []],
-    ['cereal-milk', 'cereal milk', '104200', 'Thread', 'sam & hoseong', ['hoseong']]
+    ['cereal-milk', 'cereal milk', '104200', 'Thread', 'sam & hoseong', ['hoseong']],
+    ['cereal-bar', 'Cereal Bar', '112783', 'Comms', 'sam & hoseong', ['hoseong']]
   ].map(([id,title,topic,type,participants,connectionIds]) => ({id,title,url:'https://bluehour.jcink.net/index.php?showtopic='+topic,date:'',dateLabel:'',postedDate:'',participants,type,status:'',connectionIds,summary:'',milestone:false})),
   songs:[
     ['BOUNCY (K-HOT CHILLI PEPPERS)', 'ATEEZ', '5KyOUICJIvO0z71MBdPGiX'],
@@ -129,8 +135,9 @@ characters.sort((a,b) => {
   return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi) || a.name.localeCompare(b.name, 'en');
 });
 const notices = Object.fromEntries(characters.map(record => [record.id, record === sam ? [
-  'Sam uses the confirmed current age of 25 and his relationship with Hoseong. All supplied facts, ten songs and five story links are included.',
-  'Story dates were not supplied. The five entries keep their original order under Undated until you add in-world dates.',
+  'Sam uses the confirmed current age of 25 and his relationship with Hoseong. All supplied facts, ten songs and five original story links are included, plus the newer Cereal Bar comms.',
+  'Story dates were not supplied. The five original entries keep their original order, followed by Cereal Bar under Undated until you add in-world dates.',
+  'Cereal is Sam and Hoseong’s flavour. Lindor, Mochidoki and Pringles are brands; their linked topics use the newer source titles.',
   'The three polaroids show Hoseong, Jiae and Hajun using their existing directory portraits. The map shows San Bernardino at city level.'
 ] : [
   'Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.',
@@ -141,7 +148,7 @@ assert.equal(characters.length, 181);
 assert.equal(new Set(characters.map(record => record.id)).size, characters.length);
 assert(characters.every(record => record.name && record.nickname && record.age && record.pronouns && record.occupation && record.portrait && record.facts.some(fact => fact.label === 'Face claim' && fact.value)));
 assert.equal(sam.songs.length, 10);
-assert.equal(sam.timeline.length, 5);
+assert.equal(sam.timeline.length, 6);
 assert.equal(sam.relationships.length, 4);
 assert.equal(sam.polaroids.length, 3);
 assert(sam.relationships.every(record => !record.pinned));

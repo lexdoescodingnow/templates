@@ -23,13 +23,7 @@ function decodeHtml(value) {
   const named = {amp:'&',lt:'<',gt:'>',quot:'"',apos:"'"};
   return value.replace(/&(amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);/gi, (_, entity) => entity[0] === '#' ? String.fromCodePoint(entity[1].toLowerCase() === 'x' ? parseInt(entity.slice(2),16) : Number(entity.slice(1))) : named[entity.toLowerCase()]);
 }
-function mapDocument(html) {
-  const frame = html.match(/<iframe\b[^>]*\bsrcdoc="([^"]*)"[^>]*>/);
-  assert(frame, 'A complete map should have its own embedded document');
-  const sandbox = frame[0].match(/\bsandbox="([^"]*)"/);
-  assert(sandbox);
-  assert.deepEqual(sandbox[1].split(/\s+/).filter(Boolean), ['allow-scripts']);
-  const document = decodeHtml(frame[1]);
+function mapDocument(document) {
   const scripts = Array.from(document.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi), match=>({attributes:match[1],source:match[2]}));
   assert.equal(scripts.length, 2);
   const external = scripts.filter(script=>/\bsrc="/.test(script.attributes));
@@ -40,7 +34,7 @@ function mapDocument(html) {
   assert(document.includes('href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.css"'));
   assert(!/\btype="module"/.test(inline[0].attributes));
   new vm.Script(inline[0].source, {filename:'isolated-map.js'});
-  return {frame:frame[0],document,script:inline[0].source};
+  return {document,script:inline[0].source};
 }
 function assertNoExecutableMarkup(html) {
   assert(!/<script\b|(?:href|src)="javascript:/i.test(html));
@@ -55,7 +49,7 @@ function safeNormalization(input, assertion) {
   catch (error) { assert(error instanceof Error); return; }
   assertion(value);
 }
-const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v4.css';
+const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.css';
 const sam = library.characters.find(item => item.id === 'baek-samuel');
 
 test('All 181 canonical identities and imported details survive normalization', () => {
@@ -84,15 +78,22 @@ test('Sam retains the approved age/status, all facts, songs, connections and tra
   assert.equal(sam.facts.length, 15);
   assert.equal(sam.songs.length, 10);
   assert.equal(sam.relationships.length, 4);
-  assert.equal(sam.timeline.length, 5);
-  assert.deepEqual(sam.timeline.map(item => item.url.match(/showtopic=(\d+)/)[1]), ['62747','64015','83999','98948','104200']);
+  assert.equal(sam.timeline.length, 6);
+  assert.deepEqual(sam.timeline.map(item => item.url.match(/showtopic=(\d+)/)[1]), ['62747','64015','83999','98948','104200','112783']);
+  assert.deepEqual(sam.timeline.slice(0,3).map(item => item.id), ['almond-croissant','treacle-tart','marshmallow-spread']);
+  assert.deepEqual(sam.timeline.slice(0,3).map(item => item.title), ['Lindor Pistachio','Pringles Texas BBQ','Mochidoki Cake Batter']);
+  assert.equal(sam.timeline[5].title, 'Cereal Bar');
+  assert.deepEqual(sam.timeline[5].connectionIds, ['hoseong']);
   assert.deepEqual(Dossier.sortTimeline(sam.timeline).map(item => item.id), sam.timeline.map(item => item.id));
   assert.equal(sam.songs[0].url, 'https://open.spotify.com/track/5KyOUICJIvO0z71MBdPGiX');
   assert.equal(sam.songs[9].url, 'https://open.spotify.com/track/4UJwJG0Byki4e9MNTxo8aF');
   assert.deepEqual(sam.songs.map(item=>item.url.split('/').pop()), ['5KyOUICJIvO0z71MBdPGiX','0SIEcuChTr2DIhuPgklpeP','3AOf6YEpxQ894FmrwI9k96','2EFxmF45ZsAvSQBGyMYGTB','2tYiQoXXbAEdwBTG0qanqi','2nNBdv2vcJZuWOZ06nNF62','0M1NR0EXFkMoy8nt4JNXKH','40UVUuyy5RfpO0awclCttA','4tLAqSfrGmx5L0akJWNdK5','4UJwJG0Byki4e9MNTxo8aF']);
   assert(sam.timeline.every(item => !item.date && !item.postedDate));
   assert(library.characters.every(item => item.relationships.every(connection => !connection.pinned)));
-  assert.deepEqual(sam.relationships.map(item => item.flavour), ['almond','cereal','marshmallow','treacle']);
+  assert.deepEqual(sam.relationships.map(item => item.flavour), ['','cereal','','']);
+  assert.deepEqual(sam.relationships.map(item => item.brand), ['Lindor','','Mochidoki','Pringles']);
+  const connections = Dossier.render(sam);
+  for (const label of ['Lindor','Mochidoki','Pringles','Cereal']) assert(connections.includes(label));
   const connectionIds = new Set(sam.relationships.map(item => item.id));
   assert(sam.timeline.every(item => item.connectionIds.every(id => connectionIds.has(id))));
 });
@@ -142,6 +143,28 @@ test('Sam, Ben and Cookie retain their distinct supplied colours and separate po
   assert(html.includes(sam.avatar) && html.includes(sam.portrait));
 });
 
+test('Photo palettes follow visible image colours while manual choices and cache details survive editing', () => {
+  const Palette = require('./palette.js');
+  const green = Array.from({length:20}, ()=>[40,130,55,255]).flat();
+  const blue = Array.from({length:20}, ()=>[35,65,170,255]).flat();
+  const rgb = hex=>hex.slice(1).match(/../g).map(value=>parseInt(value,16));
+  const [gr,gg,gb] = rgb(Palette.fromPixels(green));
+  const [br,bg,bb] = rgb(Palette.fromPixels(blue));
+  assert(gg>gr && gg>gb && bb>br && bb>bg, 'Distinct photo colours should produce corresponding accent families');
+  assert.equal(Palette.fromPixels([...green,255,0,255,0]), Palette.fromPixels(green), 'Transparent pixels must not influence a photo palette');
+  assert.throws(()=>Palette.fromPixels([255,0,255,0]));
+  assert.throws(()=>Palette.fromPixels([1,2,3]));
+  const record = Dossier.normalizeCharacter(character({themeMode:'manual',accent:'#345678',paletteSource:'https://example.com/photo.png',paletteCrop:'25% 70%'}));
+  assert.deepEqual(Dossier.normalizeCharacter(JSON.parse(JSON.stringify(record))),record);
+  assert.equal(record.themeMode, 'manual');
+  assert.equal(record.accent, '#345678');
+  assert.equal(record.paletteCrop, '25% 70%');
+  assert(Dossier.render(record).includes('data-theme-mode="manual"'));
+  assert.equal(Dossier.normalizeCharacter(character()).themeMode, 'auto');
+  for (const url of ['http://example.com/photo.png','https://localhost/photo.png','https://192.168.1.1/photo.png','https://example.com/photo.png?token=secret','https://example.com/photo.png?signature=secret','https://user:password@example.com/photo.png']) assert.equal(Palette.proxyUrl(url), '');
+  assert(Palette.proxyUrl('https://c.l3n.co/i/n8qt60.png').startsWith('https://images.weserv.nl/?url='));
+});
+
 test('Sam’s three polaroids preserve the selected people and their existing directory portraits', () => {
   assert.deepEqual(sam.polaroids.map(item=>item.name), ['Hoseong','Jiae','Hajun']);
   const fullNames = ['Hwak Hoseong','Baek Jiae','Kang Hajun'];
@@ -172,7 +195,7 @@ test('Invalid imports cannot silently replace a library with an empty or malform
 test('Unicode, quotation marks, distinct story dates and connection links round-trip intact', () => {
   const raw = character({name:'Trần Bảo & Bāng Dí', nickname:'B', notes:'“a memory” — 雨 & café', avatar:'https://example.com/portrait.png', imagePosition:'75% 20%',
     polaroids:[{name:'雨',image:'https://example.com/rain.png',url:'https://example.com/story'}],mapLocation:'San Bernardino, CA',mapLatitude:'34.1211115',mapLongitude:'-117.301767',mapZoom:11,
-    relationships:[{id:'connection-one',name:'Seo Hyemi',kind:'Friend',summary:'she said “hello”'}],
+    relationships:[{id:'connection-one',name:'Seo Hyemi',kind:'Friend',flavour:'Original Flavour',brand:'Brand “雨” & Co.',summary:'she said “hello”'}],
     timeline:[{id:'story-one',title:'The next day',date:'2026-10-13',postedDate:'2026-11-06',dateLabel:'Autumn',participants:'Bảo & Hyemi',connectionIds:['connection-one'],type:'Thread'}]});
   const first = Dossier.normalizeCharacter(raw);
   const roundtrip = Dossier.normalizeDataset(JSON.parse(JSON.stringify({version:1,characters:[first]}))).characters[0];
@@ -186,24 +209,41 @@ test('Unicode, quotation marks, distinct story dates and connection links round-
   assert.equal(roundtrip.mapLatitude, raw.mapLatitude);
   assert.equal(roundtrip.mapLongitude, raw.mapLongitude);
   assert.equal(roundtrip.mapZoom, raw.mapZoom);
+  assert.equal(roundtrip.relationships[0].flavour, raw.relationships[0].flavour);
+  assert.equal(roundtrip.relationships[0].brand, raw.relationships[0].brand);
   assert.equal(roundtrip.timeline[0].date, '2026-10-13');
   assert.equal(roundtrip.timeline[0].postedDate, '2026-11-06');
   assert.deepEqual(roundtrip.timeline[0].connectionIds, ['connection-one']);
 });
 
-test('City maps isolate their script, validate coordinates and keep user text outside executable code', () => {
+test('City maps export safe location data and isolate their interactive document at runtime', () => {
+  const Runtime = require('./runtime.js');
   assert.equal(sam.mapLocation, 'San Bernardino, CA');
   assert.equal(Number(sam.mapLatitude), 34.1211115);
   assert.equal(Number(sam.mapLongitude), -117.301767);
   assert.equal(sam.mapZoom, 11);
   const mapHtml = Dossier.render(character({mapLocation:sam.mapLocation,mapLatitude:sam.mapLatitude,mapLongitude:sam.mapLongitude,mapZoom:sam.mapZoom}));
-  const map = mapDocument(mapHtml);
+  const mapElement = mapHtml.match(/<div\b[^>]*\bclass="bd3-map"[^>]*>/);
+  assert(mapElement, 'A complete map should export a location container');
+  assert(!/\bsrcdoc=|<iframe\b|<script\b/.test(mapHtml));
+  const attributes = Object.fromEntries(Array.from(mapElement[0].matchAll(/\bdata-([a-z]+)="([^"]*)"/g), match=>[match[1],decodeHtml(match[2])]));
+  assert.deepEqual(attributes, {lat:String(Number(sam.mapLatitude)),lon:String(Number(sam.mapLongitude)),zoom:'11',label:sam.mapLocation});
+  const location = Runtime.normalizeLocation(attributes);
+  assert.deepEqual(location, {lat:34.1211115,lon:-117.301767,zoom:11});
+  assert.deepEqual(Runtime.normalizeLocation({lat:0,lon:0}), {lat:0,lon:0,zoom:11});
+  for (const invalid of [{lat:'',lon:0},{lat:34,lon:''},{lat:86,lon:0},{lat:0,lon:181},{lat:'34;alert(1)',lon:0},{lat:0,lon:0,zoom:19},{lat:0,lon:0,zoom:3.5}]) {
+    assert.equal(Runtime.normalizeLocation(invalid), null);
+    assert.throws(()=>Runtime.buildMapDocument(invalid, '#5b8612'));
+  }
+  const map = mapDocument(Runtime.buildMapDocument(location, sam.accent));
   const mapStatus = {hidden:false,textContent:'Loading Map…'};
   const handlers = {};
+  const childMessages = [], childListeners = {};
+  const parentWindow = {postMessage:message=>childMessages.push(message)};
   let mapOptions, markerPosition;
   function MapStub(options) { mapOptions = options; this.addControl = function() {}; this.on = function(name,handler) { handlers[name] = handler; }; }
-  function MarkerStub() { this.setLngLat = function(position) { markerPosition = position; return this; }; this.addTo = function() { return this; }; }
-  const context = vm.createContext({document:{getElementById:id=>id==='status'?mapStatus:null},window:{status:'Browser status',maplibregl:{Map:MapStub,Marker:MarkerStub,NavigationControl:function(){}}}});
+  function MarkerStub() { this.remove = function() {}; this.setLngLat = function(position) { markerPosition = position; return this; }; this.addTo = function() { return this; }; }
+  const context = vm.createContext({parent:parentWindow,document:{getElementById:id=>id==='status'?mapStatus:null},window:{status:'Browser status',addEventListener:(name,handler)=>{childListeners[name]=handler;},maplibregl:{Map:MapStub,Marker:MarkerStub,NavigationControl:function(){}}}});
   new vm.Script(map.script).runInContext(context,{timeout:1000});
   assert.equal(mapOptions.style, 'https://tiles.openfreemap.org/styles/positron');
   assert.equal(mapOptions.center.lng, Number(sam.mapLongitude));
@@ -214,6 +254,7 @@ test('City maps isolate their script, validate coordinates and keep user text ou
   assert.equal(typeof handlers.load, 'function');
   handlers.load();
   assert.equal(mapStatus.hidden, true, 'The real loading element should be hidden when map data loads');
+  assert.equal(childMessages[0].state, 'ready');
   assert.equal(context.window.status, 'Browser status');
   assert.equal(context.mapStatus, undefined, 'Map state belongs in a local scope');
   assert(mapHtml.includes('https://www.openstreetmap.org/copyright'));
@@ -234,9 +275,31 @@ test('City maps isolate their script, validate coordinates and keep user text ou
   const html = Dossier.render(safe);
   assertNoExecutableMarkup(html);
   assert(html.toLowerCase().includes(Dossier.escapeHtml(unsafe).toLowerCase()));
-  const isolated = mapDocument(html);
+  assert(!/\bsrcdoc=|<iframe\b|<script\b/.test(html));
+  const isolated = mapDocument(Runtime.buildMapDocument({...location,label:unsafe}, 'red;alert(1)'));
   assert(!isolated.document.includes('alert(1)') && !isolated.script.includes('onerror'));
   assert.equal(isolated.script.match(/<script/gi), null);
+  const status = {hidden:false,textContent:''}, frames = [], listeners = {};
+  const mapAttributes = {'data-lat':'34','data-lon':'-117','data-zoom':'11','data-label':unsafe};
+  const element = {getAttribute:name=>mapAttributes[name],setAttribute:(name,value)=>{mapAttributes[name]=value;},querySelector:()=>status,appendChild:frame=>{frames.push(frame);frame.parentNode=element;}};
+  const articleAttributes = {'data-theme-mode':'manual'};
+  const article = {style:{getPropertyValue:name=>name==='--bd1-accent'?'#345678':'50% 35%'},getAttribute:name=>articleAttributes[name],setAttribute:(name,value)=>{articleAttributes[name]=value;},querySelector:()=>null,querySelectorAll:selector=>selector.startsWith('.bd3-map')?[element]:[]};
+  const document = {documentElement:{contains:()=>true},querySelectorAll:()=>[article],addEventListener:()=>{},createElement:tag=>{
+    assert.equal(tag,'iframe');
+    return {attributes:{},setAttribute(name,value){this.attributes[name]=value;},contentWindow:{postMessage:()=>{}}};
+  }};
+  const runtimeContext = vm.createContext({document,module:{exports:{}},addEventListener:(name,handler)=>{listeners[name]=handler;},setTimeout:()=>1,clearTimeout:()=>{}});
+  new vm.Script(read('runtime.js'),{filename:'runtime.js'}).runInContext(runtimeContext,{timeout:1000});
+  runtimeContext.module.exports.start();
+  runtimeContext.module.exports.start();
+  assert.equal(frames.length,1,'Repeated runtime initialization must not duplicate the map');
+  assert.equal(frames[0].attributes.sandbox,'allow-scripts');
+  assert.equal(frames[0].attributes.title,'Map of '+unsafe,'Map names are assigned as DOM text');
+  assert(!frames[0].srcdoc.includes(unsafe));
+  listeners.message({source:{},data:{channel:'blue-hour-dossier-map-v5',state:'ready'}});
+  assert.equal(status.hidden,false,'Messages from another frame must not signal successful map loading');
+  listeners.message({source:frames[0].contentWindow,data:{channel:'blue-hour-dossier-map-v5',state:'ready'}});
+  assert.equal(status.hidden,true);
 });
 
 test('Portrait addresses and image cropping cannot inject markup or arbitrary styles', () => {
@@ -328,7 +391,7 @@ test('Text is escaped, unsafe links cannot execute, and Spotify embeds require t
   assert(!Dossier.escapeHtml(unsafe).includes('<'));
   for (const url of ['javascript:alert(1)','data:text/html,<script>alert(1)</script>','vbscript:msgbox(1)','file:///C:/private.txt']) assert.equal(Dossier.safeUrl(url), '');
   const output = Dossier.render(character({name:unsafe, notes:unsafe, portrait:'javascript:alert(1)',
-    relationships:[{id:'person',name:unsafe,url:'javascript:alert(1)'}],
+    relationships:[{id:'person',name:unsafe,flavour:unsafe,brand:unsafe,url:'javascript:alert(1)'}],
     timeline:[{id:'story',title:unsafe,url:'javascript:alert(1)',summary:unsafe}],
     songs:[{title:unsafe,artist:unsafe,url:'https://open.spotify.com.evil.example/embed/track/5KyOUICJIvO0z71MBdPGiX'}]}));
   assertNoExecutableMarkup(output);
@@ -338,16 +401,20 @@ test('Text is escaped, unsafe links cannot execute, and Spotify embeds require t
   assert(embed.includes('https://open.spotify.com/embed/track/5KyOUICJIvO0z71MBdPGiX'));
 });
 
-test('Forum output contains complete static content and one shared stylesheet', () => {
+test('Forum output preserves static content with one shared stylesheet and one fixed runtime', () => {
   const output = Dossier.forum(sam, stylesheet);
   assert(output.startsWith('[dohtml]') && output.trimEnd().endsWith('[/dohtml]'));
   assert.equal((output.match(/\[dohtml\]/g)||[]).length, 1);
   assert.equal((output.match(/\[\/dohtml\]/g)||[]).length, 1);
   assert.equal((output.match(/<link\b[^>]*rel="stylesheet"/g)||[]).length, 1);
-  assert(!/<script\b|pgy-pikeplace|dropboxusercontent|unpkg\.com|bluehour-cosmicmeet/i.test(output));
+  const scripts = Array.from(output.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi));
+  assert.equal(scripts.length, 1);
+  assert.equal(scripts[0][1].match(/\bsrc="([^"]*)"/)[1], 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.js');
+  assert.equal(scripts[0][2], '');
+  assert(!/\bsrcdoc=|pgy-pikeplace|dropboxusercontent|unpkg\.com|bluehour-cosmicmeet/i.test(output));
   assert(output.includes(stylesheet));
-  assert(/class="bh-dossier-v4"/.test(output));
-  assert(!/class="bh-dossier-v[123]"|\/dossier-v[123]\.css/.test(output));
+  assert(/class="bh-dossier-v5"/.test(output));
+  assert(!/class="bh-dossier-v[1234]"|\/dossier-v[1234]\.css/.test(output));
   for (const entry of sam.timeline) assert(output.includes(entry.url.replaceAll('&','&amp;')));
   const displayedFacts = Array.from(output.matchAll(/<dd>([\s\S]*?)<\/dd>/g), match=>decodeHtml(match[1]).toLocaleLowerCase('en'));
   for (const fact of sam.facts) assert(displayedFacts.includes(fact.value.toLocaleLowerCase('en')), 'Every fact must survive display capitalisation: '+fact.label);
@@ -364,7 +431,7 @@ test('The portable editor bundles all scripts and contains parseable JavaScript'
   assert(scripts.every(script=>!/\bsrc=/i.test(script.attributes)));
   scripts.forEach((script,index) => new vm.Script(script.source, {filename:'atelier-script-'+index+'.js'}));
   const documentMarkup = portable.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
-  assert(!/<link\b[^>]*href="(?:editor|dossier-v[1234])\.css"/i.test(documentMarkup));
+  assert(!/<link\b[^>]*href="(?:editor|dossier-v[12345])\.css"/i.test(documentMarkup));
   const dataContext = {};
   vm.runInNewContext(read('seed-data.js'), dataContext);
   assert.equal(dataContext.DOSSIER_SEED.characters.length, 181);

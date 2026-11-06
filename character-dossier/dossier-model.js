@@ -94,7 +94,7 @@
       if (!relationshipMap.has(id)) relationshipMap.set(id, id);
       return {
         id: id, name: text(item.name, 160), kind: choice(item.kind, KINDS, 'Other'),
-        flavour: text(item.flavour, 160), status: text(item.status, 120), portrait: safeUrl(item.portrait),
+        flavour: text(item.flavour, 160), brand: text(item.brand, 160), status: text(item.status, 120), portrait: safeUrl(item.portrait),
         url: safeUrl(item.url), summary: text(item.summary, 5000), pinned: item.pinned === true,
         featured: item.featured === true, quote: text(item.quote, 3000), playlistUrl: safeUrl(item.playlistUrl)
       };
@@ -119,6 +119,8 @@
       mapLocation: text(raw.mapLocation, 250), mapLatitude: coordinate(raw.mapLatitude, 85, 'Map latitude'), mapLongitude: coordinate(raw.mapLongitude, 180, 'Map longitude'), mapZoom: mapZoom(raw.mapZoom),
       imagePosition: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.imagePosition, 20)) ? text(raw.imagePosition, 20) : '50% 35%',
       accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
+      themeMode: raw.themeMode === 'manual' ? 'manual' : 'auto', paletteSource: safeUrl(raw.paletteSource),
+      paletteCrop: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.paletteCrop, 20)) ? text(raw.paletteCrop, 20) : '',
       tags: Array.from(new Set(list(raw.tags, 50).map(function (tag) { return text(tag, 120).replace(/^#+/, '').trim(); }).filter(Boolean))),
       facts: records(raw.facts, 150).map(function (fact) { return { label: text(fact.label, 160), value: text(fact.value, 2000) }; }),
       currentChapter: text(raw.currentChapter, 5000), asOf: text(raw.asOf, 120), notes: text(raw.notes, 15000),
@@ -204,7 +206,7 @@
       fact.value = /residen|location|based in/i.test(fact.label) ? locationCase(fact.value) : titleCase(fact.value);
     });
     c.polaroids.forEach(function (photo) { photo.name = titleCase(photo.name); });
-    c.relationships.forEach(function (r) { ['name', 'flavour', 'status'].forEach(function (field) { r[field] = titleCase(r[field]); }); });
+    c.relationships.forEach(function (r) { ['name', 'flavour', 'brand', 'status'].forEach(function (field) { r[field] = titleCase(r[field]); }); });
     c.timeline.forEach(function (entry) { ['title', 'participants', 'status'].forEach(function (field) { entry[field] = titleCase(entry[field]); }); });
     return c;
   }
@@ -235,16 +237,7 @@
     var lat = Number(c.mapLatitude), lon = Number(c.mapLongitude);
     var full = 'https://www.openstreetmap.org/?mlat=' + lat + '&mlon=' + lon + '#map=' + c.mapZoom + '/' + lat + '/' + lon;
     var label = c.mapLocation || c.location || 'Current Location';
-    var script = '(function() { var mapStatus = document.getElementById("status"); try { var api = window.maplibregl; if (!api) throw new Error("Map Unavailable"); ' +
-      'var center = { lng: ' + lon + ', lat: ' + lat + ' }; ' +
-      'var map = new api.Map({ container: "map", style: "https://tiles.openfreemap.org/" + "styles/positron", center: center, zoom: ' + c.mapZoom + ', minZoom: 2, maxZoom: 18, attributionControl: false, dragRotate: false, pitchWithRotate: false, scrollZoom: false, renderWorldCopies: false }); ' +
-      'map.addControl(new api.NavigationControl({ showCompass: false }), "top-right"); ' +
-      'new api.Marker({ color: "' + c.accent + '", scale: 0.65 }).setLngLat(center).addTo(map); ' +
-      'map.on("load", function() { mapStatus.hidden = true; }); ' +
-      'map.on("error", function() { if (!mapStatus.hidden) mapStatus.textContent = "Map Unavailable"; }); ' +
-      '} catch (_) { mapStatus.textContent = "Map Unavailable"; } })();';
-    var documentHtml = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.css"><style>html,body,#map{margin:0;width:100%;height:100%;background:#e8e9e4}#map{position:absolute;inset:0}#status{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:16px;font:12px/1.4 sans-serif;color:#465247;text-align:center;pointer-events:none}#status[hidden]{display:none}.maplibregl-ctrl-top-right{top:0;right:0}.maplibregl-ctrl-group{box-shadow:0 1px 4px #0002}.maplibregl-ctrl-group button{width:27px;height:27px}</style></head><body><div id="map" aria-label="Interactive Location Map"></div><p id="status" role="status">Loading Map…</p><script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script><script>' + script + '</script></body></html>';
-    return '<div class="bd3-map"><iframe srcdoc="' + escapeHtml(documentHtml) + '" sandbox="allow-scripts" title="Map of ' + escapeHtml(label) + '" width="185" height="185" loading="lazy"></iframe></div>' + external(full, label + ' ↗', 'bd3-map-label') + '<div class="bd4-map-credit">© ' + external('https://www.openstreetmap.org/copyright', 'OpenStreetMap') + ' · © ' + external('https://www.openmaptiles.org/', 'OpenMapTiles') + '</div>';
+    return '<div class="bd3-map" data-lat="' + lat + '" data-lon="' + lon + '" data-zoom="' + c.mapZoom + '" data-label="' + escapeHtml(label) + '"><p class="bd5-map-status" role="status">Open the Location Below</p></div>' + external(full, label + ' ↗', 'bd3-map-label') + '<div class="bd4-map-credit">© ' + external('https://www.openstreetmap.org/copyright', 'OpenStreetMap') + ' · © ' + external('https://www.openmaptiles.org/', 'OpenMapTiles') + '</div>';
   }
   function render(raw, options) {
     options = options || {};
@@ -268,7 +261,7 @@
     var basics = c.gender && !facts.some(function (fact) { return fact.label.toLowerCase() === 'gender'; }) ? [{ label: 'Gender', value: c.gender }] : [];
     var name = c.nickname || c.name;
     var meta = [c.age ? c.age + ' Years Old' : '', c.pronouns].filter(Boolean);
-    var html = '<article class="bh-dossier-v4" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
+    var html = '<article class="bh-dossier-v5" data-theme-mode="' + c.themeMode + '" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
     html += '<header class="bd1-cover" id="' + prefix + '-overview">';
     html += '<div class="bd1-masthead"><span>Character Dossier</span>' + (c.writer ? '<span>Written by ' + escapeHtml(c.writer) + '</span>' : '') + '</div>';
     if (c.portrait) html += '<figure class="bd1-hero"><img src="' + escapeHtml(c.portrait) + '" alt="' + escapeHtml(name ? name + ' — character portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer"><span class="bd1-photo-mark" aria-hidden="true">✦</span></figure>';
@@ -285,7 +278,7 @@
     html += '</div></header>';
     var nav = [['overview', 'Overview']];
     if (photos.length) nav.push(['people', 'Inner circle']);
-    if (relationships.length) nav.push(['connections', hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections']);
+    if (relationships.length) nav.push(['connections', 'Flavours & Brands']);
     if (entries.length) nav.push(['story', 'Timeline']);
     if (songs.length || c.playlistUrl) nav.push(['soundtrack', 'Soundtrack']);
     if (c.notes) nav.push(['notes', 'Notes']);
@@ -311,7 +304,7 @@
       html += '</section>';
     }
     if (relationships.length) {
-      html += '<section class="bd1-section bd1-connections-panel" id="' + prefix + '-connections">' + heading(hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections & flavour') + '<div class="bd1-connections">';
+      html += '<section class="bd1-section bd1-connections-panel" id="' + prefix + '-connections">' + heading('Flavours & Brands') + '<div class="bd1-connections">';
       relationships.forEach(function (r) {
         var linked = entries.filter(function (entry) { return entry.connectionIds.indexOf(r.id) !== -1; });
         html += '<article class="bd1-connection" id="' + prefix + '-connection-' + r.id + '"><div class="bd1-connection-head">';
@@ -320,6 +313,7 @@
         if (r.status) html += '<span class="bd1-small-status">' + escapeHtml(r.status) + '</span>';
         html += '</div>';
         if (r.flavour) html += '<div class="bd1-flavour"><span>Flavour</span><span>' + escapeHtml(r.flavour) + '</span></div>';
+        if (r.brand) html += '<div class="bd1-flavour"><span>Brand</span><span>' + escapeHtml(r.brand) + '</span></div>';
         if (linked.length || r.summary || r.quote || r.playlistUrl) {
           html += '<details class="bd1-linked-story"><summary>' + (linked.length ? linked.length + (linked.length === 1 ? ' shared story' : ' shared stories') : 'About this connection') + '</summary>' + paragraphs(r.summary, 'bd1-connection-copy');
           if (r.quote) html += '<blockquote>' + paragraphs(r.quote) + '</blockquote>';
@@ -377,7 +371,7 @@
   function forum(character, cssUrl) {
     var url = safeUrl(cssUrl);
     if (!url) throw new Error('Forum code needs the public stylesheet address.');
-    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '[/dohtml]';
+    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.js" defer></script>[/dohtml]';
   }
   return { normalizeCharacter: normalizeCharacter, normalizeDataset: normalizeDataset, render: render, forum: forum, sortTimeline: sortTimeline, escapeHtml: escapeHtml, safeUrl: safeUrl };
 }));

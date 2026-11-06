@@ -29,6 +29,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
 .starter-appearance{margin:0 0 18px}.starter-appearance .button-quiet{border:1px solid var(--line);font-size:11px;padding:9px 11px}.starter-appearance .field-help{font-size:10px;margin:7px 0 0}
 .appearance-subheading{font:650 13px/1.5 Manrope,Arial,sans-serif;color:var(--ink);margin:24px 0 10px;letter-spacing:-.02em}.appearance-subheading:not(:first-child){padding-top:18px;border-top:1px solid var(--line)}
 .map-link-tools{padding:13px;margin:0 0 16px;border:1px solid var(--line);border-radius:7px;background:#ffffff03}.map-search-link{font-size:11px;font-weight:600;color:var(--accent);text-decoration:none;line-height:1.6}.map-search-link:hover{text-decoration:underline}.map-link-tools>.field-help{font-size:10px;margin:5px 0 13px}.map-link-tools>.form-field{margin-bottom:9px}.map-link-tools>button{width:100%;font-size:11px;padding:9px 12px}
+.colour-mode-controls{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:11px}.colour-mode-controls button{font-size:10px;padding:9px 6px;background:transparent}.colour-mode-controls button[aria-pressed=true]{background:color-mix(in srgb,var(--character-colour) 18%,var(--surface));border-color:var(--accent);color:var(--accent)}.photo-theme-status{font-size:11px;line-height:1.7;color:var(--muted);margin:0}.photo-theme-status[data-state=ready]{color:var(--accent)}.photo-theme-status[data-state=error]{color:#edb7a7}.photo-theme-retry{margin-top:9px;padding:5px 0;font-size:10px;border:0;background:transparent;color:var(--accent)}.photo-theme-retry:hover{background:transparent;text-decoration:underline}.colour-manual-controls{padding-top:14px;margin-top:12px;border-top:1px solid var(--line)}.colour-manual-controls[hidden],.photo-theme-retry[hidden]{display:none}
 </style>
 </head>
 <body>
@@ -175,7 +176,8 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "id": "dom",
           "name": "Dom",
           "kind": "Other",
-          "flavour": "almond",
+          "flavour": "",
+          "brand": "Lindor",
           "status": "Active",
           "portrait": "https://b.l3n.co/i/HeivTi.png",
           "url": "",
@@ -190,6 +192,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Hwak Hoseong",
           "kind": "Partner",
           "flavour": "cereal",
+          "brand": "",
           "status": "Active",
           "portrait": "https://64.media.tumblr.com/249bd77b93613f7adfe8e9bad8aed989/2ea52ad3c9269f24-0a/s540x810/f575f8f33a06017a9a9e024239ef77986315a849.gifv",
           "url": "https://bluehour.jcink.net/index.php?showtopic=104200",
@@ -203,7 +206,8 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "id": "crazhes",
           "name": "CRAZHES",
           "kind": "Group",
-          "flavour": "marshmallow",
+          "flavour": "",
+          "brand": "Mochidoki",
           "status": "Active",
           "portrait": "",
           "url": "",
@@ -217,7 +221,8 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "id": "jiae",
           "name": "Jiae",
           "kind": "Other",
-          "flavour": "treacle",
+          "flavour": "",
+          "brand": "Pringles",
           "status": "Active",
           "portrait": "https://c.l3n.co/i/O0D7nT.png",
           "url": "",
@@ -231,7 +236,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
       "timeline": [
         {
           "id": "almond-croissant",
-          "title": "almond croissant",
+          "title": "Lindor Pistachio",
           "url": "https://bluehour.jcink.net/index.php?showtopic=62747",
           "date": "",
           "dateLabel": "",
@@ -247,7 +252,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
         },
         {
           "id": "treacle-tart",
-          "title": "treacle tart",
+          "title": "Pringles Texas BBQ",
           "url": "https://bluehour.jcink.net/index.php?showtopic=64015",
           "date": "",
           "dateLabel": "",
@@ -263,7 +268,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
         },
         {
           "id": "marshmallow-spread",
-          "title": "marshmallow spread",
+          "title": "Mochidoki Cake Batter",
           "url": "https://bluehour.jcink.net/index.php?showtopic=83999",
           "date": "",
           "dateLabel": "",
@@ -300,6 +305,22 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "postedDate": "",
           "participants": "sam & hoseong",
           "type": "Thread",
+          "status": "",
+          "connectionIds": [
+            "hoseong"
+          ],
+          "summary": "",
+          "milestone": false
+        },
+        {
+          "id": "cereal-bar",
+          "title": "Cereal Bar",
+          "url": "https://bluehour.jcink.net/index.php?showtopic=112783",
+          "date": "",
+          "dateLabel": "",
+          "postedDate": "",
+          "participants": "sam & hoseong",
+          "type": "Comms",
           "status": "",
           "connectionIds": [
             "hoseong"
@@ -423,6 +444,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Vince Seok",
           "kind": "Partner",
           "flavour": "citron",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/YztQm3.png",
           "url": "",
@@ -468,6 +490,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Xue Yiyun",
           "kind": "Partner",
           "flavour": "cashew",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/oMjBqc.png",
           "url": "",
@@ -513,6 +536,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Bāng Dí Wang",
           "kind": "Partner",
           "flavour": "ginger",
+          "brand": "",
           "status": "Married",
           "portrait": "https://a.l3n.co/i/LMluXK.png",
           "url": "",
@@ -558,6 +582,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Shane Kang",
           "kind": "Partner",
           "flavour": "lemon",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/7Gz0YT.png",
           "url": "",
@@ -603,6 +628,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Lewis Choi",
           "kind": "Partner",
           "flavour": "passionfruit",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/z9cSbq.png",
           "url": "",
@@ -648,6 +674,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Clarity Prasit Chatri",
           "kind": "Partner",
           "flavour": "nectarine",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/91/45/76/914576812827f5fbad87f82711e3f04b.jpg",
           "url": "",
@@ -693,6 +720,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Song Jiyong",
           "kind": "Partner",
           "flavour": "mango",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/b7vlmP.png",
           "url": "",
@@ -828,6 +856,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kwon Kennedy",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "Married",
           "portrait": "https://i.pinimg.com/736x/13/74/65/13746566e061ed3ace480439737cabbe.jpg",
           "url": "",
@@ -873,6 +902,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Ryan Min",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://d.l3n.co/i/oxIMRm.png",
           "url": "",
@@ -918,6 +948,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Nate Chung",
           "kind": "Partner",
           "flavour": "tangerine",
+          "brand": "",
           "status": "Married",
           "portrait": "https://a.l3n.co/i/oAAqhm.png",
           "url": "",
@@ -963,6 +994,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Tanaka Hiroshi",
           "kind": "Partner",
           "flavour": "fiery",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/d1/6b/fa/d16bfae9e53538bd91bc27803eb94469.jpg",
           "url": "",
@@ -1008,6 +1040,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Wang Linyu",
           "kind": "Partner",
           "flavour": "gin",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/fa9Kvx.png",
           "url": "",
@@ -1053,6 +1086,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kim Taehwan",
           "kind": "Partner",
           "flavour": "brown sugar",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://d.l3n.co/i/oeX0Ac.png",
           "url": "",
@@ -1128,6 +1162,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Gi Daehyun",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://d.l3n.co/i/oXFmck.png",
           "url": "",
@@ -1173,6 +1208,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Elias Lim",
           "kind": "Partner",
           "flavour": "mocha & latte",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/Dyb3Jb.png",
           "url": "",
@@ -1187,6 +1223,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Choi Taeyang",
           "kind": "Partner",
           "flavour": "mocha & latte",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/f9/7e/4d/f97e4d5ca8e846efc26f4dd04b95d31b.jpg",
           "url": "",
@@ -1232,6 +1269,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Aaron Wang",
           "kind": "Partner",
           "flavour": "ginger",
+          "brand": "",
           "status": "Married",
           "portrait": "https://a.l3n.co/i/7xcAhH.png",
           "url": "",
@@ -1277,6 +1315,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Byun Kiha",
           "kind": "Partner",
           "flavour": "sultana",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/564x/a0/25/05/a02505313421795866707953c6bf7a0c.jpg",
           "url": "",
@@ -1322,6 +1361,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Beom Jaehyun",
           "kind": "Partner",
           "flavour": "sultana",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/HeRTR5.png",
           "url": "",
@@ -1367,6 +1407,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Siwoo Choi",
           "kind": "Partner",
           "flavour": "clementine",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/HXTBWm.png",
           "url": "",
@@ -1412,6 +1453,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Mun Dae",
           "kind": "Partner",
           "flavour": "cocktail",
+          "brand": "",
           "status": "Engaged",
           "portrait": "https://c.l3n.co/i/Y363B5.png",
           "url": "",
@@ -1457,6 +1499,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Peter Lee",
           "kind": "Partner",
           "flavour": "popcorn",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/06/4b/fb/064bfb465ada6d703ef2876707f35116.jpg",
           "url": "",
@@ -1502,6 +1545,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Micah Ahn",
           "kind": "Partner",
           "flavour": "wine",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/P77SLD.png",
           "url": "",
@@ -1607,6 +1651,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Choi Jinho",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/o5jiTQ.png",
           "url": "",
@@ -1652,6 +1697,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Cho Suho",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/unk6K2.png",
           "url": "",
@@ -1697,6 +1743,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Lucas Choi",
           "kind": "Partner",
           "flavour": "bread",
+          "brand": "",
           "status": "Married",
           "portrait": "https://a.l3n.co/i/7uwHZq.png",
           "url": "",
@@ -1742,6 +1789,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Jang Yohan",
           "kind": "Partner",
           "flavour": "lavender",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/89/a3/2f/89a32f0fbc6e555cb5a6f2bb61b229ef.jpg",
           "url": "",
@@ -1787,6 +1835,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Elias Lim",
           "kind": "Partner",
           "flavour": "mocha & latte",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/Dyb3Jb.png",
           "url": "",
@@ -1801,6 +1850,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Baek Yujun",
           "kind": "Partner",
           "flavour": "mocha & latte",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/YFvKPZ.png",
           "url": "",
@@ -1846,6 +1896,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Finn Campbell",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "Married",
           "portrait": "https://c.l3n.co/i/3kRqhm.jpeg",
           "url": "",
@@ -1891,6 +1942,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Akara Siripong",
           "kind": "Partner",
           "flavour": "nectarine",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/F5Ao85.png",
           "url": "",
@@ -1966,6 +2018,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Julian Lee",
           "kind": "Partner",
           "flavour": "yuzu",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/YwXIdm.png",
           "url": "",
@@ -2041,6 +2094,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Theo Huang-Yoon",
           "kind": "Partner",
           "flavour": "tropical",
+          "brand": "",
           "status": "Married",
           "portrait": "https://a.l3n.co/i/ME0ufK.png",
           "url": "",
@@ -2146,6 +2200,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Park Taein",
           "kind": "Partner",
           "flavour": "banana",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/eb/04/bd/eb04bd06db91b8c25d5279e82c0f50f4.jpg",
           "url": "",
@@ -2191,6 +2246,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Li Tao",
           "kind": "Partner",
           "flavour": "cucumber",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/ffTSpm.png",
           "url": "",
@@ -2236,6 +2292,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Noah Kim",
           "kind": "Partner",
           "flavour": "coconut",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/564x/0e/9a/b1/0e9ab12e2bc518fe6812cd3cf17f731c.jpg",
           "url": "",
@@ -2281,6 +2338,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Choi Taeyang",
           "kind": "Partner",
           "flavour": "mocha & latte",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/f9/7e/4d/f97e4d5ca8e846efc26f4dd04b95d31b.jpg",
           "url": "",
@@ -2295,6 +2353,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Baek Yujun",
           "kind": "Partner",
           "flavour": "mocha & latte",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/YFvKPZ.png",
           "url": "",
@@ -2340,6 +2399,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Xiaofeng Jeon",
           "kind": "Partner",
           "flavour": "delight",
+          "brand": "",
           "status": "Married",
           "portrait": "https://i.pinimg.com/1200x/ed/01/0a/ed010aa4acca888014a377974db138c1.jpg",
           "url": "",
@@ -2415,6 +2475,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Cian Campbell",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "Married",
           "portrait": "https://media.gq-magazine.co.uk/photos/5eb3d896c4c96a22342e8559/1:1/w_1080,h_1080,c_limit/20200506-Andrew-Scott-01.jpg",
           "url": "",
@@ -2490,6 +2551,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Park Haeun",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/oLglCZ.png",
           "url": "",
@@ -2535,6 +2597,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Oliver Min-Peters",
           "kind": "Partner",
           "flavour": "milk",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/5a/84/c4/5a84c4e31f02c3dce1c57ecbf6f64fd0.jpg",
           "url": "",
@@ -2610,6 +2673,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Lucian Yang",
           "kind": "Partner",
           "flavour": "marmalade",
+          "brand": "",
           "status": "Married",
           "portrait": "https://b.l3n.co/i/oxIY7i.png",
           "url": "",
@@ -2655,6 +2719,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Woo Daejung",
           "kind": "Partner",
           "flavour": "pumpkin",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/1200x/fe/2a/cf/fe2acf8c66fd74148d1793888ff17fb6.jpg",
           "url": "",
@@ -2700,6 +2765,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Baek Jiae",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/O0D7nT.png",
           "url": "",
@@ -2745,6 +2811,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Joseph Gil",
           "kind": "Partner",
           "flavour": "toffee",
+          "brand": "",
           "status": "Married",
           "portrait": "https://random.lensdump.com/M5la0Q.gif",
           "url": "",
@@ -2790,6 +2857,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kang Danwoo",
           "kind": "Partner",
           "flavour": "sweet potato",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/1d/0e/a1/1d0ea148b884ea49a4dbf5da7fb350ae.jpg",
           "url": "",
@@ -2865,6 +2933,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Mia Park",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/zyWc7v.png",
           "url": "",
@@ -2940,6 +3009,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Malachi Zhong",
           "kind": "Partner",
           "flavour": "cream",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/44/80/4b/44804ba92254b89815a9a34eab368da6.jpg",
           "url": "",
@@ -2985,6 +3055,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Xu Bingwen",
           "kind": "Partner",
           "flavour": "jelly",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/e9/2b/ce/e92bce1f1c2b35e314d6684301eb1083.jpg",
           "url": "",
@@ -3030,6 +3101,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Park Soomin",
           "kind": "Partner",
           "flavour": "boba",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/LmFCym.png",
           "url": "",
@@ -3075,6 +3147,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Baek Samuel",
           "kind": "Partner",
           "flavour": "cereal",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/9a/0a/3b/9a0a3b156a5b137f07b9ad7492fbbed4.jpg",
           "url": "",
@@ -3120,6 +3193,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Maxwell Seo",
           "kind": "Partner",
           "flavour": "bingsu",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/SYSWF2.png",
           "url": "",
@@ -3165,6 +3239,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "River Lee",
           "kind": "Partner",
           "flavour": "chocolate",
+          "brand": "",
           "status": "Married",
           "portrait": "https://b.l3n.co/i/7ychtA.png",
           "url": "",
@@ -3240,6 +3315,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Choi Jinwoo",
           "kind": "Partner",
           "flavour": "lavender",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/MYIJzo.png",
           "url": "",
@@ -3285,6 +3361,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Michael Baek",
           "kind": "Partner",
           "flavour": "plum",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/n2gpIA.png",
           "url": "",
@@ -3390,6 +3467,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Miles Baek",
           "kind": "Partner",
           "flavour": "sake",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/79/47/46/794746b4eafb915e9519f73ee6d0da7a.jpg",
           "url": "",
@@ -3465,6 +3543,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Yoon Kijoon",
           "kind": "Partner",
           "flavour": "raspberry",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/79/b0/60/79b06038d7fe35d7e903ebfa609d0034.jpg",
           "url": "",
@@ -3510,6 +3589,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Gil Bokyung",
           "kind": "Partner",
           "flavour": "toffee",
+          "brand": "",
           "status": "Married",
           "portrait": "https://i.pinimg.com/736x/1a/52/05/1a5205137849892cce2b5912cfbf0725.jpg",
           "url": "",
@@ -3555,6 +3635,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kai Jeong",
           "kind": "Partner",
           "flavour": "macadamia",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/FCXLjb.png",
           "url": "",
@@ -3600,6 +3681,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Toby Yoon",
           "kind": "Partner",
           "flavour": "champagne",
+          "brand": "",
           "status": "Married",
           "portrait": "https://i.pinimg.com/1200x/f1/a4/b5/f1a4b527b22e1de26c6140264ee1b193.jpg",
           "url": "",
@@ -3645,6 +3727,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Cole Sim",
           "kind": "Partner",
           "flavour": "yuzu",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/YwcyLe.png",
           "url": "",
@@ -3690,6 +3773,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Tommy Kim",
           "kind": "Partner",
           "flavour": "cheese",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/09/22/c0/0922c0a2413a974ca6295f4cb14cc4a2.jpg",
           "url": "",
@@ -3735,6 +3819,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Yang Haneul",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/7wZIeZ.png",
           "url": "",
@@ -3840,6 +3925,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Journey Parkinson-Kim",
           "kind": "Partner",
           "flavour": "macadamia",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/10/b7/94/10b794a0898b1a89c64325fa480d592c.jpg",
           "url": "",
@@ -3885,6 +3971,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Gwan Janghoon",
           "kind": "Partner",
           "flavour": "sweet potato",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/Fl16Vb.png",
           "url": "",
@@ -3930,6 +4017,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Lee Joonki",
           "kind": "Partner",
           "flavour": "spiced",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/0a/a7/12/0aa712a9aea8aad814df69b628743701.jpg",
           "url": "",
@@ -3975,6 +4063,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Phoenix Wu",
           "kind": "Partner",
           "flavour": "potato",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/c9R45Z.png",
           "url": "",
@@ -4080,6 +4169,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Bae Chanwoo",
           "kind": "Partner",
           "flavour": "brown sugar",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://d.l3n.co/i/oecfUF.png",
           "url": "",
@@ -4125,6 +4215,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kuronuma Minharu",
           "kind": "Partner",
           "flavour": "nuts",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/Nl46cc.png",
           "url": "",
@@ -4170,6 +4261,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Segasaki Kota",
           "kind": "Partner",
           "flavour": "honey",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/40/52/81/4052813daa992651ee076b27248b96ca.jpg",
           "url": "",
@@ -4215,6 +4307,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kim Taesung",
           "kind": "Partner",
           "flavour": "nuts",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/Nl3aVr.png",
           "url": "",
@@ -4260,6 +4353,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Andrew Kwon",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "Married",
           "portrait": "https://c.l3n.co/i/oWDI9q.png",
           "url": "",
@@ -4305,6 +4399,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Seomun Jaehwa",
           "kind": "Partner",
           "flavour": "cherry",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://d.l3n.co/i/ob8upC.png",
           "url": "",
@@ -4350,6 +4445,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kang Hajun",
           "kind": "Partner",
           "flavour": "spiced",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/o7L6Re.png",
           "url": "",
@@ -4425,6 +4521,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Matthew Shin",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/1200x/1d/bb/ec/1dbbec0ca85d2e127382e41242ddc60d.jpg",
           "url": "",
@@ -4470,6 +4567,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Min Jaeho",
           "kind": "Partner",
           "flavour": "espresso",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/82/aa/44/82aa44e10d007c133eab41b0999e6d83.jpg",
           "url": "",
@@ -4515,6 +4613,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Adriel Sang",
           "kind": "Partner",
           "flavour": "passionfruit",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/zKIFnb.png",
           "url": "",
@@ -4560,6 +4659,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Dr Zhou Zhiyuan",
           "kind": "Partner",
           "flavour": "cucumber",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/9c/de/f1/9cdef122473550bd52ccc2eaa22d0fe2.jpg",
           "url": "",
@@ -4635,6 +4735,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Choi Jinseok",
           "kind": "Partner",
           "flavour": "bread",
+          "brand": "",
           "status": "Married",
           "portrait": "https://i.pinimg.com/736x/98/e4/04/98e404eabd0a4851111235eff2916a3e.jpg",
           "url": "",
@@ -4680,6 +4781,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Gabriel Yang",
           "kind": "Partner",
           "flavour": "marmalade",
+          "brand": "",
           "status": "Married",
           "portrait": "https://a.l3n.co/i/3dKLvc.jpeg",
           "url": "",
@@ -4725,6 +4827,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "William Park",
           "kind": "Partner",
           "flavour": "sour",
+          "brand": "",
           "status": "Married",
           "portrait": "https://c.l3n.co/i/zy2CYe.png",
           "url": "",
@@ -4800,6 +4903,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Huang Haoyu",
           "kind": "Partner",
           "flavour": "cream",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/Yh7h1i.png",
           "url": "",
@@ -4845,6 +4949,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Lena Kwon",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/HZQzfM.png",
           "url": "",
@@ -4920,6 +5025,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Isaiah Park",
           "kind": "Partner",
           "flavour": "bingsu",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/SYptS9.png",
           "url": "",
@@ -4965,6 +5071,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Tawin Chaiyaporn",
           "kind": "Partner",
           "flavour": "gateau",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/3qXoFQ.png",
           "url": "",
@@ -5010,6 +5117,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Han Seoyeon",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/Opyi2x.png",
           "url": "",
@@ -5055,6 +5163,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Casper Min-Peters",
           "kind": "Partner",
           "flavour": "wine",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/LTxqBr.png",
           "url": "",
@@ -5100,6 +5209,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Jason Kim",
           "kind": "Partner",
           "flavour": "plum",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/e54USD.png",
           "url": "",
@@ -5145,6 +5255,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Jett Kim",
           "kind": "Partner",
           "flavour": "sake",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/X6VGZ1.png",
           "url": "",
@@ -5220,6 +5331,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Leo Hwang",
           "kind": "Partner",
           "flavour": "espresso",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/OvfLnr.png",
           "url": "",
@@ -5295,6 +5407,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Cal Myung",
           "kind": "Partner",
           "flavour": "cocktail",
+          "brand": "",
           "status": "Engaged",
           "portrait": "https://a.l3n.co/i/Y4O8R0.png",
           "url": "",
@@ -5370,6 +5483,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Tanaka Ren",
           "kind": "Partner",
           "flavour": "fudge",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/DLw11v.png",
           "url": "",
@@ -5415,6 +5529,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Arthur Chung",
           "kind": "Partner",
           "flavour": "tangerine",
+          "brand": "",
           "status": "Married",
           "portrait": "https://b.l3n.co/i/esccbQ.png",
           "url": "",
@@ -5520,6 +5635,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Seok Cam",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/z9UaXA.png",
           "url": "",
@@ -5565,6 +5681,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Dustin Jeon",
           "kind": "Partner",
           "flavour": "coconut",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/HejHgF.png",
           "url": "",
@@ -5640,6 +5757,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Freddie Lim",
           "kind": "Partner",
           "flavour": "milk",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/LDlxt0.png",
           "url": "",
@@ -5715,6 +5833,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Franklin Jwa",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/fa/68/d7/fa68d76f080d65f6ea5babdd2e6124c5.jpg",
           "url": "",
@@ -5760,6 +5879,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Hunter Park",
           "kind": "Partner",
           "flavour": "boba",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/LBOPCz.png",
           "url": "",
@@ -5805,6 +5925,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Dominic Lim",
           "kind": "Partner",
           "flavour": "banana",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/HeivTi.png",
           "url": "",
@@ -5850,6 +5971,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Caleb Sim",
           "kind": "Partner",
           "flavour": "popcorn",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/Yjn5hC.png",
           "url": "",
@@ -5895,6 +6017,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kang Minwoo",
           "kind": "Partner",
           "flavour": "potato",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/53/b3/6b/53b36b16033232d828e5d7972f5886d4.jpg",
           "url": "",
@@ -5940,6 +6063,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Song Dongwoon",
           "kind": "Partner",
           "flavour": "oats",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/ed/f8/3d/edf83d8ba8b068692d236da3b06611be.jpg",
           "url": "",
@@ -5985,6 +6109,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Ryu Hyemi",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/564x/fa/78/3f/fa783fc1c02abbbaffcb2d02fa8b7898.jpg",
           "url": "",
@@ -6030,6 +6155,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Jake Lee",
           "kind": "Partner",
           "flavour": "chocolate",
+          "brand": "",
           "status": "Married",
           "portrait": "https://b.l3n.co/i/mXFAdD.png",
           "url": "",
@@ -6105,6 +6231,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Antony Moon",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/5f/65/85/5f6585c61490d9b5315f675a1888fc96.jpg",
           "url": "",
@@ -6150,6 +6277,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Rain Jeon",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/n6xO5q.png",
           "url": "",
@@ -6195,6 +6323,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Seo Jeremy",
           "kind": "Partner",
           "flavour": "cinnamon",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://pbs.twimg.com/media/EXGRtgyWAAEgiN9?format=jpg&name=large",
           "url": "",
@@ -6240,6 +6369,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Seo Hakyun",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/bgdJIH.png",
           "url": "",
@@ -6285,6 +6415,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kobayashi Yuki",
           "kind": "Partner",
           "flavour": "honey",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/XYPH77.png",
           "url": "",
@@ -6330,6 +6461,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Sebastian Lee",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/41/93/fb/4193fbd56bf251b5084d504a39f89422.jpg",
           "url": "",
@@ -6405,6 +6537,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Sato Hyunwoo",
           "kind": "Partner",
           "flavour": "cinnamon",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/Or7hlH.png",
           "url": "",
@@ -6450,6 +6583,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Wenjun Zhu",
           "kind": "Partner",
           "flavour": "fig",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/M0LKQ7.png",
           "url": "",
@@ -6495,6 +6629,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Niran Chakri",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/zKiMUD.png",
           "url": "",
@@ -6540,6 +6675,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Kwon Ubin",
           "kind": "Partner",
           "flavour": "cherry",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/da/64/20/da6420bd84c5542bb021f79f56c690a8.jpg",
           "url": "",
@@ -6585,6 +6721,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Adrian Baek",
           "kind": "Partner",
           "flavour": "lemon",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/7GzlJm.png",
           "url": "",
@@ -6660,6 +6797,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Song Yonggi",
           "kind": "Partner",
           "flavour": "praline",
+          "brand": "",
           "status": "Married",
           "portrait": "https://i.pinimg.com/736x/0b/03/a8/0b03a85ac00751c8de69a92dc3bd374d.jpg",
           "url": "",
@@ -6735,6 +6873,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Byun Yuseop",
           "kind": "Partner",
           "flavour": "clementine",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/564x/a4/8d/55/a48d55744d37dae8503fd11f42374c82.jpg",
           "url": "",
@@ -6780,6 +6919,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Qiang Yichen",
           "kind": "Partner",
           "flavour": "oats",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/YDI7IK.png",
           "url": "",
@@ -6825,6 +6965,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Alastair Choi",
           "kind": "Partner",
           "flavour": "mango",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/41/a8/0e/41a80e53e4224f11d5f577c5367b3d4a.jpg",
           "url": "",
@@ -6870,6 +7011,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Shin Dongmin",
           "kind": "Partner",
           "flavour": "praline",
+          "brand": "",
           "status": "Married",
           "portrait": "https://d.l3n.co/PW7qVA.png",
           "url": "",
@@ -6915,6 +7057,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Valerie Kwon",
           "kind": "Partner",
           "flavour": "sesame",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/83/bf/61/83bf61dbc27f61d9bea271ed34f8c78b.jpg",
           "url": "",
@@ -6960,6 +7103,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Asher Nam",
           "kind": "Partner",
           "flavour": "fiery",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://d.l3n.co/cRyuYm.png",
           "url": "",
@@ -7005,6 +7149,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Nakamura Tsubasa",
           "kind": "Partner",
           "flavour": "fudge",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/34/6f/c6/346fc6e2b43d9a5bc16f24ad1eca8e7b.jpg",
           "url": "",
@@ -7050,6 +7195,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Mew Wasutha Singhapan",
           "kind": "Partner",
           "flavour": "gateau",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/OBEAZv.png",
           "url": "",
@@ -7095,6 +7241,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Davis Huang-Yoon",
           "kind": "Partner",
           "flavour": "tropical",
+          "brand": "",
           "status": "Married",
           "portrait": "https://a.l3n.co/i/M1af7i.png",
           "url": "",
@@ -7140,6 +7287,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Jude Yoon",
           "kind": "Partner",
           "flavour": "champagne",
+          "brand": "",
           "status": "Married",
           "portrait": "https://a.l3n.co/i/S0PsGr.png",
           "url": "",
@@ -7185,6 +7333,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Jung Minseo",
           "kind": "Partner",
           "flavour": "cheese",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/YOIEUC.png",
           "url": "",
@@ -7260,6 +7409,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Stella Jung",
           "kind": "Partner",
           "flavour": "sesame",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/XYPpyT.png",
           "url": "",
@@ -7305,6 +7455,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Ben Dam",
           "kind": "Partner",
           "flavour": "citron",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/30/88/04/308804aa9613fcc4632966c03c97aee5.jpg",
           "url": "",
@@ -7350,6 +7501,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "August Tang",
           "kind": "Partner",
           "flavour": "gin",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://i.pinimg.com/736x/76/d0/85/76d085596ed30eec77ce9cea6662212f.jpg",
           "url": "",
@@ -7425,6 +7577,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Seojun Lim",
           "kind": "Partner",
           "flavour": "fig",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/Mjq8rv.png",
           "url": "",
@@ -7470,6 +7623,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Lyle Park",
           "kind": "Partner",
           "flavour": "sour",
+          "brand": "",
           "status": "Married",
           "portrait": "https://i.pinimg.com/564x/0e/79/e6/0e79e6aa69a88c2408183ad415edf163.jpg",
           "url": "",
@@ -7515,6 +7669,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Geum Jung",
           "kind": "Partner",
           "flavour": "pumpkin",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/UlhEFv.png",
           "url": "",
@@ -7560,6 +7715,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Eric Jeon",
           "kind": "Partner",
           "flavour": "delight",
+          "brand": "",
           "status": "Married",
           "portrait": "https://b.l3n.co/fadZax.png",
           "url": "",
@@ -7665,6 +7821,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Huang Liang",
           "kind": "Partner",
           "flavour": "jelly",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://c.l3n.co/i/SwHm5o.png",
           "url": "",
@@ -7710,6 +7867,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Cookie Chalongrat Vihokratana",
           "kind": "Partner",
           "flavour": "cashew",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/oMivle.png",
           "url": "",
@@ -7755,6 +7913,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Jung Taejoo",
           "kind": "Partner",
           "flavour": "",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://a.l3n.co/i/oXP74H.png",
           "url": "",
@@ -7830,6 +7989,7 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
           "name": "Jian Cheng",
           "kind": "Partner",
           "flavour": "raspberry",
+          "brand": "",
           "status": "In a relationship",
           "portrait": "https://b.l3n.co/i/MRE2aP.png",
           "url": "",
@@ -7879,8 +8039,9 @@ h1{font:800 clamp(34px,4vw,51px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.
 };
 var DOSSIER_NOTICES = {
   "baek-samuel": [
-    "Sam uses the confirmed current age of 25 and his relationship with Hoseong. All supplied facts, ten songs and five story links are included.",
-    "Story dates were not supplied. The five entries keep their original order under Undated until you add in-world dates.",
+    "Sam uses the confirmed current age of 25 and his relationship with Hoseong. All supplied facts, ten songs and five original story links are included, plus the newer Cereal Bar comms.",
+    "Story dates were not supplied. The five original entries keep their original order, followed by Cereal Bar under Undated until you add in-world dates.",
+    "Cereal is Sam and Hoseong’s flavour. Lindor, Mochidoki and Pringles are brands; their linked topics use the newer source titles.",
     "The three polaroids show Hoseong, Jiae and Hajun using their existing directory portraits. The map shows San Bernardino at city level."
   ],
   "ben-dam": [
@@ -8701,7 +8862,7 @@ var DOSSIER_NOTICES = {
       if (!relationshipMap.has(id)) relationshipMap.set(id, id);
       return {
         id: id, name: text(item.name, 160), kind: choice(item.kind, KINDS, 'Other'),
-        flavour: text(item.flavour, 160), status: text(item.status, 120), portrait: safeUrl(item.portrait),
+        flavour: text(item.flavour, 160), brand: text(item.brand, 160), status: text(item.status, 120), portrait: safeUrl(item.portrait),
         url: safeUrl(item.url), summary: text(item.summary, 5000), pinned: item.pinned === true,
         featured: item.featured === true, quote: text(item.quote, 3000), playlistUrl: safeUrl(item.playlistUrl)
       };
@@ -8726,6 +8887,8 @@ var DOSSIER_NOTICES = {
       mapLocation: text(raw.mapLocation, 250), mapLatitude: coordinate(raw.mapLatitude, 85, 'Map latitude'), mapLongitude: coordinate(raw.mapLongitude, 180, 'Map longitude'), mapZoom: mapZoom(raw.mapZoom),
       imagePosition: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.imagePosition, 20)) ? text(raw.imagePosition, 20) : '50% 35%',
       accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
+      themeMode: raw.themeMode === 'manual' ? 'manual' : 'auto', paletteSource: safeUrl(raw.paletteSource),
+      paletteCrop: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.paletteCrop, 20)) ? text(raw.paletteCrop, 20) : '',
       tags: Array.from(new Set(list(raw.tags, 50).map(function (tag) { return text(tag, 120).replace(/^#+/, '').trim(); }).filter(Boolean))),
       facts: records(raw.facts, 150).map(function (fact) { return { label: text(fact.label, 160), value: text(fact.value, 2000) }; }),
       currentChapter: text(raw.currentChapter, 5000), asOf: text(raw.asOf, 120), notes: text(raw.notes, 15000),
@@ -8811,7 +8974,7 @@ var DOSSIER_NOTICES = {
       fact.value = /residen|location|based in/i.test(fact.label) ? locationCase(fact.value) : titleCase(fact.value);
     });
     c.polaroids.forEach(function (photo) { photo.name = titleCase(photo.name); });
-    c.relationships.forEach(function (r) { ['name', 'flavour', 'status'].forEach(function (field) { r[field] = titleCase(r[field]); }); });
+    c.relationships.forEach(function (r) { ['name', 'flavour', 'brand', 'status'].forEach(function (field) { r[field] = titleCase(r[field]); }); });
     c.timeline.forEach(function (entry) { ['title', 'participants', 'status'].forEach(function (field) { entry[field] = titleCase(entry[field]); }); });
     return c;
   }
@@ -8842,16 +9005,7 @@ var DOSSIER_NOTICES = {
     var lat = Number(c.mapLatitude), lon = Number(c.mapLongitude);
     var full = 'https://www.openstreetmap.org/?mlat=' + lat + '&mlon=' + lon + '#map=' + c.mapZoom + '/' + lat + '/' + lon;
     var label = c.mapLocation || c.location || 'Current Location';
-    var script = '(function() { var mapStatus = document.getElementById("status"); try { var api = window.maplibregl; if (!api) throw new Error("Map Unavailable"); ' +
-      'var center = { lng: ' + lon + ', lat: ' + lat + ' }; ' +
-      'var map = new api.Map({ container: "map", style: "https://tiles.openfreemap.org/" + "styles/positron", center: center, zoom: ' + c.mapZoom + ', minZoom: 2, maxZoom: 18, attributionControl: false, dragRotate: false, pitchWithRotate: false, scrollZoom: false, renderWorldCopies: false }); ' +
-      'map.addControl(new api.NavigationControl({ showCompass: false }), "top-right"); ' +
-      'new api.Marker({ color: "' + c.accent + '", scale: 0.65 }).setLngLat(center).addTo(map); ' +
-      'map.on("load", function() { mapStatus.hidden = true; }); ' +
-      'map.on("error", function() { if (!mapStatus.hidden) mapStatus.textContent = "Map Unavailable"; }); ' +
-      '} catch (_) { mapStatus.textContent = "Map Unavailable"; } })();';
-    var documentHtml = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.css"><style>html,body,#map{margin:0;width:100%;height:100%;background:#e8e9e4}#map{position:absolute;inset:0}#status{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:16px;font:12px/1.4 sans-serif;color:#465247;text-align:center;pointer-events:none}#status[hidden]{display:none}.maplibregl-ctrl-top-right{top:0;right:0}.maplibregl-ctrl-group{box-shadow:0 1px 4px #0002}.maplibregl-ctrl-group button{width:27px;height:27px}</style></head><body><div id="map" aria-label="Interactive Location Map"></div><p id="status" role="status">Loading Map…</p><script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.js"><\/script><script>' + script + '<\/script></body></html>';
-    return '<div class="bd3-map"><iframe srcdoc="' + escapeHtml(documentHtml) + '" sandbox="allow-scripts" title="Map of ' + escapeHtml(label) + '" width="185" height="185" loading="lazy"></iframe></div>' + external(full, label + ' ↗', 'bd3-map-label') + '<div class="bd4-map-credit">© ' + external('https://www.openstreetmap.org/copyright', 'OpenStreetMap') + ' · © ' + external('https://www.openmaptiles.org/', 'OpenMapTiles') + '</div>';
+    return '<div class="bd3-map" data-lat="' + lat + '" data-lon="' + lon + '" data-zoom="' + c.mapZoom + '" data-label="' + escapeHtml(label) + '"><p class="bd5-map-status" role="status">Open the Location Below</p></div>' + external(full, label + ' ↗', 'bd3-map-label') + '<div class="bd4-map-credit">© ' + external('https://www.openstreetmap.org/copyright', 'OpenStreetMap') + ' · © ' + external('https://www.openmaptiles.org/', 'OpenMapTiles') + '</div>';
   }
   function render(raw, options) {
     options = options || {};
@@ -8875,7 +9029,7 @@ var DOSSIER_NOTICES = {
     var basics = c.gender && !facts.some(function (fact) { return fact.label.toLowerCase() === 'gender'; }) ? [{ label: 'Gender', value: c.gender }] : [];
     var name = c.nickname || c.name;
     var meta = [c.age ? c.age + ' Years Old' : '', c.pronouns].filter(Boolean);
-    var html = '<article class="bh-dossier-v4" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
+    var html = '<article class="bh-dossier-v5" data-theme-mode="' + c.themeMode + '" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
     html += '<header class="bd1-cover" id="' + prefix + '-overview">';
     html += '<div class="bd1-masthead"><span>Character Dossier</span>' + (c.writer ? '<span>Written by ' + escapeHtml(c.writer) + '</span>' : '') + '</div>';
     if (c.portrait) html += '<figure class="bd1-hero"><img src="' + escapeHtml(c.portrait) + '" alt="' + escapeHtml(name ? name + ' — character portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer"><span class="bd1-photo-mark" aria-hidden="true">✦</span></figure>';
@@ -8892,7 +9046,7 @@ var DOSSIER_NOTICES = {
     html += '</div></header>';
     var nav = [['overview', 'Overview']];
     if (photos.length) nav.push(['people', 'Inner circle']);
-    if (relationships.length) nav.push(['connections', hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections']);
+    if (relationships.length) nav.push(['connections', 'Flavours & Brands']);
     if (entries.length) nav.push(['story', 'Timeline']);
     if (songs.length || c.playlistUrl) nav.push(['soundtrack', 'Soundtrack']);
     if (c.notes) nav.push(['notes', 'Notes']);
@@ -8918,7 +9072,7 @@ var DOSSIER_NOTICES = {
       html += '</section>';
     }
     if (relationships.length) {
-      html += '<section class="bd1-section bd1-connections-panel" id="' + prefix + '-connections">' + heading(hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections & flavour') + '<div class="bd1-connections">';
+      html += '<section class="bd1-section bd1-connections-panel" id="' + prefix + '-connections">' + heading('Flavours & Brands') + '<div class="bd1-connections">';
       relationships.forEach(function (r) {
         var linked = entries.filter(function (entry) { return entry.connectionIds.indexOf(r.id) !== -1; });
         html += '<article class="bd1-connection" id="' + prefix + '-connection-' + r.id + '"><div class="bd1-connection-head">';
@@ -8927,6 +9081,7 @@ var DOSSIER_NOTICES = {
         if (r.status) html += '<span class="bd1-small-status">' + escapeHtml(r.status) + '</span>';
         html += '</div>';
         if (r.flavour) html += '<div class="bd1-flavour"><span>Flavour</span><span>' + escapeHtml(r.flavour) + '</span></div>';
+        if (r.brand) html += '<div class="bd1-flavour"><span>Brand</span><span>' + escapeHtml(r.brand) + '</span></div>';
         if (linked.length || r.summary || r.quote || r.playlistUrl) {
           html += '<details class="bd1-linked-story"><summary>' + (linked.length ? linked.length + (linked.length === 1 ? ' shared story' : ' shared stories') : 'About this connection') + '</summary>' + paragraphs(r.summary, 'bd1-connection-copy');
           if (r.quote) html += '<blockquote>' + paragraphs(r.quote) + '</blockquote>';
@@ -8984,17 +9139,197 @@ var DOSSIER_NOTICES = {
   function forum(character, cssUrl) {
     var url = safeUrl(cssUrl);
     if (!url) throw new Error('Forum code needs the public stylesheet address.');
-    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '[/dohtml]';
+    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.js" defer><\/script>[/dohtml]';
   }
   return { normalizeCharacter: normalizeCharacter, normalizeDataset: normalizeDataset, render: render, forum: forum, sortTimeline: sortTimeline, escapeHtml: escapeHtml, safeUrl: safeUrl };
 }));
 </script>
-  <script>window.DOSSIER_PREVIEW_CSS=".bh-dossier-v4 {\n  --bd1-accent: #5b8612;\n  --bd1-bg: color-mix(in srgb, var(--bd1-accent) 5%, #111515);\n  --bd1-panel: color-mix(in srgb, var(--bd1-accent) 5%, #1c2121);\n  --bd1-inset: color-mix(in srgb, var(--bd1-accent) 6%, #242a28);\n  --bd1-ink: #f2f4ed;\n  --bd1-muted: #acb5aa;\n  --bd1-accent-ink: color-mix(in srgb, var(--bd1-accent) 58%, #f5ffe7);\n  --bd1-line: color-mix(in srgb, var(--bd1-accent) 24%, #353c37);\n  --bd2-tint: color-mix(in srgb, var(--bd1-accent) 16%, var(--bd1-panel));\n  --bd2-rich: color-mix(in srgb, var(--bd1-accent) 31%, var(--bd1-panel));\n  --bd1-forward: linear-gradient(110deg, rgb(var(--mgrgb1, 130, 158, 168)), rgb(var(--mgrgb2, 161, 137, 153)), rgb(var(--mgrgb3, 157, 164, 135)));\n  --bd1-reverse: linear-gradient(110deg, rgb(var(--mgrgb3, 157, 164, 135)), rgb(var(--mgrgb2, 161, 137, 153)), rgb(var(--mgrgb1, 130, 158, 168)));\n  box-sizing: border-box;\n  width: min(100%, 940px);\n  margin: 20px auto;\n  padding: 13px;\n  background: var(--bd1-bg);\n  color: var(--bd1-ink);\n  border: 1px solid var(--bd1-line);\n  border-radius: 20px;\n  font: 13px/1.5 Inter, 'Segoe UI', Arial, sans-serif;\n  text-align: left;\n  text-transform: none;\n  letter-spacing: normal;\n  overflow-wrap: anywhere;\n  isolation: isolate;\n  container: bd3 / inline-size;\n  color-scheme: dark;\n}\n.bh-dossier-v4 *, .bh-dossier-v4 *::before, .bh-dossier-v4 *::after { box-sizing: border-box; }\n.bh-dossier-v4 :is(h1,h2,h3,h4,p,figure,blockquote,dl,dd,ul,ol) { margin: 0; padding: 0; color: inherit; }\n.bh-dossier-v4 :is(h1,h2,h3,h4) { font-family: Inter,'Segoe UI',Arial,sans-serif; text-transform: none; font-weight: 750; letter-spacing: -.025em; }\n.bh-dossier-v4 :is(a,a:visited) { color: inherit; text-decoration: none; font-weight: inherit; }\n.bh-dossier-v4 a:hover { color: var(--bd1-accent-ink); text-decoration: underline; text-underline-offset: 3px; }\n.bh-dossier-v4 :is(a,summary,[tabindex]):focus-visible { outline: 2px solid var(--bd1-accent-ink); outline-offset: 3px; border-radius: 4px; }\n.bh-dossier-v4 :is(b,strong,u) { background:var(--bd1-forward); background-clip:text; -webkit-background-clip:text; color:transparent; }\n.bh-dossier-v4 :is(i,em) { background:var(--bd1-reverse); background-clip:text; -webkit-background-clip:text; color:transparent; }\n.bh-dossier-v4 img { display: block; max-width: 100%; border: 0; }\n.bh-dossier-v4 :is(section,article,header,li) { min-width: 0; scroll-margin-top: 130px; }\n.bh-dossier-v4 summary { cursor: pointer; }\n.bh-dossier-v4 .bd1-cover { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:11px; align-items:stretch; }\n.bh-dossier-v4 .bd1-masthead { grid-column:1/-1; display:flex; justify-content:space-between; gap:12px; padding:2px 5px 1px; color:var(--bd1-accent-ink); font-size:9px; font-weight:700; letter-spacing:.13em; text-transform:none; }\n.bh-dossier-v4 .bd1-hero { position:relative; min-height:252px; border-radius:14px; overflow:hidden; background:var(--bd1-inset); border:1px solid var(--bd1-line); }\n.bh-dossier-v4 .bd1-hero>img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:var(--bd2-image-position,50% 35%); }\n.bh-dossier-v4 .bd1-hero::after { content:''; position:absolute; inset:auto 0 0; height:30%; background:linear-gradient(transparent,rgba(9,16,8,.28)); pointer-events:none; }\n.bh-dossier-v4 .bd1-photo-mark { position:absolute; z-index:1; right:12px; bottom:12px; display:grid; place-items:center; width:29px; height:29px; border-radius:9px; background:var(--bd2-rich); color:var(--bd1-accent-ink); font-size:19px; border:1px solid color-mix(in srgb,var(--bd1-accent) 60%,transparent); }\n.bh-dossier-v4 .bd1-identity { display:flex; flex-direction:column; justify-content:center; gap:11px; min-width:0; padding:18px; border:1px solid var(--bd1-line); border-radius:14px; background:linear-gradient(145deg,var(--bd2-rich),var(--bd1-panel) 88%); }\n.bh-dossier-v4 .bd1-cover:not(:has(.bd1-hero)) .bd1-identity { grid-column:1/-1; }\n.bh-dossier-v4 .bd1-identity-main { position:relative; min-width:0; }\n.bh-dossier-v4 .bd1-identity-main:has(.bd1-profile-image) { padding-right:61px; }\n.bh-dossier-v4 .bd1-profile-image { position:absolute; right:0; top:2px; width:47px; height:47px; object-fit:cover; object-position:center 25%; border-radius:13px; border:2px solid var(--bd1-accent); box-shadow:0 0 0 4px color-mix(in srgb,var(--bd1-accent) 14%,transparent); }\n.bh-dossier-v4 .bd1-eyebrow { display:block; color:var(--bd1-accent-ink); font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:none; }\n.bh-dossier-v4 h1 { margin-top:5px; color:var(--bd1-accent-ink); font-size:clamp(31px,5.4cqi,46px); line-height:1.04; letter-spacing:-.055em; font-weight:800; }\n.bh-dossier-v4 .bd1-fullname { margin-top:5px; font-size:12px; font-weight:600; }\n.bh-dossier-v4 .bd1-identity-meta { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; color:var(--bd1-muted); font-size:11px; }\n.bh-dossier-v4 .bd1-identity-meta>span { color:var(--bd1-accent-ink); }\n.bh-dossier-v4 .bd1-summary { display:flex; flex-direction:column; align-items:flex-start; gap:3px; color:var(--bd1-muted); font-size:11px; line-height:1.4; }\n.bh-dossier-v4 .bd1-status { display:inline-flex; align-items:center; gap:6px; margin-bottom:2px; padding:4px 8px; background:var(--bd2-tint); border:1px solid var(--bd1-line); border-radius:20px; color:var(--bd1-ink); font-size:10px; }\n.bh-dossier-v4 .bd1-status::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--bd1-accent-ink); flex:none; }\n.bh-dossier-v4 .bd1-stats { display:flex; flex-wrap:wrap; gap:8px; padding-top:9px; border-top:1px solid var(--bd1-line); margin-top:auto; }\n.bh-dossier-v4 .bd1-stats a { display:flex; align-items:baseline; gap:5px; flex:1; min-width:54px; }\n.bh-dossier-v4 .bd1-stats a>span { font-size:18px; font-weight:750; line-height:1.2; color:var(--bd1-accent-ink); }\n.bh-dossier-v4 .bd1-stats small { font-size:9px; color:var(--bd1-muted); }\n.bh-dossier-v4 .bd1-nav { display:flex; flex-wrap:wrap; gap:6px; margin:11px 0; padding:0; }\n.bh-dossier-v4 .bd1-nav a { display:block; padding:7px 10px; background:var(--bd1-panel); border:1px solid var(--bd1-line); border-radius:8px; font-size:10px; font-weight:650; color:var(--bd1-muted); }\n.bh-dossier-v4 .bd1-nav a:hover { background:var(--bd2-tint); color:var(--bd1-accent-ink); text-decoration:none; }\n.bh-dossier-v4 .bd1-content { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(0,1fr); gap:11px; align-items:start; }\n.bh-dossier-v4 .bd1-section { min-width:0; grid-column:1/-1; align-self:start; padding:16px; background:var(--bd1-panel); border:1px solid var(--bd1-line); border-radius:14px; }\n.bh-dossier-v4 .bd1-section-heading { display:flex; align-items:center; gap:8px; margin-bottom:13px; }\n.bh-dossier-v4 .bd1-section-heading::before { content:''; width:3px; height:17px; border-radius:3px; background:var(--bd1-accent); flex:none; }\n.bh-dossier-v4 .bd1-number { display:none; }\n.bh-dossier-v4 h2 { font-size:17px; line-height:1.25; }\n.bh-dossier-v4 .bd1-heading-note { margin-left:auto; font-size:9px; color:var(--bd1-muted); text-align:right; }\n.bh-dossier-v4 .bd1-tags { display:none; }\n.bh-dossier-v4 .bd1-chapter { margin:0 0 11px; padding:11px 12px; background:var(--bd2-tint); border-radius:8px; border-left:2px solid var(--bd1-accent); }\n.bh-dossier-v4 .bd1-chapter p { margin-top:6px; font-size:12px; }\n.bh-dossier-v4 .bd1-facts { display:grid; grid-template-columns:1fr; gap:0; margin-top:2px; }\n.bh-dossier-v4 .bd3-fact-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:18px; min-width:0; }\n.bh-dossier-v4 .bd3-fact-row>div { min-width:0; padding:4px 0; border-bottom:1px solid var(--bd1-line); }\n.bh-dossier-v4 .bd3-fact-row>div:only-child { grid-column:1/-1; }\n.bh-dossier-v4 .bd3-fact-row:last-child>div { border-bottom:0; padding-bottom:1px; }\n.bh-dossier-v4 .bd1-facts dt { margin-bottom:2px; font-size:9px; line-height:1.2; letter-spacing:.04em; color:var(--bd1-accent-ink); text-transform:none; font-weight:600; }\n.bh-dossier-v4 .bd1-facts dd { font-size:12px; font-weight:500; line-height:1.35; white-space:pre-line; }\n.bh-dossier-v4 .bd1-pinned { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px; }\n.bh-dossier-v4 .bd1-person { position:relative; display:flex; flex-direction:column; align-items:flex-start; padding:13px 12px; background:var(--bd2-tint); border:1px solid var(--bd1-line); border-radius:10px; min-width:0; }\n.bh-dossier-v4 .bd1-person:hover { background:var(--bd2-rich); text-decoration:none; }\n.bh-dossier-v4 .bd1-person-number { position:absolute; right:9px; top:9px; color:var(--bd1-accent-ink); font-size:9px; opacity:.7; }\n.bh-dossier-v4 .bd1-person>img { width:42px; height:42px; object-fit:cover; object-position:center 25%; border-radius:12px; margin-bottom:9px; border:2px solid var(--bd1-accent); }\n.bh-dossier-v4 .bd1-person-name { font-size:14px; font-weight:700; line-height:1.3; }\n.bh-dossier-v4 .bd1-person-kind { color:var(--bd1-muted); font-size:10px; margin-top:3px; }\n.bh-dossier-v4 .bd1-person-flavour { font-size:10px; color:var(--bd1-accent-ink); margin-top:5px; }\n.bh-dossier-v4 .bd1-connections { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-rows:1fr; gap:8px; align-items:stretch; }\n.bh-dossier-v4 .bd1-connection, .bh-dossier-v4 .bd1-featured { grid-column:auto; align-self:stretch; padding:12px; background:var(--bd1-inset); border:1px solid var(--bd1-line); border-radius:10px; }\n.bh-dossier-v4 .bd1-connection-head { display:flex; align-items:center; gap:9px; flex-wrap:wrap; min-height:52px; }\n.bh-dossier-v4 .bd1-connection-head>div { flex:1; min-width:70px; }\n.bh-dossier-v4 .bd1-avatar, .bh-dossier-v4 .bd1-featured .bd1-avatar { width:36px; height:36px; border-radius:10px; object-fit:cover; object-position:center 25%; border:1px solid color-mix(in srgb,var(--bd1-accent) 50%,var(--bd1-line)); }\n.bh-dossier-v4 h3 { font-size:14px; line-height:1.3; }\n.bh-dossier-v4 .bd1-connection .bd1-eyebrow { font-size:9px; margin-bottom:2px; letter-spacing:.055em; }\n.bh-dossier-v4 .bd1-small-status { font-size:9px; color:var(--bd1-muted); margin-left:auto; }\n.bh-dossier-v4 .bd1-flavour { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-top:8px; }\n.bh-dossier-v4 .bd1-flavour>span:first-child { font-size:9px; text-transform:none; letter-spacing:.07em; color:var(--bd1-muted); }\n.bh-dossier-v4 .bd1-flavour>span:last-child { padding:2px 7px; border-radius:5px; background:var(--bd2-tint); color:var(--bd1-accent-ink); font-size:11px; font-weight:650; }\n.bh-dossier-v4 .bd1-connection-copy { margin-top:8px; font-size:12px; }\n.bh-dossier-v4 blockquote { padding:8px 11px; margin-top:10px; border-left:2px solid var(--bd1-accent); font:italic 13px/1.5 Georgia,serif; color:var(--bd1-muted); }\n.bh-dossier-v4 .bd1-relationship-playlist { margin-top:9px; color:var(--bd1-accent-ink); font-size:10px; }\n.bh-dossier-v4 .bd1-linked-story, .bh-dossier-v4 .bd3-connection-details { margin-top:8px; padding-top:7px; border-top:1px solid var(--bd1-line); font-size:10px; }\n.bh-dossier-v4 .bd1-connection details>summary { color:var(--bd1-accent-ink); font-size:10px; line-height:1.5; }\n.bh-dossier-v4 .bd1-linked-story ul { list-style:none; display:grid; gap:6px; margin-top:8px; }\n.bh-dossier-v4 .bd1-linked-story li a { display:flex; justify-content:space-between; gap:8px; }\n.bh-dossier-v4 .bd1-linked-story small { color:var(--bd1-muted); font-size:9px; }\n.bh-dossier-v4 .bd1-year-group+.bd1-year-group { margin-top:14px; }\n.bh-dossier-v4 .bd1-year { display:inline-block; padding:3px 7px; margin-bottom:8px; border-radius:5px; background:var(--bd2-tint); font-size:10px; letter-spacing:.02em; color:var(--bd1-accent-ink); }\n.bh-dossier-v4 .bd1-timeline { list-style:none; border-left:1px solid var(--bd1-line); margin-left:3px; }\n.bh-dossier-v4 .bd1-entry { position:relative; display:grid; grid-template-columns:52px minmax(0,1fr); gap:2px 9px; padding:8px 10px; margin:0 0 7px 12px; border:1px solid var(--bd1-line); border-radius:8px; background:var(--bd1-inset); }\n.bh-dossier-v4 .bd1-entry:last-child { margin-bottom:0; }\n.bh-dossier-v4 .bd1-entry::before { content:''; position:absolute; left:-17px; top:17px; width:6px; height:6px; background:var(--bd1-accent); border-radius:50%; box-shadow:0 0 0 3px var(--bd1-panel); }\n.bh-dossier-v4 .bd1-milestone { background:var(--bd2-tint); border-color:var(--bd1-accent); }\n.bh-dossier-v4 .bd1-milestone::before { border-radius:1px; transform:rotate(45deg); }\n.bh-dossier-v4 .bd1-entry-meta { grid-column:1; grid-row:1/span 2; display:flex; flex-direction:column; align-items:flex-start; gap:4px; min-width:0; font-size:9px; color:var(--bd1-muted); }\n.bh-dossier-v4 .bd1-type { font-size:9px; font-weight:700; letter-spacing:.02em; padding:2px 5px; background:var(--bd2-tint); color:var(--bd1-accent-ink); border-radius:4px; }\n.bh-dossier-v4 .bd1-entry-status { margin-left:0; }\n.bh-dossier-v4 h4 { grid-column:2; grid-row:1; font-size:14px; line-height:1.3; margin-top:0; }\n.bh-dossier-v4 .bd1-participants { grid-column:2; grid-row:2; font-size:10px; color:var(--bd1-muted); margin-top:0; }\n.bh-dossier-v4 .bd1-entry-people { grid-column:2; grid-row:2; display:flex; flex-wrap:wrap; gap:4px; margin-top:0; }\n.bh-dossier-v4 .bd1-entry-people a { font-size:9px; padding:1px 5px; border:1px solid var(--bd1-line); border-radius:4px; color:var(--bd1-accent-ink); }\n.bh-dossier-v4 .bd1-entry-copy { grid-column:1/-1; margin-top:5px; font-size:12px; }\n.bh-dossier-v4 .bd1-posted-date { grid-column:1/-1; margin-top:4px; color:var(--bd1-muted); font-size:9px; }\n.bh-dossier-v4 .bd1-main-playlist { margin-bottom:10px; }\n.bh-dossier-v4 .bd3-player-carousel { display:flex; align-items:flex-start; gap:12px; width:100%; min-width:0; overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory; scroll-padding-inline:0; scroll-behavior:smooth; overscroll-behavior-inline:contain; scrollbar-width:thin; scrollbar-color:var(--bd1-accent) var(--bd1-inset); padding:0 0 8px; }\n.bh-dossier-v4 .bd3-song-slide { flex:0 0 100%; width:100%; min-width:0; max-width:100%; scroll-snap-align:start; scroll-snap-stop:always; scroll-margin-top:130px; }\n.bh-dossier-v4 .bd3-song-title { display:flex; align-items:center; gap:9px; margin:0 0 10px; min-height:31px; min-width:0; }\n.bh-dossier-v4 .bd3-song-title>div { min-width:0; flex:1; }\n.bh-dossier-v4 .bd3-song-title :is(h3,h4) { margin:0; font-size:12px; line-height:1.4; }\n.bh-dossier-v4 .bd1-song-number, .bh-dossier-v4 .bd3-song-number { display:grid; place-items:center; width:26px; height:26px; flex:0 0 26px; background:var(--bd2-tint); border-radius:7px; font-size:9px; font-weight:600; color:var(--bd1-accent-ink); }\n.bh-dossier-v4 .bd1-song-title { display:block; font-size:12px; font-weight:650; line-height:1.4; }\n.bh-dossier-v4 .bd1-song-artist, .bh-dossier-v4 .bd3-song-artist { display:block; margin-top:2px; font-size:10px; color:var(--bd1-muted); }\n.bh-dossier-v4 .bd1-song-note { margin-top:9px; font-size:11px; color:var(--bd1-muted); }\n.bh-dossier-v4 .bd1-player { display:block; width:100%; max-width:100%; border:0; border-radius:10px; background:var(--bd1-inset); }\n.bh-dossier-v4 .bd1-listen { margin-top:6px; font-size:10px; color:var(--bd1-accent-ink); }\n.bh-dossier-v4 .bd3-song-controls { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:11px; padding-top:9px; border-top:1px solid var(--bd1-line); font-size:10px; color:var(--bd1-muted); }\n.bh-dossier-v4 .bd3-song-controls a { display:grid; place-items:center; min-width:30px; min-height:28px; padding:3px 9px; border:1px solid var(--bd1-line); border-radius:7px; background:var(--bd2-tint); color:var(--bd1-accent-ink); font-size:14px; line-height:1; }\n.bh-dossier-v4 .bd3-song-controls a:hover { background:var(--bd2-rich); text-decoration:none; }\n.bh-dossier-v4 .bd3-memory-row { display:grid; grid-template-columns:minmax(0,2fr) minmax(215px,1fr); gap:11px; align-items:start; margin:0 0 11px; }\n.bh-dossier-v4 .bd3-memory-row>:only-child { grid-column:1/-1; }\n.bh-dossier-v4 .bd3-polaroid-panel, .bh-dossier-v4 .bd3-map-panel { min-width:0; padding:14px; border:1px solid var(--bd1-line); border-radius:14px; background:var(--bd1-panel); align-self:start; }\n.bh-dossier-v4 .bd3-memory-row .bd1-section-heading { margin-bottom:9px; }\n.bh-dossier-v4 .bd3-memory-row h2 { font-size:15px; }\n.bh-dossier-v4 .bd3-polaroids { position:relative; display:flex; align-items:flex-start; justify-content:space-evenly; gap:13px; padding:24px 9px 12px; }\n.bh-dossier-v4 .bd3-polaroids::before { content:''; position:absolute; left:4px; right:4px; top:11px; height:1px; background:color-mix(in srgb,var(--bd1-accent) 40%,#c9baa0); transform:rotate(-1deg); }\n.bh-dossier-v4 .bd3-polaroid { position:relative; flex:1 1 0; min-width:0; max-width:139px; padding:7px 7px 9px; border-radius:2px; background:#eeeadd; color:#383b31; box-shadow:0 4px 9px rgba(0,0,0,.18); transform:rotate(-4deg); }\n.bh-dossier-v4 .bd3-polaroid:nth-child(2) { transform:rotate(3deg); margin-top:4px; }\n.bh-dossier-v4 .bd3-polaroid:nth-child(3) { transform:rotate(-2deg); }\n.bh-dossier-v4 .bd3-polaroid::before { content:''; position:absolute; z-index:2; top:-18px; left:calc(50% - 5px); width:10px; height:24px; border:1px solid #a69675; border-radius:2px; background:linear-gradient(90deg,#d8c9a9,#bbaa86 50%,#cfbea0); box-shadow:0 2px 2px rgba(0,0,0,.12); }\n.bh-dossier-v4 .bd3-polaroid>a { display:block; color:inherit; }\n.bh-dossier-v4 .bd3-polaroid img, .bh-dossier-v4 .bd3-photo-placeholder { display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:center 30%; border-radius:1px; }\n.bh-dossier-v4 .bd3-photo-placeholder { display:grid; place-items:center; background:linear-gradient(140deg,var(--bd2-rich),var(--bd1-inset)); color:var(--bd1-accent-ink); font-size:27px; font-weight:700; }\n.bh-dossier-v4 .bd3-polaroid figcaption { padding-top:7px; color:#383b31; text-align:center; font:italic 12px/1.25 Georgia,'Times New Roman',serif; }\n.bh-dossier-v4 .bd3-polaroid figcaption a { color:inherit; }\n.bh-dossier-v4 .bd3-map { width:185px; min-width:185px; aspect-ratio:1/1; margin:0 auto; overflow:hidden; border:1px solid var(--bd1-line); border-radius:9px; background:var(--bd1-inset); }\n.bh-dossier-v4 .bd3-map iframe { display:block; width:100%; height:100%; border:0; }\n.bh-dossier-v4 .bd3-map-label { display:block; margin-top:7px; color:var(--bd1-accent-ink); font-size:10px; line-height:1.4; text-align:center; }\n.bh-dossier-v4 .bd4-map-credit { width:100%; max-width:185px; margin:5px auto 0; color:var(--bd1-muted); font-size:9px; line-height:1.5; text-align:center; text-transform:none; letter-spacing:normal; }\n.bh-dossier-v4 .bd4-map-credit a { color:inherit; text-decoration:underline; text-underline-offset:2px; }\n.bh-dossier-v4 .bd1-notes>p { font-size:12px; margin-top:9px; }\n.bh-dossier-v4 .bd1-footer { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:13px 4px 2px; color:var(--bd1-muted); font-size:9px; }\n.bh-dossier-v4 .bd1-footer a { color:var(--bd1-accent-ink); }\nhtml[color-mode=\"light\"] .bh-dossier-v4 { --bd1-bg:color-mix(in srgb,var(--bd1-accent) 4%,#f1f3ee); --bd1-panel:#fff; --bd1-inset:color-mix(in srgb,var(--bd1-accent) 4%,#f4f5f0); --bd1-ink:#242e24; --bd1-muted:#616b60; --bd1-accent-ink:color-mix(in srgb,var(--bd1-accent) 70%,#152012); --bd1-line:color-mix(in srgb,var(--bd1-accent) 20%,#dfe4db); color-scheme:light; }\n@media (prefers-color-scheme:light) {\n  html:not([color-mode=\"dark\"]):not([color-mode=\"light\"]) .bh-dossier-v4 { --bd1-bg:color-mix(in srgb,var(--bd1-accent) 4%,#f1f3ee); --bd1-panel:#fff; --bd1-inset:color-mix(in srgb,var(--bd1-accent) 4%,#f4f5f0); --bd1-ink:#242e24; --bd1-muted:#616b60; --bd1-accent-ink:color-mix(in srgb,var(--bd1-accent) 70%,#152012); --bd1-line:color-mix(in srgb,var(--bd1-accent) 20%,#dfe4db); color-scheme:light; }\n}\n@container bd3 (min-width:790px) {\n  .bh-dossier-v4 .bd1-overview { grid-column:1; grid-row:1; }\n  .bh-dossier-v4 .bd1-connections-panel { grid-column:2; grid-row:1; }\n  .bh-dossier-v4 .bd1-story-panel { grid-column:1; }\n  .bh-dossier-v4 .bd1-soundtrack-panel { grid-column:2; }\n  .bh-dossier-v4 .bd1-content:not(:has(.bd1-overview)) .bd1-connections-panel,\n  .bh-dossier-v4 .bd1-content:not(:has(.bd1-connections-panel)) .bd1-overview,\n  .bh-dossier-v4 .bd1-content:not(:has(.bd1-story-panel)) .bd1-soundtrack-panel,\n  .bh-dossier-v4 .bd1-content:not(:has(.bd1-soundtrack-panel)) .bd1-story-panel { grid-column:1/-1; }\n  .bh-dossier-v4 .bd1-people-panel { grid-column:1/-1; }\n}\n@container bd3 (max-width:600px) {\n  .bh-dossier-v4 .bd1-cover { grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:9px; }\n  .bh-dossier-v4 .bd1-hero { min-height:245px; }\n  .bh-dossier-v4 .bd1-identity { padding:14px; gap:10px; }\n  .bh-dossier-v4 .bd1-identity-main:has(.bd1-profile-image) { padding-right:43px; }\n  .bh-dossier-v4 .bd1-profile-image { width:33px; height:33px; border-radius:9px; box-shadow:0 0 0 3px color-mix(in srgb,var(--bd1-accent) 14%,transparent); }\n  .bh-dossier-v4 h1 { font-size:32px; }\n  .bh-dossier-v4 .bd1-stats a { display:block; min-width:35px; }\n  .bh-dossier-v4 .bd1-stats small { display:block; margin-top:2px; }\n  .bh-dossier-v4 .bd1-stats a>span { font-size:17px; }\n  .bh-dossier-v4 .bd3-polaroid-panel, .bh-dossier-v4 .bd3-map-panel { padding:11px; }\n  .bh-dossier-v4 .bd3-polaroids { gap:9px; padding:22px 2px 8px; }\n  .bh-dossier-v4 .bd3-polaroid { padding:5px 5px 7px; }\n  .bh-dossier-v4 .bd3-polaroid figcaption { font-size:10px; padding-top:5px; }\n  .bh-dossier-v4 .bd3-memory-row h2 { font-size:13px; }\n  .bh-dossier-v4 .bd3-memory-row .bd1-section-heading { gap:6px; }\n  .bh-dossier-v4 .bd3-photo-placeholder { font-size:20px; }\n  .bh-dossier-v4 .bd3-memory-row { grid-template-columns:1fr; gap:9px; }\n  .bh-dossier-v4 .bd3-map-panel { display:grid; grid-template-columns:185px minmax(0,1fr); gap:6px 16px; align-items:center; }\n  .bh-dossier-v4 .bd3-map-panel .bd1-section-heading { grid-column:2; grid-row:1; align-self:end; margin-bottom:0; }\n  .bh-dossier-v4 .bd3-map-panel .bd3-map { grid-column:1; grid-row:1/4; }\n  .bh-dossier-v4 .bd3-map-panel .bd3-map-label { grid-column:2; grid-row:2; text-align:left; align-self:start; margin-top:0; }\n  .bh-dossier-v4 .bd3-map-panel .bd4-map-credit { grid-column:2; grid-row:3; text-align:left; align-self:start; margin:0; }\n}\n@container bd3 (max-width:440px) {\n  .bh-dossier-v4 .bd1-masthead { flex-wrap:wrap; gap:3px 8px; font-size:8px; }\n  .bh-dossier-v4 .bd1-cover { grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr); }\n  .bh-dossier-v4 .bd1-identity { padding:12px; }\n  .bh-dossier-v4 .bd1-identity-main:has(.bd1-profile-image) { padding-right:0; }\n  .bh-dossier-v4 .bd1-profile-image { display:none; }\n  .bh-dossier-v4 h1 { font-size:31px; }\n  .bh-dossier-v4 .bd1-eyebrow { font-size:8px; }\n  .bh-dossier-v4 .bd1-fullname { font-size:11px; }\n  .bh-dossier-v4 .bd1-identity-meta, .bh-dossier-v4 .bd1-summary { font-size:10px; }\n  .bh-dossier-v4 .bd1-summary { gap:3px; }\n  .bh-dossier-v4 .bd1-stats { gap:5px; }\n  .bh-dossier-v4 .bd1-stats small { font-size:8px; }\n  .bh-dossier-v4 .bd1-nav { gap:5px; }\n  .bh-dossier-v4 .bd1-nav a { padding:6px 8px; font-size:9px; }\n  .bh-dossier-v4 .bd1-section { padding:13px; }\n  .bh-dossier-v4 .bd1-section-heading { gap:7px; margin-bottom:11px; }\n  .bh-dossier-v4 h2 { font-size:16px; }\n  .bh-dossier-v4 .bd3-fact-row { column-gap:13px; }\n  .bh-dossier-v4 .bd1-facts dd { font-size:11px; }\n  .bh-dossier-v4 .bd1-connections { grid-template-columns:1fr; }\n  .bh-dossier-v4 .bd1-connection { padding:11px; }\n  .bh-dossier-v4 .bd1-pinned { gap:7px; }\n  .bh-dossier-v4 .bd1-person { padding:11px 9px; }\n  .bh-dossier-v4 .bd1-person-name { font-size:12px; }\n  .bh-dossier-v4 .bd1-person>img { width:36px; height:36px; border-radius:10px; }\n  .bh-dossier-v4 .bd3-polaroids { gap:13px; justify-content:center; }\n  .bh-dossier-v4 .bd3-polaroid { max-width:100px; }\n}\n@container bd3 (max-width:380px) {\n  .bh-dossier-v4 .bd3-map-panel { display:flex; flex-direction:column; align-items:center; gap:9px; }\n  .bh-dossier-v4 .bd3-map-panel .bd1-section-heading { align-self:center; margin:0; }\n  .bh-dossier-v4 .bd3-map-panel .bd3-map-label { align-self:center; text-align:center; }\n  .bh-dossier-v4 .bd3-map-panel .bd4-map-credit { align-self:center; text-align:center; margin:0; }\n}\n@container bd3 (max-width:307px) {\n  .bh-dossier-v4 .bd1-player { display:none; }\n  .bh-dossier-v4 .bd1-hero { min-height:250px; }\n  .bh-dossier-v4 .bd1-identity { padding:10px; }\n  .bh-dossier-v4 .bd1-status { font-size:9px; }\n  .bh-dossier-v4 .bd1-stats a { min-width:31px; }\n  .bh-dossier-v4 .bd1-stats small { font-size:7px; }\n}\n@media (max-width:430px) {\n  .bh-dossier-v4 { padding:9px; border-radius:16px; }\n}\n@media (prefers-reduced-motion:reduce) {\n  .bh-dossier-v4 .bd3-player-carousel { scroll-behavior:auto; }\n}\n@media print {\n  .bh-dossier-v4 { max-width:none; }\n  .bh-dossier-v4 .bd1-nav, .bh-dossier-v4 .bd1-footer a, .bh-dossier-v4 .bd3-song-controls { display:none; }\n  .bh-dossier-v4 .bd1-connection, .bh-dossier-v4 .bd1-entry, .bh-dossier-v4 .bd3-memory-row { break-inside:avoid; }\n  .bh-dossier-v4 .bd3-player-carousel { display:block; overflow:visible; }\n  .bh-dossier-v4 .bd3-song-slide+.bd3-song-slide { margin-top:14px; }\n}\n";</script><script>(function () {
+  <script>(function (root, factory) {
+  'use strict';
+  var api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.PhotoPalette = api;
+}(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  var cache = new Map();
+
+  function clamp(value, low, high) { return Math.max(low, Math.min(high, value)); }
+  function safeUrl(value) {
+    try {
+      var parsed = new URL(String(value || '').trim());
+      if (!['https:', 'http:'].includes(parsed.protocol) || parsed.username || parsed.password) throw new Error();
+      return parsed.href;
+    } catch (_) { throw new Error('Use a complete image address beginning with https://.'); }
+  }
+  function rgbToHsl(r, g, b) {
+    r /= 255; g /= 255; b /= 255;
+    var maximum = Math.max(r, g, b), minimum = Math.min(r, g, b), delta = maximum - minimum;
+    var lightness = (maximum + minimum) / 2, saturation = delta ? delta / (1 - Math.abs(2 * lightness - 1)) : 0;
+    var hue = 0;
+    if (delta) {
+      if (maximum === r) hue = ((g - b) / delta) % 6;
+      else if (maximum === g) hue = (b - r) / delta + 2;
+      else hue = (r - g) / delta + 4;
+      hue = (hue * 60 + 360) % 360;
+    }
+    return { h: hue, s: saturation, l: lightness };
+  }
+  function hslToRgb(h, s, l) {
+    var chroma = (1 - Math.abs(2 * l - 1)) * s, part = h / 60, x = chroma * (1 - Math.abs(part % 2 - 1));
+    var pieces = part < 1 ? [chroma, x, 0] : part < 2 ? [x, chroma, 0] : part < 3 ? [0, chroma, x] : part < 4 ? [0, x, chroma] : part < 5 ? [x, 0, chroma] : [chroma, 0, x];
+    var base = l - chroma / 2;
+    return pieces.map(function (value) { return Math.round(clamp(value + base, 0, 1) * 255); });
+  }
+  function hex(rgb) { return '#' + rgb.map(function (value) { return Math.round(clamp(value, 0, 255)).toString(16).padStart(2, '0'); }).join(''); }
+  function hueDistance(a, b) { return Math.min(Math.abs(a - b), 360 - Math.abs(a - b)); }
+
+  function fromPixels(input) {
+    var pixels = input && input.data ? input.data : input;
+    if (!pixels || typeof pixels.length !== 'number' || pixels.length < 4 || pixels.length % 4 !== 0) throw new Error('The photo could not be read as image pixels.');
+    var groups = Array.from({ length: 24 }, function () { return { score: 0, count: 0 }; });
+    var candidates = [], opaque = [], colourful = 0;
+    for (var index = 0; index < pixels.length; index += 4) {
+      var alpha = Number(pixels[index + 3]);
+      if (alpha < 128) continue;
+      var r = Number(pixels[index]), g = Number(pixels[index + 1]), b = Number(pixels[index + 2]);
+      if (![r, g, b, alpha].every(Number.isFinite)) continue;
+      var hsl = rgbToHsl(r, g, b);
+      opaque.push({ r: r, g: g, b: b, h: hsl.h, s: hsl.s, l: hsl.l });
+      if (hsl.l < 0.09 || hsl.l > 0.91) continue;
+      var weight = (0.06 + Math.pow(hsl.s, 1.7) * 2.2) * (1 - Math.abs(hsl.l - 0.48) * 1.2);
+      var skinLike = hsl.h >= 5 && hsl.h <= 48 && hsl.s > 0.18 && hsl.s < 0.68 && hsl.l > 0.28 && hsl.l < 0.84 && r > g && g > b;
+      if (skinLike) weight *= 0.24;
+      if (hsl.s < 0.15) weight *= 0.14;
+      var item = { r: r, g: g, b: b, h: hsl.h, s: hsl.s, l: hsl.l, weight: weight };
+      candidates.push(item);
+      if (hsl.s >= 0.18) {
+        colourful += 1;
+        var bucket = Math.floor(hsl.h / 15) % 24;
+        groups[bucket].score += weight;
+        groups[bucket].count += 1;
+      }
+    }
+    if (!opaque.length) throw new Error('The photo has no visible pixels to sample.');
+    var usable = candidates.length ? candidates : opaque;
+    var selected = [], minimumCount = Math.max(3, Math.floor(usable.length * 0.008));
+    if (colourful > usable.length * 0.025) {
+      var winner = -1, highest = -1;
+      groups.forEach(function (group, bucket) {
+        var before = groups[(bucket + 23) % 24], after = groups[(bucket + 1) % 24];
+        var count = group.count + before.count + after.count;
+        var score = group.score + (before.score + after.score) * 0.42;
+        if (count >= minimumCount && score > highest) { winner = bucket; highest = score; }
+      });
+      if (winner >= 0) {
+        var centre = winner * 15 + 7.5;
+        selected = candidates.filter(function (item) { return item.s >= 0.18 && hueDistance(item.h, centre) <= 27; });
+      }
+    }
+    if (!selected.length) selected = usable.map(function (item) { return Object.assign({}, item, { weight: 1 }); });
+    var red = 0, green = 0, blue = 0, total = 0;
+    selected.forEach(function (item) { var weight = item.weight || 1; red += item.r * weight; green += item.g * weight; blue += item.b * weight; total += weight; });
+    var colour = rgbToHsl(red / total, green / total, blue / total);
+    colour.l = clamp(colour.l, 0.30, 0.55);
+    if (colour.s >= 0.15) colour.s = clamp(colour.s, 0.28, 0.78);
+    return hex(hslToRgb(colour.h, colour.s, colour.l));
+  }
+
+  function cropValues(value) {
+    var match = String(value || '').match(/^(\d+(?:\.\d+)?)%\s+(\d+(?:\.\d+)?)%$/);
+    return match ? [clamp(Number(match[1]), 0, 100) / 100, clamp(Number(match[2]), 0, 100) / 100] : [0.5, 0.35];
+  }
+  function proxyUrl(value) {
+    var source;
+    try { source = new URL(safeUrl(value)); } catch (_) { return ''; }
+    var host = source.hostname.toLowerCase();
+    if (source.protocol !== 'https:' || source.port || source.username || source.password) return '';
+    if (!/^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,63}$/.test(host)) return '';
+    if (/(^|\.)(?:localhost|local|internal|intranet|corp|home|lan|test|invalid|example)(?:\.|$)/.test(host)) return '';
+    if (/(?:^|\.)(?:localtest\.me|lvh\.me|nip\.io|sslip\.io)$/.test(host)) return '';
+    var forbidden = false;
+    source.searchParams.forEach(function (_, key) { if (/(?:token|auth|key|signature|credential|password|policy)/i.test(key)) forbidden = true; });
+    if (forbidden) return '';
+    source.hash = '';
+    return 'https://images.weserv.nl/?url=' + encodeURIComponent(source.href) + '&w=128&h=128&fit=inside&output=png';
+  }
+  function loadColour(url, options) {
+    return new Promise(function (resolve, reject) {
+      if (typeof Image === 'undefined' || typeof document === 'undefined') { reject(new Error('Photo colours need a browser with image and canvas support.')); return; }
+      var image = new Image(), settled = false;
+      var timeout = setTimeout(function () { finish(new Error('The photo took too long to load. The previous colour is kept.')); }, options.timeout || 15000);
+      function finish(error, result) {
+        if (settled) return;
+        settled = true; clearTimeout(timeout); image.onload = null; image.onerror = null;
+        if (error) reject(error); else resolve(result);
+      }
+      image.crossOrigin = 'anonymous';
+      image.referrerPolicy = 'no-referrer';
+      image.decoding = 'async';
+      image.onload = function () {
+        try {
+          var width = image.naturalWidth, height = image.naturalHeight;
+          if (!width || !height) throw new Error('The photo has no readable dimensions.');
+          var aspect = Number(options.aspectRatio) || 1.25;
+          aspect = clamp(aspect, 0.4, 3);
+          var crop = cropValues(options.crop), sourceWidth = width, sourceHeight = height;
+          if (width / height > aspect) sourceWidth = height * aspect;
+          else sourceHeight = width / aspect;
+          var sourceX = (width - sourceWidth) * crop[0], sourceY = (height - sourceHeight) * crop[1];
+          var canvas = document.createElement('canvas'); canvas.width = 64; canvas.height = 64;
+          var context = canvas.getContext('2d', { willReadFrequently: true });
+          if (!context) throw new Error('This browser could not open an image canvas.');
+          context.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, 64, 64);
+          finish(null, fromPixels(context.getImageData(0, 0, 64, 64).data));
+        } catch (error) {
+          finish(new Error(error && error.name === 'SecurityError' ? 'This image host blocks colour sampling. The previous colour is kept.' : error.message));
+        }
+      };
+      image.onerror = function () { finish(new Error('The photo could not be sampled. Its host may block colour access; the previous colour is kept.')); };
+      image.src = url;
+    });
+  }
+  function abortable(promise, signal) {
+    if (!signal) return promise;
+    return new Promise(function (resolve, reject) {
+      function abort() { var error = new Error('Photo colour sampling was cancelled.'); error.name = 'AbortError'; reject(error); }
+      if (signal.aborted) { abort(); return; }
+      signal.addEventListener('abort', abort, { once: true });
+      promise.then(function (value) { signal.removeEventListener('abort', abort); if (!signal.aborted) resolve(value); }, function (error) { signal.removeEventListener('abort', abort); if (!signal.aborted) reject(error); });
+    });
+  }
+  function get(value, options) {
+    options = options || {};
+    var original, source;
+    try { original = safeUrl(value); source = options.sourceUrl ? safeUrl(options.sourceUrl) : original; }
+    catch (error) { return Promise.reject(error); }
+    var crop = cropValues(options.crop), aspect = clamp(Number(options.aspectRatio) || 1.25, 0.4, 3);
+    var key = [original, source, crop.join(','), aspect].join('|');
+    if (options.refresh) cache.delete(key);
+    if (!cache.has(key)) {
+      var loadOptions = Object.assign({}, options, { aspectRatio: aspect });
+      var proxy = options.allowProxy === false ? '' : proxyUrl(source);
+      var host = new URL(source).hostname.toLowerCase();
+      var knownNoCors = host === 'i.pinimg.com' || host === 'l3n.co' || host.endsWith('.l3n.co');
+      var promise = knownNoCors && proxy ? loadColour(proxy, loadOptions) : loadColour(source, loadOptions).catch(function (error) {
+        if (!proxy) throw error;
+        return loadColour(proxy, loadOptions);
+      });
+      cache.set(key, promise);
+      promise.catch(function () { if (cache.get(key) === promise) cache.delete(key); });
+      if (cache.size > 128) cache.delete(cache.keys().next().value);
+    }
+    return abortable(cache.get(key), options.signal);
+  }
+  function clear() { cache.clear(); }
+  return { get: get, fromPixels: fromPixels, proxyUrl: proxyUrl, clear: clear };
+}));
+</script>
+  <script>window.DOSSIER_PREVIEW_CSS=".bh-dossier-v5 {\n  --bd1-accent: #5b8612;\n  --bd1-bg: color-mix(in srgb, var(--bd1-accent) 5%, #111515);\n  --bd1-panel: color-mix(in srgb, var(--bd1-accent) 5%, #1c2121);\n  --bd1-inset: color-mix(in srgb, var(--bd1-accent) 6%, #242a28);\n  --bd1-ink: #f2f4ed;\n  --bd1-muted: #acb5aa;\n  --bd1-accent-ink: color-mix(in srgb, var(--bd1-accent) 58%, #f5ffe7);\n  --bd1-line: color-mix(in srgb, var(--bd1-accent) 24%, #353c37);\n  --bd2-tint: color-mix(in srgb, var(--bd1-accent) 16%, var(--bd1-panel));\n  --bd2-rich: color-mix(in srgb, var(--bd1-accent) 31%, var(--bd1-panel));\n  --bd1-forward: linear-gradient(110deg, rgb(var(--mgrgb1, 130, 158, 168)), rgb(var(--mgrgb2, 161, 137, 153)), rgb(var(--mgrgb3, 157, 164, 135)));\n  --bd1-reverse: linear-gradient(110deg, rgb(var(--mgrgb3, 157, 164, 135)), rgb(var(--mgrgb2, 161, 137, 153)), rgb(var(--mgrgb1, 130, 158, 168)));\n  box-sizing: border-box;\n  width: min(100%, 940px);\n  margin: 20px auto;\n  padding: 13px;\n  background: var(--bd1-bg);\n  color: var(--bd1-ink);\n  border: 1px solid var(--bd1-line);\n  border-radius: 20px;\n  font: 13px/1.5 Inter, 'Segoe UI', Arial, sans-serif;\n  text-align: left;\n  text-transform: none;\n  letter-spacing: normal;\n  overflow-wrap: anywhere;\n  isolation: isolate;\n  container: bd3 / inline-size;\n  color-scheme: dark;\n}\n.bh-dossier-v5 *, .bh-dossier-v5 *::before, .bh-dossier-v5 *::after { box-sizing: border-box; }\n.bh-dossier-v5 :is(h1,h2,h3,h4,p,figure,blockquote,dl,dd,ul,ol) { margin: 0; padding: 0; color: inherit; }\n.bh-dossier-v5 :is(h1,h2,h3,h4) { font-family: Inter,'Segoe UI',Arial,sans-serif; text-transform: none; font-weight: 750; letter-spacing: -.025em; }\n.bh-dossier-v5 :is(a,a:visited) { color: inherit; text-decoration: none; font-weight: inherit; }\n.bh-dossier-v5 a:hover { color: var(--bd1-accent-ink); text-decoration: underline; text-underline-offset: 3px; }\n.bh-dossier-v5 :is(a,summary,[tabindex]):focus-visible { outline: 2px solid var(--bd1-accent-ink); outline-offset: 3px; border-radius: 4px; }\n.bh-dossier-v5 :is(b,strong,u) { background:var(--bd1-forward); background-clip:text; -webkit-background-clip:text; color:transparent; }\n.bh-dossier-v5 :is(i,em) { background:var(--bd1-reverse); background-clip:text; -webkit-background-clip:text; color:transparent; }\n.bh-dossier-v5 img { display: block; max-width: 100%; border: 0; }\n.bh-dossier-v5 :is(section,article,header,li) { min-width: 0; scroll-margin-top: 130px; }\n.bh-dossier-v5 summary { cursor: pointer; }\n.bh-dossier-v5 .bd1-cover { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:11px; align-items:stretch; }\n.bh-dossier-v5 .bd1-masthead { grid-column:1/-1; display:flex; justify-content:space-between; gap:12px; padding:2px 5px 1px; color:var(--bd1-accent-ink); font-size:9px; font-weight:700; letter-spacing:.13em; text-transform:none; }\n.bh-dossier-v5 .bd1-hero { position:relative; min-height:252px; border-radius:14px; overflow:hidden; background:var(--bd1-inset); border:1px solid var(--bd1-line); }\n.bh-dossier-v5 .bd1-hero>img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:var(--bd2-image-position,50% 35%); }\n.bh-dossier-v5 .bd1-hero::after { content:''; position:absolute; inset:auto 0 0; height:30%; background:linear-gradient(transparent,rgba(9,16,8,.28)); pointer-events:none; }\n.bh-dossier-v5 .bd1-photo-mark { position:absolute; z-index:1; right:12px; bottom:12px; display:grid; place-items:center; width:29px; height:29px; border-radius:9px; background:var(--bd2-rich); color:var(--bd1-accent-ink); font-size:19px; border:1px solid color-mix(in srgb,var(--bd1-accent) 60%,transparent); }\n.bh-dossier-v5 .bd1-identity { display:flex; flex-direction:column; justify-content:center; gap:11px; min-width:0; padding:18px; border:1px solid var(--bd1-line); border-radius:14px; background:linear-gradient(145deg,var(--bd2-rich),var(--bd1-panel) 88%); }\n.bh-dossier-v5 .bd1-cover:not(:has(.bd1-hero)) .bd1-identity { grid-column:1/-1; }\n.bh-dossier-v5 .bd1-identity-main { position:relative; min-width:0; }\n.bh-dossier-v5 .bd1-identity-main:has(.bd1-profile-image) { padding-right:61px; }\n.bh-dossier-v5 .bd1-profile-image { position:absolute; right:0; top:2px; width:47px; height:47px; object-fit:cover; object-position:center 25%; border-radius:13px; border:2px solid var(--bd1-accent); box-shadow:0 0 0 4px color-mix(in srgb,var(--bd1-accent) 14%,transparent); }\n.bh-dossier-v5 .bd1-eyebrow { display:block; color:var(--bd1-accent-ink); font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:none; }\n.bh-dossier-v5 h1 { margin-top:5px; color:var(--bd1-accent-ink); font-size:clamp(31px,5.4cqi,46px); line-height:1.04; letter-spacing:-.055em; font-weight:800; }\n.bh-dossier-v5 .bd1-fullname { margin-top:5px; font-size:12px; font-weight:600; }\n.bh-dossier-v5 .bd1-identity-meta { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; color:var(--bd1-muted); font-size:11px; }\n.bh-dossier-v5 .bd1-identity-meta>span { color:var(--bd1-accent-ink); }\n.bh-dossier-v5 .bd1-summary { display:flex; flex-direction:column; align-items:flex-start; gap:3px; color:var(--bd1-muted); font-size:11px; line-height:1.4; }\n.bh-dossier-v5 .bd1-status { display:inline-flex; align-items:center; gap:6px; margin-bottom:2px; padding:4px 8px; background:var(--bd2-tint); border:1px solid var(--bd1-line); border-radius:20px; color:var(--bd1-ink); font-size:10px; }\n.bh-dossier-v5 .bd1-status::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--bd1-accent-ink); flex:none; }\n.bh-dossier-v5 .bd1-stats { display:flex; flex-wrap:wrap; gap:8px; padding-top:9px; border-top:1px solid var(--bd1-line); margin-top:auto; }\n.bh-dossier-v5 .bd1-stats a { display:flex; align-items:baseline; gap:5px; flex:1; min-width:54px; }\n.bh-dossier-v5 .bd1-stats a>span { font-size:18px; font-weight:750; line-height:1.2; color:var(--bd1-accent-ink); }\n.bh-dossier-v5 .bd1-stats small { font-size:9px; color:var(--bd1-muted); }\n.bh-dossier-v5 .bd1-nav { display:flex; flex-wrap:wrap; gap:6px; margin:11px 0; padding:0; }\n.bh-dossier-v5 .bd1-nav a { display:block; padding:7px 10px; background:var(--bd1-panel); border:1px solid var(--bd1-line); border-radius:8px; font-size:10px; font-weight:650; color:var(--bd1-muted); }\n.bh-dossier-v5 .bd1-nav a:hover { background:var(--bd2-tint); color:var(--bd1-accent-ink); text-decoration:none; }\n.bh-dossier-v5 .bd1-content { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(0,1fr); gap:11px; align-items:start; }\n.bh-dossier-v5 .bd1-section { min-width:0; grid-column:1/-1; align-self:start; padding:16px; background:var(--bd1-panel); border:1px solid var(--bd1-line); border-radius:14px; }\n.bh-dossier-v5 .bd1-section-heading { display:flex; align-items:center; gap:8px; margin-bottom:13px; }\n.bh-dossier-v5 .bd1-section-heading::before { content:''; width:3px; height:17px; border-radius:3px; background:var(--bd1-accent); flex:none; }\n.bh-dossier-v5 .bd1-number { display:none; }\n.bh-dossier-v5 h2 { font-size:17px; line-height:1.25; }\n.bh-dossier-v5 .bd1-heading-note { margin-left:auto; font-size:9px; color:var(--bd1-muted); text-align:right; }\n.bh-dossier-v5 .bd1-tags { display:none; }\n.bh-dossier-v5 .bd1-chapter { margin:0 0 11px; padding:11px 12px; background:var(--bd2-tint); border-radius:8px; border-left:2px solid var(--bd1-accent); }\n.bh-dossier-v5 .bd1-chapter p { margin-top:6px; font-size:12px; }\n.bh-dossier-v5 .bd1-facts { display:grid; grid-template-columns:1fr; gap:0; margin-top:2px; }\n.bh-dossier-v5 .bd3-fact-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:18px; min-width:0; }\n.bh-dossier-v5 .bd3-fact-row>div { min-width:0; padding:4px 0; border-bottom:1px solid var(--bd1-line); }\n.bh-dossier-v5 .bd3-fact-row>div:only-child { grid-column:1/-1; }\n.bh-dossier-v5 .bd3-fact-row:last-child>div { border-bottom:0; padding-bottom:1px; }\n.bh-dossier-v5 .bd1-facts dt { margin-bottom:2px; font-size:9px; line-height:1.2; letter-spacing:.04em; color:var(--bd1-accent-ink); text-transform:none; font-weight:600; }\n.bh-dossier-v5 .bd1-facts dd { font-size:12px; font-weight:500; line-height:1.35; white-space:pre-line; }\n.bh-dossier-v5 .bd1-pinned { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px; }\n.bh-dossier-v5 .bd1-person { position:relative; display:flex; flex-direction:column; align-items:flex-start; padding:13px 12px; background:var(--bd2-tint); border:1px solid var(--bd1-line); border-radius:10px; min-width:0; }\n.bh-dossier-v5 .bd1-person:hover { background:var(--bd2-rich); text-decoration:none; }\n.bh-dossier-v5 .bd1-person-number { position:absolute; right:9px; top:9px; color:var(--bd1-accent-ink); font-size:9px; opacity:.7; }\n.bh-dossier-v5 .bd1-person>img { width:42px; height:42px; object-fit:cover; object-position:center 25%; border-radius:12px; margin-bottom:9px; border:2px solid var(--bd1-accent); }\n.bh-dossier-v5 .bd1-person-name { font-size:14px; font-weight:700; line-height:1.3; }\n.bh-dossier-v5 .bd1-person-kind { color:var(--bd1-muted); font-size:10px; margin-top:3px; }\n.bh-dossier-v5 .bd1-person-flavour { font-size:10px; color:var(--bd1-accent-ink); margin-top:5px; }\n.bh-dossier-v5 .bd1-connections { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-rows:1fr; gap:8px; align-items:stretch; }\n.bh-dossier-v5 .bd1-connection, .bh-dossier-v5 .bd1-featured { grid-column:auto; align-self:stretch; padding:12px; background:var(--bd1-inset); border:1px solid var(--bd1-line); border-radius:10px; }\n.bh-dossier-v5 .bd1-connection-head { display:flex; align-items:center; gap:9px; flex-wrap:wrap; min-height:52px; }\n.bh-dossier-v5 .bd1-connection-head>div { flex:1; min-width:70px; }\n.bh-dossier-v5 .bd1-avatar, .bh-dossier-v5 .bd1-featured .bd1-avatar { width:36px; height:36px; border-radius:10px; object-fit:cover; object-position:center 25%; border:1px solid color-mix(in srgb,var(--bd1-accent) 50%,var(--bd1-line)); }\n.bh-dossier-v5 h3 { font-size:14px; line-height:1.3; }\n.bh-dossier-v5 .bd1-connection .bd1-eyebrow { font-size:9px; margin-bottom:2px; letter-spacing:.055em; }\n.bh-dossier-v5 .bd1-small-status { font-size:9px; color:var(--bd1-muted); margin-left:auto; }\n.bh-dossier-v5 .bd1-flavour { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-top:8px; }\n.bh-dossier-v5 .bd1-flavour>span:first-child { font-size:9px; text-transform:none; letter-spacing:.07em; color:var(--bd1-muted); }\n.bh-dossier-v5 .bd1-flavour>span:last-child { padding:2px 7px; border-radius:5px; background:var(--bd2-tint); color:var(--bd1-accent-ink); font-size:11px; font-weight:650; }\n.bh-dossier-v5 .bd1-connection-copy { margin-top:8px; font-size:12px; }\n.bh-dossier-v5 blockquote { padding:8px 11px; margin-top:10px; border-left:2px solid var(--bd1-accent); font:italic 13px/1.5 Georgia,serif; color:var(--bd1-muted); }\n.bh-dossier-v5 .bd1-relationship-playlist { margin-top:9px; color:var(--bd1-accent-ink); font-size:10px; }\n.bh-dossier-v5 .bd1-linked-story, .bh-dossier-v5 .bd3-connection-details { margin-top:8px; padding-top:7px; border-top:1px solid var(--bd1-line); font-size:10px; }\n.bh-dossier-v5 .bd1-connection details>summary { color:var(--bd1-accent-ink); font-size:10px; line-height:1.5; }\n.bh-dossier-v5 .bd1-linked-story ul { list-style:none; display:grid; gap:6px; margin-top:8px; }\n.bh-dossier-v5 .bd1-linked-story li a { display:flex; justify-content:space-between; gap:8px; }\n.bh-dossier-v5 .bd1-linked-story small { color:var(--bd1-muted); font-size:9px; }\n.bh-dossier-v5 .bd1-year-group+.bd1-year-group { margin-top:14px; }\n.bh-dossier-v5 .bd1-year { display:inline-block; padding:3px 7px; margin-bottom:8px; border-radius:5px; background:var(--bd2-tint); font-size:10px; letter-spacing:.02em; color:var(--bd1-accent-ink); }\n.bh-dossier-v5 .bd1-timeline { list-style:none; border-left:1px solid var(--bd1-line); margin-left:3px; }\n.bh-dossier-v5 .bd1-entry { position:relative; display:grid; grid-template-columns:52px minmax(0,1fr); gap:2px 9px; padding:8px 10px; margin:0 0 7px 12px; border:1px solid var(--bd1-line); border-radius:8px; background:var(--bd1-inset); }\n.bh-dossier-v5 .bd1-entry:last-child { margin-bottom:0; }\n.bh-dossier-v5 .bd1-entry::before { content:''; position:absolute; left:-17px; top:17px; width:6px; height:6px; background:var(--bd1-accent); border-radius:50%; box-shadow:0 0 0 3px var(--bd1-panel); }\n.bh-dossier-v5 .bd1-milestone { background:var(--bd2-tint); border-color:var(--bd1-accent); }\n.bh-dossier-v5 .bd1-milestone::before { border-radius:1px; transform:rotate(45deg); }\n.bh-dossier-v5 .bd1-entry-meta { grid-column:1; grid-row:1/span 2; display:flex; flex-direction:column; align-items:flex-start; gap:4px; min-width:0; font-size:9px; color:var(--bd1-muted); }\n.bh-dossier-v5 .bd1-type { font-size:9px; font-weight:700; letter-spacing:.02em; padding:2px 5px; background:var(--bd2-tint); color:var(--bd1-accent-ink); border-radius:4px; }\n.bh-dossier-v5 .bd1-entry-status { margin-left:0; }\n.bh-dossier-v5 h4 { grid-column:2; grid-row:1; font-size:14px; line-height:1.3; margin-top:0; }\n.bh-dossier-v5 .bd1-participants { grid-column:2; grid-row:2; font-size:10px; color:var(--bd1-muted); margin-top:0; }\n.bh-dossier-v5 .bd1-entry-people { grid-column:2; grid-row:2; display:flex; flex-wrap:wrap; gap:4px; margin-top:0; }\n.bh-dossier-v5 .bd1-entry-people a { font-size:9px; padding:1px 5px; border:1px solid var(--bd1-line); border-radius:4px; color:var(--bd1-accent-ink); }\n.bh-dossier-v5 .bd1-entry-copy { grid-column:1/-1; margin-top:5px; font-size:12px; }\n.bh-dossier-v5 .bd1-posted-date { grid-column:1/-1; margin-top:4px; color:var(--bd1-muted); font-size:9px; }\n.bh-dossier-v5 .bd1-main-playlist { margin-bottom:10px; }\n.bh-dossier-v5 .bd3-player-carousel { display:flex; align-items:flex-start; gap:12px; width:100%; min-width:0; overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory; scroll-padding-inline:0; scroll-behavior:smooth; overscroll-behavior-inline:contain; scrollbar-width:thin; scrollbar-color:var(--bd1-accent) var(--bd1-inset); padding:0 0 8px; }\n.bh-dossier-v5 .bd3-song-slide { flex:0 0 100%; width:100%; min-width:0; max-width:100%; scroll-snap-align:start; scroll-snap-stop:always; scroll-margin-top:130px; }\n.bh-dossier-v5 .bd3-song-title { display:flex; align-items:center; gap:9px; margin:0 0 10px; min-height:31px; min-width:0; }\n.bh-dossier-v5 .bd3-song-title>div { min-width:0; flex:1; }\n.bh-dossier-v5 .bd3-song-title :is(h3,h4) { margin:0; font-size:12px; line-height:1.4; }\n.bh-dossier-v5 .bd1-song-number, .bh-dossier-v5 .bd3-song-number { display:grid; place-items:center; width:26px; height:26px; flex:0 0 26px; background:var(--bd2-tint); border-radius:7px; font-size:9px; font-weight:600; color:var(--bd1-accent-ink); }\n.bh-dossier-v5 .bd1-song-title { display:block; font-size:12px; font-weight:650; line-height:1.4; }\n.bh-dossier-v5 .bd1-song-artist, .bh-dossier-v5 .bd3-song-artist { display:block; margin-top:2px; font-size:10px; color:var(--bd1-muted); }\n.bh-dossier-v5 .bd1-song-note { margin-top:9px; font-size:11px; color:var(--bd1-muted); }\n.bh-dossier-v5 .bd1-player { display:block; width:100%; max-width:100%; border:0; border-radius:10px; background:var(--bd1-inset); }\n.bh-dossier-v5 .bd1-listen { margin-top:6px; font-size:10px; color:var(--bd1-accent-ink); }\n.bh-dossier-v5 .bd3-song-controls { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:11px; padding-top:9px; border-top:1px solid var(--bd1-line); font-size:10px; color:var(--bd1-muted); }\n.bh-dossier-v5 .bd3-song-controls a { display:grid; place-items:center; min-width:30px; min-height:28px; padding:3px 9px; border:1px solid var(--bd1-line); border-radius:7px; background:var(--bd2-tint); color:var(--bd1-accent-ink); font-size:14px; line-height:1; }\n.bh-dossier-v5 .bd3-song-controls a:hover { background:var(--bd2-rich); text-decoration:none; }\n.bh-dossier-v5 .bd3-memory-row { display:grid; grid-template-columns:minmax(0,2fr) minmax(215px,1fr); gap:11px; align-items:start; margin:0 0 11px; }\n.bh-dossier-v5 .bd3-memory-row>:only-child { grid-column:1/-1; }\n.bh-dossier-v5 .bd3-polaroid-panel, .bh-dossier-v5 .bd3-map-panel { min-width:0; padding:14px; border:1px solid var(--bd1-line); border-radius:14px; background:var(--bd1-panel); align-self:start; }\n.bh-dossier-v5 .bd3-memory-row .bd1-section-heading { margin-bottom:9px; }\n.bh-dossier-v5 .bd3-memory-row h2 { font-size:15px; }\n.bh-dossier-v5 .bd3-polaroids { position:relative; display:flex; align-items:flex-start; justify-content:center; gap:20px; padding:24px 9px 12px; }\n.bh-dossier-v5 .bd3-polaroids::before { content:''; position:absolute; left:4px; right:4px; top:11px; height:1px; background:color-mix(in srgb,var(--bd1-accent) 40%,#c9baa0); transform:rotate(-1deg); }\n.bh-dossier-v5 .bd3-polaroid { position:relative; flex:1 1 0; min-width:0; max-width:118px; padding:7px 7px 9px; border-radius:2px; background:#eeeadd; color:#383b31; box-shadow:0 4px 9px rgba(0,0,0,.18); transform:rotate(-4deg); }\n.bh-dossier-v5 .bd3-polaroid:nth-child(2) { transform:rotate(3deg); margin-top:4px; }\n.bh-dossier-v5 .bd3-polaroid:nth-child(3) { transform:rotate(-2deg); }\n.bh-dossier-v5 .bd3-polaroid::before { content:''; position:absolute; z-index:2; top:-18px; left:calc(50% - 5px); width:10px; height:24px; border:1px solid #a69675; border-radius:2px; background:linear-gradient(90deg,#d8c9a9,#bbaa86 50%,#cfbea0); box-shadow:0 2px 2px rgba(0,0,0,.12); }\n.bh-dossier-v5 .bd3-polaroid>a { display:block; color:inherit; }\n.bh-dossier-v5 .bd3-polaroid img, .bh-dossier-v5 .bd3-photo-placeholder { display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:center 30%; border-radius:1px; }\n.bh-dossier-v5 .bd3-photo-placeholder { display:grid; place-items:center; background:linear-gradient(140deg,var(--bd2-rich),var(--bd1-inset)); color:var(--bd1-accent-ink); font-size:27px; font-weight:700; }\n.bh-dossier-v5 .bd3-polaroid figcaption { padding-top:7px; color:#383b31; text-align:center; font:italic 12px/1.25 Georgia,'Times New Roman',serif; }\n.bh-dossier-v5 .bd3-polaroid figcaption a { color:inherit; }\n.bh-dossier-v5 .bd3-map { position:relative; width:185px; min-width:185px; aspect-ratio:1/1; margin:0 auto; overflow:hidden; border:1px solid var(--bd1-line); border-radius:9px; background:var(--bd1-inset); }\n.bh-dossier-v5 .bd3-map iframe { display:block; width:100%; height:100%; border:0; }\n.bh-dossier-v5 .bd5-map-status { position:absolute; z-index:1; inset:0; display:grid; place-items:center; padding:18px; background:var(--bd1-inset); color:var(--bd1-muted); font-size:11px; line-height:1.5; text-align:center; pointer-events:none; }\n.bh-dossier-v5 .bd5-map-status[hidden] { display:none; }\n.bh-dossier-v5 .bd3-map-label { display:block; margin-top:7px; color:var(--bd1-accent-ink); font-size:10px; line-height:1.4; text-align:center; }\n.bh-dossier-v5 .bd4-map-credit { width:100%; max-width:185px; margin:5px auto 0; color:var(--bd1-muted); font-size:9px; line-height:1.5; text-align:center; text-transform:none; letter-spacing:normal; }\n.bh-dossier-v5 .bd4-map-credit a { color:inherit; text-decoration:underline; text-underline-offset:2px; }\n.bh-dossier-v5 .bd1-notes>p { font-size:12px; margin-top:9px; }\n.bh-dossier-v5 .bd1-footer { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:13px 4px 2px; color:var(--bd1-muted); font-size:9px; }\n.bh-dossier-v5 .bd1-footer a { color:var(--bd1-accent-ink); }\nhtml[color-mode=\"light\"] .bh-dossier-v5 { --bd1-bg:color-mix(in srgb,var(--bd1-accent) 4%,#f1f3ee); --bd1-panel:#fff; --bd1-inset:color-mix(in srgb,var(--bd1-accent) 4%,#f4f5f0); --bd1-ink:#242e24; --bd1-muted:#616b60; --bd1-accent-ink:color-mix(in srgb,var(--bd1-accent) 70%,#152012); --bd1-line:color-mix(in srgb,var(--bd1-accent) 20%,#dfe4db); color-scheme:light; }\n@media (prefers-color-scheme:light) {\n  html:not([color-mode=\"dark\"]):not([color-mode=\"light\"]) .bh-dossier-v5 { --bd1-bg:color-mix(in srgb,var(--bd1-accent) 4%,#f1f3ee); --bd1-panel:#fff; --bd1-inset:color-mix(in srgb,var(--bd1-accent) 4%,#f4f5f0); --bd1-ink:#242e24; --bd1-muted:#616b60; --bd1-accent-ink:color-mix(in srgb,var(--bd1-accent) 70%,#152012); --bd1-line:color-mix(in srgb,var(--bd1-accent) 20%,#dfe4db); color-scheme:light; }\n}\n@container bd3 (min-width:790px) {\n  .bh-dossier-v5 .bd1-overview { grid-column:1; grid-row:1; }\n  .bh-dossier-v5 .bd1-connections-panel { grid-column:2; grid-row:1; }\n  .bh-dossier-v5 .bd1-story-panel { grid-column:1; }\n  .bh-dossier-v5 .bd1-soundtrack-panel { grid-column:2; }\n  .bh-dossier-v5 .bd1-content:not(:has(.bd1-overview)) .bd1-connections-panel,\n  .bh-dossier-v5 .bd1-content:not(:has(.bd1-connections-panel)) .bd1-overview,\n  .bh-dossier-v5 .bd1-content:not(:has(.bd1-story-panel)) .bd1-soundtrack-panel,\n  .bh-dossier-v5 .bd1-content:not(:has(.bd1-soundtrack-panel)) .bd1-story-panel { grid-column:1/-1; }\n  .bh-dossier-v5 .bd1-people-panel { grid-column:1/-1; }\n}\n@container bd3 (max-width:600px) {\n  .bh-dossier-v5 .bd1-cover { grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:9px; }\n  .bh-dossier-v5 .bd1-hero { min-height:245px; }\n  .bh-dossier-v5 .bd1-identity { padding:14px; gap:10px; }\n  .bh-dossier-v5 .bd1-identity-main:has(.bd1-profile-image) { padding-right:43px; }\n  .bh-dossier-v5 .bd1-profile-image { width:33px; height:33px; border-radius:9px; box-shadow:0 0 0 3px color-mix(in srgb,var(--bd1-accent) 14%,transparent); }\n  .bh-dossier-v5 h1 { font-size:32px; }\n  .bh-dossier-v5 .bd1-stats a { display:block; min-width:35px; }\n  .bh-dossier-v5 .bd1-stats small { display:block; margin-top:2px; }\n  .bh-dossier-v5 .bd1-stats a>span { font-size:17px; }\n  .bh-dossier-v5 .bd3-polaroid-panel, .bh-dossier-v5 .bd3-map-panel { padding:11px; }\n  .bh-dossier-v5 .bd3-polaroids { gap:9px; padding:22px 2px 8px; }\n  .bh-dossier-v5 .bd3-polaroid { padding:5px 5px 7px; }\n  .bh-dossier-v5 .bd3-polaroid figcaption { font-size:10px; padding-top:5px; }\n  .bh-dossier-v5 .bd3-memory-row h2 { font-size:13px; }\n  .bh-dossier-v5 .bd3-memory-row .bd1-section-heading { gap:6px; }\n  .bh-dossier-v5 .bd3-photo-placeholder { font-size:20px; }\n  .bh-dossier-v5 .bd3-memory-row { grid-template-columns:1fr; gap:9px; }\n  .bh-dossier-v5 .bd3-map-panel { display:grid; grid-template-columns:185px minmax(0,1fr); gap:6px 16px; align-items:center; }\n  .bh-dossier-v5 .bd3-map-panel .bd1-section-heading { grid-column:2; grid-row:1; align-self:end; margin-bottom:0; }\n  .bh-dossier-v5 .bd3-map-panel .bd3-map { grid-column:1; grid-row:1/4; }\n  .bh-dossier-v5 .bd3-map-panel .bd3-map-label { grid-column:2; grid-row:2; text-align:left; align-self:start; margin-top:0; }\n  .bh-dossier-v5 .bd3-map-panel .bd4-map-credit { grid-column:2; grid-row:3; text-align:left; align-self:start; margin:0; }\n}\n@container bd3 (max-width:440px) {\n  .bh-dossier-v5 .bd1-masthead { flex-wrap:wrap; gap:3px 8px; font-size:8px; }\n  .bh-dossier-v5 .bd1-cover { grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr); }\n  .bh-dossier-v5 .bd1-identity { padding:12px; }\n  .bh-dossier-v5 .bd1-identity-main:has(.bd1-profile-image) { padding-right:0; }\n  .bh-dossier-v5 .bd1-profile-image { display:none; }\n  .bh-dossier-v5 h1 { font-size:31px; }\n  .bh-dossier-v5 .bd1-eyebrow { font-size:8px; }\n  .bh-dossier-v5 .bd1-fullname { font-size:11px; }\n  .bh-dossier-v5 .bd1-identity-meta, .bh-dossier-v5 .bd1-summary { font-size:10px; }\n  .bh-dossier-v5 .bd1-summary { gap:3px; }\n  .bh-dossier-v5 .bd1-stats { gap:5px; }\n  .bh-dossier-v5 .bd1-stats small { font-size:8px; }\n  .bh-dossier-v5 .bd1-nav { gap:5px; }\n  .bh-dossier-v5 .bd1-nav a { padding:6px 8px; font-size:9px; }\n  .bh-dossier-v5 .bd1-section { padding:13px; }\n  .bh-dossier-v5 .bd1-section-heading { gap:7px; margin-bottom:11px; }\n  .bh-dossier-v5 h2 { font-size:16px; }\n  .bh-dossier-v5 .bd3-fact-row { column-gap:13px; }\n  .bh-dossier-v5 .bd1-facts dd { font-size:11px; }\n  .bh-dossier-v5 .bd1-connections { grid-template-columns:1fr; }\n  .bh-dossier-v5 .bd1-connection { padding:11px; }\n  .bh-dossier-v5 .bd1-pinned { gap:7px; }\n  .bh-dossier-v5 .bd1-person { padding:11px 9px; }\n  .bh-dossier-v5 .bd1-person-name { font-size:12px; }\n  .bh-dossier-v5 .bd1-person>img { width:36px; height:36px; border-radius:10px; }\n  .bh-dossier-v5 .bd3-polaroids { gap:13px; justify-content:center; }\n  .bh-dossier-v5 .bd3-polaroid { max-width:100px; }\n}\n@container bd3 (max-width:380px) {\n  .bh-dossier-v5 .bd3-map-panel { display:flex; flex-direction:column; align-items:center; gap:9px; }\n  .bh-dossier-v5 .bd3-map-panel .bd1-section-heading { align-self:center; margin:0; }\n  .bh-dossier-v5 .bd3-map-panel .bd3-map-label { align-self:center; text-align:center; }\n  .bh-dossier-v5 .bd3-map-panel .bd4-map-credit { align-self:center; text-align:center; margin:0; }\n}\n@container bd3 (max-width:307px) {\n  .bh-dossier-v5 .bd1-player { display:none; }\n  .bh-dossier-v5 .bd1-hero { min-height:250px; }\n  .bh-dossier-v5 .bd1-identity { padding:10px; }\n  .bh-dossier-v5 .bd1-status { font-size:9px; }\n  .bh-dossier-v5 .bd1-stats a { min-width:31px; }\n  .bh-dossier-v5 .bd1-stats small { font-size:7px; }\n}\n@media (max-width:430px) {\n  .bh-dossier-v5 { padding:9px; border-radius:16px; }\n}\n@media (prefers-reduced-motion:reduce) {\n  .bh-dossier-v5 .bd3-player-carousel { scroll-behavior:auto; }\n}\n@media print {\n  .bh-dossier-v5 { max-width:none; }\n  .bh-dossier-v5 .bd1-nav, .bh-dossier-v5 .bd1-footer a, .bh-dossier-v5 .bd3-song-controls { display:none; }\n  .bh-dossier-v5 .bd1-connection, .bh-dossier-v5 .bd1-entry, .bh-dossier-v5 .bd3-memory-row { break-inside:avoid; }\n  .bh-dossier-v5 .bd3-player-carousel { display:block; overflow:visible; }\n  .bh-dossier-v5 .bd3-song-slide+.bd3-song-slide { margin-top:14px; }\n}\n";window.DOSSIER_PREVIEW_RUNTIME="(function (root, factory) {\n  'use strict';\n  var api = factory();\n  if (typeof module === 'object' && module.exports) module.exports = api;\n  else root.PhotoPalette = api;\n}(typeof globalThis !== 'undefined' ? globalThis : this, function () {\n  'use strict';\n  var cache = new Map();\n\n  function clamp(value, low, high) { return Math.max(low, Math.min(high, value)); }\n  function safeUrl(value) {\n    try {\n      var parsed = new URL(String(value || '').trim());\n      if (!['https:', 'http:'].includes(parsed.protocol) || parsed.username || parsed.password) throw new Error();\n      return parsed.href;\n    } catch (_) { throw new Error('Use a complete image address beginning with https://.'); }\n  }\n  function rgbToHsl(r, g, b) {\n    r /= 255; g /= 255; b /= 255;\n    var maximum = Math.max(r, g, b), minimum = Math.min(r, g, b), delta = maximum - minimum;\n    var lightness = (maximum + minimum) / 2, saturation = delta ? delta / (1 - Math.abs(2 * lightness - 1)) : 0;\n    var hue = 0;\n    if (delta) {\n      if (maximum === r) hue = ((g - b) / delta) % 6;\n      else if (maximum === g) hue = (b - r) / delta + 2;\n      else hue = (r - g) / delta + 4;\n      hue = (hue * 60 + 360) % 360;\n    }\n    return { h: hue, s: saturation, l: lightness };\n  }\n  function hslToRgb(h, s, l) {\n    var chroma = (1 - Math.abs(2 * l - 1)) * s, part = h / 60, x = chroma * (1 - Math.abs(part % 2 - 1));\n    var pieces = part \u003c 1 ? [chroma, x, 0] : part \u003c 2 ? [x, chroma, 0] : part \u003c 3 ? [0, chroma, x] : part \u003c 4 ? [0, x, chroma] : part \u003c 5 ? [x, 0, chroma] : [chroma, 0, x];\n    var base = l - chroma / 2;\n    return pieces.map(function (value) { return Math.round(clamp(value + base, 0, 1) * 255); });\n  }\n  function hex(rgb) { return '#' + rgb.map(function (value) { return Math.round(clamp(value, 0, 255)).toString(16).padStart(2, '0'); }).join(''); }\n  function hueDistance(a, b) { return Math.min(Math.abs(a - b), 360 - Math.abs(a - b)); }\n\n  function fromPixels(input) {\n    var pixels = input && input.data ? input.data : input;\n    if (!pixels || typeof pixels.length !== 'number' || pixels.length \u003c 4 || pixels.length % 4 !== 0) throw new Error('The photo could not be read as image pixels.');\n    var groups = Array.from({ length: 24 }, function () { return { score: 0, count: 0 }; });\n    var candidates = [], opaque = [], colourful = 0;\n    for (var index = 0; index \u003c pixels.length; index += 4) {\n      var alpha = Number(pixels[index + 3]);\n      if (alpha \u003c 128) continue;\n      var r = Number(pixels[index]), g = Number(pixels[index + 1]), b = Number(pixels[index + 2]);\n      if (![r, g, b, alpha].every(Number.isFinite)) continue;\n      var hsl = rgbToHsl(r, g, b);\n      opaque.push({ r: r, g: g, b: b, h: hsl.h, s: hsl.s, l: hsl.l });\n      if (hsl.l \u003c 0.09 || hsl.l > 0.91) continue;\n      var weight = (0.06 + Math.pow(hsl.s, 1.7) * 2.2) * (1 - Math.abs(hsl.l - 0.48) * 1.2);\n      var skinLike = hsl.h >= 5 && hsl.h \u003c= 48 && hsl.s > 0.18 && hsl.s \u003c 0.68 && hsl.l > 0.28 && hsl.l \u003c 0.84 && r > g && g > b;\n      if (skinLike) weight *= 0.24;\n      if (hsl.s \u003c 0.15) weight *= 0.14;\n      var item = { r: r, g: g, b: b, h: hsl.h, s: hsl.s, l: hsl.l, weight: weight };\n      candidates.push(item);\n      if (hsl.s >= 0.18) {\n        colourful += 1;\n        var bucket = Math.floor(hsl.h / 15) % 24;\n        groups[bucket].score += weight;\n        groups[bucket].count += 1;\n      }\n    }\n    if (!opaque.length) throw new Error('The photo has no visible pixels to sample.');\n    var usable = candidates.length ? candidates : opaque;\n    var selected = [], minimumCount = Math.max(3, Math.floor(usable.length * 0.008));\n    if (colourful > usable.length * 0.025) {\n      var winner = -1, highest = -1;\n      groups.forEach(function (group, bucket) {\n        var before = groups[(bucket + 23) % 24], after = groups[(bucket + 1) % 24];\n        var count = group.count + before.count + after.count;\n        var score = group.score + (before.score + after.score) * 0.42;\n        if (count >= minimumCount && score > highest) { winner = bucket; highest = score; }\n      });\n      if (winner >= 0) {\n        var centre = winner * 15 + 7.5;\n        selected = candidates.filter(function (item) { return item.s >= 0.18 && hueDistance(item.h, centre) \u003c= 27; });\n      }\n    }\n    if (!selected.length) selected = usable.map(function (item) { return Object.assign({}, item, { weight: 1 }); });\n    var red = 0, green = 0, blue = 0, total = 0;\n    selected.forEach(function (item) { var weight = item.weight || 1; red += item.r * weight; green += item.g * weight; blue += item.b * weight; total += weight; });\n    var colour = rgbToHsl(red / total, green / total, blue / total);\n    colour.l = clamp(colour.l, 0.30, 0.55);\n    if (colour.s >= 0.15) colour.s = clamp(colour.s, 0.28, 0.78);\n    return hex(hslToRgb(colour.h, colour.s, colour.l));\n  }\n\n  function cropValues(value) {\n    var match = String(value || '').match(/^(\\d+(?:\\.\\d+)?)%\\s+(\\d+(?:\\.\\d+)?)%$/);\n    return match ? [clamp(Number(match[1]), 0, 100) / 100, clamp(Number(match[2]), 0, 100) / 100] : [0.5, 0.35];\n  }\n  function proxyUrl(value) {\n    var source;\n    try { source = new URL(safeUrl(value)); } catch (_) { return ''; }\n    var host = source.hostname.toLowerCase();\n    if (source.protocol !== 'https:' || source.port || source.username || source.password) return '';\n    if (!/^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z]{2,63}$/.test(host)) return '';\n    if (/(^|\\.)(?:localhost|local|internal|intranet|corp|home|lan|test|invalid|example)(?:\\.|$)/.test(host)) return '';\n    if (/(?:^|\\.)(?:localtest\\.me|lvh\\.me|nip\\.io|sslip\\.io)$/.test(host)) return '';\n    var forbidden = false;\n    source.searchParams.forEach(function (_, key) { if (/(?:token|auth|key|signature|credential|password|policy)/i.test(key)) forbidden = true; });\n    if (forbidden) return '';\n    source.hash = '';\n    return 'https://images.weserv.nl/?url=' + encodeURIComponent(source.href) + '&w=128&h=128&fit=inside&output=png';\n  }\n  function loadColour(url, options) {\n    return new Promise(function (resolve, reject) {\n      if (typeof Image === 'undefined' || typeof document === 'undefined') { reject(new Error('Photo colours need a browser with image and canvas support.')); return; }\n      var image = new Image(), settled = false;\n      var timeout = setTimeout(function () { finish(new Error('The photo took too long to load. The previous colour is kept.')); }, options.timeout || 15000);\n      function finish(error, result) {\n        if (settled) return;\n        settled = true; clearTimeout(timeout); image.onload = null; image.onerror = null;\n        if (error) reject(error); else resolve(result);\n      }\n      image.crossOrigin = 'anonymous';\n      image.referrerPolicy = 'no-referrer';\n      image.decoding = 'async';\n      image.onload = function () {\n        try {\n          var width = image.naturalWidth, height = image.naturalHeight;\n          if (!width || !height) throw new Error('The photo has no readable dimensions.');\n          var aspect = Number(options.aspectRatio) || 1.25;\n          aspect = clamp(aspect, 0.4, 3);\n          var crop = cropValues(options.crop), sourceWidth = width, sourceHeight = height;\n          if (width / height > aspect) sourceWidth = height * aspect;\n          else sourceHeight = width / aspect;\n          var sourceX = (width - sourceWidth) * crop[0], sourceY = (height - sourceHeight) * crop[1];\n          var canvas = document.createElement('canvas'); canvas.width = 64; canvas.height = 64;\n          var context = canvas.getContext('2d', { willReadFrequently: true });\n          if (!context) throw new Error('This browser could not open an image canvas.');\n          context.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, 64, 64);\n          finish(null, fromPixels(context.getImageData(0, 0, 64, 64).data));\n        } catch (error) {\n          finish(new Error(error && error.name === 'SecurityError' ? 'This image host blocks colour sampling. The previous colour is kept.' : error.message));\n        }\n      };\n      image.onerror = function () { finish(new Error('The photo could not be sampled. Its host may block colour access; the previous colour is kept.')); };\n      image.src = url;\n    });\n  }\n  function abortable(promise, signal) {\n    if (!signal) return promise;\n    return new Promise(function (resolve, reject) {\n      function abort() { var error = new Error('Photo colour sampling was cancelled.'); error.name = 'AbortError'; reject(error); }\n      if (signal.aborted) { abort(); return; }\n      signal.addEventListener('abort', abort, { once: true });\n      promise.then(function (value) { signal.removeEventListener('abort', abort); if (!signal.aborted) resolve(value); }, function (error) { signal.removeEventListener('abort', abort); if (!signal.aborted) reject(error); });\n    });\n  }\n  function get(value, options) {\n    options = options || {};\n    var original, source;\n    try { original = safeUrl(value); source = options.sourceUrl ? safeUrl(options.sourceUrl) : original; }\n    catch (error) { return Promise.reject(error); }\n    var crop = cropValues(options.crop), aspect = clamp(Number(options.aspectRatio) || 1.25, 0.4, 3);\n    var key = [original, source, crop.join(','), aspect].join('|');\n    if (options.refresh) cache.delete(key);\n    if (!cache.has(key)) {\n      var loadOptions = Object.assign({}, options, { aspectRatio: aspect });\n      var proxy = options.allowProxy === false ? '' : proxyUrl(source);\n      var host = new URL(source).hostname.toLowerCase();\n      var knownNoCors = host === 'i.pinimg.com' || host === 'l3n.co' || host.endsWith('.l3n.co');\n      var promise = knownNoCors && proxy ? loadColour(proxy, loadOptions) : loadColour(source, loadOptions).catch(function (error) {\n        if (!proxy) throw error;\n        return loadColour(proxy, loadOptions);\n      });\n      cache.set(key, promise);\n      promise.catch(function () { if (cache.get(key) === promise) cache.delete(key); });\n      if (cache.size > 128) cache.delete(cache.keys().next().value);\n    }\n    return abortable(cache.get(key), options.signal);\n  }\n  function clear() { cache.clear(); }\n  return { get: get, fromPixels: fromPixels, proxyUrl: proxyUrl, clear: clear };\n}));\n\n(function (root, factory) {\n  'use strict';\n  var existing = root.BlueHourDossierRuntime;\n  if (existing && existing.version === 5) {\n    if (typeof module === 'object' && module.exports) module.exports = existing;\n    else existing.start();\n    return;\n  }\n  var api = factory(root);\n  if (typeof module === 'object' && module.exports) module.exports = api;\n  else {\n    root.BlueHourDossierRuntime = api;\n    api.start();\n  }\n}(typeof globalThis !== 'undefined' ? globalThis : this, function (root) {\n  'use strict';\n  var document = root.document;\n  var selector = '.bh-dossier-v5';\n  var articleStates = new WeakMap();\n  var mapStates = new WeakMap();\n  var activeMaps = new Set();\n  var started = false;\n  var scheduled = false;\n  var observer;\n  var paletteRetry;\n  var paletteAttempts = 0;\n  var channel = 'blue-hour-dossier-map-v5';\n\n  function normalizeColour(value) {\n    var colour = String(value || '').trim();\n    if (/^#[0-9a-f]{3}$/i.test(colour)) {\n      colour = '#' + colour.slice(1).split('').map(function (letter) { return letter + letter; }).join('');\n    }\n    return /^#[0-9a-f]{6}$/i.test(colour) ? colour.toLowerCase() : '#5b8612';\n  }\n\n  function normalizeLocation(value) {\n    if (!value || typeof value !== 'object') return null;\n    function number(input) {\n      if (typeof input !== 'string' && typeof input !== 'number') return NaN;\n      if (typeof input === 'string' && !input.trim()) return NaN;\n      return Number(input);\n    }\n    var lat = number(value.lat), lon = number(value.lon);\n    var zoom = value.zoom === undefined || value.zoom === null ? 11 : number(value.zoom);\n    if (!Number.isFinite(lat) || lat \u003c -85 || lat > 85 || !Number.isFinite(lon) || lon \u003c -180 || lon > 180 || !Number.isInteger(zoom) || zoom \u003c 2 || zoom > 18) return null;\n    return { lat: lat, lon: lon, zoom: zoom };\n  }\n\n  function mapBoot(configuration) {\n    var mapStatus = document.getElementById('status');\n    var loaded = false, marker, map, api;\n    function report(state) {\n      if (state === 'ready') {\n        loaded = true;\n        mapStatus.hidden = true;\n      } else if (!loaded) {\n        mapStatus.textContent = 'Map Unavailable';\n      } else return;\n      parent.postMessage({ channel: 'blue-hour-dossier-map-v5', state: state }, '*');\n    }\n    function setMarker(colour) {\n      if (marker) marker.remove();\n      marker = new api.Marker({ color: colour, scale: 0.65 }).setLngLat({ lng: configuration.lon, lat: configuration.lat }).addTo(map);\n    }\n    try {\n      api = window.maplibregl;\n      if (!api) throw new Error('Map Unavailable');\n      map = new api.Map({\n        container: 'map',\n        style: 'https://tiles.openfreemap.org/styles/positron',\n        center: { lng: configuration.lon, lat: configuration.lat },\n        zoom: configuration.zoom,\n        minZoom: 2,\n        maxZoom: 18,\n        attributionControl: false,\n        dragRotate: false,\n        pitchWithRotate: false,\n        scrollZoom: false,\n        renderWorldCopies: false\n      });\n      map.addControl(new api.NavigationControl({ showCompass: false }), 'top-right');\n      setMarker(configuration.colour);\n      map.on('load', function () { report('ready'); });\n      map.on('error', function () { report('error'); });\n      window.addEventListener('message', function (event) {\n        if (event.source !== parent || !event.data || event.data.channel !== 'blue-hour-dossier-map-v5' || event.data.action !== 'colour') return;\n        if (typeof event.data.colour !== 'string' || !/^#[0-9a-f]{6}$/i.test(event.data.colour)) return;\n        setMarker(event.data.colour);\n      });\n    } catch (_) {\n      report('error');\n    }\n  }\n\n  function buildMapDocument(value, accent) {\n    var location = normalizeLocation(value);\n    if (!location) throw new Error('The map needs valid latitude, longitude and zoom values.');\n    var configuration = { lat: location.lat, lon: location.lon, zoom: location.zoom, colour: normalizeColour(accent) };\n    return '\u003c!doctype html>\u003chtml lang=\"en\">\u003chead>\u003cmeta charset=\"utf-8\">\u003cmeta name=\"viewport\" content=\"width=device-width,initial-scale=1\">' +\n      '\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.css\">' +\n      '\u003cstyle>html,body,#map{margin:0;width:100%;height:100%;background:#e8e9e4}#map{position:absolute;inset:0}#status{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:16px;font:12px/1.4 sans-serif;color:#465247;text-align:center;pointer-events:none}#status[hidden]{display:none}.maplibregl-ctrl-top-right{top:0;right:0}.maplibregl-ctrl-group{box-shadow:0 1px 4px #0002}.maplibregl-ctrl-group button{width:27px;height:27px}\u003c/style>' +\n      '\u003c/head>\u003cbody>\u003cdiv id=\"map\" aria-label=\"Interactive Location Map\">\u003c/div>\u003cp id=\"status\" role=\"status\">Loading Map\u003c/p>' +\n      '\u003cscript src=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.js\">\u003c/scr' + 'ipt>' +\n      '\u003cscript>(' + mapBoot.toString() + ')(' + JSON.stringify(configuration) + ');\u003c/scr' + 'ipt>\u003c/body>\u003c/html>';\n  }\n\n  function connected(element) {\n    return !!element && element.isConnected !== false && !!document && !!document.documentElement && document.documentElement.contains(element);\n  }\n\n  function articleColour(article) {\n    var colour = article.style.getPropertyValue('--bd1-accent');\n    if (!colour && root.getComputedStyle) colour = root.getComputedStyle(article).getPropertyValue('--bd1-accent');\n    return normalizeColour(colour);\n  }\n\n  function setMapStatus(state, text) {\n    if (!state.status) return;\n    state.status.textContent = text;\n    state.status.hidden = false;\n  }\n\n  function disposeMap(state) {\n    if (state.timer) root.clearTimeout(state.timer);\n    state.timer = null;\n    activeMaps.delete(state);\n    if (state.frame && state.frame.parentNode) state.frame.parentNode.removeChild(state.frame);\n    if (mapStates.get(state.element) === state) mapStates.delete(state.element);\n  }\n\n  function sendColour(state, colour) {\n    if (state.colour === colour) return;\n    state.colour = colour;\n    if (state.ready && state.frame.contentWindow) state.frame.contentWindow.postMessage({ channel: channel, action: 'colour', colour: colour }, '*');\n  }\n\n  function initializeMap(element, article) {\n    var location = normalizeLocation({ lat: element.getAttribute('data-lat'), lon: element.getAttribute('data-lon'), zoom: element.getAttribute('data-zoom') });\n    var key = location ? [location.lat, location.lon, location.zoom].join('|') : '';\n    var previous = mapStates.get(element);\n    var colour = articleColour(article);\n    if (previous && previous.key === key) {\n      sendColour(previous, colour);\n      return;\n    }\n    if (previous) disposeMap(previous);\n    var status = element.querySelector('.bd5-map-status');\n    if (!status) {\n      status = document.createElement('p');\n      status.className = 'bd5-map-status';\n      status.setAttribute('role', 'status');\n      element.appendChild(status);\n    }\n    if (!location) {\n      status.hidden = false;\n      if (status.textContent !== 'Open the Location Below') status.textContent = 'Open the Location Below';\n      element.setAttribute('data-map-state', 'error');\n      return;\n    }\n    var frame = document.createElement('iframe');\n    frame.setAttribute('sandbox', 'allow-scripts');\n    frame.setAttribute('title', 'Map of ' + (element.getAttribute('data-label') || 'Current Location'));\n    frame.setAttribute('width', '185');\n    frame.setAttribute('height', '185');\n    frame.setAttribute('loading', 'eager');\n    frame.srcdoc = buildMapDocument(location, colour);\n    var state = { element: element, article: article, frame: frame, status: status, key: key, colour: colour, ready: false, timer: null };\n    mapStates.set(element, state);\n    activeMaps.add(state);\n    setMapStatus(state, 'Loading Map');\n    element.setAttribute('data-map-state', 'loading');\n    element.appendChild(frame);\n    state.timer = root.setTimeout(function () {\n      state.timer = null;\n      if (!connected(element) || mapStates.get(element) !== state || state.ready) return;\n      setMapStatus(state, 'Map Unavailable - Open the Location Below');\n      element.setAttribute('data-map-state', 'error');\n    }, 30000);\n  }\n\n  function receiveMapMessage(event) {\n    if (!event.data || event.data.channel !== channel || (event.data.state !== 'ready' && event.data.state !== 'error')) return;\n    activeMaps.forEach(function (state) {\n      if (!connected(state.element) || event.source !== state.frame.contentWindow) return;\n      if (event.data.state === 'ready') {\n        state.ready = true;\n        if (state.timer) root.clearTimeout(state.timer);\n        state.timer = null;\n        state.status.hidden = true;\n        state.element.setAttribute('data-map-state', 'ready');\n        state.frame.contentWindow.postMessage({ channel: channel, action: 'colour', colour: state.colour }, '*');\n      } else if (!state.ready) {\n        setMapStatus(state, 'Map Unavailable - Open the Location Below');\n        state.element.setAttribute('data-map-state', 'error');\n      }\n    });\n  }\n\n  function paletteApi() { return root.PhotoPalette || root.globalPhotoPalette; }\n\n  function schedulePaletteRetry() {\n    if (paletteRetry || paletteAttempts >= 20) return;\n    paletteAttempts += 1;\n    paletteRetry = root.setTimeout(function () { paletteRetry = null; scan(); }, 500);\n  }\n\n  function themeInput(article) {\n    var mode = article.getAttribute('data-theme-mode') === 'manual' ? 'manual' : 'auto';\n    var image = article.querySelector('.bd1-hero img');\n    var url = image ? (image.getAttribute('srcset') ? image.currentSrc || image.src : image.src) : '';\n    var crop = article.style.getPropertyValue('--bd2-image-position').trim() || '50% 35%';\n    return { mode: mode, url: url, crop: crop, key: [mode, url, crop].join('|') };\n  }\n\n  function applyTheme(article, state) {\n    var input = themeInput(article);\n    var mode = input.mode, url = input.url, crop = input.crop, key = input.key;\n    if (mode === 'manual' || !url) {\n      if (state.themeKey !== key) state.token += 1;\n      state.themeKey = key;\n      article.setAttribute('data-theme-state', mode === 'manual' ? 'manual' : 'empty');\n      return;\n    }\n    var palette = paletteApi();\n    if (!palette || typeof palette.get !== 'function') {\n      if (state.themeKey !== key) state.token += 1;\n      state.themeKey = '';\n      article.setAttribute('data-theme-state', paletteAttempts >= 20 ? 'error' : 'waiting');\n      schedulePaletteRetry();\n      return;\n    }\n    if (state.themeKey === key) return;\n    state.themeKey = key;\n    var token = ++state.token;\n    article.setAttribute('data-theme-state', 'loading');\n    Promise.resolve().then(function () { return palette.get(url, { crop: crop, aspectRatio: 1.25 }); }).then(function (colour) {\n      if (!connected(article) || state.token !== token || state.themeKey !== key || themeInput(article).key !== key) return;\n      if (typeof colour !== 'string' || !/^#(?:[0-9a-f]{3}|[0-9a-f]{6})$/i.test(colour)) throw new Error('The photo did not return a valid colour.');\n      var normalized = normalizeColour(colour);\n      article.style.setProperty('--bd1-accent', normalized);\n      article.setAttribute('data-theme-state', 'ready');\n      article.querySelectorAll('.bd3-map[data-lat][data-lon]').forEach(function (element) {\n        var mapState = mapStates.get(element);\n        if (mapState) sendColour(mapState, normalized);\n      });\n    }).catch(function () {\n      if (connected(article) && state.token === token && state.themeKey === key && themeInput(article).key === key) article.setAttribute('data-theme-state', 'error');\n    });\n  }\n\n  function initializeArticle(article) {\n    if (!connected(article)) return;\n    var state = articleStates.get(article);\n    if (!state) { state = { themeKey: '', token: 0 }; articleStates.set(article, state); }\n    article.querySelectorAll('.bd3-map[data-lat][data-lon]').forEach(function (element) { initializeMap(element, article); });\n    applyTheme(article, state);\n  }\n\n  function scan(scope) {\n    if (!document) return;\n    activeMaps.forEach(function (state) { if (!connected(state.element) || !connected(state.article)) disposeMap(state); });\n    var target = scope && typeof scope.querySelectorAll === 'function' ? scope : document;\n    if (target.matches && target.matches(selector)) initializeArticle(target);\n    target.querySelectorAll(selector).forEach(initializeArticle);\n  }\n\n  function scheduleScan() {\n    if (scheduled) return;\n    scheduled = true;\n    root.setTimeout(function () { scheduled = false; scan(); }, 0);\n  }\n\n  function refresh(article) {\n    if (article) {\n      var state = articleStates.get(article);\n      if (state) { state.themeKey = ''; state.token += 1; }\n      scan(article);\n    } else {\n      if (document) document.querySelectorAll(selector).forEach(function (element) {\n        var state = articleStates.get(element);\n        if (state) { state.themeKey = ''; state.token += 1; }\n      });\n      scan();\n    }\n  }\n\n  function start() {\n    if (!document) return;\n    if (started) { scan(); return; }\n    started = true;\n    root.addEventListener('message', receiveMapMessage);\n    document.addEventListener('DOMContentLoaded', scheduleScan);\n    document.addEventListener('load', function (event) {\n      var target = event.target;\n      if (target && (target.tagName === 'SCRIPT' || (target.matches && target.matches('.bd1-hero img')))) scheduleScan();\n    }, true);\n    if (root.MutationObserver && document.documentElement) {\n      observer = new root.MutationObserver(function (mutations) {\n        if (mutations.some(function (mutation) {\n          var target = mutation.target;\n          if (target && target.closest && target.closest(selector)) return true;\n          if (mutation.type !== 'childList') return false;\n          return Array.from(mutation.addedNodes).concat(Array.from(mutation.removedNodes)).some(function (node) {\n            return node.nodeType === 1 && ((node.matches && node.matches(selector)) || (node.querySelector && node.querySelector(selector)));\n          });\n        })) scheduleScan();\n      });\n      observer.observe(document.documentElement, { subtree: true, childList: true, attributes: true, attributeFilter: ['src', 'srcset', 'style', 'data-theme-mode', 'data-lat', 'data-lon', 'data-zoom'] });\n    }\n    scan();\n  }\n\n  return { version: 5, start: start, scan: scan, refresh: refresh, normalizeLocation: normalizeLocation, normalizeColour: normalizeColour, buildMapDocument: buildMapDocument };\n}));\n";</script><script>(function () {
   'use strict';
   const STORAGE_KEY = 'bluehour.character-atelier.library.v1';
   const SETTINGS_KEY = 'bluehour.character-atelier.settings.v1';
-  const PREVIOUS_STYLESHEETS = ['https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css'];
-  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v4.css';
+  const PREVIOUS_STYLESHEETS = ['https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v4.css'];
+  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.css';
   const $ = id => document.getElementById(id);
   const clone = value => JSON.parse(JSON.stringify(value));
   let fieldCounter = 0;
@@ -9004,13 +9339,17 @@ var DOSSIER_NOTICES = {
   let settings = { selectedId: '', theme: 'dark', narrow: false, stylesheetUrl: DEFAULT_STYLESHEET };
   let storageAvailable = true;
   let generatedCode = '';
+  let exportBusy = false;
   let openSections = new Set(['identity']);
   let recoveryDownload = null;
   let dirty = false;
   let lastStoredLibrary = null;
   let externalChange = false;
+  const photoThemeStates = new Map();
+  const photoThemeJobs = new Map();
+  let photoThemeSequence = 0;
   const LIST_LIMITS = { facts: 150, relationships: 200, timeline: 1500, songs: 200, polaroids: 3 };
-  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, image: 4000, imagePosition: 30, mapLocation: 250, mapLatitude: 40, mapLongitude: 40, mapZoom: 2, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
+  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, image: 4000, imagePosition: 30, mapLocation: 250, mapLatitude: 40, mapLongitude: 40, mapZoom: 2, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, brand: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
   const COLOUR_PALETTE = [['Fern', '#5b8612'], ['Sand', '#a99b8e'], ['Apricot', '#d9804d'], ['Blue', '#5187b5'], ['Rose', '#b9768c']];
 
   function uid(prefix) {
@@ -9085,7 +9424,37 @@ var DOSSIER_NOTICES = {
     const starters = new Map((Array.isArray(globalThis.DOSSIER_SEED?.characters) ? globalThis.DOSSIER_SEED.characters : []).map(character => [character.id, character]));
     characters.forEach(character => {
       if (!character || typeof character !== 'object' || Array.isArray(character)) return;
+      if (character.id === 'baek-samuel' && Array.isArray(character.relationships)) {
+        const knownBrands = { dom: ['almond', 'Lindor'], crazhes: ['marshmallow', 'Mochidoki'], jiae: ['treacle', 'Pringles'] };
+        character.relationships.forEach(connection => {
+          if (!connection || typeof connection !== 'object' || Object.hasOwn(connection, 'brand')) return;
+          const previous = knownBrands[connection.id];
+          if (previous && String(connection.flavour || '').trim().toLowerCase() === previous[0]) { connection.brand = previous[1]; connection.flavour = ''; }
+        });
+      }
       const starter = starters.get(character.id);
+      if (character.id === 'baek-samuel' && Array.isArray(character.timeline)) {
+        const legacy = [
+          { id: 'almond-croissant', title: 'almond croissant', currentTitle: 'Lindor Pistachio', topic: '62747', participants: 'sam & dom', type: 'Comms', connectionIds: ['dom'] },
+          { id: 'treacle-tart', title: 'treacle tart', currentTitle: 'Pringles Texas BBQ', topic: '64015', participants: 'sam & jiae', type: 'Comms', connectionIds: ['jiae'] },
+          { id: 'marshmallow-spread', title: 'marshmallow spread', currentTitle: 'Mochidoki Cake Batter', topic: '83999', participants: 'CRAZHES', type: 'Comms', connectionIds: ['crazhes'] },
+          { id: 'pumpkin-pie', title: 'pumpkin pie', topic: '98948', participants: 'group thread', type: 'Thread', connectionIds: [] },
+          { id: 'cereal-milk', title: 'cereal milk', topic: '104200', participants: 'sam & hoseong', type: 'Thread', connectionIds: ['hoseong'] }
+        ];
+        const topicOf = entry => { try { const url = new URL(entry.url); return url.origin === 'https://bluehour.jcink.net' && url.pathname === '/index.php' ? url.searchParams.get('showtopic') : ''; } catch (_) { return ''; } };
+        const blank = value => value === undefined || value === '';
+        const untouchedLegacy = character.timeline.length === 5 && legacy.every(previous => {
+          const entry = character.timeline.find(item => item && item.id === previous.id);
+          return entry && String(entry.title || '').trim().toLowerCase() === previous.title && entry.url === 'https://bluehour.jcink.net/index.php?showtopic=' + previous.topic && entry.participants === previous.participants && entry.type === previous.type && JSON.stringify(entry.connectionIds) === JSON.stringify(previous.connectionIds) && ['date', 'dateLabel', 'postedDate', 'status', 'summary'].every(key => blank(entry[key])) && (entry.milestone === undefined || entry.milestone === false);
+        });
+        character.timeline.forEach(entry => {
+          if (!entry || typeof entry !== 'object') return;
+          const previous = legacy.find(item => item.id === entry.id && item.currentTitle);
+          if (previous && topicOf(entry) === previous.topic && String(entry.title || '').trim().toLowerCase() === previous.title) entry.title = previous.currentTitle;
+        });
+        const cerealBar = starter?.timeline?.find(entry => entry.id === 'cereal-bar' && topicOf(entry) === '112783');
+        if (untouchedLegacy && cerealBar && !character.timeline.some(entry => topicOf(entry) === '112783')) character.timeline.push(clone(cerealBar));
+      }
       if (!starter) return;
       ['avatar', 'polaroids', 'mapLocation', 'mapLatitude', 'mapLongitude', 'mapZoom'].forEach(key => {
         if (!Object.hasOwn(character, key) && Object.hasOwn(starter, key)) character[key] = clone(starter[key]);
@@ -9212,8 +9581,97 @@ var DOSSIER_NOTICES = {
     const colour = fullHex(current().accent);
     if (colour) document.documentElement.style.setProperty('--character-colour', colour);
   }
+  function cancelPhotoTheme(id) {
+    const job = photoThemeJobs.get(id);
+    if (job) { clearTimeout(job.timer); job.controller.abort(); job.resolve?.({ status: 'cancelled' }); photoThemeJobs.delete(id); }
+  }
+  function cancelOtherPhotoThemes(keepId) {
+    photoThemeJobs.forEach((job, id) => { if (id !== keepId) { cancelPhotoTheme(id); photoThemeStates.delete(id); } });
+  }
+  function showPhotoThemeStatus(character) {
+    if (character !== current()) return;
+    const status = document.querySelector('[data-photo-theme-status]');
+    if (!status) return;
+    const state = photoThemeStates.get(character.id);
+    status.dataset.state = character.themeMode === 'manual' ? 'manual' : state?.status || 'idle';
+    status.textContent = character.themeMode === 'manual' ? 'Your chosen colour is applied to this character.' : state?.message || 'The header photo sets the colour of the whole page automatically.';
+    const retry = document.querySelector('[data-photo-theme-retry]');
+    if (retry) retry.hidden = character.themeMode === 'manual' || !character.portrait;
+    const hex = fullHex(character.accent);
+    const manual = document.querySelector('[data-field="accent"]');
+    const picker = document.querySelector('[data-field="accent-picker"]');
+    if (manual && document.activeElement !== manual) manual.value = character.accent || '';
+    if (picker && hex) picker.value = hex;
+    document.querySelectorAll('[data-colour]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.colour === hex)));
+  }
+  function requestPhotoTheme(character, force) {
+    const crop = character.imagePosition || '50% 35%';
+    const url = Dossier.safeUrl(character.portrait);
+    const key = url + '|' + crop;
+    if (character.themeMode === 'manual') { cancelPhotoTheme(character.id); showPhotoThemeStatus(character); return Promise.resolve({ status: 'manual' }); }
+    if (!url) {
+      cancelPhotoTheme(character.id);
+      photoThemeStates.set(character.id, { key, status: 'idle', message: character.portrait ? 'Use a complete header image address to create its colour theme.' : 'Add a header photo to create its colour theme.' });
+      showPhotoThemeStatus(character); return Promise.resolve(photoThemeStates.get(character.id));
+    }
+    const activeJob = photoThemeJobs.get(character.id);
+    if (!force && activeJob && photoThemeStates.get(character.id)?.key === key) { showPhotoThemeStatus(character); return activeJob.promise; }
+    if (!force && character.paletteSource === url && (character.paletteCrop || '50% 35%') === crop && fullHex(character.accent)) {
+      cancelPhotoTheme(character.id);
+      photoThemeStates.set(character.id, { key, status: 'ready', message: 'Colour matched automatically to the header photo.' });
+      showPhotoThemeStatus(character); return Promise.resolve(photoThemeStates.get(character.id));
+    }
+    const previous = photoThemeStates.get(character.id);
+    if (!force && previous?.key === key && ['loading', 'error'].includes(previous.status)) { showPhotoThemeStatus(character); return photoThemeJobs.get(character.id)?.promise || Promise.resolve(previous); }
+    cancelPhotoTheme(character.id);
+    if (!globalThis.PhotoPalette) {
+      photoThemeStates.set(character.id, { key, status: 'error', message: 'Automatic colour sampling is unavailable because palette.js did not load. The previous colour is kept.' });
+      showPhotoThemeStatus(character); return Promise.resolve(photoThemeStates.get(character.id));
+    }
+    const controller = new AbortController();
+    const token = ++photoThemeSequence;
+    const job = { token, controller, timer: null, resolve: null, promise: null };
+    job.promise = new Promise(resolve => { job.resolve = resolve; });
+    photoThemeJobs.set(character.id, job);
+    photoThemeStates.set(character.id, { key, status: 'loading', message: 'Finding the colours in the header photo…' });
+    showPhotoThemeStatus(character);
+    const stillCurrent = () => photoThemeJobs.get(character.id)?.token === token && !controller.signal.aborted && character.themeMode !== 'manual' && Dossier.safeUrl(character.portrait) === url && (character.imagePosition || '50% 35%') === crop && library.characters.includes(character);
+    job.timer = setTimeout(async () => {
+      try {
+        const sources = globalThis.PHOTO_PALETTE_SOURCES || {};
+        const sourceUrl = typeof sources[url] === 'string' ? sources[url] : undefined;
+        const colour = await PhotoPalette.get(url, { crop, sourceUrl, signal: controller.signal, refresh: Boolean(force) });
+        if (!stillCurrent()) { job.resolve({ status: 'cancelled' }); return; }
+        character.accent = colour; character.themeMode = 'auto'; character.paletteSource = url; character.paletteCrop = crop;
+        photoThemeJobs.delete(character.id);
+        photoThemeStates.set(character.id, { key, status: 'ready', message: 'Colour matched automatically to the header photo.' });
+        if (character === current()) { updateChromeColour(); showPhotoThemeStatus(character); }
+        changed();
+        job.resolve({ status: 'ready' });
+      } catch (error) {
+        if (error.name === 'AbortError' || !stillCurrent()) { job.resolve({ status: 'cancelled' }); return; }
+        photoThemeJobs.delete(character.id);
+        photoThemeStates.set(character.id, { key, status: 'error', message: error.message || 'The photo could not be sampled. The previous colour is kept.' });
+        showPhotoThemeStatus(character);
+        job.resolve({ status: 'error', message: error.message });
+      }
+    }, force ? 0 : 350);
+    return job.promise;
+  }
   function colourFields(character) {
     const wrapper = node('fieldset', { className: 'colour-fieldset' }, node('legend', { text: 'Character colour' }));
+    const automatic = character.themeMode !== 'manual';
+    const modeControls = node('div', { className: 'colour-mode-controls', role: 'group', 'aria-label': 'Character colour source' });
+    modeControls.append(node('button', { type: 'button', 'aria-pressed': String(automatic), text: 'From header photo', onclick: () => {
+      character.themeMode = 'auto'; changed(); renderForm(); requestPhotoTheme(character, true);
+    } }), node('button', { type: 'button', 'aria-pressed': String(!automatic), text: 'Choose my own', onclick: () => {
+      character.themeMode = 'manual'; cancelPhotoTheme(character.id); changed(); renderForm(); showPhotoThemeStatus(character);
+    } }));
+    const themeStatus = node('p', { className: 'photo-theme-status', 'data-photo-theme-status': '', role: 'status', 'aria-live': 'polite', text: automatic ? 'The header photo sets the colour of the whole page automatically.' : 'Your chosen colour is applied to this character.' });
+    const retry = node('button', { type: 'button', className: 'photo-theme-retry', 'data-photo-theme-retry': '', text: 'Sample photo again', onclick: () => requestPhotoTheme(character, true) });
+    retry.hidden = !automatic || !character.portrait;
+    wrapper.append(modeControls, themeStatus, retry);
+    const manualControls = node('div', { className: 'colour-manual-controls', hidden: automatic });
     const picker = node('input', { type: 'color', 'aria-label': 'Choose character colour', 'data-field': 'accent-picker' });
     const swatches = node('div', { className: 'colour-swatches', role: 'group', 'aria-label': 'Character colour palette' });
     let hexInput;
@@ -9223,19 +9681,20 @@ var DOSSIER_NOTICES = {
       swatches.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.colour === hex)));
       updateChromeColour();
     }
+    function markManual() { character.themeMode = 'manual'; character.paletteSource = ''; character.paletteCrop = ''; cancelPhotoTheme(character.id); syncColour(); }
     function chooseColour(value) {
-      character.accent = value; hexInput.value = value; syncColour(); changed();
+      character.accent = value; hexInput.value = value; markManual(); changed();
     }
-    const hex = field('Hex colour', character, 'accent', { placeholder: '#5b8612', maxLength: 7, onChange: syncColour });
+    const hex = field('Hex colour', character, 'accent', { placeholder: '#5b8612', maxLength: 7, onChange: markManual });
     hexInput = hex.querySelector('input');
     picker.value = fullHex(character.accent) || '#5b8612';
     picker.addEventListener('input', () => chooseColour(picker.value));
-    wrapper.append(node('div', { className: 'colour-controls' }, [picker, hex]), help('Sets the colour of this character’s panels, borders and highlights. Match it to their photos.'));
+    manualControls.append(node('div', { className: 'colour-controls' }, [picker, hex]), help('A manual override for this character’s panels, borders and highlights.'));
     COLOUR_PALETTE.forEach(([name, value]) => {
       const button = node('button', { type: 'button', className: 'colour-swatch', 'data-colour': value, 'aria-label': name + ' ' + value, 'aria-pressed': 'false', onclick: () => chooseColour(value) }, [node('span', { className: 'colour-swatch-dot', 'aria-hidden': 'true' }), node('span', { text: name })]);
       button.style.setProperty('--swatch', value); swatches.append(button);
     });
-    wrapper.append(swatches); syncColour();
+    manualControls.append(swatches); wrapper.append(manualControls); syncColour();
     return wrapper;
   }
   function cropField(character) {
@@ -9255,9 +9714,10 @@ var DOSSIER_NOTICES = {
     return node('div', { className: 'starter-appearance' }, [node('button', { type: 'button', className: 'button-quiet', text: 'Use starter appearance', onclick: () => {
       character.portrait = starter.portrait || '';
       character.avatar = starter.avatar || '';
-      character.accent = starter.accent || '#a99b8e';
+      character.accent = starter.accent || '#a99b8e'; character.themeMode = 'auto'; character.paletteSource = ''; character.paletteCrop = '';
+      cancelPhotoTheme(character.id); photoThemeStates.delete(character.id);
       changed(); renderForm(); updatePreview();
-      message('Starter photos and colour restored for ' + labelFor(character) + '.');
+      message('Starter photos restored for ' + labelFor(character) + '. The colour will follow the header.');
     } }), help('Restore this character’s starter photos and colour.')]);
   }
   function mapSearchUrl(place) {
@@ -9360,10 +9820,10 @@ var DOSSIER_NOTICES = {
     body = section('facts', '03', 'The encyclopaedia');
     body.append(help('Keep the established facts here: birthday, languages, favourites, and all their small details.'));
     repeater(body, 'facts', 'Fact', item => item.label, () => ({ label: '', value: '' }), (row, item, title) => row.append(field('Fact label', item, 'label', { onChange: title }), field('Value', item, 'value', { multiline: true, rows: 2 })));
-    body = section('people', '04', 'People, ships & flavours');
-    body.append(help('Each connection lives here once. Add their flavour, shared details and links, then choose these same connections when adding a story entry.'));
-    repeater(body, 'relationships', 'Connection', item => item.name, () => ({ id: uid('connection'), name: '', kind: '', flavour: '', status: '', portrait: '', url: '', summary: '', pinned: false, featured: false, quote: '', playlistUrl: '' }), (row, item, title) => {
-      row.append(field('Connection name', item, 'name', { onChange: title }), grid(field('Connection type', item, 'kind', { choices: ['', 'Partner', 'Friend', 'Family', 'Group', 'Other'] }), field('Flavour', item, 'flavour')), field('Connection status', item, 'status', { placeholder: 'Active / past / developing' }), check('Feature this ship or relationship', item, 'featured'), field('What they mean to each other', item, 'summary', { multiline: true }), field('Portrait', item, 'portrait', { type: 'url', placeholder: 'https://…' }), field('Profile or development post', item, 'url', { type: 'url', placeholder: 'https://…' }), field('A shared quote', item, 'quote', { multiline: true, rows: 2 }), field('Shared playlist', item, 'playlistUrl', { type: 'url', placeholder: 'https://open.spotify.com/playlist/…' }));
+    body = section('people', '04', 'Flavours & brands');
+    body.append(help('Each connection lives here once. Keep a flavour, a brand, or both, then choose these same connections when adding a story entry.'));
+    repeater(body, 'relationships', 'Connection', item => item.name, () => ({ id: uid('connection'), name: '', kind: '', flavour: '', brand: '', status: '', portrait: '', url: '', summary: '', pinned: false, featured: false, quote: '', playlistUrl: '' }), (row, item, title) => {
+      row.append(field('Connection name', item, 'name', { onChange: title }), field('Connection type', item, 'kind', { choices: ['', 'Partner', 'Friend', 'Family', 'Group', 'Other'] }), grid(field('Flavour', item, 'flavour'), field('Brand', item, 'brand')), field('Connection status', item, 'status', { placeholder: 'Active / past / developing' }), check('Feature this ship or relationship', item, 'featured'), field('What they mean to each other', item, 'summary', { multiline: true }), field('Portrait', item, 'portrait', { type: 'url', placeholder: 'https://…' }), field('Profile or development post', item, 'url', { type: 'url', placeholder: 'https://…' }), field('A shared quote', item, 'quote', { multiline: true, rows: 2 }), field('Shared playlist', item, 'playlistUrl', { type: 'url', placeholder: 'https://open.spotify.com/playlist/…' }));
     }, item => {
       const linked = character.timeline.filter(entry => entry.connectionIds.includes(item.id));
       if (linked.length && !confirm('Remove ' + (item.name || 'this connection') + '? Its link will also be removed from ' + linked.length + ' story entries. The stories themselves will stay.')) return false;
@@ -9404,13 +9864,14 @@ var DOSSIER_NOTICES = {
     try {
       const rendered = Dossier.render(character, { includeStylesheet: false });
       generatedCode = Dossier.forum(character, stylesheetUrl());
-      const localCss = new URL('dossier-v4.css', document.baseURI).href;
+      const localCss = new URL('dossier-v5.css', document.baseURI).href;
       const css = typeof globalThis.DOSSIER_PREVIEW_CSS === 'string' ? '<style>' + globalThis.DOSSIER_PREVIEW_CSS.replace(/<\/style/gi, '<\\/style') + '</style>' : '<link rel="stylesheet" href="' + Dossier.escapeHtml(localCss) + '">';
-      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v4{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
+      const runtime = typeof globalThis.DOSSIER_PREVIEW_RUNTIME === 'string' ? '<script>' + globalThis.DOSSIER_PREVIEW_RUNTIME.replace(/<\/script/gi, '<\\/script') + '<\/script>' : '<script src="' + Dossier.escapeHtml(new URL('dossier-runtime-v5.js', document.baseURI).href) + '"><\/script>';
+      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v5{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + runtime + '</body></html>';
       $('dossier-preview').srcdoc = doc;
       $('preview-error').hidden = true;
       $('forum-code').value = generatedCode;
-      $('copy-post').disabled = false; $('download-post').disabled = false;
+      $('copy-post').disabled = exportBusy; $('download-post').disabled = exportBusy;
     } catch (error) {
       generatedCode = '';
       $('preview-error').textContent = 'Finish this detail to update the preview: ' + error.message;
@@ -9422,9 +9883,10 @@ var DOSSIER_NOTICES = {
     $('preview-theme').setAttribute('aria-pressed', String(settings.theme === 'light'));
     $('preview-width').setAttribute('aria-pressed', String(settings.narrow));
     document.querySelector('.preview-canvas').dataset.narrow = String(settings.narrow);
+    requestPhotoTheme(character, false);
   }
   function switchCharacter(id) {
-    saveDraft(); settings.selectedId = id; saveSettings();
+    saveDraft(); cancelOtherPhotoThemes(id); settings.selectedId = id; saveSettings();
     updatePicker(); renderForm(); updatePreview();
     message('Editing ' + labelFor(current()) + '.');
   }
@@ -9435,22 +9897,44 @@ var DOSSIER_NOTICES = {
     character.id = uid('character');
     if (duplicate) character.name = labelFor(current()) + ' — copy';
     library.characters.push(character); settings.selectedId = character.id;
+    cancelOtherPhotoThemes(character.id);
     dirty = true;
     $('character-search').value = ''; openSections.add('identity');
     updatePicker(); renderForm(); updatePreview(); saveDraft();
     $('character-form').querySelector('[data-field="name"]').focus();
     message(duplicate ? 'A separate copy is ready to edit.' : 'A blank character is ready to make your own.');
   }
+  async function preparePost() {
+    if (exportBusy) return null;
+    updatePreview(); if (!generatedCode) return null;
+    const character = current();
+    const originalUrl = Dossier.safeUrl(character.portrait);
+    const originalCrop = character.imagePosition || '50% 35%';
+    exportBusy = true;
+    $('copy-post').disabled = true; $('download-post').disabled = true;
+    if (character.themeMode !== 'manual' && originalUrl && (character.paletteSource !== originalUrl || (character.paletteCrop || '50% 35%') !== originalCrop)) message('Matching the page colour to the header photo before preparing the post…');
+    try {
+      const result = await requestPhotoTheme(character, false);
+      if (current() !== character || Dossier.safeUrl(character.portrait) !== originalUrl || (character.imagePosition || '50% 35%') !== originalCrop || result?.status === 'cancelled') {
+        message('The character or photo changed while the post was being prepared. Copy or download again to use the current version.', true); return null;
+      }
+      updatePreview();
+      return generatedCode ? { code: generatedCode, character, fallback: result?.status === 'error' } : null;
+    } finally {
+      exportBusy = false;
+      $('copy-post').disabled = !generatedCode; $('download-post').disabled = !generatedCode;
+    }
+  }
   async function copyPost() {
-    updatePreview(); if (!generatedCode) return;
+    const post = await preparePost(); if (!post) return;
     try {
       if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
-      await navigator.clipboard.writeText(generatedCode);
-      message('Forum post copied. Paste it into the development thread.');
+      await navigator.clipboard.writeText(post.code);
+      message(post.fallback ? 'Forum post copied with the previous colour because the photo could not be sampled.' : 'Forum post copied. Paste it into the development thread.');
     } catch (_) {
-      $('manual-copy').value = generatedCode;
+      $('manual-copy').value = post.code;
       $('copy-fallback').showModal(); $('manual-copy').focus(); $('manual-copy').select();
-      message('Your post is ready in the copy window.');
+      message(post.fallback ? 'Your post is ready in the copy window, using the previous colour because the photo could not be sampled.' : 'Your post is ready in the copy window.');
     }
   }
   function exportBackup(single) {
@@ -9471,6 +9955,7 @@ var DOSSIER_NOTICES = {
       if (conflicts.length && !confirm('This backup contains ' + conflicts.length + ' character' + (conflicts.length === 1 ? '' : 's') + ' already in your library. Replace their current drafts with the imported versions? Other characters will stay unchanged. Save a backup first if you want to keep both versions.')) { message('Import cancelled. Your library is unchanged.'); return; }
       imported.characters.forEach(character => byId.set(character.id, character));
       if (byId.size > 500) throw new Error('The combined library would contain more than 500 characters. Import a smaller backup.');
+      imported.characters.forEach(character => { cancelPhotoTheme(character.id); photoThemeStates.delete(character.id); });
       library = { version: 1, characters: [...byId.values()] };
       dirty = true;
       settings.selectedId = imported.characters[0].id;
@@ -9488,7 +9973,7 @@ var DOSSIER_NOTICES = {
     $('new-character').addEventListener('click', () => createCharacter(false));
     $('duplicate-character').addEventListener('click', () => createCharacter(true));
     $('copy-post').addEventListener('click', copyPost);
-    $('download-post').addEventListener('click', () => { updatePreview(); if (!generatedCode) return; download(generatedCode, fileName(current()) + '-forum-post.txt', 'text/plain;charset=utf-8'); message('Forum post downloaded. Paste its contents into your development thread.'); });
+    $('download-post').addEventListener('click', async () => { const post = await preparePost(); if (!post) return; download(post.code, fileName(post.character) + '-forum-post.txt', 'text/plain;charset=utf-8'); message(post.fallback ? 'Forum post downloaded with the previous colour because the photo could not be sampled.' : 'Forum post downloaded. Paste its contents into your development thread.'); });
     $('save-character').addEventListener('click', () => exportBackup(true));
     $('save-library').addEventListener('click', () => exportBackup(false));
     $('import-backup').addEventListener('change', importBackup);
