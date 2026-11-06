@@ -1,7 +1,7 @@
 (function (root, factory) {
   'use strict';
   var existing = root.BlueHourDossierRuntime;
-  if (existing && existing.version === 5) {
+  if (existing && existing.version === 5 && existing.revision === 2) {
     if (typeof module === 'object' && module.exports) module.exports = existing;
     else existing.start();
     return;
@@ -19,12 +19,14 @@
   var articleStates = new WeakMap();
   var mapStates = new WeakMap();
   var activeMaps = new Set();
+  var activeThemes = new Set();
   var started = false;
   var scheduled = false;
   var observer;
   var paletteRetry;
   var paletteAttempts = 0;
   var channel = 'blue-hour-dossier-map-v5';
+  var themeRetryDelays = [1000, 4000];
 
   function normalizeColour(value) {
     var colour = String(value || '').trim();
@@ -213,31 +215,44 @@
     return { mode: mode, url: url, crop: crop, key: [mode, url, crop].join('|') };
   }
 
-  function applyTheme(article, state) {
-    var input = themeInput(article);
-    var mode = input.mode, url = input.url, crop = input.crop, key = input.key;
-    if (mode === 'manual' || !url) {
-      if (state.themeKey !== key) state.token += 1;
-      state.themeKey = key;
-      article.setAttribute('data-theme-state', mode === 'manual' ? 'manual' : 'empty');
-      return;
-    }
-    var palette = paletteApi();
-    if (!palette || typeof palette.get !== 'function') {
-      if (state.themeKey !== key) state.token += 1;
-      state.themeKey = '';
-      article.setAttribute('data-theme-state', paletteAttempts >= 20 ? 'error' : 'waiting');
-      schedulePaletteRetry();
-      return;
-    }
-    if (state.themeKey === key) return;
+  function cancelTheme(state) {
+    state.token += 1;
+    if (state.retryTimer !== null) root.clearTimeout(state.retryTimer);
+    state.retryTimer = null;
+    if (state.controller) state.controller.abort();
+    state.controller = null;
+    activeThemes.delete(state);
+  }
+
+  function resetTheme(state, key) {
+    cancelTheme(state);
     state.themeKey = key;
+    state.phase = '';
+    state.attempts = 0;
+  }
+
+  function sampleTheme(article, state, input, palette) {
+    var key = input.key;
     var token = ++state.token;
+    state.attempts += 1;
+    state.phase = 'loading';
+    state.controller = root.AbortController ? new root.AbortController() : null;
+    var controller = state.controller;
+    activeThemes.add(state);
     article.setAttribute('data-theme-state', 'loading');
-    Promise.resolve().then(function () { return palette.get(url, { crop: crop, aspectRatio: 1.25 }); }).then(function (colour) {
-      if (!connected(article) || state.token !== token || state.themeKey !== key || themeInput(article).key !== key) return;
+    function current() {
+      return connected(article) && state.token === token && state.themeKey === key && themeInput(article).key === key;
+    }
+    Promise.resolve().then(function () {
+      if (!current()) return null;
+      return palette.get(input.url, { crop: input.crop, aspectRatio: 1.25, signal: controller ? controller.signal : undefined, refresh: state.attempts > 1 });
+    }).then(function (colour) {
+      if (!current()) return;
       if (typeof colour !== 'string' || !/^#(?:[0-9a-f]{3}|[0-9a-f]{6})$/i.test(colour)) throw new Error('The photo did not return a valid colour.');
       var normalized = normalizeColour(colour);
+      state.phase = 'ready';
+      state.controller = null;
+      activeThemes.delete(state);
       article.style.setProperty('--bd1-accent', normalized);
       article.setAttribute('data-theme-state', 'ready');
       article.querySelectorAll('.bd3-map[data-lat][data-lon]').forEach(function (element) {
@@ -245,14 +260,60 @@
         if (mapState) sendColour(mapState, normalized);
       });
     }).catch(function () {
-      if (connected(article) && state.token === token && state.themeKey === key && themeInput(article).key === key) article.setAttribute('data-theme-state', 'error');
+      if (!current()) return;
+      state.controller = null;
+      if (state.attempts <= themeRetryDelays.length) {
+        state.phase = 'retrying';
+        article.setAttribute('data-theme-state', 'retrying');
+        state.retryTimer = root.setTimeout(function () {
+          state.retryTimer = null;
+          if (!current()) {
+            if (state.token === token) resetTheme(state, '');
+            return;
+          }
+          var nextPalette = paletteApi();
+          if (!nextPalette || typeof nextPalette.get !== 'function') {
+            state.phase = 'error';
+            activeThemes.delete(state);
+            article.setAttribute('data-theme-state', 'error');
+            return;
+          }
+          sampleTheme(article, state, input, nextPalette);
+        }, themeRetryDelays[state.attempts - 1]);
+      } else {
+        state.phase = 'error';
+        activeThemes.delete(state);
+        article.setAttribute('data-theme-state', 'error');
+      }
     });
+  }
+
+  function applyTheme(article, state) {
+    var input = themeInput(article);
+    var mode = input.mode, url = input.url, crop = input.crop, key = input.key;
+    if (mode === 'manual' || !url) {
+      if (state.themeKey !== key) resetTheme(state, key);
+      state.phase = mode === 'manual' ? 'manual' : 'empty';
+      article.setAttribute('data-theme-state', mode === 'manual' ? 'manual' : 'empty');
+      return;
+    }
+    var palette = paletteApi();
+    if (!palette || typeof palette.get !== 'function') {
+      if (state.themeKey !== key) resetTheme(state, key);
+      state.phase = 'waiting';
+      article.setAttribute('data-theme-state', paletteAttempts >= 20 ? 'error' : 'waiting');
+      schedulePaletteRetry();
+      return;
+    }
+    if (state.themeKey !== key) resetTheme(state, key);
+    else if (state.phase && state.phase !== 'waiting') return;
+    sampleTheme(article, state, input, palette);
   }
 
   function initializeArticle(article) {
     if (!connected(article)) return;
     var state = articleStates.get(article);
-    if (!state) { state = { themeKey: '', token: 0 }; articleStates.set(article, state); }
+    if (!state) { state = { article: article, themeKey: '', token: 0, phase: '', attempts: 0, retryTimer: null, controller: null }; articleStates.set(article, state); }
     article.querySelectorAll('.bd3-map[data-lat][data-lon]').forEach(function (element) { initializeMap(element, article); });
     applyTheme(article, state);
   }
@@ -260,6 +321,7 @@
   function scan(scope) {
     if (!document) return;
     activeMaps.forEach(function (state) { if (!connected(state.element) || !connected(state.article)) disposeMap(state); });
+    activeThemes.forEach(function (state) { if (!connected(state.article)) resetTheme(state, ''); });
     var target = scope && typeof scope.querySelectorAll === 'function' ? scope : document;
     if (target.matches && target.matches(selector)) initializeArticle(target);
     target.querySelectorAll(selector).forEach(initializeArticle);
@@ -274,12 +336,12 @@
   function refresh(article) {
     if (article) {
       var state = articleStates.get(article);
-      if (state) { state.themeKey = ''; state.token += 1; }
+      if (state) resetTheme(state, '');
       scan(article);
     } else {
       if (document) document.querySelectorAll(selector).forEach(function (element) {
         var state = articleStates.get(element);
-        if (state) { state.themeKey = ''; state.token += 1; }
+        if (state) resetTheme(state, '');
       });
       scan();
     }
@@ -311,5 +373,5 @@
     scan();
   }
 
-  return { version: 5, start: start, scan: scan, refresh: refresh, normalizeLocation: normalizeLocation, normalizeColour: normalizeColour, buildMapDocument: buildMapDocument };
+  return { version: 5, revision: 2, start: start, scan: scan, refresh: refresh, normalizeLocation: normalizeLocation, normalizeColour: normalizeColour, buildMapDocument: buildMapDocument };
 }));

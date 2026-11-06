@@ -2,8 +2,8 @@
   'use strict';
   const STORAGE_KEY = 'bluehour.character-atelier.library.v1';
   const SETTINGS_KEY = 'bluehour.character-atelier.settings.v1';
-  const PREVIOUS_STYLESHEETS = ['https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v4.css'];
-  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.css';
+  const PREVIOUS_STYLESHEETS = [1, 2, 3, 4, 5].map(version => 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v' + version + '.css');
+  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.1.css';
   const $ = id => document.getElementById(id);
   const clone = value => JSON.parse(JSON.stringify(value));
   let fieldCounter = 0;
@@ -400,6 +400,7 @@
     const crop = character.imagePosition || '50% 35%';
     const url = Dossier.safeUrl(character.portrait);
     const key = url + '|' + crop;
+    const paletteVersion = Number(globalThis.PhotoPalette?.version) || 1;
     if (character.themeMode === 'manual') { cancelPhotoTheme(character.id); showPhotoThemeStatus(character); return Promise.resolve({ status: 'manual' }); }
     if (!url) {
       cancelPhotoTheme(character.id);
@@ -408,7 +409,7 @@
     }
     const activeJob = photoThemeJobs.get(character.id);
     if (!force && activeJob && photoThemeStates.get(character.id)?.key === key) { showPhotoThemeStatus(character); return activeJob.promise; }
-    if (!force && character.paletteSource === url && (character.paletteCrop || '50% 35%') === crop && fullHex(character.accent)) {
+    if (!force && character.paletteSource === url && (character.paletteCrop || '50% 35%') === crop && character.paletteVersion === paletteVersion && fullHex(character.accent)) {
       cancelPhotoTheme(character.id);
       photoThemeStates.set(character.id, { key, status: 'ready', message: 'Colour matched automatically to the header photo.' });
       showPhotoThemeStatus(character); return Promise.resolve(photoThemeStates.get(character.id));
@@ -422,19 +423,21 @@
     }
     const controller = new AbortController();
     const token = ++photoThemeSequence;
-    const job = { token, controller, timer: null, resolve: null, promise: null };
+    const job = { token, controller, timer: null, resolve: null, promise: null, attempts: 0 };
     job.promise = new Promise(resolve => { job.resolve = resolve; });
     photoThemeJobs.set(character.id, job);
     photoThemeStates.set(character.id, { key, status: 'loading', message: 'Finding the colours in the header photo…' });
     showPhotoThemeStatus(character);
     const stillCurrent = () => photoThemeJobs.get(character.id)?.token === token && !controller.signal.aborted && character.themeMode !== 'manual' && Dossier.safeUrl(character.portrait) === url && (character.imagePosition || '50% 35%') === crop && library.characters.includes(character);
-    job.timer = setTimeout(async () => {
+    const attempt = async () => {
+      if (!stillCurrent()) { job.resolve({ status: 'cancelled' }); return; }
+      job.attempts += 1;
       try {
         const sources = globalThis.PHOTO_PALETTE_SOURCES || {};
         const sourceUrl = typeof sources[url] === 'string' ? sources[url] : undefined;
-        const colour = await PhotoPalette.get(url, { crop, sourceUrl, signal: controller.signal, refresh: Boolean(force) });
+        const colour = await PhotoPalette.get(url, { crop, sourceUrl, signal: controller.signal, refresh: Boolean(force) || job.attempts > 1 });
         if (!stillCurrent()) { job.resolve({ status: 'cancelled' }); return; }
-        character.accent = colour; character.themeMode = 'auto'; character.paletteSource = url; character.paletteCrop = crop;
+        character.accent = colour; character.themeMode = 'auto'; character.paletteSource = url; character.paletteCrop = crop; character.paletteVersion = paletteVersion;
         photoThemeJobs.delete(character.id);
         photoThemeStates.set(character.id, { key, status: 'ready', message: 'Colour matched automatically to the header photo.' });
         if (character === current()) { updateChromeColour(); showPhotoThemeStatus(character); }
@@ -442,12 +445,19 @@
         job.resolve({ status: 'ready' });
       } catch (error) {
         if (error.name === 'AbortError' || !stillCurrent()) { job.resolve({ status: 'cancelled' }); return; }
+        if (job.attempts < 3) {
+          photoThemeStates.set(character.id, { key, status: 'loading', message: 'The photo could not be read yet. Retrying automatically (' + (job.attempts + 1) + ' of 3)…' });
+          showPhotoThemeStatus(character);
+          job.timer = setTimeout(attempt, job.attempts === 1 ? 1200 : 3000);
+          return;
+        }
         photoThemeJobs.delete(character.id);
-        photoThemeStates.set(character.id, { key, status: 'error', message: error.message || 'The photo could not be sampled. The previous colour is kept.' });
+        photoThemeStates.set(character.id, { key, status: 'error', message: 'The photo could not be read after 3 attempts. The previous colour is kept. Check the image address or choose Sample photo again.' });
         showPhotoThemeStatus(character);
         job.resolve({ status: 'error', message: error.message });
       }
-    }, force ? 0 : 350);
+    };
+    job.timer = setTimeout(attempt, force ? 0 : 350);
     return job.promise;
   }
   function colourFields(character) {
@@ -728,9 +738,9 @@
     try {
       const rendered = Dossier.render(character, { includeStylesheet: false });
       generatedCode = Dossier.forum(character, stylesheetUrl());
-      const localCss = new URL('dossier-v5.css', document.baseURI).href;
+      const localCss = new URL('dossier-v5.1.css', document.baseURI).href;
       const css = typeof globalThis.DOSSIER_PREVIEW_CSS === 'string' ? '<style>' + globalThis.DOSSIER_PREVIEW_CSS.replace(/<\/style/gi, '<\\/style') + '</style>' : '<link rel="stylesheet" href="' + Dossier.escapeHtml(localCss) + '">';
-      const runtime = typeof globalThis.DOSSIER_PREVIEW_RUNTIME === 'string' ? '<script>' + globalThis.DOSSIER_PREVIEW_RUNTIME.replace(/<\/script/gi, '<\\/script') + '</script>' : '<script src="' + Dossier.escapeHtml(new URL('dossier-runtime-v5.js', document.baseURI).href) + '"></script>';
+      const runtime = typeof globalThis.DOSSIER_PREVIEW_RUNTIME === 'string' ? '<script>' + globalThis.DOSSIER_PREVIEW_RUNTIME.replace(/<\/script/gi, '<\\/script') + '</script>' : '<script src="' + Dossier.escapeHtml(new URL('dossier-runtime-v5.1.js', document.baseURI).href) + '"></script>';
       const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v5{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + runtime + '</body></html>';
       $('dossier-preview').srcdoc = doc;
       $('preview-error').hidden = true;
@@ -776,7 +786,7 @@
     const originalCrop = character.imagePosition || '50% 35%';
     exportBusy = true;
     $('copy-post').disabled = true; $('download-post').disabled = true;
-    if (character.themeMode !== 'manual' && originalUrl && (character.paletteSource !== originalUrl || (character.paletteCrop || '50% 35%') !== originalCrop)) message('Matching the page colour to the header photo before preparing the post…');
+    if (character.themeMode !== 'manual' && originalUrl && (character.paletteSource !== originalUrl || (character.paletteCrop || '50% 35%') !== originalCrop || character.paletteVersion !== (Number(globalThis.PhotoPalette?.version) || 1))) message('Matching the page colour to the header photo before preparing the post…');
     try {
       const result = await requestPhotoTheme(character, false);
       if (current() !== character || Dossier.safeUrl(character.portrait) !== originalUrl || (character.imagePosition || '50% 35%') !== originalCrop || result?.status === 'cancelled') {

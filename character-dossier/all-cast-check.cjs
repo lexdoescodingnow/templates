@@ -86,10 +86,10 @@ test('The ZIP is complete, internally valid and shares its assets once',()=>{
   assert(archive.get('index.html').includes('href="atelier.html"'));
   assert.equal(Array.from(archive.keys()).filter(name=>name.startsWith('posts/')).length,181);
   assert.equal(Array.from(archive.keys()).filter(name=>name.startsWith('previews/')).length,181);
-  assert.equal(archive.get('assets/dossier-v5.css'),read('dossier-v5.css'));
-  assert.equal(archive.get('assets/dossier-runtime-v5.js'),read('palette.js')+'\n'+read('runtime.js'));
+  assert.equal(archive.get('assets/dossier-v5.1.css'),read('dossier-v5.1.css'));
+  assert.equal(archive.get('assets/dossier-runtime-v5.1.js'),read('palette.js')+'\n'+read('runtime.js'));
   assert.deepEqual(JSON.parse(archive.get('library.json')),library);
-  new vm.Script(archive.get('assets/dossier-runtime-v5.js'),{filename:'archived-runtime.js'});
+  new vm.Script(archive.get('assets/dossier-runtime-v5.1.js'),{filename:'archived-runtime.js'});
   assert.throws(()=>createZip([{name:'../outside.txt',data:'x'}]),/Unsafe/);
   assert.throws(()=>createZip([{name:'same.txt',data:'x'},{name:'same.txt',data:'y'}]),/duplicate/);
   const unicode=readZip(createZip([{name:'unicode.txt',data:'Jiae · 지애 · He / Him'}]));
@@ -103,8 +103,8 @@ test('All 181 previews and forum posts match their own current character',()=>{
     assert.equal(post,Dossier.forum(character,defaultCssUrl),'Wrong or outdated forum post: '+character.id);
     assert(preview.includes(Dossier.render(character)),'Wrong or outdated preview: '+character.id);
     assert.equal((preview.match(/<article class="bh-dossier-v5"/g)||[]).length,1);
-    assert(preview.includes('href="../assets/dossier-v5.css"'));
-    assert(preview.includes('src="../assets/dossier-runtime-v5.js"'));
+    assert(preview.includes('href="../assets/dossier-v5.1.css"'));
+    assert(preview.includes('src="../assets/dossier-runtime-v5.1.js"'));
     assert(!preview.includes('srcdoc='),'A map document leaked back into forum-parsed markup');
     assert(!/<script\s*>/.test(preview),'Individual previews should use the shared runtime');
     assert.equal((post.match(/<link rel="stylesheet"/g)||[]).length,1);

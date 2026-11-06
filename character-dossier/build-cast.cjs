@@ -6,7 +6,7 @@ const crypto = require('node:crypto');
 const zlib = require('node:zlib');
 const Dossier = require('./dossier-model.js');
 const root = __dirname;
-const defaultCssUrl = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.css';
+const defaultCssUrl = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.1.css';
 const read = name => fs.readFileSync(path.join(root,name),'utf8');
 const html = Dossier.escapeHtml;
 const hash = value => crypto.createHash('sha256').update(value).digest('hex');
@@ -109,7 +109,7 @@ function coverageHtml(coverage) {
 }
 
 function previewHtml(character) {
-  return '<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+html(character.name)+' · Blue Hour</title><link rel="stylesheet" href="../assets/dossier-v5.css"><style>body{margin:0;padding:20px 12px;background:#101413;color-scheme:dark}</style></head><body>'+Dossier.render(character)+'<script src="../assets/dossier-runtime-v5.js"></script></body></html>';
+  return '<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+html(character.name)+' · Blue Hour</title><link rel="stylesheet" href="../assets/dossier-v5.1.css"><style>body{margin:0;padding:20px 12px;background:#101413;color-scheme:dark}</style></head><body>'+Dossier.render(character)+'<script src="../assets/dossier-runtime-v5.1.js"></script></body></html>';
 }
 
 function archiveIndex(library) {
@@ -117,7 +117,7 @@ function archiveIndex(library) {
 }
 
 function browserHtml(library,cssUrl,runtime) {
-  return '<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blue Hour · All characters</title><style>'+read('cast.css')+'</style><style>'+read('dossier-v5.css')+'</style></head><body><main class="cast-shell"><header class="cast-heading"><div><h1>Blue Hour · Character library</h1><p>'+library.characters.length+' characters, ready to browse, edit and post.</p></div><nav class="cast-actions"><a class="cast-button" href="atelier.html">Open the editor</a><a class="cast-button" href="all-characters.zip" download>Download all profiles</a><a class="cast-button" href="migration-coverage.html">Source coverage</a><button type="button" id="cast-theme">Light view</button></nav></header><noscript><p class="cast-noscript">The character chooser needs JavaScript. <a href="all-characters.zip" download>Download all profiles</a> for individual readable previews and forum posts.</p></noscript><div class="cast-workspace"><aside class="cast-sidebar"><label for="cast-search">Find a character</label><input type="search" id="cast-search" placeholder="Name or nickname" autocomplete="off"><span id="cast-result-count" class="cast-result-count"></span><div id="cast-list" class="cast-list" aria-label="Characters"></div><p id="cast-empty" class="cast-empty" hidden>No matching characters.</p></aside><section class="cast-stage" aria-label="Selected character"><div class="cast-toolbar"><h2 id="cast-selected-name"></h2><a id="cast-edit" class="cast-button" href="atelier.html">Edit this character</a><button type="button" id="cast-copy">Copy forum post</button><button type="button" id="cast-download">Download post</button></div><p id="cast-status" class="cast-status" role="status"></p><details id="cast-code" class="cast-code"><summary>View forum code</summary><textarea id="cast-code-text" readonly aria-label="Ready-to-paste forum post" spellcheck="false"></textarea></details><div id="cast-preview" class="cast-preview"></div></section></div></main>'+script(read('dossier-model.js'))+script('window.DOSSIER_CAST_DATA='+jsonScript(library)+';window.DOSSIER_CAST_CONFIG='+jsonScript({stylesheetUrl:cssUrl})+';')+script(read('cast-browser.js'))+script(runtime)+'</body></html>';
+  return '<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blue Hour · All characters</title><style>'+read('cast.css')+'</style><style>'+read('dossier-v5.1.css')+'</style></head><body><main class="cast-shell"><header class="cast-heading"><div><h1>Blue Hour · Character library</h1><p>'+library.characters.length+' characters, ready to browse, edit and post.</p></div><nav class="cast-actions"><a class="cast-button" href="atelier.html">Open the editor</a><a class="cast-button" href="all-characters.zip" download>Download all profiles</a><a class="cast-button" href="migration-coverage.html">Source coverage</a><button type="button" id="cast-theme">Light view</button></nav></header><noscript><p class="cast-noscript">The character chooser needs JavaScript. <a href="all-characters.zip" download>Download all profiles</a> for individual readable previews and forum posts.</p></noscript><div class="cast-workspace"><aside class="cast-sidebar"><label for="cast-search">Find a character</label><input type="search" id="cast-search" placeholder="Name or nickname" autocomplete="off"><span id="cast-result-count" class="cast-result-count"></span><div id="cast-list" class="cast-list" aria-label="Characters"></div><p id="cast-empty" class="cast-empty" hidden>No matching characters.</p></aside><section class="cast-stage" aria-label="Selected character"><div class="cast-toolbar"><h2 id="cast-selected-name"></h2><a id="cast-edit" class="cast-button" href="atelier.html">Edit this character</a><button type="button" id="cast-copy">Copy forum post</button><button type="button" id="cast-download">Download post</button></div><p id="cast-status" class="cast-status" role="status"></p><details id="cast-code" class="cast-code"><summary>View forum code</summary><textarea id="cast-code-text" readonly aria-label="Ready-to-paste forum post" spellcheck="false"></textarea></details><div id="cast-preview" class="cast-preview"></div></section></div></main>'+script(read('dossier-model.js'))+script('window.DOSSIER_CAST_DATA='+jsonScript(library)+';window.DOSSIER_CAST_CONFIG='+jsonScript({stylesheetUrl:cssUrl})+';')+script(read('cast-browser.js'))+script(runtime)+'</body></html>';
 }
 
 function buildAllCast(library,options={}) {
@@ -133,8 +133,8 @@ function buildAllCast(library,options={}) {
     {name:'index.html',data:archiveIndex(library).replace('<p><a href="migration-coverage.html">','<p><a href="atelier.html">Open the shared character editor</a> · <a href="migration-coverage.html">')},
     {name:'atelier.html',data:read('atelier.html')},
     {name:'library.json',data:JSON.stringify(library,null,2)+'\n'},
-    {name:'assets/dossier-v5.css',data:read('dossier-v5.css')},
-    {name:'assets/dossier-runtime-v5.js',data:runtime},
+    {name:'assets/dossier-v5.1.css',data:read('dossier-v5.1.css')},
+    {name:'assets/dossier-runtime-v5.1.js',data:runtime},
     {name:'migration-coverage.json',data:coverageJson},
     {name:'migration-coverage.html',data:coveragePage.replace('<nav><a href="cast.html">Browse characters</a><a href="atelier.html">Open the editor</a><a href="all-characters.zip" download>Download all profiles</a></nav>','<nav><a href="index.html">Browse characters</a></nav>')}
   ];

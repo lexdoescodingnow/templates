@@ -65,8 +65,9 @@
     }
     if (!opaque.length) throw new Error('The photo has no visible pixels to sample.');
     var usable = candidates.length ? candidates : opaque;
-    var selected = [], minimumCount = Math.max(3, Math.floor(usable.length * 0.008));
-    if (colourful > usable.length * 0.025) {
+    var neutralDominant = colourful < usable.length * 0.15;
+    var selected = [], minimumCount = Math.max(3, Math.floor(usable.length * 0.03));
+    if (!neutralDominant) {
       var winner = -1, highest = -1;
       groups.forEach(function (group, bucket) {
         var before = groups[(bucket + 23) % 24], after = groups[(bucket + 1) % 24];
@@ -79,12 +80,15 @@
         selected = candidates.filter(function (item) { return item.s >= 0.18 && hueDistance(item.h, centre) <= 27; });
       }
     }
-    if (!selected.length) selected = usable.map(function (item) { return Object.assign({}, item, { weight: 1 }); });
+    if (!selected.length) {
+      var background = neutralDominant ? usable.filter(function (item) { return item.s < 0.18; }) : usable;
+      selected = (background.length ? background : usable).map(function (item) { return Object.assign({}, item, { weight: 1 }); });
+    }
     var red = 0, green = 0, blue = 0, total = 0;
     selected.forEach(function (item) { var weight = item.weight || 1; red += item.r * weight; green += item.g * weight; blue += item.b * weight; total += weight; });
     var colour = rgbToHsl(red / total, green / total, blue / total);
     colour.l = clamp(colour.l, 0.30, 0.55);
-    if (colour.s >= 0.15) colour.s = clamp(colour.s, 0.28, 0.78);
+    if (!neutralDominant && colour.s >= 0.15) colour.s = clamp(colour.s, 0.28, 0.78);
     return hex(hslToRgb(colour.h, colour.s, colour.l));
   }
 
@@ -175,5 +179,5 @@
     return abortable(cache.get(key), options.signal);
   }
   function clear() { cache.clear(); }
-  return { get: get, fromPixels: fromPixels, proxyUrl: proxyUrl, clear: clear };
+  return { version: 2, get: get, fromPixels: fromPixels, proxyUrl: proxyUrl, clear: clear };
 }));

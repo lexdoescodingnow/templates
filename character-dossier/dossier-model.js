@@ -120,6 +120,7 @@
       imagePosition: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.imagePosition, 20)) ? text(raw.imagePosition, 20) : '50% 35%',
       accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
       themeMode: raw.themeMode === 'manual' ? 'manual' : 'auto', paletteSource: safeUrl(raw.paletteSource),
+      paletteVersion: Number.isSafeInteger(raw.paletteVersion) && raw.paletteVersion > 0 ? raw.paletteVersion : 0,
       paletteCrop: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.paletteCrop, 20)) ? text(raw.paletteCrop, 20) : '',
       tags: Array.from(new Set(list(raw.tags, 50).map(function (tag) { return text(tag, 120).replace(/^#+/, '').trim(); }).filter(Boolean))),
       facts: records(raw.facts, 150).map(function (fact) { return { label: text(fact.label, 160), value: text(fact.value, 2000) }; }),
@@ -371,7 +372,7 @@
   function forum(character, cssUrl) {
     var url = safeUrl(cssUrl);
     if (!url) throw new Error('Forum code needs the public stylesheet address.');
-    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.js" defer></script>[/dohtml]';
+    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.1.js" defer></script>[/dohtml]';
   }
   return { normalizeCharacter: normalizeCharacter, normalizeDataset: normalizeDataset, render: render, forum: forum, sortTimeline: sortTimeline, escapeHtml: escapeHtml, safeUrl: safeUrl };
 }));

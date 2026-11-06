@@ -49,7 +49,7 @@ function safeNormalization(input, assertion) {
   catch (error) { assert(error instanceof Error); return; }
   assertion(value);
 }
-const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.css';
+const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.1.css';
 const sam = library.characters.find(item => item.id === 'baek-samuel');
 
 test('All 181 canonical identities and imported details survive normalization', () => {
@@ -152,13 +152,20 @@ test('Photo palettes follow visible image colours while manual choices and cache
   const [br,bg,bb] = rgb(Palette.fromPixels(blue));
   assert(gg>gr && gg>gb && bb>br && bb>bg, 'Distinct photo colours should produce corresponding accent families');
   assert.equal(Palette.fromPixels([...green,255,0,255,0]), Palette.fromPixels(green), 'Transparent pixels must not influence a photo palette');
+  const nearlyGrey = [...Array.from({length:96},()=>[140,142,145,255]),...Array.from({length:4},()=>[40,130,55,255])].flat();
+  const muted = rgb(Palette.fromPixels(nearlyGrey));
+  assert(Math.max(...muted)-Math.min(...muted)<10, 'A small green edge must not override a predominantly grey photograph');
+  const colourfulScene = [...Array.from({length:60},()=>[35,65,170,255]),...Array.from({length:40},()=>[140,142,145,255])].flat();
+  const coloured = rgb(Palette.fromPixels(colourfulScene));
+  assert(coloured[2]>coloured[0]*1.5 && coloured[2]>coloured[1]*1.5, 'A substantial blue area still sets the theme');
   assert.throws(()=>Palette.fromPixels([255,0,255,0]));
   assert.throws(()=>Palette.fromPixels([1,2,3]));
-  const record = Dossier.normalizeCharacter(character({themeMode:'manual',accent:'#345678',paletteSource:'https://example.com/photo.png',paletteCrop:'25% 70%'}));
+  const record = Dossier.normalizeCharacter(character({themeMode:'manual',accent:'#345678',paletteSource:'https://example.com/photo.png',paletteCrop:'25% 70%',paletteVersion:Palette.version}));
   assert.deepEqual(Dossier.normalizeCharacter(JSON.parse(JSON.stringify(record))),record);
   assert.equal(record.themeMode, 'manual');
   assert.equal(record.accent, '#345678');
   assert.equal(record.paletteCrop, '25% 70%');
+  assert.equal(record.paletteVersion, Palette.version);
   assert(Dossier.render(record).includes('data-theme-mode="manual"'));
   assert.equal(Dossier.normalizeCharacter(character()).themeMode, 'auto');
   for (const url of ['http://example.com/photo.png','https://localhost/photo.png','https://192.168.1.1/photo.png','https://example.com/photo.png?token=secret','https://example.com/photo.png?signature=secret','https://user:password@example.com/photo.png']) assert.equal(Palette.proxyUrl(url), '');
@@ -412,7 +419,7 @@ test('Forum output preserves static content with one shared stylesheet and one f
   assert.equal((output.match(/<link\b[^>]*rel="stylesheet"/g)||[]).length, 1);
   const scripts = Array.from(output.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi));
   assert.equal(scripts.length, 1);
-  assert.equal(scripts[0][1].match(/\bsrc="([^"]*)"/)[1], 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.js');
+  assert.equal(scripts[0][1].match(/\bsrc="([^"]*)"/)[1], 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.1.js');
   assert.equal(scripts[0][2], '');
   assert(!/\bsrcdoc=|pgy-pikeplace|dropboxusercontent|unpkg\.com|bluehour-cosmicmeet/i.test(output));
   assert(output.includes(stylesheet));

@@ -28315,7 +28315,7 @@ var DOSSIER_NOTICES = {
 };
 var DOSSIER_SOURCE_METADATA = {
   "aaron-wang": {
-    "revision": "cast-2026-11-06-b0e4dfda95aae711",
+    "revision": "cast-2026-11-06-735177582658174e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28346,7 +28346,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "adrian-baek": {
-    "revision": "cast-2026-11-06-ab6b1abea4be8529",
+    "revision": "cast-2026-11-06-44ae46ebc20639e9",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28376,7 +28376,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "adriel-sang": {
-    "revision": "cast-2026-11-06-b6d7693240bf03d3",
+    "revision": "cast-2026-11-06-0ded0cd6eb929e8b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28407,7 +28407,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "akara-siripong": {
-    "revision": "cast-2026-11-06-e4c1984b4e1c52f5",
+    "revision": "cast-2026-11-06-c1af906f57d9a428",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28437,7 +28437,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "alastair-choi": {
-    "revision": "cast-2026-11-06-dd66c6778f2c4bdd",
+    "revision": "cast-2026-11-06-148455e86f437f62",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28467,7 +28467,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "alec-rivera": {
-    "revision": "cast-2026-11-06-c67bee7e0a290cab",
+    "revision": "cast-2026-11-06-6937b77f7c5ce4c1",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28495,7 +28495,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "alexander-park": {
-    "revision": "cast-2026-11-06-e6bbaf38c32c7cd2",
+    "revision": "cast-2026-11-06-4463477df4505428",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28524,7 +28524,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "alfie-shin": {
-    "revision": "cast-2026-11-06-e59a47a3f117f3a0",
+    "revision": "cast-2026-11-06-66c5bb89bfa1af6b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28552,7 +28552,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "andrew-kwon": {
-    "revision": "cast-2026-11-06-8f3094b6ccf8849f",
+    "revision": "cast-2026-11-06-0e5f5b8e0cf518b8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28582,7 +28582,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "antony-moon": {
-    "revision": "cast-2026-11-06-51b25bab1adf9e85",
+    "revision": "cast-2026-11-06-4e74e3520932d48e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28612,7 +28612,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "arthur-chung": {
-    "revision": "cast-2026-11-06-7a11adf6fbb639d6",
+    "revision": "cast-2026-11-06-0b0b47ecd624a87c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28642,7 +28642,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "asher-nam": {
-    "revision": "cast-2026-11-06-f531946bf74587da",
+    "revision": "cast-2026-11-06-695e4461456a89df",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28672,7 +28672,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "august-tang": {
-    "revision": "cast-2026-11-06-d5ad1f4d7fd3ddfc",
+    "revision": "cast-2026-11-06-7151d2be0c34199c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28702,7 +28702,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "bae-chanwoo": {
-    "revision": "cast-2026-11-06-8490a996facfd037",
+    "revision": "cast-2026-11-06-a8b7a07c8c708342",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -28740,7 +28740,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "bae-jaehoon": {
-    "revision": "cast-2026-11-06-0fd6485500f54188",
+    "revision": "cast-2026-11-06-fc2d40867c5c8c04",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28769,7 +28769,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "baek-jiae": {
-    "revision": "cast-2026-11-06-206825ea85a2cab6",
+    "revision": "cast-2026-11-06-8304036a7471ae0d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28799,7 +28799,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "baek-samuel": {
-    "revision": "cast-2026-11-06-6462c2bfe1b34f83",
+    "revision": "cast-2026-11-06-4225a56e0ffa922a",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -28826,7 +28826,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "baek-yujun": {
-    "revision": "cast-2026-11-06-cac677183d862f38",
+    "revision": "cast-2026-11-06-494a0f2a3b197a92",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28856,7 +28856,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "bang-di-wang": {
-    "revision": "cast-2026-11-06-1c7fffe2373f2ae1",
+    "revision": "cast-2026-11-06-3f5410eccc28132a",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -28901,7 +28901,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "ben-dam": {
-    "revision": "cast-2026-11-06-f344ab7f26c1d1f5",
+    "revision": "cast-2026-11-06-2d92c00ae24eb3b4",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -28947,7 +28947,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "beom-jaehyun": {
-    "revision": "cast-2026-11-06-1f54205a0ab429f3",
+    "revision": "cast-2026-11-06-820257704d92a319",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28978,7 +28978,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "byun-kiha": {
-    "revision": "cast-2026-11-06-f45989714e12ea5a",
+    "revision": "cast-2026-11-06-44cfa11bef09a489",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29025,7 +29025,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "byun-yuseop": {
-    "revision": "cast-2026-11-06-e99964b74b951623",
+    "revision": "cast-2026-11-06-022882f52b4109dd",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29072,7 +29072,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cal-myung": {
-    "revision": "cast-2026-11-06-c33199fda4f5480f",
+    "revision": "cast-2026-11-06-5503fe02d5ea4a8b",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29117,7 +29117,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "caleb-sim": {
-    "revision": "cast-2026-11-06-951f0d7bbfaae765",
+    "revision": "cast-2026-11-06-90fb81d84761c710",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29147,7 +29147,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "casper-min-peters": {
-    "revision": "cast-2026-11-06-474597b5b0c7179b",
+    "revision": "cast-2026-11-06-64e1c99db88a646d",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29192,7 +29192,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "chan-daejin": {
-    "revision": "cast-2026-11-06-9e7fbf9a46b83199",
+    "revision": "cast-2026-11-06-49cb0743be99707d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29220,7 +29220,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cho-minho": {
-    "revision": "cast-2026-11-06-e4c00dfeedcf2333",
+    "revision": "cast-2026-11-06-02a04d6d7e1c894e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29249,7 +29249,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cho-suho": {
-    "revision": "cast-2026-11-06-94094ab9315f3b6a",
+    "revision": "cast-2026-11-06-7ae69bb617c1e0d4",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29279,7 +29279,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "choi-jinho": {
-    "revision": "cast-2026-11-06-24d9f41621b8314a",
+    "revision": "cast-2026-11-06-f11890d08d82040f",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29318,7 +29318,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "choi-jinseok": {
-    "revision": "cast-2026-11-06-215307bc7e1ebb25",
+    "revision": "cast-2026-11-06-5c834caadaff8a2b",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29385,7 +29385,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "choi-jinwoo": {
-    "revision": "cast-2026-11-06-a282049b1e2ca235",
+    "revision": "cast-2026-11-06-094920faf902cbda",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29424,7 +29424,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "choi-taeyang": {
-    "revision": "cast-2026-11-06-f1996ff4f6cc1119",
+    "revision": "cast-2026-11-06-2c686291ff567fb1",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29470,7 +29470,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cian-campbell": {
-    "revision": "cast-2026-11-06-5dfe9f9650ec9590",
+    "revision": "cast-2026-11-06-999acb05e10cc380",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29500,7 +29500,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "clarity-prasit-chatri": {
-    "revision": "cast-2026-11-06-75ac9759088cfab4",
+    "revision": "cast-2026-11-06-85c9ee9752a15029",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29530,7 +29530,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cody-baek": {
-    "revision": "cast-2026-11-06-cd1afd69278337be",
+    "revision": "cast-2026-11-06-ef0c5f9bc64b5946",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29559,7 +29559,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cole-sim": {
-    "revision": "cast-2026-11-06-b62ddd1875b96001",
+    "revision": "cast-2026-11-06-c4ee684ee3a8c82e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29589,7 +29589,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "congressman-edison-lee": {
-    "revision": "cast-2026-11-06-99a62a180102c3f9",
+    "revision": "cast-2026-11-06-4843ef22ce4908b6",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29617,7 +29617,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cookie-chalongrat-vihokratana": {
-    "revision": "cast-2026-11-06-948c13f9c86fee82",
+    "revision": "cast-2026-11-06-532ab87ec2a89d89",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29654,7 +29654,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "davis-huang-yoon": {
-    "revision": "cast-2026-11-06-9ca3bf14b2229f4e",
+    "revision": "cast-2026-11-06-8fedb606524981bb",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29699,7 +29699,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "deung-changmin": {
-    "revision": "cast-2026-11-06-a11e09452bed1f02",
+    "revision": "cast-2026-11-06-92a01dc49441a21e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29727,7 +29727,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "diego-martinez": {
-    "revision": "cast-2026-11-06-76e196cc49d6d006",
+    "revision": "cast-2026-11-06-e0502ae2bccba020",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29756,7 +29756,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "dominic-lim": {
-    "revision": "cast-2026-11-06-4338a40d155bdacb",
+    "revision": "cast-2026-11-06-6f3ac92ad32075b4",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29802,7 +29802,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "dr-zhou-zhiyuan": {
-    "revision": "cast-2026-11-06-46ee758cd871a91b",
+    "revision": "cast-2026-11-06-160a5ad067eacc82",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29832,7 +29832,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "dustin-jeon": {
-    "revision": "cast-2026-11-06-0b0db1d02d62dfb9",
+    "revision": "cast-2026-11-06-024eb3ff7954c64e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29862,7 +29862,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "elias-lim": {
-    "revision": "cast-2026-11-06-8b388a9243f74875",
+    "revision": "cast-2026-11-06-026bfde4d0dd5ee3",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29892,7 +29892,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "eric-jeon": {
-    "revision": "cast-2026-11-06-6f04037882bbb722",
+    "revision": "cast-2026-11-06-24bb692838efe091",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29938,7 +29938,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "finn-campbell": {
-    "revision": "cast-2026-11-06-8ac93cebc10c2d86",
+    "revision": "cast-2026-11-06-2f521af8b0e1a74c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29968,7 +29968,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "forest-lee": {
-    "revision": "cast-2026-11-06-dd34c2f61f26afc7",
+    "revision": "cast-2026-11-06-f689a35419f282ad",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29997,7 +29997,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "franklin-jwa": {
-    "revision": "cast-2026-11-06-db1993d2508d46d0",
+    "revision": "cast-2026-11-06-798578fc31e450dd",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30027,7 +30027,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "freddie-lim": {
-    "revision": "cast-2026-11-06-3676c23d6dd4e677",
+    "revision": "cast-2026-11-06-7d2c184fbadc4cb2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30058,7 +30058,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "ga-baekhyeon": {
-    "revision": "cast-2026-11-06-aecd84b08663f39b",
+    "revision": "cast-2026-11-06-4efa368912a2dab2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30086,7 +30086,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gabriel-yang": {
-    "revision": "cast-2026-11-06-555f249ac2db5e96",
+    "revision": "cast-2026-11-06-8298443827cf8124",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30141,7 +30141,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "geum-jung": {
-    "revision": "cast-2026-11-06-759e4a95ce68be1a",
+    "revision": "cast-2026-11-06-5d15047e073ec28a",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30171,7 +30171,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gi-daehyun": {
-    "revision": "cast-2026-11-06-d511592ebfe3d1b8",
+    "revision": "cast-2026-11-06-47c1dd3a88921519",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30201,7 +30201,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gil-bokyung": {
-    "revision": "cast-2026-11-06-8ed813087e0b4567",
+    "revision": "cast-2026-11-06-0ebb474104d19231",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30248,7 +30248,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gwan-janghoon": {
-    "revision": "cast-2026-11-06-d943f07ca3f0195b",
+    "revision": "cast-2026-11-06-bed4128cfb7c2d78",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30278,7 +30278,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gyeon-seunghwan": {
-    "revision": "cast-2026-11-06-e0057e8b7b8f2fc9",
+    "revision": "cast-2026-11-06-deac9bf9a30d80e5",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30306,7 +30306,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "han-seoyeon": {
-    "revision": "cast-2026-11-06-62e666d613123a20",
+    "revision": "cast-2026-11-06-2d9af66170b415a3",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30336,7 +30336,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "hiro-kimura": {
-    "revision": "cast-2026-11-06-52c96cf8593b66c3",
+    "revision": "cast-2026-11-06-726ea9b222ab7f85",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30364,7 +30364,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "huang-haoyu": {
-    "revision": "cast-2026-11-06-4129f558d42b8dae",
+    "revision": "cast-2026-11-06-7bcfb3578656e347",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30394,7 +30394,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "huang-liang": {
-    "revision": "cast-2026-11-06-d747b4a8dbb21aca",
+    "revision": "cast-2026-11-06-3c5a4ad5861ca8e3",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30424,7 +30424,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "hunter-park": {
-    "revision": "cast-2026-11-06-a8cd8e8265dba98b",
+    "revision": "cast-2026-11-06-05904ac766aa2375",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30471,7 +30471,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "hwak-hoseong": {
-    "revision": "cast-2026-11-06-99d957f1f5ee087c",
+    "revision": "cast-2026-11-06-19c3f2c9cec5b45d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30501,7 +30501,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "isaiah-park": {
-    "revision": "cast-2026-11-06-b60b9ea92affcecb",
+    "revision": "cast-2026-11-06-3844972cb92b0248",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30546,7 +30546,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jake-lee": {
-    "revision": "cast-2026-11-06-cb250a4fcf5bdf1b",
+    "revision": "cast-2026-11-06-62cc55676a3ad8a0",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30591,7 +30591,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jamie-boo": {
-    "revision": "cast-2026-11-06-801814eabb9b4fb4",
+    "revision": "cast-2026-11-06-063252f93a48a8e4",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30620,7 +30620,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jang-yohan": {
-    "revision": "cast-2026-11-06-79816eb331cf4adf",
+    "revision": "cast-2026-11-06-a44e97f002de73a1",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30657,7 +30657,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jason-kim": {
-    "revision": "cast-2026-11-06-899ef891581f8582",
+    "revision": "cast-2026-11-06-5f828ecbafe4ab2f",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30703,7 +30703,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jeon-yejoon": {
-    "revision": "cast-2026-11-06-b9a6265f5df38fa0",
+    "revision": "cast-2026-11-06-3e217230b0e6b879",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30732,7 +30732,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jessica-kim": {
-    "revision": "cast-2026-11-06-b8579fbff891625a",
+    "revision": "cast-2026-11-06-81988793f4a62b20",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30760,7 +30760,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jett-kim": {
-    "revision": "cast-2026-11-06-f3983000a0aa8c92",
+    "revision": "cast-2026-11-06-eb35724de4b757da",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30806,7 +30806,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jeung-duckhwan": {
-    "revision": "cast-2026-11-06-9678d5c5b99bc156",
+    "revision": "cast-2026-11-06-db55e6bfb465b601",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30835,7 +30835,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jian-cheng": {
-    "revision": "cast-2026-11-06-754aa34666e1c2c7",
+    "revision": "cast-2026-11-06-0e2bc4fdf87bccd7",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30874,7 +30874,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "joseph-gil": {
-    "revision": "cast-2026-11-06-5ca30be9934668a3",
+    "revision": "cast-2026-11-06-702f3d6a185973ba",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30904,7 +30904,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "journey-parkinson-kim": {
-    "revision": "cast-2026-11-06-a640b173883d2f42",
+    "revision": "cast-2026-11-06-ab28a88830ecaf6c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30934,7 +30934,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jude-yoon": {
-    "revision": "cast-2026-11-06-7bb3cc1b678db906",
+    "revision": "cast-2026-11-06-6afb22676d7bba0a",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30980,7 +30980,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "julian-lee": {
-    "revision": "cast-2026-11-06-208faf9cd811f4d8",
+    "revision": "cast-2026-11-06-a397f4d62ed281aa",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31010,7 +31010,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jung-minseo": {
-    "revision": "cast-2026-11-06-8eaf94abed7a3381",
+    "revision": "cast-2026-11-06-6f6d6026e92e7ebc",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31040,7 +31040,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jung-taejoo": {
-    "revision": "cast-2026-11-06-b8ba9c880b2751af",
+    "revision": "cast-2026-11-06-84592d5af61b0af6",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31070,7 +31070,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jung-woobin": {
-    "revision": "cast-2026-11-06-e06f58fef3292c74",
+    "revision": "cast-2026-11-06-818051e0ec426f69",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31099,7 +31099,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "junichiro-yamasaki": {
-    "revision": "cast-2026-11-06-fd09cb10c8c7c7f8",
+    "revision": "cast-2026-11-06-d7739002edc1951d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31127,7 +31127,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kai-jeong": {
-    "revision": "cast-2026-11-06-b7530e3998accc73",
+    "revision": "cast-2026-11-06-df2f0fc8a822935e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31157,7 +31157,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kang-danwoo": {
-    "revision": "cast-2026-11-06-e8e1227a727e4d99",
+    "revision": "cast-2026-11-06-2add58789c6f3534",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31187,7 +31187,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kang-hajun": {
-    "revision": "cast-2026-11-06-e1adc08f19beff64",
+    "revision": "cast-2026-11-06-b89fa2ff6bcf5e27",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31218,7 +31218,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kang-minwoo": {
-    "revision": "cast-2026-11-06-3cb3de469e7a7451",
+    "revision": "cast-2026-11-06-63e959979e518de1",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31248,7 +31248,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kim-heechan": {
-    "revision": "cast-2026-11-06-f7530fa7308745e7",
+    "revision": "cast-2026-11-06-6489f76f77bf93e4",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31276,7 +31276,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kim-jihwan": {
-    "revision": "cast-2026-11-06-623f3825c1d9b1f6",
+    "revision": "cast-2026-11-06-1e7a928003b56d1d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31305,7 +31305,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kim-taehwan": {
-    "revision": "cast-2026-11-06-39e2dde21a2d226d",
+    "revision": "cast-2026-11-06-9bc262da519abf1b",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31351,7 +31351,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kim-taesung": {
-    "revision": "cast-2026-11-06-bd5769f8ea698b96",
+    "revision": "cast-2026-11-06-89521e9038733ddb",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31381,7 +31381,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kobayashi-yuki": {
-    "revision": "cast-2026-11-06-fef3177ff4567a4e",
+    "revision": "cast-2026-11-06-c8d73603712644dd",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31411,7 +31411,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kuronuma-minharu": {
-    "revision": "cast-2026-11-06-e3c7608719990650",
+    "revision": "cast-2026-11-06-e5fd6815402586e7",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31441,7 +31441,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kwon-kennedy": {
-    "revision": "cast-2026-11-06-d7696cd63cbf337b",
+    "revision": "cast-2026-11-06-ed0612b65c197aaa",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31486,7 +31486,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kwon-ubin": {
-    "revision": "cast-2026-11-06-cb34bffbe9ffa729",
+    "revision": "cast-2026-11-06-8a9e2fa466d08699",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31531,7 +31531,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lee-joonki": {
-    "revision": "cast-2026-11-06-4a094172e0e791c1",
+    "revision": "cast-2026-11-06-374f0a4c1c3ca9bc",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31577,7 +31577,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lee-kyoahn": {
-    "revision": "cast-2026-11-06-f4196339feb04c60",
+    "revision": "cast-2026-11-06-4b45f8e67cb9f652",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31605,7 +31605,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lena-kwon": {
-    "revision": "cast-2026-11-06-12a8bb15f5a1d965",
+    "revision": "cast-2026-11-06-b29156862dae8e4f",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31635,7 +31635,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "leo-hwang": {
-    "revision": "cast-2026-11-06-e975783a59315720",
+    "revision": "cast-2026-11-06-854afa17b6fd6047",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31681,7 +31681,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lewis-choi": {
-    "revision": "cast-2026-11-06-ba3ee9c2984c18c9",
+    "revision": "cast-2026-11-06-fd14602fc8412ce7",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31711,7 +31711,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "li-tao": {
-    "revision": "cast-2026-11-06-726ca936646b5098",
+    "revision": "cast-2026-11-06-bf24791568de22fd",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31742,7 +31742,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lim-chunhee": {
-    "revision": "cast-2026-11-06-2a5486ba91ac4d46",
+    "revision": "cast-2026-11-06-61ce91763c7616e9",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31770,7 +31770,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lucas-choi": {
-    "revision": "cast-2026-11-06-23b6780d6d9904f3",
+    "revision": "cast-2026-11-06-4238367e10dcaf76",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31806,7 +31806,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lucian-yang": {
-    "revision": "cast-2026-11-06-bc2f2106f77bfedc",
+    "revision": "cast-2026-11-06-d45e4b64f57f4b17",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31852,7 +31852,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lyle-park": {
-    "revision": "cast-2026-11-06-65f20a88f25ad195",
+    "revision": "cast-2026-11-06-d73d31ca1a5913b4",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31898,7 +31898,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "madison-sinclair": {
-    "revision": "cast-2026-11-06-fea812257b576c3c",
+    "revision": "cast-2026-11-06-1b46ad4ab5c916d0",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31926,7 +31926,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "malachi-zhong": {
-    "revision": "cast-2026-11-06-31b945a010c8030e",
+    "revision": "cast-2026-11-06-a6fa34c0a537d6f3",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31971,7 +31971,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "matthew-shin": {
-    "revision": "cast-2026-11-06-9be451571f4561f5",
+    "revision": "cast-2026-11-06-cbeb774e9652385b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32001,7 +32001,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mawaan-tehir": {
-    "revision": "cast-2026-11-06-83f4683e1e18e9b6",
+    "revision": "cast-2026-11-06-2a8f748a0add4c36",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32029,7 +32029,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "maxwell-seo": {
-    "revision": "cast-2026-11-06-311795e5c5286a3a",
+    "revision": "cast-2026-11-06-80f10edb0f4834d8",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32075,7 +32075,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mew-wasutha-singhapan": {
-    "revision": "cast-2026-11-06-341f50720a10ad2f",
+    "revision": "cast-2026-11-06-5e7691cc96dbb710",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32120,7 +32120,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mia-park": {
-    "revision": "cast-2026-11-06-bdee50fa88db0787",
+    "revision": "cast-2026-11-06-a025e1e26e8e3764",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32150,7 +32150,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "micah-ahn": {
-    "revision": "cast-2026-11-06-2602a6503df21088",
+    "revision": "cast-2026-11-06-de4f374d885a15cc",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32180,7 +32180,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "michael-baek": {
-    "revision": "cast-2026-11-06-bcce3e2e0e427196",
+    "revision": "cast-2026-11-06-4b142fd57d3a4544",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32210,7 +32210,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "miles-baek": {
-    "revision": "cast-2026-11-06-c558177ff08be34b",
+    "revision": "cast-2026-11-06-3643e2651acbf792",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32240,7 +32240,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "milo-kim": {
-    "revision": "cast-2026-11-06-ec44166499bd6e72",
+    "revision": "cast-2026-11-06-04c0a0dc91de317c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32268,7 +32268,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "min-jaeho": {
-    "revision": "cast-2026-11-06-82515fd3ae54f4f9",
+    "revision": "cast-2026-11-06-2c8d4abf247f81e6",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32313,7 +32313,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "miren-su": {
-    "revision": "cast-2026-11-06-3ee265b3e224d309",
+    "revision": "cast-2026-11-06-56fa00a2470032c5",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32341,7 +32341,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mun-dae": {
-    "revision": "cast-2026-11-06-3bb95050b091e9fd",
+    "revision": "cast-2026-11-06-72ead5f3d36b02eb",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32371,7 +32371,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mun-sangook": {
-    "revision": "cast-2026-11-06-d949fa2ece4c05c2",
+    "revision": "cast-2026-11-06-dfd6ed3961556953",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32399,7 +32399,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "nakamura-tsubasa": {
-    "revision": "cast-2026-11-06-2290ce410c5a0dd0",
+    "revision": "cast-2026-11-06-30c438098ff39ddb",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32429,7 +32429,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "nate-chung": {
-    "revision": "cast-2026-11-06-9d7a5b05b963f5a7",
+    "revision": "cast-2026-11-06-fb3a09bef7fdbde0",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32476,7 +32476,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "naveighbean-soup": {
-    "revision": "cast-2026-11-06-ad260c3e9f32ce0f",
+    "revision": "cast-2026-11-06-949589ce1f7f5a0b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32504,7 +32504,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "nicky-villarreal": {
-    "revision": "cast-2026-11-06-638b42eb376a7d20",
+    "revision": "cast-2026-11-06-60c5ac09acebb679",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32533,7 +32533,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "niran-chakri": {
-    "revision": "cast-2026-11-06-8a1b5a4e1971bdb4",
+    "revision": "cast-2026-11-06-5541290b5fb88f69",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32563,7 +32563,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "noah-kim": {
-    "revision": "cast-2026-11-06-e1b12203d6af9ea0",
+    "revision": "cast-2026-11-06-d05765d9dd5dcb20",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32610,7 +32610,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "noel-hampton": {
-    "revision": "cast-2026-11-06-65682b9c910c05c7",
+    "revision": "cast-2026-11-06-cc2ffe435395d0ac",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32639,7 +32639,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "oliver-min-peters": {
-    "revision": "cast-2026-11-06-ea056024b1f4aed6",
+    "revision": "cast-2026-11-06-7ae577a9d0e56398",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32685,7 +32685,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "oprah-winfrey": {
-    "revision": "cast-2026-11-06-17ce3698e166d1c1",
+    "revision": "cast-2026-11-06-74e3ce7838bdcf91",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32713,7 +32713,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "park-haeun": {
-    "revision": "cast-2026-11-06-b803c3b7973a0905",
+    "revision": "cast-2026-11-06-d57cc2164f45b70e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32743,7 +32743,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "park-soomin": {
-    "revision": "cast-2026-11-06-74902113451af977",
+    "revision": "cast-2026-11-06-2db897ce16c3c6e5",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32789,7 +32789,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "park-taein": {
-    "revision": "cast-2026-11-06-8bb44004c05d331d",
+    "revision": "cast-2026-11-06-1cf3bab5fde6623e",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32835,7 +32835,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "peter-lee": {
-    "revision": "cast-2026-11-06-f60e6b0749d773b7",
+    "revision": "cast-2026-11-06-e15378fe2ccb18c2",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32881,7 +32881,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "phoenix-wu": {
-    "revision": "cast-2026-11-06-2da2a2f9c4d1fb0f",
+    "revision": "cast-2026-11-06-35a802723ffa4567",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32911,7 +32911,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "qiang-yichen": {
-    "revision": "cast-2026-11-06-fc02686dea8c3969",
+    "revision": "cast-2026-11-06-4211572b30d94c7d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32941,7 +32941,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "rain-jeon": {
-    "revision": "cast-2026-11-06-5931ceaaab3ce122",
+    "revision": "cast-2026-11-06-4b8734c41a08fea4",
     "coverage": "directory",
     "label": "Directory details",
     "sourceUrls": [
@@ -32970,7 +32970,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "river-lee": {
-    "revision": "cast-2026-11-06-7fae28b3bd8c23dc",
+    "revision": "cast-2026-11-06-2120a8d0a143ff32",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33016,7 +33016,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "roman-parkinson-kim": {
-    "revision": "cast-2026-11-06-a21ac0641c6768af",
+    "revision": "cast-2026-11-06-ce18a5ff9235e98c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33045,7 +33045,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "ryan-min": {
-    "revision": "cast-2026-11-06-a60a0bd80fc000eb",
+    "revision": "cast-2026-11-06-8835eefa7012d30b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33075,7 +33075,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "ryu-hyemi": {
-    "revision": "cast-2026-11-06-599347727999a05e",
+    "revision": "cast-2026-11-06-b08ece46e1df5d3b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33105,7 +33105,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "sato-hyunwoo": {
-    "revision": "cast-2026-11-06-b4c8f4f77584f562",
+    "revision": "cast-2026-11-06-97d365007d0a9bce",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33135,7 +33135,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "sebastian-lee": {
-    "revision": "cast-2026-11-06-f7f46aff572aa68f",
+    "revision": "cast-2026-11-06-23c202fe21ce8a72",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33165,7 +33165,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "segasaki-kota": {
-    "revision": "cast-2026-11-06-45f6e722ddc00a78",
+    "revision": "cast-2026-11-06-0eac36fc0f2055cd",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33195,7 +33195,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seo-hakyun": {
-    "revision": "cast-2026-11-06-40525f06fbd57b21",
+    "revision": "cast-2026-11-06-97c44b5c43e2f96d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33225,7 +33225,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seo-inseong": {
-    "revision": "cast-2026-11-06-c6a1afb0630bf81f",
+    "revision": "cast-2026-11-06-a7ff103eb14435a2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33253,7 +33253,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seo-jeremy": {
-    "revision": "cast-2026-11-06-296b27f9b50fd144",
+    "revision": "cast-2026-11-06-745102d7338e719a",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33290,7 +33290,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seojun-lim": {
-    "revision": "cast-2026-11-06-6deb93c50906c389",
+    "revision": "cast-2026-11-06-dc455813f223d567",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33320,7 +33320,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seok-cam": {
-    "revision": "cast-2026-11-06-8317a61bd92dd88e",
+    "revision": "cast-2026-11-06-10edb516bea34ad7",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33350,7 +33350,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seomun-jaehwa": {
-    "revision": "cast-2026-11-06-2bfb75b1fb708f7f",
+    "revision": "cast-2026-11-06-afbb0962e274ae1f",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33380,7 +33380,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "shane-kang": {
-    "revision": "cast-2026-11-06-9c42f7ec8a0a9410",
+    "revision": "cast-2026-11-06-f76d33f31546d619",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33427,7 +33427,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "shen-ronghui": {
-    "revision": "cast-2026-11-06-9a85084aa0a8e1d1",
+    "revision": "cast-2026-11-06-7a318aff18201f7f",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33455,7 +33455,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "shin-dongmin": {
-    "revision": "cast-2026-11-06-054355e67019151b",
+    "revision": "cast-2026-11-06-937be0446b9ab56b",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33500,7 +33500,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "shin-sangmin": {
-    "revision": "cast-2026-11-06-616869140dafd7b2",
+    "revision": "cast-2026-11-06-1f1578271f4669b1",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33529,7 +33529,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "siwoo-choi": {
-    "revision": "cast-2026-11-06-b3d1e53c69a06ff8",
+    "revision": "cast-2026-11-06-9e427eae6b5fc300",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33559,7 +33559,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "song-dongwoon": {
-    "revision": "cast-2026-11-06-740fb7369f31117e",
+    "revision": "cast-2026-11-06-bc4fc78da0d1312c",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33604,7 +33604,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "song-jiyong": {
-    "revision": "cast-2026-11-06-6333d4b81242ac52",
+    "revision": "cast-2026-11-06-a53c2a01a1e98989",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33635,7 +33635,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "song-yonggi": {
-    "revision": "cast-2026-11-06-e2a14dd96855e491",
+    "revision": "cast-2026-11-06-942ba8178c544496",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33665,7 +33665,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "stella-jung": {
-    "revision": "cast-2026-11-06-56d7bdfd05c41c7d",
+    "revision": "cast-2026-11-06-902840e0ede4fccf",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33695,7 +33695,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "tanaka-hiroshi": {
-    "revision": "cast-2026-11-06-14afbf32a6684dbd",
+    "revision": "cast-2026-11-06-c404e8b55405e756",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33725,7 +33725,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "tanaka-ren": {
-    "revision": "cast-2026-11-06-adbf6038c39f2445",
+    "revision": "cast-2026-11-06-ff040ad44f9510fc",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33755,7 +33755,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "tawin-chaiyaporn": {
-    "revision": "cast-2026-11-06-2b74b1e4b16b1042",
+    "revision": "cast-2026-11-06-9b7e5dbc9ff7cdcb",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33801,7 +33801,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "theo-huang-yoon": {
-    "revision": "cast-2026-11-06-719ef8a5b07a4fb4",
+    "revision": "cast-2026-11-06-7a1601cadf9df654",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33831,7 +33831,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "toby-yoon": {
-    "revision": "cast-2026-11-06-01a80ff3bc7a9813",
+    "revision": "cast-2026-11-06-131c97557aeb48a4",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33877,7 +33877,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "tommy-kim": {
-    "revision": "cast-2026-11-06-6ae76a8b69be9891",
+    "revision": "cast-2026-11-06-526585cefb3d88c8",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33922,7 +33922,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "tran-bao": {
-    "revision": "cast-2026-11-06-3228eb1867153b7a",
+    "revision": "cast-2026-11-06-194b7e40d05c5f09",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33950,7 +33950,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "valerie-kwon": {
-    "revision": "cast-2026-11-06-f4bf8ecf14c23481",
+    "revision": "cast-2026-11-06-fe44a429c7af2e36",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33980,7 +33980,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "vince-seok": {
-    "revision": "cast-2026-11-06-c409715c8d80d499",
+    "revision": "cast-2026-11-06-04457c0e62199a99",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -34026,7 +34026,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "wang-linyu": {
-    "revision": "cast-2026-11-06-b5b562f0e6842095",
+    "revision": "cast-2026-11-06-e0185d74ee30f463",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34056,7 +34056,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "wei-bowen": {
-    "revision": "cast-2026-11-06-0679ccf75477f172",
+    "revision": "cast-2026-11-06-e2c792e01d6b42f8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34085,7 +34085,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "wenjun-zhu": {
-    "revision": "cast-2026-11-06-244f3aa97ffd7053",
+    "revision": "cast-2026-11-06-7e3800149ab13ae1",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -34130,7 +34130,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "william-park": {
-    "revision": "cast-2026-11-06-61b13713aeb29220",
+    "revision": "cast-2026-11-06-7fcb68dcfb0df949",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34161,7 +34161,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "woo-daejung": {
-    "revision": "cast-2026-11-06-99a168a2cd6f0533",
+    "revision": "cast-2026-11-06-986984315ed9836a",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34191,7 +34191,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xiaofeng-jeon": {
-    "revision": "cast-2026-11-06-a970f991e364d60e",
+    "revision": "cast-2026-11-06-078a544532d8e0be",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -34238,7 +34238,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xiaoli-li": {
-    "revision": "cast-2026-11-06-ba9a507c3eecc4bc",
+    "revision": "cast-2026-11-06-984c6dac3bcb0434",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34267,7 +34267,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xiaoyang-li": {
-    "revision": "cast-2026-11-06-63ce5fd82cfbd58d",
+    "revision": "cast-2026-11-06-c06c624079d6a2b2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34295,7 +34295,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xu-bingwen": {
-    "revision": "cast-2026-11-06-c979695a3c197923",
+    "revision": "cast-2026-11-06-ba84ffdfbd6b634a",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -34340,7 +34340,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xue-yiyun": {
-    "revision": "cast-2026-11-06-2146b9541e56ce2f",
+    "revision": "cast-2026-11-06-7f717a7711989611",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34370,7 +34370,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "yang-haneul": {
-    "revision": "cast-2026-11-06-9a539719d88f48ac",
+    "revision": "cast-2026-11-06-a1a9b101d0f24d92",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -34416,7 +34416,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "yoo-byungjoon": {
-    "revision": "cast-2026-11-06-62eb42d5d9069f10",
+    "revision": "cast-2026-11-06-ba16d84254ba84c0",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34445,7 +34445,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "yoon-kijoon": {
-    "revision": "cast-2026-11-06-abc340a7809d0321",
+    "revision": "cast-2026-11-06-cf6dfd1391103496",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -34490,7 +34490,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "zhou-yujie": {
-    "revision": "cast-2026-11-06-1d5e8e79f6e2e060",
+    "revision": "cast-2026-11-06-e8bf312639643291",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34519,7 +34519,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "everett-tsai": {
-    "revision": "cast-2026-11-06-61df98d532fc5f21",
+    "revision": "cast-2026-11-06-c16c795494055653",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
