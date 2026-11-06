@@ -186,7 +186,27 @@
     return '<iframe class="bd1-player" src="https://open.spotify.com/embed/' + data.type + '/' + data.id + '?utm_source=generator&amp;theme=0" width="100%" height="152" title="' + escapeHtml(title || 'Spotify player') + '" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen">' + external(data.url, 'Open in Spotify ↗') + '</div>';
   }
   function sectionHeading(number, title, extra) {
-    return '<div class="bd1-section-heading"><span class="bd1-number">' + number + '</span><h2>' + escapeHtml(title) + '</h2>' + (extra ? '<span class="bd1-heading-note">' + escapeHtml(extra) + '</span>' : '') + '</div>';
+    return '<div class="bd1-section-heading"><span class="bd1-number">' + number + '</span><h2>' + escapeHtml(titleCase(title)) + '</h2>' + (extra ? '<span class="bd1-heading-note">' + escapeHtml(extra) + '</span>' : '') + '</div>';
+  }
+  function titleCase(value) {
+    return String(value || '').replace(/(^|[\s,/&()\u2013\u2014-])(\p{L}[\p{L}\p{M}'\u2019]*)/gu, function (_, boundary, word, offset) {
+      if (offset > 0 && /^(?:a|an|and|or|the|of|to|in|for|with|on)$/.test(word)) return boundary + word;
+      return boundary + word.charAt(0).toLocaleUpperCase('en') + word.slice(1);
+    });
+  }
+  function locationCase(value) { return titleCase(value).replace(/,\s*ca(?=\s*(?:$|[,;]))/gi, ', CA'); }
+  function displayCharacter(c) {
+    ['name', 'nickname', 'gender', 'occupation', 'relationshipStatus', 'writer', 'pronouns'].forEach(function (field) { c[field] = titleCase(c[field]); });
+    c.location = locationCase(c.location); c.mapLocation = locationCase(c.mapLocation);
+    c.facts.forEach(function (fact) {
+      fact.label = titleCase(fact.label);
+      if (/https?:\/\//i.test(fact.value) || fact.value.length > 250 || /\n/.test(fact.value)) return;
+      fact.value = /residen|location|based in/i.test(fact.label) ? locationCase(fact.value) : titleCase(fact.value);
+    });
+    c.polaroids.forEach(function (photo) { photo.name = titleCase(photo.name); });
+    c.relationships.forEach(function (r) { ['name', 'flavour', 'status'].forEach(function (field) { r[field] = titleCase(r[field]); }); });
+    c.timeline.forEach(function (entry) { ['title', 'participants', 'status'].forEach(function (field) { entry[field] = titleCase(entry[field]); }); });
+    return c;
   }
   function pairedFacts(facts) {
     var remaining = facts.slice(), rows = [];
@@ -213,16 +233,22 @@
   function locationMap(c) {
     if (c.mapLatitude === '' || c.mapLongitude === '') return '';
     var lat = Number(c.mapLatitude), lon = Number(c.mapLongitude);
-    var dx = 180 / Math.pow(2, c.mapZoom), dy = dx * Math.cos(lat * Math.PI / 180);
-    var bounds = [Math.max(-180, lon - dx), Math.max(-85, lat - dy), Math.min(180, lon + dx), Math.min(85, lat + dy)].map(function (n) { return n.toFixed(6); }).join(',');
-    var url = 'https://www.openstreetmap.org/export/embed.html?bbox=' + encodeURIComponent(bounds) + '&layer=mapnik&marker=' + encodeURIComponent(lat + ',' + lon);
     var full = 'https://www.openstreetmap.org/?mlat=' + lat + '&mlon=' + lon + '#map=' + c.mapZoom + '/' + lat + '/' + lon;
-    var label = c.mapLocation || c.location || 'Current location';
-    return '<div class="bd3-map"><iframe src="' + escapeHtml(url) + '" title="Map of ' + escapeHtml(label) + '" width="210" height="210" loading="lazy" referrerpolicy="no-referrer"></iframe></div>' + external(full, label + ' ↗', 'bd3-map-label');
+    var label = c.mapLocation || c.location || 'Current Location';
+    var script = '(function() { var mapStatus = document.getElementById("status"); try { var api = window.maplibregl; if (!api) throw new Error("Map Unavailable"); ' +
+      'var center = { lng: ' + lon + ', lat: ' + lat + ' }; ' +
+      'var map = new api.Map({ container: "map", style: "https://tiles.openfreemap.org/" + "styles/positron", center: center, zoom: ' + c.mapZoom + ', minZoom: 2, maxZoom: 18, attributionControl: false, dragRotate: false, pitchWithRotate: false, scrollZoom: false, renderWorldCopies: false }); ' +
+      'map.addControl(new api.NavigationControl({ showCompass: false }), "top-right"); ' +
+      'new api.Marker({ color: "' + c.accent + '", scale: 0.65 }).setLngLat(center).addTo(map); ' +
+      'map.on("load", function() { mapStatus.hidden = true; }); ' +
+      'map.on("error", function() { if (!mapStatus.hidden) mapStatus.textContent = "Map Unavailable"; }); ' +
+      '} catch (_) { mapStatus.textContent = "Map Unavailable"; } })();';
+    var documentHtml = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.css"><style>html,body,#map{margin:0;width:100%;height:100%;background:#e8e9e4}#map{position:absolute;inset:0}#status{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:16px;font:12px/1.4 sans-serif;color:#465247;text-align:center;pointer-events:none}#status[hidden]{display:none}.maplibregl-ctrl-top-right{top:0;right:0}.maplibregl-ctrl-group{box-shadow:0 1px 4px #0002}.maplibregl-ctrl-group button{width:27px;height:27px}</style></head><body><div id="map" aria-label="Interactive Location Map"></div><p id="status" role="status">Loading Map…</p><script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script><script>' + script + '</script></body></html>';
+    return '<div class="bd3-map"><iframe srcdoc="' + escapeHtml(documentHtml) + '" sandbox="allow-scripts" title="Map of ' + escapeHtml(label) + '" width="185" height="185" loading="lazy"></iframe></div>' + external(full, label + ' ↗', 'bd3-map-label') + '<div class="bd4-map-credit">© ' + external('https://www.openstreetmap.org/copyright', 'OpenStreetMap') + ' · © ' + external('https://www.openmaptiles.org/', 'OpenMapTiles') + '</div>';
   }
   function render(raw, options) {
     options = options || {};
-    var c = normalizeCharacter(raw), prefix = 'bd3-' + slug(options.instanceId || c.id, 'character');
+    var c = displayCharacter(normalizeCharacter(raw)), prefix = 'bd3-' + slug(options.instanceId || c.id, 'character');
     var sectionCounter = 0;
     function heading(title, extra) {
       sectionCounter += 1;
@@ -241,14 +267,14 @@
     });
     var basics = c.gender && !facts.some(function (fact) { return fact.label.toLowerCase() === 'gender'; }) ? [{ label: 'Gender', value: c.gender }] : [];
     var name = c.nickname || c.name;
-    var meta = [c.age ? c.age + ' years old' : '', c.pronouns].filter(Boolean);
-    var html = '<article class="bh-dossier-v3" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
+    var meta = [c.age ? c.age + ' Years Old' : '', c.pronouns].filter(Boolean);
+    var html = '<article class="bh-dossier-v4" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
     html += '<header class="bd1-cover" id="' + prefix + '-overview">';
-    html += '<div class="bd1-masthead"><span>Character dossier</span>' + (c.writer ? '<span>Written by ' + escapeHtml(c.writer) + '</span>' : '') + '</div>';
+    html += '<div class="bd1-masthead"><span>Character Dossier</span>' + (c.writer ? '<span>Written by ' + escapeHtml(c.writer) + '</span>' : '') + '</div>';
     if (c.portrait) html += '<figure class="bd1-hero"><img src="' + escapeHtml(c.portrait) + '" alt="' + escapeHtml(name ? name + ' — character portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer"><span class="bd1-photo-mark" aria-hidden="true">✦</span></figure>';
     html += '<div class="bd1-identity"><div class="bd1-identity-main">';
     if (c.avatar) html += '<img class="bd1-profile-image" src="' + escapeHtml(c.avatar) + '" alt="' + escapeHtml(name ? name + ' — portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer">';
-    html += '<span class="bd1-eyebrow">Character profile</span>';
+    html += '<span class="bd1-eyebrow">Character Profile</span>';
     if (name) html += '<h1>' + escapeHtml(name) + '</h1>';
     if (c.nickname && c.name && c.nickname.toLowerCase() !== c.name.toLowerCase()) html += '<div class="bd1-fullname">' + escapeHtml(c.name) + '</div>';
     if (meta.length) html += '<p class="bd1-identity-meta">' + meta.map(escapeHtml).join('<span aria-hidden="true"> / </span>') + '</p>';
@@ -263,7 +289,7 @@
     if (entries.length) nav.push(['story', 'Timeline']);
     if (songs.length || c.playlistUrl) nav.push(['soundtrack', 'Soundtrack']);
     if (c.notes) nav.push(['notes', 'Notes']);
-    if (nav.length > 1) html += '<nav class="bd1-nav" aria-label="Character sections">' + nav.map(function (item) { return '<a href="#' + prefix + '-' + item[0] + '">' + item[1] + '</a>'; }).join('') + '</nav>';
+    if (nav.length > 1) html += '<nav class="bd1-nav" aria-label="Character sections">' + nav.map(function (item) { return '<a href="#' + prefix + '-' + item[0] + '">' + titleCase(item[1]) + '</a>'; }).join('') + '</nav>';
     if (photos.length || map) {
       html += '<div class="bd3-memory-row">';
       if (photos.length) {
@@ -280,7 +306,7 @@
     html += '<div class="bd1-content">';
     if (facts.length || basics.length || c.currentChapter) {
       html += '<section class="bd1-section bd1-overview">' + heading('At a glance', c.asOf ? 'As of ' + c.asOf : '');
-      if (c.currentChapter) html += '<div class="bd1-chapter"><span class="bd1-eyebrow">Current chapter</span>' + paragraphs(c.currentChapter) + '</div>';
+      if (c.currentChapter) html += '<div class="bd1-chapter"><span class="bd1-eyebrow">Current Chapter</span>' + paragraphs(c.currentChapter) + '</div>';
       if (facts.length || basics.length) html += '<dl class="bd1-facts">' + pairedFacts(basics.concat(facts)) + '</dl>';
       html += '</section>';
     }
@@ -290,7 +316,7 @@
         var linked = entries.filter(function (entry) { return entry.connectionIds.indexOf(r.id) !== -1; });
         html += '<article class="bd1-connection" id="' + prefix + '-connection-' + r.id + '"><div class="bd1-connection-head">';
         if (r.portrait) html += '<img class="bd1-avatar" src="' + escapeHtml(r.portrait) + '" alt="" loading="lazy" referrerpolicy="no-referrer">';
-        html += '<div><span class="bd1-eyebrow">' + escapeHtml(r.kind) + (r.featured ? ' · In focus' : '') + '</span><h3>' + external(r.url, r.name) + '</h3></div>';
+        html += '<div><span class="bd1-eyebrow">' + escapeHtml(r.kind) + (r.featured ? ' · In Focus' : '') + '</span><h3>' + external(r.url, r.name) + '</h3></div>';
         if (r.status) html += '<span class="bd1-small-status">' + escapeHtml(r.status) + '</span>';
         html += '</div>';
         if (r.flavour) html += '<div class="bd1-flavour"><span>Flavour</span><span>' + escapeHtml(r.flavour) + '</span></div>';

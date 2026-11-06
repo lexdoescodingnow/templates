@@ -19,6 +19,29 @@ function test(name, run) {
 }
 function clean(value) { return value.replace(/\[\/?(?:b|i|u)\]/gi, '').trim(); }
 function character(values = {}) { return { id:'test-character', name:'Test character', ...values }; }
+function decodeHtml(value) {
+  const named = {amp:'&',lt:'<',gt:'>',quot:'"',apos:"'"};
+  return value.replace(/&(amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);/gi, (_, entity) => entity[0] === '#' ? String.fromCodePoint(entity[1].toLowerCase() === 'x' ? parseInt(entity.slice(2),16) : Number(entity.slice(1))) : named[entity.toLowerCase()]);
+}
+function mapDocument(html) {
+  const frame = html.match(/<iframe\b[^>]*\bsrcdoc="([^"]*)"[^>]*>/);
+  assert(frame, 'A complete map should have its own embedded document');
+  const sandbox = frame[0].match(/\bsandbox="([^"]*)"/);
+  assert(sandbox);
+  assert.deepEqual(sandbox[1].split(/\s+/).filter(Boolean), ['allow-scripts']);
+  const document = decodeHtml(frame[1]);
+  const scripts = Array.from(document.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi), match=>({attributes:match[1],source:match[2]}));
+  assert.equal(scripts.length, 2);
+  const external = scripts.filter(script=>/\bsrc="/.test(script.attributes));
+  const inline = scripts.filter(script=>!/\bsrc="/.test(script.attributes));
+  assert.equal(external.length, 1);
+  assert.equal(inline.length, 1);
+  assert.equal(external[0].attributes.match(/\bsrc="([^"]*)"/)[1], 'https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.js');
+  assert(document.includes('href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.css"'));
+  assert(!/\btype="module"/.test(inline[0].attributes));
+  new vm.Script(inline[0].source, {filename:'isolated-map.js'});
+  return {frame:frame[0],document,script:inline[0].source};
+}
 function assertNoExecutableMarkup(html) {
   assert(!/<script\b|(?:href|src)="javascript:/i.test(html));
   for (const match of html.matchAll(/<[^>]+>/g)) {
@@ -32,7 +55,7 @@ function safeNormalization(input, assertion) {
   catch (error) { assert(error instanceof Error); return; }
   assertion(value);
 }
-const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css';
+const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v4.css';
 const sam = library.characters.find(item => item.id === 'baek-samuel');
 
 test('All 181 canonical identities and imported details survive normalization', () => {
@@ -85,6 +108,28 @@ test('Related facts stay paired without duplicating header information', () => {
   assert(rows.every(row=>row.length<=2));
   assert(!facts[1].includes('<dt>Occupation</dt>') && !facts[1].includes('<dt>Based in</dt>'));
   assert(!output.includes('ANXIOUS HEART') && !/aria-label="Character traits"/.test(output));
+});
+
+test('Display capitalisation preserves raw data, acronyms, music styling, prose and URLs', () => {
+  const raw = character({name:'baek samuel',nickname:'sam',gender:'cisgender male',occupation:'idol / leader of CRAZHES',location:'los angeles, ca',
+    facts:[{label:'mbti',value:'ISTP'},{label:'languages',value:'english, korean'},{label:'face claim',value:'kang yuchan'},{label:'Reference',value:'https://Example.com/MixedCase?value=aB'}],
+    currentChapter:'a quiet morning with CRAZHES.',notes:'she said “leave this as written”.',
+    relationships:[{id:'person',name:'hwak hoseong',flavour:'cereal',summary:'keep this little paragraph as written.'}],
+    timeline:[{id:'story',title:'cereal milk',participants:'sam & hoseong',summary:'one small memory.',url:'https://example.com/KeepCase?a=bC'}],
+    songs:[{title:'Last Flower',artist:'The KingDom',url:'https://open.spotify.com/track/0M1NR0EXFkMoy8nt4JNXKH'},{title:'BOUNCY (K-HOT CHILLI PEPPERS)',artist:'ATEEZ'},{title:"Golden - Glowin' Version",artist:'HUNTR/X, KPop Demon Hunters Cast'}]});
+  const before = JSON.stringify(raw);
+  const normalized = Dossier.normalizeCharacter(raw);
+  const output = Dossier.render(raw);
+  assert.equal(JSON.stringify(raw), before, 'Rendering must not rewrite the editable data');
+  assert.equal(normalized.nickname, 'sam');
+  assert.equal(normalized.occupation, raw.occupation);
+  assert.equal(normalized.facts[1].value, 'english, korean');
+  for (const text of ['<h1>Sam</h1>','Baek Samuel','Cisgender Male','Idol / Leader of CRAZHES','Los Angeles, CA','English, Korean','Kang Yuchan','Hwak Hoseong','Cereal Milk','Sam &amp; Hoseong','ISTP']) assert(output.includes(text), 'Expected displayed text: '+text);
+  for (const text of [raw.currentChapter,raw.notes,raw.relationships[0].summary,raw.timeline[0].summary,...raw.songs.flatMap(song=>[song.title,song.artist])]) assert(output.includes(Dossier.escapeHtml(text)));
+  assert(output.includes('https://example.com/KeepCase?a=bC'));
+  assert(output.includes('https://Example.com/MixedCase?value=aB'));
+  const samOutput = Dossier.render(sam);
+  assert(samOutput.includes('<dt>MBTI</dt>') && samOutput.includes('CRAZHES') && samOutput.includes('The KingDom'));
 });
 
 test('Sam, Ben and Cookie retain their distinct supplied colours and separate portrait images', () => {
@@ -146,17 +191,34 @@ test('Unicode, quotation marks, distinct story dates and connection links round-
   assert.deepEqual(roundtrip.timeline[0].connectionIds, ['connection-one']);
 });
 
-test('City maps validate coordinate ranges, retain city-level provenance and escape labels safely', () => {
+test('City maps isolate their script, validate coordinates and keep user text outside executable code', () => {
   assert.equal(sam.mapLocation, 'San Bernardino, CA');
   assert.equal(Number(sam.mapLatitude), 34.1211115);
   assert.equal(Number(sam.mapLongitude), -117.301767);
   assert.equal(sam.mapZoom, 11);
   const mapHtml = Dossier.render(character({mapLocation:sam.mapLocation,mapLatitude:sam.mapLatitude,mapLongitude:sam.mapLongitude,mapZoom:sam.mapZoom}));
-  const mapSource = mapHtml.match(/<iframe\b[^>]*src="([^"]+)"/);
-  assert(mapSource);
-  const mapUrl = new URL(mapSource[1].replaceAll('&amp;','&'));
-  assert.equal(mapUrl.origin, 'https://www.openstreetmap.org');
-  assert.equal(mapUrl.searchParams.get('marker'), sam.mapLatitude+','+sam.mapLongitude);
+  const map = mapDocument(mapHtml);
+  const mapStatus = {hidden:false,textContent:'Loading Map…'};
+  const handlers = {};
+  let mapOptions, markerPosition;
+  function MapStub(options) { mapOptions = options; this.addControl = function() {}; this.on = function(name,handler) { handlers[name] = handler; }; }
+  function MarkerStub() { this.setLngLat = function(position) { markerPosition = position; return this; }; this.addTo = function() { return this; }; }
+  const context = vm.createContext({document:{getElementById:id=>id==='status'?mapStatus:null},window:{status:'Browser status',maplibregl:{Map:MapStub,Marker:MarkerStub,NavigationControl:function(){}}}});
+  new vm.Script(map.script).runInContext(context,{timeout:1000});
+  assert.equal(mapOptions.style, 'https://tiles.openfreemap.org/styles/positron');
+  assert.equal(mapOptions.center.lng, Number(sam.mapLongitude));
+  assert.equal(mapOptions.center.lat, Number(sam.mapLatitude));
+  assert.equal(mapOptions.zoom, sam.mapZoom);
+  assert.equal(markerPosition.lng, mapOptions.center.lng);
+  assert.equal(markerPosition.lat, mapOptions.center.lat);
+  assert.equal(typeof handlers.load, 'function');
+  handlers.load();
+  assert.equal(mapStatus.hidden, true, 'The real loading element should be hidden when map data loads');
+  assert.equal(context.window.status, 'Browser status');
+  assert.equal(context.mapStatus, undefined, 'Map state belongs in a local scope');
+  assert(mapHtml.includes('https://www.openstreetmap.org/copyright'));
+  assert(mapHtml.includes('https://www.openmaptiles.org/'));
+  assert(mapHtml.includes('https://www.openstreetmap.org/?mlat='+sam.mapLatitude+'&amp;mlon='+sam.mapLongitude));
   assert(library.characters.filter(item=>item.id!==sam.id).every(item=>!item.mapLatitude && !item.mapLongitude));
   for (const fields of [
     {mapLatitude:'86'}, {mapLatitude:'-86'}, {mapLongitude:'181'}, {mapLongitude:'-181'},
@@ -171,7 +233,10 @@ test('City maps validate coordinate ranges, retain city-level provenance and esc
   assert.equal(safe.polaroids[0].url, '');
   const html = Dossier.render(safe);
   assertNoExecutableMarkup(html);
-  assert(html.includes(Dossier.escapeHtml(unsafe)));
+  assert(html.toLowerCase().includes(Dossier.escapeHtml(unsafe).toLowerCase()));
+  const isolated = mapDocument(html);
+  assert(!isolated.document.includes('alert(1)') && !isolated.script.includes('onerror'));
+  assert.equal(isolated.script.match(/<script/gi), null);
 });
 
 test('Portrait addresses and image cropping cannot inject markup or arbitrary styles', () => {
@@ -281,10 +346,11 @@ test('Forum output contains complete static content and one shared stylesheet', 
   assert.equal((output.match(/<link\b[^>]*rel="stylesheet"/g)||[]).length, 1);
   assert(!/<script\b|pgy-pikeplace|dropboxusercontent|unpkg\.com|bluehour-cosmicmeet/i.test(output));
   assert(output.includes(stylesheet));
-  assert(/class="bh-dossier-v3"/.test(output));
-  assert(!/class="bh-dossier-v[12]"|\/dossier-v[12]\.css/.test(output));
+  assert(/class="bh-dossier-v4"/.test(output));
+  assert(!/class="bh-dossier-v[123]"|\/dossier-v[123]\.css/.test(output));
   for (const entry of sam.timeline) assert(output.includes(entry.url.replaceAll('&','&amp;')));
-  for (const fact of sam.facts) assert(output.includes(Dossier.escapeHtml(fact.value)));
+  const displayedFacts = Array.from(output.matchAll(/<dd>([\s\S]*?)<\/dd>/g), match=>decodeHtml(match[1]).toLocaleLowerCase('en'));
+  for (const fact of sam.facts) assert(displayedFacts.includes(fact.value.toLocaleLowerCase('en')), 'Every fact must survive display capitalisation: '+fact.label);
   for (const song of sam.songs) assert(output.includes(Dossier.escapeHtml(song.title)));
   assert(!/\bundefined\b|\bNaN\b/.test(output));
   const generated = read('sam-forum.txt');
@@ -293,11 +359,12 @@ test('Forum output contains complete static content and one shared stylesheet', 
 
 test('The portable editor bundles all scripts and contains parseable JavaScript', () => {
   const portable = read('atelier.html');
-  assert(!/<script\b[^>]*\bsrc=/i.test(portable));
-  assert(!/<link\b[^>]*href="(?:editor|dossier-v[123])\.css"/i.test(portable));
-  const scripts = Array.from(portable.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi), match=>match[1]);
+  const scripts = Array.from(portable.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi), match=>({attributes:match[1],source:match[2]}));
   assert(scripts.length >= 3);
-  scripts.forEach((script,index) => new vm.Script(script, {filename:'atelier-script-'+index+'.js'}));
+  assert(scripts.every(script=>!/\bsrc=/i.test(script.attributes)));
+  scripts.forEach((script,index) => new vm.Script(script.source, {filename:'atelier-script-'+index+'.js'}));
+  const documentMarkup = portable.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
+  assert(!/<link\b[^>]*href="(?:editor|dossier-v[1234])\.css"/i.test(documentMarkup));
   const dataContext = {};
   vm.runInNewContext(read('seed-data.js'), dataContext);
   assert.equal(dataContext.DOSSIER_SEED.characters.length, 181);

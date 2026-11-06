@@ -2,8 +2,8 @@
   'use strict';
   const STORAGE_KEY = 'bluehour.character-atelier.library.v1';
   const SETTINGS_KEY = 'bluehour.character-atelier.settings.v1';
-  const PREVIOUS_STYLESHEETS = ['https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css'];
-  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css';
+  const PREVIOUS_STYLESHEETS = ['https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css'];
+  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v4.css';
   const $ = id => document.getElementById(id);
   const clone = value => JSON.parse(JSON.stringify(value));
   let fieldCounter = 0;
@@ -413,9 +413,9 @@
     try {
       const rendered = Dossier.render(character, { includeStylesheet: false });
       generatedCode = Dossier.forum(character, stylesheetUrl());
-      const localCss = new URL('dossier-v3.css', document.baseURI).href;
+      const localCss = new URL('dossier-v4.css', document.baseURI).href;
       const css = typeof globalThis.DOSSIER_PREVIEW_CSS === 'string' ? '<style>' + globalThis.DOSSIER_PREVIEW_CSS.replace(/<\/style/gi, '<\\/style') + '</style>' : '<link rel="stylesheet" href="' + Dossier.escapeHtml(localCss) + '">';
-      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v3{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
+      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v4{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
       $('dossier-preview').srcdoc = doc;
       $('preview-error').hidden = true;
       $('forum-code').value = generatedCode;
