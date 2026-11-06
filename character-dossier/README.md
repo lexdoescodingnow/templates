@@ -2,6 +2,10 @@
 
 Open **[atelier.html](atelier.html)** in your browser. This single file contains the editor, the layout, and all 181 characters in the current PI directory, enriched from their development posts and the latest encyclopaedia. You can download it and double-click it; there is nothing to install. Photos, Spotify players and maps still need an internet connection.
 
+The shared online edition is prepared for **[lexdoescodingnow.github.io/templates/](https://lexdoescodingnow.github.io/templates/)**. Lex and Sara use that same link with separate saved drafts, exchanging character or library backups when they want to pass changes to one another. The shared edition excludes private workspace links and has its own short guide. Lex’s local editor and source references remain unchanged.
+
+To move existing local drafts online, open the downloaded editor where those drafts are saved, choose **Save & share → Save whole library**, then use **Import a backup** in the online editor. Opening the website does not transfer browser drafts from a downloaded file automatically. Sara does not need a GitHub account to use the public editor.
+
 **[Browse every character](cast.html)** · **[Download all 181 posts, previews and the editor](all-characters.zip)** · **[See source coverage and unresolved details](migration-coverage.html)**
 
 **[See Sam's completed example](sam-preview.html)** · **[Ben's photo theme](ben-preview.html)** · **[Cookie's photo theme](cookie-preview.html)** · **[Sam's ready-to-paste forum post](sam-forum.txt)**
@@ -64,6 +68,8 @@ Public image hosts such as l3n do not permit direct browser colour sampling. For
 The folder is also suitable for [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), which serves static HTML, CSS and JavaScript. The portable editor is usable without setting up Pages.
 
 ## Development
+
+After rebuilding the main editor, run `node character-dossier/build-public.cjs` to create the shared edition and `node character-dossier/check-public.cjs` to verify its contents and import filtering. Deploy only `character-dossier/public/` to the root of the dedicated `gh-pages` branch. That directory contains exactly `index.html`, `guide.html` and `.nojekyll`; private source files, coverage reports and this README are excluded. The public check also confirms that the local editor was not modified and that all 181 character records remain available.
 
 Run `node character-dossier/build.cjs` from the repository root to refresh the enriched library, portable editor, cast browser, all-character ZIP and coverage report. Run `node character-dossier/check.cjs`, `node character-dossier/check-source-updates.cjs`, `node character-dossier/check-migration.cjs`, and `node character-dossier/all-cast-check.cjs` for content preservation, editor updates, source migration and archive validation. Topic dates have additional checks in `check-topic-date-import.cjs`, `check-editor-topic-dates.cjs`, and `check-topic-dates.cjs`; colour recovery is covered by `check-editor-photo-retries.cjs` and `check-photo-runtime.cjs`. The build does not alter existing collections or the PI directory.
 
