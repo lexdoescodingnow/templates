@@ -72,6 +72,18 @@
     var source = text(value, 80).toLowerCase();
     return allowed.find(function (item) { return item.toLowerCase() === source; }) || fallback;
   }
+  function coordinate(value, limit, label) {
+    var source = text(value, 40);
+    if (!source) return '';
+    if (!/^-?(?:\d+\.?\d*|\.\d+)$/.test(source) || !Number.isFinite(Number(source)) || Math.abs(Number(source)) > limit) throw new Error(label + ' must be a number between -' + limit + ' and ' + limit + '.');
+    return String(Number(source));
+  }
+  function mapZoom(value) {
+    if (value === undefined || value === null || value === '') return 11;
+    var zoom = Number(value);
+    if (!Number.isInteger(zoom) || zoom < 2 || zoom > 18) throw new Error('Map zoom must be a whole number from 2 to 18.');
+    return zoom;
+  }
   function normalizeCharacter(raw) {
     if (!object(raw)) throw new Error('Each character must be a character record.');
     var relationshipIds = new Set(), timelineIds = new Set(), relationshipMap = new Map();
@@ -103,6 +115,8 @@
       age: text(raw.age, 40), pronouns: text(raw.pronouns, 80), gender: text(raw.gender, 120),
       occupation: text(raw.occupation, 250), location: text(raw.location, 250), writer: text(raw.writer, 120),
       portrait: safeUrl(raw.portrait), avatar: safeUrl(raw.avatar),
+      polaroids: records(raw.polaroids, 3).map(function (photo) { return { name: text(photo.name, 160), image: safeUrl(photo.image), url: safeUrl(photo.url) }; }),
+      mapLocation: text(raw.mapLocation, 250), mapLatitude: coordinate(raw.mapLatitude, 85, 'Map latitude'), mapLongitude: coordinate(raw.mapLongitude, 180, 'Map longitude'), mapZoom: mapZoom(raw.mapZoom),
       imagePosition: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.imagePosition, 20)) ? text(raw.imagePosition, 20) : '50% 35%',
       accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
       tags: Array.from(new Set(list(raw.tags, 50).map(function (tag) { return text(tag, 120).replace(/^#+/, '').trim(); }).filter(Boolean))),
@@ -174,16 +188,49 @@
   function sectionHeading(number, title, extra) {
     return '<div class="bd1-section-heading"><span class="bd1-number">' + number + '</span><h2>' + escapeHtml(title) + '</h2>' + (extra ? '<span class="bd1-heading-note">' + escapeHtml(extra) + '</span>' : '') + '</div>';
   }
+  function pairedFacts(facts) {
+    var remaining = facts.slice(), rows = [];
+    function take(labels) {
+      var index = remaining.findIndex(function (fact) { return labels.indexOf(fact.label.toLowerCase().replace(/[^a-z]/g, '')) !== -1; });
+      return index < 0 ? null : remaining.splice(index, 1)[0];
+    }
+    [
+      [['gender'], ['preferredname']],
+      [['nationality'], ['ethnicity']],
+      [['romanticality', 'romanticorientation'], ['sexuality', 'sexualorientation']],
+      [['residency', 'residence'], ['birthday', 'dateofbirth']],
+      [['languages', 'language'], ['bloodtype']],
+      [['mbti'], ['westernzodiac', 'zodiac']],
+      [['chinesezodiac'], ['faceclaim']],
+      [['favoritecolor', 'favouritecolour', 'favouritecolor', 'favoritecolour'], ['favoritefood', 'favouritefood']]
+    ].forEach(function (pair) {
+      var row = pair.map(take).filter(Boolean);
+      if (row.length) rows.push(row);
+    });
+    while (remaining.length) rows.push(remaining.splice(0, 2));
+    return rows.map(function (row) { return '<div class="bd3-fact-row">' + row.map(function (fact) { return '<div><dt>' + escapeHtml(fact.label) + '</dt><dd>' + escapeHtml(fact.value) + '</dd></div>'; }).join('') + '</div>'; }).join('');
+  }
+  function locationMap(c) {
+    if (c.mapLatitude === '' || c.mapLongitude === '') return '';
+    var lat = Number(c.mapLatitude), lon = Number(c.mapLongitude);
+    var dx = 180 / Math.pow(2, c.mapZoom), dy = dx * Math.cos(lat * Math.PI / 180);
+    var bounds = [Math.max(-180, lon - dx), Math.max(-85, lat - dy), Math.min(180, lon + dx), Math.min(85, lat + dy)].map(function (n) { return n.toFixed(6); }).join(',');
+    var url = 'https://www.openstreetmap.org/export/embed.html?bbox=' + encodeURIComponent(bounds) + '&layer=mapnik&marker=' + encodeURIComponent(lat + ',' + lon);
+    var full = 'https://www.openstreetmap.org/?mlat=' + lat + '&mlon=' + lon + '#map=' + c.mapZoom + '/' + lat + '/' + lon;
+    var label = c.mapLocation || c.location || 'Current location';
+    return '<div class="bd3-map"><iframe src="' + escapeHtml(url) + '" title="Map of ' + escapeHtml(label) + '" width="210" height="210" loading="lazy" referrerpolicy="no-referrer"></iframe></div>' + external(full, label + ' ↗', 'bd3-map-label');
+  }
   function render(raw, options) {
     options = options || {};
-    var c = normalizeCharacter(raw), prefix = 'bd2-' + slug(options.instanceId || c.id, 'character');
+    var c = normalizeCharacter(raw), prefix = 'bd3-' + slug(options.instanceId || c.id, 'character');
     var sectionCounter = 0;
     function heading(title, extra) {
       sectionCounter += 1;
       return sectionHeading(String(sectionCounter).padStart(2, '0'), title, extra);
     }
-    var relationships = c.relationships.filter(function (r) { return r.name; });
-    var pinned = relationships.filter(function (r) { return r.pinned; }).slice(0, 3);
+    var relationships = c.relationships.filter(function (r) { return r.name; }).sort(function (a, b) { return Number(b.kind === 'Partner') - Number(a.kind === 'Partner'); });
+    var photos = c.polaroids.filter(function (photo) { return photo.name || photo.image; });
+    var map = locationMap(c);
     var entries = sortTimeline(c.timeline.filter(function (entry) { return entry.title; }));
     var songs = c.songs.filter(function (song) { return song.title || song.artist || song.url; });
     var byId = new Map(relationships.map(function (r) { return [r.id, r]; }));
@@ -192,10 +239,10 @@
       var label = fact.label.toLowerCase().replace(/[^a-z]/g, '');
       return fact.label && fact.value && !(hasPartners && /^(?:partner|partners|currentpartner|currentpartners)$/.test(label)) && !(c.relationshipStatus && /^(?:relationshipstatus|status)$/.test(label));
     });
-    var basics = [['Gender', c.gender], ['Occupation', c.occupation], ['Based in', c.location]].filter(function (item) { return item[1]; });
+    var basics = c.gender && !facts.some(function (fact) { return fact.label.toLowerCase() === 'gender'; }) ? [{ label: 'Gender', value: c.gender }] : [];
     var name = c.nickname || c.name;
     var meta = [c.age ? c.age + ' years old' : '', c.pronouns].filter(Boolean);
-    var html = '<article class="bh-dossier-v2" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
+    var html = '<article class="bh-dossier-v3" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
     html += '<header class="bd1-cover" id="' + prefix + '-overview">';
     html += '<div class="bd1-masthead"><span>Character dossier</span>' + (c.writer ? '<span>Written by ' + escapeHtml(c.writer) + '</span>' : '') + '</div>';
     if (c.portrait) html += '<figure class="bd1-hero"><img src="' + escapeHtml(c.portrait) + '" alt="' + escapeHtml(name ? name + ' — character portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer"><span class="bd1-photo-mark" aria-hidden="true">✦</span></figure>';
@@ -211,43 +258,49 @@
     if (stats.length) html += '<div class="bd1-stats">' + stats.map(function (item) { return '<a href="#' + prefix + '-' + item[2] + '"><span>' + item[0] + '</span><small>' + item[1] + '</small></a>'; }).join('') + '</div>';
     html += '</div></header>';
     var nav = [['overview', 'Overview']];
-    if (pinned.length) nav.push(['people', 'Inner circle']);
+    if (photos.length) nav.push(['people', 'Inner circle']);
     if (relationships.length) nav.push(['connections', hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections']);
     if (entries.length) nav.push(['story', 'Timeline']);
     if (songs.length || c.playlistUrl) nav.push(['soundtrack', 'Soundtrack']);
     if (c.notes) nav.push(['notes', 'Notes']);
     if (nav.length > 1) html += '<nav class="bd1-nav" aria-label="Character sections">' + nav.map(function (item) { return '<a href="#' + prefix + '-' + item[0] + '">' + item[1] + '</a>'; }).join('') + '</nav>';
-    html += '<div class="bd1-content">';
-    if (c.tags.length || facts.length || basics.length || c.currentChapter) {
-      html += '<section class="bd1-section bd1-overview">' + heading('At a glance', c.asOf ? 'As of ' + c.asOf : '');
-      if (c.tags.length) html += '<ul class="bd1-tags" aria-label="Character traits">' + c.tags.map(function (tag) { return '<li>' + escapeHtml(tag) + '</li>'; }).join('') + '</ul>';
-      if (c.currentChapter) html += '<div class="bd1-chapter"><span class="bd1-eyebrow">Current chapter</span>' + paragraphs(c.currentChapter) + '</div>';
-      if (facts.length || basics.length) html += '<dl class="bd1-facts">' + basics.concat(facts.map(function (fact) { return [fact.label, fact.value]; })).map(function (item) { return '<div><dt>' + escapeHtml(item[0]) + '</dt><dd>' + escapeHtml(item[1]) + '</dd></div>'; }).join('') + '</dl>';
-      html += '</section>';
+    if (photos.length || map) {
+      html += '<div class="bd3-memory-row">';
+      if (photos.length) {
+        html += '<section class="bd3-polaroid-panel" id="' + prefix + '-people">' + heading('Close to heart') + '<div class="bd3-polaroids">';
+        photos.forEach(function (photo) {
+          var image = photo.image ? '<img src="' + escapeHtml(photo.image) + '" alt="' + escapeHtml(photo.name || 'A favourite person') + '" loading="lazy" referrerpolicy="no-referrer">' : '<span class="bd3-photo-placeholder" aria-hidden="true">' + escapeHtml(photo.name.slice(0, 1) || '♡') + '</span>';
+          html += '<figure class="bd3-polaroid">' + (photo.url ? '<a href="' + escapeHtml(photo.url) + '" target="_blank" rel="noopener noreferrer">' + image + '</a>' : image) + '<figcaption>' + escapeHtml(photo.name) + '</figcaption></figure>';
+        });
+        html += '</div></section>';
+      }
+      if (map) html += '<section class="bd3-map-panel">' + heading('Current location') + map + '</section>';
+      html += '</div>';
     }
-    if (pinned.length) {
-      html += '<section class="bd1-section bd1-people-panel" id="' + prefix + '-people">' + heading('The inner circle') + '<div class="bd1-pinned">';
-      pinned.forEach(function (r, index) {
-        html += '<a class="bd1-person" href="#' + prefix + '-connection-' + r.id + '"><span class="bd1-person-number">0' + (index + 1) + '</span>';
-        if (r.portrait) html += '<img src="' + escapeHtml(r.portrait) + '" alt="" loading="lazy" referrerpolicy="no-referrer">';
-        html += '<span class="bd1-person-name">' + escapeHtml(r.name) + '</span><span class="bd1-person-kind">' + escapeHtml(r.kind) + '</span>' + (r.flavour ? '<span class="bd1-person-flavour">' + escapeHtml(r.flavour) + '</span>' : '') + '</a>';
-      });
-      html += '</div></section>';
+    html += '<div class="bd1-content">';
+    if (facts.length || basics.length || c.currentChapter) {
+      html += '<section class="bd1-section bd1-overview">' + heading('At a glance', c.asOf ? 'As of ' + c.asOf : '');
+      if (c.currentChapter) html += '<div class="bd1-chapter"><span class="bd1-eyebrow">Current chapter</span>' + paragraphs(c.currentChapter) + '</div>';
+      if (facts.length || basics.length) html += '<dl class="bd1-facts">' + pairedFacts(basics.concat(facts)) + '</dl>';
+      html += '</section>';
     }
     if (relationships.length) {
       html += '<section class="bd1-section bd1-connections-panel" id="' + prefix + '-connections">' + heading(hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections & flavour') + '<div class="bd1-connections">';
       relationships.forEach(function (r) {
         var linked = entries.filter(function (entry) { return entry.connectionIds.indexOf(r.id) !== -1; });
-        html += '<article class="bd1-connection' + (r.featured ? ' bd1-featured' : '') + '" id="' + prefix + '-connection-' + r.id + '"><div class="bd1-connection-head">';
+        html += '<article class="bd1-connection" id="' + prefix + '-connection-' + r.id + '"><div class="bd1-connection-head">';
         if (r.portrait) html += '<img class="bd1-avatar" src="' + escapeHtml(r.portrait) + '" alt="" loading="lazy" referrerpolicy="no-referrer">';
         html += '<div><span class="bd1-eyebrow">' + escapeHtml(r.kind) + (r.featured ? ' · In focus' : '') + '</span><h3>' + external(r.url, r.name) + '</h3></div>';
         if (r.status) html += '<span class="bd1-small-status">' + escapeHtml(r.status) + '</span>';
         html += '</div>';
         if (r.flavour) html += '<div class="bd1-flavour"><span>Flavour</span><span>' + escapeHtml(r.flavour) + '</span></div>';
-        html += paragraphs(r.summary, 'bd1-connection-copy');
-        if (r.quote) html += '<blockquote>' + paragraphs(r.quote) + '</blockquote>';
-        if (r.playlistUrl) html += '<div class="bd1-relationship-playlist">' + external(r.playlistUrl, 'Their soundtrack ↗') + '</div>';
-        if (linked.length) html += '<details class="bd1-linked-story"><summary>' + linked.length + (linked.length === 1 ? ' shared story entry' : ' shared story entries') + '</summary><ul>' + linked.map(function (entry) { return '<li><a href="#' + prefix + '-entry-' + entry.id + '"><span>' + escapeHtml(entry.title) + '</span><small>' + escapeHtml(entry.type) + '</small></a></li>'; }).join('') + '</ul></details>';
+        if (linked.length || r.summary || r.quote || r.playlistUrl) {
+          html += '<details class="bd1-linked-story"><summary>' + (linked.length ? linked.length + (linked.length === 1 ? ' shared story' : ' shared stories') : 'About this connection') + '</summary>' + paragraphs(r.summary, 'bd1-connection-copy');
+          if (r.quote) html += '<blockquote>' + paragraphs(r.quote) + '</blockquote>';
+          if (r.playlistUrl) html += '<div class="bd1-relationship-playlist">' + external(r.playlistUrl, 'Their soundtrack ↗') + '</div>';
+          if (linked.length) html += '<ul>' + linked.map(function (entry) { return '<li><a href="#' + prefix + '-entry-' + entry.id + '"><span>' + escapeHtml(entry.title) + '</span><small>' + escapeHtml(entry.type) + '</small></a></li>'; }).join('') + '</ul>';
+          html += '</details>';
+        }
         html += '</article>';
       });
       html += '</div></section>';
@@ -268,7 +321,7 @@
         html += '</div><h4>' + external(entry.url, entry.title) + '</h4>';
         if (entry.participants) html += '<div class="bd1-participants">' + escapeHtml(entry.participants) + '</div>';
         var connected = entry.connectionIds.map(function (id) { return byId.get(id); }).filter(Boolean);
-        if (connected.length) html += '<div class="bd1-entry-people">' + connected.map(function (r) { return '<a href="#' + prefix + '-connection-' + r.id + '">' + escapeHtml(r.name) + '</a>'; }).join('') + '</div>';
+        if (!entry.participants && connected.length) html += '<div class="bd1-entry-people">' + connected.map(function (r) { return '<a href="#' + prefix + '-connection-' + r.id + '">' + escapeHtml(r.name) + '</a>'; }).join('') + '</div>';
         html += paragraphs(entry.summary, 'bd1-entry-copy');
         if (entry.postedDate) html += '<div class="bd1-posted-date">Posted ' + escapeHtml(displayDate(entry.postedDate)) + '</div>';
         html += '</li>';
@@ -277,10 +330,12 @@
     }
     if (songs.length || c.playlistUrl) {
       html += '<section class="bd1-section bd1-soundtrack-panel" id="' + prefix + '-soundtrack">' + heading('On repeat', songs.length ? songs.length + (songs.length === 1 ? ' song' : ' songs') : '');
-      if (c.playlistUrl) html += '<div class="bd1-main-playlist">' + player(c.playlistUrl, name ? name + ' — playlist' : 'Character playlist') + '</div>';
-      if (songs.length) html += '<div class="bd1-songs">' + songs.map(function (song, index) {
+      var slides = songs.slice();
+      if (c.playlistUrl) slides.push({ title: 'The full playlist', artist: '', url: c.playlistUrl, note: '' });
+      if (slides.length) html += '<div class="bd3-player-carousel" tabindex="0" role="region" aria-label="Character soundtrack — scroll to browse songs">' + slides.map(function (song, index) {
         var label = song.title || song.artist || 'Listen';
-        return '<details class="bd1-song"' + (index === 0 ? ' open' : '') + '><summary><span class="bd1-song-number">' + String(index + 1).padStart(2, '0') + '</span><span><span class="bd1-song-title">' + escapeHtml(label) + '</span>' + (song.artist && song.artist !== label ? '<span class="bd1-song-artist">' + escapeHtml(song.artist) + '</span>' : '') + '</span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body">' + paragraphs(song.note, 'bd1-song-note') + player(song.url, label) + '</div></details>';
+        var previous = (index - 1 + slides.length) % slides.length, next = (index + 1) % slides.length;
+        return '<article class="bd3-song-slide" id="' + prefix + '-song-' + index + '" aria-label="' + (index + 1) + ' of ' + slides.length + ': ' + escapeHtml(label) + '"><div class="bd3-song-title"><span class="bd1-song-number">' + String(index + 1).padStart(2, '0') + '</span><div><h3 class="bd1-song-title">' + escapeHtml(label) + '</h3>' + (song.artist && song.artist !== label ? '<span class="bd1-song-artist">' + escapeHtml(song.artist) + '</span>' : '') + '</div></div>' + player(song.url, label) + paragraphs(song.note, 'bd1-song-note') + '<div class="bd3-song-controls">' + (slides.length > 1 ? '<a href="#' + prefix + '-song-' + previous + '" aria-label="Previous song">←</a>' : '') + '<span>' + (index + 1) + ' / ' + slides.length + '</span>' + (slides.length > 1 ? '<a href="#' + prefix + '-song-' + next + '" aria-label="Next song">→</a>' : '') + '</div></article>';
       }).join('') + '</div>';
       html += '</section>';
     }

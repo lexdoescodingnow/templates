@@ -19,13 +19,20 @@ function test(name, run) {
 }
 function clean(value) { return value.replace(/\[\/?(?:b|i|u)\]/gi, '').trim(); }
 function character(values = {}) { return { id:'test-character', name:'Test character', ...values }; }
+function assertNoExecutableMarkup(html) {
+  assert(!/<script\b|(?:href|src)="javascript:/i.test(html));
+  for (const match of html.matchAll(/<[^>]+>/g)) {
+    const outsideValues = match[0].replace(/"[^"]*"|'[^']*'/g, '""');
+    assert(!/\son[a-z]+\s*=/i.test(outsideValues), 'Escaped data must not create event-handler attributes');
+  }
+}
 function safeNormalization(input, assertion) {
   let value;
   try { value = Dossier.normalizeCharacter(input); }
   catch (error) { assert(error instanceof Error); return; }
   assertion(value);
 }
-const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css';
+const stylesheet = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css';
 const sam = library.characters.find(item => item.id === 'baek-samuel');
 
 test('All 181 canonical identities and imported details survive normalization', () => {
@@ -67,6 +74,19 @@ test('Sam retains the approved age/status, all facts, songs, connections and tra
   assert(sam.timeline.every(item => item.connectionIds.every(id => connectionIds.has(id))));
 });
 
+test('Related facts stay paired without duplicating header information', () => {
+  const output = Dossier.render(sam);
+  const facts = output.match(/<dl\b[^>]*>([\s\S]*?)<\/dl>/);
+  assert(facts);
+  const rows = facts[1].split('<div class="bd3-fact-row">').slice(1).map(row=>Array.from(row.matchAll(/<dt>([^<]+)<\/dt>/g), match=>match[1]));
+  for (const pair of [['Nationality','Ethnicity'],['Romanticality','Sexuality'],['Residency','Birthday']]) {
+    assert(rows.some(row=>JSON.stringify(row)===JSON.stringify(pair)), 'Expected adjacent fact pair: '+pair.join(' / '));
+  }
+  assert(rows.every(row=>row.length<=2));
+  assert(!facts[1].includes('<dt>Occupation</dt>') && !facts[1].includes('<dt>Based in</dt>'));
+  assert(!output.includes('ANXIOUS HEART') && !/aria-label="Character traits"/.test(output));
+});
+
 test('Sam, Ben and Cookie retain their distinct supplied colours and separate portrait images', () => {
   assert.equal(sam.accent, '#5b8612');
   assert.equal(library.characters.find(item => item.id === 'ben-dam').accent, '#a99b8e');
@@ -75,6 +95,23 @@ test('Sam, Ben and Cookie retain their distinct supplied colours and separate po
   assert.equal(sam.portrait, 'https://b.l3n.co/i/n8q1lD.png');
   const html = Dossier.render(sam);
   assert(html.includes(sam.avatar) && html.includes(sam.portrait));
+});
+
+test('Sam’s three polaroids preserve the selected people and their existing directory portraits', () => {
+  assert.deepEqual(sam.polaroids.map(item=>item.name), ['Hoseong','Jiae','Hajun']);
+  const fullNames = ['Hwak Hoseong','Baek Jiae','Kang Hajun'];
+  fullNames.forEach((name,index)=>{
+    const original = source.find(item=>item.name===name);
+    assert.equal(sam.polaroids[index].image, original.code.match(/\[PI=([^\]]+)\]/)[1]);
+  });
+  assert.equal(sam.polaroids[0].url, 'https://bluehour.jcink.net/index.php?showtopic=104200');
+  assert(!sam.polaroids[1].url && !sam.polaroids[2].url);
+  const rendered = Dossier.render(sam);
+  for (const photo of sam.polaroids) {
+    assert(rendered.includes(Dossier.escapeHtml(photo.name)));
+    assert(rendered.includes(photo.image));
+  }
+  assert.throws(()=>Dossier.normalizeCharacter(character({polaroids:[...sam.polaroids,{name:'Fourth',image:'https://example.com/fourth.jpg'}]})));
 });
 
 test('Invalid imports cannot silently replace a library with an empty or malformed dataset', () => {
@@ -89,6 +126,7 @@ test('Invalid imports cannot silently replace a library with an empty or malform
 
 test('Unicode, quotation marks, distinct story dates and connection links round-trip intact', () => {
   const raw = character({name:'Trần Bảo & Bāng Dí', nickname:'B', notes:'“a memory” — 雨 & café', avatar:'https://example.com/portrait.png', imagePosition:'75% 20%',
+    polaroids:[{name:'雨',image:'https://example.com/rain.png',url:'https://example.com/story'}],mapLocation:'San Bernardino, CA',mapLatitude:'34.1211115',mapLongitude:'-117.301767',mapZoom:11,
     relationships:[{id:'connection-one',name:'Seo Hyemi',kind:'Friend',summary:'she said “hello”'}],
     timeline:[{id:'story-one',title:'The next day',date:'2026-10-13',postedDate:'2026-11-06',dateLabel:'Autumn',participants:'Bảo & Hyemi',connectionIds:['connection-one'],type:'Thread'}]});
   const first = Dossier.normalizeCharacter(raw);
@@ -98,9 +136,42 @@ test('Unicode, quotation marks, distinct story dates and connection links round-
   assert.equal(roundtrip.notes, raw.notes);
   assert.equal(roundtrip.avatar, raw.avatar);
   assert.equal(roundtrip.imagePosition, '75% 20%');
+  assert.deepEqual(roundtrip.polaroids, raw.polaroids);
+  assert.equal(roundtrip.mapLocation, raw.mapLocation);
+  assert.equal(roundtrip.mapLatitude, raw.mapLatitude);
+  assert.equal(roundtrip.mapLongitude, raw.mapLongitude);
+  assert.equal(roundtrip.mapZoom, raw.mapZoom);
   assert.equal(roundtrip.timeline[0].date, '2026-10-13');
   assert.equal(roundtrip.timeline[0].postedDate, '2026-11-06');
   assert.deepEqual(roundtrip.timeline[0].connectionIds, ['connection-one']);
+});
+
+test('City maps validate coordinate ranges, retain city-level provenance and escape labels safely', () => {
+  assert.equal(sam.mapLocation, 'San Bernardino, CA');
+  assert.equal(Number(sam.mapLatitude), 34.1211115);
+  assert.equal(Number(sam.mapLongitude), -117.301767);
+  assert.equal(sam.mapZoom, 11);
+  const mapHtml = Dossier.render(character({mapLocation:sam.mapLocation,mapLatitude:sam.mapLatitude,mapLongitude:sam.mapLongitude,mapZoom:sam.mapZoom}));
+  const mapSource = mapHtml.match(/<iframe\b[^>]*src="([^"]+)"/);
+  assert(mapSource);
+  const mapUrl = new URL(mapSource[1].replaceAll('&amp;','&'));
+  assert.equal(mapUrl.origin, 'https://www.openstreetmap.org');
+  assert.equal(mapUrl.searchParams.get('marker'), sam.mapLatitude+','+sam.mapLongitude);
+  assert(library.characters.filter(item=>item.id!==sam.id).every(item=>!item.mapLatitude && !item.mapLongitude));
+  for (const fields of [
+    {mapLatitude:'86'}, {mapLatitude:'-86'}, {mapLongitude:'181'}, {mapLongitude:'-181'},
+    {mapLatitude:'NaN'}, {mapLatitude:'Infinity'}, {mapLongitude:'0;alert(1)'},
+    {mapZoom:1}, {mapZoom:19}, {mapZoom:3.5}
+  ]) assert.throws(()=>Dossier.normalizeCharacter(character(fields)));
+  const partial = Dossier.normalizeCharacter(character({mapLocation:'Partial',mapLatitude:'34',mapLongitude:''}));
+  assert(!/<iframe\b/i.test(Dossier.render(partial)), 'One coordinate alone must not create a map');
+  const unsafe = '<script>alert(1)</script><img src=x onerror="alert(1)">';
+  const safe = Dossier.normalizeCharacter(character({mapLocation:unsafe,mapLatitude:'34',mapLongitude:'-117',mapZoom:11,polaroids:[{name:unsafe,image:'javascript:alert(1)',url:'javascript:alert(1)'}]}));
+  assert.equal(safe.polaroids[0].image, '');
+  assert.equal(safe.polaroids[0].url, '');
+  const html = Dossier.render(safe);
+  assertNoExecutableMarkup(html);
+  assert(html.includes(Dossier.escapeHtml(unsafe)));
 });
 
 test('Portrait addresses and image cropping cannot inject markup or arbitrary styles', () => {
@@ -154,17 +225,37 @@ test('Large imported lists are preserved or explicitly rejected instead of silen
   safeNormalization(character({notes}), result => assert.equal(result.notes, notes));
 });
 
-test('The closest-connections section shows at most three chosen people without deleting the others', () => {
+test('Legacy traits and rankings remain editable data without duplicating the uniform connection cards', () => {
   const relationships = ['One','Two','Three','Four'].map((name,index)=>({id:'person-'+index,name,pinned:true}));
-  const normalized = Dossier.normalizeCharacter(character({relationships}));
+  relationships[0].featured = true;
+  const normalized = Dossier.normalizeCharacter(character({relationships,tags:['LEGACY TRAIT SENTINEL']}));
   assert.equal(normalized.relationships.length, 4);
+  assert(normalized.relationships.every(item=>item.pinned));
+  assert.deepEqual(normalized.tags, ['LEGACY TRAIT SENTINEL']);
   const output = Dossier.render(normalized);
-  const section = output.match(/<section\b[^>]*\bid="[^"]+-people"[^>]*>([\s\S]*?)<\/section>/);
-  assert(section, 'A pinned connection should appear in the closest-connections section');
-  assert.equal((section[1].match(/<a\b/g)||[]).length, 3);
-  assert(section[1].includes('One') && section[1].includes('Two') && section[1].includes('Three'));
-  assert(!section[1].includes('Four'));
-  assert(output.includes('Four'), 'Unpinned/overflow connections must remain in the full connection list');
+  assert(!output.includes('LEGACY TRAIT SENTINEL'));
+  for (const relationship of relationships) assert.equal((output.match(new RegExp('>'+relationship.name+'<','g'))||[]).length, 1, 'Each connection should be listed once');
+  const cardClasses = Array.from(output.matchAll(/<article\b(?=[^>]*\bid="[^"]+-connection-[^"]+")[^>]*\bclass="([^"]+)"/g), match=>match[1]);
+  assert.equal(cardClasses.length, 4);
+  assert.equal(new Set(cardClasses).size, 1, 'A featured connection uses the same card structure as every other connection');
+});
+
+test('The compact soundtrack preserves all ten players and navigable song destinations', () => {
+  const output = Dossier.render(sam);
+  const spotifyPlayers = Array.from(output.matchAll(/<iframe\b[^>]*\bsrc="(https:\/\/open\.spotify\.com\/embed\/track\/[^"?]+)[^"]*"/g), match=>match[1]);
+  assert.equal(spotifyPlayers.length, 10);
+  assert.deepEqual(spotifyPlayers.map(url=>url.split('/').pop()), sam.songs.map(item=>item.url.split('/').pop()));
+  const ids = new Set(Array.from(output.matchAll(/\bid="([^"]+)"/g), match=>match[1]));
+  const jumps = Array.from(output.matchAll(/\bhref="#([^"]+)"/g), match=>match[1]);
+  assert(jumps.length >= 10, 'The soundtrack should provide usable navigation through its songs');
+  assert(jumps.every(id=>ids.has(id)), 'Every internal navigation link must have a destination');
+  const slides = Array.from(output.matchAll(/<article\b[^>]*class="bd3-song-slide"[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/article>/g), match=>({id:match[1],body:match[2]}));
+  assert.equal(slides.length, 10);
+  slides.forEach((slide,index)=>{
+    assert(slide.body.includes('href="#'+slides[(index+1)%slides.length].id+'"'), 'Next should lead to the following song and wrap at the end');
+    assert(slide.body.includes('href="#'+slides[(index+slides.length-1)%slides.length].id+'"'), 'Previous should lead to the previous song and wrap at the beginning');
+  });
+  assert(!/<script\b/.test(output));
 });
 
 test('Text is escaped, unsafe links cannot execute, and Spotify embeds require the real host', () => {
@@ -175,7 +266,7 @@ test('Text is escaped, unsafe links cannot execute, and Spotify embeds require t
     relationships:[{id:'person',name:unsafe,url:'javascript:alert(1)'}],
     timeline:[{id:'story',title:unsafe,url:'javascript:alert(1)',summary:unsafe}],
     songs:[{title:unsafe,artist:unsafe,url:'https://open.spotify.com.evil.example/embed/track/5KyOUICJIvO0z71MBdPGiX'}]}));
-  assert(!/<script\b|<[^>]+\sonerror\s*=|(?:href|src)="javascript:/i.test(output));
+  assertNoExecutableMarkup(output);
   assert(!/<iframe\b/i.test(output), 'A lookalike Spotify host must not produce an embed');
   const embed = Dossier.render(character({songs:[{title:'Track',url:'https://open.spotify.com/track/5KyOUICJIvO0z71MBdPGiX'}]}));
   assert(/<iframe\b/.test(embed));
@@ -190,20 +281,20 @@ test('Forum output contains complete static content and one shared stylesheet', 
   assert.equal((output.match(/<link\b[^>]*rel="stylesheet"/g)||[]).length, 1);
   assert(!/<script\b|pgy-pikeplace|dropboxusercontent|unpkg\.com|bluehour-cosmicmeet/i.test(output));
   assert(output.includes(stylesheet));
-  assert(/class="bh-dossier-v2"/.test(output));
-  assert(!/class="bh-dossier-v1"|\/dossier-v1\.css/.test(output));
+  assert(/class="bh-dossier-v3"/.test(output));
+  assert(!/class="bh-dossier-v[12]"|\/dossier-v[12]\.css/.test(output));
   for (const entry of sam.timeline) assert(output.includes(entry.url.replaceAll('&','&amp;')));
   for (const fact of sam.facts) assert(output.includes(Dossier.escapeHtml(fact.value)));
   for (const song of sam.songs) assert(output.includes(Dossier.escapeHtml(song.title)));
   assert(!/\bundefined\b|\bNaN\b/.test(output));
   const generated = read('sam-forum.txt');
-  assert.equal(generated, output, 'The supplied forum file must match the current renderer and fresh stylesheet');
+  assert(generated===output, 'The supplied forum file must match the current renderer and fresh stylesheet');
 });
 
 test('The portable editor bundles all scripts and contains parseable JavaScript', () => {
   const portable = read('atelier.html');
   assert(!/<script\b[^>]*\bsrc=/i.test(portable));
-  assert(!/<link\b[^>]*href="(?:editor|dossier-v[12])\.css"/i.test(portable));
+  assert(!/<link\b[^>]*href="(?:editor|dossier-v[123])\.css"/i.test(portable));
   const scripts = Array.from(portable.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi), match=>match[1]);
   assert(scripts.length >= 3);
   scripts.forEach((script,index) => new vm.Script(script, {filename:'atelier-script-'+index+'.js'}));

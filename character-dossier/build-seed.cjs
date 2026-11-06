@@ -36,7 +36,7 @@ function parseCharacter(record) {
     id:slug(record.name), name:record.name, nickname, age, pronouns, gender:'', occupation,
     location:'', writer:'', portrait, avatar:portrait, accent:'#8a9b91', tags:[],
     facts:[{label:'Face claim', value:faceclaim}], currentChapter:'', asOf:'', notes:'',
-    relationshipStatus:partnerStatus, relationships, timeline:[], songs:[], playlistUrl:''
+    relationshipStatus:partnerStatus, relationships, timeline:[], songs:[], playlistUrl:'', polaroids:[]
   };
 }
 
@@ -67,23 +67,31 @@ const sam = byName.get('baek samuel');
 assert(sam && sam.age === '25', 'Sam should use the user-confirmed current directory age of 25.');
 byName.get('ben dam').accent = '#a99b8e';
 byName.get('cookie chalongrat vihokratana').accent = '#d9804d';
+// City-level map point verified with OpenStreetMap/Nominatim on 2026-11-06:
+// https://www.openstreetmap.org/relation/253639 (San Bernardino city, not the county).
 Object.assign(sam, {
   gender:'cisgender male', location:'los angeles, ca', portrait:'https://b.l3n.co/i/n8q1lD.png', avatar:'https://c.l3n.co/i/n8qt60.png', accent:'#5b8612',
   relationshipStatus:'In a relationship',
+  mapLocation:'San Bernardino, CA', mapLatitude:'34.1211115', mapLongitude:'-117.3017670', mapZoom:11,
+  polaroids:[
+    {name:'Hoseong', image:byName.get('hwak hoseong').portrait, url:'https://bluehour.jcink.net/index.php?showtopic=104200'},
+    {name:'Jiae', image:byName.get('baek jiae').portrait, url:''},
+    {name:'Hajun', image:byName.get('kang hajun').portrait, url:''}
+  ],
   tags:['ANXIOUS HEART', 'BRAVER THAN HE THINKS', 'DEEPLY ATTACHED', 'EMOTIONALLY TUNED', 'GENTLE HUMOUR', 'OVERTHINKER', 'QUIET LOYALTY', 'ROUTINE COMFORT', 'SAFETY SEEKER', 'SOFT-SPOKEN'],
   facts:[
-    {label:'Preferred name', value:'sam, sammy'},
-    {label:'Birthday', value:'october 13th'},
-    {label:'Ethnicity', value:'korean'},
     {label:'Nationality', value:'korean'},
+    {label:'Ethnicity', value:'korean'},
     {label:'Romanticality', value:'biromantic'},
     {label:'Sexuality', value:'bisexual'},
     {label:'Residency', value:'san bernardino, CA'},
+    {label:'Birthday', value:'october 13th'},
+    {label:'Preferred name', value:'sam, sammy'},
     {label:'Languages', value:'english, korean'},
     {label:'MBTI', value:'ISTP'},
+    {label:'Blood type', value:'A+'},
     {label:'Western zodiac', value:'libra'},
     {label:'Chinese zodiac', value:'monkey'},
-    {label:'Blood type', value:'A+'},
     {label:'Favorite color', value:'red'},
     {label:'Favorite food', value:'pizza'},
     {label:'Face claim', value:'kang yuchan'}
@@ -123,10 +131,10 @@ characters.sort((a,b) => {
 const notices = Object.fromEntries(characters.map(record => [record.id, record === sam ? [
   'Sam uses the confirmed current age of 25 and his relationship with Hoseong. All supplied facts, ten songs and five story links are included.',
   'Story dates were not supplied. The five entries keep their original order under Undated until you add in-world dates.',
-  'No closest connections have been chosen. Pin up to three people in Connections & ships when you are ready.'
+  'The three polaroids show Hoseong, Jiae and Hajun using their existing directory portraits. The map shows San Bernardino at city level.'
 ] : [
   'Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.',
-  'Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post.'
+  'Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post.'
 ]]));
 
 assert.equal(characters.length, 181);
@@ -135,6 +143,7 @@ assert(characters.every(record => record.name && record.nickname && record.age &
 assert.equal(sam.songs.length, 10);
 assert.equal(sam.timeline.length, 5);
 assert.equal(sam.relationships.length, 4);
+assert.equal(sam.polaroids.length, 3);
 assert(sam.relationships.every(record => !record.pinned));
 assert(sam.timeline.every(record => !record.date && !record.postedDate));
 const library = {version:1, characters};

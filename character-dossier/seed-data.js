@@ -28,19 +28,11 @@ var DOSSIER_SEED = {
       ],
       "facts": [
         {
-          "label": "Preferred name",
-          "value": "sam, sammy"
-        },
-        {
-          "label": "Birthday",
-          "value": "october 13th"
-        },
-        {
-          "label": "Ethnicity",
+          "label": "Nationality",
           "value": "korean"
         },
         {
-          "label": "Nationality",
+          "label": "Ethnicity",
           "value": "korean"
         },
         {
@@ -56,6 +48,14 @@ var DOSSIER_SEED = {
           "value": "san bernardino, CA"
         },
         {
+          "label": "Birthday",
+          "value": "october 13th"
+        },
+        {
+          "label": "Preferred name",
+          "value": "sam, sammy"
+        },
+        {
           "label": "Languages",
           "value": "english, korean"
         },
@@ -64,16 +64,16 @@ var DOSSIER_SEED = {
           "value": "ISTP"
         },
         {
+          "label": "Blood type",
+          "value": "A+"
+        },
+        {
           "label": "Western zodiac",
           "value": "libra"
         },
         {
           "label": "Chinese zodiac",
           "value": "monkey"
-        },
-        {
-          "label": "Blood type",
-          "value": "A+"
         },
         {
           "label": "Favorite color",
@@ -292,7 +292,28 @@ var DOSSIER_SEED = {
           "note": ""
         }
       ],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": [
+        {
+          "name": "Hoseong",
+          "image": "https://d.l3n.co/fZchP3.png",
+          "url": "https://bluehour.jcink.net/index.php?showtopic=104200"
+        },
+        {
+          "name": "Jiae",
+          "image": "https://c.l3n.co/i/O0D7nT.png",
+          "url": ""
+        },
+        {
+          "name": "Hajun",
+          "image": "https://b.l3n.co/i/o7L6Re.png",
+          "url": ""
+        }
+      ],
+      "mapLocation": "San Bernardino, CA",
+      "mapLatitude": "34.1211115",
+      "mapLongitude": "-117.3017670",
+      "mapZoom": 11
     },
     {
       "id": "ben-dam",
@@ -336,7 +357,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "cookie-chalongrat-vihokratana",
@@ -380,7 +402,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "aaron-wang",
@@ -424,7 +447,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "adrian-baek",
@@ -468,7 +492,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "adriel-sang",
@@ -512,7 +537,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "akara-siripong",
@@ -556,7 +582,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "alastair-choi",
@@ -600,7 +627,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "alec-rivera",
@@ -629,7 +657,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "alexander-park",
@@ -658,7 +687,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "alfie-shin",
@@ -687,7 +717,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "andrew-kwon",
@@ -731,7 +762,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "antony-moon",
@@ -775,7 +807,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "arthur-chung",
@@ -819,7 +852,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "asher-nam",
@@ -863,7 +897,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "august-tang",
@@ -907,7 +942,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "bae-chanwoo",
@@ -951,7 +987,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "bae-jaehoon",
@@ -980,7 +1017,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "baek-jiae",
@@ -1024,7 +1062,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "baek-yujun",
@@ -1082,7 +1121,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "bang-di-wang",
@@ -1126,7 +1166,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "beom-jaehyun",
@@ -1170,7 +1211,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "byun-kiha",
@@ -1214,7 +1256,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "byun-yuseop",
@@ -1258,7 +1301,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "cal-myung",
@@ -1302,7 +1346,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "caleb-sim",
@@ -1346,7 +1391,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "casper-min-peters",
@@ -1390,7 +1436,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "chan-daejin",
@@ -1419,7 +1466,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "cho-minho",
@@ -1448,7 +1496,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "cho-suho",
@@ -1492,7 +1541,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "choi-jinho",
@@ -1536,7 +1586,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "choi-jinseok",
@@ -1580,7 +1631,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "choi-jinwoo",
@@ -1624,7 +1676,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "choi-taeyang",
@@ -1682,7 +1735,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "cian-campbell",
@@ -1726,7 +1780,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "clarity-prasit-chatri",
@@ -1770,7 +1825,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "cody-baek",
@@ -1799,7 +1855,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "cole-sim",
@@ -1843,7 +1900,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "congressman-edison-lee",
@@ -1872,7 +1930,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "davis-huang-yoon",
@@ -1916,7 +1975,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "deung-changmin",
@@ -1945,7 +2005,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "diego-martinez",
@@ -1974,7 +2035,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "dominic-lim",
@@ -2018,7 +2080,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "dr-zhou-zhiyuan",
@@ -2062,7 +2125,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "dustin-jeon",
@@ -2106,7 +2170,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "elias-lim",
@@ -2164,7 +2229,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "eric-jeon",
@@ -2208,7 +2274,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "everett-tsai",
@@ -2237,7 +2304,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "finn-campbell",
@@ -2281,7 +2349,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "forest-lee",
@@ -2310,7 +2379,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "franklin-jwa",
@@ -2354,7 +2424,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "freddie-lim",
@@ -2398,7 +2469,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "ga-baekhyeon",
@@ -2427,7 +2499,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "gabriel-yang",
@@ -2471,7 +2544,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "geum-jung",
@@ -2515,7 +2589,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "gi-daehyun",
@@ -2559,7 +2634,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "gil-bokyung",
@@ -2603,7 +2679,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "gwan-janghoon",
@@ -2647,7 +2724,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "gyeon-seunghwan",
@@ -2676,7 +2754,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "han-seoyeon",
@@ -2720,7 +2799,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "hiro-kimura",
@@ -2749,7 +2829,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "huang-haoyu",
@@ -2793,7 +2874,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "huang-liang",
@@ -2837,7 +2919,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "hunter-park",
@@ -2881,7 +2964,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "hwak-hoseong",
@@ -2925,7 +3009,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "isaiah-park",
@@ -2969,7 +3054,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jake-lee",
@@ -3013,7 +3099,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jamie-boo",
@@ -3042,7 +3129,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jang-yohan",
@@ -3086,7 +3174,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jason-kim",
@@ -3130,7 +3219,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jeon-yejoon",
@@ -3159,7 +3249,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jessica-kim",
@@ -3188,7 +3279,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jett-kim",
@@ -3232,7 +3324,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jeung-duckhwan",
@@ -3261,7 +3354,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jian-cheng",
@@ -3305,7 +3399,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "joseph-gil",
@@ -3349,7 +3444,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "journey-parkinson-kim",
@@ -3393,7 +3489,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jude-yoon",
@@ -3437,7 +3534,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "julian-lee",
@@ -3481,7 +3579,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jung-minseo",
@@ -3525,7 +3624,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jung-taejoo",
@@ -3569,7 +3669,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "jung-woobin",
@@ -3598,7 +3699,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "junichiro-yamasaki",
@@ -3627,7 +3729,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kai-jeong",
@@ -3671,7 +3774,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kang-danwoo",
@@ -3715,7 +3819,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kang-hajun",
@@ -3759,7 +3864,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kang-minwoo",
@@ -3803,7 +3909,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kim-heechan",
@@ -3832,7 +3939,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kim-jihwan",
@@ -3861,7 +3969,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kim-taehwan",
@@ -3905,7 +4014,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kim-taesung",
@@ -3949,7 +4059,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kobayashi-yuki",
@@ -3993,7 +4104,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kuronuma-minharu",
@@ -4037,7 +4149,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kwon-kennedy",
@@ -4081,7 +4194,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "kwon-ubin",
@@ -4125,7 +4239,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "lee-joonki",
@@ -4169,7 +4284,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "lee-kyoahn",
@@ -4198,7 +4314,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "lena-kwon",
@@ -4242,7 +4359,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "leo-hwang",
@@ -4286,7 +4404,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "lewis-choi",
@@ -4330,7 +4449,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "li-tao",
@@ -4374,7 +4494,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "lim-chunhee",
@@ -4403,7 +4524,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "lucas-choi",
@@ -4447,7 +4569,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "lucian-yang",
@@ -4491,7 +4614,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "lyle-park",
@@ -4535,7 +4659,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "madison-sinclair",
@@ -4564,7 +4689,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "malachi-zhong",
@@ -4608,7 +4734,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "matthew-shin",
@@ -4652,7 +4779,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "mawaan-tehir",
@@ -4681,7 +4809,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "maxwell-seo",
@@ -4725,7 +4854,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "mew-wasutha-singhapan",
@@ -4769,7 +4899,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "mia-park",
@@ -4813,7 +4944,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "micah-ahn",
@@ -4857,7 +4989,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "michael-baek",
@@ -4901,7 +5034,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "miles-baek",
@@ -4945,7 +5079,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "milo-kim",
@@ -4974,7 +5109,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "min-jaeho",
@@ -5018,7 +5154,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "miren-su",
@@ -5047,7 +5184,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "mun-dae",
@@ -5091,7 +5229,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "mun-sangook",
@@ -5120,7 +5259,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "nakamura-tsubasa",
@@ -5164,7 +5304,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "nate-chung",
@@ -5208,7 +5349,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "naveighbean-soup",
@@ -5237,7 +5379,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "nicky-villarreal",
@@ -5266,7 +5409,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "niran-chakri",
@@ -5310,7 +5454,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "noah-kim",
@@ -5354,7 +5499,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "noel-hampton",
@@ -5383,7 +5529,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "oliver-min-peters",
@@ -5427,7 +5574,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "oprah-winfrey",
@@ -5456,7 +5604,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "park-haeun",
@@ -5500,7 +5649,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "park-soomin",
@@ -5544,7 +5694,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "park-taein",
@@ -5588,7 +5739,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "peter-lee",
@@ -5632,7 +5784,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "phoenix-wu",
@@ -5676,7 +5829,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "qiang-yichen",
@@ -5720,7 +5874,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "rain-jeon",
@@ -5764,7 +5919,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "river-lee",
@@ -5808,7 +5964,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "roman-parkinson-kim",
@@ -5837,7 +5994,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "ryan-min",
@@ -5881,7 +6039,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "ryu-hyemi",
@@ -5925,7 +6084,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "sato-hyunwoo",
@@ -5969,7 +6129,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "sebastian-lee",
@@ -6013,7 +6174,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "segasaki-kota",
@@ -6057,7 +6219,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "seo-hakyun",
@@ -6101,7 +6264,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "seo-inseong",
@@ -6130,7 +6294,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "seo-jeremy",
@@ -6174,7 +6339,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "seojun-lim",
@@ -6218,7 +6384,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "seok-cam",
@@ -6262,7 +6429,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "seomun-jaehwa",
@@ -6306,7 +6474,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "shane-kang",
@@ -6350,7 +6519,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "shen-ronghui",
@@ -6379,7 +6549,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "shin-dongmin",
@@ -6423,7 +6594,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "shin-sangmin",
@@ -6452,7 +6624,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "siwoo-choi",
@@ -6496,7 +6669,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "song-dongwoon",
@@ -6540,7 +6714,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "song-jiyong",
@@ -6584,7 +6759,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "song-yonggi",
@@ -6628,7 +6804,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "stella-jung",
@@ -6672,7 +6849,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "tanaka-hiroshi",
@@ -6716,7 +6894,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "tanaka-ren",
@@ -6760,7 +6939,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "tawin-chaiyaporn",
@@ -6804,7 +6984,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "theo-huang-yoon",
@@ -6848,7 +7029,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "toby-yoon",
@@ -6892,7 +7074,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "tommy-kim",
@@ -6936,7 +7119,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "tran-bao",
@@ -6965,7 +7149,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "valerie-kwon",
@@ -7009,7 +7194,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "vince-seok",
@@ -7053,7 +7239,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "wang-linyu",
@@ -7097,7 +7284,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "wei-bowen",
@@ -7126,7 +7314,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "wenjun-zhu",
@@ -7170,7 +7359,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "william-park",
@@ -7214,7 +7404,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "woo-daejung",
@@ -7258,7 +7449,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "xiaofeng-jeon",
@@ -7302,7 +7494,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "xiaoli-li",
@@ -7331,7 +7524,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "xiaoyang-li",
@@ -7360,7 +7554,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "xu-bingwen",
@@ -7404,7 +7599,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "xue-yiyun",
@@ -7448,7 +7644,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "yang-haneul",
@@ -7492,7 +7689,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "yoo-byungjoon",
@@ -7521,7 +7719,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "yoon-kijoon",
@@ -7565,7 +7764,8 @@ var DOSSIER_SEED = {
       ],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     },
     {
       "id": "zhou-yujie",
@@ -7594,7 +7794,8 @@ var DOSSIER_SEED = {
       "relationships": [],
       "timeline": [],
       "songs": [],
-      "playlistUrl": ""
+      "playlistUrl": "",
+      "polaroids": []
     }
   ]
 };
@@ -7602,726 +7803,726 @@ var DOSSIER_NOTICES = {
   "baek-samuel": [
     "Sam uses the confirmed current age of 25 and his relationship with Hoseong. All supplied facts, ten songs and five story links are included.",
     "Story dates were not supplied. The five entries keep their original order under Undated until you add in-world dates.",
-    "No closest connections have been chosen. Pin up to three people in Connections & ships when you are ready."
+    "The three polaroids show Hoseong, Jiae and Hajun using their existing directory portraits. The map shows San Bernardino at city level."
   ],
   "ben-dam": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "cookie-chalongrat-vihokratana": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "aaron-wang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "adrian-baek": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "adriel-sang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "akara-siripong": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "alastair-choi": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "alec-rivera": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "alexander-park": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "alfie-shin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "andrew-kwon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "antony-moon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "arthur-chung": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "asher-nam": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "august-tang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "bae-chanwoo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "bae-jaehoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "baek-jiae": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "baek-yujun": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "bang-di-wang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "beom-jaehyun": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "byun-kiha": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "byun-yuseop": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "cal-myung": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "caleb-sim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "casper-min-peters": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "chan-daejin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "cho-minho": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "cho-suho": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "choi-jinho": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "choi-jinseok": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "choi-jinwoo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "choi-taeyang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "cian-campbell": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "clarity-prasit-chatri": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "cody-baek": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "cole-sim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "congressman-edison-lee": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "davis-huang-yoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "deung-changmin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "diego-martinez": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "dominic-lim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "dr-zhou-zhiyuan": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "dustin-jeon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "elias-lim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "eric-jeon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "everett-tsai": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "finn-campbell": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "forest-lee": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "franklin-jwa": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "freddie-lim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "ga-baekhyeon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "gabriel-yang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "geum-jung": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "gi-daehyun": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "gil-bokyung": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "gwan-janghoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "gyeon-seunghwan": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "han-seoyeon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "hiro-kimura": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "huang-haoyu": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "huang-liang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "hunter-park": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "hwak-hoseong": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "isaiah-park": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jake-lee": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jamie-boo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jang-yohan": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jason-kim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jeon-yejoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jessica-kim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jett-kim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jeung-duckhwan": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jian-cheng": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "joseph-gil": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "journey-parkinson-kim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jude-yoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "julian-lee": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jung-minseo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jung-taejoo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "jung-woobin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "junichiro-yamasaki": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kai-jeong": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kang-danwoo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kang-hajun": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kang-minwoo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kim-heechan": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kim-jihwan": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kim-taehwan": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kim-taesung": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kobayashi-yuki": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kuronuma-minharu": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kwon-kennedy": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "kwon-ubin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "lee-joonki": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "lee-kyoahn": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "lena-kwon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "leo-hwang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "lewis-choi": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "li-tao": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "lim-chunhee": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "lucas-choi": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "lucian-yang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "lyle-park": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "madison-sinclair": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "malachi-zhong": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "matthew-shin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "mawaan-tehir": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "maxwell-seo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "mew-wasutha-singhapan": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "mia-park": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "micah-ahn": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "michael-baek": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "miles-baek": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "milo-kim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "min-jaeho": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "miren-su": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "mun-dae": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "mun-sangook": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "nakamura-tsubasa": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "nate-chung": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "naveighbean-soup": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "nicky-villarreal": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "niran-chakri": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "noah-kim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "noel-hampton": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "oliver-min-peters": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "oprah-winfrey": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "park-haeun": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "park-soomin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "park-taein": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "peter-lee": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "phoenix-wu": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "qiang-yichen": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "rain-jeon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "river-lee": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "roman-parkinson-kim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "ryan-min": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "ryu-hyemi": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "sato-hyunwoo": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "sebastian-lee": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "segasaki-kota": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "seo-hakyun": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "seo-inseong": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "seo-jeremy": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "seojun-lim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "seok-cam": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "seomun-jaehwa": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "shane-kang": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "shen-ronghui": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "shin-dongmin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "shin-sangmin": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "siwoo-choi": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "song-dongwoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "song-jiyong": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "song-yonggi": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "stella-jung": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "tanaka-hiroshi": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "tanaka-ren": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "tawin-chaiyaporn": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "theo-huang-yoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "toby-yoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "tommy-kim": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "tran-bao": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "valerie-kwon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "vince-seok": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "wang-linyu": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "wei-bowen": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "wenjun-zhu": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "william-park": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "woo-daejung": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "xiaofeng-jeon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "xiaoli-li": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "xiaoyang-li": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "xu-bingwen": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "xue-yiyun": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "yang-haneul": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "yoo-byungjoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "yoon-kijoon": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ],
   "zhou-yujie": [
     "Starter imported from the existing character directory: name, nickname, age, pronouns, occupation, face claim, portrait and recorded partners. This is not a full development-post migration.",
-    "Add this character’s facts, closest connections, songs and story entries here. Empty optional sections do not appear in the forum post."
+    "Add this character’s facts, polaroids, songs and story entries here. Empty optional sections do not appear in the forum post."
   ]
 };

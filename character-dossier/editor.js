@@ -2,8 +2,8 @@
   'use strict';
   const STORAGE_KEY = 'bluehour.character-atelier.library.v1';
   const SETTINGS_KEY = 'bluehour.character-atelier.settings.v1';
-  const PREVIOUS_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css';
-  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css';
+  const PREVIOUS_STYLESHEETS = ['https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v1.css', 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v2.css'];
+  const DEFAULT_STYLESHEET = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v3.css';
   const $ = id => document.getElementById(id);
   const clone = value => JSON.parse(JSON.stringify(value));
   let fieldCounter = 0;
@@ -18,8 +18,8 @@
   let dirty = false;
   let lastStoredLibrary = null;
   let externalChange = false;
-  const LIST_LIMITS = { facts: 150, relationships: 200, timeline: 1500, songs: 200 };
-  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, imagePosition: 30, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
+  const LIST_LIMITS = { facts: 150, relationships: 200, timeline: 1500, songs: 200, polaroids: 3 };
+  const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, image: 4000, imagePosition: 30, mapLocation: 250, mapLatitude: 40, mapLongitude: 40, mapZoom: 2, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
   const COLOUR_PALETTE = [['Fern', '#5b8612'], ['Sand', '#a99b8e'], ['Apricot', '#d9804d'], ['Blue', '#5187b5'], ['Rose', '#b9768c']];
 
   function uid(prefix) {
@@ -93,9 +93,12 @@
     const characters = prepared && Array.isArray(prepared.characters) ? prepared.characters : prepared && (Object.hasOwn(prepared, 'name') || Object.hasOwn(prepared, 'id')) ? [prepared] : [];
     const starters = new Map((Array.isArray(globalThis.DOSSIER_SEED?.characters) ? globalThis.DOSSIER_SEED.characters : []).map(character => [character.id, character]));
     characters.forEach(character => {
-      if (!character || typeof character !== 'object' || Array.isArray(character) || Object.hasOwn(character, 'avatar')) return;
+      if (!character || typeof character !== 'object' || Array.isArray(character)) return;
       const starter = starters.get(character.id);
-      if (starter && typeof starter.avatar === 'string') character.avatar = starter.avatar;
+      if (!starter) return;
+      ['avatar', 'polaroids', 'mapLocation', 'mapLatitude', 'mapLongitude', 'mapZoom'].forEach(key => {
+        if (!Object.hasOwn(character, key) && Object.hasOwn(starter, key)) character[key] = clone(starter[key]);
+      });
     });
     const dates = characters.map(character => {
       if (character && typeof character === 'object') Object.entries(LIST_LIMITS).forEach(([key, limit]) => {
@@ -108,10 +111,20 @@
         return original;
       });
     });
+    const mapDrafts = characters.map(character => {
+      if (!character || typeof character !== 'object' || Array.isArray(character)) return {};
+      const values = {};
+      ['mapLatitude', 'mapLongitude', 'mapZoom'].forEach(key => {
+        if (Object.hasOwn(character, key) && ['string', 'number'].includes(typeof character[key])) values[key] = character[key];
+      });
+      character.mapLatitude = ''; character.mapLongitude = ''; character.mapZoom = 11;
+      return values;
+    });
     const normalized = Dossier.normalizeDataset(prepared);
     normalized.characters.forEach((character, index) => {
       character.timeline.forEach((entry, itemIndex) => Object.assign(entry, dates[index]?.[itemIndex] || {}));
-      if (Array.isArray(characters[index]?.tags)) character.tags = characters[index].tags.filter(tag => typeof tag === 'string').map(tag => tag.trim().replace(/^#+/, '')).filter(Boolean);
+      Object.assign(character, mapDrafts[index]);
+      if (Array.isArray(characters[index]?.tags)) character.tags = characters[index].tags.filter(tag => typeof tag === 'string');
     });
     return normalized;
   }
@@ -124,7 +137,7 @@
         settings.theme = savedSettings.theme === 'light' ? 'light' : 'dark';
         settings.narrow = savedSettings.narrow === true;
         settings.stylesheetUrl = typeof savedSettings.stylesheetUrl === 'string' ? savedSettings.stylesheetUrl : DEFAULT_STYLESHEET;
-        if (settings.stylesheetUrl === PREVIOUS_STYLESHEET) settings.stylesheetUrl = DEFAULT_STYLESHEET;
+        if (PREVIOUS_STYLESHEETS.includes(settings.stylesheetUrl)) settings.stylesheetUrl = DEFAULT_STYLESHEET;
       }
       const saved = localStorage.getItem(STORAGE_KEY);
       lastStoredLibrary = saved;
@@ -176,6 +189,7 @@
     input.dataset.field = key;
     if (options.placeholder) input.placeholder = options.placeholder;
     if (options.inputMode) input.inputMode = options.inputMode;
+    ['min', 'max', 'step'].forEach(attribute => { if (options[attribute] !== undefined) input.setAttribute(attribute, options[attribute]); });
     if (options.maxLength || TEXT_LIMITS[key]) input.maxLength = options.maxLength || TEXT_LIMITS[key];
     if (options.type === 'url') input.spellcheck = false;
     input.addEventListener(options.choices ? 'change' : 'input', () => {
@@ -225,7 +239,7 @@
     hexInput = hex.querySelector('input');
     picker.value = fullHex(character.accent) || '#5b8612';
     picker.addEventListener('input', () => chooseColour(picker.value));
-    wrapper.append(node('div', { className: 'colour-controls' }, [picker, hex]), help('Sets the colour of this character’s panels, tags and highlights. Match it to their photos.'));
+    wrapper.append(node('div', { className: 'colour-controls' }, [picker, hex]), help('Sets the colour of this character’s panels, borders and highlights. Match it to their photos.'));
     COLOUR_PALETTE.forEach(([name, value]) => {
       const button = node('button', { type: 'button', className: 'colour-swatch', 'data-colour': value, 'aria-label': name + ' ' + value, 'aria-pressed': 'false', onclick: () => chooseColour(value) }, [node('span', { className: 'colour-swatch-dot', 'aria-hidden': 'true' }), node('span', { text: name })]);
       button.style.setProperty('--swatch', value); swatches.append(button);
@@ -255,6 +269,49 @@
       message('Starter photos and colour restored for ' + labelFor(character) + '.');
     } }), help('Restore this character’s starter photos and colour.')]);
   }
+  function mapSearchUrl(place) {
+    return 'https://www.openstreetmap.org/search?query=' + encodeURIComponent(String(place || '').trim());
+  }
+  function mapViewFromUrl(value, currentZoom) {
+    let url;
+    try { url = new URL(String(value || '').trim()); }
+    catch (_) { throw new Error('Paste the full OpenStreetMap link, beginning with https://www.openstreetmap.org/.'); }
+    if (url.protocol !== 'https:' || !['openstreetmap.org', 'www.openstreetmap.org'].includes(url.hostname) || url.port || url.username || url.password) throw new Error('Use a link from https://www.openstreetmap.org/. Other websites and embed code are not supported.');
+    const view = url.hash.match(/^#map=([^/]+)\/([^/]+)\/([^/&]+)(?:&.*)?$/);
+    const latitude = url.searchParams.get('mlat');
+    const longitude = url.searchParams.get('mlon');
+    const hasMarker = latitude !== null && longitude !== null;
+    if (!hasMarker && !view) throw new Error('Open the place in OpenStreetMap and copy its map-view link. It should include #map= or both mlat and mlon.');
+    const coordinate = (raw, maximum, label) => {
+      if (!/^-?(?:\d+(?:\.\d+)?|\.\d+)$/.test(String(raw || '').trim())) throw new Error('The link has an invalid ' + label + '. Copy the map-view link again.');
+      const number = Number(raw);
+      if (!Number.isFinite(number) || Math.abs(number) > maximum) throw new Error('The link’s ' + label + ' must be between ' + (-maximum) + ' and ' + maximum + '.');
+      return String(number);
+    };
+    const mapLatitude = coordinate(hasMarker ? latitude : view[2], 85, 'latitude');
+    const mapLongitude = coordinate(hasMarker ? longitude : view[3], 180, 'longitude');
+    const sourceZoom = view ? Number(view[1]) : Number(currentZoom || 11);
+    if (!Number.isInteger(sourceZoom) || sourceZoom < 0 || sourceZoom > 22) throw new Error('The link has an invalid map zoom. Copy the map-view link again.');
+    const mapZoom = Math.max(2, Math.min(18, sourceZoom));
+    return { mapLatitude, mapLongitude, mapZoom, zoomAdjusted: sourceZoom !== mapZoom };
+  }
+  function mapLinkControls(character) {
+    const wrapper = node('div', { className: 'map-link-tools' });
+    const search = node('a', { className: 'map-search-link', href: mapSearchUrl(character.mapLocation), target: '_blank', rel: 'noopener noreferrer', 'data-map-search': '', text: 'Find a place on OpenStreetMap ↗' });
+    const inputId = 'edit-field-' + (++fieldCounter);
+    const input = node('input', { id: inputId, type: 'url', placeholder: 'https://www.openstreetmap.org/#map=…', spellcheck: 'false' });
+    const label = node('label', { className: 'form-field', for: inputId }, ['OpenStreetMap link', input]);
+    const button = node('button', { type: 'button', className: 'button-secondary', text: 'Use this map view', onclick: () => {
+      try {
+        const view = mapViewFromUrl(input.value, character.mapZoom);
+        character.mapLatitude = view.mapLatitude; character.mapLongitude = view.mapLongitude; character.mapZoom = view.mapZoom;
+        changed(); renderForm(); updatePreview();
+        message(view.zoomAdjusted ? 'Map view added. Zoom was adjusted to the supported range.' : 'Map view added. Your place label was kept.');
+      } catch (error) { message(error.message, true); input.focus(); }
+    } });
+    wrapper.append(search, help('Choose a place, then paste its map link here.'), label, button);
+    return wrapper;
+  }
   function section(id, number, title) {
     const element = node('details', { className: 'editor-section', 'data-section': id }); element.open = openSections.has(id);
     element.append(node('summary', {}, [node('span', { className: 'section-number', text: number }), node('span', { text: title }), node('span', { className: 'section-chevron', 'aria-hidden': 'true', text: '＋' })]));
@@ -265,6 +322,7 @@
   }
   function repeater(body, key, singular, title, defaults, buildFields, beforeRemove) {
     const character = current();
+    if (!Array.isArray(character[key])) character[key] = [];
     const list = character[key];
     const rows = node('div', { className: 'repeat-list' });
     if (!list.length) rows.append(node('p', { className: 'empty-list', text: 'No ' + singular.toLowerCase() + ' added yet. This area stays hidden in the finished post.' }));
@@ -302,25 +360,26 @@
   function renderForm() {
     const character = current();
     $('character-form').replaceChildren(); renderNotices();
-    let body = section('identity', '01', 'Identity & atmosphere');
-    body.append(field('Full name', character, 'name', { picker: true }), grid(field('Preferred name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Gender', character, 'gender'), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }), field('Header photograph', character, 'portrait', { type: 'url', placeholder: 'https://…' }), cropField(character), field('Portrait / PI image', character, 'avatar', { type: 'url', placeholder: 'https://…', help: 'An optional separate portrait for the identity panel.' }), colourFields(character), starterAppearance(character), field('Personality tags', character, 'tags', { array: true, multiline: true, rows: 3, help: 'One tag per line. Empty tags are omitted.' }));
-    body = section('facts', '02', 'The encyclopaedia');
+    let body = section('identity', '01', 'Identity');
+    body.append(field('Full name', character, 'name', { picker: true }), grid(field('Preferred name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Gender', character, 'gender'), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }));
+    body = section('appearance', '02', 'Photos, colour & place');
+    body.append(field('Header photograph', character, 'portrait', { type: 'url', placeholder: 'https://…' }), cropField(character), field('Portrait / PI image', character, 'avatar', { type: 'url', placeholder: 'https://…', help: 'An optional separate portrait for the identity panel.' }), colourFields(character), starterAppearance(character), node('h3', { className: 'appearance-subheading', text: 'The hanging polaroids' }), help('Choose up to three photos and give each a caption. Add a link if you want the photo to open a profile or thread.'));
+    repeater(body, 'polaroids', 'Polaroid', item => item.name, () => ({ name: '', image: '', url: '' }), (row, item, title) => row.append(field('Caption / name', item, 'name', { onChange: title }), field('Photo', item, 'image', { type: 'url', placeholder: 'https://…' }), field('Link (optional)', item, 'url', { type: 'url', placeholder: 'https://…' })));
+    body.append(node('h3', { className: 'appearance-subheading', text: 'A place on the map' }), field('City or place label', character, 'mapLocation', { placeholder: 'San Bernardino, California', onChange: () => { const link = $('character-form').querySelector('[data-map-search]'); if (link) link.href = mapSearchUrl(character.mapLocation); } }), mapLinkControls(character), grid(field('Latitude', character, 'mapLatitude', { inputMode: 'decimal', placeholder: '34.1083' }), field('Longitude', character, 'mapLongitude', { inputMode: 'decimal', placeholder: '-117.2898' })), help('Use the map link above, or enter coordinates directly. Leave both coordinates blank to hide the map.'), field('Map zoom', character, 'mapZoom', { type: 'number', min: 2, max: 18, step: 1, help: '2 shows a wider region; 18 shows the closest street detail.' }));
+    body = section('facts', '03', 'The encyclopaedia');
     body.append(help('Keep the established facts here: birthday, languages, favourites, and all their small details.'));
     repeater(body, 'facts', 'Fact', item => item.label, () => ({ label: '', value: '' }), (row, item, title) => row.append(field('Fact label', item, 'label', { onChange: title }), field('Value', item, 'value', { multiline: true, rows: 2 })));
-    body = section('people', '03', 'People, ships & flavours');
-    body.append(help('Each connection lives here once. Pin up to three closest people; feature a ship to give it more room. Choose these same connections when adding a story entry.'));
+    body = section('people', '04', 'People, ships & flavours');
+    body.append(help('Each connection lives here once. Add their flavour, shared details and links, then choose these same connections when adding a story entry.'));
     repeater(body, 'relationships', 'Connection', item => item.name, () => ({ id: uid('connection'), name: '', kind: '', flavour: '', status: '', portrait: '', url: '', summary: '', pinned: false, featured: false, quote: '', playlistUrl: '' }), (row, item, title) => {
-      row.append(field('Connection name', item, 'name', { onChange: title }), grid(field('Connection type', item, 'kind', { choices: ['', 'Partner', 'Friend', 'Family', 'Group', 'Other'] }), field('Flavour', item, 'flavour')), field('Connection status', item, 'status', { placeholder: 'Active / past / developing' }), check('Pin among the three closest connections', item, 'pinned', input => {
-        if (input.checked && character.relationships.filter(connection => connection.pinned && connection !== item).length >= 3) { message('Three connections are already pinned. Unpin one before choosing another.', true); return false; }
-        message('');
-      }), check('Feature this ship or relationship', item, 'featured'), field('What they mean to each other', item, 'summary', { multiline: true }), field('Portrait', item, 'portrait', { type: 'url', placeholder: 'https://…' }), field('Profile or development post', item, 'url', { type: 'url', placeholder: 'https://…' }), field('A shared quote', item, 'quote', { multiline: true, rows: 2 }), field('Shared playlist', item, 'playlistUrl', { type: 'url', placeholder: 'https://open.spotify.com/playlist/…' }));
+      row.append(field('Connection name', item, 'name', { onChange: title }), grid(field('Connection type', item, 'kind', { choices: ['', 'Partner', 'Friend', 'Family', 'Group', 'Other'] }), field('Flavour', item, 'flavour')), field('Connection status', item, 'status', { placeholder: 'Active / past / developing' }), check('Feature this ship or relationship', item, 'featured'), field('What they mean to each other', item, 'summary', { multiline: true }), field('Portrait', item, 'portrait', { type: 'url', placeholder: 'https://…' }), field('Profile or development post', item, 'url', { type: 'url', placeholder: 'https://…' }), field('A shared quote', item, 'quote', { multiline: true, rows: 2 }), field('Shared playlist', item, 'playlistUrl', { type: 'url', placeholder: 'https://open.spotify.com/playlist/…' }));
     }, item => {
       const linked = character.timeline.filter(entry => entry.connectionIds.includes(item.id));
       if (linked.length && !confirm('Remove ' + (item.name || 'this connection') + '? Its link will also be removed from ' + linked.length + ' story entries. The stories themselves will stay.')) return false;
       linked.forEach(entry => { entry.connectionIds = entry.connectionIds.filter(id => id !== item.id); });
       return true;
     });
-    body = section('story', '04', 'The story archive');
+    body = section('story', '05', 'The story archive');
     body.append(help('Add a thread, comms conversation, bud, or milestone once. The archive sorts by the in-world date. Use a year, a month, a full date, or leave it undated.'));
     repeater(body, 'timeline', 'Story entry', item => item.title, () => ({ id: uid('story'), title: '', url: '', date: '', dateLabel: '', postedDate: '', participants: '', type: 'Thread', status: '', connectionIds: [], summary: '', milestone: false }), (row, item, title) => {
       row.append(field('Title', item, 'title', { onChange: title }), field('Forum link', item, 'url', { type: 'url', placeholder: 'https://…' }), grid(field('Type', item, 'type', { choices: ['Thread', 'Comms', 'Bud', 'Milestone'] }), field('Status', item, 'status', { placeholder: 'Active / complete / archived' })), field('In-world date', item, 'date', { placeholder: '2026, 2026-11, or 2026-11-06', help: 'Leave empty when the story date has not been established.' }), field('Date label (optional)', item, 'dateLabel', { placeholder: 'Late autumn, before the debut…' }), field('Actual posting date (optional)', item, 'postedDate', { placeholder: '2026-11-06', help: 'Kept separately from the date the story takes place.' }), field('Other participants / group', item, 'participants'));
@@ -334,10 +393,10 @@
       }
       row.append(field('A short summary', item, 'summary', { multiline: true }), check('Highlight as a pivotal moment', item, 'milestone'));
     });
-    body = section('soundtrack', '05', 'The soundtrack');
+    body = section('soundtrack', '06', 'The soundtrack');
     body.append(field('Full playlist (optional)', character, 'playlistUrl', { type: 'url', placeholder: 'https://open.spotify.com/playlist/…' }), help('Keep individual songs, a full playlist, or both. Spotify links become playable embeds; other music links remain clickable.'));
     repeater(body, 'songs', 'Song', item => item.title, () => ({ title: '', artist: '', url: '', note: '' }), (row, item, title) => row.append(field('Song title', item, 'title', { onChange: title }), field('Artist', item, 'artist'), field('Song link', item, 'url', { type: 'url', placeholder: 'https://open.spotify.com/track/…' }), field('Why this song belongs', item, 'note', { multiline: true, rows: 2 })));
-    body = section('chapter', '06', 'Current chapter & continuity');
+    body = section('chapter', '07', 'Current chapter & continuity');
     body.append(field('Current chapter', character, 'currentChapter', { multiline: true, help: 'A short snapshot of where they are in their story.' }), field('As of (in-world)', character, 'asOf', { placeholder: 'November 2026' }), field('Continuity notes', character, 'notes', { multiline: true, rows: 5, help: 'Established details you want to remember. These appear in the finished post; keep private planning notes elsewhere.' }));
   }
   function stylesheetUrl() {
@@ -352,13 +411,11 @@
   function updatePreview() {
     const character = current();
     try {
-      if (character.tags.length > 50) throw new Error('Use up to 50 personality tags. Your full draft is kept until you shorten the list.');
-      if (character.tags.some(tag => tag.length > 120)) throw new Error('Keep each personality tag to 120 characters or fewer. Your full draft is kept until you shorten it.');
       const rendered = Dossier.render(character, { includeStylesheet: false });
       generatedCode = Dossier.forum(character, stylesheetUrl());
-      const localCss = new URL('dossier-v2.css', document.baseURI).href;
+      const localCss = new URL('dossier-v3.css', document.baseURI).href;
       const css = typeof globalThis.DOSSIER_PREVIEW_CSS === 'string' ? '<style>' + globalThis.DOSSIER_PREVIEW_CSS.replace(/<\/style/gi, '<\\/style') + '</style>' : '<link rel="stylesheet" href="' + Dossier.escapeHtml(localCss) + '">';
-      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v2{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
+      const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v3{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + '</body></html>';
       $('dossier-preview').srcdoc = doc;
       $('preview-error').hidden = true;
       $('forum-code').value = generatedCode;
@@ -432,6 +489,8 @@
     finally { input.value = ''; }
   }
   function bindControls() {
+    document.querySelector('.backup-section .section-number').textContent = '08';
+    document.querySelector('.delivery-section .section-number').textContent = '09';
     $('character-form').addEventListener('submit', event => event.preventDefault());
     $('character-search').addEventListener('input', updatePicker);
     $('character-picker').addEventListener('change', event => switchCharacter(event.target.value));
