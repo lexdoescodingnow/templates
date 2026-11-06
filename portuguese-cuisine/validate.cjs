@@ -1,1 +1,0 @@
-require('../fig/validate.cjs');
