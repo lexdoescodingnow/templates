@@ -131,6 +131,37 @@
     if (field === 'songs') return item.url || [item.artist || '', item.title || ''].join('|').toLocaleLowerCase();
     return '';
   }
+  function topicAddress(value) {
+    try {
+      const url = new URL(String(value || ''));
+      if (!['http:', 'https:'].includes(url.protocol) || url.hostname !== 'bluehour.jcink.net' || url.port || url.username || url.password || url.pathname !== '/index.php') return null;
+      const values = url.searchParams.getAll('showtopic');
+      if (values.length !== 1 || !/^\d+$/.test(values[0])) return null;
+      const number = Number(values[0]);
+      if (!Number.isSafeInteger(number) || number < 1) return null;
+      const id = String(number);
+      return { id, url: 'https://bluehour.jcink.net/index.php?showtopic=' + id };
+    } catch (_) { return null; }
+  }
+  function fillTopicDate(entry) {
+    const before = JSON.stringify([entry.postedDate, entry.postedDateSource]);
+    const topic = topicAddress(entry.url), source = topicAddress(entry.postedDateSource);
+    if (source && source.url !== topic?.url) { entry.postedDate = ''; entry.postedDateSource = ''; }
+    if (topic && (!entry.postedDate || source?.url === topic.url)) {
+      const dates = globalThis.DOSSIER_TOPIC_DATES || {};
+      const date = Object.hasOwn(dates, topic.id) ? dates[topic.id] : '';
+      if (typeof date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        const parsed = new Date(date + 'T00:00:00.000Z');
+        if (Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date) { entry.postedDate = date; entry.postedDateSource = topic.url; }
+      }
+    }
+    return before !== JSON.stringify([entry.postedDate, entry.postedDateSource]);
+  }
+  function fillCharacterTopicDates(character) {
+    let updated = false;
+    (character.timeline || []).forEach(entry => { if (fillTopicDate(entry)) updated = true; });
+    return updated;
+  }
   function mergeSourceValue(currentValue, baseline, incoming, context) {
     if (equalSource(currentValue, incoming)) return sourceCopy(currentValue);
     const allArrays = Array.isArray(currentValue) && Array.isArray(incoming) && (!context.known || Array.isArray(baseline));
@@ -151,7 +182,7 @@
             return sourceCopy(item);
           }
           const result = sourceCopy(item);
-          Object.keys(next).filter(field => field !== 'id').forEach(field => {
+          Object.keys(next).filter(field => field !== 'id' && !(context.field === 'timeline' && ['postedDate', 'postedDateSource'].includes(field))).forEach(field => {
             result[field] = mergeSourceValue(item[field], previous?.[field], next[field], { ...context, known: oldMap.has(key) && Object.hasOwn(previous, field), path: [...path, field], label: label + ' · ' + (SOURCE_LABELS[field] || field) });
           });
           return result;
@@ -174,7 +205,8 @@
     const currentById = new Map(library.characters.map(character => [character.id, character]));
     library.sourceTracking = library.sourceTracking || Object.create(null);
     sourceUpdates.clear();
-    let changedCharacters = 0, added = 0;
+    const changedCharacterIds = new Set();
+    let added = 0;
     latest.forEach(incoming => {
       const metadata = sourceMetadata(incoming.id);
       const revision = sourceRevision(metadata, incoming);
@@ -189,14 +221,15 @@
       fields.forEach(field => {
         character[field] = mergeSourceValue(character[field], baseline?.[field], incoming[field], { known: Boolean(baseline && Object.hasOwn(baseline, field)), field, path: [field], label: SOURCE_LABELS[field] || field, conflicts });
       });
-      if (before !== JSON.stringify(character)) { changedCharacters += 1; dirty = true; }
+      if (before !== JSON.stringify(character)) { changedCharacterIds.add(character.id); dirty = true; }
       if (conflicts.length) {
         sourceUpdates.set(character.id, { revision, incoming, conflicts });
         if (!tracked && baseline) { library.sourceTracking[character.id] = { revision: '', baseline: sourceCopy(baseline) }; dirty = true; }
       }
       else { library.sourceTracking[character.id] = { revision, baseline: sourceCopy(incoming) }; dirty = true; }
     });
-    return { changedCharacters, added, reviews: sourceUpdates.size };
+    library.characters.forEach(character => { if (fillCharacterTopicDates(character)) { changedCharacterIds.add(character.id); dirty = true; } });
+    return { changedCharacters: changedCharacterIds.size, added, reviews: sourceUpdates.size };
   }
   function selectFromAddress() {
     let requested = '';
@@ -676,6 +709,7 @@
     if (!update || !character) { $('source-review').close(); return; }
     let applied = 0;
     if (useSelected) document.querySelectorAll('[data-source-choice]:checked').forEach(input => { const conflict = update.conflicts[Number(input.value)]; if (conflict) { applySourceConflict(character, conflict); applied += 1; } });
+    fillCharacterTopicDates(character);
     library.sourceTracking[character.id] = { revision: update.revision, baseline: sourceCopy(update.incoming) };
     sourceUpdates.delete(character.id);
     cancelPhotoTheme(character.id); photoThemeStates.delete(character.id);
@@ -705,9 +739,11 @@
       return true;
     });
     body = section('story', '05', 'The story archive');
-    body.append(help('Add a thread, comms conversation, bud, or milestone once. The archive sorts by the in-world date. Use a year, a month, a full date, or leave it undated.'));
-    repeater(body, 'timeline', 'Story entry', item => item.title, () => ({ id: uid('story'), title: '', url: '', date: '', dateLabel: '', postedDate: '', participants: '', type: 'Thread', status: '', connectionIds: [], summary: '', milestone: false }), (row, item, title) => {
-      row.append(field('Title', item, 'title', { onChange: title }), field('Forum link', item, 'url', { type: 'url', placeholder: 'https://…' }), grid(field('Type', item, 'type', { choices: ['Thread', 'Comms', 'Bud', 'Milestone'] }), field('Status', item, 'status', { placeholder: 'Active / complete / archived' })), field('In-world date', item, 'date', { placeholder: '2026, 2026-11, or 2026-11-06', help: 'Leave empty when the story date has not been established.' }), field('Date label (optional)', item, 'dateLabel', { placeholder: 'Late autumn, before the debut…' }), field('Actual posting date (optional)', item, 'postedDate', { placeholder: '2026-11-06', help: 'Kept separately from the date the story takes place.' }), field('Other participants / group', item, 'participants'));
+    body.append(help('Add each thread, comms conversation, bud, or milestone once. The archive sorts by its in-world date when supplied, otherwise by the topic start date. Either date can be a year, a month, or a full date. Known topics fill automatically; new topics can fill their date in Blue Hour preview.'));
+    repeater(body, 'timeline', 'Story entry', item => item.title, () => ({ id: uid('story'), title: '', url: '', date: '', dateLabel: '', postedDate: '', postedDateSource: '', participants: '', type: 'Thread', status: '', connectionIds: [], summary: '', milestone: false }), (row, item, title) => {
+      const topicDateField = field('Topic start date', item, 'postedDate', { placeholder: '2026, 2026-11, or 2026-11-06', help: 'Used for chronology when the in-world date is blank. A date you enter here is kept as your own choice.', onChange: () => { item.postedDateSource = ''; } });
+      const linkField = field('Forum link', item, 'url', { type: 'url', placeholder: 'https://…', onChange: () => { fillTopicDate(item); topicDateField.querySelector('input').value = item.postedDate || ''; } });
+      row.append(field('Title', item, 'title', { onChange: title }), linkField, grid(field('Type', item, 'type', { choices: ['Thread', 'Comms', 'Bud', 'Milestone'] }), field('Status', item, 'status', { placeholder: 'Active / complete / archived' })), field('In-world date (optional)', item, 'date', { placeholder: '2026, 2026-11, or 2026-11-06', help: 'Overrides the topic start date for chronology. Leave empty when the story date has not been established.' }), field('Date label (optional)', item, 'dateLabel', { placeholder: 'Late autumn, before the debut…' }), topicDateField, field('Other participants / group', item, 'participants'));
       if (character.relationships.length) {
         const choices = node('fieldset', { className: 'connection-choices' }, node('legend', { text: 'Linked connections' }));
         character.relationships.forEach(connection => {
@@ -740,7 +776,7 @@
       generatedCode = Dossier.forum(character, stylesheetUrl());
       const localCss = new URL('dossier-v5.1.css', document.baseURI).href;
       const css = typeof globalThis.DOSSIER_PREVIEW_CSS === 'string' ? '<style>' + globalThis.DOSSIER_PREVIEW_CSS.replace(/<\/style/gi, '<\\/style') + '</style>' : '<link rel="stylesheet" href="' + Dossier.escapeHtml(localCss) + '">';
-      const runtime = typeof globalThis.DOSSIER_PREVIEW_RUNTIME === 'string' ? '<script>' + globalThis.DOSSIER_PREVIEW_RUNTIME.replace(/<\/script/gi, '<\\/script') + '</script>' : '<script src="' + Dossier.escapeHtml(new URL('dossier-runtime-v5.1.js', document.baseURI).href) + '"></script>';
+      const runtime = typeof globalThis.DOSSIER_PREVIEW_RUNTIME === 'string' ? '<script>' + globalThis.DOSSIER_PREVIEW_RUNTIME.replace(/<\/script/gi, '<\\/script') + '</script>' : '<script src="' + Dossier.escapeHtml(new URL('dossier-runtime-v5.2.js', document.baseURI).href) + '"></script>';
       const doc = '<!doctype html><html lang="en" color-mode="' + settings.theme + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + css + '<style>html{background:transparent;color-scheme:' + settings.theme + '}body{margin:0;padding:0;min-width:0}html,body{overflow-x:hidden}.bh-dossier-v5{margin-top:0!important;margin-bottom:0!important}</style></head><body>' + rendered + runtime + '</body></html>';
       $('dossier-preview').srcdoc = doc;
       $('preview-error').hidden = true;

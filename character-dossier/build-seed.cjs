@@ -131,7 +131,8 @@ Object.assign(sam, {
 
 const encyclopediaResult = require('./encyclopedia-enrich.cjs').apply(characters);
 const developmentResult = require('./development-enrich.cjs').apply(encyclopediaResult.characters);
-characters = developmentResult.characters;
+const topicDateResult = require('./topic-dates-enrich.cjs').apply(developmentResult.characters);
+characters = topicDateResult.characters;
 const rollout = require('./rollout-metadata.cjs').apply(characters, encyclopediaResult.metadata, developmentResult.metadata);
 characters = rollout.characters;
 const first = ['baek-samuel', 'ben-dam', 'cookie-chalongrat-vihokratana'];
@@ -141,7 +142,7 @@ characters.sort((a,b) => {
 });
 const notices = Object.fromEntries(characters.map(record => [record.id, record.id === sam.id ? [
   'Sam uses the confirmed current age of 25 and his relationship with Hoseong. All supplied facts, ten songs and five original story links are included, plus the newer Cereal Bar comms.',
-  'Story dates were not supplied. The five original entries keep their original order, followed by Cereal Bar under Undated until you add in-world dates.',
+  'Story dates were not supplied. The timeline uses each topic’s verified start date until an in-world date is entered.',
   'Cereal is Sam and Hoseong’s flavour. Lindor, Mochidoki and Pringles are brands; their linked topics use the newer source titles.',
   'The three polaroids show Hoseong, Jiae and Hajun using their existing directory portraits. The map shows San Bernardino at city level.'
 ] : rollout.notices[record.id]]));
@@ -154,11 +155,11 @@ assert.equal(sam.timeline.length, 6);
 assert.equal(sam.relationships.length, 4);
 assert.equal(sam.polaroids.length, 3);
 assert(sam.relationships.every(record => !record.pinned));
-assert(sam.timeline.every(record => !record.date && !record.postedDate));
+assert(characters.find(record => record.id === sam.id).timeline.every(record => !record.date && record.postedDate && record.postedDateSource === record.url));
 const library = {version:1, characters};
 fs.mkdirSync(__dirname, {recursive:true});
 fs.writeFileSync(path.join(__dirname, 'seed-library.json'), JSON.stringify(library, null, 2) + '\n');
 const previous = JSON.parse(fs.readFileSync(path.join(__dirname, 'legacy-baseline.json'), 'utf8'));
-fs.writeFileSync(path.join(__dirname, 'seed-data.js'), 'var DOSSIER_SEED = ' + JSON.stringify(library, null, 2) + ';\nvar DOSSIER_NOTICES = ' + JSON.stringify(notices, null, 2) + ';\nvar DOSSIER_SOURCE_METADATA = ' + JSON.stringify(rollout.sourceMetadata, null, 2) + ';\nvar DOSSIER_PREVIOUS_SEED = ' + JSON.stringify(previous, null, 2) + ';\n');
+fs.writeFileSync(path.join(__dirname, 'seed-data.js'), 'var DOSSIER_SEED = ' + JSON.stringify(library, null, 2) + ';\nvar DOSSIER_NOTICES = ' + JSON.stringify(notices, null, 2) + ';\nvar DOSSIER_SOURCE_METADATA = ' + JSON.stringify(rollout.sourceMetadata, null, 2) + ';\nvar DOSSIER_PREVIOUS_SEED = ' + JSON.stringify(previous, null, 2) + ';\nvar DOSSIER_TOPIC_DATES = ' + JSON.stringify(topicDateResult.dates, null, 2) + ';\n');
 fs.writeFileSync(path.join(__dirname, 'migration-sources.json'), JSON.stringify(rollout.manifest, null, 2) + '\n');
 console.log(JSON.stringify({characters:characters.length, canonicalPartnerRecords:characters.reduce((count,record) => count + record.relationships.filter(item => item.kind === 'Partner').length,0), matchedFlavours, samFacts:sam.facts.length, samSongs:sam.songs.length, samStoryEntries:sam.timeline.length, pinnedConnections:characters.reduce((count,record)=>count+record.relationships.filter(item=>item.pinned).length,0)}, null, 2));

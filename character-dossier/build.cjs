@@ -8,7 +8,8 @@ const library = Dossier.normalizeDataset(JSON.parse(fs.readFileSync(path.join(ro
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 const write = (name, value) => fs.writeFileSync(path.join(root, name), value, 'utf8');
 const cssUrl = 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-v5.1.css';
-const runtime = read('palette.js') + '\n' + read('runtime.js');
+const runtime = read('palette.js') + '\n' + read('topic-dates.js') + '\n' + read('runtime.js');
+write('dossier-runtime-v5.2.js', runtime);
 write('dossier-runtime-v5.1.js', runtime);
 write('dossier-runtime-v5.js', runtime);
 const runtimeScript = '<script>' + runtime.replace(/<\/script/gi, '<\\/script') + '</script>';

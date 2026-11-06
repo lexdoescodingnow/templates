@@ -103,7 +103,7 @@
       return {
         id: uniqueId(item.id || item.title, 'entry-' + (index + 1), timelineIds),
         title: text(item.title, 300), url: safeUrl(item.url), date: date(item.date, 'Story date'),
-        dateLabel: text(item.dateLabel, 160), postedDate: date(item.postedDate, 'Posting date'),
+        dateLabel: text(item.dateLabel, 160), postedDate: date(item.postedDate, 'Posting date'), postedDateSource: safeUrl(item.postedDateSource),
         type: choice(item.type, TYPES, 'Thread'), status: text(item.status, 120),
         participants: text(item.participants, 400),
         connectionIds: Array.from(new Set(list(item.connectionIds, 200).map(function (id) { return relationshipMap.get(text(id, 100)); }).filter(Boolean))),
@@ -146,9 +146,10 @@
       return character;
     }) };
   }
+  function effectiveDate(entry) { return text(entry.date, 40) || text(entry.postedDate, 40); }
   function sortTimeline(entries) {
     return list(entries, 1500).map(function (entry, index) { return { entry: entry, index: index }; }).sort(function (a, b) {
-      var ad = text(a.entry.date, 40), bd = text(b.entry.date, 40);
+      var ad = effectiveDate(a.entry), bd = effectiveDate(b.entry);
       if (!ad && !bd) return a.index - b.index;
       if (!ad) return 1;
       if (!bd) return -1;
@@ -164,6 +165,11 @@
     if (parts.length === 1) return parts[0];
     var month = MONTHS[Number(parts[1]) - 1];
     return (parts.length === 3 ? Number(parts[2]) + ' ' : '') + month + ' ' + parts[0];
+  }
+  function compactDate(value) {
+    if (!value) return '';
+    var parts = value.split('-');
+    return parts.length === 1 ? parts[0] : MONTHS[Number(parts[1]) - 1].slice(0, 3) + ' \u2019' + parts[0].slice(-2);
   }
   function paragraphs(value, className) {
     if (!value) return '';
@@ -330,21 +336,26 @@
       html += '<section class="bd1-section bd1-story-panel" id="' + prefix + '-story">' + heading('The story so far', entries.length + (entries.length === 1 ? ' entry' : ' entries'));
       var currentYear = null;
       entries.forEach(function (entry) {
-        var year = entry.date ? entry.date.slice(0, 4) : 'Undated';
+        var dateValue = effectiveDate(entry);
+        var postedFallback = !entry.date && !!entry.postedDate;
+        var year = dateValue ? dateValue.slice(0, 4) : 'Date Unavailable';
         if (year !== currentYear) {
           if (currentYear !== null) html += '</ol></div>';
           currentYear = year;
           html += '<div class="bd1-year-group"><h3 class="bd1-year">' + escapeHtml(year) + '</h3><ol class="bd1-timeline">';
         }
-        html += '<li class="bd1-entry' + (entry.milestone || entry.type === 'Milestone' ? ' bd1-milestone' : '') + '" id="' + prefix + '-entry-' + entry.id + '"><div class="bd1-entry-meta"><span class="bd1-type">' + escapeHtml(entry.type) + '</span>';
-        if (entry.date || entry.dateLabel) html += '<span>' + escapeHtml(entry.dateLabel || displayDate(entry.date)) + '</span>';
+        html += '<li class="bd1-entry' + (entry.milestone || entry.type === 'Milestone' ? ' bd1-milestone' : '') + '" id="' + prefix + '-entry-' + entry.id + '" data-story-date="' + escapeHtml(entry.date) + '" data-posted-date="' + escapeHtml(entry.postedDate) + '" data-date-label="' + escapeHtml(entry.dateLabel) + '" data-topic-url="' + escapeHtml(entry.url) + '"><div class="bd1-entry-meta"><span class="bd1-type">' + escapeHtml(entry.type) + '</span>';
+        if (dateValue || entry.dateLabel) {
+          var dateTitle = dateValue ? (postedFallback ? 'Topic started ' : 'Story date ') + displayDate(dateValue) : '';
+          html += '<span class="bd1-entry-date"' + (dateTitle ? ' title="' + escapeHtml(dateTitle) + '"' : '') + '>' + escapeHtml(entry.dateLabel || compactDate(dateValue)) + '</span>';
+        }
         if (entry.status) html += '<span class="bd1-entry-status">' + escapeHtml(entry.status) + '</span>';
         html += '</div><h4>' + external(entry.url, entry.title) + '</h4>';
         if (entry.participants) html += '<div class="bd1-participants">' + escapeHtml(entry.participants) + '</div>';
         var connected = entry.connectionIds.map(function (id) { return byId.get(id); }).filter(Boolean);
         if (!entry.participants && connected.length) html += '<div class="bd1-entry-people">' + connected.map(function (r) { return '<a href="#' + prefix + '-connection-' + r.id + '">' + escapeHtml(r.name) + '</a>'; }).join('') + '</div>';
         html += paragraphs(entry.summary, 'bd1-entry-copy');
-        if (entry.postedDate) html += '<div class="bd1-posted-date">Posted ' + escapeHtml(displayDate(entry.postedDate)) + '</div>';
+        if (entry.date && entry.postedDate) html += '<div class="bd1-posted-date">Posted ' + escapeHtml(displayDate(entry.postedDate)) + '</div>';
         html += '</li>';
       });
       html += '</ol></div></section>';
@@ -372,7 +383,7 @@
   function forum(character, cssUrl) {
     var url = safeUrl(cssUrl);
     if (!url) throw new Error('Forum code needs the public stylesheet address.');
-    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.1.js" defer></script>[/dohtml]';
+    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.2.js" defer></script>[/dohtml]';
   }
   return { normalizeCharacter: normalizeCharacter, normalizeDataset: normalizeDataset, render: render, forum: forum, sortTimeline: sortTimeline, escapeHtml: escapeHtml, safeUrl: safeUrl };
 }));

@@ -53,12 +53,17 @@ function apply(input, encyclopediaMetadata, developmentMetadata) {
       const samSource=devIndex.find(t=>t.url.includes('showtopic=68373'));
       if(!rowSources.some(s=>s.kind==='development'))rowSources.push({kind:'development',url:samSource.url,fields:['facts','songs','timeline','portrait']});
       rowSources.push({kind:'user-confirmed',reference:'Approved Sam v5 profile and current age/partner confirmation',fields:Object.keys(character)});
-      notes.push('The approved Sam profile is preserved.');
+      notes.push('The approved Sam profile is preserved, with verified topic-start dates added to its story links.');
     }
     const missing=[];
     if(!character.songs.length&&!character.playlistUrl)missing.push('No playlist supplied in the reviewed sources.');
     if(!character.timeline.length)missing.push('No confidently matched story or comms links found.');
-    else if(character.timeline.some(t=>!t.date))missing.push('Undated entries need an in-world date to join the chronological sequence.');
+    else if(character.timeline.some(t=>!t.date&&!t.postedDate))missing.push('Some entries have no established story date or verified topic-start date.');
+    if(character.timeline.some(t=>t.postedDateSource)) {
+      fields.add('timeline');
+      rowSources.push({kind:'topic-start',path:'sources/topic-start-dates.json',fields:['timeline']});
+      notes.push('Timeline entries fall back to verified topic-start dates where no in-world date has been supplied.');
+    }
     if(!character.polaroids.length)missing.push('Closest-person photos have not been selected.');
     if(!character.mapLatitude||!character.mapLongitude)missing.push('No verified location pin supplied.');
     if(!character.facts.some(f=>key(f.label)==='birthday'))missing.push('Birthday not established in the reviewed sources.');

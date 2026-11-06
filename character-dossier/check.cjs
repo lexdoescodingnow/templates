@@ -84,11 +84,11 @@ test('Sam retains the approved age/status, all facts, songs, connections and tra
   assert.deepEqual(sam.timeline.slice(0,3).map(item => item.title), ['Lindor Pistachio','Pringles Texas BBQ','Mochidoki Cake Batter']);
   assert.equal(sam.timeline[5].title, 'Cereal Bar');
   assert.deepEqual(sam.timeline[5].connectionIds, ['hoseong']);
-  assert.deepEqual(Dossier.sortTimeline(sam.timeline).map(item => item.id), sam.timeline.map(item => item.id));
+  assert.deepEqual(Dossier.sortTimeline(sam.timeline).map(item => item.id).sort(), sam.timeline.map(item => item.id).sort());
   assert.equal(sam.songs[0].url, 'https://open.spotify.com/track/5KyOUICJIvO0z71MBdPGiX');
   assert.equal(sam.songs[9].url, 'https://open.spotify.com/track/4UJwJG0Byki4e9MNTxo8aF');
   assert.deepEqual(sam.songs.map(item=>item.url.split('/').pop()), ['5KyOUICJIvO0z71MBdPGiX','0SIEcuChTr2DIhuPgklpeP','3AOf6YEpxQ894FmrwI9k96','2EFxmF45ZsAvSQBGyMYGTB','2tYiQoXXbAEdwBTG0qanqi','2nNBdv2vcJZuWOZ06nNF62','0M1NR0EXFkMoy8nt4JNXKH','40UVUuyy5RfpO0awclCttA','4tLAqSfrGmx5L0akJWNdK5','4UJwJG0Byki4e9MNTxo8aF']);
-  assert(sam.timeline.every(item => !item.date && !item.postedDate));
+  assert(sam.timeline.every(item => !item.date), 'Topic start dates must not be copied into in-world date fields');
   assert(library.characters.every(item => item.relationships.every(connection => !connection.pinned)));
   assert.deepEqual(sam.relationships.map(item => item.flavour), ['','cereal','','']);
   assert.deepEqual(sam.relationships.map(item => item.brand), ['Lindor','','Mochidoki','Pringles']);
@@ -203,7 +203,7 @@ test('Unicode, quotation marks, distinct story dates and connection links round-
   const raw = character({name:'Trần Bảo & Bāng Dí', nickname:'B', notes:'“a memory” — 雨 & café', avatar:'https://example.com/portrait.png', imagePosition:'75% 20%',
     polaroids:[{name:'雨',image:'https://example.com/rain.png',url:'https://example.com/story'}],mapLocation:'San Bernardino, CA',mapLatitude:'34.1211115',mapLongitude:'-117.301767',mapZoom:11,
     relationships:[{id:'connection-one',name:'Seo Hyemi',kind:'Friend',flavour:'Original Flavour',brand:'Brand “雨” & Co.',summary:'she said “hello”'}],
-    timeline:[{id:'story-one',title:'The next day',date:'2026-10-13',postedDate:'2026-11-06',dateLabel:'Autumn',participants:'Bảo & Hyemi',connectionIds:['connection-one'],type:'Thread'}]});
+    timeline:[{id:'story-one',title:'The next day',date:'2026-10-13',postedDate:'2026-11-06',postedDateSource:'https://bluehour.jcink.net/index.php?showtopic=123&st=0',dateLabel:'Autumn',participants:'Bảo & Hyemi',connectionIds:['connection-one'],type:'Thread'}]});
   const first = Dossier.normalizeCharacter(raw);
   const roundtrip = Dossier.normalizeDataset(JSON.parse(JSON.stringify({version:1,characters:[first]}))).characters[0];
   assert.deepEqual(roundtrip, first);
@@ -220,6 +220,7 @@ test('Unicode, quotation marks, distinct story dates and connection links round-
   assert.equal(roundtrip.relationships[0].brand, raw.relationships[0].brand);
   assert.equal(roundtrip.timeline[0].date, '2026-10-13');
   assert.equal(roundtrip.timeline[0].postedDate, '2026-11-06');
+  assert.equal(roundtrip.timeline[0].postedDateSource, raw.timeline[0].postedDateSource);
   assert.deepEqual(roundtrip.timeline[0].connectionIds, ['connection-one']);
 });
 
@@ -324,7 +325,7 @@ test('Portrait addresses and image cropping cannot inject markup or arbitrary st
   }
 });
 
-test('Chronology supports year, month and day precision and preserves undated ordering', () => {
+test('Chronology supports year, month and day precision and preserves unknown-date ordering', () => {
   const entries = [
     {id:'u1',title:'Undated first',date:''},
     {id:'late',title:'Later',date:'2026-12-31'},
@@ -339,6 +340,81 @@ test('Chronology supports year, month and day precision and preserves undated or
       assert.notEqual(result.timeline[0].date, date, 'Invalid calendar date must not become a valid chronology key: '+date);
     });
   }
+});
+
+test('Chronology falls back to topic starts while explicit story dates retain precedence', () => {
+  const entries = [
+    {id:'unknown-first',date:'',postedDate:''},
+    {id:'posted-day',date:'',postedDate:'2026-10-18'},
+    {id:'explicit-earlier',date:'2024-07-03',postedDate:'2026-11-01'},
+    {id:'posted-year',postedDate:'2026'},
+    {id:'posted-month',postedDate:'2026-10'},
+    {id:'story-month',date:'2026-10',postedDate:'2020-01-01'},
+    {id:'explicit-later',date:'2027-02',postedDate:'2020-01-01'},
+    {id:'same-posted-day',postedDate:'2026-10-18'},
+    {id:'label-only',dateLabel:'Before the debut'},
+    {id:'unknown-last',date:'',postedDate:''}
+  ];
+  const original = JSON.stringify(entries);
+  assert.deepEqual(Dossier.sortTimeline(entries).map(entry=>entry.id), ['explicit-earlier','posted-year','posted-month','story-month','posted-day','same-posted-day','explicit-later','unknown-first','label-only','unknown-last']);
+  assert.equal(JSON.stringify(entries), original, 'Sorting must not change saved dates or source order');
+  for (const postedDate of ['2025-02-29','2026-13','2026-11-31','yesterday']) {
+    assert.throws(()=>Dossier.normalizeCharacter(character({timeline:[{id:'invalid-posted',title:'Invalid topic date',postedDate}]})),/Posting date/);
+  }
+});
+
+test('Timeline dates use compact month-year labels and distinguish the topic-date fallback', () => {
+  const output = Dossier.render(character({timeline:[
+    {id:'posted',title:'Posting fallback',postedDate:'2026-10-18'},
+    {id:'year-only',title:'Only a year',postedDate:'2025'},
+    {id:'month-only',title:'Only a month',postedDate:'2026-09'},
+    {id:'story',title:'Established story date',date:'2024-02-29',postedDate:'2026-11-06'},
+    {id:'unknown',title:'No available date'}
+  ]}));
+  const entry = id => {
+    const match = output.match(new RegExp('<li class="bd1-entry[^\"]*" id="[^"]+-entry-'+id+'"[^>]*>([\\s\\S]*?)</li>'));
+    assert(match,'Missing rendered timeline entry '+id);
+    return match[1];
+  };
+  assert(entry('posted').includes('<span class="bd1-entry-date" title="Topic started 18 October 2026">Oct ’26</span>'));
+  assert(!entry('posted').includes('bd1-posted-date'),'A fallback date must appear only once');
+  assert(entry('year-only').includes('title="Topic started 2025">2025</span>'));
+  assert(entry('month-only').includes('title="Topic started September 2026">Sep ’26</span>'));
+  assert(entry('story').includes('title="Story date 29 February 2024">Feb ’24</span>'));
+  assert(entry('story').includes('<div class="bd1-posted-date">Posted 6 November 2026</div>'));
+  assert(!entry('unknown').includes('bd1-entry-date'));
+  assert.deepEqual(Array.from(output.matchAll(/<h3 class="bd1-year">([^<]+)<\/h3>/g),match=>match[1]),['2024','2025','2026','Date Unavailable']);
+  assert(!output.includes('>Undated<'));
+});
+
+test('Custom story labels are preserved without duplicating a posting fallback', () => {
+  const labelled = Dossier.render(character({timeline:[{id:'labelled',title:'Labelled scene',dateLabel:'Before the debut',postedDate:'2026-10-18'}]}));
+  assert(labelled.includes('title="Topic started 18 October 2026">Before the debut</span>'));
+  assert(!labelled.includes('>Oct ’26<')&&!labelled.includes('bd1-posted-date'));
+  assert(labelled.includes('<h3 class="bd1-year">2026</h3>'));
+  const explicit = Dossier.render(character({timeline:[{id:'explicit',title:'Labelled story date',date:'2025-03',dateLabel:'Early spring',postedDate:'2026-10'}]}));
+  assert(explicit.includes('title="Story date March 2025">Early spring</span>'));
+  assert(explicit.includes('Posted October 2026'));
+  const unavailable = Dossier.render(character({timeline:[{id:'label-only',title:'Relative date only',dateLabel:'Before the debut'}]}));
+  assert(unavailable.includes('<h3 class="bd1-year">Date Unavailable</h3>'));
+  assert(unavailable.includes('<span class="bd1-entry-date">Before the debut</span>'));
+});
+
+test('Timeline date provenance and live lookup attributes remain safe and distinct', () => {
+  const topicUrl = 'https://bluehour.jcink.net/index.php?showtopic=123&st=0';
+  const normalized = Dossier.normalizeCharacter(character({timeline:[
+    {id:'sourced',title:'Source date',url:topicUrl,date:'2025-10',postedDate:'2026-11-06',postedDateSource:topicUrl,dateLabel:'Autumn "before" & after'},
+    {id:'unsafe',title:'Invalid provenance',postedDateSource:'javascript:alert(1)'}
+  ]}));
+  assert.equal(normalized.timeline[0].postedDateSource, topicUrl);
+  assert.equal(normalized.timeline[1].postedDateSource, '');
+  const output = Dossier.render(normalized);
+  const attributes = output.match(/<li class="bd1-entry" id="[^"]+-entry-sourced"([^>]*)>/)[1];
+  assert(attributes.includes('data-story-date="2025-10"'));
+  assert(attributes.includes('data-posted-date="2026-11-06"'));
+  assert(attributes.includes('data-date-label="Autumn &quot;before&quot; &amp; after"'));
+  assert(attributes.includes('data-topic-url="https://bluehour.jcink.net/index.php?showtopic=123&amp;st=0"'));
+  assert(!output.includes('javascript:'));
 });
 
 test('Duplicate IDs are rejected or resolved without producing duplicate anchors', () => {
@@ -419,7 +495,7 @@ test('Forum output preserves static content with one shared stylesheet and one f
   assert.equal((output.match(/<link\b[^>]*rel="stylesheet"/g)||[]).length, 1);
   const scripts = Array.from(output.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi));
   assert.equal(scripts.length, 1);
-  assert.equal(scripts[0][1].match(/\bsrc="([^"]*)"/)[1], 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.1.js');
+  assert.equal(scripts[0][1].match(/\bsrc="([^"]*)"/)[1], 'https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.2.js');
   assert.equal(scripts[0][2], '');
   assert(!/\bsrcdoc=|pgy-pikeplace|dropboxusercontent|unpkg\.com|bluehour-cosmicmeet/i.test(output));
   assert(output.includes(stylesheet));

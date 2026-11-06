@@ -1,7 +1,7 @@
 (function (root, factory) {
   'use strict';
   var existing = root.BlueHourDossierRuntime;
-  if (existing && existing.version === 5 && existing.revision === 2) {
+  if (existing && existing.version === 5 && existing.revision >= 2) {
     if (typeof module === 'object' && module.exports) module.exports = existing;
     else existing.start();
     return;

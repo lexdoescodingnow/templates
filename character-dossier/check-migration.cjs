@@ -17,7 +17,10 @@ for(const topic of captures){
 const library=D.normalizeDataset(read('seed-library.json'));
 const previous=D.normalizeDataset(read('legacy-baseline.json'));
 const byId=new Map(library.characters.map(c=>[c.id,c]));
-assert.deepEqual(byId.get('baek-samuel'),previous.characters.find(c=>c.id==='baek-samuel'));
+const sam=byId.get('baek-samuel');
+const withoutTopicStarts=character=>({...character,timeline:character.timeline.map(entry=>({...entry,postedDate:'',postedDateSource:''}))});
+assert.deepEqual(withoutTopicStarts(sam),withoutTopicStarts(previous.characters.find(c=>c.id==='baek-samuel')));
+assert(sam.timeline.every(entry=>entry.postedDate&&entry.postedDateSource===entry.url&&!entry.date),'Sam gains sourced topic starts only');
 const metadata=read('migration-sources.json');
 assert.equal(metadata.characters.length,181);
 assert.equal(metadata.characters.filter(c=>c.sources.some(s=>s.kind==='development')).length,58);

@@ -109,7 +109,7 @@ function coverageHtml(coverage) {
 }
 
 function previewHtml(character) {
-  return '<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+html(character.name)+' · Blue Hour</title><link rel="stylesheet" href="../assets/dossier-v5.1.css"><style>body{margin:0;padding:20px 12px;background:#101413;color-scheme:dark}</style></head><body>'+Dossier.render(character)+'<script src="../assets/dossier-runtime-v5.1.js"></script></body></html>';
+  return '<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+html(character.name)+' · Blue Hour</title><link rel="stylesheet" href="../assets/dossier-v5.1.css"><style>body{margin:0;padding:20px 12px;background:#101413;color-scheme:dark}</style></head><body>'+Dossier.render(character)+'<script src="../assets/dossier-runtime-v5.2.js"></script></body></html>';
 }
 
 function archiveIndex(library) {
@@ -123,7 +123,7 @@ function browserHtml(library,cssUrl,runtime) {
 function buildAllCast(library,options={}) {
   library = Dossier.normalizeDataset(library);
   const cssUrl = options.cssUrl || defaultCssUrl;
-  const runtime = options.runtime || read('palette.js')+'\n'+read('runtime.js');
+  const runtime = options.runtime || read('palette.js')+'\n'+read('topic-dates.js')+'\n'+read('runtime.js');
   const {manifest,sourceText} = readManifest(library);
   const coverage = coverageFor(library,manifest,sourceText);
   const coverageJson = JSON.stringify(coverage,null,2)+'\n';
@@ -134,7 +134,7 @@ function buildAllCast(library,options={}) {
     {name:'atelier.html',data:read('atelier.html')},
     {name:'library.json',data:JSON.stringify(library,null,2)+'\n'},
     {name:'assets/dossier-v5.1.css',data:read('dossier-v5.1.css')},
-    {name:'assets/dossier-runtime-v5.1.js',data:runtime},
+    {name:'assets/dossier-runtime-v5.2.js',data:runtime},
     {name:'migration-coverage.json',data:coverageJson},
     {name:'migration-coverage.html',data:coveragePage.replace('<nav><a href="cast.html">Browse characters</a><a href="atelier.html">Open the editor</a><a href="all-characters.zip" download>Download all profiles</a></nav>','<nav><a href="index.html">Browse characters</a></nav>')}
   ];
