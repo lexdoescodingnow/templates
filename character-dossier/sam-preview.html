@@ -1,0 +1,188 @@
+<!doctype html><html lang="en" color-mode="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sam · Blue Hour character dossier</title><style>body{margin:0;padding:28px 12px;background:#121516;}.bh-dossier-v1 {
+  --bd1-bg: #202123;
+  --bd1-panel: #27292b;
+  --bd1-inset: #1b1c1e;
+  --bd1-ink: #ece8e2;
+  --bd1-muted: #aaa9a5;
+  --bd1-line: rgba(220, 224, 225, .12);
+  --bd1-accent-ink: color-mix(in srgb, var(--bd1-accent) 45%, var(--bd1-ink));
+  --bd1-group1: var(--mgrgb1, 130, 158, 168);
+  --bd1-group2: var(--mgrgb2, 161, 137, 153);
+  --bd1-group3: var(--mgrgb3, 157, 164, 135);
+  --bd1-forward: linear-gradient(110deg, rgb(var(--bd1-group1)), rgb(var(--bd1-group2)), rgb(var(--bd1-group3)));
+  --bd1-reverse: linear-gradient(110deg, rgb(var(--bd1-group3)), rgb(var(--bd1-group2)), rgb(var(--bd1-group1)));
+  box-sizing: border-box;
+  width: min(100%, 760px);
+  margin: 24px auto;
+  overflow: hidden;
+  border: 1px solid var(--bd1-line);
+  border-radius: 22px;
+  background: var(--bd1-bg);
+  color: var(--bd1-ink);
+  font: 15px/1.6 Arial, Helvetica, sans-serif;
+  text-align: left;
+  letter-spacing: normal;
+  box-shadow: 0 18px 65px rgba(0, 0, 0, .13);
+  container: bd1 / inline-size;
+  isolation: isolate;
+  overflow-wrap: anywhere;
+  color-scheme: dark;
+}
+.bh-dossier-v1 *, .bh-dossier-v1 *::before, .bh-dossier-v1 *::after { box-sizing: border-box; }
+.bh-dossier-v1 :is(h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul, ol) { margin: 0; padding: 0; color: inherit; }
+.bh-dossier-v1 :is(h1, h2, h3, h4) { font-weight: 400; text-transform: none; letter-spacing: normal; }
+.bh-dossier-v1 :is(a, a:visited) { color: inherit; text-decoration: none; font-weight: inherit; }
+.bh-dossier-v1 a:hover { color: var(--bd1-ink); text-decoration: underline; text-underline-offset: 4px; }
+.bh-dossier-v1 :is(a, summary):focus-visible { outline: 2px solid rgb(var(--bd1-group1)); outline-offset: 5px; border-radius: 3px; }
+.bh-dossier-v1 :is(b, strong, u) { background: var(--bd1-forward); background-clip: text; -webkit-background-clip: text; color: transparent; }
+.bh-dossier-v1 :is(i, em) { background: var(--bd1-reverse); background-clip: text; -webkit-background-clip: text; color: transparent; }
+.bh-dossier-v1 img { display: block; max-width: 100%; border: 0; }
+.bh-dossier-v1 section, .bh-dossier-v1 article, .bh-dossier-v1 header, .bh-dossier-v1 li { scroll-margin-top: 130px; }
+.bh-dossier-v1 .bd1-masthead { display: flex; justify-content: space-between; gap: 12px; padding: 17px 30px; background: linear-gradient(100deg, rgba(var(--bd1-group1), .11), rgba(var(--bd1-group2), .07), rgba(var(--bd1-group3), .1)); border-bottom: 1px solid var(--bd1-line); color: var(--bd1-muted); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .17em; }
+.bh-dossier-v1 .bd1-hero { position: relative; height: 288px; background: var(--bd1-inset); }
+.bh-dossier-v1 .bd1-hero::after { content: ''; position: absolute; inset: auto 0 0; height: 4px; background: var(--bd1-forward); }
+.bh-dossier-v1 .bd1-hero > img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+.bh-dossier-v1 .bd1-photo-mark { position: absolute; right: 28px; bottom: 24px; display: grid; place-items: center; width: 46px; height: 46px; border: 1px solid rgba(255, 255, 255, .25); border-radius: 50%; background: rgba(22, 23, 24, .68); color: var(--bd1-accent); font-size: 29px; }
+.bh-dossier-v1 .bd1-identity { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding: 29px 34px 31px; }
+.bh-dossier-v1 .bd1-eyebrow { display: block; color: var(--bd1-muted); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.bh-dossier-v1 .bd1-identity > div:first-child { min-width: 0; }
+.bh-dossier-v1 h1 { margin-top: 5px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(40px, 9cqi, 68px); line-height: 1.1; letter-spacing: -.055em; }
+.bh-dossier-v1 .bd1-fullname { margin-top: 7px; color: var(--bd1-muted); font-size: 14px; }
+.bh-dossier-v1 .bd1-identity-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 11px; color: var(--bd1-muted); font-size: 12px; }
+.bh-dossier-v1 .bd1-identity-meta > span { color: var(--bd1-accent); }
+.bh-dossier-v1 .bd1-summary { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; max-width: 43%; padding-bottom: 3px; text-align: right; color: var(--bd1-muted); font-size: 12px; }
+.bh-dossier-v1 .bd1-status { display: inline-block; margin-bottom: 4px; padding: 4px 10px; border: 1px solid var(--bd1-line); border-left: 3px solid var(--bd1-accent); border-radius: 3px; background: var(--bd1-panel); color: var(--bd1-ink); font-size: 11px; }
+.bh-dossier-v1 .bd1-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; padding: 13px 22px; border-top: 1px solid var(--bd1-line); border-bottom: 1px solid var(--bd1-line); background: var(--bd1-inset); }
+.bh-dossier-v1 .bd1-nav a { padding: 3px 0; color: var(--bd1-muted); font-size: 11px; }
+.bh-dossier-v1 .bd1-content { padding: 0 34px; }
+.bh-dossier-v1 .bd1-section { padding: 30px 0 33px; border-bottom: 1px solid var(--bd1-line); }
+.bh-dossier-v1 .bd1-section:last-child { border-bottom: 0; }
+.bh-dossier-v1 .bd1-section-heading { display: flex; align-items: baseline; gap: 12px; margin-bottom: 22px; }
+.bh-dossier-v1 .bd1-number { flex: 0 0 auto; font-size: 10px; font-weight: 700; color: var(--bd1-ink); color: var(--bd1-accent-ink); }
+.bh-dossier-v1 h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 27px; line-height: 1.2; letter-spacing: -.035em; }
+.bh-dossier-v1 .bd1-heading-note { margin-left: auto; color: var(--bd1-muted); font-size: 10px; text-align: right; }
+.bh-dossier-v1 .bd1-tags { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; }
+.bh-dossier-v1 .bd1-tags li { display: block; padding: 4px 9px; border: 1px solid rgba(var(--bd1-group1), .2); border-radius: 4px; background: rgba(var(--bd1-group1), .07); font-size: 11px; color: var(--bd1-ink); }
+.bh-dossier-v1 .bd1-chapter { margin: 23px 0 0; padding: 16px 20px; border-left: 2px solid var(--bd1-accent); background: var(--bd1-panel); border-radius: 0 7px 7px 0; }
+.bh-dossier-v1 .bd1-chapter p { margin-top: 9px; font-size: 14px; }
+.bh-dossier-v1 .bd1-facts { display: grid; grid-template-columns: 1fr 1fr; column-gap: 27px; margin-top: 21px; }
+.bh-dossier-v1 .bd1-facts > div { padding: 12px 0; border-bottom: 1px solid var(--bd1-line); min-width: 0; }
+.bh-dossier-v1 .bd1-facts dt { margin-bottom: 3px; font-size: 10px; color: var(--bd1-muted); text-transform: uppercase; letter-spacing: .08em; }
+.bh-dossier-v1 .bd1-facts dd { font-size: 13px; line-height: 1.5; white-space: pre-line; }
+.bh-dossier-v1 .bd1-pinned { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.bh-dossier-v1 .bd1-person { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 19px 16px 16px; background: linear-gradient(145deg, rgba(var(--bd1-group1), .09), rgba(var(--bd1-group2), .03)), var(--bd1-panel); border: 1px solid var(--bd1-line); border-radius: 9px; }
+.bh-dossier-v1 .bd1-person:hover { text-decoration: none; border-color: rgba(var(--bd1-group1), .5); }
+.bh-dossier-v1 .bd1-person-number { position: absolute; top: 11px; right: 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 20px; line-height: 1; color: rgba(var(--bd1-group1), .4); }
+.bh-dossier-v1 .bd1-person > img { width: 50px; height: 50px; margin-bottom: 12px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(var(--bd1-group1), .4); }
+.bh-dossier-v1 .bd1-person-name { margin-top: 12px; padding-right: 10px; font-family: Georgia, 'Times New Roman', serif; font-size: 21px; line-height: 1.2; }
+.bh-dossier-v1 .bd1-person-kind { margin-top: 6px; color: var(--bd1-muted); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
+.bh-dossier-v1 .bd1-person-flavour { margin-top: 14px; color: var(--bd1-muted); font-size: 12px; }
+.bh-dossier-v1 .bd1-connections { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+.bh-dossier-v1 .bd1-connection { min-width: 0; padding: 20px; border: 1px solid var(--bd1-line); border-radius: 9px; background: var(--bd1-panel); }
+.bh-dossier-v1 .bd1-featured { grid-column: 1 / -1; border-top: 2px solid rgb(var(--bd1-group2)); background: linear-gradient(110deg, rgba(var(--bd1-group1), .065), transparent 45%, rgba(var(--bd1-group3), .05)), var(--bd1-panel); }
+.bh-dossier-v1 .bd1-connection-head { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.bh-dossier-v1 .bd1-connection-head > div { flex: 1; min-width: 90px; }
+.bh-dossier-v1 .bd1-avatar { width: 42px; height: 42px; object-fit: cover; border-radius: 50%; }
+.bh-dossier-v1 .bd1-connection h3 { margin-top: 3px; font-family: Georgia, 'Times New Roman', serif; font-size: 25px; line-height: 1.2; }
+.bh-dossier-v1 .bd1-small-status { align-self: flex-start; padding: 3px 7px; border: 1px solid var(--bd1-line); border-radius: 3px; color: var(--bd1-muted); font-size: 9px; }
+.bh-dossier-v1 .bd1-flavour { display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; margin-top: 18px; padding-top: 11px; border-top: 1px solid var(--bd1-line); font-size: 13px; }
+.bh-dossier-v1 .bd1-flavour > span:first-child { font-size: 9px; text-transform: uppercase; letter-spacing: .1em; color: var(--bd1-muted); }
+.bh-dossier-v1 .bd1-connection-copy { margin-top: 13px; font-size: 13px; color: var(--bd1-muted); }
+.bh-dossier-v1 blockquote { margin: 19px 0 4px; padding: 3px 0 3px 18px; border-left: 2px solid var(--bd1-accent); font-family: Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 1.5; }
+.bh-dossier-v1 blockquote p + p { margin-top: 8px; }
+.bh-dossier-v1 .bd1-relationship-playlist { margin-top: 12px; color: var(--bd1-muted); font-size: 11px; }
+.bh-dossier-v1 .bd1-linked-story { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--bd1-line); font-size: 11px; }
+.bh-dossier-v1 summary { cursor: pointer; }
+.bh-dossier-v1 .bd1-linked-story summary { color: var(--bd1-muted); }
+.bh-dossier-v1 .bd1-linked-story ul { margin-top: 10px; list-style: none; }
+.bh-dossier-v1 .bd1-linked-story li a { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; }
+.bh-dossier-v1 .bd1-linked-story small { color: var(--bd1-muted); font-size: 9px; }
+.bh-dossier-v1 .bd1-year-group { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; }
+.bh-dossier-v1 .bd1-year-group + .bd1-year-group { margin-top: 18px; }
+.bh-dossier-v1 .bd1-year { padding-top: 4px; font-family: Georgia, 'Times New Roman', serif; font-size: 19px; line-height: 1.5; color: var(--bd1-muted); }
+.bh-dossier-v1 .bd1-timeline { list-style: none; border-left: 1px solid var(--bd1-line); }
+.bh-dossier-v1 .bd1-entry { position: relative; padding: 0 0 24px 24px; }
+.bh-dossier-v1 .bd1-entry:last-child { padding-bottom: 8px; }
+.bh-dossier-v1 .bd1-entry::before { content: ''; position: absolute; top: 10px; left: -4px; width: 7px; height: 7px; border-radius: 50%; background: rgb(var(--bd1-group1)); box-shadow: 0 0 0 4px var(--bd1-bg); }
+.bh-dossier-v1 .bd1-milestone::before { border-radius: 1px; transform: rotate(45deg); background: var(--bd1-accent); }
+.bh-dossier-v1 .bd1-entry-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 10px; color: var(--bd1-muted); font-size: 10px; }
+.bh-dossier-v1 .bd1-type { padding: 3px 6px; border-radius: 3px; background: rgba(var(--bd1-group1), .09); border: 1px solid rgba(var(--bd1-group1), .16); color: var(--bd1-ink); font-size: 9px; }
+.bh-dossier-v1 .bd1-entry-status { margin-left: auto; font-size: 9px; }
+.bh-dossier-v1 h4 { margin-top: 8px; font-family: Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 1.3; }
+.bh-dossier-v1 .bd1-participants { margin-top: 4px; color: var(--bd1-muted); font-size: 11px; }
+.bh-dossier-v1 .bd1-entry-people { display: flex; flex-wrap: wrap; gap: 5px 10px; margin-top: 8px; color: var(--bd1-muted); font-size: 10px; }
+.bh-dossier-v1 .bd1-entry-people a { border-bottom: 1px dotted rgba(var(--bd1-group2), .6); }
+.bh-dossier-v1 .bd1-entry-copy { margin-top: 10px; font-size: 13px; }
+.bh-dossier-v1 .bd1-posted-date { margin-top: 8px; color: var(--bd1-muted); font-size: 9px; }
+.bh-dossier-v1 .bd1-main-playlist { margin-bottom: 18px; }
+.bh-dossier-v1 .bd1-song { border-top: 1px solid var(--bd1-line); }
+.bh-dossier-v1 .bd1-song:last-child { border-bottom: 1px solid var(--bd1-line); }
+.bh-dossier-v1 .bd1-song > summary { display: flex; align-items: center; gap: 14px; list-style: none; padding: 14px 0; }
+.bh-dossier-v1 .bd1-song > summary::-webkit-details-marker { display: none; }
+.bh-dossier-v1 .bd1-song-number { align-self: flex-start; padding-top: 2px; min-width: 18px; color: var(--bd1-ink); color: var(--bd1-accent-ink); font-size: 10px; }
+.bh-dossier-v1 .bd1-song-title { display: block; font-size: 13px; font-weight: 700; line-height: 1.5; }
+.bh-dossier-v1 .bd1-song-artist { display: block; margin-top: 2px; color: var(--bd1-muted); font-size: 10px; }
+.bh-dossier-v1 .bd1-song-toggle { margin-left: auto; font-size: 18px; color: var(--bd1-muted); }
+.bh-dossier-v1 .bd1-song[open] .bd1-song-toggle { transform: rotate(45deg); }
+.bh-dossier-v1 .bd1-song-body { padding: 0 0 14px 32px; }
+.bh-dossier-v1 .bd1-song-note { margin: 0 0 10px; font-size: 12px; color: var(--bd1-muted); }
+.bh-dossier-v1 .bd1-player { display: block; width: 100%; max-width: 100%; border: 0; border-radius: 10px; background: var(--bd1-inset); }
+.bh-dossier-v1 .bd1-listen { padding-top: 6px; color: var(--bd1-muted); font-size: 10px; }
+.bh-dossier-v1 .bd1-notes > p { margin-top: 13px; font-size: 14px; }
+.bh-dossier-v1 .bd1-footer { display: flex; justify-content: space-between; gap: 15px; padding: 17px 34px; border-top: 1px solid var(--bd1-line); background: linear-gradient(100deg, rgba(var(--bd1-group3), .06), rgba(var(--bd1-group1), .07)); color: var(--bd1-muted); font-size: 10px; }
+html[color-mode="light"] .bh-dossier-v1 { --bd1-bg: #faf8f5; --bd1-panel: #f0ede8; --bd1-inset: #eeebe6; --bd1-ink: #292c2e; --bd1-muted: #656663; --bd1-line: rgba(45, 50, 50, .14); color-scheme: light; }
+html[color-mode="dark"] .bh-dossier-v1 { --bd1-bg: #202123; --bd1-panel: #27292b; --bd1-inset: #1b1c1e; --bd1-ink: #ece8e2; --bd1-muted: #aaa9a5; --bd1-line: rgba(220, 224, 225, .12); color-scheme: dark; }
+@media (prefers-color-scheme: light) {
+  html:not([color-mode="dark"]):not([color-mode="light"]) .bh-dossier-v1 { --bd1-bg: #faf8f5; --bd1-panel: #f0ede8; --bd1-inset: #eeebe6; --bd1-ink: #292c2e; --bd1-muted: #656663; --bd1-line: rgba(45, 50, 50, .14); color-scheme: light; }
+}
+@container bd1 (max-width: 540px) {
+  .bh-dossier-v1 .bd1-hero { height: 225px; }
+  .bh-dossier-v1 .bd1-masthead { padding: 14px 22px; font-size: 9px; }
+  .bh-dossier-v1 .bd1-identity { padding: 25px 22px; gap: 16px; }
+  .bh-dossier-v1 .bd1-summary { max-width: 44%; font-size: 10px; }
+  .bh-dossier-v1 .bd1-content { padding: 0 22px; }
+  .bh-dossier-v1 .bd1-connections { grid-template-columns: 1fr; }
+  .bh-dossier-v1 .bd1-pinned { gap: 8px; }
+  .bh-dossier-v1 .bd1-person { padding: 18px 10px 13px; }
+  .bh-dossier-v1 .bd1-person-name { font-size: 18px; }
+  .bh-dossier-v1 .bd1-person-kind { font-size: 9px; }
+  .bh-dossier-v1 .bd1-person-flavour { font-size: 10px; }
+  .bh-dossier-v1 .bd1-person-number { font-size: 17px; }
+  .bh-dossier-v1 .bd1-year-group { grid-template-columns: 52px minmax(0, 1fr); gap: 10px; }
+  .bh-dossier-v1 .bd1-year { font-size: 16px; }
+  .bh-dossier-v1 .bd1-entry { padding-left: 19px; }
+  .bh-dossier-v1 .bd1-footer { padding: 16px 22px; }
+}
+@container bd1 (max-width: 380px) {
+  .bh-dossier-v1 .bd1-hero { height: 195px; }
+  .bh-dossier-v1 .bd1-masthead { flex-wrap: wrap; gap: 4px 10px; padding: 13px 18px; }
+  .bh-dossier-v1 .bd1-identity { display: block; padding: 22px 18px; }
+  .bh-dossier-v1 .bd1-summary { align-items: flex-start; max-width: none; margin-top: 18px; text-align: left; font-size: 11px; }
+  .bh-dossier-v1 .bd1-content { padding: 0 16px; }
+  .bh-dossier-v1 .bd1-nav { gap: 3px 15px; padding: 11px 18px; }
+  .bh-dossier-v1 .bd1-section-heading { flex-wrap: wrap; gap: 8px; }
+  .bh-dossier-v1 .bd1-heading-note { flex-basis: 100%; margin-left: 22px; text-align: left; }
+  .bh-dossier-v1 h2 { font-size: 25px; }
+  .bh-dossier-v1 .bd1-facts { column-gap: 17px; }
+  .bh-dossier-v1 .bd1-pinned { grid-template-columns: 1fr; }
+  .bh-dossier-v1 .bd1-person { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; padding: 15px; }
+  .bh-dossier-v1 .bd1-person > img { grid-column: 1; grid-row: 1 / 4; margin: 0; }
+  .bh-dossier-v1 .bd1-person-name { grid-column: 2; margin: 0; padding-right: 16px; font-size: 21px; }
+  .bh-dossier-v1 .bd1-person-kind, .bh-dossier-v1 .bd1-person-flavour { grid-column: 2; margin: 0; }
+  .bh-dossier-v1 .bd1-person:not(:has(img)) { grid-template-columns: 1fr; }
+  .bh-dossier-v1 .bd1-person:not(:has(img)) :is(.bd1-person-name, .bd1-person-kind, .bd1-person-flavour) { grid-column: 1; }
+  .bh-dossier-v1 .bd1-year-group { display: block; }
+  .bh-dossier-v1 .bd1-year { margin: 0 0 13px; font-size: 20px; }
+  .bh-dossier-v1 .bd1-timeline { margin-left: 4px; }
+  .bh-dossier-v1 .bd1-song-body { padding-left: 0; }
+  .bh-dossier-v1 .bd1-footer { flex-direction: column; gap: 5px; padding: 15px 18px; }
+}
+@container bd1 (max-width: 313px) {
+  .bh-dossier-v1 .bd1-player { display: none; }
+}
+@media print {
+  .bh-dossier-v1 { max-width: none; box-shadow: none; }
+  .bh-dossier-v1 .bd1-nav, .bh-dossier-v1 .bd1-footer a { display: none; }
+  .bh-dossier-v1 .bd1-connection, .bh-dossier-v1 .bd1-entry { break-inside: avoid; }
+}
+</style></head><body><article class="bh-dossier-v1" style="--bd1-accent:#5b8612"><header class="bd1-cover" id="bd1-baek-samuel-overview"><div class="bd1-masthead"><span>Character dossier</span></div><figure class="bd1-hero"><img src="https://b.l3n.co/i/n8q1lD.png" alt="sam — character portrait" loading="lazy" referrerpolicy="no-referrer"><span class="bd1-photo-mark" aria-hidden="true">✦</span></figure><div class="bd1-identity"><div><span class="bd1-eyebrow">The character archive</span><h1>sam</h1><div class="bd1-fullname">Baek Samuel</div><p class="bd1-identity-meta">25 years old<span aria-hidden="true"> / </span>he / him</p></div><div class="bd1-summary"><span class="bd1-status">In a relationship</span><span>idol / leader of CRAZHES</span><span>los angeles, ca</span></div></div></header><nav class="bd1-nav" aria-label="Character sections"><a href="#bd1-baek-samuel-overview">Overview</a><a href="#bd1-baek-samuel-connections">Flavour & ships</a><a href="#bd1-baek-samuel-story">Timeline</a><a href="#bd1-baek-samuel-soundtrack">Soundtrack</a></nav><div class="bd1-content"><section class="bd1-section bd1-overview"><div class="bd1-section-heading"><span class="bd1-number">01</span><h2>At a glance</h2></div><ul class="bd1-tags" aria-label="Character traits"><li>ANXIOUS HEART</li><li>BRAVER THAN HE THINKS</li><li>DEEPLY ATTACHED</li><li>EMOTIONALLY TUNED</li><li>GENTLE HUMOUR</li><li>OVERTHINKER</li><li>QUIET LOYALTY</li><li>ROUTINE COMFORT</li><li>SAFETY SEEKER</li><li>SOFT-SPOKEN</li></ul><dl class="bd1-facts"><div><dt>Gender</dt><dd>cisgender male</dd></div><div><dt>Occupation</dt><dd>idol / leader of CRAZHES</dd></div><div><dt>Based in</dt><dd>los angeles, ca</dd></div><div><dt>Preferred name</dt><dd>sam, sammy</dd></div><div><dt>Birthday</dt><dd>october 13th</dd></div><div><dt>Ethnicity</dt><dd>korean</dd></div><div><dt>Nationality</dt><dd>korean</dd></div><div><dt>Romanticality</dt><dd>biromantic</dd></div><div><dt>Sexuality</dt><dd>bisexual</dd></div><div><dt>Residency</dt><dd>san bernardino, CA</dd></div><div><dt>Languages</dt><dd>english, korean</dd></div><div><dt>MBTI</dt><dd>ISTP</dd></div><div><dt>Western zodiac</dt><dd>libra</dd></div><div><dt>Chinese zodiac</dt><dd>monkey</dd></div><div><dt>Blood type</dt><dd>A+</dd></div><div><dt>Favorite color</dt><dd>red</dd></div><div><dt>Favorite food</dt><dd>pizza</dd></div><div><dt>Face claim</dt><dd>kang yuchan</dd></div></dl></section><section class="bd1-section" id="bd1-baek-samuel-connections"><div class="bd1-section-heading"><span class="bd1-number">02</span><h2>Flavour &amp; ships</h2></div><div class="bd1-connections"><article class="bd1-connection" id="bd1-baek-samuel-connection-dom"><div class="bd1-connection-head"><img class="bd1-avatar" src="https://b.l3n.co/i/HeivTi.png" alt="" loading="lazy" referrerpolicy="no-referrer"><div><span class="bd1-eyebrow">Other</span><h3>Dom</h3></div><span class="bd1-small-status">Active</span></div><div class="bd1-flavour"><span>Flavour</span><span>almond</span></div><details class="bd1-linked-story"><summary>1 shared story entry</summary><ul><li><a href="#bd1-baek-samuel-entry-almond-croissant"><span>almond croissant</span><small>Comms</small></a></li></ul></details></article><article class="bd1-connection bd1-featured" id="bd1-baek-samuel-connection-hoseong"><div class="bd1-connection-head"><img class="bd1-avatar" src="https://64.media.tumblr.com/249bd77b93613f7adfe8e9bad8aed989/2ea52ad3c9269f24-0a/s540x810/f575f8f33a06017a9a9e024239ef77986315a849.gifv" alt="" loading="lazy" referrerpolicy="no-referrer"><div><span class="bd1-eyebrow">Partner · In focus</span><h3><a href="https://bluehour.jcink.net/index.php?showtopic=104200" target="_blank" rel="noopener noreferrer">Hwak Hoseong</a></h3></div><span class="bd1-small-status">Active</span></div><div class="bd1-flavour"><span>Flavour</span><span>cereal</span></div><details class="bd1-linked-story"><summary>1 shared story entry</summary><ul><li><a href="#bd1-baek-samuel-entry-cereal-milk"><span>cereal milk</span><small>Thread</small></a></li></ul></details></article><article class="bd1-connection" id="bd1-baek-samuel-connection-crazhes"><div class="bd1-connection-head"><div><span class="bd1-eyebrow">Group</span><h3>CRAZHES</h3></div><span class="bd1-small-status">Active</span></div><div class="bd1-flavour"><span>Flavour</span><span>marshmallow</span></div><details class="bd1-linked-story"><summary>1 shared story entry</summary><ul><li><a href="#bd1-baek-samuel-entry-marshmallow-spread"><span>marshmallow spread</span><small>Comms</small></a></li></ul></details></article><article class="bd1-connection" id="bd1-baek-samuel-connection-jiae"><div class="bd1-connection-head"><img class="bd1-avatar" src="https://c.l3n.co/i/O0D7nT.png" alt="" loading="lazy" referrerpolicy="no-referrer"><div><span class="bd1-eyebrow">Other</span><h3>Jiae</h3></div><span class="bd1-small-status">Active</span></div><div class="bd1-flavour"><span>Flavour</span><span>treacle</span></div><details class="bd1-linked-story"><summary>1 shared story entry</summary><ul><li><a href="#bd1-baek-samuel-entry-treacle-tart"><span>treacle tart</span><small>Comms</small></a></li></ul></details></article></div></section><section class="bd1-section" id="bd1-baek-samuel-story"><div class="bd1-section-heading"><span class="bd1-number">03</span><h2>The story so far</h2><span class="bd1-heading-note">5 entries</span></div><div class="bd1-year-group"><h3 class="bd1-year">Undated</h3><ol class="bd1-timeline"><li class="bd1-entry" id="bd1-baek-samuel-entry-almond-croissant"><div class="bd1-entry-meta"><span class="bd1-type">Comms</span></div><h4><a href="https://bluehour.jcink.net/index.php?showtopic=62747" target="_blank" rel="noopener noreferrer">almond croissant</a></h4><div class="bd1-participants">sam &amp; dom</div><div class="bd1-entry-people"><a href="#bd1-baek-samuel-connection-dom">Dom</a></div></li><li class="bd1-entry" id="bd1-baek-samuel-entry-treacle-tart"><div class="bd1-entry-meta"><span class="bd1-type">Comms</span></div><h4><a href="https://bluehour.jcink.net/index.php?showtopic=64015" target="_blank" rel="noopener noreferrer">treacle tart</a></h4><div class="bd1-participants">sam &amp; jiae</div><div class="bd1-entry-people"><a href="#bd1-baek-samuel-connection-jiae">Jiae</a></div></li><li class="bd1-entry" id="bd1-baek-samuel-entry-marshmallow-spread"><div class="bd1-entry-meta"><span class="bd1-type">Comms</span></div><h4><a href="https://bluehour.jcink.net/index.php?showtopic=83999" target="_blank" rel="noopener noreferrer">marshmallow spread</a></h4><div class="bd1-participants">CRAZHES</div><div class="bd1-entry-people"><a href="#bd1-baek-samuel-connection-crazhes">CRAZHES</a></div></li><li class="bd1-entry" id="bd1-baek-samuel-entry-pumpkin-pie"><div class="bd1-entry-meta"><span class="bd1-type">Thread</span></div><h4><a href="https://bluehour.jcink.net/index.php?showtopic=98948" target="_blank" rel="noopener noreferrer">pumpkin pie</a></h4><div class="bd1-participants">group thread</div></li><li class="bd1-entry" id="bd1-baek-samuel-entry-cereal-milk"><div class="bd1-entry-meta"><span class="bd1-type">Thread</span></div><h4><a href="https://bluehour.jcink.net/index.php?showtopic=104200" target="_blank" rel="noopener noreferrer">cereal milk</a></h4><div class="bd1-participants">sam &amp; hoseong</div><div class="bd1-entry-people"><a href="#bd1-baek-samuel-connection-hoseong">Hwak Hoseong</a></div></li></ol></div></section><section class="bd1-section" id="bd1-baek-samuel-soundtrack"><div class="bd1-section-heading"><span class="bd1-number">04</span><h2>On repeat</h2><span class="bd1-heading-note">10 songs</span></div><div class="bd1-songs"><details class="bd1-song" open><summary><span class="bd1-song-number">01</span><span><span class="bd1-song-title">BOUNCY (K-HOT CHILLI PEPPERS)</span><span class="bd1-song-artist">ATEEZ</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/5KyOUICJIvO0z71MBdPGiX?utm_source=generator&amp;theme=0" width="100%" height="152" title="BOUNCY (K-HOT CHILLI PEPPERS)" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/5KyOUICJIvO0z71MBdPGiX" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song" open><summary><span class="bd1-song-number">02</span><span><span class="bd1-song-title">Golden - Glowin&#39; Version</span><span class="bd1-song-artist">HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/0SIEcuChTr2DIhuPgklpeP?utm_source=generator&amp;theme=0" width="100%" height="152" title="Golden - Glowin&#39; Version" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/0SIEcuChTr2DIhuPgklpeP" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song" open><summary><span class="bd1-song-number">03</span><span><span class="bd1-song-title">Super</span><span class="bd1-song-artist">SEVENTEEN</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/3AOf6YEpxQ894FmrwI9k96?utm_source=generator&amp;theme=0" width="100%" height="152" title="Super" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/3AOf6YEpxQ894FmrwI9k96" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song"><summary><span class="bd1-song-number">04</span><span><span class="bd1-song-title">Fresh</span><span class="bd1-song-artist">CHUEI LI YU</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/2EFxmF45ZsAvSQBGyMYGTB?utm_source=generator&amp;theme=0" width="100%" height="152" title="Fresh" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/2EFxmF45ZsAvSQBGyMYGTB" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song"><summary><span class="bd1-song-number">05</span><span><span class="bd1-song-title">Go Up - Live</span><span class="bd1-song-artist">WINNER</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/2tYiQoXXbAEdwBTG0qanqi?utm_source=generator&amp;theme=0" width="100%" height="152" title="Go Up - Live" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/2tYiQoXXbAEdwBTG0qanqi" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song"><summary><span class="bd1-song-number">06</span><span><span class="bd1-song-title">Fact Check</span><span class="bd1-song-artist">NCT 127</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/2nNBdv2vcJZuWOZ06nNF62?utm_source=generator&amp;theme=0" width="100%" height="152" title="Fact Check" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/2nNBdv2vcJZuWOZ06nNF62" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song"><summary><span class="bd1-song-number">07</span><span><span class="bd1-song-title">Last Flower</span><span class="bd1-song-artist">The KingDom</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/0M1NR0EXFkMoy8nt4JNXKH?utm_source=generator&amp;theme=0" width="100%" height="152" title="Last Flower" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/0M1NR0EXFkMoy8nt4JNXKH" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song"><summary><span class="bd1-song-number">08</span><span><span class="bd1-song-title">FAMOUS</span><span class="bd1-song-artist">ALLDAY PROJECT</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/40UVUuyy5RfpO0awclCttA?utm_source=generator&amp;theme=0" width="100%" height="152" title="FAMOUS" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/40UVUuyy5RfpO0awclCttA" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song"><summary><span class="bd1-song-number">09</span><span><span class="bd1-song-title">Move</span><span class="bd1-song-artist">SCENE</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/4tLAqSfrGmx5L0akJWNdK5?utm_source=generator&amp;theme=0" width="100%" height="152" title="Move" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/4tLAqSfrGmx5L0akJWNdK5" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details><details class="bd1-song"><summary><span class="bd1-song-number">10</span><span><span class="bd1-song-title">Beat It Up</span><span class="bd1-song-artist">NCT DREAM</span></span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body"><iframe class="bd1-player" src="https://open.spotify.com/embed/track/4UJwJG0Byki4e9MNTxo8aF?utm_source=generator&amp;theme=0" width="100%" height="152" title="Beat It Up" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen"><a href="https://open.spotify.com/track/4UJwJG0Byki4e9MNTxo8aF" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a></div></div></details></div></section></div><footer class="bd1-footer"><span>Baek Samuel</span><a href="#bd1-baek-samuel-overview">Back to the beginning ↑</a></footer></article></body></html>

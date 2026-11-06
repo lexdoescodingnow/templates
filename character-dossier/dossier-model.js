@@ -1,0 +1,296 @@
+(function (root, factory) {
+  'use strict';
+  var api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.Dossier = api;
+}(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+
+  var TYPES = ['Thread', 'Comms', 'Bud', 'Milestone'];
+  var KINDS = ['Partner', 'Friend', 'Family', 'Group', 'Other'];
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  function object(value) { return value !== null && typeof value === 'object' && !Array.isArray(value); }
+  function text(value, limit) {
+    if (typeof value !== 'string' && typeof value !== 'number') return '';
+    var source = String(value).trim(), maximum = limit || 2000;
+    if (source.length > maximum) throw new Error('A text field exceeds its ' + maximum + '-character limit. Shorten it before importing or saving.');
+    return source;
+  }
+  function list(value, limit) {
+    if (value == null) return [];
+    if (!Array.isArray(value)) throw new Error('List fields must contain a list of items.');
+    var maximum = limit || 100;
+    if (value.length > maximum) throw new Error('A list exceeds its limit of ' + maximum + ' items. Split it before importing or saving.');
+    return value;
+  }
+  function records(value, limit) {
+    var items = list(value, limit);
+    if (items.some(function (item) { return !object(item); })) throw new Error('Every item in this list must be a record.');
+    return items;
+  }
+  function escapeHtml(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; });
+  }
+  function safeUrl(value) {
+    var source = text(value, 4000);
+    if (!source || /[\u0000-\u0020\u007f]/.test(source)) return '';
+    try {
+      var url = new URL(source);
+      return (url.protocol === 'https:' || url.protocol === 'http:') && !url.username && !url.password ? url.href : '';
+    } catch (_) { return ''; }
+  }
+  function stylesheetUrl(value) {
+    var absolute = safeUrl(value);
+    if (absolute) return absolute;
+    var source = text(value, 4000);
+    return /^(?:\.\/|\.\.\/|\/(?!\/))[A-Za-z0-9_./%?=&-]+\.css(?:[?#][A-Za-z0-9_.%?=&-]*)?$/.test(source) && source.indexOf('\\') < 0 ? source : '';
+  }
+  function slug(value, fallback) {
+    return text(value, 1000).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9_-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 100) || fallback;
+  }
+  function uniqueId(value, fallback, used) {
+    var base = slug(value, fallback), id = base, count = 2;
+    while (used.has(id)) { id = base + '-' + count; count += 1; }
+    used.add(id);
+    return id;
+  }
+  function date(value, label) {
+    var source = text(value, 40);
+    if (!source) return '';
+    if (!/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/.test(source)) throw new Error((label || 'Date') + ' must use YYYY, YYYY-MM, or YYYY-MM-DD.');
+    var parts = source.split('-').map(Number), year = parts[0], month = parts[1], day = parts[2];
+    if (year < 1 || (month !== undefined && (month < 1 || month > 12))) throw new Error((label || 'Date') + ' is not a valid calendar date.');
+    if (day !== undefined) {
+      var leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+      var days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+      if (day < 1 || day > days[month - 1]) throw new Error((label || 'Date') + ' is not a valid calendar date.');
+    }
+    return source;
+  }
+  function choice(value, allowed, fallback) {
+    var source = text(value, 80).toLowerCase();
+    return allowed.find(function (item) { return item.toLowerCase() === source; }) || fallback;
+  }
+  function normalizeCharacter(raw) {
+    if (!object(raw)) throw new Error('Each character must be a character record.');
+    var relationshipIds = new Set(), timelineIds = new Set(), relationshipMap = new Map();
+    var relationships = records(raw.relationships, 200).map(function (item, index) {
+      var id = uniqueId(item.id || item.name, 'connection-' + (index + 1), relationshipIds);
+      var originalId = text(item.id, 100);
+      if (originalId && !relationshipMap.has(originalId)) relationshipMap.set(originalId, id);
+      if (!relationshipMap.has(id)) relationshipMap.set(id, id);
+      return {
+        id: id, name: text(item.name, 160), kind: choice(item.kind, KINDS, 'Other'),
+        flavour: text(item.flavour, 160), status: text(item.status, 120), portrait: safeUrl(item.portrait),
+        url: safeUrl(item.url), summary: text(item.summary, 5000), pinned: item.pinned === true,
+        featured: item.featured === true, quote: text(item.quote, 3000), playlistUrl: safeUrl(item.playlistUrl)
+      };
+    });
+    var timeline = records(raw.timeline, 1500).map(function (item, index) {
+      return {
+        id: uniqueId(item.id || item.title, 'entry-' + (index + 1), timelineIds),
+        title: text(item.title, 300), url: safeUrl(item.url), date: date(item.date, 'Story date'),
+        dateLabel: text(item.dateLabel, 160), postedDate: date(item.postedDate, 'Posting date'),
+        type: choice(item.type, TYPES, 'Thread'), status: text(item.status, 120),
+        participants: text(item.participants, 400),
+        connectionIds: Array.from(new Set(list(item.connectionIds, 200).map(function (id) { return relationshipMap.get(text(id, 100)); }).filter(Boolean))),
+        summary: text(item.summary, 5000), milestone: item.milestone === true
+      };
+    });
+    return {
+      id: slug(raw.id || raw.name || raw.nickname, 'character'), name: text(raw.name, 160), nickname: text(raw.nickname, 160),
+      age: text(raw.age, 40), pronouns: text(raw.pronouns, 80), gender: text(raw.gender, 120),
+      occupation: text(raw.occupation, 250), location: text(raw.location, 250), writer: text(raw.writer, 120),
+      portrait: safeUrl(raw.portrait), accent: /^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(text(raw.accent, 20)) ? text(raw.accent, 20) : '#b7a58b',
+      tags: Array.from(new Set(list(raw.tags, 50).map(function (tag) { return text(tag, 120).replace(/^#+/, '').trim(); }).filter(Boolean))),
+      facts: records(raw.facts, 150).map(function (fact) { return { label: text(fact.label, 160), value: text(fact.value, 2000) }; }),
+      currentChapter: text(raw.currentChapter, 5000), asOf: text(raw.asOf, 120), notes: text(raw.notes, 15000),
+      relationshipStatus: text(raw.relationshipStatus, 160), relationships: relationships, timeline: timeline,
+      songs: records(raw.songs, 200).map(function (song) { return { title: text(song.title, 250), artist: text(song.artist, 250), url: safeUrl(song.url), note: text(song.note, 1500) }; }),
+      playlistUrl: safeUrl(raw.playlistUrl)
+    };
+  }
+  function normalizeDataset(raw) {
+    var characters;
+    if (object(raw) && Object.prototype.hasOwnProperty.call(raw, 'characters')) {
+      if (raw.version !== undefined && raw.version !== 1) throw new Error('This file uses an unsupported character library version.');
+      if (!Array.isArray(raw.characters) || !raw.characters.length) throw new Error('The character library must contain at least one character.');
+      if (raw.characters.length > 500) throw new Error('A character library can contain up to 500 characters.');
+      characters = raw.characters;
+    } else if (object(raw) && ('name' in raw || 'id' in raw)) characters = [raw];
+    else throw new Error('Choose a character library file, or a single character record.');
+    var used = new Set();
+    return { version: 1, characters: characters.map(function (rawCharacter, index) {
+      var character = normalizeCharacter(rawCharacter);
+      character.id = uniqueId(character.id, 'character-' + (index + 1), used);
+      return character;
+    }) };
+  }
+  function sortTimeline(entries) {
+    return list(entries, 1500).map(function (entry, index) { return { entry: entry, index: index }; }).sort(function (a, b) {
+      var ad = text(a.entry.date, 40), bd = text(b.entry.date, 40);
+      if (!ad && !bd) return a.index - b.index;
+      if (!ad) return 1;
+      if (!bd) return -1;
+      var ap = ad.split('-').map(Number), bp = bd.split('-').map(Number);
+      var av = ap[0] * 10000 + (ap[1] || 0) * 100 + (ap[2] || 0);
+      var bv = bp[0] * 10000 + (bp[1] || 0) * 100 + (bp[2] || 0);
+      return av - bv || a.index - b.index;
+    }).map(function (item) { return item.entry; });
+  }
+  function displayDate(value) {
+    if (!value) return '';
+    var parts = value.split('-');
+    if (parts.length === 1) return parts[0];
+    var month = MONTHS[Number(parts[1]) - 1];
+    return (parts.length === 3 ? Number(parts[2]) + ' ' : '') + month + ' ' + parts[0];
+  }
+  function paragraphs(value, className) {
+    if (!value) return '';
+    return value.split(/\n\s*\n/).filter(function (part) { return part.trim(); }).map(function (part) {
+      return '<p' + (className ? ' class="' + className + '"' : '') + '>' + escapeHtml(part.trim()).replace(/\n/g, '<br>') + '</p>';
+    }).join('');
+  }
+  function external(url, label, className) {
+    var safe = safeUrl(url);
+    return safe ? '<a href="' + escapeHtml(safe) + '" target="_blank" rel="noopener noreferrer"' + (className ? ' class="' + className + '"' : '') + '>' + escapeHtml(label) + '</a>' : escapeHtml(label);
+  }
+  function spotify(url) {
+    var safe = safeUrl(url);
+    if (!safe) return null;
+    var parsed = new URL(safe);
+    if (parsed.hostname !== 'open.spotify.com' || parsed.port || parsed.protocol !== 'https:') return null;
+    var match = parsed.pathname.match(/^\/(?:intl-[a-z]{2}\/)?(?:embed\/)?(track|playlist|album)\/([A-Za-z0-9]{22})\/?$/);
+    return match ? { type: match[1], id: match[2], url: 'https://open.spotify.com/' + match[1] + '/' + match[2] } : null;
+  }
+  function player(url, title) {
+    var data = spotify(url);
+    if (!data) return url ? '<div class="bd1-listen">' + external(url, 'Listen ↗') + '</div>' : '';
+    return '<iframe class="bd1-player" src="https://open.spotify.com/embed/' + data.type + '/' + data.id + '?utm_source=generator&amp;theme=0" width="100%" height="152" title="' + escapeHtml(title || 'Spotify player') + '" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div class="bd1-listen">' + external(data.url, 'Open in Spotify ↗') + '</div>';
+  }
+  function sectionHeading(number, title, extra) {
+    return '<div class="bd1-section-heading"><span class="bd1-number">' + number + '</span><h2>' + escapeHtml(title) + '</h2>' + (extra ? '<span class="bd1-heading-note">' + escapeHtml(extra) + '</span>' : '') + '</div>';
+  }
+  function render(raw, options) {
+    options = options || {};
+    var c = normalizeCharacter(raw), prefix = 'bd1-' + slug(options.instanceId || c.id, 'character');
+    var sectionCounter = 0;
+    function heading(title, extra) {
+      sectionCounter += 1;
+      return sectionHeading(String(sectionCounter).padStart(2, '0'), title, extra);
+    }
+    var relationships = c.relationships.filter(function (r) { return r.name; });
+    var pinned = relationships.filter(function (r) { return r.pinned; }).slice(0, 3);
+    var entries = sortTimeline(c.timeline.filter(function (entry) { return entry.title; }));
+    var songs = c.songs.filter(function (song) { return song.title || song.artist || song.url; });
+    var byId = new Map(relationships.map(function (r) { return [r.id, r]; }));
+    var hasPartners = relationships.some(function (r) { return r.kind === 'Partner'; });
+    var facts = c.facts.filter(function (fact) {
+      var label = fact.label.toLowerCase().replace(/[^a-z]/g, '');
+      return fact.label && fact.value && !(hasPartners && /^(?:partner|partners|currentpartner|currentpartners)$/.test(label)) && !(c.relationshipStatus && /^(?:relationshipstatus|status)$/.test(label));
+    });
+    var basics = [['Gender', c.gender], ['Occupation', c.occupation], ['Based in', c.location]].filter(function (item) { return item[1]; });
+    var name = c.nickname || c.name;
+    var meta = [c.age ? c.age + ' years old' : '', c.pronouns].filter(Boolean);
+    var html = '<article class="bh-dossier-v1" style="--bd1-accent:' + c.accent + '">';
+    html += '<header class="bd1-cover" id="' + prefix + '-overview">';
+    html += '<div class="bd1-masthead"><span>Character dossier</span>' + (c.writer ? '<span>Written by ' + escapeHtml(c.writer) + '</span>' : '') + '</div>';
+    if (c.portrait) html += '<figure class="bd1-hero"><img src="' + escapeHtml(c.portrait) + '" alt="' + escapeHtml(name ? name + ' — character portrait' : 'Character portrait') + '" loading="lazy" referrerpolicy="no-referrer"><span class="bd1-photo-mark" aria-hidden="true">✦</span></figure>';
+    html += '<div class="bd1-identity"><div><span class="bd1-eyebrow">The character archive</span>';
+    if (name) html += '<h1>' + escapeHtml(name) + '</h1>';
+    if (c.nickname && c.name && c.nickname.toLowerCase() !== c.name.toLowerCase()) html += '<div class="bd1-fullname">' + escapeHtml(c.name) + '</div>';
+    if (meta.length) html += '<p class="bd1-identity-meta">' + meta.map(escapeHtml).join('<span aria-hidden="true"> / </span>') + '</p>';
+    html += '</div>';
+    if (c.relationshipStatus || c.occupation || c.location) html += '<div class="bd1-summary">' + (c.relationshipStatus ? '<span class="bd1-status">' + escapeHtml(c.relationshipStatus) + '</span>' : '') + (c.occupation ? '<span>' + escapeHtml(c.occupation) + '</span>' : '') + (c.location ? '<span>' + escapeHtml(c.location) + '</span>' : '') + '</div>';
+    html += '</div></header>';
+    var nav = [['overview', 'Overview']];
+    if (pinned.length) nav.push(['people', 'Inner circle']);
+    if (relationships.length) nav.push(['connections', hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections']);
+    if (entries.length) nav.push(['story', 'Timeline']);
+    if (songs.length || c.playlistUrl) nav.push(['soundtrack', 'Soundtrack']);
+    if (c.notes) nav.push(['notes', 'Notes']);
+    if (nav.length > 1) html += '<nav class="bd1-nav" aria-label="Character sections">' + nav.map(function (item) { return '<a href="#' + prefix + '-' + item[0] + '">' + item[1] + '</a>'; }).join('') + '</nav>';
+    html += '<div class="bd1-content">';
+    if (c.tags.length || facts.length || basics.length || c.currentChapter) {
+      html += '<section class="bd1-section bd1-overview">' + heading('At a glance', c.asOf ? 'As of ' + c.asOf : '');
+      if (c.tags.length) html += '<ul class="bd1-tags" aria-label="Character traits">' + c.tags.map(function (tag) { return '<li>' + escapeHtml(tag) + '</li>'; }).join('') + '</ul>';
+      if (c.currentChapter) html += '<div class="bd1-chapter"><span class="bd1-eyebrow">Current chapter</span>' + paragraphs(c.currentChapter) + '</div>';
+      if (facts.length || basics.length) html += '<dl class="bd1-facts">' + basics.concat(facts.map(function (fact) { return [fact.label, fact.value]; })).map(function (item) { return '<div><dt>' + escapeHtml(item[0]) + '</dt><dd>' + escapeHtml(item[1]) + '</dd></div>'; }).join('') + '</dl>';
+      html += '</section>';
+    }
+    if (pinned.length) {
+      html += '<section class="bd1-section" id="' + prefix + '-people">' + heading('The inner circle') + '<div class="bd1-pinned">';
+      pinned.forEach(function (r, index) {
+        html += '<a class="bd1-person" href="#' + prefix + '-connection-' + r.id + '"><span class="bd1-person-number">0' + (index + 1) + '</span>';
+        if (r.portrait) html += '<img src="' + escapeHtml(r.portrait) + '" alt="" loading="lazy" referrerpolicy="no-referrer">';
+        html += '<span class="bd1-person-name">' + escapeHtml(r.name) + '</span><span class="bd1-person-kind">' + escapeHtml(r.kind) + '</span>' + (r.flavour ? '<span class="bd1-person-flavour">' + escapeHtml(r.flavour) + '</span>' : '') + '</a>';
+      });
+      html += '</div></section>';
+    }
+    if (relationships.length) {
+      html += '<section class="bd1-section" id="' + prefix + '-connections">' + heading(hasPartners || relationships.some(function (r) { return r.featured; }) ? 'Flavour & ships' : 'Connections & flavour') + '<div class="bd1-connections">';
+      relationships.forEach(function (r) {
+        var linked = entries.filter(function (entry) { return entry.connectionIds.indexOf(r.id) !== -1; });
+        html += '<article class="bd1-connection' + (r.featured ? ' bd1-featured' : '') + '" id="' + prefix + '-connection-' + r.id + '"><div class="bd1-connection-head">';
+        if (r.portrait) html += '<img class="bd1-avatar" src="' + escapeHtml(r.portrait) + '" alt="" loading="lazy" referrerpolicy="no-referrer">';
+        html += '<div><span class="bd1-eyebrow">' + escapeHtml(r.kind) + (r.featured ? ' · In focus' : '') + '</span><h3>' + external(r.url, r.name) + '</h3></div>';
+        if (r.status) html += '<span class="bd1-small-status">' + escapeHtml(r.status) + '</span>';
+        html += '</div>';
+        if (r.flavour) html += '<div class="bd1-flavour"><span>Flavour</span><span>' + escapeHtml(r.flavour) + '</span></div>';
+        html += paragraphs(r.summary, 'bd1-connection-copy');
+        if (r.quote) html += '<blockquote>' + paragraphs(r.quote) + '</blockquote>';
+        if (r.playlistUrl) html += '<div class="bd1-relationship-playlist">' + external(r.playlistUrl, 'Their soundtrack ↗') + '</div>';
+        if (linked.length) html += '<details class="bd1-linked-story"><summary>' + linked.length + (linked.length === 1 ? ' shared story entry' : ' shared story entries') + '</summary><ul>' + linked.map(function (entry) { return '<li><a href="#' + prefix + '-entry-' + entry.id + '"><span>' + escapeHtml(entry.title) + '</span><small>' + escapeHtml(entry.type) + '</small></a></li>'; }).join('') + '</ul></details>';
+        html += '</article>';
+      });
+      html += '</div></section>';
+    }
+    if (entries.length) {
+      html += '<section class="bd1-section" id="' + prefix + '-story">' + heading('The story so far', entries.length + (entries.length === 1 ? ' entry' : ' entries'));
+      var currentYear = null;
+      entries.forEach(function (entry) {
+        var year = entry.date ? entry.date.slice(0, 4) : 'Undated';
+        if (year !== currentYear) {
+          if (currentYear !== null) html += '</ol></div>';
+          currentYear = year;
+          html += '<div class="bd1-year-group"><h3 class="bd1-year">' + escapeHtml(year) + '</h3><ol class="bd1-timeline">';
+        }
+        html += '<li class="bd1-entry' + (entry.milestone || entry.type === 'Milestone' ? ' bd1-milestone' : '') + '" id="' + prefix + '-entry-' + entry.id + '"><div class="bd1-entry-meta"><span class="bd1-type">' + escapeHtml(entry.type) + '</span>';
+        if (entry.date || entry.dateLabel) html += '<span>' + escapeHtml(entry.dateLabel || displayDate(entry.date)) + '</span>';
+        if (entry.status) html += '<span class="bd1-entry-status">' + escapeHtml(entry.status) + '</span>';
+        html += '</div><h4>' + external(entry.url, entry.title) + '</h4>';
+        if (entry.participants) html += '<div class="bd1-participants">' + escapeHtml(entry.participants) + '</div>';
+        var connected = entry.connectionIds.map(function (id) { return byId.get(id); }).filter(Boolean);
+        if (connected.length) html += '<div class="bd1-entry-people">' + connected.map(function (r) { return '<a href="#' + prefix + '-connection-' + r.id + '">' + escapeHtml(r.name) + '</a>'; }).join('') + '</div>';
+        html += paragraphs(entry.summary, 'bd1-entry-copy');
+        if (entry.postedDate) html += '<div class="bd1-posted-date">Posted ' + escapeHtml(displayDate(entry.postedDate)) + '</div>';
+        html += '</li>';
+      });
+      html += '</ol></div></section>';
+    }
+    if (songs.length || c.playlistUrl) {
+      html += '<section class="bd1-section" id="' + prefix + '-soundtrack">' + heading('On repeat', songs.length ? songs.length + (songs.length === 1 ? ' song' : ' songs') : '');
+      if (c.playlistUrl) html += '<div class="bd1-main-playlist">' + player(c.playlistUrl, name ? name + ' — playlist' : 'Character playlist') + '</div>';
+      if (songs.length) html += '<div class="bd1-songs">' + songs.map(function (song, index) {
+        var label = song.title || song.artist || 'Listen';
+        return '<details class="bd1-song"' + (index < 3 ? ' open' : '') + '><summary><span class="bd1-song-number">' + String(index + 1).padStart(2, '0') + '</span><span><span class="bd1-song-title">' + escapeHtml(label) + '</span>' + (song.artist && song.artist !== label ? '<span class="bd1-song-artist">' + escapeHtml(song.artist) + '</span>' : '') + '</span><span class="bd1-song-toggle" aria-hidden="true">+</span></summary><div class="bd1-song-body">' + paragraphs(song.note, 'bd1-song-note') + player(song.url, label) + '</div></details>';
+      }).join('') + '</div>';
+      html += '</section>';
+    }
+    if (c.notes) html += '<section class="bd1-section bd1-notes" id="' + prefix + '-notes">' + heading('Worth remembering') + paragraphs(c.notes) + '</section>';
+    html += '</div><footer class="bd1-footer"><span>' + escapeHtml(c.name || c.nickname || 'Character dossier') + '</span><a href="#' + prefix + '-overview">Back to the beginning ↑</a></footer></article>';
+    if (options.includeStylesheet) {
+      var style = stylesheetUrl(options.stylesheetUrl);
+      if (!style) throw new Error('Choose a valid stylesheet address.');
+      html += '<link rel="stylesheet" href="' + escapeHtml(style) + '">';
+    }
+    return html;
+  }
+  function forum(character, cssUrl) {
+    var url = safeUrl(cssUrl);
+    if (!url) throw new Error('Forum code needs the public stylesheet address.');
+    return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '[/dohtml]';
+  }
+  return { normalizeCharacter: normalizeCharacter, normalizeDataset: normalizeDataset, render: render, forum: forum, sortTimeline: sortTimeline, escapeHtml: escapeHtml, safeUrl: safeUrl };
+}));
