@@ -21,4 +21,3 @@ html[color-mode="dark"] .lfa1{--lp:#202328;--ls:#292d33;--li:#eeeef0;--lm:#b0b5b
 @media(prefers-reduced-motion:reduce){.lfa1.lf-hacked::before{animation:none}}
 @container(max-width:330px){.lfa1 .lf-banner{margin-left:18px;margin-right:18px;letter-spacing:.08em;gap:8px}.lfa1 .lf-name{padding-left:18px;font-size:26px}.lfa1 .lf-avatar{width:60px;height:60px;margin-right:18px}.lfa1:has(.lf-avatar) .lf-name{padding-right:96px;min-height:82px;padding-top:8px}.lfa1 .lf-copy{padding:22px 18px}.lfa1 .lf-footer{padding-left:18px;padding-right:18px}.lfa1.lf-credential .lf-name{font-size:20px}.lfa1.lf-credential .lf-avatar{width:60px;height:60px}.lfa1.lf-broadcast .lf-name{font-size:23px}}
 @media(forced-colors:active){.lfa1 .lf-copy :is(b,strong,u,i,em){background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}.lfa1 .lf-avatar{border:1px solid CanvasText}}
-

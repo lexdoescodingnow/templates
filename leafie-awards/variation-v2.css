@@ -1,0 +1,48 @@
+.lfa2.lf-programme:not(.lf-bud) .lf-avatar{grid-row:2;justify-self:center;width:116px;height:116px;margin:0 0 15px;border-radius:50%}
+.lfa2.lf-programme:not(.lf-bud) .lf-name{grid-row:3;min-height:0;padding:0 28px 26px;text-align:center;font-size:36px}
+.lfa2.lf-programme:not(.lf-bud) .lf-copy{grid-row:4}.lfa2.lf-programme:not(.lf-bud) .lf-footer{grid-row:5}
+.lfa2.lf-credential .lf-avatar{justify-self:start;width:100px;height:130px;margin:2px 0 25px 28px;border-radius:46px 46px 8px 8px;padding:5px}
+.lfa2.lf-credential:has(.lf-avatar) .lf-name{padding:38px 28px 25px 151px;min-height:157px;text-align:right;font-size:25px}
+.lfa2.lf-broadcast:not(.lf-bud) .lf-avatar{grid-row:2;justify-self:stretch;width:auto;height:170px;margin:0 24px;padding:5px;border-radius:70px 4px 70px 4px}
+.lfa2.lf-broadcast:not(.lf-bud) .lf-name{grid-row:3;min-height:0;padding:18px 26px 22px;text-align:left;font-size:31px}
+.lfa2.lf-broadcast:not(.lf-bud) .lf-copy{grid-row:4}.lfa2.lf-broadcast:not(.lf-bud) .lf-footer{grid-row:5}
+.lfa2.lf-programme.lf-bud .lf-avatar{grid-row:2;justify-self:start;width:64px;height:64px;margin:0 0 17px 22px;border-radius:50% 50% 8px 50%}
+.lfa2.lf-programme.lf-bud .lf-copy{grid-row:3;border-top:0;padding-top:0}
+.lfa2.lf-programme.lf-bud .lf-name{grid-row:4;min-height:0;padding:14px 22px;text-align:right;border-top:1px solid var(--ll);font-size:23px}
+.lfa2.lf-programme.lf-bud .lf-footer{grid-row:5}
+.lfa2.lf-credential.lf-bud .lf-avatar{width:63px;height:84px;border-radius:28px 28px 5px 5px;margin:0 0 18px 22px}
+.lfa2.lf-credential.lf-bud:has(.lf-avatar) .lf-name{padding:20px 22px 18px 104px;min-height:102px;font-size:20px}
+.lfa2.lf-broadcast.lf-bud .lf-avatar{width:100px;height:55px;border-radius:35px 3px 35px 3px;margin-right:22px;padding:3px}
+.lfa2.lf-broadcast.lf-bud:has(.lf-avatar) .lf-name{padding:10px 136px 15px 22px;min-height:75px;font-size:22px}
+.lfa2.lf-hacked{border:0;border-radius:0;outline:0;background:linear-gradient(92deg,var(--ls) 0 9px,var(--lp) 9px calc(100% - 7px),var(--ls) calc(100% - 7px));box-shadow:-5px 2px 0 var(--lb),6px -3px 0 var(--lc),0 7px 0 color-mix(in srgb,var(--la) 45%,transparent);clip-path:polygon(0 0,93% 0,93% 9px,100% 9px,100% 22%,97% 22%,97% 25%,100% 25%,100% 65%,98% 65%,98% 69%,100% 69%,100% 97%,90% 97%,90% 100%,5% 100%,5% 98%,0 98%,0 48%,2% 48%,2% 43%,0 43%);padding:7px 7px 10px}
+.lfa2.lf-hacked::before{z-index:4;top:62px;right:0;width:100%;height:12px;background:linear-gradient(90deg,var(--lb) 0 14%,transparent 14% 43%,var(--lc) 43% 58%,transparent 58% 87%,var(--la) 87%);opacity:.7;transform:translateX(0);animation:lf2-tear 6.5s steps(1,end) infinite}
+.lfa2.lf-hacked::after{content:'';position:absolute;top:10px;bottom:10px;left:0;width:7px;pointer-events:none;background:repeating-linear-gradient(0deg,var(--lb) 0 7px,transparent 7px 13px,var(--lc) 13px 19px,transparent 19px 31px)}
+.lfa2.lf-hacked .lf-banner{position:relative;margin-top:5px;transform:translateX(-5px) skewX(-3deg);border:0;border-top:3px solid var(--lc);border-bottom:4px double var(--lb);padding-top:17px;padding-bottom:17px;letter-spacing:.08em;box-shadow:8px 4px 0 color-mix(in srgb,var(--la) 22%,transparent);text-shadow:2px 0 var(--lp),-2px 0 color-mix(in srgb,var(--lc) 65%,transparent);background:repeating-linear-gradient(0deg,var(--ls) 0 3px,color-mix(in srgb,var(--lb) 18%,var(--lp)) 3px 4px)}
+.lfa2.lf-hacked .lf-name{position:relative;z-index:2;text-shadow:2px 0 color-mix(in srgb,var(--lb) 70%,transparent),-2px 1px color-mix(in srgb,var(--lc) 60%,transparent);transform:translateX(3px)}
+.lfa2.lf-hacked .lf-avatar{transform:translateX(-6px) rotate(-4deg);border-radius:0!important;clip-path:polygon(0 0,87% 0,87% 8%,100% 8%,100% 34%,91% 34%,91% 43%,100% 43%,100% 87%,83% 87%,83% 100%,0 100%,0 72%,8% 72%,8% 64%,0 64%);background:linear-gradient(80deg,var(--lc),var(--la),var(--lb));box-shadow:7px 3px 0 var(--lc)}
+.lfa2.lf-hacked .lf-avatar img{filter:saturate(.65) contrast(1.18);animation:lf2-picture 8s steps(1,end) infinite}
+.lfa2.lf-hacked .lf-avatar::after{inset:0;background:linear-gradient(0deg,transparent 0 27%,color-mix(in srgb,var(--lb) 40%,transparent) 27% 33%,transparent 33% 66%,color-mix(in srgb,var(--lc) 50%,transparent) 66% 70%,transparent 70%),repeating-linear-gradient(0deg,transparent 0 3px,#0004 3px 4px)}
+.lfa2.lf-hacked .lf-copy{position:relative;z-index:1;transform:translateX(3px);border:1px solid var(--ll);border-left:4px solid var(--lb);border-right:2px dashed var(--lc);box-shadow:-6px 7px 0 color-mix(in srgb,var(--lc) 24%,transparent);margin-left:4px;margin-right:7px}
+.lfa2.lf-hacked .lf-copy::before{content:'';position:absolute;left:-4px;top:0;height:4px;width:70%;background:var(--lf);pointer-events:none}
+.lfa2.lf-hacked .lf-footer{margin:12px 5px 0;transform:translateX(-3px) skewX(2deg);border:1px dashed var(--lc);border-top:4px double var(--lb);background:var(--ls)}
+.lfa2.lf-hacked .lf-footer span:first-child{letter-spacing:.15em}.lfa2.lf-hacked .lf-leaf{width:37px;height:14px;animation:lf2-blocks 7s steps(1,end) infinite}
+.lfa2 .lf-debris{grid-row:6;position:relative;min-height:24px;margin:5px 14px 0;display:flex;justify-content:space-between;align-items:center;gap:6px;color:var(--lm);font:9px/1.4 Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;pointer-events:none}
+.lfa2 .lf-debris::before{content:'ERR // 0x4C';padding:4px 7px;background:var(--ls);border-left:6px solid var(--lc);transform:translateX(6px) rotate(-2deg)}
+.lfa2 .lf-debris::after{content:'FEED LOST _';border-bottom:4px solid var(--lb);transform:translateY(3px)}
+.lfa2.lf-hacked.lf-programme .lf-banner{clip-path:polygon(0 0,100% 0,100% 75%,80% 75%,80% 100%,38% 100%,38% 88%,0 88%)}
+.lfa2.lf-hacked.lf-programme:not(.lf-bud) .lf-avatar{justify-self:center;transform:translateX(19px) rotate(5deg)}
+.lfa2.lf-hacked.lf-programme:not(.lf-bud) .lf-name{transform:translateX(-9px);padding-left:36px;padding-right:18px}
+.lfa2.lf-hacked.lf-credential{border-top:8px dashed var(--la)}
+.lfa2.lf-hacked.lf-credential .lf-banner{transform:translate(5px,-4px) rotate(1deg)}
+.lfa2.lf-hacked.lf-credential .lf-avatar{transform:translate(-6px,5px) rotate(-6deg)}
+.lfa2.lf-hacked.lf-credential .lf-copy{border-radius:0;margin-left:13px;margin-right:18px}
+.lfa2.lf-hacked.lf-broadcast{border-top:5px solid var(--lc)}
+.lfa2.lf-hacked.lf-broadcast .lf-banner{margin-bottom:29px;transform:translateX(6px) skewX(3deg)}
+.lfa2.lf-hacked.lf-broadcast:not(.lf-bud) .lf-avatar{transform:translateX(-5px) skewX(-3deg);height:154px;margin-left:18px;margin-right:24px}
+.lfa2.lf-hacked.lf-broadcast .lf-name{border-bottom:7px double var(--lc)}
+.lfa2.lf-hacked.lf-bud .lf-banner{font-size:8px;letter-spacing:.035em}.lfa2.lf-hacked.lf-bud .lf-debris{font-size:8px;min-height:20px}
+@keyframes lf2-tear{0%,87%,100%{transform:translateX(0);opacity:.55}88%{transform:translateY(80px);opacity:.85}90%{transform:translate(-9px,24px);opacity:.7}92%{transform:translate(8px,-15px);opacity:.85}}
+@keyframes lf2-picture{0%,88%,100%{transform:translateX(0)}89%{transform:translateX(7px) scaleX(1.08)}91%{transform:translateX(-5px)}93%{transform:translateX(2px)}}
+@keyframes lf2-blocks{0%,90%,100%{transform:translateX(0)}91%{transform:translate(-16px,-3px)}94%{transform:translate(5px,2px)}}
+@media(prefers-reduced-motion:reduce){.lfa2.lf-hacked::before,.lfa2.lf-hacked .lf-avatar img,.lfa2.lf-hacked .lf-leaf{animation:none}}
+@container(max-width:330px){.lfa2.lf-credential .lf-avatar{width:76px;height:104px;margin-left:18px}.lfa2.lf-credential:has(.lf-avatar) .lf-name{padding:25px 18px 20px 113px;min-height:130px;font-size:20px}.lfa2.lf-credential.lf-bud .lf-avatar{width:54px;height:74px;margin-left:18px}.lfa2.lf-credential.lf-bud:has(.lf-avatar) .lf-name{padding:17px 18px 18px 91px;min-height:92px;font-size:18px}.lfa2.lf-programme:not(.lf-bud) .lf-name{font-size:29px}.lfa2.lf-broadcast:not(.lf-bud) .lf-avatar{height:135px;margin-left:18px;margin-right:18px}.lfa2.lf-broadcast:not(.lf-bud) .lf-name{font-size:26px;padding-left:18px}.lfa2.lf-broadcast.lf-bud .lf-avatar{width:76px;height:49px;margin-right:18px}.lfa2.lf-broadcast.lf-bud:has(.lf-avatar) .lf-name{padding-right:112px;padding-left:18px;font-size:19px}.lfa2.lf-hacked .lf-banner{margin-left:13px;margin-right:13px}.lfa2.lf-hacked .lf-debris{letter-spacing:.025em}}

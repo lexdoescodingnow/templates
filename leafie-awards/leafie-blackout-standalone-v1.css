@@ -31,4 +31,3 @@ html[color-mode="dark"] .lf-blackout1{--start:#55505a;--startink:#fff6ed;--start
 @keyframes bo1-noise{0%,87%,100%{transform:translateX(0)}88%{transform:translate(24px,-10px)}91%{transform:translate(-14px,4px)}}
 @media(prefers-reduced-motion:reduce){.lf-blackout1 .bo-break::before,.lf-blackout1 .bo-tail::after{animation:none}}
 @container(max-width:380px){.lf-blackout1 .bo-stage{padding-left:25px;padding-right:25px}.lf-blackout1 h2{font-size:36px}.lf-blackout1 h3{font-size:30px}.lf-blackout1 .bo-meta{font-size:9px;letter-spacing:.075em;gap:10px}.lf-blackout1 .bo-aftermath{margin-left:8px;margin-right:11px}.lf-blackout1 .bo-tail{padding-left:24px;padding-right:24px;font-size:9px;letter-spacing:.08em}}
-
