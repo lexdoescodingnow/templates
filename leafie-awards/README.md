@@ -20,6 +20,6 @@ Member-group colours, forward bold/underline gradients, reversed italic gradient
 | Velvet Access | Revoked Access | Velvet Access Sprig | Revoked Access Sprig |
 | Live From Leaf | Leaf Off Air | Live From Leaf Sprig | Leaf Off Air Sprig |
 
-The original stylesheet and preview addresses remain available for existing posts. Current snippets use leafie-awards-standalone-v2.css; the divider uses leafie-blackout-standalone-v1.css.
+The original stylesheet and preview addresses remain available for existing posts. Current snippets use leafie-awards-standalone-v2.css; the divider uses leafie-blackout-standalone-v2.css.
 
 Rebuild from the repository root: `node leafie-awards/build.cjs`, `node leafie-awards/build-web.cjs`, `node leafie-awards/build-blackout.cjs`, then `node leafie-awards/package.cjs`.

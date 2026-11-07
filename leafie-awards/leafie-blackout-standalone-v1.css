@@ -31,3 +31,29 @@ html[color-mode="dark"] .lf-blackout1{--start:#55505a;--startink:#fff6ed;--start
 @keyframes bo1-noise{0%,87%,100%{transform:translateX(0)}88%{transform:translate(24px,-10px)}91%{transform:translate(-14px,4px)}}
 @media(prefers-reduced-motion:reduce){.lf-blackout1 .bo-break::before,.lf-blackout1 .bo-tail::after{animation:none}}
 @container(max-width:380px){.lf-blackout1 .bo-stage{padding-left:25px;padding-right:25px}.lf-blackout1 h2{font-size:36px}.lf-blackout1 h3{font-size:30px}.lf-blackout1 .bo-meta{font-size:9px;letter-spacing:.075em;gap:10px}.lf-blackout1 .bo-aftermath{margin-left:8px;margin-right:11px}.lf-blackout1 .bo-tail{padding-left:24px;padding-right:24px;font-size:9px;letter-spacing:.08em}}
+.lf-blackout1 .bo-stage.bo-aftermath h3{
+ color:#f5f2fa!important;
+ -webkit-text-fill-color:#f5f2fa!important;
+ background:none!important;
+ text-shadow:-3px 0 0 #00e5ff,3px 1px 0 #ff4d9d,0 0 12px #82dfff35!important;
+ position:relative;
+ opacity:1;
+ transform:translateX(0);
+ animation:leafie-blackout-title-v2 8.6s steps(1,end) infinite!important;
+}
+.lf-blackout1 .bo-stage.bo-aftermath h3 *{
+ color:inherit!important;
+ -webkit-text-fill-color:inherit!important;
+ text-shadow:inherit!important;
+ background:none!important;
+}
+@keyframes leafie-blackout-title-v2{
+ 0%,86%,100%{opacity:1;transform:translateX(0);filter:none}
+ 87%{opacity:.65;transform:translateX(-2px);filter:drop-shadow(5px 0 0 #00e5ff80)}
+ 89%{opacity:1;transform:translateX(2px);filter:drop-shadow(-5px 0 0 #ff4d9d80)}
+ 91%{opacity:.82;transform:translateX(-1px);filter:none}
+ 94%{opacity:1;transform:translateX(0);filter:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .lf-blackout1 .bo-stage.bo-aftermath h3{animation:none!important;opacity:1!important;transform:none!important;filter:none!important}
+}
