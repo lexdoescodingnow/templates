@@ -23,3 +23,14 @@ Member-group colours, forward bold/underline gradients, reversed italic gradient
 The original stylesheet and preview addresses remain available for existing posts. Current snippets use leafie-awards-standalone-v2.css; the divider uses leafie-blackout-standalone-v2.css.
 
 Rebuild from the repository root: `node leafie-awards/build.cjs`, `node leafie-awards/build-web.cjs`, `node leafie-awards/build-blackout.cjs`, then `node leafie-awards/package.cjs`.
+
+
+## Encore replies
+
+22 additional replies: 16 buds and 6 full-length threads, including normal and hacked versions.
+
+- [Preview and copy the Encore templates](https://raw.githack.com/lexdoescodingnow/templates/main/leafie-awards/leafie-encore-preview.html)
+- [All 22 short posting snippets](leafie-encore-all-snippets.txt)
+- [Encore forum masterpost](leafie-encore-forum-masterpost.txt)
+
+Build with `node leafie-awards/build-encore.cjs`. The shared stylesheet is `leafie-encore-standalone-v1.css`.
