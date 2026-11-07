@@ -1,0 +1,27 @@
+<!doctype html><html lang="en" color-mode="light"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leafie Awards | Time markers</title><style>body{margin:0;padding:30px 18px;background:#eae9e4;color:#292b30;font:14px/1.7 'Trebuchet MS',sans-serif}main{max-width:760px;margin:auto;--mgrgb1:166,122,67;--mgrgb2:80,133,126;--mgrgb3:145,105,141}h1{font:38px/1.15 Georgia,serif}section{padding:24px 0}h2{font:18px 'Trebuchet MS',sans-serif}button,select{font:inherit;padding:9px 12px;background:transparent;color:inherit;border:1px solid #888;border-radius:3px;cursor:pointer}textarea{box-sizing:border-box;width:100%;height:170px;font:12px/1.7 Consolas,monospace}html[color-mode="dark"] body{background:#17191e;color:#eee}a{color:inherit}.leafie-time1{--ta:rgb(var(--mgrgb1,166,122,67));--tb:rgb(var(--mgrgb2,var(--mgrgb1,80,133,126)));--tc:rgb(var(--mgrgb3,var(--mgrgb2,var(--mgrgb1,145,105,141))));--tp:#faf9f5;--ti:#292b30;--tm:#696b70;--tl:#d5d5ce;position:relative;isolation:isolate;width:calc(100% - 32px);max-width:290px;margin:24px auto;padding:22px 24px 25px;background:var(--tp);color:var(--ti);border:1px solid var(--tl);border-top:4px solid var(--ta);box-shadow:5px 5px 0 color-mix(in srgb,var(--tb) 18%,transparent);text-align:center;overflow-wrap:anywhere;box-sizing:border-box}
+.leafie-time1 .lt-label{display:block;margin:0 0 10px;padding:0;color:var(--tm);font:10px/1.6 Consolas,monospace;letter-spacing:.13em;text-transform:uppercase;text-align:center}
+.leafie-time1 .lt-time{display:block;margin:0;padding:0;color:var(--ti);font:400 42px/1.15 Georgia,serif;letter-spacing:-.035em;font-variant-numeric:tabular-nums;text-align:center;text-transform:none;text-shadow:none}
+.leafie-time1.lt-hacked{border-top:4px dashed var(--tc);border-left:3px solid var(--tb);border-right:1px dashed var(--tc);box-shadow:-4px 3px 0 color-mix(in srgb,var(--tc) 30%,transparent),5px -2px 0 color-mix(in srgb,var(--tb) 28%,transparent);background:linear-gradient(0deg,#10121a,#20212a);--ti:#f1eef5;--tm:#c5c2cf;--tl:#454451}
+.leafie-time1.lt-hacked::before{content:'';position:absolute;top:8px;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--tb) 0 17%,transparent 17% 60%,var(--tc) 60% 80%,transparent 80%);pointer-events:none}
+.leafie-time1.lt-hacked::after{content:'';position:absolute;bottom:4px;left:8px;right:8px;height:5px;background:linear-gradient(90deg,transparent 0 12%,var(--tc) 12% 28%,transparent 28% 66%,var(--tb) 66% 88%,transparent 88%);opacity:.6;pointer-events:none}
+html[color-mode="dark"] .leafie-time1:not(.lt-hacked){--tp:#202328;--ti:#eeeef0;--tm:#b0b5bd;--tl:#42474f}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .leafie-time1:not(.lt-hacked){--tp:#202328;--ti:#eeeef0;--tm:#b0b5bd;--tl:#42474f}}
+</style><main><h1>Leafie Awards / time markers</h1><p>Edit the time near the top of either snippet and paste the complete block before a reply template. Use 17:52 for a 24-hour clock, or 5:52pm for a 12-hour clock.</p><label>Appearance <select id="mode"><option value="light">Light</option><option value="dark">Dark</option></select></label><section><h2>Ceremony time</h2><div class="leafie-time1">
+<div class="lt-label">The time is now...</div>
+<div class="lt-time">17:52</div>
+</div><button data-copy="0">Copy posting code</button> <span role="status"></span><textarea readonly aria-label="Ceremony time code">[dohtml]
+&lt;div class="leafie-time1"&gt;
+&lt;div class="lt-label"&gt;The time is now...&lt;/div&gt;
+&lt;div class="lt-time"&gt;17:52&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/leafie-awards/leafie-time-standalone-v1.css"&gt;
+[/dohtml]</textarea></section><section><h2>Interrupted time</h2><div class="leafie-time1 lt-hacked">
+<div class="lt-label">The time is now...</div>
+<div class="lt-time">21:15</div>
+</div><button data-copy="1">Copy posting code</button> <span role="status"></span><textarea readonly aria-label="Interrupted time code">[dohtml]
+&lt;div class="leafie-time1 lt-hacked"&gt;
+&lt;div class="lt-label"&gt;The time is now...&lt;/div&gt;
+&lt;div class="lt-time"&gt;21:15&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/leafie-awards/leafie-time-standalone-v1.css"&gt;
+[/dohtml]</textarea></section><p><a href="https://github.com/lexdoescodingnow/templates/tree/main/leafie-awards">All Leafie Awards files</a></p></main><script>const codes=["[dohtml]\n<div class=\"leafie-time1\">\n<div class=\"lt-label\">The time is now...</div>\n<div class=\"lt-time\">17:52</div>\n</div>\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/leafie-awards/leafie-time-standalone-v1.css\">\n[/dohtml]","[dohtml]\n<div class=\"leafie-time1 lt-hacked\">\n<div class=\"lt-label\">The time is now...</div>\n<div class=\"lt-time\">21:15</div>\n</div>\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/leafie-awards/leafie-time-standalone-v1.css\">\n[/dohtml]"];document.getElementById('mode').onchange=e=>document.documentElement.setAttribute('color-mode',e.target.value);document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{try{await navigator.clipboard.writeText(codes[b.dataset.copy]);b.nextElementSibling.textContent='Copied'}catch(e){b.parentElement.querySelector('textarea').select();b.nextElementSibling.textContent='Selected: press Ctrl+C'}});</script></html>
