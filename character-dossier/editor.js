@@ -25,7 +25,7 @@
   const sourceUpdates = new Map();
   let sourceReviewCharacterId = '';
   const SOURCE_FIELDS = ['name', 'nickname', 'age', 'pronouns', 'gender', 'occupation', 'location', 'writer', 'portrait', 'avatar', 'imagePosition', 'facts', 'currentChapter', 'asOf', 'notes', 'relationshipStatus', 'relationships', 'timeline', 'songs', 'playlistUrl', 'polaroids', 'mapLocation', 'mapLatitude', 'mapLongitude', 'mapZoom'];
-  const SOURCE_LABELS = { name: 'Full name', nickname: 'Preferred name', age: 'Age', pronouns: 'Pronouns', gender: 'Gender', occupation: 'Occupation', location: 'Location', writer: 'Writer', portrait: 'Header photo', avatar: 'PI portrait', imagePosition: 'Photo crop', facts: 'Encyclopaedia facts', currentChapter: 'Current chapter', asOf: 'Story date', notes: 'Continuity notes', relationshipStatus: 'Relationship status', relationships: 'Connections', timeline: 'Story archive', songs: 'Soundtrack', playlistUrl: 'Playlist', polaroids: 'Polaroids', mapLocation: 'Map place', mapLatitude: 'Map latitude', mapLongitude: 'Map longitude', mapZoom: 'Map zoom', title: 'Title', date: 'In-world date', postedDate: 'Posting date', dateLabel: 'Date label', participants: 'Participants', type: 'Type', status: 'Status', connectionIds: 'Linked connections', summary: 'Summary', milestone: 'Pivotal moment', kind: 'Connection type', flavour: 'Flavour', brand: 'Brand', url: 'Link', image: 'Photo', pinned: 'Pinned connection', featured: 'Featured relationship', quote: 'Shared quote', artist: 'Artist', note: 'Song note', label: 'Fact label', value: 'Fact' };
+  const SOURCE_LABELS = { name: 'Full name', nickname: 'Display name', age: 'Age', pronouns: 'Pronouns', gender: 'Gender', occupation: 'Occupation', location: 'Location', writer: 'Writer', portrait: 'Header photo', avatar: 'PI portrait', imagePosition: 'Photo crop', facts: 'Information', currentChapter: 'Current chapter', asOf: 'Story date', notes: 'Continuity notes', relationshipStatus: 'Relationship status', relationships: 'Connections', timeline: 'Story archive', songs: 'Soundtrack', playlistUrl: 'Playlist', polaroids: 'Polaroids', mapLocation: 'Map place', mapLatitude: 'Map latitude', mapLongitude: 'Map longitude', mapZoom: 'Map zoom', title: 'Title', date: 'In-world date', postedDate: 'Posting date', dateLabel: 'Date label', participants: 'Participants', type: 'Type', status: 'Status', connectionIds: 'Linked connections', summary: 'Summary', milestone: 'Pivotal moment', kind: 'Connection type', flavour: 'Flavour', brand: 'Brand', url: 'Link', image: 'Photo', pinned: 'Pinned connection', featured: 'Featured relationship', quote: 'Shared quote', artist: 'Artist', note: 'Song note', label: 'Fact label', value: 'Fact' };
   const COVERAGE_LABELS = { development: 'Development post', encyclopaedia: 'Encyclopaedia details', directory: 'Directory details', custom: 'Your own character' };
   const LIST_LIMITS = { facts: 150, relationships: 200, timeline: 1500, songs: 200, polaroids: 3 };
   const TEXT_LIMITS = { name: 160, nickname: 160, age: 40, pronouns: 80, gender: 120, occupation: 250, location: 250, writer: 120, portrait: 4000, avatar: 4000, image: 4000, imagePosition: 30, mapLocation: 250, mapLatitude: 40, mapLongitude: 40, mapZoom: 2, accent: 7, label: 160, value: 2000, currentChapter: 5000, asOf: 120, notes: 15000, relationshipStatus: 160, kind: 80, flavour: 160, brand: 160, status: 120, url: 4000, summary: 5000, quote: 3000, playlistUrl: 4000, title: 250, artist: 250, note: 1500, date: 40, dateLabel: 160, postedDate: 40, participants: 400, type: 80 };
@@ -606,12 +606,12 @@
     $('character-form').append(element);
     return body;
   }
-  function repeater(body, key, singular, title, defaults, buildFields, beforeRemove) {
+  function repeater(body, key, singular, title, defaults, buildFields, beforeRemove, visibleItems) {
     const character = current();
     if (!Array.isArray(character[key])) character[key] = [];
-    const list = character[key];
+    const list = visibleItems || character[key];
     const rows = node('div', { className: 'repeat-list' });
-    if (!list.length) rows.append(node('p', { className: 'empty-list', text: 'No ' + singular.toLowerCase() + ' added yet. This area stays hidden in the finished post.' }));
+    if (!list.length && key !== 'facts') rows.append(node('p', { className: 'empty-list', text: 'No ' + singular.toLowerCase() + ' added yet. This area stays hidden in the finished post.' }));
     list.forEach((item, index) => {
       const row = node('details', { className: 'repeat-item' });
       if (item.__new) { row.open = true; delete item.__new; }
@@ -621,16 +621,66 @@
       buildFields(rowBody, item, () => { rowTitle.textContent = title(item) || singular + ' ' + (index + 1); });
       rowBody.append(node('button', { type: 'button', className: 'remove-row', text: 'Remove ' + singular.toLowerCase(), onclick: () => {
         if (beforeRemove && beforeRemove(item) === false) return;
-        list.splice(index, 1); changed(); renderForm();
+        const storedIndex = character[key].indexOf(item);
+        if (storedIndex < 0) return;
+        character[key].splice(storedIndex, 1); changed(); renderForm();
       } }));
       row.append(rowBody); rows.append(row);
     });
     body.append(rows, node('button', { type: 'button', className: 'add-row', text: '＋ Add ' + singular.toLowerCase(), onclick: () => {
-      if (list.length >= LIST_LIMITS[key]) { message('This character already has the maximum of ' + LIST_LIMITS[key] + ' ' + singular.toLowerCase() + ' records. Save an archive character if you need more room.', true); return; }
-      list.push({ ...defaults(), __new: true }); changed(); renderForm();
-      const opened = $('character-form').querySelector('[data-section="' + body.parentElement.dataset.section + '"] .repeat-item[open]');
+      if (character[key].length >= LIST_LIMITS[key]) { message('This character already has the maximum of ' + LIST_LIMITS[key] + ' ' + singular.toLowerCase() + ' records. Save an archive character if you need more room.', true); return; }
+      character[key].push({ ...defaults(), __new: true }); changed(); renderForm();
+      const opened = $('character-form').querySelector('[data-section="' + body.closest('[data-section]').dataset.section + '"] .repeat-item[open]');
       if (opened) opened.querySelector('input,textarea,select')?.focus({ preventScroll: true });
     } }));
+  }
+  function renderInformationFields(body, character) {
+    const inputs = new Map();
+    const extraRows = node('div');
+    let displayedExtras = null;
+
+    function syncStandardInputs() {
+      inputs.forEach((input, key) => {
+        if (document.activeElement !== input) input.value = Dossier.getInformationValue(character, key);
+      });
+    }
+
+    function refreshExtraRows() {
+      const extras = Dossier.getAdditionalInformationFacts(character);
+      if (displayedExtras && extras.length === displayedExtras.length && extras.every((item, index) => item === displayedExtras[index])) return;
+      displayedExtras = extras;
+      extraRows.replaceChildren();
+      repeater(extraRows, 'facts', 'Additional fact', item => item.label, () => ({ label: '', value: '' }), (row, item, updateTitle) => {
+        row.append(field('Fact label', item, 'label', { onChange: () => { updateTitle(); syncStandardInputs(); } }), field('Value', item, 'value', { multiline: true, rows: 2, onChange: syncStandardInputs }));
+        row.addEventListener('focusout', event => {
+          if (!row.contains(event.relatedTarget)) refreshExtraRows();
+        });
+      }, null, extras);
+    }
+
+    const controls = Dossier.standardInformationFields.map(definition => {
+      const value = Dossier.getInformationValue(character, definition.key);
+      const control = field(definition.label, { value }, 'value', {
+        maxLength: definition.key === 'gender' ? TEXT_LIMITS.gender : TEXT_LIMITS.value,
+        multiline: value.includes('\n'),
+        rows: 2,
+        onChange: input => {
+          try {
+            Dossier.setInformationValue(character, definition.key, input.value);
+            refreshExtraRows();
+          } catch (error) {
+            input.value = Dossier.getInformationValue(character, definition.key);
+            message(error.message, true);
+          }
+        }
+      });
+      const input = control.querySelector('input,textarea');
+      input.dataset.informationKey = definition.key;
+      inputs.set(definition.key, input);
+      return control;
+    });
+    body.append(grid(...controls), node('h3', { className: 'appearance-subheading', text: 'Additional facts' }), extraRows);
+    refreshExtraRows();
   }
   function renderNotices() {
     const notices = globalThis.DOSSIER_NOTICES || {};
@@ -720,14 +770,13 @@
     const character = current();
     $('character-form').replaceChildren(); renderSourceSummary(); renderNotices();
     let body = section('identity', '01', 'Identity');
-    body.append(field('Full name', character, 'name', { picker: true }), grid(field('Preferred name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Gender', character, 'gender'), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }));
+    body.append(field('Full name', character, 'name', { picker: true }), grid(field('Display name', character, 'nickname', { picker: true }), field('Writer', character, 'writer', { placeholder: 'Lex / Sara', picker: true })), grid(field('Age', character, 'age', { inputMode: 'numeric' }), field('Pronouns', character, 'pronouns')), field('Occupation', character, 'occupation'), field('Location', character, 'location'), field('Relationship status', character, 'relationshipStatus', { help: 'This is the one status shown in the header. Use the People section for partners and connections.' }));
     body = section('appearance', '02', 'Photos, colour & place');
     body.append(field('Header photograph', character, 'portrait', { type: 'url', placeholder: 'https://…' }), cropField(character), field('Portrait / PI image', character, 'avatar', { type: 'url', placeholder: 'https://…', help: 'An optional separate portrait for the identity panel.' }), colourFields(character), starterAppearance(character), node('h3', { className: 'appearance-subheading', text: 'The hanging polaroids' }), help('Choose up to three photos and give each a caption. Add a link if you want the photo to open a profile or thread.'));
     repeater(body, 'polaroids', 'Polaroid', item => item.name, () => ({ name: '', image: '', url: '' }), (row, item, title) => row.append(field('Caption / name', item, 'name', { onChange: title }), field('Photo', item, 'image', { type: 'url', placeholder: 'https://…' }), field('Link (optional)', item, 'url', { type: 'url', placeholder: 'https://…' })));
     body.append(node('h3', { className: 'appearance-subheading', text: 'A place on the map' }), field('City or place label', character, 'mapLocation', { placeholder: 'San Bernardino, California', onChange: () => { const link = $('character-form').querySelector('[data-map-search]'); if (link) link.href = mapSearchUrl(character.mapLocation); } }), mapLinkControls(character), grid(field('Latitude', character, 'mapLatitude', { inputMode: 'decimal', placeholder: '34.1083' }), field('Longitude', character, 'mapLongitude', { inputMode: 'decimal', placeholder: '-117.2898' })), help('Use the map link above, or enter coordinates directly. Leave both coordinates blank to hide the map.'), field('Map zoom', character, 'mapZoom', { type: 'number', min: 2, max: 18, step: 1, help: '2 shows a wider region; 18 shows the closest street detail.' }));
-    body = section('facts', '03', 'The encyclopaedia');
-    body.append(help('Keep the established facts here: birthday, languages, favourites, and all their small details.'));
-    repeater(body, 'facts', 'Fact', item => item.label, () => ({ label: '', value: '' }), (row, item, title) => row.append(field('Fact label', item, 'label', { onChange: title }), field('Value', item, 'value', { multiline: true, rows: 2 })));
+    body = section('facts', '03', 'Information');
+    renderInformationFields(body, character);
     body = section('people', '04', 'Flavours & brands');
     body.append(help('Each connection lives here once. Keep a flavour, a brand, or both, then choose these same connections when adding a story entry.'));
     repeater(body, 'relationships', 'Connection', item => item.name, () => ({ id: uid('connection'), name: '', kind: '', flavour: '', brand: '', status: '', portrait: '', url: '', summary: '', pinned: false, featured: false, quote: '', playlistUrl: '' }), (row, item, title) => {

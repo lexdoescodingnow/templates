@@ -113,6 +113,7 @@
     return {
       id: slug(raw.id || raw.name || raw.nickname, 'character'), name: text(raw.name, 160), nickname: text(raw.nickname, 160),
       age: text(raw.age, 40), pronouns: text(raw.pronouns, 80), gender: text(raw.gender, 120),
+      ...(raw.genderIsPrimary === true ? { genderIsPrimary: true } : {}),
       occupation: text(raw.occupation, 250), location: text(raw.location, 250), writer: text(raw.writer, 120),
       portrait: safeUrl(raw.portrait), avatar: safeUrl(raw.avatar),
       polaroids: records(raw.polaroids, 3).map(function (photo) { return { name: text(photo.name, 160), image: safeUrl(photo.image), url: safeUrl(photo.url) }; }),
@@ -123,7 +124,11 @@
       paletteVersion: Number.isSafeInteger(raw.paletteVersion) && raw.paletteVersion > 0 ? raw.paletteVersion : 0,
       paletteCrop: /^(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%$/.test(text(raw.paletteCrop, 20)) ? text(raw.paletteCrop, 20) : '',
       tags: Array.from(new Set(list(raw.tags, 50).map(function (tag) { return text(tag, 120).replace(/^#+/, '').trim(); }).filter(Boolean))),
-      facts: records(raw.facts, 150).map(function (fact) { return { label: text(fact.label, 160), value: text(fact.value, 2000) }; }),
+      facts: records(raw.facts, 150).map(function (fact) {
+        var stored = { label: text(fact.label, 160), value: text(fact.value, 2000) };
+        if (fact.informationPrimary === true) stored.informationPrimary = true;
+        return stored;
+      }),
       currentChapter: text(raw.currentChapter, 5000), asOf: text(raw.asOf, 120), notes: text(raw.notes, 15000),
       relationshipStatus: text(raw.relationshipStatus, 160), relationships: relationships, timeline: timeline,
       songs: records(raw.songs, 200).map(function (song) { return { title: text(song.title, 250), artist: text(song.artist, 250), url: safeUrl(song.url), note: text(song.note, 1500) }; }),
@@ -217,27 +222,98 @@
     c.timeline.forEach(function (entry) { ['title', 'participants', 'status'].forEach(function (field) { entry[field] = titleCase(entry[field]); }); });
     return c;
   }
-  function pairedFacts(facts) {
-    var remaining = facts.slice(), rows = [];
-    function take(labels) {
-      var index = remaining.findIndex(function (fact) { return labels.indexOf(fact.label.toLowerCase().replace(/[^a-z]/g, '')) !== -1; });
-      return index < 0 ? null : remaining.splice(index, 1)[0];
+  var standardInformationFields = [
+    ['gender', 'Gender'], ['preferredName', 'Preferred Name', 'Preferred names'],
+    ['nationality', 'Nationality'], ['ethnicity', 'Ethnicity'],
+    ['romanticality', 'Romanticality', 'Romantic orientation'], ['sexuality', 'Sexuality', 'Sexual orientation'],
+    ['residency', 'Residency', 'Residence', 'Current residence', 'Place of residence'],
+    ['birthday', 'Birthday', 'Date of birth', 'Birth date', 'DOB'],
+    ['languages', 'Languages', 'Language', 'Languages spoken'], ['bloodType', 'Blood Type', 'Blood group'],
+    ['mbti', 'MBTI', 'MBTI type'], ['westernZodiac', 'Western Zodiac', 'Zodiac', 'Zodiac sign', 'Western zodiac sign'],
+    ['chineseZodiac', 'Chinese Zodiac', 'Chinese zodiac sign'], ['faceClaim', 'Face Claim', 'FC'],
+    ['favoriteColor', 'Favorite Color', 'Favourite colour', 'Favourite color', 'Favorite colour'],
+    ['favoriteFood', 'Favorite Food', 'Favourite food']
+  ].map(function (definition) {
+    return { key: definition[0], label: definition[1], aliases: definition.slice(2) };
+  });
+  function informationLabelKey(label) { return String(label || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
+  var informationByLabel = new Map();
+  var informationByKey = new Map();
+  standardInformationFields.forEach(function (field) {
+    informationByKey.set(field.key, field);
+    [field.label].concat(field.aliases).forEach(function (label) { informationByLabel.set(informationLabelKey(label), field); });
+  });
+  function informationFieldForFact(label) { return informationByLabel.get(informationLabelKey(label)); }
+  function matchingInformationFacts(character, field) {
+    return (character.facts || []).filter(function (fact) { return informationFieldForFact(fact.label) === field; });
+  }
+  function primaryFact(matches) {
+    return matches.find(function (fact) { return fact.informationPrimary; }) ||
+      matches.find(function (fact) { return fact.value; }) || matches[0];
+  }
+  function getInformationValue(character, key) {
+    var field = informationByKey.get(key);
+    if (!field) return '';
+    if (key === 'gender' && (character.gender || character.genderIsPrimary)) return character.gender || '';
+    var fact = primaryFact(matchingInformationFacts(character, field));
+    return fact ? fact.value : '';
+  }
+  function setInformationValue(character, key, input) {
+    var field = informationByKey.get(key);
+    if (!field) throw new Error('Unknown Information field: ' + key);
+    var matches = matchingInformationFacts(character, field);
+    var useIdentity = key === 'gender' && (character.gender || character.genderIsPrimary || !matches.length);
+    var value = text(input, useIdentity ? 120 : 2000);
+    var previous = getInformationValue(character, key);
+    if (value === previous) return;
+    if (useIdentity) {
+      if (matches.length && !character.genderIsPrimary) {
+        character.genderIsPrimary = true;
+        matches.forEach(function (fact) {
+          if (previous && fact.value === previous) fact.informationPrimary = true;
+        });
+      }
+      character.gender = value;
+      matches.forEach(function (fact) { if (fact.informationPrimary) fact.value = value; });
+      return;
     }
-    [
-      [['gender'], ['preferredname']],
-      [['nationality'], ['ethnicity']],
-      [['romanticality', 'romanticorientation'], ['sexuality', 'sexualorientation']],
-      [['residency', 'residence'], ['birthday', 'dateofbirth']],
-      [['languages', 'language'], ['bloodtype']],
-      [['mbti'], ['westernzodiac', 'zodiac']],
-      [['chinesezodiac'], ['faceclaim']],
-      [['favoritecolor', 'favouritecolour', 'favouritecolor', 'favoritecolour'], ['favoritefood', 'favouritefood']]
-    ].forEach(function (pair) {
-      var row = pair.map(take).filter(Boolean);
-      if (row.length) rows.push(row);
+    if (matches.length) {
+      var primary = primaryFact(matches);
+      // Keep this row selected when cleared, even if an imported alias has another value.
+      if (matches.length > 1) primary.informationPrimary = true;
+      primary.value = value;
+      return;
+    }
+    if (!value) return;
+    if (!character.facts) character.facts = [];
+    if (character.facts.length >= 150) throw new Error('This character already has 150 facts. Remove a fact before adding another.');
+    character.facts.push({ label: field.label, value: value });
+  }
+  function getAdditionalInformationFacts(character) {
+    var selected = new Map();
+    standardInformationFields.forEach(function (field) { selected.set(field, getInformationValue(character, field.key)); });
+    return (character.facts || []).filter(function (fact) {
+      var field = informationFieldForFact(fact.label);
+      return !field || (fact.value && fact.value !== selected.get(field));
     });
-    while (remaining.length) rows.push(remaining.splice(0, 2));
-    return rows.map(function (row) { return '<div class="bd3-fact-row">' + row.map(function (fact) { return '<div><dt>' + escapeHtml(fact.label) + '</dt><dd>' + escapeHtml(fact.value) + '</dd></div>'; }).join('') + '</div>'; }).join('');
+  }
+  function informationFacts(character, hasPartners) {
+    var facts = standardInformationFields.map(function (field) {
+      return { label: field.label, value: getInformationValue(character, field.key) || '—' };
+    });
+    var extras = getAdditionalInformationFacts(character).filter(function (fact) {
+      var label = informationLabelKey(fact.label);
+      return fact.label && fact.value && !(hasPartners && /^(?:partner|partners|currentpartner|currentpartners)$/.test(label)) &&
+        !(character.relationshipStatus && /^(?:relationshipstatus|status)$/.test(label));
+    });
+    facts = facts.concat(extras);
+    var html = '';
+    for (var i = 0; i < facts.length; i += 2) {
+      html += '<div class="bd3-fact-row">' + facts.slice(i, i + 2).map(function (fact) {
+        return '<div><dt>' + escapeHtml(fact.label) + '</dt><dd>' + escapeHtml(fact.value) + '</dd></div>';
+      }).join('') + '</div>';
+    }
+    return html;
   }
   function locationMap(c) {
     if (c.mapLatitude === '' || c.mapLongitude === '') return '';
@@ -261,11 +337,6 @@
     var songs = c.songs.filter(function (song) { return song.title || song.artist || song.url; });
     var byId = new Map(relationships.map(function (r) { return [r.id, r]; }));
     var hasPartners = relationships.some(function (r) { return r.kind === 'Partner'; });
-    var facts = c.facts.filter(function (fact) {
-      var label = fact.label.toLowerCase().replace(/[^a-z]/g, '');
-      return fact.label && fact.value && !(hasPartners && /^(?:partner|partners|currentpartner|currentpartners)$/.test(label)) && !(c.relationshipStatus && /^(?:relationshipstatus|status)$/.test(label));
-    });
-    var basics = c.gender && !facts.some(function (fact) { return fact.label.toLowerCase() === 'gender'; }) ? [{ label: 'Gender', value: c.gender }] : [];
     var name = c.nickname || c.name;
     var meta = [c.age ? c.age + ' Years Old' : '', c.pronouns].filter(Boolean);
     var html = '<article class="bh-dossier-v5" data-theme-mode="' + c.themeMode + '" style="--bd1-accent:' + c.accent + ';--bd2-image-position:' + c.imagePosition + '">';
@@ -304,12 +375,9 @@
       html += '</div>';
     }
     html += '<div class="bd1-content">';
-    if (facts.length || basics.length || c.currentChapter) {
-      html += '<section class="bd1-section bd1-overview">' + heading('Information', c.asOf ? 'As of ' + c.asOf : '');
-      if (c.currentChapter) html += '<div class="bd1-chapter"><span class="bd1-eyebrow">Current Chapter</span>' + paragraphs(c.currentChapter) + '</div>';
-      if (facts.length || basics.length) html += '<dl class="bd1-facts">' + pairedFacts(basics.concat(facts)) + '</dl>';
-      html += '</section>';
-    }
+    html += '<section class="bd1-section bd1-overview">' + heading('Information', c.asOf ? 'As of ' + c.asOf : '');
+    if (c.currentChapter) html += '<div class="bd1-chapter"><span class="bd1-eyebrow">Current Chapter</span>' + paragraphs(c.currentChapter) + '</div>';
+    html += '<dl class="bd1-facts">' + informationFacts(c, hasPartners) + '</dl></section>';
     if (relationships.length) {
       html += '<section class="bd1-section bd1-connections-panel" id="' + prefix + '-connections">' + heading('Flavours & Brands') + '<div class="bd1-connections">';
       relationships.forEach(function (r) {
@@ -385,5 +453,7 @@
     if (!url) throw new Error('Forum code needs the public stylesheet address.');
     return '[dohtml]' + render(character, { stylesheetUrl: url, includeStylesheet: true }) + '<script src="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@character-dossier-v1/character-dossier/dossier-runtime-v5.2.js" defer></script>[/dohtml]';
   }
-  return { normalizeCharacter: normalizeCharacter, normalizeDataset: normalizeDataset, render: render, forum: forum, sortTimeline: sortTimeline, escapeHtml: escapeHtml, safeUrl: safeUrl };
+  return { standardInformationFields: standardInformationFields, getInformationValue: getInformationValue,
+    setInformationValue: setInformationValue, getAdditionalInformationFacts: getAdditionalInformationFacts,
+    normalizeCharacter: normalizeCharacter, normalizeDataset: normalizeDataset, render: render, forum: forum, sortTimeline: sortTimeline, escapeHtml: escapeHtml, safeUrl: safeUrl };
 }));

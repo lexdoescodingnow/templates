@@ -111,6 +111,61 @@ test('Related facts stay paired without duplicating header information', () => {
   assert(!output.includes('ANXIOUS HEART') && !/aria-label="Character traits"/.test(output));
 });
 
+test('Blank and saved profiles have the same eight Information pairs and retain extra facts', () => {
+  const expected = [
+    ['Gender', 'Preferred Name'], ['Nationality', 'Ethnicity'], ['Romanticality', 'Sexuality'],
+    ['Residency', 'Birthday'], ['Languages', 'Blood Type'], ['MBTI', 'Western Zodiac'],
+    ['Chinese Zodiac', 'Face Claim'], ['Favorite Color', 'Favorite Food']
+  ];
+  function readRows(html) {
+    const panel = html.match(/<dl class="bd1-facts">([\s\S]*?)<\/dl>/);
+    assert(panel, 'Information must be present even on a new profile');
+    return panel[1].split('<div class="bd3-fact-row">').slice(1).map(row =>
+      [...row.matchAll(/<dt>([^<]*)<\/dt><dd>(.*?)<\/dd>/gs)].map(([, label, value]) => ({ label, value })));
+  }
+  const blank = character();
+  const partial = character({ facts: [
+    { label: 'Date of birth', value: '12 July' }, { label: 'Favourite colour', value: 'blue' },
+    { label: 'Height', value: '177 cm' }
+  ] });
+  for (const profile of [blank, partial, ...library.characters]) {
+    const before = JSON.stringify(profile);
+    const rows = readRows(Dossier.render(profile));
+    assert.deepEqual(rows.slice(0, 8).map(row => row.map(field => field.label)), expected, profile.id);
+    assert.equal(JSON.stringify(profile), before, 'Opening a profile must preserve its saved facts');
+  }
+  const blankPost = readRows(Dossier.forum(blank, stylesheet));
+  assert.equal(blankPost.length, 8);
+  assert(blankPost.flat().every(field => field.value === '—'));
+  const saved = readRows(Dossier.forum(partial, stylesheet));
+  assert.deepEqual(saved[3].map(field => field.value), ['—', '12 July']);
+  assert.equal(saved[7][0].value, 'Blue');
+  assert.deepEqual(saved.slice(8).flat().map(field => field.label), ['Height']);
+  assert.equal(readRows(Dossier.render(sam))[0][1].value, 'Sam, Sammy');
+});
+
+test('Editing default Information fields keeps sparse backups, legacy labels and custom values', () => {
+  const profile = Dossier.normalizeCharacter(character({
+    nickname: 'Sam', facts: [{ label: 'Favourite colour', value: 'blue' }, { label: 'Height', value: '170 cm' }]
+  }));
+  const key = label => Dossier.standardInformationFields.find(field => field.label === label).key;
+  for (const field of Dossier.standardInformationFields) Dossier.getInformationValue(profile, field.key);
+  assert.equal(profile.facts.length, 2, 'Viewing the fields must not create blank facts in a backup');
+  Dossier.setInformationValue(profile, key('Favorite Color'), 'violet');
+  Dossier.setInformationValue(profile, key('Preferred Name'), 'Sam, Sammy');
+  Dossier.setInformationValue(profile, key('Birthday'), '12 July');
+  Dossier.setInformationValue(profile, key('Gender'), 'male');
+  const restored = Dossier.normalizeDataset(JSON.parse(JSON.stringify({ version: 1, characters: [profile] }))).characters[0];
+  assert.equal(restored.nickname, 'Sam');
+  assert.equal(restored.gender, 'male');
+  assert.equal(restored.facts.find(fact => fact.label === 'Favourite colour').value, 'violet');
+  assert.equal(Dossier.getInformationValue(restored, key('Preferred Name')), 'Sam, Sammy');
+  assert.deepEqual(Dossier.getAdditionalInformationFacts(restored), [{ label: 'Height', value: '170 cm' }]);
+  Dossier.setInformationValue(restored, key('Birthday'), '');
+  assert.equal(Dossier.getInformationValue(restored, key('Birthday')), '');
+  assert(Dossier.forum(restored, stylesheet).includes('<dt>Birthday</dt><dd>—</dd>'));
+});
+
 test('Display capitalisation preserves raw data, acronyms, music styling, prose and URLs', () => {
   const raw = character({name:'baek samuel',nickname:'sam',gender:'cisgender male',occupation:'idol / leader of CRAZHES',location:'los angeles, ca',
     facts:[{label:'mbti',value:'ISTP'},{label:'languages',value:'english, korean'},{label:'face claim',value:'kang yuchan'},{label:'Reference',value:'https://Example.com/MixedCase?value=aB'}],

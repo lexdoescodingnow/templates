@@ -15,7 +15,7 @@ The fifth version automatically matches the panel colours to the header photogra
 ## Everyday editing
 
 1. Choose a character or create a new one. Search by name, or filter the cast by Development post, Encyclopaedia details, Directory details, or Updates to review. A character opened from the cast browser is selected automatically.
-2. Edit the labelled fields. Add connections, songs and story entries with the corresponding buttons.
+2. Open **Information** to fill in the 16 standard fields. Every profile shows them in the same order, with a dash for each value you have yet to enter. You can add other facts below them. Add connections, songs and story entries in their own sections.
    In Photos, colour & place, replace the header photo and its colours will be matched automatically. Adjust the crop and add a separate portrait / PI image as needed. Manual colour is an optional override. Use starter appearance restores the supplied header/PI photos while keeping other details.
 3. Change the three polaroid names, images and optional links. For a map, enter a city label, use Find a place on OpenStreetMap, then paste the map address into OpenStreetMap link and choose Use this map view. Coordinates and zoom can also be edited directly. Clearing the coordinates hides the map. The pin is a location you set for the character, not live tracking. Ship details and shared stories can be expanded inside their connection card.
 4. Copy the forum post and paste it into your Blue Hour development post. The copy includes its `[dohtml]` wrapper, one hosted stylesheet and one shared script for the map and automatic colour matching.
