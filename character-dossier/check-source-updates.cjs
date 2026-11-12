@@ -81,6 +81,64 @@ assert.equal(coordinateMigration.library.characters[0].mapLatitude, '34.01949');
 assert.equal(coordinateMigration.library.characters[0].mapLongitude, '-118.49138');
 assert.equal(coordinateMigration.sourceUpdates.size, 0);
 
+const fact = (label, value) => ({ label, value });
+const oldInformation = character({
+  facts: [fact('Date of birth', '13 October'), fact('Favourite colour', 'red'), fact('MBTI', 'ISTP')]
+});
+const newInformation = character({
+  gender: 'Male',
+  facts: [fact('Birthday', '14 October'), fact('Favorite Color', 'blue'), fact('MBTI', 'INTJ'),
+    fact('Nationality', 'Korean'), fact('Languages', 'English'), fact('Blood Type', 'A+'),
+    fact('Favorite Food', '[text]'), fact('FC', 'Face Claim')]
+});
+const sparseDraft = character({
+  gender: '—',
+  facts: [fact('Favourite colour', 'violet'), fact('MBTI', ''), fact('Nationality', '—'),
+    fact('Language', 'Turkish'), fact('', ''), { label: 'Blood group', value: '', informationPrimary: true }]
+});
+const updatedInformation = context([oldInformation], [newInformation], [sparseDraft], ['gender', 'facts']);
+updatedInformation.applySourceUpdates();
+const updatedDraft = updatedInformation.library.characters[0];
+assert.equal(updatedDraft.gender, 'Male');
+assert.equal(Dossier.getInformationValue(updatedDraft, 'birthday'), '', 'A deliberately deleted field must stay deleted even when the source renames it');
+assert.deepEqual(plain(updatedDraft.facts.filter(row => /colou?r/i.test(row.label))), [fact('Favourite colour', 'violet')]);
+assert.equal(Dossier.getInformationValue(updatedDraft, 'mbti'), '', 'Clearing an established value is a manual edit');
+assert.equal(Dossier.getInformationValue(updatedDraft, 'nationality'), 'Korean', 'A verified value can fill an old template marker');
+assert.deepEqual(plain(updatedDraft.facts.filter(row => /language/i.test(row.label))), [fact('Language', 'Turkish')]);
+assert.equal(Dossier.getInformationValue(updatedDraft, 'bloodType'), '', 'An explicitly selected blank primary value must remain blank');
+assert.equal(updatedDraft.facts.some(row => row.label === 'Favorite Food'), false, 'New source placeholders must not be added');
+assert.equal(updatedDraft.facts.some(row => row.label === '' && row.value === ''), true, 'An unfinished additional fact remains editable');
+assert.equal(Dossier.getInformationValue(updatedDraft, 'faceClaim'), 'Face Claim', 'An unfinished extra must not block unrelated source facts');
+const history = updatedInformation.normalizeSourceTracking(plain(updatedInformation.library.sourceTracking), ['test']);
+const reopenedInformation = context(null, [newInformation], [updatedDraft], ['gender', 'facts'], 'source-2', history);
+reopenedInformation.applySourceUpdates();
+assert.deepEqual(plain(reopenedInformation.library.characters[0].facts), plain(updatedDraft.facts));
+assert.equal(reopenedInformation.sourceUpdates.get('test').conflicts.length, 3, 'Only the conflicting values need review, never a canonical label spelling');
+
+const overlappingAliases = character({ facts: [fact('Birthday', 'April'), fact('DOB', 'March')] });
+const literalDraft = character({ gender: 'Unknown', facts: [fact('Nationality', 'Not specified'), fact('Language', 'Unknown')] });
+const literal = context([character({})], [newInformation], [literalDraft], ['gender', 'facts']);
+literal.applySourceUpdates();
+assert.equal(literal.library.characters[0].gender, 'Unknown');
+assert.equal(Dossier.getInformationValue(literal.library.characters[0], 'nationality'), 'Not specified');
+assert.equal(Dossier.getInformationValue(literal.library.characters[0], 'languages'), 'Unknown');
+assert.equal(literal.sourceUpdates.get('test').conflicts.length, 3);
+const legacyGender = context([character({})], [newInformation], [character({ facts: [fact('Gender', 'Not specified')] })], ['gender', 'facts']);
+legacyGender.applySourceUpdates();
+assert.equal(Dossier.getInformationValue(legacyGender.library.characters[0], 'gender'), 'Not specified');
+legacyGender.applySourceConflict(legacyGender.library.characters[0], legacyGender.sourceUpdates.get('test').conflicts[0]);
+assert.equal(legacyGender.library.characters[0].facts.find(f => f.label === 'Gender').value, 'Male');
+assert.equal(legacyGender.library.characters[0].gender, '', 'An accepted update edits the same legacy Gender record');
+const overlapUpdate = context([character({})], [newInformation], [overlappingAliases], ['facts']);
+overlapUpdate.applySourceUpdates();
+assert.deepEqual(plain(overlapUpdate.library.characters[0].facts.slice(0, 2)), plain(overlappingAliases.facts));
+assert.equal(Dossier.getInformationValue(overlapUpdate.library.characters[0], 'nationality'), 'Korean');
+
+const fullInformation = character({ facts: Array.from({ length: 150 }, (_, index) => fact('Extra ' + index, 'Keep')) });
+const atCapacity = context([character({})], [newInformation], [fullInformation], ['facts']);
+atCapacity.applySourceUpdates();
+assert.deepEqual(plain(atCapacity.library.characters[0].facts), plain(fullInformation.facts));
+
 const portable = merged.normalizeSourceTracking(plain(merged.library.sourceTracking), ['test']);
 const restored = context(null, [incoming], [result], fields, 'source-2', portable);
 restored.applySourceUpdates();

@@ -17,6 +17,23 @@ for(const topic of captures){
 const library=D.normalizeDataset(read('seed-library.json'));
 const previous=D.normalizeDataset(read('legacy-baseline.json'));
 const byId=new Map(library.characters.map(c=>[c.id,c]));
+const info = (id, field) => D.getInformationValue(byId.get(id), field);
+const defaults = read('sources/information-defaults.json');
+for (const row of defaults.records) {
+  assert.equal(info(row.id, row.field), row.value, 'Verified Information default: '+row.id+'/'+row.field);
+}
+assert(library.characters.every(c=>D.getInformationValue(c, 'preferredName')), 'All directory characters have an editable preferred name');
+assert.equal(info('alastair-choi','preferredName'), 'Allie, Al');
+assert.equal(info('alastair-choi','westernZodiac'), 'Cancer');
+assert.equal(info('alastair-choi','chineseZodiac'), 'Tiger');
+assert.equal(info('byun-yuseop','preferredName'), byId.get('byun-yuseop').nickname);
+assert.equal(info('jude-yoon','westernZodiac').toLowerCase(), 'cancer', 'Retain the explicitly recorded sign while its source discrepancy is unresolved');
+for (const id of Object.keys(defaults.unconfirmedBirthdays)) assert.equal(info(id,'westernZodiac'), '', 'Unconfirmed birthday: '+id);
+const {signFromBirthday} = require('./information-defaults.cjs');
+assert.equal(signFromBirthday('October 13th'), 'Libra');
+assert.equal(signFromBirthday('29 February'), 'Pisces');
+assert.equal(signFromBirthday('1 January'), 'Capricorn');
+for (const invalid of ['', 'February', '2026', '31 April', '0 July', '12 July or 19 August']) assert.equal(signFromBirthday(invalid), '');
 const sam=byId.get('baek-samuel');
 const withoutTopicStarts=character=>({...character,timeline:character.timeline.map(entry=>({...entry,postedDate:'',postedDateSource:''}))});
 assert.deepEqual(withoutTopicStarts(sam),withoutTopicStarts(previous.characters.find(c=>c.id==='baek-samuel')));

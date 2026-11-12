@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const Dossier = require('./dossier-model.js');
+const information = require('./information-defaults.cjs');
 const read = file => JSON.parse(fs.readFileSync(path.join(__dirname,file),'utf8'));
 const unique = list => Array.from(new Set(list.filter(Boolean)));
 const clean = value => typeof value === 'string' ? value : JSON.stringify(value);
@@ -15,7 +16,8 @@ function apply(input, encyclopediaMetadata, developmentMetadata) {
   const devIndex = read('sources/development-index.json').topics;
   const places = read('sources/map-places.json').places;
   const byId = new Map(characters.map(record=>[record.id,record]));
-  const manifest = {version:1,checkedAt:'2026-11-06',characters:[]};
+  const applyInformation = information.prepare(characters);
+  const manifest = {version:1,checkedAt:information.checkedAt,characters:[]};
   const sourceMetadata = {}, notices = {};
   for (const character of characters) {
     const e = encyclopaedia.get(character.id)||{}, d = development.get(character.id), src = sources.get(character.id);
@@ -55,6 +57,10 @@ function apply(input, encyclopediaMetadata, developmentMetadata) {
       rowSources.push({kind:'user-confirmed',reference:'Approved Sam v5 profile and current age/partner confirmation',fields:Object.keys(character)});
       notes.push('The approved Sam profile is preserved, with verified topic-start dates added to its story links.');
     }
+    const defaults = applyInformation(character);
+    defaults.fields.forEach(field => fields.add(field));
+    rowSources.push(...defaults.sources);
+    const informationPost = defaults.sources.find(s => s.kind === 'information-post');
     const missing=[];
     if(!character.songs.length&&!character.playlistUrl)missing.push('No playlist supplied in the reviewed sources.');
     if(!character.timeline.length)missing.push('No confidently matched story or comms links found.');
@@ -68,14 +74,15 @@ function apply(input, encyclopediaMetadata, developmentMetadata) {
     if(!character.mapLatitude||!character.mapLongitude)missing.push('No verified location pin supplied.');
     if(!character.facts.some(f=>key(f.label)==='birthday'))missing.push('Birthday not established in the reviewed sources.');
     const hasDev=!!d||character.id==='baek-samuel';
-    const coverage=hasDev?'development':(e.fields||[]).length?'encyclopaedia':'directory';
-    const conflicts=unique([...(e.conflicts||[]),...(d?.conflicts||[])].map(clean));
+    const coverage=hasDev || informationPost?'development':(e.fields||[]).length?'encyclopaedia':'directory';
+    const conflicts=unique([...(e.conflicts||[]),...(d?.conflicts||[]),...defaults.conflicts].map(clean));
     const label={development:'Development post',encyclopaedia:'Encyclopaedia details',directory:'Directory details'}[coverage];
-    const sourceUrls=unique(rowSources.map(s=>s.url)).map(url=>({url,label:url===src?.source?.url?'Encyclopaedia':url.includes('116353')?'Current directory':url===d?.url||url.includes('68373')?'Development post':'Source'}));
+    const sourceUrls=unique(rowSources.map(s=>s.url)).map(url=>({url,label:url===src?.source?.url?'Encyclopaedia':url.includes('116353')?'Current directory':url===d?.url||url===informationPost?.url||url.includes('68373')?'Development post':'Source'}));
     const normalized=Dossier.normalizeCharacter(character);
-    sourceMetadata[character.id]={revision:'cast-2026-11-06-'+crypto.createHash('sha256').update(JSON.stringify(normalized)).digest('hex').slice(0,16),coverage,label,sourceUrls,updatedAt:'2026-11-06',knownFields:[...fields]};
-    notices[character.id]=[hasDev?'Imported from the existing development post and current encyclopaedia. The latest directory controls age, occupation and partners.':coverage==='encyclopaedia'?'Enriched from the current encyclopaedia and matched story/comms sources; core details follow the latest directory.':'The current directory supplies this profile. Further character details were not established in the reviewed sources.',...missing];
-    manifest.characters.push({id:character.id,status:hasDev?'migrated':coverage==='encyclopaedia'?'partial':'starter',sources:rowSources,missing,notes:unique(notes),conflicts});
+    const updatedAt=defaults.fields.length?information.checkedAt:'2026-11-06';
+    sourceMetadata[character.id]={revision:'cast-'+updatedAt+'-'+crypto.createHash('sha256').update(JSON.stringify(normalized)).digest('hex').slice(0,16),coverage,label,sourceUrls,updatedAt,knownFields:[...fields]};
+    notices[character.id]=[informationPost?'The Information panel includes details from the published development profile.':hasDev?'Imported from the existing development post and current encyclopaedia. The latest directory controls age, occupation and partners.':coverage==='encyclopaedia'?'Enriched from the current encyclopaedia and matched story/comms sources; core details follow the latest directory.':'The current directory supplies this profile. Further character details were not established in the reviewed sources.',...missing];
+    manifest.characters.push({id:character.id,status:hasDev?'migrated':coverage==='directory'?'starter':'partial',sources:rowSources,missing,notes:unique(notes),conflicts});
   }
   return {characters,manifest,sourceMetadata,notices};
 }

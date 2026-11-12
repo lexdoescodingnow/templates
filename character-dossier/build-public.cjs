@@ -7,7 +7,7 @@ const publicFiles = ['.nojekyll', 'guide.html', 'index.html'];
 
 function createPublicGuard() {
   const privateHosts = ['chat' + 'gpt.com', 'chat.' + 'openai.com'];
-  const sourceHosts = new Set(['bluehour.jcink.net', 'github.com', 'www.wikidata.org', 'www.openstreetmap.org', 'openstreetmap.org', 'en.wikipedia.org', 'wiki.openstreetmap.org', 'digital.library.unt.edu']);
+  const sourceHosts = new Set(['bluehour.jcink.net', 'leafentertainment.fandom.com', 'github.com', 'www.wikidata.org', 'www.openstreetmap.org', 'openstreetmap.org', 'en.wikipedia.org', 'wiki.openstreetmap.org', 'digital.library.unt.edu']);
   const privateLinks = new RegExp('https?:\\/\\/(?:[a-z0-9-]+\\.)*(?:' + privateHosts.map(host => host.replace(/\./g, '\\.')).join('|') + ')(?=[:/\\s?#]|$)[^\\s<>"\\]})]*', 'gi');
   function privateAddress(value) {
     try {

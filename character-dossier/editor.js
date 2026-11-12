@@ -124,10 +124,23 @@
     for (let index = 0; index < text.length; index += 1) hash = Math.imul(hash ^ text.charCodeAt(index), 16777619);
     return 'source-' + (hash >>> 0).toString(16);
   }
+  const standardFactKeys = new Map((globalThis.Dossier?.standardInformationFields || []).flatMap(field =>
+    [field.label, ...field.aliases].map(label => [label.toLowerCase().replace(/[^a-z0-9]/g, ''), 'information:' + field.key])
+  ));
+  function informationPlaceholder(value) {
+    if (value == null) return true;
+    return typeof value === 'string' && /^(?:[.#?\s_\u2013\u2014-]*|\[(?:text|value)\])$/i.test(value.trim());
+  }
+  function establishedInformation(value) {
+    return typeof value === 'string' && !informationPlaceholder(value) && !/^(?:tbd|to be added|unknown|not specified)$/i.test(value.trim());
+  }
   function sourceListKey(field, item) {
     if (!item || typeof item !== 'object' || Array.isArray(item)) return '';
     if (field === 'relationships' || field === 'timeline') return typeof item.id === 'string' ? item.id : '';
-    if (field === 'facts') return typeof item.label === 'string' ? item.label.trim().toLocaleLowerCase() : '';
+    if (field === 'facts') {
+      const label = typeof item.label === 'string' ? item.label.trim().toLowerCase() : '';
+      return label ? standardFactKeys.get(label.replace(/[^a-z0-9]/g, '')) || 'extra:' + label : '';
+    }
     if (field === 'songs') return item.url || [item.artist || '', item.title || ''].join('|').toLocaleLowerCase();
     return '';
   }
@@ -164,17 +177,32 @@
   }
   function mergeSourceValue(currentValue, baseline, incoming, context) {
     if (equalSource(currentValue, incoming)) return sourceCopy(currentValue);
+    if (context.informationValue) {
+      if (!establishedInformation(incoming) || context.explicitlyCleared) return sourceCopy(currentValue);
+      if (informationPlaceholder(currentValue) && (!context.known || informationPlaceholder(baseline))) return sourceCopy(incoming);
+    }
     const allArrays = Array.isArray(currentValue) && Array.isArray(incoming) && (!context.known || Array.isArray(baseline));
     const keyed = allArrays && ['relationships', 'timeline', 'facts', 'songs'].includes(context.field) && context.path.length === 1;
     if (keyed) {
       const arrays = [currentValue, incoming, context.known ? baseline : []];
-      const valid = arrays.every(items => { const keys = items.map(item => sourceListKey(context.field, item)); return keys.every(Boolean) && new Set(keys).size === keys.length; });
-      if (valid) {
+      const factRows = context.field === 'facts';
+      const ambiguous = new Set();
+      arrays.forEach(items => {
+        const seen = new Set();
+        items.forEach(item => {
+          const key = sourceListKey(context.field, item);
+          if (!key || seen.has(key)) ambiguous.add(key);
+          seen.add(key);
+        });
+      });
+      if (factRows || !ambiguous.size) {
         const oldMap = new Map((context.known ? baseline : []).map(item => [sourceListKey(context.field, item), item]));
         const newMap = new Map(incoming.map(item => [sourceListKey(context.field, item), item]));
         const currentKeys = new Set(currentValue.map(item => sourceListKey(context.field, item)));
         const merged = currentValue.map(item => {
           const key = sourceListKey(context.field, item), previous = oldMap.get(key), next = newMap.get(key);
+          if (ambiguous.has(key)) return sourceCopy(item);
+          const standard = factRows && key.startsWith('information:');
           const path = [...context.path, { list: context.field, key }];
           const label = context.label + ' · ' + (item.title || item.name || item.label || 'Entry');
           if (!next) {
@@ -182,12 +210,18 @@
             return sourceCopy(item);
           }
           const result = sourceCopy(item);
-          Object.keys(next).filter(field => field !== 'id' && !(context.field === 'timeline' && ['postedDate', 'postedDateSource'].includes(field))).forEach(field => {
-            result[field] = mergeSourceValue(item[field], previous?.[field], next[field], { ...context, known: oldMap.has(key) && Object.hasOwn(previous, field), path: [...path, field], label: label + ' · ' + (SOURCE_LABELS[field] || field) });
+          Object.keys(next).filter(field => field !== 'id' && !(standard && field === 'label') && !(context.field === 'timeline' && ['postedDate', 'postedDateSource'].includes(field))).forEach(field => {
+            const informationValue = standard && field === 'value';
+            result[field] = mergeSourceValue(item[field], previous?.[field], next[field], { ...context, informationValue, explicitlyCleared: informationValue && Boolean(item.informationPrimary) && item.value === '', known: oldMap.has(key) && Object.hasOwn(previous, field), path: [...path, field], label: label + ' · ' + (SOURCE_LABELS[field] || field) });
           });
           return result;
         });
-        incoming.forEach(item => { const key = sourceListKey(context.field, item); if (!currentKeys.has(key) && !oldMap.has(key)) merged.push(sourceCopy(item)); });
+        incoming.forEach(item => {
+          const key = sourceListKey(context.field, item);
+          if (ambiguous.has(key) || currentKeys.has(key) || oldMap.has(key)) return;
+          if (factRows && (merged.length >= LIST_LIMITS.facts || (key.startsWith('information:') && !establishedInformation(item.value)))) return;
+          merged.push(sourceCopy(item));
+        });
         return merged;
       }
     }
@@ -219,7 +253,16 @@
       const conflicts = [];
       const before = JSON.stringify(character);
       fields.forEach(field => {
-        character[field] = mergeSourceValue(character[field], baseline?.[field], incoming[field], { known: Boolean(baseline && Object.hasOwn(baseline, field)), field, path: [field], label: SOURCE_LABELS[field] || field, conflicts });
+        const context = { known: Boolean(baseline && Object.hasOwn(baseline, field)), field, path: [field], label: SOURCE_LABELS[field] || field, conflicts };
+        if (field === 'gender') {
+          const current = Dossier.getInformationValue(character, field);
+          const previous = baseline && Dossier.getInformationValue(baseline, field);
+          context.informationValue = true;
+          context.explicitlyCleared = !current && (character.genderIsPrimary || character.facts.some(fact => sourceListKey('facts', fact) === 'information:gender' && fact.informationPrimary));
+          Dossier.setInformationValue(character, field, mergeSourceValue(current, previous, incoming.gender, context));
+        } else {
+          character[field] = mergeSourceValue(character[field], baseline?.[field], incoming[field], context);
+        }
       });
       if (before !== JSON.stringify(character)) { changedCharacterIds.add(character.id); dirty = true; }
       if (conflicts.length) {
@@ -738,6 +781,10 @@
     $('source-review').showModal();
   }
   function applySourceConflict(character, conflict) {
+    if (conflict.path.length === 1 && conflict.path[0] === 'gender') {
+      Dossier.setInformationValue(character, 'gender', conflict.incoming);
+      return;
+    }
     let target = character;
     for (let index = 0; index < conflict.path.length; index += 1) {
       const segment = conflict.path[index], last = index === conflict.path.length - 1;

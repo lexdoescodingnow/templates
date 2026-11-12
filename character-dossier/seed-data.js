@@ -777,6 +777,18 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "5 August"
+        },
+        {
+          "label": "Residency",
+          "value": "Los Angeles"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "aaron"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
         }
       ],
       "currentChapter": "",
@@ -981,6 +993,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "11 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "ade"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -1089,6 +1109,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "16 July"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "adriel"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -1163,6 +1191,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "13 May"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "akara"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -1221,7 +1257,7 @@ var DOSSIER_SEED = {
       "nickname": "alastair",
       "age": "26",
       "pronouns": "he / him",
-      "gender": "",
+      "gender": "Cisgender Male",
       "occupation": "cameraman",
       "location": "",
       "writer": "",
@@ -1233,6 +1269,62 @@ var DOSSIER_SEED = {
         {
           "label": "Face claim",
           "value": "choi soobin"
+        },
+        {
+          "label": "Birthday",
+          "value": "12 July"
+        },
+        {
+          "label": "Blood Type",
+          "value": "O-"
+        },
+        {
+          "label": "Chinese Zodiac",
+          "value": "Tiger"
+        },
+        {
+          "label": "Ethnicity",
+          "value": "Korean"
+        },
+        {
+          "label": "Favorite Color",
+          "value": "Blue"
+        },
+        {
+          "label": "Favorite Food",
+          "value": "Gravy"
+        },
+        {
+          "label": "Languages",
+          "value": "English"
+        },
+        {
+          "label": "MBTI",
+          "value": "ISFJ"
+        },
+        {
+          "label": "Nationality",
+          "value": "Scottish"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "Allie, Al"
+        },
+        {
+          "label": "Residency",
+          "value": "Los Feliz, Los Angeles, CA"
+        },
+        {
+          "label": "Romanticality",
+          "value": "Biromantic"
+        },
+        {
+          "label": "Sexuality",
+          "value": "Bisexual"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -1307,6 +1399,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "27 June"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "alec"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -1349,6 +1449,26 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "183 cm"
+        },
+        {
+          "label": "Blood Type",
+          "value": "O"
+        },
+        {
+          "label": "Languages",
+          "value": "English, Korean and Spanish (fluent)"
+        },
+        {
+          "label": "Nationality",
+          "value": "American"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "alex"
         }
       ],
       "currentChapter": "",
@@ -1417,6 +1537,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "7 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "alfie"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -1451,6 +1579,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "7 June"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "andy"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Gemini"
         }
       ],
       "currentChapter": "",
@@ -1559,6 +1695,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "13 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "ant"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -1844,6 +1988,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "3 December"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "artie"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Sagittarius"
         }
       ],
       "currentChapter": "",
@@ -2086,6 +2238,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "13 February"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "asher"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -2175,6 +2335,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "13 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "gus"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -2494,6 +2662,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "29 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jay"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -2636,6 +2812,22 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "160 cm"
+        },
+        {
+          "label": "Blood Type",
+          "value": "A"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jiae"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -2806,6 +2998,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "10 October"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "yujun"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -3081,6 +3281,26 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "15 May"
+        },
+        {
+          "label": "Blood Type",
+          "value": "B"
+        },
+        {
+          "label": "MBTI",
+          "value": "ISTP"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jae"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -3509,6 +3729,10 @@ var DOSSIER_SEED = {
         {
           "label": "sexuality",
           "value": "undecided"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "yu"
         }
       ],
       "currentChapter": "",
@@ -3874,6 +4098,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "24 December"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "caleb"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -4210,6 +4442,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "13 October"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "daejin"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -4244,6 +4484,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "14 May"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "min"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -4312,6 +4560,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "22 March"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "suho"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -5774,6 +6030,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "10 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "ci"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -5864,7 +6128,7 @@ var DOSSIER_SEED = {
       "nickname": "clarity",
       "age": "26",
       "pronouns": "he / him",
-      "gender": "",
+      "gender": "Male",
       "occupation": "idol / member of THPE",
       "location": "",
       "writer": "",
@@ -5884,6 +6148,18 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "174 cm"
+        },
+        {
+          "label": "Blood Type",
+          "value": "A"
+        },
+        {
+          "label": "Nationality",
+          "value": "Thai"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "clarity"
         }
       ],
       "currentChapter": "",
@@ -5958,6 +6234,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "13 February"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "cody"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -6058,6 +6342,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "1 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "cole"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -6132,6 +6424,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "8 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "eddie"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -6449,6 +6749,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ESTP"
+        },
+        {
+          "label": "Languages",
+          "value": "Korean (fluent), English (conversational)"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "rex"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -6483,6 +6799,26 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "15 March"
+        },
+        {
+          "label": "Blood Type",
+          "value": "A"
+        },
+        {
+          "label": "MBTI",
+          "value": "ESTJ"
+        },
+        {
+          "label": "Nationality",
+          "value": "Mexican"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Pisces"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "diego"
         }
       ],
       "currentChapter": "",
@@ -6837,6 +7173,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "3 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "zhiyuan"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -6992,6 +7336,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "23 June"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "dustin"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -7149,6 +7501,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "26 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "elias"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Sagittarius"
         }
       ],
       "currentChapter": "",
@@ -7638,6 +7998,10 @@ var DOSSIER_SEED = {
         {
           "label": "Face claim",
           "value": "fan cheng chang"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "rett"
         }
       ],
       "currentChapter": "",
@@ -7723,6 +8087,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "7 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "finn"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -7797,6 +8169,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "10 February"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "forest"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -7873,6 +8253,30 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "183 cm"
+        },
+        {
+          "label": "Ethnicity",
+          "value": "Mixed race"
+        },
+        {
+          "label": "Languages",
+          "value": "English and Korean (fluent)"
+        },
+        {
+          "label": "Blood Type",
+          "value": "AB"
+        },
+        {
+          "label": "Nationality",
+          "value": "American"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "frank"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -7996,6 +8400,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "25 December"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "fred"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -8091,6 +8503,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ISTP"
+        },
+        {
+          "label": "Languages",
+          "value": "Korean (fluent), English (conversational)"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jack"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -8137,6 +8565,14 @@ var DOSSIER_SEED = {
         {
           "label": "Family",
           "value": "Adoptive father of Nora and Sero"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "Gabe"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
         }
       ],
       "currentChapter": "Returning to teaching while supporting Lucian and their children.",
@@ -8394,6 +8830,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ISFJ"
+        },
+        {
+          "label": "Languages",
+          "value": "Korean (fluent), English (conversational)"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "happy"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -8485,6 +8937,22 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "22 December"
+        },
+        {
+          "label": "Blood Type",
+          "value": "AB"
+        },
+        {
+          "label": "MBTI",
+          "value": "ESTP"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "ultra"
         }
       ],
       "currentChapter": "",
@@ -8993,6 +9461,10 @@ var DOSSIER_SEED = {
         {
           "label": "Face claim",
           "value": "cha joowan"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jay"
         }
       ],
       "currentChapter": "",
@@ -9088,6 +9560,26 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ENFP"
+        },
+        {
+          "label": "Languages",
+          "value": "Korean and English (bilingual), Japanese (conversational)"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Residency",
+          "value": "Seoul"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "billy"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -9130,6 +9622,22 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "165 cm"
+        },
+        {
+          "label": "Blood Type",
+          "value": "AB"
+        },
+        {
+          "label": "Nationality",
+          "value": "Canadian"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "seoyeon"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -9236,6 +9744,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "6 December"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "hiro"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Sagittarius"
         }
       ],
       "currentChapter": "",
@@ -9270,6 +9786,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "25 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "hao"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -9361,6 +9885,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "4 October"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "liang"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -9659,6 +10191,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "20 October"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "hoseong"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -10245,6 +10785,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "17 March"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jamie"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Pisces"
         }
       ],
       "currentChapter": "",
@@ -10669,6 +11217,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "6 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "yejoon"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -10737,6 +11293,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "18 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jessi"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -10806,7 +11370,7 @@ var DOSSIER_SEED = {
         },
         {
           "label": "western zodiac",
-          "value": "ENTJ"
+          "value": "Cancer"
         },
         {
           "label": "chinese zodiac",
@@ -10933,6 +11497,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "30 May"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "ducky"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Gemini"
         }
       ],
       "currentChapter": "",
@@ -11214,6 +11786,22 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "180 cm"
+        },
+        {
+          "label": "Blood Type",
+          "value": "O"
+        },
+        {
+          "label": "Nationality",
+          "value": "British"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "joe"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Pisces"
         }
       ],
       "currentChapter": "",
@@ -11454,6 +12042,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "15 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "JJ"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -12016,6 +12612,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "16 October"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jules"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -12094,6 +12698,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ENTJ"
+        },
+        {
+          "label": "Languages",
+          "value": "Korean (fluent), English (conversational)"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "min"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -12217,6 +12837,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "18 February"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "taejoo"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -12308,6 +12936,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "14 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "bin"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -12376,6 +13012,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "24 August"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "juni"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Virgo"
         }
       ],
       "currentChapter": "",
@@ -12410,6 +13054,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "14 October"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "kai"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -12518,6 +13170,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "18 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "danny"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -12613,6 +13273,18 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ESFP"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jun"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -12720,6 +13392,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "5 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "mini"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -12828,6 +13508,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "14 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "heechan"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -12862,6 +13550,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "18 March"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jihwan"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Pisces"
         }
       ],
       "currentChapter": "",
@@ -13309,6 +14005,26 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "23 July"
+        },
+        {
+          "label": "Blood Type",
+          "value": "O"
+        },
+        {
+          "label": "MBTI",
+          "value": "ISTP"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "taesung"
         }
       ],
       "currentChapter": "",
@@ -13383,6 +14099,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "17 June"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "yuki"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Gemini"
         }
       ],
       "currentChapter": "",
@@ -13457,6 +14181,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "10 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "minharu"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -14022,6 +14754,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "26 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "kyo"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -14056,6 +14796,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "24 September"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "lena"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -14382,6 +15130,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "1 May"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "lewis"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -14456,6 +15212,18 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "30 September"
+        },
+        {
+          "label": "Residency",
+          "value": "Hollywood Hills"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "tao"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -14611,6 +15379,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "24 September"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "chunhee"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -14649,6 +15425,14 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "INTJ"
+        },
+        {
+          "label": "Nationality",
+          "value": "American"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "lucas"
         }
       ],
       "currentChapter": "",
@@ -15036,7 +15820,7 @@ var DOSSIER_SEED = {
         },
         {
           "label": "Languages",
-          "value": "English, Korean"
+          "value": "English, Korean, some Malay"
         },
         {
           "label": "Preferred name",
@@ -15758,6 +16542,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "8 September"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "maddie"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Virgo"
         }
       ],
       "currentChapter": "",
@@ -15939,6 +16731,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "2 June"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "matty"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Gemini"
         }
       ],
       "currentChapter": "",
@@ -16013,6 +16813,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "31 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "tehir"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -16441,6 +17249,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "12 February"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "mia"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -16530,6 +17346,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "10 July"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "micah"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -16621,6 +17445,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "26 February"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "mike"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Pisces"
         }
       ],
       "currentChapter": "",
@@ -16808,6 +17640,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "2 February"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "miley"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -16882,6 +17722,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "19 August"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "milo"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
         }
       ],
       "currentChapter": "",
@@ -17133,6 +17981,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "1 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "miren"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -17171,6 +18027,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ENTJ"
+        },
+        {
+          "label": "Languages",
+          "value": "Korean and English (fluent), French (conversational)"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "draco"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -17249,6 +18121,26 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ISFJ"
+        },
+        {
+          "label": "Blood Type",
+          "value": "AB"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Residency",
+          "value": "Seoul"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "duke"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -17283,6 +18175,22 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "8 March"
+        },
+        {
+          "label": "Blood Type",
+          "value": "O"
+        },
+        {
+          "label": "MBTI",
+          "value": "ISFJ"
+        },
+        {
+          "label": "Nationality",
+          "value": "Japanese"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "tsu"
         }
       ],
       "currentChapter": "",
@@ -17795,6 +18703,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "22 May"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "naveighbean"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Gemini"
         }
       ],
       "currentChapter": "",
@@ -17837,6 +18753,18 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "181 cm"
+        },
+        {
+          "label": "Blood Type",
+          "value": "O"
+        },
+        {
+          "label": "Nationality",
+          "value": "American"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "nicky"
         }
       ],
       "currentChapter": "",
@@ -17905,6 +18833,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "5 May"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "niran"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -18301,6 +19237,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "1 September"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "noel"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Virgo"
         }
       ],
       "currentChapter": "",
@@ -18416,7 +19360,7 @@ var DOSSIER_SEED = {
         },
         {
           "label": "blood type",
-          "value": "B-"
+          "value": "O"
         },
         {
           "label": "favorite color",
@@ -18520,6 +19464,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "29 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "oprah"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -18554,6 +19506,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "27 December"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "haeun"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -20471,6 +21431,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "9 May"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "nix"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -20611,6 +21579,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "16 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "chen"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -20861,6 +21837,10 @@ var DOSSIER_SEED = {
         {
           "label": "Face claim",
           "value": "lee chan"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "rain"
         }
       ],
       "currentChapter": "",
@@ -21424,6 +22404,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "2 December"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "roman"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Sagittarius"
         }
       ],
       "currentChapter": "",
@@ -21492,6 +22480,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "10 July"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "ryan"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -21691,6 +22687,22 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "168 cm"
+        },
+        {
+          "label": "Blood Type",
+          "value": "B"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "hyemi"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -21764,7 +22776,7 @@ var DOSSIER_SEED = {
       "nickname": "hyunwoo",
       "age": "27",
       "pronouns": "she / her",
-      "gender": "",
+      "gender": "Transgender woman",
       "occupation": "idol / member of TO@ME",
       "location": "",
       "writer": "",
@@ -21784,6 +22796,30 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "INFP"
+        },
+        {
+          "label": "Favorite Food",
+          "value": "Lobster"
+        },
+        {
+          "label": "Residency",
+          "value": "Los Angeles and Seoul"
+        },
+        {
+          "label": "Blood Type",
+          "value": "O"
+        },
+        {
+          "label": "Languages",
+          "value": "Japanese and Korean (bilingual)"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "hyunwoo"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Pisces"
         }
       ],
       "currentChapter": "",
@@ -22020,6 +23056,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "12 July"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "seb"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -22094,6 +23138,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "7 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "kota"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -22168,6 +23220,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "20 September"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "hakyun"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Virgo"
         }
       ],
       "currentChapter": "",
@@ -22242,6 +23302,26 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "8 August"
+        },
+        {
+          "label": "Blood Type",
+          "value": "AB"
+        },
+        {
+          "label": "MBTI",
+          "value": "ENTJ"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "inseong"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
         }
       ],
       "currentChapter": "",
@@ -22451,6 +23531,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "21 March"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "seojun"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -22558,7 +23646,7 @@ var DOSSIER_SEED = {
       "nickname": "cam",
       "age": "29",
       "pronouns": "they / them",
-      "gender": "",
+      "gender": "Non-binary",
       "occupation": "choreographer & professional dancer",
       "location": "",
       "writer": "",
@@ -22574,6 +23662,26 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "15 May"
+        },
+        {
+          "label": "Blood Type",
+          "value": "O"
+        },
+        {
+          "label": "MBTI",
+          "value": "INFP"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "cam"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -22648,6 +23756,26 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "5 April"
+        },
+        {
+          "label": "Blood Type",
+          "value": "A"
+        },
+        {
+          "label": "MBTI",
+          "value": "ENTJ"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jaehwa"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -22838,7 +23966,7 @@ var DOSSIER_SEED = {
         },
         {
           "label": "Languages",
-          "value": "Korean, Korean"
+          "value": "English, Korean"
         },
         {
           "label": "preferred name",
@@ -23094,6 +24222,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "INFP"
+        },
+        {
+          "label": "Languages",
+          "value": "Mandarin, Korean and English"
+        },
+        {
+          "label": "Favorite Food",
+          "value": "Steamed buns with honey"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "edward"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -23469,6 +24613,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "5 May"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "sangmin"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -23541,6 +24693,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "INFP"
+        },
+        {
+          "label": "Blood Type",
+          "value": "B"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "siwoo"
         }
       ],
       "currentChapter": "",
@@ -23838,6 +25006,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "ISFJ"
+        },
+        {
+          "label": "Languages",
+          "value": "Korean and English (fluent), Japanese (conversational)"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jiyong"
         }
       ],
       "currentChapter": "",
@@ -23944,6 +25128,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "12 July"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "yonggi"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Cancer"
         }
       ],
       "currentChapter": "",
@@ -24101,6 +25293,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "6 December"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "stella"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Sagittarius"
         }
       ],
       "currentChapter": "",
@@ -24183,6 +25383,22 @@ var DOSSIER_SEED = {
         {
           "label": "Height",
           "value": "178 cm"
+        },
+        {
+          "label": "Blood Type",
+          "value": "A"
+        },
+        {
+          "label": "Nationality",
+          "value": "Japanese"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "hiro"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Virgo"
         }
       ],
       "currentChapter": "",
@@ -24257,6 +25473,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "4 June"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "ren"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Gemini"
         }
       ],
       "currentChapter": "",
@@ -24529,6 +25753,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "2 October"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "theo"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -25337,6 +26569,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "19 March"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "bao"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Pisces"
         }
       ],
       "currentChapter": "",
@@ -25371,6 +26611,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "9 June"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "val"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Gemini"
         }
       ],
       "currentChapter": "",
@@ -25599,6 +26847,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "16 November"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "lin"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Scorpio"
         }
       ],
       "currentChapter": "",
@@ -25722,6 +26978,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "24 March"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "bowen"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -25937,6 +27201,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "9 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "will"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Capricorn"
         }
       ],
       "currentChapter": "",
@@ -26100,6 +27372,22 @@ var DOSSIER_SEED = {
         {
           "label": "MBTI",
           "value": "INTJ"
+        },
+        {
+          "label": "Languages",
+          "value": "Korean and English (fluent), Japanese (working proficiency)"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "dexter"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Libra"
         }
       ],
       "currentChapter": "",
@@ -26226,7 +27514,7 @@ var DOSSIER_SEED = {
         },
         {
           "label": "Languages",
-          "value": "Chinese, Chinese"
+          "value": "Mandarin, Korean, English"
         },
         {
           "label": "preferred name",
@@ -26628,6 +27916,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "1 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "li"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aries"
         }
       ],
       "currentChapter": "",
@@ -26696,6 +27992,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "15 August"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "xiaoyang"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
         }
       ],
       "currentChapter": "",
@@ -26860,6 +28164,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "10 August"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "yin"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Leo"
         }
       ],
       "currentChapter": "",
@@ -26963,6 +28275,26 @@ var DOSSIER_SEED = {
         {
           "label": "Group position",
           "value": "Centre and main vocalist of TO@ME"
+        },
+        {
+          "label": "Favorite Food",
+          "value": "Bread and peach-flavoured foods"
+        },
+        {
+          "label": "Nationality",
+          "value": "South Korean"
+        },
+        {
+          "label": "Sexuality",
+          "value": "Gay"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "han"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Gemini"
         }
       ],
       "currentChapter": "Haneul is dating Taejoo after his relationship with Taein ended.",
@@ -27525,6 +28857,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "31 January"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "B"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Aquarius"
         }
       ],
       "currentChapter": "",
@@ -27836,6 +29176,14 @@ var DOSSIER_SEED = {
         {
           "label": "Birthday",
           "value": "22 April"
+        },
+        {
+          "label": "Preferred Name",
+          "value": "jie"
+        },
+        {
+          "label": "Western Zodiac",
+          "value": "Taurus"
         }
       ],
       "currentChapter": "",
@@ -27920,10 +29268,9 @@ var DOSSIER_NOTICES = {
     "No verified location pin supplied."
   ],
   "alastair-choi": [
-    "Enriched from the current encyclopaedia and matched story/comms sources; core details follow the latest directory.",
+    "The Information panel includes details from the published development profile.",
     "No playlist supplied in the reviewed sources.",
-    "No verified location pin supplied.",
-    "Birthday not established in the reviewed sources."
+    "No verified location pin supplied."
   ],
   "alec-rivera": [
     "Enriched from the current encyclopaedia and matched story/comms sources; core details follow the latest directory.",
@@ -28156,7 +29503,7 @@ var DOSSIER_NOTICES = {
     "No verified location pin supplied."
   ],
   "gabriel-yang": [
-    "Imported from the existing development post and current encyclopaedia. The latest directory controls age, occupation and partners."
+    "The Information panel includes details from the published development profile."
   ],
   "geum-jung": [
     "Enriched from the current encyclopaedia and matched story/comms sources; core details follow the latest directory.",
@@ -28795,7 +30142,7 @@ var DOSSIER_NOTICES = {
 };
 var DOSSIER_SOURCE_METADATA = {
   "aaron-wang": {
-    "revision": "cast-2026-11-06-3dee4748dd62cb2b",
+    "revision": "cast-2026-11-12-c64478f6ccec8f8c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28808,7 +30155,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -28826,7 +30173,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "adrian-baek": {
-    "revision": "cast-2026-11-06-effe62ac3fc1fe06",
+    "revision": "cast-2026-11-12-38656cb4258eca30",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28839,7 +30186,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -28856,7 +30203,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "adriel-sang": {
-    "revision": "cast-2026-11-06-7f81c465b5d515e4",
+    "revision": "cast-2026-11-12-75debaabf6b20606",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28869,7 +30216,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -28887,7 +30234,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "akara-siripong": {
-    "revision": "cast-2026-11-06-929864046053a7e6",
+    "revision": "cast-2026-11-12-8f1bf683fe9592a4",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28900,7 +30247,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -28917,9 +30264,9 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "alastair-choi": {
-    "revision": "cast-2026-11-06-b09bf3828055a142",
-    "coverage": "encyclopaedia",
-    "label": "Encyclopaedia details",
+    "revision": "cast-2026-11-12-9ed7f554891b5087",
+    "coverage": "development",
+    "label": "Development post",
     "sourceUrls": [
       {
         "url": "https://github.com/lexdoescodingnow/templates/blob/main/forum-posts/characters/characters.json",
@@ -28928,9 +30275,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_428cac97bdec8191a031085b88b72ff7",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://bluehour.jcink.net/index.php?showtopic=117789#entry3430939",
+        "label": "Development post"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -28943,11 +30294,12 @@ var DOSSIER_SOURCE_METADATA = {
       "facts",
       "timeline",
       "writer",
-      "polaroids"
+      "polaroids",
+      "gender"
     ]
   },
   "alec-rivera": {
-    "revision": "cast-2026-11-06-6937b77f7c5ce4c1",
+    "revision": "cast-2026-11-12-235ac7d9c3c57c15",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28960,7 +30312,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -28975,7 +30327,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "alexander-park": {
-    "revision": "cast-2026-11-06-386bd95f20b0cbdc",
+    "revision": "cast-2026-11-12-4c7f3ea2ef78012a",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -28986,9 +30338,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_428cac97bdec8191a031085b88b72ff7",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Alex",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29004,7 +30360,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "alfie-shin": {
-    "revision": "cast-2026-11-06-66c5bb89bfa1af6b",
+    "revision": "cast-2026-11-12-4f004ee273744ab2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29017,7 +30373,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29032,7 +30388,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "andrew-kwon": {
-    "revision": "cast-2026-11-06-8762495bc414fac4",
+    "revision": "cast-2026-11-12-a33a2023b6c8b1fd",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29045,7 +30401,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29062,7 +30418,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "antony-moon": {
-    "revision": "cast-2026-11-06-2236c40428592c59",
+    "revision": "cast-2026-11-12-a3b1489d2a7b58f8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29075,7 +30431,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29092,7 +30448,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "arthur-chung": {
-    "revision": "cast-2026-11-06-3e661569e9943f14",
+    "revision": "cast-2026-11-12-e6b7462512ce3881",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29105,7 +30461,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29122,7 +30478,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "asher-nam": {
-    "revision": "cast-2026-11-06-245f0cab7a4cfcac",
+    "revision": "cast-2026-11-12-dbf03fff9aad856d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29135,7 +30491,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29152,7 +30508,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "august-tang": {
-    "revision": "cast-2026-11-06-ac4dc3694806e0ad",
+    "revision": "cast-2026-11-12-dde100e3e8a95180",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29165,7 +30521,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29220,7 +30576,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "bae-jaehoon": {
-    "revision": "cast-2026-11-06-f67059d3f37719b9",
+    "revision": "cast-2026-11-12-5ddb96908c66a881",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29233,7 +30589,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29249,7 +30605,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "baek-jiae": {
-    "revision": "cast-2026-11-06-b0e152cab4169e11",
+    "revision": "cast-2026-11-12-ee162de99b571294",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29260,9 +30616,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_428cac97bdec8191a031085b88b72ff7",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Jiae",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29307,7 +30667,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "baek-yujun": {
-    "revision": "cast-2026-11-06-55a3bf90411f68cc",
+    "revision": "cast-2026-11-12-9ae31a552ad5800e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29320,7 +30680,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29428,7 +30788,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "beom-jaehyun": {
-    "revision": "cast-2026-11-06-e3c1666b28af2f00",
+    "revision": "cast-2026-11-12-80ba6a50f825e0c2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29439,9 +30799,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_428cac97bdec8191a031085b88b72ff7",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Jaehyun",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29506,7 +30870,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "byun-yuseop": {
-    "revision": "cast-2026-11-06-0b1c1871d1508faf",
+    "revision": "cast-2026-11-12-241060d5470a1743",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -29527,7 +30891,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29598,7 +30962,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "caleb-sim": {
-    "revision": "cast-2026-11-06-ef5045dc3220ae2f",
+    "revision": "cast-2026-11-12-6de13fbde8c9c0f2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29611,7 +30975,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29673,7 +31037,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "chan-daejin": {
-    "revision": "cast-2026-11-06-49cb0743be99707d",
+    "revision": "cast-2026-11-12-8c43f72e9840e2b6",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29686,7 +31050,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29701,7 +31065,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cho-minho": {
-    "revision": "cast-2026-11-06-bfe77a7de72f98ab",
+    "revision": "cast-2026-11-12-efb2dcef98a41e40",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29714,7 +31078,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29730,7 +31094,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cho-suho": {
-    "revision": "cast-2026-11-06-0419c73dac53e870",
+    "revision": "cast-2026-11-12-4bec3521f1fd1fbb",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29743,7 +31107,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29951,7 +31315,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cian-campbell": {
-    "revision": "cast-2026-11-06-7371a0b2a7f2c2ee",
+    "revision": "cast-2026-11-12-1b8c3b6d209855a5",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29964,7 +31328,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -29981,7 +31345,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "clarity-prasit-chatri": {
-    "revision": "cast-2026-11-06-5ee20a25543b2edb",
+    "revision": "cast-2026-11-12-14342f8d3fa496ec",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -29992,9 +31356,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Clarity",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30007,11 +31375,12 @@ var DOSSIER_SOURCE_METADATA = {
       "facts",
       "timeline",
       "writer",
-      "polaroids"
+      "polaroids",
+      "gender"
     ]
   },
   "cody-baek": {
-    "revision": "cast-2026-11-06-50257da0643fe456",
+    "revision": "cast-2026-11-12-e148f72135ae6308",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30024,7 +31393,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30040,7 +31409,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "cole-sim": {
-    "revision": "cast-2026-11-06-50fc704df5e45749",
+    "revision": "cast-2026-11-12-8e415d8640053b9f",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30053,7 +31422,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30070,7 +31439,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "congressman-edison-lee": {
-    "revision": "cast-2026-11-06-4843ef22ce4908b6",
+    "revision": "cast-2026-11-12-3f0c0dfd8f6527af",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30083,7 +31452,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30180,7 +31549,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "deung-changmin": {
-    "revision": "cast-2026-11-06-92a01dc49441a21e",
+    "revision": "cast-2026-11-12-267a12ad6a13b36c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30191,9 +31560,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Rex",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30208,7 +31581,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "diego-martinez": {
-    "revision": "cast-2026-11-06-bbd08c7963de79a3",
+    "revision": "cast-2026-11-12-54d8e9882363f91f",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30219,9 +31592,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Diego",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30283,7 +31660,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "dr-zhou-zhiyuan": {
-    "revision": "cast-2026-11-06-7eec0c35fa83d364",
+    "revision": "cast-2026-11-12-4d8391b953c50ddf",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30296,7 +31673,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30313,7 +31690,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "dustin-jeon": {
-    "revision": "cast-2026-11-06-570bca35e6f274b1",
+    "revision": "cast-2026-11-12-7cc1185d39ebdea6",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30326,7 +31703,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30343,7 +31720,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "elias-lim": {
-    "revision": "cast-2026-11-06-3c7ec711e4b49e38",
+    "revision": "cast-2026-11-12-88bdb295f7559d75",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30356,7 +31733,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30419,7 +31796,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "finn-campbell": {
-    "revision": "cast-2026-11-06-a85903ff46103160",
+    "revision": "cast-2026-11-12-9b82fd0c61e9e8a8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30432,7 +31809,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30449,7 +31826,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "forest-lee": {
-    "revision": "cast-2026-11-06-ed648d4f6d23f2fb",
+    "revision": "cast-2026-11-12-97d0f3bc720099bc",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30462,7 +31839,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30478,7 +31855,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "franklin-jwa": {
-    "revision": "cast-2026-11-06-60f1384e8a231ac9",
+    "revision": "cast-2026-11-12-2b095cf8a7ace836",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30489,9 +31866,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Frank",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30508,7 +31889,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "freddie-lim": {
-    "revision": "cast-2026-11-06-4d513964af2a0258",
+    "revision": "cast-2026-11-12-94134354355b43ef",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30521,7 +31902,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30539,7 +31920,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "ga-baekhyeon": {
-    "revision": "cast-2026-11-06-4efa368912a2dab2",
+    "revision": "cast-2026-11-12-a574b60b5f7a5e26",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30550,9 +31931,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Jack",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30567,7 +31952,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gabriel-yang": {
-    "revision": "cast-2026-11-06-eafd63a19730cd9f",
+    "revision": "cast-2026-11-12-a4d007ca61f206a2",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -30581,7 +31966,7 @@ var DOSSIER_SOURCE_METADATA = {
       },
       {
         "url": "https://bluehour.jcink.net/index.php?showtopic=54637#entry1681566",
-        "label": "Source"
+        "label": "Development post"
       },
       {
         "url": "https://bluehour.jcink.net/index.php?showtopic=54637#entry2221635",
@@ -30596,7 +31981,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30622,7 +32007,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "geum-jung": {
-    "revision": "cast-2026-11-06-51eb901e52a1aa18",
+    "revision": "cast-2026-11-12-3479914d28316839",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30633,9 +32018,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Happy",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30652,7 +32041,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gi-daehyun": {
-    "revision": "cast-2026-11-06-762d61f92a5ef9a1",
+    "revision": "cast-2026-11-12-0c27264f1205ccab",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30663,9 +32052,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Ultra",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30729,7 +32122,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gwan-janghoon": {
-    "revision": "cast-2026-11-06-f6d1100dd254fa1e",
+    "revision": "cast-2026-11-12-b68cbba484827aa3",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30742,7 +32135,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30759,7 +32152,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "gyeon-seunghwan": {
-    "revision": "cast-2026-11-06-deac9bf9a30d80e5",
+    "revision": "cast-2026-11-12-c10e97971628393e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30770,9 +32163,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Billy",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30787,7 +32184,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "han-seoyeon": {
-    "revision": "cast-2026-11-06-d6cd53197d0a8b1a",
+    "revision": "cast-2026-11-12-8614be9c0f802c67",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30798,9 +32195,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_adb9bb0bd79481918be4495b0eadd289",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Seoyeon",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30817,7 +32218,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "hiro-kimura": {
-    "revision": "cast-2026-11-06-726ea9b222ab7f85",
+    "revision": "cast-2026-11-12-803728586c5d4619",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30830,7 +32231,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30845,7 +32246,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "huang-haoyu": {
-    "revision": "cast-2026-11-06-caa2557793f99402",
+    "revision": "cast-2026-11-12-ba98e3b1c67633f8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30858,7 +32259,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30875,7 +32276,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "huang-liang": {
-    "revision": "cast-2026-11-06-67ccd155055c2063",
+    "revision": "cast-2026-11-12-7e9e64dcb99925fe",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30888,7 +32289,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -30952,7 +32353,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "hwak-hoseong": {
-    "revision": "cast-2026-11-06-d3efe0820a1cc88d",
+    "revision": "cast-2026-11-12-23a7b09ec9cc9fc5",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -30965,7 +32366,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31072,7 +32473,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jamie-boo": {
-    "revision": "cast-2026-11-06-270ccb86c70d0953",
+    "revision": "cast-2026-11-12-4fb16e1bc78c6cbc",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31085,7 +32486,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31184,7 +32585,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jeon-yejoon": {
-    "revision": "cast-2026-11-06-f78622de688c4e0a",
+    "revision": "cast-2026-11-12-e3f09e24849683ef",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31197,7 +32598,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31213,7 +32614,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jessica-kim": {
-    "revision": "cast-2026-11-06-81988793f4a62b20",
+    "revision": "cast-2026-11-12-3f54bc23bee5da7c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31226,7 +32627,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31241,7 +32642,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jett-kim": {
-    "revision": "cast-2026-11-06-210653448497c6eb",
+    "revision": "cast-2026-11-12-a6a7fdc0e93df69e",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -31262,7 +32663,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31287,7 +32688,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jeung-duckhwan": {
-    "revision": "cast-2026-11-06-ef6880309525b252",
+    "revision": "cast-2026-11-12-09a730f552dbbfe7",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31300,7 +32701,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31355,7 +32756,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "joseph-gil": {
-    "revision": "cast-2026-11-06-b5bd0a02f7d3975e",
+    "revision": "cast-2026-11-12-21adce0661a917d4",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31366,9 +32767,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_adb9bb0bd79481918be4495b0eadd289",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Joseph",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31385,7 +32790,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "journey-parkinson-kim": {
-    "revision": "cast-2026-11-06-4a0f6e1e947e6226",
+    "revision": "cast-2026-11-12-b83644bf08723be2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31398,7 +32803,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31461,7 +32866,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "julian-lee": {
-    "revision": "cast-2026-11-06-0ad0fcad97756c26",
+    "revision": "cast-2026-11-12-c3a97d580666acea",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31474,7 +32879,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31491,7 +32896,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jung-minseo": {
-    "revision": "cast-2026-11-06-eb8a223480d6a23b",
+    "revision": "cast-2026-11-12-52eab97e557c3049",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31502,9 +32907,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_adb9bb0bd79481918be4495b0eadd289",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Minseo",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31521,7 +32930,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jung-taejoo": {
-    "revision": "cast-2026-11-06-6869671298b58506",
+    "revision": "cast-2026-11-12-896c65ed74ad174d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31534,7 +32943,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31551,7 +32960,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "jung-woobin": {
-    "revision": "cast-2026-11-06-b1568d5734304926",
+    "revision": "cast-2026-11-12-a146e55665181dee",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31564,7 +32973,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31580,7 +32989,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "junichiro-yamasaki": {
-    "revision": "cast-2026-11-06-d7739002edc1951d",
+    "revision": "cast-2026-11-12-bdca7e016a8be3e1",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31593,7 +33002,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31608,7 +33017,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kai-jeong": {
-    "revision": "cast-2026-11-06-cde7bccf827e1247",
+    "revision": "cast-2026-11-12-8ad1f109ad54b290",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31621,7 +33030,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31638,7 +33047,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kang-danwoo": {
-    "revision": "cast-2026-11-06-1662549475a27577",
+    "revision": "cast-2026-11-12-960619a42788deba",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31651,7 +33060,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31668,7 +33077,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kang-hajun": {
-    "revision": "cast-2026-11-06-21d5c4c6939f8442",
+    "revision": "cast-2026-11-12-09aae7629ece8654",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31679,9 +33088,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_adb9bb0bd79481918be4495b0eadd289",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Hajun",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31699,7 +33112,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kang-minwoo": {
-    "revision": "cast-2026-11-06-fa746eb77406ee28",
+    "revision": "cast-2026-11-12-2b2d0a5bf980d945",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31712,7 +33125,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31729,7 +33142,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kim-heechan": {
-    "revision": "cast-2026-11-06-6489f76f77bf93e4",
+    "revision": "cast-2026-11-12-7b75f7d74acdbc9f",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31742,7 +33155,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31757,7 +33170,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kim-jihwan": {
-    "revision": "cast-2026-11-06-1a2f61f43c085169",
+    "revision": "cast-2026-11-12-c1e158a34a44542c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31770,7 +33183,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31832,7 +33245,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kim-taesung": {
-    "revision": "cast-2026-11-06-a460e42d8a0e9e75",
+    "revision": "cast-2026-11-12-8ee2c6e95fb12aef",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31843,9 +33256,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_adb9bb0bd79481918be4495b0eadd289",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Taesung",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31862,7 +33279,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kobayashi-yuki": {
-    "revision": "cast-2026-11-06-a15594f54213a5dc",
+    "revision": "cast-2026-11-12-336270b9c4034e04",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31875,7 +33292,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -31892,7 +33309,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "kuronuma-minharu": {
-    "revision": "cast-2026-11-06-49723e0d317ff2ab",
+    "revision": "cast-2026-11-12-587fa3921ef6c21a",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -31905,7 +33322,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32058,7 +33475,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lee-kyoahn": {
-    "revision": "cast-2026-11-06-4b45f8e67cb9f652",
+    "revision": "cast-2026-11-12-7a525d464e4a0bc2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32071,7 +33488,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32086,7 +33503,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lena-kwon": {
-    "revision": "cast-2026-11-06-16400f5e340bd1eb",
+    "revision": "cast-2026-11-12-a2899d658bf860a7",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32099,7 +33516,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32162,7 +33579,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lewis-choi": {
-    "revision": "cast-2026-11-06-e7638797a0f53bae",
+    "revision": "cast-2026-11-12-683e3d6e630fc791",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32175,7 +33592,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32192,7 +33609,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "li-tao": {
-    "revision": "cast-2026-11-06-677ff302b3b74f87",
+    "revision": "cast-2026-11-12-b42c32103f7d9b69",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32205,7 +33622,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32223,7 +33640,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lim-chunhee": {
-    "revision": "cast-2026-11-06-61ce91763c7616e9",
+    "revision": "cast-2026-11-12-1168767fbce88818",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32236,7 +33653,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32251,7 +33668,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lucas-choi": {
-    "revision": "cast-2026-11-06-311f9759cbac0a3e",
+    "revision": "cast-2026-11-12-8e86a6035349097a",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32266,9 +33683,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://bluehour.jcink.net/index.php?showtopic=54561",
         "label": "Development post"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Lucas_Choi",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32287,7 +33708,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "lucian-yang": {
-    "revision": "cast-2026-11-06-3dad824e75a9d46e",
+    "revision": "cast-2026-11-12-086399442ea1fec0",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -32308,7 +33729,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32379,7 +33800,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "madison-sinclair": {
-    "revision": "cast-2026-11-06-1b46ad4ab5c916d0",
+    "revision": "cast-2026-11-12-bb942d16b17bddfc",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32392,7 +33813,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32452,7 +33873,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "matthew-shin": {
-    "revision": "cast-2026-11-06-17e7b015f6fb0112",
+    "revision": "cast-2026-11-12-5a903a84e3b5b9c8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32465,7 +33886,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32482,7 +33903,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mawaan-tehir": {
-    "revision": "cast-2026-11-06-2a8f748a0add4c36",
+    "revision": "cast-2026-11-12-85645eab8534a481",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32495,7 +33916,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32601,7 +34022,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mia-park": {
-    "revision": "cast-2026-11-06-3ca6bc5621376c90",
+    "revision": "cast-2026-11-12-cdef00008d579c2d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32614,7 +34035,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32631,7 +34052,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "micah-ahn": {
-    "revision": "cast-2026-11-06-bfdd6e8ed6279523",
+    "revision": "cast-2026-11-12-7fdc22e312b6a8da",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32644,7 +34065,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32661,7 +34082,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "michael-baek": {
-    "revision": "cast-2026-11-06-e61675a0294431c4",
+    "revision": "cast-2026-11-12-d4d8e78749671a8a",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32674,7 +34095,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32691,7 +34112,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "miles-baek": {
-    "revision": "cast-2026-11-06-0f46f1a6e4c84e74",
+    "revision": "cast-2026-11-12-eb9c733b5785ecd8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32704,7 +34125,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32721,7 +34142,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "milo-kim": {
-    "revision": "cast-2026-11-06-04c0a0dc91de317c",
+    "revision": "cast-2026-11-12-22247ed4d87b8351",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32734,7 +34155,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32794,7 +34215,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "miren-su": {
-    "revision": "cast-2026-11-06-56fa00a2470032c5",
+    "revision": "cast-2026-11-12-ecfef6f752a51e25",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32807,7 +34228,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32822,7 +34243,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mun-dae": {
-    "revision": "cast-2026-11-06-b12fd980426c037f",
+    "revision": "cast-2026-11-12-2c49601042d618d1",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32833,9 +34254,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_5ae0ce9429d88191a60214b42d33f4dd",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Draco",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32852,7 +34277,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "mun-sangook": {
-    "revision": "cast-2026-11-06-dfd6ed3961556953",
+    "revision": "cast-2026-11-12-0a7a8dc05c27938b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32863,9 +34288,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_5ae0ce9429d88191a60214b42d33f4dd",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Duke",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32880,7 +34309,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "nakamura-tsubasa": {
-    "revision": "cast-2026-11-06-de2db00027f5eac1",
+    "revision": "cast-2026-11-12-ceb6e2d70e9302d5",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32891,9 +34320,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_5ae0ce9429d88191a60214b42d33f4dd",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Tsubasa",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32957,7 +34390,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "naveighbean-soup": {
-    "revision": "cast-2026-11-06-949589ce1f7f5a0b",
+    "revision": "cast-2026-11-12-de4b689e129f3e94",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32970,7 +34403,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -32985,7 +34418,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "nicky-villarreal": {
-    "revision": "cast-2026-11-06-a4012cca47757518",
+    "revision": "cast-2026-11-12-72836af3021ee35e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -32996,9 +34429,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_5ae0ce9429d88191a60214b42d33f4dd",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Nicky_Villarreal",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33014,7 +34451,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "niran-chakri": {
-    "revision": "cast-2026-11-06-3fb5460dea576bd4",
+    "revision": "cast-2026-11-12-a113675a9e50bb5f",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33027,7 +34464,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33091,7 +34528,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "noel-hampton": {
-    "revision": "cast-2026-11-06-569e4d3587faee18",
+    "revision": "cast-2026-11-12-eedca1bc2f7eb68e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33104,7 +34541,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33120,7 +34557,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "oliver-min-peters": {
-    "revision": "cast-2026-11-06-b9c82645fcf63ed0",
+    "revision": "cast-2026-11-12-63873772dfacc877",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33141,7 +34578,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33166,7 +34603,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "oprah-winfrey": {
-    "revision": "cast-2026-11-06-74e3ce7838bdcf91",
+    "revision": "cast-2026-11-12-c48369a1007d78ac",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33179,7 +34616,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33194,7 +34631,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "park-haeun": {
-    "revision": "cast-2026-11-06-53c8b2b4351ee343",
+    "revision": "cast-2026-11-12-6193eb20e200b155",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33207,7 +34644,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33362,7 +34799,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "phoenix-wu": {
-    "revision": "cast-2026-11-06-eea125b8e2a8b709",
+    "revision": "cast-2026-11-12-b3dadaf1e2f0bdbc",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33375,7 +34812,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33392,7 +34829,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "qiang-yichen": {
-    "revision": "cast-2026-11-06-f57d39c5dd571f45",
+    "revision": "cast-2026-11-12-fcc9e3331381faa1",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33405,7 +34842,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33422,7 +34859,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "rain-jeon": {
-    "revision": "cast-2026-11-06-4b8734c41a08fea4",
+    "revision": "cast-2026-11-12-cc509334528a5a1f",
     "coverage": "directory",
     "label": "Directory details",
     "sourceUrls": [
@@ -33435,7 +34872,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33497,7 +34934,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "roman-parkinson-kim": {
-    "revision": "cast-2026-11-06-5c900a58c372d962",
+    "revision": "cast-2026-11-12-8383f9cfbca161c7",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33510,7 +34947,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33526,7 +34963,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "ryan-min": {
-    "revision": "cast-2026-11-06-1c8923ca4b5607fc",
+    "revision": "cast-2026-11-12-cef3d733501272ec",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33539,7 +34976,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33556,7 +34993,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "ryu-hyemi": {
-    "revision": "cast-2026-11-06-8252672495dc7ae9",
+    "revision": "cast-2026-11-12-d396ae6366469882",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33567,9 +35004,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Hyemi",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33586,7 +35027,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "sato-hyunwoo": {
-    "revision": "cast-2026-11-06-bb208d852b2c91ed",
+    "revision": "cast-2026-11-12-139092b7188fa32d",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33597,9 +35038,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Hyunwoo",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33612,11 +35057,12 @@ var DOSSIER_SOURCE_METADATA = {
       "facts",
       "timeline",
       "writer",
-      "polaroids"
+      "polaroids",
+      "gender"
     ]
   },
   "sebastian-lee": {
-    "revision": "cast-2026-11-06-a7403ea442c1b00f",
+    "revision": "cast-2026-11-12-8b93e3cf01643cc1",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33629,7 +35075,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33646,7 +35092,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "segasaki-kota": {
-    "revision": "cast-2026-11-06-95f4336aa0c02f07",
+    "revision": "cast-2026-11-12-716c1b37b2600e4c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33659,7 +35105,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33676,7 +35122,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seo-hakyun": {
-    "revision": "cast-2026-11-06-66291d07c9671ba3",
+    "revision": "cast-2026-11-12-e0cd9918f6bce1b6",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33689,7 +35135,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33706,7 +35152,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seo-inseong": {
-    "revision": "cast-2026-11-06-a7ff103eb14435a2",
+    "revision": "cast-2026-11-12-e4258326fc080d08",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33717,9 +35163,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Inseong",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33771,7 +35221,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seojun-lim": {
-    "revision": "cast-2026-11-06-cf1b823efde7ba31",
+    "revision": "cast-2026-11-12-b1819aef32c7292b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33784,7 +35234,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33801,7 +35251,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "seok-cam": {
-    "revision": "cast-2026-11-06-5fa28c69a0f92230",
+    "revision": "cast-2026-11-12-3155eb85eac0e0f8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33812,9 +35262,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Seok_Cam",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33827,11 +35281,12 @@ var DOSSIER_SOURCE_METADATA = {
       "facts",
       "timeline",
       "writer",
-      "polaroids"
+      "polaroids",
+      "gender"
     ]
   },
   "seomun-jaehwa": {
-    "revision": "cast-2026-11-06-12f6bf5d3278f192",
+    "revision": "cast-2026-11-12-fcdc827c75822585",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33842,9 +35297,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Jaehwa",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33861,7 +35320,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "shane-kang": {
-    "revision": "cast-2026-11-06-a38c62850cdbf94e",
+    "revision": "cast-2026-11-12-79b7f1f0e7034007",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -33882,7 +35341,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33908,7 +35367,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "shen-ronghui": {
-    "revision": "cast-2026-11-06-7a318aff18201f7f",
+    "revision": "cast-2026-11-12-92a6d0307106c18b",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33919,9 +35378,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Edward",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -33981,7 +35444,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "shin-sangmin": {
-    "revision": "cast-2026-11-06-52c3850401591d88",
+    "revision": "cast-2026-11-12-ea2afdec1a7ed72f",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -33994,7 +35457,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34010,7 +35473,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "siwoo-choi": {
-    "revision": "cast-2026-11-06-4f56e5759ad3a8df",
+    "revision": "cast-2026-11-12-8e6182c04ebfe4d0",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34021,9 +35484,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Siwoo",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34085,7 +35552,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "song-jiyong": {
-    "revision": "cast-2026-11-06-acfc2fd55b13cab0",
+    "revision": "cast-2026-11-12-04539d296c240d33",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34096,9 +35563,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Jiyong",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34116,7 +35587,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "song-yonggi": {
-    "revision": "cast-2026-11-06-1630f9ffc58388be",
+    "revision": "cast-2026-11-12-185467a834370693",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34129,7 +35600,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34146,7 +35617,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "stella-jung": {
-    "revision": "cast-2026-11-06-d20de500b9bdad62",
+    "revision": "cast-2026-11-12-00332f60739079c4",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34159,7 +35630,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34176,7 +35647,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "tanaka-hiroshi": {
-    "revision": "cast-2026-11-06-62047f041967267f",
+    "revision": "cast-2026-11-12-6eeb5bbe0dde76aa",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34187,9 +35658,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Hiroshi",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34206,7 +35681,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "tanaka-ren": {
-    "revision": "cast-2026-11-06-3fe3ca954fe4504b",
+    "revision": "cast-2026-11-12-55d060f56f1e9c27",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34219,7 +35694,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34282,7 +35757,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "theo-huang-yoon": {
-    "revision": "cast-2026-11-06-2b072e54b684119d",
+    "revision": "cast-2026-11-12-532c1efed3683441",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34295,7 +35770,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34403,7 +35878,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "tran-bao": {
-    "revision": "cast-2026-11-06-194b7e40d05c5f09",
+    "revision": "cast-2026-11-12-a25e19176c4f75d3",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34416,7 +35891,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34431,7 +35906,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "valerie-kwon": {
-    "revision": "cast-2026-11-06-b907df0a4518758c",
+    "revision": "cast-2026-11-12-a7e2ed829a7b79e2",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34444,7 +35919,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34507,7 +35982,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "wang-linyu": {
-    "revision": "cast-2026-11-06-73f81f36d389a78b",
+    "revision": "cast-2026-11-12-37e50dc708e9d42a",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34520,7 +35995,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34537,7 +36012,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "wei-bowen": {
-    "revision": "cast-2026-11-06-9b617c611e586bfe",
+    "revision": "cast-2026-11-12-21edf5e5c14542c5",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34550,7 +36025,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34611,7 +36086,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "william-park": {
-    "revision": "cast-2026-11-06-ee476e323180ce60",
+    "revision": "cast-2026-11-12-97de7f6e0344dc5e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34624,7 +36099,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34642,7 +36117,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "woo-daejung": {
-    "revision": "cast-2026-11-06-0967e26a994e5d1b",
+    "revision": "cast-2026-11-12-23b6369d8bf442fb",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34653,9 +36128,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://chatgpt.com/space/page_f0e872cb40bc8191862e3aaf4e026efb",
         "label": "Encyclopaedia"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Dexter",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34672,7 +36151,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xiaofeng-jeon": {
-    "revision": "cast-2026-11-06-67fe5dd02d6747fa",
+    "revision": "cast-2026-11-12-3b49cef0e9310c7c",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -34693,7 +36172,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34719,7 +36198,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xiaoli-li": {
-    "revision": "cast-2026-11-06-c564fae265b361cc",
+    "revision": "cast-2026-11-12-4e26a3fd327f09d8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34732,7 +36211,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34748,7 +36227,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xiaoyang-li": {
-    "revision": "cast-2026-11-06-c06c624079d6a2b2",
+    "revision": "cast-2026-11-12-36ad18f7b7408e5e",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34761,7 +36240,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34821,7 +36300,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "xue-yiyun": {
-    "revision": "cast-2026-11-06-ac4767940c220185",
+    "revision": "cast-2026-11-12-e485a5e1ffa932b8",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34834,7 +36313,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34851,7 +36330,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "yang-haneul": {
-    "revision": "cast-2026-11-06-bbe56dceaebc5239",
+    "revision": "cast-2026-11-12-e7c5e7f5b363cb68",
     "coverage": "development",
     "label": "Development post",
     "sourceUrls": [
@@ -34874,9 +36353,13 @@ var DOSSIER_SOURCE_METADATA = {
       {
         "url": "https://bluehour.jcink.net/index.php?showtopic=54242",
         "label": "Development post"
+      },
+      {
+        "url": "https://leafentertainment.fandom.com/wiki/Haneul",
+        "label": "Source"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34897,7 +36380,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "yoo-byungjoon": {
-    "revision": "cast-2026-11-06-171b94fd495c2a45",
+    "revision": "cast-2026-11-12-44bdecf62d6a1937",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34910,7 +36393,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -34971,7 +36454,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "zhou-yujie": {
-    "revision": "cast-2026-11-06-d7f27711fde72f9a",
+    "revision": "cast-2026-11-12-7ff0c480a5ef9127",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -34984,7 +36467,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",
@@ -35000,7 +36483,7 @@ var DOSSIER_SOURCE_METADATA = {
     ]
   },
   "everett-tsai": {
-    "revision": "cast-2026-11-06-57f97bac42354292",
+    "revision": "cast-2026-11-12-2d62cd076e21e63c",
     "coverage": "encyclopaedia",
     "label": "Encyclopaedia details",
     "sourceUrls": [
@@ -35013,7 +36496,7 @@ var DOSSIER_SOURCE_METADATA = {
         "label": "Encyclopaedia"
       }
     ],
-    "updatedAt": "2026-11-06",
+    "updatedAt": "2026-11-12",
     "knownFields": [
       "name",
       "nickname",

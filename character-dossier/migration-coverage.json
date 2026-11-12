@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "librarySha256": "faa074fdba391fda238772048b981f6829562ea71a1e15bd503c70261036c510",
-  "sourceManifestSha256": "65a734ded9195d5f2895a3ba92fc2e07d90ac96f0a9937d3c2d06052cd518268",
+  "librarySha256": "bd35a9713762bed91838d34897a56746fbe78a79c7b558c443e2de83d4685ec8",
+  "sourceManifestSha256": "c2904525e271ef9ec09382ce3e5d691e7c9b1b502298edfd3a9096891416105f",
   "summary": {
     "characters": 181,
     "migrated": 58,
     "partial": 122,
     "starter": 1,
     "unreviewed": 0,
-    "withConflicts": 100
+    "withConflicts": 102
   },
   "characters": [
     {
@@ -256,7 +256,7 @@
       "nickname": "aaron",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 5,
         "connections": 4,
         "story": 6,
         "songs": 0,
@@ -290,6 +290,27 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Character encyclopaedia",
+          "fields": [
+            "residency"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -316,7 +337,7 @@
       "nickname": "ade",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 3,
         "songs": 0,
@@ -349,6 +370,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -375,7 +410,7 @@
       "nickname": "adriel",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -409,6 +444,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -433,7 +482,7 @@
       "nickname": "akara",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -463,6 +512,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -492,7 +555,7 @@
       "nickname": "alastair",
       "status": "partial",
       "counts": {
-        "facts": 1,
+        "facts": 15,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -523,6 +586,33 @@
           ]
         },
         {
+          "kind": "information-post",
+          "url": "https://bluehour.jcink.net/index.php?showtopic=117789#entry3430939",
+          "fields": [
+            "birthday",
+            "bloodType",
+            "chineseZodiac",
+            "ethnicity",
+            "favoriteColor",
+            "favoriteFood",
+            "gender",
+            "languages",
+            "mbti",
+            "nationality",
+            "preferredName",
+            "residency",
+            "romanticality",
+            "sexuality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -532,8 +622,7 @@
       ],
       "missing": [
         "No playlist supplied in the reviewed sources.",
-        "No verified location pin supplied.",
-        "Birthday not established in the reviewed sources."
+        "No verified location pin supplied."
       ],
       "notes": [
         "Calendar keeper labels do not establish the character’s writer; writer is left editable.",
@@ -548,7 +637,7 @@
       "nickname": "alec",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -577,6 +666,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -596,7 +699,7 @@
       "nickname": "alex",
       "status": "partial",
       "counts": {
-        "facts": 4,
+        "facts": 9,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -629,6 +732,23 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Alex",
+          "fields": [
+            "bloodType",
+            "languages",
+            "nationality",
+            "westernZodiac"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -655,7 +775,7 @@
       "nickname": "alfie",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -684,6 +804,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -703,7 +837,7 @@
       "nickname": "andy",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 3,
         "songs": 0,
@@ -736,6 +870,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -760,7 +908,7 @@
       "nickname": "ant",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 7,
         "story": 8,
         "songs": 0,
@@ -793,6 +941,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -817,7 +979,7 @@
       "nickname": "artie",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 5,
         "story": 7,
         "songs": 0,
@@ -850,6 +1012,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -876,7 +1052,7 @@
       "nickname": "asher",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -908,6 +1084,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -932,7 +1122,7 @@
       "nickname": "gus",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 3,
         "songs": 0,
@@ -962,6 +1152,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -1063,7 +1267,7 @@
       "nickname": "jay",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 5,
         "songs": 0,
@@ -1096,6 +1300,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -1122,7 +1340,7 @@
       "nickname": "jiae",
       "status": "partial",
       "counts": {
-        "facts": 4,
+        "facts": 8,
         "connections": 4,
         "story": 4,
         "songs": 0,
@@ -1155,6 +1373,28 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Jiae",
+          "fields": [
+            "bloodType",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -1181,7 +1421,7 @@
       "nickname": "yujun",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 3,
         "songs": 0,
@@ -1211,6 +1451,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -1320,7 +1574,7 @@
       "nickname": "jae",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 7,
         "connections": 2,
         "story": 4,
         "songs": 0,
@@ -1351,6 +1605,29 @@
             "notes",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Jaehyun",
+          "fields": [
+            "bloodType",
+            "mbti",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -1462,7 +1739,7 @@
       "nickname": "yu",
       "status": "migrated",
       "counts": {
-        "facts": 14,
+        "facts": 15,
         "connections": 2,
         "story": 6,
         "songs": 10,
@@ -1515,6 +1792,13 @@
             "mapLocation",
             "mapLatitude",
             "mapLongitude"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
           ]
         },
         {
@@ -1625,7 +1909,7 @@
       "nickname": "caleb",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 3,
         "story": 4,
         "songs": 0,
@@ -1655,6 +1939,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -1762,7 +2060,7 @@
       "nickname": "daejin",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -1791,6 +2089,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -1810,7 +2122,7 @@
       "nickname": "min",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -1843,6 +2155,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -1867,7 +2193,7 @@
       "nickname": "suho",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -1896,6 +2222,20 @@
           "fields": [
             "facts",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -2290,7 +2630,7 @@
       "nickname": "ci",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 2,
         "songs": 0,
@@ -2320,6 +2660,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -2347,7 +2701,7 @@
       "nickname": "clarity",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 6,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -2380,6 +2734,28 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Character encyclopaedia",
+          "fields": [
+            "gender"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Clarity",
+          "fields": [
+            "bloodType",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -2399,7 +2775,8 @@
       ],
       "conflicts": [
         "Akara Siripong: naming key apricot supersedes imported flavour nectarine.",
-        "Source versions contain qualifications or conflicts; original paragraphs are retained in sources/encyclopedia-enrichment.json for this character."
+        "Source versions contain qualifications or conflicts; original paragraphs are retained in sources/encyclopedia-enrichment.json for this character.",
+        "11 November appears only as a provisional biography date."
       ]
     },
     {
@@ -2408,7 +2785,7 @@
       "nickname": "cody",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 2,
         "songs": 0,
@@ -2441,6 +2818,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -2465,7 +2856,7 @@
       "nickname": "cole",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -2498,6 +2889,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -2522,7 +2927,7 @@
       "nickname": "eddie",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -2550,6 +2955,20 @@
           "url": "https://chatgpt.com/space/page_29db0196c3e08191a8e2a766a3174db4",
           "fields": [
             "facts"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         }
       ],
@@ -2650,7 +3069,7 @@
       "nickname": "rex",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -2679,6 +3098,28 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Rex",
+          "fields": [
+            "languages",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -2698,7 +3139,7 @@
       "nickname": "diego",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 7,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -2728,6 +3169,23 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Diego",
+          "fields": [
+            "bloodType",
+            "mbti",
+            "nationality",
+            "westernZodiac"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
           ]
         },
         {
@@ -2836,7 +3294,7 @@
       "nickname": "zhiyuan",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 3,
         "story": 4,
         "songs": 0,
@@ -2869,6 +3327,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -2895,7 +3367,7 @@
       "nickname": "dustin",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 5,
         "songs": 0,
@@ -2928,6 +3400,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -2954,7 +3440,7 @@
       "nickname": "elias",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 3,
         "story": 2,
         "songs": 0,
@@ -2984,6 +3470,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -3091,7 +3591,7 @@
       "nickname": "rett",
       "status": "partial",
       "counts": {
-        "facts": 1,
+        "facts": 2,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -3123,6 +3623,13 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3150,7 +3657,7 @@
       "nickname": "finn",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -3183,6 +3690,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3207,7 +3728,7 @@
       "nickname": "forest",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -3240,6 +3761,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3266,7 +3801,7 @@
       "nickname": "frank",
       "status": "partial",
       "counts": {
-        "facts": 4,
+        "facts": 10,
         "connections": 2,
         "story": 3,
         "songs": 0,
@@ -3299,6 +3834,36 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Character encyclopaedia",
+          "fields": [
+            "ethnicity",
+            "languages"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Frank",
+          "fields": [
+            "bloodType",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3325,7 +3890,7 @@
       "nickname": "fred",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -3359,6 +3924,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3385,7 +3964,7 @@
       "nickname": "jack",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -3414,6 +3993,28 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Jack",
+          "fields": [
+            "languages",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -3435,7 +4036,7 @@
       "nickname": "gabe",
       "status": "migrated",
       "counts": {
-        "facts": 5,
+        "facts": 7,
         "connections": 3,
         "story": 9,
         "songs": 1,
@@ -3508,6 +4109,20 @@
           ]
         },
         {
+          "kind": "information-post",
+          "url": "https://bluehour.jcink.net/index.php?showtopic=54637#entry1681566",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3537,7 +4152,7 @@
       "nickname": "happy",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -3570,6 +4185,28 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Happy",
+          "fields": [
+            "languages",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3597,7 +4234,7 @@
       "nickname": "ultra",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 6,
         "connections": 2,
         "story": 2,
         "songs": 0,
@@ -3630,6 +4267,22 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Ultra",
+          "fields": [
+            "bloodType",
+            "mbti",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3646,7 +4299,9 @@
         "Polaroids start with recorded current partners; additional closest-person choices remain editable.",
         "Timeline entries fall back to verified topic-start dates where no in-world date has been supplied."
       ],
-      "conflicts": []
+      "conflicts": [
+        "The calendar gives 22 December and the individual biography gives 1 November."
+      ]
     },
     {
       "id": "gil-bokyung",
@@ -3737,7 +4392,7 @@
       "nickname": "jay",
       "status": "partial",
       "counts": {
-        "facts": 1,
+        "facts": 2,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -3768,6 +4423,13 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3786,7 +4448,8 @@
         "Timeline entries fall back to verified topic-start dates where no in-world date has been supplied."
       ],
       "conflicts": [
-        "Multiple birthday dates remain in the source; no date was chosen."
+        "Multiple birthday dates remain in the source; no date was chosen.",
+        "Two calendar entries give 15 April and 19 August."
       ]
     },
     {
@@ -3795,7 +4458,7 @@
       "nickname": "billy",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 8,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -3824,6 +4487,29 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Billy",
+          "fields": [
+            "languages",
+            "nationality",
+            "residency"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -3845,7 +4531,7 @@
       "nickname": "seoyeon",
       "status": "partial",
       "counts": {
-        "facts": 4,
+        "facts": 8,
         "connections": 2,
         "story": 2,
         "songs": 0,
@@ -3878,6 +4564,28 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Seoyeon",
+          "fields": [
+            "bloodType",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -3902,7 +4610,7 @@
       "nickname": "hiro",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -3931,6 +4639,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -3950,7 +4672,7 @@
       "nickname": "hao",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -3983,6 +4705,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -4009,7 +4745,7 @@
       "nickname": "liang",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -4039,6 +4775,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -4150,7 +4900,7 @@
       "nickname": "hoseong",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -4180,6 +4930,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -4365,7 +5129,7 @@
       "nickname": "jamie",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -4395,6 +5159,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -4575,7 +5353,7 @@
       "nickname": "yejoon",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -4608,6 +5386,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -4632,7 +5424,7 @@
       "nickname": "jessi",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -4660,6 +5452,20 @@
           "url": "https://chatgpt.com/space/page_adb9bb0bd79481918be4495b0eadd289",
           "fields": [
             "facts"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         }
       ],
@@ -4733,6 +5539,13 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Confirmed 17 July birthday. The development post puts an MBTI code in Western Zodiac.",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -4760,7 +5573,7 @@
       "nickname": "ducky",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -4790,6 +5603,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -4890,7 +5717,7 @@
       "nickname": "joe",
       "status": "partial",
       "counts": {
-        "facts": 4,
+        "facts": 8,
         "connections": 3,
         "story": 9,
         "songs": 0,
@@ -4923,6 +5750,28 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Joseph",
+          "fields": [
+            "bloodType",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -4949,7 +5798,7 @@
       "nickname": "JJ",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 4,
         "songs": 0,
@@ -4979,6 +5828,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -5084,7 +5947,7 @@
       "nickname": "jules",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -5117,6 +5980,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -5141,7 +6018,7 @@
       "nickname": "min",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 2,
         "story": 3,
         "songs": 0,
@@ -5174,6 +6051,28 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Minseo",
+          "fields": [
+            "languages",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -5200,7 +6099,7 @@
       "nickname": "taejoo",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -5233,6 +6132,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -5257,7 +6170,7 @@
       "nickname": "bin",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -5290,6 +6203,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -5314,7 +6241,7 @@
       "nickname": "juni",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -5343,6 +6270,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -5362,7 +6303,7 @@
       "nickname": "kai",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 3,
         "songs": 0,
@@ -5394,6 +6335,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -5418,7 +6373,7 @@
       "nickname": "danny",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -5450,6 +6405,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -5474,7 +6443,7 @@
       "nickname": "jun",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 6,
         "connections": 2,
         "story": 2,
         "songs": 0,
@@ -5508,6 +6477,27 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Hajun",
+          "fields": [
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -5534,7 +6524,7 @@
       "nickname": "mini",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 3,
         "songs": 0,
@@ -5566,6 +6556,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -5590,7 +6594,7 @@
       "nickname": "heechan",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -5619,6 +6623,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -5638,7 +6656,7 @@
       "nickname": "jihwan",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -5668,6 +6686,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -5777,7 +6809,7 @@
       "nickname": "taesung",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 7,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -5806,6 +6838,23 @@
           "fields": [
             "facts",
             "timeline"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Taesung",
+          "fields": [
+            "bloodType",
+            "mbti",
+            "nationality",
+            "westernZodiac"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
           ]
         },
         {
@@ -5833,7 +6882,7 @@
       "nickname": "yuki",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -5862,6 +6911,20 @@
           "fields": [
             "facts",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -5889,7 +6952,7 @@
       "nickname": "minharu",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -5918,6 +6981,20 @@
           "fields": [
             "facts",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -6187,7 +7264,7 @@
       "nickname": "kyo",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -6216,6 +7293,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -6235,7 +7326,7 @@
       "nickname": "lena",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 3,
         "story": 3,
         "songs": 0,
@@ -6265,6 +7356,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -6371,7 +7476,7 @@
       "nickname": "lewis",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -6404,6 +7509,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -6430,7 +7549,7 @@
       "nickname": "tao",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 5,
         "connections": 3,
         "story": 4,
         "songs": 0,
@@ -6464,6 +7583,27 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Character encyclopaedia",
+          "fields": [
+            "residency"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -6490,7 +7630,7 @@
       "nickname": "chunhee",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -6519,6 +7659,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -6538,7 +7692,7 @@
       "nickname": "lucas",
       "status": "migrated",
       "counts": {
-        "facts": 3,
+        "facts": 5,
         "connections": 6,
         "story": 13,
         "songs": 1,
@@ -6579,6 +7733,20 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Lucas_Choi",
+          "fields": [
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -6596,7 +7764,8 @@
         "Timeline entries fall back to verified topic-start dates where no in-world date has been supplied."
       ],
       "conflicts": [
-        "Source versions contain qualifications or conflicts; original paragraphs are retained in sources/encyclopedia-enrichment.json for this character."
+        "Source versions contain qualifications or conflicts; original paragraphs are retained in sources/encyclopedia-enrichment.json for this character.",
+        "The calendar gives 2 June and the individual biography gives 30 May."
       ]
     },
     {
@@ -6657,6 +7826,13 @@
             "mapLocation",
             "mapLatitude",
             "mapLongitude"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Development profile and character encyclopaedia",
+          "fields": [
+            "languages"
           ]
         },
         {
@@ -6769,7 +7945,7 @@
       "nickname": "maddie",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -6797,6 +7973,20 @@
           "url": "https://chatgpt.com/space/page_5ae0ce9429d88191a60214b42d33f4dd",
           "fields": [
             "facts"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         }
       ],
@@ -6896,7 +8086,7 @@
       "nickname": "matty",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -6928,6 +8118,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -6952,7 +8156,7 @@
       "nickname": "tehir",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -6980,6 +8184,20 @@
           "url": "https://chatgpt.com/space/page_5ae0ce9429d88191a60214b42d33f4dd",
           "fields": [
             "facts"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         }
       ],
@@ -7161,7 +8379,7 @@
       "nickname": "mia",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 1,
         "songs": 0,
@@ -7194,6 +8412,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -7218,7 +8450,7 @@
       "nickname": "micah",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -7250,6 +8482,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -7274,7 +8520,7 @@
       "nickname": "mike",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 4,
         "story": 5,
         "songs": 0,
@@ -7307,6 +8553,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -7331,7 +8591,7 @@
       "nickname": "miley",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -7363,6 +8623,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -7387,7 +8661,7 @@
       "nickname": "milo",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -7415,6 +8689,20 @@
           "url": "https://chatgpt.com/space/page_5ae0ce9429d88191a60214b42d33f4dd",
           "fields": [
             "facts"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         }
       ],
@@ -7515,7 +8803,7 @@
       "nickname": "miren",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -7544,6 +8832,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -7563,7 +8865,7 @@
       "nickname": "draco",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -7595,6 +8897,28 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Draco",
+          "fields": [
+            "languages",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -7621,7 +8945,7 @@
       "nickname": "duke",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 8,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -7650,6 +8974,29 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Duke",
+          "fields": [
+            "bloodType",
+            "nationality",
+            "residency"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -7671,7 +9018,7 @@
       "nickname": "tsu",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 6,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -7703,6 +9050,22 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Tsubasa",
+          "fields": [
+            "bloodType",
+            "mbti",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -7719,7 +9082,9 @@
         "Polaroids start with recorded current partners; additional closest-person choices remain editable.",
         "Timeline entries fall back to verified topic-start dates where no in-world date has been supplied."
       ],
-      "conflicts": []
+      "conflicts": [
+        "The calendar gives 8 March. The biography gives 30 November and separately lists Gemini."
+      ]
     },
     {
       "id": "nate-chung",
@@ -7807,7 +9172,7 @@
       "nickname": "naveighbean",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -7836,6 +9201,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -7855,7 +9234,7 @@
       "nickname": "nicky",
       "status": "partial",
       "counts": {
-        "facts": 4,
+        "facts": 7,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -7888,6 +9267,21 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Nicky_Villarreal",
+          "fields": [
+            "bloodType",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -7905,7 +9299,8 @@
         "Timeline entries fall back to verified topic-start dates where no in-world date has been supplied."
       ],
       "conflicts": [
-        "Source versions contain qualifications or conflicts; original paragraphs are retained in sources/encyclopedia-enrichment.json for this character."
+        "Source versions contain qualifications or conflicts; original paragraphs are retained in sources/encyclopedia-enrichment.json for this character.",
+        "The calendar gives 19 January. The biography contains both 9 December and 12 September."
       ]
     },
     {
@@ -7914,7 +9309,7 @@
       "nickname": "niran",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -7944,6 +9339,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -8053,7 +9462,7 @@
       "nickname": "noel",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -8083,6 +9492,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -8164,6 +9587,13 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Author-confirmed blood group, 5 November 2026. Rh factor unspecified.",
+          "fields": [
+            "bloodType"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -8192,7 +9622,7 @@
       "nickname": "oprah",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -8221,6 +9651,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -8240,7 +9684,7 @@
       "nickname": "haeun",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 3,
         "songs": 0,
@@ -8270,6 +9714,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -8541,7 +9999,7 @@
       "nickname": "nix",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 4,
         "songs": 0,
@@ -8574,6 +10032,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -8598,7 +10070,7 @@
       "nickname": "chen",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 5,
         "story": 8,
         "songs": 0,
@@ -8631,6 +10103,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -8658,7 +10144,7 @@
       "nickname": "rain",
       "status": "starter",
       "counts": {
-        "facts": 1,
+        "facts": 2,
         "connections": 1,
         "story": 0,
         "songs": 0,
@@ -8685,6 +10171,13 @@
           "kind": "encyclopedia",
           "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
           "fields": []
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
         }
       ],
       "missing": [
@@ -8787,7 +10280,7 @@
       "nickname": "roman",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -8820,6 +10313,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -8844,7 +10351,7 @@
       "nickname": "ryan",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 3,
         "story": 6,
         "songs": 0,
@@ -8877,6 +10384,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -8901,7 +10422,7 @@
       "nickname": "hyemi",
       "status": "partial",
       "counts": {
-        "facts": 4,
+        "facts": 8,
         "connections": 2,
         "story": 1,
         "songs": 0,
@@ -8934,6 +10455,28 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Hyemi",
+          "fields": [
+            "bloodType",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -8958,7 +10501,7 @@
       "nickname": "hyunwoo",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 9,
         "connections": 5,
         "story": 7,
         "songs": 0,
@@ -8991,6 +10534,37 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Character encyclopaedia",
+          "fields": [
+            "favoriteFood",
+            "residency"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Hyunwoo",
+          "fields": [
+            "bloodType",
+            "gender",
+            "languages"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -9017,7 +10591,7 @@
       "nickname": "seb",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -9047,6 +10621,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -9074,7 +10662,7 @@
       "nickname": "kota",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -9106,6 +10694,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -9130,7 +10732,7 @@
       "nickname": "hakyun",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -9163,6 +10765,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -9187,7 +10803,7 @@
       "nickname": "inseong",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 7,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -9215,6 +10831,29 @@
           "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
           "fields": [
             "facts"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Inseong",
+          "fields": [
+            "bloodType",
+            "mbti",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         }
       ],
@@ -9308,7 +10947,7 @@
       "nickname": "seojun",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 3,
         "songs": 0,
@@ -9341,6 +10980,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -9365,7 +11018,7 @@
       "nickname": "cam",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 7,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -9398,6 +11051,30 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Seok_Cam",
+          "fields": [
+            "bloodType",
+            "gender",
+            "mbti",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -9422,7 +11099,7 @@
       "nickname": "jaehwa",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 7,
         "connections": 3,
         "story": 4,
         "songs": 0,
@@ -9452,6 +11129,29 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Jaehwa",
+          "fields": [
+            "bloodType",
+            "mbti",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -9534,6 +11234,13 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Development profile and character encyclopaedia",
+          "fields": [
+            "languages"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -9561,7 +11268,7 @@
       "nickname": "edward",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -9589,6 +11296,34 @@
           "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
           "fields": [
             "facts"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Character encyclopaedia",
+          "fields": [
+            "languages"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Edward",
+          "fields": [
+            "favoriteFood"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         }
       ],
@@ -9689,7 +11424,7 @@
       "nickname": "sangmin",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -9722,6 +11457,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -9746,7 +11495,7 @@
       "nickname": "siwoo",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 1,
         "story": 3,
         "songs": 0,
@@ -9776,6 +11525,22 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Siwoo",
+          "fields": [
+            "bloodType",
+            "nationality",
+            "westernZodiac"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
           ]
         },
         {
@@ -9886,7 +11651,7 @@
       "nickname": "jiyong",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 2,
         "story": 2,
         "songs": 0,
@@ -9920,6 +11685,22 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Jiyong",
+          "fields": [
+            "languages",
+            "nationality",
+            "westernZodiac"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -9946,7 +11727,7 @@
       "nickname": "yonggi",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 5,
         "songs": 0,
@@ -9979,6 +11760,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -10003,62 +11798,6 @@
       "id": "stella-jung",
       "name": "Stella Jung",
       "nickname": "stella",
-      "status": "partial",
-      "counts": {
-        "facts": 2,
-        "connections": 1,
-        "story": 1,
-        "songs": 0,
-        "polaroids": 1,
-        "playlist": false,
-        "map": false
-      },
-      "sources": [
-        {
-          "kind": "pi",
-          "url": "https://github.com/lexdoescodingnow/templates/blob/main/forum-posts/characters/characters.json",
-          "fields": [
-            "name",
-            "nickname",
-            "age",
-            "pronouns",
-            "occupation",
-            "face claim",
-            "portrait",
-            "current partners"
-          ]
-        },
-        {
-          "kind": "encyclopedia",
-          "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
-          "fields": [
-            "facts",
-            "timeline"
-          ]
-        },
-        {
-          "kind": "topic-start",
-          "path": "sources/topic-start-dates.json",
-          "fields": [
-            "timeline"
-          ]
-        }
-      ],
-      "missing": [
-        "No playlist supplied in the reviewed sources.",
-        "No verified location pin supplied."
-      ],
-      "notes": [
-        "Calendar keeper labels do not establish the character’s writer; writer is left editable.",
-        "Polaroids start with recorded current partners; additional closest-person choices remain editable.",
-        "Timeline entries fall back to verified topic-start dates where no in-world date has been supplied."
-      ],
-      "conflicts": []
-    },
-    {
-      "id": "tanaka-hiroshi",
-      "name": "Tanaka Hiroshi",
-      "nickname": "hiro",
       "status": "partial",
       "counts": {
         "facts": 4,
@@ -10093,6 +11832,98 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
+          "kind": "topic-start",
+          "path": "sources/topic-start-dates.json",
+          "fields": [
+            "timeline"
+          ]
+        }
+      ],
+      "missing": [
+        "No playlist supplied in the reviewed sources.",
+        "No verified location pin supplied."
+      ],
+      "notes": [
+        "Calendar keeper labels do not establish the character’s writer; writer is left editable.",
+        "Polaroids start with recorded current partners; additional closest-person choices remain editable.",
+        "Timeline entries fall back to verified topic-start dates where no in-world date has been supplied."
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "tanaka-hiroshi",
+      "name": "Tanaka Hiroshi",
+      "nickname": "hiro",
+      "status": "partial",
+      "counts": {
+        "facts": 8,
+        "connections": 1,
+        "story": 1,
+        "songs": 0,
+        "polaroids": 1,
+        "playlist": false,
+        "map": false
+      },
+      "sources": [
+        {
+          "kind": "pi",
+          "url": "https://github.com/lexdoescodingnow/templates/blob/main/forum-posts/characters/characters.json",
+          "fields": [
+            "name",
+            "nickname",
+            "age",
+            "pronouns",
+            "occupation",
+            "face claim",
+            "portrait",
+            "current partners"
+          ]
+        },
+        {
+          "kind": "encyclopedia",
+          "url": "https://chatgpt.com/space/page_db36578876808191959eda0604b37f9b",
+          "fields": [
+            "facts",
+            "timeline"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Hiroshi",
+          "fields": [
+            "bloodType",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -10119,7 +11950,7 @@
       "nickname": "ren",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -10148,6 +11979,20 @@
           "fields": [
             "facts",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -10255,7 +12100,7 @@
       "nickname": "theo",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 5,
         "story": 5,
         "songs": 0,
@@ -10285,6 +12130,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -10473,7 +12332,7 @@
       "nickname": "bao",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -10502,6 +12361,20 @@
           "fields": [
             "facts"
           ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
         }
       ],
       "missing": [
@@ -10521,7 +12394,7 @@
       "nickname": "val",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -10550,6 +12423,20 @@
           "fields": [
             "facts",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -10654,7 +12541,7 @@
       "nickname": "lin",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 2,
         "story": 3,
         "songs": 0,
@@ -10687,6 +12574,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -10711,7 +12612,7 @@
       "nickname": "bowen",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -10741,6 +12642,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -10847,7 +12762,7 @@
       "nickname": "will",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 6,
         "songs": 0,
@@ -10881,6 +12796,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -10907,7 +12836,7 @@
       "nickname": "dexter",
       "status": "partial",
       "counts": {
-        "facts": 3,
+        "facts": 7,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -10937,6 +12866,28 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Dexter",
+          "fields": [
+            "languages",
+            "nationality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -11023,6 +12974,13 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "Development profile and character encyclopaedia",
+          "fields": [
+            "languages"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -11051,7 +13009,7 @@
       "nickname": "li",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -11084,6 +13042,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -11108,7 +13080,7 @@
       "nickname": "xiaoyang",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 0,
         "story": 0,
         "songs": 0,
@@ -11136,6 +13108,20 @@
           "url": "https://chatgpt.com/space/page_f0e872cb40bc8191862e3aaf4e026efb",
           "fields": [
             "facts"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         }
       ],
@@ -11236,7 +13222,7 @@
       "nickname": "yin",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 2,
         "songs": 0,
@@ -11269,6 +13255,20 @@
           ]
         },
         {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -11295,7 +13295,7 @@
       "nickname": "han",
       "status": "migrated",
       "counts": {
-        "facts": 5,
+        "facts": 10,
         "connections": 7,
         "story": 24,
         "songs": 1,
@@ -11358,6 +13358,29 @@
           ]
         },
         {
+          "kind": "biography",
+          "url": "https://leafentertainment.fandom.com/wiki/Haneul",
+          "fields": [
+            "favoriteFood",
+            "nationality",
+            "sexuality"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
+          ]
+        },
+        {
           "kind": "topic-start",
           "path": "sources/topic-start-dates.json",
           "fields": [
@@ -11386,7 +13409,7 @@
       "nickname": "B",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -11416,6 +13439,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
@@ -11523,7 +13560,7 @@
       "nickname": "jie",
       "status": "partial",
       "counts": {
-        "facts": 2,
+        "facts": 4,
         "connections": 1,
         "story": 1,
         "songs": 0,
@@ -11553,6 +13590,20 @@
             "facts",
             "relationships",
             "timeline"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "PI directory display name",
+          "fields": [
+            "preferredName"
+          ]
+        },
+        {
+          "kind": "information",
+          "reference": "Confirmed birthday",
+          "fields": [
+            "westernZodiac"
           ]
         },
         {
