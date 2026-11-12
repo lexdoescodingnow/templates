@@ -43688,7 +43688,7 @@ var DOSSIER_TOPIC_DATES = {
     }
     html += '<div class="bd1-content">';
     if (facts.length || basics.length || c.currentChapter) {
-      html += '<section class="bd1-section bd1-overview">' + heading('At a glance', c.asOf ? 'As of ' + c.asOf : '');
+      html += '<section class="bd1-section bd1-overview">' + heading('Information', c.asOf ? 'As of ' + c.asOf : '');
       if (c.currentChapter) html += '<div class="bd1-chapter"><span class="bd1-eyebrow">Current Chapter</span>' + paragraphs(c.currentChapter) + '</div>';
       if (facts.length || basics.length) html += '<dl class="bd1-facts">' + pairedFacts(basics.concat(facts)) + '</dl>';
       html += '</section>';
@@ -43716,7 +43716,7 @@ var DOSSIER_TOPIC_DATES = {
       html += '</div></section>';
     }
     if (entries.length) {
-      html += '<section class="bd1-section bd1-story-panel" id="' + prefix + '-story">' + heading('The story so far', entries.length + (entries.length === 1 ? ' entry' : ' entries'));
+      html += '<section class="bd1-section bd1-story-panel" id="' + prefix + '-story">' + heading('History', entries.length + (entries.length === 1 ? ' entry' : ' entries'));
       var currentYear = null;
       entries.forEach(function (entry) {
         var dateValue = effectiveDate(entry);
@@ -43744,7 +43744,7 @@ var DOSSIER_TOPIC_DATES = {
       html += '</ol></div></section>';
     }
     if (songs.length || c.playlistUrl) {
-      html += '<section class="bd1-section bd1-soundtrack-panel" id="' + prefix + '-soundtrack">' + heading('On repeat', songs.length ? songs.length + (songs.length === 1 ? ' song' : ' songs') : '');
+      html += '<section class="bd1-section bd1-soundtrack-panel" id="' + prefix + '-soundtrack">' + heading('Playlist', songs.length ? songs.length + (songs.length === 1 ? ' song' : ' songs') : '');
       var slides = songs.slice();
       if (c.playlistUrl) slides.push({ title: 'The full playlist', artist: '', url: c.playlistUrl, note: '' });
       if (slides.length) html += '<div class="bd3-player-carousel" tabindex="0" role="region" aria-label="Character soundtrack — scroll to browse songs">' + slides.map(function (song, index) {
