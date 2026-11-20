@@ -1,0 +1,37 @@
+<!doctype html><html lang="en" color-mode="light"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mini iMessage template</title><style>body{margin:0;padding:30px 15px;background:#eaeaea;color:#252529;font:14px/1.6 Arial,sans-serif}main{max-width:650px;margin:auto}button,select{font:inherit;padding:8px 12px}textarea{box-sizing:border-box;width:100%;height:330px;font:12px/1.6 Consolas,monospace}html[color-mode="dark"] body{background:#1b1b1e;color:#eee}.immini1{--im-bg:#fff;--im-grey:#e9e9eb;--im-ink:#171719;--im-muted:#727277;box-sizing:border-box;width:calc(100% - 24px);max-width:380px;margin:20px auto;padding:17px 18px;background:var(--im-bg);border-radius:15px;font:15px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;text-align:left;overflow-wrap:anywhere;color:var(--im-ink)}
+.immini1,.immini1 *,.immini1 *::before,.immini1 *::after{box-sizing:border-box}
+.immini1 .im-out,.immini1 .im-in{display:flex;flex-direction:column;align-items:flex-end;margin:0 0 15px;min-width:0}.immini1 .im-in{align-items:flex-start}.immini1>div:last-child{margin-bottom:0}
+.immini1 .im-name{display:block;max-width:90%;margin:0 9px 4px;padding:0;color:var(--im-muted);font:600 11px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.immini1 .im-text{position:relative;isolation:isolate;max-width:88%;padding:9px 13px;background:#007aff;color:#fff;border-radius:19px;margin:0;text-align:left;font:inherit;min-width:0}
+.immini1 .im-text::before{content:'';position:absolute;z-index:-1;right:-5px;bottom:0;width:16px;height:15px;border-radius:0 0 0 14px;background:#007aff}.immini1 .im-text::after{content:'';position:absolute;right:-9px;bottom:0;width:9px;height:18px;border-radius:0 0 0 10px;background:var(--im-bg)}
+.immini1 .im-in .im-text{background:var(--im-grey);color:var(--im-ink)}.immini1 .im-in .im-text::before{right:auto;left:-5px;border-radius:0 0 14px 0;background:var(--im-grey)}.immini1 .im-in .im-text::after{right:auto;left:-9px;border-radius:0 0 10px 0}
+.immini1 .im-text p{margin:0 0 .6em;padding:0;font:inherit;color:inherit;text-align:left}.immini1 .im-text p:last-child{margin-bottom:0}.immini1 .im-text :is(b,strong,i,em,u,a){color:inherit;-webkit-text-fill-color:inherit;background:none}.immini1 .im-text a{text-decoration:underline}
+.immini1 .im-meta{display:block;max-width:95%;color:var(--im-muted);margin:4px 8px 0;padding:0;font:10px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;text-align:right}.immini1 .im-in .im-meta{text-align:left}
+html[color-mode="dark"] .immini1{--im-bg:#101012;--im-grey:#303034;--im-ink:#f5f5f7;--im-muted:#a4a4ad;color-scheme:dark}
+@media(prefers-color-scheme:dark){html:not([color-mode="light"]):not([color-mode="dark"]) .immini1{--im-bg:#101012;--im-grey:#303034;--im-ink:#f5f5f7;--im-muted:#a4a4ad;color-scheme:dark}}
+</style><main><h1>Mini iMessage</h1><p>Edit the names, messages and times. Blue is outgoing; grey is incoming. Remove either message block to use a single bubble.</p><label>Appearance <select id="mode"><option value="light">Light</option><option value="dark">Dark</option></select></label><div class="immini1">
+<div class="im-out">
+<div class="im-name">Character Name</div>
+<div class="im-text"><p>Are you here yet?</p></div>
+<div class="im-meta">Sent � 17:52</div>
+</div>
+<div class="im-in">
+<div class="im-name">Other Character</div>
+<div class="im-text"><p>Just outside. Give me two minutes.</p></div>
+<div class="im-meta">Sent � 17:53</div>
+</div>
+</div><button id="copy">Copy posting code</button><span id="status" role="status"></span><textarea readonly>[dohtml]
+&lt;div class="immini1"&gt;
+&lt;div class="im-out"&gt;
+&lt;div class="im-name"&gt;[SENDER NAME]&lt;/div&gt;
+&lt;div class="im-text"&gt;&lt;p&gt;[MESSAGE TEXT]&lt;/p&gt;&lt;/div&gt;
+&lt;div class="im-meta"&gt;Sent � 17:52&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="im-in"&gt;
+&lt;div class="im-name"&gt;[OTHER NAME]&lt;/div&gt;
+&lt;div class="im-text"&gt;&lt;p&gt;[REPLY TEXT]&lt;/p&gt;&lt;/div&gt;
+&lt;div class="im-meta"&gt;Sent � 17:53&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/leafie-awards/imessage-mini-v1.css"&gt;
+[/dohtml]</textarea></main><script>document.getElementById("mode").onchange=e=>document.documentElement.setAttribute("color-mode",e.target.value);document.getElementById("copy").onclick=async()=>{const t=document.querySelector("textarea");try{await navigator.clipboard.writeText(t.value);document.getElementById("status").textContent=" Copied"}catch(e){t.select();document.getElementById("status").textContent=" Selected: press Ctrl+C"}};</script></html>
