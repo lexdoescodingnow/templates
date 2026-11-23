@@ -974,7 +974,6 @@ html[color-mode="dark"] .ly2 {
   height: 100%;
   min-height: 0;
   object-fit: cover;
-  object-position: var(--crop, 50% 35%);
   border-radius: inherit;
 }
 

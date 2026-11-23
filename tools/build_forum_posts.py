@@ -31,6 +31,9 @@ def strip_forum(code):return re.sub(r'\[/?dohtml\]','',code,flags=re.I)
 manifest=[];all_posts=[];tiles=[];md=['# Forum-ready template collection','',f'{len(rows)} distinct templates across {len(groups)} collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.','', 'Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.','', 'CSS and images are hosted online; no stylesheet installation in the forum admin panel is required. Forum click-to-copy depends on the skin. The browser previews include Copy buttons and a manual-selection fallback.','', '| Collection | Designs | Forum post | Preview | Numbered parts |','| --- | ---: | --- | --- | ---: |']
 for folder,items in sorted(groups.items()):
  items.sort(key=lambda r:(list(TYPE).index(r['type']),r['source'],r['block']))
+ if folder=='lychee':
+  lychee_order={d['file']:i for i,d in enumerate(json.loads((ROOT/'lychee/designs.json').read_text()))}
+  items.sort(key=lambda r:lychee_order[Path(r['source']).name])
  name={'bingsu':'Bingsu · Thaw','bingsu-legacy':'Bingsu · Legacy','bread':'Bread · Second Rise','bread-legacy':'Bread · Legacy','macadamia':'Macadamia · Orchard','macadamia-legacy':'Macadamia · Legacy','oats':'Oats · Millhouse','oats-legacy':'Oats · Legacy','sake':'Sake · Brew','sake-legacy':'Sake · Legacy'}.get(folder,title(folder))
  urls=[u for r in items for u in re.findall(r'<img[^>]*src="(https?[^\"]+)"',r['code'])]
  sample=urls[0] if urls else 'https://64.media.tumblr.com/f2626d5d9006d44aea27f4bd1c7d9a1f/3c4ae6bd64c3cd79-fa/s540x810/51fdbfda88e5953568a687a53892e657066d10a4.gifv'
@@ -57,7 +60,10 @@ for folder,items in sorted(groups.items()):
  for oldpart in OUT.glob(folder+'-post-*.txt'):oldpart.unlink()
  for i,part in enumerate(parts,1):(OUT/f'{folder}-post-{i:02d}.txt').write_text(part)
  nav='<p class="kicker">LEX’S TEMPLATE COLLECTION · FORUM EDITION</p><h1 class="collection-title">'+html.escape(name)+'</h1><p class="links"><a href="index.html">All collections</a><a href="'+postfile+'" download>Download forum masterpost</a></p><div class="controls"><label>Preview mode <select id="mode"><option value="light">Light</option><option value="dark">Dark</option></select></label><button data-copy="full-post">Copy complete forum post</button><span role="status"></span></div><details><summary>Complete forum post code</summary><textarea id="full-post" readonly>'+html.escape(post)+'</textarea></details>'
- (OUT/(folder+'-preview.html')).write_text(wrapper(name+' · Forum templates',nav+'\n'.join(cards)))
+ if folder=='lychee':
+  (OUT/'lychee-preview.html').write_bytes((ROOT/'lychee/lychee-collection-preview.html').read_bytes())
+ else:
+  (OUT/(folder+'-preview.html')).write_text(wrapper(name+' · Forum templates',nav+'\n'.join(cards)))
  all_posts.append(post)
  tiles.append(f'<article class="tile" data-search="{name.lower()}"><div class="kicker">{len(items)} designs</div><h2>{name}</h2><a href="{folder}-preview.html">View templates &amp; copy code</a><a href="{postfile}" download>Forum masterpost (.txt)</a><details><summary>{len(parts)} numbered post part'+('s' if len(parts)!=1 else '')+'</summary>'+''.join(f'<a href="{folder}-post-{i:02d}.txt" download>Part {i}</a>' for i in range(1,len(parts)+1))+'</details></article>')
  md.append(f'| {name} | {len(items)} | [{postfile}]({postfile}) | [Preview]({folder}-preview.html) | {len(parts)} |')

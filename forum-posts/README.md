@@ -1,6 +1,6 @@
 # Forum-ready template collection
 
-935 distinct templates across 65 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
+950 distinct templates across 66 collections. Each live preview keeps its sample writing and is immediately followed by a native forum code box with concise writing markers.
 
 Open `index.html` for the searchable collection index. Copy each collection’s `.txt` masterpost into the forum editor. The `.html` files are browser previews, not forum posting code. Larger collections also have numbered post parts, each below 45,000 characters. Use the parts in order if the forum rejects a long masterpost.
 
@@ -41,6 +41,7 @@ CSS and images are hosted online; no stylesheet installation in the forum admin 
 | Jelly | 15 | [jelly-forum-masterpost.txt](jelly-forum-masterpost.txt) | [Preview](jelly-preview.html) | 1 |
 | Lavender | 16 | [lavender-forum-masterpost.txt](lavender-forum-masterpost.txt) | [Preview](lavender-preview.html) | 1 |
 | Lemon | 15 | [lemon-forum-masterpost.txt](lemon-forum-masterpost.txt) | [Preview](lemon-preview.html) | 1 |
+| Lychee | 15 | [lychee-forum-masterpost.txt](lychee-forum-masterpost.txt) | [Preview](lychee-preview.html) | 1 |
 | Macadamia · Orchard | 15 | [macadamia-forum-masterpost.txt](macadamia-forum-masterpost.txt) | [Preview](macadamia-preview.html) | 1 |
 | Macadamia · Legacy | 11 | [macadamia-legacy-forum-masterpost.txt](macadamia-legacy-forum-masterpost.txt) | [Preview](macadamia-legacy-preview.html) | 1 |
 | Mango | 15 | [mango-forum-masterpost.txt](mango-forum-masterpost.txt) | [Preview](mango-preview.html) | 1 |
