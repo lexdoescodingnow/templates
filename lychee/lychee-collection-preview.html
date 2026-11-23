@@ -1,477 +1,1480 @@
-<!doctype html><html lang="en" color-mode="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lychee / Jinho &amp; Suho</title><style>.lc{--l1:rgb(var(--mgrgb1,157,79,108));--l2:rgb(var(--mgrgb2,100,131,137));--l3:rgb(var(--mgrgb3,196,155,96));--l-grad:linear-gradient(120deg,var(--l1),var(--l2),var(--l3));--l-rev:linear-gradient(120deg,var(--l3),var(--l2),var(--l1));--paper:#fbfaf7;--soft:#f0efeb;--ink:#343735;--muted:#777a75;--line:#d9d8d1;--lychee:#d6a1a1;--width:540px;box-sizing:border-box;width:min(100%,var(--width));margin:24px auto;color:var(--ink);font:14px/1.85 Arial,Helvetica,sans-serif;text-align:left;container:lychee/inline-size;isolation:isolate}
-.lc *,.lc *:before,.lc *:after{box-sizing:border-box}.lc-card{position:relative;display:grid;min-width:0;gap:22px;padding:30px;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 34px #1818180b;overflow:hidden}.lc-head{display:flex;flex-direction:column;gap:8px;min-width:0}.lc-head>a{width:fit-content;max-width:100%;color:var(--l1);font-size:9px;font-weight:700;letter-spacing:.17em;text-decoration:none;text-transform:uppercase;overflow-wrap:anywhere}.lc-serial{position:absolute;right:20px;top:17px;color:var(--l2);font:9px/1.5 'Courier New',monospace;letter-spacing:.15em}.lc h2{margin:0;color:var(--l1);font:400 36px/1.06 Georgia,'Times New Roman',serif;letter-spacing:-.04em;overflow-wrap:anywhere}.lc-head small{color:var(--muted);font:9px/1.5 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}.lc-media{display:flex;align-items:flex-start;justify-content:center;gap:12px;min-width:0}.lc-portrait{flex:1 1 0;min-width:0;max-width:210px;margin:0;padding:4px;background:var(--l-grad);border-radius:3px;overflow:hidden}.lc-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border:2px solid var(--paper)}.lc-copy{min-width:0;text-align:justify;overflow-wrap:anywhere}.lc-copy p{margin:0 0 14px;font:inherit;color:inherit}.lc-copy p:last-child{margin-bottom:0}.lc-copy :is(b,strong,u){color:var(--l1);background:var(--l-grad);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.lc-copy :is(i,em){color:var(--l3);background:var(--l-rev);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.lc-copy u{text-decoration:none;border-bottom:1px solid var(--l2);padding-bottom:1px}.lc-mark{width:42px;height:42px;color:var(--lychee);line-height:0;justify-self:end}.lc-mark svg{width:100%;height:100%;fill:currentColor;fill-opacity:.11;stroke:currentColor;stroke-width:1.4;stroke-linejoin:round}.lc-phone{display:flex;justify-content:space-between;gap:12px;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:9px;letter-spacing:.07em}.lc-comms{--width:370px}.lc-comms .lc-card{gap:14px;padding:17px;border:5px solid transparent;background:linear-gradient(var(--paper),var(--paper)) padding-box,var(--l-grad) border-box;border-radius:25px}.lc-comms .lc-head{gap:4px;padding:0 3px 8px;border-bottom:1px solid var(--line)}.lc-comms h2{font:700 18px/1.3 Arial,sans-serif;letter-spacing:-.025em}.lc-comms .lc-head small{font-size:8px}.lc-comms .lc-media{justify-content:flex-start}.lc-comms .lc-portrait{flex:0 0 50px;width:50px;padding:2px;border-radius:50%;overflow:hidden}.lc-comms .lc-portrait img{aspect-ratio:1;border:0;border-radius:50%}.lc-comms .lc-copy{display:flex;flex-direction:column;gap:9px;text-align:left;font:12px/1.65 Arial,sans-serif}.lc-comms .lc-copy p{width:fit-content;max-width:90%;margin:0;padding:9px 12px;background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--l1);border-radius:4px 15px 15px 15px}.lc-comms[data-direction=sent] .lc-copy p,.lc-comms[data-direction=alternating] .lc-copy p:nth-child(even){align-self:flex-end;border-left:1px solid var(--line);border-right:3px solid var(--l3);border-radius:15px 4px 15px 15px;background:linear-gradient(110deg,rgba(var(--mgrgb1,157,79,108),.07),rgba(var(--mgrgb2,100,131,137),.08)),var(--soft)}.lc-comms .lc-mark{width:20px;height:20px}.lc-bud{--width:430px}.lc-bud .lc-card{gap:13px;padding:19px 22px;border-left:5px solid var(--l2)}.lc-bud h2{font-size:26px}.lc-bud .lc-copy{font-size:13px;line-height:1.7}.lc-bud .lc-copy p{margin-bottom:9px}.lc-bud .lc-media{justify-content:flex-start}.lc-bud .lc-portrait{max-width:74px;padding:2px;border-radius:50% 50% 4px 4px}.lc-bud .lc-portrait img{aspect-ratio:1;border:1px solid var(--paper)}.lc a:focus-visible{outline:2px solid var(--l2);outline-offset:4px}
-.lc-lychee-lithograph .lc-card{grid-template-columns:minmax(0,1fr) 132px;grid-template-areas:'head media' 'copy copy' 'mark mark';gap:24px;border-top:7px solid var(--l1)}.lc-lychee-lithograph .lc-head{grid-area:head;justify-content:center}.lc-lychee-lithograph .lc-media{grid-area:media;flex-direction:column}.lc-lychee-lithograph .lc-portrait{width:100%;border-radius:65px 65px 3px 3px}.lc-lychee-lithograph .lc-copy{grid-area:copy;padding-top:18px;border-top:1px solid var(--line)}.lc-lychee-lithograph .lc-mark{grid-area:mark}
-.lc-roseglass-index .lc-card{grid-template-columns:36px minmax(0,1fr);grid-template-areas:'serial head' 'serial media' 'serial copy' 'serial mark';padding:0 25px 25px 0;gap:17px 22px}.lc-roseglass-index .lc-serial{position:static;grid-area:serial;writing-mode:vertical-rl;transform:rotate(180deg);padding:18px 10px;background:var(--l-grad);color:var(--paper)}.lc-roseglass-index .lc-head{grid-area:head;padding-top:25px}.lc-roseglass-index .lc-media{grid-area:media;justify-content:flex-start;padding:12px 0;border-block:1px solid var(--line)}.lc-roseglass-index .lc-portrait:nth-child(2){margin-top:20px}.lc-roseglass-index .lc-copy{grid-area:copy}.lc-roseglass-index .lc-mark{grid-area:mark}
-.lc-orchard-receipt .lc-card{grid-template-columns:minmax(0,1fr) 72px;grid-template-areas:'head mark' 'media media' 'copy copy' 'serial serial';gap:19px;padding:25px;border:7px double var(--l2);border-radius:5px}.lc-orchard-receipt .lc-head{grid-area:head}.lc-orchard-receipt .lc-mark{grid-area:mark;width:62px;height:62px}.lc-orchard-receipt .lc-media{grid-area:media;padding:10px;background:repeating-linear-gradient(90deg,transparent 0 17px,var(--line) 17px 18px),var(--soft)}.lc-orchard-receipt .lc-portrait{padding:3px;background:var(--paper);border:1px solid var(--l1)}.lc-orchard-receipt .lc-portrait img{aspect-ratio:5/4}.lc-orchard-receipt .lc-copy{grid-area:copy}.lc-orchard-receipt .lc-serial{position:static;grid-area:serial;text-align:center;padding-top:10px;border-top:1px dashed var(--l3)}
-.lc-pale-lantern .lc-card{grid-template-columns:minmax(0,1fr) 90px;grid-template-areas:'media media' 'head head' 'copy copy' 'serial mark';gap:19px;padding:32px 36px;border:1px solid var(--l3);border-radius:72px 0 0 0}.lc-pale-lantern .lc-media{grid-area:media}.lc-pale-lantern .lc-portrait{flex:0 1 150px;border-radius:55% 55% 3px 3px;transform:rotate(-4deg)}.lc-pale-lantern .lc-portrait:nth-child(2){transform:rotate(4deg)}.lc-pale-lantern .lc-head{grid-area:head;align-items:center;text-align:center}.lc-pale-lantern h2{font-size:42px;font-style:italic}.lc-pale-lantern .lc-copy{grid-area:copy}.lc-pale-lantern .lc-serial{position:static;grid-area:serial;align-self:center}.lc-pale-lantern .lc-mark{grid-area:mark}
-.lc-twin-pit-almanac .lc-card{grid-template-columns:minmax(0,1fr) 64px;grid-template-areas:'head mark' 'copy copy' 'serial serial';gap:25px;padding:38px 40px 25px;border:0;border-bottom:3px solid var(--l2);background:linear-gradient(90deg,var(--l1) 0 2px,transparent 2px 9px,var(--l3) 9px 10px,transparent 10px),var(--paper)}.lc-twin-pit-almanac .lc-head{grid-area:head}.lc-twin-pit-almanac h2{font-size:43px}.lc-twin-pit-almanac .lc-mark{grid-area:mark;align-self:end}.lc-twin-pit-almanac .lc-copy{grid-area:copy;padding-left:14px;font:16px/1.9 Georgia,serif}.lc-twin-pit-almanac .lc-serial{position:static;grid-area:serial;padding-top:12px;border-top:1px solid var(--line)}
-.lc-lychee-line .lc-card{grid-template-columns:minmax(0,1fr) 70px;grid-template-areas:'serial serial' 'head media' 'copy copy' 'phone phone' 'mark mark';gap:13px;padding:18px 20px;border:6px solid var(--l2);border-radius:34px;box-shadow:inset 0 0 0 2px var(--paper),0 10px 26px #0000000c}.lc-lychee-line .lc-serial{position:static;grid-area:serial;padding-bottom:9px;border-bottom:4px solid var(--l1)}.lc-lychee-line .lc-head{grid-area:head;justify-content:center}.lc-lychee-line .lc-media{grid-area:media;flex-direction:column}.lc-lychee-line .lc-copy{grid-area:copy}.lc-lychee-line .lc-phone{grid-area:phone}.lc-lychee-line .lc-mark{grid-area:mark}
-.lc-glasshouse-ping .lc-card{grid-template-columns:95px minmax(0,1fr);grid-template-areas:'serial serial' 'media head' 'media copy' 'mark phone';gap:12px 17px;padding:16px;border-radius:4px;background:linear-gradient(90deg,var(--soft) 0 116px,var(--paper) 116px)}.lc-glasshouse-ping .lc-serial{position:static;grid-area:serial}.lc-glasshouse-ping .lc-media{grid-area:media;align-self:start}.lc-glasshouse-ping .lc-portrait{flex:none;width:78px;border-radius:50%}.lc-glasshouse-ping .lc-head{grid-area:head}.lc-glasshouse-ping .lc-copy{grid-area:copy}.lc-glasshouse-ping .lc-phone{grid-area:phone}.lc-glasshouse-ping .lc-mark{grid-area:mark;width:20px;height:20px}
-.lc-peel-dial .lc-card{grid-template-columns:1fr;gap:12px;padding:19px 17px 14px;border-radius:9px;border-top:8px solid var(--l1);background:linear-gradient(var(--soft) 0 38px,var(--paper) 38px)}.lc-peel-dial .lc-serial{position:static;order:-1}.lc-peel-dial .lc-head{padding:8px 3px;border-bottom:1px solid var(--line)}.lc-peel-dial h2{font-size:20px}.lc-peel-dial .lc-copy{display:flex;flex-direction:column;gap:8px;text-align:left;font-size:12px}.lc-peel-dial .lc-copy p{max-width:90%;padding:8px 11px;background:var(--soft);border-left:3px solid var(--l1);border-radius:4px 13px 13px}.lc-peel-dial .lc-copy p:nth-child(even){align-self:flex-end;border-left:1px solid var(--line);border-right:3px solid var(--l3);border-radius:13px 4px 13px}.lc-peel-dial .lc-phone{order:3}
-.lc-nectar-network .lc-card{grid-template-columns:minmax(0,1fr) 48px;grid-template-areas:'head head' 'media copy' 'serial serial' 'phone phone' 'mark mark';gap:12px;padding:19px;border:1px solid var(--l1);border-radius:22px 22px 4px 4px;box-shadow:inset 0 5px var(--l1)}.lc-nectar-network .lc-head{grid-area:head;padding-top:7px}.lc-nectar-network .lc-head:after{content:'';height:1px;background:var(--line)}.lc-nectar-network .lc-media{grid-area:media;align-self:start}.lc-nectar-network .lc-portrait{width:44px;flex:none;border-radius:50%}.lc-nectar-network .lc-copy{grid-area:copy;text-align:left;font-size:12px}.lc-nectar-network .lc-copy p{padding:8px 10px;background:var(--soft);border-radius:3px 12px 12px}.lc-nectar-network .lc-serial{position:static;grid-area:serial}.lc-nectar-network .lc-phone{grid-area:phone}.lc-nectar-network .lc-mark{grid-area:mark;width:18px;height:18px}
-.lc-two-seed-signal .lc-card{grid-template-columns:1fr;gap:11px;padding:16px 18px;border-radius:7px 28px 7px 7px;background:radial-gradient(circle at 92% 9%,rgba(var(--mgrgb1,157,79,108),.08),transparent 75px),var(--paper)}.lc-two-seed-signal .lc-head{order:0}.lc-two-seed-signal .lc-media{order:1;justify-content:flex-start}.lc-two-seed-signal .lc-portrait{max-width:58px;border-radius:50%;padding:2px}.lc-two-seed-signal .lc-copy{order:2;text-align:left;font-size:12px}.lc-two-seed-signal .lc-copy p{max-width:90%;padding:8px 10px;background:var(--soft);border-left:2px solid var(--l2);border-radius:4px 12px 12px}.lc-two-seed-signal .lc-copy p:nth-child(even){margin-left:auto;border-left:0;border-right:2px solid var(--l3)}.lc-two-seed-signal .lc-phone{order:3}.lc-two-seed-signal .lc-mark{order:4}
-.lc-litchi-note .lc-card{grid-template-columns:minmax(0,1fr) 66px;grid-template-areas:'head media' 'copy copy' 'serial mark';gap:12px 16px;padding:17px 20px;background:linear-gradient(90deg,transparent 0 12px,var(--line) 12px 13px,transparent 13px),var(--paper)}.lc-litchi-note .lc-head{grid-area:head}.lc-litchi-note h2{font-size:25px}.lc-litchi-note .lc-media{grid-area:media}.lc-litchi-note .lc-portrait{max-width:56px;border-radius:50%;padding:2px}.lc-litchi-note .lc-copy{grid-area:copy;font-size:13px}.lc-litchi-note .lc-serial{position:static;grid-area:serial;align-self:center}.lc-litchi-note .lc-mark{grid-area:mark;width:25px;height:25px}
-.lc-pitstop .lc-card{grid-template-columns:1fr 42px;grid-template-areas:'serial mark' 'head head' 'copy copy';gap:8px 13px;padding:16px 20px;border:1px dashed var(--l2);border-radius:4px}.lc-pitstop .lc-serial{position:static;grid-area:serial}.lc-pitstop .lc-mark{grid-area:mark;width:24px;height:24px}.lc-pitstop .lc-head{grid-area:head;display:grid;grid-template-columns:1fr auto;align-items:baseline}.lc-pitstop .lc-head>a{grid-column:1/-1}.lc-pitstop h2{font-size:24px}.lc-pitstop .lc-copy{grid-area:copy;font-size:13px;line-height:1.65}.lc-pitstop .lc-copy p{margin-bottom:7px}
-.lc-shell-slip .lc-card{grid-template-columns:62px minmax(0,1fr);grid-template-areas:'media head' 'serial copy' 'mark mark';gap:9px 14px;padding:15px 19px;border:1px solid var(--l3);border-radius:48px 5px 5px 5px}.lc-shell-slip .lc-media{grid-area:media}.lc-shell-slip .lc-portrait{width:54px;flex:none;border-radius:50% 50% 4px 4px}.lc-shell-slip .lc-head{grid-area:head;justify-content:center}.lc-shell-slip h2{font-size:23px}.lc-shell-slip .lc-serial{position:static;grid-area:serial;writing-mode:vertical-rl;color:var(--l1);letter-spacing:.15em}.lc-shell-slip .lc-copy{grid-area:copy;font-size:12px;line-height:1.65}.lc-shell-slip .lc-copy p{margin-bottom:6px}.lc-shell-slip .lc-mark{grid-area:mark;width:22px;height:22px}
-.lc-bloom-byte .lc-card{grid-template-columns:minmax(0,1fr) 62px;grid-template-areas:'serial media' 'head media' 'copy copy' 'mark mark';gap:8px 14px;padding:16px 20px;border-left:4px solid var(--l1);border-radius:0 13px 13px 0}.lc-bloom-byte .lc-serial{position:static;grid-area:serial}.lc-bloom-byte .lc-head{grid-area:head}.lc-bloom-byte h2{font-size:25px}.lc-bloom-byte .lc-media{grid-area:media}.lc-bloom-byte .lc-portrait{max-width:58px;border-radius:4px 30px 4px 4px}.lc-bloom-byte .lc-copy{grid-area:copy;font-size:13px}.lc-bloom-byte .lc-copy p{margin-bottom:7px}.lc-bloom-byte .lc-mark{grid-area:mark;width:24px;height:24px}
-.lc-soft-kernel .lc-card{grid-template-columns:minmax(0,1fr) 38px;grid-template-areas:'head mark' 'copy copy' 'serial serial';gap:9px 12px;padding:16px 19px;border:0;border-bottom:2px solid var(--l3);box-shadow:0 7px 18px #11111108}.lc-soft-kernel .lc-head{grid-area:head}.lc-soft-kernel h2{font:italic 23px/1.1 Georgia,serif}.lc-soft-kernel .lc-mark{grid-area:mark;width:26px;height:26px}.lc-soft-kernel .lc-copy{grid-area:copy;font-size:13px;line-height:1.65}.lc-soft-kernel .lc-copy p{margin-bottom:7px}.lc-soft-kernel .lc-serial{position:static;grid-area:serial;text-align:right}
-@container lychee (max-width:430px){.lc-card{padding:20px}.lc-lychee-lithograph .lc-card{grid-template-columns:minmax(0,1fr) 90px}.lc-roseglass-index .lc-card{grid-template-columns:24px minmax(0,1fr);gap:13px}.lc-orchard-receipt .lc-card{padding:18px}.lc-pale-lantern .lc-card{padding:24px 20px}.lc-twin-pit-almanac .lc-card{padding:27px 24px 20px}.lc-glasshouse-ping .lc-card{grid-template-columns:66px minmax(0,1fr);background:linear-gradient(90deg,var(--soft) 0 82px,var(--paper) 82px)}.lc-comms .lc-copy{font-size:11px}.lc-bud .lc-card{padding:15px 17px}}
-@container lychee (max-width:320px){.lc h2{font-size:28px}.lc-lychee-lithograph .lc-card{grid-template-columns:1fr}.lc-lychee-lithograph .lc-media{flex-direction:row}.lc-lychee-lithograph .lc-portrait{width:auto;flex:1;border-radius:3px}.lc-roseglass-index .lc-card{grid-template-columns:18px minmax(0,1fr);padding-right:15px}.lc-orchard-receipt .lc-media{padding:5px}.lc-glasshouse-ping .lc-card{grid-template-columns:1fr;background:var(--paper)}.lc-glasshouse-ping .lc-media{grid-area:head}.lc-pale-lantern h2{font-size:33px}}
-@supports (color:light-dark(white,black)){html[color-mode="light"] .lc{color-scheme:light}html[color-mode="dark"] .lc{color-scheme:dark}}
-@media (prefers-color-scheme:dark){html:not([color-mode="light"]) .lc{--paper:#222522;--soft:#2c302d;--ink:#e9e8e2;--muted:#b1b2aa;--line:#464a45}}
-html[color-mode="dark"] .lc{--paper:#222522;--soft:#2c302d;--ink:#e9e8e2;--muted:#b1b2aa;--line:#464a45}
-body{margin:0;padding:30px 14px;background:#f2f1ed;color:#30322f;font:14px Arial,sans-serif}.page{max-width:940px;margin:auto}.hero{padding:30px;margin:auto auto 34px;border-bottom:2px solid #bbb}.hero h1{font:54px Georgia,serif;margin:12px 0;color:#a1586f}.hero p{max-width:600px;line-height:1.7}section{margin:36px auto;padding:0 12px;border-top:1px solid #ccc}section>header{text-align:center;margin:20px}section>header small{letter-spacing:.15em;color:#708b8c}section>header h2{font:25px Georgia,serif}.stage{padding:8px}details{max-width:700px;margin:16px auto}summary{cursor:pointer;color:#78546a}textarea{width:100%;height:220px;margin-top:10px;font:11px/1.5 monospace;background:#f8f7f3;border:1px solid #ccc;white-space:pre;overflow:auto}</style></head><body><main class="page"><header class="hero"><small>JINHO / SUHO · LYCHEE COLLECTION</small><h1>Orchard glass</h1><p>Fifteen templates: five thread layouts, five device-style conversations and five compact buds. Member colours shape the frames and interface; lychee blush and seed forms appear as small accents. Copy a posting block and paste it inside a JCink [dohtml] area.</p></header><section><header><small>THREAD / 01</small><h2>Lychee Lithograph</h2></header><div class="stage">
-<div class="lc lc-thread lc-lychee-lithograph" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 01</span><h2>a study in translucence</h2><small>field record / 01</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
+<!doctype html>
+<html lang="en" color-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orchard Glass · Lychee templates for Jinho &amp; Suho</title>
+<style>
+:root {
+  color-scheme: light;
+  --canvas: #f3eee9;
+  --panel: #fffdf9;
+  --stage: #eee9e3;
+  --ink: #2c2529;
+  --dim: #6e6267;
+  --border: #d6cbc8;
+  --accent: #77384f;
+  --button: #ffffff;
+}
+html[color-mode="dark"] {
+  color-scheme: dark;
+  --canvas: #211f23;
+  --panel: #2b272c;
+  --stage: #1b191d;
+  --ink: #f4eae7;
+  --dim: #c8b7ba;
+  --border: #51454d;
+  --accent: #e9adc0;
+  --button: #33232d;
+}
+body { margin: 0; background: var(--canvas); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
+.page-shell, .page-shell * { box-sizing: border-box; }
+.mast { border-bottom: 1px solid var(--border); }
+.mast-inner, .page-shell { max-width: 1180px; margin: auto; padding-inline: clamp(15px,4vw,52px); }
+.mast-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 14px; font-size: 13px; }
+.mast-inner strong { font-family: Georgia,serif; font-size: 17px; font-weight: normal; }
+.page-shell { padding-bottom: 4rem; }
+.intro { padding-block: clamp(20px,4vw,42px) 21px; }
+.intro h1 { margin: 0; font: normal clamp(34px,5vw,62px)/1.05 Georgia,serif; letter-spacing: -.055em; color: var(--ink); }
+.intro h1 em { font-weight: normal; color: var(--accent); }
+.type-list { display: flex; gap: 8px; margin: 0 0 20px; flex-wrap: wrap; }
+.page-shell :is(button, select, input, textarea) { font: inherit; }
+.type-list button, .design-pick, .swatch-controls select, .action, .edit-form input, .edit-form select, .edit-form textarea, .source-code { border: 1px solid var(--border); background: var(--panel); color: var(--ink); }
+.type-list button, .action { padding: 8px 15px; border-radius: 6px; cursor: pointer; }
+.type-list button[aria-pressed="true"], .action.primary { background: var(--accent); color: var(--button); border-color: var(--accent); }
+.page-shell :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.workspace { display: grid; grid-template-columns: minmax(165px,200px) minmax(0,1fr); gap: clamp(12px,2.5vw,32px); align-items: start; }
+.design-list { display: grid; gap: 4px; }
+.design-pick { border-color: transparent; background: transparent; text-align: left; font-weight: 500; border-radius: 6px; padding: 11px 13px; cursor: pointer; overflow-wrap: anywhere; }
+.design-pick:hover, .action:not(.primary):hover, .type-list button:not([aria-pressed="true"]):hover { border-color: var(--accent); }
+.design-pick[aria-current="true"] { border-color: var(--border); background: var(--panel); color: var(--accent); box-shadow: inset 3px 0 var(--accent); }
+.workpane { min-width: 0; background: var(--panel); border: 1px solid var(--border); border-radius: 11px; overflow: hidden; }
+.work-head, .swatch-controls, .actions, .edit-area, .code-area { padding-inline: clamp(13px,2.5vw,26px); }
+.work-head { padding-block: 18px 8px; }
+.work-head h2 { margin: 0; font: normal clamp(24px,4vw,32px)/1.1 Georgia,serif; }
+.swatch-controls { display: flex; flex-wrap: wrap; align-items: baseline; gap: 7px 13px; padding-block: 5px 14px; }
+.swatch-controls label { color: var(--dim); font-size: 12px; }
+.swatch-controls select { padding: 3px 5px; border-radius: 4px; font-size: 12px; }
+.preview-bed { border-block: 1px solid var(--border); padding: clamp(10px, 2vw, 22px); background: var(--stage); }
+#stage { margin-inline: auto; max-width: 100%; display: flow-root; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding-block: 16px; }
+.action { font-size: 13px; }
+#answer { color: var(--dim); font-size: 13px; }
+.edit-area, .code-area { border-top: 1px solid var(--border); }
+.edit-area summary, .code-area summary { padding-block: 14px; font-weight: 600; cursor: pointer; }
+.edit-form { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-bottom: 18px; }
+.edit-form label { display: grid; gap: 5px; color: var(--dim); font-size: 13px; }
+.edit-form input, .edit-form select, .edit-form textarea, .source-code { display: block; width: 100%; border-radius: 5px; padding: 8px; }
+.edit-form .wide { grid-column: 1/-1; }
+.edit-form .action { justify-self: start; }
+.edit-form textarea, .source-code { resize: vertical; font: 13px/1.5 ui-monospace,monospace; }
+.source-code { margin: 0 0 18px; white-space: pre; overflow: auto; }
+.mast-inner a { color: var(--accent); }
+.swatch-controls select, .action, .edit-form input, .edit-form textarea { max-width: 100%; }
+@media(max-width:720px) {
+  .workspace { grid-template-columns: minmax(0,1fr); }
+  .design-list { display: flex; overflow-x: auto; gap: 5px; padding: 3px 3px 6px; }
+  .design-pick { white-space: nowrap; padding: 7px 10px; font-size: 13px; }
+  .design-pick[aria-current="true"] { box-shadow: inset 0 -2px var(--accent); }
+}
+@media(max-width:440px) {
+  .mast-inner { font-size: 11px; }
+  .type-list { margin-bottom: 10px; }
+  .edit-form { grid-template-columns: minmax(0,1fr); }
+  .preview-bed { padding: 5px; }
+  .swatch-controls label { display: grid; }
+  .actions .action { flex-grow: 1; }
+}
 
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
+.ly2 {
+  --paper: #fbfaf7;
+  --soft: #f1eee7;
+  --ink: #302c2a;
+  --muted: #695f59;
+  --rule: #d0c6bc;
+  --member-a: rgb(var(--mgrgb1, 164, 70, 91));
+  --member-b: rgb(var(--mgrgb2, 124, 97, 124));
+  --member-c: rgb(var(--mgrgb3, 92, 120, 105));
+  --accent: color-mix(in srgb, var(--member-a) 65%, var(--ink));
+  --accent2: color-mix(in srgb, var(--member-b) 65%, var(--ink));
+  --accent3: color-mix(in srgb, var(--member-c) 65%, var(--ink));
+  --line: color-mix(in srgb, var(--member-b) 20%, var(--rule));
+  --gradient: linear-gradient(108deg, var(--accent), var(--accent2), var(--accent3));
+  --reverse: linear-gradient(108deg, var(--accent3), var(--accent2), var(--accent));
+  --sans: "Segoe UI", Arial, sans-serif;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --mono: "Cascadia Mono", Consolas, monospace;
+  color-scheme: light;
+  box-sizing: border-box;
+  display: block;
+  isolation: isolate;
+  container: lychee / inline-size;
+  width: min(100%, 550px);
+  max-width: 100%;
+  margin: 22px auto;
+  padding: 0;
+  color: var(--ink);
+  text-align: left;
+  font: 400 15px/1.75 var(--sans);
+}
+html[color-mode="dark"] .ly2 {
+  color-scheme: dark;
+  --paper: #232326;
+  --soft: #2c2b30;
+  --ink: #f5efe9;
+  --muted: #c2b8b5;
+  --rule: #555057;
+}
+@media (prefers-color-scheme: dark) {
+  html:not([color-mode="light"]):not([color-mode="dark"]) .ly2 {
+    color-scheme: dark;
+    --paper: #232326;
+    --soft: #2c2b30;
+    --ink: #f5efe9;
+    --muted: #c2b8b5;
+    --rule: #555057;
+  }
+}
+.ly2 *, .ly2 *::before, .ly2 *::after { box-sizing: border-box; }
+.ly2 .ly-card {
+  min-width: 0;
+  position: relative;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(35, 23, 28, .06);
+}
+.ly2 .ly-card > * { min-width: 0; }
+.ly2 .ly-head, .ly2 .ly-foot, .ly2 .ly-copy { overflow-wrap: anywhere; }
+.ly2 .ly-head .ly-name {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--accent);
+  font: 650 11px/1.5 var(--sans);
+  letter-spacing: .095em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  border: 0;
+}
+.ly2 .ly-title {
+  padding: 0;
+  margin: 0;
+  color: var(--accent);
+  font: 400 32px/1.12 var(--serif);
+  text-transform: none;
+  overflow-wrap: anywhere;
+  background: none;
+  border: 0;
+}
+.ly2 .ly-imprint {
+  color: var(--muted);
+  font: 500 10px/1.45 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .115em;
+}
+.ly2 .ly-art { display: block; color: var(--accent); line-height: 0; }
+.ly2 .ly-art svg { display: block; width: 100%; height: auto; }
+.ly2 .ly-media, .ly2 .ly-shot { min-width: 0; margin: 0; }
+.ly2 .ly-media:empty, .ly2 .ly-shot:not(:has(img[src]:not([src=""]))) { display: none; }
+.ly2 .ly-shot img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: var(--ly-focus, 50% 36%);
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.ly2 .ly-copy {
+  color: var(--ink);
+  font: 400 15px/1.82 var(--sans);
+  text-align: start;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.ly2 .ly-copy p { margin: 0 0 .95em; padding: 0; color: inherit; font: inherit; }
+.ly2 .ly-copy p:last-child { margin-bottom: 0; }
+.ly2 .ly-copy a { color: var(--accent); text-decoration: underline; }
+.ly2 .ly-copy :is(b, strong, i, em, u) {
+  color: var(--accent);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ly2 .ly-copy :is(b, strong) { font-weight: 720; }
+.ly2 .ly-copy :is(i, em) { font-style: italic; background-image: var(--reverse); }
+.ly2 .ly-copy u { text-decoration: underline; text-underline-offset: .22em; text-decoration-color: var(--accent2); }
+.ly2 a:focus-visible { outline: 2px solid var(--accent3); outline-offset: 3px; }
+@media (forced-colors: active) {
+  .ly2 .ly-copy :is(b, strong, i, em, u) { -webkit-text-fill-color: currentColor; }
+}
+.ly2 .ly-shot img[src*="688a74647cfe8278"] { --ly-focus: 50% 0%; }
+.ly2 .ly-shot img[src*="2447bf8417a283b7"] { --ly-focus: 50% 10%; }
+.ly2 > br, .ly2 .ly-card > br, .ly2 .ly-head > br, .ly2 .ly-media > br, .ly2 .ly-meta > br, .ly2 .ly-foot > br, .ly2 .ly-copy > br { display: none; }
+@supports (color: oklch(from red l c h)) {
+  .ly2 {
+    --lightness-floor: 0;
+    --lightness-ceiling: .52;
+    --accent: oklch(from var(--member-a) clamp(var(--lightness-floor), l, var(--lightness-ceiling)) c h);
+    --accent2: oklch(from var(--member-b) clamp(var(--lightness-floor), l, var(--lightness-ceiling)) c h);
+    --accent3: oklch(from var(--member-c) clamp(var(--lightness-floor), l, var(--lightness-ceiling)) c h);
+  }
+  html[color-mode="dark"] .ly2 { --lightness-floor: .76; --lightness-ceiling: 1; }
+  @media (prefers-color-scheme: dark) {
+    html:not([color-mode="light"]):not([color-mode="dark"]) .ly2 { --lightness-floor: .76; --lightness-ceiling: 1; }
+  }
+}
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-thread lc-lychee-lithograph&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 01&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;field record / 01&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
+.ly2[data-kind="thread"] .ly-card {
+  --ly-inset: clamp(20px, 6.3cqi, 38px);
+  --ly-tint: color-mix(in srgb, var(--accent2) 10%, var(--paper));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 0;
+  gap: 0;
+  background: var(--paper);
+}
+.ly2[data-kind="thread"] .ly-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 9px;
+  min-inline-size: 0;
+  margin: 0;
+  padding: var(--ly-inset);
+}
+.ly2[data-kind="thread"] .ly-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(27px, 7.5cqi, 44px);
+  line-height: 1.04;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.ly2[data-kind="thread"] .ly-name {
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+}
+.ly2[data-kind="thread"] .ly-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(7px, 2.2cqi, 14px);
+  min-inline-size: 0;
+  margin: 0;
+}
+.ly2[data-kind="thread"] .ly-media:not(:has(img[src]:not([src=""]))) {
+  display: none;
+}
+.ly2[data-kind="thread"] .ly-shot {
+  display: block;
+  position: relative;
+  flex: 1 1 0;
+  min-inline-size: 0;
+  margin: 0;
+  padding: 3px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent2) 35%, transparent);
+}
+.ly2[data-kind="thread"] .ly-shot img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: var(--ly-ratio, 4/5);
+  object-fit: cover;
+  border-radius: inherit;
+}
+.ly2[data-kind="thread"] .ly-copy {
+  min-inline-size: 0;
+  padding: var(--ly-inset);
+  border-block-start: 1px solid var(--line);
+  color: var(--ink);
+  text-align: start;
+}
+.ly2[data-kind="thread"] .ly-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-inline-size: 0;
+  margin-inline: var(--ly-inset);
+  padding-block: 13px 16px;
+  border-block-start: 1px solid var(--line);
+}
+.ly2[data-kind="thread"] .ly-art {
+  display: block;
+  flex: none;
+  inline-size: 47px;
+  max-inline-size: 26%;
+  line-height: 0;
+}
+.ly2[data-kind="thread"] .ly-art svg {
+  display: block;
+  inline-size: 100%;
+  max-block-size: 59px;
+  block-size: auto;
+}
+.ly2[data-kind="thread"][data-design="01"] .ly-card {
+  border-block-start: 3px solid var(--accent);
+}
+.ly2[data-kind="thread"][data-design="01"] .ly-card:has(.ly-media img[src]:not([src=""])) {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+}
+.ly2[data-kind="thread"][data-design="01"] .ly-head {
+  grid-column: 1/-1;
+}
+.ly2[data-kind="thread"][data-design="01"] .ly-media {
+  grid-column: 1;
+  grid-row: 1;
+  padding: clamp(17px, 4.6cqi, 30px);
+  border-inline-end: 1px solid var(--line);
+  align-self: stretch;
+  background:
+    linear-gradient(135deg, transparent 49.7%, color-mix(in srgb, var(--accent) 19%, transparent) 50%, transparent 50.3%),
+    var(--ly-tint);
+}
+.ly2[data-kind="thread"][data-design="01"] .ly-shot {
+  --ly-ratio: 4/5;
+  max-inline-size: 156px;
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--ink) 8%, transparent);
+}
+.ly2[data-kind="thread"][data-design="01"] .ly-card:has(.ly-media img[src]:not([src=""])) .ly-head {
+  grid-column: 2;
+  grid-row: 1;
+  padding-inline: clamp(15px, 4.4cqi, 30px);
+}
+.ly2[data-kind="thread"][data-design="01"] :is(.ly-copy,.ly-foot) {
+  grid-column: 1/-1;
+}
+.ly2[data-kind="thread"][data-design="02"] .ly-head {
+  align-items: center;
+  text-align: center;
+  padding-block-end: clamp(16px, 4cqi, 24px);
+}
+.ly2[data-kind="thread"][data-design="02"] .ly-media {
+  --ly-ratio: 6/5;
+  padding: 0 var(--ly-inset) var(--ly-inset);
+  align-items: end;
+}
+.ly2[data-kind="thread"][data-design="02"] .ly-shot {
+  max-inline-size: 248px;
+  border-radius: 40% 40% 2px 2px / 30% 30% 2px 2px;
+  padding: 4px;
+  border-color: var(--accent2);
+  box-shadow: none;
+}
+.ly2[data-kind="thread"][data-design="02"] .ly-media:has(.ly-shot + .ly-shot) .ly-shot:first-child {
+  border-start-end-radius: 3px;
+}
+.ly2[data-kind="thread"][data-design="02"] .ly-media:has(.ly-shot + .ly-shot) .ly-shot:last-child {
+  border-start-start-radius: 3px;
+}
+.ly2[data-kind="thread"][data-design="02"] .ly-copy {
+  margin-inline: var(--ly-inset);
+  padding-inline: 0;
+}
+.ly2[data-kind="thread"][data-design="02"] .ly-foot {
+  margin: 0;
+  padding-inline: var(--ly-inset);
+  background: var(--ly-tint);
+}
+.ly2[data-kind="thread"][data-design="03"] .ly-card {
+  border-block-start: 4px double var(--accent2);
+}
+.ly2[data-kind="thread"][data-design="03"] .ly-foot {
+  grid-row: 1;
+  margin-inline: 0;
+  padding: 12px var(--ly-inset);
+  border-block-start: 0;
+  border-block-end: 1px solid var(--line);
+  background: var(--soft);
+}
+.ly2[data-kind="thread"][data-design="03"] .ly-art {
+  inline-size: 39px;
+}
+.ly2[data-kind="thread"][data-design="03"] .ly-head {
+  grid-row: 2;
+}
+.ly2[data-kind="thread"][data-design="03"] .ly-copy {
+  grid-row: 3;
+  border-block-start-style: dashed;
+}
+.ly2[data-kind="thread"][data-design="03"] .ly-media {
+  --ly-ratio: 3/2;
+  grid-row: 4;
+  justify-content: start;
+  padding: 17px var(--ly-inset) 21px;
+  border-block-start: 1px dashed var(--line);
+  background: repeating-linear-gradient(135deg, transparent 0 5px, color-mix(in srgb, var(--accent2) 7%, transparent) 5px 6px), var(--soft);
+}
+.ly2[data-kind="thread"][data-design="03"] .ly-shot {
+  max-inline-size: 202px;
+  padding: 4px;
+  border-color: color-mix(in srgb, var(--accent2) 50%, var(--line));
+  box-shadow: none;
+}
+.ly2[data-kind="thread"][data-design="04"] .ly-card {
+  grid-template-columns: minmax(0, 1fr);
+  background:
+    radial-gradient(ellipse 70% 25% at 100% 0%, color-mix(in srgb, var(--accent3) 12%, transparent), transparent),
+    var(--paper);
+}
+.ly2[data-kind="thread"][data-design="04"] .ly-head {
+  grid-column: 1;
+  grid-row: 1;
+  align-items: center;
+  text-align: center;
+}
+.ly2[data-kind="thread"][data-design="04"] .ly-title {
+  font-style: italic;
+}
+.ly2[data-kind="thread"][data-design="04"] .ly-card:has(.ly-media img[src]:not([src=""])) {
+  grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr);
+}
+.ly2[data-kind="thread"][data-design="04"] .ly-media {
+  --ly-ratio: 4/5;
+  grid-column: 2;
+  grid-row: 1;
+  padding: clamp(14px, 4cqi, 25px) clamp(14px, 4cqi, 25px) clamp(14px, 4cqi, 25px) 0;
+}
+.ly2[data-kind="thread"][data-design="04"] .ly-shot {
+  border-radius: 50%;
+  max-inline-size: 155px;
+  padding: 5px;
+  border: 1px solid var(--accent2);
+  box-shadow: inset 0 0 0 2px var(--paper), inset 0 0 0 3px var(--line);
+}
+.ly2[data-kind="thread"][data-design="04"] :is(.ly-copy,.ly-foot) {
+  grid-column: 1/-1;
+}
+.ly2[data-kind="thread"][data-design="04"] .ly-foot {
+  flex-direction: row-reverse;
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-card {
+  border-block-start: 5px double var(--accent2);
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-foot {
+  grid-row: 1;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 6px;
+  margin-inline: 0;
+  padding: var(--ly-inset) var(--ly-inset) 0;
+  border: 0;
+  text-align: center;
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-art {
+  inline-size: 83px;
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-art svg {
+  max-block-size: 76px;
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-head {
+  grid-row: 2;
+  align-items: center;
+  gap: 10px;
+  padding-block: 18px var(--ly-inset);
+  text-align: center;
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-head .ly-title {
+  order: -1;
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-media {
+  --ly-ratio: 3/2;
+  padding: 0 var(--ly-inset) var(--ly-inset);
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-copy {
+  margin-inline: var(--ly-inset);
+  padding-inline: 0;
+  border-block-start: 3px double var(--line);
+}
+.ly2[data-kind="thread"][data-design="05"] .ly-copy p:first-child::first-letter {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9em;
+  line-height: 1;
+}
+@container lychee (max-width: 365px) {
+  .ly2[data-kind="thread"]:is([data-design="01"],[data-design="04"]) .ly-card:has(.ly-media img[src]:not([src=""])) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ly2[data-kind="thread"]:is([data-design="01"],[data-design="04"]) .ly-card:has(.ly-media img[src]:not([src=""])) .ly-head {
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    text-align: center;
+    padding: 18px var(--ly-inset);
+  }
+  .ly2[data-kind="thread"]:is([data-design="01"],[data-design="04"]) .ly-media {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 17px var(--ly-inset);
+    border-inline-end: 0;
+  }
+  .ly2[data-kind="thread"][data-design="01"] .ly-shot {
+    --ly-ratio: 5/4;
+    max-inline-size: 179px;
+  }
+  .ly2[data-kind="thread"][data-design="04"] .ly-shot {
+    --ly-ratio: 1;
+    max-inline-size: 123px;
+  }
+}
 
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>THREAD / 02</small><h2>Roseglass Index</h2></header><div class="stage">
-<div class="lc lc-thread lc-roseglass-index" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 02</span><h2>the orchard in fragments</h2><small>collected moments / 02</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure><figure class="lc-portrait"><img src="https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv" alt="Character GIF 2"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
 
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
+.ly2[data-kind="comms"] {
+  width: min(100%, 370px);
+  --ly-device-line: color-mix(in srgb, var(--accent) 36%, var(--line));
+  --ly-device-wash: color-mix(in srgb, var(--accent2) 6%, var(--paper));
+  --ly-outgoing: color-mix(in srgb, var(--accent) 12%, var(--paper));
+}
+.ly2[data-kind="comms"] .ly-card {
+  display: grid;
+  position: relative;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "chrome" "media" "head" "copy" "foot";
+  align-items: start;
+  gap: 0;
+  border: 1px solid var(--ly-device-line);
+  background: var(--paper);
+  isolation: isolate;
+}
+.ly2[data-kind="comms"] .ly-card > * {
+  min-width: 0;
+}
+.ly2[data-kind="comms"] .ly-head {
+  grid-area: head;
+  display: grid;
+  align-self: center;
+  gap: 4px;
+  overflow-wrap: anywhere;
+}
+.ly2[data-kind="comms"] .ly-media {
+  grid-area: media;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.ly2[data-kind="comms"] .ly-copy {
+  grid-area: copy;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: start;
+  overflow-wrap: anywhere;
+  font: 400 14px/1.54 var(--sans);
+  color: var(--ink);
+}
+.ly2[data-kind="comms"] .ly-copy > p {
+  flex: none;
+  max-width: 86%;
+  width: fit-content;
+  box-sizing: border-box;
+  align-self: flex-start;
+  margin: 0;
+  padding: 9px 13px;
+  font: inherit;
+  color: inherit;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 15px 15px 15px 4px;
+}
+.ly2[data-kind="comms"][data-direction="sent"] .ly-copy > p,
+.ly2[data-kind="comms"][data-direction="alternating"] .ly-copy > p:nth-of-type(even) {
+  align-self: flex-end;
+  background: var(--ly-outgoing);
+  border-color: var(--ly-device-line);
+  border-radius: 15px 15px 4px 15px;
+}
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-thread lc-roseglass-index&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 02&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;collected moments / 02&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv&quot; alt=&quot;Character GIF 2&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
+.ly2[data-kind="comms"] .ly-name {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  color: var(--accent);
+  font: 650 10px/1.45 var(--sans);
+  letter-spacing: .07em;
+}
+.ly2[data-kind="comms"] .ly-title {
+  margin: 0;
+  max-width: 100%;
+  color: var(--ink);
+  font: 500 clamp(20px, 6.8cqi, 27px)/1.08 var(--serif);
+  letter-spacing: -.035em;
+}
+.ly2[data-kind="comms"] .ly-shot {
+  flex: 0 1 auto;
+  width: 56px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  margin: 0;
+  padding: 2px;
+  border: 1px solid var(--ly-device-line);
+  background: var(--paper);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ly2[data-kind="comms"] .ly-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: var(--ly-focus, 50% 36%);
+}
+.ly2[data-kind="comms"] .ly-foot {
+  grid-area: foot;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--accent);
+}
+.ly2[data-kind="comms"] .ly-imprint {
+  min-width: 0;
+  color: inherit;
+  text-transform: uppercase;
+  font: 600 9px/1.45 var(--mono);
+  letter-spacing: .15em;
+  overflow-wrap: anywhere;
+}
+.ly2[data-kind="comms"] .ly-art {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: 29px;
+  height: 22px;
+  color: var(--accent2);
+}
+.ly2[data-kind="comms"] .ly-art svg {
+  width: 100%;
+  height: 100%;
+}
+.ly2[data-kind="comms"] .ly-meta {
+  grid-area: meta;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3px 11px;
+  color: var(--muted);
+  font: 500 10px/1.45 var(--sans);
+  overflow-wrap: anywhere;
+}
+.ly2[data-kind="comms"] .ly-time {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+.ly2[data-kind="comms"] .ly-chrome {
+  grid-area: chrome;
+  color: var(--accent);
+}
+.ly2[data-kind="comms"] .ly-compose {
+  grid-area: compose;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 12px;
+  border: 1px solid var(--ly-device-line);
+  border-radius: 24px;
+  background: var(--paper);
+  color: var(--muted);
+  font: 400 12px/1.4 var(--sans);
+}
+.ly2[data-kind="comms"] .ly-compose svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+.ly2[data-kind="comms"] .ly-media:not(:has(img[src]:not([src=""]))),
+.ly2[data-kind="comms"] .ly-shot:not(:has(img[src]:not([src=""]))) {
+  display: none;
+}
+.ly2[data-kind="comms"][data-design="01"] .ly-card {
+  grid-template-areas: "chrome" "media" "head" "copy" "meta" "compose" "foot";
+  border: 3px solid var(--ly-device-line);
+  border-radius: 34px;
+  padding: 12px clamp(14px, 5.8cqi, 23px) 12px;
+  background: linear-gradient(to bottom, var(--ly-device-wash), var(--paper) 160px);
+  box-shadow: inset 0 0 0 2px var(--paper);
+}
+.ly2[data-kind="comms"][data-design="01"] .ly-chrome {
+  width: 44px;
+  height: 6px;
+  margin: 0 auto 15px;
+  border-radius: 20px;
+  background: var(--ly-device-line);
+}
+.ly2[data-kind="comms"][data-design="01"] .ly-media {
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.ly2[data-kind="comms"][data-design="01"] .ly-head {
+  text-align: center;
+  justify-items: center;
+}
+.ly2[data-kind="comms"][data-design="01"] .ly-copy {
+  margin: 15px 0 7px;
+  padding-top: 17px;
+  border-top: 1px solid var(--line);
+}
+.ly2[data-kind="comms"][data-design="01"] .ly-compose {
+  margin: 13px 0 8px;
+}
+.ly2[data-kind="comms"][data-design="02"] {
+  width: min(100%, 454px);
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-card {
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "foot chrome" "head media" "copy copy" "meta meta" "compose compose";
+  border-radius: 12px;
+  background: linear-gradient(to bottom, var(--ly-device-wash) 0 39px, var(--paper) 39px);
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-foot {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  justify-self: start;
+  margin: 8px 13px;
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-chrome {
+  align-self: center;
+  justify-self: end;
+  width: 6px;
+  height: 6px;
+  margin-right: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 9px 0 var(--accent2), 18px 0 var(--accent3);
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-head {
+  padding: 16px 0 15px 18px;
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-media {
+  align-self: center;
+  justify-content: flex-end;
+  max-width: 88px;
+  margin: 9px 16px 9px 9px;
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-shot {
+  width: 40px;
+  border-radius: 11px;
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-copy {
+  margin: 0 17px;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--line);
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-meta {
+  margin: 8px 18px 0;
+}
+.ly2[data-kind="comms"][data-design="02"] .ly-compose {
+  border-radius: 6px;
+  background: var(--ly-device-wash);
+  margin: 13px 16px 16px;
+}
+.ly2[data-kind="comms"][data-design="03"] {
+  width: min(100%, 420px);
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-card {
+  grid-template-columns: minmax(0,1fr) auto;
+  grid-template-areas: "foot chrome" "head media" "copy copy" "meta meta" "compose compose";
+  border-radius: 18px;
+  padding: 10px clamp(12px, 4.4cqi, 18px) 15px;
+  border: 4px solid var(--ly-device-line);
+  background: var(--ly-device-wash);
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-foot {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-chrome {
+  width: 26px;
+  height: 10px;
+  place-self: center end;
+  border-radius: 3px;
+  background: repeating-linear-gradient(90deg, var(--ly-device-line) 0 2px, transparent 2px 4px);
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-head {
+  padding: 8px 0 12px;
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-media {
+  justify-content: end;
+  max-width: 79px;
+  margin: 3px 0 6px 8px;
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-shot {
+  width: 35px;
+  border-radius: 6px;
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-copy {
+  padding: 14px 11px;
+  border: 1px solid var(--ly-device-line);
+  border-radius: 7px 7px 0 0;
+  border-bottom: 0;
+  background: var(--paper);
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-copy > p {
+  font: 400 13px/1.58 var(--mono);
+  border-radius: 4px;
+  border-inline-start: 3px solid var(--accent2);
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-meta {
+  padding: 0 10px 9px;
+  background: var(--paper);
+  border: 1px solid var(--ly-device-line);
+  border-top: 0;
+  border-radius: 0 0 7px 7px;
+}
+.ly2[data-kind="comms"][data-design="03"] .ly-compose {
+  margin-top: 10px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 4px 11px;
+  border-radius: 4px 4px 7px 7px;
+  border-bottom: 3px solid var(--ly-device-line);
+}
+.ly2[data-kind="comms"][data-design="04"] {
+  width: min(100%, 348px);
+}
+.ly2[data-kind="comms"][data-design="04"] .ly-card {
+  grid-template-columns: minmax(0,1fr) auto;
+  grid-template-areas: "foot foot" "head media" "chrome chrome" "copy copy" "meta meta" "compose compose";
+  border-radius: 23px 23px 18px 18px;
+  padding: 12px 14px 17px;
+  border: 2px solid var(--ly-device-line);
+  background: linear-gradient(to bottom, var(--ly-device-wash), var(--paper) 160px);
+}
+.ly2[data-kind="comms"][data-design="04"] .ly-head {
+  padding: 9px 4px 15px;
+}
+.ly2[data-kind="comms"][data-design="04"] .ly-media {
+  justify-content: end;
+  align-self: center;
+  max-width: 94px;
+  margin: 4px 3px 10px 6px;
+}
+.ly2[data-kind="comms"][data-design="04"] .ly-shot {
+  width: 70px;
+  aspect-ratio: 6/5;
+  border-radius: 10px;
+}
+.ly2[data-kind="comms"][data-design="04"] .ly-chrome {
+  height: 7px;
+  margin: 0 -5px;
+  border-radius: 8px;
+  border: 1px solid var(--ly-device-line);
+  background: linear-gradient(90deg, var(--ly-device-line) 0 16%, var(--paper) 16% 21%, var(--soft) 21% 79%, var(--paper) 79% 84%, var(--ly-device-line) 84%);
+}
+.ly2[data-kind="comms"][data-design="04"] .ly-copy {
+  padding: 16px 1px 0;
+}
+.ly2[data-kind="comms"][data-design="04"] .ly-meta {
+  padding: 7px 4px 11px;
+}
+.ly2[data-kind="comms"][data-design="04"] .ly-compose {
+  border-radius: 8px;
+  background: var(--ly-device-wash);
+}
+.ly2[data-kind="comms"][data-design="05"] {
+  width: min(100%, 392px);
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-card {
+  grid-template-areas: "chrome" "media" "head" "copy" "meta" "compose" "foot";
+  padding: 11px clamp(13px, 5cqi, 20px) 12px;
+  border-radius: 27px;
+  border: 2px solid var(--ly-device-line);
+  background: linear-gradient(165deg, var(--ly-device-wash), var(--paper) 55%);
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-chrome {
+  width: 28px;
+  height: 4px;
+  margin: 0 auto 13px;
+  border-radius: 15px;
+  background: var(--ly-device-line);
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-media {
+  justify-content: center;
+  gap: 5px;
+  margin: 0 auto 10px;
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-shot {
+  width: clamp(58px, 22cqi, 85px);
+  aspect-ratio: 1.18;
+  border-radius: 15px 3px 3px 15px;
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-shot + .ly-shot {
+  border-radius: 3px 15px 15px 3px;
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-shot:only-child {
+  border-radius: 11px;
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-head {
+  justify-items: center;
+  text-align: center;
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-copy {
+  padding-top: 15px;
+  margin-top: 14px;
+  border-top: 1px solid var(--ly-device-line);
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-meta {
+  margin: 8px 1px 12px;
+}
+.ly2[data-kind="comms"][data-design="05"] .ly-foot {
+  margin-top: 8px;
+}
+@container lychee (max-width: 295px) {
+  .ly2[data-kind="comms"] .ly-copy > p {
+    max-width: 93%;
+    padding: 8px 10px;
+  }
+  .ly2[data-kind="comms"][data-design="02"] .ly-media,
+  .ly2[data-kind="comms"][data-design="03"] .ly-media,
+  .ly2[data-kind="comms"][data-design="04"] .ly-media {
+    max-width: 56px;
+  }
+  .ly2[data-kind="comms"][data-design="04"] .ly-shot {
+    width: 48px;
+  }
+}
 
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>THREAD / 03</small><h2>Orchard Receipt</h2></header><div class="stage">
-<div class="lc lc-thread lc-orchard-receipt" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 03</span><h2>kept close, kept carefully</h2><small>small things retained / 03</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure><figure class="lc-portrait"><img src="https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv" alt="Character GIF 2"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
+.ly2[data-kind="bud"] {
+  width: min(100%, 420px);
+  max-width: 420px;
+}
 
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
+.ly2[data-kind="bud"] .ly-card {
+  --bud-pad: clamp(15px, 5.5cqi, 24px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 13px;
+  align-items: start;
+  padding: var(--bud-pad);
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-thread lc-orchard-receipt&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 03&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;small things retained / 03&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv&quot; alt=&quot;Character GIF 2&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
+.ly2[data-kind="bud"] .ly-head {
+  display: grid;
+  gap: 5px;
+  align-content: center;
+  min-width: 0;
+}
 
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>THREAD / 04</small><h2>Pale Lantern</h2></header><div class="stage">
-<div class="lc lc-thread lc-pale-lantern" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 04</span><h2>where the light gathers</h2><small>after the rain / 04</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
+.ly2[data-kind="bud"] .ly-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(23px, 7cqi, 30px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
 
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
+.ly2[data-kind="bud"] .ly-copy {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  text-align: start;
+  overflow-wrap: anywhere;
+}
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-thread lc-pale-lantern&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 04&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;after the rain / 04&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
+.ly2[data-kind="bud"] .ly-copy > p {
+  margin: 0;
+}
 
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>THREAD / 05</small><h2>Twin-Pit Almanac</h2></header><div class="stage">
-<div class="lc lc-thread lc-twin-pit-almanac" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 05</span><h2>a season written softly</h2><small>notes for later / 05</small></header>
+.ly2[data-kind="bud"] .ly-copy > p + p {
+  margin-block-start: .7em;
+}
 
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
+.ly2[data-kind="bud"] .ly-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  min-width: 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
 
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
+.ly2[data-kind="bud"] .ly-imprint {
+  min-width: 0;
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  overflow-wrap: anywhere;
+}
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-thread lc-twin-pit-almanac&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 05&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;notes for later / 05&lt;/small&gt;&lt;/header&gt;
+.ly2[data-kind="bud"] .ly-art {
+  display: block;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 28px;
+}
 
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
+.ly2[data-kind="bud"] .ly-art svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>COMMS / 01</small><h2>Lychee Line</h2></header><div class="stage">
-<div class="lc lc-comms lc-lychee-line" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 01</span><h2>Jinho &amp; Suho</h2><small>private line · active</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
-<footer class="lc-phone"><span>12:08</span><span>Delivered · encrypted</span></footer>
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
+.ly2[data-kind="bud"] .ly-media {
+  display: flex;
+  align-items: start;
+  gap: 6px;
+  min-width: 0;
+  max-width: 100%;
+}
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-comms lc-lychee-line&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 01&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;private line · active&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
-&lt;footer class=&quot;lc-phone&quot;&gt;&lt;span&gt;12:08&lt;/span&gt;&lt;span&gt;Delivered · encrypted&lt;/span&gt;&lt;/footer&gt;
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>COMMS / 02</small><h2>Glasshouse Ping</h2></header><div class="stage">
-<div class="lc lc-comms lc-glasshouse-ping" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 02</span><h2>Jinho</h2><small>secure conversation</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
-<footer class="lc-phone"><span>12:08</span><span>Delivered · encrypted</span></footer>
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
+.ly2[data-kind="bud"] .ly-shot {
+  display: block;
+  flex: 1 1 0;
+  aspect-ratio: 1;
+  max-width: 110px;
+  min-width: 0;
+  margin: 0;
+  padding: 2px;
+  background: var(--paper);
+  border: 1px solid var(--accent2);
+  border-radius: 2px;
+}
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-comms lc-glasshouse-ping&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 02&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;secure conversation&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
-&lt;footer class=&quot;lc-phone&quot;&gt;&lt;span&gt;12:08&lt;/span&gt;&lt;span&gt;Delivered · encrypted&lt;/span&gt;&lt;/footer&gt;
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>COMMS / 03</small><h2>Peel Dial</h2></header><div class="stage">
-<div class="lc lc-comms lc-peel-dial" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 03</span><h2>Suho</h2><small>recent messages · 03</small></header>
+.ly2[data-kind="bud"] .ly-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  object-position: var(--crop, 50% 35%);
+  border-radius: inherit;
+}
 
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
-<footer class="lc-phone"><span>12:08</span><span>Delivered · encrypted</span></footer>
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
+.ly2[data-kind="bud"] .ly-shot:not(:has(img[src]:not([src=""]))),
+.ly2[data-kind="bud"] .ly-media:not(:has(img[src]:not([src=""]))) {
+  display: none;
+}
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-comms lc-peel-dial&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 03&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;recent messages · 03&lt;/small&gt;&lt;/header&gt;
+.ly2[data-kind="bud"][data-design="01"] .ly-card {
+  border-inline-start: 4px solid var(--accent);
+  background-image: linear-gradient(90deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent 40%);
+}
 
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
-&lt;footer class=&quot;lc-phone&quot;&gt;&lt;span&gt;12:08&lt;/span&gt;&lt;span&gt;Delivered · encrypted&lt;/span&gt;&lt;/footer&gt;
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>COMMS / 04</small><h2>Nectar Network</h2></header><div class="stage">
-<div class="lc lc-comms lc-nectar-network" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 04</span><h2>Jinho &amp; Suho</h2><small>connected · end-to-end</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
+.ly2[data-kind="bud"][data-design="01"] .ly-card:has(.ly-media img[src]:not([src=""])) {
+  grid-template-columns: clamp(76px, 24cqi, 100px) minmax(0, 1fr);
+  grid-template-areas: "portraits heading" "portraits writing" "signature signature";
+  column-gap: clamp(12px, 4cqi, 18px);
+}
+
+.ly2[data-kind="bud"][data-design="01"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-head { grid-area: heading; }
+.ly2[data-kind="bud"][data-design="01"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-copy { grid-area: writing; }
+.ly2[data-kind="bud"][data-design="01"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-foot { grid-area: signature; }
+
+.ly2[data-kind="bud"][data-design="01"] .ly-media {
+  grid-area: portraits;
+  display: grid;
+  align-content: start;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--accent3);
+}
+
+.ly2[data-kind="bud"][data-design="01"] .ly-shot {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  padding: 3px;
+}
+
+.ly2[data-kind="bud"][data-design="02"] .ly-card {
+  border-inline-start: 8px solid var(--accent2);
+  padding-inline-start: calc(var(--bud-pad) + 6px);
+  background-image: repeating-linear-gradient(to bottom, var(--line) 0 3px, transparent 3px 7px);
+  background-position: 6px 0;
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+}
+
+.ly2[data-kind="bud"][data-design="02"] .ly-head {
+  justify-items: start;
+}
+
+.ly2[data-kind="bud"][data-design="02"] .ly-head::after {
+  content: "";
+  display: block;
+  width: 29px;
+  height: 3px;
+  margin-block-start: 4px;
+  background: var(--gradient);
+}
+
+.ly2[data-kind="bud"][data-design="03"] .ly-card {
+  border-start-end-radius: 38px;
+  background-image: radial-gradient(ellipse at 98% 0, color-mix(in srgb, var(--accent3) 9%, transparent), transparent 50%);
+}
+
+.ly2[data-kind="bud"][data-design="03"] .ly-card:has(.ly-media img[src]:not([src=""])) {
+  grid-template-columns: minmax(0, 1fr) clamp(76px, 25cqi, 106px);
+  grid-template-areas: "heading portrait" "writing writing" "signature signature";
+  align-items: center;
+}
+
+.ly2[data-kind="bud"][data-design="03"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-head { grid-area: heading; }
+.ly2[data-kind="bud"][data-design="03"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-copy { grid-area: writing; }
+.ly2[data-kind="bud"][data-design="03"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-foot { grid-area: signature; }
+
+.ly2[data-kind="bud"][data-design="03"] .ly-media {
+  grid-area: portrait;
+  display: grid;
+}
+
+.ly2[data-kind="bud"][data-design="03"] .ly-shot {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 1.16;
+  padding: 3px;
+  border-color: var(--accent);
+  border-radius: 50% 40% 44% 45%;
+}
+
+.ly2[data-kind="bud"][data-design="04"] .ly-card {
+  border-top: 3px solid var(--accent2);
+}
+
+.ly2[data-kind="bud"][data-design="04"] .ly-card:has(.ly-media img[src]:not([src=""])) {
+  grid-template-columns: minmax(0, 1fr) minmax(112px, 45%);
+  grid-template-areas: "heading portraits" "writing writing" "signature signature";
+  align-items: center;
+}
+
+.ly2[data-kind="bud"][data-design="04"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-head { grid-area: heading; }
+.ly2[data-kind="bud"][data-design="04"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-copy { grid-area: writing; }
+.ly2[data-kind="bud"][data-design="04"] .ly-card:has(.ly-media img[src]:not([src=""])) > .ly-foot { grid-area: signature; }
+
+.ly2[data-kind="bud"][data-design="04"] .ly-media {
+  grid-area: portraits;
+  justify-content: end;
+  gap: 4px;
+}
+
+.ly2[data-kind="bud"][data-design="04"] .ly-shot {
+  max-width: 89px;
+  aspect-ratio: 4 / 5;
+  padding: 2px;
+  border-color: var(--accent);
+  border-radius: 35% 35% 2px 2px;
+}
+
+.ly2[data-kind="bud"][data-design="04"] .ly-shot:nth-child(2) {
+  margin-top: 9px;
+  border-color: var(--accent3);
+}
+
+.ly2[data-kind="bud"][data-design="05"] .ly-card {
+  border-radius: 3px 3px 20px 20px;
+  border-bottom: 3px double var(--accent3);
+  background-image: linear-gradient(to bottom, color-mix(in srgb, var(--accent2) 5%, transparent), transparent 60%);
+}
+
+.ly2[data-kind="bud"][data-design="05"] .ly-head {
+  justify-items: center;
+  text-align: center;
+}
+
+.ly2[data-kind="bud"][data-design="05"] .ly-title {
+  font-style: italic;
+}
+
+.ly2[data-kind="bud"][data-design="05"] .ly-foot,
+.ly2[data-kind="bud"][data-design="05"] .ly-media {
+  justify-content: center;
+}
+
+.ly2[data-kind="bud"][data-design="05"] .ly-foot {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.ly2[data-kind="bud"][data-design="05"] .ly-foot::before,
+.ly2[data-kind="bud"][data-design="05"] .ly-foot::after {
+  content: "";
+  flex: 1 1 10px;
+  height: 1px;
+  background-color: var(--line);
+}
+
+@container lychee (max-width: 330px) {
+  .ly2[data-kind="bud"][data-design="01"] .ly-card:has(.ly-media img[src]:not([src=""])) {
+    grid-template-areas: "portraits heading" "writing writing" "signature signature";
+    align-items: center;
+  }
+
+  .ly2[data-kind="bud"][data-design="01"] .ly-shot {
+    aspect-ratio: 1;
+  }
+
+  .ly2[data-kind="bud"][data-design="04"] .ly-card:has(.ly-media img[src]:not([src=""])) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "heading" "portraits" "writing" "signature";
+  }
+
+  .ly2[data-kind="bud"][data-design="04"] .ly-media {
+    justify-content: start;
+  }
+}
+
+.ly2[data-design="01"] .ly-art { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20105%2078%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%2384655d%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20d%3D%22M59%208Q49%2017%2042%2034M51%2017Q64%2017%2072%2026%22%2F%3E%3Cg%20transform%3D%22translate(51%2016)%20rotate(-8)%22%3E%3Cpath%20fill%3D%22%2399a599%22%20stroke%3D%22%235e7665%22%20d%3D%22M0%200Q10%20-14%2029%20-11Q22%201%200%200Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23617d69%22%20stroke-width%3D%22.9%22%20d%3D%22M1%200L26%20-10%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(12%2023)%20scale(.82)%22%3E%3Cpath%20fill%3D%22%23d7a09d%22%20stroke%3D%22%23875865%22%20d%3D%22M31%208C42%204%2052%2010%2055%2021C59%2034%2054%2048%2042%2054C33%2059%2018%2056%2011%2045C3%2034%207%2019%2015%2013C21%209%2025%209%2031%208Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%239b656c%22%20stroke-width%3D%22.95%22%20d%3D%22M24%2014.0l2%20-1.6%202.7%201.2%20M31%2014.0l2%20-1.6%202.7%201.2%20M38%2014.0l2%20-1.6%202.7%201.2%20M13%2019.9l2%20-1.6%202.7%201.2%20M20%2019.9l2%20-1.6%202.7%201.2%20M27%2019.9l2%20-1.6%202.7%201.2%20M34%2019.9l2%20-1.6%202.7%201.2%20M41%2019.9l2%20-1.6%202.7%201.2%20M48%2019.9l2%20-1.6%202.7%201.2%20M10%2025.8l2%20-1.6%202.7%201.2%20M17%2025.8l2%20-1.6%202.7%201.2%20M24%2025.8l2%20-1.6%202.7%201.2%20M31%2025.8l2%20-1.6%202.7%201.2%20M38%2025.8l2%20-1.6%202.7%201.2%20M45%2025.8l2%20-1.6%202.7%201.2%20M52%2025.8l2%20-1.6%202.7%201.2%20M13%2031.7l2%20-1.6%202.7%201.2%20M20%2031.7l2%20-1.6%202.7%201.2%20M27%2031.7l2%20-1.6%202.7%201.2%20M34%2031.7l2%20-1.6%202.7%201.2%20M41%2031.7l2%20-1.6%202.7%201.2%20M48%2031.7l2%20-1.6%202.7%201.2%20M10%2037.6l2%20-1.6%202.7%201.2%20M17%2037.6l2%20-1.6%202.7%201.2%20M24%2037.6l2%20-1.6%202.7%201.2%20M31%2037.6l2%20-1.6%202.7%201.2%20M38%2037.6l2%20-1.6%202.7%201.2%20M45%2037.6l2%20-1.6%202.7%201.2%20M52%2037.6l2%20-1.6%202.7%201.2%20M13%2043.5l2%20-1.6%202.7%201.2%20M20%2043.5l2%20-1.6%202.7%201.2%20M27%2043.5l2%20-1.6%202.7%201.2%20M34%2043.5l2%20-1.6%202.7%201.2%20M41%2043.5l2%20-1.6%202.7%201.2%20M48%2043.5l2%20-1.6%202.7%201.2%20M24%2049.4l2%20-1.6%202.7%201.2%20M31%2049.4l2%20-1.6%202.7%201.2%20M38%2049.4l2%20-1.6%202.7%201.2%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(49%2020)%20scale(.67)%22%3E%3Cpath%20fill%3D%22%23d7a09d%22%20stroke%3D%22%23875865%22%20d%3D%22M31%208C42%204%2052%2010%2055%2021C59%2034%2054%2048%2042%2054C33%2059%2018%2056%2011%2045C3%2034%207%2019%2015%2013C21%209%2025%209%2031%208Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%239b656c%22%20stroke-width%3D%22.95%22%20d%3D%22M24%2014.0l2%20-1.6%202.7%201.2%20M31%2014.0l2%20-1.6%202.7%201.2%20M38%2014.0l2%20-1.6%202.7%201.2%20M13%2019.9l2%20-1.6%202.7%201.2%20M20%2019.9l2%20-1.6%202.7%201.2%20M27%2019.9l2%20-1.6%202.7%201.2%20M34%2019.9l2%20-1.6%202.7%201.2%20M41%2019.9l2%20-1.6%202.7%201.2%20M48%2019.9l2%20-1.6%202.7%201.2%20M10%2025.8l2%20-1.6%202.7%201.2%20M17%2025.8l2%20-1.6%202.7%201.2%20M24%2025.8l2%20-1.6%202.7%201.2%20M31%2025.8l2%20-1.6%202.7%201.2%20M38%2025.8l2%20-1.6%202.7%201.2%20M45%2025.8l2%20-1.6%202.7%201.2%20M52%2025.8l2%20-1.6%202.7%201.2%20M13%2031.7l2%20-1.6%202.7%201.2%20M20%2031.7l2%20-1.6%202.7%201.2%20M27%2031.7l2%20-1.6%202.7%201.2%20M34%2031.7l2%20-1.6%202.7%201.2%20M41%2031.7l2%20-1.6%202.7%201.2%20M48%2031.7l2%20-1.6%202.7%201.2%20M10%2037.6l2%20-1.6%202.7%201.2%20M17%2037.6l2%20-1.6%202.7%201.2%20M24%2037.6l2%20-1.6%202.7%201.2%20M31%2037.6l2%20-1.6%202.7%201.2%20M38%2037.6l2%20-1.6%202.7%201.2%20M45%2037.6l2%20-1.6%202.7%201.2%20M52%2037.6l2%20-1.6%202.7%201.2%20M13%2043.5l2%20-1.6%202.7%201.2%20M20%2043.5l2%20-1.6%202.7%201.2%20M27%2043.5l2%20-1.6%202.7%201.2%20M34%2043.5l2%20-1.6%202.7%201.2%20M41%2043.5l2%20-1.6%202.7%201.2%20M48%2043.5l2%20-1.6%202.7%201.2%20M24%2049.4l2%20-1.6%202.7%201.2%20M31%2049.4l2%20-1.6%202.7%201.2%20M38%2049.4l2%20-1.6%202.7%201.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.ly2[data-design="02"] .ly-art { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20105%2078%22%3E%3Cg%20transform%3D%22translate(15%2024)%20rotate(-18%2030%2026)%20scale(.87)%22%3E%3Cpath%20fill%3D%22%23c58b90%22%20stroke%3D%22%23875865%22%20d%3D%22M8%2028C12%2012%2025%206%2039%208C54%2010%2059%2023%2053%2038C48%2053%2031%2058%2018%2051C8%2046%204%2038%208%2028Z%22%2F%3E%3Cpath%20fill%3D%22%23f5ebdf%22%20stroke%3D%22%23d5b3a6%22%20d%3D%22M11%2028C15%2016%2026%209%2039%2011C52%2013%2056%2023%2050%2037C45%2049%2032%2054%2020%2048C10%2044%208%2037%2011%2028Z%22%2F%3E%3Cpath%20fill%3D%22%2367423b%22%20stroke%3D%22%234c3431%22%20d%3D%22M23%2035C23%2026%2030%2018%2037%2019C45%2020%2044%2029%2039%2036C33%2045%2024%2045%2023%2035Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23bd9280%22%20stroke-width%3D%221.4%22%20d%3D%22M27%2032Q29%2024%2035%2023%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(54%2012)%20rotate(18%2024%2023)%20scale(.78)%22%3E%3Cpath%20fill%3D%22%23c58b90%22%20stroke%3D%22%23875865%22%20d%3D%22M8%2028C12%2012%2025%206%2039%208C54%2010%2059%2023%2053%2038C48%2053%2031%2058%2018%2051C8%2046%204%2038%208%2028Z%22%2F%3E%3Cpath%20fill%3D%22%23f5ebdf%22%20stroke%3D%22%23d5b3a6%22%20d%3D%22M11%2028C15%2016%2026%209%2039%2011C52%2013%2056%2023%2050%2037C45%2049%2032%2054%2020%2048C10%2044%208%2037%2011%2028Z%22%2F%3E%3Cpath%20fill%3D%22%2367423b%22%20stroke%3D%22%234c3431%22%20d%3D%22M23%2035C23%2026%2030%2018%2037%2019C45%2020%2044%2029%2039%2036C33%2045%2024%2045%2023%2035Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23bd9280%22%20stroke-width%3D%221.4%22%20d%3D%22M27%2032Q29%2024%2035%2023%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.ly2[data-design="03"] .ly-art { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20105%2078%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%2384655d%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20d%3D%22M29%2057Q48%2038%2060%2015%22%2F%3E%3Cg%20transform%3D%22translate(45%2039)%20rotate(-157)%20scale(.85)%22%3E%3Cpath%20fill%3D%22%2399a599%22%20stroke%3D%22%235e7665%22%20d%3D%22M0%200Q10%20-14%2029%20-11Q22%201%200%200Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23617d69%22%20stroke-width%3D%22.9%22%20d%3D%22M1%200L26%20-10%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(53%2028)%20rotate(12)%20scale(1.13)%22%3E%3Cpath%20fill%3D%22%2399a599%22%20stroke%3D%22%235e7665%22%20d%3D%22M0%200Q10%20-14%2029%20-11Q22%201%200%200Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23617d69%22%20stroke-width%3D%22.9%22%20d%3D%22M1%200L26%20-10%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(49%2028)%20scale(.8)%22%3E%3Cpath%20fill%3D%22%23d7a09d%22%20stroke%3D%22%23875865%22%20d%3D%22M31%208C42%204%2052%2010%2055%2021C59%2034%2054%2048%2042%2054C33%2059%2018%2056%2011%2045C3%2034%207%2019%2015%2013C21%209%2025%209%2031%208Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%239b656c%22%20stroke-width%3D%22.95%22%20d%3D%22M24%2014.0l2%20-1.6%202.7%201.2%20M31%2014.0l2%20-1.6%202.7%201.2%20M38%2014.0l2%20-1.6%202.7%201.2%20M13%2019.9l2%20-1.6%202.7%201.2%20M20%2019.9l2%20-1.6%202.7%201.2%20M27%2019.9l2%20-1.6%202.7%201.2%20M34%2019.9l2%20-1.6%202.7%201.2%20M41%2019.9l2%20-1.6%202.7%201.2%20M48%2019.9l2%20-1.6%202.7%201.2%20M10%2025.8l2%20-1.6%202.7%201.2%20M17%2025.8l2%20-1.6%202.7%201.2%20M24%2025.8l2%20-1.6%202.7%201.2%20M31%2025.8l2%20-1.6%202.7%201.2%20M38%2025.8l2%20-1.6%202.7%201.2%20M45%2025.8l2%20-1.6%202.7%201.2%20M52%2025.8l2%20-1.6%202.7%201.2%20M13%2031.7l2%20-1.6%202.7%201.2%20M20%2031.7l2%20-1.6%202.7%201.2%20M27%2031.7l2%20-1.6%202.7%201.2%20M34%2031.7l2%20-1.6%202.7%201.2%20M41%2031.7l2%20-1.6%202.7%201.2%20M48%2031.7l2%20-1.6%202.7%201.2%20M10%2037.6l2%20-1.6%202.7%201.2%20M17%2037.6l2%20-1.6%202.7%201.2%20M24%2037.6l2%20-1.6%202.7%201.2%20M31%2037.6l2%20-1.6%202.7%201.2%20M38%2037.6l2%20-1.6%202.7%201.2%20M45%2037.6l2%20-1.6%202.7%201.2%20M52%2037.6l2%20-1.6%202.7%201.2%20M13%2043.5l2%20-1.6%202.7%201.2%20M20%2043.5l2%20-1.6%202.7%201.2%20M27%2043.5l2%20-1.6%202.7%201.2%20M34%2043.5l2%20-1.6%202.7%201.2%20M41%2043.5l2%20-1.6%202.7%201.2%20M48%2043.5l2%20-1.6%202.7%201.2%20M24%2049.4l2%20-1.6%202.7%201.2%20M31%2049.4l2%20-1.6%202.7%201.2%20M38%2049.4l2%20-1.6%202.7%201.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.ly2[data-design="04"] .ly-art { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20105%2078%22%3E%3Cg%20transform%3D%22translate(14%2016)%20scale(.89)%22%3E%3Cpath%20fill%3D%22%23d7a09d%22%20stroke%3D%22%23875865%22%20d%3D%22M31%208C42%204%2052%2010%2055%2021C59%2034%2054%2048%2042%2054C33%2059%2018%2056%2011%2045C3%2034%207%2019%2015%2013C21%209%2025%209%2031%208Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%239b656c%22%20stroke-width%3D%22.95%22%20d%3D%22M24%2014.0l2%20-1.6%202.7%201.2%20M31%2014.0l2%20-1.6%202.7%201.2%20M38%2014.0l2%20-1.6%202.7%201.2%20M13%2019.9l2%20-1.6%202.7%201.2%20M20%2019.9l2%20-1.6%202.7%201.2%20M27%2019.9l2%20-1.6%202.7%201.2%20M34%2019.9l2%20-1.6%202.7%201.2%20M41%2019.9l2%20-1.6%202.7%201.2%20M48%2019.9l2%20-1.6%202.7%201.2%20M10%2025.8l2%20-1.6%202.7%201.2%20M17%2025.8l2%20-1.6%202.7%201.2%20M24%2025.8l2%20-1.6%202.7%201.2%20M31%2025.8l2%20-1.6%202.7%201.2%20M38%2025.8l2%20-1.6%202.7%201.2%20M45%2025.8l2%20-1.6%202.7%201.2%20M52%2025.8l2%20-1.6%202.7%201.2%20M13%2031.7l2%20-1.6%202.7%201.2%20M20%2031.7l2%20-1.6%202.7%201.2%20M27%2031.7l2%20-1.6%202.7%201.2%20M34%2031.7l2%20-1.6%202.7%201.2%20M41%2031.7l2%20-1.6%202.7%201.2%20M48%2031.7l2%20-1.6%202.7%201.2%20M10%2037.6l2%20-1.6%202.7%201.2%20M17%2037.6l2%20-1.6%202.7%201.2%20M24%2037.6l2%20-1.6%202.7%201.2%20M31%2037.6l2%20-1.6%202.7%201.2%20M38%2037.6l2%20-1.6%202.7%201.2%20M45%2037.6l2%20-1.6%202.7%201.2%20M52%2037.6l2%20-1.6%202.7%201.2%20M13%2043.5l2%20-1.6%202.7%201.2%20M20%2043.5l2%20-1.6%202.7%201.2%20M27%2043.5l2%20-1.6%202.7%201.2%20M34%2043.5l2%20-1.6%202.7%201.2%20M41%2043.5l2%20-1.6%202.7%201.2%20M48%2043.5l2%20-1.6%202.7%201.2%20M24%2049.4l2%20-1.6%202.7%201.2%20M31%2049.4l2%20-1.6%202.7%201.2%20M38%2049.4l2%20-1.6%202.7%201.2%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2030)%20rotate(13%2028%2025)%20scale(.76)%22%3E%3Cpath%20fill%3D%22%23c58b90%22%20stroke%3D%22%23875865%22%20d%3D%22M8%2028C12%2012%2025%206%2039%208C54%2010%2059%2023%2053%2038C48%2053%2031%2058%2018%2051C8%2046%204%2038%208%2028Z%22%2F%3E%3Cpath%20fill%3D%22%23f5ebdf%22%20stroke%3D%22%23d5b3a6%22%20d%3D%22M11%2028C15%2016%2026%209%2039%2011C52%2013%2056%2023%2050%2037C45%2049%2032%2054%2020%2048C10%2044%208%2037%2011%2028Z%22%2F%3E%3Cpath%20fill%3D%22%2367423b%22%20stroke%3D%22%234c3431%22%20d%3D%22M23%2035C23%2026%2030%2018%2037%2019C45%2020%2044%2029%2039%2036C33%2045%2024%2045%2023%2035Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23bd9280%22%20stroke-width%3D%221.4%22%20d%3D%22M27%2032Q29%2024%2035%2023%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%2384655d%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20d%3D%22M40%2024Q43%2015%2052%2012%22%2F%3E%3Cg%20transform%3D%22translate(45%2017)%20rotate(12)%20scale(.7)%22%3E%3Cpath%20fill%3D%22%2399a599%22%20stroke%3D%22%235e7665%22%20d%3D%22M0%200Q10%20-14%2029%20-11Q22%201%200%200Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23617d69%22%20stroke-width%3D%22.9%22%20d%3D%22M1%200L26%20-10%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.ly2[data-design="05"] .ly-art { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20105%2078%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%2384655d%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20d%3D%22M17%2062Q50%2043%2085%2012M45%2045Q47%2032%2042%2021M63%2032Q73%2037%2078%2046%22%2F%3E%3Cg%20transform%3D%22translate(46%2043)%20rotate(-148)%20scale(.87)%22%3E%3Cpath%20fill%3D%22%2399a599%22%20stroke%3D%22%235e7665%22%20d%3D%22M0%200Q10%20-14%2029%20-11Q22%201%200%200Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23617d69%22%20stroke-width%3D%22.9%22%20d%3D%22M1%200L26%20-10%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(62%2031)%20rotate(-7)%20scale(1.05)%22%3E%3Cpath%20fill%3D%22%2399a599%22%20stroke%3D%22%235e7665%22%20d%3D%22M0%200Q10%20-14%2029%20-11Q22%201%200%200Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23617d69%22%20stroke-width%3D%22.9%22%20d%3D%22M1%200L26%20-10%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2039)%20scale(.47)%22%3E%3Cpath%20fill%3D%22%23c58b90%22%20stroke%3D%22%23875865%22%20d%3D%22M8%2028C12%2012%2025%206%2039%208C54%2010%2059%2023%2053%2038C48%2053%2031%2058%2018%2051C8%2046%204%2038%208%2028Z%22%2F%3E%3Cpath%20fill%3D%22%23f5ebdf%22%20stroke%3D%22%23d5b3a6%22%20d%3D%22M11%2028C15%2016%2026%209%2039%2011C52%2013%2056%2023%2050%2037C45%2049%2032%2054%2020%2048C10%2044%208%2037%2011%2028Z%22%2F%3E%3Cpath%20fill%3D%22%2367423b%22%20stroke%3D%22%234c3431%22%20d%3D%22M23%2035C23%2026%2030%2018%2037%2019C45%2020%2044%2029%2039%2036C33%2045%2024%2045%2023%2035Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23bd9280%22%20stroke-width%3D%221.4%22%20d%3D%22M27%2032Q29%2024%2035%2023%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(21%208)%20scale(.54)%22%3E%3Cpath%20fill%3D%22%23d7a09d%22%20stroke%3D%22%23875865%22%20d%3D%22M31%208C42%204%2052%2010%2055%2021C59%2034%2054%2048%2042%2054C33%2059%2018%2056%2011%2045C3%2034%207%2019%2015%2013C21%209%2025%209%2031%208Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%239b656c%22%20stroke-width%3D%22.95%22%20d%3D%22M24%2014.0l2%20-1.6%202.7%201.2%20M31%2014.0l2%20-1.6%202.7%201.2%20M38%2014.0l2%20-1.6%202.7%201.2%20M13%2019.9l2%20-1.6%202.7%201.2%20M20%2019.9l2%20-1.6%202.7%201.2%20M27%2019.9l2%20-1.6%202.7%201.2%20M34%2019.9l2%20-1.6%202.7%201.2%20M41%2019.9l2%20-1.6%202.7%201.2%20M48%2019.9l2%20-1.6%202.7%201.2%20M10%2025.8l2%20-1.6%202.7%201.2%20M17%2025.8l2%20-1.6%202.7%201.2%20M24%2025.8l2%20-1.6%202.7%201.2%20M31%2025.8l2%20-1.6%202.7%201.2%20M38%2025.8l2%20-1.6%202.7%201.2%20M45%2025.8l2%20-1.6%202.7%201.2%20M52%2025.8l2%20-1.6%202.7%201.2%20M13%2031.7l2%20-1.6%202.7%201.2%20M20%2031.7l2%20-1.6%202.7%201.2%20M27%2031.7l2%20-1.6%202.7%201.2%20M34%2031.7l2%20-1.6%202.7%201.2%20M41%2031.7l2%20-1.6%202.7%201.2%20M48%2031.7l2%20-1.6%202.7%201.2%20M10%2037.6l2%20-1.6%202.7%201.2%20M17%2037.6l2%20-1.6%202.7%201.2%20M24%2037.6l2%20-1.6%202.7%201.2%20M31%2037.6l2%20-1.6%202.7%201.2%20M38%2037.6l2%20-1.6%202.7%201.2%20M45%2037.6l2%20-1.6%202.7%201.2%20M52%2037.6l2%20-1.6%202.7%201.2%20M13%2043.5l2%20-1.6%202.7%201.2%20M20%2043.5l2%20-1.6%202.7%201.2%20M27%2043.5l2%20-1.6%202.7%201.2%20M34%2043.5l2%20-1.6%202.7%201.2%20M41%2043.5l2%20-1.6%202.7%201.2%20M48%2043.5l2%20-1.6%202.7%201.2%20M24%2049.4l2%20-1.6%202.7%201.2%20M31%2049.4l2%20-1.6%202.7%201.2%20M38%2049.4l2%20-1.6%202.7%201.2%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(64%2034)%20scale(.57)%22%3E%3Cpath%20fill%3D%22%23d7a09d%22%20stroke%3D%22%23875865%22%20d%3D%22M31%208C42%204%2052%2010%2055%2021C59%2034%2054%2048%2042%2054C33%2059%2018%2056%2011%2045C3%2034%207%2019%2015%2013C21%209%2025%209%2031%208Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%239b656c%22%20stroke-width%3D%22.95%22%20d%3D%22M24%2014.0l2%20-1.6%202.7%201.2%20M31%2014.0l2%20-1.6%202.7%201.2%20M38%2014.0l2%20-1.6%202.7%201.2%20M13%2019.9l2%20-1.6%202.7%201.2%20M20%2019.9l2%20-1.6%202.7%201.2%20M27%2019.9l2%20-1.6%202.7%201.2%20M34%2019.9l2%20-1.6%202.7%201.2%20M41%2019.9l2%20-1.6%202.7%201.2%20M48%2019.9l2%20-1.6%202.7%201.2%20M10%2025.8l2%20-1.6%202.7%201.2%20M17%2025.8l2%20-1.6%202.7%201.2%20M24%2025.8l2%20-1.6%202.7%201.2%20M31%2025.8l2%20-1.6%202.7%201.2%20M38%2025.8l2%20-1.6%202.7%201.2%20M45%2025.8l2%20-1.6%202.7%201.2%20M52%2025.8l2%20-1.6%202.7%201.2%20M13%2031.7l2%20-1.6%202.7%201.2%20M20%2031.7l2%20-1.6%202.7%201.2%20M27%2031.7l2%20-1.6%202.7%201.2%20M34%2031.7l2%20-1.6%202.7%201.2%20M41%2031.7l2%20-1.6%202.7%201.2%20M48%2031.7l2%20-1.6%202.7%201.2%20M10%2037.6l2%20-1.6%202.7%201.2%20M17%2037.6l2%20-1.6%202.7%201.2%20M24%2037.6l2%20-1.6%202.7%201.2%20M31%2037.6l2%20-1.6%202.7%201.2%20M38%2037.6l2%20-1.6%202.7%201.2%20M45%2037.6l2%20-1.6%202.7%201.2%20M52%2037.6l2%20-1.6%202.7%201.2%20M13%2043.5l2%20-1.6%202.7%201.2%20M20%2043.5l2%20-1.6%202.7%201.2%20M27%2043.5l2%20-1.6%202.7%201.2%20M34%2043.5l2%20-1.6%202.7%201.2%20M41%2043.5l2%20-1.6%202.7%201.2%20M48%2043.5l2%20-1.6%202.7%201.2%20M24%2049.4l2%20-1.6%202.7%201.2%20M31%2049.4l2%20-1.6%202.7%201.2%20M38%2049.4l2%20-1.6%202.7%201.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / contain no-repeat; }
+.ly2 .ly-art { aspect-ratio: 105 / 78; }
+</style>
+</head>
+<body>
+<header class="mast"><div class="mast-inner"><strong>Lychee / Jinho &amp; Suho</strong><a href="https://github.com/lexdoescodingnow/templates/blob/main/forum-posts/lychee-forum-masterpost.txt">Forum masterpost</a></div></header>
+<main class="page-shell">
+<div class="intro"><h1>Orchard <em>Glass</em></h1></div>
+<noscript><p>Enable JavaScript to use the editor, or open a posting template on GitHub.</p><ul><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-lychee-lithograph-thread-01.txt">Lychee Lithograph</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-roseglass-index-thread-02.txt">Roseglass Index</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-orchard-receipt-thread-03.txt">Orchard Receipt</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-pale-lantern-thread-04.txt">Pale Lantern</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-twin-pit-almanac-thread-05.txt">Twin-Pit Almanac</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-lychee-line-comms-01.txt">Lychee Line</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-glasshouse-ping-comms-02.txt">Glasshouse Ping</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-peel-dial-comms-03.txt">Peel Dial</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-nectar-network-comms-04.txt">Nectar Network</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-two-seed-signal-comms-05.txt">Two Seed Signal</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-litchi-note-bud-01.txt">Litchi Note</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-pitstop-bud-02.txt">Pitstop</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-shell-slip-bud-03.txt">Shell Slip</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-bloom-byte-bud-04.txt">Bloom Byte</a></li><li><a href="https://github.com/lexdoescodingnow/templates/blob/main/lychee/lychee-soft-kernel-bud-05.txt">Soft Kernel</a></li></ul></noscript>
+<nav class="type-list" aria-label="Template types"><button type="button" data-filter="thread">Threads</button><button type="button" data-filter="comms">Comms</button><button type="button" data-filter="bud">Buds</button></nav>
+<div class="workspace">
+<nav class="design-list" id="design-list" aria-label="Designs"></nav>
+<section class="workpane" aria-labelledby="current-title">
+<header class="work-head"><h2 id="current-title"></h2></header>
+<div class="swatch-controls">
+<label>Mode <select id="appearance"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
+<label>Width <select id="preview-width"><option value="auto">Forum</option><option value="390">390 px</option><option value="320">320 px</option><option value="260">260 px</option></select></label>
+<label>Member colours <select id="palette"><option value="shell">Rose &amp; jade</option><option value="coast">Blue &amp; lilac</option><option value="fig">Fig &amp; olive</option></select></label>
 </div>
-<footer class="lc-phone"><span>12:08</span><span>Delivered · encrypted</span></footer>
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
+<div class="preview-bed"><div id="stage"></div></div>
+<div class="actions"><button class="action primary" type="button" id="copy-template">Copy template</button><button class="action" type="button" id="copy-named">Copy with sample names</button><span id="answer" role="status"></span></div>
+<details class="edit-area"><summary>Edit this design</summary><form class="edit-form" onsubmit="return false"></form></details>
+<details class="code-area"><summary>Posting code</summary><textarea class="source-code" id="source" aria-label="JCink posting code" rows="9" readonly spellcheck="false"></textarea></details>
+</section>
 </div>
-</div>
+</main>
+<script type="application/json" id="studio-data">[{"type":"thread","slug":"lychee-lithograph","name":"Lychee Lithograph","sampleName":"Jinho & Suho","title":"An afternoon under glass","file":"lychee-lychee-lithograph-thread-01.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-lychee-lithograph\" data-kind=\"thread\" data-design=\"01\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet, consectetur adipiscing elit. \u003cb>Donec vitae nunc vel sem dictum.\u003c/b> Sed non felis et nulla eleifend ultrices. Cras in eros eget erat luctus varius. Etiam ut risus in sapien convallis fringilla.\u003c/p>\n\u003cp>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. \u003ci>Quisque vitae lacus vel lectus interdum\u003c/i> vulputate. In hac habitasse platea dictumst. \u003cu>Praesent quis urna.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Lychee Lithograph\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"thread","slug":"roseglass-index","name":"Roseglass Index","sampleName":"Jinho & Suho","title":"The colour of the light","file":"lychee-roseglass-index-thread-02.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-roseglass-index\" data-kind=\"thread\" data-design=\"02\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet, consectetur adipiscing elit. \u003cb>Donec vitae nunc vel sem dictum.\u003c/b> Sed non felis et nulla eleifend ultrices. Cras in eros eget erat luctus varius. Etiam ut risus in sapien convallis fringilla.\u003c/p>\n\u003cp>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. \u003ci>Quisque vitae lacus vel lectus interdum\u003c/i> vulputate. In hac habitasse platea dictumst. \u003cu>Praesent quis urna.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Roseglass Index\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"thread","slug":"orchard-receipt","name":"Orchard Receipt","sampleName":"Jinho & Suho","title":"Two things to keep","file":"lychee-orchard-receipt-thread-03.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-orchard-receipt\" data-kind=\"thread\" data-design=\"03\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet, consectetur adipiscing elit. \u003cb>Donec vitae nunc vel sem dictum.\u003c/b> Sed non felis et nulla eleifend ultrices. Cras in eros eget erat luctus varius. Etiam ut risus in sapien convallis fringilla.\u003c/p>\n\u003cp>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. \u003ci>Quisque vitae lacus vel lectus interdum\u003c/i> vulputate. In hac habitasse platea dictumst. \u003cu>Praesent quis urna.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Orchard Receipt\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"thread","slug":"pale-lantern","name":"Pale Lantern","sampleName":"Jinho & Suho","title":"A lamp left on","file":"lychee-pale-lantern-thread-04.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-pale-lantern\" data-kind=\"thread\" data-design=\"04\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet, consectetur adipiscing elit. \u003cb>Donec vitae nunc vel sem dictum.\u003c/b> Sed non felis et nulla eleifend ultrices. Cras in eros eget erat luctus varius. Etiam ut risus in sapien convallis fringilla.\u003c/p>\n\u003cp>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. \u003ci>Quisque vitae lacus vel lectus interdum\u003c/i> vulputate. In hac habitasse platea dictumst. \u003cu>Praesent quis urna.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Pale Lantern\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"thread","slug":"twin-pit-almanac","name":"Twin-Pit Almanac","sampleName":"Jinho & Suho","title":"Between the leaves","file":"lychee-twin-pit-almanac-thread-05.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-twin-pit-almanac\" data-kind=\"thread\" data-design=\"05\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet, consectetur adipiscing elit. \u003cb>Donec vitae nunc vel sem dictum.\u003c/b> Sed non felis et nulla eleifend ultrices. Cras in eros eget erat luctus varius. Etiam ut risus in sapien convallis fringilla.\u003c/p>\n\u003cp>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. \u003ci>Quisque vitae lacus vel lectus interdum\u003c/i> vulputate. In hac habitasse platea dictumst. \u003cu>Praesent quis urna.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Twin-Pit Almanac\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"comms","slug":"lychee-line","name":"Lychee Line","sampleName":"Jinho & Suho","title":"Suho","file":"lychee-lychee-line-comms-01.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-lychee-line\" data-kind=\"comms\" data-design=\"01\" data-direction=\"alternating\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-meta\">\u003cspan class=\"ly-time\">21:08\u003c/span>\u003cspan class=\"ly-receipt\">Delivered\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet.\u003c/p>\n\u003cp>\u003cb>Etiam nunc?\u003c/b> Nulla ac nibh.\u003c/p>\n\u003cp>\u003ci>Ut a sem.\u003c/i> \u003cu>Sed vitae eros.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Lychee Line\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-chrome\" aria-hidden=\"true\">\u003c/div>\n\u003cdiv class=\"ly-compose\" aria-hidden=\"true\">\u003cspan>Message\u003c/span>\u003csvg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\u003cpath d=\"M8 13V3M3 8l5-5 5 5\"/>\u003c/svg>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"comms","slug":"glasshouse-ping","name":"Glasshouse Ping","sampleName":"Jinho & Suho","title":"Jinho","file":"lychee-glasshouse-ping-comms-02.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-glasshouse-ping\" data-kind=\"comms\" data-design=\"02\" data-direction=\"alternating\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-meta\">\u003cspan class=\"ly-time\">21:08\u003c/span>\u003cspan class=\"ly-receipt\">Delivered\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet.\u003c/p>\n\u003cp>\u003cb>Etiam nunc?\u003c/b> Nulla ac nibh.\u003c/p>\n\u003cp>\u003ci>Ut a sem.\u003c/i> \u003cu>Sed vitae eros.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Glasshouse Ping\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-chrome\" aria-hidden=\"true\">\u003c/div>\n\u003cdiv class=\"ly-compose\" aria-hidden=\"true\">\u003cspan>Message\u003c/span>\u003csvg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\u003cpath d=\"M8 13V3M3 8l5-5 5 5\"/>\u003c/svg>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"comms","slug":"peel-dial","name":"Peel Dial","sampleName":"Jinho & Suho","title":"Suho","file":"lychee-peel-dial-comms-03.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-peel-dial\" data-kind=\"comms\" data-design=\"03\" data-direction=\"alternating\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-meta\">\u003cspan class=\"ly-time\">21:08\u003c/span>\u003cspan class=\"ly-receipt\">Delivered\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet.\u003c/p>\n\u003cp>\u003cb>Etiam nunc?\u003c/b> Nulla ac nibh.\u003c/p>\n\u003cp>\u003ci>Ut a sem.\u003c/i> \u003cu>Sed vitae eros.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Peel Dial\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-chrome\" aria-hidden=\"true\">\u003c/div>\n\u003cdiv class=\"ly-compose\" aria-hidden=\"true\">\u003cspan>Message\u003c/span>\u003csvg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\u003cpath d=\"M8 13V3M3 8l5-5 5 5\"/>\u003c/svg>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"comms","slug":"nectar-network","name":"Nectar Network","sampleName":"Jinho & Suho","title":"Jinho","file":"lychee-nectar-network-comms-04.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-nectar-network\" data-kind=\"comms\" data-design=\"04\" data-direction=\"alternating\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-meta\">\u003cspan class=\"ly-time\">21:08\u003c/span>\u003cspan class=\"ly-receipt\">Delivered\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet.\u003c/p>\n\u003cp>\u003cb>Etiam nunc?\u003c/b> Nulla ac nibh.\u003c/p>\n\u003cp>\u003ci>Ut a sem.\u003c/i> \u003cu>Sed vitae eros.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Nectar Network\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-chrome\" aria-hidden=\"true\">\u003c/div>\n\u003cdiv class=\"ly-compose\" aria-hidden=\"true\">\u003cspan>Message\u003c/span>\u003csvg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\u003cpath d=\"M8 13V3M3 8l5-5 5 5\"/>\u003c/svg>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"comms","slug":"two-seed-signal","name":"Two Seed Signal","sampleName":"Jinho & Suho","title":"Jinho & Suho","file":"lychee-two-seed-signal-comms-05.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-two-seed-signal\" data-kind=\"comms\" data-design=\"05\" data-direction=\"alternating\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-meta\">\u003cspan class=\"ly-time\">21:08\u003c/span>\u003cspan class=\"ly-receipt\">Delivered\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet.\u003c/p>\n\u003cp>\u003cb>Etiam nunc?\u003c/b> Nulla ac nibh.\u003c/p>\n\u003cp>\u003ci>Ut a sem.\u003c/i> \u003cu>Sed vitae eros.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Two Seed Signal\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003cdiv class=\"ly-chrome\" aria-hidden=\"true\">\u003c/div>\n\u003cdiv class=\"ly-compose\" aria-hidden=\"true\">\u003cspan>Message\u003c/span>\u003csvg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\u003cpath d=\"M8 13V3M3 8l5-5 5 5\"/>\u003c/svg>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"bud","slug":"litchi-note","name":"Litchi Note","sampleName":"Jinho & Suho","title":"The first few words","file":"lychee-litchi-note-bud-01.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-litchi-note\" data-kind=\"bud\" data-design=\"01\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet. \u003cb>Donec vitae nunc.\u003c/b> Etiam a porta erat. \u003ci>Quisque sed arcu\u003c/i> in sem viverra rutrum. \u003cu>In hac habitasse.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Litchi Note\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"bud","slug":"pitstop","name":"Pitstop","sampleName":"Jinho & Suho","title":"Before you go","file":"lychee-pitstop-bud-02.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-pitstop\" data-kind=\"bud\" data-design=\"02\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet. \u003cb>Donec vitae nunc.\u003c/b> Etiam a porta erat. \u003ci>Quisque sed arcu\u003c/i> in sem viverra rutrum. \u003cu>In hac habitasse.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Pitstop\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"bud","slug":"shell-slip","name":"Shell Slip","sampleName":"Jinho & Suho","title":"A note for later","file":"lychee-shell-slip-bud-03.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-shell-slip\" data-kind=\"bud\" data-design=\"03\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet. \u003cb>Donec vitae nunc.\u003c/b> Etiam a porta erat. \u003ci>Quisque sed arcu\u003c/i> in sem viverra rutrum. \u003cu>In hac habitasse.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Shell Slip\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"bud","slug":"bloom-byte","name":"Bloom Byte","sampleName":"Jinho & Suho","title":"Side by side","file":"lychee-bloom-byte-bud-04.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-bloom-byte\" data-kind=\"bud\" data-design=\"04\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-media\">\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003cfigure class=\"ly-shot\">\u003cimg src=\"https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv\" alt=\"Character portrait\">\u003c/figure>\n\u003c/div>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet. \u003cb>Donec vitae nunc.\u003c/b> Etiam a porta erat. \u003ci>Quisque sed arcu\u003c/i> in sem viverra rutrum. \u003cu>In hac habitasse.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Bloom Byte\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"},{"type":"bud","slug":"soft-kernel","name":"Soft Kernel","sampleName":"Jinho & Suho","title":"One last line","file":"lychee-soft-kernel-bud-05.txt","code":"[dohtml]\n\u003cdiv class=\"ly2 ly2-soft-kernel\" data-kind=\"bud\" data-design=\"05\">\n\u003cdiv class=\"ly-card\">\n\u003cheader class=\"ly-head\">\n\u003ca class=\"ly-name\" href=\"[url]\">[name]\u003c/a>\n\u003ch2 class=\"ly-title\">[text]\u003c/h2>\n\u003c/header>\n\u003cdiv class=\"ly-copy\">\n\u003cp>Lorem ipsum dolor sit amet. \u003cb>Donec vitae nunc.\u003c/b> Etiam a porta erat. \u003ci>Quisque sed arcu\u003c/i> in sem viverra rutrum. \u003cu>In hac habitasse.\u003c/u>\u003c/p>\n\u003c/div>\n\u003cdiv class=\"ly-foot\">\u003cspan class=\"ly-imprint\">Soft Kernel\u003c/span>\u003cspan class=\"ly-art\" aria-hidden=\"true\">\u003c/span>\u003c/div>\n\u003c/div>\n\u003c/div>\n\u003clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v2.css\">\n[/dohtml]"}]</script>
+<script>(function startStudio() {
+  const records = JSON.parse(document.getElementById('studio-data').textContent);
+  const stage = document.getElementById('stage');
+  const form = document.querySelector('.edit-form');
+  const source = document.getElementById('source');
+  const reply = document.getElementById('answer');
+  const options = document.getElementById('design-list');
+  const sourcePanel = document.querySelector('.code-area');
+  const appearance = document.getElementById('appearance');
+  const width = document.getElementById('preview-width');
+  const palette = document.getElementById('palette');
+  const mediaPreference = window.matchMedia('(prefers-color-scheme: dark)');
+  const drafts = new Map();
+  const initialValues = new Map();
+  const selectedByType = new Map();
+  let active;
+  const htmlEscape = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const kindNames = {thread:'Threads',comms:'Comms',bud:'Buds'};
+  const paletteValues = {
+    shell: [['139,65,88', '102,93,119', '60,114,103'], ['230,153,173', '193,173,212', '148,205,185']],
+    coast: [['46,97,134','91,91,146','42,116,123'], ['138,198,230','188,173,224','137,208,211']],
+    fig: [['110,73,137','157,88,78','95,108,65'], ['199,164,228','227,168,150','176,198,150']]
+  };
 
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-comms lc-nectar-network&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 04&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;connected · end-to-end&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
-&lt;footer class=&quot;lc-phone&quot;&gt;&lt;span&gt;12:08&lt;/span&gt;&lt;span&gt;Delivered · encrypted&lt;/span&gt;&lt;/footer&gt;
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>COMMS / 05</small><h2>Two Seed Signal</h2></header><div class="stage">
-<div class="lc lc-comms lc-two-seed-signal" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 05</span><h2>Suho / Jinho</h2><small>message received</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure><figure class="lc-portrait"><img src="https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv" alt="Character GIF 2"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vestibulum ante ipsum primis.</b> Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.</p>
-<p>Aliquam erat volutpat. <i>Quisque sodales, tellus vitae suscipit posuere,</i> erat enim consequat mauris, sed pharetra lectus lacus non est. <u>Donec aenean semper.</u> Duis at massa id libero faucibus.</p>
-<p>Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.</p>
-</div>
-<footer class="lc-phone"><span>12:08</span><span>Delivered · encrypted</span></footer>
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
-
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-comms lc-two-seed-signal&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 05&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;message received&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv&quot; alt=&quot;Character GIF 2&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Vestibulum ante ipsum primis.&lt;/b&gt; Integer vitae augue at sapien luctus consequat. Nulla facilisi; sed porttitor justo vel sem laoreet.&lt;/p&gt;
-&lt;p&gt;Aliquam erat volutpat. &lt;i&gt;Quisque sodales, tellus vitae suscipit posuere,&lt;/i&gt; erat enim consequat mauris, sed pharetra lectus lacus non est. &lt;u&gt;Donec aenean semper.&lt;/u&gt; Duis at massa id libero faucibus.&lt;/p&gt;
-&lt;p&gt;Praesent commodo, nunc non tempor feugiat, neque nibh interdum arcu, vitae fermentum risus ante sed sapien. Curabitur posuere, tellus ut eleifend blandit, mi urna feugiat nibh, at tincidunt sem nulla id lorem.&lt;/p&gt;
-&lt;/div&gt;
-&lt;footer class=&quot;lc-phone&quot;&gt;&lt;span&gt;12:08&lt;/span&gt;&lt;span&gt;Delivered · encrypted&lt;/span&gt;&lt;/footer&gt;
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>BUD / 01</small><h2>Litchi Note</h2></header><div class="stage">
-<div class="lc lc-bud lc-litchi-note" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 01</span><h2>a passing thought</h2><small>in the margin</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet. <b>Integer vitae augue.</b> <i>Aliquam erat volutpat</i>, sed porttitor justo vel sem.</p>
-<p><u>Donec aenean semper.</u> Nulla facilisi.</p>
-</div>
-
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
-
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-bud lc-litchi-note&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 01&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;in the margin&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet. &lt;b&gt;Integer vitae augue.&lt;/b&gt; &lt;i&gt;Aliquam erat volutpat&lt;/i&gt;, sed porttitor justo vel sem.&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Donec aenean semper.&lt;/u&gt; Nulla facilisi.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>BUD / 02</small><h2>Pitstop</h2></header><div class="stage">
-<div class="lc lc-bud lc-pitstop" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 02</span><h2>just one more thing</h2><small>quick reply</small></header>
-
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet. <b>Integer vitae augue.</b> <i>Aliquam erat volutpat</i>, sed porttitor justo vel sem.</p>
-<p><u>Donec aenean semper.</u> Nulla facilisi.</p>
-</div>
-
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
-
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-bud lc-pitstop&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 02&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;quick reply&lt;/small&gt;&lt;/header&gt;
-
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet. &lt;b&gt;Integer vitae augue.&lt;/b&gt; &lt;i&gt;Aliquam erat volutpat&lt;/i&gt;, sed porttitor justo vel sem.&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Donec aenean semper.&lt;/u&gt; Nulla facilisi.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>BUD / 03</small><h2>Shell Slip</h2></header><div class="stage">
-<div class="lc lc-bud lc-shell-slip" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 03</span><h2>a small reminder</h2><small>kept nearby</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet. <b>Integer vitae augue.</b> <i>Aliquam erat volutpat</i>, sed porttitor justo vel sem.</p>
-<p><u>Donec aenean semper.</u> Nulla facilisi.</p>
-</div>
-
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
-
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-bud lc-shell-slip&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 03&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;kept nearby&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet. &lt;b&gt;Integer vitae augue.&lt;/b&gt; &lt;i&gt;Aliquam erat volutpat&lt;/i&gt;, sed porttitor justo vel sem.&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Donec aenean semper.&lt;/u&gt; Nulla facilisi.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>BUD / 04</small><h2>Bloom Byte</h2></header><div class="stage">
-<div class="lc lc-bud lc-bloom-byte" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 04</span><h2>on the way back</h2><small>little update</small></header>
-<div class="lc-media"><figure class="lc-portrait"><img src="https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv" alt="Character GIF 1"></figure><figure class="lc-portrait"><img src="https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv" alt="Character GIF 2"></figure></div>
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet. <b>Integer vitae augue.</b> <i>Aliquam erat volutpat</i>, sed porttitor justo vel sem.</p>
-<p><u>Donec aenean semper.</u> Nulla facilisi.</p>
-</div>
-
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
-
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-bud lc-bloom-byte&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 04&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;little update&lt;/small&gt;&lt;/header&gt;
-&lt;div class=&quot;lc-media&quot;&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/cfcf729fefc77ad38efcb6d566632ea8/e77930a5f3b7b90c-6e/s400x600/688a74647cfe8278e9a5380b6ee2fdd0de107f52.gifv&quot; alt=&quot;Character GIF 1&quot;&gt;&lt;/figure&gt;&lt;figure class=&quot;lc-portrait&quot;&gt;&lt;img src=&quot;https://64.media.tumblr.com/ea535f2c97bd0394fc52d538ce4aa7ec/c38f3ca42835b5bc-45/s400x600/2447bf8417a283b7c67c2e041507a8e87d7e66ff.gifv&quot; alt=&quot;Character GIF 2&quot;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet. &lt;b&gt;Integer vitae augue.&lt;/b&gt; &lt;i&gt;Aliquam erat volutpat&lt;/i&gt;, sed porttitor justo vel sem.&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Donec aenean semper.&lt;/u&gt; Nulla facilisi.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section>
-<section><header><small>BUD / 05</small><h2>Soft Kernel</h2></header><div class="stage">
-<div class="lc lc-bud lc-soft-kernel" data-direction="alternating">
-<div class="lc-card">
-<header class="lc-head"><a href="#">Jinho &amp; Suho</a><span class="lc-serial">LYCHEE / 05</span><h2>before the day ends</h2><small>a final line</small></header>
-
-<div class="lc-copy">
-<p>Lorem ipsum dolor sit amet. <b>Integer vitae augue.</b> <i>Aliquam erat volutpat</i>, sed porttitor justo vel sem.</p>
-<p><u>Donec aenean semper.</u> Nulla facilisi.</p>
-</div>
-
-<div class="lc-mark" aria-hidden="true"><svg viewBox="0 0 90 90"><path d="M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z"/><path d="M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z"/><path d="M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11"/></svg></div>
-</div>
-</div>
-
-</div><details><summary>Copy template</summary><textarea readonly>[dohtml]
-&lt;div class=&quot;lc lc-bud lc-soft-kernel&quot; data-direction=&quot;alternating&quot;&gt;
-&lt;div class=&quot;lc-card&quot;&gt;
-&lt;header class=&quot;lc-head&quot;&gt;&lt;a href=&quot;[url]&quot;&gt;[name]&lt;/a&gt;&lt;span class=&quot;lc-serial&quot;&gt;LYCHEE / 05&lt;/span&gt;&lt;h2&gt;[text]&lt;/h2&gt;&lt;small&gt;a final line&lt;/small&gt;&lt;/header&gt;
-
-&lt;div class=&quot;lc-copy&quot;&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet. &lt;b&gt;Integer vitae augue.&lt;/b&gt; &lt;i&gt;Aliquam erat volutpat&lt;/i&gt;, sed porttitor justo vel sem.&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Donec aenean semper.&lt;/u&gt; Nulla facilisi.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;lc-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;svg viewBox=&quot;0 0 90 90&quot;&gt;&lt;path d=&quot;M45 12c15-8 28 4 27 18 12 10 9 24-2 31 0 13-12 21-25 15-14 8-27-1-26-15-11-8-13-22-2-31C16 17 30 6 45 12Z&quot;/&gt;&lt;path d=&quot;M45 22c-12 9-13 34 0 47 13-13 12-38 0-47Z&quot;/&gt;&lt;path d=&quot;M31 19c4 5 7 8 14 11m14-11c-4 5-7 8-14 11&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/lychee/lychee-orchard-glass-standalone-v1.css&quot;&gt;
-[/dohtml]</textarea></details></section></main></body></html>
+  function parts(record) {
+    const template = document.createElement('template');
+    template.innerHTML = record.code.replace(/^\s*\[dohtml\]\s*|\s*\[\/dohtml\]\s*$/gi, '');
+    return {card: template.content.querySelector('.ly2'), link: template.content.querySelector('link[rel="stylesheet"]')};
+  }
+  function sampleName(record) {
+    return record.sampleName || 'Jinho & Suho';
+  }
+  function writingField(copy) {
+    return copy.innerHTML.trim();
+  }
+  function writeBody(value) {
+    let formatted = value.trim();
+    if (!/<p(?:\s|>)/i.test(formatted)) {
+      const hasInlineHtml = /<(?:b|i|u|strong|em|a|br|span)(?:\s|\/?>)/i.test(formatted);
+      if (!hasInlineHtml) formatted = htmlEscape(formatted);
+      formatted = formatted.split(/\r?\n+/).filter(Boolean).map(line => '<p>' + line + '</p>').join('\n');
+    }
+    return formatted.replace(/\[(\/?)([biu])\]/gi, (_, slash, tag) => '<' + slash + tag.toLowerCase() + '>');
+  }
+  function harmlessPreview(root) {
+    root.querySelectorAll('script,iframe,object,embed,style,link,form,base,meta').forEach(node => node.remove());
+    for (const el of [root, ...root.querySelectorAll('*')]) {
+      for (const attr of [...el.attributes]) {
+        if (/^on/i.test(attr.name) || /^(href|src|xlink:href|formaction|srcdoc)$/i.test(attr.name) && /^\s*(?:javascript|vbscript):/i.test(attr.value)) el.removeAttribute(attr.name);
+      }
+    }
+    root.querySelectorAll('a').forEach(anchor => anchor.removeAttribute('href'));
+  }
+  function defaults(record) {
+    const {card} = parts(record);
+    const images = [...card.querySelectorAll('.ly-media img')];
+    const get = selector => card.querySelector(selector)?.textContent.trim() || '';
+    return {
+      name: get('.ly-name'), url: card.querySelector('.ly-name')?.getAttribute('href') || '[url]',
+      title: get('.ly-title'), gif1: images[0]?.getAttribute('src') || '', gif2: images[1]?.getAttribute('src') || '',
+      time: get('.ly-time'), receipt: get('.ly-receipt'), direction: card.dataset.direction || 'alternating',
+      body: writingField(card.querySelector('.ly-copy'))
+    };
+  }
+  function render(named) {
+    const draft = drafts.get(active.slug);
+    const {card, link} = parts(active);
+    const name = card.querySelector('.ly-name');
+    name.textContent = named && draft.name === '[name]' ? sampleName(active) : draft.name;
+    name.setAttribute('href', draft.url || '[url]');
+    const title = card.querySelector('.ly-title');
+    title.textContent = named && draft.title === '[text]' ? active.title : draft.title;
+    card.querySelector('.ly-copy').innerHTML = writeBody(draft.body);
+    if (active.type === 'comms') {
+      card.dataset.direction = draft.direction;
+      if (card.querySelector('.ly-time')) card.querySelector('.ly-time').textContent = draft.time;
+      if (card.querySelector('.ly-receipt')) card.querySelector('.ly-receipt').textContent = draft.receipt;
+    }
+    let media = card.querySelector('.ly-media');
+    if (!media && (draft.gif1.trim() || draft.gif2.trim())) {
+      media = document.createElement('div');
+      media.className = 'ly-media';
+      const writing = card.querySelector('.ly-copy');
+      writing.before(media);
+    }
+    if (media) {
+      const originals = [...media.querySelectorAll('.ly-shot')];
+      const shots = [];
+      [draft.gif1, draft.gif2].forEach((url,i) => {
+        if (!url.trim()) return;
+        const shot = originals[i] || originals[0]?.cloneNode(true) || document.createElement('figure');
+        shot.classList.add('ly-shot');
+        const image = shot.querySelector('img') || shot.appendChild(document.createElement('img'));
+        image.setAttribute('src', url.trim());
+        image.alt = 'Character portrait';
+        shots.push(shot);
+      });
+      if (shots.length) media.replaceChildren(...shots);
+      else media.remove();
+    }
+    return {card, link};
+  }
+  function posted(named) {
+    const original = initialValues.get(active.slug);
+    const draft = drafts.get(active.slug);
+    if (!named && Object.keys(original).every(key => original[key] === draft[key])) return active.code.trim();
+    const {card, link} = render(named);
+    return '[dohtml]\n' + card.outerHTML + '\n' + link.outerHTML + '\n[/dohtml]';
+  }
+  function update() {
+    const {card} = render(true);
+    harmlessPreview(card);
+    stage.replaceChildren(card);
+    source.value = posted(false);
+  }
+  function colours() {
+    const dark = appearance.value === 'system' ? mediaPreference.matches : appearance.value === 'dark';
+    document.documentElement.setAttribute('color-mode', dark ? 'dark' : 'light');
+    paletteValues[palette.value][Number(dark)].forEach((rgb, i) => stage.style.setProperty('--mgrgb'+(i+1), rgb));
+    stage.style.width = width.value === 'auto' ? '100%' : width.value + 'px';
+  }
+  function makeField(key,label,value,choices) {
+    const wrap = document.createElement('label');
+    wrap.append(document.createTextNode(label));
+    const input = document.createElement(key === 'body' ? 'textarea' : choices ? 'select' : 'input');
+    input.name = key;
+    if (choices) for (const [value,caption] of choices) input.add(new Option(caption,value));
+    if (key === 'body') {
+      input.rows = 6;
+      wrap.className = 'wide';
+    }
+    input.value = value;
+    wrap.append(input);
+    form.append(wrap);
+  }
+  function selectDesign(record) {
+    active = record;
+    selectedByType.set(record.type,record);
+    if (!initialValues.has(record.slug)) initialValues.set(record.slug,defaults(record));
+    if (!drafts.has(record.slug)) drafts.set(record.slug,{ ...initialValues.get(record.slug) });
+    const draft = drafts.get(record.slug);
+    options.replaceChildren();
+    records.filter(other => other.type === record.type).forEach(other => {
+      const pick = document.createElement('button');
+      pick.type = 'button';
+      pick.className = 'design-pick';
+      pick.textContent = other.name;
+      pick.setAttribute('aria-current',String(other.slug === record.slug));
+      pick.addEventListener('click', () => switchTo(other));
+      options.append(pick);
+    });
+    document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.filter === record.type)));
+    document.getElementById('current-title').textContent = record.name;
+    options.setAttribute('aria-label',kindNames[record.type]);
+    form.replaceChildren();
+    makeField('name','Character name',draft.name);
+    makeField('url','Profile link',draft.url);
+    makeField('title',record.type === 'comms' ? 'Conversation title' : 'Title',draft.title);
+    const {card} = parts(record);
+    makeField('gif1','First GIF URL',draft.gif1);
+    makeField('gif2','Second GIF URL',draft.gif2);
+    if (record.type === 'comms') {
+      if (card.querySelector('.ly-time')) makeField('time','Time',draft.time);
+      if (card.querySelector('.ly-receipt')) makeField('receipt','Receipt',draft.receipt);
+      makeField('direction','Messages',draft.direction,[['alternating','Alternating'],['received','Received'],['sent','Sent']]);
+    }
+    makeField('body',record.type === 'comms' ? 'Message bubbles' : 'Writing',draft.body);
+    const reset = document.createElement('button');
+    reset.className = 'action'; reset.type = 'button'; reset.textContent = 'Reset this design';
+    reset.addEventListener('click', () => { drafts.delete(active.slug); selectDesign(active); });
+    form.append(reset);
+    reply.textContent = '';
+    update();
+  }
+  function switchTo(record) {
+    selectDesign(record);
+    try { history.replaceState(null,'','#'+record.slug); } catch { location.hash = record.slug; }
+  }
+  async function copy(named) {
+    const value = posted(named);
+    let copied = false;
+    try {
+      if (navigator.clipboard) { await navigator.clipboard.writeText(value); copied = true; }
+    } catch {}
+    if (!copied) {
+      source.value = value; sourcePanel.open = true;
+      source.focus(); source.select();
+      try { copied = document.execCommand('copy'); } catch {}
+    }
+    reply.textContent = copied ? 'Copied.' : 'Code selected. Use Ctrl+C or Cmd+C.';
+  }
+  form.addEventListener('input', event => {
+    if (!event.target.name) return;
+    drafts.get(active.slug)[event.target.name] = event.target.value;
+    reply.textContent = ''; update();
+  });
+  document.getElementById('copy-template').addEventListener('click', () => copy(false));
+  document.getElementById('copy-named').addEventListener('click', () => copy(true));
+  document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
+    const kind = button.dataset.filter;
+    switchTo(selectedByType.get(kind) || records.find(record => record.type === kind));
+  }));
+  [appearance,width,palette].forEach(control => control.addEventListener('change',colours));
+  mediaPreference.addEventListener('change',colours);
+  function fromHash() { return records.find(record => '#'+record.slug === location.hash) || records[0]; }
+  window.addEventListener('hashchange',() => selectDesign(fromHash()));
+  colours(); selectDesign(fromHash());
+})();</script>
+</body>
+</html>

@@ -20,3 +20,162 @@
 @supports (color:light-dark(white,black)){html[color-mode="light"] .lc{color-scheme:light}html[color-mode="dark"] .lc{color-scheme:dark}}
 @media (prefers-color-scheme:dark){html:not([color-mode="light"]) .lc{--paper:#222522;--soft:#2c302d;--ink:#e9e8e2;--muted:#b1b2aa;--line:#464a45}}
 html[color-mode="dark"] .lc{--paper:#222522;--soft:#2c302d;--ink:#e9e8e2;--muted:#b1b2aa;--line:#464a45}
+
+.lc .lc-card > br,
+.lc .lc-head > br,
+.lc .lc-media > br,
+.lc .lc-copy > br:first-child,
+.lc .lc-portrait > br,
+.lc .lc-phone > br {
+  display: none;
+}
+.lc .lc-card > * {
+  min-inline-size: 0;
+}
+.lc .lc-card .lc-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.lc .lc-card .lc-head .lc-serial {
+  order: -1;
+  position: static;
+  transform: none;
+  writing-mode: horizontal-tb;
+  align-self: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--l2);
+  text-align: start;
+}
+.lc .lc-portrait img {
+  max-inline-size: 100%;
+  border-radius: inherit;
+}
+.lc .lc-portrait:not(:has(img[src]:not([src=""]))),
+.lc .lc-media:not(:has(img[src]:not([src=""]))) {
+  display: none;
+}
+.lc.lc-lychee-lithograph .lc-card {
+  grid-template-columns: minmax(0, 1fr) minmax(90px, 31%);
+}
+.lc.lc-lychee-lithograph .lc-portrait {
+  flex: none;
+  min-height: 0;
+}
+.lc.lc-roseglass-index .lc-card {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "head" "media" "copy" "mark";
+  padding: 0 clamp(17px, 5cqi, 28px) 22px;
+  border-inline-start: 7px solid var(--l2);
+}
+.lc.lc-orchard-receipt .lc-card {
+  grid-template-areas: "head mark" "media media" "copy copy";
+}
+.lc.lc-pale-lantern .lc-card {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "media" "head" "copy" "mark";
+}
+.lc.lc-pale-lantern .lc-head {
+  align-items: center;
+}
+.lc.lc-twin-pit-almanac .lc-card {
+  grid-template-areas: "head mark" "copy copy";
+}
+.lc.lc-lychee-line .lc-card {
+  grid-template-areas: "head media" "copy copy" "phone phone" "mark mark";
+}
+.lc:is(.lc-nectar-network,.lc-glasshouse-ping) .lc-card {
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "head media" "copy copy" "phone phone" "mark mark";
+  background: var(--paper);
+}
+.lc:is(.lc-nectar-network,.lc-glasshouse-ping) .lc-media {
+  grid-area: media;
+  max-width: 95px;
+  flex-wrap: wrap;
+}
+.lc:is(.lc-nectar-network,.lc-glasshouse-ping) .lc-portrait {
+  max-width: 64px;
+}
+.lc.lc-comms .lc-copy {
+  font-size: 13px;
+  text-align: start;
+}
+.lc.lc-comms .lc-copy > br {
+  display: none;
+}
+.lc.lc-comms[data-direction="received"] .lc-copy > p,
+.lc.lc-comms[data-direction="alternating"] .lc-copy > p:nth-of-type(odd) {
+  align-self: flex-start;
+  margin-inline: 0;
+  border-inline-start: 3px solid var(--l1);
+  border-inline-end: 1px solid var(--line);
+  border-radius: 4px 15px 15px 15px;
+  background: var(--soft);
+}
+.lc.lc-comms[data-direction="sent"] .lc-copy > p,
+.lc.lc-comms[data-direction="alternating"] .lc-copy > p:nth-of-type(even) {
+  align-self: flex-end;
+  margin-inline: 0;
+  border-inline-start: 1px solid var(--line);
+  border-inline-end: 3px solid var(--l3);
+  border-radius: 15px 4px 15px 15px;
+  background: color-mix(in srgb, var(--l3) 9%, var(--soft));
+}
+.lc.lc-comms .lc-phone {
+  flex-wrap: wrap;
+}
+.lc.lc-litchi-note .lc-card {
+  grid-template-areas: "head media" "copy copy" "mark mark";
+}
+.lc.lc-shell-slip .lc-card {
+  grid-template-areas: "media head" "copy copy" "mark mark";
+}
+.lc.lc-bloom-byte .lc-card {
+  grid-template-columns: minmax(0, 1fr) minmax(106px, 34%);
+  grid-template-areas: "head media" "copy copy" "mark mark";
+}
+.lc.lc-bloom-byte .lc-media {
+  align-self: center;
+  gap: 5px;
+}
+.lc.lc-bloom-byte .lc-portrait {
+  flex: 1 1 0;
+  max-inline-size: 74px;
+}
+.lc.lc-soft-kernel .lc-card {
+  grid-template-areas: "head mark" "copy copy";
+}
+.lc .lc-card:not(:has(.lc-media img[src]:not([src=""]))) {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.lc .lc-card:not(:has(.lc-media img[src]:not([src=""]))) .lc-mark {
+  order: 4;
+  align-self: flex-end;
+}
+@container lychee (max-width: 330px) {
+  .lc:is(.lc-lychee-lithograph,.lc-bloom-byte) .lc-card {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "head" "media" "copy" "mark";
+  }
+  .lc.lc-lychee-lithograph .lc-media {
+    flex-direction: row;
+  }
+  .lc.lc-lychee-lithograph .lc-portrait {
+    flex: 1 1 0;
+    max-width: 145px;
+  }
+  .lc.lc-bloom-byte .lc-portrait {
+    max-width: 84px;
+  }
+  .lc.lc-comms h2 {
+    font-size: 19px;
+  }
+  .lc.lc-bud h2 {
+    font-size: 23px;
+  }
+}
