@@ -1,0 +1,15 @@
+[dohtml]
+<details class="leafie-envelope1">
+<summary class="ae-front">
+<span class="ae-award">[AWARD CATEGORY]</span>
+<span class="ae-seal" aria-hidden="true"></span>
+<span class="ae-prompt"><span class="ae-open">Click to open</span><span class="ae-close">Click to close</span></span>
+</summary>
+<div class="ae-card">
+<span class="ae-caption">And the winner is...</span>
+<div class="ae-winner">[WINNING ENTRANT]</div>
+<span class="ae-brand">The Leafie Awards</span>
+</div>
+</details>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lexdoescodingnow/templates@main/leafie-awards/leafie-envelope-standalone-v1.css">
+[/dohtml]
